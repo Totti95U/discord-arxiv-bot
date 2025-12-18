@@ -102,7 +102,7 @@ def check_interest(papers_info:arxiv.Generator[arxiv.Result, None, None]):
 
     # batch request を送信する
     batch_job = client_genai.batches.create(
-        model="gemini-2.5-flash-lite",
+        model="gemini-2.5-flash",
         src=inline_request,
         config={
             'display_name': 'Interest Check Batch Job',
@@ -136,7 +136,7 @@ def check_interest_sequential(papers_info:arxiv.Generator[arxiv.Result, None, No
         title = f"\nTitle: {paper_info.title}\n"
         abstract = f"\nAbstract: {paper_info.summary}\n"
         response = client_genai.models.generate_content(
-            model = "gemini-2.5-flash-lite",
+            model = "gemini-2.5-flash",
             contents = title + abstract + prompt_check_interest,
             config = {
                 "response_mime_type": "application/json",
