@@ -222,7 +222,7 @@ def summarize_paper_sequential(papers_info:List[arxiv.Result]):
 def main():
     discord_webhook_url = os.getenv("ARXIV_SUMMARIZER_WEBHOOK_URL")
     search_results = list(search_papers())
-    
+
     if len(search_results) == 0:
         print("No papers found, exiting.")
         exit(0)
@@ -241,7 +241,13 @@ def main():
 
     summaries = summarize_paper(results)
     # summaries = summarize_paper_sequential(results)
-    embeds = []
+    message = {"content": f"新しい論文が見つかったぞ。目は通せよ（{len(results)}件）"}
+    headers = {"Content-Type": "application/json"}
+    response = requests.post(discord_webhook_url, data=json.dumps(message), headers=headers)
+    if response.status_code == 204:
+        print("Notification sent successfully to Discord.")
+    else:
+        print(f"Failed to send notification to Discord. Status code: {response.status_code}, Response: {response.text}")
     for i, paper in enumerate(results):
         summary = summaries[i]
         authors = ', '.join([str(author) for author in paper.authors])
@@ -279,24 +285,15 @@ def main():
         if summary.appendix:
             embed["fields"].append({"name": "補足情報", "value": summary.appendix, "inline": False})
         embed["fields"].append({"name": "keywords", "value": ', '.join(summary.keywords), "inline": False})
-        embeds.append(embed)
-    
-    message = {"content": f"新しい論文が見つかったぞ。目は通せよ（{len(results)}件）"}
-    headers = {"Content-Type": "application/json"}
-    response = requests.post(discord_webhook_url, data=json.dumps(message), headers=headers)
-    if response.status_code == 204:
-        print("Notification sent successfully to Discord.")
-    else:
-        print(f"Failed to send notification to Discord. Status code: {response.status_code}, Response: {response.text}")
 
-    message = {"embeds": embeds}
-    headers = {"Content-Type": "application/json"}
-    response = requests.post(discord_webhook_url, data=json.dumps(message), headers=headers)
-    if response.status_code == 204:
-        print("Message sent successfully to Discord.")
-    else:
-        print(f"Failed to send message to Discord. Status code: {response.status_code}, Response: {response.text}")
-        print(json.dumps(message))
+        message = {"embeds": [embed]}
+        headers = {"Content-Type": "application/json"}
+        response = requests.post(discord_webhook_url, data=json.dumps(message), headers=headers)
+        if response.status_code == 204:
+            print("Message sent successfully to Discord.")
+        else:
+            print(f"Failed to send message to Discord. Status code: {response.status_code}, Response: {response.text}")
+            print(json.dumps(message))
     
     print("All done, exiting.")
     exit(0)
