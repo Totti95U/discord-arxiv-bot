@@ -122,11 +122,11 @@ async def check_interest(papers_info:arxiv.Generator[arxiv.Result, None, None]):
     print(f"Final state: {batch_job.state.name} ({time.time() - batch_start_time:.0f}s)")
     interest_check = []
     for i, inline_response in enumerate(batch_job.dest.inlined_responses):
-        print(f"Result for paper {i+1}:")
+        # print(f"Result for paper {i+1}:")
         if inline_response.response:
             is_interest = InterestCheck.model_validate_json(inline_response.response.text)
             interest_check.append(is_interest.interested_in)
-            print(f"  Interested: {is_interest.interested_in}")
+            # print(f"  Interested: {is_interest.interested_in}")
     return interest_check
 
 async def summarize_paper(papers_info:List[arxiv.Result]):
@@ -186,6 +186,8 @@ async def on_ready():
     # interests = [True, False, True, True, False]  # テスト用ダミーデータ
     # interested な論文だけを抽出する
     results = list(filter(lambda x: interests.pop(0), results))
+    print(f"{interests}")
+    print(f"{results}")
     summaries = await summarize_paper(results)
     # Discord に送信する
     if len(results) == 0:
