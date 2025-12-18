@@ -2,20 +2,20 @@ from google import genai
 from google.genai import types
 from pydantic import BaseModel, Field
 from typing import List, Optional
-import discord
 import arxiv
-import datetime, asyncio, time, os
+import datetime, time, os
+import requests, json
 
 # set up clients for arXiv, GenAI, and Discord
 client_arxiv = arxiv.Client()
-client_genai = genai.Client(api_key=os.getenv("GENAI_API_KEY"))
-client_discord = discord.Client(intents=discord.Intents.default())
+client_genai = genai.Client(api_key="AIzaSyDbGSbGq7Tz2YD1wukiDv4RBnTEjgj9Jmg")# os.getenv("GEMINI_API_KEY"))
 
 def search_papers():
     # search for papers submitted yesterday
-    yesterday = datetime.date.today() - datetime.timedelta(days=2) # arXiv のデータベースの反映の問題で2日の冗長性を持たせる
-    search_start = yesterday.strftime("%Y%m%d0000")
-    search_end = yesterday.strftime("%Y%m%d2359")
+    yesterday = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=1)
+    search_start = yesterday.strftime("%Y%m%d%H%M")
+    search_end = (yesterday + datetime.timedelta(days=1)).strftime("%Y%m%d%H%M")
+    print(f"Searching papers from {search_end} to {search_start}...")
 
     # 検索条件を指定する。
     # query: 検索キーワードなどを指定する。
@@ -60,7 +60,7 @@ prompt_summarize = ""
 with open("src/prompt_summarize.txt", "r", encoding="utf-8") as f:
     prompt_summarize = f.read()
 
-async def check_interest(papers_info:arxiv.Generator[arxiv.Result, None, None]):
+def check_interest(papers_info:arxiv.Generator[arxiv.Result, None, None]):
     print("Checking interest for paper...")
     # batch request を作る
     # 構造は次の通り
@@ -116,7 +116,7 @@ async def check_interest(papers_info:arxiv.Generator[arxiv.Result, None, None]):
     completed_status = ('JOB_STATE_SUCCEEDED','JOB_STATE_FAILED','JOB_STATE_CANCELLED','JOB_STATE_EXPIRED')
     while batch_job.state.name not in completed_status:
         print(f"Current state: {batch_job.state.name} ({time.time() - batch_start_time:.0f}s)",end='\r')
-        await asyncio.sleep(30)
+        time.sleep(30)
         batch_job = client_genai.batches.get(name = batch_job.name)
 
     print(f"Final state: {batch_job.state.name} ({time.time() - batch_start_time:.0f}s)")
@@ -129,7 +129,26 @@ async def check_interest(papers_info:arxiv.Generator[arxiv.Result, None, None]):
             # print(f"  Interested: {is_interest.interested_in}")
     return interest_check
 
-async def summarize_paper(papers_info:List[arxiv.Result]):
+def check_interest_sequential(papers_info:arxiv.Generator[arxiv.Result, None, None]):
+    print("Checking interest for paper sequentially...")
+    interest_check = []
+    for i, paper_info in enumerate(papers_info):
+        title = f"\nTitle: {paper_info.title}\n"
+        abstract = f"\nAbstract: {paper_info.summary}\n"
+        response = client_genai.models.generate_content(
+            model = "gemini-2.5-flash-lite",
+            contents = title + abstract + prompt_check_interest,
+            config = {
+                "response_mime_type": "application/json",
+                "response_schema": InterestCheck,
+            }
+        )
+        is_interest = InterestCheck.model_validate_json(response.text)
+        interest_check.append(is_interest.interested_in)
+        print(f"Result for paper {i+1}: Interested: {is_interest.interested_in}")
+    return interest_check
+
+def summarize_paper(papers_info:List[arxiv.Result]):
     if len(papers_info) == 0:
         return []
     print("Summarizing paper...")
@@ -166,7 +185,7 @@ async def summarize_paper(papers_info:List[arxiv.Result]):
     completed_status = ('JOB_STATE_SUCCEEDED','JOB_STATE_FAILED','JOB_STATE_CANCELLED','JOB_STATE_EXPIRED')
     while batch_job.state.name not in completed_status:
         print(f"Current state: {batch_job.state.name} ({time.time() - batch_start_time:.0f}s)",end='\r')
-        await asyncio.sleep(30)
+        time.sleep(30)
         batch_job = client_genai.batches.get(name = batch_job.name)
     print(f"Final state: {batch_job.state.name} ({time.time() - batch_start_time:.0f}s)")
     summaries = []
@@ -178,44 +197,102 @@ async def summarize_paper(papers_info:List[arxiv.Result]):
             print(f"  Title: {summary.title}")
     return summaries
 
-@client_discord.event
-async def on_ready():
-    channel = client_discord.get_channel(1279975620780101682)  # チャンネルIDを指定する
-    results = search_papers()
-    interests = await check_interest(results)
+def summarize_paper_sequential(papers_info:List[arxiv.Result]):
+    if len(papers_info) == 0:
+        return []
+    print("Summarizing paper sequentially...")
+    summaries = []
+    for i, paper_info in enumerate(papers_info):
+        title = f"\nTitle: {paper_info.title}\n"
+        abstract = f"\nAbstract: {paper_info.summary}\n"
+        response = client_genai.models.generate_content(
+            model = "gemini-3-flash-preview",
+            contents = title + abstract + prompt_summarize,
+            config = {
+                "response_mime_type": "application/json",
+                "response_schema": Summary,
+                "thinking_config": {'thinking_level': 'low'}
+            }
+        )
+        summary = Summary.model_validate_json(response.text)
+        summaries.append(summary)
+        print(f"Result for paper {i+1}: Title: {summary.title}")
+    return summaries
+
+def main():
+    discord_webhook_url = r"https://discord.com/api/webhooks/1451243377633923218/AydW3YayUeNn71DaMHyoIjh-s9mYTIj9G2Hkrvl0WshlZh7edcWfhySHtfw9-g5xNowe" # os.getenv("ARXIV_SUMMARIZER_URL")
+    search_results = list(search_papers())
+    interests = check_interest(search_results)
+    # interests = check_interest_sequential(search_results)
     # interests = [True, False, True, True, False]  # テスト用ダミーデータ
     # interested な論文だけを抽出する
-    results = list(filter(lambda x: interests.pop(0), results))
-    print(f"{interests}")
-    print(f"{results}")
-    summaries = await summarize_paper(results)
+    results = list(filter(lambda x: interests.pop(0), search_results))
+    
     # Discord に送信する
     if len(results) == 0:
         print("No interesting papers found, exiting.")
         exit(0)
-    else:
-        await channel.send(f"新しい論文が見つかったぞ。目は通せよ（{len(summaries)}件）")
 
+    summaries = summarize_paper(results)
+    # summaries = summarize_paper_sequential(results)
     embeds = []
     for i, paper in enumerate(results):
         summary = summaries[i]
-        embed_summary = discord.Embed(
-            title=f"{summary.title}",
-            url=f"{paper.entry_id}",
-            colour=0xe12d2d,
-            timestamp=datetime.datetime.now()
-        )
-        embed_summary.set_author(name="arXiv", url=r"https://arxiv.org/", icon_url=r"https://shuyaojiang.github.io/assets/images/badges/arXiv.png")
         authors = ', '.join([str(author) for author in paper.authors])
-        embed_summary.add_field(name="著者", value=authors, inline=False)
-        embed_summary.add_field(name="概要", value=summary.summary, inline=False)
+        embed = {
+            "author": {
+                "name": "arXiv",
+                "url": "https://arxiv.org/",
+                "icon_url": "https://shuyaojiang.github.io/assets/images/badges/arXiv.png"
+            },
+            "title": f"{summary.title}",
+            "url": f"{paper.entry_id}",
+            "color": 0xe12d2d,
+            "timestamp": (datetime.datetime.now() + datetime.timedelta(hours=9)).isoformat(), # 日本時間に変換
+            "fields": [
+                {
+                    "name": "著者",
+                    "value": authors,
+                    "inline": False
+                },
+                {
+                    "name": "概要",
+                    "value": summary.summary,
+                    "inline": False
+                },
+            ],
+            "thumbnail": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/ArXiv_logo_2022.png"
+            },
+            "footer": {
+                "text": "arXiv Summarizer",
+                "icon_url": "https://cdn.discordapp.com/embed/avatars/4.png"
+            }
+        }
+        
         if summary.appendix:
-            embed_summary.add_field(name="補足情報", value=summary.appendix, inline=False)
-        embed_summary.add_field(name="keywords", value=', '.join(summary.keywords), inline=False)
-        embed_summary.set_footer(text="arXiv Summarizer", icon_url=r"https://cdn.discordapp.com/embed/avatars/4.png")
-        embeds.append(embed_summary)
-    await channel.send(embeds=embeds)
+            embed["fields"].append({"name": "補足情報", "value": summary.appendix, "inline": False})
+        embed["fields"].append({"name": "keywords", "value": ', '.join(summary.keywords), "inline": False})
+        embeds.append(embed)
+    
+    message = {"content": f"新しい論文が見つかったぞ。目は通せよ（{len(results)}件）"}
+    headers = {"Content-Type": "application/json"}
+    response = requests.post(discord_webhook_url, data=json.dumps(message), headers=headers)
+    if response.status_code == 204:
+        print("Notification sent successfully to Discord.")
+    else:
+        print(f"Failed to send notification to Discord. Status code: {response.status_code}, Response: {response.text}")
+
+    message = {"embeds": embeds}
+    headers = {"Content-Type": "application/json"}
+    response = requests.post(discord_webhook_url, data=json.dumps(message), headers=headers)
+    if response.status_code == 204:
+        print("Message sent successfully to Discord.")
+    else:
+        print(f"Failed to send message to Discord. Status code: {response.status_code}, Response: {response.text}")
+        print(json.dumps(message))
+    
     print("All done, exiting.")
     exit(0)
 
-client_discord.run(os.getenv("DISCORD_BOT_TOKEN"))
+main()
