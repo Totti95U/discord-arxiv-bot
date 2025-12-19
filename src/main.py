@@ -241,6 +241,7 @@ def main():
 
     summaries = summarize_paper(results)
     # summaries = summarize_paper_sequential(results)
+    is_sending_successful = True
     message = {"content": f"新しい論文が見つかったぞ。目は通せよ（{len(results)}件）"}
     headers = {"Content-Type": "application/json"}
     response = requests.post(discord_webhook_url, data=json.dumps(message), headers=headers)
@@ -248,6 +249,7 @@ def main():
         print("Notification sent successfully to Discord.")
     else:
         print(f"Failed to send notification to Discord. Status code: {response.status_code}, Response: {response.text}")
+        is_sending_successful = False
     for i, paper in enumerate(results):
         summary = summaries[i]
         authors = ', '.join([str(author) for author in paper.authors])
@@ -294,8 +296,14 @@ def main():
         else:
             print(f"Failed to send message to Discord. Status code: {response.status_code}, Response: {response.text}")
             print(json.dumps(message))
+            is_sending_successful = False
+        time.sleep(1.5)  # Discord のレート制限対策のため、1.5秒待機する
     
     print("All done, exiting.")
+    if is_sending_successful:
+        exit(0)
+    else:
+        exit(1)
     exit(0)
 
 main()
