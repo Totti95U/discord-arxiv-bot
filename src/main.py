@@ -12,7 +12,7 @@ client_genai = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 def search_papers():
     # search for papers submitted yesterday
-    yesterday = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=10)
+    yesterday = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=2)
     search_start = yesterday.strftime("%Y%m%d%H%M")
     search_end = (yesterday + datetime.timedelta(days=1)).strftime("%Y%m%d%H%M")
     print(f"Searching papers from {search_start} to {search_end}...")
@@ -24,7 +24,7 @@ def search_papers():
     # cat:math.DS+cat:math.CO+cat:math.GR+cat:cs.LO+cat:cs.FL+cat:cs.DM
     search = arxiv.Search(
         query = f"(cat:math.AG OR math.CO) AND submittedDate:[{search_start} TO {search_end}]",
-        max_results = 2,
+        max_results = 20,
         sort_by = arxiv.SortCriterion.SubmittedDate
     )
 
