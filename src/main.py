@@ -12,7 +12,7 @@ client_genai = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 def search_papers():
     # search for papers submitted yesterday
-    yesterday = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=2)
+    yesterday = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=10)
     search_start = yesterday.strftime("%Y%m%d%H%M")
     search_end = (yesterday + datetime.timedelta(days=1)).strftime("%Y%m%d%H%M")
     print(f"Searching papers from {search_start} to {search_end}...")
@@ -24,7 +24,7 @@ def search_papers():
     # cat:math.DS+cat:math.CO+cat:math.GR+cat:cs.LO+cat:cs.FL+cat:cs.DM
     search = arxiv.Search(
         query = f"(cat:math.AG OR math.CO) AND submittedDate:[{search_start} TO {search_end}]",
-        max_results = None,
+        max_results = 2,
         sort_by = arxiv.SortCriterion.SubmittedDate
     )
 
@@ -228,8 +228,8 @@ def main():
         exit(0)
 
     print(f"{len(search_results)} papers found in total.")
-    interests = check_interest(search_results)
-    # interests = check_interest_sequential(search_results)
+    # interests = check_interest(search_results)
+    interests = check_interest_sequential(search_results)
     # interests = [True, False, True, True, False]  # テスト用ダミーデータ
     # interested な論文だけを抽出する
     results = list(filter(lambda x: interests.pop(0), search_results))
@@ -239,8 +239,8 @@ def main():
         print("No interesting papers found, exiting.")
         exit(0)
 
-    summaries = summarize_paper(results)
-    # summaries = summarize_paper_sequential(results)
+    # summaries = summarize_paper(results)
+    summaries = summarize_paper_sequential(results)
     is_sending_successful = True
     message = {"content": f"新しい論文が見つかったぞ。目は通せよ（{len(results)}件）"}
     headers = {"Content-Type": "application/json"}
