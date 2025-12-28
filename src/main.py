@@ -3,7 +3,8 @@ from google.genai import types
 from pydantic import BaseModel, Field
 from typing import List, Optional
 import arxiv
-import datetime, time, os
+import time, os, datetime
+from zoneinfo import ZoneInfo
 import requests, json
 
 # set up clients for arXiv, GenAI, and Discord
@@ -12,10 +13,10 @@ client_genai = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 def search_papers():
     # search for papers submitted yesterday
-    yesterday = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=2)
+    yesterday = datetime.datetime.now(ZoneInfo("America/New_York")) - datetime.timedelta(days=3)
     search_start = yesterday.strftime("%Y%m%d0000")
-    search_end = (yesterday + datetime.timedelta(days=1)).strftime("%Y%m%d0000")
-    print(f"Searching papers from {search_start} to {search_end}...")
+    search_end = yesterday.strftime("%Y%m%d2359")
+    print(f"Searching papers from {search_start} to {search_end}")
 
     # 検索条件を指定する。
     # query: 検索キーワードなどを指定する。
@@ -262,7 +263,7 @@ def main():
             "title": f"{summary.title}",
             "url": f"{paper.entry_id}",
             "color": 0xe12d2d,
-            "timestamp": (datetime.datetime.now() + datetime.timedelta(hours=9)).isoformat(), # 日本時間に変換
+            "timestamp": (datetime.datetime.now(ZoneInfo("Asia/Tokyo"))).isoformat(), # 日本時間に変換
             "fields": [
                 {
                     "name": "著者",

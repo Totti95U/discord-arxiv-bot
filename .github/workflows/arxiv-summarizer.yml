@@ -31,4 +31,5 @@ jobs:
         env:
           GEMINI_API_KEY: ${{  secrets.GEMINI_API_KEY  }}
           ARXIV_SUMMARIZER_WEBHOOK_URL: ${{ secrets.ARXIV_SUMMARIZER_WEBHOOK_URL }}
+          TZ: America/New_York
         run: python src/main.py
