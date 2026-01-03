@@ -6,7 +6,7 @@ Google の [gemini api](https://ai.google.dev/gemini-api/docs?hl=ja) を使用�
 
 ## 使用例
 
-![discord にプレプリント情報が投稿される様子](https://github.com/Totti95U/discord-arxiv-bot/main/img/sample1.png)
+![discord にプレプリント情報が投稿される様子](https://raw.githubusercontent.com/Totti95U/discord-arxiv-bot/refs/heads/main/img/sample1.png)
 
 ## 使い方
 
