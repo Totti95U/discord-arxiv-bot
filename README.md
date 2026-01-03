@@ -30,7 +30,7 @@ Gemini api および Discord の Webhook URL を使用する都合上, このリ
 6. `src/main.py` の27行目にある `(cat:math.DS OR cat:math.CO OR cat:math.GR OR cat:cs.LO OR cat:cs.FL OR cat:cs.DM)` の部分を自身が興味のある arXiv のカテゴリに変えてください
     - 単に削除することで全てのカテゴリからプレプリントを取得するようになりますが, Gemini api のリクエスト回数が大幅に増加する可能性があります
 7. (Gemini api 無料枠の場合) Gemini api の無料枠を使用する場合, `src/main.py` に以下の変更を加えてください
-    - 28行目の `None` を `20` にしてください (Gemini api 無料枠の一日の呼び出し回数が20回なことに対応)
+    - 28行目の `None` を `20` にしてください (Gemini api 無料枠の一日の呼び出し回数上限が20回なことに対応)
     - 232行目を `interests = check_interest_sequential(search_results)` にしてください
     - 243行目を `summaries = summarize_paper_sequential(results)` にしてください
 
