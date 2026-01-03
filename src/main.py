@@ -221,7 +221,7 @@ def summarize_paper_sequential(papers_info:List[arxiv.Result]):
     return summaries
 
 def main():
-    discord_webhook_url = os.getenv("ARXIV_SUMMARIZER_WEBHOOK_URL")
+    discord_webhook_url = os.getenv("ARXIV_RECOMMENDER_WEBHOOK_URL")
     search_results = list(search_papers())
 
     if len(search_results) == 0:
