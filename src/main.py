@@ -24,7 +24,7 @@ def search_papers():
     # sort_by: 論文の並び替え条件を指定する。ここでは投稿日時の降順（最新順）。
     # cat:math.DS+cat:math.CO+cat:math.GR+cat:cs.LO+cat:cs.FL+cat:cs.DM
     search = arxiv.Search(
-        query = f"(cat:math.DS OR cat:math.CO OR cat:math.GR OR cat:cs.LO OR cat:cs.FL OR cat:cs.DM) AND submittedDate:[{search_start} TO {search_end}]",
+        query = f"(cat:math.DS OR cat:math.CO OR cat:math.DM OR cat:math.GR OR cat:cs.LO OR cat:cs.FL OR cat:cs.DM) AND submittedDate:[{search_start} TO {search_end}]",
         max_results = None,
         sort_by = arxiv.SortCriterion.SubmittedDate
     )
