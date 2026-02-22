@@ -29,12 +29,30 @@ Gemini api および Discord の Webhook URL を使用する都合上, このリ
     - **ヒント:** これら2つのファイルは Gemini が読み取ります.
 6. `src/main.py` の27行目にある `(cat:math.DS OR cat:math.CO OR cat:math.GR OR cat:cs.LO OR cat:cs.FL OR cat:cs.DM)` の部分を自身が興味のある arXiv のカテゴリに変えてください
     - 単に削除することで全てのカテゴリからプレプリントを取得するようになりますが, Gemini api のリクエスト回数が大幅に増加する可能性があります
-7. (Gemini api 無料枠の場合) Gemini api の無料枠を使用する場合, `src/main.py` に以下の変更を加えてください
-    - 28行目の `None` を `20` にしてください (Gemini api 無料枠の一日の呼び出し回数上限が20回なことに対応)
-    - 232行目を `interests = check_interest_sequential(search_results)` にしてください
-    - 243行目を `summaries = summarize_paper_sequential(results)` にしてください
+7. (Gemini api 無料枠の場合) Gemini api の無料枠を使用する場合は, 対象カテゴリや検索対象日数を減らして1日の処理件数を抑えてください
+    - `src/main.py` の `search_papers()` 内の `max_results` と日付レンジ (`days`) を調整してください
 
-通常では毎日午前11時頃に新着プレプリントの情報を投稿します. 
-変更したい場合は `.github/workflows/arxiv-summarizer.yml` を調整してみてください.
+通常では次の 3 つの workflow が動作します.
+
+- `.github/workflows/arxiv-summarizer.yml`
+    - 毎日1回, arXiv 検索と興味判定 batch の submit を実行
+- `.github/workflows/arxiv-poll-interest-submit-summary.yml`
+    - 30分ごとに, 興味判定 batch を poll して完了分の要約 batch を submit
+- `.github/workflows/arxiv-poll-summary-send.yml`
+    - 30分ごとに, 要約 batch を poll して完了分を Discord に送信
+
+この構成により, Gemini Batch API の完了待ちが長引いても単一ジョブがタイムアウトしにくくなります.
+
+### state 管理ブランチについて
+
+`pending_jobs.json` は `bot/manage-pending-jobs` ブランチ上で管理します.
+
+- 保存場所: `state/pending_jobs.json`
+- 形式: `{ "schema_version": 1, "jobs": [...] }`
+- 各 workflow は実行前に state を読み込み, 実行後に更新内容を同ブランチへ push します
+
+初回実行時にブランチが存在しない場合でも workflow が自動作成します.
+
+cron を変更したい場合は上記 3 つの workflow の `schedule` を調整してください.
 
 興味がありそうなプレプリントがなかった場合, その旨の通知は来ません.

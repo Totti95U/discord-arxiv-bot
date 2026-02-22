@@ -1,8 +1,8 @@
-name: arXiv Summarizer - Enqueue Interest
+name: arXiv Summarizer - Poll Interest and Submit Summary
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 日本時間9時に実行
+    - cron: '*/30 * * * *' # 30分ごと
   workflow_dispatch:
 
 permissions:
@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  enqueue_interest:
+  poll_interest_submit_summary:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -48,12 +48,12 @@ jobs:
             echo '{"schema_version": 1, "jobs": []}' > state/pending_jobs.json
           fi
 
-      - name: Run enqueue stage
+      - name: Run poll-interest stage
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ARXIV_RECOMMENDER_WEBHOOK_URL: ${{ secrets.ARXIV_RECOMMENDER_WEBHOOK_URL }}
           TZ: America/New_York
-        run: python src/main.py --stage enqueue_interest
+        run: python src/main.py --stage poll_interest_submit_summary
 
       - name: Save state file to state branch
         if: always()
