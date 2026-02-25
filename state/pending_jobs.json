@@ -1234,6 +1234,181 @@
       "created_at": "2026-02-24T02:32:56.453182+00:00",
       "updated_at": "2026-02-25T01:22:01.500647+00:00",
       "finalized_at": null
+    },
+    {
+      "pipeline_id": "20260225T023407Z-2b67afef",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/3t61aqnyon1u62anggy4h2x2d3es9gn3p6tp",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18921v1",
+          "entry_id": "http://arxiv.org/abs/2602.18921v1",
+          "title": "Constructing (Co)inductive Types via Large Sizes",
+          "summary": "To ensure decidability and consistency of its type theory, a proof assistant should only accept terminating recursive functions and productive corecursive functions. Most proof assistants enforce this through syntactic conditions, which can be restrictive and non-modular. Sized types are a type-based alternative where (co)inductive types are annotated with additional size information. Well-founded induction on sizes can then be used to prove termination and productivity. An implementation of sized types exists in Agda, but it is currently inconsistent due to the addition of a largest size. We investigate an alternative approach, where intensional type theory is extended with a large type of sizes and parametric quantifiers over sizes. We show that inductive and coinductive types can be constructed in this theory, which improves on earlier work where this was only possible for the finitely-branching inductive types. The consistency of the theory is justified by an impredicative realisability model, which interprets the type of sizes as an uncountable ordinal.",
+          "authors": [
+            "Benno van den Berg",
+            "Bastiaan Laarakker",
+            "Daniël Otten"
+          ],
+          "published": "2026-02-21T18:24:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18864v1",
+          "entry_id": "http://arxiv.org/abs/2602.18864v1",
+          "title": "Constructions of two-dimensional optical orthogonal codes of weight three",
+          "summary": "The study of optical orthogonal codes has been motivated by an application in an optical code-division multiple access system. This paper focuses on optimal two-dimensional optical orthogonal codes with autocorrelation and cross-correlation both equal to $1$. By examining the structures of $n$-cyclic group divisible packings and semi-cyclic incomplete holey group divisible designs, we present new combinatorial constructions for two-dimensional $(m\\times n,k,1)$-optical orthogonal codes. As a consequence, the exact number of codewords of an optimal two-dimensional $(m\\times n,3,1)$-optical orthogonal code is determined for any positive integers $m$ and $n$.",
+          "authors": [
+            "Xiuling Shan",
+            "Lidong Wang",
+            "Yanxun Chang",
+            "Xiaomiao Wang"
+          ],
+          "published": "2026-02-21T15:06:30+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18844v1",
+          "entry_id": "http://arxiv.org/abs/2602.18844v1",
+          "title": "When Agda met Vampire",
+          "summary": "Dependently-typed proof assistants furnish expressive foundations for mechanised mathematics and verified software. However, automation for these systems has been either modest in scope or complex in implementation. We aim to improve the situation by integrating proof assistants with automated theorem provers (ATPs) in a simple way, while preserving the correctness guarantees of the former. A central difficulty arises from the fact that most ATPs operate in classical first-order logic, whereas these proof assistants are grounded in constructive dependent type theory. We identify an expressive fragment of both languages -- essentially equational Horn -- that admits sound, straightforward translations in both directions. The approach produces a prototype system for Agda forwarding proof obligations to the ATP Vampire, then transforming the resulting classical proof into a constructive proof term that Agda can type-check. The prototype automatically derives proofs concerning the properties of a complex field equipped with roots of unity, which took professional Agda developers two full days to complete. The required engineering effort is modest, and we anticipate that the methodology will extend readily to other ATPs and proof assistants.",
+          "authors": [
+            "Artjoms Šinkarovs",
+            "Michael Rawson"
+          ],
+          "published": "2026-02-21T14:19:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18841v1",
+          "entry_id": "http://arxiv.org/abs/2602.18841v1",
+          "title": "Slow-fast system in Rosales-Majda combustion model with fractional order kinetics",
+          "summary": "We consider traveling wave solutions of a one-dimensional model for detonation waves derived by Rosales and Majda, when the reaction order $α$ belongs to $[0,1)$. The chemical kinetics is a simplified Arrhenius law or a Heaviside function. The model in the reaction zone is a slow-fast dynamical system for a vector representing temperature and mass fraction, which depends on the velocity $c$ and small viscosity $β$. Our goal in this paper is to study the bifurcation diagram in the $(β,c)$ parameter space and identify the nature of the trajectories corresponding to viscous shock waves. The demonstrations are based on a variety of techniques including the Poincaré-Bendixson theorem and the Fenichel theory. Theoretical results are confirmed by numerical computations.",
+          "authors": [
+            "Claude-Michel Brauner",
+            "Jinlong Jing",
+            "Robert Roussarie"
+          ],
+          "published": "2026-02-21T14:06:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18839v1",
+          "entry_id": "http://arxiv.org/abs/2602.18839v1",
+          "title": "Profinite groups with restricted centralizers of powers",
+          "summary": "A group $G$ is said to have restricted centralizers if for every $x\\in G$ the centralizer $C_G(x)$ either is finite or has finite index in $G$. Shalev showed that a profinite group with restricted centralizers is virtually abelian. Here we take interest in profinite groups $G$ for which there is an integer $n$ such that $C_G(x^n)$ is either finite or open whenever $x\\in G$. It is shown that such a group $G$ has an open normal subgroup $T$ with the property that $G/Z(T)$ has finite exponent.",
+          "authors": [
+            "Cristina Acciarri",
+            "Pavel Shumyatsky"
+          ],
+          "published": "2026-02-21T13:58:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18836v1",
+          "entry_id": "http://arxiv.org/abs/2602.18836v1",
+          "title": "Big Ramsey combinatorics of the Cantor set and a simple proof of Blass' perfect set theorem",
+          "summary": "In this paper we present a simple approach to big Ramsey combinatorics of the Cantor set $2^ω$. Using Infinite Dual Ramsey Theorem of Carlson and Simpson, we show that $2^ω$, viewed as a topological space, has finite big Ramsey degrees. We then examine several natural topological first-order structures arising from the Cantor set and prove that each of them inherits finite big Ramsey degrees. As a consequence, we obtain a simple proof of Blass' perfect set theorem, although our method does not recover the sharp bound $(n-1)!$ for the number of colors. We also show that the complete Boolean algebra on countably many atoms has finite big Ramsey degrees, in contrast with the recent result showing that the countable atomless Boolean algebra does not have big Ramsey degrees.",
+          "authors": [
+            "Dragan Mašulović"
+          ],
+          "published": "2026-02-21T13:46:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18829v1",
+          "entry_id": "http://arxiv.org/abs/2602.18829v1",
+          "title": "On the decidability of the integrability of finite groups",
+          "summary": "An integral of a group $G$ is a group $H$ whose commutator subgroup is isomorphic to $G$. In this paper, we prove that the integrability of a finite group is a decidable problem.",
+          "authors": [
+            "Sathasivam Kalithasan",
+            "Viji Z. Thomas"
+          ],
+          "published": "2026-02-21T13:04:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18826v1",
+          "entry_id": "http://arxiv.org/abs/2602.18826v1",
+          "title": "Coxeter planes as fixed points of Verlinde fusion rings",
+          "summary": "For the Coxeter groups of ADE type, we provide a construction of their Coxeter planes as fixed points of actions of hypergroups associated to Verlinde fusion rings. This builds upon the well-known ADE classification of $\\mathbb{Z}_+$-modules over these fusion rings.",
+          "authors": [
+            "Max Boyle",
+            "Edmund Heng"
+          ],
+          "published": "2026-02-21T12:58:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18805v1",
+          "entry_id": "http://arxiv.org/abs/2602.18805v1",
+          "title": "Finite basis problem for varieties of algebraic systems",
+          "summary": "This is a survey on the finite basis problem for varieties of algebraic systems. Our exposition is in two directions:\n  (i) We give numerous examples of varieties which are not finitely based.\n  (ii) We give examples of important varieties with the property that they and their subvarieties are finitely based.\n  A special attention is paid on the varieties of semigroups, groups, associative, Lie and other nonassociative algebras.",
+          "authors": [
+            "Vesselin Drensky"
+          ],
+          "published": "2026-02-21T11:34:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18771v1",
+          "entry_id": "http://arxiv.org/abs/2602.18771v1",
+          "title": "A $B$-Restricted Clique Polynomial and Connections to Tanner's Inequality",
+          "summary": "Let $G$ be a finite simple graph and $B \\subseteq V(G)$.\n  We study the \\emph{$B$-restricted clique polynomial} $C_B(G;x)$, including its weighted version allowing vertex multiplicities, as a versatile tool to capture structural properties of vertex subsets.\n  First, we develop a complete deletion theory for $C_B(G;x)$, including vertex and edge recurrences that generalize classical clique polynomial results.\n  These recurrences yield monotonicity principles for the largest negative root $ζ_G(B)$: it is monotone under induced subgraphs and reverse-monotone under spanning subgraphs.\n  Consequently, we derive explicit bounds on $B$-independence numbers, chromatic numbers, $B$-girth, and Hamiltonicity constraints, showing that $ζ_G(B)$ serves as a unifying local invariant.\n  Next, we connect $B$-clique polynomials to spectral graph theory.\n  For $(n,d,λ)$-graphs, spectral techniques, including the Expander Mixing Lemma and Tanner's inequality, provide uniform bounds on $B$-restricted clique coefficients, demonstrating that clique growth within $B$ is naturally controlled by the spectral gap.\n  Finally, we show that weighted $B$-clique polynomials encode \\emph{homomorphism constraints}.\n  Specifically, if $f: G \\to H$ is a surjective homomorphism mapping $B_G$ onto $B_H$, then $ζ_G(B_G) \\ge ζ_H(B_H)$, yielding a local \\emph{no-homomorphism criterion} based on $B$-roots.\n  Overall, $C_B(G;x)$ provides a unified framework capturing combinatorial, spectral, and homomorphic information in vertex-restricted analysis, highlighting its power for both global and local structural insights.",
+          "authors": [
+            "Hossein Teimoori Faal"
+          ],
+          "published": "2026-02-21T09:46:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18767v1",
+          "entry_id": "http://arxiv.org/abs/2602.18767v1",
+          "title": "Nazrin: Atomic Tactics for Graph Neural Networks for Theorem Proving in Lean 4",
+          "summary": "In Machine-Assisted Theorem Proving, a theorem proving agent searches for a sequence of expressions and tactics that can prove a conjecture in a proof assistant.\n  In this work, we introduce several novel concepts and capabilities to address obstacles faced by machine-assisted theorem proving. We first present a set of \\textbf{atomic tactics}, a small finite set of tactics capable of proving any provable statement in Lean. We then introduce a \\textbf{transposing atomization} algorithm which turns arbitrary proof expressions into a series of atomic tactics. We next introduce the \\textbf{ExprGraph} data structure, which provides a succinct representation for Lean expressions. Finally, we present the \\textbf{Nazrin Prover}, a graph neural network-based theorem proving agent using atomic tactics and ExprGraph. Nazrin circumvents many challenges faced by existing proving agents by exclusively dispatching atomic tactics, and it is robust enough to both train and evaluate on consumer-grade hardware. We demonstrate the potential of tools like Nazrin using theorems from Lean's standard library and from Mathlib.",
+          "authors": [
+            "Leni Aniva",
+            "Iori Oikawa",
+            "David Dill",
+            "Clark Barrett"
+          ],
+          "published": "2026-02-21T09:12:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18760v1",
+          "entry_id": "http://arxiv.org/abs/2602.18760v1",
+          "title": "Locating-dominating coalitions in graphs",
+          "summary": "A set $D$ of vertices in a graph $G = (V, E)$ is a locating-dominating set (LD-set) if it is dominating and every two vertices $u$, $v$ of $V\\setminus D$ satisfy $N(u) \\cap D \\neq N(v) \\cap D$. Two disjoint sets $A,B\\subset V(G)$ form a locating-dominating coalition (for short, an LD-coalition) in $G$ if none of them is an LD-set in $G$ but their union $A\\cup B$ is an LD-set. A locating-dominating coalition partition (for short, an LDC-partition) is a vertex partition $Π$ such that every set of $Π$ is not an LD-set in $G,$ but forms an LD-coalition with another set of $Π$. The locating-domination coalition number of $G$, denoted by $C_{L}(G),$ equals the maximum cardinality of an LDC-partition of $G$. Our purpose in this paper is to initiate the study of locating-dominating coalitions in graphs. We first investigate the existence of LDC-partitions. We also obtain lower and upper bounds on $C_{L}(G)$. We characterize connected graphs $G$ of order $n\\ge 3$ satisfying $C_L(G) = n,$ as well as those trees $T$ such that $C_L(T)=n-1$. In addition, we determine the exact values of $C_L(G)$ for some classes of graphs. Moreover, we investigate the computational complexity of the decision problem associated with locating-dominating coalition partitions. To the best of our knowledge, this is the first work that addresses the algorithmic complexity of a decision problem related to coalition partitions, not only for this locating-dominating model but for coalition partitions in general.",
+          "authors": [
+            "M. Chellali",
+            "A. A. Dobrynin",
+            "F. Foucaud",
+            "H. Golmohammadi",
+            "J. C. Valenzuela-Tripodoro"
+          ],
+          "published": "2026-02-21T08:57:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18723v1",
+          "entry_id": "http://arxiv.org/abs/2602.18723v1",
+          "title": "What Distributed Computing Got Wrong: The Category Mistake That Turned Design Choices into Laws of Nature",
+          "summary": "The foundational impossibility results of distributed computing -- the Fischer-Lynch-Paterson theorem, the Two Generals Problem, the CAP theorem -- are widely understood as discoveries about the physical limits of coordination. This paper argues that they are nothing of the sort. They are consequences of a category mistake: treating Forward-In-Time-Only (FITO) information flow as a law of nature rather than recognizing it as a design choice inherited from Shannon's channel model and Lamport's happened-before relation. We develop this argument in six steps. First, we introduce the category mistake framework from Ryle through Spekkens' ontic/epistemic distinction in quantum foundations. Second, we identify FITO as the hidden axiom that unifies the classical impossibility results. Third, we apply Spekkens' Leibnizian principle to show that FITO-based models contain surplus ontological structure. Fourth, we develop the counterfactual: what changes when FITO is dropped. Fifth, we demonstrate that the impossibility theorems are theorems about FITO systems, not about physics. Sixth, we sketch the transactional alternative -- bilateral interactions that dissolve the apparent impossibilities by replacing unidirectional message passing with atomic bilateral transactions. The implication is that distributed computing has spent fifty years optimizing within the wrong design space.",
+          "authors": [
+            "Paul Borrill"
+          ],
+          "published": "2026-02-21T05:16:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2602.18701v1",
+          "entry_id": "http://arxiv.org/abs/2602.18701v1",
+          "title": "Higher-order circuits",
+          "summary": "We write down a series of basic laws for (strict) higher-order circuit diagrams. More precisely, we define higher-order circuit theories in terms of: (a) nesting, (b) temporal and spatial composition, and (c) equivalence between lower-order bipartite processes and higher-order bipartite states. In category-theoretic terms, these laws are expressed using enrichment and cotensors in symmetric polycategories, along with a frobenius-like coherence between them. We describe how these laws capture the salient features of higher-order quantum theory, and discover an upper bound for higher-order circuits: any higher-order circuit theory embeds into the theory of strong profunctors.",
+          "authors": [
+            "Matt Wilson"
+          ],
+          "published": "2026-02-21T03:12:34+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-02-25T02:34:07.046547+00:00",
+      "updated_at": "2026-02-25T02:34:07.046547+00:00",
+      "finalized_at": null
     }
   ]
 }
