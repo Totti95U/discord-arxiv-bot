@@ -26,6 +26,11 @@ COMPLETED_BATCH_STATUS = (
     "JOB_STATE_EXPIRED",
 )
 
+try:
+    BATCH_TIMEOUT_HOURS = int(os.getenv("BATCH_TIMEOUT_HOURS", "48"))
+except ValueError:
+    BATCH_TIMEOUT_HOURS = 48
+
 
 class InterestCheck(BaseModel):
     interested_in: bool = Field(..., description="興味がありそうな内容かどうか")
@@ -49,6 +54,30 @@ with open("src/prompt_summarize.txt", "r", encoding="utf-8") as f:
 
 def now_iso_utc() -> str:
     return datetime.datetime.now(ZoneInfo("UTC")).isoformat()
+
+
+def parse_iso_datetime(value: str) -> Optional[datetime.datetime]:
+    if not value:
+        return None
+    try:
+        parsed = datetime.datetime.fromisoformat(value)
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        return parsed.replace(tzinfo=ZoneInfo("UTC"))
+    return parsed
+
+
+def is_older_than_hours(value: str, threshold_hours: int) -> bool:
+    parsed = parse_iso_datetime(value)
+    if parsed is None:
+        return False
+    now = datetime.datetime.now(ZoneInfo("UTC"))
+    return (now - parsed) >= datetime.timedelta(hours=threshold_hours)
+
+
+def mark_job_updated(job: dict) -> None:
+    job["updated_at"] = now_iso_utc()
 
 
 def ensure_state_file() -> None:
@@ -169,6 +198,72 @@ def poll_batch_once(batch_name: str):
     batch_job = client_genai.batches.get(name=batch_name)
     print(f"Batch {batch_name}: {batch_job.state.name}")
     return batch_job
+
+
+def cancel_batch_safely(batch_name: str) -> bool:
+    if not batch_name:
+        return False
+    try:
+        cancel_method = getattr(client_genai.batches, "cancel", None)
+        if not callable(cancel_method):
+            print("Batch cancel API is not available in current SDK.")
+            return False
+        cancel_method(name=batch_name)
+        print(f"Batch cancel requested: {batch_name}")
+        return True
+    except Exception as exc:
+        print(f"Batch cancel failed for {batch_name}: {exc}")
+        return False
+
+
+def check_interest_sequential_papers(papers: List[dict]) -> List[bool]:
+    print("Checking interest sequentially...")
+    interest_check: List[bool] = []
+    for i, paper in enumerate(papers):
+        title = f"\nTitle: {paper['title']}\n"
+        abstract = f"\nAbstract: {paper['summary']}\n"
+        response = client_genai.models.generate_content(
+            model=INTEREST_MODEL,
+            contents=title + abstract + prompt_check_interest,
+            config={
+                "response_mime_type": "application/json",
+                "response_schema": InterestCheck,
+            },
+        )
+        is_interest = InterestCheck.model_validate_json(response.text)
+        interest_check.append(is_interest.interested_in)
+        print(f"Result for paper {i + 1}: Interested: {is_interest.interested_in}")
+    return interest_check
+
+
+def summarize_sequential_papers(papers: List[dict], existing_summaries: dict) -> dict:
+    print("Summarizing papers sequentially...")
+    summaries = dict(existing_summaries)
+    for i, paper in enumerate(papers):
+        paper_id = paper["paper_id"]
+        if paper_id in summaries:
+            continue
+
+        title = f"\nTitle: {paper['title']}\n"
+        abstract = f"\nAbstract: {paper['summary']}\n"
+        response = client_genai.models.generate_content(
+            model=SUMMARY_MODEL,
+            contents=title + abstract + prompt_summarize,
+            config={
+                "response_mime_type": "application/json",
+                "response_schema": Summary,
+                "thinking_config": {"thinking_level": "low"},
+            },
+        )
+        summary = Summary.model_validate_json(response.text)
+        summaries[paper_id] = {
+            "title": summary.title,
+            "summary": summary.summary,
+            "keywords": summary.keywords,
+            "appendix": summary.appendix,
+        }
+        print(f"Result for paper {i + 1}: summarized {paper_id}")
+    return summaries
 
 
 def extract_interest_check(batch_job, papers_len: int) -> List[bool]:
@@ -292,48 +387,94 @@ def run_stage_poll_interest_submit_summary() -> int:
     updated = False
 
     for job in state["jobs"]:
-        if job.get("status") not in ("interest_submitted", "interest_running"):
+        if job.get("status") not in ("interest_submitted", "interest_running", "interest_fallback_running"):
             continue
 
-        batch_job = poll_batch_once(job.get("interest_job_name", ""))
-        if not batch_job:
-            continue
+        is_timeout = is_older_than_hours(job.get("created_at", ""), BATCH_TIMEOUT_HOURS)
 
-        job["updated_at"] = now_iso_utc()
-        batch_state = batch_job.state.name
+        if job.get("status") != "interest_fallback_running":
+            batch_job = poll_batch_once(job.get("interest_job_name", ""))
+            if not batch_job:
+                continue
 
-        if batch_state not in COMPLETED_BATCH_STATUS:
-            job["status"] = "interest_running"
+            batch_state = batch_job.state.name
+            if batch_state not in COMPLETED_BATCH_STATUS:
+                if is_timeout:
+                    cancel_ok = cancel_batch_safely(job.get("interest_job_name", ""))
+                    job["status"] = "interest_fallback_running"
+                    job["last_error"] = None if cancel_ok else "interest timeout reached, cancel request failed"
+                    mark_job_updated(job)
+                    updated = True
+                elif job.get("status") != "interest_running":
+                    job["status"] = "interest_running"
+                    mark_job_updated(job)
+                    updated = True
+                continue
+
+            if batch_state != "JOB_STATE_SUCCEEDED":
+                job["status"] = "failed"
+                job["last_error"] = f"interest batch ended with {batch_state}"
+                mark_job_updated(job)
+                updated = True
+                continue
+
+            interests = extract_interest_check(batch_job, len(job["papers"]))
+            interested_ids = [
+                paper["paper_id"]
+                for i, paper in enumerate(job["papers"])
+                if i < len(interests) and interests[i]
+            ]
+            job["interested_paper_ids"] = interested_ids
             updated = True
+
+            if len(interested_ids) == 0:
+                job["status"] = "completed_no_interests"
+                job["finalized_at"] = now_iso_utc()
+                mark_job_updated(job)
+                continue
+
+            interested_papers = [
+                paper for paper in job["papers"] if paper["paper_id"] in set(interested_ids)
+            ]
+            summarize_job_name = submit_summary_batch(interested_papers)
+            job["summarize_job_name"] = summarize_job_name
+            job["status"] = "summarize_submitted"
+            job["last_error"] = None
+            mark_job_updated(job)
             continue
 
-        if batch_state != "JOB_STATE_SUCCEEDED":
-            job["status"] = "failed"
-            job["last_error"] = f"interest batch ended with {batch_state}"
+        try:
+            interests = check_interest_sequential_papers(job.get("papers", []))
+            interested_ids = [
+                paper["paper_id"]
+                for i, paper in enumerate(job.get("papers", []))
+                if i < len(interests) and interests[i]
+            ]
+            job["interested_paper_ids"] = interested_ids
             updated = True
-            continue
 
-        interests = extract_interest_check(batch_job, len(job["papers"]))
-        interested_ids = [
-            paper["paper_id"]
-            for i, paper in enumerate(job["papers"])
-            if i < len(interests) and interests[i]
-        ]
-        job["interested_paper_ids"] = interested_ids
+            if len(interested_ids) == 0:
+                job["status"] = "completed_no_interests"
+                job["finalized_at"] = now_iso_utc()
+                job["last_error"] = None
+                mark_job_updated(job)
+                continue
 
-        if len(interested_ids) == 0:
-            job["status"] = "completed_no_interests"
-            job["finalized_at"] = now_iso_utc()
+            interested_papers = [
+                paper for paper in job["papers"] if paper["paper_id"] in set(interested_ids)
+            ]
+            summarize_job_name = submit_summary_batch(interested_papers)
+            job["summarize_job_name"] = summarize_job_name
+            job["status"] = "summarize_submitted"
+            job["last_error"] = None
+            mark_job_updated(job)
             updated = True
-            continue
-
-        interested_papers = [
-            paper for paper in job["papers"] if paper["paper_id"] in set(interested_ids)
-        ]
-        summarize_job_name = submit_summary_batch(interested_papers)
-        job["summarize_job_name"] = summarize_job_name
-        job["status"] = "summarize_submitted"
-        updated = True
+        except Exception as exc:
+            job["status"] = "interest_fallback_running"
+            job["retry_count"] = int(job.get("retry_count", 0)) + 1
+            job["last_error"] = f"interest fallback failed: {exc}"
+            mark_job_updated(job)
+            updated = True
 
     if updated:
         save_state(state)
@@ -352,44 +493,77 @@ def run_stage_poll_summary_send() -> int:
     updated = False
 
     for job in state["jobs"]:
-        if job.get("status") not in ("summarize_submitted", "summarize_running", "send_failed"):
+        if job.get("status") not in (
+            "summarize_submitted",
+            "summarize_running",
+            "summary_fallback_running",
+            "send_failed",
+        ):
             continue
 
-        if job.get("status") != "send_failed":
+        if job.get("status") in ("summarize_submitted", "summarize_running"):
+            timeout_anchor = job.get("updated_at") or job.get("created_at", "")
+            is_timeout = is_older_than_hours(timeout_anchor, BATCH_TIMEOUT_HOURS)
+
             batch_job = poll_batch_once(job.get("summarize_job_name", ""))
             if not batch_job:
                 continue
 
             batch_state = batch_job.state.name
-            job["updated_at"] = now_iso_utc()
-
             if batch_state not in COMPLETED_BATCH_STATUS:
-                job["status"] = "summarize_running"
-                updated = True
+                if is_timeout:
+                    cancel_ok = cancel_batch_safely(job.get("summarize_job_name", ""))
+                    job["status"] = "summary_fallback_running"
+                    job["last_error"] = None if cancel_ok else "summary timeout reached, cancel request failed"
+                    mark_job_updated(job)
+                    updated = True
+                elif job.get("status") != "summarize_running":
+                    job["status"] = "summarize_running"
+                    mark_job_updated(job)
+                    updated = True
                 continue
 
             if batch_state != "JOB_STATE_SUCCEEDED":
                 job["status"] = "failed"
                 job["last_error"] = f"summary batch ended with {batch_state}"
+                mark_job_updated(job)
                 updated = True
                 continue
 
-            interested_papers = [
-                paper for paper in job["papers"] if paper["paper_id"] in set(job["interested_paper_ids"])
-            ]
-            job["summaries"] = extract_summaries(batch_job, interested_papers)
+            interested_set = set(job.get("interested_paper_ids", []))
+            interested_papers = [paper for paper in job.get("papers", []) if paper["paper_id"] in interested_set]
+            extracted = extract_summaries(batch_job, interested_papers)
+            job["summaries"].update(extracted)
             updated = True
+
+        if job.get("status") == "summary_fallback_running":
+            interested_set = set(job.get("interested_paper_ids", []))
+            interested_papers = [paper for paper in job.get("papers", []) if paper["paper_id"] in interested_set]
+            try:
+                job["summaries"] = summarize_sequential_papers(interested_papers, job.get("summaries", {}))
+                job["last_error"] = None
+                mark_job_updated(job)
+                updated = True
+            except Exception as exc:
+                job["status"] = "summary_fallback_running"
+                job["retry_count"] = int(job.get("retry_count", 0)) + 1
+                job["last_error"] = f"summary fallback failed: {exc}"
+                mark_job_updated(job)
+                updated = True
+                continue
 
         pending_ids = [
             paper_id
-            for paper_id in job["interested_paper_ids"]
-            if paper_id in job["summaries"] and paper_id not in set(job["sent_paper_ids"])
+            for paper_id in job.get("interested_paper_ids", [])
+            if paper_id in job.get("summaries", {}) and paper_id not in set(job.get("sent_paper_ids", []))
         ]
 
         if len(pending_ids) == 0:
-            if len(job["interested_paper_ids"]) == len(job["sent_paper_ids"]):
+            if len(job.get("interested_paper_ids", [])) == len(job.get("sent_paper_ids", [])):
                 job["status"] = "completed"
                 job["finalized_at"] = now_iso_utc()
+                job["last_error"] = None
+                mark_job_updated(job)
                 updated = True
             continue
 
@@ -400,19 +574,22 @@ def run_stage_poll_summary_send() -> int:
             if response.status_code == 204:
                 print("Notification sent successfully to Discord.")
                 job["notification_sent"] = True
+                job["last_error"] = None
+                mark_job_updated(job)
                 updated = True
             else:
                 print(f"Failed to send notification to Discord. Status code: {response.status_code}, Response: {response.text}")
                 job["status"] = "send_failed"
                 job["last_error"] = "failed to send notification message"
+                mark_job_updated(job)
                 updated = True
                 continue
 
         all_success = True
-        papers_by_id = {paper["paper_id"]: paper for paper in job["papers"]}
+        papers_by_id = {paper["paper_id"]: paper for paper in job.get("papers", [])}
         for paper_id in pending_ids:
             paper = papers_by_id.get(paper_id)
-            summary = job["summaries"].get(paper_id)
+            summary = job.get("summaries", {}).get(paper_id)
             if paper is None or summary is None:
                 continue
             is_sent = post_summary_to_discord(discord_webhook_url, paper, summary)
@@ -424,16 +601,18 @@ def run_stage_poll_summary_send() -> int:
                 all_success = False
             time.sleep(1.5)
 
-        if all_success and len(job["sent_paper_ids"]) == len(job["interested_paper_ids"]):
+        if all_success and len(job["sent_paper_ids"]) == len(job.get("interested_paper_ids", [])):
             job["status"] = "completed"
             job["finalized_at"] = now_iso_utc()
+            job["last_error"] = None
+            mark_job_updated(job)
             updated = True
         elif not all_success:
             job["status"] = "send_failed"
             job["retry_count"] = int(job.get("retry_count", 0)) + 1
+            job["last_error"] = "failed to send one or more paper summaries"
+            mark_job_updated(job)
             updated = True
-
-        job["updated_at"] = now_iso_utc()
 
     if updated:
         save_state(state)
