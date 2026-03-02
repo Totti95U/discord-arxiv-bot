@@ -4011,7 +4011,7 @@
     },
     {
       "pipeline_id": "20260302T023154Z-4a5498ee",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/kv1qc7rpq5dtisk78ki7p31lr18ub6lyyee8",
       "summarize_job_name": "batches/dpfgxx8rmx19eu98eufaufsraroiixg7yys9",
       "papers": [
@@ -4694,14 +4694,299 @@
         "http://arxiv.org/abs/2602.22558v1",
         "http://arxiv.org/abs/2602.22530v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2602.23505v1": {
+          "title": "誤差を含む環境下での置換群の復元手法について",
+          "summary": "誤差の混入したサンプリングプロセス X から、対称群 Sₙ の部分群である置換群 G を復元する問題を検討している。X は G 上の一様分布と Sₙ 上の一様分布の混合分布として定義される Sₙ 値の確率変数としてモデル化される。本論文では、X から G の性質を復元するための一連の手法を提案し、G 自体を復元するメインアルゴリズムを強化している。これらのアルゴリズムは、誤差を伴うサンプリングが自然に発生する、モノドロミー群の数値計算という設定に動機付けられている。",
+          "keywords": [
+            "permutation group",
+            "sampling process",
+            "monodromy groups",
+            "numerical computation",
+            "error-prone sampling"
+          ],
+          "appendix": "本論文はモノドロミー群の数値計算に関連しており、その手法や背景において validated numerics （精度保証付き数値計算）の分野に関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2602.23343v1": {
+          "title": "あるクラスの長方形ドミノ標準盤における巡回篩分け現象",
+          "summary": "本論文では、2×n型のドミノ標準盤の数え上げを行い、その結果を用いてこれらの対象における新たな巡回篩分け現象（CSP）を証明している。また、任意のサイズの長方形ドミノ標準盤の数え上げを行い、より一般的なCSPに関する予想を提示している。これらの数え上げの結果として、フィボナッチ数やカタラン数に関連する複数の恒等式を導出している。",
+          "keywords": [
+            "cyclic sieving phenomenon",
+            "domino tableaux",
+            "representation theory",
+            "Fibonacci numbers",
+            "Catalan numbers"
+          ],
+          "appendix": "本論文は数え上げ組合せ論を扱っており、提示された興味ある分野のうち「combinatorics on words」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2602.23317v1": {
+          "title": "非負行列のランダム積に対するリアプノフ指数",
+          "summary": "本論文では、正の成分を持つ可逆な2×2行列の有限集合から生成される独立同分布(i.i.d.)積について研究し、最大リアプノフ指数が、無限行列を含む急速に収束するノイマン級数型の明示的な表現を持つことを証明しました。また、非負の可逆な2×2行列が正の行列に同時共役であるための必要十分条件を、長さ2以下の積における一般化されたヘテロクリニック接続の有無によって示しました。これらの結果の応用として、n=4を除く中央n分の1カントール集合とそのランダムな平行移動の共通部分のハウスドルフ次元に関する級数公式を導出しています。さらに、厚いカントール集合の交差や、正の係数を持つi.i.d.三項漸化式のほとんど確実な成長率の決定にもこの手法を適用しました。",
+          "keywords": [
+            "Lyapunov exponent",
+            "non-negative matrices",
+            "Hausdorff dimension",
+            "Cantor set",
+            "Neumann series"
+          ],
+          "appendix": "カントール集合の交差や力学系の成長率を扱っているため、complex dynamics（複素力学系）やarithmetic dynamics（算術力学系）の分野に関連があります。"
+        },
+        "http://arxiv.org/abs/2602.23301v1": {
+          "title": "ブロックによる構築：タイル貼りにおけるポリフォームの列挙",
+          "summary": "現代アートやモジュラー建築玩具に見られる、テトリスの駒を一般化した多面体複体（ポリフォーム）の数え上げに関する研究である。周期的な2次元および3次元のタイル貼りにおいて、並進・回転・鏡映の対称性を考慮したn個のセルからなる構造の数を算出するアルゴリズムを提案している。スナブ正方形タイル貼りを用いた具体例や、3次元構造物に関する数値データの提供、およびこれらを利用したパズルの提案も行っている。",
+          "keywords": [
+            "polyforms",
+            "tilings",
+            "periodic tilings",
+            "polyhedral complexes",
+            "enumeration"
+          ],
+          "appendix": "本論文は組み合わせ論的な性質を扱っており、提示された興味ある分野の中では symbolic dynamics や combinatorics on words との関連性が考えられます。特に周期的なタイル貼り上の離散構造の列挙は、計算幾何学や離散数学の観点からこれらの分野と接点を持ちます。"
+        },
+        "http://arxiv.org/abs/2602.23275v1": {
+          "title": "階層的双曲群に対する尖点付き空間と、デーン充填商への応用",
+          "summary": "階層的双曲群（hierarchically hyperbolic groups）に対し、相対的双曲群の尖点付き空間（cusped spaces）やタイヒミュラー計量に準等長な空間を統一的に構成する手法を導入した。この構成を用いて、5つの穴を持つ球面の写像類群や4本のストランドからなる組紐群（braid groups）のデーン充填型商群を解析した。具体的には、デーン捻りの十分大きな冪で商をとることで、他の球面の写像類群や組紐群の双曲的商とは同型にならない無限双曲的商が存在することを示した。さらに、商群におけるねじれ元の解析を通じて、拡大写像類群の対応する商群の外部自己同型群が自明であることを導いた。",
+          "keywords": [
+            "Hierarchically hyperbolic groups",
+            "Dehn filling",
+            "Mapping class groups",
+            "Braid groups",
+            "Cusped spaces"
+          ],
+          "appendix": "本論文は、階層的双曲群や写像類群といった無限群の代数的・幾何的構造を研究していることから、興味ある分野のうち「structure of large countable infinite group（巨大な可算無限群の構造）」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2602.23267v1": {
+          "title": "Automatic systemにおけるtameness、nullness、およびamorphic complexity",
+          "summary": "位相力学系において、tame系やnull系は低複雑度の非周期挙動の研究において自然に現れるが、具体的な判定条件を示すことは一般に困難である。本論文では、原始的な定数長の置換（primitive constant length substitutions）によって生成される極小automatic systemを対象に、tamenessとnullnessを、ゼロエントロピー系のために導入された数値的不変量であるamorphic complexityを用いて完全に特徴付けた。また、この不変量の計算容易な閉形式の公式を導出し、無限automatic systemにおいてtamenessとnullnessは、この不変量の値が1であることと同値であることを示した。",
+          "keywords": [
+            "tameness",
+            "nullness",
+            "amorphic complexity",
+            "automatic systems",
+            "primitive constant length substitutions"
+          ],
+          "appendix": "本論文は興味ある分野のうち、symbolic dynamics、combinatorics on words、およびautomata theoryに関連しています。"
+        },
+        "http://arxiv.org/abs/2602.23211v1": {
+          "title": "社会システムの余代数的分析",
+          "summary": "本論文では、有向グラフで表現される社会システムの構造から「役割（roles）」や「位置（positions）」を特定する代数的社会ネットワーク分析を、高次相互作用を扱えるハイパーグラフへと拡張する手法を提案している。圏論的アプローチとして、計算機科学や論理学に由来する普遍余代数（universal coalgebra）の枠組みを採用し、グラフとハイパーグラフの双方を含む広範な構造に対してこれらの概念を定式化した。その妥当性の証拠として、グラフにおける位置分析と役割分析の互換性に関する知見を一般化した「関手性定理」を証明している。",
+          "keywords": [
+            "algebraic social network analysis",
+            "universal coalgebra",
+            "higher-order interactions",
+            "hypergraphs",
+            "category theory"
+          ],
+          "appendix": "本論文で用いられている普遍余代数（universal coalgebra）は、興味ある分野の一つであるオートマトン理論（automata theory）の抽象化・一般化として深く関連しています。"
+        },
+        "http://arxiv.org/abs/2602.23107v1": {
+          "title": "整数の局所化における局所コンパクト加群の構造定理",
+          "summary": "整数の乗法的閉集合 S による局所化 ℤS⁻¹ 上の局所コンパクト（LC）加群について、LCA（局所コンパクトアーベル）群の構造定理と類似した性質を解明している。第1構造定理では、LC加群 M が実ベクトル空間、S に依存する素数集合 Σ に基づく p-進体 ℚₚ 上のベクトル空間の制限直積、および特定のコンパクト開部分加群を持つ加群 N の直積に分解されることを示している。さらに、コンパクト生成される加群の特性評価（第2構造定理）や、ポントリャーギン双対性を用いた特性評価（第3構造定理）を行い、すべての LC ℤS⁻¹-加群が特定の加群族の逆極限として表せることを証明している。また、この応用として ℚ 上の局所コンパクトベクトル空間の完全な分類を導出している。",
+          "keywords": [
+            "locally compact modules",
+            "localization of integers",
+            "Structure Theorems",
+            "Pontryagin Duals",
+            "locally compact vector spaces"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」に関連する群の構造論的側面を扱っており、特にアーベル群の局所コンパクト加群への一般化という観点で興味深い内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2602.23054v1": {
+          "title": "識別可能なクライアントを持つ非有界クライアント・サーバシステムの検証",
+          "summary": "本研究は、クライアントが動的に増減し、その総数が未知かつ非有界であるクライアント・サーバシステム（UCS）の検証を扱う。クライアント間の識別可能性を考慮するため、単純なペトリネットではなくν-netsを用いてモデル化を行い、Monadic First Order Temporal Logic (MFOTL) のモノディックな断片である論理体系 FOTL₁ を提案している。さらに、これらをSMTへとエンコードすることで有界モデル検査（BMC）を可能にし、オープンソースの検証ツールを開発した。",
+          "keywords": [
+            "Unbounded client-server systems",
+            "ν-nets",
+            "Monadic First Order Temporal Logic",
+            "Bounded Model Checking",
+            "SMT encoding"
+          ],
+          "appendix": "本研究は、ペトリネットの拡張であるν-netsや時相論理の体系を扱っており、オートマトン理論 (automata theory) や形式言語 (formal languages) の分野に関連している。"
+        },
+        "http://arxiv.org/abs/2602.23030v1": {
+          "title": "有限状態独立な正規対の効率的な構成法",
+          "summary": "無限語のアルゴリズム的独立性を表す「有限状態独立性」に関する2つの未解決問題を解決した。第1に、2つの正規語 x, y を入力 N に対して多項式時間で計算し、任意の有限状態シャッフラー S に対して S(x,y) が正規語となるような有限状態独立な正規対を構成するアルゴリズムを提示した。第2に、任意の計算可能な正規語 x が与えられたとき、それに対して有限状態独立となる正規語 y を効果的に構成できることを示した。これにより、先行研究における二重指数時間の計算コストを大幅に改善し、片側の正規語が既知の場合の構成問題にも解答を与えた。",
+          "keywords": [
+            "Finite-state independence",
+            "Normal words",
+            "Finite-state shufflers",
+            "Deterministic constructions"
+          ],
+          "appendix": "automata theory および combinatorics on words の分野に深く関連する内容です。"
+        },
+        "http://arxiv.org/abs/2602.22912v1": {
+          "title": "無限有向グラフにおける遍在性問題について",
+          "summary": "一様に方向付けられたdouble ray（双方向無限道）および、順方向と逆方向にそれぞれ方向付けられたray（半無限道）の直和について、それらが遍在的（ubiquitous）であることと、1-endedな有向グラフのクラスに制限した場合に遍在的であることが同値であることを証明した論文である。また、これら2つの遍在性問題の間の関連性についても議論されている。",
+          "keywords": [
+            "ubiquity",
+            "infinite digraphs",
+            "double ray",
+            "one-ended digraphs"
+          ],
+          "appendix": "この論文は無限グラフの構造理論を扱っており、提示された興味ある分野の中では「structure of large countable infinite group」など、無限構造の性質を扱う分野と関連する側面がありますが、直接の言及はありません。"
+        },
+        "http://arxiv.org/abs/2602.22876v1": {
+          "title": "無限群における因子",
+          "summary": "本論文では、群Gとその空でない部分集合Aに対し、直積AUが成立する極大部分集合U（右s-因子）の濃度に関する性質を調査している。このような集合Uの最小濃度を下s-指数、上限を上s-指数と定義し、これらが一致する場合にAを安定（stable）と呼ぶ。論文では、ケイリーグラフを用いたグラフ理論的再定式化により、すべての無限群は不安定であることを証明した。これは、任意の無限群Gに対して、直積AUを構成する極大部分集合Uの濃度が一定ではない部分集合Aが存在することを意味し、Kourovka Notebookの問い21.58に対して否定的な回答を与えるものである。",
+          "keywords": [
+            "infinite groups",
+            "direct product",
+            "maximal subsets",
+            "Cayley graphs",
+            "stability"
+          ],
+          "appendix": "本論文は、無限群の構造を扱っているため、興味ある分野の「structure of large countable infinite group」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2602.22864v1": {
+          "title": "フィルター、位相、Radoグラフ、およびUrysohn空間",
+          "summary": "Anatoly Vershikとの共同研究であるRadoグラフの自己同型群やUrysohn空間の同相写像群に関する研究をさらに発展させ、可算集合上の位相やフィルターとの関連性について述べている。",
+          "keywords": [
+            "Rado graph",
+            "Urysohn space",
+            "automorphism groups",
+            "homeomorphism groups",
+            "filters"
+          ],
+          "appendix": "Radoグラフの自己同型群やUrysohn空間の同相写像群を扱っていることから、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2602.22853v1": {
+          "title": "完全なロバスト・ハイブリッドシステム可到達性",
+          "summary": "本論文では、ロバストなハイブリッドシステムを記述・推論するための「ロバスト微分動的論理（robust differential dynamic logic）」を導入している。構文的な制限を設けることで、定義可能な性質が位相的な開集合となり、微小な摂動に対して頑健（ロバスト）であることを保証する。主要な成果として、一般的なハイブリッドシステムの可到達性に関する絶対的完全性の証明を提示している。これは厳密な意味論を持つハイブリッドシステムにおいて初の絶対的完全性の証明であり、証明が構成的であるため、ロバストに正しい仕様の自動検証が可能であることを示している。",
+          "keywords": [
+            "robust differential dynamic logic",
+            "hybrid systems",
+            "reachability",
+            "absolute completeness",
+            "exact semantics"
+          ],
+          "appendix": "本論文はハイブリッドシステムの形式的検証を扱っており、論理や自動検証の観点から automata theory や formal languages と関連があります。また、摂動に対する頑健性を厳密に扱う手法は validated numerics の分野とも関連し得るテーマです。"
+        },
+        "http://arxiv.org/abs/2602.22781v1": {
+          "title": "特定の子を区別した順序木",
+          "summary": "各内部節点（子を持つ節点）において、その子のうちちょうど1つを「区別された子（distinguished child）」として指定する、順序木の新しいモデルを提案している。このモデルの数え上げは母関数に関する3次方程式をもたらし、その係数の抽出にはラグランジュの反転公式が利用される。本論文では、根の次数、葉の数、古い葉の数、高さ、左端の葉の高さ、経路長といった、順序木において一般的に研究される様々なパラメータの解析を行っている。また、マーク付き順序木とこの概念を組み合わせた拡張モデルについても言及している。",
+          "keywords": [
+            "Ordered trees",
+            "Distinguished children",
+            "Generating function",
+            "Lagrange inversion formula",
+            "Cubic equations"
+          ],
+          "appendix": "本論文は数え上げ組合せ論を扱っており、提示された興味ある分野の中では「combinatorics on words」や「formal languages」に関連する木構造の組合せ論的性質の解析手法を提供しています。"
+        },
+        "http://arxiv.org/abs/2602.22773v1": {
+          "title": "両側重み付きシフト作用素のクラスと線形力学系",
+          "summary": "本論文では、複素平面上の環状領域における解析関数のバナッハ空間上で定義される、両側重み付き後退シフト作用素 Bw について研究している。基底が fₙ(z) = (aₙ + bₙz)zⁿ (n ∈ ℤ) の形で与えられる空間において、Bw が有界であるための必要十分条件を導出。また、Bw が ℓᵖ(ℤ) 上の重み付きシフトのコンパクト摂動と相似になる条件を特定した。さらに、超循環性 (hypercyclicity)、超放射性 (supercyclicity)、カオス性などの動的な性質を解析。特に、軌道極限点の 0-1 法則が Bw においては成立しないことを示し、これは従来の ℓᵖ(ℤ) 上の重み付きシフトとは対照的な結果である。",
+          "keywords": [
+            "bilateral weighted backward shift operators",
+            "hypercyclic",
+            "supercyclic",
+            "chaotic",
+            "analytic functions"
+          ],
+          "appendix": "複素力学系 (complex dynamics) に関連する線形力学系の性質を扱っており、特に重み付きシフト作用素の軌道やカオス的性質の解析を含んでいます。"
+        },
+        "http://arxiv.org/abs/2602.23401v1": {
+          "title": "文脈自由文法制約付き(CFL)到達可能性：劣3次時間での前処理、インデキシングのトレードオフ、および構造化されたデコードセマンティクス",
+          "summary": "グラフにおける文脈自由文法(CFL)制約付き到達可能性問題について、複雑性と経験的パフォーマンスの両面から研究している。CFL制約付き到達可能性クエリを評価するためのアルゴリズムの枠組みを提示し、その理論的な実行時間の境界を解析した。また、実世界のスキーマを用いた包括的なベンチマークにより、アルゴリズムのバリエーション間の性能トレードオフを比較。文法の構造とグラフの特性が計算に与える影響を明らかにし、実用的な手法選択の指針を提供している。",
+          "keywords": [
+            "CFL reachability",
+            "context-free grammars",
+            "graph algorithms",
+            "complexity analysis"
+          ],
+          "appendix": "本論文はautomata theoryおよびformal languagesの分野に深く関連しており、グラフ上の経路問題を形式言語理論の枠組みで扱う内容となっています。"
+        },
+        "http://arxiv.org/abs/2602.22713v1": {
+          "title": "離散イベントシステムにおける不透明性：展望と概要",
+          "summary": "本論文は、離散イベントシステム（DES）における情報流セキュリティの中核的な概念である「不透明性（Opacity）」の包括的な概要を提供している。不透明性とは、外部の観測者がシステムの機密状態を確定的に判別できないことを保証する性質である。本稿では、基本定義や推定に基づく統一的な視点を整理し、検証技術や観測モデルによる影響、さらには監督制御や難読化を用いた不透明性の強化パラダイムについて詳述している。また、確率システムやペトリネット、ハイブリッドシステムといった拡張モデルや、ロボティクス、位置情報プライバシーへの応用、さらには計算量やデータ駆動型攻撃者に対する未解決課題についても論じている。",
+          "keywords": [
+            "Opacity",
+            "Discrete event systems",
+            "Information-flow security",
+            "Automata theory",
+            "Supervisory control"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」に関連しています。離散イベントシステムの形式的な検証および制御において、オートマトン理論の枠組みが基盤として用いられています。"
+        },
+        "http://arxiv.org/abs/2602.22665v1": {
+          "title": "逆半群から捻りエタール亜群 C*-環における構造的キラリティ",
+          "summary": "本研究では、逆半群のデータからエタール亜群、および捻り亜群 C*-環へと伝播する構造的キラリティの理論を展開した。許容的な捻り情報を備えた逆半群から Paterson の意味での標準的な捻り普遍亜群を構成し、本質的な非対称性を記述する鏡像対応を導入した。主な結果として、捻り普遍亜群のレベルにおける鏡像自己双対性への構造的障害を特定し、それが対応する簡約捻り亜群 C*-環とその反対環が同型にならないための障害へと継承されることを示した。この枠組みは、部分対称性、亜群構造、および非可換作用素環における解析的不変量を結びつける統一的な手法を提供する。",
+          "keywords": [
+            "Inverse semigroups",
+            "Étale groupoids",
+            "Twisted groupoid C*-algebras",
+            "Structural chirality",
+            "Mirror correspondence"
+          ],
+          "appendix": "本論文は、逆半群や亜群の構造論を扱っており、興味ある分野のうち「structure of large countable infinite group」に関連があります。また、力学系的な性質を持つ作用素環の構造解析にも寄与する内容です。"
+        },
+        "http://arxiv.org/abs/2602.22631v1": {
+          "title": "TorchLean: Leanにおけるニューラルネットワークの形式化",
+          "summary": "安全性が重視されるシステムへのニューラルネットワークの導入に伴い、実行モデルと検証対象の間の意味論的ギャップを埋めることが重要となっている。本論文では、Lean 4定理証明支援系を用いて、学習済みモデルを単一かつ精密な意味論を持つ数学的対象として扱うフレームワーク「TorchLean」を提案する。TorchLeanは、PyTorchスタイルの検証済みAPI、IEEE-754 binary32に準拠した浮動小数点演算の意味論、およびCROWN/LiRPA等の有界伝搬法を用いた検証機能を統合している。PINNの残差評価やリャプヌフ制御器の検証、普遍性近似定理の機械証明等を通じて、学習を含むシステムの完全形式検証のための基盤としての有効性を実証している。",
+          "keywords": [
+            "Lean 4",
+            "Formal Verification",
+            "Neural Networks",
+            "IEEE-754",
+            "Reachability Analysis"
+          ],
+          "appendix": "本論文は、浮動小数点演算の厳密な意味論に基づいた証明を扱う「validated numerics」の分野と深い関連があります。"
+        },
+        "http://arxiv.org/abs/2602.22558v1": {
+          "title": "一般的な平面多項式ベクトル場における中心条件とサイクリック性",
+          "summary": "本研究では、ヒルベルトの第16問題の局所的な形式にあたる平面多項式ベクトル場の中心焦点問題を扱っている。リアプノフ関数を用いたアプローチにより、中心焦点条件に関する新規な結果を導出した。具体的には、一般的な条件下で、任意の次数の多項式ベクトル場に対してリアプノフ定数が生成するBautinイデアルのサイズの上限を決定した。この結果は、考慮している系のサイクリック性に対する上限も与えるものである。",
+          "keywords": [
+            "center-focus problem",
+            "Hilbert's 16th problem",
+            "Lyapunov constants",
+            "Bautin ideal",
+            "cyclicity"
+          ],
+          "appendix": "本研究は力学系の局所的な性質や分岐を扱っており、複素動力学(complex dynamics)の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2602.22530v1": {
+          "title": "動的レベル集合",
+          "summary": "2012年の論文「Turing Incomputable Computation」において暗黙的に提示された「動的レベル集合（dynamic level sets）」という数学的概念を特定し、分析している。この概念は、力学系、トポロジー、計算可能性理論の標準的な文献における概念とは異なる新しい数学的対象である。本論文では、確率的チューリングマシンが決定論的マシン以上の計算を行わないというde Leeuwら（1956年）の古典的な結果を含む、先行研究の枠組みからこの対象がなぜ外れていたのかを解説している。",
+          "keywords": [
+            "Dynamic level sets",
+            "Computability theory",
+            "Turing incomputable computation",
+            "Dynamical systems",
+            "Probabilistic Turing machines"
+          ],
+          "appendix": "本論文は計算の理論と力学系の接点を扱っており、興味ある分野のうち「symbolic dynamics」、「complex dynamics」、「automata theory」に関連があります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2602.23505v1",
+        "http://arxiv.org/abs/2602.23343v1",
+        "http://arxiv.org/abs/2602.23317v1",
+        "http://arxiv.org/abs/2602.23301v1",
+        "http://arxiv.org/abs/2602.23275v1",
+        "http://arxiv.org/abs/2602.23267v1",
+        "http://arxiv.org/abs/2602.23211v1",
+        "http://arxiv.org/abs/2602.23107v1",
+        "http://arxiv.org/abs/2602.23054v1",
+        "http://arxiv.org/abs/2602.23030v1",
+        "http://arxiv.org/abs/2602.22912v1",
+        "http://arxiv.org/abs/2602.22876v1",
+        "http://arxiv.org/abs/2602.22864v1",
+        "http://arxiv.org/abs/2602.22853v1",
+        "http://arxiv.org/abs/2602.22781v1",
+        "http://arxiv.org/abs/2602.22773v1",
+        "http://arxiv.org/abs/2602.23401v1",
+        "http://arxiv.org/abs/2602.22713v1",
+        "http://arxiv.org/abs/2602.22665v1",
+        "http://arxiv.org/abs/2602.22631v1",
+        "http://arxiv.org/abs/2602.22558v1",
+        "http://arxiv.org/abs/2602.22530v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-03-02T02:31:54.465516+00:00",
-      "updated_at": "2026-03-02T13:56:33.449801+00:00",
-      "finalized_at": null
+      "updated_at": "2026-03-02T14:38:34.220875+00:00",
+      "finalized_at": "2026-03-02T14:38:34.220852+00:00"
     }
   ]
 }
