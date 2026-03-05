@@ -5901,6 +5901,272 @@
       "created_at": "2026-03-04T02:27:02.236441+00:00",
       "updated_at": "2026-03-04T05:04:43.522157+00:00",
       "finalized_at": null
+    },
+    {
+      "pipeline_id": "20260305T022955Z-38452d69",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/mos9j7gc4ij52gsm1lmy4x0ff9ftbl5sq4ja",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01318v1",
+          "entry_id": "http://arxiv.org/abs/2603.01318v1",
+          "title": "Analysis of moments and cumulants in alternating sign matrices",
+          "summary": "In this work, we study the discrete observables $$E_k = \\sum_{i,j=1}^n (i-j)^k A_{i,j}$$ associated with $n\\times n$ alternating sign matrices $A = (A_{i,j})$. This work develops exact formulas for expectations using Bernoulli polynomials, exponential generating functions, expansions in $1/n$ linked to Riemann zeta functions, and cumulants up to fourth order via integrable kernel methods. All intermediate calculations, expansions, and pedagogical details are provided to illustrate the interplay between combinatorial sums, analytic expansions, and integrable structures in alternating sign matrices.",
+          "authors": [
+            "Jean-Christophe Pain"
+          ],
+          "published": "2026-03-01T23:36:17+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01317v1",
+          "entry_id": "http://arxiv.org/abs/2603.01317v1",
+          "title": "On the Metric Nature of (Differential) Logical Relations",
+          "summary": "Differential logical relations are methods to measure distances between higher-order programs where distances between functional programs are themselves \\emph{functions}, relating errors in inputs with errors in outputs. This way, differential logical relations provide a more fine-grained and contextual information of program distances. This paper aims to clarify the metric nature of differential logical relations. We introduce the notion of quasi-quasi-metrics and observe that the cartesian closed category of quasi-quasi-metric spaces reflects the construction of differential logical relations in the literature. The cartesian closed structure induces a fundamental lemma, which can be seen as a compositional reasoning principle for program distances. Furthermore, we investigate the quasi-quasi-metric spaces arising from the interpretation of types, and we prove that they satisfy variants of the strong transitivity condition and indistancy condition, as well as a weak form of the symmetry condition. In the last part of this paper, we introduce a notion of differential prelogical relations arising as a quantitative counterpart of the framework of prelogical relations. Roughly speaking, differential prelogical relations are quasi-quasi-metrics on the collection of programs. The poset of differential prelogical relations has the finest differential prelogical relation presented as a formal quantitative equational theory, while the poset lacks a coarsest differential prelogical relation. The absence of a coarsest differential prelogical relation contrasts with the situations of typed lambda calculi, where the contextual equivalences serve as the coarsest program equivalences.",
+          "authors": [
+            "Ugo Dal Lago",
+            "Naohiko Hoshino",
+            "Paolo Pistone"
+          ],
+          "published": "2026-03-01T23:17:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01308v1",
+          "entry_id": "http://arxiv.org/abs/2603.01308v1",
+          "title": "Constructive and Predicative Locale Theory in Univalent Foundations",
+          "summary": "We develop locale theory constructively and predicatively in univalent foundations (UF), with a particular focus on the theory of spectral and Stone locales. In the context of UF, predicativity refers specifically to the development of mathematics without the use of propositional resizing axioms. The traditional approach to the predicative development of point-free topology is to work with presentations of locales known as formal topologies. Here, we take a different approach: we work directly with frames, keeping careful track of the universes involved and adopting certain size assumptions to ensure that the theory is amenable to predicative development. Although it initially appears that many fundamental constructions of locale theory rely on impredicativity, we show that these can be circumvented under rather natural size assumptions.\n  We first lay the groundwork for the predicative development of locale theory. We then orient our development towards a systematic investigation of the theory of spectral and Stone locales. We establish a categorical equivalence between large, locally small, and small-complete spectral locales and small distributive lattices. Moreover, we exhibit the category of Stone locales as a coreflective subcategory of spectral locales and spectral maps, using the construction known as the patch locale. Finally, we investigate the topology of algebraic DCPOs and Scott domains. We develop the Scott locale of a Scott domain, show that it forms a spectral locale, and then proceed to investigate its patch. Using this, we obtain a topological characterization of de Jong's notion of sharp element: we establish a correspondence between the sharp elements of a Scott domain and the points of the patch of its Scott locale.\n  Our development is completely formalized and has been machine-checked using the Agda proof assistant.",
+          "authors": [
+            "Ayberk Tosun"
+          ],
+          "published": "2026-03-01T22:28:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01292v1",
+          "entry_id": "http://arxiv.org/abs/2603.01292v1",
+          "title": "Integrating LTL Constraints into PPO for Safe Reinforcement Learning",
+          "summary": "This paper proposes Proximal Policy Optimization with Linear Temporal Logic Constraints (PPO-LTL), a framework that integrates safety constraints written in LTL into PPO for safe reinforcement learning. LTL constraints offer rigorous representations of complex safety requirements, such as regulations that broadly exist in robotics, enabling systematic monitoring of safety requirements. Violations against LTL constraints are monitored by limit-deterministic Büchi automata, and then translated by a logic-to-cost mechanism into penalty signals. The signals are further employed for guiding the policy optimization via the Lagrangian scheme. Extensive experiments on the Zones and CARLA environments show that our PPO-LTL can consistently reduce safety violations, while maintaining competitive performance, against the state-of-the-art methods. The code is at https://github.com/EVIEHub/PPO-LTL.",
+          "authors": [
+            "Maifang Zhang",
+            "Hang Yu",
+            "Qian Zuo",
+            "Cheng Wang",
+            "Vaishak Belle",
+            "Fengxiang He"
+          ],
+          "published": "2026-03-01T21:55:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01256v1",
+          "entry_id": "http://arxiv.org/abs/2603.01256v1",
+          "title": "On the most reliable graphs with fixed redundancy",
+          "summary": "The all-terminal reliability of a graph $G$ is the probability that $G$ remains connected when each edge fails independently with probability $p$. For fixed $n$ and $m$, the uniformly most reliable problem asks which graph with $n$ vertices and $m$ edges maximizes reliability for all $p \\in [0,1]$. Although such graphs do not always exist, optimal graphs in the regime $p \\to 0$ always do and are determined by the structure of their minimal cut sets.\n  We establish a structural characterization of graphs that are most reliable near $p=0$. Our results partially resolve a conjecture of Bourel et al., showing that, under suitable conditions, regular graphs with maximal girth are optimal. Extending this analysis to graphs with fixed redundancy $r=m-(n-1)$ and sufficiently large $n$, we show that the most reliable graphs are obtained by subdividing the most reliable cubic graphs with $2(r-1)$ vertices. The general conjecture remains open.\n  Unlike previous results, which resolved only small redundancy cases or very dense regimes, our approach yields a substantial extension of the known range. We determine the unique cubic candidates for uniformly most reliable graphs for all redundancy levels $m-n \\le 19$, and prove the non-existence of uniformly most reliable graphs for several infinite families with fixed redundancy and asymptotically large $n$. These results significantly enlarge both the candidate class and the range of provable non-existence.",
+          "authors": [
+            "Rotem Brand",
+            "Reuven Cohen",
+            "Simi Haber",
+            "Baruch Barzel"
+          ],
+          "published": "2026-03-01T20:22:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01240v1",
+          "entry_id": "http://arxiv.org/abs/2603.01240v1",
+          "title": "Proofs of some conjectures of Okazaki and Smith on line defect half-indices of ${\\rm SU}(N)$ Chern-Simons theories",
+          "summary": "Okazaki and Smith discovered many elegant formulas expressing some matrix integrals as some celebrated $q$-series such as the Rogers--Ramanujan functions or Jacobi theta functions. These integrals arise as Wilson line defect half-indices of 3d $\\mathcal{N}=2$ supersymmetric ${\\rm SU}(N)$ Chern-Simons theories. We evaluate them by carefully calculating the constant terms of some infinite products. Along the way we use some crucial facts about antisymmetric multivariate formal Laurent series. Consequently, we prove three general conjectures of Okazaki and Smith which provide explicit formulas for half indices of the ${\\rm SU}(N)_{-N-k}$ ($k=0,1/2,1$) Chern-Simons theories. During the process, we extend these ${\\rm SU}(N)$ formulas to include one additional parameter. Furthermore, we generalize the ${\\rm SU}(N)_{-N-1/2}$ and ${\\rm SU}(N)_{-N-1}$ conjectures by calculating the corresponding half-indices of Wilson lines of arbitrary charge. As a special instance of our generalizations, we also confirm the ${\\rm SU}(3)_{-4}$ conjecture of Okazaki and Smith.",
+          "authors": [
+            "Liuquan Wang",
+            "Yiyang Yue"
+          ],
+          "published": "2026-03-01T19:28:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01186v1",
+          "entry_id": "http://arxiv.org/abs/2603.01186v1",
+          "title": "Relay transitions and invasion thresholds in multi-strain rumor models: a chemical reaction network approach",
+          "summary": "The historical quest for unifying the concepts and methods of Chemical Reaction Networks theory (CRNT), Mahematical Epidemiology (ME) and ecology has received increased attention in the last years and has led in particular to the development of the symbolic package EpidCRN, for automatic analysis of positive ODEs, which implements tools from all these disciplines like siphons, reproduction functions and invasion numbers, Child-Selection expansions, etc.\n  We illustrate below the convenience of using this package on some recent online social network (OSN) rumor spreading models, with emphasis on showing how CRNT throws a new light on their analysis. Specifically, we organise the boundary dynamics via the lattice of invariant faces generated by minimal siphons, and establish that stability transitions take the form of \\emph{relays}: for each distance-one cover in the siphon lattice, a single invasion inequality simultaneously governs the loss of transversal stability of the resident equilibrium and the existence of a successor equilibrium on the adjacent face.\n  For the base OSN model ($ω=0$) all boundary and interior equilibria admit explicit rational formulas, and the relay table is fully verified using invasion numbers computed symbolically by EpidCRN. For the variant with waning spreading impulse ($ω>0$), the relay structure is analysed via transversal Jacobian blocks; three equilibria involve irrational coordinates and their stability is predicted by the relay framework subject to direct Routh--Hurwitz verification. The relay mechanism is then situated in its normal-form context (siphon-induced transcritical bifurcations), distinguished from classical transcritical bifurcations along four structural axes, and compared with Hofbauer invasion graphs.",
+          "authors": [
+            "Florin Avram",
+            "Andrei-Dan Halanay"
+          ],
+          "published": "2026-03-01T17:00:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01177v1",
+          "entry_id": "http://arxiv.org/abs/2603.01177v1",
+          "title": "Geometric singular perturbation analysis of the active metabolic oscillator in pancreatic \\b{eta}-cells",
+          "summary": "Pancreatic \\b{eta}-cells secrete insulin in response to blood sugar levels to maintain glucose homeostasis. This vital insulin exocytosis is controlled by the cell's bursting behaviours, which are regulated by tight bidirectional coupling of inherent electrical and metabolic oscillators. The Integrated Oscillator Model suggests that slower metabolic oscillations are mediated either by glycolytic oscillations-through an independent active metabolic oscillator (AMO)-or by Ca2+ effects on ATP consumption via a passive metabolic oscillator (PMO). By clamping the Ca2+ and ATP dynamics, our study focuses on the decoupled AMO which is the driver of pulsatile dynamics. Using appropriate reference scales, we first non-dimensionalise the model to identify small parameters and processes evolving on different timescales. We show that the AMO can be recast as a surrogate relaxation oscillator, a more general class of multiple timescale problems involving oscillation cycles comprising fast and slow segments, which are amenable to rigorous analysis using the machinery of geometric singular perturbation theory. Using the parametrisation method to identify invariant manifolds and blow-up analysis to desingularise degenerate vector fields, we fully characterise the hierarchy of timescales and the complex singular geometry constituting the metabolic oscillations. Our work considerably extends the `fast-slow' analysis of glycolytic oscillators and is a stepping stone towards understanding how the slower metabolic system temporally patterns the faster electrical bursting dynamics.",
+          "authors": [
+            "Prannath Moolchand",
+            "Martin Wechselberger"
+          ],
+          "published": "2026-03-01T16:40:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01146v1",
+          "entry_id": "http://arxiv.org/abs/2603.01146v1",
+          "title": "Uniform Agent-interpolation of Distributed Knowledge",
+          "summary": "Uniform interpolation property (UIP) is a strengthening of Craig interpolation property. It can be understood as the definability of propositional quantifiers. This paper develops the sequent calculi provided in Murai and Sano (2020), combining with the methods studied by B{\\'ı}lkov{á} (2007) to show the uniform interpolation for epistemic logic $\\mathbf{K}$, $\\mathbf{KD}$ and $\\mathbf{KT}$ with distributed knowledge. A purely syntactic algorithm is presented to determine a uniform interpolant formula. In the definition of an interpolant formula, not only propositional variables but also agent symbols are taken into consideration.",
+          "authors": [
+            "Youan Su"
+          ],
+          "published": "2026-03-01T15:15:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01112v1",
+          "entry_id": "http://arxiv.org/abs/2603.01112v1",
+          "title": "Inequalities for the number of $t$-hooks in two partition classes arising from sum-product identities",
+          "summary": "Motivated by recent study on the number of $t$-hooks in partitions arising from Euler's partition identity, we investigate the number of $t$-hooks in the sets from the first Rogers-Ramanujan identity and the first little Göllitz identity. In particular, for $t=1,2$, we obtain the generating functions for the number of $t$-hooks and prove $t$-hook inequalities by deriving asymptotic formulas.",
+          "authors": [
+            "Aritram Dhar",
+            "Byungchan Kim",
+            "Eunmi Kim",
+            "Ae Ja Yee"
+          ],
+          "published": "2026-03-01T13:53:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01084v1",
+          "entry_id": "http://arxiv.org/abs/2603.01084v1",
+          "title": "Kernel-Based LMI Approaches to Solving the Hamilton-Jacobi-Bellman Equation and Nonlinear Optimal Control",
+          "summary": "We present a kernel-based linear matrix inequality (LMI) approach for solving Hamilton-Jacobi-Bellman (HJB) equations arising in nonlinear optimal control. The method converts the nonlinear HJB inequality into a convex semidefinite program through reproducing kernel Hilbert space (RKHS) representations and Schur complement reformulations. We provide complete theoretical results including convex reformulation, RKHS approximation, finite-dimensional discretization, suboptimality bounds, stability guarantees, and convergence rates. A critical component of our approach is the use of a Riccati Hessian constraint at the equilibrium to prevent trivial solutions while ensuring consistency with linearized optimal control theory. Numerical results on both 1D and 2D systems demonstrate the effectiveness of the approach, with comprehensive validation through multiple initial conditions showing that all closed-loop trajectories converge exponentially to the origin from various starting points, successfully stabilizing unstable equilibria with theoretical guarantees. The method maintains computational tractability while providing rigorous optimality and stability guarantees.",
+          "authors": [
+            "Boumediene Hamzi",
+            "Umesh Vaidya"
+          ],
+          "published": "2026-03-01T12:56:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01077v1",
+          "entry_id": "http://arxiv.org/abs/2603.01077v1",
+          "title": "Kernel Methods for Stochastic Dynamical Systems with Application to Koopman Eigenfunctions: Feynman-Kac Representations and RKHS Approximation",
+          "summary": "We extend the unified kernel framework for transport equations and Koopman eigenfunctions, developed in previous work by the authors for deterministic systems, to stochastic differential equations (SDEs). In the deterministic setting, three analytically grounded constructions-Lions-type variational principles, Green's function convolution, and resolvent operators along characteristic flows--were shown to yield identical reproducing kernels. For stochastic systems, the Koopman generator includes a second-order diffusion term, transforming the first-order hyperbolic transport equation into a second-order elliptic-parabolic PDE. This fundamental change necessitates replacing the method of characteristics with probabilistic representations based on the Feynman--Kac formula.\n  Our main contributions include: (i) extension of all three kernel constructions to stochastic systems via Feynman--Kac path-integral representations; (ii) proof of kernel equivalence under uniform ellipticity assumptions; (iii) a collocation-based computational framework incorporating second-order differential operators; (iv) error bounds separating RKHS approximation error from Monte Carlo sampling error; (v) analysis of how diffusion affects numerical conditioning; and (vi) connections to generator EDMD, diffusion maps, and kernel analog forecasting. Numerical experiments on Ornstein--Uhlenbeck processes, nonlinear SDEs with varying diffusion strength, and multi-dimensional systems validate the theoretical developments and demonstrate that moderate diffusion can improve numerical stability through elliptic regularization.",
+          "authors": [
+            "Boumediene Hamzi",
+            "Houman Owhadi",
+            "Umesh Vaidya"
+          ],
+          "published": "2026-03-01T12:44:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01056v1",
+          "entry_id": "http://arxiv.org/abs/2603.01056v1",
+          "title": "A Classifying Topos for the Spectrum of Equivalences",
+          "summary": "What makes two computational systems equivalent? Topos theory answers with classifying toposes: a system's semantic content is encoded in the geometric theory it classifies, and two presentations are equivalent when their classifying toposes coincide. Process algebra answers with the linear time-branching time spectrum of van Glabbeek: a hierarchy of behavioral equivalences from trace equivalence to bisimilarity, each determined by which observations can distinguish processes. We show these are aspects of a single structure in which behavioral abstraction is localization.\n  Each labeled transition system receives a geometric theory $\\mathbb{T}_M$ whose classifying topos $\\mathcal{E}[\\mathbb{T}_M]$ determines its provable geometric sequents. Mutual simulation is strictly coarser than bisimulation, strictly coarser than topos equivalence; diamond-only Hennessy-Milner logic characterizes the bisimulation-invariant fragment of geometric logic -- a geometric van Benthem theorem. Grothendieck topologies yield $J_{\\mathrm{bisim}} \\subsetneq J_{\\mathrm{sim}} \\subsetneq J_{\\mathrm{trace}}$, constructive for trace and bisimulation; a counterexample shows the observation-class approach inadequate for simulation, motivating Caramello's duality. Energy-topology extends this to all 13 named equivalences.\n  Lattice closure yields 30 elements including 17 unnamed hybrids absent because the energy-game framework computes but does not close. $L_{30}$ is indecomposable with $S \\to F = \\mathrm{IF}$; a Geometric Closure Theorem computes presheaf Heyting implications at a single free extension. The hierarchy, bi-Heyting structure, and Closure Theorem are proved constructively with no known process-algebraic proof. The spectrum is a finite sub-poset of an infinite coframe whose operations (meets, implications, subtractions) yield structure inaccessible from process algebra. Formalized in Lean 4/Mathlib.",
+          "authors": [
+            "Kenan Oggad"
+          ],
+          "published": "2026-03-01T11:25:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01020v1",
+          "entry_id": "http://arxiv.org/abs/2603.01020v1",
+          "title": "On the list version of a conjecture of Erdős and Neumann-Lara",
+          "summary": "The dichromatic number of a digraph $D$, denoted by $\\vecχ(D)$, is the smallest number of colours required to colour the vertices of $D$ such that each colour class induces an acyclic digraph. A conjecture of Erdős and Neumann-Lara states that there exists a function $f(k)$ such that for every graph $G$ with $χ(G) \\geq f(k)$ there is an orientation of $G$ such that the resulting digraph $D$ satisfies $\\vecχ(D) \\geq k$. We prove the list version of this conjecture: if $G$ has large list chromatic number then there is an orientation of $G$ such that the resulting digraph has large list dichromatic number. The main tool in our result is the following theorem, which is an extension of an analogous result of Alon for the chromatic number: every graph of minimum degree $d$ admits an orientation such that the resulting digraph has list dichromatic number of order at least $\\ln d$.",
+          "authors": [
+            "Ararat Harutyunyan",
+            "Lucas Picasarri-Arrieta",
+            "Gil Puig i Surroca"
+          ],
+          "published": "2026-03-01T09:57:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01018v1",
+          "entry_id": "http://arxiv.org/abs/2603.01018v1",
+          "title": "A note on the Möbius uncertainty principle for posets",
+          "summary": "We consider two generalizations of Pollack's uncertainty principle for Möbius inversion to locally finite posets.\n  The first generalization was previously studied by Goh. Here, we provide a simplified sufficient criterion for the uncertainty principle to hold. We also provide a necessary criterion for the same which, in particular, disproves Goh's conjecture on the characterization of posets for which an uncertainty principle holds.\n  The second generalization is new and applies to posets with reduced incidence algebras of a certain form. Here, we make some preliminary observations, including the fact that uncertainty principle holds for the poset of finite subsets of natural numbers and the poset of finite dimensional subspaces of $\\mathbb{F}_q^\\infty$. Our proofs in these settings are quite different from the proof for the poset of natural numbers under divisibility.",
+          "authors": [
+            "Anurag Sahay"
+          ],
+          "published": "2026-03-01T09:55:29+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01005v1",
+          "entry_id": "http://arxiv.org/abs/2603.01005v1",
+          "title": "On shortening universal words for multi-dimensional permutations",
+          "summary": "A universal word (u-word) for $d$-dimensional permutations of length $n$ is a 2-dimensional word with $d-1$ rows, any size $n$ window of which is order-isomorphic to exactly one permutation of length $n$, and all permutations of length $n$ are covered. It is known that u-words (in fact, even u-cycles, a stronger claim) for $d$-dimensional permutations exist.\n  In this paper, we use the idea of incomparable elements to prove that u-words of length $(n!)^{d-1}+n-1-i(n-1)$, for $d\\geq 2$ and $$0\\leq i\\leq \\frac{2^{d-1}}{n-1}\\left[(1+(n-1)!)^{d-1}-\\left(1+\\frac{(n-1)!}{2}\\right)^{d-1}\\right],$$ for $d$-dimensional permutations of length $n$ exist, which generalizes the respective result of Kitaev, Potapov and Vajnovszki for ``usual'' permutations ($d=2$).",
+          "authors": [
+            "Sergey Kitaev",
+            "Dun Qiu"
+          ],
+          "published": "2026-03-01T09:13:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.01002v1",
+          "entry_id": "http://arxiv.org/abs/2603.01002v1",
+          "title": "Optimal strategy in the game Risk or Safety",
+          "summary": "In the paper it is proven that the two-players turn-based stochastic game \"Risk or Safety\" has a unique solution. Both players need to play the same strategy if they want to maximize their winning chances. An analytical method based on the transition equations depending on the players decisions at each game situation is presented. However, the method requires the solution of many large linear equation systems, which makes the problem practically unsolvable for more than 6 coins. Hence, an iterative method is used to determine the optimal strategy for up to 20 coins. A look-up table gives the number of coins a player should toss at each possible game situation.",
+          "authors": [
+            "Rüdiger Jehn"
+          ],
+          "published": "2026-03-01T09:05:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.03361v1",
+          "entry_id": "http://arxiv.org/abs/2603.03361v1",
+          "title": "Hamiltonian Properties of 3-Connected Claw-Free Graphs and Line Graphs of 3-Hypergraphs",
+          "summary": "Motivated by Thomassen's well-known line graph conjecture, many researchers have explored sufficient conditions for claw-free graphs to be Hamiltonian or Hamilton-connected. In 1994, Ageev proved that every $2$-connected claw-free graph with domination number at most $2$ is Hamiltonian. In this paper, we extend this line of research to $3$-connected graphs by establishing the best possible upper bound on the domination number that guarantees Hamiltonicity. Specifically, we show that, except for some well-defined exceptional graphs, every $3$-connected claw-free graph $G$ with domination number at most $5$ is Hamiltonian. Furthermore, we prove that, apart from a few exceptional cases, every $3$-connected claw-free graph $G$ with domination number at most $4$ is Hamilton-connected, thereby generalizing earlier results of Zheng, Broersma, Wang and Zhang and Vrána, Zhan and Zhang. We further investigate the Hamiltonian properties of line graphs of $3$-hypergraphs, and prove that every 3-connected line graph of a 3-hypergraph with domination number at most $4$ is Hamiltonian.",
+          "authors": [
+            "Kenta Ozeki",
+            "Leilei Zhang"
+          ],
+          "published": "2026-03-01T07:43:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.00899v1",
+          "entry_id": "http://arxiv.org/abs/2603.00899v1",
+          "title": "A strong nullity parameter for rooted graphs",
+          "summary": "The inverse eigenvalue problem of a graph $G$ studies the possible spectra of matrices associated with $G$, including as an important subproblem the possible nullities of such a matrix. Much research in this area to date has focused only on the spectrum of the matrix itself, but there are applications of inverse eigenvalue problems that also involve the interaction between that spectrum and the spectrum of some maximal proper principal submatrix, or in other words the interlacing spectrum that results from crossing out any one row and the same column. Motivated by this refined information, given a graph $G$ on $n$ vertices with a designated root vertex, we investigate all possible nullity pairs where the first nullity is that of an $n \\times n$ symmetric matrix associated to $G$ and the second nullity is that of the principal submatrix of size $(n - 1) \\times (n - 1)$ that results from deleting the row and column associated to the root vertex. We define a new parameter $ξξ(G,i)$ for rooted graphs $(G,i)$ equipped with the strong nullity interlacing property that coordinates the two values of a nullity pair, and we show that this graph parameter is minor monotone. Moreover, we prove a bifurcation lemma for the strong nullity interlacing property. We use these new tools to characterize the rooted graphs with $ξξ(G,i) \\geq s$ for $s \\in \\{ 0,1,2,3,4, 5\\}$ by finding the minimal minors for each of these families. These families turn out to have strong connections to the minimal minors for $ξ(G) \\geq k$.",
+          "authors": [
+            "Aida Abiad",
+            "Mary Flagg",
+            "H. Tracy Hall",
+            "Jephian C. -H. Lin",
+            "Bryan Shader"
+          ],
+          "published": "2026-03-01T03:46:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.00896v1",
+          "entry_id": "http://arxiv.org/abs/2603.00896v1",
+          "title": "Unbiasing symmetric monoidal categories in Lean",
+          "summary": "We present a formalization in Lean 4, within the framework of the mathematical library Mathlib, of the unbiasing process for symmetric monoidal categories. This is realized by extending the data of a symmetric monoidal category to a Cat-valued pseudofunctor from the (2,1)-category of spans of finite sets, encoding tensor products of higher arities and their coherences. The construction relies on a formalization of Mac Lane's coherence theorem using Piceghello's presentation of free symmetric monoidal categories as symmetric lists, and uses an encoding of universal formulas via an appropriate Kleisli bicategory.",
+          "authors": [
+            "Robin Carlier"
+          ],
+          "published": "2026-03-01T03:34:41+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.00872v1",
+          "entry_id": "http://arxiv.org/abs/2603.00872v1",
+          "title": "Fractional Sobolev Spaces and Variational Problems with Variable-Order Operators on Time Scales",
+          "summary": "We construct fractional Sobolev spaces on arbitrary time scales, both in one dimension and on product time scales. In 1D, we define $W^{α(\\cdot),p}_{\\mathrm{rd}}(\\mathcal I)$ through a variable-order Gagliardo-type seminorm and prove completeness and compact embedding properties under standard boundedness assumptions on the order. We then extend the framework to rectangles $\\mathcal R=\\mathcal I_1\\times \\mathcal I_2\\subset\\mathbb T_1\\times\\mathbb T_2$, introducing the product spaces $W^{(α,β),p}_{\\mathrm{rd}}(\\mathcal R)$ and establishing completeness, reflexivity, separability, and compact embeddings. To support boundary-value problems, we propose a boundary decomposition of $\\partial\\mathcal R$ into four sides and a corresponding trace framework (first on $C_{\\mathrm{rd}}(\\mathcal R)$ and then by density). We also define variable-order Riemann--Liouville and Caputo fractional operators on time scales and derive an Euler--Lagrange equation for variational functionals depending on these operators. The resulting toolkit provides a functional-analytic basis for fractional dynamic equations on mixed time scales and for anisotropic nonlocal models on product time scales.",
+          "authors": [
+            "Hafida Abbas",
+            "Abdelhalim Azzouz"
+          ],
+          "published": "2026-03-01T02:25:42+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.00861v1",
+          "entry_id": "http://arxiv.org/abs/2603.00861v1",
+          "title": "Unbounded length minimal synchronizing words for quantum channels over qutrits",
+          "summary": "Grudka, Karczewski, Kurzynski, Stempin, Wójcik and Wojcik (2025) constructed quantum channels with synchronizing words of length 3 for qutrits. We extend their result to arbitrarily long minimal synchronizing words, providing a contrast to Černý's conjecture for finite automata.",
+          "authors": [
+            "Bjørn Kjos-Hanssen",
+            "Swarnalakshmi Lakshmanan"
+          ],
+          "published": "2026-03-01T01:34:15+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-03-05T02:29:55.926037+00:00",
+      "updated_at": "2026-03-05T02:29:55.926037+00:00",
+      "finalized_at": null
     }
   ]
 }
