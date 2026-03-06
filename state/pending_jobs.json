@@ -5844,7 +5844,7 @@
     },
     {
       "pipeline_id": "20260304T022702Z-16cde049",
-      "status": "summary_fallback_running",
+      "status": "completed",
       "interest_job_name": "batches/9hcd56h59hxc0qcb95kt67fwkfx42l4mfuaz",
       "summarize_job_name": "batches/f4nut6u9bogtov3av3qcycsnhw0oxh1nh6n0",
       "papers": [
@@ -6076,14 +6076,79 @@
         "http://arxiv.org/abs/2603.00684v1",
         "http://arxiv.org/abs/2603.00677v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2603.00826v1": {
+          "title": "彩色された駐車方法：正確なk-型駐車関数（k-typed parking functions）への導入",
+          "summary": "本論文では、M個の駐車スペースを持つ道路にM台の車を駐車する古典的な駐車関数のバリエーションとして、「正確なk-型駐車関数（k-TPFs）」を定義している。長さMのすべての正確なk-TPF αが、一意の駐車構成Cに対応することを確立し、同一の構成をもたらす正確なk-TPFの集合が、全正確なk-TPFの互いに素な部分集合を形成することを観察している。最後に、正確なk-TPFの駐車置換が他の組合せ論的オブジェクトとどのように関連付けられるかを示している。",
+          "keywords": [
+            "parking functions",
+            "k-typed parking functions",
+            "parking configuration",
+            "parking permutations",
+            "combinatorial objects"
+          ],
+          "appendix": "本論文は組合せ論（combinatorics）に関する内容を扱っており、興味ある分野の「combinatorics on words」などの組合せ論的側面と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.02269v1": {
+          "title": "非共約分数階微分方程式系に対する安定性判定アルゴリズム",
+          "summary": "分数階微分方程式系、特に各方程式が独立した階数を持つ「非共約（incommensurate）」な系の漸近安定性を判定する問題について述べている。数値線形代数の手法を用いることで、従来手法よりも簡潔なアルゴリズムを提案した。次数比が有理数である線形問題の詳細な検討に加え、任意の次数を持つ一般的な非線形問題への適用方法も示されており、MATLABによる実装も提供されている。",
+          "keywords": [
+            "incommensurate fractional differential equation systems",
+            "stability testing algorithm",
+            "numerical linear algebra",
+            "fractional-order differential equations"
+          ],
+          "appendix": "本論文は、数値計算による安定性解析の効率化・簡略化を扱っており、興味ある分野のうち「validated numerics」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.00728v2": {
+          "title": "Signal First-Order Logicの定量的モニタリング",
+          "summary": "本論文は、ハイブリッドシステムから生成される信号が仕様を満たすかを実行時に検証するランタイムモニタリングにおいて、Signal First-Order Logic (SFO) を対象とした初の堅牢性に基づく定量的意味論を提案している。Signal Temporal Logicなどの既存の枠組みを超えた豊かな実時間特性の表現と評価が可能となる。また、オンラインモニタリングを実現するためにSFOの過去時制フラグメントを特定し、有界応答を持つSFO式を等充足な過去時制形式に変換するpastification手続きを導入した。さらに、効率的なモニタリングアルゴリズムを開発し、ベンチマークを通じてその実用性を実証した。これは全SFOのオンライン定量的モニタリングを可能にする初の公開プロトタイプである。",
+          "keywords": [
+            "Signal First-Order Logic",
+            "Runtime monitoring",
+            "Quantitative semantics",
+            "Hybrid systems",
+            "Pastification"
+          ],
+          "appendix": "本論文は、形式言語やオートマトン理論に関連する論理体系のモニタリングを扱っており、興味ある分野の中では「automata theory」や「formal languages」に密接に関連します。"
+        },
+        "http://arxiv.org/abs/2603.00684v1": {
+          "title": "木反復関数系の極限集合のハウスドルフ次元",
+          "summary": "本論文では、反復関数系（IFS）の一般化として、各ステップおよび各ブロックで独立して写像を選択する「木反復関数系（TIFS）」を新たに導入した。TIFSとその極限集合の定義を与えた上で、Bowenの公式を一般化する形で、極限集合のハウスドルフ次元を決定する公式を導出している。また、既存の非自律的IFS（non-autonomous IFSs）との構造的な違いを明示する具体例を提示している。",
+          "keywords": [
+            "Tree Iterated Function Systems",
+            "Hausdorff dimension",
+            "limit sets",
+            "Bowen's formula"
+          ],
+          "appendix": "本論文は symbolic dynamics および complex dynamics の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.00677v1": {
+          "title": "グラフ多重ベクトルパーシステンス：動的システムのための統一的枠組み",
+          "summary": "有限重み付きグラフに対し、組合せ論的多重ベクトル力学に基づいたパーシステンス型の不変量を導入する。閾値パラメータに応じて定義されるグラフ多重ベクトル場から、強連結成分によるモース分解を導出し、閾値の変化に伴うモース集合の発生と消滅を記録することでモースパーシステンス図を定義する。この手法は単体ホモロジーやパーシステンス加群に依存しない純粋に組合せ論的な構成であり、関係行列の上限ノルムによる摂動に対して安定であることを証明している。さらに、各モース集合が組合せ論的コンリー指数を持つことから、マルチスケールなグラフ構造に対する位相的に豊かな不変量を提供する。",
+          "keywords": [
+            "multivector dynamics",
+            "Morse decomposition",
+            "Morse persistence diagram",
+            "combinatorial Conley index",
+            "weighted graphs"
+          ],
+          "appendix": "この論文は組合せ論的ダイナミクスを扱っており、興味ある分野のうち symbolic dynamics や complex dynamics と理論的な基盤を共有しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2603.00826v1",
+        "http://arxiv.org/abs/2603.02269v1",
+        "http://arxiv.org/abs/2603.00728v2",
+        "http://arxiv.org/abs/2603.00684v1",
+        "http://arxiv.org/abs/2603.00677v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-03-04T02:27:02.236441+00:00",
-      "updated_at": "2026-03-06T05:05:51.235518+00:00",
-      "finalized_at": null
+      "updated_at": "2026-03-06T06:04:10.676554+00:00",
+      "finalized_at": "2026-03-06T06:04:10.676536+00:00"
     },
     {
       "pipeline_id": "20260305T022955Z-38452d69",
