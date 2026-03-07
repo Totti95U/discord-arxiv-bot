@@ -6152,7 +6152,7 @@
     },
     {
       "pipeline_id": "20260305T022955Z-38452d69",
-      "status": "summary_fallback_running",
+      "status": "completed",
       "interest_job_name": "batches/mos9j7gc4ij52gsm1lmy4x0ff9ftbl5sq4ja",
       "summarize_job_name": "batches/2y8211wumopxq3mteb9wtp35w2xp9glcbnlw",
       "papers": [
@@ -6414,14 +6414,93 @@
         "http://arxiv.org/abs/2603.01005v1",
         "http://arxiv.org/abs/2603.00861v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2603.01292v1": {
+          "title": "安全な強化学習に向けたPPOへのLTL制約の統合",
+          "summary": "本論文では、線形時相論理（LTL）で記述された安全制約をProximal Policy Optimization（PPO）に統合するフレームワーク「PPO-LTL」を提案している。LTLを用いることで、ロボティクス分野などで見られる複雑な安全規則を厳密に表現し、体系的な監視が可能となる。制約違反は限定決定性ブーヒオートマトン（limit-deterministic Büchi automata）によって監視され、論理からコストへの変換メカニズムを通じてペナルティ信号へと変換される。この信号はラグランジュ法を用いて方策最適化を導くために利用される。ZonesおよびCARLA環境での実験により、PPO-LTLは最新の手法と比較して、競争力のある性能を維持しながら安全違反を一貫して減少させることが示された。",
+          "keywords": [
+            "Proximal Policy Optimization",
+            "Linear Temporal Logic",
+            "Safe Reinforcement Learning",
+            "Büchi automata",
+            "Lagrangian scheme"
+          ],
+          "appendix": "本論文は、LTL制約の監視に限定決定性ブーヒオートマトンを使用しているため、興味ある分野のうち「automata theory（オートマトン理論）」および「formal languages（形式言語）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.01177v1": {
+          "title": "膵臓β細胞における能動的代謝オシレータの幾何学的特異摂動解析",
+          "summary": "膵臓β細胞のインスリン分泌を制御するバースト現象は、電気的および代謝的振動の結合により生じる。本研究では、Integrated Oscillator Modelに基づき、Ca2+とATPのダイナミクスを固定することで、脈動ダイナミクスの駆動源となる独立した能動的代謝オシレータ(AMO)に焦点を当てた。無次元化により時間スケールの分離を特定し、AMOを緩和振動子として再構成した。幾何学的特異摂動論を用い、不変多様体を特定するパラメータ化手法や、退化したベクトル場を非特異化するブローアップ解析を適用することで、代謝振動を構成する複雑な幾何学的構造と時間スケールの階層性を完全に特徴づけた。",
+          "keywords": [
+            "geometric singular perturbation theory",
+            "active metabolic oscillator",
+            "relaxation oscillator",
+            "blow-up analysis",
+            "pancreatic beta-cells"
+          ],
+          "appendix": "本論文は complex dynamics の分野に関連しています。特に、複数の時間スケールを持つ力学系の幾何学的構造や、特異点付近の複雑な挙動を解析する手法（ブローアップ解析など）を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.01077v1": {
+          "title": "確率力学系におけるカーネル法とクープマン固有関数への応用：ファインマン・カッツ表現とRKHS近似",
+          "summary": "本論文は、決定論的な系に対する輸送方程式とクープマン固有関数の統一的カーネル枠組みを、確率微分方程式（SDE）へと拡張したものである。決定論的設定ではLions型変分原理、グリーン関数畳み込み、特性流に沿ったレゾルベント作用素の3つの構成法が同一の再生核を与えるが、確率系では発電機に2次拡散項が含まれるため、特性線法の代わりにファインマン・カッツ公式に基づく確率表現が必要となる。研究の主な貢献は、これら3つのカーネル構成の拡張と等価性の証明、2次微分作用素を含む選点法フレームワークの構築、RKHS近似誤差とモンテカルロサンプリング誤差の分離評価、および拡散が数値的安定性に与える正則化効果の解析である。数値実験により、Ornstein–Uhlenbeck過程や非線形SDEにおける理論の妥当性を検証している。",
+          "keywords": [
+            "Koopman eigenfunctions",
+            "Feynman–Kac formula",
+            "Reproducing Kernel Hilbert Space",
+            "Stochastic Differential Equations",
+            "Generator EDMD"
+          ],
+          "appendix": "本論文は[興味ある分野]に直接含まれるキーワード（symbolic dynamicsやcombinatorics on wordsなど）を主要なテーマとはしていませんが、クープマン作用素のスペクトル解析は複雑力学系（complex dynamics）の解析手法と深く関連しており、また数値的安定性の評価という点では検証数値計算（validated numerics）の周辺領域に位置する研究内容と言えます。"
+        },
+        "http://arxiv.org/abs/2603.01056v1": {
+          "title": "等価性のスペクトラムに対する分類トポス",
+          "summary": "本論文は、プロセス代数におけるvan Glabbeekの「線形時間ー分岐時間スペクトラム」とトポス理論における分類トポスを、幾何論理の局所化という観点から統合する枠組みを提案している。各ラベル付き遷移系に対して幾何論理の理論 T_M を対応させ、その分類トポスによってプロセスの挙動を解析する。双シミュレーションやトレース等価性などの挙動的等価性が、Grothendieckトポロジーの階層 (J_bisim ⊊ J_sim ⊊ J_trace) として表現されることを示した。また、エネルギーゲームの枠組みでは捉えきれなかった17個の未知のハイブリッド等価性を含む30個の要素からなる束構造 L₃₀ を導出し、その双Heyting代数構造や幾何学的閉包定理をLean 4で形式化した。これにより、従来のプロセス代数的手法では到達できなかった構造的性質を明らかにしている。",
+          "keywords": [
+            "classifying topos",
+            "labeled transition system",
+            "van Glabbeek spectrum",
+            "geometric logic",
+            "Grothendieck topology"
+          ],
+          "appendix": "本論文はオートマトン理論 (automata theory) や形式言語の挙動的等価性に関連しており、遷移系の理論的枠組みを扱う点で興味ある分野と関連しています。"
+        },
+        "http://arxiv.org/abs/2603.01005v1": {
+          "title": "多次元置換に対する普遍単語の短縮について",
+          "summary": "長さ n の d 次元置換に対する普遍単語（u-word）とは、サイズ n の任意のウィンドウが長さ n の置換と唯一つの順序同型になり、かつ全ての置換を網羅する 2 次元単語である。本論文では、非比較要素の概念を用いることで、d ≥ 2 において長さ (n!)^{d-1} + n - 1 - i(n - 1) の u-word が存在することを証明した。ここで i の範囲は 0 ≤ i ≤ (2^{d-1} / (n-1))[(1 + (n-1)!)^{d-1} - (1 + (n-1)! / 2)^{d-1}] である。この結果は、d = 2 の場合における Kitaev, Potapov, Vajnovszki らの既存研究を多次元へと一般化したものである。",
+          "keywords": [
+            "universal word",
+            "multi-dimensional permutations",
+            "order-isomorphic",
+            "incomparable elements"
+          ],
+          "appendix": "combinatorics on words の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.00861v1": {
+          "title": "qutrit上の量子チャネルに対する非有界な長さの最小同期語",
+          "summary": "Grudkaら(2025)が示したqutritにおける長さ3の同期語を持つ量子チャネルの構成を拡張し、任意の長さを最小同期語の長さとして持つ量子チャネルを構築した。この結果は、有限オートマトンにおける同期語の長さの上限に関するČerný予想とは対照的な性質を量子チャネルが持つことを示している。",
+          "keywords": [
+            "quantum channels",
+            "qutrits",
+            "synchronizing words",
+            "minimal synchronizing words",
+            "Černý's conjecture"
+          ],
+          "appendix": "有限オートマトンにおけるČerný予想との対比が議論されているため、興味ある分野のうち「automata theory」および「combinatorics on words」に深く関連する内容です。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2603.01292v1",
+        "http://arxiv.org/abs/2603.01177v1",
+        "http://arxiv.org/abs/2603.01077v1",
+        "http://arxiv.org/abs/2603.01056v1",
+        "http://arxiv.org/abs/2603.01005v1",
+        "http://arxiv.org/abs/2603.00861v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-03-05T02:29:55.926037+00:00",
-      "updated_at": "2026-03-07T05:33:31.656177+00:00",
-      "finalized_at": null
+      "updated_at": "2026-03-07T06:29:30.227058+00:00",
+      "finalized_at": "2026-03-07T06:29:30.227032+00:00"
     },
     {
       "pipeline_id": "20260307T022151Z-99485a1a",
