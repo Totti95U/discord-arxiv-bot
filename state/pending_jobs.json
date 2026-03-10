@@ -7708,6 +7708,568 @@
       "created_at": "2026-03-09T02:34:25.779656+00:00",
       "updated_at": "2026-03-09T05:16:42.413272+00:00",
       "finalized_at": null
+    },
+    {
+      "pipeline_id": "20260310T022610Z-bab4b924",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/7rwu3uc8mpicazk5ubprknnk8lnwrd52gj13",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06931v1",
+          "entry_id": "http://arxiv.org/abs/2603.06931v1",
+          "title": "LLM2SMT: Building an SMT Solver with Zero Human-Written Code",
+          "summary": "Whether LLMs can reason or write software is widely debated, but whether they can write software that itself reasons is largely unexplored. We present a case study in which an LLM coding agent builds a complete DPLL(T)-style SMT solver for QF_UF with zero human-written code. The solver implements the Nieuwenhuis-Oliveras congruence closure algorithm, includes preprocessing, and emits Lean proofs for unsatisfiable instances. We describe the development process and key challenges, and show that the resulting solver is competitive on SMT-LIB benchmarks.",
+          "authors": [
+            "Mikoláš Janota",
+            "Mirek Olšák"
+          ],
+          "published": "2026-03-06T23:03:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06930v1",
+          "entry_id": "http://arxiv.org/abs/2603.06930v1",
+          "title": "Explicit Formulas and Unimodality Phenomena for General Position Polynomials",
+          "summary": "The general position problem in graphs seeks the largest set of vertices such that no three vertices lie on a common geodesic. Its counting refinement, the general position polynomial $ψ(G)$, asks for all such possible sets. In this paper, We describe general position sets for several classes of graphs and provide explicit formulas for the general position polynomials of complete multipartite graphs. We specialize to balanced complete multipartite graphs and show that for part size $r\\le 4$, the polynomial $ψ(K_{r,\\dots,r})$ is log-concave and unimodal for all numbers of parts, while for larger $r$, counterexamples show that these properties fail. Finally, we analyze the corona $G\\circ K_1$ and prove that unimodality of $ψ(G)$ is retained for numerous natural classes (paths, edgeless graphs, combs). This contributes to an open problem, but the general case remains unknown. Our findings support the parallel between general position polynomials and classical position-type parameters, and identify balanced multipartite graphs and coronas as promising testbeds for additional research.",
+          "authors": [
+            "Bilal Ahmad Rather"
+          ],
+          "published": "2026-03-06T23:03:04+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06872v1",
+          "entry_id": "http://arxiv.org/abs/2603.06872v1",
+          "title": "Kernel Methods for Some Transport Equations with Application to Learning Kernels for the Approximation of Koopman Eigenfunctions: A Unified Approach via Variational Methods, Green's Functions and the Method of Characteristics",
+          "summary": "We present a unified theoretical and computational framework for constructing reproducing kernels tailored to transport equations and adapted to Koopman eigenfunctions of nonlinear dynamical systems. These eigenfunctions satisfy a transport-type partial differential equation (PDE) that we invert using three analytically grounded methods: (i) A Lions-type variational principle in a reproducing kernel Hilbert space (RKHS), (ii) convolution with a Green's function, and (iii) a resolvent operator constructed via Laplace transforms along characteristic flows. We prove that these three constructions yield identical kernels under mild smoothness and causality assumptions. We further show that the associated kernel eigenfunctions (Mercer modes) converge in L^2 to true Koopman eigenfunctions when the latter lie in the RKHS. Our approach is numerically realized through a mesh-free, convex optimization framework, enhanced with boundary regularization to handle eigenfunction blow-up. A multiple-kernel learning (MKL) scheme selects kernels automatically via residual minimization. Finally, we demonstrate that the same framework applies verbatim to a broader class of linear transport PDEs, including the advection, continuity, and Liouville equations.\n  The unification of variational principles, Green's functions, and the method of characteristics enables the development of novel schemes for approximating eigenfunctions of transport equations, including those of the Koopman operator, and introduces a data-driven approach for learning kernels tailored to these approximations. Numerical experiments confirm the practical utility and robustness of the method.",
+          "authors": [
+            "Boumediene Hamzi",
+            "Houman Owhadi",
+            "Umesh Vaidya"
+          ],
+          "published": "2026-03-06T20:46:20+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06849v1",
+          "entry_id": "http://arxiv.org/abs/2603.06849v1",
+          "title": "Twitch: Learning Abstractions for Equational Theorem Proving",
+          "summary": "Several successful strategies in automated reasoning rely on human-supplied guidance about which term or clause shapes are interesting. In this paper we aim to discover interesting term shapes automatically. Specifically, we discover abstractions : term patterns that occur over and over again in relevant proofs. We present our tool Twitch which discovers abstractions with the help of Stitch, a tool originally developed for discovering reusable library functions in program synthesis tasks. Twitch can produce abstractions in two ways: (1) from a partial, failed proof of a conjecture; (2) from successful proofs of other theorems in the same domain. We have also extended Twee, an equational theorem prover, to use these abstractions. We evaluate Twitch on a set of unit equality (UEQ) problems from TPTP, and show that it can prove 12 rating-1 problems as well as yielding significant speed-ups on many other problems.",
+          "authors": [
+            "Guy Axelrod",
+            "Moa Johansson",
+            "Nicholas Smallbone"
+          ],
+          "published": "2026-03-06T20:15:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06808v1",
+          "entry_id": "http://arxiv.org/abs/2603.06808v1",
+          "title": "Rate-Induced Tipping in a Non-Uniformly Moving Habitat and Determination of the Critical Rate",
+          "summary": "A habitat that is moving due to environmental change may result in tipping to extinction if the rate at which it moves is too great. We use a scalar reaction-diffusion equation with a non-autonomous reaction term, representing a spatially localized habitat moving from one asymptotic location to another, as a context for studying this phenomenon. The movement is characterized by displacement $d$ and rate parameter $r$. The system admits three steady states in both asymptotic habitat locations: a stable extinction state $u_0^*=0$, an unstable pulse (so-called edge state) $u_1^*(x)>0$, which gives rise to the Allee effect, and a stable pulse (populated base state) $u_2^*(x)>u_1^*(x)$, which corresponds to a thriving population at its carrying capacity. Numerical simulations for a specific model identify a critical displacement $d^*$ and, for $d > d^*$, demonstrate the existence of a \\textit{critical rate} $r_c(d)$ at which rate-induced tipping occurs: for $r> r_c$ an initially thriving population becomes extinct due to habitat movement being too rapid. We provide analytical results for two limiting cases. For $r\\ll 1$, solutions track the moving base state with error $O(r)$. For $r\\gg 1$, solutions converge to the extinction state provided $d$ is sufficiently large. For $d$ too small, no tipping occurs regardless of $r$. Numerical simulations complement and extend these analytical results. At the critical rate $r=r_c(d)$, we identify a pulse-to-pulse heteroclinic connection between the base state at the past asymptotic location and the edge state at the future asymptotic location of the habitat. We also establish the uniqueness of this critical rate and non-degeneracy of the heteroclinic connection as $r$ varies.",
+          "authors": [
+            "Blake Barker",
+            "Emmanuel Fleurantin",
+            "Matt Holzer",
+            "Christopher K. R. T. Jones",
+            "Sebastian Wieczorek"
+          ],
+          "published": "2026-03-06T19:15:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06799v1",
+          "entry_id": "http://arxiv.org/abs/2603.06799v1",
+          "title": "On Ramsey number of Steiner systems",
+          "summary": "A $k$-uniform hypergraph $H$ is called a partial $(k,\\ell)$-system if every set of $\\ell$ vertices of $V(H)$ is contained in at most one edge of $H$. We prove the existence of a partial $(k,k-1)$-system $H$ whose Ramsey number with $r \\geq 4$ colors grows as a tower of height $k-1$.",
+          "authors": [
+            "Ayush Basu",
+            "Daniel Dobak",
+            "Vojtěch Rödl",
+            "Marcelo Sales"
+          ],
+          "published": "2026-03-06T19:03:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06535v1",
+          "entry_id": "http://arxiv.org/abs/2603.06535v1",
+          "title": "Finiteness properties and quasi-isometry of group pairs",
+          "summary": "We show that the geometric and homological finiteness properties of group pairs are invariant under a suitable notion of quasi-isometry for group pairs.",
+          "authors": [
+            "Kevin Li",
+            "Luis Jorge Sánchez Saldaña"
+          ],
+          "published": "2026-03-06T18:24:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06778v1",
+          "entry_id": "http://arxiv.org/abs/2603.06778v1",
+          "title": "A cocktail of chemical reaction networks and mathematical epidemiology tools for positive ODE stability problems",
+          "summary": "We continue recent attempts to put together concepts and results of Chemical Reaction Networks theory (CRNT) and Mathematical Epidemiology (ME), for solving problems of stability of positive ODEs.\n  We provide first an elegant CRN-flavored generalization of the most cited result in ME, the Next Generation Matrix (NGM) theorem.\n  We review next the \"symbolic-numeric approach of Vassena and Stadler, which tackles bifurcation problems by viewing the characteristic polynomial of the Jacobian at fixed points as a formal polynomial in the \"symbolic reactivities\", and identifies its coefficients as \"Child Selection minors of the stoichiometric matrix\". We also review two applications of this approach using the Mathematica package Epid-CRN tools from both CRNT and ME.",
+          "authors": [
+            "Florin Avram",
+            "Rim Adenane",
+            "Andrei-Dan Halanay"
+          ],
+          "published": "2026-03-06T18:04:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06489v1",
+          "entry_id": "http://arxiv.org/abs/2603.06489v1",
+          "title": "The DNA Coverage Depth Problem: Duality, Weight Distributions, and Applications",
+          "summary": "The coverage depth problem in DNA data storage is about computing the expected number of reads needed to recover all encoded strands. Given a generator matrix of a linear code, this quantity equals the expected number of randomly drawn columns required to obtain full rank. While MDS codes are optimal when they exist, i.e., over large fields, practical scenarios may rely on structured code families defined over small fields. In this work, we develop combinatorial tools to solve the DNA coverage depth problem for various linear codes, based on duality arguments and the notion of extended weight enumerator. Using these methods, we derive closed formulas for the simplex, Hamming, ternary Golay, extended ternary Golay, and first-order Reed-Muller codes. The centerpiece of this paper is a general expression for the coverage depth of a linear code in terms of the weight distributions of its higher-field extensions.",
+          "authors": [
+            "Matteo Bertuzzo",
+            "Alberto Ravagnani",
+            "Eitan Yaakobi"
+          ],
+          "published": "2026-03-06T17:16:39+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06483v1",
+          "entry_id": "http://arxiv.org/abs/2603.06483v1",
+          "title": "Uniform sum-product phenomenon for algebraic groups and Bremner's conjecture",
+          "summary": "In this paper we combine methods from additive combinatorics and Diophantine geometry to study the generalised sum-product phenomenon in algebraic groups. As an application of this circle of ideas, we resolve a conjecture of Bremner on arithmetic progressions in coordinates of elliptic curves, along with various other generalisations studied in the literature.\n  We also prove a uniform Bourgain--Chang-type sum-product estimate for general $1$-dimensional algebraic groups $G$ over $\\mathbb{C}$. Using these ideas, we provide an alternative solution to a problem of Bays--Breuillard. Furthermore, we show an Elekes--Szabó type result in the same setting for sets with small doubling, improving upon an earlier result of Bays--Breuillard when $G$ is not $\\mathbb{G}_a$. Our power saving here can be shown to be quantitatively optimal.\n  We use a combination of deep, classical results in Diophantine geometry due to David--Philippon, Laurent and Evertse--Schmidt--Schlickewei along with the recent breakthrough work on the weak Polynomial Freiman--Ruzsa conjecture over integers due to Gowers--Green--Manners--Tao.",
+          "authors": [
+            "Joseph Harrison",
+            "Akshat Mudgal",
+            "Harry Schmidt"
+          ],
+          "published": "2026-03-06T17:06:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06475v1",
+          "entry_id": "http://arxiv.org/abs/2603.06475v1",
+          "title": "A Ruelle-McMullen formula for the volume dimension of skew products in $\\mathbb C^2$",
+          "summary": "Ruelle gave an explicit second-order expansion at $c=0$ of the Hausdorff dimension of the Julia set of the quadratic family $f_c(z)=z^2+c$. McMullen later extended this result to polynomial perturbations of $z^d$ for arbitrary degree $d\\geq 2$. In this paper we study an analogue of this problem for skew products in $\\mathbb C^2$. Since holomorphic dynamical systems in higher dimensions are non-conformal, we replace the Hausdorff dimension by the \\emph{volume dimension}, a dynamically defined notion we introduced in our earlier work and characterized as the zero of a natural pressure function. We consider families of holomorphic skew products of the form \\[ f_t(z,w)=(z^d,\n  w^d+t(c_1 (z) w^{d-1} +c_2(z)w^{d-2} + \\cdots+c_d(z))). \\] Our main result gives an explicit second-order expansion of the volume dimension of the Julia set $J(f_t)$ as $t\\to0$ in terms of the coefficients $c_k(z)$.",
+          "authors": [
+            "Fabrizio Bianchi",
+            "Yan Mary He"
+          ],
+          "published": "2026-03-06T17:00:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06415v1",
+          "entry_id": "http://arxiv.org/abs/2603.06415v1",
+          "title": "Matchings in hypergraphs via Ore-degree conditions",
+          "summary": "Let $\\mathcal{H} \\subseteq \\binom{[n]}{r}$ be an $r$-uniform hypergraph on vertex set $[n] = \\{1,2,\\dots, n\\}$. For an $r$-set of vertices $S \\subseteq [n]$, the \\emph{degree} of $S$ is defined as $\\textrm{deg}(S)=\\sum_{v \\in S}\\textrm{deg}(v)$ and the minimum of $\\textrm{deg}(S)$ over all non-edge $r$-subsets $S \\not \\in E(\\mathcal{H})$ of $V({\\cal H})$ is the {\\it Ore-degree} of ${\\cal H}$, denoted by ${σ_r}({\\cal H})$. We prove several Ore-degree results about existence of matchings in hypergraphs:\n  (1) For $n\\geq 2r+2$, if ${\\cal H}$ is an intersecting $r$-uniform hypergraph on $n$ vertices, then $σ_r({\\cal H})\\leq r{n-2 \\choose r-2}$, and there is equality only when ${\\cal H}$ is a $1$-star.\n  (2) For $r\\geq 3$ and $n\\geq 4r^2$, if is a non-trivial intersecting $r$-uniform hypergraph on $n$ vertices, then $σ_r({\\cal H})\\leq r\\left({n-2 \\choose r-2}-{n-r-2 \\choose r-2}\\right)$.\n  (3) For $s\\geq 2$ and $n\\geq 3r^2(s-1)$, if ${\\cal H}$ is an $r$-uniform hypergraph on $n$ vertices and $σ_r({\\cal H})>r\\left({n-1 \\choose r-1}-{n-s \\choose r-1}\\right)$, then ${\\cal H}$ contains $s$ pairwise disjoint edges.",
+          "authors": [
+            "József Balogh",
+            "Cory Palmer",
+            "Ghaffar Raeisi"
+          ],
+          "published": "2026-03-06T15:54:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06379v1",
+          "entry_id": "http://arxiv.org/abs/2603.06379v1",
+          "title": "Decay of correlations on Abelian covers of isometric extensions of volume-preserving Anosov flows",
+          "summary": "We establish an asymptotic expansion in inverse powers of time of the correlation function of isometric extensions of volume-preserving Anosov flows on Abelian covers of closed manifolds.",
+          "authors": [
+            "Mihajlo Cekić",
+            "Thibault Lefeuvre",
+            "Sebastián Muñoz-Thon"
+          ],
+          "published": "2026-03-06T15:30:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06355v1",
+          "entry_id": "http://arxiv.org/abs/2603.06355v1",
+          "title": "The five-sequence of adjoints for combinatorial simplicial complexes",
+          "summary": "For a set $A$ let ${\\mathbf {SC}_A}$ be the poset of simplicial complexes whose vertices are in $A$. For a function $f : A \\rightarrow B$ there are functors $ f^{! !}, f^{**}, f^{ii}: {\\mathbf {SC}_A} \\rightarrow {\\mathbf {SC}_B}, \\quad f^{!*}, f^{i*} : {\\mathbf {SC}_B} \\rightarrow {\\mathbf {SC}_A}, $ forming a five sequence of adjoints $f^{ !!} \\dashv f^{* !} \\dashv f^{* *} \\dashv f^{*i} \\dashv f^{ii}$.\n  We investigate in detail these functors, and use this to give three categorical structures on simplicial complexes on finite sets such that the Stanley-Reisner correspondence to commutative monomial rings gives dualities.",
+          "authors": [
+            "Gunnar Fløystad"
+          ],
+          "published": "2026-03-06T15:07:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06345v1",
+          "entry_id": "http://arxiv.org/abs/2603.06345v1",
+          "title": "Finding Connections via Satisfiability Solving",
+          "summary": "Commonly used proof strategies by automated reasoners organise proof search either by ordering-based saturation or by reducing goals to subgoals. In this paper, we combine these two approaches and advocate a SAT-based method with symmetry breaking for connection calculi in first-order logic, with the purpose of further pushing the automation in first-order classical logic proofs. In contrast to classical ways of reducing first-order logic to propositional logic, our method encodes the structure of the proof search itself. We present three distinct SAT encodings for connection calculi, analyse their theoretical properties, and discuss the effect of using SAT/SMT solvers on these encodings. We implemented our work in the new solver upCoP and showcase its practical feasibility.",
+          "authors": [
+            "Clemens Eisenhofer",
+            "Michael Rawson",
+            "Laura Kovács"
+          ],
+          "published": "2026-03-06T14:49:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06277v1",
+          "entry_id": "http://arxiv.org/abs/2603.06277v1",
+          "title": "On the Combinatorial Rigidity for Polynomials with Attracting Cycles",
+          "summary": "We show that every polynomial of degree $d \\geq 2$ in the connectedness locus with an attracting cycle which attracts at least two critical points and no indifferent cycles is not combinatorially rigid. In particular, we prove that a hyperbolic polynomial with connected Julia set is combinatorially rigid if and only if it is not of the ``disjoint type''.",
+          "authors": [
+            "Yueyang Wang"
+          ],
+          "published": "2026-03-06T13:36:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06269v1",
+          "entry_id": "http://arxiv.org/abs/2603.06269v1",
+          "title": "On a question about pattern avoidance of cyclic permutations",
+          "summary": "Recently, Archer et al.\\ studied cyclic permutations that avoid the decreasing pattern $δ_k=k(k-1)\\cdots21$ in one-line notation and avoid another pattern $τ$ of length $4$ in all their cycle forms. There are three cases in total to consider, namely, $τ=1324, 1342$ and $1432$. They determined two of them, leaving the case $τ=1432$ as an open question. In this paper, we resolve this case by deriving explicit formulas based on an analysis of the structure of cycle forms and an application of Dilworth's theorem.",
+          "authors": [
+            "Zuo-Ru Zhang",
+            "Hongkuan Zhao"
+          ],
+          "published": "2026-03-06T13:31:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06262v1",
+          "entry_id": "http://arxiv.org/abs/2603.06262v1",
+          "title": "Real Laminations of Cubic Polynomials on Boundaries of Hyperbolic Components",
+          "summary": "Milnor divides all bounded hyperbolic components of cubic polynomials into 4 types (A), (B), (C) and (D). In this article, we characterize the real laminations of cubic polynomials on the tame boundary of all bounded hyperbolic components of type (A), (B), or (C). For such maps, we prove that the real lamination is the smallest lamination which contains the real lamination of maps in the hyperbolic component and an equivalence relation generated by one characteristic equivalence class. As an application, we show that every hyperbolic cubic polynomial except type (D) is not combinatorially rigid.",
+          "authors": [
+            "Yueyang Wang"
+          ],
+          "published": "2026-03-06T13:27:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06233v1",
+          "entry_id": "http://arxiv.org/abs/2603.06233v1",
+          "title": "The generalized Lefschetz number and loop braid groups",
+          "summary": "We study the interplay between braid group theory and topological dynamics in three dimensions. While classical braid theory has been extensively applied to surface homeomorphisms to analyze fixed and periodic points, an analogous framework for three-dimensional manifolds has been lacking.\n  In this work, we introduce loop braid groups as a three-dimensional generalization of classical braid groups in order to investigate homeomorphisms of the 3-ball that leave invariant a finite collection of circles. In our main theorem, we associate the Burau matrix representations of loop braid elements with the generalized Lefschetz number. This result provides important information on the existence and interaction of fixed and periodic points.\n  As an application of our theorem, we obtain an estimate for the number of periodic points. Our result extends a classical two-dimensional theorem to the three-dimensional setting, providing a framework in which the topological and algebraic aspects of loop braid groups can be used to study topological dynamical properties.",
+          "authors": [
+            "Stavroula Makri"
+          ],
+          "published": "2026-03-06T12:55:41+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06203v1",
+          "entry_id": "http://arxiv.org/abs/2603.06203v1",
+          "title": "Rational Preperiodic Points of Quadratic Rational Maps over $\\mathbb{Q}$ with Nonabelian Automorphism Groups",
+          "summary": "Let $f:\\mathbb{P}^1 \\rightarrow \\mathbb{P}^1$ be a quadratic rational map defined over the rational field $\\mathbb Q$ with nonabelian automorphism group. We completely classify such maps that have $\\mathbb Q$-rational periodic points of period $1$, $2$, and $3$. We then prove that no such map has a $\\mathbb Q$-rational periodic point of exact period $4$ or $5$. We also show that if such a map has no $\\mathbb Q$-rational periodic points of exact period exceeding $3$, then the number of its $\\mathbb Q$-rational preperiodic points is at most $6$.",
+          "authors": [
+            "Hasan Bilgili",
+            "Mohammad Sadek"
+          ],
+          "published": "2026-03-06T12:21:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06751v1",
+          "entry_id": "http://arxiv.org/abs/2603.06751v1",
+          "title": "Parameter Identifiability Under Limited Experimental Data in Age-Structured Models of the Cell Cycle",
+          "summary": "The mitotic cell cycle governs DNA replication and cell division. The effectiveness of radiotherapy and chemotherapy depends on cell-cycle position, with increased resistance during DNA replication and mitosis. Thus, accurate mathematical models of the cell cycle are essential for understanding and predicting treatment response. However, mathematical modellers often face the problem of a lack of publicly available, sufficiently resolved, time-series datasets for parametrising models. In this work, we consider how the ability to collate population summary measurements across the literature, from different cell lines and/or experimental set ups, affects identifiability of parameters for a cell cycle model.\n  Initially synchronised cell populations gradually desynchronise over successive cycles, converging to balanced exponential growth (BEG) which is characterised by exponential population growth and steady, time-independent phase proportions. These proportions can be obtained from fluorescence-activated cell sorting (FACS) data. The increasing use of the Fluorescent Ubiquitination-based Cell Cycle Indicator (FUCCI) provides higher-resolution information on phase dynamics, such as minimum phase durations and variability.\n  We present an age-structured PDE model in which cell-cycle phase progression follows a delayed gamma distribution. We derive analytical expressions for BEG phase proportions and other FUCCI-observable quantities, and use them to assess how data availability influences parameter identifiability. When parameters are not uniquely identifiable, we determine identifiable parameter groupings, thereby determining the minimum amount of data that must be available for successfully fitting structured population models of the cell cycle.",
+          "authors": [
+            "Ruby E. Nixson",
+            "Helen M. Byrne",
+            "Joe M. Pitt-Francis",
+            "Philip K. Maini"
+          ],
+          "published": "2026-03-06T11:59:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06187v1",
+          "entry_id": "http://arxiv.org/abs/2603.06187v1",
+          "title": "Random Quadratic Form on a Sphere: Synchronization by Common Noise",
+          "summary": "We introduce the Random Quadratic Form (RQF): a stochastic differential equation which formally corresponds to the gradient flow of a random quadratic functional on a sphere. While the one-point dynamics of the system is a Brownian motion and thus has no preferred direction, the two-point motion exhibits nontrivial synchronizing behaviour. In this work we study synchronization of the RQF, namely we give both distributional and path-wise characterizations of the solutions by studying invariant measures and random attractors of the system.\n  The RQF model is motivated by the study of the role of linear layers in transformers and illustrates the synchronization by common noise phenomena arising in the simplified models of transformers. In particular, we provide an alternative (independent of self-attention) explanation of the clustering behaviour in deep transformers and show that tokens cluster even in the absence of the self-attention mechanism.",
+          "authors": [
+            "Maximilian Engel",
+            "Anna Shalova"
+          ],
+          "published": "2026-03-06T11:55:00+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06185v1",
+          "entry_id": "http://arxiv.org/abs/2603.06185v1",
+          "title": "Asymptotic Transfer in Critical Recursive Composition Schemes",
+          "summary": "The composition $\\mathcal{F} \\circ \\mathcal{G}$ of two combinatorial classes $\\mathcal{F}$ and $\\mathcal{G}$ is a standard combinatorial construction and translates into the composition $F(G(z))$ of their corresponding counting generating functions. Such a composition is called critical if $G(ρ_G) = ρ_F$, where $ρ_F$ and $ρ_G$ denote the corresponding radii of convergences of $F$ and $G$, respectively. In this case, both the singular behaviours of $F$ and $G$ influence that of $F\\circ G$. Such critical decomposition schemes appear quite frequently in the context of map enumeration. For example by using the block-decomposition one has $M(z) = B(z(1+M(z))^2)$ and $ρ_B = ρ_M (1+M(ρ_M))^2$, where $M(z)$ denotes the generating series of all rooted planar maps and $B(y)$ the generating series of $2$-connected rooted planar maps. This can be extended to multivariate generating functions by taking several statistics into account, for example face counts. Since critical composition schemes show (usually) a condensation phenomenon -- in the above situation this means that there is giant $2$-connected block of linear size and linearly many small blocks -- it is very plausible that statistical properties on $2$-connected maps transfer to corresponding properties of all maps and back. The purpose of the present paper is to make this precise on the level of the singular structure of the corresponding multivariate generating functions. In particular we show that moving $3/2$-singularities transfer. Since such kind of singularities are closely related to central limit theorems of the corresponding statistics this methods provides also a kind of transfer of central limit theorems. Actually this method is quite flexible and is applied to a variety of face and pattern counting statistics in map enumeration.",
+          "authors": [
+            "Michael Drmota",
+            "Zéphyr Salvy"
+          ],
+          "published": "2026-03-06T11:45:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06179v1",
+          "entry_id": "http://arxiv.org/abs/2603.06179v1",
+          "title": "On Posets of Classes of Subgroups with Same Set of Orders of Elements",
+          "summary": "In this paper, we study the posets of classes of subgroups of finite group having same set of orders of elements. We show that this poset is a chain only in the case of p-groups and moreover, we characterize all finite groups for which this poset is C2, the chain with two elements. We also show that this poset forms a lattice in the case of finite cyclic and dihedral groups and give a characterization when this lattice is distributive and modular.",
+          "authors": [
+            "Sachin Ballal",
+            "Tushar Halder"
+          ],
+          "published": "2026-03-06T11:38:05+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06177v1",
+          "entry_id": "http://arxiv.org/abs/2603.06177v1",
+          "title": "Finiteness conditions on skew braces and solutions of the Yang-Baxter equation",
+          "summary": "A finite non-degenerate set-theoretic solution $(X,r)$ of the Yang-Baxter equation gives rise to a structure skew brace $B(X,r)$ that is a $λ_f$-skew brace, i.e. every element has finitely many $λ$-images, and whose additive group is $FC$. This motivates the study of finiteness conditions on skew braces. We first study the general class of $λ_f$ skew braces and the subclass where the additive group is $FC$, showing that these properties share a resemblance to finite conjugacy, having an analog of the $FC$-center and several analogous structural results. Furthermore, by passing through the structure skew brace of a solution, this property measures whether elements are contained in a finite decomposition factor, identifying a class of infinite solutions that may exhibit similar properties to finite ones. Finally, we show that for a sub skew brace where both groups have finite index, both indices need to coincide and that such a sub skew brace contains a strong left ideal of finite index.",
+          "authors": [
+            "Rosa Cascella",
+            "Silvia Properzi",
+            "Arne Van Antwerpen"
+          ],
+          "published": "2026-03-06T11:35:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06174v1",
+          "entry_id": "http://arxiv.org/abs/2603.06174v1",
+          "title": "Haar-Type Measures on Topological Quasigroups and Kunen's Theorem",
+          "summary": "Haar measure is a fundamental structure in harmonic analysis on locally compact groups. Its existence reflects the compatibility between topology and the associative algebraic structure of groups. In this paper we propose a framework for Haar-type measures on topological quasigroups. Since associativity is absent, strict translation invariance is generally too strong to expect. We therefore introduce quasi-invariant measures whose defect is measured by a modular cocycle attached to translations.\n  We then explain, in a detailed and cautious form, how Moufang-type identities may impose strong constraints on this cocycle. In particular, under additional quasi-invariance assumptions for right translations, the Moufang-type identity $(N1)$ leads naturally to a multiplicativity relation for the cocycle. This suggests a measure-theoretic interpretation of Kunen's theorem: the emergence of loop structure may be viewed as the collapse of a modular defect in the translation geometry of a quasigroup.",
+          "authors": [
+            "Takao Inoué"
+          ],
+          "published": "2026-03-06T11:31:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06157v1",
+          "entry_id": "http://arxiv.org/abs/2603.06157v1",
+          "title": "Design of Hierarchical Excitable Networks",
+          "summary": "We provide a method to systematically construct vector fields for which the dynamics display transitions corresponding to a desired hierarchical connection structure. This structure is given as a finite set of directed graphs $\\mathbf{G}_1,\\dotsc,\\mathbf{G}_N$ (the lower level), together with another digraph $\\mathbfΓ$ on $N$ vertices (the top level). The dynamic realizations of $\\mathbf{G}_1,\\dotsc,\\mathbf{G}_N$ are heteroclinic networks and they can be thought of as individual connection patterns on a given set of states. Edges in $\\mathbfΓ$ correspond to transitions between these different patterns. In our construction, the connections given through $\\mathbfΓ$ are not heteroclinic, but excitable with zero threshold. This describes a dynamical transition between two invariant sets where every $δ$-neighborhood of the first set contains an initial condition with $ω$-limit in the second set. Thus, we prove a theorem that allows the systematic creation of hierarchical networks that are excitable on the top level, and heteroclinic on the lower level. Our results modify and extend the simplex realization method by Ashwin & Postlethwaite.",
+          "authors": [
+            "Sören von der Gracht",
+            "Alexander Lohse"
+          ],
+          "published": "2026-03-06T11:05:36+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06156v1",
+          "entry_id": "http://arxiv.org/abs/2603.06156v1",
+          "title": "Ramanujan Complexes from Unitary Groups over Number Fields",
+          "summary": "In this article, we construct new families of Ramanujan complexes with local structure distinct from all previously known examples. Our approach is based on unitary groups over number fields, more specifically on what we call super-definite unitary groups, that is definite unitary groups that are anisotropic modulo their center at a finite place. These arise naturally as groups of units in central division algebras with involution of the second kind.\n  Our first main result gives a general construction of infinite families of Ramanujan complexes associated with a super-definite unitary group $G$ over a totally real number field and a finite place $v_0$. The structure of the resulting complex is governed by the type of the Bruhat-Tits building at $v_0$. It includes new examples of type $A_n$ when $v_0$ is split, and novel families of type ${}^2\\!A'_n$, ${}^2 \\! A''_n$ (with $n$ even), $B$-$C_n$, ${}^2 \\! B$-$C_n$ and $C$-$BC_n$ in the non-split case. This construction works uniformly across all ranks.\n  Since much of the motivation for constructing expander complexes comes from computer science, we investigate the algorithmic explicitness of our construction in the latter part of the paper, and provide an example in rank 5 where it becomes fully explicit. In particular, this example yields golden gates for the real Lie group $PU(5)$.",
+          "authors": [
+            "Rahul Dalal",
+            "Alberto Mínguez",
+            "Jiandi Zou"
+          ],
+          "published": "2026-03-06T11:05:29+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06139v1",
+          "entry_id": "http://arxiv.org/abs/2603.06139v1",
+          "title": "Groups acting on products of locally finite trees",
+          "summary": "We examine the question of which finitely generated groups act properly on a finite product of locally finite simplicial trees and present evidence in favour of hyperbolic surface groups having such an action. We also give a completely explicit embedding of the genus 2 closed hyperbolic surface group in $SL_2(\\F_p(x,y))$ for any prime $p$.",
+          "authors": [
+            "J. O. Button"
+          ],
+          "published": "2026-03-06T10:47:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06747v1",
+          "entry_id": "http://arxiv.org/abs/2603.06747v1",
+          "title": "The degeneracy and Alon-Tarsi number under $F$-sum operations",
+          "summary": "The Alon-Tarsi number of a graph $ G $ is the smallest $ k $ such that there exists an orientation $ D $ of $ G $ with maximum outdegree $ k - 1 $ satisfying that the number of even Eulerian subgraphs is different from the number of odd Eulerian subgraphs. The degeneracy of a graph $ G $ is the maximum value of the minimum degree over all subgraphs of $ G $. In this paper, we obtain a characterization of graphs with $AT(G)=2$ for any graph $G$, and study the Alon-Tarsi number of $F$-sum in terms of degeneracy.",
+          "authors": [
+            "Zhiguo Li",
+            "Zhentao Jiao",
+            "Zeling Shao"
+          ],
+          "published": "2026-03-06T10:45:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06105v1",
+          "entry_id": "http://arxiv.org/abs/2603.06105v1",
+          "title": "Construction of Anosov flows on fibered hyperbolic 3-manifolds",
+          "summary": "We prove that fibered hyperbolic $3$-manifolds carrying transitive Anosov flows are abundant. More precisely, for every $g\\geq 2$, there is a finite index subgroup~$Γ$ of $ \\mathrm{Mod}(S_g)/\\mathrm{Tor}(S_g) \\simeq \\mathrm{Sp}(2g,\\mathbb{Z}) $ so that every element of $Γ$ has a representative $\\varphi \\in \\operatorname{Mod}(S_g)$ such that the mapping torus $ M_\\varphi := S_g \\times [0,1]/(x,1) \\sim (\\varphi(x),0) $ carries a transitive Anosov flow. The manifold $M_\\varphi$ is hyperbolic for almost every element of $Γ$. This shows in particular that, in the set of all fibered hyperbolic manifolds, the subset made of the manifolds carrying Anosov flows has positive density up to trivial linear monodromy. Moreover, the subgroup $Γ$ is defined by an explicit set of generators, and our construction yields many examples of simple fibered hyperbolic manifolds carrying Anosov flows.",
+          "authors": [
+            "François Béguin",
+            "Christian Bonatti",
+            "Biao Ma",
+            "Bin Yu"
+          ],
+          "published": "2026-03-06T09:56:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06100v1",
+          "entry_id": "http://arxiv.org/abs/2603.06100v1",
+          "title": "Asymptotic expansions of characteristic orbits of planar real analytic vector fields",
+          "summary": "The well-known Newton-Puiseux Theorem states that each real branch of a planar real analytic curve admits a Puiseux expansion. We generalize this result to characteristic orbit of an isolated singularity of a planar real analytic vector field and prove that each characteristic orbit has a `power-log' expansion.",
+          "authors": [
+            "Jun Zhang"
+          ],
+          "published": "2026-03-06T09:51:42+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06094v1",
+          "entry_id": "http://arxiv.org/abs/2603.06094v1",
+          "title": "Failing to keep the balance: explicit formulae and topological recursion for leaky Hurwitz numbers",
+          "summary": "Recently a new family of enumerative invariants called leaky Hurwitz numbers was introduced by Cavalieri-Markwig-Ranganathan in the context of logarithmic intersection theory. They admit an interpretation via tropical covers where the balancing condition fails. We employ tropical geometry to prove a generalisation of the piecewise polynomiality of Accadia-Karev-Lewanski for leaky completed cycles Hurwitz numbers, and a different wall crossing that is cubic instead of quadratic. Using tropical combinatorics and generatingfunctionology, we also find closed formulae for one-part and two-part completed cycles leaky Hurwitz numbers in genus $0$. Working more generally with a view towards topological recursion, we use Hamiltonian flows to associate spectral curves to very general cut-and-join operators. Under mild analytic constraints, we find the appropriate spectral curves, and in case the leakiness is fixed, we show that the resulting enumerative invariants satisfy topological recursion. This provides a partial inverse to recent work of Alexandrov-Bychkov-Dunin-Barkowski-Kazarian-Shadrin producing differentials satisfying topological recursion for KP $τ$-functions. In particular these results specialise to completed cycles leaky Hurwitz numbers.",
+          "authors": [
+            "Marvin Anas Hahn",
+            "Reinier Kramer"
+          ],
+          "published": "2026-03-06T09:47:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06093v1",
+          "entry_id": "http://arxiv.org/abs/2603.06093v1",
+          "title": "Green currents of holomorphic correspondences on compact Kähler manifolds",
+          "summary": "Consider a holomorphic correspondence $f$ on a compact Kähler manifold $X$ of dimension $k$. Let $1\\le q\\le k$ be any integer such that the dynamical degrees of $f$ satisfy $d_{q-1}<d_q$. We construct the Green currents $T_c$ of $f$ associated with the classes $c$ belonging to the dominant eigenspace for the action of $f^*$ on $H^{q,q}(X,\\R)$. We also show that the super-potential of $T_c$ is $\\log$-Hölder-continuous. When $f$ has simple action on cohomology and its graph satisfies an assumption on the local multiplicity, we prove the exponential equidistribution of all positive closed currents towards the main Green current, i.e., the only one associated to the unique maximal degree $d_q$.",
+          "authors": [
+            "Muhan Luo",
+            "Marco Vergamini"
+          ],
+          "published": "2026-03-06T09:47:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06069v1",
+          "entry_id": "http://arxiv.org/abs/2603.06069v1",
+          "title": "Topological pressure for holomorphic correspondences using open covers",
+          "summary": "In this paper, we define the topological pressure of continuous functions with respect to the holomorphic correspondences using the open covers of the Riemann sphere. Further, we show that this method coincides with the existing definition of pressure that uses the notion of separated and spanning family of orbits.",
+          "authors": [
+            "Subith Gopinathan"
+          ],
+          "published": "2026-03-06T09:24:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06053v1",
+          "entry_id": "http://arxiv.org/abs/2603.06053v1",
+          "title": "Analytic symplectomorphisms displaying minimal ergodicity on the sphere, cylinder and disk",
+          "summary": "We construct analytic symplectomorphisms on the sphere, the disk and the cylinder which are minimally ergodic (only 3 ergodic measures). To achieve this, we apply and generalize a principle introduced by Berger, based on the Approximation by Conjugacy method of Anosov-Katok.",
+          "authors": [
+            "Yann Delaporte"
+          ],
+          "published": "2026-03-06T09:07:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06019v1",
+          "entry_id": "http://arxiv.org/abs/2603.06019v1",
+          "title": "Characterization of Maximizers for Sums of the First Two Eigenvalues of Sturm-Liouville Operators",
+          "summary": "In this paper we study the maximization of the sum of the first two Dirichlet eigenvalues for Sturm-Liouville operators with potentials in the noncompact space $L^1$. We prove that there exists a unique potential function achieving the maximum, which is non-negative, piecewise smooth, and symmetric. Using measure differential equations and weak$^*$ convergence, we show that the nonzero part of the maximizer can be determined by the solution to the pendulum equation $θ'' + \\ell \\sinθ= 0 $.",
+          "authors": [
+            "Gang Meng",
+            "Yuzhou Tian",
+            "Bing Xie",
+            "Meirong Zhang"
+          ],
+          "published": "2026-03-06T08:12:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06012v1",
+          "entry_id": "http://arxiv.org/abs/2603.06012v1",
+          "title": "Diagonalizing Through the $ω$-Chain: Iterated Self-Certification on Bounded Turing Machines and its Least Fixed Point",
+          "summary": "Bounded self-certification in Turing machines fails because self-simulation necessarily incurs a strictly positive temporal overhead. We translate this operational constraint into a domain-theoretic framework, defining an operator that advances a finite halting observation from time bound $i$ to $i+1$. While no bounded machine can achieve a fixed point under this operator, the iterative process forms an ascending $ω$-chain. The Scott limit of this chain resolves to the least fixed point of the operator, representing an unbounded computation that fully captures the machine's halting behavior. Our construction provides a novel perspective on the halting problem, framing the transition from finite observability to the least fixed point as the continuous deferral of the diagonal.",
+          "authors": [
+            "Miara Sung"
+          ],
+          "published": "2026-03-06T08:07:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06004v1",
+          "entry_id": "http://arxiv.org/abs/2603.06004v1",
+          "title": "Topology of slices through the Sierpiński tetrahedron",
+          "summary": "We investigate slices of the Sierpiński tetrahedron from a topological viewpoint. For each $c\\in[0,1]$, we study the Čech (co)homology group of the slice at height $c$. We show that the topology of the slice exhibits a sharp dichotomy. If $c$ is a dyadic rational, then the slice has finitely many connected components, infinite first Čech homology, and trivial higher homology. If $c$ is not a dyadic rational, then the slice is totally disconnected and all positive-degree Čech homology groups vanish.",
+          "authors": [
+            "Yuto Nakajima",
+            "Takayuki Watanabe"
+          ],
+          "published": "2026-03-06T08:03:10+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.05998v1",
+          "entry_id": "http://arxiv.org/abs/2603.05998v1",
+          "title": "Remarks on the outer length billiards",
+          "summary": "We study outer length billiards; our main results are as follows. We prove 3- and 4-periodic versions of the Ivrii conjecture. We show that, for every period $n\\ge 3$, there exists a functional space of billiard tables that possess invariant curves consisting of $n$-periodic points. For $n=4$, we explicitly parameterize such centrally symmetric billiard tables by functions of one variable and describe how to construct these tables geometrically, similarly to the known construction of Radon curves.",
+          "authors": [
+            "Misha Bialy",
+            "Serge Tabachnikov"
+          ],
+          "published": "2026-03-06T07:57:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06737v1",
+          "entry_id": "http://arxiv.org/abs/2603.06737v1",
+          "title": "Agent Hunt: Bounty Based Collaborative Autoformalization With LLM Agents",
+          "summary": "We describe an experiment in large-scale autoformalization of algebraic topology in an Interactive Theorem Proving (ITP) environment, where the workload is distributed among multiple LLM-based coding agents. Rather than relying on static central planning, we implement a simulated bounty-based marketplace in which agents dynamically propose new lemmas (formal statements), attach bounties to them, and compete to discharge these proof obligations and claim the bounties. The agents interact directly with the interactive proof system: they can invoke tactics, inspect proof states and goals, analyze tactic successes and failures, and iteratively refine their proof scripts. In addition to constructing proofs, agents may introduce new formal definitions and intermediate lemmas to structure the development. All accepted proofs are ultimately checked and verified by the underlying proof assistant. This setting explores collaborative, decentralized proof search and theory building, and the use of market-inspired mechanisms to scale autoformalization in ITP.",
+          "authors": [
+            "Chad E. Brown",
+            "Cezary Kaliszyk",
+            "Josef Urban"
+          ],
+          "published": "2026-03-06T07:34:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.05973v1",
+          "entry_id": "http://arxiv.org/abs/2603.05973v1",
+          "title": "Vanishing orders and zero degree Turán densities",
+          "summary": "For integers $1\\le \\ell<k$, the $\\ell$-degree Turán density $π_\\ell(F)$ measures the minimum $\\ell$-degree threshold that forces a copy of a fixed $k$-uniform hypergraph $F$, generalizing both the classical Turán density $π_1$ and the codegree Turán density $π_{k-1}$. Motivated by Erdős' characterization of $k$-graphs with zero Turán density, we study the structural implications of vanishing $\\ell$-degree Turán density.\n  We prove for every uniformity $k\\ge 3$ that if $π_2(F)=0$, then $F$ admits a $2$-vanishing order-a global vertex ordering under which all edges align canonically. This provides a higher-degree analogue of the classical fact that $π_1(F)=0$ forces $k$-partiteness, and identifies a structural obstruction to vanishing $2$-degree Turán density. As an application, we show that, unlike $π_1$, $π_2$ accumulates at $0$. For $3\\le \\ell\\le k-1$, we also obtain weaker necessary conditions for $π_\\ell(F)=0$.\n  The proof combines random geometric building blocks, a design-theoretic gluing scheme, and random sparsification to reconcile positive $2$-degree with local vanishing structure.",
+          "authors": [
+            "Laihao Ding",
+            "Hong Liu",
+            "Haotian Yang"
+          ],
+          "published": "2026-03-06T07:13:04+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06736v1",
+          "entry_id": "http://arxiv.org/abs/2603.06736v1",
+          "title": "Three Fixed-Dimension Satisfiability Semantics for Quantum Logic: Implications and an Explicit Separator",
+          "summary": "We compare three satisfiability notions for propositional formulas in the language {not, and, or} over a fixed finite-dimensional Hilbert space H=F^d with F in {R, C}. The first is the standard Hilbert-lattice semantics on the subspace lattice L(H), where meet and join are total operations. The second is a global commuting-projector semantics, where all atoms occurring in the formula are interpreted by a single pairwise-commuting projector family. The third is a local partial-Boolean semantics, where binary connectives are defined only on commeasurable pairs and definedness is checked nodewise along the parse tree.\n  We prove, for every fixed d >= 1, Sat_COM^d(phi) implies Sat_PBA^d(phi) implies Sat_STD^d(phi) for every formula phi. We then exhibit the explicit formula SEP-1 := (p and (q or r)) and not((p and q) or (p and r)) which is satisfiable in the standard semantics for every d >= 2, but unsatisfiable under both the global commuting and the partial-Boolean semantics. Consequently, for every d >= 2, the satisfiability classes satisfy SAT_COM^d subseteq SAT_PBA^d subset SAT_STD^d and SAT_COM^d subset SAT_STD^d, while the exact relation between SAT_COM^d and SAT_PBA^d remains open. The point of the paper is semantic comparison, not a new feasibility reduction or a generic translation theorem.",
+          "authors": [
+            "Joaquim Reizi Higuchi"
+          ],
+          "published": "2026-03-06T06:29:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.06734v1",
+          "entry_id": "http://arxiv.org/abs/2603.06734v1",
+          "title": "Near critical interior dynamics in a model of state society interaction",
+          "summary": "We study a normalized two dimensional competitive Lotka$-$Volterra system describing the interaction between state power and society power. Restricting attention to the positively invariant domain $[0,1]^2$, the analysis focuses on interior equilibrium dynamics where coexistence persists as the unique long run outcome. We show that when the interaction parameters approach the coexistence threshold $a_{12}a_{21}\\to1^{-}$, convergence toward equilibrium becomes slow and trajectories exhibit prolonged transient dynamics. In this near critical regime, trajectories organize into a narrow corridor around the balance manifold despite the absence of bistability. The corridor structure can be characterized quantitatively through equilibrium gaps and interaction thresholds. Numerical simulations illustrate how asymmetric adjustment influences the geometry and persistence of these transient regimes.",
+          "authors": [
+            "Kerime Nur Kavadar",
+            "Ali Demirci",
+            "Furkan Emre Isik"
+          ],
+          "published": "2026-03-06T06:20:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.05847v1",
+          "entry_id": "http://arxiv.org/abs/2603.05847v1",
+          "title": "Isomorphism factorizations of the complete graph into Cayley graphs on CI-groups",
+          "summary": "Isomorphic factorizations of complete graphs originate from the seminal work of Frank Harary and collaborators, who initiated the systematic study of decompositions of complete graphs into pairwise isomorphic spanning subgraphs. In this paper, we investigate isomorphic factorizations of complete graphs into Cayley graphs on CI-groups.\n  Let $Γ=Cay(G,S)$ denote the Cayley graph of finite group $G$. We obtain a necessary and sufficient condition on CI-group $G$ so that the complete graph on $|G|$ vertices can be edge-partitioned into $k$-copies of Cayley graph of the same CI-group $G$ each isomorphic to $Cay(G,S)$ for some inverse-closed subset $S\\subset G\\setminus\\{1\\}$. Further we give a construction of isomorphic factorizations of the complete graph into Cayley graphs on CI-group.",
+          "authors": [
+            "Huye Chen",
+            "Jingjian Li",
+            "Hao Yu",
+            "Zitong Yu"
+          ],
+          "published": "2026-03-06T03:04:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.05841v1",
+          "entry_id": "http://arxiv.org/abs/2603.05841v1",
+          "title": "An extension of Birkhoff's representation theorem to locally-finite distributive lattices",
+          "summary": "Birkhoff's representation theorem for finite distributive lattices states that any finite distributive lattice is isomorphic to the lattice of order ideals (lower sets) of the partial order of the join-irreducible elements of the lattice. We present a simplified version of Stone's extension of this theorem to general distributive lattices. We then apply this formulation to locally finite distributive lattices to produce a novel representation theorem: The lattice is isomorphic to the order ideals of the poset of prime filters of the lattice whose symmetric difference from a particular ideal is finite.",
+          "authors": [
+            "Dale R. Worley"
+          ],
+          "published": "2026-03-06T02:51:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.05775v1",
+          "entry_id": "http://arxiv.org/abs/2603.05775v1",
+          "title": "Precoloring 3-extension on outerplanar graphs",
+          "summary": "The precoloring problem of a graph involves assigning colors to some vertices beforehand, and the objective is to determine whether it can be extended to a proper k-coloring of the entire graph. In 1958, Grotzsch proved that every triangle-free planar graph can be properly colored by three colors. One of the further generalizations of it is the recent result by Hoang La et al. in (Discrete Mathematics, 345(6) (2022), 112849 ). They proved that any two non-adjacent vertices and a face with a length at most four are precolored, the precolorings can be extended to a 3-coloring of the graph. In the paper, we consider precoloring extension of connected outerplanar graph with at most one or two triangles. Particularly, we show that precoloring of any two or three non-adjacent vertices can be extend to a 3-coloring of the whole graph.",
+          "authors": [
+            "Xingchao Deng",
+            "Beiyan Zou",
+            "Hong Zhai"
+          ],
+          "published": "2026-03-06T00:15:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.05771v1",
+          "entry_id": "http://arxiv.org/abs/2603.05771v1",
+          "title": "On Koopman Resolvents and Frequency Response of Nonlinear Systems",
+          "summary": "This paper proposes a novel formulation of frequency response for nonlinear systems in the Koopman operator framework. This framework is a promising direction for the analysis and synthesis of systems with nonlinear dynamics based on (linear) Koopman operators. We show that the frequency response of a nonlinear plant is derived through the Laplace transform of the output of the plant, which is a generalization of the classical approach to LTI plants and is guided by the resolvent theory of Koopman operators. The response is a complex-valued function of the driving angular frequency, allowing one to draw the so-called Bode plots, which display the gain and phase characteristics. Sufficient conditions for the existence of the frequency response are presented for three classes of dynamics.",
+          "authors": [
+            "Yoshihiko Susuki",
+            "Natsuki Katayama",
+            "Alexandre Mauroy",
+            "Igor Mezić"
+          ],
+          "published": "2026-03-06T00:11:22+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-03-10T02:26:10.841400+00:00",
+      "updated_at": "2026-03-10T02:26:10.841400+00:00",
+      "finalized_at": null
     }
   ]
 }
