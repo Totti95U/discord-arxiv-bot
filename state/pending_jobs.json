@@ -7092,7 +7092,7 @@
     },
     {
       "pipeline_id": "20260309T023425Z-c508852d",
-      "status": "summary_fallback_running",
+      "status": "completed",
       "interest_job_name": "batches/cleec6o8ref367h8nqevlwb4xkrtp8lpfwdx",
       "summarize_job_name": "batches/n742um76q2475s44571kkptvibrh7rcgqkrb",
       "papers": [
@@ -7700,14 +7700,183 @@
         "http://arxiv.org/abs/2603.05055v1",
         "http://arxiv.org/abs/2603.05021v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2603.05742v1": {
+          "title": "EZ境界、有限部分群上の分裂、および稠密アマルガム",
+          "summary": "本論文では、距離化可能なコンパクト集合の有限族から、それらのコピーが適切に分布した新しい非連結コンパクト距離空間を構成する「稠密アマルガム（dense amalgam）」という操作を扱っています。Gromov境界やCAT(0)境界などを包括するEZ境界という一般的な枠組みにおいて、有限部分群に沿った分裂を持つ無限端群Γの境界Zが、その分裂の因子部分群の極限集合からなる稠密アマルガムの形式を持つことを示しました。",
+          "keywords": [
+            "dense amalgam",
+            "EZ-boundaries",
+            "infinitely ended group",
+            "limit sets"
+          ],
+          "appendix": "無限端群の分裂や境界の構造を扱っており、「structure of large countable infinite group」の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.05728v1": {
+          "title": "LTLGuard: 軽量言語モデルと軽量記号推論を用いたLTL仕様の形式化",
+          "summary": "自然言語による曖昧な要求を線形時相論理(LTL)の形式仕様に変換することは、特に小中規模の言語モデルにおいて構文の正当性や一貫性を維持することが困難であるという課題がある。本研究では、4Bから14Bパラメータ程度のオープンウェイトモデルを用いて正確なLTL仕様を生成するためのモジュール型ツールチェーン「LTLGuard」を提案する。LTLGuardは制約付き生成と形式的な一貫性チェックを組み合わせ、自動推論ツールを用いて候補となる仕様を反復的に洗練することで、矛盾のない仕様生成を実現している。",
+          "keywords": [
+            "LTL",
+            "Formal specifications",
+            "Language models",
+            "Symbolic reasoning",
+            "Consistency checking"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」に関連しています。線形時相論理（LTL）はオートマトン理論や形式言語のクラスと密接に関わる形式体系であり、本手法における形式的な一貫性チェックの基盤となっています。"
+        },
+        "http://arxiv.org/abs/2603.05694v1": {
+          "title": "オートマトン学習による状態空間モデルのウォームスタート",
+          "summary": "本論文では、Moore machines（ムーア・マシン）が状態空間モデル（SSM）として厳密に実現可能であることを証明し、記号的オートマトンと連続的な機械学習アーキテクチャの間の形式的な対応を確立した。実験の結果、SSM単体では記号的手法に比べて桁違いに多くのデータを必要とし、内部の状態構造を適切に学習できないことが明らかになった。そこで著者らは、記号的に学習された近似モデルを用いてSSMを初期化する「ウォームスタート」手法を提案した。SYNTCOMPベンチマークを用いた適応的調停ポリシーの学習において、提案手法はランダム初期化に比べて2〜5倍速い収束を実現し、テストデータにおける精度も向上することを示した。これにより、記号的な構造の帰納バイアスを連続領域での学習に活用することが可能となる。",
+          "keywords": [
+            "Moore machines",
+            "state-space models",
+            "automata learning",
+            "symbolic structure",
+            "SYNTCOMP benchmark"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に密接に関連しており、記号的なオートマトン理論の知見を連続的な状態空間モデルに応用する手法を提案しています。"
+        },
+        "http://arxiv.org/abs/2603.05490v1": {
+          "title": "一次方程式と回帰における彩色閾値",
+          "summary": "本論文では、極値グラフ理論に着想を得て、有限体 Fₚ 上の一次方程式における Roth 型の問題の彩色版を研究している。同次方程式 L: ∑ cᵢ xᵢ = 0（k ≥ 3）に対し、L の解を含まない集合 A ⊆ Fₚ から生成される Cayley グラフ Cay(Fₚ, A) の彩色数を分析した。特に、彩色数が有界となるために必要な最小の密度である「彩色閾値」 δ_χ(L) を導入し、δ_χ(L) = 0 となるための必要十分条件が、L が 3 つ以上の係数の和が 0 となる部分集合を含むことであることを証明した。この過程で、ハミングボールにより生成される Cayley グラフの彩色の定量的下限を equivariant Borsuk-Ulam 型の議論を用いて導出し、Griesmer の問題を解決した。さらに、可測回帰、位相回帰、Bohr 回帰の階層構造との関連性を示し、全ての無限離散アーベル群において、位相回帰的であるが可測回帰的でない集合が存在することを証明した。",
+          "keywords": [
+            "chromatic threshold",
+            "linear equations",
+            "Cayley graphs",
+            "topological recurrence",
+            "measurable recurrence"
+          ],
+          "appendix": "本論文は、組合せ論（combinatorics）における極値理論や、無限群の構造（structure of large countable infinite group）に関連する回帰性の問題を扱っており、指定された興味ある分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.05380v1": {
+          "title": "History-Deterministic Büchi Automataは簡潔である",
+          "summary": "History-determinismの導入以来、10年以上にわたり未解決であった「History-Deterministic Büchi Automata (HDBA) は、等価な決定性Büchi Automataよりも状態数が少なくなり得るか」という問題に対し、肯定的な解決を与えた。本論文では、あらゆる等価な決定性オートマトンよりも厳密に少ない状態数（65状態）を持つHDBAの実例を示している。この簡潔性の証明は、理論的な洞察とコンピュータによる計算を組み合わせることで実現された。",
+          "keywords": [
+            "history-deterministic",
+            "Büchi automaton",
+            "succinctness",
+            "determinization"
+          ],
+          "appendix": "本論文は、オートマトン理論 (automata theory) および形式言語 (formal languages) に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2603.05331v1": {
+          "title": "アライメントの計算複雑性",
+          "summary": "プロセスマイニングにおける適合性検査の主要な手法である、イベントトレースとビジネスプロセスモデル間の乖離を定量化する「アライメント」について、ペトリネットの各クラスにおける計算複雑性を調査した研究である。安全なペトリネットやワークフローネットにおいてPSPACE完全であることを示したほか、プロセスツリーやTシステム、非巡回システムなどの基本的なサブクラスにおいてもNP完全であることを明らかにした。一方で、生存かつ安全なSシステムにおいてはP（多項式時間）で解けることを示し、これらの条件の重要性を実証している。",
+          "keywords": [
+            "alignments",
+            "process mining",
+            "Petri nets",
+            "computational complexity",
+            "conformance checking"
+          ],
+          "appendix": "本論文は、プロセスのモデル化と検証にペトリネットを用いているため、興味ある分野のうち「automata theory」および「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.05273v1": {
+          "title": "べき乗とパリティ変換を用いた文字列方程式の解法について",
+          "summary": "本論文では、Nielsen変換の拡張として文字列方程式を解くための新しいアプローチを提案しています。研究の核となるのは、文字列に対するべき乗演算子、Parikh変換の一般化、および等式分解という3つの手法の組み合わせです。これらの手法を用いることで、SMT入力で一般的に遭遇するものを含む、複雑な文字列方程式を解決することが可能になります。",
+          "keywords": [
+            "Nielsen transformations",
+            "power operator",
+            "Parikh images",
+            "equality decomposition",
+            "string equations"
+          ],
+          "appendix": "本研究は、文字列上の組合せ論（combinatorics on words）やオートマトン理論（automata theory）に関連する形式言語の操作を扱っており、これらの分野と密接に関係しています。"
+        },
+        "http://arxiv.org/abs/2603.05253v1": {
+          "title": "ℤ_d 上の一次セルオートマトンにおける可逆性の代数的特徴付け",
+          "summary": "1次元3近傍d状態のセルオートマトン(CA)のうち、一次セルオートマトン(FDCA)と呼ばれる部分集合を対象に、ヌル境界条件下における任意のセル数n ∈ ℕでの可逆性を調査した研究。本論文では、FDCAの局所ルールを定義する8つのパラメータのうち、特定の3つの代数的な条件を満たすことが可逆性の必要十分条件であることを明らかにしている。これにより、任意の格子サイズに対して一定の時間でルールの可逆性を判定することや、可逆なFDCAルールを合成することが可能となる。",
+          "keywords": [
+            "cellular automata",
+            "reversibility",
+            "first degree cellular automata",
+            "algebraic characterization",
+            "null boundary condition"
+          ],
+          "appendix": "この研究は「automata theory」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.05221v1": {
+          "title": "整数カウンタを拡張したVASSにおける到達可能性問題",
+          "summary": "N個の非負整数カウンタとZ個の整数カウンタを持つ自動機VASS+Zにおける到達可能性問題を研究し、Nカウンタの数が固定された場合の計算複雑性を明らかにした。1-VASS+ZではNP完全であり、d ≥ 2の場合はKLMSTアルゴリズムを用いてF_{d+2}の複雑性クラスに属することを示した。また、整数カウンタの導入により、通常のVASSよりも少ない非負カウンタ数で高い困難性（2-VASS+ZでPSPACE困難、3-VASS+ZでTOWER困難）が生じることを証明した。",
+          "keywords": [
+            "VASS",
+            "Reachability problem",
+            "Integer counters",
+            "Computational complexity",
+            "KLMST-based algorithm"
+          ],
+          "appendix": "本論文はautomata theory（自動機理論）およびformal languages（形式言語）の分野に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2603.05193v1": {
+          "title": "言語モデルの変換器（Transducer）による構成",
+          "summary": "現代の言語モデルは文字列上の分布を定義するが、実務では特定の出力形式（単語レベルの予測、アミノ酸配列など）が求められる。本論文では、決定論的な文字列変換 f を確率変数 X ~ p に適用して得られる f(X) の分布を扱う枠組みを提案した。特に有限状態変換器（FST）として表現可能な変換に焦点を当て、モデルのパラメータを変更せずに、特定のターゲットへ写像されるソース文字列を周辺化（marginalize）するアルゴリズムを開発した。これにより、トークンからバイトや単語、DNAからアミノ酸への変換といった、推論時におけるアプリケーション特化型の適応が可能になる。",
+          "keywords": [
+            "Finite-state transducers",
+            "Language models",
+            "Marginalization",
+            "String-to-string transformation",
+            "Inference-time adaptation"
+          ],
+          "appendix": "本研究は有限状態変換器 (Finite-state transducers) を用いた文字列変換を扱っており、興味ある分野のうち「automata theory」および「formal languages」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2603.05131v1": {
+          "title": "構成的マスターモダリティの複雑性",
+          "summary": "本論文では、基本構成的様相論理 CK および不変性を課した Wijesekera スタイルの論理 WK を拡張し、意味論的に定義された構成的マスターモダリティ論理 CK* および WK* を導入している。これらの論理と動的論理 PDL の断片との間の翻訳を用いることで、CK* と WK* が EXPTIME 完全であり、指数サイズの有限モデル性を持つことを示した。特に、Afshari らや Celoni によって研究されていた、菱形演算子（diamond）を含まない断片についても EXPTIME 完全であることを確立し、Afshari らの予想を解決した。応用として CS4 および WS4 をマスターモダリティ論理に埋め込み、それらの妥当性判定問題が EXPTIME に属することを示している。",
+          "keywords": [
+            "constructive master-modality logics",
+            "CK*",
+            "WK*",
+            "EXPTIME-completeness",
+            "Propositional Dynamic Logic"
+          ],
+          "appendix": "計算複雑性や形式論理の観点から、オートマトン理論 (automata theory) や形式言語 (formal languages) の分野と関連する側面を持っています。"
+        },
+        "http://arxiv.org/abs/2603.05055v1": {
+          "title": "モーダル論理の断片",
+          "summary": "本論文は、命題論理およびモーダル論理における使用可能な演算子を制限した「断片（fragments）」に関する系統的なアプローチを概説し、その表現力や計算複雑性が演算子の選択にどのように依存するかを論じている。命題論理の分野で確立されているポストの束（Post's lattice）を用いた分類手法を雛形とし、モーダル論理における2つの主要な研究の流れ、すなわち任意のモーダル論理式に基づく一般的な枠組みと、ブール関数に特定のモーダル演算子を組み合わせた「単純なモーダル断片」を統合している。これにより、決定可能性や複雑性の二分定理、さらには例からの学習可能性に関する結果を提示し、複数の未解決問題を特定している。",
+          "keywords": [
+            "Post's lattice",
+            "modal logic",
+            "Boolean clones",
+            "computational complexity",
+            "simple modal fragments"
+          ],
+          "appendix": "本論文で議論されている論理の断片化と計算複雑性の分析は、計算理論の基盤として automata theory や formal languages と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.05021v1": {
+          "title": "確率システムの形式的なエントロピー正則化制御",
+          "summary": "本論文は、連続状態確率システムの予測可能性を制御するため、エントロピー正則化を用いた形式的な制御合成手法を提案している。連続システムを有限状態へと抽象化する際のエントロピーの誤差境界を理論的に導出することで、元の連続システムに対する性能保証を維持しつつ、システム軌道分布と一様分布とのKLダイバージェンス（エントロピー指標）と累積コストのトレードオフを最適化する。この手法は強化学習やロボティクスなどの分野に応用可能であり、導出された境界は一般的な情報理論の文脈でも有用な知見を提供する。",
+          "keywords": [
+            "Stochastic systems",
+            "Finite-state abstractions",
+            "Entropy-regularized control",
+            "KL divergence",
+            "Controller synthesis"
+          ],
+          "appendix": "有限状態抽象化（finite-state abstractions）を用いて制御合成を行うアプローチは、興味ある分野のうち「automata theory」に密接に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2603.05742v1",
+        "http://arxiv.org/abs/2603.05728v1",
+        "http://arxiv.org/abs/2603.05694v1",
+        "http://arxiv.org/abs/2603.05490v1",
+        "http://arxiv.org/abs/2603.05380v1",
+        "http://arxiv.org/abs/2603.05331v1",
+        "http://arxiv.org/abs/2603.05273v1",
+        "http://arxiv.org/abs/2603.05253v1",
+        "http://arxiv.org/abs/2603.05221v1",
+        "http://arxiv.org/abs/2603.05193v1",
+        "http://arxiv.org/abs/2603.05131v1",
+        "http://arxiv.org/abs/2603.05055v1",
+        "http://arxiv.org/abs/2603.05021v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-03-09T02:34:25.779656+00:00",
-      "updated_at": "2026-03-11T06:07:05.761776+00:00",
-      "finalized_at": null
+      "updated_at": "2026-03-11T07:16:29.028742+00:00",
+      "finalized_at": "2026-03-11T07:16:29.028707+00:00"
     },
     {
       "pipeline_id": "20260310T022610Z-bab4b924",
