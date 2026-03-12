@@ -7880,7 +7880,7 @@
     },
     {
       "pipeline_id": "20260310T022610Z-bab4b924",
-      "status": "summary_fallback_running",
+      "status": "completed",
       "interest_job_name": "batches/7rwu3uc8mpicazk5ubprknnk8lnwrd52gj13",
       "summarize_job_name": "batches/lnolft78ajecelhge2vijhhl0fhabov39i8s",
       "papers": [
@@ -8453,14 +8453,283 @@
         "http://arxiv.org/abs/2603.06053v1",
         "http://arxiv.org/abs/2603.06012v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2603.06931v1": {
+          "title": "LLM2SMT: 人間による記述コードがゼロのSMTソルバの構築",
+          "summary": "LLMが「推論を行うソフトウェア」を自ら構築できるかを検証したケーススタディであり、人間が一行もコードを書かずに、QF_UF（等号と未解釈関数の量子化なし論理）のためのDPLL(T)形式のSMTソルバを構築した。このソルバは、Nieuwenhuis-Oliverasの合同閉包アルゴリズムの実装や前処理機能を含み、充足不能な場合にはLean形式の証明を出力する。実験の結果、SMT-LIBベンチマークにおいて既存手法と遜色のない性能を示すことが確認された。",
+          "keywords": [
+            "LLM",
+            "SMT solver",
+            "DPLL(T)",
+            "congruence closure",
+            "Lean proofs"
+          ],
+          "appendix": "この論文は、自動定理証明や形式手法の構築に関するものであり、直接的に「興味ある分野」として挙げられたsymbolic dynamicsやcombinatorics on wordsに合致する内容ではありませんが、計算機科学における推論システムの自動生成という点でautomata theoryやformal languagesの応用基盤と関連しています。"
+        },
+        "http://arxiv.org/abs/2603.06930v1": {
+          "title": "一般位置多項式に対する明示的な公式と単峰性現象",
+          "summary": "グラフにおける一般位置問題とは、どの3頂点も共通の測地線上に並ばないような頂点集合の最大サイズを求める問題である。本論文では、その数え上げの精密化である一般位置多項式 ψ(G) について研究している。まず、いくつかのグラフのクラスにおける一般位置集合を記述し、完全多部グラフに対する一般位置多項式の明示的な公式を提示した。さらに、部のサイズが r である平衡完全多部グラフ Kᵣ,⋯,ᵣ を対象に、r ≤ 4 の場合は多項式が対数凹かつ単峰的であることを示したが、r がより大きい場合にはこれらの性質が成立しない反例が存在することを明らかにした。最後に、コロナグラフ G ∘ K₁ を解析し、パス、エッジレスグラフ、コームグラフなどの自然なクラスにおいて ψ(G) の単峰性が維持されることを証明した。",
+          "keywords": [
+            "general position polynomial",
+            "complete multipartite graphs",
+            "unimodality",
+            "log-concavity",
+            "corona graphs"
+          ],
+          "appendix": "本論文は、グラフ理論における数え上げ多項式の性質を扱っており、指定された興味ある分野の中では組合せ論 (combinatorics) に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2603.06799v1": {
+          "title": "Steiner系のラムゼー数について",
+          "summary": "k-一様ハイパーグラフHにおいて、V(H)の任意のℓ個の頂点集合を含む辺がたかだか1つであるとき、Hを部分(k, ℓ)-系と呼ぶ。本論文では、r ≥ 4色におけるラムゼー数が高さk-1のタワー関数として増大するような、ある部分(k, k-1)-系Hが存在することを証明する。",
+          "keywords": [
+            "Steiner systems",
+            "Ramsey number",
+            "k-uniform hypergraph",
+            "partial (k,l)-system"
+          ],
+          "appendix": "本論文は組合せ論（特にハイパーグラフにおけるラムゼー理論）を扱っており、提示された興味ある分野の中では「combinatorics on words」に近い離散数学の領域に関連しますが、直接的に該当する分野はありません。"
+        },
+        "http://arxiv.org/abs/2603.06535v1": {
+          "title": "群のペアにおける有限性特性と準同型性について",
+          "summary": "本論文では、群のペアにおける幾何学的およびホモロジー的な有限性特性が、群のペアに対して定義された適切な準同型性（quasi-isometry）の概念の下で不変であることを示している。",
+          "keywords": [
+            "finiteness properties",
+            "group pairs",
+            "quasi-isometry",
+            "geometric finiteness",
+            "homological finiteness"
+          ],
+          "appendix": "本論文は、巨大な可算無限群の構造（structure of large countable infinite group）に関連する群論的な性質や不変量を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.06489v1": {
+          "title": "DNAカバレッジ深度問題：双対性、重み分布、およびその応用",
+          "summary": "DNAデータストレージにおいて、符号化されたすべてのストランドを復元するために必要な期待読み取り回数を計算する「カバレッジ深度問題」を扱う。線形符号の生成行列からランダムに列を抽出してフルランクを得るまでの期待値を、双対性の議論や拡張重み多項式（extended weight enumerator）を用いて解析する。Simplex符号、Hamming符号、Golay符号、Reed-Muller符号などの具体的な符号に対して閉形式の解を導出するとともに、カバレッジ深度を線形符号の高次体拡張における重み分布で表現する一般式を提示している。",
+          "keywords": [
+            "DNA coverage depth problem",
+            "linear codes",
+            "weight distributions",
+            "duality",
+            "extended weight enumerator"
+          ],
+          "appendix": "本論文は指定された「興味ある分野」に直接合致するテーマではありませんが、代数的符号理論や組み合わせ論的手法を用いており、広義のcombinatoricsに関連しています。"
+        },
+        "http://arxiv.org/abs/2603.06475v1": {
+          "title": "ℂ²における歪積のボリューム次元に関するRuelle-McMullenの公式",
+          "summary": "RuelleとMcMullenは、複素1次元の複素力学系におけるジュリア集合のハウスドルフ次元の摂動展開を定式化しました。本論文では、この問題をℂ²上の複素歪積という高次元の系へと拡張して検討しています。高次元では非共形性が現れるため、従来のハウスドルフ次元の代わりに、著者らが以前に導入した「ボリューム次元（volume dimension）」という概念を用いています。このボリューム次元は自然な圧力関数の零点として特徴づけられます。本研究では、zᵈとwᵈの形式を持つ歪積の摂動族に対して、そのジュリア集合J(fₜ)のボリューム次元がt→0において係数関数を用いてどのように2次展開されるかを示す、明示的な公式を導出しています。",
+          "keywords": [
+            "volume dimension",
+            "skew products",
+            "Julia set",
+            "pressure function",
+            "holomorphic dynamical systems"
+          ],
+          "appendix": "この論文は複素力学系（complex dynamics）に深く関連しており、特に高次元複素力学系における次元論と熱力学形式を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.06379v1": {
+          "title": "体積保存アノソフ流の等長拡大のアーベル被覆における相関の減衰",
+          "summary": "閉多様体のアーベル被覆上における体積保存アノソフ流の等長拡大を対象とし、その相関関数が時間の逆べきによる漸近展開を持つことを示した。",
+          "keywords": [
+            "Abelian covers",
+            "isometric extensions",
+            "volume-preserving Anosov flows",
+            "correlation function",
+            "asymptotic expansion"
+          ],
+          "appendix": "本論文は力学系の統計的性質を扱っており、興味ある分野の中では symbolic dynamics に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.06277v1": {
+          "title": "吸引周期系を持つ多項式の組合せ的剛性について",
+          "summary": "連結性軌跡に属する次数 d ≥ 2 の多項式において、2つ以上の臨界点を引き寄せる吸引周期系を持ち、かつ中立周期系を持たないものは組合せ的に剛性ではないことを示した。特に、連結なジュリア集合を持つ双曲的多項式については、組合せ的に剛性であるための必要十分条件が「分離型 (disjoint type)」でないことであることを証明している。",
+          "keywords": [
+            "Combinatorial Rigidity",
+            "Attracting Cycles",
+            "Hyperbolic Polynomial",
+            "Julia Set",
+            "Connectedness Locus"
+          ],
+          "appendix": "本論文は、指定された興味ある分野のうち「complex dynamics (複素動力学)」に深く関連する内容を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.06269v1": {
+          "title": "巡回置換のパターン回避に関するある問題について",
+          "summary": "Archerらによって提案された、1行表記で減少パターン δₖ = k(k-1)...21 を回避し、かつ全ての巡回形式において長さ4のパターン τ を回避する巡回置換の研究について、未解決であった τ = 1432 のケースを解決した。本論文では、巡回形式の構造分析とDilworthの定理を適用することにより、このケースに対する明示的な公式を導出している。",
+          "keywords": [
+            "cyclic permutations",
+            "pattern avoidance",
+            "Dilworth's theorem",
+            "cycle forms"
+          ],
+          "appendix": "置換のパターン回避という組合せ論的なトピックを扱っているため、興味ある分野の中では combinatorics on words と強い関連があります。"
+        },
+        "http://arxiv.org/abs/2603.06262v1": {
+          "title": "双曲成分の境界における 3 次多項式の Real Laminations",
+          "summary": "Milnor は 3 次多項式の有界な双曲成分を 4 つのタイプ (A), (B), (C), (D) に分類したが、本論文ではタイプ (A), (B), (C) の tame な境界における写像の real lamination を特徴付けた。これらの写像の real lamination は、双曲成分内部の写像が持つ real lamination と、1 つの特性的な同値類から生成される同値関係を包含する最小の lamination であることが示された。この結果の応用として、タイプ (D) を除くすべての双曲的 3 次多項式が組合せ論的に剛体 (combinatorially rigid) ではないことが導かれた。",
+          "keywords": [
+            "cubic polynomials",
+            "hyperbolic components",
+            "real laminations",
+            "combinatorial rigidity"
+          ],
+          "appendix": "複素力学系 (complex dynamics) の分野に関連している。"
+        },
+        "http://arxiv.org/abs/2603.06233v1": {
+          "title": "一般化レフシェッツ数とループ編組群",
+          "summary": "本論文では、3次元における編組理論と位相力学系の相互作用を研究している。従来の編組理論は曲面の同相写像における不動点や周期点の解析に広く応用されてきたが、3次元多様体における同様の枠組みは未整備であった。本研究では、3次元球体内の有限個の円環を不変にする同相写像を調査するため、古典的な編組群の3次元的な拡張としてループ編組群（loop braid groups）を導入した。主定理において、ループ編組群の元に対するブラー行列（Burau matrix）表現と一般化レフシェッツ数とを関連付けた。この結果は、周期点の存在や相互作用に関する重要な知見を提供し、応用として周期点数の評価式を得ている。これにより、古典的な2次元の結果が3次元の設定へと拡張された。",
+          "keywords": [
+            "braid group theory",
+            "topological dynamics",
+            "loop braid groups",
+            "generalized Lefschetz number",
+            "Burau matrix"
+          ],
+          "appendix": "力学系における周期点の解析に関連するため、広い意味で complex dynamics や symbolic dynamics の研究手法と接点を持つ可能性があります。"
+        },
+        "http://arxiv.org/abs/2603.06203v1": {
+          "title": "非可換自己同型群を持つ ℚ 上の 2 次有理写像の有理前周期点",
+          "summary": "本論文では、非可換な自己同型群を持つ、有理数体 ℚ 上で定義された 2 次有理写像 f: ℙ¹ → ℙ¹ の性質を解明している。まず、周期 1、2、および 3 の ℚ 有理周期点を持つ写像の完全な分類を行った。次に、この種の写像には周期 4 または 5 の ℚ 有理周期点が存在しないことを証明した。さらに、周期 3 を超える ℚ 有理周期点が存在しない場合、その写像が持つ ℚ 有理前周期点の個数は最大で 6 個であることを示した。",
+          "keywords": [
+            "Quadratic rational maps",
+            "Nonabelian automorphism group",
+            "Rational periodic points",
+            "Preperiodic points"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「arithmetic dynamics」に直接関連する研究内容となっています。"
+        },
+        "http://arxiv.org/abs/2603.06185v1": {
+          "title": "臨界的な再帰的合成スキームにおける漸近的転移",
+          "summary": "2つの組合せ論的クラスの合成 F ∘ G において、G の収束半径 ρ_G における値が F の収束半径 ρ_F に等しくなる「臨界的な合成」の挙動を解析した論文。特に地図（Map）の数え上げにおいて、ブロック分解などを通じて現れるこのスキームは、巨大な成分と多数の小さな成分に分かれる凝縮現象を伴う。本研究では、多変数生成関数の特異構造のレベルで、3/2乗型の特異性が保存されることを示し、それが中心極限定理などの統計的性質の転移を導くことを明らかにしている。",
+          "keywords": [
+            "combinatorial composition",
+            "generating functions",
+            "map enumeration",
+            "singular behaviors",
+            "central limit theorems"
+          ],
+          "appendix": "組合せ論（combinatorics）における計数的構造を扱っており、興味ある分野のうち「combinatorics on words」や数え上げ組合せ論に関連する手法が用いられています。数式表記：M(z) = B(z(1+M(z))²) および ρ_B = ρ_M(1+M(ρ_M))²。"
+        },
+        "http://arxiv.org/abs/2603.06177v1": {
+          "title": "斜郷(skew braces)における有限性条件とYang-Baxter方程式の解",
+          "summary": "有限かつ非退化な集合論的Yang-Baxter方程式の解(X,r)から導かれる構造skew brace B(X,r)は、各元が有限個のλ-像を持つλf-skew braceであり、その加法群はFC群となる。本論文では、λf-skew brace全般および加法群がFC群である部分クラスにおける有限性条件を研究し、FC中心の類似概念や構造的性質を明らかにした。また、この性質を用いて無限解が有限解と類似した性質を持つかを評価する基準を提示し、有限指数の部分skew braceにおける指数の整合性や強左イデアルの存在についても示した。",
+          "keywords": [
+            "skew braces",
+            "Yang-Baxter equation",
+            "FC-group",
+            "structure skew brace",
+            "lambda-f-skew brace"
+          ],
+          "appendix": "無限群の構造や有限性条件を扱っているため、興味ある分野のうち「structure of large countable infinite group」に関連があります。"
+        },
+        "http://arxiv.org/abs/2603.06156v1": {
+          "title": "代数体上のユニタリ群から得られるラマヌジャン複体",
+          "summary": "本論文では、既知の例とは異なる局所構造を持つ新しいラマヌジャン複体の族を構成している。数体上のユニタリ群、特に「超定値ユニタリ群（super-definite unitary groups）」という、特定の有限素点において中心を除いてアニソトロピックとなる定値ユニタリ群を用いたアプローチを提案している。主な成果として、全実数体上の超定値ユニタリ群と有限素点 v₀ に付随する無限族のラマヌジャン複体を構築し、v₀ が分裂するか否かに応じて、Aₙ型や ²A'ₙ, ²A''ₙ, B-Cₙ などの多様な Bruhat-Tits 建築物の型を持つ新しい例を示した。また、計算機科学への応用を考慮し、ランク5のケースにおいて実リー群 PU(5) のゴールデンゲートを導く完全な明示的構成法を提供している。",
+          "keywords": [
+            "Ramanujan complexes",
+            "Unitary groups",
+            "Bruhat-Tits building",
+            "Expander complexes",
+            "Golden gates"
+          ],
+          "appendix": "巨大な可算無限群の構造や組合せ論的な性質に関連する「expander complexes」を扱っており、数論的動力学や組合せ論に関心のある分野と接点があります。"
+        },
+        "http://arxiv.org/abs/2603.06139v1": {
+          "title": "局所有限木の直積に作用する群",
+          "summary": "どのような有限生成群が局所有限な単体的木の有限個の直積に対して固有に作用するかという問題を検討し、双曲的曲面群がそのような作用を持つことを支持する証拠を提示している。また、任意の素数 p に対して、種数 2 の閉双曲曲面群を SL₂(Fₚ(x,y)) へ具体的に埋め込む手法を明示的に示している。",
+          "keywords": [
+            "locally finite trees",
+            "hyperbolic surface groups",
+            "finitely generated groups",
+            "embedding"
+          ],
+          "appendix": "この論文は、指定された興味ある分野のうち「structure of large countable infinite group」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.06105v1": {
+          "title": "ファイバー構造を持つ双曲3次元多様体上のAnosov流の構成",
+          "summary": "本論文では、推移的なAnosov流を持つファイバー双曲3次元多様体が豊富に存在することを証明している。具体的には、種数g ≧ 2の曲面に対し、Mod(S_g)/Tor(S_g) ≃ Sp(2g, ℤ)の有限指数部分群Γが存在し、Γの任意の要素をモノドロミーとする写像トーラスが推移的なAnosov流を持つことを示した。この構成により、線形モノドロミーを法とするファイバー双曲多様体全体の中で、Anosov流を持つものの集合が正の密度を持つことが示される。また、Γを生成元によって明示的に定義し、単純なファイバー双曲3次元多様体における具体的な構成例も提供している。",
+          "keywords": [
+            "Anosov flows",
+            "fibered hyperbolic 3-manifolds",
+            "mapping torus",
+            "monodromy",
+            "Sp(2g, ℤ)"
+          ],
+          "appendix": "本論文は、記号力学系 (symbolic dynamics) や巨大な可算無限群の構造 (structure of large countable infinite group) に関連する力学系・幾何学的な性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.06093v1": {
+          "title": "コンパクト・ケーラー多様体上の正則対応のグリーン流",
+          "summary": "k次元コンパクト・ケーラー多様体X上の正則対応fを対象に、力学次数が d_{q-1} < d_q を満たす場合に、H^{q,q}(X, ℝ)へのf^*作用の支配的固有空間に属する類cに付随するグリーン流 T_c を構成した。また、この T_c のスーパーポテンシャルが log-Hölder 連続であることを示した。さらに、fのコホモロジーへの作用が単純であり、かつグラフの局所多重度に関する仮定を満たすとき、すべての正閉流が最大次数 d_q に付随する主要なグリーン流へと指数的に等分布することを証明した。",
+          "keywords": [
+            "holomorphic correspondence",
+            "Green currents",
+            "dynamical degrees",
+            "compact Kähler manifolds",
+            "equidistribution"
+          ],
+          "appendix": "本論文は「complex dynamics」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.06069v1": {
+          "title": "開被覆を用いた正則対応における位相的圧力",
+          "summary": "本論文では、リーマン球面上の開被覆を用いて、正則対応(holomorphic correspondences)に関する連続関数の位相的圧力を定義する。さらに、この定義によって得られる圧力が、分離集合(separated family)や生成集合(spanning family)を用いた従来の定義と一致することを証明している。",
+          "keywords": [
+            "Topological pressure",
+            "holomorphic correspondences",
+            "open covers",
+            "Riemann sphere"
+          ],
+          "appendix": "複素力学系 (complex dynamics) の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.06053v1": {
+          "title": "球、円柱、および円板における極小エルゴード性を示す解析的シンプレクティック同相写像",
+          "summary": "球面、円板、および円柱において、エルゴード測度が3つのみ存在する「極小エルゴード的」な解析的シンプレクティック同相写像を構成した。この構成には、Anosov-Katokの共役近似法（Approximation by Conjugacy method）に基づきBergerが導入した原理を適用および一般化する手法を用いている。",
+          "keywords": [
+            "analytic symplectomorphisms",
+            "minimal ergodicity",
+            "ergodic measures",
+            "Anosov-Katok method",
+            "Approximation by Conjugacy"
+          ],
+          "appendix": "本論文は解析的な力学系を扱っており、提供された興味ある分野の中では complex dynamics との関連性が深いです。"
+        },
+        "http://arxiv.org/abs/2603.06012v1": {
+          "title": "ω-鎖を通じた対角化：有界チューリングマシンにおける反復自己証明とその最小不動点",
+          "summary": "チューリングマシンにおける有界な自己証明は、自己シミュレーションに伴う時間的オーバーヘッドが不可避であるため不可能である。本研究では、この操作的制約を領域理論の枠組みに変換し、停止性の観測を有界時間 i から i+1 へと進める演算子を定義する。いかなる有界マシンもこの演算子の不動点に到達できないが、その反復プロセスは上昇 ω-鎖を形成する。この鎖のスコット極限は演算子の最小不動点となり、マシンの停止挙動を完全に捉える非有界な計算を表現する。本構築は、有限の観測可能性から最小不動点への移行を「対角線の連続的な先送り」として捉え、停止問題に対する新たな視点を提供する。",
+          "keywords": [
+            "Self-Certification",
+            "Turing Machines",
+            "Least Fixed Point",
+            "ω-Chain",
+            "Halting Problem"
+          ],
+          "appendix": "本論文は計算理論の根幹を成す停止問題を扱っており、提示された分野の中では「automata theory」および「formal languages」に深く関連しています。また、不動点定理を用いた議論は計算意味論の文脈でも重要です。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2603.06931v1",
+        "http://arxiv.org/abs/2603.06930v1",
+        "http://arxiv.org/abs/2603.06799v1",
+        "http://arxiv.org/abs/2603.06535v1",
+        "http://arxiv.org/abs/2603.06489v1",
+        "http://arxiv.org/abs/2603.06475v1",
+        "http://arxiv.org/abs/2603.06379v1",
+        "http://arxiv.org/abs/2603.06277v1",
+        "http://arxiv.org/abs/2603.06269v1",
+        "http://arxiv.org/abs/2603.06262v1",
+        "http://arxiv.org/abs/2603.06233v1",
+        "http://arxiv.org/abs/2603.06203v1",
+        "http://arxiv.org/abs/2603.06185v1",
+        "http://arxiv.org/abs/2603.06177v1",
+        "http://arxiv.org/abs/2603.06156v1",
+        "http://arxiv.org/abs/2603.06139v1",
+        "http://arxiv.org/abs/2603.06105v1",
+        "http://arxiv.org/abs/2603.06093v1",
+        "http://arxiv.org/abs/2603.06069v1",
+        "http://arxiv.org/abs/2603.06053v1",
+        "http://arxiv.org/abs/2603.06012v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-03-10T02:26:10.841400+00:00",
-      "updated_at": "2026-03-12T05:12:26.103492+00:00",
-      "finalized_at": null
+      "updated_at": "2026-03-12T06:12:04.715505+00:00",
+      "finalized_at": "2026-03-12T06:12:04.715480+00:00"
     },
     {
       "pipeline_id": "20260311T022549Z-d22893bd",
