@@ -9336,6 +9336,686 @@
       "created_at": "2026-03-12T02:31:56.959894+00:00",
       "updated_at": "2026-03-12T05:12:26.205123+00:00",
       "finalized_at": null
+    },
+    {
+      "pipeline_id": "20260313T022938Z-42ae3c9f",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/wkeisimuneqc2nw29plucafbfxi5zr29mgq6",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2603.09010v1",
+          "entry_id": "http://arxiv.org/abs/2603.09010v1",
+          "title": "On the height boundedness of periodic and preperiodic points of dominant rational self-maps on projective varieties",
+          "summary": "We give a counterexample to the following conjecture: the set of isolated periodic points of an automorphism of degree at least two on an affine space is a set of bounded height. As a positive result, we prove that any cohomologically hyperbolic dominant rational self-map on a projective variety admits a non-empty Zariski open subset on which the set of periodic points is height bounded. Concerning preperiodic points, we give an example suggesting that the same statement may fail.",
+          "authors": [
+            "Yohsuke Matsuzawa",
+            "Kaoru Sano"
+          ],
+          "published": "2026-03-09T22:58:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.09008v1",
+          "entry_id": "http://arxiv.org/abs/2603.09008v1",
+          "title": "On the statistics of random-to-top shuffles",
+          "summary": "We prove limit theorems for the number of fixed points, descents, and inversions of iterated random-to-top shuffles in two limiting cases. Our proofs are analytical and rely on novel combinatorial decompositions of each statistic into randomly indexed statistics of uniformly random permutations. New combinatorial proofs of the expected number of fixed points and inversions are given. Our results answer questions of Diaconis, Fulman, and Pehlivan.",
+          "authors": [
+            "Alexander Clay"
+          ],
+          "published": "2026-03-09T22:54:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08904v1",
+          "entry_id": "http://arxiv.org/abs/2603.08904v1",
+          "title": "The Batchelor spectrum for a deterministically driven passive scalar",
+          "summary": "We study the long-time behavior of a passive scalar transported by an incompressible flow in the presence of smooth, deterministic forcing. For a specific spatially Lipschitz and time-periodic velocity field, we prove that all sufficiently smooth initial data is attracted to a limiting solution that satisfies a cumulative form of Batchelor's law. To our knowledge, this provides the first example for which a version of Batchelor's law can be established with deterministic forcing.",
+          "authors": [
+            "Kyle L. Liss",
+            "Jonathan C. Mattingly"
+          ],
+          "published": "2026-03-09T20:17:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08896v1",
+          "entry_id": "http://arxiv.org/abs/2603.08896v1",
+          "title": "A Dynamical Approach to Non-Extensive Thermodynamics",
+          "summary": "We develop a non-extensive thermodynamic formalism for the one-sided shift on a finite alphabet, inspired by Tsallis' generalization of Boltzmann entropy in statistical physics. We introduce notions of $q$-entropy, $q$-pressure, and $q$-transfer operators which extend the classical thermodynamic formalism when $q=1$. We prove a Bowen-type relation linking the $q$-pressure with a $(2-q)$-Ruelle transfer operator and show that $q$-equilibrium states correspond to classical equilibrium states for a related potential. We establish the existence and uniqueness of $q$-equilibrium states for Lipschitz potentials, prove the differentiability of the $q$-pressure, and obtain variational principles for both the $q$-pressure and a related asymptotic pressure. Finally, we study cohomological equations associated with $(2-q)$-transfer operators and prove the differentiable dependence of their solutions on the potential, yielding an alternative construction of eigenfunctions for classical Ruelle operators.",
+          "authors": [
+            "Artur O. Lopes",
+            "Paulo Varandas"
+          ],
+          "published": "2026-03-09T20:03:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08895v1",
+          "entry_id": "http://arxiv.org/abs/2603.08895v1",
+          "title": "Degree-Based Weighted Adjacency Matrices: Spectra, Integrality, and Edge Deletion Effects",
+          "summary": "The article presents weighted adjacency spectrum of complete multipartite graphs, characterize its families with three distinct eigenvalues and identifies integral matrices. Also, we observe that for almost all weighted matrices, the energy and the spectral radius of a complete graph decreases upon edge deletion, thereby correcting and refining earlier published results in [Bilal and Munir, Int. J. Quantum Chem. (2024)]. Furthermore, we give counter examples related to $ISI$ energy decrease of regular tripartite graph by edge deletion and give its correct $ISI$ spectrum and $ISI$ energy and settle an open problem related to $ISI$ energy change of the multipartite graph. Also, we calculate the weighted adjacency spectrum of crown multipartite graph and discuss its integral spectral weighted spectrum.",
+          "authors": [
+            "Bilal Ahmad Rather",
+            "Hilal Ahmad Ganie"
+          ],
+          "published": "2026-03-09T20:03:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08882v1",
+          "entry_id": "http://arxiv.org/abs/2603.08882v1",
+          "title": "Automated Classification of Homeostasis Structure in Input-Output Networks",
+          "summary": "Homeostasis is widely observed in biological systems and refers to their ability to maintain an output quantity approximately constant despite variations in external disturbances. Mathematically, homeostasis can be formulated through an input-output function mapping an external parameter to an output variable. Infinitesimal homeostasis occurs at isolated points where the derivative of this input-output function vanishes, allowing tools from singularity theory and combinatorial matrix theory to characterize homeostatic mechanisms in terms of network topology. However, the required combinatorial enumeration becomes increasingly intractable as network size grows, and the reliance on advanced graph-theoretic concepts limits accessibility and practical use in biological applications. To overcome these limitations, we develop a Python-based algorithm that automates the identification of homeostasis subnetworks and their associated homeostasis conditions directly from network topology. Given an input-output network specified solely by its connectivity structure and designated input and output nodes, the algorithm identifies the relevant graph-theoretical structures and enumerates all homeostatic mechanisms. We demonstrate its applicability across a range of biological examples, including small and large networks, networks with single or multiple input nodes or parameters, and cases where input and output coincide. This wide applicability stems from our extension of the theoretical framework from single-input-single-output networks to networks with multiple input nodes through an augmented single-input-node representation. The resulting computational framework provides a scalable and systematic approach to classifying homeostatic mechanisms in complex biological networks, facilitating the application of advanced mathematical theory to a broad range of biological systems.",
+          "authors": [
+            "Xinni Lin",
+            "Fernando Antoneli",
+            "Yangyang Wang"
+          ],
+          "published": "2026-03-09T19:46:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08876v1",
+          "entry_id": "http://arxiv.org/abs/2603.08876v1",
+          "title": "Hierarchical threshold structure in Max-Cut with geometric edge weights",
+          "summary": "We study a family of weighted Max-Cut instances on the complete graph $K_n$ in which edge weights decrease geometrically in lexicographic order: the $i$-th edge has weight $r^{N-i}$ where $N=\\binom{n}{2}$. For $r\\ge 2$, the lexicographically first cut is optimal; for $r=1$, all edges have equal weight and the balanced partition wins. In this paper we study the intermediate regime $1< r <2$.\n  The geometric weighting makes early edges dominant and singles out the $k$-isolated cuts $C_k=\\{1,\\dots,k\\}\\mid\\{k+1,\\dots,n\\}$ as natural candidates for optimality. For each $n$ and $k\\le\\lfloor n/2\\rfloor-1$, we define threshold polynomials $P^{n,k}(r)$ whose unique roots $r_k(n)\\in(1,2)$ determine when $C_k$ and $C_{k+1}$ exchange dominance. We prove that, for fixed $n$, these thresholds are strictly decreasing in $k$ and that $r_k(n)\\to 1$ as $n\\to\\infty$. As our main result, we show that for $r\\in(r_k(n),r_{k-1}(n))$ the cut $C_k$ achieves maximum weight among all isolated cuts, yielding a sharp phase diagram for the isolated-cut family.\n  We conjecture that isolated cuts are globally optimal among all $2^{n-1}$ cuts when $n\\ge 7$; all counterexamples for small $n$ are characterized completely, and extensive computations for $n\\le 100$ support the conjecture.",
+          "authors": [
+            "Nevena Marić"
+          ],
+          "published": "2026-03-09T19:41:42+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08867v1",
+          "entry_id": "http://arxiv.org/abs/2603.08867v1",
+          "title": "Domination polynomial of co-maximal graphs of integer modulo ring",
+          "summary": "We investigate the domination polynomial of the co-maximal graph $Γ(\\mathbb{Z}_n)$ related to the ring of integers modulo $n$. Explicit formulas are derived for \\( n = p^{n_1} \\) and \\( n = p^{n_1}q^{n_2} \\), demonstrating that the resulting polynomials exhibit unimodality and log-concavity. For general $n$, we present structural expressions that connect $D(Γ(\\mathbb{Z}_n),x)$ to appropriate induced subgraphs. Finally, we examine domination roots and establish bounds for their moduli using the Eneström--Kakeya theorem.",
+          "authors": [
+            "Bilal Ahmad Rather"
+          ],
+          "published": "2026-03-09T19:30:05+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08861v1",
+          "entry_id": "http://arxiv.org/abs/2603.08861v1",
+          "title": "Geometric early warning indicator from stochastic separatrix structure in a random two-state ecosystem model",
+          "summary": "Under-ice blooms in the Arctic can develop rapidly under conditions where conventional early warning signals based on critical slowing down fail due to strong noise or limited observational records. We analyze noise-induced transitions in a temperature phytoplankton stochastic differential equation model exhibiting bistability between background and bloom states. The committor function defines a stochastic separatrix as its 1/2-isocommittor, and the normal width of the associated transition layer yields a geometric indicator via arc-length averaging. Under systematic variation of noise intensity, this indicator scales linearly with noise strength, while the logarithm of the mean first passage time follows the Freidlin-Wentzell asymptotic law. Eliminating the noise parameter produces an affine scaling between the logarithmic transition time and the inverse square of the geometric indicator. The relation is robust under variations in discretization, neighborhood definition, and diffusion structure, and holds in the weak noise regime where the transition-layer width scales linearly with noise strength. Unlike variance or lag-one autocorrelation, the geometric indicator remains well defined when rapid transitions preclude reliable time-series estimation. These results provide a geometrically interpretable precursor of bloom onset that may support model-based ecological monitoring in high-variability Arctic systems.",
+          "authors": [
+            "Yuzhu Shi",
+            "Larissa Serdukova",
+            "Yayun Zheng",
+            "Sergei Petrovskii",
+            "Valerio Lucarini"
+          ],
+          "published": "2026-03-09T19:20:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08838v1",
+          "entry_id": "http://arxiv.org/abs/2603.08838v1",
+          "title": "Asymptotic $\\mathrm{v}$-number of graded families of ideals and the Newton-Okounkov region",
+          "summary": "In this paper, we prove that for Noetherian graded families $\\mathcal{I} = \\{I_k\\}_{k \\ge 0}$ of homogeneous ideals, $\\lim\\limits_{k \\to \\infty} \\frac{\\mathrm{v}(I_k)}{k}$ exists, %equals $\\lim\\limits_{k \\to \\infty} \\frac{α(I_k)}{k}$,\n  and is given by $\\frac{α(I_r)}{r}$ for some $r \\ge 1$, where $α(I)$ denotes the initial degree. Extending these results to integral closures, we show that \\( \\lim\\limits_{k\\to\\infty}\\frac{\\mathrm{v}(\\overline{I_k})}{k} = \\lim\\limits_{k\\to\\infty}\\frac{α(\\overline{I_k})}{k}=\\lim\\limits_{k\\to\\infty}\\frac{\\mathrm{v}(I_k)}{k}=\\lim\\limits_{k\\to\\infty}\\frac{α(I_k)}{k} \\). For monomial ideals, we provide a combinatorial interpretation of these limits via Newton--Okounkov regions $Δ(\\mathcal{I})$. %demonstrating that they equal $λ(Δ(\\mathcal{I}))$, the minimum coordinate sum among vertices of $Δ(\\mathcal{I})$. This connection is further generalized to arbitrary homogeneous ideals using good valuations. We also establish that both $\\operatorname{reg}(I_k)$ and $\\mathrm{v}(I_k)$ are eventually quasi-linear functions of $k$ for any Noetherian graded family. %Under suitable conditions, we prove the strict inequality $\\mathrm{v}(I_k) < \\operatorname{reg}(I_k)$. For stable monomial ideal $I$ we show that $\\mathrm{v}(I) < \\operatorname{reg}(I)$. Finally, for zero-dimensional homogeneous ideal $I$ in a polynomial ring $S$, we prove that $\\mathrm{v}(I) < e(S/I)$, where $e(S/I)$ denote the multiplicity.",
+          "authors": [
+            "Mousumi Mandal",
+            "Partha Phukan"
+          ],
+          "published": "2026-03-09T18:51:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08833v1",
+          "entry_id": "http://arxiv.org/abs/2603.08833v1",
+          "title": "Orbits of the three-body problem with large potential",
+          "summary": "Consider the planar three-body problem with masses positive $m_1,m_2,m_3$ position vector $q(t) = (q_1(t),q_2(t),q_3(t))\\in\\mathbb{R}^6$. Let $$U(q) = \\frac{m_1m_2}{r_{12}}+\\frac{m_1m_3}{r_{13}}+\\frac{m_2m_3}{r_{23}}$$ where $r_{ij}=|q_i-q_j|$. Assume that the angular momentum is nonzero so that triple collision is impossible and fix any negative energy.. Then given any constant $K>0$ there are solutions with $U(q(t))\\ge K$ for all $t\\in\\mathbb{R}$. These solutions will have a single close approach to triple collision. The configuration will always be a tight binary with $m_1, m_2$ close and the distance from the binary to $m_3$ diverging as $t\\rightarrow\\pm\\infty$.",
+          "authors": [
+            "Richard Moeckel"
+          ],
+          "published": "2026-03-09T18:44:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08822v1",
+          "entry_id": "http://arxiv.org/abs/2603.08822v1",
+          "title": "Circular chromatic index of small graphs",
+          "summary": "We systematically determine circular chromatic index of small graphs and multigraphs with maximum degree $4$, $5$, $6$ (and also their number for a given small order). We construct several infinite families of such graphs with circular chromatic index in the set $\\{Δ+ 1/2, Δ+ 2/3, Δ+ 3/4$, $Δ+ 1\\}$. Our results refute edge-connectivity variants of the ``Upper Gap Conjecture'' (about the non-existence of graphs with circular chromatic index just below $Δ+ 1$).",
+          "authors": [
+            "Ján Mazák",
+            "Filip Zrubák"
+          ],
+          "published": "2026-03-09T18:28:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08820v1",
+          "entry_id": "http://arxiv.org/abs/2603.08820v1",
+          "title": "The structure of group-labeled graphs forbidding an immersion",
+          "summary": "A $Γ$-labeled graph is an oriented graph with edges invertibly labeled by a group $Γ$. We prove a structure theorem for $Γ$-labeled graphs which forbid a fixed $Γ$-labeled graph as an immersion, for any finite $Γ$. Roughly, we show that such graphs admit a tree-cut decomposition in which every bag either contains few high degree vertices or is nearly signed over a proper subgroup of $Γ$.",
+          "authors": [
+            "Rose McCarty",
+            "Caleb McFarland",
+            "Paul Wollan"
+          ],
+          "published": "2026-03-09T18:21:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08815v1",
+          "entry_id": "http://arxiv.org/abs/2603.08815v1",
+          "title": "Crystal Melting, Triality and Partition Functions for Toric Calabi-Yau Fourfolds",
+          "summary": "We extend the study of the recently introduced crystal melting models associated to toric Calabi-Yau 4-folds in several directions. In particular, we investigate in greater detail the structure of these models for general toric CY 4-folds and flavor configurations, using the explicit example of $Q^{1,1,1}$ to illustrate our ideas. To this end, we develop an efficient algorithm for constructing crystals based on periodic quivers. A central goal of this work is to understand the behavior of crystals and their partition functions under triality. We analyze the evolution of crystals along periodic triality cascades and generate detailed data for these systems, including Hasse diagrams, partition functions, and the multiplicities of melting configurations. We introduce the notion of stable variables and show that they lead to the stabilization of the partition functions along cascades. Finally, we define the profile of the crystal partition function and observe that, when expressed in terms of stable variables, it displays interesting behavior. A further motivation for this work is to generate empirical data that may guide the search for a physically motivated generalization of cluster algebras associated with $2d$ (0,2) quiver theories and their triality transformations.",
+          "authors": [
+            "Mario Carcamo",
+            "Sebastián Franco"
+          ],
+          "published": "2026-03-09T18:14:10+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08694v2",
+          "entry_id": "http://arxiv.org/abs/2603.08694v2",
+          "title": "A note on approximating the average degree of bounded arboricity graphs",
+          "summary": "Estimating the average degree of graph is a classic problem in sublinear graph algorithm. Eden, Ron, and Seshadhri (ICALP 2017, SIDMA 2019) gave a simple algorithm for this problem whose running time depended on the graph arboricity, but the underlying simplicity and associated analysis were buried inside the main result. Moreover, the description there loses logarithmic factors because of parameter search. The aim of this note is to give a full presentation of this algorithm, without these losses.\n  Consider standard access (vertex samples, degree queries, and neighbor queries) to a graph $G = (V,E)$ of arboricity at most $α$. Let $d$ denote the average degree of $G$. We describe an algorithm that gives a $(1+\\varepsilon)$-approximation to $d$ degree using $O(\\varepsilon^{-2}α/d)$ queries. For completeness, we modify the algorithm to get a $O(\\varepsilon^{-2} \\sqrt{n/d})$ query",
+          "authors": [
+            "Talya Eden",
+            "C. Seshadhri"
+          ],
+          "published": "2026-03-09T17:55:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08675v1",
+          "entry_id": "http://arxiv.org/abs/2603.08675v1",
+          "title": "The Lovász conjecture holds for moderately dense Cayley graphs",
+          "summary": "We show that there is an absolute constant $c>0$ such that every large connected $n$-vertex Cayley graph with degree $d\\geq n^{1-c}$ has a Hamilton cycle. This makes progress towards the Lovász conjecture and improves upon the previous best result of this form due to Christofides, Hladký, and Máthé from 2014 concerning graphs with $d\\geq \\varepsilon n$. Our proof avoids the use of Szemerédi's regularity lemma and relies instead on an efficient arithmetic regularity lemma specialised to Cayley graphs.",
+          "authors": [
+            "Benjamin Bedert",
+            "Nemanja Draganić",
+            "Alp Müyesser",
+            "Matías Pavez-Signé"
+          ],
+          "published": "2026-03-09T17:47:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08672v1",
+          "entry_id": "http://arxiv.org/abs/2603.08672v1",
+          "title": "Faster Parametric Submodular Function Minimization by Exploiting Duality",
+          "summary": "Let $f:2^{E} \\rightarrow \\mathbb{Z}_+$ be a submodular function on a ground set $E = [n]$, and let $P(f)$ denote its extended polymatroid. Given a direction $d \\in \\mathbb{Z}^n$ with at least one positive entry, the line search problem is to find the largest scalar $λ$ such that $λd \\in P(f)$. The best known strongly polynomial-time algorithm for this problem is based on the discrete Newton's method and requires $\\tilde{O}(n^2 \\log n)\\cdot$ SFM time, where SFM is the time for exact submodular function minimization under the value oracle model.\n  In this work, we study the first weakly polynomial-time algorithms for this problem. We reduce the number of calls to the exact submodular minimization oracle by exploiting a dual formulation of the parametric line search problem and recent advances in cutting plane methods. We obtain a running time of\n  \\[\n  O\\bigl(n^2 \\log(nM\\|d\\|_1)\\cdot \\text{EO} + n^3 \\log(nM\\|d\\|_1)\\bigr) + O(1)\\cdot \\text{SFM},\n  \\]\n  where $M = \\|f\\|_\\infty$ and EO is the cost of evaluating $f$ at a set. Note that when $\\log \\|d\\|_1 = O(\\log (nM))$, this matches the current best weakly polynomial running time for submodular function minimization [Lee, Sidford, Wong '15], and therefore, one cannot hope to improve this running time. Our approach proceeds by deriving a dual formulation that minimizes the Lovász extension $F$ over a hyperplane intersecting the unit hypercube, and then solving this dual problem approximately via cutting-plane methods, after which we round to the exact intersection using the integrality of $f$ and $d$.",
+          "authors": [
+            "Swati Gupta",
+            "Alec Zhu"
+          ],
+          "published": "2026-03-09T17:44:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08664v1",
+          "entry_id": "http://arxiv.org/abs/2603.08664v1",
+          "title": "Monge-Ampère measures on balanced polyhedral spaces",
+          "summary": "We study classes of convex functions on balanced polyhedral spaces and establish various structural properties, including a compactness theorem for polyhedrally plurisubharmonic functions. Using tropical intersection theory, we construct Monge--Ampère measures, first associated with piecewise affine functions, and then we extend it to polyhedrally plurisubharmonic functions.\n  We investigate polyhedral Monge--Ampère equations on balanced polyhedral spaces via a variational approach, providing sufficient conditions for the existence of solutions as well as explicit counterexamples. Finally, we relate our framework to non-archimedean pluripotential theory and explore its connection with the non-archimedean Monge--Ampère equation.",
+          "authors": [
+            "Ana María Botero",
+            "Enrica Mazzon",
+            "Léonard Pille-Schneider"
+          ],
+          "published": "2026-03-09T17:40:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08646v1",
+          "entry_id": "http://arxiv.org/abs/2603.08646v1",
+          "title": "On the expressive power of inquisitive team logic and inquisitive first-order logic",
+          "summary": "Inquisitive team logic is a variant of inquisitive logic interpreted in team semantics, which has been argued to provide a natural setting for the regimentation of dependence claims. With respect to sentences, this logic is known to be expressively equivalent with first-order logic. In this article we show that, on the contrary, the expressive power of open formulas in this logic properly exceeds that of first-order logic. On the way to this result, we show that if inquisitive team logic is extended with the range-generating universal quantifier adopted in dependence logic, the resulting logic can express finiteness, and as a consequence, it is neither compact nor recursively axiomatizable. We further extend our results to standard inquisitive first-order logic, showing that some sentences of this logic express non first-order properties of models.",
+          "authors": [
+            "Juha Kontinen",
+            "Ivano Ciardelli"
+          ],
+          "published": "2026-03-09T17:24:20+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08638v1",
+          "entry_id": "http://arxiv.org/abs/2603.08638v1",
+          "title": "Low order maximally single-trace graphs as the first counterexamples to large N factorization in random tensors",
+          "summary": "We give the first and lowest order examples of 3-regular 3-edge-colored graphs that demonstrate the non-factorization of tensor model invariants in the large N limit of Gaussian random tensors, as proven on general grounds in [Gurau R., Joos F. and Sudakov B., Lett. Math. Phys., 115 (2025), arXiv:2506.15362 [math-ph]]. This non-factorization is in stark contrast to the well-known large N factorization for random matrices.",
+          "authors": [
+            "Jonathan Berthold",
+            "Hannes Keppler"
+          ],
+          "published": "2026-03-09T17:13:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08624v1",
+          "entry_id": "http://arxiv.org/abs/2603.08624v1",
+          "title": "Context-Free Trees",
+          "summary": "Muller and Schupp introduced the concept of context-free graphs (originating from Cayley graphs of context-free groups). These graphs are always tree-like (i.e. quasi-isometric to a tree) and in this paper we investigate the subclass of bona fide context-free trees. We show that they have a finite-state description using multi-edge NFAs and that this specializes to certain partial DFAs in the case of deterministic graphs. We investigate this form of encoding algorithmically and show that the isomorphism problem for deterministic context-free trees is NL-complete in the rooted and the non-rooted case.",
+          "authors": [
+            "Jan Philipp Wächter"
+          ],
+          "published": "2026-03-09T17:04:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08585v1",
+          "entry_id": "http://arxiv.org/abs/2603.08585v1",
+          "title": "A characterization of interval nest digraphs",
+          "summary": "A digraph consisting of a set of vertices $V$ and a set of arcs $E$ is called an interval digraph if there exists a family of closed intervals $\\{I_u,J_u\\}_{u \\in V}$ such that $uv$ is an arc if and only if the intersection of $I_u$ and $J_v$ is non-empty. Interval digraphs naturally generalize interval graphs, by extending the classical interval intersection model to directed graphs. Several subclasses of interval digraphs have been studied in the literature-such as balanced, chronological and catch interval digraphs-each characterized by admitting interval representations that satisfy specific restrictions. Among these, interval nest digraphs are the ones that admit an interval representation in which $J_u$ is contained in $I_u$ for all vertices $u$ of $V$.\n  In this work, we provide a complete characterization of interval nest digraphs in terms of vertex linear orderings with forbidden patterns, which we call nest orderings. This result completes the picture of vertex-ordering characterizations among the main subclasses of interval digraphs.",
+          "authors": [
+            "Ayelén Alcantar",
+            "Flavia Bonomo",
+            "Guillermo Durán",
+            "Nina Pardal"
+          ],
+          "published": "2026-03-09T16:37:39+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08539v1",
+          "entry_id": "http://arxiv.org/abs/2603.08539v1",
+          "title": "Subdivisions of root polytopes and generalized tropical oriented matroids (Extended abstract)",
+          "summary": "We study a generalization of tropical oriented matroids by Ardila and Develin, and show that they are in bijection with subdivisions of root polytopes, which are sub-polytopes of a product of two simplices.",
+          "authors": [
+            "Yuan Yao",
+            "Chenyi Zhang"
+          ],
+          "published": "2026-03-09T16:08:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08527v1",
+          "entry_id": "http://arxiv.org/abs/2603.08527v1",
+          "title": "The Reidemeister and the Nielsen numbers: growth rate, asymptotic behavior, dynamical zeta functions and the Gauss congruences",
+          "summary": "In the present paper, taking a dynamical point on view, we study the growth rate and asymptotic behavior of the sequences of the Reidemeister numbers and the sequences of the Reidemeister and the Nielsen coincidence numbers. We also prove the Gauss congruences for the sequence $\\{R(\\varphi^n,ψ^n)\\}$ of the Reidemeister coincidence numbers of the tame pair $(\\varphi,ψ)$ of endomorphisms of a torsion-free nilpotent group~$G$ of finite Prüfer rank. Furthermore, we prove the rationality of the Nielsen coincidence zeta function, the Gauss congruences for the sequence $\\{N(f^n, g^n)\\}$ of the Nielsen coincidence numbers and show that the growth rate exists for the sequence \\{$N(f^n, g^n)\\}$ of tame pair of maps $(f,g)$ of a compact nilmanifold to itself.",
+          "authors": [
+            "Alexander Fel'shtyn",
+            "Mateusz Slomiany"
+          ],
+          "published": "2026-03-09T16:00:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08502v1",
+          "entry_id": "http://arxiv.org/abs/2603.08502v1",
+          "title": "Pseudo-Gorenstein$^{*}$ Graphs",
+          "summary": "Motivated by pseudo-Gorenstein rings in commutative algebra, introduced by Herzog et al., we define pseudo-Gorenstein$^{*}$ graphs and classify them in several natural graph families using independence polynomials.",
+          "authors": [
+            "Takayuki Hibi",
+            "Selvi Kara",
+            "Dalena Vien"
+          ],
+          "published": "2026-03-09T15:35:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08492v1",
+          "entry_id": "http://arxiv.org/abs/2603.08492v1",
+          "title": "WELLDOC property for words generated by morphisms",
+          "summary": "In this paper, we study an abelian-type property of infinite words called well distributed occurrences, or WELLDOC for short. An infinite word $w$ on a $d$-ary alphabet has the WELLDOC property if, for each factor $u$ of $w$, positive integer $m$, and vector $v\\in \\mathbb{N}^d$, there is an occurrence of $u$ such that the Parikh vector of the prefix of $w$ preceding such occurrence is congruent to $v$ modulo $m$. The Parikh vector of a finite word $v$ on an alphabet has its $i$-th component equal to the number of occurrences of the $i$-th letter in $v$. We provide a criterion of the WELLDOC property for words generated by morphisms.",
+          "authors": [
+            "Svetlana Puzynina",
+            "Vladimir Schavelev"
+          ],
+          "published": "2026-03-09T15:28:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08488v1",
+          "entry_id": "http://arxiv.org/abs/2603.08488v1",
+          "title": "NN-OpInf: an operator inference approach using structure-preserving composable neural networks",
+          "summary": "We propose neural network operator inference (NN-OpInf): a structure-preserving, composable, and minimally restrictive operator inference framework for the non-intrusive reduced-order modeling of dynamical systems. The approach learns latent dynamics from snapshot data, enforcing local operator structure such as skew-symmetry, (semi-)positive definiteness, and gradient preservation, while also reflecting complex dynamics by supporting additive compositions of heterogeneous operators. We present practical training strategies and analyze computational costs relative to linear and quadratic polynomial OpInf (P-OpInf). Numerical experiments across several nonlinear and parametric problems demonstrate improved accuracy, stability, and robustness over P-OpInf and prior NN-ROM formulations, particularly when the dynamics are not well represented by polynomial models. These results suggest that NN-OpInf can serve as an effective drop-in replacement for P-OpInf when the dynamics to be modeled contain non-polynomial nonlinearities, offering potential gains in accuracy and out-of-distribution performance at the expense of higher training computational costs and a more difficult, non-convex learning problem.",
+          "authors": [
+            "Eric Parish",
+            "Anthony Gruber",
+            "Patrick Blonigan",
+            "Irina Tezaur"
+          ],
+          "published": "2026-03-09T15:25:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08480v1",
+          "entry_id": "http://arxiv.org/abs/2603.08480v1",
+          "title": "Input Dexterity and Output Negotiation in Feedback-Linearizable Nonlinear Systems",
+          "summary": "We introduce a task-relative taxonomy of actuator inputs for nonlinear systems within the input-output feedback-linearization framework. Given a flat output specifying the task, inputs are classified as essential, redundant, or dexterity: essential inputs are required for exact linearization, redundant inputs can be removed without effect, and dexterity inputs can be deactivated while preserving exact linearization of a reduced task. We show that a subset is dexterity if and only if, under a suitable dynamic prolongation, it can appear as additional output channels (flat-input complement) on a common validity set. Whenever a family of systems obtained by (de)activating dexterity inputs admits a common prolongation, the family can be interpreted as a single prolonged system endowed with different output selections. This enables a unified linearizing controller that negotiates between full and reduced tasks without transients on shared outputs under compatibility and dwell-time conditions. Simulations on a fully actuated aerial platform illustrate graceful task downgrades from six-dimensional pose tracking as lateral-force channels are deactivated.",
+          "authors": [
+            "Mirko Mizzoni",
+            "Pieter van Goor",
+            "Barbara Bazzana",
+            "Antonio Franchi"
+          ],
+          "published": "2026-03-09T15:17:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08454v1",
+          "entry_id": "http://arxiv.org/abs/2603.08454v1",
+          "title": "On order-compatible paths in infinite graphs",
+          "summary": "Two $a{-}b$ paths in a graph $G$ are order-compatible if their common vertices occur in the same order when travelling from $a$ to $b$. Suppose a graph contains an infinite number $δ$ of edge-disjoint $a{-}b$ paths. G.A. Dirac asked whether there always exists a family of $δ$ edge-disjoint $a{-}b$ paths that are pairwise order-compatible. Confirming a conjecture by B. Zelinka, we show that this holds provided that the given $δ$ edge-disjoint $a{-}b$ paths have bounded length. Combining this with an earlier work of Zelinka, it follows that Dirac's question for an infinite cardinal $δ$ has an affirmative answer if and only if $δ$ has uncountable cofinality. As our second main result, we show that even when Dirac's question fails, it still holds that 'being connected by $δ$ edge-disjoint, pairwise order-compatible paths' is an equivalence relation for all values of $δ$. The most interesting case here is when $δ$ is countable.",
+          "authors": [
+            "Max Pitz",
+            "Lucas Real",
+            "Roman Schaut"
+          ],
+          "published": "2026-03-09T14:51:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08452v1",
+          "entry_id": "http://arxiv.org/abs/2603.08452v1",
+          "title": "Cubic maps from the group of order $3$",
+          "summary": "The purpose of this note is to classify unital cubic maps from the cyclic group of order $3$ into an arbitrary non-abelian group. We show that the universal group admitting a unital cubic map from the cyclic group of order $3$ is infinite, give a concrete presentation and provide an infinite representation of it in ${\\rm PSL}_3(\\mathbb C)$, whose image is an arithmetic lattice commensurable with ${\\rm PSL}_3(\\mathbb Z[ω])$, where $ω$ is a primitive cube root of unity. As a consequence we obtain the existence of finite nilpotent groups of arbitrarily large nilpotency class admitting a unital cubic map from $C_3$ whose image generates the group.",
+          "authors": [
+            "Vadim Alekseev",
+            "Andreas Thom"
+          ],
+          "published": "2026-03-09T14:49:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08439v1",
+          "entry_id": "http://arxiv.org/abs/2603.08439v1",
+          "title": "Finiteness of specializations of the $q$-deformed modular group at roots of unity",
+          "summary": "Recently, Morier-Genoud and Ovsienko introduced the $q$-deformed modular group.\n  For construction, they first gave a group $G_q \\subset \\operatorname{GL}(2, {\\mathbb Z}[q^{\\pm}])$ and then set $\\operatorname{PSL}_q(2,{\\mathbb Z}):=G_q/Z(G_q)$. We show that for $ζ\\in {\\mathbb C}^*$, $\\operatorname{PSL}_q(2,{\\mathbb Z})|_{q=ζ}$ is finite, if and only if so is $G_q(ζ):=G_q|_{q=ζ} \\subset \\operatorname{GL}(2,{\\mathbb C})$, if and only if $ζ=ζ_n$ for $n=2,3,4,5$, where $ζ_n$ is a primitive $n$-th root of unity. Moreover, $G_q(ζ_n) \\cap \\operatorname{SL}(2,\\mathbb{C})$ is isomorphic to the binary tetrahedral group (resp. the binary icosahedral group), if $n=3,4$ (resp. $n=5$). When $n=6$, the groups are infinite, but still \"mild\". We also give several applications (e.g., the special values of the normalized Jones polynomials of rational links).",
+          "authors": [
+            "Takuma Byakuno",
+            "Xin Ren",
+            "Kohji Yanagawa"
+          ],
+          "published": "2026-03-09T14:37:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08404v1",
+          "entry_id": "http://arxiv.org/abs/2603.08404v1",
+          "title": "Instanton construction of the mapping cone Thom-Smale complex",
+          "summary": "The wedge by a smooth closed $\\ell$-form induces the mapping cone de Rham cochain complex. This complex is quasi-isomorphic to the mapping cone Thom-Smale cochain complex. We give an instanton construction of the mapping cone Thom-Smale complex in this paper. More precisely, for a Morse function with the transversality condition on a closed oriented Riemannian manifold, we construct an instanton cochain complex using the eigenspaces of the mapping cone Laplacian deformed by the Morse function and two parameters. As the main result, we prove that our instanton complex is cochain isomorphic to the topologically constructed mapping cone Thom-Smale complex.",
+          "authors": [
+            "Hao Zhuang"
+          ],
+          "published": "2026-03-09T14:01:00+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08381v1",
+          "entry_id": "http://arxiv.org/abs/2603.08381v1",
+          "title": "The triplication method for constructing strong starters",
+          "summary": "The triplication method for constructing strong starters in $Z_{3m}$ from starters in $Z_{m}$ (say, a starter of order 21 from a starter of order 7) was proposed by the authors in 2025. The method reduced construction of the particular combinatorial design (a strong starter in a cyclic group) to solving a Sudoku-type problem -- an independent task with its own tools and techniques available. The Sudoku-type problem was formulated in terms of the so-called triplication table constructed from a starter of order $m$. The method was applicable for odd orders $m\\ge 7$ not divisible by 3. In the present paper, our previous approach is developed in two directions: (1) the definition of the triplication table is generalized, which expands possibilities for its construction to include three base starters or even ``pseudostarters''; (2) the formulation of the Sudoku-type problem is broadened to embrace various scenarios of ``modular encoding'' and reconstruction of strong starters from its solution. A theoretical gain of these developments consists in the improved understanding of the general structure of the triplication approach. A practical outcome is elimination of the requirement that $m$ be not divisible by 3. This leads to a broader scope of strong starters obtainable by triplication: any latent strong starter of odd order $3m$ can emerge this way.",
+          "authors": [
+            "Oleg Ogandzhanyants",
+            "Sergey Sadov",
+            "Margo Kondratieva"
+          ],
+          "published": "2026-03-09T13:41:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08378v1",
+          "entry_id": "http://arxiv.org/abs/2603.08378v1",
+          "title": "On the minimum of $σ$-Brjuno functions",
+          "summary": "$σ$-Brjuno functions were introduced in \\cite{MaMoYo_06} as an interesting variant of the classical Brjuno function, where one substitutes the $\\log$ singularity at $x=0$ with the power law divergence $x^{-1/σ},$ $(σ>0).$ As in the classical case, $B_σ$ is a locally unbounded, highly irregular lower semi continuous function; from semi continuity property it easily follows that $B_σ$ admits a global minimum but to locate it is quite a challenging problem. We prove that for $σ=n \\in \\mathbb{N}$, the unique global minimum of $B_n$ is achieved at the fixed point $ [0; \\overline{n+1}]$. Furthermore, we prove that these minimizers are locally stable, showing that the point of minimum remains constant for $σ$ in a neighborhood of $n$. Finally, we discuss the scaling behavior near these minima and we formulate a conjecture about the phase transitions for the location of the minimizer as $σ$ varies.",
+          "authors": [
+            "Ayreena Bakhtawar",
+            "Carlo Carminati",
+            "Stefano Marmi"
+          ],
+          "published": "2026-03-09T13:40:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08354v1",
+          "entry_id": "http://arxiv.org/abs/2603.08354v1",
+          "title": "On the Dual Drazin Inverse of Adjacency Matrices of Dual-number-Weighted Digraphs",
+          "summary": "The motivation of this paper is to investigate the dual Drazin inverse of adjacency matrices arising from several classes of connected dual-number-weighted digraphs over the dual complex algebra. Explicit formulas for the dual Drazin inverse of dual complex anti-triangular block matrices are derived under suitable assumptions. These results are applied to DN-DS digraphs, DN-DLS digraphs, and DN-DW digraphs. In particular, the assumptions in \\cite{AMPMJM2026} are weakened for DN-DS digraphs, an open problem in \\cite{AMPMJM2026} for the case $BC=0$ is generalized and solved for DN-DLS digraphs. And the group inverse result in \\cite{MNSEJAA2022} for bipartite block form adjacency matrices is extended to the dual Drazin inverse for DN-DW digraphs. We further derive explicit formulas for the dual group inverse and dual Drazin inverse of another adjacency matrix for DN-DW digraphs.",
+          "authors": [
+            "Yue Zhao",
+            "Daochang Zhang",
+            "Zhongshan Li",
+            "Frank J. Hall"
+          ],
+          "published": "2026-03-09T13:20:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08352v1",
+          "entry_id": "http://arxiv.org/abs/2603.08352v1",
+          "title": "Synchronization of higher-dimensional Kuramoto oscillators on networks: from scalar to matrix-weighted couplings",
+          "summary": "The Kuramoto model is the paradigmatic model to study synchronization in coupled oscillator systems. In its classical formulation, the oscillators move on the unit circle, each characterized by a scalar phase and a natural frequency, by interacting through a sinusoidal coupling. In this work, we propose a d-dimensional generalization in which oscillators are represented as unit vectors on the (d-1)-sphere and interact through a matrix-weighted network (MWN), a recently introduced framework where links are endowed with a matrix weight instead of a scalar one. We derive necessary conditions for global synchronization via a Master Stability Function approach: the existence of a synchronous solution requires identical frequency matrices across nodes and, in the MWN case, a coherence condition on the network structure. Through a suitable change of variables, the stability analysis reduces the full Nd-dimensional problem to a family of d-dimensional eigenvalue problems, each one parametrized by the eigenvalue of a suitable scalar weighted Laplacian, showing that the synchronous solution is locally stable for any positive coupling strength K on any connected network. Analytical results are complemented by numerical simulations.",
+          "authors": [
+            "Anna Gallo",
+            "Renaud Lambiotte",
+            "Timoteo Carletti"
+          ],
+          "published": "2026-03-09T13:18:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08331v1",
+          "entry_id": "http://arxiv.org/abs/2603.08331v1",
+          "title": "Turn Complexity of Context-free Languages, Pushdown Automata and One-Counter Automata",
+          "summary": "A turn in a computation of a pushdown automaton is a switch from a phase in which the height of the pushdown store increases to a phase in which it decreases. Given a pushdown or one-counter automaton, we consider, for each string in its language, the minimum number of turns made in accepting computations. We prove that it cannot be decided if this number is bounded by any constants. Furthermore, we obtain a non-recursive trade-off between pushdown and one-counter automata accepting in a finite number of turns and finite-turn pushdown automata, that are defined requiring that the constant bound is satisfied by each accepting computation. We prove that there are languages accepted in a sublinear but not constant number of turns, with respect to the input length. Furthermore, there exists an infinite proper hierarchy of complexity classes, with the number of turns bounded by different sublinear functions. In addition, there is a language requiring a number of turns which is not constant but grows slower than each of the functions defining the above hierarchy.",
+          "authors": [
+            "Giovanni Pighizzini"
+          ],
+          "published": "2026-03-09T12:48:15+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08322v1",
+          "entry_id": "http://arxiv.org/abs/2603.08322v1",
+          "title": "Agentic Neurosymbolic Collaboration for Mathematical Discovery: A Case Study in Combinatorial Design",
+          "summary": "We study mathematical discovery through the lens of neurosymbolic reasoning, where an AI agent powered by a large language model (LLM), coupled with symbolic computation tools, and human strategic direction, jointly produced a new result in combinatorial design theory. The main result of this human-AI collaboration is a tight lower bound on the imbalance of Latin squares for the notoriously difficult case $n \\equiv 1 \\pmod{3}$.\n  We reconstruct the discovery process from detailed interaction logs spanning multiple sessions over several days and identify the distinct cognitive contributions of each component. The AI agent proved effective at uncovering hidden structure and generating hypotheses. The symbolic component consists of computer algebra, constraint solvers, and simulated annealing, which provides rigorous verification and exhaustive enumeration. Human steering supplied the critical research pivot that transformed a dead end into a productive inquiry. Our analysis reveals that multi-model deliberation among frontier LLMs proved reliable for criticism and error detection but unreliable for constructive claims.\n  The resulting human-AI mathematical contribution, a tight lower bound of $4n(n{-}1)/9$, is achieved via a novel class of near-perfect permutations. The bound was formally verified in Lean 4. Our experiments show that neurosymbolic systems can indeed produce genuine discoveries in pure mathematics.",
+          "authors": [
+            "Hai Xia",
+            "Carla P. Gomes",
+            "Bart Selman",
+            "Stefan Szeider"
+          ],
+          "published": "2026-03-09T12:42:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08767v1",
+          "entry_id": "http://arxiv.org/abs/2603.08767v1",
+          "title": "Duality in mass-action networks",
+          "summary": "Mass-action networks are special cases of chemical reaction networks. For these systems, we argue that conserved quantities are dual to internal cycles. We introduce maximal invariant polyhedral supports, and we conjecture that there is a duality relation between preclusters and maximal invariant polyhedral supports. Given the close relation between maximal invariant polyhedral supports and siphons, we also conjecture that siphons and preclusters are dual objects.",
+          "authors": [
+            "Alexandru Iosif"
+          ],
+          "published": "2026-03-09T12:37:53+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08266v1",
+          "entry_id": "http://arxiv.org/abs/2603.08266v1",
+          "title": "Central Limits via Dilated Categories",
+          "summary": "The Central Limit Theorem (CLT) establishes that sufficiently large sequences of independent and identically distributed random variables converge in probability to a normal distribution. This makes the CLT a fundamental building block of statistical reasoning and, by extension, in reasoning about computing systems that are based on statistical inference such as probabilistic programing languages, programs with optimisation, and machine learning components. However, there is no general theory of CLT-like results currently, which forces practitioners to redo proofs without having a good handle on the essential ingredients of CLT-type results. In this paper, we introduce dilated seminorm-enriched category theory as a unifying framework for central limits, and we establish an abstract central limit theorem within that framework. We illustrate how a strengthened version of the classical CLT and the law of large numbers can be obtained as instances of our framework. Moreover, we derive from our framework a novel central limit theorem for symplectic manifolds, the CLT for observables, which finds applications in statistical mechanics.",
+          "authors": [
+            "Henning Basold",
+            "Oisín Flynn-Connolly",
+            "Chase Ford",
+            "Hao Wang"
+          ],
+          "published": "2026-03-09T11:38:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08259v1",
+          "entry_id": "http://arxiv.org/abs/2603.08259v1",
+          "title": "Sampling Colorings with Fixed Color Class Sizes",
+          "summary": "In 1970 Hajnal and Szemerédi proved a conjecture of Erdös that for a graph with maximum degree $Δ$, there exists an equitable $Δ+1$ coloring; that is a coloring where color class sizes differ by at most $1$. In 2007 Kierstand and Kostochka reproved their result and provided a polynomial-time algorithm which produces such a coloring. In this paper we study the problem of approximately sampling uniformly random equitable colorings. A series of works gives polynomial-time sampling algorithms for colorings without the color class constraint, the latest improvement being by Carlson and Vigoda for $q\\geq 1.809 Δ$. In this paper we give a polynomial-time sampling algorithm for equitable colorings when $q> 2Δ$. Moreover, our results extend to colorings with small deviations from equitable (and as a corollary, establishing their existence). The proof uses the framework of the geometry of polynomials for multivariate polynomials, and as a consequence establishes a multivariate local Central Limit Theorem for color class sizes of uniform random colorings.",
+          "authors": [
+            "Aiya Kuchukova",
+            "Will Perkins",
+            "Xavier Povill"
+          ],
+          "published": "2026-03-09T11:27:36+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08139v1",
+          "entry_id": "http://arxiv.org/abs/2603.08139v1",
+          "title": "Formalizing the stability of the two Higgs doublet model potential into Lean: identifying an error in the literature",
+          "summary": "In 2006, using the best methods and techniques available at the time, Maniatis, von Manteuffel, Nachtmann and Nagel published a now widely cited paper on the stability of the two Higgs doublet model (2HDM) potential. Twenty years on, it is now easier to apply the process of formalization into an interactive theorem prover to this work thanks to projects like Mathlib and PhysLib (formerly PhysLean and Lean-QuantumInfo), and to ask for a higher standard of mathematical correctness. Doing so has revealed an error in the arguments of this 2006 paper, invalidating their main theorem on the stability of the 2HDM potential. This case is noteworthy because to the best of our knowledge it is the first non-trivial error in a physics paper found through formalization. It was one of the first papers where formalization was attempted, which raises the uncomfortable question of how many physics papers would not pass this higher level of scrutiny.",
+          "authors": [
+            "Joseph Tooby-Smith"
+          ],
+          "published": "2026-03-09T09:16:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08134v1",
+          "entry_id": "http://arxiv.org/abs/2603.08134v1",
+          "title": "Forgetting Event Order in Higher-Dimensional Automata",
+          "summary": "Higher dimensional automata (HDAs) provide a geometric model of true concurrency, yet their standard formulation encodes an artificial total order on events. This representational artifact causes a fundamental mismatch between the combinatorial structure of HDAs and their observable behavior, leading to logical asymmetries and complicating the application of categorical tools. In this paper, we resolve this tension by developing a semantics for HDAs that is independent of event order, based on interval ipomsets (partially ordered multisets with interfaces) that preserve only precedence and concurrency. We prove that for any HDA, the traditional ST trace of an execution path corresponds precisely to its associated interval ipomset. On the structural side, we show that the presheaf theoretic presentation with an unordered base and the combinatorial presentation of symmetric HDAs are categorically isomorphic. Finally, by characterizing ST and hereditary history preserving (hhp) bisimulation via ipomset isomorphism, we provide a unified, order free foundation for HDA semantics. Our results resolve several critical ambiguities in the literature: they provide the necessary path category structure to canonically apply the Open Maps framework, eliminate representational artifacts in temporal and modal logics, and bridge systematic mismatches between HDAs and other models of concurrency such as Petri nets.",
+          "authors": [
+            "Safa Zouari"
+          ],
+          "published": "2026-03-09T09:13:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08129v1",
+          "entry_id": "http://arxiv.org/abs/2603.08129v1",
+          "title": "Proportion of chiral maps with automorphism group $\\mathcal{S}_n$ and $\\mathcal{A}_n$",
+          "summary": "Orientably-regular maps are highly symmetric embeddings of graphs in oriented surfaces. Among them, chiral maps are those which fail to be isomorphic to their mirror images.\n  We prove that, as $n\\to\\infty$, chirality is generic for orientably-regular maps with automorphism groups $S_n$ or $A_n$: the proportion of chiral maps tends to $1$ in both families. We also obtain the corresponding asymptotic result for orientably-regular hypermaps with automorphism groups $S_n$ or $A_n$.\n  A key ingredient is a sharp asymptotic generation statement: if one chooses an involution of $S_n$ uniformly at random and then chooses an independent uniformly random element of $S_n$, the probability that these two elements generate $S_n$ and $A_n$ tends to $\\frac{3}{4}$ and $\\frac{1}{4}$ as $n\\to\\infty$, respectively.",
+          "authors": [
+            "Jiyong Chen",
+            "Yi Xiao Tang"
+          ],
+          "published": "2026-03-09T09:08:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08123v1",
+          "entry_id": "http://arxiv.org/abs/2603.08123v1",
+          "title": "A note on hyperseparating set systems",
+          "summary": "We say that a set system $\\mathcal{F}$ is $k$-completely hyperseparating if for any vertex $v$, there are at most $k$ sets in $\\mathcal{F}$ with intersection $\\{v\\}$. We determine the minimum size of such set systems on an $n$-element underlying set, generalizing a very recent result for $k=2$ by Batíková, Kepka, and Nemĕc.\n  We say that $\\mathcal{F}$ is $k$-hyperseparating if for any vertex $v$, there are at most $k$ sets in $\\mathcal{F}$ such that no other vertex is contained by exactly the same sets out of these $k$ sets. We determine the minimum size of $2$-hyperseparating set systems on an $n$-element underlying set.",
+          "authors": [
+            "Dániel Gerbner"
+          ],
+          "published": "2026-03-09T09:02:33+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08110v2",
+          "entry_id": "http://arxiv.org/abs/2603.08110v2",
+          "title": "Permutation Match Puzzles: How Young Tanvi Learned About Computational Complexity",
+          "summary": "We study a family of sorting match puzzles on grids, which we call permutation match puzzles. In this puzzle, each row and column of a $n \\times n$ grid is labeled with an ordering constraint -- ascending (A) or descending (D) -- and the goal is to fill the grid with the numbers 1 through $n^2$ such that each row and column respects its constraint.\n  We provide a complete characterization of solvable puzzles: a puzzle admits a solution if and only if its associated constraint graph is acyclic, which translates to a simple \"at most one switch\" condition on the A/D labels. When solutions exist, we show that their count is given by a hook length formula. For unsolvable puzzles, we present an $O(n)$ algorithm to compute the minimum number of label flips required to reach a solvable configuration. Finally, we consider a generalization where rows and columns may specify arbitrary permutations rather than simple orderings, and establish that finding minimal repairs in this setting is NP-complete by a reduction from feedback arc set.",
+          "authors": [
+            "Kshitij Gajjar",
+            "Neeldhara Misra"
+          ],
+          "published": "2026-03-09T08:52:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08106v1",
+          "entry_id": "http://arxiv.org/abs/2603.08106v1",
+          "title": "A new proof of Delahan's induced-universality result",
+          "summary": "We give a short and self-contained proof of Delahan's theorem stating that every simple graph on $n$ vertices occurs as an induced subgraph of a Steinhaus graph on $\\frac{n(n-1)}{2}+1$ vertices. This new proof is obtained by considering the notion of generating index sets for Steinhaus triangles.",
+          "authors": [
+            "Jonathan Chappelon"
+          ],
+          "published": "2026-03-09T08:49:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08076v1",
+          "entry_id": "http://arxiv.org/abs/2603.08076v1",
+          "title": "Asymptotic normality for general subtree counts in conditioned Galton--Watson trees",
+          "summary": "Let $\\mathcal{T}$ denote a Galton--Watson tree with offspring distribution $ξ$ satisfying $\\mathbb{E}(ξ) = 1$, and let $\\mathcal{T}_n$ be the Galton--Watson tree conditioned to have exactly $n$ nodes. We show that, under a mild moment condition on $ξ$, the number of occurrences of a fixed rooted plane tree $\\mathbf{t}$ as a general subtree in $\\mathcal{T}_n$ is asymptotically normal as $n \\to \\infty$, with both mean and variance linear in $n$. In addition, we prove that this limiting distribution is nondegenerate except for some special cases where the variance remains bounded. These results confirm a conjecture of Janson in recent work on the same topic. Finally, we present examples showing that if the proposed moment condition on $ξ$ is violated, the conclusion may fail.",
+          "authors": [
+            "Fameno Rakotoniaina",
+            "Dimbinaina Ralaivaosaona"
+          ],
+          "published": "2026-03-09T08:15:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08052v1",
+          "entry_id": "http://arxiv.org/abs/2603.08052v1",
+          "title": "Patrolling cop vs omniscient robber",
+          "summary": "We study a variant of the classical Cops and Robbers game with one cop and one robber, in which the cop follows a fixed walk on the graph, a patrol, that is chosen before the game begins, while the robber is omniscient, he knows the entire patrol in advance. A capture occurs when the robber comes within a given radius of capture of the cop. This model arises naturally at the intersection of recent work on limited-visibility games and offline versions of pursuit-evasion problems.\n  By $\\tildeρ{(G)}$ we denote the minimum radius of capture that the cop must have to always capture the robber on $G$ in this setting, under optimal play, where $G$ is a connected graph. We initiate a systematic study of this parameter for several graph classes. We determine the exact value of $\\tildeρ{(G)}$ for trees, establish upper and lower bounds for grids, and analyze the parameter for various families of chordal graphs, including interval graphs and caterpillars. Along the way, we develop general tools and structural results that may be of independent interest for the study of pursuit-evasion games with predetermined patrols and limited information.",
+          "authors": [
+            "Nina Chiarelli",
+            "Paul Dorbec",
+            "Miloš Stojaković",
+            "Andrej Taranenko"
+          ],
+          "published": "2026-03-09T07:43:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08043v1",
+          "entry_id": "http://arxiv.org/abs/2603.08043v1",
+          "title": "Step Automata",
+          "summary": "For computation, there existed Turing machine and later-matured automata theory. For low-level parallel computation, there existed variants of Turing machine, such as two-tapes Turing machine and multi-tapes Turing machine. In the literature, the combination of computation and concurrency is still active, such the combination of automata and processes, and the introduction of concurrency into automata: the so-called pomset automata and branch automata. But the linkage of Turing machine and concurrent automaton is still absent. In this paper, we propose the concepts of step automaton and step Turing machine (STM), which a natural extension to traditional automaton and classical Turing machine just allowing an automaton or Turing machine to execute a step of atomic actions (without partial orders pairwise).",
+          "authors": [
+            "Yong Wang"
+          ],
+          "published": "2026-03-09T07:33:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08041v1",
+          "entry_id": "http://arxiv.org/abs/2603.08041v1",
+          "title": "A generalization of Kadell's orthogonality ex-conjecture",
+          "summary": "In 2000, Kadell gave an orthogonality conjecture for a symmetric function generalization of the Zeilberger--Bressoud $q$-Dyson constant term identity. The non-zero part of Kadell's conjecture is a constant term identity indexed by a weak composition $v$. This conjecture was first proved by Károlyi, Lascoux and Warnaar in 2015. They further formulated a closed-form expression for the above constant term when all parts of the composition $v$ are distinct. In 2021, Zhou obtained a recursion for this constant term for an arbitrary composition $v$. In this paper, by categorizing the variables into two parts, we generalize Zhou's result.",
+          "authors": [
+            "Zihao Huang",
+            "Wenlong Jiang",
+            "Yue Zhou"
+          ],
+          "published": "2026-03-09T07:31:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.11062v1",
+          "entry_id": "http://arxiv.org/abs/2603.11062v1",
+          "title": "A positive answer to a symmetry conjecture on homogeneous IFS",
+          "summary": "We positively answer `Open Question 1' in the paper of Feng and Wang [Adv. Math. 222 (2009)].",
+          "authors": [
+            "Junda Zhang"
+          ],
+          "published": "2026-03-09T07:17:36+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08033v1",
+          "entry_id": "http://arxiv.org/abs/2603.08033v1",
+          "title": "The Unit Gap: How Sharing Works in Boolean Circuits",
+          "summary": "We study the gap between the minimum size of a Boolean circuit (DAG) and the minimum size of a formula (tree circuit) over the And-Inverter Graph (AIG) basis {AND, NOT} with free inversions. We prove that this gap is always 0 or 1 (Unit Gap Theorem), that sharing requires opt(f) >= n essential variables (Threshold Theorem), and that no sharing is needed when opt(f) <= 3 (Tree Theorem). Gate counts in optimal circuits satisfy an exact decomposition formula with a binary sharing term. When the gap equals 1, it arises from exactly one gate with fan-out 2, employing either dual-polarity or same-polarity reuse; we prove that no other sharing structure can produce a unit gap.",
+          "authors": [
+            "Kirill Krinkin"
+          ],
+          "published": "2026-03-09T07:12:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08016v2",
+          "entry_id": "http://arxiv.org/abs/2603.08016v2",
+          "title": "On Representing Matroids via Modular Independence",
+          "summary": "We study a matrix-based notion of matroid representation over local commutative rings obtained by replacing linear independence with modular independence. This construction always defines an independence system, though not necessarily a matroid. Under a mild nilpotent hypothesis, we show that chain rings are exactly the local rings for which the minimal number of generators is monotone on finitely generated submodules, and over commutative chain rings we obtain a criterion for the associated independence system to be a matroid. For codes over finite commutative chain rings, we identify puncturing with deletion, show that shortening agrees with contraction under a contractibility hypothesis, and establish duality for free codes. We further derive bounds for simple and uniform matroids, prove that the uniform matroid $U_{2, n}$ is representable if and only if the size $n$ is at most the sum of the cardinalities of the local ring and its unique maximal ideal, and show that all excluded minors for $\\mathbb{F}_{4}$-representability are representable over $\\mathbb{Z}/4\\mathbb{Z}$. The examples also include ring representations of matroids not representable over any field, such as the Vámos matroid over $\\mathbb{Z}/8\\mathbb{Z}$.",
+          "authors": [
+            "Koji Imamura",
+            "Keisuke Shiromoto"
+          ],
+          "published": "2026-03-09T06:46:15+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.07991v1",
+          "entry_id": "http://arxiv.org/abs/2603.07991v1",
+          "title": "The Exact Erdős-Ko-Rado Theorem for 3-wise $t$-intersecting uniform families",
+          "summary": "Let $\\mathcal{F}$ be a family of $k$-element subsets of $\\{1,2,\\ldots,n\\}$. For $t\\geq 1$, we say that $\\mathcal{F}$ is {\\it 3-wise $t$-intersecting} if $|F_1\\cap F_2\\cap F_3|\\geq t$ for all $F_1,F_2,F_3\\in \\mathcal{F}$. In the present paper, we prove that if $\\mathcal{F}$ is 3-wise $t$-intersecting and $n\\geq \\frac{\\sqrt{4t+9}-1}{2}k$, $k>t\\geq 46$, then $|\\mathcal{F}|\\leq \\binom{n-t}{k-t}$. The restriction on $n$ is asymptotically best possible. The corresponding result for non-trivial 3-wise $t$-intersecting families is obtained as well for $n\\geq \\frac{\\sqrt{4t+9}-1}{2}k$ and $k>t\\geq 55$.",
+          "authors": [
+            "Peter Frankl",
+            "Jian Wang"
+          ],
+          "published": "2026-03-09T05:57:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.07894v1",
+          "entry_id": "http://arxiv.org/abs/2603.07894v1",
+          "title": "Closed Reeb orbits on contact type hypersurfaces in $T^*S^n$",
+          "summary": "In this paper, it is proved that under dynamically convex condition, there exist at least $[\\frac{n+1}{2}]$ closed Reeb orbits on a closed contact type hypersurface in $T^*S^n$ enclosing the zero section and bounding a simply connected Liouville domain. Furthermore, if the contact form is non-degenerate and has finitely many closed Reeb orbits, then there exist at least two irrationally elliptic closed Reeb orbits.",
+          "authors": [
+            "Huagui Duan",
+            "Zihao Qi"
+          ],
+          "published": "2026-03-09T02:27:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.08762v2",
+          "entry_id": "http://arxiv.org/abs/2603.08762v2",
+          "title": "Formally Verifying Quantum Phase Estimation Circuits with 1,000+ Qubits",
+          "summary": "We present a scalable formal verification methodology for Quantum Phase Estimation (QPE) circuits. Our approach uses a symbolic qubit abstraction based on quantifier-free bit-vector logic, capturing key quantum phenomena, including superposition, rotation, and measurement. The proposed methodology maps quantum circuit functional behaviour from Hilbert space to a bit-vector domain. We develop formal properties aligned with this abstraction to ensure functional correctness of QPE circuits. The method scales efficiently, verifying QPE circuits with up to 6 precision qubits and 1,024 phase qubits using under 3.5~GB of memory.",
+          "authors": [
+            "Arun Govindankutty",
+            "Sudarshan K. Srinivasan"
+          ],
+          "published": "2026-03-09T01:59:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.07873v1",
+          "entry_id": "http://arxiv.org/abs/2603.07873v1",
+          "title": "Graded Ehrhart Theory of Unimodular Zonotopes",
+          "summary": "Graded Ehrhart theory is a new $q$-analogue of Ehrhart theory based on the orbit harmonics method. We study the graded Ehrhart theory of unimodular zonotopes from a matroid-theoretic perspective. Generalizing a result of Stanley (1991), we prove that the graded lattice point count of a unimodular zonotope is a $q$-evaluation of its Tutte polynomial. We conclude that the graded Ehrhart series of a unimodular zonotope is rational and obeys graded Ehrhart--Macdonald reciprocity. In an algebraic direction, we prove that the harmonic algebra of a unimodular zonotope is a coordinate ring of its associated arrangement Schubert variety. Using the geometry of arrangement Schubert varieties, we prove that the harmonic algebra of a unimodular zonotope is finitely generated and Cohen--Macaulay. We also give an explicit presentation of the harmonic algebra of a unimodular zonotope in terms of generators and relations. We conclude by classifying which unimodular zonotopes have Gorenstein harmonic algebras. Our work answers, in the special case of unimodular zonotopes, two conjectures of Reiner and Rhoades (2024).",
+          "authors": [
+            "Colin Crowley",
+            "Ethan Partida"
+          ],
+          "published": "2026-03-09T01:08:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.07862v1",
+          "entry_id": "http://arxiv.org/abs/2603.07862v1",
+          "title": "Threshold Dynamics of Voter Radicalization on the Probability Simplex",
+          "summary": "We analyse two coupled ODE models of political competition on invariant probability simplices with a conserved electorate. The baseline three-group model tracks left-radical, centrist, and right-radical voter shares. We characterise the unique interior equilibrium by a Perron--Frobenius threshold, establish global asymptotic stability in the symmetric and asymmetric cases, and exclude periodic orbits unconditionally via the Dulac criterion. A structural consequence is that the baseline model cannot produce irreversible centrist decline, history-dependent long-run floors, or multiple attractors. We then extend the model with a disengaged voter compartment and distinguish pure state shocks from permanent structural parameter shifts. The post-shock dynamics are governed by the same spectral threshold: below it the centrist state is globally asymptotically stable; above it every trajectory with a nonzero radical seed converges to the unique radicalised equilibrium. Cumulative sub-threshold structural shifts can cross the threshold and produce staircase dynamics absent from the baseline; the symmetric reduction yields closed-form expressions for the critical shock amplitude and the radicalization window.",
+          "authors": [
+            "Alexander Omelchenko"
+          ],
+          "published": "2026-03-09T00:27:29+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-03-13T02:29:38.842667+00:00",
+      "updated_at": "2026-03-13T02:29:38.842667+00:00",
+      "finalized_at": null
     }
   ]
 }
