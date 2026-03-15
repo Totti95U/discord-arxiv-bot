@@ -10444,7 +10444,7 @@
     },
     {
       "pipeline_id": "20260315T024739Z-30b6d6d9",
-      "status": "summarize_running",
+      "status": "completed",
       "interest_job_name": "batches/i105rm0laxyn2i0r0qp3st88fcw530saedxh",
       "summarize_job_name": "batches/6ymo86n8e6yj4xqyzlxzau89rfb5mpfhum3g",
       "papers": [
@@ -11116,14 +11116,339 @@
         "http://arxiv.org/abs/2603.10315v1",
         "http://arxiv.org/abs/2603.11083v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2603.11376v1": {
+          "title": "和集合におけるボーア集合 III: 膨張差集合と概ボーア集合",
+          "summary": "本論文は、離散アーベル群Gにおける正の上バナッハ密度を持つ集合Aの差集合 A - A に関連するボーア集合の構造を研究している。Følnerの定理に基づき、A - A が概ボーア集合（ボーア集合から零密度の集合を除いたもの）を含むことを前提として、A - A + S がボーア集合を含むような集合Sの条件を調査した。具体的に G = ℤ の場合、n²、p - 1、⌊nᶜ⌋ などの集合がこの性質を持つことを示した。応用として、群の準同型写像の下でのセントラル集合の性質や、ℤにおける点収束回帰集合がnice recurrenceおよびvan der Corput集合であることを証明し、先行研究の結果を拡張している。",
+          "keywords": [
+            "Bohr sets",
+            "upper Banach density",
+            "discrete abelian groups",
+            "difference sets",
+            "pointwise recurrence"
+          ],
+          "appendix": "本論文は、組み合わせ論的性質や力学系における回帰性を扱っており、[興味ある分野]のうち combinatorics や structure of large countable infinite group に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2603.11330v1": {
+          "title": "辞書ベースの動的方程式学習における悪条件性：システム生物学のケーススタディ",
+          "summary": "時系列データから支配方程式をデータ駆動型で発見する手法は、複雑な生物学的システムの理解において強力な枠組みであるが、候補関数間に強い相関が生じる際の数値的な「悪条件性（ill-conditioning）」が大きな課題となっている。本研究では、不十分なサンプリングやライブラリの選択が多重共線性を引き起こし、測定ノイズに対してモデル同定が極めて敏感になることを系統的に分析した。システム生物学のベンチマークモデルを用いた解析の結果、わずか2〜3個の項の組み合わせでも極端に大きな条件数が発生し得ること、また、直交多項式基底を用いてもデータ分布が基底の重み関数から逸脱している場合には必ずしも悪条件性を解決できないことを示した。一方で、データ分布が重み関数と整合する場合には、数値的条件が改善され、モデル復元の精度が向上することを実証している。",
+          "keywords": [
+            "sparse regression",
+            "numerical ill-conditioning",
+            "system identification",
+            "orthogonal polynomial bases",
+            "systems biology"
+          ],
+          "appendix": "本論文は「complex dynamics」に関連しており、複雑な生物学的システムの動態を記述する方程式の同定とその数値的安定性を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.11311v1": {
+          "title": "ポアンカレ円板におけるカット・アンド・プロジェクト・スキーム：余コンパクト・フックス群からカオス的ドローン集合へ",
+          "summary": "本論文では、双曲空間のポアンカレ円板モデルに作用する余コンパクト・フックス群を用いたカット・アンド・プロジェクト・スキームの構成について研究している。著者らは、群の基本領域（双曲多角形）がある条件を満たすとき、生成されるカット・アンド・プロジェクト集合 S ⊂ ℝ がカオス的ドローン集合（chaotic Delone set）となることを示した。また、S の点間の距離の集合（タイル長の集合） L_S = { z - y : z, y ∈ S, z > y かつ (y, z) ∩ S = ∅ } が可算無限集合であることを明らかにしている。最後に、余コンパクト・フックス三角形群にこれらの結果を適用し、先行研究を拡張する形で、得られる集合がカオス的ドローン集合であることを証明した。",
+          "keywords": [
+            "cut and project schemes",
+            "cocompact Fuchsian groups",
+            "Poincaré disc",
+            "chaotic Delone sets",
+            "hyperbolic space"
+          ],
+          "appendix": "本論文は、タイリングやDelone集合の力学系的性質を扱う symbolic dynamics や、離散群の幾何学的構造を扱う structure of large countable infinite group の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.11309v1": {
+          "title": "2つの部分群はいつ独立か？",
+          "summary": "RosenmannとVenturaによって提起された「一般的な群における部分群の依存関係の正しい定義とは何か」という問いに対し、本論文は圏論的な定義を特殊化した部分群の独立性の概念を提案している。2つの部分群が独立であるとは、各部分群に作用する任意の2つの自己準同型が、それらによって生成される群の自己準同型へと拡張可能であることを指す。この定義は、従来の部分群の「概互いに素(almost disjoint)」という条件だけでは独立性を保証するのに不十分であることを明らかにする。本稿では、独立性のための必要条件および（異なる）十分条件を提示し、この概念を群論コミュニティに紹介するとともに、その特徴付けに関する未解決問題を提示する。また、多くの事例で独立性を判定するヒューリスティック・アルゴリズムも提案している。",
+          "keywords": [
+            "subgroup independence",
+            "group endomorphism",
+            "almost disjoint subgroups",
+            "category theory",
+            "subgroup characterisation"
+          ],
+          "appendix": "この論文は、可算無限群の構造(structure of large countable infinite group)に関連する数学的議論を含んでいます。数式における $A ∩ B = {e}$ は、A ∩ B = {e} と表記されます。"
+        },
+        "http://arxiv.org/abs/2603.11002v1": {
+          "title": "偏性相利共生と死亡率を考慮したケモスタットモデルのグローバルな動力学と分岐解析",
+          "summary": "単一の栄養源を巡って競争する2つの偏性相利共生種を記述する、3次元の微分方程式系を提案・解析した論文である。種間密度依存増殖関数と個別の除去率を導入し、平衡点の多重性や安定性を数学的に特徴付けている。MatContを用いた数値解析により、希釈率と基質供給濃度に関するパラメータ平面での動作図を作成し、サドルノード、Hopf、周期倍分岐、ホモクリニック分岐などの多様な遷移を明らかにした。特に死亡率の導入が系に複雑な動力学をもたらし、リミットサイクルを通じた共存や3安定性、Bogdanov-Takens（BT）分岐や一般化Hopf（GH）分岐などの余次元2の分岐が生じることを示した。これにより、死亡率を無視した場合には見られない、より現実的な生態学的動力学が記述されている。",
+          "keywords": [
+            "obligate mutualism",
+            "chemostat model",
+            "mortality",
+            "bifurcation analysis",
+            "limit cycles"
+          ],
+          "appendix": "本論文は複素動力学（complex dynamics）に現れるような分岐構造や力学系の定性的性質を扱っており、広義の力学系の解析という観点で関連性があります。"
+        },
+        "http://arxiv.org/abs/2603.10936v1": {
+          "title": "Agdaによる抽象書き換え系の形式化",
+          "summary": "本論文は、証明支援ツールAgdaを用いた抽象書き換え系（ARS）の構成的な形式化を提案している。停止性と合流性に関する概念の分類を定義し、それらの関係性や古典的な対応物との違いを調査した。標準的なARSの定理の証明において古典論理の使用箇所を特定し、可能な限り排除することで、古典的な停止性・合流性判定基準の洗練と一般化を行っている。また、ウェル・ファウンデッド（整礎）関係の異なる定式化に基づく複数の停止性の概念間の論理的関係を検討し、具体例としてラムダ計算の形式化を通じてその適用性を示している。",
+          "keywords": [
+            "Agda",
+            "Abstract Rewriting Systems",
+            "termination",
+            "confluence",
+            "constructive logic"
+          ],
+          "appendix": "本論文の内容は、形式言語やオートマトン理論の基礎となる抽象計算モデルの性質（停止性や合流性）を扱っているという点で、「formal languages」や「automata theory」の基盤部分に関連がある。"
+        },
+        "http://arxiv.org/abs/2603.10851v1": {
+          "title": "古典的ラムゼー数 R(4,4,4)、R(3,4,5) および R(3,3,6) の新しい上界",
+          "summary": "本論文は、3色以上の古典的ラムゼー数に対する新しい上界を提示している。従来、これらの上界の多くは再帰的不等式 R(k₁, ..., kᵣ) ≤ 2 - r + Σ R(k₁, ..., kᵢ₋₁, kᵢ - 1, kᵢ₊₁, ..., kᵣ) に基づいて導出されていたが、著者らはこの評価を改善し、R(4,4,4) ≤ 229、R(3,4,5) ≤ 157、R(3,3,6) ≤ 91 という具体的な数値を導き出した。",
+          "keywords": [
+            "Ramsey numbers",
+            "Upper bounds",
+            "Multicolor Ramsey numbers",
+            "Graph theory"
+          ],
+          "appendix": "本論文はグラフ理論および組合せ論の主要な問題であるラムゼー数に関するものであり、提示された「興味ある分野」の中では combinatorics on words といった組合せ論的領域に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2603.10837v1": {
+          "title": "神経コードの射の随伴",
+          "summary": "組合せ論的なコード（{0,1}ⁿの点集合）の間の射を、像の各座標が定義域の座標の積として表される写像として定義し、その性質を論じた研究である。射をバイナリ行列で表現することで、ブール行列の乗法による随伴写像を伴うガロア接続を形成することを示した。この枠組みをブール行列の分解やランクの推定に応用している。また、射によって誘導されるコードの同型類の半順序集合（ポセット）において、随伴写像が互いに逆写像となる被覆関係を「free neurons」という概念を用いて特徴付け、新たな不変量「defect」を導入してその挙動を解明した。",
+          "keywords": [
+            "Neural Codes",
+            "Morphism of codes",
+            "Galois connection",
+            "Boolean matrix rank",
+            "Poset"
+          ],
+          "appendix": "本論文は組合せ論的構造を持つコードやポセットを扱っており、指定された分野のうち組合せ論（combinatorics）に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2603.10816v1": {
+          "title": "偶数部分が相異なる分割に対する恒等式の組合せ論的視点",
+          "summary": "本論文では、偶数部分が相異なる分割について組合せ論的な観点から新たな考察を行い、符号付き分割（signed partitions）や二色分割（bicolored partitions）との関連性を示すことで、いくつかの分割恒等式を導出しています。各結果に対して全単射を用いた証明を構成しており、これらの全単射は Andrews-El Bachraoui および Kılıç-Kurşungöz によって提示された組合せ論的な問題に対する部分的な回答となっています。",
+          "keywords": [
+            "Partitions with distinct even parts",
+            "signed partitions",
+            "bicolored partitions",
+            "partition identities",
+            "bijective proofs"
+          ],
+          "appendix": "この論文は組合せ論（combinatorics）に関する内容を含んでおり、提示された「興味ある分野」の中では combinatorics on words と関連する手法や視点を持つ可能性があります。"
+        },
+        "http://arxiv.org/abs/2603.10777v1": {
+          "title": "極端現象予測のための力学系情報を統合した深層学習",
+          "summary": "高次元カオス力学系における極端現象（extreme events）の予測は、現象の稀少性と過渡的な力学メカニズムに起因するため、統計的相関のみに頼る手法では困難である。本研究では、現象発生に先立つ過渡的な不安定性を明示的に追跡することで、メカニズムを考慮した解釈可能な前兆指標を構築するデータ駆動型フレームワークを提案する。支配方程式の知識を必要とせず、状態のスナップショットから有限時間リアプノフ指数（FTLE）に類する指標を算出するが、その際、計算コスト抑制のためにOptimal Time-Dependent（OTD）モードによって張られる適応的な低次元部分空間を活用する。これらの指標をTransformerモデルに入力することで、コルモゴロフ流の解析において、従来の観測量ベースの手法よりも予測有効期間を大幅に延長できることを実証した。",
+          "keywords": [
+            "Extreme events",
+            "Chaotic dynamical systems",
+            "Finite-time Lyapunov exponent",
+            "Optimal Time-Dependent modes",
+            "Transformer"
+          ],
+          "appendix": "本論文は、高次元カオス系や不安定性の解析を扱っている点から「complex dynamics」の分野に関連しています。また、力学系の挙動に基づいた予測モデルの構築という文脈で重要な知見を提供しています。"
+        },
+        "http://arxiv.org/abs/2603.10759v1": {
+          "title": "無限群に対する反鎖条件",
+          "summary": "本論文では、部分群の性質 χ に対する「反鎖条件 (ac_χ)」を導入し、互いに置換可能でありながら無限結合が χ を満たさない非 χ 部分群の無限反鎖が存在しない状況を定義した。これは非 χ 部分群に関する実鎖条件 (RCC) の「幅」における類似概念であり、弱鎖条件の階層を拡張するものである。一般化ラジカル群の範疇において、正規性、準正規性、置換可能性、モジュラー性、プロ正規性といった性質 χ に対し、ac_χ を満たすことは RCC や標準的な弱鎖条件を満たすことと同値であることを示した。特に、群が minimax 群であるか、あるいはすべての部分群が χ を満たすかという minimax 型の二分法が得られ、Dedekind 群や準ハミルトン群、T-群などの特徴付けが行われた。プロ正規性の議論においては、有限単純群の分類 (CFSG) の利用が必要となる。",
+          "keywords": [
+            "antichain condition",
+            "generalized radical groups",
+            "real chain condition",
+            "mutually permutable subgroups",
+            "minimax groups"
+          ],
+          "appendix": "この論文は「structure of large countable infinite group」の分野と密接に関連しており、特に無限群における部分群の階層構造や、特定の鎖条件（minimax 性など）を満たす群の構造決定について論じています。"
+        },
+        "http://arxiv.org/abs/2603.11116v1": {
+          "title": "ℝ-木と弧の安定化群上のアクセシビリティ",
+          "summary": "有限表示群 G が ℝ-木 T に極小に作用している状況において、G が T の弧の安定化群の族に対してアクセシブルであるならば、T の点安定化群を単体的木を用いて記述できることを示した。特に、これらの点安定化群が有限生成であることを証明している。この成果は、直積型アルティン群（right-angled Artin groups）や特殊群の自己同型群の研究に応用される。",
+          "keywords": [
+            "ℝ-trees",
+            "accessibility",
+            "arc-stabilisers",
+            "point-stabilisers",
+            "right-angled Artin groups"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に関連しています。有限表示群の木への作用を通じた群の構造解析や、自己同型群への応用を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.11115v1": {
+          "title": "自己同型写像の増加度と群の分解",
+          "summary": "有限生成群 G の自己同型 φ (または外部自己同型 ϕ) に対し、群 G が直積、自由積、あるいは群のグラフとして、より単純な構成要素に分解される場合に、G 全体における φ および ϕ の増加度の振る舞いを導出する手法を研究している。",
+          "keywords": [
+            "Automorphism growth",
+            "Group decompositions",
+            "Outer automorphisms",
+            "Graph of groups"
+          ],
+          "appendix": "この論文は、大きな可算無限群の構造 (structure of large countable infinite group) に関連する性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.10737v1": {
+          "title": "離散力学系に対する離散平均化法",
+          "summary": "写像の反復によって定義される離散力学系を解析するための「離散平均化法」の理論を提案している。軌道の重み付き平均を用いて元の写像を近似する自励系のベクトル場を導出するこの手法は、古典的な平均化法で必要だった懸垂の手続きや時間依存の座標変換を排除し、断熱不変量を簡便かつ効果的に導出できる。近等同写像や共鳴固定点付近の力学系への適用例を通じて、近似誤差の一様な有界性を証明するとともに、数値実験における断熱近似の有効性を評価する手法としての有用性を示している。",
+          "keywords": [
+            "discrete averaging",
+            "discrete time dynamical systems",
+            "adiabatic invariants",
+            "near-identity map",
+            "resonant fixed point"
+          ],
+          "appendix": "本論文は離散力学系の近似手法や誤差評価を扱っており、興味ある分野のうち complex dynamics (複素力学系) や、数値近似の有効性評価という観点で validated numerics (精度保証付き数値計算) に関連する側面を有している。"
+        },
+        "http://arxiv.org/abs/2603.10733v2": {
+          "title": "2元アルファベット上の有限な平滑単語 (smooth words) の複雑度",
+          "summary": "非負整数のアルファベット {a, b} 上で定義される、無限に派生可能な「平滑単語 (smooth words)」の性質を、その有限版である「f-smooth words」を通して調査した。本論文では、f-smooth wordsが平滑単語の因子 (factors) と完全に一致することを証明した。さらに、f-smooth wordsの複雑度が Θ(n^(log(a+b)/log((a+b)/2))) に従うというSingの予想に対し、偶数アルファベットにおける完全な証明、任意の2元アルファベットにおける下限の証明、および奇数アルファベットにおける既知の上限の改善を行った。",
+          "keywords": [
+            "smooth words",
+            "f-smooth words",
+            "Kolakoski word",
+            "complexity",
+            "binary alphabets"
+          ],
+          "appendix": "この論文は「combinatorics on words」および「symbolic dynamics」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.10728v1": {
+          "title": "3次多項式に適用されたNRS(2)の先頭係数および準先頭係数について",
+          "summary": "本論文では、3次多項式 f(z) = Σᵢ₌₀³ aᵢ zⁱ = Πᵢ₌₁³ (1 - uᵢ z) に対し、初期点 (-a₁/a₂, -a₁/a₂) からNRS(2)を適用した際の「誤差」項における u₃ の先頭係数および準先頭係数が、u₁ および u₂ の正係数多項式であることを証明している。この証明は DeFranco による先頭係数の証明を簡略化したものであり、さらにその結果を準先頭係数へと拡張している。",
+          "keywords": [
+            "NRS(2)",
+            "cubic polynomial",
+            "leading coefficients",
+            "penultimate leading coefficients",
+            "positive-coefficient polynomials"
+          ],
+          "appendix": "本論文は反復解法や多項式の性質を扱っており、複素力学系（complex dynamics）の分野と関連があると考えられます。"
+        },
+        "http://arxiv.org/abs/2603.10644v1": {
+          "title": "連続体の超空間上の誘導写像における複雑度関数とエントロピー",
+          "summary": "本研究では、両側シフト空間の（必ずしも閉とは限らない）不変部分集合の複雑度関数を用いて、特定の1次元力学系における連続体の超空間上の誘導力学系の多項式エントロピーを計算しています。また、超空間上の写像 C(f) が無限の位相的エントロピーを持つための、写像 f に関する単純な判定条件を提示しています。",
+          "keywords": [
+            "complexity function",
+            "shift space",
+            "hyperspace of continua",
+            "polynomial entropy",
+            "topological entropy"
+          ],
+          "appendix": "本論文は、シフト空間の複雑度関数を用いて超空間上の力学系を解析しており、興味ある分野のうち symbolic dynamics に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.11107v1": {
+          "title": "計算による証明から厳密座標の導出へ：混合整数最適化を用いた単位正方形上におけるハイルブロンの三角形問題",
+          "summary": "本研究は、ハイルブロンの三角形問題に対して、大域的な混合整数非線形計画法と厳密な記号計算を統合した「最適化後に洗練する（optimize-then-refine）」枠組みを開発した。行列式の構造的特性の活用と新しい対称性の破れの戦略により最適化モデルを大幅に強化し、n=9の場合において、従来の計算時間を約1日から15分へと大幅に短縮し、計算機による大域的最適性の証明に成功した。この数値的証明と記号計算を組み合わせることで、2002年に報告されたn=9の構成が最適であることを初めて証明し、n=5から9におけるすべての最適構成の厳密座標を導出した。分析の結果、非臨界三角形の面積が少数の特定の値に集中するなどの構造的パターンが明らかになり、極値点集合の組合せ幾何学に関する新たな問いを提示している。",
+          "keywords": [
+            "Heilbronn triangle problem",
+            "mixed-integer nonlinear programming",
+            "symbolic computation",
+            "global optimality",
+            "combinatorial geometry"
+          ],
+          "appendix": "本論文は「combinatorics on words」や「validated numerics」に関連する組合せ論的最適化および計算幾何学の手法を扱っており、極値的な幾何構造の解析において興味ある分野と関連性を持ちます。"
+        },
+        "http://arxiv.org/abs/2603.11104v1": {
+          "title": "パラメータ化されたストリームの型安全なモニタリング",
+          "summary": "無人航空機などの複雑なサイバー物理システムにおけるリアルタイムの安全性保証を目的とした、ストリームベースのモニタリング手法に関する研究である。特に、動的なデータ構造を必要とする無限のデータドメイン（例：無制限の航空機数）を扱う際の実行時エラーの回避が課題であった。本論文では、RTLolaフレームワークにパラメータ化されたストリームを導入し、個別のストリームを無制限のストリームインスタンス集合へと一般化するとともに、メモリ管理メカニズムを提供している。実行時エラーの不在は一般に判定不能であるが、リファインメント型システムを用いることで、メモリ参照の安全性やデフォルト値による補完を効果的に保証する手法を提案し、自律飛行機のモニタリングを含むベンチマークでその性能を評価している。",
+          "keywords": [
+            "Parameterized streams",
+            "Stream-based monitoring",
+            "RTLola",
+            "Refinement type system",
+            "Cyber-physical systems"
+          ],
+          "appendix": "本論文は形式手法や型システムを用いたシステム検証を扱っており、オートマトン理論 (automata theory) や形式言語 (formal languages) の応用的な側面に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2603.10575v1": {
+          "title": "Hardy空間 H²(𝔻) 上の合成作用素におけるシャドウイング現象",
+          "summary": "単位円板 𝔻 上の正則自己写像 φ によって誘導される Hardy 空間 H²(𝔻) 上の合成作用素 C_φf = f ∘ φ におけるシャドウイング現象を調査した論文である。主に、正のシャドウイング性質（positive shadowing property）を持つ、𝔻 の線形分数自己写像から誘導されるすべての合成作用素の性質を特徴付けている。",
+          "keywords": [
+            "Shadowing phenomenon",
+            "Composition operators",
+            "Hardy space",
+            "Linear fractional self-maps",
+            "Positive shadowing property"
+          ],
+          "appendix": "複素力学系 (complex dynamics) の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.10414v1": {
+          "title": "加法的サブトラクション・ゲーム",
+          "summary": "原始的二次 (primitive quadratic) 領域における加法的サブトラクション・ゲームの nim 値構造を完全に決定した研究。1982年の著作『Winning Ways』において、有理法に基づく Beatty 型の括弧式 (bracket expressions) を用いた P-ポジションの閉形式が提示されていたが、本研究はその完全な証明を数論的手法により初めて与えたものである。nim 値の数列が古典的な P-ポジションの線形シフト上に位置することを示し、この問題が持つ二次複雑性の本質的な要因を明らかにしている。",
+          "keywords": [
+            "Additive subtraction games",
+            "nim-value",
+            "P-positions",
+            "Beatty-type bracket expressions",
+            "primitive quadratic"
+          ],
+          "appendix": "Beatty 数列やブラケット式の解析を含むため、興味ある分野のうち combinatorics on words や symbolic dynamics と強い関連性があります。"
+        },
+        "http://arxiv.org/abs/2603.11087v1": {
+          "title": "無限次元トーラス上の Möbius Disjointness Conjecture",
+          "summary": "本論文では、無限次元トーラス T^ω 上で定義された変換 T: (x₁, x₂, ..., xₖ, ...) ↦ (x₁ + α, x₂ + h(x₁), ..., xₖ + h(x₁ + (k-2)β), ...) に関する力学系を研究し、Sarnak の Möbius Disjointness Conjecture が成立することを証明した。ここで α ∈ ℝ, β ∈ ℝ\\ℚ であり、h は 1 周期的な C¹⁺ε 級の滑らかな関数である。このフロー (T^ω, T) は遠点的 (distal) であり、かつ全ての x ∈ T^ω においてバーコフ平均が存在しないという意味で不規則であるという性質を持つ。",
+          "keywords": [
+            "Möbius Disjointness Conjecture",
+            "infinite-dimensional torus",
+            "distal system",
+            "Sarnak's conjecture",
+            "irregular flow"
+          ],
+          "appendix": "本論文は数論的力学系 (arithmetic dynamics) に深く関連する内容を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.10348v1": {
+          "title": "バイアス条件下における集団進化ダイナミクス：モデリングと解析",
+          "summary": "各グループが現在の規模に反比例する誘引関数を通じてメンバーを競い合う、集団形成と移動行動の動的モデルを提案している。この誘因は、社会的・経済的利点などを反映するグループ固有のバイアス項によって調整され、新規参入者は重み付けされたスコアに基づき確率的にグループを選択する。本研究では、グループ比率が安定する定常平衡への収束条件を導出し、バイアスの強さや選好強度に応じた非線形な挙動を理論およびシミュレーションの両面から解析している。",
+          "keywords": [
+            "Group formation",
+            "attraction functions",
+            "bias terms",
+            "stationary equilibrium",
+            "nonlinear behavior"
+          ],
+          "appendix": "本論文は、集団の動的モデルにおける複雑な非線形挙動を解析していることから、興味ある分野のうち「complex dynamics」に関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2603.10315v1": {
+          "title": "二部・準二部グラフと行列式分解について",
+          "summary": "本論文では、二部グラフと複数の「準二部かつ非Konig-Egervaryグラフ」を制御された手法で結合させた新しいグラフのクラス「Bipartite-Almost Bipartite (BAB) グラフ」を提案している。このクラスは、単一の奇サイクルを持つ準二部グラフや、k個の互いに素な奇サイクルを持つR-disjointグラフを統一・一般化したものである。BABグラフの構造をGallai-Edmonds分解を用いて解析し、nucleus(G)、diadem(G)、ker(G)の明示的な表現を導出することで、既存の結果を拡張した。さらに、隣接行列の行列式が構成要素のグラフの行列式の積として分解できることを示し、R-disjointグラフに関する行列式分解の予想を肯定的に解決した。また、|corona(G)| + |ker(G)|に関する新しい下界などの組合せ論的な帰結も導いている。",
+          "keywords": [
+            "Bipartite-Almost Bipartite graphs",
+            "Konig-Egervary graphs",
+            "Gallai-Edmonds decomposition",
+            "Determinantal factorization",
+            "Odd cycles"
+          ],
+          "appendix": "この論文は組合せ論（combinatorics）の手法を用いてグラフの構造解析を行っており、興味ある分野のうち「combinatorics on words」などの組合せ論的側面に広く関連しています。"
+        },
+        "http://arxiv.org/abs/2603.11083v1": {
+          "title": "時相論理およびオートマトン理論における確率的選言標準形 (PDNF)",
+          "summary": "本論文は、論理システムにおける不確実性を表現・推論するための枠組みとして、確率的選言標準形 (PDNF) を導入している。PDNFは、古典的な選言標準形とは異なり、変数に実数値の重みを割り当てることで確率情報を符号化する。著者らはPDNFのベクトル空間を構築し、代数的な証拠結合を実現した。PDNFは時相論理の構成要素である venjunction 上の確率分布、および分割区間上の可積分関数という二重の側面を持ち、バナッハ空間構造を通じた関数解析の適用が可能となる。また、指数型パラメータ化において、PDNFの加算がベイズ的証拠融合と一致することを示し、サンプルからの結果特定に関する境界を導出している。これにより、論理学、数値計算、および連続確率の橋渡しがなされる。",
+          "keywords": [
+            "Probabilistic Disjunctive Normal Forms",
+            "Temporal Logic",
+            "Automata Theory",
+            "Bayesian evidence fusion",
+            "Banach space"
+          ],
+          "appendix": "本論文は、指定された興味ある分野のうち、オートマトン理論 (Automata Theory) に直接関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2603.11376v1",
+        "http://arxiv.org/abs/2603.11330v1",
+        "http://arxiv.org/abs/2603.11311v1",
+        "http://arxiv.org/abs/2603.11309v1",
+        "http://arxiv.org/abs/2603.11002v1",
+        "http://arxiv.org/abs/2603.10936v1",
+        "http://arxiv.org/abs/2603.10851v1",
+        "http://arxiv.org/abs/2603.10837v1",
+        "http://arxiv.org/abs/2603.10816v1",
+        "http://arxiv.org/abs/2603.10777v1",
+        "http://arxiv.org/abs/2603.10759v1",
+        "http://arxiv.org/abs/2603.11116v1",
+        "http://arxiv.org/abs/2603.11115v1",
+        "http://arxiv.org/abs/2603.10737v1",
+        "http://arxiv.org/abs/2603.10733v2",
+        "http://arxiv.org/abs/2603.10728v1",
+        "http://arxiv.org/abs/2603.10644v1",
+        "http://arxiv.org/abs/2603.11107v1",
+        "http://arxiv.org/abs/2603.11104v1",
+        "http://arxiv.org/abs/2603.10575v1",
+        "http://arxiv.org/abs/2603.10414v1",
+        "http://arxiv.org/abs/2603.11087v1",
+        "http://arxiv.org/abs/2603.10348v1",
+        "http://arxiv.org/abs/2603.10315v1",
+        "http://arxiv.org/abs/2603.11083v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-03-15T02:47:39.578494+00:00",
-      "updated_at": "2026-03-15T05:49:03.307302+00:00",
-      "finalized_at": null
+      "updated_at": "2026-03-15T19:48:05.866927+00:00",
+      "finalized_at": "2026-03-15T19:48:05.866900+00:00"
     }
   ]
 }
