@@ -11452,7 +11452,7 @@
     },
     {
       "pipeline_id": "20260316T024819Z-ab1f59ff",
-      "status": "summarize_running",
+      "status": "completed",
       "interest_job_name": "batches/b8yvj95gcurwisa9wwz9a830r4hd9ly6eq46",
       "summarize_job_name": "batches/vvdor5lv7vw2nh6ehvalbgsw8i99zpwwkvrs",
       "papers": [
@@ -12017,14 +12017,263 @@
         "http://arxiv.org/abs/2603.11591v1",
         "http://arxiv.org/abs/2603.11418v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2603.12425v1": {
+          "title": "連分数に関するラグランジュの定理の幾何学的証明",
+          "summary": "正則連分数において、有限展開を持つ点は有理数であり、ラグランジュの定理により、最終的に周期的な展開を持つ点は整数係数の非退化二次方程式の根であることが知られている。本論文では、これらの結果を実数、複素数、3次元、四元数、八元数、およびハイゼンベルク連分数を含む、固有かつ離散的な岩澤連分数へと拡張する。具体的には、点 p が有限展開を持つこと、点 p が適切なモジュラー群 M の無限遠点像 M(∞) に属すること、および点 p が M の放物型変換の不動点であることが同値であることを示す。また、最終的に周期的な点は M の斜航型元（loxodromic elements）の不動点に対応し、これはアールフォルスのクリフォード代数形式を用いることで非退化二次式の根として解釈できる。これにより、最近整数実連分数やフルヴィッツ複素連分数に対するラグランジュの定理の新しい幾何学的証明が与えられる。",
+          "keywords": [
+            "Lagrange's theorem",
+            "continued fractions",
+            "Iwasawa CFs",
+            "Clifford Algebra",
+            "modular group"
+          ],
+          "appendix": "この論文は、複素力学系 (complex dynamics) や算術力学系 (arithmetic dynamics) に深く関連しており、特にモジュラー群の幾何学的性質や不動点の解析においてこれらの分野と接点を持ちます。"
+        },
+        "http://arxiv.org/abs/2603.12225v1": {
+          "title": "Sums of Wildflowers における Evil Twins",
+          "summary": "本論文は、あるゲーム G に対して G* ∈ {G, G+*} が存在し、正規形（normal play）と逆形（misère play）の勝敗結果が入れ替わる「evil twin property」という性質を研究している。著者らは「wildflowers の和」と呼ばれる形式のゲーム群を対象に、McKay、Milley、Nowakowski、および Lo による先行研究を拡張した。Conway の逆勝負理論（misère genus theory）を partizan game へ部分的に一般化する手法を用い、wildflowers の和の広範な閉集合がこの性質を持つことを示した。また、数 a を伴う mutant flowers {*x₁, ..., *xₙ}:a についても検討し、これが evil twin property を持つ最大の閉じた集合であることを証明するとともに、その勝敗判定が 3-SAT からの帰着により NP-hard であることを明らかにした。",
+          "keywords": [
+            "evil twin property",
+            "sums of wildflowers",
+            "misère genus theory",
+            "partizan games",
+            "NP-hard"
+          ],
+          "appendix": "本論文は組合せゲーム理論を扱っており、提示された興味ある分野の中では Combinatorics に密接に関連します。また、計算複雑性の観点から NP-hard などの概念も含まれています。"
+        },
+        "http://arxiv.org/abs/2603.12204v1": {
+          "title": "余代数的パス制約",
+          "summary": "関手に対する余代数の余多様体を公理化する手法として、代数の等式に類似した「等式的パス制約（equational path constraints）」を提案している。これは余代数内の各パスに対して値のペアを割り当て、それらの一致を要求する性質である。本研究では、この制約が余多様体を定義することを示し、オートマトン理論における可換条件や微分方程式、双無限ストリームなどの具体例において、この制約下での最終余代数の構成を行っている。また、パスから計算される値がモナドに属する場合の共等式（coequations）との関連性についても論じている。",
+          "keywords": [
+            "coalgebraic path constraints",
+            "covarieties",
+            "finitary behavioural properties",
+            "final coalgebras",
+            "coequations"
+          ],
+          "appendix": "論文内で挙げられている動機付けの例に、興味ある分野の一つである「automata theory」が含まれています。"
+        },
+        "http://arxiv.org/abs/2603.12197v2": {
+          "title": "交換群と状態非依存のコンテキスト性",
+          "summary": "本論文では、Peres-Merminの魔法陣に代表される量子非古典性の鍵であり、量子優位性の源泉となる「状態非依存のコンテキスト性」を議論するための代数的構造を導入している。生成元と関係式で定義される「交換群」を提案し、それを文字列書き換えシステムや、ハイゼンベルク群の有向版としての線形代数的構成の観点から分析している。また、コンテキスト性の指標の一般形式として「コンテキスト的な語 (contextual words)」を導入し、交換群においてそれらが発生する条件を特徴付けるとともに、それ以外の場合における非コンテキスト的な値割り当てを明示的に構成している。さらに、交換群から一般化されたパウリn-群の部分群へのユニタリ表現を与えている。",
+          "keywords": [
+            "state-independent contextuality",
+            "commutation groups",
+            "string rewriting system",
+            "contextual words",
+            "generalized Pauli n-groups"
+          ],
+          "appendix": "本論文で用いられている文字列書き換えシステム（string rewriting system）や、生成元と関係式による群の定義、および「語（word）」の概念を用いたコンテキスト性の特徴付けは、興味ある分野のうち「combinatorics on words」や「formal languages」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.12171v1": {
+          "title": "様相定義可能性および保存定理はいつ有限へと転移するか？",
+          "summary": "一階述語論理では有限構造への制限により多くの転移定理が成立しなくなることが知られているが、本論文では様相論理における古典的な定義可能性および保存定理が有限構造においてどの程度維持されるかを調査している。主な結果として、Bisimulation Safety Theoremが有限構造へ転移することを示している。一方で、基本的なフレーム操作に対するいくつかの保存定理が有限では成立しないことを指摘し、あわせてGoldblatt-Thomasonの定理や様相対応理論の有限版、および計算可能性の側面についても議論を行っている。",
+          "keywords": [
+            "modal definability",
+            "preservation theorems",
+            "finite structures",
+            "Bisimulation Safety Theorem",
+            "modal correspondence theory"
+          ],
+          "appendix": "本論文は有限モデル理論を扱っており、計算機科学におけるオートマトン理論 (automata theory) や形式言語 (formal languages) の基礎的な論理的側面に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.12115v1": {
+          "title": "指数的に小さな分離への幾何学的アプローチ：任意余次元のzero-Hopf分岐",
+          "summary": "本論文では、任意余次元のzero-Hopf分岐における指数的に小さな分離（splitting）を解析するための幾何学的アプローチを提案している。具体的には、3次Michelsen/Kuramoto-Sivashinsky型方程式 ε^{2(κ-1)} f''' + f' = Q(f) を一般化した問題群を扱う。ここでQはκ個の単純実根を持つ実多項式である。ε=0においてシステムは(κ-1)個のヘテロクリニック軌道を持ち、非退化条件下で、各結合における指数的に小さな分離の挙動を特定した。この分離量はε^{-(3κ/2)} exp(-ε^{1-κ} Tʲ)(Cʲ + O(ε))の形をとる。本手法は複素化された相空間において、一般化された鞍点結節点（saddle-node）に随伴する中心多様体状の不変多様体の解析性の欠如と、指数的に小さな分離を関連付けるものである。",
+          "keywords": [
+            "exponentially small splitting",
+            "zero-Hopf bifurcation",
+            "heteroclinic connections",
+            "complexified phase space",
+            "invariant manifolds"
+          ],
+          "appendix": "複素平面上の解析性や不変多様体の動態を扱う点で、興味ある分野の「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.12103v1": {
+          "title": "指数的に小さい分裂への幾何学的アプローチ：余次元2のジェネリックなゼロ・ホップ分岐",
+          "summary": "本論文では、実解析的かつジェネリックな余次元2のゼロ・ホップ分岐の展開を考察しています。パラメータ空間の開集合において、1次元の安定・不安定多様体の分裂がすべてのオーダーを超えて指数的に小さくなることはよく知られていますが、本研究はこの現象に対して幾何学的力学系の観点から新たな証明を与えました。具体的には、指数的に小さい分裂を、一般化されたサドル・ノードのセンター型多様体における解析性の欠如と結びつけています。技術的にはブローアップ法を用いて異なるオーダーのダイナミクスを系統的に関連付け、複素化された相空間上で解析を行うことで、未摂動のヘテロクリニック接続の時間パラメータ表示に依存しない手法を構築しました。",
+          "keywords": [
+            "zero-Hopf bifurcation",
+            "exponentially small splitting",
+            "stable and unstable manifolds",
+            "blowup method",
+            "center-like manifolds"
+          ],
+          "appendix": "本論文は「complex dynamics（複素力学系）」の分野に関連しています。解析手法において相空間を複素化（complexified phase space）して扱うアプローチが取られており、力学系の解析性や複素解析的な性質が重要な役割を果たしています。"
+        },
+        "http://arxiv.org/abs/2603.12095v1": {
+          "title": "前有限同型、安定交換子長、および不動点性質",
+          "summary": "本研究ではGrothendieck対を構成することにより、安定交換子長、quasimorphisms、性質NL(双曲空間への作用を妨げる性質)、および性質FW∞(有限次元CAT(0)立方体複体への作用を妨げる性質)が、前有限不変量ではないことを示しました。また、性質FAや非アーベル自由部分群についても前有限不変量ではないことを再提示しています。手法として、双曲的なvirtually special groupに対するRips構成と、反復的な群論的デーン充填を組み合わせています。",
+          "keywords": [
+            "Profinite invariants",
+            "Stable commutator length",
+            "Grothendieck pairs",
+            "Rips constructions",
+            "Dehn filling"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「structure of large countable infinite group」に強く関連する群論的な性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.11954v1": {
+          "title": "k-部分集合およびk-マルチセットに対するユニバーサルサイクルの構成",
+          "summary": "組み合わせオブジェクトの集合Sに対し、各要素を部分文字列として一度ずつ含む巡回列であるユニバーサルサイクル（u-cycle）について研究。従来、k-部分集合やk-マルチセットに対しては、単純な文字列表現ではu-cycleが常に存在するとは限らず、グラフへのマッピングを用いた存在証明はあっても効率的な構成法は未解明であった。本論文では、全てのn, k ≥ 2に対して効率的な構成を可能にする新しい表現方法を提案する。後続ルールアルゴリズムにより1記号あたりO(n)時間・O(n)空間での構成を実現し、ネックレス連結アルゴリズムを用いることで償却O(1)時間での生成を可能にした。これらはk-マルチセットに対する初の効率的なユニバーサルサイクル構成法であり、重み制限付きde Bruijn列の構成手法を応用することで得られた成果である。",
+          "keywords": [
+            "universal cycle",
+            "k-subsets",
+            "k-multisets",
+            "de Bruijn sequences",
+            "successor-rule algorithms"
+          ],
+          "appendix": "本論文は、組み合わせ論（combinatorics on words）の分野に深く関連しており、特にde Bruijn列の一般化や文字列の生成アルゴリズムに焦点を当てています。"
+        },
+        "http://arxiv.org/abs/2603.11934v1": {
+          "title": "有界重みde Bruijn列のデコードによるt-部分集合およびt-マルチセットの普遍サイクルのデコード",
+          "summary": "組合せオブジェクトの集合Sを代表する各要素を部分文字列として一度ずつ含む、長さ|S|の巡回列である「普遍サイクル」について、そのデコード（ランキング/アンランキング）の効率的なアルゴリズムを提案する。本論文では、k元集合上の長さnの文字列において、ハミング重みが制限されたde Bruijn列に対する初の多項式時間・領域のデコードアルゴリズムを開発した。この成果を応用することで、n元集合から選ばれるt-部分集合およびt-マルチセットの普遍サイクルに対する効率的なデコードが可能となった。",
+          "keywords": [
+            "universal cycle",
+            "de Bruijn sequences",
+            "t-subsets",
+            "t-multisets",
+            "decoding algorithms"
+          ],
+          "appendix": "本論文はcombinatorics on wordsに関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2603.11908v1": {
+          "title": "束上の不動点ゲームにおけるウィットネス",
+          "summary": "本論文では、不動点ゲームにおける戦略を導出し、関数の最小不動点が特定の境界の上にあるか、あるいは特定の境界を下回らないことを証明するために使用できる「ウィットネス（証拠）」を構成する。論理体系を表現する「論理宇宙」と、関数が定義される「振舞い宇宙」をガロア接続によって結びつける束論的なアプローチを採用している。プライマル（primal）とデュアル（dual）の2種類のゲームを検討し、ウィットネスから勝利戦略を導出する方法、および戦略からウィットネスを構築する方法の両方を示す。本理論の応用例として、双模倣性における識別式、確率システムの振舞いメトリクス、さらにマルコフ連鎖の停止確率の下限を保証するためのウィットネスの構成について述べている。",
+          "keywords": [
+            "Fixpoint games",
+            "Lattice theory",
+            "Galois connection",
+            "Winning strategies",
+            "Markov chains"
+          ],
+          "appendix": "不動点ゲームや論理・戦略の関係性を扱っているため、automata theoryの分野に関連があります。"
+        },
+        "http://arxiv.org/abs/2603.11852v1": {
+          "title": "非コンパクト空間上の双曲型流れにおける指数混合性",
+          "summary": "モジュラー曲面上の測地流を含む、非コンパクトな相空間上の双曲型流れのクラスにおいて、SRB測度に関する滑らかな観測量の相関が指数関数的に減衰することを証明した。Dolgopyatの動的な手法を拡張し、一様な非積分条件を満たす一様双曲型ポアンカレ写像の懸垂流モデルを、三段階の誘導スキーム（triple inducing scheme）を用いて構築した。これにより得られた屋根関数（roof function）が、非積分性およびテイル条件を満たすことを示している。応用として、モジュラー曲面上の測地流に関するRatnerの指数混合性を、動的な手法により再証明した。",
+          "keywords": [
+            "Exponential mixing",
+            "Hyperbolic flows",
+            "SRB measure",
+            "Non-compact phase spaces",
+            "Dolgopyat's method"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2603.11833v1": {
+          "title": "数学におけるトルソ（torsor）入門：暗号学におけるΣ-プロトコルへの展望",
+          "summary": "本論文は、著者自身の研究への応用を見据えたトルソ（torsor）の基礎的な入門資料である。群作用、軌道、自由推移的作用、標準的な原点の不在、および点間の「移動」としての群要素の解釈といった側面に焦点を当てている。基本的な定義と例を示した上で、トルソを抽象的な自由推移的作用としてだけでなく、コサイクル条件を満たす変換データによる局所的な自明片の貼り合わせとして捉える重要性を強調している。さらに、層やトポスの視点にも触れ、最終的には暗号学におけるΣ-プロトコルへの概念的な応用について解説している。",
+          "keywords": [
+            "Torsors",
+            "Group actions",
+            "Free transitive actions",
+            "Σ-protocols",
+            "Cocycle conditions"
+          ],
+          "appendix": "本論文の内容は代数学および暗号理論に関するものであり、指定された興味ある分野（記号力学、語上の組合せ論、オートマトン、数論力学、巨大な可算無限群の構造など）との直接的な関連性は低いですが、群作用の数学的な基礎概念を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.11822v1": {
+          "title": "非線形カーペット上の悪近似点",
+          "summary": "ℝᵈにおける悪近似点（badly approximable points）とは、ディリクレの近似定理を定数倍以上に改善できない、有理ベクトルによる近似が最も困難な点のことである。ディオファントス近似における重要な課題は、これら悪近似点の集合が与えられた集合と全次元で交差する条件を特定することである。本論文では、この全交差性を満たす非線形かつ非等角なアトラクタの最初のクラスを特定し、Das-Fishman-Simmons-Urbańskiが2019年に提示した未解決問題に解答した。また、これらのアトラクタのハウスドルフ次元に関する公式も導出している。",
+          "keywords": [
+            "Badly approximable points",
+            "Diophantine approximation",
+            "Non-linear non-conformal attractors",
+            "Hausdorff dimension",
+            "Dirichlet's approximation theorem"
+          ],
+          "appendix": "本論文は非線形なアトラクタの構造や次元論を扱っており、興味ある分野のうち complex dynamics や arithmetic dynamics に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.11670v1": {
+          "title": "超楕円関数のための2次直交ペアからのハンケル行列式とその応用",
+          "summary": "Hone (2021) によって指摘された、超楕円曲線に由来する連分数展開とハンケル行列式の調査における「ミスマッチ」問題を解決する研究である。著者らは超楕円関数に対する「quadratic orthogonal pairs」という新しい概念を導入することでこの問題を解決した。さらに、その応用として、離散可積分系である bilateral Somos-4 および Somos-5 漸化式の初期値問題に対する網羅的な解析を行っている。",
+          "keywords": [
+            "Hankel determinants",
+            "hyperelliptic functions",
+            "quadratic orthogonal pairs",
+            "discrete integrable systems",
+            "Somos recurrences"
+          ],
+          "appendix": "本論文は離散可積分系であるSomos漸化式を扱っており、数論的な反復計算や数列の性質を含むことから、興味ある分野のうち arithmetic dynamics との関連があります。"
+        },
+        "http://arxiv.org/abs/2603.11654v1": {
+          "title": "一部のarbor多胞体の格子点数え上げ",
+          "summary": "本論文は、n次元標準単体のn倍拡大と半空間 x_i ≤ 1 (1 ≤ i ≤ k) の共通部分として得られる格子多胞体 Q_{n,k} について研究している。これらはChapotonのarbor多胞体の特殊なケースであり、標準単体と標準立方体の間を補完するものである。主な成果として、Q_{n,k} の h*-多項式を特定の語（word）の上昇（ascent）の数え上げとして記述する組み合わせ論的解釈を与えた。また、新しい「駐車モデル（parking model）」を用いることで、Ehrhart多項式がmagic positiveであることを示し、h*-多項式の実根性を導出した。さらに、非零座標の数に応じた格子点の数え上げ多項式のgamma-positivity（γ-正値性）を示し、任意のarbor多胞体のh*-多項式に関する組み合わせ論的解釈を予想として提示している。",
+          "keywords": [
+            "arbor polytopes",
+            "lattice point enumeration",
+            "h*-polynomial",
+            "Ehrhart polynomial",
+            "combinatorial parking model"
+          ],
+          "appendix": "本論文は「combinatorics on words」の分野に関連しています。具体的には、多胞体の h*-多項式を特定の語における上昇（ascent）の数え上げとして解釈する手法を提示しています。"
+        },
+        "http://arxiv.org/abs/2603.11648v1": {
+          "title": "Visibly Recursive Automata",
+          "summary": "Visibly Pushdown Automata (VPA) の代替として、互いに呼び出し可能な古典的オートマトンの集合によって定義される Visibly Recursive Automata (VRA) を提案する。これは Frohme と Steffen による procedural automata のシステムを厳密に拡張したモデルである。本論文では、VRA における標準的な言語理論的操作および決定問題の計算複雑性を調査した。また、決定性 VRA が表現能力において真の部分集合にとどまることから、表現能力を損なわずに補集合演算などのアルゴリズム的性質を向上させる「codeterminism」という新たな概念を導入し、その有効性を示している。",
+          "keywords": [
+            "Visibly Recursive Automata",
+            "Visibly Pushdown Automata",
+            "systems of procedural automata",
+            "codeterminism",
+            "complementation"
+          ],
+          "appendix": "この論文は興味ある分野のうち、automata theory および formal languages に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.11591v1": {
+          "title": "根探索法の族としての緩和されたニュートン法：力学系と収束性",
+          "summary": "本論文では、古典的なニュートン法を一般化した1パラメータ族である「緩和されたニュートン法（Relaxed Newton's method）」の複素力学系的な挙動を研究している。まず、固定点の乗数を用いて緩和されたニュートン写像として現れる有理写像を特徴付けた。主な成果として、パラメータ h の値に関わらず、Fatou集合が根の吸引領域のみで構成される「収束的」な多項式のクラスを特定した。一方で、任意の固定されたパラメータ h ∈ {z : |z-1| < 1} に対して、この収束性が成立しない一般的な3次多項式が存在することも示した。さらに、Julia集合が直線となる条件の完備な特徴付けや、回転不変性から生じる対称群の解析、およびすべての即時吸引領域が非有界となるための十分条件についても提示している。",
+          "keywords": [
+            "Relaxed Newton's method",
+            "Complex dynamics",
+            "Rational maps",
+            "Fatou set",
+            "Julia set"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「complex dynamics」に直接関連する研究です。有理写像の反復合成による複素平面上の動的な挙動を解析しています。"
+        },
+        "http://arxiv.org/abs/2603.11418v1": {
+          "title": "|corona(G)| + |core(G)| = 2α(G) + 1 を満たすグラフのキャラクタリゼーション",
+          "summary": "本論文では、グラフの全最大独立集合の和集合である corona(G) と共通部分である core(G) に関して、|corona(G)| + |core(G)| = 2α(G) + 1 という等式を満たすグラフの完全なキャラクタリゼーションを与えた。これは Levit および Mandrescu によって提示された未解決問題への解答である。従来、奇サイクルを一つだけ持つ非 Kőnig-Egerváry グラフにおいて成立することが知られていた性質を、任意に多くの奇サイクルを持つグラフ族へと拡張している。",
+          "keywords": [
+            "Kőnig-Egerváry graph",
+            "independence number",
+            "maximum independent set",
+            "core(G)",
+            "corona(G)"
+          ],
+          "appendix": "グラフ理論および組合せ論に関する研究であり、指定された興味ある分野の中では combinatorics に密接に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2603.12425v1",
+        "http://arxiv.org/abs/2603.12225v1",
+        "http://arxiv.org/abs/2603.12204v1",
+        "http://arxiv.org/abs/2603.12197v2",
+        "http://arxiv.org/abs/2603.12171v1",
+        "http://arxiv.org/abs/2603.12115v1",
+        "http://arxiv.org/abs/2603.12103v1",
+        "http://arxiv.org/abs/2603.12095v1",
+        "http://arxiv.org/abs/2603.11954v1",
+        "http://arxiv.org/abs/2603.11934v1",
+        "http://arxiv.org/abs/2603.11908v1",
+        "http://arxiv.org/abs/2603.11852v1",
+        "http://arxiv.org/abs/2603.11833v1",
+        "http://arxiv.org/abs/2603.11822v1",
+        "http://arxiv.org/abs/2603.11670v1",
+        "http://arxiv.org/abs/2603.11654v1",
+        "http://arxiv.org/abs/2603.11648v1",
+        "http://arxiv.org/abs/2603.11591v1",
+        "http://arxiv.org/abs/2603.11418v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-03-16T02:48:19.297674+00:00",
-      "updated_at": "2026-03-16T06:02:13.426173+00:00",
-      "finalized_at": null
+      "updated_at": "2026-03-16T22:00:40.610226+00:00",
+      "finalized_at": "2026-03-16T22:00:40.610202+00:00"
     }
   ]
 }
