@@ -12274,6 +12274,531 @@
       "created_at": "2026-03-16T02:48:19.297674+00:00",
       "updated_at": "2026-03-16T22:00:40.610226+00:00",
       "finalized_at": "2026-03-16T22:00:40.610202+00:00"
+    },
+    {
+      "pipeline_id": "20260317T023147Z-2791a215",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/vq8zhtqu9la7ynogj8wf4qnu7o99lni1ky92",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13600v1",
+          "entry_id": "http://arxiv.org/abs/2603.13600v1",
+          "title": "Vertex-minor universality of a random graph",
+          "summary": "Given a graph $G$ and a vertex $v\\in V(G)$, a local complementation at $v$ on $G$ is an operation that replaces the induced graph on the neighborhood of $v$ by its complement. A graph $H$ is a vertex-minor if $H$ can be obtained from $G$ by a sequence of vertex deletions and local complementation. A graph is said to be $k$-vertex-minor universal if it contains every $k$-vertex graph on any $k$-subset of vertices as a vertex minor. Previously, Ascoli--Fredrickson--Fredrickson--McFarland--Post proved that with high probability $G(n,1/2)$ is $Ω(\\sqrt{n})$-vertex-minor universal. Furthermore, they conjectured that with high probability $G(n,p)$ and $G(n,1-p)$ are $Ω(p\\sqrt{n})$-vertex-minor universal for all $ω(1/\\sqrt{n})\\le p\\le 1/2$. In this short note, we confirm this conjecture up to an extra logarithm factor and show that this is true with probability $1-2^{-Ω(p^2n)}$ if $Ω(\\log n/\\sqrt{n})\\le p\\le 1/2$.",
+          "authors": [
+            "Ting-Wei Chao",
+            "Zixuan Xu"
+          ],
+          "published": "2026-03-13T21:18:33+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13588v1",
+          "entry_id": "http://arxiv.org/abs/2603.13588v1",
+          "title": "Feedback Control and Local Convexification of Wasserstein Gradient Flows",
+          "summary": "For free energies of the form \\[ F(μ) = E(μ) + σ\\int_Ωμ\\logμ\\,dx, \\quad σ> 0, \\] we study the Wasserstein gradient flow, a continuity equation also known as mean-field Langevin dynamics, around a stationary state $\\barμ$ on the flat torus. Our first result identifies the Wasserstein Hessian of $F$ at $\\barμ$ with a self-adjoint operator with compact resolvent on a Hilbert space of potential variables, and shows that, up to the natural Riesz isometry, this operator generates the linearized gradient flow. This spectral description allows us to design a finite-rank feedback law, via an algebraic Riccati equation, that shifts the closed-loop Hessian spectrum above any prescribed threshold $δ> 0$. As a consequence, the nonlinear closed-loop flow converges locally exponentially to $\\barμ$ with rate $δ$. Under an additional second-order remainder assumption on the first variation, the corresponding closed-loop energy is also locally strongly convex in chart coordinates. We illustrate the framework on the flat torus and discuss extensions to multi-species systems, moment-constrained Fokker-Planck equations, and closed Riemannian manifolds.",
+          "authors": [
+            "Dante Kalise",
+            "Lucas M. Moschen",
+            "Grigorios A. Pavliotis"
+          ],
+          "published": "2026-03-13T20:57:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13574v1",
+          "entry_id": "http://arxiv.org/abs/2603.13574v1",
+          "title": "State Algebra for Probabilistic Logic",
+          "summary": "This paper presents a Probabilistic State Algebra as an extension of deterministic propositional logic, providing a computational framework for constructing Markov Random Fields (MRFs) through pure linear algebra. By mapping logical states to real-valued coordinates interpreted as energy potentials, we define an energy-based model where global probability distributions emerge from coordinate-wise Hadamard products. This approach bypasses the traditional reliance on graph-traversal algorithms and compiled circuits, utilising $t$-objects and wildcards to embed logical reduction natively within matrix operations.\n  We demonstrate that this algebra constructs formal Gibbs distributions, offering a rigorous mathematical link between symbolic constraints and statistical inference. A central application of this framework is the development of Probabilistic Rule Models (PRMs), which are uniquely capable of incorporating both probabilistic associations and deterministic logical constraints simultaneously. These models are designed to be inherently interpretable, supporting a human-in-the-loop approach to decisioning in high-stakes environments such as healthcare and finance. By representing decision logic as a modular summation of rules within a vector space, the framework ensures that complex probabilistic systems remain auditable and maintainable without compromising the rigour of the underlying configuration space.",
+          "authors": [
+            "Dmitry Lesnik",
+            "Tobias Schäfer"
+          ],
+          "published": "2026-03-13T20:28:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13564v1",
+          "entry_id": "http://arxiv.org/abs/2603.13564v1",
+          "title": "The MF property for amalgamated free products",
+          "summary": "A C*-algebra (or a group) is called MF (matricial field) if it admits finite dimensional approximate unitary representations which are approximately injective, where approximately is meant with respect to the operator norm.\n  It is proved that for any MF C*-algebra $A$ and its C*-subalgebra $C$, $A\\ast_C A$ is MF. For general amalgamated free products, $A\\ast_C B$, a necessary and sufficient condition for being MF is given. It is shown that the following groups -- amalgamated free products of amenable groups, semidirect products of amenable groups by free groups, and $\\mathbb Z^2\\rtimes SL_2(\\mathbb Z)$ -- all have MF full group C*-algebra. It is shown that the class of MF C*-algebras is closed under maximal tensor products with $C^*(\\mathbb F_n)$. We also show that for any Hilbert-Schmidt stable C*-algebra $A$ and any its C*-subalgebra $C$, all hyperlinear traces on $A\\ast_C A$ are MF.",
+          "authors": [
+            "Tatiana Shulman"
+          ],
+          "published": "2026-03-13T20:06:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13554v1",
+          "entry_id": "http://arxiv.org/abs/2603.13554v1",
+          "title": "Bit-Vector Abstractions to Formally Verify Quantum Error Detection & Entanglement",
+          "summary": "We present a scalable formal verification methodology for Quantum Phase Estimation (QPE) circuits. Our approach uses a symbolic qubit abstraction based on quantifier-free bit-vector logic, capturing key quantum phenomena, including superposition, rotation, and measurement. The proposed methodology maps quantum circuit functional behaviour from Hilbert space to a bit-vector domain. We develop formal properties aligned with this abstraction to ensure functional correctness of QPE circuits. The method scales efficiently, verifying QPE circuits with up to 6 precision qubits and 1,024 phase qubits using under 3.5 GB of memory.",
+          "authors": [
+            "Arun Govindankutty"
+          ],
+          "published": "2026-03-13T19:45:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13553v1",
+          "entry_id": "http://arxiv.org/abs/2603.13553v1",
+          "title": "Matching Rules as Cocycle Conditions: Discrete Potentials on Penrose and Canonical Projection Tilings",
+          "summary": "Aperiodic tilings support two classically studied but hitherto separately presented structures: matching rules, which enforce global order via local constraints, and height functions, which encode global geometry through integer-valued potentials. Their precise relationship has remained implicit in the literature. This paper bridges them via a cochain-first framework, establishing a four-way equivalence -- between matching rules, Ammann bar continuity, cycle closure of the associated $1$-cochains, and height-function existence -- proved for candidate tilings without presupposing any of the four conditions.\n  The proof proceeds via a half-edge/gluing construction: for each Ammann bar family, we assign to every directed edge a signed bar-crossing count, yielding an antisymmetric $1$-cochain. A tile-side crossing function and a global cochain are built in two stages; the global cochain exists precisely when adjacent tiles agree on shared edges. Gluing implies cycle closure; the discrete Poincaré lemma then produces a scalar potential coinciding with the classical Ammann height function.\n  The framework extends uniformly to canonical projection tilings (CPTs) from $\\mathbb{Z}^N$: lattice-coordinate cochains reconstruct vertex positions via $v = \\sum_{k=1}^N x_k(v)\\,\\mathbf{e}_k^*$, and (for CPTs with generic window) form a $\\mathbb{Z}$-basis for $\\check{H}^1 \\cong \\mathbb{Z}^N$ (Forrest--Hunton--Kellendonk), yielding a conservation-forced structure with recognition gap $\\mathcal{R}(\\mathcal{T}) \\cong \\mathbb{Z}^N$. The framework is verified for the Fibonacci chain, Penrose P2, Ammann--Beenker, and the icosahedral Ammann tiling; whether conservation forcing characterises exactly the Pisot substitution CPTs is left as an open conjecture.",
+          "authors": [
+            "Sebastian Pardo-Guerra",
+            "Jonathan Washburn",
+            "Elshad Allahyarov"
+          ],
+          "published": "2026-03-13T19:42:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13550v1",
+          "entry_id": "http://arxiv.org/abs/2603.13550v1",
+          "title": "A cyclic flat embedding theorem for transversal $q$-matroids",
+          "summary": "Cyclic flats form a common structural invariant of both matroids and $q$-matroids, determining these objects through their weighted lattices of cyclic flats. In this paper we exploit this perspective to establish a correspondence between matroids and a subclass of $q$-matroids that we call coordinate $q$-matroids.\n  Our main result is a cyclic flat embedding theorem showing that the cyclic flat structure of a transversal matroid is preserved under this correspondence. This provides a mechanism for transferring structural properties from matroid theory to the $q$-matroid setting. As an application, we show that nested $q$-matroids are transversal and therefore representable.\n  Finally, we illustrate the usefulness of this perspective by analysing transversal $q$-matroids under binary operations. We prove that the class of transversal $q$-matroids is closed under the free product and propose a natural presentation for the direct sum motivated by the corresponding construction for matroids.",
+          "authors": [
+            "Andrew Fulcher"
+          ],
+          "published": "2026-03-13T19:39:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13535v1",
+          "entry_id": "http://arxiv.org/abs/2603.13535v1",
+          "title": "Edgewise Envelopes Between Balanced Forman and Ollivier-Ricci Curvature",
+          "summary": "Evaluating Ollivier-Ricci (OR) curvature on large-scale graphs is computationally prohibitive due to the necessity of solving an optimal transport problem for every edge. We bypass this computational bottleneck by deriving explicit, two-sided, piecewise-affine transfer moduli between the transport-based OR curvature and the combinatorial Balanced Forman (BF) curvature introduced by Topping et al. By constructing a lazy transport envelope and augmenting the Jost and Liu bound with a cross-edge matching statistic, we establish deterministic bounds for $\\mathfrak{c}_{OR}(i,j)$ parameterized by 2-hop local graph combinatorics. This formulation reduces the edgewise evaluation complexity from an optimal transport linear program to a worst-case $\\mathcal{O}(\\max_{v \\in V} \\operatorname{deg}(v)^{1.5})$ time, entirely eliminating the reliance on global solvers. We validate these bounds via distributional analyses on canonical random graphs and empirical networks; the derived analytical bands enclose the empirical distributions independent of degree heterogeneity, geometry, or clustering, providing a scalable, computationally efficient framework for statistical network analysis.",
+          "authors": [
+            "Giorgio Micaletto",
+            "Tebe Nigrelli"
+          ],
+          "published": "2026-03-13T19:16:17+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13522v1",
+          "entry_id": "http://arxiv.org/abs/2603.13522v1",
+          "title": "On the Domatic Game",
+          "summary": "The domatic game with pallete size $k$ is a $2$-player game played on a graph $G$ recently introduced by Hartnell and Rall. Players Alice and Bob take turns choosing an uncolored vertex from $G$, and coloring it a color from $\\{1,2,\\dots,k\\}$. The game ends once all vertices in $G$ have been assigned a color. Alice wins if all $k$ colors induce a dominating set of $G$, and otherwise Bob wins. The domatic game number, $\\operatorname{dom_g}(G,X)$ is the the largest pallete size $k$ such that Alice wins the domatic game when player $X$ goes first (where $X$ is either Alice or Bob).\n  We prove for any graph $G$ of order $n$,\n  \\[\n  \\operatorname{dom_g}(G,X)=Ω\\left(\\frac{δ(G)}{\\log n}\\right).\n  \\]\n  In addition, we show that for any $k$ there exists a graph $G$ with minimum degree $δ(G)=k$ and $\\operatorname{dom_g}(G,X)=1$, and there exists a graph $G'$ with $\\operatorname{dom_g}(G',X)=1$ while having (non-game) domatic number $\\operatorname{dom}(G')=k$. We explore how the domatic game number changes when changing who goes first, and when considering subgraphs of $G$. We also introduce a score variant of the domatic game, and use this to get bounds on the original domatic game.",
+          "authors": [
+            "Sean English",
+            "London Swan"
+          ],
+          "published": "2026-03-13T18:55:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13514v1",
+          "entry_id": "http://arxiv.org/abs/2603.13514v1",
+          "title": "Executable Archaeology: Reanimating the Logic Theorist from its IPL-V Source",
+          "summary": "The Logic Theorist (LT), created by Allen Newell, J. C. Shaw, and Herbert Simon in 1955-1956, is widely regarded as the first artificial intelligence program. While the original conceptual model was described in 1956, it underwent several iterations as the underlying Information Processing Language (IPL) evolved. Here I describe the construction of a new IPL-V interpreter, written in Common Lisp, and the faithful reanimation of the Logic Theorist from code transcribed directly from Stefferud's 1963 RAND technical report. Stefferud's version represents a pedagogical re-coding of the original heuristic logic into the standardized IPL-V. The reanimated LT successfully proves 16 of 23 attempted theorems from Chapter 2 of Principia Mathematica, results that are historically consistent with the original system's behavior within its search limits. To the author's knowledge, this is the first successful execution of the original Logic Theorist code in over half a century.",
+          "authors": [
+            "Jeff Shrager"
+          ],
+          "published": "2026-03-13T18:47:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13214v1",
+          "entry_id": "http://arxiv.org/abs/2603.13214v1",
+          "title": "Investigating mixed-integer programming approaches for the $p$-$α$-closest-center problem",
+          "summary": "In this work, we introduce and study the $p$-$α$-closest-center problem ($pα$CCP), which generalizes the $p$-second-center problem, a recently emerged variant of the classical $p$-center problem. In the $pα$CCP, we are given sets of customers and potential facility locations, distances between each customer and potential facility location as well as two integers $p$ and $α$. The goal is to open facilities at $p$ of the potential facility locations, such that the maximum $α$-distance between each customer and the open facilities is minimized. The $α$-distance of a customer is defined as the sum of distances from the customer to its $α$ closest open facilities. If $α$ is one, the $pα$CCP is the $p$-center problem, and for $α$ being two, the $p$-second-center problem is obtained, for which the only existing algorithm in literature is a variable neighborhood search (VNS).\n  We present four mixed-integer programming (MIP) formulations for the $pα$CCP, strengthen them by adding valid and optimality-preserving inequalities and conduct a polyhedral study to prove relationships between their linear programming relaxations. Moreover, we present iterative procedures for lifting some valid inequalities to improve initial lower bounds on the optimal objective function value of the $pα$CCP and characterize the best lower bounds obtainable by this iterative lifting approach.\n  Based on our theoretical findings, we develop a branch-and-cut algorithm (B&C) to solve the $pα$CCP exactly. We improve its performance by a starting and a primal heuristic, variable fixings and separating inequalities. In our computational study, we investigate the effect of the various ingredients of our B&C on benchmark instances from related literature. Our B&C is able to prove optimality for 17 of the 40 instances from the work on the VNS heuristic.",
+          "authors": [
+            "Elisabeth Gaar",
+            "Sara Joosten",
+            "Markus Sinnl"
+          ],
+          "published": "2026-03-13T17:50:20+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13198v1",
+          "entry_id": "http://arxiv.org/abs/2603.13198v1",
+          "title": "Jacobian graphs",
+          "summary": "We introduce jacobian graphs, which are explicit families of regular graphs that are spectrally indistinguishable from random graphs, but whose local structure is very different from that of random graphs. The construction relies on the geometric properties of generalized jacobians of curves and on general equidistribution theorems for character sums over finite fields.",
+          "authors": [
+            "Arthur Forey",
+            "Javier Fresán",
+            "Emmanuel Kowalski",
+            "Yuval Wigderson"
+          ],
+          "published": "2026-03-13T17:37:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13192v1",
+          "entry_id": "http://arxiv.org/abs/2603.13192v1",
+          "title": "Cops and Robbers: A $\\times$-homotopy Invariant Variant",
+          "summary": "Cops and Robbers is a pursuit-evasion game played on graphs, of which many variants have been developed and studied. We introduce a variant of this game, \"Sneaky-Active Cops and Robbers\", where all cops and robber must move on their turn, and where the robber is allowed to move onto a cop position without being captured. We show that for reflexive graphs, this game is equivalent to the classical cops and robbers and that the cop number for a graph is invariant under $\\times$-homotopy equivalence. We then develop further properties of this game, computing cop numbers for a number of graph families and developing results about the behavior of categorical and box products of graphs.",
+          "authors": [
+            "Tien Chih",
+            "Laura Scull"
+          ],
+          "published": "2026-03-13T17:28:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13181v1",
+          "entry_id": "http://arxiv.org/abs/2603.13181v1",
+          "title": "Verification of Robust Properties for Access Control Policies",
+          "summary": "Existing methods for verifying access control policies require the policy to be complete and fully determined before verification can proceed, but in practice policies are developed iteratively, composed from independently maintained components, and extended as organisational structures evolve. We introduce robust property verification: the problem of determining what a policy's structure commits it to regardless of how pending decisions are resolved and regardless of subsequent extension. We define a support judgment $\\Vdash_{P}φ$ stating that policy $P$ has robust property $φ$, with connectives for implication, conjunction, disjunction, and negation, prove that it is compositional (verified properties persist under policy extension by a monotonicity theorem), and show that despite quantifying universally over all possible policy extensions the judgment reduces to proof search in a second-order logic programming language. Soundness and completeness of this reduction are established, yielding a finitary and executable verification procedure for robust security properties.",
+          "authors": [
+            "Alexander V. Gheorghiu"
+          ],
+          "published": "2026-03-13T17:14:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13178v1",
+          "entry_id": "http://arxiv.org/abs/2603.13178v1",
+          "title": "Locally Irregular Total Colorings of Graphs",
+          "summary": "A total graph is an ordered triple $(V_0, V_1, E)$, where $V_0, V_1$ are the sets of empty and full vertices, respectively, $V_0 \\cap V_1 = \\emptyset$, and the set of edges $E$ is a subset of \\(\\binom{V_0 \\cup V_1}{2}\\) $(E\\cap(V_0 \\cup V_1)=\\emptyset)$. A simple graph is a total graph in which all vertices are full. We say that a total graph $G$ is locally irregular if every two adjacent vertices have different total degrees, where by the total degree of a vertex $v$ in $G$ we mean the number of edges in $G$ that contain $v$ plus 1 if $v$ is full, or plus 0 if $v$ is empty. A total coloring of a graph $G$ whose colors induce locally irregular total subgraphs is called locally irregular total coloring, and the minimum number of colors required in such a coloring of $G$ is denoted by ${\\rm tlir}(G)$. In 2015, Baudon, Bensmail, Przybyło, and Woźniak conjectured that ${\\rm tlir}(G)\\leq 2$ for every graph $G$. In this paper, we prove this conjecture for cacti, subcubic graphs, and split graphs. We also provide a general upper bound for ${\\rm tlir}(G)$ depending on the chromatic number of $G$, and a constant upper bound if $G$ is planar or outerplanar. In our proofs, we utilize special decompositions of graphs and the connection between acyclic vertex coloring and locally irregular total coloring.",
+          "authors": [
+            "Anna Flaszczyńska",
+            "Aleksandra Gorzkowska",
+            "Igor Grzelec",
+            "Alfréd Onderko",
+            "Mariusz Woźniak"
+          ],
+          "published": "2026-03-13T17:13:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13143v1",
+          "entry_id": "http://arxiv.org/abs/2603.13143v1",
+          "title": "An effective Mayer-Vietoris Theorem for discrete Morse homology",
+          "summary": "The Mayer-Vietoris theorem is known for its wide applications, especially in determining homology. In fact, this theorem provides us with a long exact sequence, where the underlying homology groups fit in. However, this theorem does not provide an explicit way to compute homology. In this paper we prove an ``effective\" version of the Mayer-Vietoris theorem using discrete Morse theory. Suppose, we have a Mayer-Vietoris type setup, i.e., let $X$ be a simplicial complex and $A$ and $B$ be two subcomplexes of $X$, such that $A \\cup B=X$. Moreover, let $\\mathcal{W}_A$, $\\mathcal{W}_{B}$ and $\\mathcal{W}_{A \\cap B}$ be gradient vector fields on $A$, $B$ and $A \\cap B$ respectively (which need not be ``coherent\", i.e., they do not need to coincide on their intersection). Then, the main theorem of our paper provides an explicit way to compute the homology groups of $X$, using the combinatorial information regarding the trajectories of the aforementioned gradient vector fields, we do not even need to know the individual homology groups $H_{*}(A)$, $H_{*}(B)$ and $H_{*}(A \\cap B)$. In principle, the homology of $X$ can always be computed explicitly using our theorem irrespective of the choice of the gradient vector fields. Further, if we choose the subcomplexes $A$ and $B$ wisely so that each of $A$, $B$ and $A \\cap B$ admits an efficient gradient vector field, then the computation of the homology groups is considerably reduced.",
+          "authors": [
+            "Sajal Mukherjee",
+            "Pritam Chandra Pramanik",
+            "Arundhati Rakshit"
+          ],
+          "published": "2026-03-13T16:32:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13454v1",
+          "entry_id": "http://arxiv.org/abs/2603.13454v1",
+          "title": "Algebraic Structure of Quantum Controlled States and Operators",
+          "summary": "Quantum control is an important logical primitive of quantum computing programs, and an important concept for equational reasoning in quantum graphical calculi. We show that controlled diagrams in the ZXW-calculus admit rich algebraic structure. The perspective of the higher-order map Ctrl recovers the standard notion of quantum controlled gates, while respecting sequential and parallel composition and multiple-control.\n  In this work, we prove that controlled square matrices form a ring and therefore satisfy powerful rewrite rules. We also show that controlled states form a ring isomorphic to multilinear polynomials. Putting these together, we have completeness for polynomials over same-size square matrices. These properties supply new rewrite rules that make factorisation of arbitrary qubit Hamiltonians achievable inside a single graphical calculus.",
+          "authors": [
+            "Edwin Agnew",
+            "Lia Yeh",
+            "Richie Yeung"
+          ],
+          "published": "2026-03-13T16:29:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13105v1",
+          "entry_id": "http://arxiv.org/abs/2603.13105v1",
+          "title": "Aromatic and clumped multi-indices: algebraic structure and Hopf embeddings",
+          "summary": "Butcher forests extend naturally into aromatic and clumped forests and play a fundamental role in the numerical analysis of volume-preserving methods. The description of numerical volume-preservation is filled with open problems and recent attempts showed progress on specific dynamics and in low-dimension. Following this trend, we introduce aromatic and clumped multi-indices, that are simpler algebraic objects that better describe the Taylor expansions in low dimension. We provide their algebraic structure of pre-Lie-Rinehart algebra, Hopf algebroid, and Hopf algebra, and we generalise in the aromatic context the Hopf embedding from multi-indices to the BCK Hopf algebra.",
+          "authors": [
+            "Zhicheng Zhu",
+            "Adrien Busnot Laurent"
+          ],
+          "published": "2026-03-13T16:01:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13104v1",
+          "entry_id": "http://arxiv.org/abs/2603.13104v1",
+          "title": "The Bianchi IX Attractor in Modified Gravity",
+          "summary": "We consider vacuum anisotropic spatially homogeneous models in certain modified gravity theories (such as Hořava-Lifshitz, $λ$-$R$ or $f(R)$ gravity), which are expected to describe generic spacelike singularities for these theories. These models perturb the well-known Bianchi models in general relativity (GR) by a parameter $v\\in (0,1)$ with GR recovered at $v=1/2$. We prove an analogue of the well-known Ringström attractor theorem in GR to the supercritical theories: for any $v\\in (1/2,1)$, all solutions of Bianchi type $\\mathrm{IX}$ converge to an analogue of the Mixmaster attractor, consisting of Bianchi type I solutions (Kasner states) and heteroclinic chains of Bianchi type II solutions. In contrast to GR, there are no solutions that converge to a different set other than the Mixmaster (such as the locally rotationally symmetric solutions in GR).",
+          "authors": [
+            "Ester Beatriz",
+            "Everaldo Bonotto",
+            "Phillipo Lappicy"
+          ],
+          "published": "2026-03-13T16:00:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13097v1",
+          "entry_id": "http://arxiv.org/abs/2603.13097v1",
+          "title": "Centered colorings and weak coloring numbers in minor-closed graph classes",
+          "summary": "Let $\\mathcal{C}$ be a proper minor-closed class of graphs. Given the minors excluded in $\\mathcal{C}$, we determine the maximum $q$-centered chromatic number and the maximum $q$th weak coloring number of graphs in $\\mathcal{C}$ within an $\\mathcal{O}(q)$-factor. Moreover, when $\\mathcal{C}$ excludes a planar graph, we determine it within a constant factor. Our results imply that the $q$-centered chromatic number of $K_t$-minor-free graphs is in $\\mathcal{O}(q^{t-1})$, improving on the previously known $\\mathcal{O}(q^{h(t)})$ bound with a large and non-explicit function $h$. We include similar bounds for another family of parameters, the fractional treedepth fragility rates. All our bounds are proved via the same general framework.",
+          "authors": [
+            "Jędrzej Hodor",
+            "Hoang La",
+            "Piotr Micek",
+            "Clément Rambaud"
+          ],
+          "published": "2026-03-13T15:46:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13096v1",
+          "entry_id": "http://arxiv.org/abs/2603.13096v1",
+          "title": "Balanced groups and the virtually cyclic dimension of poly-surfaces groups",
+          "summary": "In this paper we obtain explicit linear upper bounds for the virtually cyclic dimension of normally poly-surface and normally poly-free groups. Our approach is based on a structural study of the balanced property (Lück's Condition~C), which provides structural control over commensurators of virtually cyclic subgroups.\n  We prove general stability results showing that the balanced property is preserved under suitable short exact sequences, direct limits, and acylindrical graph of groups decompositions. As applications, we establish that normally poly-hyperbolic groups, normally poly-free groups, and normally poly-surface groups are balanced. These classes include, in particular, pure braid groups of surfaces with non-empty boundary, Artin groups of FC-type, right-angled Artin groups, and fundamental groups of mapping tori of surface homeomorphisms.",
+          "authors": [
+            "Jesús Hernández Hernández",
+            "Porfirio Leandro León Álvarez"
+          ],
+          "published": "2026-03-13T15:45:39+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13069v1",
+          "entry_id": "http://arxiv.org/abs/2603.13069v1",
+          "title": "Fractals made Practical: Denoising Diffusion as Partitioned Iterated Function Systems",
+          "summary": "What is a diffusion model actually doing when it turns noise into a photograph?\n  We show that the deterministic DDIM reverse chain operates as a Partitioned Iterated Function System (PIFS) and that this framework serves as a unified design language for denoising diffusion model schedules, architectures, and training objectives. From the PIFS structure we derive three computable geometric quantities: a per-step contraction threshold $L^*_t$, a diagonal expansion function $f_t(λ)$ and a global expansion threshold $λ^{**}$. These quantities require no model evaluation and fully characterize the denoising dynamics. They structurally explain the two-regime behavior of diffusion models: global context assembly at high noise via diffuse cross-patch attention and fine-detail synthesis at low noise via patch-by-patch suppression release in strict variance order. Self-attention emerges as the natural primitive for PIFS contraction. The Kaplan-Yorke dimension of the PIFS attractor is determined analytically through a discrete Moran equation on the Lyapunov spectrum.\n  Through the study of the fractal geometry of the PIFS, we derive three optimal design criteria and show that four prominent empirical design choices (the cosine schedule offset, resolution-dependent logSNR shift, Min-SNR loss weighting, and Align Your Steps sampling) each arise as approximate solutions to our explicit geometric optimization problems tuning theory into practice.",
+          "authors": [
+            "Ann Dooms"
+          ],
+          "published": "2026-03-13T15:15:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13058v1",
+          "entry_id": "http://arxiv.org/abs/2603.13058v1",
+          "title": "Dynamic direct (ranked) access of MSO query evaluation over SLP-compressed strings",
+          "summary": "We present an algorithm that, given an index $t$, produces the $t$-th (lexicographically ordered) answer of an MSO query over a string. The algorithm requires linear-time preprocessing, and builds a data structure that answers each of these calls in logarithmic time. We then show how to extend this algorithm for a string that is compressed by a straight-line program (SLP), also with linear-time preprocessing in the (compressed encoding of the) string, and maintaining direct access in logtime of the original string. Lastly, we extend the algorithm by allowing complex edits on the SLP after the direct-access data structure has been processsed, which are translated into the data structure in logtime. We do this by adapting a document editing framework introduced by Schmid and Schweikardt (PODS 2022). This work improves on a recent result of dynamic direct access of MSO queries over strings (Bourhis et. al., ICDT 2025) by a log-factor on the access procedure, and by extending the results to SLPs.",
+          "authors": [
+            "Martín Muñoz"
+          ],
+          "published": "2026-03-13T15:07:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.13018v1",
+          "entry_id": "http://arxiv.org/abs/2603.13018v1",
+          "title": "Support is Search",
+          "summary": "Sandqvist's base-extension semantics for intuitionistic propositional logic defines a support relation parametrised by atomic bases, with validity identified as support in every base. Sandqvist's completeness theorem answers the global question: which formulae are valid? This paper addresses the local question: given a fixed base, what does support in that base correspond to? We show that support in a fixed base coincides with proof-search in a second-order hereditary Harrop logic program, via an encoding of formulae as logic-programming goals. This encoding proceeds by reading the semantic clauses in continuation-passing style, revealing that the universal quantifiers over base extensions and atoms appearing in those clauses are not domain-ranging quantifiers over a completed totality, but eigenvariables governed by a standard freshness discipline. Base-extension semantics thereby admits a fully constructive and computationally transparent interpretation: support is proof-search. The result complements Sandqvist's global theorem with a local correspondence, vindicates the anti-realist foundations of the framework on its own terms, and opens the way for implementing the semantics in modelling tasks.",
+          "authors": [
+            "Alexander V. Gheorghiu"
+          ],
+          "published": "2026-03-13T14:24:04+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12995v1",
+          "entry_id": "http://arxiv.org/abs/2603.12995v1",
+          "title": "Extending Exact Integrality Gap Computations for the Metric TSP",
+          "summary": "The subtour relaxation of the traveling salesman problem (TSP) plays a central role in approximation algorithms and polyhedral studies of the TSP. A long-standing conjecture asserts that the integrality gap of the subtour relaxation for the metric TSP is exactly 4/3. In this paper, we extend the exact verification of this conjecture for small numbers of vertices.\n  Using the framework introduced by Benoit and Boyd in 2008, we confirm their results up to n=10. We further show that for n=11 and n=12, the published lists of extreme points of the subtour polytope are incomplete: one extreme point is missing for n=11 and twenty-two extreme points are missing for n=12. We extend the enumeration of the extreme points of the subtour polytope to instances with up to 14 vertices in the general case. Restricted to half-integral vertices, we extend the enumeration of extreme points up to n=17. Our results provide additional support for the 4/3-Conjecture.",
+          "authors": [
+            "William Cook",
+            "Stefan Hougardy",
+            "Moritz Petrich"
+          ],
+          "published": "2026-03-13T13:51:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12953v1",
+          "entry_id": "http://arxiv.org/abs/2603.12953v1",
+          "title": "Delta1 with LLM: symbolic and neural integration for credible and explainable reasoning",
+          "summary": "Neuro-symbolic reasoning increasingly demands frameworks that unite the formal rigor of logic with the interpretability of large language models (LLMs). We introduce an end to end explainability by construction pipeline integrating the Automated Theorem Generator Delta1 based on the full triangular standard contradiction (FTSC) with LLMs. Delta1 deterministically constructs minimal unsatisfiable clause sets and complete theorems in polynomial time, ensuring both soundness and minimality by construction. The LLM layer verbalizes each theorem and proof trace into coherent natural language explanations and actionable insights. Empirical studies across health care, compliance, and regulatory domains show that Delta1 and LLM enables interpretable, auditable, and domain aligned reasoning. This work advances the convergence of logic, language, and learning, positioning constructive theorem generation as a principled foundation for neuro-symbolic explainable AI.",
+          "authors": [
+            "Yang Xu",
+            "Jun Liu",
+            "Shuwei Chen",
+            "Chris Nugent",
+            "Hailing Guo"
+          ],
+          "published": "2026-03-13T12:54:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12926v1",
+          "entry_id": "http://arxiv.org/abs/2603.12926v1",
+          "title": "ODRL Policy Comparison Through Normalisation",
+          "summary": "The ODRL language has become the standard for representing policies and regulations for digital rights. However its complexity is a barrier to its usage, which has caused many related theoretical and practical works to focus on different, and not interoperable, fragments of ODRL. Moreover, semantically equivalent policies can be expressed in numerous different ways, which makes comparing them and processing them harder. Building on top of a recently defined semantics, we tackle these problems by proposing an approach that involves a parametrised normalisation of ODRL policies into its minimal components which reformulates policies with permissions and prohibitions into policies with permissions exclusively, and simplifies complex logic constraints into simple ones. We provide algorithms to compute a normal form for ODRL policies and simplifying numerical and symbolic constraints. We prove that these algorithms preserve the semantics of policies, and analyse the size complexity of the result, which is exponential on the number of attributes and linear on the number of unique values for these attributes. We show how this makes complex policies representable in more basic fragments of ODRL, and how it reduces the problem of policy comparison to the simpler problem of checking if two rules are identical.",
+          "authors": [
+            "Jaime Osvaldo Salas",
+            "Paolo Pareti",
+            "George Konstantinidis"
+          ],
+          "published": "2026-03-13T12:09:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12909v1",
+          "entry_id": "http://arxiv.org/abs/2603.12909v1",
+          "title": "$C^1$-generic continuum-wise expansive surface diffeomorphisms",
+          "summary": "We exhibit a local residual set of surface $C^1$ diffeomorphisms that are continuum-wise expansive but are not expansive. We also exhibit an open and dense set of surface $C^1$ diffeomorphisms where expansiveness implies being Anosov.",
+          "authors": [
+            "Alfonso Artigue",
+            "Bernardo Carvalho",
+            "José Cueto"
+          ],
+          "published": "2026-03-13T11:24:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12894v1",
+          "entry_id": "http://arxiv.org/abs/2603.12894v1",
+          "title": "Optimal Enumeration of Eulerian Trails in Directed Graphs",
+          "summary": "The BEST theorem, due to de Bruijn, van Aardenne-Ehrenfest, Smith, and Tutte, is a classical tool from graph theory that links the Eulerian trails in a directed graph $G=(V,E)$ with the arborescences in $G$. In particular, one can use the BEST theorem to count the Eulerian trails in $G$ in polynomial time. For enumerating the Eulerian trails in $G$, one could naturally resort to first enumerating the arborescences in $G$ and then exploiting the insight of the BEST theorem to enumerate the Eulerian trails in $G$: every arborescence in $G$ corresponds to at least one Eulerian trail in $G$. Instead, we take a simple and direct approach.\n  Our central contribution is a remarkably simple algorithm to directly enumerate the $z_T$ Eulerian trails in $G$ in the \\emph{optimal} $O(m + z_T)$ time. As a consequence, our result improves on an implementation of the BEST theorem for counting Eulerian trails in $G$ when $z_T=o(n^2)$, and, in addition, it unconditionally improves the combinatorial $O(m\\cdot z_T)$-time algorithm of Conte et al. [FCT 2021] for the same task. Moreover, we show that, with some care, our algorithm can be extended to enumerate Eulerian trails in directed multigraphs in optimal time, enabling applications in bioinformatics and data privacy.",
+          "authors": [
+            "Ben Bals",
+            "Solon P. Pissis",
+            "Matei Tinca"
+          ],
+          "published": "2026-03-13T10:57:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12890v1",
+          "entry_id": "http://arxiv.org/abs/2603.12890v1",
+          "title": "Study of attractors and fractal functions on the product spaces and Dimensional aspects",
+          "summary": "In this paper, the product of the Hausdorff metric on the product space is defined and the equivalency between the product Hausdorff metric and the Hausdorff metric on the product space is established. The finite product of the iterated function systems (IFS) on the product space is considered and the relation between the attractor of the product IFS and the attractors of the co-ordinate IFSs is studied. Dimension bounds of the homogeneous and inhomogeneous attractors on the product space is established. Also, the product fractal interpolation function on the higher dimensional space is constructed.",
+          "authors": [
+            "Alamgir Hossain"
+          ],
+          "published": "2026-03-13T10:40:39+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12879v1",
+          "entry_id": "http://arxiv.org/abs/2603.12879v1",
+          "title": "Sharp threshold for universality of cokernels of classical random matrix models over the $p$-adic integers",
+          "summary": "We prove that $\\frac{\\log n}{n}$ is the sharp threshold for universality of the distribution of cokernels of random matrices over $\\mathbb{Z}_p$. More precisely, let $α_n = \\frac{c\\log n}{n}$ for a constant $c>0$ and let $A(n)$ be an $α_n$-balanced random matrix over $\\mathbb{Z}_p$. For non-symmetric, symmetric, and alternating matrix models, we prove that if $c>1$, then the limiting distribution of the cokernel of $A(n)$ coincides with the universal distribution of the corresponding symmetry type, whereas universality fails at the critical scale $c=1$. This improves earlier universality results, which required $α_n \\gg \\frac{\\log n}{n}$, to the optimal threshold. As an application, we generalize the universality result for Sylow $p$-subgroups of sandpile groups of Erdős-Rényi random graphs to a broader class of Erdős-Rényi graph sequences. Our approach is based on a unified framework that simultaneously treats all symmetry types of random matrices as well as the random graph model, rather than handling each case separately.",
+          "authors": [
+            "Jiwan Jung",
+            "Jungin Lee",
+            "Myungjun Yu"
+          ],
+          "published": "2026-03-13T10:30:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12878v1",
+          "entry_id": "http://arxiv.org/abs/2603.12878v1",
+          "title": "Pulse desynchronization of neural populations by targeting the centroid of the limit cycle in phase space",
+          "summary": "The synchronized activity of neuronal populations can lead to pathological over-synchronization in conditions such as epilepsy and Parkinson disease. Such states can be desynchronized by brief electrical pulses. But when the underlying oscillating system is not known, as in most practical applications, to determine the specific times and intensities of pulses used for desynchronizaton is a difficult inverse problem. Here we propose a desynchronization scheme for neuronal models of bi-variate neural activity, with possible applications in the medical setting. Our main argument is the existence of a peculiar point in the phase space of the system, the centroid, that is both easy to calculate and robust under changes in the coupling constant. This important target point can be used in a control procedure because it lies in the region of minimal return times of the system.",
+          "authors": [
+            "Ramón Guevara",
+            "Marco Zenari",
+            "Giorgio Nicoletti",
+            "Elisa Marini",
+            "Samir Suweis",
+            "Sandro Azaele",
+            "Marco Formentin"
+          ],
+          "published": "2026-03-13T10:30:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12877v1",
+          "entry_id": "http://arxiv.org/abs/2603.12877v1",
+          "title": "Coincidence of invariant measure for the alternate base transformations",
+          "summary": "We characterize all pairs $(β,n),(β^\\prime,m)$ such that the alternate $(β,n)$ and $(β^\\prime,m)$-transformations $K_{(β,n)}$ and $K_{(β^\\prime,m)}$ have the same absolutely continuous invariant measure, where $K_{(β,n)}(i,x)=(i+1 \\mod 2 ,T_i(x))$ with $i\\in\\{0,1\\}$, $T_0(x)=T_β(x)=βx \\mod 1$, $T_1(x)=T_n(x)=nx\\mod 1$ with $β>1$ real and $n\\geq 2$ an integer.",
+          "authors": [
+            "Karma Dajani",
+            "Niels Langeveld"
+          ],
+          "published": "2026-03-13T10:26:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12841v1",
+          "entry_id": "http://arxiv.org/abs/2603.12841v1",
+          "title": "Port-Hamiltonian multibody dynamics: Lagrangian formulation, consistent interconnection, structure-preserving simulation and index-reduction",
+          "summary": "This work introduces a port-Hamiltonian (PH) model for constrained mechanical systems, which is directly derived from the Lagrangian equations of motion. The present PH framework incorporates a singularity-free director representation of rigid body rotations, resulting in constant mass matrices. It is shown that the power-preserving interconnection of PH rigid-body subsystems is mathematically equivalent to the classical description of ideal joints using kinematic pairs. This establishes a PH multibody dynamics framework that is consistent with traditional modeling paradigms.\n  Notably, the PH structure of the governing index-2 differential-algebraic equations enables the application of an implicit, structure preserving midpoint time integration. The proposed scheme is able to satisfy both the balance laws for total energy and angular momentum as well as the position-level constraints. These properties make the proposed method remarkably robust and enable stable long-term simulations. Furthermore, a variationally derived index-reduction strategy is incorporated that enforces velocity-level constraints in addition to position-level constraints while preserving the port-Hamiltonian structure. Numerical examples illustrate the favorable properties of the proposed formulation, which is well-suited for energy-based control design.",
+          "authors": [
+            "Lisa Latussek",
+            "Philipp L. Kinon",
+            "Peter Betsch"
+          ],
+          "published": "2026-03-13T09:44:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12827v1",
+          "entry_id": "http://arxiv.org/abs/2603.12827v1",
+          "title": "Are Dependent Types in Set Theory Feasible?",
+          "summary": "Following the types-as-sets paradigm, we present a mechanized embedding of dependent function types with a hierarchy of universes into schematic first-order logic with equality, with axiom schemas of Tarski-Grothendieck set theory. We carry this embedding in the Lisa proof assistant. On top of this foundation, we implement a proof-producing bidirectional type-checking tactic to compute proofs for typing judgements, with partial support for subtyping. We present examples showing how our approach enables automated reasoning for dependent types that is fully verified from set-theoretic axioms and deduction rules for schematic first-order logic with equality. Because types are merely sets, the resulting formalism supports equality that applies to all types and values and permits the usual substitution rules.",
+          "authors": [
+            "Yunsong Yang",
+            "Simon Guilloud",
+            "Viktor Kunčak"
+          ],
+          "published": "2026-03-13T09:31:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12776v1",
+          "entry_id": "http://arxiv.org/abs/2603.12776v1",
+          "title": "Chvátal-Erdős condition for 2-factors with at most two components in graphs",
+          "summary": "It is well-known that Chvátal and Erdős stated that any graph of order at least three whose independence number is no greater than its connectivity is Hamiltonian; that any graph whose independence number is no greater than its connectivity minus one is Hamilton-connected; and that any graph whose independence number is no greater than its connectivity plus one is traceable. Kaneko and Yoshimoto [J. Graph Theory 43 (2003) 269--279] showed that every 4-connected graph of order at least six has a 2-factor with two components if its independence number is no greater than its connectivity. In this paper, we show that any connected graph of order at least three times its connectivity plus three has a 2-factor with at most two components, except for one exceptional class, if its independence number is no greater than its connectivity plus one. Our result is best possible.",
+          "authors": [
+            "Tao Tian",
+            "Liming Xiong",
+            "Weigen Yan"
+          ],
+          "published": "2026-03-13T08:23:53+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12774v1",
+          "entry_id": "http://arxiv.org/abs/2603.12774v1",
+          "title": "Synchronization by noise for stochastic differential equations driven by fractional Brownian motion",
+          "summary": "We investigate synchronization by noise for stochastic differential equations (SDEs) driven by a fractional Brownian motion (fbm) with Hurst index $H\\in(0,1)$. Provided that the SDE has a negative top Lyapunov exponent, we show that a weak form of synchronization occurs. To this aim we use tools from stochastic dynamical systems, random dynamical systems and a support theorem for SDEs driven by fractional noise.~In particular, we characterize the support of an invariant measure of a random dynamical system in a non-Markovian setting.",
+          "authors": [
+            "Alexandra Blessing",
+            "Mazyar Ghani Varzaneh"
+          ],
+          "published": "2026-03-13T08:17:41+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12770v1",
+          "entry_id": "http://arxiv.org/abs/2603.12770v1",
+          "title": "Every 3-connected $\\{K_{1,4},K_{1,4}+e\\}$-free split graph of order at least 13 is Hamilton-connected",
+          "summary": "A graph $G$ is $\\{F_{1}, F_{2},\\dots,F_{k}\\}$-free if $G$ contains no induced subgraph isomorphic to any $F_{i}$ $(1\\leq i \\leq k)$. A connected graph $G$ is a split graph if its vertex set can be partitioned into a clique and an independent set. Ryjáček et al. [J. Comb. Theory, Ser. B 134 (2019) 239--263] conjectured that every $4$-connected $\\{K_{1,4},K_{1,4}+e\\}$-free graph with minimum degree at least 6 is Hamiltonian and they confirmed the case with connectivity at least 5, where $K_{1,4}+e$ is the graph obtained from $K_{1,4}$ by adding a new edge. In this paper, we show that every 3-connected $\\{K_{1,4},K_{1,4}+e\\}$-free split graph of order at least $13$ is Hamilton-connected. It implies that Ryjáček et al.'s conjecture holds for split graphs of order at least $13$.",
+          "authors": [
+            "Tao Tian",
+            "Fengming Dong"
+          ],
+          "published": "2026-03-13T08:13:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12744v1",
+          "entry_id": "http://arxiv.org/abs/2603.12744v1",
+          "title": "TaoBench: Do Automated Theorem Prover LLMs Generalize Beyond MathLib?",
+          "summary": "Automated theorem proving (ATP) benchmarks largely consist of problems formalized in MathLib, so current ATP training and evaluation are heavily biased toward MathLib's definitional framework. However, frontier mathematics is often exploratory and prototype-heavy, relying on bespoke constructions that deviate from standard libraries. In this work, we evaluate the robustness of current ATP systems when applied to a novel definitional framework, specifically examining the performance gap between standard library problems and bespoke mathematical constructions. We introduce TaoBench, an undergraduate-level benchmark derived from Terence Tao's Analysis I, which formalizes analysis by constructing core mathematical concepts from scratch, without relying on standard Mathlib definitions, as well as by mixing from-scratch and MathLib constructions. For fair evaluation, we build an agentic pipeline that automatically extracts a compilable, self-contained local environment for each problem. To isolate the effect of definitional frameworks, we additionally translate every problem into a mathematically equivalent Mathlib formulation, yielding paired TaoBench-Mathlib statements for direct comparison. While state-of-the-art ATP models perform capably within the MathLib framework, performance drops by an average of roughly 26% on the definitionally equivalent Tao formulation. This indicates that the main bottleneck is limited generalization across definitional frameworks rather than task difficulty. TaoBench thus highlights a gap between benchmark performance and applicability, and provides a concrete foundation for developing and testing provers better aligned with research mathematics.",
+          "authors": [
+            "Alexander K Taylor",
+            "Junyi Zhang",
+            "Ethan Ji",
+            "Vigyan Sahai",
+            "Haikang Deng",
+            "Yuanzhou Chen",
+            "Yifan Yuan",
+            "Di Wu",
+            "Jia-Chen Gu",
+            "Kai-Wei Chang",
+            "Nanyun Peng",
+            "Amit Sahai",
+            "Wei Wang"
+          ],
+          "published": "2026-03-13T07:39:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12700v1",
+          "entry_id": "http://arxiv.org/abs/2603.12700v1",
+          "title": "Bijections for rhombic alternative tableaux",
+          "summary": "We generalize well-known bijections between alternative tableaux and permutations to bijections between rhombic alternative tableaux (RAT) and assemblées of permutations. We show how these various bijections are connected. As a consequence, we find a refined enumeration formula for RAT. One of our bijections carries many statistics from RAT to assemblées; notably, it sends the number of free cells to the number of crossings, which answers a question of Mandelshtam and Viennot. We also find an $r!$-to-$1$ map from marked Laguerre histories to assemblées, answering a question of Corteel and Nunge.",
+          "authors": [
+            "Sylvie Corteel",
+            "Jang Soo Kim",
+            "Olya Mandelshtam",
+            "Philippe Nadeau"
+          ],
+          "published": "2026-03-13T06:27:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12699v1",
+          "entry_id": "http://arxiv.org/abs/2603.12699v1",
+          "title": "Synergies, Trade-offs, and Structural Pathways: A Directed Network Approach to SDG Prioritisation",
+          "summary": "To successfully implement the Sustainable Development Goals (SDGs), it is necessary to understand the process by which the achievement of one goal has a spillover effect in a development system. While existing research studies synergies and trade-offs among the SDGs, most empirical approaches operate at the goal level, treat interactions as undirected, or prioritise indicators without accounting for structural redundancy. In this paper, we propose a direction-sensitive and indicator-level network approach to detect high-impact and diversified entry points for policy intervention. By using statistically significant lagged correlations, we build a directed weighted network of SDG indicators and assign them into groups based on the balance of their positive and negative spillovers. Systemic effects are measured by weighted out-degree Opsahl centrality, and flow-based clustering is used to detect frequent paths of high positive spillovers. Applying the framework to the Indian context, it is found that the interlinkages in the SDGs are highly asymmetric and structured in specific structural subsystems. Although synergies slightly outweigh the total, trade-offs are still embedded in the sectors. Notably, the most influential indicators are focused on a single pathway of propagation, suggesting that influence-based prioritisation itself could result in redundant system-wide impacts. A cluster-based prioritisation approach leads to a more diversified set of interventions, triggering multiple structurally independent channels of beneficial spillovers. The proposed framework combines directionality, trade-off embedding, and structural propagation analysis in a single framework, providing a scalable solution for country-level SDG prioritisation under resource constraints.",
+          "authors": [
+            "Gaurav Kottari",
+            "Niteesh Sahni"
+          ],
+          "published": "2026-03-13T06:27:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12656v2",
+          "entry_id": "http://arxiv.org/abs/2603.12656v2",
+          "title": "Three elliptic closed characteristics on the non-degenerate compact convex hypersurfaces in R^6",
+          "summary": "Let $Σ\\subset \\mathbb{R}^{2n}$ with $n\\geq2$ be any $C^2$ compact convex hypersurface. The stability of closed characteristics has attracted considerable attention in related research fields. A long-standing conjecture states that all closed characteristics are irrationally elliptic, provided $Σ$ possesses only finitely geometrically distinct closed characteristics. This conjecture has been fully resolved only in $\\mathbb{R}^4$, while it remains completely open in higher dimensions. Even in $\\mathbb{R}^6$, it is unknown whether there exist three elliptic closed characteristics. In this paper, we first prove that for any $Σ\\subset \\mathbb{R}^{2n}$ with finitely many closed characteristics, there exist at least two elliptic closed characteristics, which possess a nice symplectic normal form. In particular, as a simple corollary, they are irrational elliptic when $Σ$ is non-degenerate. Moreover, for any non-degenerate $Σ\\subset\\mathbb{R}^{6}$ with finitely many closed characteristics, we obtain at least three elliptic characteristics, of which at least two are irrationally elliptic. Based on the $n$-or-$\\infty$ conjecture, three elliptic closed characteristics are optimal. This result provide theoretical support for further research on this conjecture.",
+          "authors": [
+            "Lu Liu",
+            "Yuwei Ou"
+          ],
+          "published": "2026-03-13T05:00:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.12610v1",
+          "entry_id": "http://arxiv.org/abs/2603.12610v1",
+          "title": "A step towards the Erdős-Rogers problem",
+          "summary": "For $2\\le k\\le t<s$, the Erdős-Rogers function $f^{(k)}_{t,s}(N)$ denotes the largest $m$ such that every $K^{(k)}_s$-free $k$-graph on $N$ vertices contains a $K^{(k)}_t$-free induced subgraph on $m$ vertices. Mubayi and Suk (J. London Math. Soc. 2018) conjectured that $f^{(k)}_{k+1,k+2}(N)=(\\log_{(k-2)}N)^{Θ(1)}$ for $k\\ge 4$, where $\\log_{(i)}$ denotes the $i$-fold iterated logarithm. This is equivalent to the statement that $f^{(k)}_{k+1,s}(N)=(\\log_{(k-2)}N)^{Θ(1)}$ for every $s\\ge k+2$.\n  In this paper, we introduce multi-color patterns into a random construction of a $2$-graph to build a $4$-graph, and for the first time, combine them with multi-layer extremum structures to prove that $f^{(4)}_{5,s}(N)=(\\log \\log N)^{Θ(1)}$ for every $s\\ge 11$. More generally, using a variant of the Erdős-Hajnal stepping-up lemma, we also establish that $f^{(k)}_{k+1,s}(N)=(\\log_{(k-2)}N)^{Θ(1)}$ for every $s\\ge k+7$.",
+          "authors": [
+            "Longma Du",
+            "Xinyu Hu",
+            "Ruilong Liu",
+            "Guanghui Wang"
+          ],
+          "published": "2026-03-13T03:24:24+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-03-17T02:31:47.731176+00:00",
+      "updated_at": "2026-03-17T02:31:47.731176+00:00",
+      "finalized_at": null
     }
   ]
 }
