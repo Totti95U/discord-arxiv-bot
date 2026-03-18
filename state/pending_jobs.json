@@ -12277,7 +12277,7 @@
     },
     {
       "pipeline_id": "20260317T023147Z-2791a215",
-      "status": "summarize_running",
+      "status": "completed",
       "interest_job_name": "batches/vq8zhtqu9la7ynogj8wf4qnu7o99lni1ky92",
       "summarize_job_name": "batches/1rfc2c9yafska54k0bq5m2l8yaivlb5527v0",
       "papers": [
@@ -12806,14 +12806,197 @@
         "http://arxiv.org/abs/2603.12877v1",
         "http://arxiv.org/abs/2603.12700v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2603.13564v1": {
+          "title": "融合自由積におけるMF性",
+          "summary": "MF（matricial field）C*-環とは、演算子ノルムに関して近似的に単射な有限次元近似ユニタリ表現を持つ環のことである。本論文では、MF C*-環 A とその部分環 C に対する融合自由積 A *_{C} A が再び MF 性を持つことを示し、より一般的な融合自由積 A *_{C} B が MF となるための必要十分条件を明らかにした。また、アメナブル群の融合自由積、アメナブル群と自由群の半直積、および ℤ² ⋊ SL₂(ℤ) のフル群 C*-環が MF であることを証明した。さらに、MF C*-環のクラスが自由群 C*-環 C*(𝔽ₙ) との最大テンソル積について閉じていることや、Hilbert-Schmidt 安定な C*-環の融合自由積上のハイパーリニアなトレースの性質についても述べている。",
+          "keywords": [
+            "MF C*-algebras",
+            "amalgamated free products",
+            "amenable groups",
+            "matricial field",
+            "group C*-algebras"
+          ],
+          "appendix": "本論文はアメナブル群の融合積や半直積といった群構造を扱っており、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.13554v1": {
+          "title": "量子誤り検出および量子もつれを形式検証するためのビットベクトル抽象化",
+          "summary": "量子位相推定（QPE）回路のスケーラブルな形式検証手法を提案。量子化子を含まないビットベクトル論理を用いたシンボリックな量子ビット抽象化により、重ね合わせ、回転、測定などの量子現象をヒルベルト空間からビットベクトル領域へ写像する。この抽象化に基づきQPE回路の機能的正当性を保証する形式的特性を開発。検証実験では、最大6個の精度量子ビットと1,024個の位相量子ビットを持つ回路に対し、3.5 GB未満のメモリで効率的に動作することを示した。",
+          "keywords": [
+            "Quantum Phase Estimation",
+            "Bit-Vector Logic",
+            "Formal Verification",
+            "Symbolic Qubit Abstraction",
+            "Quantum Circuits"
+          ],
+          "appendix": "本論文は形式手法（Formal Methods）を用いた検証に関わるものであり、[興味ある分野]の中では形式言語やオートマトン理論に関連する論理的アプローチの応用例として位置付けられます。"
+        },
+        "http://arxiv.org/abs/2603.13553v1": {
+          "title": "コサイクル条件としてのマッチング・ルール：ペンローズ・タイルおよび標準射影タイル上の離散ポテンシャル",
+          "summary": "本論文は、非周期的タイリングにおける「マッチング・ルール（局所制約による広域秩序の強制）」と「高さ関数（整数値ポテンシャルによる広域幾何学の符号化）」の間に存在する密接な関係を、コチェーンを用いた枠組みによって解明している。マッチング・ルール、Ammann barの連続性、1-コチェーンのサイクル閉性、および高さ関数の存在という4つの条件の等価性を証明し、これを離散ポアンカレの補題を通じて定式化した。この理論体系は、ℤᴺからの標準射影タイル（CPT）へ一様に拡張可能であり、フィボナッチ列、ペンローズP2、Ammann-Beenker、および20面体Ammannタイルにおいて検証されている。また、保存則の強制がPisot置換CPTを特徴付けるかという未解決の予想を提示している。",
+          "keywords": [
+            "Aperiodic tilings",
+            "matching rules",
+            "height functions",
+            "cochain",
+            "canonical projection tilings"
+          ],
+          "appendix": "この論文は、記号力学系 (symbolic dynamics) や語の組合せ論 (combinatorics on words) に深く関連しており、特に高次元の置換力学系や非周期的タイリングの幾何学的・代数的構造の理解に寄与する内容です。"
+        },
+        "http://arxiv.org/abs/2603.13535v1": {
+          "title": "Balanced Forman 曲率と Ollivier-Ricci 曲率の間のエッジワイズ・エンベロープ",
+          "summary": "大規模グラフにおける Ollivier-Ricci (OR) 曲率の算出は、各エッジで最適な輸送問題を解く必要があるため計算コストが非常に高い。本論文では、輸送ベースの OR 曲率と組合せ論的な Balanced Forman (BF) 曲率との間に明示的な二面的・区分線形な変換係数を導出することで、この計算上のボトルネックを解消している。2ホップの局所グラフ組合せ論を用いた c_OR(i,j) の決定論的境界を構築することにより、計算量を最適輸送の線形計画法から最悪計算量 O(max_{v ∈ V} deg(v)^1.5) へと削減し、グローバルソルバーへの依存を排除した。ランダムグラフや実ネットワークでの検証の結果、導出された解析的バンドは次数の不均一性や幾何学的特性に依存せず経験的分布を包含しており、統計的ネットワーク解析のための効率的な枠組みを提供している。",
+          "keywords": [
+            "Ollivier-Ricci curvature",
+            "Balanced Forman curvature",
+            "optimal transport",
+            "graph combinatorics",
+            "statistical network analysis"
+          ],
+          "appendix": "本論文はグラフの組合せ論的構造を扱っており、提示された興味ある分野のうち「combinatorics on words」に関連する組合せ論的な側面や、グラフの幾何学的構造の解析という点で「structure of large countable infinite group」等の幾何学的群論に関連する分野と間接的な関連を持つ可能性があります。"
+        },
+        "http://arxiv.org/abs/2603.13522v1": {
+          "title": "ドマティック・ゲームについて",
+          "summary": "HartnellとRallによって導入された、グラフG上で行われる2プレイヤーの「ドマティック・ゲーム」について研究した論文である。プレイヤーAliceとBobは交互に未着色の頂点を選び、k種類の色のうち1つを割り当てる。全ての頂点が着色された際、各色が支配集合を誘導していればAliceの勝利となり、そうでなければBobの勝利となる。本論文では、オーダーnの任意のグラフGにおいて、Aliceが先攻・後攻に関わらず勝利できる最大の色の数(ドマティック・ゲーム数)がΩ(δ(G)/log n)であることを証明した。また、最小次数δ(G)や通常のドマティック数dom(G)が任意の値kであっても、ドマティック・ゲーム数が1となるグラフが存在することを示し、手番の変化や部分グラフがゲーム数に与える影響、およびスコア変種を用いた境界の導出についても論じている。",
+          "keywords": [
+            "domatic game",
+            "domatic number",
+            "dominating set",
+            "graph theory",
+            "minimum degree"
+          ],
+          "appendix": "グラフ理論における組合せゲームを扱っており、興味ある分野のうち「combinatorics on words」などの組合せ論的な側面と関連性があります。"
+        },
+        "http://arxiv.org/abs/2603.13105v1": {
+          "title": "アロマティックおよびクランプド多重指数：代数的構造とホップ埋め込み",
+          "summary": "本論文では、体積保存解法の数値解析において重要な役割を果たすButcher forestを、アロマティックおよびクランプドforestへと自然に拡張している。低次元におけるテイラー展開をより適切に記述するための簡潔な代数的対象として「アロマティック多重指数」および「クランプド多重指数」を導入し、それらが持つpre-Lie-Rinehart代数、ホップ代数様体、およびホップ代数としての構造を明らかにした。さらに、多重指数からBCKホップ代数へのホップ埋め込みをアロマティックな文脈へと一般化した。",
+          "keywords": [
+            "Butcher forests",
+            "aromatic and clumped multi-indices",
+            "pre-Lie-Rinehart algebra",
+            "Hopf algebroid",
+            "volume-preserving methods"
+          ],
+          "appendix": "数値解法の構造保存（validated numerics）や、代数的な組合せ論に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2603.13096v1": {
+          "title": "平衡群とpoly-surface群の仮想巡回次元",
+          "summary": "本論文では、normally poly-surface群およびnormally poly-free群の仮想巡回次元に対して、明示的な線形上界を導出している。アプローチとして、仮想巡回部分群のcommensuratorを構造的に制御するLückの条件C（平衡プロパティ）を詳しく検討している。この平衡プロパティが、短完全系列、直限定、および群の非筒状グラフ分解(acylindrical graph of groups decompositions)において保存されることを示し、結果として、normally poly-hyperbolic群、normally poly-free群、normally poly-surface群などが平衡であることを証明した。これには境界を持つ曲面の純編組群やFC型Artin群、直交Artin群(RAAGs)、曲面同相写像のマッピング・トーラスの基本群などの具体例が含まれる。",
+          "keywords": [
+            "virtually cyclic dimension",
+            "balanced property",
+            "normally poly-surface groups",
+            "acylindrical graph of groups",
+            "Lück's Condition C"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「structure of large countable infinite group」に深く関連しています。幾何学的群論における無限群の構造的性質や次元論を扱っており、特定の群のクラスにおける平衡プロパティの安定性を明らかにしています。"
+        },
+        "http://arxiv.org/abs/2603.13069v1": {
+          "title": "実用的なフラクタル：分割反復関数系としてのノイズ除去拡散モデル",
+          "summary": "本論文は、決定論的なDDIMの逆過程を、分割反復関数系（PIFS: Partitioned Iterated Function System）として定式化することを提案しています。この枠組みにより、拡散モデルのスケジュール、アーキテクチャ、学習目的関数を統一的に設計する記述言語が提供されます。著者らはモデル評価を必要としない3つの幾何学的指標（各ステップの収縮閾値 L*_t、対角拡大関数 f_t(λ)、広域拡大閾値 λ**）を導出することで、拡散モデルの動態を完全に特徴付けました。これにより、高ノイズ時における広域的な文脈の組み立てから、低ノイズ時における詳細な合成へと移行する二段階の挙動を構造的に説明しています。さらに、自己注意機構がPIFSにおける収縮の自然な構成要素であることを示し、リアプノフ・スペクトル上の離散Moran方程式を通じてアトラクタのKaplan-Yorke次元を解析的に決定しました。理論から導かれた最適設計基準は、cosine schedule offsetやMin-SNR loss weightingといった既存の主要な経験的手法を幾何学的最適化問題の近似解として裏付けるものです。",
+          "keywords": [
+            "Denoising Diffusion",
+            "Partitioned Iterated Function System",
+            "DDIM",
+            "Kaplan-Yorke dimension",
+            "Lyapunov spectrum"
+          ],
+          "appendix": "本論文は、反復関数系（IFS）のアトラクタやリアプノフ指数といった力学系の概念を基根としており、複素力学系 (complex dynamics) や記号力学系 (symbolic dynamics) の理論的枠組みと密接に関連しています。拡散モデルの学習およびサンプリング過程における幾何学的構造を、フラクタル幾何学の観点から解析している点が非常に興味深いです。"
+        },
+        "http://arxiv.org/abs/2603.13058v1": {
+          "title": "SLP圧縮された文字列上におけるMSOクエリ評価の動的直接（ランク付け）アクセス",
+          "summary": "文字列に対するMSO（二階単相論理）クエリのt番目の解（辞書順）を対数時間で抽出するアルゴリズムを提案。線形時間での前処理によりデータ構造を構築し、さらにこれをSLP（直線プログラム）で圧縮された文字列にも拡張した。さらに、PODS 2022の編集フレームワークを適応することで、データ構造構築後のSLPに対する複雑な編集操作を対数時間で反映可能とした。ICDT 2025の既存手法と比較してアクセス時間を対数因子分改善し、SLPへの対応も実現している。",
+          "keywords": [
+            "MSO query evaluation",
+            "straight-line program",
+            "direct access",
+            "document editing",
+            "logarithmic time"
+          ],
+          "appendix": "本論文は、オートマトン理論 (automata theory) および形式言語 (formal languages) の分野、特に圧縮された構造上での論理クエリ評価に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.13018v1": {
+          "title": "Supportは探索である",
+          "summary": "本論文は、直観主義命題論理に対するSandqvistの基底拡張意味論（base-extension semantics）を考察し、特定の基底における「支持（support）」関係が、2階の遺伝的ハロップ論理（hereditary Harrop logic）プログラムにおける証明探索と一致することを示している。意味論的節を継続渡しスタイル（CPS）で符号化することにより、意味論における普遍量子化を、全域的な実体に対する全称化ではなく、標準的なフレッシュネス規律に従う固有変数（eigenvariable）として解釈できることを明らかにしている。これにより、基底拡張意味論に対して「支持関係は証明探索である」という構成的かつ計算的に透明な解釈を与え、反実在論的な枠組みの妥当性を裏付けている。",
+          "keywords": [
+            "base-extension semantics",
+            "intuitionistic propositional logic",
+            "proof-search",
+            "hereditary Harrop logic",
+            "continuation-passing style"
+          ],
+          "appendix": "本論文は証明論と論理プログラミングの対応関係を扱っており、直接的には「興味ある分野」には含まれませんが、formal languages（形式言語）の基礎となる論理体系の性質を論じています。"
+        },
+        "http://arxiv.org/abs/2603.12894v1": {
+          "title": "有向グラフにおけるオイラー跡の最適列挙アルゴリズム",
+          "summary": "de Bruijn、van Aardenne-Ehrenfest、Smith、TutteらによるBEST定理は、有向グラフG=(V,E)におけるオイラー跡と樹状図を関連付けるグラフ理論の古典的な手法であり、これを用いることでオイラー跡の総数を多項式時間で計算できる。従来、オイラー跡の列挙にはBEST定理に基づき樹状図を列挙する手法が取られてきたが、本研究ではより単純かつ直接的なアプローチを提案する。本論文の主な貢献は、z_T個のオイラー跡を最適時間であるO(m + z_T)で直接列挙する極めてシンプルなアルゴリズムの開発である。この結果は、z_T = o(n²)の場合におけるBEST定理を用いた実装を改善するだけでなく、Conteらによる従来のO(m・z_T)時間の組合せ論的アルゴリズムを無条件で改善するものである。さらに、本アルゴリズムは有向マルチグラフにも拡張可能であり、バイオインフォマティクスやデータプライバシー分野への応用も期待される。",
+          "keywords": [
+            "Eulerian trails",
+            "directed graphs",
+            "BEST theorem",
+            "optimal enumeration",
+            "algorithms"
+          ],
+          "appendix": "本論文は、グラフ理論における古典的な計数・列挙問題を扱っており、関心の対象であるcombinatorics on words（語上の組合せ論）におけるド・ブラウン・グラフ（De Bruijn graph）上の巡回や配列解析などと密接な関連があります。"
+        },
+        "http://arxiv.org/abs/2603.12890v1": {
+          "title": "直積空間におけるアトラクタとフラクタル関数の研究および次元に関する諸側面",
+          "summary": "本論文では、直積空間におけるハウスドルフ距離の積を定義し、それが直積空間上のハウスドルフ距離と等価であることを示しました。直積空間における反復関数系（IFS）の有限積を扱い、積IFSのアトラクタと各座標成分のIFSのアトラクタとの関係を明らかにしています。また、直積空間上の同次および非同次アトラクタの次元の境界を確立し、高次元空間における積フラクタル補間関数を構築しました。",
+          "keywords": [
+            "Iterated function systems",
+            "Attractors",
+            "Hausdorff metric",
+            "Product spaces",
+            "Fractal interpolation function"
+          ],
+          "appendix": "本論文は、アトラクタの構造や反復関数系を扱っているため、力学系理論の文脈で complex dynamics（複素力学系）に関連する側面を持っています。"
+        },
+        "http://arxiv.org/abs/2603.12877v1": {
+          "title": "交代基数変換における不変測度の一致",
+          "summary": "実数 β > 1 と整数 n ≥ 2 を用いた、2つの交代変換 K(β,n) と K(β',m) が同一の絶対連続な不変測度を持つための必要十分条件を特徴付けた。ここで交代変換 K(β,n) は、βx mod 1 と nx mod 1 という2種類の変換を交互に適用する力学系として定義される。",
+          "keywords": [
+            "alternate base transformations",
+            "invariant measure",
+            "absolutely continuous",
+            "arithmetic dynamics"
+          ],
+          "appendix": "本論文は arithmetic dynamics の分野に密接に関連しており、数論的な力学系における不変測度の性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.12700v1": {
+          "title": "菱形代替盤（rhombic alternative tableaux）に対する全単射",
+          "summary": "本論文では、代替盤と置換の間の既知の全単射を、菱形代替盤（RAT）と置換の集合（assemblées of permutations）の間の全単射へと一般化しています。これらの全単射の相互関係を明らかにすることで、RATの洗練された数え上げ公式を導出しました。特に、一方の全単射はRATの自由セルの数を置換集合の交差数へと対応させており、MandelshtamとViennotの問いに答えています。また、標識付きラゲール履歴から置換集合へのr!-to-1写像を発見し、CorteelとNungeの問いにも回答しました。",
+          "keywords": [
+            "rhombic alternative tableaux",
+            "assemblées of permutations",
+            "marked Laguerre histories",
+            "crossings",
+            "free cells"
+          ],
+          "appendix": "本論文は、置換や盤の数え上げおよび構造を扱っているため、興味ある分野のうち「combinatorics on words」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2603.13564v1",
+        "http://arxiv.org/abs/2603.13554v1",
+        "http://arxiv.org/abs/2603.13553v1",
+        "http://arxiv.org/abs/2603.13535v1",
+        "http://arxiv.org/abs/2603.13522v1",
+        "http://arxiv.org/abs/2603.13105v1",
+        "http://arxiv.org/abs/2603.13096v1",
+        "http://arxiv.org/abs/2603.13069v1",
+        "http://arxiv.org/abs/2603.13058v1",
+        "http://arxiv.org/abs/2603.13018v1",
+        "http://arxiv.org/abs/2603.12894v1",
+        "http://arxiv.org/abs/2603.12890v1",
+        "http://arxiv.org/abs/2603.12877v1",
+        "http://arxiv.org/abs/2603.12700v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-03-17T02:31:47.731176+00:00",
-      "updated_at": "2026-03-17T05:18:12.268625+00:00",
-      "finalized_at": null
+      "updated_at": "2026-03-18T01:22:33.323020+00:00",
+      "finalized_at": "2026-03-18T01:22:33.322998+00:00"
     }
   ]
 }
