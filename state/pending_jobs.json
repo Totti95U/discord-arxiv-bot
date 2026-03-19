@@ -13000,7 +13000,7 @@
     },
     {
       "pipeline_id": "20260318T023722Z-8c9202a3",
-      "status": "summarize_running",
+      "status": "completed",
       "interest_job_name": "batches/m6zsmgfdre4k1rzd53zwtahcwiac2mnipfmv",
       "summarize_job_name": "batches/enlj6acqife9eqmgityenq4ps9991yo4wzbe",
       "papers": [
@@ -13211,14 +13211,81 @@
         "http://arxiv.org/abs/2603.13936v1",
         "http://arxiv.org/abs/2603.13854v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2603.14097v1": {
+          "title": "遺伝子調節ネットワークのための階層的p-進フレームワーク：理論と安定性解析",
+          "summary": "遺伝子調節ネットワーク（GRN）が持つ多階層的な自己相似構造を数学的に記述するため、p-進整数環 ℤₚ の超距離空間を用いた新しいフレームワークを提案している。N個の遺伝子の状態空間を ℤₚ に埋め込み、代数的閉体 ℂₚ 上の有理関数として離散力学系を解析することで、各解像度レベルにおける階層的近似を構築した。また、解像度を跨いだ力学系の収縮・拡大を評価する安定性尺度 μ を定義し、不動点の分類（収縮的、拡大、等長的）を従来の点からボール（球）のレベルへと拡張した。シロイヌナズナの開花調節ネットワーク（N=13, p=2）への適用において、μを最小化する遺伝子の順序付けが、事前の生物学的知識なしに主要な調節遺伝子（UFO, EMF1, LFY, TFL1）を特定し、既知の発生階層を再現することを示した。",
+          "keywords": [
+            "p-adic integers",
+            "Gene Regulatory Networks",
+            "ultrametric",
+            "stability analysis",
+            "hierarchical organization"
+          ],
+          "appendix": "非アルキメデス的な力学系（ℂₚ 上の有理関数の力学系）を扱っているため、arithmetic dynamics（算術力学系）および complex dynamics（複素力学系）に強く関連しています。また、離散的な遷移マップを連続的な数体上の力学系として捉えるアプローチは symbolic dynamics の文脈からも興味深い内容です。"
+        },
+        "http://arxiv.org/abs/2603.14065v1": {
+          "title": "ライツアウト！組合せ論と線形代数のゲーム",
+          "summary": "2025年Capixaba数学オリンピックで提案された三角形版の「ライツアウト」について、組合せ論と線形代数の観点から分析した論文である。まず操作の形式化を行い、解の存在性と個数を決定する「quiet pattern」という概念を導入した。パターンの幾何学的性質や伝播メカニズムを明らかにした上で、有限体 ℤ₂ 上の線形システムとしてモデル化し、行列の可逆性に関する組合せ論的条件を導出した。その結果、すべての構成で解が存在するための必要十分条件は、三角形盤面を 1 × 1 および 2 × 1 のタイルで敷き詰める方法の数が奇数であることだと示された。",
+          "keywords": [
+            "Lights Out",
+            "quiet pattern",
+            "linear systems",
+            "Z₂",
+            "triangular board"
+          ],
+          "appendix": "本論文は興味のある分野のうち「combinatorics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.13996v1": {
+          "title": "撹拌槽型反応器における力学的なコンパートメントと混合の定量的評価のためのマルコフ状態モデリング：転移作用素によるアプローチ",
+          "summary": "化学反応器内におけるコヒーレントな流れ構造の特定は、混合ダイナミクスの理解と反応器の性能最適化において極めて重要です。本研究では、転移作用素（transfer operator）を用いた手法により、周囲の流体との混合が最小限に抑えられる「準不変集合」や「コヒーレント集合」などの構造を、シミュレーションおよび実験に基づくラグランジュ軌道データから特定しました。この手法は期待滞留時間や混合時間の算出を通じた詳細な混合挙動の解析を可能にするだけでなく、マルコフ状態モデル（Markov-state-model）を用いることで、反応器内のコンパートメント間におけるマクロな輸送ダイナミクスを記述することができます。",
+          "keywords": [
+            "transfer operator",
+            "Markov state modeling",
+            "coherent flow structures",
+            "almost-invariant sets",
+            "stirred tank reactors"
+          ],
+          "appendix": "本論文で扱われている転移作用素やマルコフ状態モデルを用いた力学系の解析は、興味ある分野のうち「complex dynamics」および状態空間の分割・記号化という観点から「symbolic dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.13936v1": {
+          "title": "群C*環の距離次元と積エントロピー",
+          "summary": "本論文では、語の長さ関数から得られるセミノルムによって計量化された、有限生成離散群の簡約群C*環について考察しています。著者は、David Kerrによって定義されたこれらのC*環の距離次元、および群の自己同型から誘導される群C*環の自己同型のエントロピーを研究しました。その結果、距離次元とエントロピーは共に群の増大度と関連していることが示されました。また、非零かつ有限の積エントロピーを持つ、ある種の仮想アーベル（virtually abelian）有限生成離散群Γおよびその自己同型ψのクラスを提示しています。",
+          "keywords": [
+            "metric dimension",
+            "product entropy",
+            "group C*-algebras",
+            "discrete groups",
+            "virtually abelian groups"
+          ],
+          "appendix": "本論文は、有限生成離散群の増大度や性質を扱っている点から「structure of large countable infinite group」の分野に深く関連しています。また、自己同型のエントロピーを扱っているため、広義の力学系的な側面も含んでいます。"
+        },
+        "http://arxiv.org/abs/2603.13854v1": {
+          "title": "ブール論理のための冪項多項式代数",
+          "summary": "本論文では、連言標準形(CNF)と代数標準形(ANF)の橋渡しを目的とした表現言語である「冪項多項式代数(power term polynomial algebra)」を提案している。従来のCNFとANFの直接変換は、補助変数を用いない限り式のサイズが指数関数的に増大するという課題があったが、本手法は構造化された単項式の集合をコンパクトに符号化することで、補助変数や制約を導入することなくCNF節を直接表現できる。本フレームワークでは、ブール多項式の加算・乗算に対応する代数演算を定義し、選言節の正準表現や局所的な書き換え規則を確立した。これにより、通常のANFに展開することなく論理式を直接操作できる記号計算が可能となり、節ベースの推論と代数的推論を融合する新たな中間表現と変換手法を提供している。",
+          "keywords": [
+            "Power Term Polynomial Algebra",
+            "Conjunctive Normal Form",
+            "Algebraic Normal Form",
+            "Boolean Logic",
+            "Symbolic Calculus"
+          ],
+          "appendix": "本論文は、直接的には指定された「興味ある分野」に該当しませんが、論理式の書き換え規則や記号計算の体系を扱うという点において、automata theory や formal languages の基礎的な計算モデルに関連する可能性があります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2603.14097v1",
+        "http://arxiv.org/abs/2603.14065v1",
+        "http://arxiv.org/abs/2603.13996v1",
+        "http://arxiv.org/abs/2603.13936v1",
+        "http://arxiv.org/abs/2603.13854v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-03-18T02:37:22.196947+00:00",
-      "updated_at": "2026-03-18T05:44:18.519753+00:00",
-      "finalized_at": null
+      "updated_at": "2026-03-19T03:59:48.286970+00:00",
+      "finalized_at": "2026-03-19T03:59:48.286945+00:00"
     },
     {
       "pipeline_id": "20260319T023846Z-73a9103a",
