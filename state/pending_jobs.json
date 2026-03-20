@@ -13289,7 +13289,7 @@
     },
     {
       "pipeline_id": "20260319T023846Z-73a9103a",
-      "status": "summarize_running",
+      "status": "completed",
       "interest_job_name": "batches/vau9iigrpi8tsv2fwed9ycykk8surclvzcfb",
       "summarize_job_name": "batches/10n8iv8onlw8ivuqwupuxvffojoqti9kwrrf",
       "papers": [
@@ -13651,14 +13651,171 @@
         "http://arxiv.org/abs/2603.14262v1",
         "http://arxiv.org/abs/2603.14204v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2603.14653v1": {
+          "title": "フラクタル摂動による整数自己アフィン集合の次元：ボックス次元、ハウスドルフ次元およびエルゴード測度",
+          "summary": "本論文では、n×nの整数拡大行列Tと有限整数ベクトル集合Aによって生成される整数自己アフィン集合F=T⁻¹(F+A)の次元問題を取り扱う。著者らはTとAに対する「フラクタル摂動法」を導入し、次元公式が既知である挙動の良い摂動フラクタル系列の極限としてFの次元を決定する手法を提案した。この手法の特徴は、摂動後の重複構造（近傍グラフ）が元の集合Fと位相同型になる点にあり、Tの特性多項式が既約であるような困難なケースにも適用可能である。また、開集合条件などの分離条件やT, Aに対するサイズ制限を一切課していない。この摂動法の副産物として、Fのボックス次元の存在を証明するとともに、n次元トーラス上のT不変な部分集合としてのFに対し、フル次元を持つエルゴード的T不変ボレル確率測度が存在することを示している。",
+          "keywords": [
+            "integral self-affine set",
+            "fractal perturbation",
+            "Hausdorff dimension",
+            "box dimension",
+            "ergodic measure"
+          ],
+          "appendix": "本論文は、自己アフィン力学系やエルゴード理論を扱っており、興味ある分野のうち symbolic dynamics や arithmetic dynamics に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.14628v1": {
+          "title": "s2n-bignum-bench: LLMによる低レイヤコード推論を評価するための実用的なベンチマーク",
+          "summary": "大規模言語モデル（LLM）と形式手法を組み合わせた神経記号的アプローチは数学的定理証明で成果を上げているが、実世界のソフトウェア実装に対する証明能力は十分に検証されていない。本論文では、AWSで利用されている暗号ライブラリ「s2n-bignum」のアセンブリルーチンを題材とした新しいベンチマークを提案する。このベンチマークは、人間が作成した仕様に基づき、HOL Lightで検証可能な証明スクリプトをLLMに生成させるものであり、産業レベルの低レイヤ暗号プログラムを対象とした初の公開ベンチマークとして、実用的な定理証明能力の評価に寄与する。",
+          "keywords": [
+            "Large Language Models",
+            "Formal Methods",
+            "HOL Light",
+            "Theorem Proving",
+            "s2n-bignum"
+          ],
+          "appendix": "この論文は、オートマトン理論（automata theory）や形式言語（formal languages）に関連する形式手法および定理証明を扱っており、計算機科学の基礎理論の応用という側面で興味ある分野と関連しています。"
+        },
+        "http://arxiv.org/abs/2603.14599v1": {
+          "title": "自由可解群における漸近エントロピーの連続性",
+          "summary": "本論文では、ランク d ≥ 3 かつ導来列の長さ m ≥ 2 の自由可解群 S_{d,m} において、有限のシャノンエントロピーを持つ非退化な確率測度のステップ分布の関数としての漸近エントロピーが連続であることを証明している。",
+          "keywords": [
+            "asymptotic entropy",
+            "free solvable groups",
+            "step distribution",
+            "Shannon entropy",
+            "non-degenerate probability measures"
+          ],
+          "appendix": "この論文は、提示された興味ある分野のうち「structure of large countable infinite group」に深く関連しています。自由可解群という無限群の代数的構造上における確率的な性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.14562v1": {
+          "title": "分数階微分を用いた腫瘍増殖の数学的モデル",
+          "summary": "本研究では、腫瘍の進化に内在する記憶効果や非局所的な時間動力学を捉えるために、Caputo分数階微分を用いた腫瘍増殖モデルを提案している。数値計算には切断分数階テイラー展開に基づく2次の分数階Runge-Kutta法を採用し、5名の患者の実データを用いてモデルの検証を行っている。その結果、すべての症例において整数階モデルよりも分数階モデルの方が実測値との高い一致を示し、各患者に固有の最適な分数階次数 α < 1 が存在することが明らかになった。相空間解析などを通じ、分数階ダイナミクスが従来のモデルとは異なる幾何学的特性を持つことが示されており、個別化された腫瘍増殖予測における分数階モデリングの有効性が示唆されている。",
+          "keywords": [
+            "fractional-order tumor growth model",
+            "Caputo fractional derivatives",
+            "fractional Runge-Kutta scheme",
+            "memory effects",
+            "nonlocal temporal dynamics"
+          ],
+          "appendix": "本論文は数値シミュレーションと力学系の解析を扱っていますが、指定された「興味ある分野」との直接的な関連性は低いと考えられます。"
+        },
+        "http://arxiv.org/abs/2603.14556v1": {
+          "title": "一般化Baumslag-Solitar群の自己相似性",
+          "summary": "本論文では、有限かつ連結なグラフ上で定義されるランクn ≥ 1の全ての剰余有限な一般化Baumslag-Solitar群が、自己相似であることを示した。また、頂点群および辺群がねじれのないハイゼンベルク群と共測であり、かつ各辺群が頂点群に適切に埋め込まれているような、有限かつ連結な群のグラフから得られる剰余有限な基本群も、同様に自己相似であることを証明している。",
+          "keywords": [
+            "generalized Baumslag-Solitar groups",
+            "self-similarity",
+            "residually finite",
+            "graph of groups",
+            "Heisenberg group"
+          ],
+          "appendix": "無限群の自己相似性や基本群の構造を扱っているため、「structure of large countable infinite group」の分野と深い関連がある。"
+        },
+        "http://arxiv.org/abs/2603.14540v1": {
+          "title": "力学系の組合せ論的近似：separated graphによる手法",
+          "summary": "本論文では、完全不連結なコンパクト距離空間 X 上の同相写像 h の力学系を記述するための、古典的な Bratteli ダイアグラムを一般化した separated graph（分離グラフ）の具体的な構成方法を詳述している。この手法は、空間の静的構造と写像の動的構造を明示的に分離して扱える点が特徴である。2側シフト、ビット反転写像、オドメーター写像、および整数の1点コンパクト化上のシフト写像という4つの基本例に対するステップバイステップの構成手順を示すとともに、極小（および本質的極小）力学系の性質をグラフから直接読み取る方法について論じている。",
+          "keywords": [
+            "Separated graphs",
+            "Bratteli diagrams",
+            "Dynamical systems",
+            "Homeomorphisms",
+            "Totally disconnected compact metric space"
+          ],
+          "appendix": "本論文は、シフト写像や完全不連結空間上の力学系を扱っており、symbolic dynamics の分野と強い関連があります。"
+        },
+        "http://arxiv.org/abs/2603.14508v1": {
+          "title": "挿入プロセスとパリティに基づく等分布性",
+          "summary": "Deutsch, Kitaev, Remmelらによって提案された、対称群 Sₙ 上の置換統計量の三つ組 (S₁₀, S₁₂, S₁₇) と (S₁₂, S₁₀, S₁₇) が等分布であるという予想を、全単射を用いることで肯定的に解決した。ここで、S₁₀ は奇数の下降値（descent top）を持つ下降の数、S₁₂ は奇数同士の隣接ペアの数、S₁₇ は 1, 2, ..., i が左から右へこの順で現れる最大の整数 i を表す。本論文では、S₁₀ と S₁₂ を入れ替えつつ S₁₇ を不変に保つ、対称群上の再帰的な対合（involution）を構成する挿入プロセスを導入している。",
+          "keywords": [
+            "permutation statistics",
+            "equidistribution",
+            "bijective proof",
+            "insertion process",
+            "symmetric group"
+          ],
+          "appendix": "本論文は置換の性質を扱う組合せ論の研究であり、[興味ある分野]の中では combinatorics on words と強い関連があります。"
+        },
+        "http://arxiv.org/abs/2603.14359v1": {
+          "title": "強1-有界な内部順応群",
+          "summary": "有限提示されたicc（無限共役類を持つ）な内部順応群が、強1-有界なII₁型因子環を生成することを示しています。",
+          "keywords": [
+            "finitely presented",
+            "icc",
+            "inner amenable groups",
+            "strongly 1-bounded",
+            "II₁ factors"
+          ],
+          "appendix": "本論文は興味ある分野の「strucure of large countable infinite group」に関連しています。具体的には、無限群の性質である内部順応性（inner amenability）と、それに対応する群フォン・ノイマン環の性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.14338v1": {
+          "title": "クラスターモジュラー群に対する不動点定理",
+          "summary": "本論文では、クラスターモジュラー群 Γ_s の任意の有限部分群 G が、特定の条件下でクラスター多様体 A_s(ℝ_>₀) および X_s(ℝ_>₀) において不動点を持つことを証明しています。これは、写像類群のタイヒミュラー空間への作用に関する Kerckhoff の Nielsen 実現定理を一般化したものです。この条件は、Γ_s がクラスター DT 変形を許容する場合に常に満たされ、X₇ を除くすべての有限変異型についても確認されています。証明は、対数クラスター変数の凸性に基づく Kerckhoff の議論に従っています。",
+          "keywords": [
+            "cluster modular group",
+            "cluster manifolds",
+            "fixed point theorem",
+            "Nielsen realization theorem",
+            "log-cluster variables"
+          ],
+          "appendix": "本論文は、クラスターモジュラー群という大きな可算無限群の幾何学的な作用や有限部分群の性質を扱っているため、「structure of large countable infinite group」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.14269v1": {
+          "title": "離散時間マルコフ連鎖における集約・量子化の可換性問題について",
+          "summary": "グラフ上のランダムウォークからSzegedyの方法を用いて離散時間量子ウォークを構成できる。一方で、マルコフ連鎖の状態集合を分割することで得られる集約プロセスの研究も存在する。本論文では、この集約技術を量子マルコフ連鎖のレベルへと拡張し、Szegedyの量子化と集約という2つの操作が同一の結果を与える（交換可能となる）ための条件を提示した。特に、等辺分割 (equitable partitions) を持つグラフ上のランダムウォークにおいてこれらの条件が満たされることを示し、プラトン立体、N次元超立方体とN粒子エーレンフェスト・モデルの関係、自由群のケイリーグラフなどの具体例を用いて検証した。また、Cantero-Moral-Velazquezのユニタリ行列の一様化を用いた結果との比較も行っている。",
+          "keywords": [
+            "Szegedy's quantization",
+            "Aggregation",
+            "Discrete-time Markov chains",
+            "Quantum walks",
+            "Equitable partitions"
+          ],
+          "appendix": "自由群のケイリーグラフ (Cayley graphs of free groups) を扱っているため、興味ある分野の『structure of large countable infinite group』に関連があります。"
+        },
+        "http://arxiv.org/abs/2603.14262v1": {
+          "title": "超立方体 mBⁿ の被覆",
+          "summary": "本論文では、Boolean cube における超平面被覆の問題を、m-fold 超立方体 mBⁿ = {0, 1, ..., m}ⁿ へと一般化している。原点を除いた mBⁿ の各点を少なくとも k 回被覆するために必要な超平面の最小数を fₘ(n, k) と定義し、その上下界を導出した。さらに、特定のケースにおいて fₘ(n, 2) = mn + m という正確な値を決定した。手法として、mBⁿ に対する Sauermann–Wigderson 型の Combinatorial Nullstellensatz を確立し、指定された消滅多重度を持つ多項式の構成に利用している。",
+          "keywords": [
+            "hyperplane coverings",
+            "hypercube",
+            "Combinatorial Nullstellensatz",
+            "vanishing multiplicities"
+          ],
+          "appendix": "本論文は組合せ論を扱っており、提示された興味ある分野（symbolic dynamics, combinatorics on words等）に直接関連する内容は含まれていませんが、代数的組合せ論の手法を用いた研究です。"
+        },
+        "http://arxiv.org/abs/2603.14204v1": {
+          "title": "木の非対数凹な独立多項式に対する線形漸化式",
+          "summary": "独立多項式が対数凹（log-concave）ではない既知の無限木の族の構成における構造的パターンを特定した。多項式環イデアルの性質を用いることで、これらの多項式に対する線形漸化式を導出した。その結果として、これらの多項式の零点の非孤立集積点が複素平面上の円 |z + 1/3| = 1/3 上に存在することを証明した。さらに、対数凹性が1、2、3箇所の連続するインデックスで崩れる無限族、および4、5箇所で崩れる有限族を提示し、Galvinによる「任意の連続した箇所で対数凹性が崩れるか」という問いに対して肯定的な洞察を与えた。",
+          "keywords": [
+            "independence polynomials",
+            "trees",
+            "log-concavity",
+            "linear recurrences",
+            "limit points of zeros"
+          ],
+          "appendix": "この論文は興味ある分野のうち「combinatorics on words」に関連する組合せ論的な側面と、「complex dynamics」に関連する多項式の零点の分布という側面を持っています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2603.14653v1",
+        "http://arxiv.org/abs/2603.14628v1",
+        "http://arxiv.org/abs/2603.14599v1",
+        "http://arxiv.org/abs/2603.14562v1",
+        "http://arxiv.org/abs/2603.14556v1",
+        "http://arxiv.org/abs/2603.14540v1",
+        "http://arxiv.org/abs/2603.14508v1",
+        "http://arxiv.org/abs/2603.14359v1",
+        "http://arxiv.org/abs/2603.14338v1",
+        "http://arxiv.org/abs/2603.14269v1",
+        "http://arxiv.org/abs/2603.14262v1",
+        "http://arxiv.org/abs/2603.14204v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-03-19T02:38:46.765804+00:00",
-      "updated_at": "2026-03-19T06:33:15.711331+00:00",
-      "finalized_at": null
+      "updated_at": "2026-03-20T19:53:37.659639+00:00",
+      "finalized_at": "2026-03-20T19:53:37.659617+00:00"
     },
     {
       "pipeline_id": "20260320T023023Z-523640c6",
