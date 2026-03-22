@@ -15593,7 +15593,7 @@
     },
     {
       "pipeline_id": "20260322T023928Z-f29a6bea",
-      "status": "summarize_running",
+      "status": "completed",
       "interest_job_name": "batches/0zdkl84ez5st0yscj6sxv8xsafy9bgdlb9y7",
       "summarize_job_name": "batches/ro3bb3tbwq6i7eb7odeqdyino1on4k4svkck",
       "papers": [
@@ -16188,14 +16188,235 @@
         "http://arxiv.org/abs/2603.17276v1",
         "http://arxiv.org/abs/2603.17244v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2603.18321v1": {
+          "title": "相互作用するプロセスの単純な圏論的計算体系",
+          "summary": "非相互作用的なプロセスを射とする任意のマルチ圏によってパラメータ化された、プロセス間の相互作用をモデル化する計算体系を提案する。この体系は項の集合と項書き換え規則で構成され、合流性と停止性を備えている。書き換えの変換関係による同値類としての項はバーチャル二重圏を形成する。本体系をモノイダル圏の自由コーナリング（free cornering）に関連付け、項をプログラム、書き換え系を操作意味論と見なすことで、自由コーナリングを通じた健全な表示的意味論を与えている。",
+          "keywords": [
+            "multicategory",
+            "virtual double category",
+            "free cornering",
+            "monoidal category",
+            "rewriting system"
+          ],
+          "appendix": "計算機科学における操作意味論や表示的意味論、および圏論的構造（マルチ圏や二重圏）を用いたプロセスのモデル化を扱っていますが、指定された「興味ある分野」に直接関連する具体的な記述は含まれていません。"
+        },
+        "http://arxiv.org/abs/2603.18183v1": {
+          "title": "Gromovの単射性補題とそのpost-injunctive群への応用について",
+          "summary": "Gottschalkのsurjunctivity予想を背景に、セル・オートマトンの全射性を強化した「post-surjectivity」という概念を研究している。ソフィク群においてpost-surjectiveなセル・オートマトンが全単射となる性質に基づき、これを満たす群をpost-injunctive群と定義した。Gromovの単射性補題の類似をpost-surjectivityやpre-injectivityに対して導出するとともに、post-injunctive群の安定性について調査し、剰余有限な核を持つ半直積拡張がpost-injunctiveであることを示した。",
+          "keywords": [
+            "cellular automata",
+            "post-surjective",
+            "post-injunctive groups",
+            "Gromov's injectivity lemma",
+            "sofic group"
+          ],
+          "appendix": "この論文は「symbolic dynamics」および「structure of large countable infinite group」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.17909v1": {
+          "title": "完全な調和の中で：アクターベースシステムにおける因果関係のオーケストレーション",
+          "summary": "アクターベースシステムにおける実行時検証は、複数のアクター間にまたがる複雑な因果関係やメッセージの非決定的なインターリービングにより困難を伴う。本論文では、Erlangシステム向けに因果関係を自動追跡する実行時検証フレームワーク「ACTORCHESTRA」を提案する。このフレームワークは、OTP準拠のシステムに対してコードインジェクションによる計装を行い、手動の修正なしで因果関係の追跡インフラを構築する。また、仕様記述言語「WALTZ」を提供し、マルチアクターのプロパティを実行可能なモニターへと自動コンパイルする。実世界のケーススタディにより、複雑な振る舞いの違反を検出する有効性を示し、性能評価を通じて実行時のオーバーヘッドと安全性のトレードオフを分析している。",
+          "keywords": [
+            "Runtime verification",
+            "Actor-based systems",
+            "Causality tracking",
+            "Erlang/OTP",
+            "Code injection"
+          ],
+          "appendix": "本論文は、メッセージのインターリービングやシステムの振る舞いの仕様を定義し、それを実行可能な形式にコンパイルして監視するアプローチをとっているため、「automata theory」や「formal languages」の知見が背景にある検証手法に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.17869v1": {
+          "title": "SU(2)におけるペアに対するスペクトルギャップ予想について",
+          "summary": "n ≥ 2におけるSU(2)のほとんどすべてのn個の組がスペクトルギャップを持つというGamburd, Jakobson, Sarnakによる予想に対し、n = 2の場合でも0-1法則が成立することを証明した論文です。先行研究ではn ≥ 3において0-1法則が確立されていましたが、本研究ではn = 2という特定のケースを解決し、さらにベールのカテゴリー定理を用いた類似の結果についても言及しています。",
+          "keywords": [
+            "SU(2)",
+            "spectral gap conjecture",
+            "zero-one law",
+            "Baire categorical analogue"
+          ],
+          "appendix": "本論文は、群の構造や動的な性質に関連しており、興味ある分野のうち「structure of large countable infinite group」や、スペクトルギャップの性質を通じて「complex dynamics」に関連する示唆を含む可能性があります。"
+        },
+        "http://arxiv.org/abs/2603.17858v1": {
+          "title": "hard-coreモデルにおける相関減衰と零点",
+          "summary": "ハードコアモデルの分配関数において、パラメータ λ > 0 の近傍における複素零点の不在が「強空間混合（SSM）」と呼ばれる相関減衰を導くという先行研究に対し、本論文ではその逆の含意を調査した。著者らはSSMを強化した「極めて強い空間混合（VSSM）」という概念を導入し、あるグラフ族においてVSSMが成立すれば、分配関数が λ の近傍で零点を持たないことを証明した。また、VSSMがスペクトル独立性を導くことも示している。証明の手法として、メビウス変換によって与えられる誘起非自律力学系の解析が用いられている。",
+          "keywords": [
+            "hard-core model",
+            "strong spatial mixing",
+            "very strong spatial mixing",
+            "zero-freeness",
+            "spectral independence"
+          ],
+          "appendix": "複素平面上の零点分布の解析やメビウス変換を用いた力学系の手法を用いているため、興味ある分野のうち complex dynamics と深い関連があります。"
+        },
+        "http://arxiv.org/abs/2603.17852v1": {
+          "title": "双曲群における粗い分離と分裂",
+          "summary": "1つの端を持つ双曲群における粗い分離を、分離部分集合の体積増加という定量的観点から研究した。仮想曲面群ではない1つの端を持つ双曲群が、部分指数関数的成長を持つ部分集合によって粗く分離可能であるための必要十分条件は、仮想巡回部分群上で分裂することであることを示した。この証明のために、十分に大きな厚みを持つ球面のカットセットが指数関数的なサイズを持つことを示しており、これは独立した関心事でもある。応用として、2つの端を持つ部分群上で分裂しない双曲群の分離プロファイルに対する多項式の下限を得たほか、有限群のグラフ積における粗い分離可能性の組合せ論的特徴付けを与えた。",
+          "keywords": [
+            "coarse separation",
+            "hyperbolic groups",
+            "virtually cyclic subgroup",
+            "separation profile",
+            "graph products"
+          ],
+          "appendix": "幾何学的群論における双曲群の性質を扱っており、指定された興味ある分野のうち「structure of large countable infinite group」に強く関連する内容となっています。"
+        },
+        "http://arxiv.org/abs/2603.17819v1": {
+          "title": "パリー条件、および交替位(alternate bases)の存在性と一意性",
+          "summary": "本論文は、レーニ(Rényi)記数法を一般化した交替位(alternate bases)記数法における、1の展開に関する性質を調査したものである。レーニ記数法とは異なり、交替位において与えられた語が1の展開として存在するかを判定することは容易ではない。著者らは、展開から定義される行列に対する不動点定理を用いることで、与えられた語が1の展開となるための条件を確立し、不動点の成分から基底の要素を導出する手法を示した。また、そのような基底の一意性に関する部分的な結果や、与えられたB-整数の列を持つ基底の存在についても同様の手法を用いて証明している。",
+          "keywords": [
+            "Alternate bases",
+            "Rényi numeration system",
+            "Expansions of 1",
+            "Fixed point theorem",
+            "B-integers"
+          ],
+          "appendix": "本論文は、記数法や語の組合せ論(combinatorics on words)に関連しており、これらは symbolic dynamics や automata theory と密接な関わりを持つ分野です。"
+        },
+        "http://arxiv.org/abs/2603.17598v1": {
+          "title": "木上のエントロピー零サイクル：トポロジーから組合せ論へ、およびスター写像への応用",
+          "summary": "本論文では、木上のエントロピーが零となる周期パターンの完全な組合せ論的記述を与えている。従来のトポロジー的実現に依存した特徴付けとは異なり、本手法はパターンの特定の実現から独立しているため、エントロピー零を判定する実用的かつ高速なアルゴリズムを提供する。応用として、k枝のスターグラフT上の連続写像fにおいて、Tの各枝に少なくとも1点を含む周期nの軌道を持つ写像の集合を考察し、エントロピー零の写像を含むペア(n, k)を特定するとともに、その軌道のパターンを記述した。",
+          "keywords": [
+            "zero entropy",
+            "periodic patterns",
+            "trees",
+            "star maps",
+            "combinatorial description"
+          ],
+          "appendix": "symbolic dynamicsに関連する離散力学系の性質（エントロピー、周期軌道）を組合せ論的に扱っています。"
+        },
+        "http://arxiv.org/abs/2603.17596v1": {
+          "title": "仮想自由群における性質 (LR) と埋め込み定理",
+          "summary": "すべての仮想自由群 G が Long と Reid の提唱した性質 (LR) を持つことを証明した。性質 (LR) とは、G の任意の有限生成部分群がある有限指数部分群のレトラクトになるという性質である。証明の主眼は、任意の可算仮想自由群が有限群の double に埋め込めるという新しい埋め込み定理にある。この系として、自由群と有限生成アーベル群の直積と通約可能な任意の群が (LR) を持つことを示す。これは、中心を持つすべての非巡回的な 1-関係数群を含む、有限モノドロミーを持つ任意のランク n ∈ ℕ の一般化 Baumslag-Solitar 群に適用される。",
+          "keywords": [
+            "virtually free groups",
+            "property (LR)",
+            "embedding theorem",
+            "retract",
+            "generalized Baumslag-Solitar groups"
+          ],
+          "appendix": "本論文は、巨大な可算無限群の構造（structure of large countable infinite group）の分野に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2603.17537v1": {
+          "title": "逆Lyndon配列：定義、性質、および線形時間構築法",
+          "summary": "本論文では、各位置から始まる最長の逆Lyndon部分語（すべての真の接尾辞よりも辞書順で大きい語）の長さを格納する「逆Lyndon配列」を提案する。標準的なLyndon語とは異なり、逆Lyndon語は非自明なボーダー（接頭辞かつ接尾辞となる語）を持つ可能性があり、これが理論的な困難を生じさせるが、著者らはこの配列を「次に大きい接尾辞（next greater suffix）」配列とLCE（最長共通拡張）値に基づく補正項によって特徴付けられることを示した。また、EllertによるLyndon配列の構築アルゴリズムを適応させることで、一般的な順序アルファベットにおいてO(n)時間で動作する構築法を確立し、実験を通じてその実用的な線形時間性能を実証した。",
+          "keywords": [
+            "Inverse Lyndon Array",
+            "combinatorics on words",
+            "linear-time algorithm",
+            "suffix array",
+            "longest common extension"
+          ],
+          "appendix": "この論文は興味ある分野のうち「combinatorics on words」に強く関連しています。Lyndon語という語の組合せ論における基礎的な概念を拡張し、計算機科学における効率的なデータ構造（接尾辞配列など）の構築手法を提示しています。"
+        },
+        "http://arxiv.org/abs/2603.17509v1": {
+          "title": "連続的な自己参照型関数方程式によるメタ・フィボナッチ整数列の研究",
+          "summary": "本論文は、メタ・フィボナッチ整数列を分析するための連続関数方程式の利用を提案・調査する探索的研究である。対象として、Conwayの数列 A(n)= A(A(n-1))+A(n-A(n-1))、著者自身が提唱した D(n)= D(D(n-1))+D(n-1-D(n-2))、そしてHofstadterの有名な Q(n)= Q(n-Q(n-1))+Q(n-Q(n-2)) という挙動の異なる3つの数列を扱っている。これらをデトレンド形式 (a, d, q)(n) = 2(A, D, Q)(n) - n に変換して解析し、a(n) と d(n) については数列の全体的な振る舞い（バックボーン）を記述する対称的な関数方程式の厳密な連続解を導出している。Q数列については、ランダム行列を用いたアプローチにより、世代長の変則的なスケーリング（(2-η)ᵏ）や振幅増幅（2ᵅᵏ）といったフラクタル的な性質を再現する連続関数モデルを構築した。",
+          "keywords": [
+            "meta-Fibonacci integer sequences",
+            "continuous functional equations",
+            "self-referential functional equations",
+            "Hofstadter Q-sequence",
+            "random matrix approach"
+          ],
+          "appendix": "この研究は、数列のダイナミクスやスケーリング特性を扱っている点、またフラクタル的な構造をモデル化している点において、complex dynamics（複素力学系）に関連する側面を含んでいます。"
+        },
+        "http://arxiv.org/abs/2603.17473v1": {
+          "title": "stalactic合同とその双対の交わりから生じる対合Plactic-likeモノイドの表現と恒等式",
+          "summary": "本論文では、有限アルファベット 𝒜ₙ 上の自由モノイドをstalactic合同とその双対の交わりで割ることで得られるPlactic-likeモノイド mStₙ について論じている。mStₙ に複数の対合（involution）を導入し、それらを ⌊n/2⌋+1 個の型に分類した。各対合の下での mStₙ の忠実な表現を構成するとともに、各対合における恒等式の明快な組合せ論的特徴付けを与え、有限基底問題および恒等式判定問題を解決した。",
+          "keywords": [
+            "involution Plactic-like monoids",
+            "stalactic congruence",
+            "faithful representation",
+            "finite basis problem",
+            "identity checking problem"
+          ],
+          "appendix": "combinatorics on words の分野に密接に関連する内容です。"
+        },
+        "http://arxiv.org/abs/2603.17466v1": {
+          "title": "確率反復方程式のシミュレーションにおける全密度アプローチとその応用",
+          "summary": "本研究は、確率変数を含む反復方程式（RIE）をシミュレーションするための統一的な計算枠組みを提案している。本手法の核心は、従来のモンテカルロ法のようなパスごとの反復計算を必要とせず、状態ベクトルの完全な確率密度関数をステップごとに逐次伝播させる点にある。非線形性、不連続性、および非標準的な密度関数を許容する柔軟な設計となっており、確率微分方程式のシミュレーションや、不確実性下での大域的最適化のための全密度勾配降下法（FDGD）、カオス写像などの具体的な応用を通じてその有効性が実証されている。",
+          "keywords": [
+            "random iteration equations",
+            "probability density functions",
+            "stochastic differential equations",
+            "global optimization",
+            "chaotic mappings"
+          ],
+          "appendix": "カオス写像や反復方程式の動態を扱っていることから、興味ある分野のうち「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.17287v1": {
+          "title": "フォレスト・ウェブとパターン回避",
+          "summary": "Mike Cummingsの先行研究により、適切にパラメータ化されたシュプリンガー・ファイバーの滑らかな成分と、フォレストである縮約済み完全既約Plücker次数2のslᵣ-ウェブとの間に全単射が存在することが示されていた。これらのウェブの個数は、パターン{321, 2143, 3124}を回避する置換の数と一致することが知られていたが、Cummingsはこれらウェブとパターン回避置換の間の直接的な全単射を見つけるという問題を提起した。本論文はこの問題を解決するものである。興味深いことに、Cummingsが提案したパターン集合ではなく、パターン{132, 4321, 3214}を回避する置換の集合と当該ウェブのクラスとの間の全単射を構築した。",
+          "keywords": [
+            "Springer fibers",
+            "slᵣ-webs",
+            "pattern avoidance",
+            "forests",
+            "bijections"
+          ],
+          "appendix": "本論文は置換のパターン回避やウェブの列挙を扱っており、興味ある分野のうち「combinatorics on words」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2603.17284v1": {
+          "title": "ジャグリング・バリエーションにおける素パターンの列挙",
+          "summary": "本論文では、有向状態グラフ内の閉じた歩道としてモデル化されるジャグリング・パターンを、多重（multiplex）、彩色（colored）、パス（passing）などのバリエーションを含めて統一的なフレームワークで扱います。状態ベースのアプローチを拡張し、集合分割や塗りつぶされたフェラーズ図などの組合せ論的手法を用いることで、周期n、ボール数bの素パターン（prime patterns）の個数に関する新たな下界を導出・証明しています。また、特定の条件下での正確な個数の算出や漸近的増加率の分析を行い、無限状態グラフG∞におけるフリップ反転対合を用いた素パターン間の全単射についても考察しています。",
+          "keywords": [
+            "juggling state",
+            "prime patterns",
+            "set partitions",
+            "filled Ferrers diagrams",
+            "infinite state graph"
+          ],
+          "appendix": "本論文は組合せ論的手法や状態グラフの構造解析を扱っており、興味ある分野のうち「combinatorics on words」や「automata theory」に関連する概念（状態遷移や記号列の列挙）を含んでいます。"
+        },
+        "http://arxiv.org/abs/2603.17276v1": {
+          "title": "skew braceの自己同型群の自明性および非自明性について",
+          "summary": "群の自己同型群が自明であるのはその位数が1または2の場合のみであるという事実は基本的であるが、本論文では、特定のskew braceの族においても同様の性質が保持されることを証明する。また、任意の奇素数pに対して、自己同型群が自明となる位数2p³のskew braceを構成する。",
+          "keywords": [
+            "skew brace",
+            "automorphism group",
+            "trivial automorphism group",
+            "odd prime"
+          ],
+          "appendix": "提示された「興味ある分野」に直接該当する項目はありませんが、skew braceはYang-Baxter方程式の集合論的解などに関連する代数構造であり、群論的な観点からの構造解析が行われています。"
+        },
+        "http://arxiv.org/abs/2603.17244v1": {
+          "title": "AIエージェントのためのグラフネイティブな認知メモリ：バージョン管理型メモリ・アーキテクチャに対する形式的信念修正意味論",
+          "summary": "本論文では、信念修正（Belief Revision）の形式意味論に基づいたグラフネイティブな認知メモリ・アーキテクチャ「Kumiho」を提案している。不変なリビジョンや型付き依存エッジ、URIベースのアドレス指定などの構造的プリミティブを用いることで、エージェントの作業成果物の管理と認知メモリを統合的に扱う。理論的には、AGM信念修正フレームワークおよびHanssonの信念基盤公準（Relevance, Core-Retainment）を満たすことを証明した。実装面ではRedisとNeo4jを用いたデュアルストア・モデルを採用し、前向きインデックス（prospective indexing）、イベント抽出、LLM再ランキングの3つの革新的な手法を導入している。評価実験ではLoCoMo-Plusベンチマークにおいて93.3%の精度を達成し、既存のベースラインを大幅に上回る性能を示した。",
+          "keywords": [
+            "belief revision semantics",
+            "graph-native cognitive memory",
+            "AGM postulates",
+            "prospective indexing",
+            "versioned memory architectures"
+          ],
+          "appendix": "本論文の核心である信念修正（Belief Revision）の形式化や、オートマトン理論に関連する操作意味論（Operational Semantics）の観点において、興味ある分野の『automata theory』や『formal languages』と理論的な接点を持つ可能性があります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2603.18321v1",
+        "http://arxiv.org/abs/2603.18183v1",
+        "http://arxiv.org/abs/2603.17909v1",
+        "http://arxiv.org/abs/2603.17869v1",
+        "http://arxiv.org/abs/2603.17858v1",
+        "http://arxiv.org/abs/2603.17852v1",
+        "http://arxiv.org/abs/2603.17819v1",
+        "http://arxiv.org/abs/2603.17598v1",
+        "http://arxiv.org/abs/2603.17596v1",
+        "http://arxiv.org/abs/2603.17537v1",
+        "http://arxiv.org/abs/2603.17509v1",
+        "http://arxiv.org/abs/2603.17473v1",
+        "http://arxiv.org/abs/2603.17466v1",
+        "http://arxiv.org/abs/2603.17287v1",
+        "http://arxiv.org/abs/2603.17284v1",
+        "http://arxiv.org/abs/2603.17276v1",
+        "http://arxiv.org/abs/2603.17244v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-03-22T02:39:28.643528+00:00",
-      "updated_at": "2026-03-22T05:18:07.167874+00:00",
-      "finalized_at": null
+      "updated_at": "2026-03-22T23:20:00.830550+00:00",
+      "finalized_at": "2026-03-22T23:20:00.830525+00:00"
     }
   ]
 }
