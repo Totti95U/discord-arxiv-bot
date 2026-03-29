@@ -18710,7 +18710,7 @@
     },
     {
       "pipeline_id": "20260326T024351Z-ea7babf8",
-      "status": "summarize_running",
+      "status": "completed",
       "interest_job_name": "batches/fgxdupxh005uody5nwpj7ht8uytbmpjyvvka",
       "summarize_job_name": "batches/e0n3uvkmwc1dgjivmcqqak8qom3bmx5h6fsq",
       "papers": [
@@ -19062,14 +19062,119 @@
         "http://arxiv.org/abs/2603.21049v1",
         "http://arxiv.org/abs/2603.20991v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2603.21449v1": {
+          "title": "sofic shiftにおける被覆半径の有理性と計算可能性",
+          "summary": "本論文では、ノイズのある通信路を介したデータ伝送の情報理論的応用において重要な、シフト空間の被覆半径について論じている。原始的sofic shiftの被覆半径が有理数であることを証明するとともに、ラベル付きグラフ表現から被覆半径を算出するためのアルゴリズムを提示している。",
+          "keywords": [
+            "covering radius",
+            "sofic shifts",
+            "primitive sofic shift",
+            "labeled graph presentation"
+          ],
+          "appendix": "本論文は symbolic dynamics と密接に関連しており、sofic shift の動的な性質を計算理論的観点から解析しています。"
+        },
+        "http://arxiv.org/abs/2603.21443v1": {
+          "title": "パラメーター化されたSelf-Disabling Unidirectional Ringsにおけるライブロック検出の決定可能性",
+          "summary": "有界なドメイン ℤ_m を持つ self-disabling プロセスの対称的な単方向リング（一方向環）において、ライブロック検出が多項式時間で決定可能であることを証明している。局所的な遷移集合 T が与えられたとき、アルゴリズムはリングサイズ K ≥ 2 のいずれかにおいてライブロックが存在するかを O(|T|³) 時間で判定する。この手法は T 上の減少単調演算子の最大不動点を計算し、それが非空である場合にライブロックを検出するもので、リングサイズに依存せずに全 K に対して検証が可能である。Farahat (2012) の代数的特徴付けを基礎としており、1つのプロセスのみが異なる (1,1)-非対称ケースにも対応している。",
+          "keywords": [
+            "livelock detection",
+            "parameterized verification",
+            "unidirectional rings",
+            "self-disabling processes",
+            "decidability"
+          ],
+          "appendix": "プロセスの遷移規則や局所的な状態変化の解析を行うため、興味ある分野のうち「automata theory」に関連しています。また、リングトポロジー上の状態遷移の代数的性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2603.22360v1": {
+          "title": "置換置換（permutation displacement）と三角形カーネルから生成されるテプリッツ行列",
+          "summary": "本論文では、行列サイズに応じて係数がスケーリングされたカーネル aₖ=f(k/n) に依存するテプリッツ行列の性質を調査しています。固有値の経験平均が f の重み付き積分（重み 1-|x|）に収束することを示し、置換の置換カウントを用いたテプリッツ行列の組合せ論的な構成法を提案しています。一様ランダムな置換において、期待される行列は三角形カーネル 1-|x| から生成されるテプリッツ行列に収束します。さらに、このカーネルに関連する積分作用素の固有関数と固有値を明示的に決定し、置換統計量と古典的な積分作用素の間の関連性を明らかにしています。",
+          "keywords": [
+            "Toeplitz matrices",
+            "permutation displacements",
+            "triangular kernel",
+            "eigenvalues",
+            "integral operator"
+          ],
+          "appendix": "本論文は、キーワードにも含まれる「permutation displacements」などの置換統計量を扱っており、興味ある分野のうち「combinatorics on words」や組合せ論的な側面において関連性を持ちます。"
+        },
+        "http://arxiv.org/abs/2603.21179v1": {
+          "title": "多項式におけるリアプノフ指数の剛性",
+          "summary": "次数d ≥ 2かつジュリア集合が非連結な代数的数体上の多項式f, gについて、それらのリアプノフ指数が一致するための必要十分条件は、fとg（またはgの複素共役）が互いにintertwinedであることを証明した。また、臨界高さについても同様の結果を得ている。この結果の応用として、多項式のモジュライ空間における乗法的スペクトル写像が一般的に単射であるという定理に対し、新しい証明を提供している。",
+          "keywords": [
+            "Lyapunov exponent",
+            "Julia set",
+            "intertwined",
+            "critical height",
+            "multiplier spectrum morphism"
+          ],
+          "appendix": "本論文は、[興味ある分野]のうちcomplex dynamics（複素力学系）およびarithmetic dynamics（数論的力学系）に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2603.21157v1": {
+          "title": "アフィン型の無限フリーズパターンの増大度",
+          "summary": "本研究では、クラスター代数に由来する無限フリーズパターンの増大係数を、クラスターモジュラー群とクラスター圏を用いて解析している。特定のアフィン型クラスター圏において、等質および非等質な安定管（stable tubes）から得られる無限フリーズパターンの集合がすべて同一の増大係数を持つことを証明した。また、等質管の情報あるいはクラスター代数の特定の元に基づいた、第k増大係数の明示的な公式を導出・検証した。",
+          "keywords": [
+            "infinite frieze patterns",
+            "cluster algebras",
+            "cluster categories",
+            "affine type",
+            "growth coefficients"
+          ],
+          "appendix": "本論文はクラスター代数やアフィン型の構造を扱っており、提示された興味ある分野の中では combinatorics などの組合せ論的側面に関連します。"
+        },
+        "http://arxiv.org/abs/2603.21080v1": {
+          "title": "3変数のアフィン二次曲面における整数点の効果的な計数および効果的な等分布",
+          "summary": "混合（mixing）の性質を利用して、特定の無限等質測度の効果的な一様分布および関連する計数問題の研究を行っている。この手法により、Oh-ShahやKelmer-Kontorovichらが数体上で示した計数定理の滑らかな（smooth）バージョンを導出した。付録では、Hilbert-Asaiアイゼンシュタイン級数の解析接続を応用し、本来の（authentic）計数結果を得ている。",
+          "keywords": [
+            "effective equidistribution",
+            "infinite homogeneous measures",
+            "mixing",
+            "counting theorems",
+            "Hilbert-Asai Eisenstein series"
+          ],
+          "appendix": "数体上の等質空間における力学系的な手法を用いた研究であり、arithmetic dynamics（算術力学）の分野に関連があります。"
+        },
+        "http://arxiv.org/abs/2603.21049v1": {
+          "title": "有理絡み目のジョーンズ多項式に対する新たな公式",
+          "summary": "本論文では、必ずしも交代（alternating）とは限らない標準的な図式で表現された有理絡み目のジョーンズ多項式およびカウフマン括弧多項式に関する新しい公式を導出しています。これらの公式は、有理絡み目の交代図式のテイト・グラフにおけるタット多項式の研究や、ジョーンズ多項式の行列公式を一般化するものです。手法として、彩色グラフのタット多項式に対するBrylawskiのテンソル積公式の彩色版を用いています。また、交差の符号を計算して標準的な図式のねじれ数（writhe）を算出するための有限オートマトンも提示しています。",
+          "keywords": [
+            "Jones polynomial",
+            "rational link",
+            "Kauffman bracket polynomial",
+            "Tutte polynomial",
+            "finite automaton"
+          ],
+          "appendix": "本論文では交差の符号を算出するために有限オートマトンを構成しており、提示された興味ある分野のうち「automata theory」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2603.20991v1": {
+          "title": "圧縮されたTransformerにおける構造的感度：誤差伝播、リアプノフ安定性、および形式検証された境界",
+          "summary": "GPT-2 Smallにおける単一の行列の圧縮がパープレキシティを2万倍に増加させる事象を起点に、117Mから8Bパラメータまでの5つのアーキテクチャにおける圧縮感度の景観を解明した。初期層のMLP上昇投影（up-projections）が壊滅的な感度を示す一方で値投影（value projections）は極めて安定しているという階層性を発見。リアプノフ安定性理論に基づき、残差接続が隠れ状態を誤差よりも速く成長させることで誤差を収縮させることを示した。さらに、Lean 4を用いて各行列の誤差境界に関する10の定理を形式化・検証し、14,040以上の構成において境界の違反がないことを実証した。モデルの頑健性を順序付けするCompression Fragility Index（圧縮脆弱性指標）も提案している。",
+          "keywords": [
+            "Structural Sensitivity",
+            "Lyapunov Stability",
+            "Error Propagation",
+            "Lean 4",
+            "Compression Fragility Index"
+          ],
+          "appendix": "本論文はリアプノフ安定性を用いた力学系的な誤差解析を行っており、complex dynamics（複素力学系/複雑系力学）や、Lean 4を用いた厳密な境界の検証という点でvalidated numerics（精度保証付き数値計算）に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2603.21449v1",
+        "http://arxiv.org/abs/2603.21443v1",
+        "http://arxiv.org/abs/2603.22360v1",
+        "http://arxiv.org/abs/2603.21179v1",
+        "http://arxiv.org/abs/2603.21157v1",
+        "http://arxiv.org/abs/2603.21080v1",
+        "http://arxiv.org/abs/2603.21049v1",
+        "http://arxiv.org/abs/2603.20991v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-03-26T02:43:51.558881+00:00",
-      "updated_at": "2026-03-28T06:31:54.653458+00:00",
-      "finalized_at": null
+      "updated_at": "2026-03-29T04:20:40.361002+00:00",
+      "finalized_at": "2026-03-29T04:20:40.360971+00:00"
     },
     {
       "pipeline_id": "20260327T024613Z-287d3d27",
