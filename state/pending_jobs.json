@@ -20773,6 +20773,568 @@
       "created_at": "2026-03-28T02:35:03.921199+00:00",
       "updated_at": "2026-03-31T01:54:12.306903+00:00",
       "finalized_at": null
+    },
+    {
+      "pipeline_id": "20260331T024533Z-3712ce31",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/7yu5nd6dynyljsgzdnqyymxausah7jxz8j2z",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2603.27045v1",
+          "entry_id": "http://arxiv.org/abs/2603.27045v1",
+          "title": "Improved Bounds for 3-Progressions",
+          "summary": "We prove that if $A\\subset \\{1,\\dots,N\\}$ has no nontrivial three-term arithmetic progressions, then $|A|\\leq \\exp(-c\\log(N)^{1/6}\\log\\log(N)^{-1})N$ for some absolute constant $c>0$. To obtain this bound, we use an iterated variant of the sifting argument of Kelley and Meka, as well as an improved bootstrapping argument for Croot-Sisask almost-periodicity due to Bloom and Sisask.",
+          "authors": [
+            "Rushil Raghavan"
+          ],
+          "published": "2026-03-27T23:21:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.27026v1",
+          "entry_id": "http://arxiv.org/abs/2603.27026v1",
+          "title": "A set theoretic version of equations on groups",
+          "summary": "Let $G$ be a finite group. The aim of this paper is to study the number of solutions $S\\subseteq G$ of the equation $\\mho^{\\{n\\}}(S)=L$, where $L$ is a non-empty subset of $G$, $n$ is a positive integer and $\\mho^{\\{n\\}}(S)=\\{ s^n \\ | \\ s\\in S\\}$. Besides our findings obtained in this general frame, we also outline some results which hold for some particular cases such as: \\textit{i)} $L$ is a normal subset of $G$; \\textit{ii)} $G$ is abelian; \\textit{iii)} $G$ is an extraspecial $p$-group.",
+          "authors": [
+            "Mihai-Silviu Lazorec"
+          ],
+          "published": "2026-03-27T22:26:17+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.27024v1",
+          "entry_id": "http://arxiv.org/abs/2603.27024v1",
+          "title": "Data-driven discovery and control of multistable nonlinear systems and hysteresis via structured Neural ODEs",
+          "summary": "Many engineered physical processes exhibit nonlinear but asymptotically stable dynamics that converge to a finite set of equilibria determined by control inputs. Identifying such systems from data is challenging: stable dynamics provide limited excitation and model discovery is often non-unique. We propose a minimally structured Neural Ordinary Differential Equation (NODE) architecture that enforces trajectory stability and provides a tractable parameterization for multistable systems, by learning a vector field in the form $F(x,u) = f(x)\\,(x - g(x,u))$, where $f(x) < 0$ elementwise ensures contraction and $g(x,u)$ determines the multi-attractor locations. Across several nonlinear benchmarks, the proposed structure is efficient on short time horizon training, captures multiple basins of attraction, and enables efficient gradient-based feedback control through the implicit equilibrium map $g$.",
+          "authors": [
+            "Ike Griss Salas",
+            "Ethan King"
+          ],
+          "published": "2026-03-27T22:25:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.27007v1",
+          "entry_id": "http://arxiv.org/abs/2603.27007v1",
+          "title": "Pairwise Independence of Representation, Classification, and Composition in Finite Extensional Magmas",
+          "summary": "Nontrivial combinatory algebras with S and K must be infinite. Associativity is incompatible with combining a classifier and a retraction pair in a finite extensional magma. These obstructions exclude several standard settings from the finite extensional framework studied here, most notably nontrivial finite S+K-style combinatory algebras and associative structures (semigroups, monoids, groups, rings) carrying both a classifier and a retraction pair. What algebraic structure exists in the remaining landscape: finite, non-associative, total?\n  We identify three properties of finite extensional 2-pointed magmas: self-representation (R), the classifier dichotomy (D), and the Internal Composition Property (H). We prove they are pairwise independent. Six Lean-verified finite counterexamples at sizes 5 through 10 establish all six non-implications. The minimum coexistence witness has N=5, which is optimal: ICP requires 3 pairwise distinct core elements, so N >= 5. The three-category decomposition induced by D is an isomorphism invariant, and the ICP is logically equivalent to the standard Compose+Inert axioms. All results are formalized in Lean4 with zero sorry.",
+          "authors": [
+            "Stefano Palmieri"
+          ],
+          "published": "2026-03-27T21:45:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26949v1",
+          "entry_id": "http://arxiv.org/abs/2603.26949v1",
+          "title": "Spectral theory for transfer operators on compact quotients of Euclidean buildings",
+          "summary": "In this paper we generalize the geodesic flow on (finite) homogeneous graphs to a multiparameter flow on compact quotients of Euclidean buildings. Then we study the joint spectra of the associated transfer operators acting on suitable Lipschitz spaces. The main result says that outside an arbitrarily small neighborhood of zero in the set of spectral parameters the Taylor spectrum of the commuting family of transfer operators is contained in the joint point spectrum.",
+          "authors": [
+            "Joachim Hilgert",
+            "Daniel Kahl",
+            "Tobias Weich"
+          ],
+          "published": "2026-03-27T19:38:28+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26943v1",
+          "entry_id": "http://arxiv.org/abs/2603.26943v1",
+          "title": "Bridging the Gap Between Stable Marriage and Stable Roommates: A Parametrized Algorithm for Optimal Stable Matchings",
+          "summary": "In the Stable Roommates Problem (SR), a set of $2n$ agents rank one another in a linear order. The goal is to find a matching that is stable, one that has no pair of agents who mutually prefer each other over their assigned partners. We consider the problem of finding an {\\it optimal} stable matching. Agents associate weights with each of their potential partners, and the goal is to find a stable matching that minimizes the sum of the associated weights. Efficient algorithms exist for finding optimal stable marriages in the Stable Marriage Problem (SM), but the problem is NP-hard for general SR instances.\n  In this paper, we define a notion of structural distance between SR instances and SM instances, which we call the \\emph{minimum crossing distance}. When an SR instance has minimum crossing distance $0$, the instance is structurally equivalent to an SM instance, and this structure can be exploited to find optimal stable matchings efficiently. More generally, we show that for an SR instance with minimum crossing distance $k$, optimal stable matchings can be computed in time $2^{O(k)} n^{O(1)}$. Thus, the optimal stable matching problem is fixed parameter tractable (FPT) with respect to minimum crossing distance.",
+          "authors": [
+            "Christine T. Cheng",
+            "Will Rosenbaum"
+          ],
+          "published": "2026-03-27T19:32:39+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26932v1",
+          "entry_id": "http://arxiv.org/abs/2603.26932v1",
+          "title": "On the satisfaction frequency of spectral characterization conditions",
+          "summary": "We give the first specific conjectures on how frequently graphs satisfy sufficient conditions for being uniquely characterized by spectral information. These conjectures arise from a theoretical framework that we developed based on abstract-algebraic random matrix statistics. Specifically, we rephrase conditions from the literature in terms of Z[x]-modules associated to the adjacency matrix, and study the distribution of those modules in analytically tractable profinite random matrix ensembles. We applied this new method to two distinct conditions. The first requires square-freeness of the determinant of the walk matrix, and the second uses the discriminant of the characteristic polynomial.",
+          "authors": [
+            "Nikita Lvov",
+            "Alexander Van Werde"
+          ],
+          "published": "2026-03-27T19:15:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26923v1",
+          "entry_id": "http://arxiv.org/abs/2603.26923v1",
+          "title": "Koopman Operator Identification of Model Parameter Trajectories for Temporal Domain Generalization (KOMET)",
+          "summary": "Parametric models deployed in non-stationary environments degrade as the underlying data distribution evolves over time (a phenomenon known as temporal domain drift). In the current work, we present KOMET (Koopman Operator identification of Model parameter Evolution under Temporal drift), a model-agnostic, data-driven framework that treats the sequence of trained parameter vectors as the trajectory of a nonlinear dynamical system and identifies its governing linear operator via Extended Dynamic Mode Decomposition (EDMD). A warm-start sequential training protocol enforces parameter-trajectory smoothness, and a Fourier-augmented observable dictionary exploits the periodic structure inherent in many real-world distribution drifts. Once identified, KOMET's Koopman operator predicts future parameter trajectories autonomously, without access to future labeled data, enabling zero-retraining adaptation at deployment. Evaluated on six datasets spanning rotating, oscillating, and expanding distribution geometries, KOMET achieves mean autonomous-rollout accuracies between 0.981 and 1.000 over 100 held-out time steps. Spectral and coupling analyses further reveal interpretable dynamical structure consistent with the geometry of the drifting decision boundary.",
+          "authors": [
+            "Randy C. Hoover",
+            "Jacob James",
+            "Paul May",
+            "Kyle Caudle"
+          ],
+          "published": "2026-03-27T18:58:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26921v1",
+          "entry_id": "http://arxiv.org/abs/2603.26921v1",
+          "title": "Comparing Physics-Informed and Neural ODE Approaches for Modeling Nonlinear Biological Systems: A Case Study Based on the Morris-Lecar Model",
+          "summary": "Physics-Informed Neural Networks (PINNs) and Neural Ordinary Differential Equations (NODEs) represent two distinct machine learning frameworks for modeling nonlinear neuronal dynamics. This study systematically evaluates their performance on the two-dimensional Morris-Lecar model across three canonical bifurcation regimes: Hopf, Saddle-Node on Limit Cycle, and homoclinic orbit. Synthetic time-series data are generated via numerical integration under controlled conditions, and training is performed using collocation points for PINNs and adaptive solvers for NODEs (Dormand-Prince method).\n  PINNs incorporate the governing differential equations into the loss function using automatic differentiation, which enforces physical consistency during training. In contrast, NODEs learn the system's vector field directly from data, without prior structural assumptions or inductive bias toward physical laws. Model performance is assessed using standard regression metrics, including Mean Squared Error (MSE), Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE), and the coefficient of determination.\n  Results indicate that PINNs tend to achieve higher accuracy and robustness in scenarios involving stiffness or sensitive bifurcations, owing to their embedded physical structure. NODEs, while more expressive and flexible, operate as black-box approximators without structural constraints, which can lead to reduced interpretability and stability in these regimes. Although advanced variants of NODEs (e.g., ANODEs, latent NODEs) aim to mitigate such limitations, their performance under stiff dynamics remains an open question.\n  These findings emphasize the trade-offs between physics-informed models, which embed structure and interpretability, and purely data-driven approaches, which prioritize flexibility at the cost of physical consistency.",
+          "authors": [
+            "Nikolaos M. Matzakos",
+            "Chrisovalantis Sfyrakis"
+          ],
+          "published": "2026-03-27T18:53:53+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26912v1",
+          "entry_id": "http://arxiv.org/abs/2603.26912v1",
+          "title": "A method of reduction for invariant curves of quasiperiodically forced maps",
+          "summary": "The existence of translated curves for quasiperiodically forced maps is established, under very mild regularity hypotheses, for rotation numbers of constant type. Among the translated curves, the invariant curves are characterized as the solutions of a scalar bifurcation equation, from which their existence, stability as well as bifurcation can be easily described.",
+          "authors": [
+            "Amadeu Delshams",
+            "Rafael Ortega"
+          ],
+          "published": "2026-03-27T18:39:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26656v1",
+          "entry_id": "http://arxiv.org/abs/2603.26656v1",
+          "title": "Numerical topology of the clique complex of the partition graph: Euler characteristic, clique counts, and sequence data",
+          "summary": "We study the numerical topology of the clique complex $K_n=\\mathrm{Cl}(G_n)$, where $G_n$ is the partition graph on the set of integer partitions of $n$. Building on the previously established homotopy equivalence $K_n \\simeq \\vee^{\\,b_n} S^2$, we shift the focus from qualitative topology to its numerical content. Our main objects are the Euler characteristic $χ(K_n)$, the derived sequence $b_n=χ(K_n)-1$, the clique counts $c_r(n)$, and several related maximal-simplex counts. We develop two exact counting languages for the same invariant. The first is the direct clique-counting formula $χ(K_n)=\\sum_{r\\ge 1}(-1)^{r-1}c_r(n)$, which expresses Euler characteristic through clique counts in the partition graph. The second is a nerve-side formula arising from the canonical good cover by distinct full star- and full top-simplices, which yields $χ(K_n)=χ(N_n)$, where $N_n$ is the corresponding nerve. We further use the classification of maximal simplices into star-, top-, and edge-type pieces to formulate a local-to-global counting framework based on local admissibility data and global deduplication. The paper is primarily organizational and computational. It fixes a consistent counting dictionary, separates intrinsic global counts from auxiliary based counts, records exact data for the full main sequence package on $1\\le n\\le 25$, and extends the low-dimensional clique-count layer through $n=60$. We do not claim closed formulas for $χ(K_n)$ or for the full family of clique counts. Rather, the paper provides a framework in which such questions can be studied systematically.",
+          "authors": [
+            "Fedor B. Lyudogovskiy"
+          ],
+          "published": "2026-03-27T17:55:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26652v1",
+          "entry_id": "http://arxiv.org/abs/2603.26652v1",
+          "title": "Surfaces without quasi-isometric simplicial triangulations",
+          "summary": "We construct a complete Riemannian surface $Σ$ that admits no triangulation $G\\subset Σ$ such that the inclusion $G^{(1)} \\hookrightarrow Σ$ is a quasi-isometry, where $G^{(1)}$ is the simplicial 1-skeleton of $G$. Our construction is without boundary, has arbitrarily large systole, and furthermore, there is no embedded graph $G\\subsetΣ$ such that $G^{(1)} \\hookrightarrow Σ$ is a quasi-isometry. This answers a question of Georgakopoulos.",
+          "authors": [
+            "James Davies"
+          ],
+          "published": "2026-03-27T17:54:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26626v1",
+          "entry_id": "http://arxiv.org/abs/2603.26626v1",
+          "title": "New directions in the study of prime ideals in rational, nilpotent Iwasawa algebras",
+          "summary": "Let G be a nilpotent p-valuable (compact p-adic Lie) group. There is an ongoing investigation into the prime ideals of its completed group algebra (Iwasawa algebra), and there remains an open conjecture that they can all be proved to have a canonical standard form. We very this conjecture for several new classes of nilpotent groups, including those corresponding to the positive subalgebra of almost all classical and exceptional types, curiously excluding those of type C.",
+          "authors": [
+            "Adam Jones",
+            "William Woods"
+          ],
+          "published": "2026-03-27T17:26:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26624v1",
+          "entry_id": "http://arxiv.org/abs/2603.26624v1",
+          "title": "Noether symmetry groups, locally conserved integrals, and dynamical symmetries in classical mechanics",
+          "summary": "Several aspects of the connection between conserved integrals (invariants) and symmetries are illustrated within a hybrid Lagrangian-Hamiltonian framework for dynamical systems. Three examples are considered: a nonlinear oscillator with time-dependent frequency (one degree of freedom); geodesics of a spheroid (two degrees of freedom); Calogero-Moser-Sutherland system of interacting particles (three degrees of freedom). For each system, a local generalization of Liouville integrability is shown. Specifically, the variational point symmetries in a Lagrangian setting lead to corresponding locally conserved integrals which are found to commute in the Poisson bracket imported from the equivalent Hamiltonian setting. Action-angle variables are then introduced in the Lagrangian setting, which leads to explicit integration of the Euler-Lagrange equations of motion locally in time.",
+          "authors": [
+            "Stephen C. Anco"
+          ],
+          "published": "2026-03-27T17:24:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26580v1",
+          "entry_id": "http://arxiv.org/abs/2603.26580v1",
+          "title": "Simon's knot genus problem and Lewin $3$-manifold groups",
+          "summary": "We provide a positive answer to an old problem of Jonathan K. Simon: if $K$ and $K'$ are two knots such that there is an epimorphism from the knot group of $K$ to the knot group of $K'$, then the genus of $K$ is greater than or equal to the genus of $K'$. We achieve this by proving a conjecture of Friedl and Lück, which states that the existence of a map between admissible $3$-manifolds that induces an epimorphism on the fundamental groups and an isomorphism on the rational homologies yields an inequality of Thurston norms. We resolve Friedl and Lück's conjecture by showing that locally indicable $3$-manifold groups are Lewin groups, which confirms another conjecture of Jaikin-Zapirain within the class of $3$-manifold groups. As a further consequence of our methods, we show that the crossed product of a division ring and a torsion-free $3$-manifold group that is virtually free-by-cyclic is a pseudo-Sylvester domain.",
+          "authors": [
+            "Pablo Sánchez-Peralta"
+          ],
+          "published": "2026-03-27T16:37:59+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26573v1",
+          "entry_id": "http://arxiv.org/abs/2603.26573v1",
+          "title": "Evolution-Based Timed Opacity under a Universal Observation Model",
+          "summary": "Existing literature on timed opacity uses specific definitions for restricted subclasses of timed automata or limited observation models. This lack of a unified definition makes it difficult to establish formal relationships and compare the expressiveness of different opacity variants. This paper establishes a unified framework for timed opacity by introducing a universal observation model for timed automata. First, we introduce an observation model with full observation of time delay and partial observation of locations, clocks, and events. Second, based on this model, we define the notion of evolution-based timed opacity. Third, we mathematically prove that evolution-based timed opacity strictly implies language-based timed opacity and establish a formal equivalence with execution-time opacity under constrained observations. This framework establishes a unified semantic hierarchy for characterizing the landscape of timed opacity.",
+          "authors": [
+            "Zhe Zhang",
+            "Martijn Goorden",
+            "Michel Reniers"
+          ],
+          "published": "2026-03-27T16:34:28+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26570v1",
+          "entry_id": "http://arxiv.org/abs/2603.26570v1",
+          "title": "On merge-models",
+          "summary": "Tree-ordered weakly sparse models have recently emerged as a robust framework for representing structures in an ``almost sparse'' way, while allowing the structure to be reconstructed through a simple first-order interpretation. A prominent example is given by twin-models, which are bounded twin-width tree-ordered weakly sparse representations of structures with bounded twin-width derived from contraction sequences. In this paper, we develop this perspective further. First, we show that twin-models can be chosen such that they preserve linear clique-width or clique-width up to a constant factor. Then, we introduce \\emph{merge-models}, a natural analog of twin-models for merge-width. Merge-models represent binary relational structures by tree-ordered weakly sparse structures. The original structures can then be recovered by a fixed first-order interpretation. A merge-model can be constructed from a merge sequence. Then, its radius-$r$ merge-width will be, up to a constant factor, bounded by the radius-$r$ width of the merge sequence from which it is derived. Finally, we show that twin-models arise naturally as special cases of merge-models, and that binary structures with bounded twin-width are exactly those having a loopless merge-model with bounded radius-$r_0$ merge-width (for some sufficiently large constant $r_0$).",
+          "authors": [
+            "Hector Buffière",
+            "Yuquan Lin",
+            "Jaroslav Nešet{ř}il",
+            "Patrice {Ossona de Mendez}",
+            "Sebastian Siebertz"
+          ],
+          "published": "2026-03-27T16:32:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26538v1",
+          "entry_id": "http://arxiv.org/abs/2603.26538v1",
+          "title": "Finding Minimal Clusters in st-DAGs",
+          "summary": "Directed Acylic Graphs with a single entry vertex and a single exit vertex (st-DAGs) have many applications. For instance, they are frequently used for modelling flow problems or precedence conditions among tasks, work packages, etc.. This paper presents an algorithm for finding special types of subgraphs in such st-DAGs, called clusters. Knowing the clusters of a given st-DAG is very useful during DAG analysis. Clusters are characterized by a kind of synchronizing behaviour at their entry border and at their exit border. In this context, we introduce the notion of syncpoint, a type of synchronisation point within a DAG, and for a given st-DAG we construct a second DAG, called MSP-DAG, whose edges are given by the precedence relation among maximum size syncpoints (MSPs). Our new cluster finding algorithm searches for clusters between potential pairs of enclosing MSPs. The efficiency of the algorithm stems from the fact that it works on the MSP-DAG, which is usually much smaller than the original st-DAG. The paper includes a thorough complexity analysis of the algorithm's runtime, which turns out to be quadratic in the number of DAG vertices and exponential in the number of MSP-DAG vertices. There is also a section reporting on experiments with randomly generated DAGs, which shows the practical applicability of the algorithm and confirm our theoretical findings.",
+          "authors": [
+            "Ulrich Vogl",
+            "Markus Siegle"
+          ],
+          "published": "2026-03-27T15:49:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26537v1",
+          "entry_id": "http://arxiv.org/abs/2603.26537v1",
+          "title": "Statistical warning indicators for abrupt transitions in dynamical systems with slow periodic forcing",
+          "summary": "There is growing interest in anticipating critical transitions in natural systems, often pursued through statistical detection of early warning signals associated with dynamical bifurcations. In stochastic dynamical systems, such signals commonly rely on manifestations of critical slowing down. However, we still need additional development for the underlying theory for critical transitions in non-autonomous systems. This extension is relevant for natural systems, whose behaviour often emerges from seasonal periodic forcing. In this study, we systematically investigate the feasibility of anticipating the termination of oscillatory behavior in a bistable system with slow periodic forcing. In this setting, existing approaches of estimating linear characteristics of the return map fail in practical scenarios due to the unfavourable time-scale separation. Instead, we propose two statistical indicators for the anticipation of critical transitions in the periodic behaviour: (i) conventional early warning indicators, such as increasing variance and autocorrelation, evaluated across system cycles, and (ii) indicators derived from the phase of the seasonal forcing. By statistically comparing their predictive performance, we find that phase-based indicators provide the strongest early warning capability. Our results offer guidance for the detection of critical transitions in periodically forced systems and, more broadly, systematically extend early-warning signs towards non-autonomous dynamical systems.",
+          "authors": [
+            "Florian Suerhoff",
+            "Andreas Morr",
+            "Sebastian Bathiany",
+            "Niklas Boers",
+            "Christian Kuehn"
+          ],
+          "published": "2026-03-27T15:48:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26518v1",
+          "entry_id": "http://arxiv.org/abs/2603.26518v1",
+          "title": "Monotone Property Thresholds",
+          "summary": "This paper was originally written by the authors circa 2005 but was never submitted for publication. The present version corrects minor errors, adds references to work published since the original draft, and includes a section discussing further research directions. The core framework -- the property function $ψ_G$, the density function $\\varphi^ψ_μ$, and all threshold results -- is unchanged from the original.",
+          "authors": [
+            "Colton Magnant",
+            "Thor Whalen"
+          ],
+          "published": "2026-03-27T15:29:10+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26508v1",
+          "entry_id": "http://arxiv.org/abs/2603.26508v1",
+          "title": "Semirings of formal sums and injective partial transformations",
+          "summary": "The semiring of discrete dynamical systems is a simple algebraic model for modularity in deterministic systems. The objects of the semiring are finite transformations (viewed as directed graphs and regarded up to isomorphism), the sum of two transformations corresponds to applying them independently on distinct sets, and the product corresponds to applying both transformations in parallel. In this paper, we extend this semiring to include partial transformations; the sum and product are natural generalisations. Each (partial) transformation can be viewed as a sum (over $\\mathbb{N}$) of connected (partial) transformations. We generalise this idea by working in semirings of formal sums over any semiring $\\mathbb{S}$. Here we consider the case where $\\mathbb{S} = \\mathbb{F}_2$, the binary field, and we focus on injective partial transformations, i.e. sums of chains and cycles. While no efficient algorithm for the division problem for sums of cycles in the original semiring of discrete dynamical systems is known, we give a concise characterisation of all the solutions of the division problem for sums of cycles over $\\mathbb{F}_2$. We then extend this characterisation to dividing any injective partial transformations, i.e. sums of chains and cycles over $\\mathbb{F}_2$.",
+          "authors": [
+            "Maximilien Gadouleau",
+            "Marianne Johnson"
+          ],
+          "published": "2026-03-27T15:18:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26501v1",
+          "entry_id": "http://arxiv.org/abs/2603.26501v1",
+          "title": "Local-global principles for the existence of Levi factors",
+          "summary": "We discuss local-global principles for the existence of Levi factors (i.e., complements to the unipotent radical) for linear algebraic groups over one-variable function fields. We give examples of disconnected groups that fail the local-global principle, and prove a strong local-global principle in the presence of Levi descent.",
+          "authors": [
+            "David Harbater",
+            "Julia Hartmann",
+            "George McNinch"
+          ],
+          "published": "2026-03-27T15:07:42+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26484v1",
+          "entry_id": "http://arxiv.org/abs/2603.26484v1",
+          "title": "Speedability of computably approximable reals and their approximations",
+          "summary": "An approximation of a real is a sequence of rational numbers that converges to the real. An approximation is left-c.e. if it is computable and nondecreasing and is d.c.e. if it is computable and has bounded variation. A real is computably approximable if it has some computable approximation, and left-c.e. and d.c.e. reals are defined accordingly.\n  An approximation $\\{a_s\\}_{s \\in ω}$ is speedable if there exists a nondecreasing computable function $f$ such that the approximation $\\{a_{f(s)}\\}_{s \\in ω}$ converges in a certain formal sense faster than $\\{a_s\\}_{s \\in ω}$. This leads to various notions of speedability for reals, e.g., one may require for a computably approximable real that either all or some of its approximations of a specific type are speedable.\n  Merkle and Titov established the equivalence of several speedability notions for left-c.e. reals that are defined in terms of left-c.e. approximations. We extend these results to d.c.e. reals and d.c.e. approximations, and we prove that in this setting, being speedable is equivalent to not being Martin-Löf random. Finally, we demonstrate that every computably approximable real has a computable approximation that is speedable.",
+          "authors": [
+            "George Barmpalias",
+            "Nan Fang",
+            "Wolfgang Merkle",
+            "Ivan Titov"
+          ],
+          "published": "2026-03-27T14:45:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26464v1",
+          "entry_id": "http://arxiv.org/abs/2603.26464v1",
+          "title": "Automatic feature identification in least-squares policy iteration using the Koopman operator framework",
+          "summary": "In this paper, we present a Koopman autoencoder-based least-squares policy iteration (KAE-LSPI) algorithm in reinforcement learning (RL). The KAE-LSPI algorithm is based on reformulating the so-called least-squares fixed-point approximation method in terms of extended dynamic mode decomposition (EDMD), thereby enabling automatic feature learning via the Koopman autoencoder (KAE) framework. The approach is motivated by the lack of a systematic choice of features or kernels in linear RL techniques. We compare the KAE-LSPI algorithm with two previous works, the classical least-squares policy iteration (LSPI) and the kernel-based least-squares policy iteration (KLSPI), using stochastic chain walk and inverted pendulum control problems as examples. Unlike previous works, no features or kernels need to be fixed a priori in our approach. Empirical results show the number of features learned by the KAE technique remains reasonable compared to those fixed in the classical LSPI algorithm. The convergence to an optimal or a near-optimal policy is also comparable to the other two methods.",
+          "authors": [
+            "Christian Mugisho Zagabe",
+            "Sebastian Peitz"
+          ],
+          "published": "2026-03-27T14:31:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26443v1",
+          "entry_id": "http://arxiv.org/abs/2603.26443v1",
+          "title": "Resonances on geometrically finite graphs",
+          "summary": "In analogy with the spectral theory of geometrically finite hyperbolic manifolds, we initiate the study of resonances on geometrically finite (q+1)-regular graphs of groups. We prove the meromorphic continuation of the resolvent of the adjacency operator on such spaces and give a geometric characterization of the resonant states. In contrast to the hyperbolic surfaces setting, geometrically finite graphs have only finitely many resonances and may be computed explicitly, yet exhibit many of the same qualitative phenomena as in the hyperbolic manifolds setting. Particularly interesting examples arise from algebraic curves over finite fields.",
+          "authors": [
+            "Christian Arends",
+            "Carsten Peterson",
+            "Tobias Weich"
+          ],
+          "published": "2026-03-27T14:10:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26395v1",
+          "entry_id": "http://arxiv.org/abs/2603.26395v1",
+          "title": "Ascending Convex Polyominoes",
+          "summary": "Convex polyominoes can be refined according to the number of direction changes in monotone paths connecting pairs of cells, leading to the notion of $k$-convexity. In particular, the cases $k=1$ and $k=2$ correspond to $L$-convex and $Z$-convex polyominoes, two well-studied subclasses of convex polyominoes, with intermediate families such as centered and $4$-stack polyominoes. These families exhibit remarkably different combinatorial behaviours, suggesting that geometric constraints have a strong impact on the nature of the generating function: $L$-convex and centered polyominoes possess rational generating functions and growth of order $(2+\\sqrt{2})^n$ and $4^n$, respectively, while $Z$-convex, 4-stack, and convex polyominoes have algebraic functions and asymptotics of order $n4^n$, $\\sqrt{n}\\,4^n$, and $n4^n$ respectively.\n  In this paper we investigate the structure of $Z$-convex polyominoes by introducing a refinement based on the NW- and NE-convexity degrees, which yields a decomposition into three disjoint subclasses $C(1,2)$, $C(2,1)$, and $C(2,2)$. To enumerate these families we introduce ascending polyominoes, admitting a simple geometric characterization, and construct a generating tree that leads to functional equations for the corresponding generating functions. By solving these equations we obtain explicit algebraic generating functions and the asymptotic growth for all the subclasses.",
+          "authors": [
+            "Nicholas Beaton",
+            "Simone Rinaldi"
+          ],
+          "published": "2026-03-27T13:21:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26379v1",
+          "entry_id": "http://arxiv.org/abs/2603.26379v1",
+          "title": "The Bollobás--Nikiforov Conjecture for Complete Multipartite Graphs and Dense $K_4$-Free Graphs",
+          "summary": "The Bollobás--Nikiforov conjecture asserts that for any graph $G \\neq K_n$ with $m$ edges and clique number $ω(G)$, \\[\n  λ_1^2(G) + λ_2^2(G)\n  \\;\\leq\\;\n  2\\!\\left(1 - \\frac{1}{ω(G)}\\right)m, \\] where $λ_1(G) \\geq λ_2(G) \\geq \\cdots \\geq λ_n(G)$ are the adjacency eigenvalues of $G$. We prove the conjecture for all complete multipartite graphs $K_{n_1,\\ldots,n_r}$ with $n_1 + \\cdots + n_r > r$. The proof computes the full spectrum via a secular equation, establishes that $λ_2 = 0$ whenever the graph has more vertices than parts, and then applies Nikiforov's spectral Turán theorem; equality holds if and only if all parts have equal size. We also prove a stability result for $K_4$-free graphs whose spectral radius is near the Turán maximum: such graphs are structurally close to the balanced complete tripartite graph, and as a consequence the conjecture holds for all $K_4$-free graphs with $m = Ω(n^2)$ when $n$ is sufficiently large. Finally, we identify the precise obstruction preventing a Hoffman-bound approach from settling the conjecture for $K_4$-free graphs with independence number $α(G) \\geq n/3$.",
+          "authors": [
+            "Piero Giacomelli"
+          ],
+          "published": "2026-03-27T13:03:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26376v1",
+          "entry_id": "http://arxiv.org/abs/2603.26376v1",
+          "title": "Invertibility, Often",
+          "summary": "By using a similar pattern of arguments, we show that in three categories the collection of isomorphisms forms a residual subset of the space of morphisms. We first consider surjective continuous mappings on Cantor spaces. Next, we look at measure preserving maps on Polish measure spaces. Finally, we examine continuous, measure preserving maps on Cantor spaces equipped with so-called good measures.",
+          "authors": [
+            "Ethan Akin",
+            "Benjamin Weiss"
+          ],
+          "published": "2026-03-27T12:59:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26370v1",
+          "entry_id": "http://arxiv.org/abs/2603.26370v1",
+          "title": "Multi-scale Metabolic Modeling and Simulation",
+          "summary": "Biological systems are governed by coupled interactions between intracellular metabolism and bioreactor operation that span multiple time scales. Constraint-based metabolic models are widely used to describe intracellular metabolism, but repeatedly solving the optimization problem at each time step in dynamic models introduces numerical challenges related to infeasibility and computational efficiency. This work presents a multi-scale modeling framework that integrates genome-scale, constraint-based metabolic models with dynamic bioreactor simulations. Intracellular metabolism is described using positive flux variables in a parsimonious flux balance analysis, and the resulting embedded optimization problem is replaced by a neural network surrogate. The surrogate provides a smooth approximation of the embedded optimization mapping and eliminates repeated linear program solves during simulation. The approach is demonstrated for fed-batch fermentation of Escherichia coli, in which the surrogate model yields intracellular fluxes under substrate-limited conditions, whereas the underlying linear program would otherwise be infeasible. The framework provides a continuous representation of intracellular metabolism suitable for dynamic simulation of genome-scale models in bioreactor configurations.",
+          "authors": [
+            "Peter E. Carstensen",
+            "Teddy Groves",
+            "Lars K. Nielsen",
+            "Ulrich Krühne",
+            "Krist V. Gernaey",
+            "John B. Jørgensen"
+          ],
+          "published": "2026-03-27T12:55:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26342v1",
+          "entry_id": "http://arxiv.org/abs/2603.26342v1",
+          "title": "Lean on Vampire Proofs (Short Paper)",
+          "summary": "Vampire proves theorems completely automatically in first- and higher-order logic extended with theories. Proof checking is increasingly demanded to consolidate user trust in Vampires output. We describe ongoing efforts in reconstructing Vampire proofs as trusted proofs in Lean",
+          "authors": [
+            "Jonas Bodingbauer",
+            "Márton Hajdu",
+            "Laura Kovács",
+            "Axel Polaczek",
+            "Michael Rawson"
+          ],
+          "published": "2026-03-27T12:04:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26852v1",
+          "entry_id": "http://arxiv.org/abs/2603.26852v1",
+          "title": "Stringological sequence prediction I: efficient algorithms for predicting highly repetitive sequences",
+          "summary": "We propose novel algorithms for sequence prediction based on ideas from stringology. These algorithms are time and space efficient and satisfy mistake bounds related to particular stringological complexity measures of the sequence. In this work (the first in a series) we focus on two such measures: (i) the size of the smallest straight-line program that produces the sequence, and (ii) the number of states in the minimal automaton that can compute any symbol in the sequence when given its position in base k as input. These measures are interesting because multiple rich classes of sequences studied in combinatorics of words (automatic sequences, morphic sequences, Sturmian words) have low complexity and hence high predictability in this sense.",
+          "authors": [
+            "Vanessa Kosoy"
+          ],
+          "published": "2026-03-27T11:53:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26303v1",
+          "entry_id": "http://arxiv.org/abs/2603.26303v1",
+          "title": "A proof of Fill's spectral gap conjecture",
+          "summary": "We prove a quantitative lower bound on the spectral gap of the adjacent-transposition chain on the symmetric group with a general probability vector. As a consequence, among all regular probability vectors, the spectral gap of the transition matrix is minimised by the uniform probability vector, i.e., $p_{i,j}\\equiv {\\frac 1 2}$ for all $i \\ne j$. A second consequence is a uniform polynomial bound on the inverse spectral gap in the regular case. This resolves a longstanding conjecture known as Fill's Gap Problem.",
+          "authors": [
+            "Gary R. W. Greaves",
+            "Haoran Zhu"
+          ],
+          "published": "2026-03-27T11:14:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26301v1",
+          "entry_id": "http://arxiv.org/abs/2603.26301v1",
+          "title": "Complete Causal Identification from Ancestral Graphs under Selection Bias",
+          "summary": "Many causal discovery algorithms, including the celebrated FCI algorithm, output a Partial Ancestral Graph (PAG). PAGs serve as an abstract graphical representation of the underlying causal structure, modeled by directed acyclic graphs with latent and selection variables. This paper develops a characterization of the set of extended-type conditional independence relations that are invariant across all causal models represented by a PAG. This theory allows us to formulate a general measure-theoretic version of Pearl's causal calculus and a sound and complete identification algorithm for PAGs under selection bias. Our results also apply when PAGs are learned by certain algorithms that integrate observational data with experimental data and incorporate background knowledge.",
+          "authors": [
+            "Leihao Chen",
+            "Joris M. Mooij"
+          ],
+          "published": "2026-03-27T11:08:33+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26286v1",
+          "entry_id": "http://arxiv.org/abs/2603.26286v1",
+          "title": "Proofdoors and Efficiency of CDCL Solvers",
+          "summary": "We propose a new parameter called proofdoor in an attempt to explain the efficiency of CDCL SAT solvers over formulas derived from circuit (esp., arithmetic) verification applications. Informally, given an unsatisfiable CNF formula F over n variables, a proofdoor decomposition consists of a chunking of the clauses into A1, . . . , Ak together with a sequence of interpolants connecting these chunks. Intuitively, a proofdoor captures the idea that an unsatisfiable formula can be refuted by reasoning chunk by chunk, while maintaining only a summary of the information (i.e., interpolants) gained so far for subsequent reasoning steps.\n  We prove several theorems in support of the proposition that proofdoors can explain the efficiency of CDCL solvers for some class of circuit verification problems. First, we show that formulas with small proofdoors (i.e., where each interpolant is O(n) sized, each chunk Ai has small pathwidth, and each interpolant clause has at most O(log(n)) backward dependency on the previous interpolant) have short resolution (Res) proofs. Second, we show that certain configurations of CDCL solvers can compute such proofs in time polynomial in n. Third, we show that commutativity (miter) formulas over floating-point addition have small proofdoors and hence short Res proofs, even though they have large pathwidth. Fourth, we characterize the limits of the proofdoor framework by connecting proofdoors to the partially ordered resolution proof system: we show that a poor decomposition of arithmetic miter instances can force exponentially large partially ordered resolution proofs, even when a different decomposition (i.e., small proofdoors) permits short proofs.",
+          "authors": [
+            "Sunidhi Singh",
+            "Vincent Liew",
+            "Marc Vinyals",
+            "Vijay Ganesh"
+          ],
+          "published": "2026-03-27T10:53:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26268v1",
+          "entry_id": "http://arxiv.org/abs/2603.26268v1",
+          "title": "A General Theory of Propositional Modal Bundled Modalities",
+          "summary": "In studies of bundled modalities, we encode a complex conceptual notion into the semantics of a single modal operator and study its logic. Although there is already a substantial body of work on various concrete bundled operators, we still lack a general understanding of them. In this paper, we provide a general theory of the expressivity and axiomatization of bundled modalities. We offer a uniform way to define bisimulations for arbitrary bundled modalities and justify our definition by the corresponding Hennessy-Milner property. We also define a special class of bundled modalities called convex bundles. This class covers most bundled modalities studied in the literature, and their axiomatizations can be done with the help of convex neighborhood semantics and corresponding representation results. As case studies, we axiomatize the \"someone knows\" bundle $\\bigvee_{a \\in A} \\Box_a φ$ over $S5$-models, the \"disagreement in group\" bundle $\\bigvee_{a, b \\in A} \\Box_a φ\\wedge \\Box_b \\neg φ$ over $KD45$-models, and the \"belief without knowledge\" bundle $B φ\\wedge \\neg K φ$ over $S4.2$-models.",
+          "authors": [
+            "Yifeng Ding",
+            "Yuanzhe Yang"
+          ],
+          "published": "2026-03-27T10:34:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26251v1",
+          "entry_id": "http://arxiv.org/abs/2603.26251v1",
+          "title": "Effect of edge-stretching on Steklov eigenvalues and sharp Steklov eigenvalue bounds on leaf--boundary trees",
+          "summary": "Let $T$ be a finite tree with leaf set $\\dO$ as the boundary and let $λ_2$ be the first nontrivial Steklov eigenvalue. Let $D$ and $\\ell$ be the maximum vertex degree and the number of leaves, respectively. Motivated by the spectral influence of neck-stretching on Riemannian manifolds, we investigate a discrete counterpart--edge-stretching--and its effect on the Steklov eigenvalues of graphs. We prove that Steklov eigenvalues decrease monotonically under the edge--stretching operation. As a consequence, we prove that $λ_2\\le D/\\ell$, with equality if and only if $T$ is a star. This fundamentally improves the constant in He--Hua's bound $λ_2\\le 4(D-1)/\\ell$ to the optimal value~$1$.\n  We also provide a closed-form diagonalization of the Steklov problem on level--regular trees, yielding explicit eigenvalues and multiplicities. In addition, we provide a general upper bound $λ_k\\le \\min\\{1,\\,16Dk/\\ell\\}$ for higher eigenvalues. Systematic numerical experiments verify the sharp bound and provide evidence for the extremal conjecture of Lin--Zhao on balanced minimum--height trees.",
+          "authors": [
+            "Jiangdong Ai",
+            "Yizhe Ji",
+            "Xiaopan Lian",
+            "Kun Yang"
+          ],
+          "published": "2026-03-27T10:17:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26215v1",
+          "entry_id": "http://arxiv.org/abs/2603.26215v1",
+          "title": "SuperDP: Differential Privacy Refutation via Supermartingales",
+          "summary": "Differential privacy (DP) has established itself as one of the standards for ensuring privacy of individual data. However, reasoning about DP is a challenging and error-prone task, hence methods for formal verification and refutation of DP properties have received significant interest in recent years. In this work, we present a novel method for automated formal refutation of $ε$-DP. Our method refutes $ε$-DP by searching for a pair of inputs together with a non-negative function over outputs whose expected value on these two inputs differs by a significant amount. The two inputs and the non-negative function over outputs are computed simultaneously, by utilizing upper expectation supermartingales and lower expectation submartingales from probabilistic program analysis, which we leverage to introduce a sound and complete proof rule for $ε$-DP refutation. To the best of our knowledge, our method is the first method for $ε$-DP refutation to offer the following four desirable features: (1)~it is fully automated, (2)~it is applicable to stochastic mechanisms with sampling instructions from both discrete and continuous distributions, (3)~it provides soundness guarantees, and (4)~it provides semi-completeness guarantees. Our experiments show that our prototype tool SuperDP achieves superior performance compared to the state of the art and manages to refute $ε$-DP for a number of challenging examples collected from the literature, including ones that were out of the reach of prior methods.",
+          "authors": [
+            "Krishnendu Chatterjee",
+            "Ehsan Kafshdar Goharshady",
+            "Đorđe Žikelić"
+          ],
+          "published": "2026-03-27T09:39:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26214v1",
+          "entry_id": "http://arxiv.org/abs/2603.26214v1",
+          "title": "Optimal b-Colourings and Fall Colourings in $H$-Free Graphs",
+          "summary": "In a colouring of a graph, a vertex is b-chromatic if it is adjacent to a vertex of every other colour. We consider four well-studied colouring problems: b-Chromatic Number, Tight b-Chromatic Number, Fall Chromatic Number and Fall Achromatic Number, which fit into a framework based on whether every colour class has (i) at least one b-chromatic vertex, (ii) exactly one b-chromatic vertex, or (iii) all of its vertices being b-chromatic. By combining known and new results, we fully classify the computational complexity of b-Chromatic Number, Fall Chromatic Number and Fall Achromatic Number in $H$-free graphs. For Tight b-Chromatic Number in $H$-free graphs, we develop a general technique to determine new graphs $H$, for which the problem is polynomial-time solvable, and we also determine new graphs $H$, for which the problem is still NP-complete. We show, for the first time, the existence of a graph $H$ such that in $H$-free graphs, b-Chromatic Number is NP-hard, while Tight b-Chromatic Number is polynomial-time solvable.",
+          "authors": [
+            "Jungho Ahn",
+            "Tala Eagling-Vose",
+            "Felicia Lucke",
+            "David Manlove",
+            "Fabricio Mendoza",
+            "Daniël Paulusma"
+          ],
+          "published": "2026-03-27T09:37:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26210v1",
+          "entry_id": "http://arxiv.org/abs/2603.26210v1",
+          "title": "Topologically simple and metrizable free groups with no non-trivial NSS quotients",
+          "summary": "A topological group $G$ is said to have no small subgroup (resp. no small normal subgroup) if it admits an open neighbourhood of the identity containing no non-trivial subgroup (resp. normal subgroup) of $G$. These properties are usually denoted by NSS (and respectively NSnS). The NSS property plays an important historical role in the solution to the fifth problem of Hilbert due to Gleason, Montgomery-Zippin and Yamabe for the characterization of Lie groups. In 2019, Shakhmatov and the author proved that a free group $F$ with countably infinitely many generators admits a metric Hausdorff group topology $\\mathscr{T}$ which satisfies the so-called algebraic small subgroup generating property ASSGP: for each open neighbourhood $U$ of the identity of $F$, the family of subgroups contained in $U$ algebraically generates $F$. In particular $(F,\\mathscr{T})$ admits no non-trivial continuous homomorphisms to either NSS or locally compact groups, making it minimally almost periodic. In this paper, we prove that $(F, \\mathscr{T})$ can be made topologically simple; namely, $(F, \\mathscr{T})$ contains no closed normal subgroups other than $\\{e\\}$ and $F$. In particular, this implies that $F$ satisfies the no small normal subgroup (NSnS) property.",
+          "authors": [
+            "Víctor Hugo Yañez"
+          ],
+          "published": "2026-03-27T09:32:33+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26202v1",
+          "entry_id": "http://arxiv.org/abs/2603.26202v1",
+          "title": "Non-bulging Fatou components for transcendental skew-products",
+          "summary": "In this paper, we investigate the bulging of escaping or oscillating Fatou components on invariant fibers for general skew-products, with a focus on the dependence on the perturbation. We show that any orbitally unbounded component is non-bulging for an appropriate choice of perturbation, whereas sufficiently well-behaved perturbations can render it bulging when the fiber is attracting. Our results highlight that bulging is influenced by more than just the dynamics on the fiber and in the one-dimensional coordinate, contrasting sharply with established results for non-escaping Fatou components.",
+          "authors": [
+            "Tom Potthink",
+            "Jasmin Raissy"
+          ],
+          "published": "2026-03-27T09:26:15+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26187v1",
+          "entry_id": "http://arxiv.org/abs/2603.26187v1",
+          "title": "List packing of graphs with bounded tree-width",
+          "summary": "Assume $L$ is a $k$-assignment of a graph $G$. An $L$-packing $φ$ of $G$ is a sequence $φ=(φ_1, \\ldots, φ_k)$ of $k$-mappings such that each $φ_i$ is an $L$-coloring of $G$, and for each vertex $v$ of $G$, $\\{φ_1(v), \\ldots, φ_k(v)\\} = L(v)$ (and hence $φ_i(v) \\ne φ_j(v)$ when $i \\ne j$). We say $G$ is list $k$-packable if for any $k$-assignment $L$ of $G$, there is an $L$-packing of $G$. The list packing number $χ_l^{\\star}(G)$ of $G$ is the minimum integer $k$ such that $G$ is $k$-packable. For a positive integer $d$, let $t(d)$ be the maximum packing number of graphs of tree-width at most $d$. It was known that $d+1 \\le t(d) \\le 2d$ for any $d$. In this paper, we prove that $t(d) \\le 2d-1$ for $d \\ge 3$, and $t(d) \\ge d+2$ for $d \\ge 2$. In particular, $t(2)=4$ and $t(3)=5$. Furthermore, we show that for constant positive integers $k, d$, the problem of determining $χ_l^{\\star}(G)\\leq k$ or not for a graph $G$ of tree-width at most $d$ is solvable in linear time.",
+          "authors": [
+            "Masaki Kashima",
+            "Shun-ichi Maezawa",
+            "Xuding Zhu"
+          ],
+          "published": "2026-03-27T09:02:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26162v1",
+          "entry_id": "http://arxiv.org/abs/2603.26162v1",
+          "title": "Shuffles of Context-Free Languages along Regular Trajectories",
+          "summary": "In single-core processors, when multiple processes execute concurrently, they are, in practice, intertwined by a scheduler as a single thread of execution. The language-theoretic operation that corresponds to this is the shuffle of two languages: in general, this is defined as the set of words obtained by interleaving words from the first and second language in an arbitrary fashion. It is well known that regular languages are closed under shuffles, while context-free languages (CFL) are not. Following an established line of research, this paper considers shufflings according to regular \"trajectories\", that is, subject to scheduling constraints expressed by an automaton. Unsurprisingly, some trajectories, such as \"a word from the first language first, then a word from the second\", allow for CFLs to be shuffled into CFLs, while some other trajectories do not. This paper provides a robust toolset to show that a given trajectory would always shuffle two nonregular CFLs into a nonCFL. In the case of deterministic CFLs (DCFLs), a salient trichotomy of trajectories depending on how they shuffle DCFLs is provided. These results are based on intricate expressiveness lemmas for CFLs and DCFLs of independent interest, the latter lemma relying on a recent result of Jančar and Šíma (MFCS'2021).",
+          "authors": [
+            "Corentin Barloy",
+            "Michaël Cadilhac",
+            "Kyle Ockerlund"
+          ],
+          "published": "2026-03-27T08:25:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26158v1",
+          "entry_id": "http://arxiv.org/abs/2603.26158v1",
+          "title": "A CAT(0) alternative for amenable groups and a Kazhdan-type rigidity principle",
+          "summary": "We prove that finitely generated amenable groups acting on CAT(0) spaces satisfy the following alternative: either every action on a geodesically complete CAT(0) space with bounded geometry (or finite dimension) has a global fixed point, or the group admits a fixed-point-free action on $\\mathbb{R}^n$. As a consequence, finitely generated amenable torsion groups and finitely generated virtually simple amenable groups cannot act nontrivially on geodesically complete CAT(0) spaces with bounded geometry or on finite-dimensional complete CAT(0) spaces.\n  The proof relies on a Kazhdan-type rigidity theorem for groups with the Euclidean fixed point property: if such a group acts on a geodesically complete CAT(0) space of bounded geometry with almost fixed points, then it has a genuine fixed point. This yields several further corollaries, including a rigidity dichotomy for drift and that any finitely generated torsion group acting on a geodesically complete visibility CAT(0) space with bounded geometry must have a global fixed point. These results make substantial progress on the longstanding problem of understanding actions of torsion groups on CAT(0) spaces.",
+          "authors": [
+            "Hiroyasu Izeki",
+            "Ran Ji",
+            "Anders Karlsson",
+            "Yunhui Wu"
+          ],
+          "published": "2026-03-27T08:17:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26040v1",
+          "entry_id": "http://arxiv.org/abs/2603.26040v1",
+          "title": "Do not throw out the baby: Clarithmetics as alternatives to weak arithmetics",
+          "summary": "Computability logic (CoL) provides a semantic foundation in which formulas represent interactive computational problems and validity corresponds to uniform algorithmic solvability. Building on this foundation, clarithmetics -- CoL-based axiomatic number theories -- combine the full arithmetical strength of Peano arithmetic (PA) with explicit control over computational resources. In contrast to traditional bounded arithmetic and related complexity-oriented systems, they strengthen rather than weaken PA.\n  This paper, after briefly surveying the relevant fragment of CoL, presents the systems CLA4-CLA7 and CLA11 of clarithmetic, and outlines their soundness and completeness with respect to natural classes of time, space, and so called amplitude complexities. We argue that, by weakening PA, traditional complexity-oriented systems of arithmetic throw out the baby with the bathwater, discarding large amounts of innocent and useful arithmetical information and losing intensional flexibility essential for natural specification and program extraction. Clarithmetics avoid this loss while supporting direct extraction of optimal or near-optimal algorithms from proofs and providing strong intensional completeness properties absent from bounded arithmetic and related systems.\n  A central message of the paper is that the argued advantages of clarithmetics deserve either acknowledgment or serious refutation from the weak-arithmetics community. To date, neither has occurred.",
+          "authors": [
+            "Giorgi Japaridze"
+          ],
+          "published": "2026-03-27T03:20:15+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26038v1",
+          "entry_id": "http://arxiv.org/abs/2603.26038v1",
+          "title": "Existence and uniqueness of traveling fronts for a free interface model of autoignition in reactive jets",
+          "summary": "In this paper we consider a one-dimensional reaction-diffusion model with piecewise continuous reaction term that describes propagation of autoignition fronts in reactive co-flow jets in a certain parametric regime. The model is reduced to a free boundary problem with two interfaces. It is shown that this problem admits permanent traveling front solution which is unique up to translations. The result is obtained using dynamical system approach employing Stable Manifold Theorem and the Melnikov integral as the main tools.",
+          "authors": [
+            "Mingxin Ma",
+            "Peter V. Gordon",
+            "Robert Roussarie",
+            "Peipei Shang",
+            "Claude-Michel Brauner"
+          ],
+          "published": "2026-03-27T03:18:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26024v1",
+          "entry_id": "http://arxiv.org/abs/2603.26024v1",
+          "title": "Identification of Bivariate Causal Directionality Based on Anticipated Asymmetric Geometries",
+          "summary": "Identification of causal directionality in bivariate numerical data is a fundamental research problem with important practical implications. This paper presents two alternative methods to identify direction of causation by considering conditional distributions: (1) Anticipated Asymmetric Geometries (AAG) and (2) Monotonicity Index. The AAG method compares the actual conditional distributions to anticipated ones along two variables. Different comparison metrics, such as correlation, cosine similarity, Jaccard index, K-L divergence, K-S distance, and mutual information have been evaluated. Anticipated distributions have been projected as normal based on dual response statistics: mean and standard deviation. The Monotonicity Index approach compares the calculated monotonicity indexes of the gradients of conditional distributions along two axes and exhibits counts of gradient sign changes. Both methods assume stochastic properties of the bivariate data and exploit anticipated unimodality of conditional distributions of the effect. It turns out that the tuned AAG method outperforms the Monotonicity Index and reaches a top accuracy of 77.9% compared to ANMs accuracy of 63 +/- 10% when classifying 95 pairs of real-world examples (Mooij et al, 2014). The described methods include a number of hyperparameters that impact accuracy of the identification. For a given set of hyperparameters, both the AAG or Monotonicity Index method provide a unique deterministic outcome of the solution. To address sensitivity to hyperparameters, tuning of hyperparameters has been done by utilizing a full factorial Design of Experiment. A decision tree has been fitted to distinguish misclassified cases using the input data's symmetrical bivariate statistics to address the question of: How decisive is the identification method of causal directionality?",
+          "authors": [
+            "Alex Glushkovsky"
+          ],
+          "published": "2026-03-27T02:45:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.26006v1",
+          "entry_id": "http://arxiv.org/abs/2603.26006v1",
+          "title": "Computing fixed point free automorphisms of graphs",
+          "summary": "In 1981, Lubiw proved that the fixed point free automorphism problem (FPFAut) is NP-complete: given a graph G, determine whether there exists an automorphism that maps no vertex of G to itself. We revisit this problem and prove that FPFAut remains NP-complete when restricted to split, bipartite, k-subdivided, and H-free graphs, if H is not an induced subgraph of P_4. The class of P_4-free graphs receives the special name of cographs. We provide a polynomial time algorithm for three extensions of cographs: bounded modular-width graphs, tree-cographs and P_4-sparse graphs. Our approach uses the well known modular decomposition of graphs. As a consequence, we generalize a result of Abiad et. al. on the problem of computing 2-homogeneous equitable partitions.",
+          "authors": [
+            "Aida Abiad",
+            "Gabriel Coutinho",
+            "Emanuel Juliano",
+            "Vinicius F. dos Santos",
+            "Sjanne Zeijlemaker"
+          ],
+          "published": "2026-03-27T01:45:37+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-03-31T02:45:33.084015+00:00",
+      "updated_at": "2026-03-31T02:45:33.084015+00:00",
+      "finalized_at": null
     }
   ]
 }
