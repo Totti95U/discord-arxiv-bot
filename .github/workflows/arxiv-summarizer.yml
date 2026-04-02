@@ -2,7 +2,7 @@ name: arXiv Summarizer - Enqueue Interest
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 日本時間9時に実行
+    - cron: '14 2 * * *' # arXiv のレート制限回避のために適当な時間で実行
   workflow_dispatch:
 
 permissions:
