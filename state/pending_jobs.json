@@ -22095,6 +22095,786 @@
       "created_at": "2026-04-02T04:38:35.616343+00:00",
       "updated_at": "2026-04-02T05:58:20.924905+00:00",
       "finalized_at": null
+    },
+    {
+      "pipeline_id": "20260403T043858Z-46f60cc6",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/jtey2ot6odn35qjngajmpl8445sasp7e258m",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2604.00322v1",
+          "entry_id": "http://arxiv.org/abs/2604.00322v1",
+          "title": "Disordered Schur Measures",
+          "summary": "In this paper, we introduce and study random Schur measures whose parameters are sampled from the Circular Unitary Ensemble. We show that Schur measures with CUE disorder exhibit behavior reminiscent of spin glasses.",
+          "authors": [
+            "Jonathan Novak"
+          ],
+          "published": "2026-03-31T23:40:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.00309v1",
+          "entry_id": "http://arxiv.org/abs/2604.00309v1",
+          "title": "Nonlinear Moving-Horizon Estimation Using State- and Control-Dependent Models",
+          "summary": "This paper presents a state- and control-dependent moving-horizon estimation (SCD-MHE) algorithm for nonlinear discrete-time systems. Within this framework, a pseudo-linear representation of nonlinear dynamics is leveraged utilizing state- and control-dependent coefficients, where the solution to a moving-horizon estimation problem is iteratively refined. At each discrete time step, a quadratic program is executed over a sliding window of historical measurements. Moreover, system matrices are consecutively updated based upon prior iterates to capture nonlinear regimes. In contrast to the extended Kalman filter (EKF) and the unscented Kalman filter (UKF), nonlinearities and bounds are accommodated within a structured optimization framework, thereby circumventing the reliance on local Jacobian matrices. Furthermore, theoretical analysis is presented to establish the convergence of the iterative sequence, and bounded estimation errors are mathematically guaranteed under uniform observability conditions. Finally, comparative numerical experiments utilizing a quadrotor vertical kinematics system demonstrate that the SCD-MHE achieves superior estimation accuracy relative to the EKF, the UKF, and a fully nonlinear moving-horizon estimator, while reducing per-step computational latency by over an order of magnitude.",
+          "authors": [
+            "Mohammadreza Kamaldar"
+          ],
+          "published": "2026-03-31T23:13:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.00305v1",
+          "entry_id": "http://arxiv.org/abs/2604.00305v1",
+          "title": "Set-Based Value Function Characterization and Neural Approximation of Stabilization Domains for Input-Constrained Discrete-Time Systems",
+          "summary": "Analyzing nonlinear systems with stabilizable controlled invariant sets (CISs) requires accurate estimation of their domains of stabilization (DOS) together with associated stabilizing controllers. Despite extensive research, estimating DOSs for general nonlinear systems remains challenging due to fundamental theoretical and computational limitations. In this paper, we propose a novel framework for estimating DOSs for controlled input-constrained discrete-time systems. The DOS is characterized via newly introduced value functions defined on metric spaces of compact sets. We establish the fundamental properties of these value functions and derive the associated Bellman-type (Zubov-type) functional equations. Building on this characterization, we develop a physics-informed neural network (NN) framework that learns the value functions by embedding the derived functional equations directly into the training process. The proposed methodology is demonstrated through two numerical examples, illustrating its ability to accurately estimate DOSs and synthesize stabilizing controllers from the learned value functions.",
+          "authors": [
+            "Mohamed Serry",
+            "S. Sivaranjani",
+            "Jun Liu"
+          ],
+          "published": "2026-03-31T23:00:33+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.00277v2",
+          "entry_id": "http://arxiv.org/abs/2604.00277v2",
+          "title": "Hybrid Energy-Based Models for Physical AI: Provably Stable Identification of Port-Hamiltonian Dynamics",
+          "summary": "Energy-based models (EBMs) implement inference as gradient descent on a learned Lyapunov function, yielding interpretable, structure-preserving alternatives to black-box neural ODEs and aligning naturally with physical AI. Yet their use in system identification remains limited, and existing architectures lack formal stability guarantees that globally preclude unstable modes. We address this gap by introducing an EBM framework for system identification with stable, dissipative, absorbing invariant dynamics. Unlike classical global Lyapunov stability, absorbing invariance expands the class of stability-preserving architectures, enabling more flexible and expressive EBMs. We extend EBM theory to nonsmooth activations by establishing negative energy dissipation via Clarke derivatives and deriving new conditions for radial unboundedness, exposing a stability-expressivity tradeoff in standard EBMs. To overcome this, we introduce a hybrid architecture with a dynamical visible layer and static hidden layers, prove absorbing invariance under mild assumptions, and show that these guarantees extend to port-Hamiltonian EBMs. Experiments on metric-deformed multi-well and ring systems validate the approach, showcasing how our hybrid EBM architecture combines expressivity with sound and provable safety guarantees by design.",
+          "authors": [
+            "Simone Betteti",
+            "Luca Laurenti"
+          ],
+          "published": "2026-03-31T22:04:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.00257v1",
+          "entry_id": "http://arxiv.org/abs/2604.00257v1",
+          "title": "Smoothness of Markov Partitions for Expanding Toral Endomorphisms",
+          "summary": "We show that an expanding toral endomorphism in dimension 2 admits a smooth (in fact linear) Markov partition if and only if some power of the corresponding integer matrix is diagonalizable with integer eigenvalues. We exhibit examples of qualitatively different smoothness behavior, and highlight the existence of a hybrid type of smoothness in dimension 2. For dimension d, we show that expanding toral endomorphisms satisfying the eigenvalue condition above admit a linear Markov partition. Finally, we provide an estimate on the Hausdorff dimension of the boundary of a Markov partition using techniques from symbolic dynamics.",
+          "authors": [
+            "Chayce Hughes",
+            "Huub de Jong"
+          ],
+          "published": "2026-03-31T21:30:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.00255v1",
+          "entry_id": "http://arxiv.org/abs/2604.00255v1",
+          "title": "The Mereon System, the 600-Cell, and the Exceptional Algebras $E_6$, $E_7$, $E_8$: Exact Correspondence via $H_3 \\subset H_4$ Symmetry and the Eigenform Loop",
+          "summary": "This work concerns how the three-dimensional polyhedral Mereon structure (the 120 polyhedron) is the precise projection from four-space of the 600-cell, an analogue in four-dimensional space of a regular solid. The 600-cell is made from 120 copies of a dodecahedron that are fitted together so that each dodecahedral face is matched to the face of another dodecahedron (much as the pentagonal faces of the dodecahedron are matched along their edges). Thus this essential part of the Mereon structure is a projection from a higher-dimensional space of an even more symmetrical entity. The theme that three-dimensional structures, earthly structures, networked structures, structures involved in our understanding and communication, would be or should be seen as projections from a higher-dimensional whole is part of perennial philosophy. Here we are seeing an instantiation of this theme and the dreams with which it is allied. The 600-cell and its associated geometries have been studied for some time by mathematicians and by physicists for relations with geometry, topology, knot theory, particle physics and even cosmology and string theory. It is more than exciting that there is a direct connection of the Mereon System with the 600-cell and the wide-ranging conversation with which it is associated. We expect much more from this connection as the search goes on. The present paper makes this connection precise. We establish the exact correspondence between the Mereon System and the 600-cell, and show how the nested architecture realises all three exceptional Lie algebras $E_6$, $E_7$, $E_8$.",
+          "authors": [
+            "Robert W. Gray",
+            "Lynnclaire Dennis",
+            "Louis H. Kauffman"
+          ],
+          "published": "2026-03-31T21:29:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.00254v1",
+          "entry_id": "http://arxiv.org/abs/2604.00254v1",
+          "title": "Dissipation-assisted stabilization of periodic orbits via actuated exterior impacts in hybrid mechanical systems with symmetry",
+          "summary": "Impulsive mechanical systems exhibit discontinuous jumps in their state, and when such jumps are triggered by spatial events, the geometry of the impact surface carries information about the controllability of the hybrid dynamics. For mechanical systems defined on principal $G$-bundles, two qualitatively distinct types of impacts arise: interior impacts, associated with events on the shape space, and exterior impacts, associated with events on the fibers. A key distinction is that interior impacts preserve the mechanical connection, whereas exterior impacts generally do not. In this paper, we exploit this distinction by allowing actuation through exterior impacts. We study the pendulum-on-a-cart system, derive controlled reset laws induced by moving-wall impacts, and analyze the resulting periodic motions. Our results show that reset action alone does not provide a convincing stabilizing regime, whereas the addition of dissipation in the continuous flow yields exponentially stable periodic behavior for suitable feedback gains.",
+          "authors": [
+            "William Clark",
+            "Leonardo Colombo",
+            "Anthony Bloch"
+          ],
+          "published": "2026-03-31T21:28:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.00245v1",
+          "entry_id": "http://arxiv.org/abs/2604.00245v1",
+          "title": "Deficit and $(q,t)$-symmetry in triangular partitions",
+          "summary": "We study the $(q,t)$-enumeration of triangular Dyck paths considered by Bergeron and Mazin. To do so, we introduce the notion of triangular and sim-sym tableaux and the deficit statistic which is a new interpretation of the dinv. We use it to obtain new results and proofs on triangular $2$-partitions and an interesting conjecture for a certain lattice interval $(q,t,r)$-enumeration.",
+          "authors": [
+            "Viviane Pons",
+            "Loïc Le Mogne"
+          ],
+          "published": "2026-03-31T21:15:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.00185v1",
+          "entry_id": "http://arxiv.org/abs/2604.00185v1",
+          "title": "Two-Orbit Polytopes",
+          "summary": "Abstract polytopes are combinatorial structures with distinctive geometric, algebraic, or topological characteristics, that generalize (the face lattice of) traditional polyhedra, polytopes or tessellations. Most research has focused on abstract polytopes with the highest possible symmetry, in particular those that are regular or chiral. In this paper we study two-orbit polytopes, that is, abstract polytopes whose automorphism groups have exactly two orbits on flags. Such polytopes of rank $n$ fall into $2^n-1$ classes, determined by their local flag configuration.\n  We develop a general structural theory of two-orbit polytopes of arbitrary rank. In particular, we determine their face- and section-transitivity properties and describe the structure of their automorphism groups via distinguished generating sets and face stabilizer subgroups. These results yield a characterization of the partial order { on the polytope} in terms of the automorphism group. Two-orbit polytopes in different classes behave quite differently.\n  Our approach extends the group-theoretic framework for regular and chiral polytopes and provides a systematic foundation for the study of polytopes with two flag orbits.",
+          "authors": [
+            "Isabel Hubard",
+            "Egon Schulte"
+          ],
+          "published": "2026-03-31T19:36:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.00171v1",
+          "entry_id": "http://arxiv.org/abs/2604.00171v1",
+          "title": "Unified Architecture Metamodel of Information Systems Developed by Generative AI",
+          "summary": "The rapid development of AI and LLMs has driven new methods of SDLC, in which a large portion of code, technical, and business documentation is generated automatically. However, since there is no single architectural framework that can provide consistent, repeatable transformations across different representation layers of information systems, such systems remain fragmented in their system representation. This study explores the problem of creating a unified architecture for LLM-oriented applications based on selected architectural frameworks by SMEs. A framework structure is proposed that covers some key types of architectural diagrams and supports a closed cycle of transformations, such as: \"Code to Documentation to Code\". The key architectural diagrams are split equally between main architectural layers: high-layer (business and domain understanding), middle-layer (system architecture), and low-layer (developer-layer architecture). Each architectural layer still contains some abstraction layers, which make it more flexible and better fit the requirements of design principles and architectural patterns. The conducted experiments demonstrated the stable quality of generated documentation and code when using a structured architectural context in the form of architectural diagrams. The results confirm that the proposed unified architecture metamodel can serve as an effective interface between humans and models, improving the accuracy, stability, and repeatability of LLM generation. However, the selected set of architectural diagrams should be optimised to avoid redundancy between some diagrams, and some diagrams should be updated to represent extra contextual orchestration. This work demonstrates measurable improvements for a new generation of intelligent tools that automate the SDLC and enable a comprehensive architecture compatible with AI-driven development.",
+          "authors": [
+            "Oleg Grynets",
+            "Vasyl Lyashkevych"
+          ],
+          "published": "2026-03-31T19:22:15+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.30013v1",
+          "entry_id": "http://arxiv.org/abs/2603.30013v1",
+          "title": "Counting partial Hadamard matrices in the cubic regime",
+          "summary": "We give a precise asymptotic formula for the number of $n\\times 4t$ partial Hadamard matrices in the regimes $t/n^3\\to\\infty$ and $t/n^3\\toΘ$ for sufficiently large fixed $Θ$. This strengthens earlier results of de~Launey and Levin, who obtained the asymptotic for $t/n^{12}\\to\\infty$, and of Canfield, who extended this to $t/n^4\\to\\infty$.",
+          "authors": [
+            "Damek Davis"
+          ],
+          "published": "2026-03-31T17:09:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.30011v1",
+          "entry_id": "http://arxiv.org/abs/2603.30011v1",
+          "title": "Asymptotic stability of heteroclinic cycles of type Y",
+          "summary": "We investigate stability of a new class of heteroclinic cycles that we call heteroclinic cycles of type Y. The cycles can be regarded as a generalisation of heteroclinic cycles of type Z introduced in [Podvigina, Nonlinearity 25, 2012]. The type Y cycles differ from the cycles of type Z in the following: The trajectories comprising a cycle of type Y belong to flow-invariant subspaces that can be of different dimensions. Unlike in the most studies of the stability of heteroclinic cycles, we do not require that the eigenvalues of the linearisations of the dynamical system near the equilibria are distinct. Instead of the common assumption that the cycles are robust, we prescribe flow-invariance of certain subspaces. Similarly to type Z cycles, asymptotic stability and fragmentary asymptotic stability of type Y cycles is determined by the eigenvalues and eigenvectors of transition matrices. The matrices are products of basic transition matrices that depend on the eigenvalues of linearisations and the dimensions of the contracting subspaces.",
+          "authors": [
+            "Olga Podvigina"
+          ],
+          "published": "2026-03-31T17:06:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.30010v1",
+          "entry_id": "http://arxiv.org/abs/2603.30010v1",
+          "title": "Geometry, Dynamics and Topology of Thickness Landscape: A Morse-Theoretic Analysis of the Return-Map in the Class $\\mathcal{O}_{C}$",
+          "summary": "We study the geometric and dynamical structure induced by the return map associated with domains in the class \\(\\mathcal{O}_{C}\\). This map, defined through a geometric round-trip between the convex core and the outer boundary, generates a discrete dynamical system on the boundary \\(\\partial C\\).\n  Building on previous results establishing global convergence of the return dynamics, we show that equilibria of the return map coincide with the critical points of the thickness function. This identification allows us to apply Morse-theoretic tools to derive global constraints on the dynamics. In particular, we obtain lower bounds on the number of equilibria in terms of the Betti numbers of \\(\\partial C\\), as well as a global balance relation governed by the Euler characteristic.\n  We further analyze the local behavior of the return map near equilibria. Using the differentiability of the return map inherited from the radial and reciprocal constructions, we derive a first-order expansion in which the linearization is governed by the Hessian of the thickness function and an operator arising from the geometry of the return map. This leads to an operator-valued generalization of the previously observed scalar structure, revealing that the dynamics behaves as an anisotropic gradient-like iteration rather than a purely isotropic descent. Near nondegenerate minima, we prove a quantitative descent estimate and local linear convergence under a spectral condition. Under aligned nonlocal geometry, the sign of the curvature gap between the convex core and the outer boundary determines whether the induced dynamics is contracting, neutral, or expanding in each principal direction.\n  Finally, we discuss extensions beyond the Morse setting, including the Morse-Bott case, and highlight connections between the geometry of the domain, the topology of \\(\\partial C\\), and the structure of the induced dynamics.",
+          "authors": [
+            "Mohammed Barkatou",
+            "Mohamed El Morsalani"
+          ],
+          "published": "2026-03-31T17:04:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.30009v1",
+          "entry_id": "http://arxiv.org/abs/2603.30009v1",
+          "title": "Construction of additively graceful signed graphs-I",
+          "summary": "In this paper, we construct additively graceful signed graphs S from a given graph G that may be additively graceful or not be additively graceful. We also show the construction of additively graceful signed graphs from additively graceful signed graphs. We find the values of m, n in non-divisible sum graph, denoted as G(m, n), that admit additively graceful labeling.",
+          "authors": [
+            "Mukti Acharya"
+          ],
+          "published": "2026-03-31T17:04:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29998v1",
+          "entry_id": "http://arxiv.org/abs/2603.29998v1",
+          "title": "Some geometric series for Euler's constant",
+          "summary": "We provide representations of Euler's constant $γ=0.577...$ as series which converge geometrically fast. This is based upon our earlier work on the Euler alternating series.",
+          "authors": [
+            "Jean-François Burnol"
+          ],
+          "published": "2026-03-31T16:57:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29980v1",
+          "entry_id": "http://arxiv.org/abs/2603.29980v1",
+          "title": "Voronoi-Based Vacuum Leakage Detection in Composite Manufacturing",
+          "summary": "In this article, we investigate vacuum leakage detection problems in composite manufacturing. Our approach uses Voronoi diagrams, a well-known structure in discrete geometry. The Voronoi diagram of the vacuum connection positions partitions the component surface. We use this partition to narrow down potential leak locations to a small area, making an efficient manual search feasible. To further reduce the search area, we propose refined Voronoi diagrams. We evaluate both variants using a novel dataset consisting of several hundred one- and two-leak positions along with their corresponding flow values. Our experimental results demonstrate that Voronoi-based predictive models are highly accurate and have the potential to resolve the leakage detection bottleneck in composite manufacturing.",
+          "authors": [
+            "Christoph Brauer",
+            "Arne Hindersmann",
+            "Timo de Wolff"
+          ],
+          "published": "2026-03-31T16:43:42+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29973v1",
+          "entry_id": "http://arxiv.org/abs/2603.29973v1",
+          "title": "Various conjectural series identities",
+          "summary": "In this paper we collect over 75 new series identities (involving binomial coefficients) conjectured by the author in 2026. For example, we conjecture that $$\\sum_{k=0}^\\infty\\frac{16k+3}{(-202^2)^k}\\binom{2k}kT_k(19,-20)T_{2k}(9,-5)=\\frac{43\\sqrt{101}}{75π},$$ where $T_n(b,c)$ denotes the coefficient of $x^n$ in the expansion of $(x^2+bx+c)^n$. The conjectures in this paper might interest some readers and stimulate further research.",
+          "authors": [
+            "Zhi-Wei Sun"
+          ],
+          "published": "2026-03-31T16:35:10+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29961v2",
+          "entry_id": "http://arxiv.org/abs/2603.29961v2",
+          "title": "Short proofs in combinatorics and number theory",
+          "summary": "We give a triplet of short proofs, each of which answers a question raised by Erdős. The first concerns the small prime factors of $\\binom{n}{k}$, the second concerns whether an additive basis $A$ can always be split into pieces $A_1$ and $A_2$ such that each of $A_i + A_i$ has bounded gaps, and the final concerns whether $\\{αp\\}$ is \"well-distributed\" in the sense introduced by Hlawka and Petersen. In each case, the proof is due entirely to an internal model at OpenAI.",
+          "authors": [
+            "Boris Alexeev",
+            "Moe Putterman",
+            "Mehtaab Sawhney",
+            "Mark Sellke",
+            "Gregory Valiant"
+          ],
+          "published": "2026-03-31T16:27:33+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29938v1",
+          "entry_id": "http://arxiv.org/abs/2603.29938v1",
+          "title": "Sparse counting lemma for $K_4$",
+          "summary": "The sparse analogue of Szemerédi's regularity method has played a central role in the development of extremal results for random graphs. While the sparse embedding lemma (the KLR conjecture) has been resolved, the corresponding sparse counting lemma remains widely open. The conjecture, formulated by Gerke, Marciniszyn, and Steger, states that for every fixed graph $H$ and any $β>0$, there exists $\\varepsilon>0$ such that the following holds. Consider a balanced blow-up of $H$ with vertex classes of size $n$, where each pair corresponding to an edge of $H$ forms an $(\\varepsilon)$-regular bipartite graph with exactly $m$ edges. Assume that $m$ is above the natural threshold $m \\gg n^{2-1/m_2(H)}$, then all but a $β^m$ proportion of such graphs contain at least $(1-δ)$ times the expected number of copies of $H$.\n  At present, among the complete graphs, the conjecture is known only for $H=K_3$. In this paper, we establish the $H=K_4$ case of the conjecture.",
+          "authors": [
+            "Warach Veeranonchai"
+          ],
+          "published": "2026-03-31T16:10:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29925v1",
+          "entry_id": "http://arxiv.org/abs/2603.29925v1",
+          "title": "On lower bounds for the number of ideal and finite vertices of right-angled hyperbolic polyhedra in dimensions from 5 to 12",
+          "summary": "We investigate lower bounds for the number of ideal and finite vertices of right-angled hyperbolic polyhedra of finite volume. We use a geometric method of orthogonal gluings to establish new bounds in low dimensions, specifically $v_\\infty(P^5) \\ge 3$ and $v_{fin}(P^7) \\ge 4$. By combining these initial bounds with double counting arguments and recurrence relations, we obtain improved lower bounds for both types of vertices in all higher dimensions up to $n=12$, the maximal dimension where polyhedra of this class exist.",
+          "authors": [
+            "Andrey Egorov"
+          ],
+          "published": "2026-03-31T16:00:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29921v1",
+          "entry_id": "http://arxiv.org/abs/2603.29921v1",
+          "title": "Quantale-Enriched Co-Design: Toward a Framework for Quantitative Heterogeneous System Design",
+          "summary": "Monotone co-design enables compositional engineering design by modeling components through feasibility relations between required resources and provided functionalities. However, its standard boolean formulation cannot natively represent quantitative criteria such as cost, confidence, or implementation choice. In practice, these quantities are often introduced through ad hoc scalarization or by augmenting the resource space, which obscures system structure and increases computational burden. We address this limitation by developing a quantale-enriched theory of co-design. We model resources and functionalities as quantale-enriched categories and design problems as quantale-enriched profunctors, thereby lifting co-design from boolean feasibility to general quantitative evaluation. We show that the fundamental operations of series, parallel, and feedback composition remain valid over arbitrary commutative quantales. We further introduce heterogeneous composition through change-of-base maps between quantales, enabling different subsystems to be evaluated in different local semantics and then composed in a common framework. The resulting theory unifies feasibility-, cost-, confidence-, and implementation-aware co-design within one compositional formalism. Numerical examples on a target-tracking system and a UAV delivery problem demonstrate the framework and highlight how native quantitative enrichment can avoid the architectural and computational drawbacks of boolean-only formulations.",
+          "authors": [
+            "Hans Riess",
+            "Yujun Huang",
+            "Matthew Klawonn",
+            "Gioele Zardini",
+            "Matthew Hale"
+          ],
+          "published": "2026-03-31T15:59:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29859v1",
+          "entry_id": "http://arxiv.org/abs/2603.29859v1",
+          "title": "Bayesian methods for the identification of model parameters for water transport in porous media",
+          "summary": "The structure of the nonlinear inverse problem arising from capillarity-driven imbibition in porous media is investigated, considering a degenerate parabolic PDE with compactly supported diffusivity and boundary-driven fluxes as the governing forward model. The inverse problem -- inferring hydraulic model parameters from sparse integral absorption measurements -- is inherently ill-posed: the nonlinear forward operator induces anisotropic parameter sensitivity and structured correlations that render the calibration landscape non-convex and partially unidentifiable. To characterise this structure rigorously, Approximate Bayesian Computation with Sequential Monte Carlo (ABC-SMC) is adopted as a likelihood-free inferential framework, bypassing the analytical intractability of the likelihood while providing full posterior distributions over the parameter space. Two physically motivated parameterisations of the diffusivity function are analysed -- the Natalini-Nitsch (NN) and the BkP formulations. It is shown that the posterior geometry obtained via ABC-SMC encodes, in directly readable form, the sensitivity structure of the nonlinear forward operator: the principal component decomposition of the posterior covariance provides a natural hierarchy of parameter sensitivity, with low-variance eigendirections identifying the parameter combinations to which the forward map is most responsive. This geometric decomposition constitutes a principled and computationally efficient alternative to classical sensitivity analysis, arising as a byproduct of the calibration procedure. These findings are established through both synthetic experiments, confirming accurate parameter recovery, and real laboratory imbibition data from materials of cultural heritage relevance.",
+          "authors": [
+            "Paola Stolfi",
+            "Elia Onofri",
+            "Gabriella Bretti"
+          ],
+          "published": "2026-03-31T15:18:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29836v1",
+          "entry_id": "http://arxiv.org/abs/2603.29836v1",
+          "title": "Two Littlewood identities for fully inhomogeneous spin Hall-Littlewood symmetric rational functions",
+          "summary": "Fully inhomogeneous spin Hall-Littlewood symmetric rational functions $F_λ$ arise as partition functions of certain path configurations in the $\\mathfrak{sl}_2$ higher spin six vertex models. They are multiparameter generalizations of the classical Hall-Littlewood symmetric polynomials. We establish two new generalizations of the classical Littlewood identity, where we express a weighted sum of $F_λ$'s over all partitions $λ$ as a product of the Littlewood kernel and another simple product in one case, and a product of the Littlewood kernel and a Pfaffian in the other case. As a corollary we obtain a novel Littlewood identity for Hall-Littlewood symmetric polynomials.\n  We also elaborate on the newly established connection between the fully inhomogeneous spin Hall-Littlewood symmetric rational functions $F_λ$ and the modified Robbins polynomials, the latter being multivariate generating functions for alternating sign matrices. This connection allowed us to discover the two generalizations of the Littlewood identity and we provide a bijection between the underlying combinatorial models in the case where $λ$ is strictly decreasing.",
+          "authors": [
+            "Ilse Fischer",
+            "Moritz Gangl"
+          ],
+          "published": "2026-03-31T14:57:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29825v1",
+          "entry_id": "http://arxiv.org/abs/2603.29825v1",
+          "title": "Pattern-Sparse Tree Decompositions in $H$-Minor-Free Graphs",
+          "summary": "Given an $H$-minor-free graph $G$ and an integer $k$, our main technical contribution is sampling in randomized polynomial time an induced subgraph $G'$ of $G$ and a tree decomposition of $G'$ of width $\\widetilde{O}(k)$ such that for every $Z\\subseteq V(G)$ of size $k$, with probability at least $\\left(2^{\\widetilde{O}(\\sqrt{k})}|V(G)|^{O(1)}\\right)^{-1}$, we have $Z \\subseteq V(G')$ and every bag of the tree decomposition contains at most $\\widetilde{O}(\\sqrt{k})$ vertices of $Z$. Having such a tree decomposition allows us to solve a wide range of problems in (randomized) time $2^{\\widetilde{O}(\\sqrt{k})}n^{O(1)}$ where the solution is a pattern $Z$ of size $k$, e.g., Directed $k$-Path, $H$-Packing, etc. In particular, our result recovers all the algorithmic applications of the pattern-covering result of Fomin et al. [SIAM J. Computing 2022] (which requires the pattern to be connected) and the planar subgraph-finding algorithms of Nederlof [STOC 2020].\n  Furthermore, for $K_{h,3}$-free graphs (which include bounded-genus graphs) and for a fixed constant $d$, we signficantly strengthen the result by ensuring that not only $Z$ has intersection $\\widetilde{O}(\\sqrt{k})$ with each bag, but even the distance-$d$ neighborhood $N^d_{G}[Z]$ as well. This extension makes it possible to handle a wider range of problems where the neighborhood of the pattern also plays a role in the solution, such as partial domination problems and problems involving distance constraints.",
+          "authors": [
+            "Dániel Marx",
+            "Marcin Pilipczuk",
+            "Michał Pilipczuk"
+          ],
+          "published": "2026-03-31T14:47:30+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29819v1",
+          "entry_id": "http://arxiv.org/abs/2603.29819v1",
+          "title": "Multi-paradigm Logic Programming in the ${\\cal E}$rgoAI System",
+          "summary": "ErgoAI is a high level, multi-paradigm logic programming language and system developed by Coherent Knowledge Systems as an enhancement of and a successor to the popular Flora-2 system. ErgoAI is oriented towards scalable knowledge representation and reasoning, and can exploit both structured knowledge as well as knowledge derived from external sources such as vector embeddings. From the start, ErgoAI (and Flora-2 before it) were designed to exploit the well-founded semantics for reasoning in a multi-paradigm environment, including object-based logic (F-logic) with non-monotonic inheritance; higher order syntax in the style of HiLog; defeasibility of rules; semantically clean transactional updates; extensive use of subgoal delay for handling unsafe queries and for better performance; and optional support for bounded rationality at a module level. Although Flora-2 programs are compiled into XSB and adopt many Prolog features, ErgoAI is altogether a different language and system.\n  Under consideration in Theory and Practice of Logic Programming (TPLP).",
+          "authors": [
+            "Michael Kifer",
+            "Theresa Swift"
+          ],
+          "published": "2026-03-31T14:44:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29728v1",
+          "entry_id": "http://arxiv.org/abs/2603.29728v1",
+          "title": "Reciprocity of Skew Hall-Littlewood-Schubert Series",
+          "summary": "Carnevale, Schein and Voll proved self-reciprocity of the generalized Igusa functions, and Maglione and Voll did the same for the Hall-Littlewood-Schubert series. We introduce a simultaneous generalization and refinement of these two rational functions, and prove that it satisfies a self-reciprocity property. This answers a problem posed by Maglione and Voll. Our method of proof is elementary, avoiding the use of $p$-adic integration.",
+          "authors": [
+            "Ron M. Adin",
+            "Tomer Bauer"
+          ],
+          "published": "2026-03-31T13:27:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29720v1",
+          "entry_id": "http://arxiv.org/abs/2603.29720v1",
+          "title": "Entropy structures with continuous partitions of unity",
+          "summary": "Using only continuous partitions of unity, we provide equivalent definitions for the metric, topological and topological tail entropies and pressures of a continuous self-map of a compact set, as well as their conditional versions. A tail variational principle for these new definitions is proved. We extend Downarowicz's notions of candidates and entropy structures to account for almost-increasing sequences of functions arising from the new definitions. Finally, we deduce a partial answer to a question raised by Newhouse.",
+          "authors": [
+            "Jérôme Carrand"
+          ],
+          "published": "2026-03-31T13:21:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29716v1",
+          "entry_id": "http://arxiv.org/abs/2603.29716v1",
+          "title": "A Graded Modal Dependent Type Theory with Erasure, Formalized",
+          "summary": "We present a graded modal type theory, a dependent type theory with grades that can be used to enforce various properties of the code. The theory has $Π$-types, weak and strong $Σ$-types, natural numbers, an empty type, and a universe, and we also extend the theory with weak and strong unit types and graded $Σ$-types. The theory is parameterized by a modality structure, a kind of partially ordered semiring, whose elements (grades) are used to track the usage of variables in terms and types. Different modalities are possible. We focus mainly on quantitative properties, in particular erasure: with the erasure modality one can mark function arguments as erasable.\n  The theory is fully formalized in Agda. The formalization, which uses a syntactic Kripke logical relation at its core and is based on earlier work, establishes major meta-theoretic properties such as subject reduction, consistency, normalization, and decidability of definitional equality. We also prove a substitution theorem for grade assignment, and preservation of grades under reduction. Furthermore we study an extraction function that translates terms to an untyped $λ$-calculus and removes erasable content, in particular function arguments with the \"erasable\" grade. For a certain class of modalities we prove that extraction is sound, in the sense that programs of natural number type have the same value before and after extraction. Soundness of extraction holds also for open programs, as long as all variables in the context are erasable, the context is consistent, and erased matches are not allowed for weak $Σ$-types.",
+          "authors": [
+            "Andreas Abel",
+            "Nils Anders Danielsson",
+            "Oskar Eriksson"
+          ],
+          "published": "2026-03-31T13:16:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29708v1",
+          "entry_id": "http://arxiv.org/abs/2603.29708v1",
+          "title": "SafeDMPs: Integrating Formal Safety with DMPs for Adaptive HRI",
+          "summary": "Robots operating in human-centric environments must be both robust to disturbances and provably safe from collisions. Achieving these properties simultaneously and efficiently remains a central challenge. While Dynamic Movement Primitives (DMPs) offer inherent stability and generalization from single demonstrations, they lack formal safety guarantees. Conversely, formal methods like Control Barrier Functions (CBFs) provide provable safety but often rely on computationally expensive, real-time optimization, hindering their use in high-frequency control. This paper introduces SafeDMPs, a novel framework that resolves this trade-off. We integrate the closed-form efficiency and dynamic robustness of DMPs with a provably safe, non-optimization-based control law derived from Spatio-Temporal Tubes (STTs). This synergy allows us to generate motions that are not only robust to perturbations and adaptable to new goals, but also guaranteed to avoid static and dynamic obstacles. Our approach achieves a closed-form solution for a problem that traditionally requires online optimization. Experimental results on a 7-DOF robot manipulator demonstrate that SafeDMPs is orders of magnitude faster and more accurate than optimization-based baselines, making it an ideal solution for real-time, safe, and collaborative robotics.",
+          "authors": [
+            "Soumyodipta Nath",
+            "Pranav Tiwari",
+            "Ravi Prakash"
+          ],
+          "published": "2026-03-31T13:09:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29675v1",
+          "entry_id": "http://arxiv.org/abs/2603.29675v1",
+          "title": "Generalized Resistance Geometry from Kron Reduction and Effective Resistance",
+          "summary": "We develop a generalized resistance geometry based on Kron reduction and effective resistance for directed graphs, paralleling classical undirected graph theory. For strongly connected directed graphs, we prove a Fiedler--Bapat identity that links the resistance matrix and the Laplacian through the symmetrized pseudoinverse. This identity provides a canonical definition of the resistance curvature and resistance radius in the strongly connected directed setting. In the strongly connected weight-balanced case, it also implies that the operation of associating an undirected Laplacian with a directed Laplacian via the pseudoinverse of the symmetrized pseudoinverse commutes with Kron reduction. We further introduce a class of signed undirected Laplacians for which effective resistance defines a distance between nodes. We call this distance the generalized resistance metric and prove that it coincides with the class of strict negative type metrics. Within this framework, we investigate analytical and geometric properties of resistance curvature and resistance radius, characterize the maximum graph-variance problem, and generalize resistive embeddings. These results place signed undirected resistance geometry on a footing parallel to the classical unsigned undirected theory and provide a unified perspective on model reduction, graph variance, and resistance-based embedding.",
+          "authors": [
+            "Yosuke Kajiura",
+            "Kazuhiro Sato"
+          ],
+          "published": "2026-03-31T12:31:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29629v1",
+          "entry_id": "http://arxiv.org/abs/2603.29629v1",
+          "title": "On Lexicographic Product and Multi-Word-Representability",
+          "summary": "We investigate the relationship between the lexicographic product of graphs and their multi-word-representation number. Although the lexicographic product of two word-representable graphs need not itself be word-representable, a precise characterization has not previously been established. We provide a complete characterization, showing that for word-representable graphs $G_1$ and $G_2$, the lexicographic product $G_1 \\circ G_2$ is word-representable if and only if $G_2$ is a comparability graph. For lexicographic powers, we prove that $G^{[k]}$ is word-representable if and only if $G$ is a comparability graph. The multi-word-representation number $μ$ for lexicographic powers and products satisfies the following bounds. If $G$ is a non-comparability graph, then $μ(G^{[k]}) \\le k$, whereas if $G$ is the union of two comparability graphs, then $μ(G^{[k]}) = 2$. More generally, for graphs $G_1$ and $G_2$ with $μ(G_1) = k_1$ and $μ(G_2) = k_2$, the lexicographic product $H = G_1 \\circ G_2$ satisfies the upper bound $μ(H) \\le k_1 + k_2$. This bound is tight, with equality $μ(H) = k_1$, when $k_1 \\ge k_2$ and $G_2$ is the union of $k_1$ comparability graphs. Moreover, if $G_1$ and $G_2$ are minimal non-word-representable graphs, then $μ(G_1 \\circ G_2) \\le 3$. Finally, we study the function $τ(n)$, which measures the size of the largest word-representable induced subgraph guaranteed in every $n$-vertex graph. By constructing extremal graphs via lexicographic powers, we establish a sublinear upper bound, showing that $τ(n) \\le n^{0.86}$ for sufficiently large $n$.",
+          "authors": [
+            "Benny George Kenkireth",
+            "Gopalan Sajith",
+            "Sreyas Sasidharan"
+          ],
+          "published": "2026-03-31T11:52:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29626v1",
+          "entry_id": "http://arxiv.org/abs/2603.29626v1",
+          "title": "Seymour-tight orientations",
+          "summary": "We investigate `almost counterexamples' to Seymour's second neighbourhood conjecture. In what we call Seymour-tight orientations, the size of the first neighbourhood of each vertex equals the size of its second neighbourhood. We give several examples and constructions. Specifically, we prove that the class of Seymour-tight orientations is closed under taking (generalized) lexicographic products. Moreover, the lexicographic product of a putative counterexample to Seymour's second neighbourhood conjecture and a Seymour-tight orientation is again a counterexample.\n  Using lexicographic products, we show that if the conjecture is false, then there exist counterexamples that are close to regular tournaments, and moreover that any digraph occurs as an induced subgraph of a counterexample. We then use this same machinery to construct special putative counterexamples to Sullivan's conjecture.\n  The inherent symmetry of these orientations give access to an algebraic perspective. Seymour-tight orientations that are also Cayley digraphs correspond to special pairs of critical sets in groups, which connects potentially to additive combinatorics. We use Kemperman's theorem to characterize those Seymour-tight orientations that are the Cayley digraph of an abelian group.",
+          "authors": [
+            "Krystal Guo",
+            "Ross J. Kang",
+            "Gabriëlle Zwaneveld"
+          ],
+          "published": "2026-03-31T11:49:36+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29622v1",
+          "entry_id": "http://arxiv.org/abs/2603.29622v1",
+          "title": "A Finite-State Proof of the Well-Definedness of a Perturbed Hofstadter Sequence",
+          "summary": "We prove that the perturbed Hofstadter-type sequence Q(1)=1, Q(2)=1, and Q(n)=Q(n-Q(n-1))+Q(n-Q(n-2))+(-1)^n is well-defined for all n>=1, in the sense that all recursive arguments remain positive. This contrasts with the classical Hofstadter Q-sequence, for which global well-definedness remains open.\n  The proof reduces the infinite recursion to a finite combinatorial constraint system. We introduce a symbolic encoding of local configurations, compute the finite set of admissible contexts, and construct a compatibility relation that captures all valid local transitions. We then show that valid assignments split into two global modes, which reduces all potential obstructions to a finite critical core. A complete finite verification excludes these obstructions and establishes global well-definedness.\n  More generally, the argument shows that certain meta-Fibonacci recursions admit a finite-state description whose global consistency can be decided by exhaustive combinatorial analysis.",
+          "authors": [
+            "Marco Mantovanelli"
+          ],
+          "published": "2026-03-31T11:44:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29610v1",
+          "entry_id": "http://arxiv.org/abs/2603.29610v1",
+          "title": "Critical dimensions and small cycle dominance from all-orders asymptotics of $d$-matrix theory",
+          "summary": "Supersymmetric sectors of $\\mathcal{N}=4$ super-Yang-Mills theory motivate the study of the partition function for the counting of gauge-invariant functions of $d=2,3$ matrices transforming under the adjoint action of $U(N)$. The partition function $ \\mathcal{Z}_d ( x) $ in the large $N$ limit has a known Hagedorn phase transition at $ x = d^{-1} $ which provides a simple model for the phase structure of the thermal partition function of SYM. We study the all-orders asymptotic expansion of $ \\mathcal{Z}_d(x)$ based on a geometric picture of concentric circles of poles in the complex plane accumulating in a natural boundary at $|x| =1$. We find that the order by order structure has a precise combinatorial interpretation organized in terms of increasing cycle size of permutations arising in the enumeration of the invariants. We refer to this organization as small-cycle dominance, and find that it extends to refined versions of the partition functions depending on several complex variables. An analysis of the coefficients in the asymptotic expansion of $ \\mathcal{Z}_d(x) $ using the modular property of the Dedekind eta function reveals that the asymptotic expansion is actually convergent for $d\\ge d_{ \\rm crit } = 13$. A fermionic version of $\\mathcal{Z}_d (x)$ has an analogous critical dimension of $ d_{ \\rm crit} = 7$. This distinction indicates that the partition functions of the matrix models can be completely reconstructed from their high-energy (UV) limit for $d\\ge d_{ \\rm crit}$ whereas additional input is required to reconstruct the exact coefficients of the low-energy (IR) expansion for $2\\le d \\le d_{ \\rm crit } -1 $.",
+          "authors": [
+            "Yang Lei",
+            "Sanjaye Ramgoolam"
+          ],
+          "published": "2026-03-31T11:31:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29607v1",
+          "entry_id": "http://arxiv.org/abs/2603.29607v1",
+          "title": "Large subgroups of fusion systems and localities",
+          "summary": "Saturated fusion systems are categories modeling properties of conjugacy of p-subgroups in finite groups. It was shown by Chermak that they correspond nicely to group-like structures called localities. In this paper we start to explore how concepts and results from a program of Meierfrankenfeld, Stellmacher and Stroth, aiming to reprove and generalize parts of the classification of the finite simple groups, translate to fusion systems and localities. Central in the program is the notion of a large $p$-subgroup. The presence of a large $p$-subgroup in a finite group turns out to be strong enough information to nearly classify the entire $p$-local structure, while also accommodating a very large class of groups of interest including many groups of Lie type in defining characteristic $p$. Utilizing the group-theoretical definition of a large $p$-subgroup as a blueprint, we define large subgroups of fusion systems and localities. We then analyze how the three definitions relate to each other, showing in particular that the newly defined notions behave well under the correspondence between saturated fusion systems and localities with certain properties. We further proceed with an example of how classification results from the program of Meierfrankenfeld et.al. translate to fusion systems and localities. In more detail, we give a new characterization of the $2$-fusion system of $\\operatorname{Aut}(\\operatorname{G}_2(3))$ following the strategy in a paper of Meierfrankenfeld and Stroth, where the group $\\operatorname{Aut}(\\operatorname{G}_2(3))$ is characterized in a similar fashion.",
+          "authors": [
+            "Ellen Henke",
+            "Edoardo Salati"
+          ],
+          "published": "2026-03-31T11:23:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29606v1",
+          "entry_id": "http://arxiv.org/abs/2603.29606v1",
+          "title": "Permutation modules for Ramsey structures",
+          "summary": "Suppose $R$ is a commutative ring and $G$ is a group acting on a set $W$. We consider the $RG$-module $RW$ in the case where $G$ is the automorphism group of an $ω$-categorical structure $M$ and $W$ is, for example, $M^n$ (for $n \\in \\mathbb{N}$). We develop methods which may provide information about two questions in the case where $R$ is a field $F$: whether $FW$ has a.c.c. on submodules; and in the case where $M$ is finitely homogeneous, whether $FW$ is of finite composition length. In the case where $M$ is a Ramsey structure and so $G$ is extremely amenable, we give a simple `decision procedure' for membership in a submodule of $RW$ specified by a given generating set. If $F$ is a field, we show that there is a duality between submodules of $FW$ and the topological $FG$-module of definable functions from $W$ to $F$.",
+          "authors": [
+            "David M. Evans"
+          ],
+          "published": "2026-03-31T11:22:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29577v1",
+          "entry_id": "http://arxiv.org/abs/2603.29577v1",
+          "title": "Resolving problems on the polynomial identity characterization of daisy cubes",
+          "summary": "Let $X\\subseteq\\{0,1\\}^n$ be a set of binary strings of length $n$. The daisy cube $Q_n(X)$ is the subgraph of the hypercube $Q_n$ induced by the union of the intervals $I(x,0^n)$ for $x\\in X$. As a subclass of partial cubes, it generalizes Fibonacci cubes and Lucas cubes. For a graph $G$ and a vertex $u\\in V(G)$, we consider the cube polynomial $C_G(x)$, the distance cube polynomial $D_{G,u}(x,y)$, and the polynomial $W_{G,u}(x)$, which count $k$-cubes, $k$-cubes at distance from $u$, and vertices at distance $k$ from $u$, respectively.\n  In this paper, we prove that for a partial cube $G$ with a vertex $u\\in V(G)$, $G$ is a daisy cube and $u=0^n$ if and only if one of the following equivalent conditions holds: (1) $C_{G}(x)=W_{G,u}(x+1)$; (2) $D_{G,u}(x,y)=W_{G,u}(x+y)$; (3) $D_{G,u}(x,y)=C_{G}(x+y-1)$. In particular, conditions (1) and (3) give affirmative answers to two open problems posed by Klavžar and Mollard [European J. Combin., 80 (2019) 214--223]. Further, we obtain that for arbitrary partial cube $G$, $D_{G,u}(x,y)\\leq W_{G,u}(x+y)$ and $C_{G}(x)\\leq W_{G,u}(x+1)$. Besides, another bound for $C_G(x)$ due to Xie et al. [J. Graph Theory, 106 (2024) 907--922] is given by the clique polynomial $Cl_{G^\\#}(x+1)$ of the crossing graph of $G$. We also compare these two bounds and show that the simplex graphs form the unique class of graphs for which the two bounds coincide.",
+          "authors": [
+            "Xuan Zheng",
+            "Yan-Ting Xie",
+            "Shou-Jun Xu"
+          ],
+          "published": "2026-03-31T10:57:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29571v1",
+          "entry_id": "http://arxiv.org/abs/2603.29571v1",
+          "title": "Randomstrasse101: Open Problems of 2025",
+          "summary": "Randomstrasse101 is a blog dedicated to Open Problems in Mathematics, with a focus on Probability Theory, Computation, Combinatorics, Statistics, and related topics. This manuscript serves as a stable record of the Open Problems posted in 2025, with the goal of easing academic referencing. The blog can currently be accessed at randomstrasse101.math.ethz.ch",
+          "authors": [
+            "Afonso S. Bandeira",
+            "Daniil Dmitriev",
+            "Kevin Lucca",
+            "Petar Nizić-Nikolac",
+            "Almut Rödder"
+          ],
+          "published": "2026-03-31T10:52:10+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29558v1",
+          "entry_id": "http://arxiv.org/abs/2603.29558v1",
+          "title": "A note on right-angled Artin subgroups of one-relator groups",
+          "summary": "We give a short proof of the following result due to Howie: if $A(Γ)$ is a right-angled Artin group embedding into some one-relator group, then $Γ$ is a finite forest. The proof only uses elementary Bass--Serre theory and classical properties of one-relator groups.",
+          "authors": [
+            "Carl-Fredrik Nyberg-Brodda"
+          ],
+          "published": "2026-03-31T10:38:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29550v1",
+          "entry_id": "http://arxiv.org/abs/2603.29550v1",
+          "title": "Compositional Reasoning for Probabilistic Automata with Uncertainty",
+          "summary": "This paper develops an assume-guarantee (AG) framework for the compositional verification of probabilistic automata (PAs) with uncertain transition probabilities. We study parametric probabilistic automata (pPAs), where probabilities are given by polynomial functions over a finite set of real-valued parameters and robust probabilistic automata (rPAs)-a generalisation of interval probabilistic automata (iPAs)-where transition probabilities range over potentially uncountable uncertainty sets. Towards pPAs, an existing AG framework for PAs is lifted to the parametric setting. We establish asymmetric, circular, and interleaving proof rules to enable compositional verification of a broad class of multi-objective queries, encompassing probabilistic reachability properties and parametric expected total rewards. In addition, we introduce a dedicated AG rule for compositional reasoning about parameter monotonicity. For convex rPAs and iPAs with history-dependent (memory-full) nature, we establish sound AG rules via a reduction to infinite PAs. We further show that AG reasoning can not straightforwardly be applied to non-convex rPAs, memoryless (once-and-for-all) nature semantics, and the common interval-arithmetic relaxation of parallel composition. Finally, we develop a simulation-based AG style for pPAs: we define strong simulation and robust-strong simulation relations for pPAs and derive their corresponding proof rules.",
+          "authors": [
+            "Hannah Mertens",
+            "Tim Quatmann",
+            "Joost-Pieter Katoen"
+          ],
+          "published": "2026-03-31T10:31:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29548v1",
+          "entry_id": "http://arxiv.org/abs/2603.29548v1",
+          "title": "A SAT-based Filtering Framework for Exact Coverings of K33 by Cliques of Order 3, 4 or 5",
+          "summary": "We investigate the minimum number of cliques of orders $3$, $4$, and $5$ needed to cover the edges of $K_{33}$ with zero excess. General covering results yield the lower bound 57. The main result of the paper is that no decomposition of $K_{33}$ into $57$ blocks from $\\{K_3,K_4,K_5\\}$ exists.\n  Our approach is algorithmic and relies on a layered exact-search pipeline rather than a single monolithic solver. We combine symmetry reduction, enumeration of local signatures, arithmetic profile restrictions, geometric tests for partial configurations, SAT realisation on reduced instances, and final decoding checks. The benchmark comparison shows that this structured approach is substantially more effective than direct ILP, DLX, or SAT formulations on the full problem.\n  As a consequence, we obtain $C^ξ(33,\\{3,4,5\\},2)\\ge 58$. A short additional counting argument further strengthens this to $C^ξ(33,\\{3,4,5\\},2)\\ge 59$. We also give new compressed proofs for the known exceptional cases $K_{18}$ and $K_{19}$ in the setting of $\\{K_3,K_4\\}$-decompositions, illustrating the same combination of theoretical reduction and exact computation.\n  Finally, we explain the relevance of the $K_{33}$ result to the open packing problem of determining the packing number $D(33,5,2)$. A packing of $51$ copies of $K_5$ in $K_{33}$ would leave a $4$-regular graph on $9$ vertices, and our exclusion already rules out two natural candidate leave structures.",
+          "authors": [
+            "Petr Kovař",
+            "Yifan Zhang"
+          ],
+          "published": "2026-03-31T10:29:20+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29524v1",
+          "entry_id": "http://arxiv.org/abs/2603.29524v1",
+          "title": "Geometric Inverse Semigroup Theory: a note on the Milnor-Schwarz Lemma for inverse monoids",
+          "summary": "We generalise the Milnor-Schwarz lemma to inverse monoids acting on presheaves of geodesic metric spaces. We provide two proofs of this fact: one only uses elementary techniques, inspired by the arguments for group actions on metric spaces; the other involves a version of the Vietoris-Rips complex, and builds on work of Chung-Martínez-Szakács.",
+          "authors": [
+            "Giorgio Mangioni",
+            "Francesco Tesolin"
+          ],
+          "published": "2026-03-31T10:07:20+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29473v1",
+          "entry_id": "http://arxiv.org/abs/2603.29473v1",
+          "title": "$χ^2$-cut-off phenomenon for Galerkin projections of Fokker-Planck equations with monomial potentials",
+          "summary": "In this manuscript, we establish the existence/non-existence of the cut-off phenomenon for the Langevin-Kolmogorov random dynamics with monomial convex potentials, possible singular, and driven by a Brownian motion with small strength. We consider a truncated $χ^2$-distance, that is, a distance based on Galerkin projections of the eigensystem, and show that not only a refined knowledge of the eigenvalues is needed but also a refined asymptotics of the growth for the eigenfunctions of the Fokker-Planck equations associated to the Langevin-Kolmogorov dynamics. In addition, asymptotics of the mixing times are established.",
+          "authors": [
+            "Benny Avelin",
+            "Gerardo Barrera"
+          ],
+          "published": "2026-03-31T09:20:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29435v1",
+          "entry_id": "http://arxiv.org/abs/2603.29435v1",
+          "title": "On the combinatorics of the refined 1-leg DT/PT correspondence",
+          "summary": "We provide a new proof of a result of Bessenrodt on the relation among the generating series of reversed plane partitions and skew plane partitions, motivated by the geometric DT/PT wallcrossing formula for local curves recently proved by the third author. This also recovers a result of Sagan.\n  We moreover establish various new closed formulas for the weighted enumeration of reversed and skew plane partitions, proving a result dual to a theorem by Gansner, we find a new identity on the generating series counting internal and external hooks of a given Young diagram, and we combine the latter with Bessenrodt's theorem. Finally, we interpret our results as identities in the Fock space via the bosonic/fermionic formalism.",
+          "authors": [
+            "Davide Accadia",
+            "Danilo Lewański",
+            "Sergej Monavari"
+          ],
+          "published": "2026-03-31T08:41:20+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29431v1",
+          "entry_id": "http://arxiv.org/abs/2603.29431v1",
+          "title": "Binomial determinants: some closed formulae",
+          "summary": "This paper is intended to give closed formulae for binomial determinants with consecutive or almost consecutive rows or columns, as well as calculating the generator of left nullspaces defined by some binomial matrices. In the meantime, we reprove, by different means, the positivity of binomial determinants shown by Gessel and Viennot.",
+          "authors": [
+            "Laura González",
+            "Francesc Planas-Vilanova"
+          ],
+          "published": "2026-03-31T08:37:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29424v1",
+          "entry_id": "http://arxiv.org/abs/2603.29424v1",
+          "title": "Loop-Checking and Counter-Model Extraction for Intuitionistic Tense Logics via Nested Sequents",
+          "summary": "This paper develops a novel nested sequent proof-search methodology for intuitionistic tense logics (ITLs), supporting finite counter-model extraction. We introduce a new loop-checking method that detects repeating nested sequents using homomorphisms, thereby bounding the height of derivations during proof-search. Due to the non-invertibility of some inference rules, the algorithm does not construct a single derivation, but a generalized structure we call a 'computation tree.' We show how proofs and counter-models can be extracted from computation trees when proof-search succeeds or fails, respectively. This establishes the finite model property for each ITL of the form IKt + A with A a subset of {T,B,D}.",
+          "authors": [
+            "Tim S. Lyon"
+          ],
+          "published": "2026-03-31T08:31:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29411v1",
+          "entry_id": "http://arxiv.org/abs/2603.29411v1",
+          "title": "Exact Separation of Words via Trace Geometry",
+          "summary": "A basic question in the theory of two-state measure-once quantum finite automata (MO-QFAs) is whether two distinct input words can be separated with certainty. In the setting considered here, this exact separation problem reduces to a trace-vanishing question in \\(SU(2)\\): given distinct positive words \\(u\\) and \\(v\\), find matrices \\(A,B\\in SU(2)\\) such that the evaluated trace of \\(u^{-1}v\\) is zero. The central difficulty lies in the genuinely nonabelian regime where \\(u\\) and \\(v\\) have the same abelianization, so the obvious commutative information disappears and the fine structure of the word must be connected to the geometry of representations. This paper develops a slice-driven framework for that task and proves exact separation for every hard positive-word difference covered by four explicit certified conditions, thereby reducing the problem to a sharply delimited residual super-degenerate class. The method extracts algebraic data from the positive-word difference and uses them to select explicit low-dimensional families in \\(SU(2)^2\\) on which the trace becomes computable. On the algebraic side, the metabelian polynomial is decomposed into explicit interval blocks determined by prefix statistics, and a suitable slope specialization preserves nontrivial information. On the analytic side, the paper derives a computable quadratic trace identity on a visible one-parameter family and complements it with a Laurent-matrix sum-of-squares identity in a parallel algebraic model. These certified criteria are already strong in numerical experiments. This paper also shows that no method based only on finitely many finite-image tests can be universal.",
+          "authors": [
+            "Zeyu Chen",
+            "Junde Wu"
+          ],
+          "published": "2026-03-31T08:18:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29393v1",
+          "entry_id": "http://arxiv.org/abs/2603.29393v1",
+          "title": "Effective approach of the tridendriform Schroeder tree algebra",
+          "summary": "We introduce a primitive computation problem in the free tridendriform algebra generated by one element which is a Hopf algebra based on Schroeder trees. We know a complex way to generate all of them. To understand it clearer, we want to implement this method on a computer. However, we need to create some tools to implement Schroeder trees and the multiplications over this algebra to be able to compute the primitive elements. We also checked numerically that they are all primitive elements. In this paper, we detail how we made the problem mathematically understandable for a computer and how we implement it.",
+          "authors": [
+            "Pierre Catoire",
+            "Jean Fromentin"
+          ],
+          "published": "2026-03-31T07:59:08+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29361v1",
+          "entry_id": "http://arxiv.org/abs/2603.29361v1",
+          "title": "Rigorous Explanations for Tree Ensembles",
+          "summary": "Tree ensembles (TEs) find a multitude of practical applications. They represent one of the most general and accurate classes of machine learning methods. While they are typically quite concise in representation, their operation remains inscrutable to human decision makers. One solution to build trust in the operation of TEs is to automatically identify explanations for the predictions made. Evidently, we can only achieve trust using explanations, if those explanations are rigorous, that is truly reflect properties of the underlying predictor they explain This paper investigates the computation of rigorously-defined, logically-sound explanations for the concrete case of two well-known examples of tree ensembles, namely random forests and boosted trees.",
+          "authors": [
+            "Yacine Izza",
+            "Alexey Ignatiev",
+            "Xuanxiang Huang",
+            "Peter J. Stuckey",
+            "Joao Marques-Silva"
+          ],
+          "published": "2026-03-31T07:34:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29351v1",
+          "entry_id": "http://arxiv.org/abs/2603.29351v1",
+          "title": "Error bounds on analytic Koopman-based Lyapunov functions",
+          "summary": "The Koopman operator provides an infinite-dimensional linear description of nonlinear dynamical systems that can be leveraged in the context of stability analysis. In particular, Lyapunov functions can be obtained in a systematic way via the eigenfunctions of the Koopman operator. However, these eigenfunctions are computed from finite-dimensional approximations, resulting in approximated Lyapunov functions that must be validated. In this paper, we provide theoretical error bounds on the approximation of the eigenfunctions of the Koopman operator in the case of analytic vector field and finite-dimensional approximation in polynomial subspaces. We leverage these results to assess the validity of Koopman-based Lyapunov functions and obtain an optimization-free inner approximation of the region of attraction of an equilibrium.",
+          "authors": [
+            "François-Grégoire Bierwart",
+            "Alexandre Mauroy"
+          ],
+          "published": "2026-03-31T07:25:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29350v1",
+          "entry_id": "http://arxiv.org/abs/2603.29350v1",
+          "title": "Graph Theoretic Framework of Dynamical Systems Through the Boundary Polynomial",
+          "summary": "This work is devoted to the study of the relationships between graph theory and the qualitative analysis of ordinary differential equations, with a special focus on two-dimensional systems. In particular, we reinterpret classical results through the lens of boundary polynomials of graphs. The theory naturally leads to questions about limit cycles, which arise in many processes in nature and remain a central object of study in dynamical systems. The significance of limit cycles is underscored by their place in Hilbert's 16th problem, one of the unsolved challenges from his famous list of 23 problems posed in 1900.",
+          "authors": [
+            "Marcos Masip"
+          ],
+          "published": "2026-03-31T07:22:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29335v1",
+          "entry_id": "http://arxiv.org/abs/2603.29335v1",
+          "title": "A short proof of a perturbation inequality for the spectral radius",
+          "summary": "Let $G$ be a simple graph, and denote by $λ(G)$ its spectral radius. Sun and Das (2020) established that for any non-isolated vertex $v$ with degree $d(v)$, \\[ λ(G)\\leq \\sqrt{λ(G-v)^2 + 2d(v) - 1}, \\] which is a conjecture original posed by Guo, Wang, and Li (2019). Sun and Das's proof uses several tools from spectral graph theory. In this short note, we provide a concise and self-contained proof of this inequality using matrix analysis.",
+          "authors": [
+            "Lele Liu",
+            "Bo Ning"
+          ],
+          "published": "2026-03-31T07:00:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29320v1",
+          "entry_id": "http://arxiv.org/abs/2603.29320v1",
+          "title": "Detecting non-admissibility of quandles via colorings",
+          "summary": "A quandle is an algebraic system whose axioms are motivated by Reidemeister moves in knot theory. A typical example is a conjugation quandle arising from a group. A quandle is said to be admissible if it is isomorphic to a conjugation quandle. Admissible quandles often yield knot invariants that coincide with those derived from the knot group, whereas nonadmissible quandles may produce genuinely new invariants. In this sense, it is important to construct non-admissible quandles. In this paper, we provide criteria for determining whether given quandles are admissible by colorings of (1, 1)-tangles. As an application, we construct numerous examples of non-admissible quandles by analyzing simple tangles obtained from the Hopf link and the trefoil knot.",
+          "authors": [
+            "Katsunori Arai",
+            "Ryoya Kai"
+          ],
+          "published": "2026-03-31T06:39:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29299v2",
+          "entry_id": "http://arxiv.org/abs/2603.29299v2",
+          "title": "An answer regarding automorphisms of finite abelian groups",
+          "summary": "In this note we provide a negative answer to the question: ``Is it true that for every positive rational number $r$ there exists a finite abelian group $G$ such that $|\\mathrm{Aut}(G)|/|G| = r$?\". We show that if $r = a/b$ is a rational number (with $a$ and $b$ coprime integers) so that $r = |\\mathrm{Aut}(G)|/|G|$ for a finite abelian group $G$, then $b$ is squarefree. We also show that no odd prime can equal $ |\\mathrm{Aut}(G)|/|G|$ for a finite abelian group $G$.",
+          "authors": [
+            "Ryan McCulloch"
+          ],
+          "published": "2026-03-31T06:07:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29280v1",
+          "entry_id": "http://arxiv.org/abs/2603.29280v1",
+          "title": "Graph Eigenvalues and Projection Constants",
+          "summary": "Let $λ_1(G)\\ge λ_2(G)\\ge \\cdots \\ge λ_n(G)$ denote the adjacency eigenvalues of a graph $G$ of order $n$. We prove that for every $k\\geq 2$ and every graph $G$ on $n\\geq k$ vertices, $$ λ_k(G)\\le \\frac{λ_{\\mathbb{R}}(k-1)}{2(k-1)}\\,n-1, $$ where $$ λ_{\\mathbb{R}}(r)=\\sup_{N\\ge r}\\frac1N \\max_{Q\\in \\mathcal P_r(N)}\\sum_{i,j=1}^N |q_{ij}| $$ and $\\mathcal P_r(N)$ denotes the set of rank-$r$ orthogonal projections in $\\mathbb{R}^{N\\times N}$. In Banach space theory, $λ_{\\mathbb{R}}(r)$ is well known as the maximal absolute projection constant, which has been shown to equal the quasimaximal absolute projection constant $μ_{\\mathbb{R}}(r)$.\n  This yields a new conceptual connection: universal upper bounds on $λ_k(G)$ are controlled by the real maximal absolute projection constant $λ_{\\mathbb{R}}(k-1)$. In dimensions where $λ_{\\mathbb{R}}(k-1)$ is known explicitly, this gives explicit coefficients. In particular, for $k=3$ this recovers Tang's recent sharp bound $λ_3(G)\\le n/3-1$. For $k=4$, using $λ_{\\mathbb{R}}(3)=\\frac{1+\\sqrt5}{2}$ together with Linz's closed blowups of the icosahedral graph, we obtain the result $$ λ_4(G) \\leq \\frac{1+\\sqrt5}{12}n-1. $$ The method allows us to transfer known upper bounds on $λ_{\\mathbb{R}}(k-1)$ to match the best known upper bounds on $λ_k(G)$ for other values of $k$, such as $k=5$.",
+          "authors": [
+            "Tanay Wakhare"
+          ],
+          "published": "2026-03-31T05:29:10+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29277v1",
+          "entry_id": "http://arxiv.org/abs/2603.29277v1",
+          "title": "Multicolor $K_r$-Tilings with High Discrepancy",
+          "summary": "We study the minimum degree threshold $δ_{r,q}$ guaranteeing the existence of $K_r$-tilings of high discrepancy in any $q$-edge-coloring. Balogh, Csaba, Pluhár and Treglown handled the 2-color case, proving that $δ_{r,2} = \\frac{r}{r+1}$ for all $r \\geq 3$. Here we determine $δ_{r,q}$ for all $q$ large enough, namely $q \\geq \\binom{r}{2}$. For example, we show that for $r \\geq 4$, $δ_{r,q} = \\frac{r}{r+1}$ for $\\binom{r}{2} \\leq q \\leq \\binom{r+1}{2}$ and $δ_{r,q} = \\frac{r-1}{r}$ for $q \\geq \\binom{r+1}{2}+2$. Thus, $δ_{r,q}$ has a phase transition at $q = \\binom{r+1}{2}$, where it drops from $\\frac{r}{r+1}$ and then stabilizes at the existence threshold $\\frac{r-1}{r}$. We also show that $δ_{r,q} \\leq \\frac{r}{r+1}$ for all $r,q$, supplementing and giving a new proof for the result of Balogh, Csaba, Pluhár and Treglown.",
+          "authors": [
+            "Henry Chan",
+            "Daniel Cheng",
+            "Lior Gishboliner",
+            "Xiangyu Li"
+          ],
+          "published": "2026-03-31T05:22:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29260v1",
+          "entry_id": "http://arxiv.org/abs/2603.29260v1",
+          "title": "Unexpected toric Richardson varieties",
+          "summary": "We prove that an open Richardson variety in the complete flag variety for $\\mathrm{GL}_n$ is isomorphic to a torus if and only if the corresponding closed Richardson variety is toric. Such toric varieties can be classified in terms of the combinatorics of Bruhat intervals, and include many varieties of dimension larger than $n-1$. We give a combinatorial description of the corresponding polytopes, and compute several explicit examples.",
+          "authors": [
+            "Eugene Gorsky",
+            "Soyeon Kim",
+            "Melissa Sherman-Bennett"
+          ],
+          "published": "2026-03-31T04:50:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29253v1",
+          "entry_id": "http://arxiv.org/abs/2603.29253v1",
+          "title": "Geometry and dynamics on Liouville domains in $T^*\\mathbb T^2$",
+          "summary": "Parallel to the study of toric domains, symplectically convex, and dynamically convex domains in $(\\mathbb R^4, ω_{\\rm std})$, we build an analogous framework and corresponding subclasses for Liouville domains in $(T^*\\mathbb T^2,ω_{\\rm can})$. A key feature of this framework is the introduction of a new notion of convexity, based on systolic ratios. Via various machinery in quantitative symplectic geometry, including ECH capacities, shape invariant, dynamical zeta function, etc., we investigate the relations between subclasses of Liouville domains in $T^*\\mathbb T^2$, obtain large-scale geometry of Liouville domains in $T^*\\mathbb T^2$ with respect to coarse Banach-Mazur distance, provide a non-flat codisc bundle of torus even under the action of exact symplectomorphisms, and verify the agreement of normalized capacities for a wide class of Liouville domains in $T^*\\mathbb T^2$.",
+          "authors": [
+            "Jun Zhang",
+            "Antong Zhu"
+          ],
+          "published": "2026-03-31T04:24:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29243v1",
+          "entry_id": "http://arxiv.org/abs/2603.29243v1",
+          "title": "On distinguishing genuine from spurious chaos in planar singular and nonsmooth systems: A diagnostic approach",
+          "summary": "We present a rigorous reassessment of chaotic behavior in two-dimensional autonomous systems with singular or nonsmooth dynamics. For the Cummings-Dixon-Kaus (CDK) model, we show that blow-up regularization restores smoothness and renders the hypotheses of the Poincaré-Bendixson theorem applicable, thereby excluding chaotic attractors away from the singular set. We prove topological equivalence between the original and regularized flows on annular domains, ensuring that no spurious invariant sets are introduced by desingularization. In contrast, for a nonsmooth system with a $|x|$ term, we recompute the entire period-doubling cascade, obtain a seven-term sequence of bifurcation values converging to Feigenbaum's constant, and confirm robust chaos through positive Lyapunov exponents, broadband spectra, and fractal dimension estimates. As a main outcome, we propose a diagnostic protocol integrating regularization, numerical refinement, and invariant-set criteria. This protocol provides a reproducible standard for distinguishing genuine planar chaos from artifacts caused by singularities or discretization, and offers a benchmark for future studies of low-dimensional nonsmooth systems.",
+          "authors": [
+            "Martha Alvarez Ramírez"
+          ],
+          "published": "2026-03-31T04:13:17+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29214v1",
+          "entry_id": "http://arxiv.org/abs/2603.29214v1",
+          "title": "A Continuous-Time and State-Space Relaxation of the Linear Threshold Model with Nonlinear Opinion Dynamics",
+          "summary": "The Linear Threshold Model (LTM) is widely used to study the propagation of collective behaviors as complex contagions. However, its dependence on discrete states and timesteps restricts its ability to capture the multiple time-scales inherent in decision-making, as well as the effects of subthreshold signaling. To address these limitations, we introduce a continuous-time and state-space relaxation of the LTM based on the Nonlinear Opinion Dynamics (NOD) framework. By replacing the discontinuous step-function thresholds of the LTM with the smooth bifurcations of the NOD model, we map discrete cascade processes to the continuous flow of a dynamical system. We prove that, under appropriate parameter choices, activation in the discrete LTM guarantees activation in the continuous NOD relaxation for any given seed set. We establish computable conditions for equivalence: by sufficiently bounding the social coupling parameter, the continuous NOD cascades exactly recover the cascades of the discrete LTM. We then illustrate how this NOD relaxation provides a richer analytical framework than the LTM, allowing for the exploration of cascades driven by strictly subthreshold inputs and the role of temporally distributed signals.",
+          "authors": [
+            "Ian Xul Belaustegui",
+            "Himani Sinhmar",
+            "Ling-Wei Kong",
+            "Andrew Michael Hein",
+            "Naomi Ehrich Leonard"
+          ],
+          "published": "2026-03-31T03:29:30+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29190v1",
+          "entry_id": "http://arxiv.org/abs/2603.29190v1",
+          "title": "Bi-shadowing of Quasi-semi-hyperbolic Pseudo-orbit",
+          "summary": "In this paper, we introduce the concept of quasi-semi hyperbolic pseudo-orbits and prove that quasi-semi hyperbolicity implies quasi hyperbolicity provided the error magnitude are sufficiently small. We also have successively demonstrated that both finite quasi-hyperbolic pseudo-orbits and infinite quasi-semi hyperbolic pseudo-orbits possess the bi-shadowing property, and thus we establish the periodicity.",
+          "authors": [
+            "Yan He",
+            "Meihua Jin"
+          ],
+          "published": "2026-03-31T02:55:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29178v1",
+          "entry_id": "http://arxiv.org/abs/2603.29178v1",
+          "title": "Endogenous Cycles in a Keen--Goodwin Model with Minsky Debt",
+          "summary": "We analyze a three-dimensional Keen--Goodwin model that couples wage--employment dynamics with Minsky-style private debt. At zero real interest the interior equilibrium is nonhyperbolic and organized by a two-dimensional center manifold foliated by neutral Goodwin cycles. Introducing a small positive interest rate unfolds this degeneracy: we derive an explicit Hopf condition, prove persistence of the center manifold as a normally hyperbolic attracting surface, and obtain first-order amplitude and frequency corrections for the emergent limit cycle via phase--amplitude reduction. Numerical simulations support the asymptotic predictions and demonstrate how interest rates determine and modulate endogenous business cycles.",
+          "authors": [
+            "Roberto Albarrán-García",
+            "Martha Alvarez-Ramírez",
+            "Carlos García-Azpeitia"
+          ],
+          "published": "2026-03-31T02:38:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29158v1",
+          "entry_id": "http://arxiv.org/abs/2603.29158v1",
+          "title": "Morse and stable subgroups via the coset intersection complex",
+          "summary": "In this note, we study the equivalence of Morse and stable subgroups in the framework of the coset intersection complex. Under certain conditions on a coset intersection complex of a group, we prove that infinite-index Morse subgroups are stable. Our main theorem recovers results in the literature on right-angled Artin groups and graph products. As an application, we show that for the genus-two handlebody group, any infinite-index Morse subgroup is stable.",
+          "authors": [
+            "Tomohiro Fukaya",
+            "Haoyang He",
+            "Eduardo Martínez-Pedroza",
+            "Takumi Matsuka"
+          ],
+          "published": "2026-03-31T02:19:05+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29155v1",
+          "entry_id": "http://arxiv.org/abs/2603.29155v1",
+          "title": "Local smooth rigidity of Anosov diffeomorphisms in $\\mathbb{T}^{3}$",
+          "summary": "Given a $C^0$ conjugacy between two Anosov diffeomorphisms, the matching periodic data problem asks whether this conjugacy is smooth provided spectral data of the diffeomorphisms match at periodic points. We show that if the two $C^0$ conjugate diffeomorphisms on $\\mathbb{T}^3$ are sufficiently close to a hyperbolic linear automorphism with a pair of complex conjugate eigenvalues, then the conjugacy must be smooth. In particular, we have that in a neighborhood of a hyperbolic toral automorphism, matching periodic data implies that the conjugacy is $C^{1+\\text{Hölder}}$",
+          "authors": [
+            "James Marshall Reber",
+            "Sebastián Pavez-Molina"
+          ],
+          "published": "2026-03-31T02:13:28+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29145v1",
+          "entry_id": "http://arxiv.org/abs/2603.29145v1",
+          "title": "Bourgain's projection theorem over normed division algebras",
+          "summary": "We give a simple and self-contained proof of an extension of a projection theorem of Bourgain over the reals to division algebras over local fields of zero characteristic.",
+          "authors": [
+            "William O'Regan"
+          ],
+          "published": "2026-03-31T01:50:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29140v1",
+          "entry_id": "http://arxiv.org/abs/2603.29140v1",
+          "title": "Designing FSMs Specifications from Requirements with GPT 4.0",
+          "summary": "Finite state machines (FSM) are executable formal specifications of reactive systems. These machines are designed based on systems' requirements. The requirements are often recorded in textual documents written in natural languages. FSMs play a crucial role in different phases of the model-driven system engineering (MDE). For example, they serve to automate testing activities. FSM quality is critical: the lower the quality of FSM, the higher the number of faults surviving the testing phase and the higher the risk of failure of the systems in production, which could lead to catastrophic scenarios. Therefore, this paper leverages recent advances in the domain of LLM to propose an LLM-based framework for designing FSMs from requirements. The framework also suggests an expert-centric approach based on FSM mutation and test generation for repairing the FSMs produced by LLMs. This paper also provides an experimental analysis and evaluation of LLM's capacities in performing the tasks presented in the framework and FSM repair via various methods. The paper presents experimental results with simulated data. These results and methods bring a new analysis and vision of LLMs that are useful for further development of machine learning technology and its applications to MDE.",
+          "authors": [
+            "Omer Nguena Timo",
+            "Paul-Alexis Rodriguez",
+            "Florent Avellaneda"
+          ],
+          "published": "2026-03-31T01:42:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29137v1",
+          "entry_id": "http://arxiv.org/abs/2603.29137v1",
+          "title": "An Optimal 14-Symbol Hybrid Basis for BCH-Algebras",
+          "summary": "We present an optimally minimal two-axiom basis for BCH-algebras. The standard presentation of a BCH-algebra relies on three axioms: two equations and one quasi-identity. Using automated theorem proving, we prove that the two standard equations can be entirely replaced by a 14-symbol equation, ((xy)z)((x(z0))y) = 0, while retaining the standard quasi-identity. We then provide a rigorous proof of strict minimality for this new equational companion. By employing an exhaustive, machine-assisted search space generation coupled with finite countermodel building, we demonstrate that no equation of 12 or fewer symbols can define the class of BCH-algebras when paired with the standard quasi-identity. Our literature searches have revealed no prior proof of this result, to the extent of our knowledge. All equivalence derivations were verified using Prover9, and all minimality countermodels were generated using Mace4.",
+          "authors": [
+            "Mahesh Ramani",
+            "Shlok Kumar"
+          ],
+          "published": "2026-03-31T01:36:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2603.29127v2",
+          "entry_id": "http://arxiv.org/abs/2603.29127v2",
+          "title": "New Lower Bounds for C4-Free Subgraphs of the Hypercubes Q6, Q7, and Q8: Constructions, Structure, and Computational Method",
+          "summary": "We establish new lower bounds ex(Q_7,C_4)>=304 and ex(Q_8,C_4)>=680 for the maximum number of edges in a C_4-free subgraph of the 7- and 8-dimensional hypercubes, and give a modern computational reproduction of ex(Q_6,C_4)=132. All bounds are witnessed by explicit constructions certified by exhaustive enumeration of all four-cycles (240 for Q_6, 672 for Q_7, 1792 for Q_8). For Q_7 we identify 19866 distinct C_4-free subgraphs on 304 edges and classify them into exactly 20 structural types via their dimension profiles. All Q_7 solutions share a rigid structural core: degree sequence {4^32,5^96}, spectral radius lambda_1 approximately 4.787, and local maximality. For Q_8 we analyse the 680-edge construction and the 681-edge barrier: every non-edge creates at least one C_4, and 1076 independent searches at 681 edges never achieved zero violations. The constructions are found by a two-phase simulated annealing algorithm with Aut(Q_n)-based diversification. For Q_6 we provide an ILP-based proof that ex(Q_6,C_4)<=132. Edge lists, ILP files, and source code are publicly available at https://github.com/minamominamoto/c4free-hypercube",
+          "authors": [
+            "Minamo Minamoto"
+          ],
+          "published": "2026-03-31T01:22:53+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-04-03T04:38:58.474674+00:00",
+      "updated_at": "2026-04-03T04:38:58.474674+00:00",
+      "finalized_at": null
     }
   ]
 }
