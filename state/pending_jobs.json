@@ -24532,7 +24532,7 @@
     },
     {
       "pipeline_id": "20260405T044535Z-f5d8d52c",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/b9gj3c9p5wkotu5xcy9h6h0ia6tffjcqbjip",
       "summarize_job_name": "batches/6d14l2wvej00z8qaw7may18e0n08ytfgqv63",
       "papers": [
@@ -25032,14 +25032,194 @@
         "http://arxiv.org/abs/2604.01633v1",
         "http://arxiv.org/abs/2604.01548v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.02303v1": {
+          "title": "トラッピングと可換なブールネットワーク",
+          "summary": "本論文は、ブールネットワーク（BN）における不変な部分立方体であるトラップスペースと、局所的な更新が可換である可換ブールネットワークの関係性を分析している。著者はトラッピンググラフおよびトラッピング閉包の概念を導入し、トラッピングネットワークがトラッピング閉包として特徴づけられることを示した。また、可換ネットワークがトラッピングネットワークであることを証明し、全単射なMarseilleネットワークやべき等なLilleネットワークといった特殊なクラスを分類・定義した。これにより、非同期グラフの構造やトラッピングネットワークの一般的な性質を明らかにしている。",
+          "keywords": [
+            "Boolean networks",
+            "trapspace",
+            "commutative networks",
+            "trapping closure",
+            "asynchronous graphs"
+          ],
+          "appendix": "本論文はブールネットワークの遷移構造を数学的に扱っており、オートマトン理論 (automata theory) や、遷移システムの構造解析という点で記号力学 (symbolic dynamics) に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.02244v1": {
+          "title": "データストリームからの状態機械の(PAC-)学習：汎用的戦略と改良されたヒューリスティック (拡張版)",
+          "summary": "本論文は、離散イベントシステムの挙動を模倣する状態機械をデータストリームから学習するための汎用的な手法を提案している。従来の学習アルゴリズムの多くは全データが事前に揃っていることを前提としていたが、本研究ではスケッチを利用して不完全なプレフィックス木に対応するマージヒューリスティックを導入することで、ストリーミングデータへの対応を可能にした。評価実験では、既存手法と比較して実行時間、メモリ消費、精度の面で優れた性能を示している。さらに、提案手法がPAC学習（Probably Approximately Correct learning）の枠組みにおいて学習可能であることを理論的に証明し、大規模なサンプルサイズにおける実行時間を短縮する理論的改善についても述べている。",
+          "keywords": [
+            "PAC-learning",
+            "state machines",
+            "data streams",
+            "merge heuristic",
+            "prefix trees"
+          ],
+          "appendix": "本論文は、指定された興味ある分野のうち「automata theory」および「formal languages」に深く関連しています。状態機械の学習およびプレフィックス木を用いたマージ処理は、オートマトン理論の典型的な応用事例です。"
+        },
+        "http://arxiv.org/abs/2604.02213v1": {
+          "title": "無限次元トーラス上のKronecker流",
+          "summary": "本論文では、無限次元トーラス上におけるKronecker流の性質を研究している。有限次元のKronecker流において成立する「非共鳴流への縮約」「位相推移性」「極小性」「射影における一意エルゴード性」の同値関係が、周波数の有限整数線形結合が自由アーベル群をなす場合に限り、無限次元でも成立することを証明した。また、軌道の閉包が球体とカントール集合の直積に局所同相となる解のクラスを構成し、Benjamin-Ono方程式がこの種の解を持つことを示した。最後に、Kronecker流の分類問題が、ねじれのない可算アーベル群の分類問題と等価であることを証明している。",
+          "keywords": [
+            "Kronecker flows",
+            "Infinite torus",
+            "Hamiltonian PDEs",
+            "Topological transitivity",
+            "Countable abelian groups"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「structure of large countable infinite group」および「complex dynamics」に関連しています。特に、Kronecker流の分類を可算アーベル群の構造論に帰着させる議論が含まれています。"
+        },
+        "http://arxiv.org/abs/2604.02115v1": {
+          "title": "Monochromatic Constellationに関するButler-Costello-Graham予想の完全な解決",
+          "summary": "Constellation（星座）とは、有理数パターン Q = [0, q₁, …, qₖ₋₁, 1] を拡大・縮小および平行移動して得られる {1, 2, …, n} の部分集合であり、等差数列などがその代表例である。2010年にButler、Costello、Grahamは、任意のConstellationパターン Q に対して、ランダムな彩色時よりも単色Constellationの出現数が少ない（具体的には γn² + o(n²) 個、ここで γ はランダム彩色時の係数より小さい）彩色パターンが存在するという予想を提唱した。本論文では、この予想を肯定的に解決した。",
+          "keywords": [
+            "Monochromatic Constellations",
+            "Butler-Costello-Graham Conjecture",
+            "arithmetic progressions",
+            "rational pattern"
+          ],
+          "appendix": "本論文は組み合わせ論における彩色問題を取り扱っており、提示された[興味ある分野]の中では combinatorics on words との関連があります。"
+        },
+        "http://arxiv.org/abs/2604.02089v1": {
+          "title": "pro-nilsystemの因子と自己結合の局所剛性",
+          "summary": "HostとKraのエルゴード構造定理の既知の帰結である「エルゴード的k-step pro-nilsystemの因子は、再びエルゴード的k-step pro-nilsystemである」という事実に対し、構造定理の枠組みを一切用いない独立した証明を与えた。証明の鍵となるのは、対角結合に十分近いエルゴード的自己結合は必然的に自己同型のグラフ結合になるというnilsystemの局所剛性定理である。この結果とTaoの成果を組み合わせることで、巡回群上のGowersノルムに関する組合せ論的逆定理から、HostとKraのエルゴード逆定理を導く新たな証明を提示している。",
+          "keywords": [
+            "pro-nilsystems",
+            "self-joinings",
+            "local rigidity",
+            "ergodic structure theorem",
+            "Gowers norms"
+          ],
+          "appendix": "本論文は、Green-Tao-Zieglerによる組合せ論的逆定理と言及されているため、combinatorics（組合せ論）の分野に関連があります。"
+        },
+        "http://arxiv.org/abs/2604.02087v1": {
+          "title": "McLain群を拡張する群の族について",
+          "summary": "集合Λ上の狭義部分順序Δと単位元を持つ環Rに対して定義される従来のMcLain群M(Δ)を拡張し、Δが非対称性や推移律を満たさない、より弱い2つの公理を満たす場合の新しい群の族G(Δ)を構築した。この新しい族に共通する構造的性質として、群の表示、降中心列の因子の記述、全順序に関する要素の標準形、および上昇中心列の再帰的決定を調査している。さらに、Δの正規部分集合Γに対し、自然な同型G(Δ)/G(Γ) ≅ G(Δ\\Γ)が成立することを証明した。これは従来のMcLain群の文脈にはない独自の結果である。",
+          "keywords": [
+            "McLain group",
+            "descending central series",
+            "upper central series",
+            "group presentation",
+            "normal subset"
+          ],
+          "appendix": "この論文は、巨大な可算無限群の構造（structure of large countable infinite group）に関連する研究分野と深く関わっています。"
+        },
+        "http://arxiv.org/abs/2604.02014v1": {
+          "title": "Böttcher座標における桁和公式",
+          "summary": "奇素数 p および多項式 φ(x) = x^(p²) + p²x^(p²+1) に対し、その Böttcher 座標の係数に関する無条件の桁和合同式を証明している。本研究では、k ≡ 0 (mod p) の場合を一般の場合から分離し、生き残る B 項の単項式をベクトル分割を用いて完全に記述した上で、残りの分割和を一変数キュムラントへと簡約した。この結果として、Salerno および Silverman が予想した剰余類合同式を復元するとともに、法 p における係数の最初のブロックの明示的な記述を得た。",
+          "keywords": [
+            "Böttcher coordinate",
+            "digit-sum formula",
+            "congruence",
+            "vector-partition",
+            "cumulant"
+          ],
+          "appendix": "本論文は数論的力学 (arithmetic dynamics) および複素動力学 (complex dynamics) の分野に関連しており、Salerno と Silverman による予想を解決した内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2604.02005v1": {
+          "title": "等差数列によって駆動される円周上の被覆：ディオファントス近似とフラクタル交差へのパーコレーション・アプローチ",
+          "summary": "実数列 (qₙ) とランダムな x ∈ [0,1) に対し、中心点 {qₙx} からの収縮区間による [0,1) の被覆問題を研究した。ラキュナリー（空隙的）数列において被覆半径 1/n が定数倍を除いて最適であることを示し、特定の劣ラキュナリー数列やフーリエ減衰を持つ確率測度にも結果を拡張した。応用として、不均一 Littlewood-Cassels 問題の変種において、||nα-γ|| ||nβ-δ|| < C/(n log n) が無限個の n で成立する badly approximable な β の集合がフル・ハウスドルフ次元を持つことを示した。さらに、区間のサイズが 1/n^ν (ν ⩾ 1) の場合に、カントール集合等の Ahlfors 正則なコンパクト集合との共通部分における limsup 集合のハウスドルフ次元を決定した。",
+          "keywords": [
+            "Diophantine approximation",
+            "Hausdorff dimension",
+            "lacunary sequences",
+            "percolation",
+            "Littlewood-Cassels problem"
+          ],
+          "appendix": "この論文は arithmetic dynamics に関連するディオファントス近似や、フラクタル上の力学系に関連する性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.01970v1": {
+          "title": "正則モデル集合として生じる一様近似格子による半単純リー群のℝランクの決定",
+          "summary": "コンパクト因子を持たない線形半単純リー群 G において、正則モデル集合として得られる一様近似格子 Λ が、周囲の群 G の構造を強い意味で決定することを示した論文である。主な成果として、Mostow による格子の古典的結果を拡張し、任意の非コンパクトなカルタン部分群 C に対して、gCg⁻¹ ∩ Λ² が空でなく一様近似格子となるような g ∈ G が存在することを証明した。この証明の鍵として、強近似格子のハル（hull）に対する Moore 型エルゴード定理を導出している。さらに、Prasad と Raghunathan による格子に関する知見に基づき、こうした近似格子が G の実ランク（ℝ-rank）を決定することを証明した。",
+          "keywords": [
+            "uniform approximate lattices",
+            "regular model sets",
+            "semisimple Lie groups",
+            "ℝ-rank",
+            "Moore-type ergodicity theorem"
+          ],
+          "appendix": "本論文で扱われる近似格子やモデル集合の性質は、[興味ある分野]における「structure of large countable infinite group」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2604.01817v1": {
+          "title": "有限可解カット群の4つの辺を持つGruenberg-Kegelグラフ",
+          "summary": "本論文では、可解なカット群（cut group）のGruenberg-Kegelグラフ（素数グラフ）の分類における重要な進展として、辺の数が4つであるようなグラフは唯一であることを証明しました。この結果は、Bächleら（2023年）によって開始された可解カット群のGruenberg-Kegelグラフの分類に関する研究を前進させるものです。",
+          "keywords": [
+            "Gruenberg-Kegel graphs",
+            "cut groups",
+            "solvable groups",
+            "prime graph question"
+          ],
+          "appendix": "本論文は有限可解群の構造を扱っており、興味ある分野の中では「structure of large countable infinite group」に関連する群論の基礎的な構造解析の手法に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.01706v1": {
+          "title": "半群 B₂ における半環等式",
+          "summary": "5元からなるブラント半群 B₂ は自然な半束順序を持つ逆半群の構造を持ち、最大下界をとる演算を加法とする加法べき等半環を構成する。本論文では、この半環に対する等式の有限基底を提示し、先行研究の結果と合わせることで、組合せ的な自然な半束順序付き逆半群における有限基底問題（Finite Basis Problem）の解決を完結させた。",
+          "keywords": [
+            "Brandt semigroup B₂",
+            "naturally semilattice-ordered inverse semigroup",
+            "additively idempotent semiring",
+            "Finite Basis Problem"
+          ],
+          "appendix": "組合せ論的な半群の構造や等式系の基底に関する研究であり、興味ある分野の中では combinatorics on words やオートマトン理論に関連する代数的構造の解析と深く関わっている。"
+        },
+        "http://arxiv.org/abs/2604.01697v1": {
+          "title": "デーン充填と結び目群 II：持続的要素の普遍性",
+          "summary": "3次元球面 S³ 内の非自明な結び目 K に対し、すべての非自明なデーン充填の下で非自明であり続ける結び目群 G(K) の元を「持続的要素（persistent element）」と定義する。Kronheimer と Mrowka による Property P 予想の解決を基礎とし、本論文では、すべての非自明な結び目群が、互いに素な自己同型軌道を持ちメリディアンの累乗を含まない無限個の持続的要素を持つことを示す。さらに、手術後の多様体の基本群にねじれが生じない広範な双曲的結び目のクラスにおいて、持続的要素が G(K) の構造に遍在していることを明らかにする。具体的には、周辺要素の正規閉包に含まれない任意の部分群が持続的要素を含むこと、および持続的要素がすべての真の部分群の外側に存在することを証明する。",
+          "keywords": [
+            "Dehn filling",
+            "knot group",
+            "persistent element",
+            "hyperbolic knot",
+            "Property P"
+          ],
+          "appendix": "本論文は、結び目群の内部構造や部分群の性質を詳細に検討しているため、指定された興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.01633v1": {
+          "title": "普遍仮想編組群",
+          "summary": "本論文では、c 種類の交差を持つ仮想編組型の構造を統一的に扱う代数的枠組みとして、普遍仮想編組群 UVₙ(c) を導入している。この群は、仮想編組群、仮想特異編組群、仮想双子群、多仮想編組群といった既存の標準的な群を自然な商として持つ。UVₙ(c) が有限指数の直角アルティン部分群（RAAG）を含むことを証明し、その帰結として剰余有限性、線形性、語の判定問題および共役問題の可解性、Tits の代替定理といった強い構造的性質を導いている。また、n ≥ 5 において交換子群 UVₙ(c)' が完全群であることや、最小の非可換有限商が対称群 Sₙ であるといった剛性現象を示している。さらに、部分群の分離性（LERF）や Howson 特性が n ≤ 3 の場合に限り成立することを解明し、仮想コホモロジー次元の計算や中心の決定、および n! より大きい位数を持つ明示的な有限商の構成も行っている。",
+          "keywords": [
+            "Universal virtual braid groups",
+            "Right-angled Artin groups",
+            "Rigidity phenomena",
+            "Subgroup separability",
+            "Virtual cohomological dimension"
+          ],
+          "appendix": "本論文は、群の代数的構造や部分群の性質を深く掘り下げている点で「structure of large countable infinite group」の分野と関連があります。"
+        },
+        "http://arxiv.org/abs/2604.01548v1": {
+          "title": "ガロア環上における線形有限力学系のダイナミクスについて",
+          "summary": "符号理論やシミュレーションにおいて重要な役割を果たす線形有限力学系を対象に、その解析手法を巡回加群からガロア環へと拡張する。本論文では、システムの関数グラフにおける連結成分の構造を反映する周期の長さや過渡期の長さ（木の高さ）といった基本情報を効率的に取得することを目指し、これらを計算するためのアルゴリズムを提案している。",
+          "keywords": [
+            "Linear finite dynamical systems",
+            "Galois rings",
+            "Functional graphs",
+            "Cyclic modules"
+          ],
+          "appendix": "力学系の構造（周期や木の高さ）を代数的に解析する手法が含まれており、complex dynamics や arithmetic dynamics の観点からも興味深い内容となっています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.02303v1",
+        "http://arxiv.org/abs/2604.02244v1",
+        "http://arxiv.org/abs/2604.02213v1",
+        "http://arxiv.org/abs/2604.02115v1",
+        "http://arxiv.org/abs/2604.02089v1",
+        "http://arxiv.org/abs/2604.02087v1",
+        "http://arxiv.org/abs/2604.02014v1",
+        "http://arxiv.org/abs/2604.02005v1",
+        "http://arxiv.org/abs/2604.01970v1",
+        "http://arxiv.org/abs/2604.01817v1",
+        "http://arxiv.org/abs/2604.01706v1",
+        "http://arxiv.org/abs/2604.01697v1",
+        "http://arxiv.org/abs/2604.01633v1",
+        "http://arxiv.org/abs/2604.01548v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-05T04:45:35.332653+00:00",
-      "updated_at": "2026-04-05T06:12:07.987927+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-05T07:35:58.612242+00:00",
+      "finalized_at": "2026-04-05T07:35:58.612220+00:00"
     }
   ]
 }
