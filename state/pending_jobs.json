@@ -25223,7 +25223,7 @@
     },
     {
       "pipeline_id": "20260406T050628Z-8ca035ed",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/6jldwcn6q5dlbjwqw1thxt1ole63bod0tmmc",
       "summarize_job_name": "batches/oef363p81fsufh3t5llbn9xb9p01z5e4r0hb",
       "papers": [
@@ -25619,14 +25619,158 @@
         "http://arxiv.org/abs/2604.02646v1",
         "http://arxiv.org/abs/2604.02601v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.03165v1": {
+          "title": "木ポセットにおける彩色スイープカバーの境界について",
+          "summary": "本論文では、木ポセット（Tree Posets）の極大反鎖に対する彩色の一種として「彩色スイープカバー（Decorated Sweep Covers, DSCs）」を導入している。これは、共通の親を持つ兄弟要素が同じ色を持つように彩色するものであり、分散システムやドローン配送の経路制御、モンテカルロ木探索などの分野への応用が期待される。本研究ではn分木ポセットにおけるk彩色DSCの列挙に焦点を当て、その通常母関数（OGF）を導出するとともに、二項係数に関する新たなシューア凸性（Schur-convexity）の結果を示した。さらに、母関数係数の漸近的な境界が Θ(Dₙᵏ kᵝ) （ただし Dₙ は指数成長定数、β ≥ n² - 1）としてスケールすることを証明している。",
+          "keywords": [
+            "Decorated sweep covers",
+            "Tree posets",
+            "Generating functions",
+            "Schur-convexity",
+            "Antichains"
+          ],
+          "appendix": "本論文は、数え上げ組合せ論や母関数の解析を扱っており、興味ある分野のうち「combinatorics on words」や「automata theory」に関連する離散構造の解析手法と密接な関わりがあります。"
+        },
+        "http://arxiv.org/abs/2604.03100v1": {
+          "title": "ハイゼンベルク群の垂直部分群の拡張性",
+          "summary": "離散ハイゼンベルク群によるコンパクト距離空間 (X, ρ) への連続的作用における、特定の集合に沿った拡張性（expansiveness）について論じている。BoyleとLindが提唱した ℤᴰ 作用に関する手法を応用し、作用群を (2D+1) 次元連続ハイゼンベルク群 ℋ に埋め込むことで、ℋ の拡張的部分集合を定義した。特に垂直部分群の拡張性に焦点を当て、空間 X が無限集合であるならば ℋ の中心は拡張的になり得ないこと、および少なくとも一つの非拡張的な 2D 次元垂直部分群が常に存在することを証明した。",
+          "keywords": [
+            "Heisenberg group",
+            "Expansiveness",
+            "Vertical subgroups",
+            "Discrete Heisenberg group",
+            "Compact metric space"
+          ],
+          "appendix": "この論文は、興味ある分野のうち symbolic dynamics および structure of large countable infinite group に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.03086v1": {
+          "title": "非線形遅延微分方程式のデータ駆動型Koopman表現について",
+          "summary": "無限次元の遅延ダイナミクスを有限次元のKoopman学習へと結びつけ、明示的かつ解釈可能な誤差保証を伴う厳密な理論的枠組みを構築する研究。遅延微分方程式(DDE)の無限次元位相空間を扱うため、履歴の離散化と再構成オペレータを用いたカーネルベース拡張動的モード分解(kEDMD)による有限次元近似手法を提案している。離散化、カーネル補間、データ駆動型回帰の各要因に分解された決定論的誤差界を導出しており、数値実験を通じて、離散化解像度と訓練データ量に対する収束性と予測の信頼性を実証している。",
+          "keywords": [
+            "Delay Differential Equations",
+            "Koopman operator",
+            "Extended Dynamic Mode Decomposition",
+            "Kernel methods",
+            "Error bounds"
+          ],
+          "appendix": "本研究は非線形力学系の解析手法を扱っており、複雑な力学系の振る舞いという観点で「complex dynamics」に関連し、また誤差界の導出を伴う数値計算という観点で「validated numerics」の分野に関連性を持ちます。"
+        },
+        "http://arxiv.org/abs/2604.03085v1": {
+          "title": "HistMSO: MONAを用いた一貫性モデルの推論のための論理",
+          "summary": "本研究では、複製データシステムの一貫性モデルを推論するための単項二階論理（MSO）であるHistMSOを提案している。これはBurckhardtによる履歴と抽象実行の形式モデルに基づいており、ViottiとVukolicの階層における42の一貫性モデルのうち39を表現できる。また、HistMSOの充足可能性判定およびモデル検査を「語（word）上のMSO」の問題に帰着させる手法を開発し、MONAツールを用いた自動推論を可能にした。",
+          "keywords": [
+            "HistMSO",
+            "consistency models",
+            "replicated data systems",
+            "Monadic Second-Order logic",
+            "MONA"
+          ],
+          "appendix": "論理を語上のMSOへ帰着させ、オートマトンベースのツールであるMONAを用いて自動推論を行うアプローチは、automata theoryおよびformal languagesの分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.03080v1": {
+          "title": "不安定な加群の抽象基本クラス：Paolini-Shelahの例の変種",
+          "summary": "捩れのないアーベル群のクラス K̂ を構成し、(K̂, ≤ₚ) が LS(K̂) = ℵ₀ を満たす抽象基本クラス (Abstract Elementary Class, AEC) となることを示した。このクラスは、不安定であること、共同埋め込み特性 (Joint Embedding Property) を持ち極大モデルを持たないが融合特性 (Amalgamation Property) は持たないこと、および (< ℵ₀)-tame であることを特徴とする。本研究は Paolini-Shelah による構成の核心的メカニズムを抽出した変種となっている。",
+          "keywords": [
+            "abstract elementary class",
+            "torsion-free abelian groups",
+            "stability",
+            "tame",
+            "amalgamation property"
+          ],
+          "appendix": "この論文は、巨大な可算無限群の構造 (structure of large countable infinite group) におけるモデル理論的な性質や、代数的クラスの分類理論に関連している。"
+        },
+        "http://arxiv.org/abs/2604.03029v1": {
+          "title": "ブーリアンネットワークにおける Most Permissive セマンティクスのブーリアン符号化",
+          "summary": "ブーリアンネットワーク(BN)の古典的な非同期セマンティクスが定量的モデルの挙動を十分に再現できない課題に対し、本論文では「Most Permissive (MP) セマンティクス」を扱うためのブーリアン符号化手法を提案する。元のBNの各コンポーネントを3つのブーリアン変数の組として表現し、拡張された論理関数を導出することで、符号化されたBNの非同期ダイナミクスが元のMPセマンティクスにおける到達可能性を正確に再現することを証明した。この手法はbioLQMフレームワークに実装され、既存のツール群との互換性やスケーラビリティも確保されている。",
+          "keywords": [
+            "Boolean networks",
+            "Most Permissive semantics",
+            "Boolean encoding",
+            "reachability",
+            "bioLQM"
+          ],
+          "appendix": "ブーリアンネットワークのダイナミクスを扱う性質上、離散力学系の解析に関連する symbolic dynamics や、状態遷移系を記述する観点から automata theory との関連性があります。"
+        },
+        "http://arxiv.org/abs/2604.03017v1": {
+          "title": "Assume-guarantee reasoningによるリャプヌフ関数の合成性",
+          "summary": "本論文は、大規模システムの仕様検証手法であるassume-guarantee reasoningを、レンズ(lens)を用いた圏論的枠組みで一般化する手法を提案している。Mooreマシンや部分観測マルコフ決定過程(POMDPs)、常微分方程式(ODE)などのシステムを「一般化されたMooreマシン」として統一的に扱い、特にODEにおける(局所)入力対状態安定性((L)ISS)リャプヌフ関数のための新たなassume-guarantee形式を導出している。この枠組みは、tangencyと呼ばれる切断を持つファイブレーションや二重圏(double category)の概念を用いることで、2-関手的な性質を持つ高度に合成的な構造を実現している。",
+          "keywords": [
+            "assume-guarantee reasoning",
+            "Lyapunov functions",
+            "lenses",
+            "compositionality",
+            "generalized Moore machines"
+          ],
+          "appendix": "本論文は、Mooreマシンの一般化やシステム記述の構成性を扱っていることから、automata theoryに関連しています。"
+        },
+        "http://arxiv.org/abs/2604.02955v1": {
+          "title": "act: テクニカルレポート",
+          "summary": "仕様記述および検証用言語 act の形式的定義とメタ理論に関するテクニカルレポートである。本稿では、act の構文、操作的ポインタ意味論、型システム、および主要なメタ理論的成果である型安全性（type-safety）について詳述されている。",
+          "keywords": [
+            "act specification and verification language",
+            "operational pointer semantics",
+            "type system",
+            "type-safety",
+            "metatheory"
+          ],
+          "appendix": "本論文は、計算機科学における formal languages の分野、特にプログラムの形式的検証や型理論に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.02649v1": {
+          "title": "無限双曲面におけるBellisの強安定集合",
+          "summary": "特定の双曲面の単位接束における強安定集合に関するA. Bellisの定理の修正証明を記述した論文である。この定理は、測地線が任意に短い閉測地線に遭遇するようなベクトルにおいて、力学的な強安定集合が対応するホロサイクル軌道と一致しないことを示している。Bellisによる、無限個の閉測地線の周囲を回る測地線を構成する着想に基づいた証明が展開されている。",
+          "keywords": [
+            "strong stable sets",
+            "unit tangent bundle",
+            "hyperbolic surfaces",
+            "horocyclic orbit",
+            "geodesic rays"
+          ],
+          "appendix": "本論文は双曲幾何学上の力学系を扱っており、complex dynamicsの分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.02646v1": {
+          "title": "平面三角形分割における4-可約辺の数について",
+          "summary": "本論文では、4-連結グラフにおいて4-連結性を維持する可約辺（4-contractible edges）の数の下限に関する安藤と江川（2007年）の定理を、4-連結平面三角形分割に焦点を当てて改良した。特に、頂点数7以上の4-連結平面三角形分割Gにおいて、次数5以上の頂点集合をV_≥5とすると、Gは少なくとも|V_≥5|+2本の4-可約辺を含むことを示した。また、この下限を達成する極値グラフの決定も行っている。",
+          "keywords": [
+            "4-connected plane triangulations",
+            "contractible edges",
+            "extremal graphs",
+            "connectivity"
+          ],
+          "appendix": "本論文はグラフ理論に関する研究であり、提示された興味ある分野の中では組合せ論（combinatorics）に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.02601v1": {
+          "title": "WGFINNs: 弱形式に基づくGENERIC形式論を組み込んだニューラルネットワーク",
+          "summary": "ノイズを含む観測データから支配方程式を同定することは、科学的機械学習における根本的な課題である。熱力学の法則を構造的に保証する従来のGENERIC形式論に基づくニューラルネットワーク（GFINNs）は、強形式の損失関数に依存するため、測定ノイズに対して非常に敏感であるという欠点があった。本論文では、動力学系の弱形式と構造保存アーキテクチャを統合したWGFINNs（Weak formulation-based GFINNs）を提案する。WGFINNsは、GENERICの退化条件や対称性条件を厳密に満たしつつ、ノイズに対する頑健性を大幅に向上させている。さらに、状態変数間のスケールの不均衡を緩和するために、状態ごとの重み付き損失と残差ベースのアテンション機構を導入した。理論解析により、強形式の推定量がノイズ存在下で時間ステップの減少に伴い発散するのに対し、弱形式の推定量はテスト関数が特定の条件を満たすことで正確な推定が可能であることを示した。数値実験において、WGFINNsは様々なノイズレベルでGFINNsを凌駕し、正確な予測と物理量の信頼性の高い復元を実現した。",
+          "keywords": [
+            "GENERIC formalism",
+            "Weak formulation",
+            "Physics-informed neural networks",
+            "Scientific machine learning",
+            "Robustness"
+          ],
+          "appendix": "本論文は、提示された「興味ある分野」（記号力学、オートマトン、数論動態、精度保証付き計算など）と直接的な関連は認められませんが、構造保存型の数値解法や力学系のシステム同定という観点から、広義の計算力学および動力学の研究に寄与する内容です。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.03165v1",
+        "http://arxiv.org/abs/2604.03100v1",
+        "http://arxiv.org/abs/2604.03086v1",
+        "http://arxiv.org/abs/2604.03085v1",
+        "http://arxiv.org/abs/2604.03080v1",
+        "http://arxiv.org/abs/2604.03029v1",
+        "http://arxiv.org/abs/2604.03017v1",
+        "http://arxiv.org/abs/2604.02955v1",
+        "http://arxiv.org/abs/2604.02649v1",
+        "http://arxiv.org/abs/2604.02646v1",
+        "http://arxiv.org/abs/2604.02601v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-06T05:06:28.421130+00:00",
-      "updated_at": "2026-04-06T06:27:37.782650+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-06T07:07:37.653255+00:00",
+      "finalized_at": "2026-04-06T07:07:37.653231+00:00"
     }
   ]
 }
