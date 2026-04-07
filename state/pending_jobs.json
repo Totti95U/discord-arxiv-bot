@@ -25771,6 +25771,282 @@
       "created_at": "2026-04-06T05:06:28.421130+00:00",
       "updated_at": "2026-04-06T07:07:37.653255+00:00",
       "finalized_at": "2026-04-06T07:07:37.653231+00:00"
+    },
+    {
+      "pipeline_id": "20260407T044243Z-cb12b2f4",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/6jkpss0qnsl071sgmsvuk6etvudh09y0464z",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03887v1",
+          "entry_id": "http://arxiv.org/abs/2604.03887v1",
+          "title": "Cohomology of special unitary groups and congruence subgroups",
+          "summary": "We prove a homotopy invariance result for the first cohomology group of the special unitary group $\\mathrm{SU}_3(F[t])$ with coefficients in irreducible representations of $\\mathrm{PGL}_2(F)$. The main theorem establishes that this cohomology is naturally isomorphic to the corresponding cohomology of $\\mathrm{PGL}_2(F)$.",
+          "authors": [
+            "Claudio Bravo"
+          ],
+          "published": "2026-04-04T22:48:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03886v1",
+          "entry_id": "http://arxiv.org/abs/2604.03886v1",
+          "title": "From High-Level Types to Low-Level Monitors: Synthesizing Verified Runtime Checkers for MAVLink",
+          "summary": "Standard communication protocols for Unmanned Aerial Vehicles (UAVs), such as MAVLink, lack the capability to enforce the contextual validity of message sequences. Autopilots therefore remain vulnerable to stealthy attacks, where syntactically correct but semantically ill-timed commands induce unsafe states without triggering physical anomaly detectors. Prior work (DATUM) demonstrated that global Refined Multiparty Session Types (RMPSTs) are an effective specification language for centralized MAVLink protocol enforcement, but suffered from two engineering failures: manual proof terms interleaved with protocol definitions, and an OCaml extraction backend whose managed runtime is incompatible with resource-constrained UAV hardware. We present Platum, a framework that addresses both failures with a minimal DSL requiring only the five semantic components of a global session type (sender, receiver, label, payload variable, refinement predicate), whose structural well-formedness conditions are confirmed via reflective decision procedures in Meta-F*. Confirmed specifications are compiled directly into flat, allocation-free C Finite State Machines (FSMs), deployed as centralized proxy monitors at the GCS/UAV communication boundary. Our evaluation demonstrates a 4x reduction in total monitor latency and lower memory overhead compared to DATUM, measured via ArduPilot SITL simulation.",
+          "authors": [
+            "Arthur Amorim",
+            "Paul Gazzillo",
+            "Max Taylor",
+            "Lance Joneckis"
+          ],
+          "published": "2026-04-04T22:45:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03884v1",
+          "entry_id": "http://arxiv.org/abs/2604.03884v1",
+          "title": "Formalizing CHSH Rigidity in Lean 4",
+          "summary": "Violation of the Clauser-Horne-Shimony-Holt (CHSH) inequality certifies genuine quantum correlations. In this work, we formalize in Lean 4 the rigidity theorem -- any strategy achieving near-optimal CHSH value must be locally isometric to the canonical qubit strategy. In the course of formalization, we identified a gap in the argument of McKague, Yang, and Scarani (arXiv:1203.2976).",
+          "authors": [
+            "Tianrun Zhao",
+            "Nengkun Yu"
+          ],
+          "published": "2026-04-04T22:31:36+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03872v1",
+          "entry_id": "http://arxiv.org/abs/2604.03872v1",
+          "title": "Strategies in Sabotage Games: Temporal and Epistemic Perspectives",
+          "summary": "Sabotage games are played on a dynamic graph, in which one agent, called a runner, attempts to reach a goal state, while being obstructed by a demon who at each round removes an edge from the graph. Sabotage modal logic was proposed to carry out reasoning about such games. Since its conception, it has undergone a thorough analysis (in terms of complexity, completeness, and various extensions) and has been applied to a variety of domains, e.g., to formal learning. In this paper, we propose examining the game from a temporal perspective using alternating time temporal logic (ATL$^\\ast$), and address the players' uncertainty in its epistemic extensions. This framework supports reasoning about winning strategies for those games, and opens ways to address temporal properties of dynamic graphs in general.",
+          "authors": [
+            "Nina Gierasimczuk",
+            "Katrine B. P. Thoft"
+          ],
+          "published": "2026-04-04T21:38:15+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03844v1",
+          "entry_id": "http://arxiv.org/abs/2604.03844v1",
+          "title": "Safety and Liveness of Cross-Domain State Preservation under Byzantine Faults: A Mechanized Proof in Isabelle/HOL",
+          "summary": "Formally guaranteeing the safety and liveness of regulatory state transitions in cross-domain state synchronization systems is a problem of growing importance as tokenized assets are increasingly operated across heterogeneous blockchain networks and off-chain ledgers. This paper presents a mechanized proof of 2,348 lines in Isabelle/HOL establishing two complementary properties. First, cross-domain state preservation (safety): a regulatory state transition performed on one domain is faithfully reflected across all connected domains with structural preservation. This guarantee encompasses bidirectional roundtrip preservation, consistency across an arbitrary finite set of domains, and per-asset isolation. Second, liveness under Byzantine faults: in the presence of up to f < n/3 Byzantine nodes, we prove deterministic resolution of conflicting regulatory actions, deadlock freedom, and starvation freedom. In the combination of these two properties, the liveness proof discharges the honest-node assumption of the safety proof under Byzantine faults, promoting conditional safety to an unconditional guarantee. The seven generic locales derived in this process are domain-independent and reusable for arbitrary domains via Isabelle/HOL's interpretation mechanism. The application context is a regulatory state transition model based on the RCP framework (arXiv:2603.29278), which systematizes 31 requirements from 15 global financial regulatory authorities. All proof artifacts build in Isabelle/HOL without sorry or oops, have been submitted to the Archive of Formal Proofs (under review), and are publicly available on GitHub.",
+          "authors": [
+            "Jinwook Kim"
+          ],
+          "published": "2026-04-04T19:50:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03842v1",
+          "entry_id": "http://arxiv.org/abs/2604.03842v1",
+          "title": "Spectral Theory of the Toroidal 3D Queen Graph",
+          "summary": "We study the adjacency spectrum of the toroidal three-dimensional queen graph $G_n$ on $(\\mathbb{Z}_n)^3$. Since $G_n$ is a Cayley graph on an abelian group, its adjacency matrix is diagonalized by Fourier characters. For each frequency $a\\in(\\mathbb{Z}_n)^3$, the corresponding eigenvalue is $λ(a)=nμ(a)-13$, where $μ(a)$ counts the queen directions orthogonal to $a$ modulo $n$. In the generic odd case, meaning $n$ odd with $3\\nmid n$, the possible values of $μ(a)$ are exactly $0,1,2,3,4,$ and $13$, and each multiplicity is given by an explicit polynomial in $n$. The proof combines a geometric classification of frequency points by orthogonality type with two global counting identities.",
+          "authors": [
+            "Mahesh Ramani"
+          ],
+          "published": "2026-04-04T19:46:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03817v1",
+          "entry_id": "http://arxiv.org/abs/2604.03817v1",
+          "title": "On the Algebraic Properties of r-circulant Matrices Associated with Generalized k-Pell-Tribonacci Numbers",
+          "summary": "This study examines the properties of an r-circulant matrix whose entries are defined by the generalized k-Pell-Tribonacci sequence {P_k,n}. Explicit expressions are derived for the Frobenius (Euclidean) norm and the entrywise \\ell_1-norm, together with closed-form formulas for the eigenvalues and the determinant of the matrix. Furthermore, upper and lower bounds for the spectral norm are established, yielding results that generalize previously reported ones corresponding to particular sequences while also providing sharper bounds for the considered norms.",
+          "authors": [
+            "Marko Pešović",
+            "Sonja Telebaković Onić"
+          ],
+          "published": "2026-04-04T17:51:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03811v1",
+          "entry_id": "http://arxiv.org/abs/2604.03811v1",
+          "title": "From Linear to Nonlinear: A Resolvente criterion for Polynomial Stability of Semigroups Generated by Monotone Operators",
+          "summary": "The Borichev--Tomilov theorem \\cite{BT2010} provides a sharp characterization of polynomial decay for linear $C_0$-semigroups in terms of resolvent growth along the imaginary axis. In the nonlinear setting, the absence of a spectral theory renders the imaginary-axis approach inapplicable.\n  In this paper, we develop a new framework for nonlinear maximal monotone operators in Hilbert spaces by replacing spectral analysis on $i\\mathbb{R}$ with the asymptotic analysis of the \\textit{real resolvent equation} \\[ λx_λ+ \\mathcal{A}(x_λ) \\ni y, \\quad λ\\to 0^+. \\] We show that, for homogeneous operators (and suitable perturbations), the blow-up rate of $\\|x_λ\\|$ at the origin reveals the effective nonlinear scaling of the operator and determines the corresponding polynomial decay rate of the associated semigroup through a coercive dissipation mechanism. This provides a nonlinear Tauberian-type principle for a broad class of degenerate dissipative systems.\n  The approach recovers, in particular, the optimal $1/t$ decay for the wave equation with nonlocal Kelvin--Voigt damping recently obtained by Cavalcanti et al.\\ (2025), and allows one to justify decay estimates for weak solutions in situations where classical multiplier methods require higher regularity. It also clarifies the structural limitations of the method, identifying regimes where additional geometric or time-domain arguments are necessary.",
+          "authors": [
+            "Marcelo M. Cavalcanti",
+            "Valéria N. Domingos Cavalcanti",
+            "Jaime E. Munõz Rivera"
+          ],
+          "published": "2026-04-04T17:30:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03793v1",
+          "entry_id": "http://arxiv.org/abs/2604.03793v1",
+          "title": "On the Structure of 3D Queen Domination",
+          "summary": "We study the domination number $γ(Q_n^3)$ of the three-dimensional $n \\times n \\times n$ queen graph. The main result is a stratified theorem computing, for each position type -- corner, edge, face, or interior -- the number of inner-core vertices dominated by a queen, and showing in particular that interior placements dominate strictly more core cells than boundary placements. This yields a symmetry-reduction principle via the octahedral group and complements the standard counting lower bound and layered upper bound, giving $γ(Q_n^3) = Θ(n^2)$. We also certify exact values for $n \\leq 6$ via integer linear programming and independent verification.",
+          "authors": [
+            "Mahesh Ramani"
+          ],
+          "published": "2026-04-04T16:47:29+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03784v1",
+          "entry_id": "http://arxiv.org/abs/2604.03784v1",
+          "title": "Length-Maximal Codes with Given Singleton Defect: Structure and Bounds",
+          "summary": "We study the maximum length of $q$-ary codes as a function of alphabet size, code size, and Singleton defect. For an $(n, M, d)_q$ code with dimension $κ= \\log_q M \\ge 2$ and Singleton defect $s = n - \\lceilκ\\rceil + 1 - d$, we establish a \\emph{maximal-arc-type bound}. For $M = q^k$, we call codes with $n = (s+1)(q+1) + k - 2$ \\emph{length-maximal}, and show such codes are necessarily symbol-uniform, have pairwise distances confined to $\\{d\\} \\cup \\{n-k+3, \\ldots, n\\}$, and satisfy the divisibility condition $(s+2) \\mid q(q+1)$. An equivalent form yields an improved Singleton-type inequality extending a result of Guerrini, Meneghetti, and Sala for binary systematic codes. When $s \\ge 2q$, the bound tightens to $n \\le s(q+1)+k-1$; more finely, when $αq \\le s < (α+1)q$ for integer $α\\ge 2$, it tightens to $n \\le (s+2-α)(q+1)+α+k-3$, improving on the main bound by $(α-1)q$. We identify several conditions under which nonlinear codes satisfy the Griesmer bound, including: $d \\le q^2$; $s \\le q-1$; $s \\ge βq$ with $d \\le βq^2$; and a parametric family of binary conditions. We also show that near-length-maximal $A^1$MDS codes of length $k+2q-1$ cannot exist for $k \\ge 5$ when $q=2$, nor for $k \\ge 7$ when $q=3$. For codes of non-integer dimension $κ\\in (k, k+1)$, an analogous bound holds but is never attained. This forces the corresponding Singleton-type inequality one unit tighter than the integer-dimension case. For rational non-integer $κ$, our bounds specialise to a length bound for additive codes of fractional dimension, complementing recent geometric results on additive codes. Throughout, the results parallel the theory of maximal arcs. Whether length-maximal nonlinear codes can exist for parameter ranges within which no linear length-maximal codes exist is the principal open problem raised by this work.",
+          "authors": [
+            "Tim Alderson"
+          ],
+          "published": "2026-04-04T16:12:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03745v1",
+          "entry_id": "http://arxiv.org/abs/2604.03745v1",
+          "title": "On higher dimensional integrality and multiplicative dependence in semigroup algebraic dynamics",
+          "summary": "We study multiplicative dependence of points in semigroup orbits in higher dimensions. More specifically, we show that the non-density of integral points in semigroup orbits implies sparsity of multiplicative dependence in orbits. This can be viewed as a semigroup dynamical and a higher dimensional version of recent results by Bérczes, Ostafe, Shparlinski and Silverman, which in turn can be viewed as a generalization of theorems of Northcott and Siegel. We also confirm that the non-density hypothesis of integral points in orbits is implied by Vojta's conjecture.",
+          "authors": [
+            "Jorge Mello",
+            "Yu Yasufuku"
+          ],
+          "published": "2026-04-04T14:20:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03736v1",
+          "entry_id": "http://arxiv.org/abs/2604.03736v1",
+          "title": "Nonexistence results for semilinear elliptic equations on metric graphs",
+          "summary": "In this paper, we study the nonexistence of solutions to semilinear elliptic equations with a positive potential on metric graphs. In particular, the Laplacian under consideration is of a special type, related to both the vertices and edges of metric graphs. We construct a modified distance function, introduce appropriate test functions, and establish the nonexistence of global solutions under suitable volume growth conditions imposed on the potential. More precisely, the nonnegative solutions or sign-changing solutions to the equations are the trivial zero solutions.",
+          "authors": [
+            "Yang Liu",
+            "Yong Lin",
+            "Haohang Zhang"
+          ],
+          "published": "2026-04-04T13:43:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03734v1",
+          "entry_id": "http://arxiv.org/abs/2604.03734v1",
+          "title": "Binary Caps and LCD Codes with Large Dimensions",
+          "summary": "We establish a connection between linear complementary dual (LCD) codes and caps in projective space. Using this framework and the structure theory of maximal caps, we derive nonexistence theorems for LCD codes with minimum distance at least $4$, providing computation-free proofs that were previously obtained only through exhaustive search. As an application, we completely determine the optimal minimum distances for codimensions $7$ and $8$ for the first time.",
+          "authors": [
+            "Keita Ishizuka",
+            "Yuhi Kamio"
+          ],
+          "published": "2026-04-04T13:33:17+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03718v1",
+          "entry_id": "http://arxiv.org/abs/2604.03718v1",
+          "title": "Magnitude homology of real hyperplane arrangements",
+          "summary": "We initiate the study of magnitude theory of real hyperplane arrangements. Magnitude is a cardinality-like invariant of metric spaces or enriched categories measuring the effective size. Its categorification, the magnitude homology, is a more powerful invariant. For a real hyperplane arrangement, or more generally, an oriented matroid, the tope graph encapsulates considerable amount of information. Since tope graphs are equipped with the shortest path metric, we feed them to the magnitude and magnitude homology machinery to derive new invariants of real hyperplane arrangements. We prove some structural results of the magnitude of arrangements, including reciprocity, palindromic numerator and denominator. For magnitude homology of arrangements, we give combinatorial descriptions in small length and prove that tope graphs are diagonal if and only if the arrangement is Boolean. We present a face decomposition of magnitude homology, using which we obtain a combinatorial formula of diagonal magnitude Betti numbers. Many open problems are posted for future study. In particular, we conjecture that magnitude and magnitude homology of arrangements are determined by the intersection lattice.",
+          "authors": [
+            "Ye Liu"
+          ],
+          "published": "2026-04-04T12:52:08+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03624v1",
+          "entry_id": "http://arxiv.org/abs/2604.03624v1",
+          "title": "Efficient Solving for Dynamic Data Structure Constraint Satisfaction Problem",
+          "summary": "Functional verification plays a central role in ensuring the correctness of modern integrated circuit designs, where constrained-random verification is widely adopted to generate diverse stimuli under high-level constraints. In industrial verification environments, constraint solving increasingly involves dynamic data structures whose shape and content are determined at runtime, causing the sets of variables and constraint instances to evolve across solver invocations, which in turn leads to substantial overhead when nested and high-dimensional structures repeatedly expand across solves. We formalize this class of problems as the Dynamic Data Structure Constraint Satisfaction Problem (D2SCSP),which captures the interaction between dynamic data structure expansion and constraint evaluation. We propose a dependency-guided problem partitioning framework combined with an incremental encoding and constraint activation mechanism, enabling reuse of solver state and encodings across multiple solves. The framework is integrated into an industrial SystemVerilog verification flow and implemented in the commercial simulator VeriSim. Experimental results on industrial benchmarks demonstrate significant performance improvements, achieving an average speedup of 24.80x over a baseline and 1.72x over a state-of-the-art commercial simulator, highlighting the practicality of the approach for real-world verification workflows.",
+          "authors": [
+            "Nanbing Li",
+            "Weijie Peng",
+            "Jin Luo",
+            "Shuai Wang",
+            "Yihui Li",
+            "Jun Fang",
+            "Yun Liang"
+          ],
+          "published": "2026-04-04T07:42:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03620v1",
+          "entry_id": "http://arxiv.org/abs/2604.03620v1",
+          "title": "On the instability of some upward propagating, exact, nonlinear mountain waves",
+          "summary": "Using the short-wavelength instability method, we investigate the linear instability of an exact solution describing upward-propagating mountain waves, derived in A. Constantin, \\emph{J. Phys. A: Math. Theor.} (2023), under the assumption of a dry adiabatic flow. Within this approach, the stability problem reduces to analysing a system of ordinary differential equations along fluid trajectories. Our results show that the flow becomes unstable when the wave steepness exceeds the critical threshold of $\\frac{1}{3}$. Given the representation of the solution in Lagrangian coordinates, the instability analysis will show the existence of an unstable layer of few hundred meters beneath the tropopause where instability may occur, finally leading to a chaotic 3-dimensional fluid motion.",
+          "authors": [
+            "Christian Puntini"
+          ],
+          "published": "2026-04-04T07:32:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03615v1",
+          "entry_id": "http://arxiv.org/abs/2604.03615v1",
+          "title": "On digraphs determined by their singular values",
+          "summary": "Let $D$ be an digraph of order $n$ with adjacency matrix $A(D)$ and outdegree matrix $Δ^+=Δ^+(D)$. Then the Laplacian and signless Laplacian matrices of $D$ are respectively defined as $L(D)=Δ^+-A(D)$ and $Q(D)=Δ^++A(D)$. In this paper, we compute singular values and an exact formula for the trace norm of Laplacian matrices of the directed path $\\overrightarrow{P_n}$, the directed cycle $\\overrightarrow{C_n}$ and all orientations of a star. We show that for a bipartite digraph $D$, the matrices $L(D)$ and $Q(D)$ have same singular values and use this to compute the singular values and trace norm of signless Laplacian matrices. We study the problem of determination of digraphs by their singular values and prove the directed path $\\overrightarrow{P_n}$, the directed cycle $\\overrightarrow{C_n}$ and oriented star $\\overrightarrow{S}_n(n-1,0)$ are determined by their Laplacian and signless Laplacian singular values but are not determined by their adjacency singular values.",
+          "authors": [
+            "Mushtaq A. Bhat",
+            "Peer Abdul Manan"
+          ],
+          "published": "2026-04-04T07:11:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03609v1",
+          "entry_id": "http://arxiv.org/abs/2604.03609v1",
+          "title": "Solution of Erdős Problem 633",
+          "summary": "We classify triangles that can be tiled only into a square number of congruent triangles, settling Erdős Problem 633.",
+          "authors": [
+            "Michael Beeson",
+            "Miklos Laczkovich",
+            "Yan X. Zhang"
+          ],
+          "published": "2026-04-04T06:48:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03608v1",
+          "entry_id": "http://arxiv.org/abs/2604.03608v1",
+          "title": "Optimal Circuit Synthesis of Linear Codes for Error Detection and Correction",
+          "summary": "Fault injection attacks deliberately inject faults into a device via physical channels to disturb its regular execution. Adversaries can effectively deduce secrets by analyzing both the normal and faulty outputs, posing serious threats to cryptographic primitives implemented in hardware. An effective countermeasure to such attacks is via redundancy, commonly referred to as concurrent error detection schemes, where Binary linear codes have been used to defend against fault injection attacks. However, designing an optimal code circuit is often time-consuming, error-prone, and requires substantial expertise. In this paper, we formalize the optimal code circuit synthesis problem (OptiCC) based on two domain-specific minimization objectives on individual inputs and parity size. We then propose a novel algorithm CiSC for solving OptiCC, prioritizing the minimization of individual inputs. Our approach features both correct-by-construction and secure-by-construction. In a nutshell, CiSC gradually reduces individual inputs and parity size by checking, via SMT solving, the existence of feasible Boolean functions for implementing a desired code. We further present an effective technique to lazily generate combinations of inputs to Boolean functions, while quickly identify equivalent ones. We implement our approach in a tool CiSC, and evaluate it on practical benchmarks. Experimental results show our approach can synthesize code circuits that significantly outperform those generated by the latest state-of-the-art techniques.",
+          "authors": [
+            "Xi Yang",
+            "Taolue Chen",
+            "Yuqi Chen",
+            "Fu Song",
+            "Chundong Wang",
+            "Zhilin Wu"
+          ],
+          "published": "2026-04-04T06:46:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03567v1",
+          "entry_id": "http://arxiv.org/abs/2604.03567v1",
+          "title": "On Realizing Reconfiguration Graphs of Cliques",
+          "summary": "For a graph $H$ and an integer $k\\ge 1$, the \\emph{Token Sliding reconfiguration graph} $\\mathsf{TS}_k(H)$ and the \\emph{Token Jumping reconfiguration graph} $\\mathsf{TJ}_k(H)$ have as vertices the $k$-cliques of $H$, with two vertices adjacent when one clique is obtained from the other by replacing one vertex with an adjacent non-member, and respectively by an arbitrary non-member. For a target graph $G$, we study the feasibility sets $\\mathcal{K}^{\\mathsf{TS}}(G)$ and $\\mathcal{K}^{\\mathsf{TJ}}(G)$, consisting of all integers $k$ for which $G$ is isomorphic to $\\mathsf{TS}_k(H)$ and $\\mathsf{TJ}_k(H)$, respectively, for some graph $H$. We determine the exact feasibility sets for complete graphs, paths, cycles, complete bipartite graphs, book graphs, friendship graphs, and their complements, and give complete classifications for all Johnson graphs.",
+          "authors": [
+            "Duc A. Hoang"
+          ],
+          "published": "2026-04-04T03:23:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03539v1",
+          "entry_id": "http://arxiv.org/abs/2604.03539v1",
+          "title": "CB-VER: A Stable Foundation for Modular Control Plane Verification",
+          "summary": "Network operators are often interested in verifying \\emph{eventually-stable properties} of network control planes: properties of control plane states that hold eventually, and hold forever thereafter, provided the operating environment remains unchanged. Examples include eventually-stable reachability, access control, or path length properties. In this work, we introduce \\textsc{CB-Ver}, a new framework for verifying such properties, based on the key idea of a \\emph{converges-before graph} (CB-graph for short). When a user provides interfaces for each network component, \\textsc{CB-Ver} checks the necessary component-by-component requirements in parallel using an SMT solver. In addition, the tool automatically synthesizes a CB-graph and checks whether it connects all nodes in a network -- if it does, the interfaces are valid and users can check whether additional eventually-stable properties are implied. Moreover, the CB-graph can then be used to determine fault tolerance properties of the network. We formalize our verification algorithm in the Lean theorem proving environment and prove its soundness. We evaluate the performance of \\textsc{CB-Ver} on a range of benchmarks that demonstrate its ability to verify expressive properties in reasonable time. Finally, we demonstrate it is possible to automatically generate suitable interfaces by turning the problem around: Given a CB-graph, we use an off-the-shelf Constrained Horn Clause (CHC) solver to synthesize interfaces for every network component that together ensure the given correctness property.",
+          "authors": [
+            "Dexin Zhang",
+            "Timothy Alberdingk Thijm",
+            "David Walker",
+            "Aarti Gupta"
+          ],
+          "published": "2026-04-04T01:30:53+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03530v1",
+          "entry_id": "http://arxiv.org/abs/2604.03530v1",
+          "title": "Real Reliability Roots of Simple Graphs are Dense",
+          "summary": "We prove that the closure of the real roots of all-terminal reliability polynomials is exactly $[-1,0] \\cup \\{1\\}$, resolving a conjecture of Brown and McMullin and refining the corresponding density result for multigraphs due to Brown and Colbourn. The crux of the proof is demonstrating that real reliability roots of edge-substitution graphs $G[H]$, where $G$ ranges over connected multigraphs and $H$ ranges over complete graphs missing an edge, are dense.",
+          "authors": [
+            "Mohamed Omar"
+          ],
+          "published": "2026-04-04T00:23:33+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.03528v1",
+          "entry_id": "http://arxiv.org/abs/2604.03528v1",
+          "title": "Stochastic Stability of ACIMs for Piecewise Expanding $C^{1+\\varepsilon}$ Maps",
+          "summary": "We prove stochastic stability of absolutely continuous invariant measures (ACIMs) for piecewise expanding $C^{1+\\varepsilon}$ maps of the interval. For maps $τ$ in the class $\\mathcal{T}([0,1]; s, \\varepsilon)$, we consider perturbed Frobenius--Perron operators $P_δ= Q_δP_τ$, where $Q_δ$ is a Markov smoothing operator modeling noise of intensity $δ> 0$.\n  In the generalized bounded variation space $BV_{1,1/p}$, we establish a Lasota--Yorke inequality uniform in $δ$. Consequently, each $P_δ$ admits an invariant density $h_δ\\in BV_{1,1/p}$, and $h_δ\\to h$ in $L^1$ as $δ\\to 0$, where $h$ is the ACIM density of $P_τ$.\n  Our proof combines the $BV_{1,1/p}$ framework, adapted from recent ACIM existence results, with uniform quasi-compactness and perturbation theory for transfer operators. This establishes stochastic stability under minimal $C^{1+\\varepsilon}$ regularity ($\\varepsilon > 0$), where the $C^1$ case is known to fail.",
+          "authors": [
+            "Aparna Rajput"
+          ],
+          "published": "2026-04-04T00:12:34+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-04-07T04:42:43.877479+00:00",
+      "updated_at": "2026-04-07T04:42:43.877479+00:00",
+      "finalized_at": null
     }
   ]
 }
