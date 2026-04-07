@@ -25774,7 +25774,7 @@
     },
     {
       "pipeline_id": "20260407T044243Z-cb12b2f4",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/6jkpss0qnsl071sgmsvuk6etvudh09y0464z",
       "summarize_job_name": "batches/m3707t6akcn46r4n49yr39ndpmp6c49ooswh",
       "papers": [
@@ -26046,14 +26046,93 @@
         "http://arxiv.org/abs/2604.03745v1",
         "http://arxiv.org/abs/2604.03528v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.03887v1": {
+          "title": "特殊ユニタリ群と合同部分群のコホモロジー",
+          "summary": "PGL₂(F) の既約表現を係数とする特殊ユニタリ群 SU₃(F[t]) の1次コホモロジー群におけるホモトピー不変性の結果を証明している。主定理では、このコホモロジーが PGL₂(F) の対応するコホモロジーと自然に同型であることを示している。",
+          "keywords": [
+            "special unitary group",
+            "first cohomology group",
+            "homotopy invariance",
+            "irreducible representations",
+            "PGL₂(F)"
+          ],
+          "appendix": "本論文は、多項式環上の群 SU₃(F[t]) を扱っており、興味ある分野のうち「structure of large countable infinite group（巨大な可算無限群の構造）」に関連する代数的性質を記述しています。"
+        },
+        "http://arxiv.org/abs/2604.03886v1": {
+          "title": "高レベル型から低レベルモニタへ：MAVLinkのための検証済みランタイムチェッカの合成",
+          "summary": "MAVLinkのような無人航空機（UAV）用通信プロトコルは、メッセージシーケンスの文脈的妥当性を保証する機能を欠いており、構文的には正しいが意味的に不適切なコマンドによる攻撃に対して脆弱である。本論文では、先行研究における手動の証明記述やランタイムのオーバーヘッドといった課題を解決するフレームワークPlatumを提案する。Platumはグローバルセッション型の構成要素に基づくDSLを用い、Meta-F*の反映的決定手続きにより仕様の正当性を検証する。検証された仕様は動的メモリ確保を行わないC言語の有限状態機械（FSM）へとコンパイルされ、リソース制約のある環境下でも低レイテンシかつ低メモリでの監視を実現する。",
+          "keywords": [
+            "MAVLink",
+            "Refined Multiparty Session Types",
+            "Runtime Monitoring",
+            "Finite State Machines",
+            "Meta-F*"
+          ],
+          "appendix": "本論文は、通信仕様の検証から有限状態機械（FSM）を合成する手法を扱っており、興味ある分野のうち automata theory に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.03872v1": {
+          "title": "サボタージュ・ゲームにおける戦略：時相的およびエピステミックな視点",
+          "summary": "サボタージュ・ゲームは、動的グラフ上においてゴールを目指すランナーと、各ラウンドでエッジを削除して妨害を試みるデーモンとの間で行われる対戦型ゲームである。本論文では、このゲームを分析するために、交互作用時相論理 (ATL*) を用いた時相的なアプローチと、プレイヤーの不確実性を扱うためのエピステミックな拡張を提案する。この枠組みは、ゲームの勝利戦略に関する推論をサポートし、動的グラフ全般における時相的性質を扱うための新たな手法を提供する。",
+          "keywords": [
+            "Sabotage games",
+            "Alternating-time temporal logic",
+            "Epistemic extensions",
+            "Dynamic graphs",
+            "Winning strategies"
+          ],
+          "appendix": "本論文で扱われる時相論理 (ATL*) や戦略の推論は、興味ある分野のうち「automata theory」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.03842v1": {
+          "title": "トーラス上の3次元クイーン・グラフのスペクトル理論",
+          "summary": "(ℤₙ)³ 上のトーラス3次元クイーン・グラフ Gₙ の隣接スペクトルに関する研究である。Gₙ はアーベル群上のケイリーグラフであるため、その隣接行列はフーリエ指標によって対角化される。各周波数 a ∈ (ℤₙ)³ に対応する固有値は λ(a) = nμ(a) - 13 であり、ここで μ(a) は n を法として a に直交するクイーンの移動方向の数を示す。n が奇数かつ 3 で割り切れない一般的なケースにおいて、μ(a) が取り得る値は 0, 1, 2, 3, 4, 13 に限定され、それぞれの重複度は n の多項式として明示的に記述される。証明には、直交性の型による周波数点の幾何学的分類と2つの大域的な計数恒等式が用いられている。",
+          "keywords": [
+            "Spectral Theory",
+            "Toroidal Queen Graph",
+            "Cayley graph",
+            "Adjacency spectrum",
+            "Orthogonality type"
+          ],
+          "appendix": "本論文は、グラフ理論と代数的組合せ論の境界領域に位置しており、指定された興味ある分野の中では combinatorics に密接に関連しています。特に有限群上のケイリーグラフのスペクトル解析は、代数的構造を持つ組合せ論的対象の性質を明らかにする重要な手法です。"
+        },
+        "http://arxiv.org/abs/2604.03745v1": {
+          "title": "半群代数力学系における高次元の整数性と乗法的依存性について",
+          "summary": "本論文では、高次元の半群軌道における点の乗法的依存性を研究している。具体的には、半群軌道内の整数点の非稠密性が、軌道内における乗法的依存性の希薄性を導くことを示した。この結果は、NorthcottおよびSiegelの定理の一般化であるBérczes、Ostafe、Shparlinski、Silvermanらによる最近の研究成果を、半群力学系および高次元へと拡張したものとみなすことができる。また、軌道内の整数点の非稠密性に関する仮説が、Vojta予想によって導かれることを確認した。",
+          "keywords": [
+            "semigroup algebraic dynamics",
+            "multiplicative dependence",
+            "integral points",
+            "Vojta's conjecture"
+          ],
+          "appendix": "この論文は、数論的力学系（arithmetic dynamics）に関連する内容を含んでおり、提供された興味ある分野と密接に関係しています。"
+        },
+        "http://arxiv.org/abs/2604.03528v1": {
+          "title": "分数的拡大C¹⁺ᵋ写像における絶対連続不変測度の確率安定性",
+          "summary": "本論文では、区間上の分数的拡大C¹⁺ᵋ写像に対する絶対連続不変測度(ACIM)の確率安定性を証明している。強度δのノイズをモデル化したマルコフ平滑化作用素Q_δをFrobenius-Perron作用素P_τに適用した摂動作用素P_δに対し、一般化有界変動空間BV_1,1/pにおいてδに依存しない一様なLasota-Yorke不等式を確立した。これにより、δ→0のとき、P_δの不変密度h_δがP_τのACIM密度hにL¹ノルムで収束することを示した。C¹正則性では確率安定性が成立しないことが知られているが、本研究は最小限の正則性であるC¹⁺ᵋ(ε>0)においてこれを保証している。",
+          "keywords": [
+            "Stochastic stability",
+            "Absolutely continuous invariant measures",
+            "Piecewise expanding maps",
+            "Frobenius-Perron operator",
+            "Generalized bounded variation"
+          ],
+          "appendix": "本論文は、複素力学系(Complex dynamics)に関連する力学系のエルゴード理論や転送作用素の摂動論を扱っており、広義の力学系の研究分野に関連します。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.03887v1",
+        "http://arxiv.org/abs/2604.03886v1",
+        "http://arxiv.org/abs/2604.03872v1",
+        "http://arxiv.org/abs/2604.03842v1",
+        "http://arxiv.org/abs/2604.03745v1",
+        "http://arxiv.org/abs/2604.03528v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-07T04:42:43.877479+00:00",
-      "updated_at": "2026-04-07T06:16:25.527352+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-07T07:54:22.582824+00:00",
+      "finalized_at": "2026-04-07T07:54:22.582800+00:00"
     }
   ]
 }
