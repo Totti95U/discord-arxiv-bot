@@ -26492,7 +26492,7 @@
     },
     {
       "pipeline_id": "20260409T044230Z-e9386ce8",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/mvx67tdvz7x3j3p5q793zbjna6c8mn3fgxou",
       "summarize_job_name": "batches/gmixddjnyukxwbec9emcs016wdqozqh16qt9",
       "papers": [
@@ -27181,14 +27181,313 @@
         "http://arxiv.org/abs/2604.04366v1",
         "http://arxiv.org/abs/2604.04326v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.05219v1": {
+          "title": "ホリデー・ギフト交換ゲームの形式仕様と行動シミュレーション",
+          "summary": "本論文は、複雑な戦略的構造を持つ社会的制度である「ホリデー・ギフト交換ゲーム」を数学的に定式化し、その状態空間、行動集合、および略奪の連鎖（stealing chains）の再帰的構造を定義した。ゲームの停止性を証明するとともに、最終的な配分の数よりも遥かに速く増大するゲーム軌道の数をカウントするアルゴリズムを導出した。さらに、離散選択理論や欲求不満—攻撃理論に基づき、部分的な情報、社会的コスト、適応戦略を組み込んだ拡張モデルを構築した。24万回の全要因シミュレーションにより、社会的コストが略奪を27–48%抑制する最大の要因であることや、不完全情報が略奪を増加させること、またギフトの質に対する評価の合意が競争を激化させることを明らかにした。第1プレイヤーの優位性は全条件下で頑健に維持される。",
+          "keywords": [
+            "holiday gift exchange game",
+            "state space",
+            "stealing chains",
+            "discrete choice theory",
+            "social costs"
+          ],
+          "appendix": "この論文は、状態空間の構造解析、ゲームの停止性の証明、および軌道の数え上げアルゴリズムの導出といった、計算組合せ論（combinatorics）に関連する側面を持っています。"
+        },
+        "http://arxiv.org/abs/2604.05174v1": {
+          "title": "コンパクト双曲曲面上の geodesic currents のエントロピーと自己交差数",
+          "summary": "コンパクト双曲曲面 X 上のエルゴード的な geodesic current C について、測地的流れに関する測度論的エントロピー h_X(C) と自己交差数 i(C,C) の関係を考察した論文です。著者らは、h_X(C) の定量的な上界を i(C,C) および X のシストルを用いて確立しました。これにより、自己交差数が小さいことはエントロピーが小さいことを強制するという結論を導いています。",
+          "keywords": [
+            "geodesic currents",
+            "entropy",
+            "self-intersection number",
+            "hyperbolic surfaces",
+            "geodesic flow"
+          ],
+          "appendix": "測地的流れやエントロピーの解析を含むため、力学系の理論的側面において complex dynamics や symbolic dynamics との関連性があります。"
+        },
+        "http://arxiv.org/abs/2604.05169v1": {
+          "title": "整関数による軌道の分離",
+          "summary": "標準確率空間上でのCᵈの自由な確率測度保存作用に対し、写像 x ↦ Fₓ（ここで Fₓ(z) = F(z · x)）が単射となるようなボレル整関数 F が存在することを示した。本研究は、非定数な可測整関数の存在を示したGlücksamおよびWeissの結果を発展させたものである。証明には、コサイクル値が可算部分群に含まれるような分離横断（separating cross-section）と、指定された臨界点を持つForstneričの正則近似定理が組み合わされている。",
+          "keywords": [
+            "free probability measure-preserving action",
+            "entire function",
+            "factor map",
+            "holomorphic approximation theorem",
+            "Cᵈ"
+          ],
+          "appendix": "本論文は複素動力学（complex dynamics）に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2604.05123v1": {
+          "title": "Commensuratorによって決定される格子",
+          "summary": "完全に不連続な局所コンパクト群 G における有限生成余コンパクト格子 Γ と、Γ を含み、かつ Γ を commensurate する G の稠密な部分群 C を対象に、C の有限生成な commensurated subgroup の性質を研究している。一般的な剛性の結果として、C のすべての有限生成な commensurated subgroup は実質的に Γ に含まれることを示した。特に G が木の自己同型群である場合などは、commensurability の違いを除いて、Γ が C における唯一の無限な有限生成 commensurated subgroup となる。これにより、非共鳴な2つの余コンパクト木格子が同一の commensurator を持ち得るかという問題が解決された。また、右反転ビルディングの自己同型群における応用についても言及されている。",
+          "keywords": [
+            "cocompact lattice",
+            "commensurator",
+            "totally disconnected locally compact group",
+            "tree lattice",
+            "right-angled building"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に関連しており、特に無限群の格子構造や剛性理論に焦点を当てています。"
+        },
+        "http://arxiv.org/abs/2604.05086v1": {
+          "title": "グラフ信号に対するサンプルエントロピー：ネットワーク上のデータの非線形動的解析へのアプローチ",
+          "summary": "本論文では、従来1次元や2次元信号に対して用いられてきたサンプルエントロピー（SampEn）をグラフ信号へと拡張した「SampEnG」を提案している。SampEnGは、マルチホップ近傍を利用したトポロジーを考慮した埋め込み手法により、ネットワーク上のデータの非線形動的特性を評価する統一的なフレームワークである。実験では、気象データや交通流などの実データを用いて、SampEnGがパスやグリッド上の非線形ダイナミクスを効果的に捉えられることを実証した。特に交通流解析において、自由流と渋滞の間の相転移を検知する上で、従来のシャノンエントロピーに基づく手法とは相補的な有用な情報を提供することを示している。",
+          "keywords": [
+            "Sample entropy",
+            "Graph signals",
+            "Nonlinear dynamics",
+            "Topology-aware embeddings",
+            "Complex networks"
+          ],
+          "appendix": "本論文は「complex dynamics」に関連しており、非線形動的解析の手法を複雑ネットワーク上のデータに拡張する内容を含んでいます。また、背景として「symbol dynamics」についても言及されています。"
+        },
+        "http://arxiv.org/abs/2604.05080v1": {
+          "title": "Nidus: AI支援エンジニアリングのための外部化された推論",
+          "summary": "本論文では、AI支援によるソフトウェア提供においてVモデルを機械化するガバナンスランタイム「Nidus」を提案している。Nidusはエンジニアリングの不変条件（要求トレーサビリティ、アーキテクチャの正当性、成果物のエビデンスなど）を、AIモデルの内部的な学習行動に依存するのではなく、提案者から独立した外部機構によって強制する。具体的には、エンジニアリング手法を決定可能なアーティファクトとして外部化し、コミットごとの検証を行う。自己ホスト型のデプロイメントにおいて、Claude、Gemini、Codexといった複数のLLMファミリーを用い、自身の構築を統治しながら10万行規模のシステムを構築した。この手法により、仕様を報酬関数として機能させ、不適合判定（UNSAT）によって推論時にエージェントの行動を規定することで、コンプライアンスの捏造を防ぎ、形式的な開発履歴を保証する。",
+          "keywords": [
+            "governance runtime",
+            "V-model",
+            "recursive self-governance",
+            "stigmergic coordination",
+            "formal development"
+          ],
+          "appendix": "本論文は、決定可能な評価や制約ライブラリを用いた検証、およびエージェントの制御メカニズムを扱っており、興味ある分野のうち「automata theory」および「formal languages」に関連する計算機科学的基盤を応用しています。"
+        },
+        "http://arxiv.org/abs/2604.04900v1": {
+          "title": "半対称的な高さと重み付きカタラン数の多次元一般化について",
+          "summary": "本論文では、Dyckパス上の重み付き和として知られる重み付きカタラン数を、k ≥ 2の多次元設定へ拡張する新しい手法を提案している。筆者らは、A_{k-1}型の基本ワイル室やk次元Dyckパスの幾何学的対称性に着目し、ℤ^k_{≥ 0}上の点に対する新しい統計量「半対称的な高さ（semisymmetric height）」を導入した。これを用いて、k次元半対称重み付きカタラン数（k-dimensional SSWCNs）およびそのu境界付き変種を定義している。主な成果として、これらの数列が適切な整数mを法として最終周期性を持つことを証明し、いくつかの境界付きクラスに対して明示的な公式を導出した。さらに、半対称的な高さを用いることで、高さを考慮したDyckパスの数え上げやナラヤナ数のk次元における新しい類似物を導いている。",
+          "keywords": [
+            "Weighted Catalan numbers",
+            "Dyck paths",
+            "semisymmetric height",
+            "Weyl chamber",
+            "Narayana numbers"
+          ],
+          "appendix": "本論文は「combinatorics on words」に関連する組合せ論的な構造を扱っており、特にDyckパスの一般化や数え上げの側面で、広義の組合せ論（combinatorics）における重要な知見を提供しています。"
+        },
+        "http://arxiv.org/abs/2604.04881v1": {
+          "title": "多項式スキュー積の族におけるありそうもない交わり",
+          "summary": "本論文では、有理写像のモジュライ空間における「ありそうもない交わり（unlikely intersection）」の研究に基づき、正則な多項式スキュー積の族に関する代数的力学系の調査を行っている。主な成果は以下の3点である。(1) 2次正則多項式スキュー積のモジュライ空間において、ポストクリティカル有限点集合がザリスキ稠密となる特別な軌跡を分類し、斉次多項式自己準同型や分離型自己準同型などの具体的な形を特定した。(2) 数体上で定義された多項式スキュー積の族と2つの初期標識点に対し、アデリック線束の理論から構築された高さ関数 $h_{P_t}$ を導入し、2点が同時に前周期的となるパラメータの集合が無限となるための必要十分条件を明快に示した。(3) 標識点が無限個のパラメータで前周期的である場合、その前方軌道のザリスキ閉包が $\\mathbb{P}^2$ の真の部分多様体に存在することを示し、力学系版マニン・マムフォード予想の相対版に関するDeMarco–Mavraki予想の部分的な解決を与えた。",
+          "keywords": [
+            "polynomial skew products",
+            "unlikely intersections",
+            "arithmetic dynamics",
+            "postcritically finite points",
+            "Dynamical Manin-Mumford Conjecture"
+          ],
+          "appendix": "本論文は「complex dynamics」および「arithmetic dynamics」の分野に深く関連しており、多項式写像の反復合成や数体上の力学系、不変部分多様体の構造を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.04835v1": {
+          "title": "相対的な不変部分代数の剛性（ISR）性質について",
+          "summary": "可算離散群 Γ の非自明な正規部分群 N による共役作用で不変な von Neumann 部分代数 M ⊆ L(Γ) が、常に Γ のある部分群 K を用いて M = L(K) と表される性質（相対的 ISR 性質）を研究している。本論文では、amenable な根基が自明でねじれのない acylindrically hyperbolic group がこの性質を満たすことを示した。また、ねじれのない双曲群における相対的 C*-ISR 性質の成立や、SL_d(ℤ) (d ≥ 3) などの高ランク半単純 Lie 群における既約格子に対する同様の剛性についても結果を得ている。",
+          "keywords": [
+            "relative ISR-property",
+            "acylindrically hyperbolic group",
+            "C*-ISR-property",
+            "higher-rank semisimple Lie groups",
+            "irreducible lattices"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野と密接に関連しています。特に、群環の代数的・解析的構造を通じて、無限群の性質を剛性の観点から記述する理論を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.04824v1": {
+          "title": "対称関数環上のHall-Littlewood正な調和汎関数",
+          "summary": "本論文では、対称関数環の商環 Sym/(p₂-1) 上の実汎関数のうち、特定の修正されたHall-Littlewood対称関数の像において非負となるものの集合を記述する問題について研究した。この問題は、有限体上のユニタリ群に対する無限次元設定での共役不変（coadjoint-invariant）測度の集合を記述する問題と等価である。主な成果として、まず当該汎関数の集合が無限個のパラメータに依存する例を含む非常に大きなものであることを示した。次に、Sym上の明示的な「p₂-ねじれ作用」とそれから導かれる余加群構造に基づき、既存の汎関数から新しい汎関数を生成するKerovの混合構成の類似物を提示した。最後に、p₂-ねじれ余乗法と通常の余乗法の関係を明らかにした。",
+          "keywords": [
+            "Hall-Littlewood symmetric functions",
+            "harmonic functionals",
+            "unitary groups over a finite field",
+            "coadjoint-invariant measures",
+            "p₂-twisted action"
+          ],
+          "appendix": "本論文は無限次元設定におけるユニタリ群の不変測度を扱っており、提示された興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.04781v1": {
+          "title": "半群における積集合と和集合の交差に関する問題と結果",
+          "summary": "半群 S の任意の部分集合 A に対し、Aʰ を S の h 個の要素の積全体の集合とする。部分集合の族 (A_q)_{q ∈ Q} に対し、その共通部分を A = ∩_{q ∈ Q} A_q とすると、包含関係 Aʰ ⊆ ∩_{q ∈ Q} A_qʰ が成り立つ。本論文では、この包含関係において等号が成立するような正の整数の集合である積交差集合 H(A_q) = {h ∈ ℕ : Aʰ = ∩_{q ∈ Q} A_qʰ} についての性質を調査している。",
+          "keywords": [
+            "semigroups",
+            "product sets",
+            "sumsets",
+            "product intersection set"
+          ],
+          "appendix": "本論文は加法的組合せ論的な性質を扱っており、指定された分野の中では combinatorics on words と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.04763v1": {
+          "title": "Lyapinのノートブック：半群論における未解決問題集",
+          "summary": "本論文は、現代代数学の基礎的な一分野である半群論における未解決問題を厳選してまとめたものである。半群に関する世界初の専門書を執筆し、この分野の創始者の一人であるE. S. Lyapinの生誕110周年を記念して刊行された。本論文では、半群の潜在的性質と埋め込み可能性、多様体における構造問題と有限性条件、自己準同型、有限半群および有限群の可解・不可解クラス、冪半群、包含的多様体、そして部分群様体論といった、現代の研究における主要な方向性を網羅している。Lyapinの功績を称えるとともに、代数系における現在および将来の研究の指針を提示している。",
+          "keywords": [
+            "Semigroup Theory",
+            "potential properties",
+            "varieties",
+            "endomorphisms",
+            "partial groupoids"
+          ],
+          "appendix": "本論文は半群論を扱っており、興味ある分野として挙げられた「combinatorics on words」や「formal languages」などは半群論と密接に関連する分野ですが、要約内容に直接的な言及がないため、一般的な代数的構造の研究として参照されます。"
+        },
+        "http://arxiv.org/abs/2604.05010v2": {
+          "title": "Twin Dragon のアスペクト比は 1/φ である",
+          "summary": "本論文では、フラクタル図形である Twin Dragon の幾何学的アスペクト比が黄金比 φ = (1+√5)/2 の逆数 1/φ に等しいことを示しています。この結果は、相似次元が 2 であるためルベーグ測度と一致する自己相似測度の共分散不動点方程式を解くことによって得られました。Twin Dragon はガウス整数 1+i によって定義されており、その構成過程に五角形構造やフィボナッチ構造が含まれていないにもかかわらず、黄金比 φ が現れる点は驚べき発見です。",
+          "keywords": [
+            "Twin Dragon",
+            "aspect ratio",
+            "golden ratio",
+            "covariance fixed-point equation",
+            "self-similar measure"
+          ],
+          "appendix": "この論文は、複素力学系（complex dynamics）に関連するフラクタル図形の幾何学的性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.04682v1": {
+          "title": "K3曲面およびエンリケス曲面の自己同型におけるギャップ定理と非対掌性",
+          "summary": "本論文では、K3曲面、エンリケス曲面、および既約ホロモルフィック・シンプレクティック多様体の自己同型群におけるエントロピー・ノルムに関するギャップ定理を証明しています。また、種数1のファイブレーションの観点から、K3曲面およびエンリケス曲面の自己同型の非対掌性（achirality）についても考察しています。",
+          "keywords": [
+            "entropy norms",
+            "automorphism groups",
+            "K3 surfaces",
+            "Enriques surfaces",
+            "achirality"
+          ],
+          "appendix": "本論文は、複素多様体上の自己同型写像のエントロピーや力学的性質を扱っているため、興味ある分野のうち「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.04591v1": {
+          "title": "Holte 繰り上がり行列の双直交固有ベクトルとカスケード・フリーな数え上げ",
+          "summary": "k 個の N 進数の加算における繰り上がりプロセスは {0, ..., k-1} 上のマルコフ連鎖として記述され、その推移行列である Holte 行列 T は、N に依存しない単純な固有値 {N⁻ʲ}ⱼ₌₀ᵏ⁻¹ を持つ。本論文では、この行列の完全な双直交固有ベクトル系を導出している。左固有ベクトルは符号なし第一種スターリング数とオイラー多項式によって構成され、右固有ベクトルは回文対称性を持つ多項式 Qⱼ を用いて記述される。また、カスケード・フリーな回避カウント a(L) が第2種チェビシェフ多項式 U_L(x) を用いて a(L) = (√d)ᴸ U_L(x) と表される条件を解析し、制限された転送行列の次元 d ≤ 2 においてこれが成立することを証明した。k 個の加算において、このチェビシェフ形式は k=3 では成立するが k ≥ 4 では成立しない。証明には振動行列理論や固有値におけるスターリング重み付きラグランジュ補間が用いられている。",
+          "keywords": [
+            "Holte carry matrix",
+            "biorthogonal eigenvectors",
+            "Stirling numbers",
+            "Eulerian polynomial",
+            "Chebyshev polynomial"
+          ],
+          "appendix": "本論文で扱われている繰り上がりプロセスの組合せ論的解析や転送行列の性質は、興味ある分野のうち「combinatorics on words」および「automata theory」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.04581v1": {
+          "title": "近似環の構造について",
+          "summary": "本論文は、集合 X に対して X · X ∪ (X + X) が有限個の X の加法的平行移動で被覆される「近似部分環（approximate subring）」の構造定理を提示する。任意の環における和積現象（sum-product phenomenon）を統一的に扱う枠組みを開発し、加法と乗法の両面における成長の主要な障害がベキ零商であることを明らかにした。応用として、多項式成長群に関する Gromov の定理の環論版を導出するとともに、半単純実代数上の一様離散近似部分環の構造定理を確立した。証明には、先行研究（Kru24）による定義可能な局所コンパクトモデルの存在定理が利用されている。",
+          "keywords": [
+            "approximate subrings",
+            "sum-product phenomenon",
+            "nilpotent quotients",
+            "Gromov's theorem",
+            "locally compact models"
+          ],
+          "appendix": "多項式成長や無限群の成長特性に関連する構造を扱っているため、「structure of large countable infinite group」の分野に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.04549v2": {
+          "title": "型 FP₂ の自由拡大の核に対するホモロジー的等周不等式",
+          "summary": "本論文では、曲面図（surface diagrams）を用いたホモロジー的な面積・半径ペア（area-radius pairs）を定義している。これを用いて Gersten および Short の証明を拡張し、自由拡大の核として現れる型 FP₂ の部分群に対するホモロジー的等周不等式を導出している。",
+          "keywords": [
+            "homological isoperimetric inequality",
+            "type FP₂",
+            "free extensions",
+            "surface diagrams",
+            "area-radius pairs"
+          ],
+          "appendix": "本論文は、巨大な可算無限群の構造（structure of large countable infinite group）に関連する群論的性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.04544v1": {
+          "title": "Product Time Petri Nets を用いたサプライチェーンのモデリングと解析",
+          "summary": "サプライチェーンにおける地理的に分散した製造・組立拠点の調整を、Product Time Petri Nets (PTPNs) を用いてモデリングする手法を提案している。各サブシステムを独立に表現し、同期遷移ラベルによって全体の挙動を導出するモジュール型のアプローチを採用。特に、移動可能な共有リソースとしてのサプライチェーンマネージャーの可用性がシステム全体の実行可能性に与える影響を分析し、時間制約や管理能力の不整合に起因するタイムアウトやタイムロックの発生条件を特定している。これにより、調整ポリシーに対する系統的な What-if 分析が可能となる。",
+          "keywords": [
+            "Product Time Petri Nets",
+            "Supply chain coordination",
+            "Temporal feasibility",
+            "Modular modelling",
+            "Resource constraints"
+          ],
+          "appendix": "この論文は、システムの挙動を状態遷移モデルとして記述し解析する点で automata theory と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.05006v1": {
+          "title": "簡潔なLNTモデルを作成するためのガイドライン：Algorandコンセンサスプロトコルの形式モデルによる例証",
+          "summary": "LNTは、プロセス代数に命令型プログラミングの要素（変数代入、逐次実行、ループ演算子など）を取り入れることで従来の制限を克服した、並行システムのための近代的な形式記述言語である。本論文では、これらの機能を活用して、簡潔かつ可読性の高いLNTモデルを構築するための手法を提案している。Algorandブロックチェーンのコンセンサスプロトコルを具体例として用い、適切な変換を適用することで、モデルの可読性を向上させながらコード行数を3分の1に削減できることを示した。また、構築したモデルに対して、視覚的検証、等価性検証、およびモデル検査を用いた性質の検証を行っている。",
+          "keywords": [
+            "LNT",
+            "concurrent systems",
+            "Algorand consensus protocol",
+            "formal description",
+            "model checking"
+          ],
+          "appendix": "本論文は並行システムの仕様記述と言語モデルを扱っており、提示された興味ある分野のうち「automata theory」および「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.04536v1": {
+          "title": "r次元ホイールを含まない単体的複体の符号なしラプラス行列のスペクトル半径",
+          "summary": "本論文では、(r-2)次元単体とサイクルのジョインとして定義されるr次元ホイールを含まない、頂点数nのr次元純単体的複体における符号なしラプラス行列の最大スペクトル半径を調査している。十分大きなnにおいて、この最大値を達成する極値複体を決定した。この成果は、グラフの符号なしラプラス行列に関する極値結果を一般化したものであり、r=2の場合における単体的複体の最大ファセット数に関するSós、Erdős、Brownの定理のスペクトル版の対応を与えている。",
+          "keywords": [
+            "Signless Laplacian spectral radius",
+            "simplicial complexes",
+            "r-dimensional wheels",
+            "extremal complexes"
+          ],
+          "appendix": "本論文はスペクトルグラフ理論および極値組合せ論を扱っており、提示された興味ある分野の中ではcombinatorics（組合せ論）の広義の領域に関連しています。r次元単体や複体という幾何学的・組合せ論的構造のスペクトル解析は、グラフ理論の自然な拡張となっています。"
+        },
+        "http://arxiv.org/abs/2604.04524v1": {
+          "title": "二次PCF多項式の樹状ガロア群におけるSettled Elements",
+          "summary": "標数2でない体 K 上の二次多項式 f(x) に対し、その樹状ガロア表現は根付き二分木に作用する。Boston と Jones は、整数係数多項式において、この表現の像が「settled elements」の稠密集合を含むと予想した。本論文では、周期的なポストクリティカル軌道を持つポストクリティカル有限（PCF）な二次多項式の算術的反復モノドロミー群（IMG）が、稠密に settled であることを証明する。数体の場合、Benedettoらの先行研究と合わせることで、無限に多くの a ∈ K に対して、対応する樹状ガロア表現が稠密に settled となることが導かれる。特に、Basilica写像 f(x)=x²-1 の算術的IMGに対して本結果が適用される。",
+          "keywords": [
+            "arboreal Galois representation",
+            "postcritically finite (PCF)",
+            "iterated monodromy groups (IMG)",
+            "settled elements",
+            "arithmetic dynamics"
+          ],
+          "appendix": "本論文は、算術力学系（arithmetic dynamics）および複素力学系（complex dynamics）に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2604.04366v1": {
+          "title": "二面体群上の弧推移的な内部自己同型的ケイリーグラフについて",
+          "summary": "本論文では、生成集合Sが群Gの共役類の和集合である「内部自己同型的」なケイリーグラフCay(G, S)が、二面体群上において弧推移的（arc-transitive）となる条件について研究している。連結な内部自己同型的ケイリーグラフとして得られる4つの既知の弧推移的グラフの族を特徴付けるとともに、他の連結弧推移的ケイリーグラフが内部自己同型的であるための必要条件を導出した。さらに、この条件を満たすグラフの無限族を構成することでその存在を実証し、最終的に二面体群上の2-距離推移的な連結内部自己同型的ケイリーグラフの完全な分類を達成した。",
+          "keywords": [
+            "arc-transitive",
+            "inner-automorphic Cayley graph",
+            "dihedral groups",
+            "2-distance-transitive",
+            "conjugacy classes"
+          ],
+          "appendix": "本論文は代数的グラフ理論および群論の分野に属しており、提示された「興味ある分野」に直接該当する項目はありませんが、広義の組み合わせ論的構造を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.04326v1": {
+          "title": "優ウェイトのStingrayパターン",
+          "summary": "本論文では、固定されたe-ウェイトwを持つ分割から生じるLie代数slᵣの優ウェイトの集合Wᵣ,ₑ,𝓌について研究しています。e-コア（w=0）の場合、Wᵣ,ₑ,₀はrの組成によってインデックス付けされた単体の非交和に分解されることを示しました。一般のwについては、Wᵣ,ₑ,𝓌がこれらの単体のコピーの非交和であり、その重複度が商データによって決定されることを証明し、その計数公式を導出しました。この幾何学的構造は「stingrayパターン」と呼ばれる視覚的特徴を生じさせます。また、Wᵣ,ₑ,𝓌と交わる優e-alcoveに対し、wの弱組成による自然なラベル付けと、壁越え（wall crossing）を通じたアフィン・ワイル群の部分作用との互換性を与えました。最後に、Iwahori-Hecke代数のempty runner removal定理に対し、幾何学的な別証明を提示しています。",
+          "keywords": [
+            "dominant weights",
+            "e-cores",
+            "Stingray patterns",
+            "affine Weyl group",
+            "Iwahori-Hecke algebras"
+          ],
+          "appendix": "本論文は、興味ある分野の「combinatorics on words」に関連する分割論や、「structure of large countable infinite group」に関連するアフィン・ワイル群の構造を扱っています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.05219v1",
+        "http://arxiv.org/abs/2604.05174v1",
+        "http://arxiv.org/abs/2604.05169v1",
+        "http://arxiv.org/abs/2604.05123v1",
+        "http://arxiv.org/abs/2604.05086v1",
+        "http://arxiv.org/abs/2604.05080v1",
+        "http://arxiv.org/abs/2604.04900v1",
+        "http://arxiv.org/abs/2604.04881v1",
+        "http://arxiv.org/abs/2604.04835v1",
+        "http://arxiv.org/abs/2604.04824v1",
+        "http://arxiv.org/abs/2604.04781v1",
+        "http://arxiv.org/abs/2604.04763v1",
+        "http://arxiv.org/abs/2604.05010v2",
+        "http://arxiv.org/abs/2604.04682v1",
+        "http://arxiv.org/abs/2604.04591v1",
+        "http://arxiv.org/abs/2604.04581v1",
+        "http://arxiv.org/abs/2604.04549v2",
+        "http://arxiv.org/abs/2604.04544v1",
+        "http://arxiv.org/abs/2604.05006v1",
+        "http://arxiv.org/abs/2604.04536v1",
+        "http://arxiv.org/abs/2604.04524v1",
+        "http://arxiv.org/abs/2604.04366v1",
+        "http://arxiv.org/abs/2604.04326v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-09T04:42:30.188120+00:00",
-      "updated_at": "2026-04-09T06:17:56.479641+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-09T07:59:45.023510+00:00",
+      "finalized_at": "2026-04-09T07:59:45.023494+00:00"
     }
   ]
 }
