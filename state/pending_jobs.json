@@ -28296,7 +28296,7 @@
     },
     {
       "pipeline_id": "20260411T042941Z-13d851e2",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/qwjbh26wwi49cho38fi0zdfk9hyehzxf0gz5",
       "summarize_job_name": "batches/p5ghyyqcfecv1zvomjzbxx5f2xz1cvswxyoo",
       "papers": [
@@ -28889,14 +28889,300 @@
         "http://arxiv.org/abs/2604.06533v1",
         "http://arxiv.org/abs/2604.06532v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.07626v1": {
+          "title": "書き換え原理としての等号が成立しない場合：測定値を含む式におけるプロバナンスと定義可能性",
+          "summary": "通常の代数的な等号は、測定値を含む式の書き換え原理として必ずしも妥当ではない。本論文では、同一の観測値の再利用（プロバナンス）と、除算等に起因する定義可能性（definedness）の両方を追跡する統一的な意味論を提案する。トークンに敏感な包含意味論（token-sensitive enclosure semantics）を導入し、一方向の書き換えや互換性の判定基準を提示した。また、Lean 4を用いてすべての定義と定理を形式化した。解析の結果、特定の特異点が式の簡略化を一方向的なものにすることや、トークンの識別性を失うと定義可能性のみでは表現できない差異が生じることが示されている。",
+          "keywords": [
+            "provenance",
+            "definedness",
+            "measurement-bearing expressions",
+            "enclosure semantics",
+            "Lean 4"
+          ],
+          "appendix": "本論文で扱われている測定値の包含関係や定義域の厳密な扱いは、興味ある分野のうち「validated numerics（精度保証付き数値計算）」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.07480v1": {
+          "title": "生の状態で構成された軌跡からの能動的な Reward Machine 推論",
+          "summary": "本論文は、マルチステージタスクの遂行に必要なメモリを保持するオートマトン構造である Reward Machine を、報酬・ラベル・マシンの内部ノードといった情報が得られない制約下で、生の状態および方策の軌跡データのみから直接学習する手法を提案している。まず、どのような軌跡データが学習に十分であるかを理論的に示し、次にデータおよび計算の効率を向上させるために、軌跡の拡張を逐次的に問い合わせる能動学習の枠組みへと拡張した。グリッドワールドを用いた実験により、提案手法の有効性が実証されている。",
+          "keywords": [
+            "Reward machines",
+            "Reinforcement learning",
+            "Active learning",
+            "Automata inference",
+            "State trajectories"
+          ],
+          "appendix": "本論文で扱われる Reward Machine はオートマトン様の構造を持つため、automata theory と強い関連があります。"
+        },
+        "http://arxiv.org/abs/2604.07321v1": {
+          "title": "構文は容易、意味論は困難：LTL翻訳における大規模言語モデルの評価",
+          "summary": "本論文は、自然言語の断片を線形時相論理（LTL）式へと翻訳するタスクにおいて、大規模言語モデル（LLM）の有効性を評価した研究である。LTLはソフトウェアの要求仕様やセキュリティポリシーの記述に有用だが、その複雑な意味論ゆえに人間による記述が困難という課題がある。評価の結果、LLMは構文的な側面では高い性能を示すものの、意味論的な正確性においては依然として課題があることが明らかになった。一方で、プロンプトの記述を詳細にすることや、タスクをPythonのコード補完問題として定式化することで、翻訳精度が大幅に改善されることが示されている。",
+          "keywords": [
+            "Linear Temporal Logic (LTL)",
+            "Large Language Models (LLMs)",
+            "Syntax and semantics",
+            "Code-completion"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「automata theory」および「formal languages」に関連しています。LTLは形式検証においてオートマトンと密接な関係にあり、論理式への翻訳は形式言語の変換タスクとして捉えることができます。"
+        },
+        "http://arxiv.org/abs/2604.07243v1": {
+          "title": "シュヴァレー群、可換環、類保存自己準同型、局所的内部自己準同型、Sha-剛性",
+          "summary": "本論文では、可換環 R 上の随伴シュヴァレー群 G_ad(Φ, R) およびその基本部分群 E_ad(Φ, R) における、すべての局所的内部自己準同型（類保存自己準同型）が内部自己準同型であることを証明した。具体的には、Φ ∈ {A₁, A₂, B₂} かつ 2 ∈ Rˣ の場合、および Φ = G₂ かつ 2, 3 ∈ Rˣ の場合においてこの性質が成り立つことを示している。この結果として、これらの群はすべて Sha-剛性（Sha-rigidity）を持つことが導かれた。",
+          "keywords": [
+            "Chevalley groups",
+            "commutative rings",
+            "class-preserving endomorphisms",
+            "locally inner endomorphisms",
+            "Sha-rigidity"
+          ],
+          "appendix": "本論文は、無限群の代数的構造や自己準同型に関する性質を扱っているため、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.07234v1": {
+          "title": "ランダム部分列モデルと消失チャネルに対する一様符号",
+          "summary": "本論文では、2つのランダムな文字列間の部分列埋め込み数を分配関数とするスピングラスモデル「ランダム部分列モデル」を導入し、独立な文字列ペア（ヌルモデル）と、一方が他方の部分列であるペア（埋め込みモデル）の2つの設定で解析を行っている。N, Mが一定の比率α=M/Nで無限大に発散する極限において、ヌルアニール自由エネルギーと、ヌルおよび埋め込みモデルのクエンチ自由エネルギーの間に厳密な漸近的分離が存在することを示した。これは、全密度領域において0温でスピングラス相にあることを示唆している。この結果の帰結として、一様ランダム符号が消失確率p ∈ [0, 1)のすべての範囲で正の通信レートを達成することを証明し、特にp ≥ 1/2の領域で初の正のレート結果を与えた。また、埋め込みモデルのアニール自由エネルギーの厳密な解析解を導出し、一様符号における消失チャネル容量の上下界を更新した。",
+          "keywords": [
+            "Random Subsequence Model",
+            "Deletion Channel",
+            "Uniform Codes",
+            "Spin Glass",
+            "Longest Common Subsequence"
+          ],
+          "appendix": "本論文は、数え上げ（combinatorics on words）に関連する手法や、ランダムな文字列の構造解析、統計力学的な手法を用いた符号理論の課題解決を扱っており、組合せ論的な側面から関連があります。"
+        },
+        "http://arxiv.org/abs/2604.07088v1": {
+          "title": "フェンス（fence）上の力学系",
+          "summary": "本論文では、カントール集合の各同相写像に対して、対応するフェンス（fence）空間の同相写像を標準的に定義する一般的な構成法を導入している。この構成により、極小性、再帰性、軌道構造などの力学的な性質をカントール集合からフェンス状の空間へと持ち上げることが可能になる。これにより、Lelek fanやFraïssé fence、複素力学系におけるCantor bouquetsなどを含む広範なフェンス状の空間上の力学系を研究するための統一的な枠組みを提供し、それらの位相構造と誘導された力学的挙動との間に新たな関連性を確立している。",
+          "keywords": [
+            "Cantor set",
+            "fence-like spaces",
+            "homeomorphisms",
+            "dynamical properties",
+            "topological structure"
+          ],
+          "appendix": "アブストラクトにおいて複素力学系（complex dynamics）におけるCantor bouquetsに言及されており、指定の興味ある分野と関連します。また、カントール集合の同相写像の性質を扱うことから、記号力学系（symbolic dynamics）や巨大な可算無限群の構造（structure of large countable infinite group）の研究分野とも接点を持つ内容です。"
+        },
+        "http://arxiv.org/abs/2604.07058v1": {
+          "title": "一方向量子有限オートマトンの古典シミュレーションにおける二次の状態コスト",
+          "summary": "一般化有限オートマトン(GFA)、確率的有限オートマトン(PFA)、および一方向一般量子有限オートマトン(1gQFA)は同じstrict-cutpoint言語を認識するが、そのシミュレーションに必要な状態数については不明であった。本論文では、n状態の1gQFAを一方向PFAで厳密に模倣する際の最悪状態コストがΘ(n²)であることを証明した。具体的には、n²次元の混合状態線形化を用いてO(n²)の上界を示すとともに、Vapnik-Chervonenkis次元を用いた議論によりn²-1の状態が必要な具体例を提示し、下界を確立した。",
+          "keywords": [
+            "one-way general quantum finite automata",
+            "probabilistic finite automata",
+            "state complexity",
+            "strict-cutpoint languages",
+            "classical simulation"
+          ],
+          "appendix": "本論文は、指定された興味ある分野のうち「automata theory」および「formal languages」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.07001v1": {
+          "title": "SLₙ(ℤ)における非分裂な強2-可移部分群および強3-可移部分群",
+          "summary": "SL₃(ℤ)が非分裂な強2-可移部分群を含むことを示し、GlasnerとGulkoによって提起された問いに肯定的な回答を与えた。また、SL₄(ℤ)は非分裂な強3-可移部分群を含む一方で、SL₃(ℤ)は無限の強3-可移部分群を含まないことを証明した。",
+          "keywords": [
+            "sharply 2-transitive subgroup",
+            "sharply 3-transitive subgroup",
+            "non-split",
+            "SLₙ(ℤ)"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に関連しています。特殊線形群SLₙ(ℤ)の内部構造、特に置換表現の可移性に関する性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.06982v1": {
+          "title": "被約融合自由積とHNN拡張におけるSelflessな包含",
+          "summary": "本論文では、C*環の被約融合自由積におけるselflessな包含関係の一般的な族を特定し、McClanahan、Ivanov、Omlandらによる先行研究を一般化しています。また、C*環のHNN拡張を構築する新しい簡潔な手法を提案し、それを用いてselfless性の新たな例を提示しています。さらに、半径が2より大きいグラフ上のC*環のグラフ積がselflessであることを示す簡潔な証明も与えています。",
+          "keywords": [
+            "selfless inclusions",
+            "reduced amalgamated free products",
+            "HNN extensions",
+            "C*-algebras",
+            "graph products"
+          ],
+          "appendix": "C*環のHNN拡張や融合自由積といった構成を扱っており、それらの代数的構造は「structure of large countable infinite group」の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.06968v1": {
+          "title": "行列の中心化群におけるティッツの択一性に関する判定条件",
+          "summary": "GL(n, ℤ) における行列の中心化群が可解群（この場合は非アーベル自由部分群を含まないことと同値）になるための必要十分条件を提示しています。行列がアーベル群になるための単純な条件も示されており、これは GL(n, ℤ) の中心化群に対する実効的なティッツの択一性と見なせます。これらの判定法を、シンプレクティック群などの非退化 ℚ 双線型形式を保存する算術群の共役問題に応用し、条件を満たす行列に対する実効的な解法を導出しています。この解法は、Eick-Hofmann-O'Brien による GL(n, ℤ) の共役問題と、Eick-Ostheimer による可解群の軌道問題の実効的解法に基づいています。",
+          "keywords": [
+            "Tits alternative",
+            "centralizer",
+            "conjugacy problem",
+            "arithmetic groups",
+            "polycyclic groups"
+          ],
+          "appendix": "行列群の構造や共役問題という観点から、structure of large countable infinite group に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2604.06878v1": {
+          "title": "高度な並行性と対故障性を備えたWebアプリケーションのためのマルチパーティセッション型に向けて",
+          "summary": "現代のWebアプリケーションは、永続的な状態更新、並行インタラクション、および外部サービスとの信頼性の低い通信を組み合わせており、タイムアウト等の障害が不整合を引き起こす原因となっている。既存のマルチパーティセッション型（MPST）は通信の安全性において強力な保証を提供するが、実用的なWebアプリケーションの正確性を推論するために必要な、状態遷移、動的なワークフロー構造、および失敗動作の相互作用を考慮していない。本論文では、明示的な失敗セマンティクスと動的な参加機能を備えたグローバルタイプ・フレームワークを導入する。このフレームワークの構文と操作的意味論を定義し、コヒーレンス保持を含む核となる性質を確立することで、障害が発生し得るWebアプリケーションの通信に関する形式的推論の基礎を構築する。",
+          "keywords": [
+            "Multiparty Session Types",
+            "failure semantics",
+            "dynamic participation",
+            "coherence preservation",
+            "communication safety"
+          ],
+          "appendix": "本論文は通信プロトコルの形式的検証を扱っており、興味ある分野の中では「automata theory」および「formal languages」に深く関連しています。セッション型の理論はしばしばオートマトン理論を基礎として構築されるためです。"
+        },
+        "http://arxiv.org/abs/2604.06877v1": {
+          "title": "VerCorsにおけるPredicate Subtypes",
+          "summary": "本論文では、VerCorsプログラム検証器にPredicate Subtypes（述語サブタイプ）を導入する手法について述べている。Predicate Subtypesは変数宣言に範囲制約を指定するための有用なメカニズムであり、本手法では宣言から適切な仕様を自動生成する。単一の変数宣言に対して複数のサブタイプを容易に組み合わせる機能を提供するほか、オーバーフロー検知への応用のために、すべての部分式が宣言されたサブタイプの範囲内に収まることを要求する特別な「厳密モード」を導入している。プロトタイプの実装はVerCors検証器に統合されている。",
+          "keywords": [
+            "Predicate subtypes",
+            "VerCors",
+            "program verification",
+            "overflow checking",
+            "range constraints"
+          ],
+          "appendix": "本論文はプログラム検証および形式手法に関する内容であり、提示された「興味ある分野」との直接的な関連は認められません。"
+        },
+        "http://arxiv.org/abs/2604.06872v1": {
+          "title": "混合選択を伴う非同期マルチパーティ・セッション",
+          "summary": "本論文は、入力と出力の両方のプレフィックスを持つ非決定的な選択（混合選択）をサポートする、非同期マルチパーティ・セッションのための計算体系を提案している。この体系はSimple MultiParty Sessionフレームワークを拡張したものであり、通信ラベルセットのコヒーレンスという概念を活用した型システムを導入している。この手法は従来の射影に基づく手法とは一線を画すものであり、簡約実行不変性（Subject Reduction）やセッション忠実性（Session Fidelity）といった基本性質を証明している。これにより、型付けられたセッションがロックフリーかつ孤立メッセージフリーであることが保証される。さらに、拡張された型システムにおける最終的受信（Eventual Reception）の性質についても議論している。",
+          "keywords": [
+            "Asynchronous multiparty sessions",
+            "Mixed choice",
+            "Session types",
+            "Subject reduction",
+            "Session fidelity"
+          ],
+          "appendix": "本論文で扱われるプロセス計算や遷移系の理論は、計算機科学におけるオートマトン理論 (automata theory) や形式言語 (formal languages) の概念と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.06859v1": {
+          "title": "MDPにおける計算可能なHyperproperties",
+          "summary": "確率的Hyperpropertiesは、確率システムにおける複数の実行集合間の確率的な関係を記述するもので、情報理論的セキュリティやプライバシーポリシーの規定に用いられる。しかし、HyperPCTLやPHLといった既存の確率的Hyperlogicのモデル検査は、マルコフ決定過程（MDP）において決定不能であることが知られている。本論文では、MDPの独立した実行を跨いで異なるイベントの確率同士を比較するフラグメントの検証問題を調査した。具体的には、到達可能性、安全性、Büchi条件、coBüchi条件などの目的を含む関係的な確率的性質を対象とし、これらを論理積で組み合わせることで多目的MDPの性質を一般化している。提案手法は、関連するクラスに対して効率的なアルゴリズムを提供し、計算量的な困難性も証明した。実装による評価では、既存の一般的なソルバーを数桁上回る性能を確認している。",
+          "keywords": [
+            "Probabilistic hyperproperties",
+            "Markov decision processes",
+            "Model checking",
+            "Reachability objectives",
+            "Relational probabilistic properties"
+          ],
+          "appendix": "本論文はautomata theory（オートマトン理論）に関連しています。MDPにおける性質（到達可能性、Büchi、coBüchi条件など）の検証は、形式言語やオートマトン理論の枠組みで扱われる重要な課題です。"
+        },
+        "http://arxiv.org/abs/2604.06735v1": {
+          "title": "上昇列における長さ4のパターンの同時回避",
+          "summary": "上昇列（ascent sequences）は、(2+2)-free半順序集合やStoimenowマッチングといったFishburnオブジェクトと全単射の関係にある重要な組合せ論的対象である。本論文では、これらに関連するパターンの研究から自然に導かれた5つの長さ4のパターン（0101, 0102, 0112, 0120, 0121）の回避について調査した。{0120}, {0121}, {0120, 0121}の3つの部分集合を除き、これらのパターンの任意の組み合わせを回避する上昇列の数え上げを行い、その回避クラスが16のWilf同値類に分類されることを示した。結果として、カタラン数やフィボナッチ数、多項式公式、有理母関数との関連が明らかになり、構造分解や生成木、制限増殖関数を用いた手法によって、上昇列と他の組合せ構造との新たな繋がりが示されている。",
+          "keywords": [
+            "ascent sequences",
+            "pattern avoidance",
+            "Fishburn objects",
+            "Wilf equivalence",
+            "generating functions"
+          ],
+          "appendix": "この論文は「combinatorics on words」や「combinatorics」全般に関連する内容を含んでおり、Fishburn数やカタラン数などの古典的な数列との繋がりを扱っています。"
+        },
+        "http://arxiv.org/abs/2604.06690v1": {
+          "title": "veering triangulation の Legendrian position",
+          "summary": "本論文は、(pseudo-)Anosov 流を研究する道具である veering triangulation と bicontact 構造の接続を試みるものである。安定および不安定葉層が向き付け可能な Anosov 流に対応する veering triangulation において、その辺が、当該の流れを支持する強適応的な bicontact 構造に関する Legendrian 弧として実現できることを示した。その過程で、全ての veering triangulation は、軌道空間における辺の投影の交点が一度かつ横断的になる「steady position」に配置可能であることを証明した。この結果により、veering triangulation の水平手術が pseudo-Anosov 流の水平 Goodman 手術に対応することが導かれる。",
+          "keywords": [
+            "veering triangulations",
+            "bicontact structures",
+            "pseudo-Anosov flows",
+            "Legendrian arcs",
+            "steady position"
+          ],
+          "appendix": "本研究で扱われる pseudo-Anosov 流は、記号力学系 (symbolic dynamics) を用いた解析が行われる対象であり、力学系の構造研究において関連があります。"
+        },
+        "http://arxiv.org/abs/2604.06686v1": {
+          "title": "相対的な端の数と準メディアン・グラフ",
+          "summary": "有限生成群 G とその部分群 H に対し、相対的な端の数 e(G,H) はシュライヤーグラフ Sch(G,H) の端の数として定義され、共端（coends）の数 ẽ(G,H) は G 内の H の近傍の補集合における H-無限成分の最大数として定義される。本論文では、Sageev による CAT(0) キューブ複体への作用を用いた余次元 1 部分群の特性付けを一般化し、ペア (G,H) の相対的な端の数および共端の数を準メディアン・グラフへの作用の観点から特性付ける。",
+          "keywords": [
+            "relative number of ends",
+            "quasi-median graphs",
+            "coends",
+            "Schreier graph",
+            "CAT(0) cube complexes"
+          ],
+          "appendix": "「structure of large countable infinite group」の分野に関連しており、群の幾何学的性質をグラフや複体への作用を通じて解析する手法を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.06640v1": {
+          "title": "葉層構造の対の接曲線と正規化変換",
+          "summary": "本論文では、非ディクリティカル（non-dicritical）およびディクリティカル（dicritical）な特異点を持つ解析的微分方程式から誘導される葉層構造の対について、その接曲線の集合を完全に記述しています。一般的な仮定の下で、局所モデルと解析的正規化変換を用いることにより、正規化変換のk-正規形を導出しました。これらの正規形は、接曲線の枝の有限ジェットまでのパラメータ表示を与えるために使用されます。さらに、自然な一般的条件下において、互いに横断的な滑らかな枝を持つ任意の解析的な曲線の芽は、葉層構造の対の接曲線として実現可能であることを証明しています。",
+          "keywords": [
+            "foliation pairs",
+            "curves of tangencies",
+            "normalizing transformations",
+            "non dicritical singularities",
+            "dicritical singularities"
+          ],
+          "appendix": "複素力学系（complex dynamics）に関連する葉層構造の局所的性質や、正規形理論に関する研究であるため、複素力学系の分野に関連があります。"
+        },
+        "http://arxiv.org/abs/2604.06609v1": {
+          "title": "組合せ論、確率論、および数論における短い証明 II",
+          "summary": "OpenAIの内部モデルによって導出された、Erdősが提起した問題に関連する5つの証明を提示している。具体的には、平面点集合における通常の直線（ordinary lines）、一様に小さい指数和を持つ数列、サイクル内の弦が少ないK₄-free 4-彩色臨界グラフ、Erdős-Turánの不一致境界の「fewnomial」版に対する反例、および固定された正の整数aに対してn-ak²が√(n/a)以下のk（nと互いに素）について常に素数となるような整数nの有限性定理を扱っている。",
+          "keywords": [
+            "ordinary lines",
+            "exponential sums",
+            "K4-free 4-critical graphs",
+            "Erdős-Turán discrepancy bound",
+            "finiteness theorem"
+          ],
+          "appendix": "本論文は広い意味での組合せ論を扱っていますが、指定された「興味ある分野」のリスト（symbolic dynamics, combinatorics on words等）に直接該当する特定のテーマは含まれていません。OpenAIのAIモデルによって生成された数学的成果をまとめた報告です。"
+        },
+        "http://arxiv.org/abs/2604.06570v1": {
+          "title": "3次元Filippov系における境界ホップ分岐",
+          "summary": "区分的滑らかな常微分方程式であるFilippov系において、切り替え面上で生じる余次元2の境界ホップ分岐を研究した。3次元系ではスライディング運動による次元の減少とホップ分岐における安定性の縮退により、分岐後のダイナミクスがわずか2つのパラメータを持つ区分線形写像の族に帰着することを示した。これらのパラメータを算出する明示的な公式を導出し、カオスを含むアトラクタの特性を数値解析によって明らかにした。本手法は害虫管理や食物連鎖のモデルに適用されており、n次元システムにおける不連続写像の線形項に関する新たな導出法も提供している。",
+          "keywords": [
+            "Boundary Hopf bifurcations",
+            "Filippov systems",
+            "Grazing-sliding bifurcations",
+            "Piecewise-linear maps",
+            "Limit cycle"
+          ],
+          "appendix": "本研究は力学系理論（Dynamical Systems）における分岐理論を扱っています。提示された興味ある分野の中では、区分線形写像の解析を通じて Complex dynamics や Symbolic dynamics に関連する内容を含んでいますが、直接的な言及はありません。"
+        },
+        "http://arxiv.org/abs/2604.06533v1": {
+          "title": "予測的モニタリングのための Reads-From 同値性のパラメータ化",
+          "summary": "並行プログラムの実行 σ から、性質 φ を満たす並行イベントの並べ替え ρ の存在を健全に予測する「予測的ランタイムモニタリング」に関する研究である。この手法の有効性は、再配置の表現力と計算量のトレードオフに依存する。本論文では、reads-from 同値性を一般化する概念として「k-sliced reorderings」を導入した。これは、元の実行を k+1 個の順序付けられた部分列に分割し、プログラム順序と reads-from 制約を維持しながら再構成するものである。この手法により、k の増加に伴って reads-from 同値性に収束する階層構造が形成される。重要な結果として、固定された k に対して、任意の正則仕様に対する予測的モニタリングが定数領域のストリーミングアルゴリズムで実現可能であることを示した。",
+          "keywords": [
+            "Predictive runtime monitoring",
+            "reads-from equivalence",
+            "k-sliced reorderings",
+            "regular specification",
+            "streaming algorithm"
+          ],
+          "appendix": "正規言語やオートマトン上の正則仕様に対するアルゴリズムを扱っている点から、automata theory および formal languages の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.06532v1": {
+          "title": "q-Demazure積から得られるランダム置換",
+          "summary": "本研究では、先行研究(arXiv:2407.21653)で提案されたDemazure積モデルのq-変形を調査している。n次対称群Sₙの最長元w₀を単純互換の簡約語として表し、各互換を独立に確率1-pで削除した後、残ったものにq-Demazure積を適用する。この操作により得られる置換の法則は、n→∞において決定論的なpermutonに収束することを示した。この極限は、確率をp' = p(1-q)/(1-qp)に調整したq=0の場合と一致し、先行研究の予想1.13を解決するとともに極限のpermutonを明示的に特定している。",
+          "keywords": [
+            "q-Demazure product",
+            "Random permutations",
+            "Permuton",
+            "Reduced word",
+            "Simple transpositions"
+          ],
+          "appendix": "本論文で扱われる簡約語や置換の積構造は、興味ある分野のうち「combinatorics on words」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.07626v1",
+        "http://arxiv.org/abs/2604.07480v1",
+        "http://arxiv.org/abs/2604.07321v1",
+        "http://arxiv.org/abs/2604.07243v1",
+        "http://arxiv.org/abs/2604.07234v1",
+        "http://arxiv.org/abs/2604.07088v1",
+        "http://arxiv.org/abs/2604.07058v1",
+        "http://arxiv.org/abs/2604.07001v1",
+        "http://arxiv.org/abs/2604.06982v1",
+        "http://arxiv.org/abs/2604.06968v1",
+        "http://arxiv.org/abs/2604.06878v1",
+        "http://arxiv.org/abs/2604.06877v1",
+        "http://arxiv.org/abs/2604.06872v1",
+        "http://arxiv.org/abs/2604.06859v1",
+        "http://arxiv.org/abs/2604.06735v1",
+        "http://arxiv.org/abs/2604.06690v1",
+        "http://arxiv.org/abs/2604.06686v1",
+        "http://arxiv.org/abs/2604.06640v1",
+        "http://arxiv.org/abs/2604.06609v1",
+        "http://arxiv.org/abs/2604.06570v1",
+        "http://arxiv.org/abs/2604.06533v1",
+        "http://arxiv.org/abs/2604.06532v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-11T04:29:41.472843+00:00",
-      "updated_at": "2026-04-11T05:56:31.915316+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-11T06:52:20.552701+00:00",
+      "finalized_at": "2026-04-11T06:52:20.552677+00:00"
     }
   ]
 }
