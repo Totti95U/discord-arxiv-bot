@@ -28293,6 +28293,587 @@
       "created_at": "2026-04-10T05:09:02.278384+00:00",
       "updated_at": "2026-04-10T20:44:06.286624+00:00",
       "finalized_at": "2026-04-10T20:44:06.286607+00:00"
+    },
+    {
+      "pipeline_id": "20260411T042941Z-13d851e2",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/qwjbh26wwi49cho38fi0zdfk9hyehzxf0gz5",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07642v1",
+          "entry_id": "http://arxiv.org/abs/2604.07642v1",
+          "title": "On the connected Turán number of Berge paths and Berge cycles",
+          "summary": "Given a graph $F$, a Berge copy of $F$ (Berge-$F$ for short) is a hypergraph obtained by enlarging the edges arbitrarily. Győri, Salia and Zamora [\\textit{European J. Combin.} 96 (2021) 103353] determined the maximum number of hyperedges in a connected $r$-uniform hypergraph on $n$ vertices containing no Berge path of length $k-1$ for $k\\geq 2r+14$ and sufficiently large $n$, and asked for the minimum $k_0$ such that this extremal number holds for all $k\\geq k_0$. In this paper, we prove that the extremal number holds for all $k\\geq 2r+2$ and fails for $k\\le 2r+1$, thereby completely resolving the problem posed by Gyori, Salia and Zamora. Moreover, we also improve the result of Füredi, Kostochka and Luo [\\textit{Electron. J. Comb.} 26(4) (2019) 4--31], who determined the maximum number of hyperedges in a $2$-connected $n$-vertex $r$-uniform hypergraph containing no Berge cycle of length at least $k$ for $k\\geq 4r$ and sufficiently large $n$, by showing that this extremal number holds for all $k\\geq 2r+2$ and fails for $k\\le 2r+1$.\n  Our approach reduces the Berge-Turán problem to a graph extremal problem, and applies recent work of Ai, Lei, Ning and Shi [\\textit{Canad. J. Math.} (2025) 1--27] on the feasibility of graph parameters and the Kelmans operation.",
+          "authors": [
+            "Xiamiao Zhao",
+            "Dániel Gerbner",
+            "Junpeng Zhou"
+          ],
+          "published": "2026-04-08T23:02:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07627v1",
+          "entry_id": "http://arxiv.org/abs/2604.07627v1",
+          "title": "On the separability of some Green biset functors",
+          "summary": "We show that the Green biset functor $R_{\\mathbb{C}}$ of complex characters over $\\mathbb{Z}$, is not separable, i.e. it is not projective as a bimodule over itself. Also, we show that $RB_G$, the Burnside biset functor shifted by a finite group $G$, over a commutative ring $R$, is separable if and only if $|G|$ is invertible in $R$. Finally, to address the question of the relation between functors and their evaluations, we show that the Burnside $R$-algebra $RB(G)$ is separable if and only if $|G|$ is invertible in $R$.",
+          "authors": [
+            "Serge Bouc",
+            "Nadia Romero"
+          ],
+          "published": "2026-04-08T21:58:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07626v1",
+          "entry_id": "http://arxiv.org/abs/2604.07626v1",
+          "title": "When Equality Fails as a Rewrite Principle: Provenance and Definedness for Measurement-Bearing Expressions",
+          "summary": "Ordinary algebraic equality is not a sound rewrite principle for measurement-bearing expressions. Reuse of the same observation matters, and division can make algebraically equal forms differ on where they are defined. We present a unified semantics that tracks both provenance and definedness. Token-sensitive enclosure semantics yields judgments for one-way rewriting and interchangeability. An admissible-domain refinement yields a domain-safe rewrite judgment, and support-relative variants connect local and global admissibility. Reduction theorems recover the enclosure-based theory on universally admissible supports. Recovery theorems internalize cancellation, background subtraction, and positive-interval self-division. Strictness theorems show that reachable singularities make simplification one-way and make common-domain equality too weak for licensed replacement. An insufficiency theorem shows that erasing token identity collapses distinctions that definedness alone cannot recover. All definitions and theorems are formalized in sorry-free Lean 4.",
+          "authors": [
+            "David B. Hulak",
+            "Arthur F. Ramos",
+            "Ruy J. G. B. de Queiroz"
+          ],
+          "published": "2026-04-08T21:58:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07541v1",
+          "entry_id": "http://arxiv.org/abs/2604.07541v1",
+          "title": "Density of reliability roots of simple graphs in the unit disk",
+          "summary": "Brown and Colbourn (1992) showed that the complex roots of the reliability polynomial of connected multigraphs are dense in the unit disk and that the closure of the real roots is $[-1,0] \\cup \\{1\\}$. We prove the simple graph analogues of both results, confirming a recent conjecture of Brown and McMullin. The proof uses the family of graphs $C_m[K_n]$ obtained by substituting each edge of a cycle $C_m$ with a complete graph $K_n$, and relies on the asymptotic behavior of the reliability and split reliability polynomials of $K_n$.",
+          "authors": [
+            "Pjotr Buys"
+          ],
+          "published": "2026-04-08T19:33:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07496v1",
+          "entry_id": "http://arxiv.org/abs/2604.07496v1",
+          "title": "SMT with Uninterpreted Functions and Monotonicity Constraints in Systems Biology",
+          "summary": "The theory of uninterpreted functions is a key modeling tool for systems with unknown or abstracted components. Some domains such as systems biology impose further restrictions regarding monotonicity on these components, requiring specific inputs to have a consistently positive or negative effect on the output. In this paper, we tackle the model inference problem for biological systems by applying the theory of uninterpreted functions with monotonicity constraints. We compare the performance of naive quantified encodings of the problem and the performance of the existing approach based on eager quantifier instantiation, which is based on the fact that a finite set of quantifier-free monotonicity lemmas is sufficient to encode the monotonicity of uninterpreted functions. Additionally, we consider a lazy variant of the approach that introduces the monotonicity lemmas on demand.\n  We evaluate the SMT-based approach to model inference using a large collection of systems biology benchmarks. The results demonstrate that the instantiation-based encodings significantly outperform quantified encodings, which typically struggle with large function arities and complex instances. As the key result, we show that our approach based on SMT with uninterpreted functions and monotonicity constraints significantly outperforms state-of-the-art domain-specific tools used in systems biology, such as the ASP-based Bonesis and the BDD-based AEON.",
+          "authors": [
+            "Ondřej Huvar",
+            "Martin Jonáš",
+            "Samuel Pastva"
+          ],
+          "published": "2026-04-08T18:35:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07480v1",
+          "entry_id": "http://arxiv.org/abs/2604.07480v1",
+          "title": "Active Reward Machine Inference From Raw State Trajectories",
+          "summary": "Reward machines are automaton-like structures that capture the memory required to accomplish a multi-stage task. When combined with reinforcement learning or optimal control methods, they can be used to synthesize robot policies to achieve such tasks. However, specifying a reward machine by hand, including a labeling function capturing high-level features that the decisions are based on, can be a daunting task. This paper deals with the problem of learning reward machines directly from raw state and policy information. As opposed to existing works, we assume no access to observations of rewards, labels, or machine nodes, and show what trajectory data is sufficient for learning the reward machine in this information-scarce regime. We then extend the result to an active learning setting where we incrementally query trajectory extensions to improve data (and indirectly computational) efficiency. Results are demonstrated with several grid world examples.",
+          "authors": [
+            "Mohamad Louai Shehab",
+            "Antoine Aspeel",
+            "Necmiye Ozay"
+          ],
+          "published": "2026-04-08T18:19:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07455v1",
+          "entry_id": "http://arxiv.org/abs/2604.07455v1",
+          "title": "Munkres' General Topology Autoformalized in Isabelle/HOL",
+          "summary": "We describe an experiment in LLM-assisted autoformalization that produced over 85,000 lines of Isabelle/HOL code covering all 39 sections of Munkres' Topology (general topology, Chapters 2--8), from topological spaces through dimension theory. The LLM-based coding agents (initially ChatGPT 5.2 and then Claude Opus 4.6) used 24 active days for that. The formalization is complete: all 806 formal results are fully proved with zero sorry's. Proved results include the Tychonoff theorem, the Baire category theorem, the Nagata--Smirnov and Smirnov metrization theorems, the Stone--Čech compactification, Ascoli's theorem, the space-filling curve, and others. The methodology is based on a \"sorry-first\" declarative proof workflow combined with bulk use of sledgehammer - two of Isabelle major strengths. This leads to relatively fast autoformalization progress. We analyze the resulting formalization in detail, analyze the human--LLM interaction patterns from the session log, and briefly compare with related autoformalization efforts in Megalodon, HOL Light, and Naproche. The results indicate that LLM-assisted formalization of standard mathematical textbooks in Isabelle/HOL is quite feasible, cheap and fast, even if some human supervision is useful.",
+          "authors": [
+            "Dustin Bryant",
+            "Jonathan Julián Huerta y Munive",
+            "Cezary Kaliszyk",
+            "Josef Urban"
+          ],
+          "published": "2026-04-08T18:00:36+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07349v1",
+          "entry_id": "http://arxiv.org/abs/2604.07349v1",
+          "title": "Toward a Tractability Frontier for Exact Relevance Certification",
+          "summary": "Exact relevance certification asks which coordinates are necessary to determine the optimal action in a coordinate-structured decision problem. The tractable families treated here admit a finite primitive basis, but optimizer-quotient realizability is maximal, so quotient shape alone cannot characterize the frontier.\n  We prove a meta-impossibility theorem for efficiently checkable structural predicates invariant under the theorem-forced closure laws of exact certification. Structural convergence with zero-distortion summaries, quotient entropy bounds, and support-counting arguments explains why those closure laws are canonical. We establish the theorem by constructing same-orbit disagreements for four obstruction families, namely dominant-pair concentration, margin masking, ghost-action concentration, and additive/statewise offset concentration, using action-independent, pair-targeted affine witnesses. Consequently no correct tractability classifier on a closure-closed domain yields an exact characterization over these families. Here closure-orbit agreement is forced by correctness rather than assumed as an invariance axiom. The result therefore applies to correct classifiers on closure-closed domains, not only to classifiers presented through a designated admissibility package.",
+          "authors": [
+            "Tristan Simas"
+          ],
+          "published": "2026-04-08T17:59:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07321v1",
+          "entry_id": "http://arxiv.org/abs/2604.07321v1",
+          "title": "Syntax Is Easy, Semantics Is Hard: Evaluating LLMs for LTL Translation",
+          "summary": "Propositional Linear Temporal Logic (LTL) is a popular formalism for specifying desirable requirements and security and privacy policies for software, networks, and systems. Yet expressing such requirements and policies in LTL remains challenging because of its intricate semantics. Since many security and privacy analysis tools require LTL formulas as input, this difficulty places them out of reach for many developers and analysts. Large Language Models (LLMs) could broaden access to such tools by translating natural language fragments into LTL formulas. This paper evaluates that premise by assessing how effectively several representative LLMs translate assertive English sentences into LTL formulas. Using both human-generated and synthetic ground-truth data, we evaluate effectiveness along syntactic and semantic dimensions. The results reveal three findings: (1) in line with prior findings, LLMs perform better on syntactic aspects of LTL than on semantic ones; (2) they generally benefit from more detailed prompts; and (3) reformulating the task as a Python code-completion problem substantially improves overall performance. We also discuss challenges in conducting a fair evaluation on this task and conclude with recommendations for future work.",
+          "authors": [
+            "Priscilla Kyei Danso",
+            "Mohammad Saqib Hasan",
+            "Niranjan Balasubramanian",
+            "Omar Chowdhury"
+          ],
+          "published": "2026-04-08T17:36:33+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07243v1",
+          "entry_id": "http://arxiv.org/abs/2604.07243v1",
+          "title": "Chevalley groups, commutative rings, class-preserving endomorphisms, locally inner endomorphisms, Sha-rigidity",
+          "summary": "We prove that every locally inner (class-preserving) endomorphism of the adjoint Chevalley group $G_{\\mathrm{ad}}(Φ,R)$ and of its elementary subgroup $E_{\\mathrm{ad}}(Φ,R)$ over a commutative ring $R$ is inner for $Φ\\in\\{\\mathbf A_1,\\mathbf A_2,\\mathbf B_2\\}$ under the assumption $2\\in R^\\times$, and for $Φ=\\mathbf G_2$ under the stronger assumption $2,3\\in R^\\times$. Consequently, all these groups are Sha-rigid.",
+          "authors": [
+            "Elena Bunina",
+            "Vazgen Kirakosyan",
+            "Rachel Treskunov"
+          ],
+          "published": "2026-04-08T16:08:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07234v1",
+          "entry_id": "http://arxiv.org/abs/2604.07234v1",
+          "title": "The Random Subsequence Model and Uniform Codes for the Deletion Channel",
+          "summary": "We introduce the Random Subsequence Model, a spin glass model on pairs of random strings $(X,Y) \\in \\{0,1\\}^N \\times \\{0,1\\}^M$ whose partition function counts subsequence embeddings of $Y$ into $X$. We study two variants: the null model, where $X$ and $Y$ are independent and uniform, and the planted model, where $X$ is uniform and $Y$ is a uniformly-random length-$M$ subsequence of $X$. We connect the Random Subsequence Model to longstanding problems in various fields, including the best rate achievable by uniformly-random codes in the deletion channel, the longest common subsequence problem between two random strings, and models of directed polymers in statistical physics.\n  In the regime where $N,M\\to\\infty$ at a fixed ratio $α= M/N \\in (0,1)$, we exhibit strict asymptotic separations between the null annealed free energy and the quenched free energies of the null and planted models at all values of the density parameter $α$. This suggests that these models are in a spin glass phase at zero temperature throughout the entire dense regime. As a consequence, we show that uniformly-random codes achieve a positive rate in the deletion channel for all deletion probabilities $p\\in [0,1),$ settling multiple conjectures of the second author, Isik and Weissman (2024) and proving the first such positive rate result for the regime $p \\geq 1/2$.\n  We also give an exact analytic formula for the annealed free energy of the planted model for all values of the density parameter. This implies a corresponding analytic upper bound on the best rate achievable by uniformly-random codes in the deletion channel, complementing the lower bound from our first result. Our upper and lower bounds for the capacity of the deletion channel under uniform codes are far closer to each other than the best known upper and lower bounds for the capacity of the deletion channel.",
+          "authors": [
+            "Ryan Jeong",
+            "Francisco Pernice"
+          ],
+          "published": "2026-04-08T15:58:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07228v1",
+          "entry_id": "http://arxiv.org/abs/2604.07228v1",
+          "title": "Emergence of cooperation in nonlinear higher-order public goods games",
+          "summary": "Evolutionary game theory has provided substantial contributions to explain the emergence of cooperation under unfavourable conditions in ecology, economics, and the social sciences. Recently, inspired by newly available empirical evidence on group interactions, higher-order networks have emerged as a natural framework to properly encode multiplayer games in structured populations. Here, we study the emergence of cooperation in a nonlinear public goods game (PGG) on hypergraphs, where collective reinforcement captures the synergistic or discounting effect associated with each additional cooperator. In well-mixed populations, single-order PGGs, where all games have the same number of players, display a change in the nature of transition from continuous to discontinuous depending on the exact form of nonlinearity. By contrast, mixed-order PGGs, where games with different number of players coexist, exhibit a richer dynamical regime wherein a state of active coexistence of bistability and cooperation can arise. We further find that scale-free hypergraphs promote cooperation, highlighting the crucial role played by both the initial placement of cooperators and the presence of hyperdegree correlations. Overall, our results provide a comprehensive characterization of nonlinear PGGs on hypergraphs and open up new avenues for richer models of evolutionary dynamics of multiplayer interactions on structured populations.",
+          "authors": [
+            "Jaume Llabrés",
+            "Onkar Sadekar",
+            "Federico Malizia",
+            "Federico Battiston"
+          ],
+          "published": "2026-04-08T15:51:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07124v1",
+          "entry_id": "http://arxiv.org/abs/2604.07124v1",
+          "title": "A modular approach to achieve multistationarity using AND-gates",
+          "summary": "Systems of differential equations have been used to model biological systems such as gene and neural networks. A problem of particular interest is to understand the number of stable steady states. Here we propose conjunctive networks (systems of differential equations equations created using AND gates) to achieve any desired number of stable steady states. Our approach uses combinatorial tools to predict the number of stable steady states from the structure of the wiring diagram. Furthermore, AND gates have been successfully engineered by experimentalists for gene networks, so our results provide a modular approach to design gene networks that achieve arbitrary number of phenotypes.",
+          "authors": [
+            "Alan Veliz-Cuba",
+            "Zeyu Wang"
+          ],
+          "published": "2026-04-08T14:19:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07115v1",
+          "entry_id": "http://arxiv.org/abs/2604.07115v1",
+          "title": "Smooth Graphs",
+          "summary": "The notion of smoothness was introduced originally in the context of step systems on connected graphs. Smoothness turns out to be a very general property of metrics defined by a five-point condition. Restricted to graphs, it is closely related to the convexity of point-shadows. We show that smoothness is preserved by isometric subgraphs, both Cartesian and strong graph products, and gated amalgams. As a consequence, median graphs and many of their generalizations are smooth. We also show that l1-graphs are smooth. On the other hand, an induced K2,3 or K1,1,3 is incompatible with smoothness. Finally, we characterize smooth graphs among the Ptolemaic graphs as precisely the K1,1,3-free Ptolemaic graphs.",
+          "authors": [
+            "Boštjan Brešar",
+            "Manoj Changat",
+            "Prasanth G. Narasimha-Shenoi",
+            "Bruno J. Schmidt",
+            "Peter F. Stadler"
+          ],
+          "published": "2026-04-08T14:08:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07109v1",
+          "entry_id": "http://arxiv.org/abs/2604.07109v1",
+          "title": "Weak saturation of tensor product of cliques",
+          "summary": "Given two hypergraphs $G$ and $H$, the weak saturation number $\\operatorname{\\mathrm{wsat}}(G,H)$ is the minimum number of edges in a spanning subhypergraph $F$ of $G$ such that the missing edges of $F$ can be added one at a time so that each added edge creates a copy of $H$.\n  In this work, we determine weak saturation numbers for the case when $G$ and $H$ are tensor product of cliques, generalizing a result of Moshkovitz and Shapira (Journal of Combinatorial Theory, Series B, 2015), who found the exact values of $\\operatorname{\\mathrm{wsat}}(K^d_{n_1,\\ldots,n_d},\\ K^d_{r_1,\\ldots,r_d})$.\n  The proof also yields results for colored weak saturation numbers $\\operatorname{\\mathrm{c-wsat}}(G,H)$ of colored hypergraphs $G$ and $H$, where the colorings of the copies of $H$ must be compatible with the coloring of $G$. We determine these numbers when $G$ and $H$ are unions of tensor product of cliques, generalizing a result of Bulavka, Tancer, and Tyomkyn (Combinatorica, 2023), who determined $\\operatorname{\\mathrm{c-wsat}}(K^q_{n_1,\\ldots,n_d}, K^q_{r_1,\\ldots,r_d})$.\n  Moreover, our proof allows us to generalize a result of Balogh, Bollobás, Morris, and Riordan (Journal of Combinatorial Theory, Series A, 2012) by determining colored weak saturation numbers $\\operatorname{\\mathrm{c-wsat}}(K^d_{n_1,\\ldots,n_d},\\{K^d_{r_1,\\ldots,r_d}\\}_{\\mathbf{r}\\in \\mathcal{R}})$ for an arbitrary family $\\mathcal{R}$. The quantity $\\operatorname{\\mathrm{c-wsat}}(G,\\mathcal{H})$ extends colored weak saturation by allowing, at each step, the creation of a colored copy of any hypergraph in the fixed family of hypergraphs $\\mathcal{H}$.",
+          "authors": [
+            "Nikolai Terekhov"
+          ],
+          "published": "2026-04-08T14:00:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07104v1",
+          "entry_id": "http://arxiv.org/abs/2604.07104v1",
+          "title": "Asymptotically optimal lower bounds on weak saturation numbers for hypergraphs",
+          "summary": "Given an $r$-uniform hypergraph $H$ and a positive integer $n$, the weak saturation number $\\mathrm{wsat}(n,H)$ is the minimum number of edges in an $r$-uniform hypergraph $F$ on $n$ vertices such that the missing edges in $F$ can be added, one at a time, so that each added edge creates a copy of $H$.\n  For the case of graphs ($r = 2$), asymptotically optimal general lower bounds for these numbers in terms of the minimum vertex degree of $H$ are known. In this work, we generalize these bounds to the case of hypergraphs and establish their asymptotic optimality. To prove this, we introduce a lower bound method based on polymatroids. This method generalizes a linear algebraic method but, unlike the original version, makes it possible to derive lower bounds with non-integer asymptotic coefficients.",
+          "authors": [
+            "Nikolai Terekhov"
+          ],
+          "published": "2026-04-08T13:56:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07088v1",
+          "entry_id": "http://arxiv.org/abs/2604.07088v1",
+          "title": "Dynamics on fences",
+          "summary": "Homeomorphisms of the Cantor set play a central role in topology, dynamical systems and descriptive set theory. In parallel, several classes of fence-like spaces - such as the hairy Cantor set, hairy arcs, Cantor bouquets in complex dynamics, the Lelek fan in topology and Fraïssé fence in descriptive set theory - have recently been studied for their rich structural and dynamical properties. In this paper, we introduce a general construction that associates to each homeomorphism of the Cantor set a canonically defined homeomorphism of a corresponding fence space. This construction lifts dynamical properties from the Cantor set to these fence-like spaces, allowing one to systematically transfer features such as minimality, recurrence, and orbit structure. As a consequence, we obtain a unified framework for studying dynamics on a broad class of fence-like spaces and establish new connections between their topological structure and induced dynamical behavior.",
+          "authors": [
+            "Jernej Činč",
+            "Udayan B. Darji",
+            "Benjamin Vejnar"
+          ],
+          "published": "2026-04-08T13:41:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07069v1",
+          "entry_id": "http://arxiv.org/abs/2604.07069v1",
+          "title": "Controller Design for Structured State-space Models via Contraction Theory",
+          "summary": "This paper presents an indirect data-driven output feedback controller synthesis for nonlinear systems, leveraging Structured State-space Models (SSMs) as surrogate models. SSMs have emerged as a compelling alternative in modelling time-series data and dynamical systems. They can capture long-term dependencies while maintaining linear computational complexity with respect to the sequence length, in comparison to the quadratic complexity of Transformer-based architectures. The contributions of this work are threefold. We provide the first analysis of controllability and observability of SSMs, which leads to scalable control design via Linear Matrix Inequalities (LMIs) that leverage contraction theory. Moreover, a separation principle for SSMs is established, enabling the independent design of observers and state-feedback controllers while preserving the exponential stability of the closed-loop system. The effectiveness of the proposed framework is demonstrated through a numerical example, showcasing nonlinear system identification and the synthesis of an output feedback controller.",
+          "authors": [
+            "Muhammad Zakwan",
+            "Vaibhav Gupta",
+            "Alireza Karimi",
+            "Efe C. Balta",
+            "Giancarlo Ferrari-Trecate"
+          ],
+          "published": "2026-04-08T13:19:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07062v1",
+          "entry_id": "http://arxiv.org/abs/2604.07062v1",
+          "title": "Eigenvalue collision and exotic preservers on semisimple operators",
+          "summary": "We classify $n\\times n$-matrix-valued continuous commutativity and spectrum preservers defined on spaces of (a) normal, (b) semisimple and (c) arbitrary $n\\times n$ matrices with spectra contained in sufficiently connected subsets $\\mathcal{X}\\subseteq \\mathbb{C}$, generalizing a number of results due to Šemrl, Gogić, Tomašević and the author among others. In case (a) these are always conjugations or transpose conjugations, while in cases (b) and (c) qualitatively distinct possibilities arise depending on the local regularity of the complex-conjugation map close to coincident-eigenvalue loci of $\\mathcal{X}^n$.",
+          "authors": [
+            "Alexandru Chirvasitu"
+          ],
+          "published": "2026-04-08T13:11:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07058v1",
+          "entry_id": "http://arxiv.org/abs/2604.07058v1",
+          "title": "The Quadratic State Cost of Classical Simulation of One-Way Quantum Finite Automata",
+          "summary": "Generalized finite automata (GFAs), probabilistic finite automata (PFAs), and one-way general quantum finite automata (1gQFA) recognize the same strict-cutpoint languages, but the state complexity of exact probabilistic simulation has remained unclear. This paper determines that worst-case cost exactly: every \\(n\\)-state 1gQFA admits exact strict-cutpoint simulation by a one-way PFA with \\(O(n^2)\\) states, via the standard \\(n^2\\)-dimensional mixed-state linearization together with an explicit alphabet-preserving construction that converts each \\(k\\)-state GFA into a one-way PFA with at most \\(2k+6\\) states; conversely, for every \\(n\\ge 2\\), there exists an \\(n\\)-state 1gQFA for which every equivalent one-way PFA requires at least \\(n^2-1\\) states, obtained from a prepare--test construction and a Vapnik--Chervonenkis dimension argument. Hence the worst-case probabilistic state cost of exact strict-cutpoint simulation is \\(Θ(n^2)\\).",
+          "authors": [
+            "Zeyu Chen",
+            "Junde Wu"
+          ],
+          "published": "2026-04-08T13:10:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07056v1",
+          "entry_id": "http://arxiv.org/abs/2604.07056v1",
+          "title": "On computing the spherical roots for a class of spherical subgroups",
+          "summary": "Given a connected reductive algebraic group $G$, we consider the class of spherical subgroups $H \\subset G$ such that $H$ is regularly embedded in a parabolic subgroup $P \\subset G$ and $H,P$ have a common Levi subgroup $L$. In a previous paper, the author developed a fast algorithm that reduces the computation of the set of spherical roots for such subgroups $H$ to the case where the quotient of Lie algebras $\\operatorname{Lie} P / \\operatorname{Lie} H$ is a strictly indecomposable spherical $L$-module. In this paper, we complete the classification of all such cases and compute the spherical roots for each of them, which enables one to use the above fast algorithm directly for computing the spherical roots for arbitrary spherical subgroups in the class under consideration.",
+          "authors": [
+            "Roman Avdeev"
+          ],
+          "published": "2026-04-08T13:07:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07043v1",
+          "entry_id": "http://arxiv.org/abs/2604.07043v1",
+          "title": "On local solutions to time-varying linear DAEs",
+          "summary": "This paper presents a framework for local solutions to time-varying linear differential-algebraic equations (DAEs) with real meromorphic coefficients. The local solutions on compact intervals form a sheaf. This permits a simple definition of controllability in the sense of Jan C. Willems. We prove that this notion is equivalent to the established global notion by giving an algebraic characterization based on the Teichmüller-Nakayama form. Finally, we study conditions under which local solutions admit extension, which is necessary for controllability.",
+          "authors": [
+            "Alexander Samuel Bock"
+          ],
+          "published": "2026-04-08T12:59:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07025v1",
+          "entry_id": "http://arxiv.org/abs/2604.07025v1",
+          "title": "Physics-Informed Functional Link Constrained Framework with Domain Mapping for Solving Bending Analysis of an Exponentially Loaded Perforated Beam",
+          "summary": "This article presents a novel and comprehensive approach for analyzing bending behavior of the tapered perforated beam under an exponential load. The governing differential equation includes important factors like filling ratio ($α$), number of rows of holes ($N$), tapering parameters ($φ$ and $ψ$), and exponential loading parameter ($γ$), providing a realistic and flexible representation of perforated beam configuration. Main goal of this work is to see how well the Domain mapped physics-informed Functional link Theory of Functional Connection (DFL-TFC) method analyses bending response of perforated beam with square holes under exponential loading. For comparison purposes, a corresponding PINN-based formulation is developed. Outcomes clearly show that the proposed DFL-TFC framework gives better results, including faster convergence, reduced computational cost, and improved solution accuracy when compared to the PINN approach. These findings highlight effectiveness and potential of DFL-TFC method for solving complex engineering problems governed by differential equations. Within this framework, hidden layer is replaced by a functional expansion block that enriches input representation via orthogonal polynomial basis functions, and the domain of DE mapped to corresponding domain of orthogonal polynomials. A Constrained Expression (CE), constructed through the Theory of Functional Connections (TFC) using boundary conditions, ensures that constraints are exactly satisfied. In CE, free function is represented using a Functional Link Neural Network (FLNN), which learns to solve resulting unconstrained optimization problem. The obtained results are further validated through the Galerkin and PINN solutions.",
+          "authors": [
+            "Iswari Sahu",
+            "Ramanath Garai",
+            "S. Chakraverty"
+          ],
+          "published": "2026-04-08T12:44:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07414v1",
+          "entry_id": "http://arxiv.org/abs/2604.07414v1",
+          "title": "Formally Guaranteed Control Adaptation for ODD-Resilient Autonomous Systems",
+          "summary": "Ensuring reliable performance in situations outside the Operational Design Domain (ODD) remains a primary challenge in devising resilient autonomous systems. We explore this challenge by introducing an approach for adapting probabilistic system models to handle out-of-ODD scenarios while, in parallel, providing quantitative guarantees. Our approach dynamically extends the coverage of existing system situation capabilities, supporting the verification and adaptation of the system's behaviour under unanticipated situations. Preliminary results demonstrate that our approach effectively increases system reliability by adapting its behaviour and providing formal guarantees even under unforeseen out-of-ODD situations.",
+          "authors": [
+            "Gricel Vázquez",
+            "Calum Imrie",
+            "Sepeedeh Shahbeigi",
+            "Nawshin Mannan Proma",
+            "Tian Gan",
+            "Victoria J Hodge",
+            "John Molloy",
+            "Simos Gerasimou"
+          ],
+          "published": "2026-04-08T12:28:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07001v1",
+          "entry_id": "http://arxiv.org/abs/2604.07001v1",
+          "title": "Non-split sharply 2- and 3-transitive groups in SL_n(\\mathbb Z)",
+          "summary": "We prove that $\\mathrm{SL}_3(\\mathbb{Z})$ contains a non-split sharply 2-transitive subgroup, answering a question of Glasner and Gulko. We also prove that $\\mathrm{SL}_4(\\mathbb{Z})$ contains a non-split sharply 3-transitive subgroup, but that $\\mathrm{SL}_3(\\mathbb{Z})$ does not contain an infinite sharply 3-transitive subgroup.",
+          "authors": [
+            "Marco Amelio",
+            "Simon André"
+          ],
+          "published": "2026-04-08T12:19:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06999v1",
+          "entry_id": "http://arxiv.org/abs/2604.06999v1",
+          "title": "Vertex-critical graphs in subfamilies of $(P_4+\\ell P_1)$-free graphs",
+          "summary": "A graph $G$ is $k$-vertex-critical if $χ(G)=k$ but $χ(G-v)<k$ for all $v\\in V(G)$. In this paper we make progress on the open problem of the finiteness of $k$-vertex-critical $(P_4+\\ell P_1)$-free graphs by showing that there are only finitely many $k$-vertex-critical graphs in the following subfamilies of $(P_4+\\ell P_1)$-free graphs for all $k\\ge 1$ and $\\ell\\ge 0$:\n  $\\bullet$ $(P_4+\\ell P_1,\\text{chair})$-free graphs,\n  $\\bullet$ $(P_4+\\ell P_1,P_5,\\text{bull})$-free graphs, and\n  $\\bullet$ $(P_4+\\ell P_1,P_5,\\text{cricket})$-free graphs.\n  In fact, all but the first of these are special cases of our general result that there are only finitely many $k$-vertex-critical $(P_4+\\ell P_1,B_{4}(m),B_{3}(m)^{+})$-free graphs for all $k\\ge 1$ and $\\ell,m\\ge 0$. Here $B_{n}(m)$ is the graph obtained from a path of order $n$ by identifying one of its leaves with the centre vertex of $K_{1,m}$ and $B_{n}(m)^{+}$ is the graph obtained by identifying an edge of $K_3$ with the edge of $B_{n}(m)$ with endpoints of degrees $2$ and $m$, respectively. Our results imply the existence of simple polynomial-time certifying algorithms to decide the $k$-colourability of all graphs in these subfamilies for every fixed $k$.\n  We also show that $χ(G)\\le \\ell+2$ for all $(P_4+\\ell P_1,K_3)$-free graphs and all $\\ell\\ge 0$, improving the previously known upper bound of $2\\ell+2$ that followed from Randerath and Schiermeyer's 2004 result on $(P_t,K_3)$-free graphs. More generally, we provide a $χ$-bound in $O(\\ell^{ω-1})$ for $(P_4+\\ell P_1)$-free graphs which improves the bound of $(2\\ell+2)^{ω-1}$ which followed from Gravier, Hoàng and Maffray in 2003 for $P_{t}$-free graphs.",
+          "authors": [
+            "Iain Beaton",
+            "Ben Cameron"
+          ],
+          "published": "2026-04-08T12:15:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06982v1",
+          "entry_id": "http://arxiv.org/abs/2604.06982v1",
+          "title": "Selfless reduced amalgamated free products and HNN extensions",
+          "summary": "We find a general family of selfless inclusions in reduced amalgamated free products of C*-algebras. Apart from generalizing prior works due to McClanahan, Ivanov and Omland, our work yields a few other applications. We present a short new approach to construct HNN extensions of C*-algebras and find several new examples of selflessness using this. This generalizes results of Ueda, Ivanov and de la Harpe-Preaux. As another application our work yields a short proof of selflessness for arbitrary graph products of C*-algebras over graphs of radius greater than 2.",
+          "authors": [
+            "David Gao",
+            "Srivatsav Kunnawalkam Elayavalli",
+            "Gregory Patchell",
+            "Lizzy Teryoshin"
+          ],
+          "published": "2026-04-08T11:57:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06968v1",
+          "entry_id": "http://arxiv.org/abs/2604.06968v1",
+          "title": "A criterion for Tits alternative on the centralizer of a matrix",
+          "summary": "We give a necessary and sufficient condition on a matrix for its centralizer in $\\sf{GL}(n,\\mathbb{Z})$ to be polycyclic, or equivalently in this case, not to contain a non-abelian free subgroup. We give a simple condition on the matrix ensuring that it is abelian. This can be thought of as an effective Tits alternative on centralizers in $\\sf{GL}(n,\\mathbb{Z})$. We apply these criteria to the conjugacy problem in certain arithmetic groups preserving a non-degenerate $\\mathbb{Q}$-bilinear form, such as integral symplectic groups. We derive an effective solution to the conjugacy problem in such groups when given matrices satisfy the above criterion. This solution is based on effective solutions to the conjugacy problem in $\\sf{GL}(n,\\mathbb{Z})$ by Eick-Hofmann-O'Brien and to an orbit problem for polycyclic groups, by Eick and Ostheimer.",
+          "authors": [
+            "Adem Zeghib"
+          ],
+          "published": "2026-04-08T11:34:08+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.07408v1",
+          "entry_id": "http://arxiv.org/abs/2604.07408v1",
+          "title": "Successive vertex orderings of connected graphs",
+          "summary": "A successive vertex ordering of a graph is a linear ordering of its vertices in which every vertex except the first has at least one neighbour appearing earlier. Such orderings arise naturally in incremental growth and connectivity-preserving constructions, where vertices are added sequentially and must attach to the existing structure. We derive an exact formula for the number of successive vertex orderings of any finite connected graph. The formula is obtained via an inclusion--exclusion argument over independent sets and depends on two explicit combinatorial parameters, one of which is defined recursively. The result applies to all finite connected graphs without requiring regularity or symmetry assumptions. We also express the enumeration as a weighted generating polynomial over independent sets; its value at $x = -1$ recovers the total count of successive orderings, and the $k$-th derivative at this point encodes the number of orderings in which exactly $k$ vertices have no earlier neighbour.",
+          "authors": [
+            "Prarthana Agrawal",
+            "Abdurrahman Hadi Erturk",
+            "Ard Louis"
+          ],
+          "published": "2026-04-08T11:30:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06951v1",
+          "entry_id": "http://arxiv.org/abs/2604.06951v1",
+          "title": "On the Rigidity of Hamiltonians which are Zoll Near a Minimum, with an Application to Magnetic Systems and Almost-Kähler Manifolds",
+          "summary": "We study Hamiltonian systems near a compact symplectic Morse-Bott minimum. Our first result shows that if the flow is Zoll (that is, it induces a free circle action) along a sequence of energy levels converging to the minimum, then the Hessian of the Hamiltonian in the symplectic normal directions must be compatible with the restriction of the symplectic structure to the normal bundle (that is, its representing endomorphism is a complex structure of the symplectic normal bundle). For our second result, we specialize to magnetic systems on closed manifolds with symplectic magnetic form. In this setting, if the system is Zoll along a sequence of energy levels converging to the minimum, then the metric is compatible with the magnetic form and therefore defines an almost Kähler structure. We show that a natural curvature quantity, consisting of the holomorphic sectional curvature corrected by a term measuring the non-integrability of the almost complex structure, must be constant. In particular, we obtain a dynamical characterization of complex space forms among Kähler manifolds. Together, these results establish strong rigidity of systems which are Zoll at energies close to a Morse-Bott minimum, in the symplectic and in the magnetic settings.",
+          "authors": [
+            "Gabriele Benedetti",
+            "Johanna Bimmermann",
+            "Samanyu Sanjay"
+          ],
+          "published": "2026-04-08T11:14:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06926v1",
+          "entry_id": "http://arxiv.org/abs/2604.06926v1",
+          "title": "Continuous-Time Dynamics of the Difference-of-Convex Algorithm",
+          "summary": "We study the continuous-time structure of the difference-of-convex algorithm (DCA) for smooth DC decompositions with a strongly convex component. In dual coordinates, classical DCA is exactly the full-step explicit Euler discretization of a nonlinear autonomous system. This viewpoint motivates a damped DCA scheme, which is also a Bregman-regularized DCA variant, and whose vanishing-step limit yields a Hessian-Riemannian gradient flow generated by the convex part of the decomposition. For the damped scheme we prove monotone descent, asymptotic criticality, Kurdyka-Lojasiewicz convergence under boundedness, and a global linear rate under a metric DC-PL inequality. For the limiting flow we establish an exact energy identity, asymptotic criticality of bounded trajectories, explicit global rates under metric relative error bounds, finite-length and single-point convergence under a Kurdyka-Lojasiewicz hypothesis, and local exponential convergence near nondegenerate local minima. The analysis also reveals a global-local tradeoff: the half-relaxed scheme gives the best provable global guarantee in our framework, while the full-step scheme is locally fastest near a nondegenerate minimum. Finally, we show that different DC decompositions of the same objective induce different continuous dynamics through the metric generated by the convex component, providing a geometric criterion for decomposition quality and linking DCA with Bregman geometry.",
+          "authors": [
+            "Yi-Shuai Niu"
+          ],
+          "published": "2026-04-08T10:38:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06907v1",
+          "entry_id": "http://arxiv.org/abs/2604.06907v1",
+          "title": "Topological Indices of Divisor Prime Graphs",
+          "summary": "Graph theory provides powerful tools for modeling concepts in number theory, leading to the introduction of graphs derived from arithmetic properties. One such structure is the divisor prime graph, $G_{Dp(n)}$. For any positive integer $n$, let $D(n)$ be the set of its positive divisors. The vertex set of $G_{Dp(n)}$ consists of the elements of $D(n)$, with the adjacency condition that two vertices $x$ and $y$ share an edge if and only if their greatest common divisor is $1$. The primary focus of this study is to evaluate the topological characteristics of $G_{Dp(n)}$. To achieve this, we analyze and compute various distance and degree-based indices, specifically focusing on the Wiener, Harary, hyper-Wiener, First and Second Zagreb, Schultz, Gutman, and Eccentric connectivity indices.",
+          "authors": [
+            "Purva J. Makadiya",
+            "Mahesh M. Jariya",
+            "Prashant J. Makadiya"
+          ],
+          "published": "2026-04-08T10:06:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06878v1",
+          "entry_id": "http://arxiv.org/abs/2604.06878v1",
+          "title": "Towards Multiparty Session Types for Highly-Concurrent and Fault-Tolerant Web Applications",
+          "summary": "Modern web applications combine persistent state updates, concurrent interactions, and unreliable communication with external services. Failures such as timeouts can occur after partial state changes, producing temporary inconsistencies whose resolution depends on liveness properties that are often not verified in practice. Although formal methods offer rigorous guarantees for reasoning about complex software, they remain rarely adopted in enterprise settings due to their perceived complexity and lack of practical automation. Multiparty Session Types (MPST) offer strong guarantees for communication safety, yet they do not account for the interplay between state evolution, dynamic workflow structure, and failure behaviour that are essential for reasoning about the correctness of real web applications.\n  This paper introduces a global-type framework that equips MPST with explicit failure semantics and dynamic participation. We define the syntax and operational semantics of these enriched global types and establish core properties, including coherence preservation. This foundation enables formal reasoning about communications in web applications where failures may occur, and lays the groundwork for future stateful extensions and automated verification of liveness properties.",
+          "authors": [
+            "Richard Casetta",
+            "Nils Gesbert",
+            "Pierre Genevès"
+          ],
+          "published": "2026-04-08T09:38:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06877v1",
+          "entry_id": "http://arxiv.org/abs/2604.06877v1",
+          "title": "Predicate Subtypes in VerCors",
+          "summary": "Predicate subtypes provide an attractive mechanism to specify range constraints on variable declarations. This paper discusses how we add support for predicate subtypes to the VerCors program verifier. Our approach automatically generates appropriate specifications from predicate subtype declarations. It provides support to easily combine multiple subtypes for a single variable declaration. Moreover, in order to use predicate subtypes for overflow checking, a special strict mode is introduced, where every subexpression also has to stay within the declared subtype. A prototype implementation is integrated into the VerCors verifier.",
+          "authors": [
+            "Tycho Dubbeling",
+            "Marieke Huisman",
+            "Ömer Şakar"
+          ],
+          "published": "2026-04-08T09:37:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06872v1",
+          "entry_id": "http://arxiv.org/abs/2604.06872v1",
+          "title": "Asynchronous Multiparty Sessions with Mixed Choice",
+          "summary": "We present an asynchronous calculus for multiparty sessions with mixed choice, which extends the Simple MultiParty Session framework in order to support nondeterministic choices with both input and output prefixes. Global types -- equipped with a coinductively defined labelled transition system -- form the basis of a type system that exploits the key notion of coherence of communication label sets. Roughly, a coherent set contains either all the communications enabled in the session, or all the actions currently exhibited by a participant,  provided that at least one input is enabled for each expected sender.  Our approach to the typing of multiparty sessions is orthogonal to the well-established, projection-based approaches of the MultiParty Session Type framework. We prove fundamental theorems for typable multiparty sessions, including Subject Reduction and Session Fidelity. These properties imply that typable sessions are both Lock-Free and Orphan-Message-Free. We also investigate the Eventual Reception property for an extension of the type system. Some  examples demonstrate the expressiveness of mixed choice in asynchronous multiparty protocols and the effectiveness of the proposed type discipline.",
+          "authors": [
+            "Franco Barbanera",
+            "Mariangiola Dezani-Ciancaglini"
+          ],
+          "published": "2026-04-08T09:36:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06859v1",
+          "entry_id": "http://arxiv.org/abs/2604.06859v1",
+          "title": "Tractable Hyperproperties for MDPs",
+          "summary": "Probabilistic hyperproperties describe probabilistic relations between multiple sets of executions in a stochastic system. Prominent examples include information-theoretic characterizations of security and privacy policies. However, model checking for existing probabilistic hyperlogics, such as HyperPCTL and PHL, is undecidable in Markov decision processes (MDPs). In this paper, we study an underexplored problem: the verification of fragments of probabilistic hyperproperties that relate the probabilities of different events to each other, possibly across independent executions of an MDP. Representative verification questions include: Can two different target states be reached from the same initial state with the same probability? (different events), Can a given target state be reached from two different initial states with the same probability? (same event, independent executions), and natural combinations of these forms. Besides reachability, our relational probabilistic properties cover safety, Büchi, and coBüchi objectives. They can also be combined conjunctively, thereby generalizing standard multi-objective MDP properties. We provide efficient algorithms for relevant classes of relational properties, while proving computational hardness and completeness results for others. An implementation of our approach outperforms solvers for more general probabilistic hyperlogics by orders of magnitude on the subset of their benchmarks that lies within our fragment.",
+          "authors": [
+            "Lina Gerlach",
+            "Tobias Winkler",
+            "Erika Ábrahám",
+            "Borzoo Bonakdarpour",
+            "Sebastian Junges"
+          ],
+          "published": "2026-04-08T09:21:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06839v1",
+          "entry_id": "http://arxiv.org/abs/2604.06839v1",
+          "title": "Extremal Mostar Index of Graphs with Given Number of Cut Edges",
+          "summary": "The Mostar index of a connected graph \\(G\\) is defined as \\[ Mo(G)=\\sum_{uv\\in E(G)}\\bigl|n_u(uv)-n_v(uv)\\bigr|, \\] where for an edge \\(e=uv\\), \\(n_u(e)\\) denotes the number of vertices of \\(G\\) that are closer to \\(u\\) than to \\(v\\). In this paper, we determine the maximum possible Mostar index among all connected graphs of order \\(n\\) with exactly \\(k\\) cut edges, where \\(1\\le k\\le n-1\\). We prove that the maximum value is given by \\(k(n-2)+(n-k-1)k\\), and the unique extremal graph is \\(K_{n-k}^k\\) (a complete graph on \\(n-k\\) vertices with \\(k\\) pendant edges attached to a single vertex). We also establish a sharp lower bound and characterise the extremal graphs for the minimum value. Furthermore, we extend the results to graphs with a given cyclomatic number and a given number of cut edges. Our findings complete the extremal characterisation of the Mostar index for this fundamental graph class.",
+          "authors": [
+            "Sunilkumar M. Hosamani"
+          ],
+          "published": "2026-04-08T09:01:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06818v1",
+          "entry_id": "http://arxiv.org/abs/2604.06818v1",
+          "title": "Bounds for (strong) Roman $k$-dominations",
+          "summary": "Motivated by resource defense models in networks, such as protecting territories with varying legion strengths, let $k \\geq 2$ be an integer. Roman $k$-domination and strong Roman $k$-domination generalize Roman, double Roman, Italian, and double Italian domination to arbitrary number of legions. The main goal of this note is establishing sharp upper bounds for the Roman and strong Roman $k$-domination numbers of connected graphs. These bounds unify and extend prior results for $k=2$ and $k=3$. We also precisely characterize the graphs achieving these bounds.",
+          "authors": [
+            "Fahimeh Khosh-Ahang Ghasr"
+          ],
+          "published": "2026-04-08T08:35:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06735v1",
+          "entry_id": "http://arxiv.org/abs/2604.06735v1",
+          "title": "Simultaneous avoidance of length-4 patterns in ascent sequences",
+          "summary": "Ascent sequences form a central class of combinatorial objects, as they are in bijection with several important families such as (2+2)-free posets, Stoimenow matchings, and other Fishburn objects, and are enumerated by the Fishburn numbers.\n  We study pattern avoidance in ascent sequences for the five patterns of length 4: $0101$, $0102$, $0112$, $0120$, and $0121$. These patterns arise naturally from recent work on pattern avoidance in related families of Fishburn objects, including Stoimenow matchings and (2+2)-free posets. We enumerate ascent sequences avoiding any subset of these patterns, with the exception of the sets $\\{0120\\}$, $\\{0121\\}$, and $\\{0120,0121\\}$, for which the enumeration remains open.\n  Our results reveal that the corresponding avoidance classes fall into $16$ Wilf equivalence classes and exhibit a wide range of enumerative behaviour, including connections to classical sequences such as the Catalan and Fibonacci numbers, as well as polynomial formulas and rational generating functions; several of the sequences we obtain appear to be new. Our methods combine structural decompositions with generating-tree techniques and, in several cases, rely on reductions to shorter patterns via restricted growth functions. This work contributes to the broader study of pattern avoidance across Fishburn families and highlights further connections between ascent sequences and other combinatorial structures.",
+          "authors": [
+            "Qi Liu",
+            "Sergey Kitaev",
+            "Philip B. Zhang"
+          ],
+          "published": "2026-04-08T06:57:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06690v1",
+          "entry_id": "http://arxiv.org/abs/2604.06690v1",
+          "title": "Legendrian position of veering triangulations",
+          "summary": "We make a first step towards connecting the theory of veering triangulations and bicontact structures as tools for studying (pseudo-)Anosov flows: We show that given a veering triangulation corresponding to an Anosov flow with orientable stable and unstable foliations, the edges of the triangulation can be realized as Legendrian arcs with respect to a strongly adapted bicontact structure that supports the Anosov flow. Along the way, we show that every veering triangulation can be placed in `steady position', where each pair of edge projections that intersect in the orbit space only intersect once transversely. By a previous result of the author, this implies that horizontal surgery of veering triangulations correspond to horizontal Goodman surgery of pseudo-Anosov flows.",
+          "authors": [
+            "Chi Cheuk Tsang"
+          ],
+          "published": "2026-04-08T05:11:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06686v1",
+          "entry_id": "http://arxiv.org/abs/2604.06686v1",
+          "title": "Relative numbers of ends and quasi-median graphs",
+          "summary": "Given a finitely generated $G$ and a subgraph $H \\leq G$, the relative number of ends $e(G,H)$ is the number of ends of a Schreier graph $\\mathrm{Sch}(G,H)$ and the number of coends $\\tilde{e}(G,H)$ is the maximal number of $H$-infinite components of the complement of a neighbourhood of $H$ in $G$. Generalising Sageev's characterisation of codimension-one subgroups in terms of actions on CAT(0) cube complexes, we characterise the number of relative ends and the number of coends of a pair $(G,H)$ in terms of actions on quasi-median graphs.",
+          "authors": [
+            "Anthony Genevois"
+          ],
+          "published": "2026-04-08T05:03:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06640v1",
+          "entry_id": "http://arxiv.org/abs/2604.06640v1",
+          "title": "Curves of tangencies of foliation pairs and normalizing transformations",
+          "summary": "In this work we give a complete description of the collection of curves of tangencies induced by germs of foliation pairs -- non dicritical and dicritical -- given by analytic differential equations with degenerated non dicritical and dicritical singularities, satisfying some genericity assumptions. To this purpose we use local models and analytic normalizing transformations. Moreover, for each natural number $k$ we obtain $k$-normal forms for the normalizing transformations. These normal forms are used to give parametrizations, up to a finite jet, of the branches of the curves of tangencies. We also prove that under natural genericity assumptions any germ of analytic curve having pairwise transversal smooth branches is realized as curve of tangencies of a -- non dicritical and dicritical -- foliation pair.",
+          "authors": [
+            "Jessica Angélica Jaurez-Rosas",
+            "Laura Ortiz-Bobadilla",
+            "Sergei Voronin"
+          ],
+          "published": "2026-04-08T03:26:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06615v1",
+          "entry_id": "http://arxiv.org/abs/2604.06615v1",
+          "title": "Newton polytopes of immanants of some combinatorial matrices",
+          "summary": "The immanants of combinatorial matrices have many significant properties, including m-positivity and Schur positivity. While the immanants of Jacobi-Trudi matrices are known to be both m-positive and Schur positive, those of Giambelli matrices have only been proven to be m-positive, with Schur positivity remaining a conjecture. These positivity properties rely heavily on lattice path interpretations. In this paper, we study the Newton polytopes of immanants for these two classes of matrices. Using the lattice path method, we verify the saturation property for the Newton polytopes of Jacobi-Trudi matrices in special cases. For Giambelli matrices, we prove that this property holds for all immanants. To achieve this, we obtain the explicit coefficients of the largest monomial (in the dominance order) in the monomial expansion of the immanants of Giambelli matrices.",
+          "authors": [
+            "Candice X. T. Zhang"
+          ],
+          "published": "2026-04-08T02:49:28+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06609v1",
+          "entry_id": "http://arxiv.org/abs/2604.06609v1",
+          "title": "Short proofs in combinatorics, probability and number theory II",
+          "summary": "We give a quintet of proofs resulting from questions posed by Erdős. These questions concern ordinary lines in planar point sets, sequences with uniformly small exponential sums, $K_4$-free $4$-critical graphs with few chords in any cycle, a counterexample to a \"fewnomial\" version of the Erdős--Turán discrepancy bound, and a finiteness theorem for integers $n$ such that $n-a k^2$ is prime for all $k\\leq \\sqrt{n/a}$ coprime to $n$ (for fixed $a\\in\\mathbb Z_+$). Each proof is due to an internal model at OpenAI.",
+          "authors": [
+            "Boris Alexeev",
+            "Moe Putterman",
+            "Mehtaab Sawhney",
+            "Mark Sellke",
+            "Gregory Valiant"
+          ],
+          "published": "2026-04-08T02:42:30+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06601v1",
+          "entry_id": "http://arxiv.org/abs/2604.06601v1",
+          "title": "Cohomological aspects of power ideals",
+          "summary": "We show that the space of sections of any line bundle on the augmented wonderful variety of a hyperplane arrangement has the structure of a coalgebra. These coalgebras correspond to the hyperplane arrangement power ideals of Ardila and Postnikov, which include zonotopal algebras as a special case. By proving cohomology vanishing results on augmented wonderful varieties, we recover many results about zonotopal algebras. We also interpret the \"superspace\" zonotopal algebras of Rhoades, Tewari, and Wilson in terms of the sections of vector bundles on the augmented wonderful variety, and we use this interpretation to prove a formula that they conjectured for the Hilbert series of the superspace version of the central zonotopal algebra.",
+          "authors": [
+            "Colin Crowley",
+            "Matt Larson"
+          ],
+          "published": "2026-04-08T02:37:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06570v1",
+          "entry_id": "http://arxiv.org/abs/2604.06570v1",
+          "title": "Boundary Hopf bifurcations in three-dimensional Filippov systems",
+          "summary": "For piecewise-smooth ordinary differential equations, the occurrence of a Hopf bifurcation on a switching surface is known as a boundary Hopf bifurcation. Boundary Hopf bifurcations are codimension-two, so occur at points in two-parameter bifurcation diagrams. From any such point there issues a curve of grazing bifurcations, where the limit cycle born in the Hopf bifurcation hits the switching surface. For Filippov systems, these are usually grazing-sliding bifurcations whose local dynamics are dictated by piecewise-linear maps. In general, these maps have many independent parameters and extraordinarily rich dynamical behaviour. We show that for three-dimensional Filippov systems only a two-parameter family of piecewise-linear maps is relevant, because sliding motion induces a loss of dimension, and the stability of the limit cycle is degenerate at the Hopf bifurcation. We derive explicit formulas for the two parameters in terms of quantities associated with the boundary Hopf bifurcation, and perform a comprehensive numerical analysis to characterise the attractor of the family, which may be chaotic. The results are illustrated with a pedagogical example, a pest control model, and a model of a food chain with threshold-based harvesting. To evaluate the parameters, we use a formula for the linear term of the discontinuity map associated with grazing-sliding bifurcations. In this paper we present a new, simpler derivation of this formula for $n$-dimensional systems based on displacements from a virtual counterpart.",
+          "authors": [
+            "David J. W. Simpson"
+          ],
+          "published": "2026-04-08T01:35:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06538v1",
+          "entry_id": "http://arxiv.org/abs/2604.06538v1",
+          "title": "Almost amorphic association schemes",
+          "summary": "An association scheme is called amorphic if every possible fusion of relations gives rise to another association scheme. In earlier work, we showed that if an association scheme has at most one relation that is neither strongly regular of Latin square type nor strongly regular of negative Latin square type, then it must be amorphic. We now construct non-amorphic $d$-class association schemes in which precisely two relations are not strongly regular of Latin square type or strongly regular of negative Latin square type, for any $d \\geq 4$. We also raise the question whether different types of strongly regular graphs can coexist in an association scheme. Among some other results, we show that if one of the relations is a lattice graph, then any other strongly regular relation in the scheme must be of Latin square type.",
+          "authors": [
+            "Edwin van Dam",
+            "Jack H. Koolen",
+            "Yanzhen Xiong"
+          ],
+          "published": "2026-04-08T00:31:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06533v1",
+          "entry_id": "http://arxiv.org/abs/2604.06533v1",
+          "title": "Parametrizing Reads-From Equivalence for Predictive Monitoring",
+          "summary": "Predictive runtime monitoring asks whether an execution $σ$ of a concurrent program can be used to \\emph{soundly predict} the existence of a reordering $ρ$ of $σ$ that satisfies a property $\\varphi$.\n  Its effectiveness and efficiency depend on two factors: (a) the complexity of $\\varphi$, and (b) the expressive power of the reorderings considered. At one extreme, allowing all reorderings induced by \\emph{reads-from equivalence} makes predictive monitoring intractable, even for simple properties such as data races. At the other extreme, restricting to commutativity-based reorderings (Mazurkiewicz trace equivalence) yields efficient algorithms for simple properties, but remains intractable for general regular specifications and offers limited predictive power.\n  We address this tradeoff via \\emph{parametrization}. We introduce \\emph{sliced reorderings} and their generalization, \\emph{$k$-sliced reorderings}. Informally, $ρ$ is a $k$-sliced reordering of $σ$ if $σ$ can be partitioned into $k+1$ ordered subsequences whose concatenation yields $ρ$, while preserving program order and reads-from constraints.\n  Our results are twofold. First, $k$-sliced reorderings form a strictly increasing hierarchy that converges to reads-from equivalence as $k$ grows. Second, for any fixed $k$, predictive monitoring modulo $k$-sliced reorderings against any regular specification admits a constant-space streaming algorithm.\n  Together, these results establish $k$-sliced reorderings as a principled alternative to existing equivalences, enabling a uniform parametrized framework where expressive power can be systematically traded off against computational cost.",
+          "authors": [
+            "Azadeh Farzan",
+            "Umang Mathur"
+          ],
+          "published": "2026-04-08T00:09:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.06532v1",
+          "entry_id": "http://arxiv.org/abs/2604.06532v1",
+          "title": "Random permutations from $q$-Demazure products",
+          "summary": "We study the $q$-deformation of the Demazure product model from arXiv:2407.21653. Consider the longest element $w_0$ in $S_n$ written as a reduced word in simple transpositions. Independently delete each transposition with probability $1-p$ and apply the $q$-Demazure product to the remaining ones. We show that the law of the resulting permutation converges as $n \\to \\infty$ to a deterministic permuton, which coincides with the $q=0$ case studied in arXiv:2407.21653 for adjusted probability $p'=p(1-q)/(1-qp)$. This resolves Conjecture 1.13 from arXiv:2407.21653 and identifies the limiting permuton explicitly.",
+          "authors": [
+            "Mikhail Tikhonov"
+          ],
+          "published": "2026-04-08T00:05:14+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-04-11T04:29:41.472843+00:00",
+      "updated_at": "2026-04-11T04:29:41.472843+00:00",
+      "finalized_at": null
     }
   ]
 }
