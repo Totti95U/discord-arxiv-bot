@@ -29186,7 +29186,7 @@
     },
     {
       "pipeline_id": "20260412T050714Z-2dc65498",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/fh2iij1iqr6wynaaq0eryhiqc0fvuamkgfw5",
       "summarize_job_name": "batches/dq9ytdrrguqputusw17urfa8wuzcsg9m3o8s",
       "papers": [
@@ -29577,14 +29577,144 @@
         "http://arxiv.org/abs/2604.07924v1",
         "http://arxiv.org/abs/2604.07907v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.08496v1": {
+          "title": "計量的および離散的な装飾グラフに対するJohnson-Schwartzmanギャップ・ラベリング",
+          "summary": "本論文では、1次元の一意的にエルゴード的な力学系から生成される計量的および離散的な装飾グラフ上のシュレーディンガー作用素を研究している。スペクトル・ギャップにおける積分状態密度（IDS）が取り得る値である「ギャップ・ラベル」を特徴づけるため、Johnson-Schwartzmanのギャップ・ラベリング定理を拡張・証明した。サイクルを含むグラフ構造にも対応できるよう、従来のSturmの発振理論に代わるスペクトル手法を導入している。また、幾何学的要因によるIDSの不連続性や、理論的に許容されるラベルに対応するギャップが閉じているケースについても分析している。",
+          "keywords": [
+            "Schrödinger operators",
+            "integrated density of states",
+            "gap labelling",
+            "metric and discrete decorated graphs",
+            "uniquely ergodic dynamical systems"
+          ],
+          "appendix": "本研究は一意的にエルゴード的な1次元力学系から構成されるグラフを対象としており、symbolic dynamicsの分野と関連しています。"
+        },
+        "http://arxiv.org/abs/2604.08490v1": {
+          "title": "ランダムウォークにおける小さなエントロピー倍増と多項式成長",
+          "summary": "Gromovの定理によれば、有限生成群が多項式成長を持つための必要十分条件は、その群が実質的に冪零であることである。本論文では、群上のランダムウォークに対するこの性質のエントロピー版を研究している。十分大きなスケールnにおいて、対称ランダムウォークRₙのエントロピーが H(R₂ₙ) ≤ H(Rₙ) + log K を満たすとき、その群は実質的に冪零であることを示した。Taoのエントロピーを用いたBalog–Szemerédi–Gowersの議論を単模局所コンパクト群に適応させ、近似群の構造的結果と組み合わせる手法をとっている。応用として、多項式成長のエントロピー基準や、実質的に冪零でない群におけるエントロピーの増大に関するギャップ現象を導出している。",
+          "keywords": [
+            "random walks",
+            "polynomial growth",
+            "virtually nilpotent groups",
+            "entropy",
+            "approximate groups"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野と密接に関連しています。特に有限生成群の構造に関するGromovの定理の拡張や、近似群（approximate groups）の構造理論を用いた解析が行われています。"
+        },
+        "http://arxiv.org/abs/2604.08436v1": {
+          "title": "群の展開可能な複体における被覆変換",
+          "summary": "本論文では、展開可能な群の複体（developable complexes of groups）の圏における被覆変換（deck transformations）の概念を導入している。位相空間の古典的な被覆空間論に着想を得て、道の等価類を用いた群の複体の普遍展開（universal development）の代替的な構成法を提案した。この枠組みを用いることで、被覆変換群の自然な特徴付けを与えている。",
+          "keywords": [
+            "developable complexes of groups",
+            "deck transformations",
+            "universal development",
+            "covering theory"
+          ],
+          "appendix": "この論文は、無限群の構造（structure of large countable infinite group）に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2604.08339v1": {
+          "title": "語と数：力学系の観点から",
+          "summary": "語の組合せ論と有理数の順序関係について、力学系の視点から新たな知見を提示している。特に、有理数のStern-Brocot (SB) 順序とFarey-Christoffel (FC) 語の順序の対応関係を構造化し、SB木上での垂直・水平方向の移動に並行して作用するFC語の置換規則を構築した。これらの規則は無限Sturmian列の空間における写像を自然に誘導する。さらに、SB木上の運動が、上半平面における散乱測地線に沿った運動およびFord円に沿ったホロサイクル運動と完全に一致することを示した。",
+          "keywords": [
+            "combinatorics of words",
+            "Stern-Brocot tree",
+            "Farey-Christoffel words",
+            "Sturmian sequences",
+            "dynamical systems"
+          ],
+          "appendix": "本論文は興味ある分野のうち、combinatorics on wordsおよびsymbolic dynamicsに直接関連しており、有理数の木構造を扱う点からarithmetic dynamicsとも密接な関わりがあります。"
+        },
+        "http://arxiv.org/abs/2604.08331v1": {
+          "title": "Metacat: 形式体系のための圏論的フレームワーク",
+          "summary": "本論文は、形式体系を扱うための圏論的な枠組みである「Metacat」を提案している。この枠組みでは、構文の圏 S（デカルトPROP）上の m 個のメタ変数を持つ推論規則を、共通のメタ変数コンテキストにおける前提と結論を記述するスパン k ← m → n を備えた演算として表現する。構成は Metamath と同様に、メタ変数の代入を唯一の基本操作として行われる。この設定における証明は、前提の組み合わせや再利用を可能にする対称モノイダル圏を形成する。著者らは、この構造に基づく証明検証アルゴリズムとオープンソースの実装、および形式体系を定義するための表面構文を提供している。実演として一階述語論理の推論規則をエンコードし、具体的な導出例を示している。",
+          "keywords": [
+            "categorical framework",
+            "formal systems",
+            "symmetric monoidal category",
+            "metavariables",
+            "proof-checking"
+          ],
+          "appendix": "本論文は、推論規則や証明の構造を形式的に扱うという点で「formal languages」の基礎理論と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.08289v1": {
+          "title": "Hadamard変換と量子化を組み合わせた誤差解析",
+          "summary": "本論文では、Hadamard変換とデッドゾーン量子化器を用いた画像符号化プロセス（変換、量子化、逆量子化、逆変換）の理論的解析手法を提案している。線形代数とHadamard行列の性質を用いることで、量子化誤差の上下界および出力値が取り得る最大絶対値の評価式を導出した。これらの評価式は、行列のサイズ、量子化・逆量子化のパラメータ、および入力値の範囲に依存する。これにより、圧縮効率と品質のトレードオフの制御や、結果の保存に必要なビット数の決定が可能になる。また、Hadamard行列のノルム ||H||∞,₁ と、その行列の同値類における最大過剰量 σ([H]) の間の関係性についても示している。",
+          "keywords": [
+            "Hadamard transforms",
+            "dead-zone quantizer",
+            "error bounds",
+            "Hadamard matrix",
+            "image coding"
+          ],
+          "appendix": "提示された「興味ある分野」との直接的な関連性は低いが、Hadamard行列という組合せ論的対象を扱っている。また、誤差評価の手法は数値計算の信頼性（validated numerics）の観点から関連付けられる可能性がある。"
+        },
+        "http://arxiv.org/abs/2604.08264v1": {
+          "title": "Baker遊走領域に関するサーベイ",
+          "summary": "本論文は、超越有理型関数におけるBaker遊走領域（Baker wandering domain）に関する現在の知見を概観するものである。Baker遊走領域とは、各反復成分が有界かつ多重連結であり、原点を囲みながら無限遠へと発散するような遊走領域を指す。論文内では、最初の構成例から最新の事例までを紹介し、特異値や関数の力学系への影響、およびBaker遊走領域を持たない関数のクラスについて論じている。",
+          "keywords": [
+            "Baker wandering domain",
+            "transcendental meromorphic function",
+            "Fatou set",
+            "singular values",
+            "complex dynamics"
+          ],
+          "appendix": "本論文は、複素力学系（complex dynamics）の分野に直接関連しており、超越有理型関数の反復合成による軌道の振る舞いを扱っています。"
+        },
+        "http://arxiv.org/abs/2604.07948v1": {
+          "title": "任意の可算ブール位相群は閉離散基底を持つ",
+          "summary": "任意の可算ブール位相群が、閉離散基底（closed discrete basis）を有することを証明しています。",
+          "keywords": [
+            "Countable Boolean topological group",
+            "Closed discrete basis",
+            "Topological group",
+            "Boolean group"
+          ],
+          "appendix": "この論文は、指定された興味ある分野のうち「structure of large countable infinite group」に関連しています。可算無限群の構造的性質、特にブール位相群における基底の存在を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.07924v1": {
+          "title": "2つの時間遅延を伴う非線形微分方程式におけるカオスと分岐の解析",
+          "summary": "本研究では、現在の変化率が現在の状態だけでなく2つの異なる過去の状態（時間遅延 τ₁ および τ₂）に依存する非線形遅延微分方程式におけるカオス的挙動を解析した。非線形項に正弦関数 g(x) = k sin(x) を用いたモデルにおいて、リャプノフ指数や相図を用いた数値シミュレーションにより、パラメータ変動に伴う不規則な力学系やマルチスクロール・カオスアトラクタの出現を特定した。また、線形フィードバック制御によるカオスの抑制、およびマスタ・スレーブ系における同期手法を提案し、遅延に依存しない同期の十分条件を導出した。さらに、分数階微分形式への拡張により、記憶効果がカオス的挙動に与える影響についても検証している。",
+          "keywords": [
+            "delay differential equation",
+            "chaos",
+            "bifurcation",
+            "Lyapunov exponents",
+            "synchronization"
+          ],
+          "appendix": "complex dynamics（複素力学系・複雑系動力学）に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2604.07907v1": {
+          "title": "Capture-Quiet 分解：チェス終盤テーブルベースの検証定理",
+          "summary": "本論文は、チェス終盤テーブルベースにおけるWin-Draw-Loss (WDL) ラベル付けを検証するための構造定理「Capture-Quiet Decomposition (CQD)」を提案している。この定理は、全合法局面を「終局、駒取り、静的」の3つのカテゴリに分解し、外部検証済みの下位モデル（駒数の少ない局面）との整合性を利用することで、全ての引き分けラベルといった自明な不動点による誤った自己整合性を排除する。3枚から6枚までの計517種類の終盤（約4200万局面以上）においてCQDを用いた検証を行い、従来のレトログラード分析による基準値と完全に一致する結果を得ることで、その有効性を実証した。",
+          "keywords": [
+            "Capture-Quiet Decomposition",
+            "Endgame Tablebases",
+            "Win-Draw-Loss labeling",
+            "Retrograde consistency",
+            "Verification"
+          ],
+          "appendix": "チェス終盤の有限状態機械的な側面や、状態遷移の整合性検証という点で automata theory との関連性が見出せます。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.08496v1",
+        "http://arxiv.org/abs/2604.08490v1",
+        "http://arxiv.org/abs/2604.08436v1",
+        "http://arxiv.org/abs/2604.08339v1",
+        "http://arxiv.org/abs/2604.08331v1",
+        "http://arxiv.org/abs/2604.08289v1",
+        "http://arxiv.org/abs/2604.08264v1",
+        "http://arxiv.org/abs/2604.07948v1",
+        "http://arxiv.org/abs/2604.07924v1",
+        "http://arxiv.org/abs/2604.07907v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-12T05:07:14.012733+00:00",
-      "updated_at": "2026-04-12T06:21:34.254219+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-12T07:48:23.222911+00:00",
+      "finalized_at": "2026-04-12T07:48:23.222886+00:00"
     }
   ]
 }
