@@ -29718,7 +29718,7 @@
     },
     {
       "pipeline_id": "20260413T052358Z-fad360a6",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/kdp7evy8tjedvafvy4m606gmtmz598a3hmzs",
       "summarize_job_name": "batches/ul9qaf96euylpzpcj52l92wto0vsm17eecqj",
       "papers": [
@@ -30109,14 +30109,107 @@
         "http://arxiv.org/abs/2604.09014v1",
         "http://arxiv.org/abs/2604.08940v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.09441v1": {
+          "title": "高次元における無限個の吸引的周期円",
+          "summary": "3次元以上の閉多様体上における、2つの双曲型周期点間にヘテロクリニックサイクルを持つ Cr (5 ≤ r ≤ ∞) 微分同相写像を研究した。各点において不安定方向は1次元であり、絶対値が1に最も近い安定および不安定固有値は実数かつ単純であると仮定する。一方のヘテロクリニック接続は横断的、もう一方は非横断的であり、これら固有値の積が一方の点では1未満、他方では1より大きい場合を扱う。このような写像の任意の近傍において、無限個の吸引的な正規双曲型周期円を持つ微分同相写像が残留的に存在するような開集合が存在することを示した。証明には、標準Hénon写像へのリスケーリングと、そのNeimark-Sacker (Andronov-Hopf) 線上におけるリアプノフ係数の修正公式が用いられている。",
+          "keywords": [
+            "heteroclinic cycle",
+            "attracting periodic circles",
+            "normally hyperbolic",
+            "Hénon map",
+            "Neimark-Sacker bifurcation"
+          ],
+          "appendix": "本論文は力学系の分岐理論を扱っており、[興味ある分野]の中では complex dynamics (複素力学系) における分岐現象や、力学系の不変集合の構造解析に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.09422v1": {
+          "title": "エルゴード的量子過程における周期性",
+          "summary": "自然な既約条件を満たすエルゴード的確率過程から抽出された量子チャネル列の周期性について研究した論文です。量子チャネル列により定義される大域的なスペクトルデータとこれらの周期的な性質を関連付け、一般的なPerron-Frobenius型の定理を証明しています。また、理論を補足する具体例の提示に加え、今後の課題となる未解決問題や予想についても述べられています。",
+          "keywords": [
+            "quantum channels",
+            "ergodic stochastic process",
+            "periodicity",
+            "spectral data",
+            "Perron-Frobenius theorem"
+          ],
+          "appendix": "エルゴード的確率過程やスペクトル解析を扱う性質上、興味ある分野のうち symbolic dynamics や complex dynamics との関連性が考えられます。"
+        },
+        "http://arxiv.org/abs/2604.09318v1": {
+          "title": "CIR+CVN: 並列プログラムにおけるLLMの意味理解とペトリネット検証の橋渡し",
+          "summary": "本論文では、LLMを用いた並列プログラム構成のための、仕様駆動かつモデル優先の検証アーキテクチャを提案している。ソースコードから直接並列構造を復元する困難さを避けるため、まず自然言語の仕様から検証指向の並列アーティファクトを合成する。具体的には、共有リソースと保護関係を明示したエイリアスのない中間表現「Cir」と、有限のグローバルストアと3値ガードを備えた重み付きペトリネット「Cvn」の2つの形式を導入している。CirからCvnへの機械的変換により網羅的な探索を行い、反復的なバグ検出と修正を支援する。評価の結果、デッドロックや信号損失の解析において有効であり、目標到達可能性チェックが不完全な修正の抑制に寄与することが示された。",
+          "keywords": [
+            "Concurrency Intermediate Representation",
+            "Petri-Net Verification",
+            "Large Language Models",
+            "Model-based Verification",
+            "Concurrency Artifacts"
+          ],
+          "appendix": "本論文は、オートマトン理論 (automata theory) や形式言語 (formal languages) に関連する並列システムの形式的モデル化および検証を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.09165v1": {
+          "title": "契約充足証明のための演繹的体系",
+          "summary": "本論文では、マイクロアーキテクチャの詳細は抽象化しつつ、CPUの漏洩挙動を規定する「ハードウェア・ソフトウェア契約（contract）」の充足性を証明するための新たな手法を提案している。契約充足の問題を「相対的トレース等価性（relative trace equality）」というより一般的な問題として捉え直し、それに対応する証明技法として「相対的双模倣（relative bisimulation）」を導入した。共納法的証明の最新の成果を活用して開発されたこの演繹的体系は、健全性と完全性が証明されており、モジュール形式かつインクリメンタルな証明を可能にする。また、対称性や推移性を利用した証明の簡略化も特徴としており、Rocq証明助手への実装を通じて、難度の高い契約充足証明への適用可能性が示されている。",
+          "keywords": [
+            "relative trace equality",
+            "relative bisimulation",
+            "deductive proof system",
+            "hardware-software contracts",
+            "interactive proof assistants"
+          ],
+          "appendix": "本論文で提案されている演繹的体系や相対的双模倣の概念は、オートマトン理論（automata theory）における状態遷移系や等価性判定の理論と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.09093v1": {
+          "title": "局所コンパクト群の定常作用とそのRadon-Nikodymコサイクルについて",
+          "summary": "本論文は、局所コンパクト群の定常作用をRadon-Nikodymコサイクルの構造と正則性の観点から研究している。まず、定常作用の動的な帰結として、すべての定常作用が保存的であることを示し、Furstenberg-Glasnerの定理を非コンパクトな局所コンパクト群へと拡張した。これにより定常作用は決してタイプIにはならないことが示される。また、絶対連続な不変シグマ有限測度を持つエルゴード的定常作用は確率保存的であり、タイプII_∞にはならないことを証明した。後半ではRadon-Nikodymコサイクルの正則性を扱い、調和強関数を導入することで、コンパクトな台を持つ確率測度に対してハルナック型の制御が可能であることを示した。一方、実アフィン群上のランダムウォークにおいて、ハルナックの不等式が成立せず、連続なポアソン核を持つトポロジカルモデルが存在しない例を構成している。",
+          "keywords": [
+            "stationary action",
+            "Radon-Nikodym cocycle",
+            "locally compact group",
+            "Poisson boundary",
+            "Harnack inequality"
+          ],
+          "appendix": "本論文は、大きな可算無限群の構造（structure of large countable infinite group）に関連する群作用や力学系の性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.09014v1": {
+          "title": "Spectral Dehn functionと語の双曲性の特徴付け",
+          "summary": "本論文では、van Kampen図上のランダムウォーク・ラプラシアンの第1ディリクレ固有値を用いて定義されるSpectral Dehn function Λ_P(n)を導入した。著者らは、この関数と通常のDehn functionを関連付けるスペクトル等周不等式を証明し、次数に依存しない面対偶版の指標 Λ*_P(n) が正の値を下限に持つことが、有限提示群が語の双曲的であることの必要十分条件であることを示した。また、全ての円板図に対してフィリング長、面積、および第1固有値の間の関係式を導出し、Z²上の格子状の交換子図において最適な指数1/2が得られることを示した。さらに、このスペクトルプロファイルは線形Dehnクラス内の提示を区別できるほど、通常のDehn functionよりも詳細な情報を保持している。",
+          "keywords": [
+            "Spectral Dehn function",
+            "word-hyperbolicity",
+            "van Kampen diagram",
+            "random-walk Laplacian",
+            "filling-length"
+          ],
+          "appendix": "本論文は、有限提示群の幾何学的・組合わせ論的な構造を扱っており、興味ある分野のうち「structure of large countable infinite group」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2604.08940v1": {
+          "title": "時間群の表現としての線形システム",
+          "summary": "離散時間線形システムをベクトル空間に作用する時間群の表現として捉える、表現論的な定式化を提案する。この枠組みでは、状態空間に正準的な代数的構造が付与され、実数体や有限体など異なる体上のシステムを統一的に扱うことが可能になる。状態空間の不変分解を不変部分表現として記述し、特に有限体上のシステムにおいては有限巡回時間群の表現を通じた多項式剰余環上の加群構造を導出することで、従来の固有値解析に代わる体系的な手法を提供する。",
+          "keywords": [
+            "discrete-time linear systems",
+            "representation theory",
+            "time groups",
+            "finite fields",
+            "state space"
+          ],
+          "appendix": "有限体上の線形システムを多項式環上の加群として扱う点は、automata theory や symbolic dynamics における代数的アプローチと密接に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.09441v1",
+        "http://arxiv.org/abs/2604.09422v1",
+        "http://arxiv.org/abs/2604.09318v1",
+        "http://arxiv.org/abs/2604.09165v1",
+        "http://arxiv.org/abs/2604.09093v1",
+        "http://arxiv.org/abs/2604.09014v1",
+        "http://arxiv.org/abs/2604.08940v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-13T05:23:58.598319+00:00",
-      "updated_at": "2026-04-13T06:12:49.402085+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-13T07:49:32.629999+00:00",
+      "finalized_at": "2026-04-13T07:49:32.629985+00:00"
     }
   ]
 }
