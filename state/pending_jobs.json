@@ -30494,7 +30494,7 @@
     },
     {
       "pipeline_id": "20260415T050703Z-b400ef21",
-      "status": "summarize_running",
+      "status": "completed",
       "interest_job_name": "batches/b5wujto42xuctyj953b2qx8taxwy0kcqeguv",
       "summarize_job_name": "batches/5bu0aq0cjagwaavh328v5wk17b8doqeb7od3",
       "papers": [
@@ -30673,14 +30673,54 @@
         "http://arxiv.org/abs/2604.10779v1",
         "http://arxiv.org/abs/2604.10669v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.10816v1": {
+          "title": "SpeciesにおけるHopf代入",
+          "summary": "Speciesの理論において、線形順序のspecies Lと代入操作 ∘ を組み合わせることで、任意の正のコモノイド p に対して L ∘ p が p から自由生成されたHopfモノイドの構造を持つという重要な結果がある。本論文では「どのような b に対して b ∘ p がHopfモノイド構造を持つか」という問いに対する解答を提示し、その構成に関する基本性質を明らかにする。さらに、著者らが以前に発表したSpeciesにおける補間（interpolation）に関する結果を、この新しい文脈へと拡張する。",
+          "keywords": [
+            "Hopf monoids",
+            "Species",
+            "Substitution operation",
+            "Linear orders",
+            "Comonoids"
+          ],
+          "appendix": "本論文は代数的組合せ論におけるSpeciesの理論を扱っており、直接的にはCombinatoricsに関連します。単語上の組合せ論（Combinatorics on words）などの基盤となる組合せ論的構造を拡張する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2604.10779v1": {
+          "title": "最小要素を末尾に持つt-stack-sortableな置換の多項式時間列挙",
+          "summary": "本論文では、最小要素を末尾に持つ置換の集合Sₙ'に対するWestのスタックソート写像sの挙動を調査している。各置換π ∈ Sₙ'に対し、スタックソート・タブロ（stack-sorting tableau）T_πという新たな組合せ論的対象を導入した。これを用いて、Sₙ'におけるt-stack-sortableな置換の数を数え上げる初の多項式時間アルゴリズムを提案している。さらに、Sₙ'と通常の置換集合Sₙにおけるsの挙動の間の精密な関係を明らかにした。",
+          "keywords": [
+            "stack-sorting map",
+            "t-stack-sortable permutations",
+            "stack-sorting tableau",
+            "polynomial time algorithm"
+          ],
+          "appendix": "本論文は、置換の性質や写像の挙動を扱うことから「combinatorics on words」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.10669v1": {
+          "title": "事象系列における頻度の線形時相論理",
+          "summary": "本論文は、事象系列における頻度特性を自然かつ厳密に表現するための新しい時相論理であるLTLFを提案している。測度に感応する独自の演算子を導入することで、頻度の評価や将来の生起予測を可能にし、機械学習分類器などの定量的システムを監視・制御するための形式的な枠組みを提供する。主な新規性は、標準的なクリプキ意味論に関連付けられた独自の様相限定子を導入した点にあり、これにより観測された実際の頻度と理想的な分布との関係を単一の論理構造内で定式化し、形式的論理推論と経験的観測の間のギャップを埋めている。",
+          "keywords": [
+            "LTLF",
+            "temporal logic",
+            "frequency properties",
+            "modal quantifiers",
+            "Kripke-style semantics"
+          ],
+          "appendix": "本論文は事象系列の形式的な記述や論理的性質を扱うことから、興味ある分野のうちautomata theoryやformal languagesと関連があります。また、事象列における頻度の振る舞いを分析する点はsymbolic dynamicsの文脈にも通じる内容です。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.10816v1",
+        "http://arxiv.org/abs/2604.10779v1",
+        "http://arxiv.org/abs/2604.10669v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-15T05:07:03.785816+00:00",
-      "updated_at": "2026-04-17T09:51:54.534784+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-18T03:34:29.887786+00:00",
+      "finalized_at": "2026-04-18T03:34:29.887760+00:00"
     },
     {
       "pipeline_id": "20260416T051301Z-aa219e7a",
