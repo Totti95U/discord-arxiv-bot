@@ -30724,7 +30724,7 @@
     },
     {
       "pipeline_id": "20260416T051301Z-aa219e7a",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/p495fyecl2ouf2a2at89im1jnraewdmip69h",
       "summarize_job_name": "batches/aucmb475maq6opvg1vyifu27vzezwikypvp6",
       "papers": [
@@ -31250,14 +31250,145 @@
         "http://arxiv.org/abs/2604.11212v1",
         "http://arxiv.org/abs/2604.11210v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.11985v1": {
+          "title": "パンツ分解の双対グラフにおける 2 次微分とランダムウォーク",
+          "summary": "上界のある測地線パンツ分解を持つ無限リーマン面 X において、対応する双対グラフ G 上のランダムウォークが再帰的であることと、X 上の測地的流れがエルゴード的であることが同値であることを証明した。この結果により、カフ（cuff）の長さの増加度合いに基づいた、測地的流れのエルゴード性を判定するための明示的な基準が得られる。また、再帰的から非再帰的な測地的流れへの相転移を具体的に理解できる新しいリーマン面の族を提示した。さらに、曲面同士のラフ等長（rough isometry）は測地的流れのエルゴード性を保存しないが、双対グラフのラフ等長はそれを保存することを示した。これらの証明には、有限面積の正則 2 次微分の水平葉層として現れる測地線ラミネーションの特性を、G 上の 2 乗可積分なフロー関数の存在条件へと翻訳する手法が用いられている。",
+          "keywords": [
+            "Quadratic differentials",
+            "random walks",
+            "pants decomposition",
+            "geodesic flow",
+            "dual graph"
+          ],
+          "appendix": "本論文は、無限リーマン面上の力学系や測地線ラミネーションを扱っており、複素力学系（complex dynamics）の分野に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2604.11980v1": {
+          "title": "一般化された反復関数系における平均次元",
+          "summary": "本論文では、一般化された反復関数系（IFS）における平均次元および計量的平均次元の概念を導入し、その基本的な性質を調査した。主な結果として、平均次元が下計量的平均次元および上計量的平均次元によって常に上から抑えられることを証明した。また、Small Boundary Property を持つ一般化IFSは平均次元が 0 となることを示した。さらに、一般化IFSにおける Gluing Orbit Property を導入し、適切な推移性と非剛体性の仮定の下で、この性質が正の位相的エントロピーを保証することを明らかにした。",
+          "keywords": [
+            "Mean Dimension",
+            "Metric Mean Dimension",
+            "Iterated Function Systems",
+            "Small Boundary Property",
+            "Gluing Orbit Property"
+          ],
+          "appendix": "本論文で扱われている平均次元や位相的エントロピーといった概念は、興味ある分野として挙げられた symbolic dynamics や complex dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.13124v1": {
+          "title": "ロジスティック反復関数系（Logistic IFS）における橋渡し点を持つ有限不変集合",
+          "summary": "2つの異なる1次元写像をランダムに切り替えて適用する反復関数系（IFS）における有限不変集合を調査した研究である。構成要素となる写像の固定点や周期軌道の間を軌道が往復する「トス・アンド・キャッチ（toss-and-catch）」ダイナミクスに焦点を当て、ロジスティック写像同士、あるいはロジスティック写像とテント写像の組み合わせにおいて、これらの構造が出現するための厳密なパラメータ条件を導出した。特に、個別の写像の不変集合には含まれない「橋渡し点（bridging points）」が不変集合を構成する特異なケースを明らかにしている。",
+          "keywords": [
+            "iterated function systems",
+            "finite invariant sets",
+            "toss-and-catch dynamics",
+            "logistic maps",
+            "bridging points"
+          ],
+          "appendix": "本論文は「complex dynamics」の分野に関連しています。反復関数系や不変集合の構造解析は、複素力学系や非線形力学系の文脈において重要なテーマです。"
+        },
+        "http://arxiv.org/abs/2604.11935v1": {
+          "title": "高階型におけるpolyregular関数の等価判定の決定不能性",
+          "summary": "文字列から文字列へのpolyregular関数の等価判定(f = g)が決定可能か否かは未解決問題である。本論文では、Bojańczyk(2018)によるλ計算を用いた定義に基づくpolyregular関数の高階拡張を検討し、この設定下ではタイリング問題からの帰着によって等価判定が決定不能になることを示した。",
+          "keywords": [
+            "Polyregular functions",
+            "Equivalence problem",
+            "Higher-order types",
+            "λ-calculus",
+            "Tiling problem"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「automata theory」および「formal languages」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.11929v2": {
+          "title": "カオスから気候に至る高速かつ原理的な方程式発見",
+          "summary": "本論文では、ノイズが多く限定的な観測から複雑なシステムの支配方程式を特定するためのハイブリッドフレームワーク「Bayesian-ARGOS」を提案している。この手法は、高速な頻度主義的スクリーニングとベイズ推論を組み合わせることで、既存のSINDyやブートストラップ法を用いた手法よりも高い計算効率（約100倍の高速化）とノイズ耐性を実現している。統計的な不確実性の定量化や診断が可能であり、カオス力学系や海面水温データの再構築における潜在方程式の特定において、長期的な予測安定性を大幅に向上させている。",
+          "keywords": [
+            "Bayesian-ARGOS",
+            "equation discovery",
+            "sparse regression",
+            "uncertainty quantification",
+            "chaotic systems"
+          ],
+          "appendix": "本論文は興味ある分野のうち complex dynamics に関連しています。また、支配方程式の厳密な同定や診断を行うという点において、validated numerics の関心領域とも接点を持つ内容となっています。"
+        },
+        "http://arxiv.org/abs/2604.11567v1": {
+          "title": "Streaming String Transducerの最小化：代数的アプローチ",
+          "summary": "本論文は、appending streaming string transducers（aSST）として表現される有理関数の、状態数およびレジスタ数の最小化問題を代数的な手法で検討している。まず、aSSTの特定のサブクラスとbimachineの間に、状態数とレジスタ数をbimachineのパラメータに対応付ける全単射が存在することを示した。この対応に基づき、当該サブクラスにおけるレジスタ最小化（Ptime）および状態とレジスタの同時最小化（NP）の手続きを導出している。さらに、新モデルであるasynchronous bimachinesを導入することで、この対応をすべてのaSSTクラスへと拡張し、基礎となるオートマトンが固定された条件下でのレジスタ最小化がNP完全であることを証明した。",
+          "keywords": [
+            "streaming string transducers",
+            "bimachines",
+            "rational functions",
+            "minimization",
+            "asynchronous bimachines"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「automata theory」および「formal languages」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2604.11387v2": {
+          "title": "アルファベット {1, 3} 上の滑らかな数列（smooth sequences）におけるパターンの出現頻度",
+          "summary": "奇数のアルファベット {1, 3} 上の滑らかな数列の統計的性質を研究するためのエルゴード理論的枠組みを構築する。このアルファベットの算術的性質に基づき、滑らかな数列のサブシフトを局所構造に応じて分割し、数列の「型（type）」を定義する。次々と導関数をとることで得られる型の列を固定した場合のサブシフトが置換構造を持つことを示し、これら全てのサブシフトが唯一エルゴード的であることを導く。その直接的な帰結として、{1, 3} 上の滑らかな数列における任意の有限パターンの漸近頻度が常に定義可能であり、それが型列に依存することを明らかにした。また、これらのサブシフトの最小性を特徴付け、今後の展望を提示している。",
+          "keywords": [
+            "smooth sequences",
+            "ergodic theory",
+            "subshift",
+            "unique ergodicity",
+            "finite pattern frequency"
+          ],
+          "appendix": "この論文は、symbolic dynamics（記号力学系）および combinatorics on words（語の組合せ論）に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2604.11362v1": {
+          "title": "セル・オートマトンの秘匿ルールを（匿名で）復元する方法",
+          "summary": "本研究は、参加者の識別情報を必要とせず、シェアの関数のみから秘密情報を復元できる「匿名復元」を可能にする、セル・オートマトン（CA）に基づいた閾値秘密分散法を検討している。具体的には、CAに基づく(2,n)閾値スキームと、互いに直交するラテン方格（MOLS）の基本特性を再考し、MOLSの集合自体を秘密空間として再定義することで、秘密のCAルールの匿名復元が可能であることを示した。また、共有可能な秘密CAの数と、復元フェーズにおける計算量とのトレードオフについても議論している。",
+          "keywords": [
+            "cellular automata",
+            "secret sharing schemes",
+            "anonymous reconstruction",
+            "Mutually Orthogonal Latin Squares",
+            "threshold schemes"
+          ],
+          "appendix": "本論文はセル・オートマトンを主題としており、興味ある分野のうち「automata theory」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.11212v1": {
+          "title": "ソフィック測度",
+          "summary": "隠れマルコフ測度としても知られるソフィック測度について、いくつかの同値な定義を概観し、ソフィック測度がk-ステップマルコフ測度であるかを判定するための境界条件を改善している。次元nの線形表現を持つ不変ソフィック測度がk-ステップマルコフ連鎖であるならば、kは最大で2^(n²-1)に等しく選べることを証明した。",
+          "keywords": [
+            "Sofic measures",
+            "Hidden Markov measures",
+            "k-step Markov chain",
+            "Linear representation"
+          ],
+          "appendix": "この論文は、記号力学系 (symbolic dynamics) に深く関連する内容を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.11210v1": {
+          "title": "有理的に独立な角の円周回転と測度論的に同型な滑らかな擬回転",
+          "summary": "正の滑らかな体積を保存する有効な円周作用を持つ滑らかなコンパクト連結多様体Mにおいて、あるLiouville角 α の回転の滑らかな体積保存共役類が、円周上の角 β の無理回転と測度同型な滑らかな体積保存同相写像 T を含むことを示した。ここで α と β は、有理的に独立または従属のいずれの状態でも選択可能である。特に、Mが閉円環の場合、境界で角 α の回転に滑らかに接し、かつ角 β の回転と測度同型であるような滑らかなエルゴード的擬回転 T が存在することを証明している。",
+          "keywords": [
+            "pseudo-rotations",
+            "metrically isomorphic",
+            "Liouville rotations",
+            "volume-preserving diffeomorphism",
+            "ergodic"
+          ],
+          "appendix": "本論文は力学系理論、特に微分力学系における擬回転の性質を扱っており、提示された興味ある分野の中では complex dynamics との関連性が高いと考えられます。また、測度論的同型性という性質から、記号力学系などのエルゴード理論的な側面も持ち合わせています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.11985v1",
+        "http://arxiv.org/abs/2604.11980v1",
+        "http://arxiv.org/abs/2604.13124v1",
+        "http://arxiv.org/abs/2604.11935v1",
+        "http://arxiv.org/abs/2604.11929v2",
+        "http://arxiv.org/abs/2604.11567v1",
+        "http://arxiv.org/abs/2604.11387v2",
+        "http://arxiv.org/abs/2604.11362v1",
+        "http://arxiv.org/abs/2604.11212v1",
+        "http://arxiv.org/abs/2604.11210v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-16T05:13:01.484486+00:00",
-      "updated_at": "2026-04-18T07:05:06.420123+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-18T07:55:02.111860+00:00",
+      "finalized_at": "2026-04-18T07:55:02.111836+00:00"
     },
     {
       "pipeline_id": "20260417T051108Z-4691dce8",
