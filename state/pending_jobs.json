@@ -31392,7 +31392,7 @@
     },
     {
       "pipeline_id": "20260417T051108Z-4691dce8",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/j2z0by5qyhrn7dg43ip56ilszcc4sy3xnzgy",
       "summarize_job_name": "batches/xhhv27jldi2plvdt39e5954204g1sitesbvb",
       "papers": [
@@ -31988,18 +31988,211 @@
         "http://arxiv.org/abs/2604.12173v1",
         "http://arxiv.org/abs/2604.12172v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.13238v1": {
+          "title": "有理dinvの二次形式による一般化",
+          "summary": "数値半群 ⟨a, b⟩ の gap poset G 上の関数空間における二次形式 Q を導入し、その性質を組合せ論的に解析した。この Q を上方閉集合の指示関数上で評価すると、G のヤング部分図形としての Gorsky–Mazin の dinv 統計量が再現されることを示した。また、Q に随伴する対称双線形形式が、非負の新統計量 cross-dinv に一致することを証明した（Theorem 1.2）。これらを通じて、G 上の実数値減少関数 n に対する不等式 Q(n) ≥ (1/|G|) ||n||_∞² を導き、特定の錐における Q の実効的な正定値性を証明した。なお、主要な定理は AxiomProver を用いて Lean/Mathlib で自動形式化されている。",
+          "keywords": [
+            "quadratic form",
+            "rational dinv",
+            "numerical semigroup",
+            "gap poset",
+            "autoformalization"
+          ],
+          "appendix": "本論文は数値半群や poset の構造を扱っており、指定された興味ある分野のうち combinatorics on words と密接に関連しています。また、定理の証明に Lean/Mathlib による自動形式化が活用されている点も特筆すべき事項です。"
+        },
+        "http://arxiv.org/abs/2604.13189v1": {
+          "title": "Partial specification、average shadowing、および Besicovitch completeness の相互作用",
+          "summary": "コンパクト力学系 (X, T) において、partial specification property を持つならば average shadowing property を持つことが示されています。また、(X, T) が全射であり partial specification property を持つ場合、エルゴード測度の集合が不変測度の空間内で稠密であることも証明されています。さらに、Besicovitch complete ではないコンパクト力学系の具体例が提示されています。",
+          "keywords": [
+            "partial specification property",
+            "average shadowing property",
+            "Besicovitch completeness",
+            "ergodic measures",
+            "invariant measures"
+          ],
+          "appendix": "この論文はコンパクト力学系の性質を扱っており、興味ある分野の中では symbolic dynamics (記号力学系) に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.12974v1": {
+          "title": "Fine projection complex と正の安定交換子長を持つ部分曲面同相写像",
+          "summary": "種数 g ≥ 2 の連結閉向き付け可能曲面 S_g に対して、同相写像群 Homeo₀(S_g) が等長かつ coboundedly に作用する非有界な擬木の族を構築した。この応用として、非散在的な本質的部分曲面や1つの境界成分を持つトーラスに同相な本質的部分曲面を保つ特定の曲面同相写像が、Homeo₀(S_g) において正の安定交換子長（stable commutator length）を持ち得ることを示した。さらに、従来の有限性条件を必要としない projection complex の新たな手法を提示している。",
+          "keywords": [
+            "Fine projection complex",
+            "Subsurface homeomorphisms",
+            "Stable commutator length",
+            "Quasi-trees",
+            "Homeo_0(S_g)"
+          ],
+          "appendix": "本論文は、巨大な無限群の構造（structure of large countable infinite group）に関連する研究です。特に曲面同相写像群という無限次元の群の幾何学的作用や代数的性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.12637v1": {
+          "title": "置換力学系におけるスペクトル汚染",
+          "summary": "高次元の置換力学系に関連するシュレーディンガー作用素のスペクトル特性を研究した論文である。初期構成への置換の反復によって生成される周期近似に着目し、構造的な欠陥が極限のスペクトル挙動にどのような影響を与えるかを分析している。その結果、1次元の設定とは対照的に、高次元の近似では本質的スペクトルの変化やルベーグ測度の変化を含む顕著なスペクトル汚染（spectral pollution）が生じ得ることを示している。",
+          "keywords": [
+            "Schrödinger operators",
+            "substitution dynamical systems",
+            "spectral pollution",
+            "periodic approximations",
+            "essential spectrum"
+          ],
+          "appendix": "symbolic dynamics（記号力学系）の分野に関連しています。1次元系と高次元系におけるスペクトル解析の差異を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.12534v1": {
+          "title": "テクニカルレポート：一階述語論理における引数のための文脈依存型マルチレベル類似度フレームワーク：公理的研究",
+          "summary": "本研究は、意味論の集約や隠れた前提（enthymeme）の解読において重要となる、フォーマルな議論（formal argumentation）における類似度測定のフレームワークを提案している。既存手法が命題論理に限定されていたのに対し、本論文は一階述語論理（FOL）というより豊かな設定を対象とし、述語、リテラル、節、式の4つの階層からなるパラメトリックモデルを導入した。言語モデルを活用した構文感応型モデルや文脈の重みを統合した手法を構築し、公理的基盤と形式的制約に基づいた説明可能かつ厳密な類似度の性質を明らかにしている。",
+          "keywords": [
+            "First-Order Logic",
+            "formal argumentation",
+            "axiomatic study",
+            "context-sensitive similarity",
+            "multi-level similarity framework"
+          ],
+          "appendix": "提示された「興味ある分野」と直接的に一致するものは含まれていませんが、形式的な論理構造を扱う点において formal languages の周辺領域に関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2604.12520v1": {
+          "title": "双曲的作用から生じる作用に基づくC*-環の単純性",
+          "summary": "本論文では、可算距離空間Xへの群Gの忠実な等長作用に基づき、ℓ²(X)上の表現から定義される「作用に基づくC*-環」C*_XGの単純性を研究しています。著者らは、作用に関連する性質であるP_naiveおよびP_analyticを一般化して定義し、P_naiveがP_analyticを導くこと、また連続的作用におけるP_analyticがC*_XGの単純性の十分条件となることを証明しました。この結果の応用として、巨大写像類群（big mapping class groups）が性質P_naive^𝕏を満たし、それに関連するC*-環が単純であることを示しています。",
+          "keywords": [
+            "action-based C*-algebras",
+            "hyperbolic actions",
+            "big mapping class groups",
+            "isometric action",
+            "simplicity"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に深く関連しており、巨大写像類群の解析を通じてその構造を論じています。"
+        },
+        "http://arxiv.org/abs/2604.12504v1": {
+          "title": "可算マルコフシフトにおける被覆時間",
+          "summary": "動力学系の文脈において、被覆時間（Cover time）は軌道がシステム全体を網羅する速さを定量化する指標である。本論文では、自然な距離を備えギブス測度を持つ可算なフルシフトに対し、点の軌道の被覆率がボールの最小測度に基づいて振る舞うことを証明した。また、この被覆率は距離の定義の変更に対して敏感に反応することを示している。",
+          "keywords": [
+            "Cover time",
+            "Countable Markov shifts",
+            "Gibbs measure",
+            "Dynamical systems"
+          ],
+          "appendix": "興味ある分野のうち、symbolic dynamics（記号力学系）に密接に関連する内容です。"
+        },
+        "http://arxiv.org/abs/2604.12468v1": {
+          "title": "多変数自動配列と超越性",
+          "summary": "本論文では、乗法的に独立な底によって重み付けられた多次元自動配列から定義される実数について研究を行っている。log a₁, ..., log aᵣ が ℚ 上で線形独立な整数 a₁, ..., aᵣ ≥ 2 に対し、自動配列 (pₙ(i)) と関数 f から構成される級数 α = Σ_{n₁, ..., nᵣ ≥ 0} f(p_{n₁}(1), ..., p_{nᵣ}(r)) / (a₁ⁿ¹ ... aᵣⁿʳ) を考察する。自動配列の組合せ論的性質とシュミットの部分空間定理を用いることで、この数 α が有理数または超越数のいずれかであることを示した。この結果は、Adamczewski および Bugeaud による既存の研究を多次元の設定へと拡張するものである。",
+          "keywords": [
+            "automatic sequences",
+            "transcendence",
+            "multidimensional automatic arrays",
+            "Schmidt's Subspace Theorem"
+          ],
+          "appendix": "この研究は、興味ある分野のうち automata theory および combinatorics on words と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2604.12457v1": {
+          "title": "オートマトンとランダム行列の積による正規性の特徴付け",
+          "summary": "本論文は、無限列の正規性と有限オートマトンを用いた賭け戦略における資本の推移の関係について述べている。SchnorrとStimm(1972)による決定性有限オートマトンを用いた古典的な結果を拡張し、確率的有限オートマトンにおいても、列が正規であることと、その賭け戦略による期待資本が有限値へ指数関数的に速く収束することが同値であることを示した。この成果は、非負行列の集合 {Mₐ}ₐ∈A によって定義されるマルチンゲールの収束に関するより一般的な命題から得られている。具体的には、列 X が正規であることと、任意の非負の初期ベクトル v に対してノルム ||v M_X[1] ... M_X[n]|| が指数関数的に速く収束することが同値であることを証明した。また、与えられた行列族がどのような収束挙動を示すかを判定する問題が決定可能であることも示した。",
+          "keywords": [
+            "normality",
+            "finite automata",
+            "probabilistic automata",
+            "random matrix products",
+            "martingales"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「symbolic dynamics」、「combinatorics on words」、および「automata theory」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.12392v1": {
+          "title": "Stanleyポリオミノの数え上げと全単射",
+          "summary": "本論文では、平行四辺形ポリオミノ（parallelogram polyominoes）の部分クラスであり、各行の開始地点と終了地点が前の行よりも厳密に右側に位置するStanleyポリオミノについて研究している。著者らは、列数、行数、面積、半周長、および内部の点と辺の数に基づいた母関数を導出した。また、Dyck路、歪フェラーズ図形（skew Ferrer diagrams）、山のないMotzkin路（peakless Motzkin paths）といった他の組合せ論的構造との間の全単射を確立した。さらに、面積nの平行四辺形ポリオミノと、偶数行にn枚、奇数行にn-k枚のコインを持つコインの噴水（coin fountains）との間の全単射を構成し、未解決問題に解答を与えた。",
+          "keywords": [
+            "Stanley polyominoes",
+            "parallelogram polyominoes",
+            "generating functions",
+            "bijections",
+            "Dyck paths"
+          ],
+          "appendix": "本論文は組合せ論的構造を扱っており、提示された興味ある分野の中では「combinatorics on words」に強く関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2604.12244v1": {
+          "title": "一様双曲的なランダム行列積に対するリャプヌフ指数",
+          "summary": "マルコフ・シフトによって駆動される2×2可逆実正方行列のランダム積における最大リャプヌフ指数 λ についての研究である。行列の族が射影的一様双曲性を満たす場合、λ は無限行列を用いた明示的な形式で表現できることを示した。この表現は急速に収束するため、誤差 ε に対して O((log(1/ε))³) の演算量で近似計算が可能な多項式時間アルゴリズムを提供する。また、λ は行列の要素や遷移確率に対して実解析的に依存し、そのテイラー係数も多項式時間で近似可能であることを証明した。",
+          "keywords": [
+            "Lyapunov exponent",
+            "random matrix products",
+            "Markov shift",
+            "uniformly hyperbolic",
+            "polynomial-time algorithm"
+          ],
+          "appendix": "マルコフ・シフトを扱っていることから symbolic dynamics、および計算量や近似精度の評価から validated numerics の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.12240v1": {
+          "title": "無限遠点における吸引域に対する Brennan 予想",
+          "summary": "本論文は、多項式の無限遠点における吸引域として現れる領域 Ω における Brennan 予想を調査している。Baranski, Volberg, および Zdunik による先行研究をより広範な多項式のクラスへと拡張し、最高次係数が 1 でそれ以外の係数が十分に小さい任意の m 次多項式において、その吸引域で Brennan 予想が成立することを証明した。",
+          "keywords": [
+            "Brennan Conjecture",
+            "Basin of Attraction",
+            "Polynomial",
+            "Complex Dynamics"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.12194v1": {
+          "title": "多相関数のための単純型システム",
+          "summary": "本論文では、各コンビネータが最大1つの型を持ち、適用の過程で多相性が明らかになるという、組合せ論理のための単純な型システムを提案している。この型システムは、リスト型や関数型のような抽象型によって隠蔽される可能性のある値の構造を正確に記述する。限量子を用いた型を導入することなく、Hindley-Milner型システムを超える多相性を実現し、効率的な型推論アルゴリズムも備えている。また、形式体系が単純であるため、静的プログラム解析への応用も容易にする。",
+          "keywords": [
+            "combinatory logic",
+            "polymorphism",
+            "Hindley-Milner type system",
+            "type inference",
+            "static program analysis"
+          ],
+          "appendix": "本論文は、計算機科学の基礎理論である型理論および組合せ論理を扱っており、[興味ある分野]の中では形式言語 (formal languages) やオートマトン理論 (automata theory) の基盤的な側面と関連しています。"
+        },
+        "http://arxiv.org/abs/2604.12173v1": {
+          "title": "特別な正則多項式歪積",
+          "summary": "次数 d ≥ 2 の ℂ² 上の正則多項式歪積 (p(z), q(z, w)) が「特別（special）」であるための定義を導入し、その特徴付けを行った。写像が特別であるとは、べき写像、±Chebyshev 写像、または Dickson 多項式 D_d(w, ζzᵐ) を用いた特定の形式に三角共役であることを指す。本論文では、(1) 写像が特別であること、(2) 2次元連結可換代数群上のアフィン自己写像に半共役であること、(3) すべての乗数（multiplier）が固定された数体 K に含まれること、という3つの条件が同値であることを証明した。これは1変数の多項式力学系における既知の結果を拡張したものである。",
+          "keywords": [
+            "Regular polynomial skew product",
+            "Dickson polynomial",
+            "Commutative algebraic group",
+            "Multiplier"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「complex dynamics」および「arithmetic dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.12172v1": {
+          "title": "COBALT-TLA: クロスチェーンブリッジの脆弱性発見に向けたニューロ・シンボリック検証ループ",
+          "summary": "大規模言語モデル（LLM）とTLA+モデルチェッカー（TLC）を自動的なREPL内で組み合わせた、ニューロ・シンボリック検証ループであるCOBALT-TLAを提案する。LLMが境界付きTLA+仕様を生成し、TLCがセマンティック・オラクルとして機能して、構造化されたエラートレースをLLMのコンテキストにフィードバックすることでモデルを収束させる。Nomadブリッジの190Mドルの流出事件を含む3つのクロスチェーンブリッジを対象とした評価では、すべての標的において2回以内の反復で検証済みの脆弱性発見状態（BUG_FOUND）に到達した。本システムは、人間が作成したベースライン仕様には存在しなかった「Optimistic Relay Attack」という脆弱性クラスを自律的に発見することに成功している。これは、決定論的な証明器のフィードバックがLLMのハルシネーションを中和し、ゼロショットのコード生成を収束的な証明探索戦略へと変容させることを示唆している。",
+          "keywords": [
+            "Neuro-symbolic verification",
+            "TLA+",
+            "Model checking",
+            "Cross-chain bridge",
+            "Large Language Models"
+          ],
+          "appendix": "本論文は形式手法と言語モデルを組み合わせた自動検証に焦点を当てており、状態遷移系の解析という点でautomata theoryやformal languagesの応用分野と関連があります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.13238v1",
+        "http://arxiv.org/abs/2604.13189v1",
+        "http://arxiv.org/abs/2604.12974v1",
+        "http://arxiv.org/abs/2604.12637v1",
+        "http://arxiv.org/abs/2604.12534v1",
+        "http://arxiv.org/abs/2604.12520v1",
+        "http://arxiv.org/abs/2604.12504v1",
+        "http://arxiv.org/abs/2604.12468v1",
+        "http://arxiv.org/abs/2604.12457v1",
+        "http://arxiv.org/abs/2604.12392v1",
+        "http://arxiv.org/abs/2604.12244v1",
+        "http://arxiv.org/abs/2604.12240v1",
+        "http://arxiv.org/abs/2604.12194v1",
+        "http://arxiv.org/abs/2604.12173v1",
+        "http://arxiv.org/abs/2604.12172v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-17T05:11:08.543977+00:00",
-      "updated_at": "2026-04-19T03:53:21.952200+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-19T05:21:44.877655+00:00",
+      "finalized_at": "2026-04-19T05:21:44.877634+00:00"
     },
     {
       "pipeline_id": "20260418T044142Z-faa98029",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/1xv0a2qcokotsvx3ip76um5s38b4309mpxwk",
       "summarize_job_name": "batches/hh6ak43gwnk62o8rhhq6cqy7iw0yeqdijj7y",
       "papers": [
@@ -32587,14 +32780,217 @@
         "http://arxiv.org/abs/2604.13401v1",
         "http://arxiv.org/abs/2604.13376v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.14416v1": {
+          "title": "巡回グラフの強冪に対する転移作用素と独立多項式",
+          "summary": "本研究では、巡回グラフの強冪（strong power）における独立集合を、転移行列の手法を用いて調査した。適合性制約を層内および層間の成分に分離することで、二面体群の作用に対して共変な転移作用素を導出した。この転移作用素の特性多項式は、自明な等型成分から生じるアノマリー成分（有理係数）と、非自明なフーリエ・モードから生じる円分成分（最大実円分体上で分解）に因数分解される。スペクトル半径は自明な等型成分において達成されるため、支配的な指数成長は低次元の軌道圧縮作用素によって決定される。強シリンダーおよびトーラスに対する独立多項式の厳密な計算を行い、円分セクターが重みの大きい係数に限定された疎な補正として寄与することを示した。これらの結果はC₇において検証されている。",
+          "keywords": [
+            "Transfer operator",
+            "Independence polynomials",
+            "Circulant graphs",
+            "Strong powers",
+            "Spectral radius"
+          ],
+          "appendix": "転移作用素を用いた定式化やスペクトル半径による指数成長の解析は、興味ある分野に含まれる symbolic dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.14405v1": {
+          "title": "有限のメトリック次元を持つ無限グラフ",
+          "summary": "無限グラフにおける強および弱メトリック次元を研究し、特に次元が有限となる無限グラフの特徴付けを行っている。主な結果として、1) 2つ以上の端（end）を持つグラフは強次元が無限になること、2) サイクル数が有限のグラフにおいて、弱次元が有限であるための必要十分条件は次数3の頂点が有限個であること、強次元が有限であるための必要十分条件は端が1つであり、かつ次数3の頂点が有限個であること、の2点を示している。",
+          "keywords": [
+            "infinite graphs",
+            "metric dimension",
+            "strong dimension",
+            "weak dimension"
+          ],
+          "appendix": "本論文は無限グラフの端（ends）の数や局所的な次数構造を扱っており、無限群の幾何学的性質をグラフの観点から考察する「structure of large countable infinite group」の分野と密接に関連している。"
+        },
+        "http://arxiv.org/abs/2604.14383v1": {
+          "title": "矩形多重集合の幾何学",
+          "summary": "固定されたユークリッド長方形内におけるn要素多重集合の空間に対し、自然な区分的ユークリッド双単体的胞体構造（piecewise Euclidean bi-simplicial cell structure）を定義・記述している。また、複素多項式の空間や置換多面体（permutahedra）との関連性についても明らかにしている。",
+          "keywords": [
+            "multisets",
+            "piecewise Euclidean bi-simplicial cell structure",
+            "complex polynomials",
+            "permutahedra"
+          ],
+          "appendix": "複素多項式の空間を扱っているため、興味ある分野の complex dynamics と関連性があります。"
+        },
+        "http://arxiv.org/abs/2604.14042v1": {
+          "title": "準相補系列集合のスケーラビリティについて：2次および3次の法則",
+          "summary": "本研究では、準相補系列集合（QCSS）の集合サイズMがフロックサイズKおよび系列長Nに伴ってどのように拡大するかという基本性質を調査した。まず、QCSSを複素単位ノルムコードブックへと変換する幾何学的枠組みを構築し、コードブックの密度閾値を利用することで集合サイズに関する多項式の上限を導出した。タイトネス係数ρ=1の漸近的最適QCSSについてはM ≤ (1+o(1))K²Nという2次スケーリング則、ρ < (1+√5)/2の漸近的近最適QCSSについてはM ≤ (1+o(1))K³N²という3次スケーリング則が成り立つことを示した。さらに、加法的指標および混合的指標に基づく具体的な構成法を提案し、これらの上限が漸近的にタイトであることを実証した。また、1 < ρ ≤ 2の全範囲で3次スケーリング則が普遍的であるという「3次の障壁」を提唱した。",
+          "keywords": [
+            "Quasi-Complementary Sequence Sets",
+            "Scaling laws",
+            "Complex unit-norm codebook",
+            "Quadratic and cubic laws"
+          ],
+          "appendix": "本論文は、系列の組合せ論的な性質を扱っており、興味ある分野の中では Combinatorics on words と関連があります。特に系列集合のサイズ上限と構成法に関する議論は、離散構造の解析において重要です。"
+        },
+        "http://arxiv.org/abs/2604.14038v1": {
+          "title": "KindHML: Hennessy-Milner 論理に基づくスマートコントラクトの形式検証",
+          "summary": "ブロックチェーン上のスマートコントラクトにおける複雑なビジネスロジックの脆弱性を検出するため、一階Hennessy-Milner論理（HML）を用いた形式検証手法KindHMLを提案している。本手法は、Solidityコントラクトのサブセットと時相仕様をモデルチェッカーKind 2向けのLustre言語に自動的に変換し、検証を行う。実験の結果、既存のツールでは困難であった複数トランザクションにわたる複雑な攻撃シナリオの検出および検証において、高い有効性と性能を示した。",
+          "keywords": [
+            "smart contracts",
+            "formal verification",
+            "Hennessy-Milner logic",
+            "model checking",
+            "Solidity"
+          ],
+          "appendix": "本論文は、モデル検査や時相論理といった手法を用いてプログラムの正当性を検証するものであり、興味ある分野のうち「automata theory」および「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.14031v1": {
+          "title": "位相空間に値を持つ遷移構造",
+          "summary": "代数的手法と位相的手法を組み合わせて、遷移構造に関連するいくつかの圏を調査した論文である。著者らは、2つの特定の圏が反変随伴（contravariant adjunction）によって結ばれていることを示している。この結果は、対象や射に対する位相的な制限に応じた一連の成果の中でも、最も詳細な事例となっている。",
+          "keywords": [
+            "transition structures",
+            "category theory",
+            "contravariant adjunction",
+            "topological methods"
+          ],
+          "appendix": "この論文で扱われている遷移構造（transition structures）は、興味ある分野のうち 'symbolic dynamics' や 'automata theory' と理論的な関連性があります。"
+        },
+        "http://arxiv.org/abs/2604.13989v1": {
+          "title": "有限なGarside族を持つモノイドにおける最小公倍数の計算",
+          "summary": "右反転(Right-reversing)は、右相補提示(right-complemented presentation)を持つモノイドにおいて最小公倍数(LCM)を計算するためのアルゴリズムである。本論文では、Garside理論の枠組みにおいて、アルゴリズムの非停止な実行が必ず周期的になることを証明した。このサイクル検出により、最小のGarside族を計算する手法が提供される。",
+          "keywords": [
+            "Right-reversing",
+            "Least common multiples",
+            "Garside family",
+            "Right-complemented presentation"
+          ],
+          "appendix": "本論文はモノイドの語の書き換えや計算手法を扱っており、興味ある分野のうち「combinatorics on words」や「automata theory」に関連があります。"
+        },
+        "http://arxiv.org/abs/2604.13949v1": {
+          "title": "Chip-firing gameにおける不安定性最小値の一般公式",
+          "summary": "本論文では、無限に続くChip-firing gameを引き起こすために必要な初期チップの最小個数を計算するための3つの公式を提示している。これらの公式は、強連結でループのない有向マルチグラフに対して成立し、従来知られていたオイラーグラフにおける結果を一般化するものである。理論的な側面に加え、アルゴリズム的な側面についても検討が行われている。",
+          "keywords": [
+            "Chip-firing game",
+            "strongly connected directed multigraphs",
+            "instability minimum",
+            "Eulerian case"
+          ],
+          "appendix": "本論文は離散数学や組合せ論に関するテーマを扱っており、指定された興味ある分野の中では特に combinatorics と関連しています。"
+        },
+        "http://arxiv.org/abs/2604.14255v1": {
+          "title": "斉次線形順序の数え上げ組合せ論",
+          "summary": "k色の彩色を持つ可算な斉次線形順序、およびCₙ,ₘ-斉次線形順序の数を算出した。Cₙ,ₘ-斉次性は、計算理論的に重要な性質を持つsp-斉次性を近似する強力な斉次性の概念である。対象となる線形順序は一般に無限集合であるが、これらを有限の対象と対応付けることにより、その総数が有限であることを示し、具体的な算出手順と漸近的境界を導き出した。",
+          "keywords": [
+            "homogeneous linear orderings",
+            "colored linear orderings",
+            "Cₙ,ₘ-homogeneity",
+            "sp-homogeneity",
+            "enumerative combinatorics"
+          ],
+          "appendix": "本論文で扱われる可算構造の斉次性や分類は、モデル理論やFraïssé制限の観点から「structure of large countable infinite group」の研究分野と関連がある。"
+        },
+        "http://arxiv.org/abs/2604.13898v1": {
+          "title": "幾何学的かつ幾何学的に有限な擬作用を持つ双曲空間は対称空間である",
+          "summary": "本論文では、ある固有距離空間が有限生成群および有限生成群上のホロボールを持つ空間の双方に擬等長的であるならば、その空間は階数1の対称空間または実数直線に擬等長的であることを証明している。",
+          "keywords": [
+            "quasi-isometric",
+            "finitely generated group",
+            "horoball",
+            "rank-one symmetric space",
+            "proper metric space"
+          ],
+          "appendix": "本論文は幾何学的群論における擬等長変形を扱っており、興味ある分野の「structure of large countable infinite group」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2604.13809v1": {
+          "title": "3次ジョルダン行列代数および関連構造における記号計算",
+          "summary": "3次ジョルダン行列代数および関連するリー理論的構造における記号計算のためのGAPパッケージ「CubicJordanMatrixAlg」を提案する。応用例として、3次ジョルダン行列代数から構成されたF₄次数付き群における、特定の交換子関係の計算に本パッケージを使用している。",
+          "keywords": [
+            "Cubic Jordan matrix algebras",
+            "GAP package",
+            "symbolic computation",
+            "F₄-graded groups",
+            "Lie-theoretic structures"
+          ],
+          "appendix": "本論文は代数構造の記号計算を扱っており、提示された「興味ある分野」に直接該当するものは含まれませんが、リー理論的な構造や群の計算に関する研究内容となっています。"
+        },
+        "http://arxiv.org/abs/2604.13749v2": {
+          "title": "直角Artin群の純対称自己同型群のコホモロジー",
+          "summary": "本論文では、直角Artin群 A_Γ における純対称外部自己同型群 ΣPOut(A_Γ) および純対称自己同型群 ΣPAut(A_Γ) のコホモロジー群を算出している。著者らは、一般化されたMcCullough-Miller複体 MM_Γ への ΣPOut(A_Γ) の作用から生じる等変スペクトル系列を用いることで、H^q(ΣPOut(A_Γ)) が自由アーベル群であることを示し、そのランクを特定の半順序集合（poset）の組合せ論を用いて記述した。また、Lyndon-Hochschild-Serreスペクトル系列とLeray-Hirschの定理を適用することで、H^q(ΣPAut(A_Γ)) についても同様の結果を得た。いずれの場合も、コホモロジー環は次数1の要素によって生成される。最後に、H*(ΣPAut(A_Γ)) の表示を提案する「一般化されたBrownstein-Lee予想」を導入し、それが2次元において成立することを証明した。",
+          "keywords": [
+            "Right-angled Artin groups",
+            "Pure symmetric automorphisms",
+            "Cohomology groups",
+            "McCullough-Miller complex",
+            "Spectral sequences"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に関連しています。無限群である直角Artin群の自己同型群の構造を、代数的トポロジーおよび幾何学的群論の手法を用いて解析しています。"
+        },
+        "http://arxiv.org/abs/2604.13702v1": {
+          "title": "Gevrey級双曲フローにおけるRuelle共鳴数の上界",
+          "summary": "本論文では、Gevrey級の一様双曲フローにおいて、大きな半径の円板内に存在するRuelle共鳴の個数に関する既知の最良の上界を改善する。証明にはRughの力学行列式の手法を採用しており、フロー自体の解析を開双曲写像の系の解析へと置き換えることで導出している。",
+          "keywords": [
+            "Ruelle resonances",
+            "Gevrey hyperbolic flows",
+            "Dynamical determinants",
+            "Upper bounds"
+          ],
+          "appendix": "本研究は力学系のスペクトル解析（Ruelle共鳴）を扱っており、興味ある分野の中では complex dynamics および symbolic dynamics との関連性が高い。"
+        },
+        "http://arxiv.org/abs/2604.13475v1": {
+          "title": "二元符号に対するErdős-Ko-Radoの定理",
+          "summary": "本論文では、Erdős-Ko-Rado（EKR）の観点から語の交差族（intersecting families of words）について研究している。アルファベットのサイズが2の場合、最大交差族は必ずしもスターになるとは限らないが、最大3重交差族（3-wise intersecting family）は常にスターであることを証明した。さらに、アルファベットのサイズが3以上の場合に、最大交差族がスターに限るという既知の結果に対する新たな証明を提示している。",
+          "keywords": [
+            "intersecting families of words",
+            "Erdős-Ko-Rado theorem",
+            "binary codes",
+            "3-wise intersecting family",
+            "stars"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「combinatorics on words」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.13401v1": {
+          "title": "コサイクルと双曲型自己同型写像における周期データの剛性",
+          "summary": "本研究では、双曲型力学系上のヘルダー連続な線形コサイクルのコホモロジーと、アノソフ系間の共役の正則性を調査した。周期データが共役なコサイクルAとBに対し、Bの周期データが狭いスペクトルを持つ場合や、Bが定数かつ可測なコホモロジーを持つ場合など、様々な条件下でヘルダー連続なコホモロジーの存在を確立した。また、弱既約な双曲型自己同型写像Lと𝕋ᵈ上のアノソフ微分同相写像fについて、それらの導関数コサイクルが共役であれば位相共役は滑らかであることを証明し、これを用いて弱既約な双曲型自己同型写像に対する大域的な周期データの剛性を示した。あわせて、低正則性の設定における安定ホロノミーの微分可能性も示されている。",
+          "keywords": [
+            "linear cocycles",
+            "Anosov systems",
+            "periodic data rigidity",
+            "hyperbolic automorphisms",
+            "Hölder cohomology"
+          ],
+          "appendix": "本論文は双曲型力学系やアノソフ系を扱っており、興味ある分野のうち symbolic dynamics や complex dynamics に関連する動力学的な剛性理論の性質を含んでいます。"
+        },
+        "http://arxiv.org/abs/2604.13376v1": {
+          "title": "リヤプノフ指数の積分表示",
+          "summary": "マルコフ作用素によって駆動される劣加法的過程から生じる漸近的成長率について、抽象的な作用素論的変分原理を構築した。各不変測度に対して、成長率はバンドルへの不変リフトにおけるファイバー積分の、エルゴード的リフトで達成される上限に一致する。この原理を線形バンドル射に適用することで、特異コサイクルを含むリヤプノフ指数の和に関する古典的な射影公式を拡張し、個別方向の条件付きアニール成長を用いた新しい漸近表現を導いた。応用として、マルコフ的な場所依存ノイズを伴う系において、リヤプノフ指数がノイズの全履歴ではなく現在の状態と初期位置のみに依存することを証明した。",
+          "keywords": [
+            "Lyapunov exponents",
+            "Variational principle",
+            "Subadditive processes",
+            "Markov operators",
+            "Linear bundle morphisms"
+          ],
+          "appendix": "本論文は、エルゴード理論の観点から symbolic dynamics や complex dynamics の基礎となるリヤプノフ指数の動態を扱っており、これらの分野と深い関連があります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.14416v1",
+        "http://arxiv.org/abs/2604.14405v1",
+        "http://arxiv.org/abs/2604.14383v1",
+        "http://arxiv.org/abs/2604.14042v1",
+        "http://arxiv.org/abs/2604.14038v1",
+        "http://arxiv.org/abs/2604.14031v1",
+        "http://arxiv.org/abs/2604.13989v1",
+        "http://arxiv.org/abs/2604.13949v1",
+        "http://arxiv.org/abs/2604.14255v1",
+        "http://arxiv.org/abs/2604.13898v1",
+        "http://arxiv.org/abs/2604.13809v1",
+        "http://arxiv.org/abs/2604.13749v2",
+        "http://arxiv.org/abs/2604.13702v1",
+        "http://arxiv.org/abs/2604.13475v1",
+        "http://arxiv.org/abs/2604.13401v1",
+        "http://arxiv.org/abs/2604.13376v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-18T04:41:42.612749+00:00",
-      "updated_at": "2026-04-19T03:53:23.247112+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-19T05:22:15.516552+00:00",
+      "finalized_at": "2026-04-19T05:22:15.516516+00:00"
     },
     {
       "pipeline_id": "20260419T051137Z-0df54deb",
