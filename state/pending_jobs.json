@@ -32595,6 +32595,468 @@
       "created_at": "2026-04-18T04:41:42.612749+00:00",
       "updated_at": "2026-04-19T03:53:23.247112+00:00",
       "finalized_at": null
+    },
+    {
+      "pipeline_id": "20260419T051137Z-0df54deb",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/2e8mj6y9pikfbnpbnosq0edtdq90tvjzfr08",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15305v1",
+          "entry_id": "http://arxiv.org/abs/2604.15305v1",
+          "title": "Erdős's diameter conjecture for separated distances fails in high dimensions",
+          "summary": "Erdős asked whether every $n$-point set in Euclidean space whose $\\binom{n}{2}$ pairwise distances are mutually at least $1$ apart must have diameter at least $(1+o(1))n^2$. We disprove this statement by constructing for every prime power $q$ a set $\\mathcal X_q\\subset \\mathbb R^{q^2+q}$ of $n=q+1$ points such that all pairwise distances in $\\mathcal X_q$ are mutually at least $1$ apart, while $$\\operatorname{diam}(\\mathcal X_q)\\le\\Bigl(1-\\frac{1}{π^2}+o(1)\\Bigr)n^2.$$ The proof is fully formalized in Lean 4.",
+          "authors": [
+            "Boon Suan Ho"
+          ],
+          "published": "2026-04-16T17:59:17+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15303v1",
+          "entry_id": "http://arxiv.org/abs/2604.15303v1",
+          "title": "Diameter bounds for arbitrary finite groups and applications",
+          "summary": "We prove a strong general-purpose bound for the diameter of a finite group depending only on the diameters of its composition factors and the maximal exponent of a normal abelian section. There are a number of notable applications: (1) if $G$ is a finite soluble group of exponent $e$, $\\mathrm{diam}(G) \\ll e (\\log |G|)^8$, (2) anabelian groups with bounded-rank composition factors have polylogarithmic diameter, (3) transitive soluble subgroups of $S_n$ have diameter $\\ll n^5$, and (4) Grigorchuk's gap conjecture holds for any finitely generated group acting faithfully on a bounded-degree rooted tree. Additionally, conditional on Babai's conjecture, (5) any transitive permutation group of degree $n$ has diameter bounded by a polynomial in $n$ (a folkloric conjecture), and (6) Grigorchuk's gap conjecture holds for residually finite groups, and thus the conjecture reduces to the simple case.",
+          "authors": [
+            "Sean Eberhard",
+            "Elena Maini",
+            "Luca Sabatini",
+            "Gareth Tracey"
+          ],
+          "published": "2026-04-16T17:58:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15293v1",
+          "entry_id": "http://arxiv.org/abs/2604.15293v1",
+          "title": "Borel--Bernstein and Hirst-type Theorems for Nearest-Integer Complex Continued Fractions over Euclidean Imaginary Quadratic Fields",
+          "summary": "For each $d \\in {1,2,3,7,11}$, let $T_d$ be the nearest-integer complex continued fraction map associated with the Euclidean ring $\\mathcal{O}*d$, and let $(a_n)$ be its digit sequence. We prove two metric results for this five-system family. First, for every sequence $(u_n)*{n\\ge 1}$ with $u_n \\ge 1$, the set of points for which $|a_n| \\ge u_n$ for infinitely many $n$ has full or zero normalized Lebesgue measure according as $\\sum_{n=1}^\\infty u_n^{-2}$ diverges or converges. This gives a unified Borel--Bernstein theorem, extending the Hurwitz case $d=1$ to all five Euclidean imaginary quadratic fields. Second, for any infinite set $S \\subset \\mathcal{O}_d$, if $τ(S)$ denotes its convergence exponent, then the digit-restricted set $F_d(S)={z:\\ a_n(z)\\in S\\ \\text{for all } n,\\ |a_n(z)|\\to\\infty}$ satisfies $\\dim_H F_d(S)=τ(S)/2$. More generally, for any cutoff function $f(n)\\to\\infty$, the set $F_d(S,f)={z\\in F_d(S):\\ |a_n(z)|\\le f(n)\\ \\text{for all } n}$ is either empty or has the same Hausdorff dimension $τ(S)/2$. The proof combines quantitative ergodic properties of the nearest-integer systems with a large-digit conformal iterated function subsystem that is $2$-decaying. We also obtain applications to sparse patterns, shrinking targets, and almost-sure $L'evy$- and Khinchine-type laws.",
+          "authors": [
+            "Kangrae Park"
+          ],
+          "published": "2026-04-16T17:54:59+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15266v1",
+          "entry_id": "http://arxiv.org/abs/2604.15266v1",
+          "title": "Simplifying Safety Proofs with Forward-Backward Reasoning and Prophecy",
+          "summary": "We propose an incremental approach for safety proofs that decomposes a proof with a complex inductive invariant into a sequence of simpler proof steps. Our proof system combines rules for (i) forward reasoning using inductive invariants, (ii) backward reasoning using inductive invariants of a time-reversed system, and (iii) prophecy steps that add witnesses for existentially quantified properties. We prove each rule sound and give a construction that recovers a single safe inductive invariant from an incremental proof. The construction of the invariant demonstrates the increased complexity of a single inductive invariant compared to the invariant formulas used in an incremental proof, which may have simpler Boolean structures and fewer quantifiers and quantifier alternations. Under natural restrictions on the available invariant formulas, each proof rule strictly increases proof power. That is, each rule allows to prove more safety problems with the same set of formulas. Thus, the incremental approach is able to reduce the search space of invariant formulas needed to prove safety of a given system. A case study on Paxos, several of its variants, and Raft demonstrates that forward-backward steps can remove complex Boolean structure while prophecy eliminates quantifiers and quantifier alternations.",
+          "authors": [
+            "Eden Frenkel",
+            "Kenneth L. McMillan",
+            "Oded Padon",
+            "Sharon Shoham"
+          ],
+          "published": "2026-04-16T17:40:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15262v1",
+          "entry_id": "http://arxiv.org/abs/2604.15262v1",
+          "title": "Detecting Regime Transitions in Dynamical Systems via the Mixup Euler Characteristic Profile",
+          "summary": "We develop a framework for detecting regime transitions in dynamical systems using the Mixup Euler Characteristic Profile (Mixup ECP) -- the Euler characteristic of the geometric intersection of ball unions around adjacent delay-embedded trajectory segments, viewed as a function of filtration scale. The Mixup ECP provides a detection statistic with a built-in null and guaranteed stability. We formalize regime detection as a low-side-permutation test, establish its validity and consistency, and introduce a multi-delay extension that automatically selects the most informative dynamical timescale. Complementing the topological signal with Complexity Variance, Higuchi fractal dimension, and a rolling mean baseline, the four-signal combined method achieves $9.50$ days MAE on Indian monsoon onset (Nepal target) -- a $32\\%$ improvement over the rolling mean baseline and $9\\%$ over CUSUM. Validated on the Lorenz system, logistic map, and three monsoon systems spanning both hemispheres (Indian/Nepal, Indian/Kerala, Western North Pacific), plus ENSO and a synthetic EEG dataset, the framework adds value precisely when the transition is gradual or obscured by noise.",
+          "authors": [
+            "Sushovan Majhi",
+            "Atish Mitra",
+            "Santanu Nandi",
+            "Md Nurujjaman",
+            "Buddha Nath Sharma"
+          ],
+          "published": "2026-04-16T17:38:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15253v1",
+          "entry_id": "http://arxiv.org/abs/2604.15253v1",
+          "title": "A matroidal twist on a formula of Brion",
+          "summary": "Brion's Formula realizes the Laurent polynomial of lattice points in a lattice polytope P as the sum of rational functions associated to the vertices of P. In this paper, we consider the special case where P is a generalized permutohedron. We introduce a modification of the rational functions associated to the vertices of P depending on a given matroid M. Upon summing these rational functions, we show that the resulting Laurent polynomial Q_M(P) behaves in certain ways like the lattice points of P, exhibiting natural recursive and reciprocity behaviors. Furthermore, upon evaluating Q_M(P) at 1, we recover the matroid Euler characteristic of Larson, Li, Payne, and Proudfoot, thereby providing a refined approach to studying these quantities.",
+          "authors": [
+            "Matthias Beck",
+            "Caroline Klivans",
+            "Dustin Ross"
+          ],
+          "published": "2026-04-16T17:32:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15243v1",
+          "entry_id": "http://arxiv.org/abs/2604.15243v1",
+          "title": "Classifying spaces for families of virtually abelian subgroups of surface braid groups",
+          "summary": "Given a group $G$ and an integer $n \\geq 0$, let $\\mathcal{F}_n$ denote the family of all virtually abelian subgroups of $G$ of rank at most $n$. In this article, we show that for each $n \\geq 1$, the minimal dimension of a model for the classifying space $E_{\\mathcal{F}_n}G$ for the pure braid group of a surface of non-negative Euler characteristic with at least one boundary component or one puncture is equal to the virtual cohomological dimension of $G$ plus $n$. We prove an analogous result for the full braid group of the sphere. As an application, we compute the minimal dimension of a model for the classifying space associated to the family of amenable subgroups of pure surface braid groups.",
+          "authors": [
+            "Ramón Flores",
+            "Juan González-Meneses",
+            "Porfirio L. León-Álvarez"
+          ],
+          "published": "2026-04-16T17:18:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15220v1",
+          "entry_id": "http://arxiv.org/abs/2604.15220v1",
+          "title": "A Microeconomic Finance Model with a Multi-Asset Market and a Multi-Investor Heterogeneous Groups",
+          "summary": "We present a mathematical model of a market with $m$ shares traded across $n$ investor groups, each one with similar motivations and trading strategies. The market of each asset consists of a fixed amount of cash and shares (no additions are allowed over time, so the system is closed), and the trading groups are influenced by trend and valuation motivations when buying or selling each asset, but follow a strategy where the purchase of one asset depends on the price of another, while the sale does not. Using these assumptions and basic microeconomic principles, the mathematical model is derived using a dynamic systems approach. We analyze the stability of the model's equilibrium points and determine the parameter conditions for such stability. First, we show that all equilibria are stable in the absence of a clear emphasis on trend-based valuation for each share. Secondly, for systems where the trading group prioritizes the valuation of each stock and the trend of the other for trading purposes, we establish stability conditions and demonstrate with numerical examples that when instability occurs, it manifests as price oscillations in the stocks. Furthermore, we argue for the existence of periodic solutions via a Hopf bifurcation, taking the momentum coefficient as the bifurcation parameter. Finally, we present examples and numerical simulations to support and expand upon the analytical results. One finding in economics and finance is the existence of cyclical behavior in the absence of exogenous factors, as determined by the momentum coefficient. In particular, a stable equilibrium price becomes unstable as trend-based trading increases.",
+          "authors": [
+            "Mario Cavani"
+          ],
+          "published": "2026-04-16T16:52:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15205v1",
+          "entry_id": "http://arxiv.org/abs/2604.15205v1",
+          "title": "On the m-point convexity",
+          "summary": "Let $S\\subset \\mathbb{R}^d$ $(d\\geq 2)$. A set $S$ is said to be $m$-point convex, if for every $m$ distinct points in $S$, at least one of the line-segments determined by them lies in $S$. We also say that $S$ has property $P_m$. Let ${x,y,z}\\in \\mathbb{R}^{d}$. If $\\mathrm{conv}\\{x,y,z\\}$ is a right triangle, then $\\{x,y,z\\}$ is called a {\\it right triple}. A set $S$ is said to have the right-$3$-point property,if, for every right triple of $S$, at least one of the line-segments determined by them belongs to $S$. In particular, it has the double right-$3$-point property, if, for every right triple in $S$, at least two of the line-segments determined by them belong to $S$. In this paper, we further investigate $m$-point convex sets and establish the relationship between the sets with the double right-$3$-point property and convex sets in $\\mathbb{R}^d$.",
+          "authors": [
+            "Wenzhi Liu",
+            "Wei Wang",
+            "Liping Yuan",
+            "Tudor Zamfirescu"
+          ],
+          "published": "2026-04-16T16:31:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15181v1",
+          "entry_id": "http://arxiv.org/abs/2604.15181v1",
+          "title": "One-shot learning for the complex dynamical behaviors of weakly nonlinear forced oscillators",
+          "summary": "Extrapolative prediction of complex nonlinear dynamics remains a central challenge in engineering. This study proposes a one-shot learning method to identify global frequency-response curves from a single excitation time history by learning governing equations. We introduce MEv-SINDy (Multi-frequency Evolutionary Sparse Identification of Nonlinear Dynamics) to infer the governing equations of non-autonomous and multi-frequency systems. The methodology leverages the Generalized Harmonic Balance (GHB) method to decompose complex forced responses into a set of slow-varying evolution equations. We validated the capabilities of MEv-SINDy on two critical Micro-Electro-Mechanical Systems (MEMS). These applications include a nonlinear beam resonator and a MEMS micromirror. Our results show that the model trained on a single point accurately predicts softening/hardening effects and jump phenomena across a wide range of excitation levels. This approach significantly reduces the data acquisition burden for the characterization and design of nonlinear microsystems.",
+          "authors": [
+            "Teng Ma",
+            "Luca Rosafalco",
+            "Wei Cui",
+            "Lin Zhao",
+            "Attilio Frangi"
+          ],
+          "published": "2026-04-16T16:10:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15177v1",
+          "entry_id": "http://arxiv.org/abs/2604.15177v1",
+          "title": "Complexity of Fungal Automaton Prediction",
+          "summary": "Fungal automata are a nature-inspired computational model, where a rule is alternatively applied verticaly and horizontaly. In this work we study the computational complexity of predicting the dynamics of all fungal freezing totalistic one-dimentional rules of radius $1$, exhibiting various behaviors. Despite efficiently predictable in most cases (with non-deterministic logspace algorithms), a non-linear rule is left open to characterize. We further explore the freezing majority rule (which is totalistic), and prove that at radius $1.5$ it becomes $\\mathbf{P}$-complete to predict.",
+          "authors": [
+            "Enrico Formenti",
+            "Eric Goles",
+            "Kévin Perrot",
+            "Martín Ríos-Wilson",
+            "Domingo Ruiz-Tala"
+          ],
+          "published": "2026-04-16T15:58:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15172v1",
+          "entry_id": "http://arxiv.org/abs/2604.15172v1",
+          "title": "Evaluations of some series via the WZ method",
+          "summary": "In this paper, we evaluate some series via the WZ method, and confirm several previous conjectures. For example, we prove the following two identities conjectured by the second author: $$\\sum_{k=0}^{\\infty} \\frac{(28k^2 + 10k + 1) \\binom{2k}{k}^5}{(6k + 1)(-64)^k \\binom{3k}{k} \\binom{6k}{3k}} = \\frac{3}π$$ and $$\\sum_{k=1}^\\infty \\frac{d^4}{dk^4}\\left(\\frac{(21k-8)Γ(k+1)^2}{k^3Γ(2k+1)}\\right)=\\frac{1959}2ζ(6)-432ζ(3)^2. $$",
+          "authors": [
+            "Qing-Hu Hou",
+            "Zhi-Wei Sun"
+          ],
+          "published": "2026-04-16T15:49:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15154v1",
+          "entry_id": "http://arxiv.org/abs/2604.15154v1",
+          "title": "The quantitative coarse Baum-Connes conjecture for free products",
+          "summary": "Let $G$ and $H$ be finitely generated groups. In this paper, we prove the quantitative coarse Baum--Connes conjecture for the free product $G* H$ under the assumption that the conjecture holds for both $G$ and $H$.",
+          "authors": [
+            "Jintao Deng",
+            "Ryo Toyota"
+          ],
+          "published": "2026-04-16T15:34:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15138v1",
+          "entry_id": "http://arxiv.org/abs/2604.15138v1",
+          "title": "The 1-2-3 conjecture for polygonal tilings",
+          "summary": "The 1-2-3 conjecture has been solved positively in 2024 for finite graphs and by extension for infinite graphs which are locally finite. The solution is non-constructive, and finding explicit solutions for large (or infinite) graphs is very hard. By exploiting the extra structure present in many non-periodic tilings, we find explicit solutions for the Chair (all three vertex placements), Non-Pinwheel, Pinwheel, Half-hex, Ammann-Beenker (two versions), Penrose Rhomb, and the Domino tilings. We prove that for any fully periodic tiling of the plane there exists a fully periodic solution, and provide an algorithm for finding such a solution. We give solutions for the fully periodic square, triangle and hexagonal lattices.",
+          "authors": [
+            "Alison Charlesworth",
+            "Christopher Ramsey",
+            "Nicolae Strungaru"
+          ],
+          "published": "2026-04-16T15:16:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15123v1",
+          "entry_id": "http://arxiv.org/abs/2604.15123v1",
+          "title": "Spectral Effects Of Heavy-Tailed Vertex Noise In Geometric Graphs",
+          "summary": "We characterize which local matrix structures saturate Weyl's eigenvalue perturbation bound for graph Laplacians under geometrically constrained vertex displacements. Geometric graphs with heavy-tailed vertex noise arise across sensor networks, biological imaging, and spatial omics, yet tractable predictions for noise-induced spectral error remain limited. We study geometric graphs abstracted from biophysical systems, incorporating clearance, planarity, and identifiability constraints that govern physically realizable embeddings. Within this constrained setting, we identify witness motifs, small subgraphs in maximally noise-sensitive geometric configurations, that dominate weighted-degree and graph Laplacian spectral perturbations under tempered power-law vertex displacements. This motif decomposition reduces global spectral sensitivity to a finite catalog of local extremal structures and identifies configurations that attain Weyl-tight bounds. We then lift these constrained-graph results to general straight-line embedded graphs in arbitrary dimension via local repair operations producing a constrained surrogate graph that preserves sensitivity-relevant structure. To quantify noise-induced spectral variation in both strong-oracle and weak-oracle regimes, we introduce stochastic co-spectrality (SC) and the stochastic spectral separation index (S3I), which characterize when observed spectral distances are noise-driven and when noise parameters are separable. Together, these results provide a principled pathway from local geometric noise to global spectral error in graph Laplacian matrices, enabling estimation of spectral fragility from graph structure without exhaustive eigenvalue computation or restrictive distributional assumptions beyond moment bounds.",
+          "authors": [
+            "Ben Cardoen",
+            "Jeremy Budd",
+            "Enrico Amico",
+            "Ghassan Hamarneh",
+            "Fabian Spill"
+          ],
+          "published": "2026-04-16T15:10:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15031v1",
+          "entry_id": "http://arxiv.org/abs/2604.15031v1",
+          "title": "A Hypergraph Container Method on Spread SAT: Approximation and Speedup",
+          "summary": "We develop a hypergraph container method for the Boolean Satisfiability Problem (SAT) via the newly developed container results [Campos and Samotij (2024)]. This provides an explicit connection between the extent of spread of clauses and the efficiency of container-based algorithms. Informally, the more evenly the clauses are distributed, the stronger the shrinking effect of the containers, which leads to faster algorithms for SAT.\n  To quantify the extent of spread, we use a weighted point of view, in which a clause of size $s$ receives weight $p^s$ for some $0<p\\le 1$.In this way, we introduce the notion of $(λ,p)_k$-structure for SAT formulas, where $λ$ is the spread parameter and $k$ is the maximum size of clauses. By the almost-independence property of containers, we prove that for formulas with $(λ,p)_k$-structures, one can distinguish between ``unsatisfiable formulas'' and ``formulas satisfying at least a $(1-δ)$-fraction of clauses'' in sub-exponential time. This shows that sufficiently spread formulas are not worst-case instances for Gap-ETH. Moreover, we show that the speedup is directly controlled by the spread parameter $λ$, yielding faster exact algorithms for SAT formulas containing a $(λ,p)_k$-structure. This result extends previous work [Zamir (STOC 2023)] to the non-uniform case.",
+          "authors": [
+            "Zicheng Han",
+            "Yupeng Lin",
+            "Jie Ma",
+            "Xiande Zhang"
+          ],
+          "published": "2026-04-16T14:01:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15007v1",
+          "entry_id": "http://arxiv.org/abs/2604.15007v1",
+          "title": "A counter-example to persistence in generalised preferential attachment trees",
+          "summary": "Consider a generalised preferential attachment tree with attachment function $f$, that is a random tree, where at each time-step a node connects to an existing node $v$ with probability proportional to $f(\\mathrm{deg}(v))$, where $\\mathrm{deg}(v)$ denotes the degree of the node in the existing tree. We provide a counter-example to a conjecture of the author asserting that under the assumption $\\sum_{j=1}^{\\infty} \\frac{1}{f(j)^2} < \\infty$ there is a persistent hub in the model, that is, a single node that has the maximal degree for all but finitely many time-steps. The counter-example is a minor modification of a related counter-example due to Galganov and Ilienko.",
+          "authors": [
+            "Tejas Iyer"
+          ],
+          "published": "2026-04-16T13:34:15+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15005v1",
+          "entry_id": "http://arxiv.org/abs/2604.15005v1",
+          "title": "Gorenstein Simplices and Even Binary Self-Complementary Codes",
+          "summary": "It is known that if a Gorenstein simplex of dimension \\(d\\) and degree \\(s\\) is not a lattice pyramid, then \\(d \\leq 2s-1\\). In this paper, we study the extremal case \\(d=2s-1\\). More precisely, we characterize Gorenstein simplices of dimension \\(2s-1\\) and degree \\(s\\) which are not lattice pyramids in terms of even binary self-complementary codes. As an application, combining this characterization with existing classification results on reflexive simplices, we classify Gorenstein simplices of degree \\(3\\) and \\(4\\).",
+          "authors": [
+            "Akiyoshi Tsuchiya"
+          ],
+          "published": "2026-04-16T13:32:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14979v1",
+          "entry_id": "http://arxiv.org/abs/2604.14979v1",
+          "title": "Graphs at infinity: Liouville theorems, Recurrence and Characterization of Dirichlet forms",
+          "summary": "We survey recent results on graphs and their Laplacians related to the behavior of the graph at large. In particular, we focus on Liouville theorems, recurrence and characterizations of Dirichlet forms via boundary terms.",
+          "authors": [
+            "Matthias Keller",
+            "Daniel Lenz",
+            "Marcel Schmidt"
+          ],
+          "published": "2026-04-16T13:10:05+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14978v1",
+          "entry_id": "http://arxiv.org/abs/2604.14978v1",
+          "title": "Counting tight Hamilton cycles in Dirac hypergraphs",
+          "summary": "Suppose $G$ is a $k$-uniform hypergraph on $n$ vertices such that every $(k-1)$-subset $S$ of $V(G)$ belongs to at least $δn$ edges, where $δ> 1/2$. Let $Ψ(G)$ denote the number of tight Hamilton cycles in $G$, that is, cyclic orderings of $V(G)$ in which every $k$ consecutive vertices form an edge. We prove that $\\logΨ(G)\\ge kh(G)-n\\log{n\\choose k-1}+n\\log n-n\\log e-o(n)$, where $h(G)$ is the hypergraph entropy of $G$, defined via perfect fractional matchings. This bound is tight, for example, for all (nearly) regular hypergraphs, in particular for the binomial random hypergraph. It also implies a conjecture by Ferber, Hardiman and Mond, stating that $Ψ(G)\\ge (δ-o(1))^n n!$.",
+          "authors": [
+            "Felix Joos",
+            "Xinyue Xie"
+          ],
+          "published": "2026-04-16T13:10:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14977v1",
+          "entry_id": "http://arxiv.org/abs/2604.14977v1",
+          "title": "Minimal Input Cardinality Disturbance Decoupling of Coupled Oscillators via Output Feedback with Application to Power Networks",
+          "summary": "In this paper, we identify the smallest set of control input nodes and an associated output feedback law that achieves complete disturbance decoupling for a class of coupled oscillator networks. The focus is specifically on systems linearized around a stable phase-locked synchronized state. The proposed theoretical framework is applied to the linearized swing dynamics of power grids operating near synchronization. In this context, the disturbance decoupling problem corresponds to isolating subsets of nodes from exogenous disturbances by means of batteries that can both add or withdraw active power. Numerical simulations carried out on the IEEE New England 39-bus system show that the proposed methodology not only yields a minimal actuator placement ensuring effective disturbance rejection, but also preserves the internal stability of the closed-loop system.",
+          "authors": [
+            "Luca Claude Gino Lebon",
+            "Johan Lindberg",
+            "Claudio Altafini"
+          ],
+          "published": "2026-04-16T13:09:28+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14966v1",
+          "entry_id": "http://arxiv.org/abs/2604.14966v1",
+          "title": "Measuring the Computational Power of Finite Patches of Cellular Automata",
+          "summary": "Computational power can be measured by assigning an algebraic structure to a computational device. Here, we convert a small patch of Conway's Game of Life into a transformation semigroup. The conversion captures not only time evolution but also interactive operations. In this way, the cellular automaton becomes directly programmable. Once this measurement is made, we apply hierarchical decompositions to the resulting algebraic object as a way of understanding it. These decompositions are based on a macro/micro-state division inspired by statistical mechanics. However, cellular automata have a large number of global states. Therefore, we focus on partitioning the state space and creating morphic images approximations that can serve as macro-level descriptions. The methods developed here are not limited to cellular automata; they apply more generally to discrete dynamical systems.",
+          "authors": [
+            "Attila Egri-Nagy",
+            "Chrystopher L. Nehaniv"
+          ],
+          "published": "2026-04-16T13:02:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14964v1",
+          "entry_id": "http://arxiv.org/abs/2604.14964v1",
+          "title": "Induced and nonlinear topological pressure for random dynamical systems",
+          "summary": "In this paper, we investigate induced and nonlinear fiber topological pressure for random dynamical systems. We define a non-averaged induced fiber pressure via spanning and separated sets, characterize it as the pseudo-inverse of the classical fiber topological pressure studied previously, and establish the corresponding variational principle. We also define the nonlinear fiber pressure and prove the associated variational principles. Finally, we extend the combined theory to the higher-dimensional setting.",
+          "authors": [
+            "Cunyi Nan"
+          ],
+          "published": "2026-04-16T12:57:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14948v1",
+          "entry_id": "http://arxiv.org/abs/2604.14948v1",
+          "title": "Expansive solutions and the boundary at infinity for the homogeneous $N$-body problem",
+          "summary": "We investigate expansive solutions of the $N$-body problem in $\\mathbb{R}^d$ ($d\\ge2$) driven by homogeneous Newtonian potentials of degree $-α$. We establish the existence of half-entire expansive motions with prescribed initial configuration and asymptotic direction for a wide range of homogeneity exponents $α$. Our approach is variational and relies on the minimization of a suitably renormalized Lagrangian action, allowing us to treat in a unified framework the hyperbolic, parabolic, and hyperbolic-parabolic regimes in the sense of Chazy's classification. Beyond existence, we derive refined asymptotic expansions for all classes of expansive solutions, identifying higher-order correction terms and improving previously known growth estimates, including the classical Newtonian case $α=1$. In particular, for hyperbolic-parabolic solutions, we provide a detailed description of the interplay between linear escape of cluster centers and internal parabolic dynamics, extending the cluster scattering picture to general homogeneous potentials. Finally, we interpret these solutions within the geometric framework of the Jacobi-Maupertuis metric and the weak KAM theory. In this perspective, expansive motions correspond to geodesic rays and calibrating curves for the associated Hamilton-Jacobi equation, yielding a dynamical characterization of the boundary at infinity and a refined description of global viscosity solutions.",
+          "authors": [
+            "Diego Berti",
+            "Davide Polimeni",
+            "Susanna Terracini"
+          ],
+          "published": "2026-04-16T12:47:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14945v1",
+          "entry_id": "http://arxiv.org/abs/2604.14945v1",
+          "title": "On quantitative orbit equivalence for lamplighter-like groups",
+          "summary": "We focus on halo products, a class of groups introduced by Genevois and Tessera, and whose geometry mimics lamplighters. Famous examples are lampshufflers. Motivated by their work on the classifications up to quasi-isometry of these groups, we initiate a more quantitative study of their geometry. Indeed, it follows from the work of Delabie, Koivisto, Le Maître and Tessera that quantitative orbit equivalence between amenable groups is closely related to their large scale geometry, such a connection being justified by the use, in their main results, of a well-known quasi-isometry invariant: the isoperimetric profile.\n  Inspired by their work on quantitative orbit equivalence between lamplighters, we prove a stability result for orbit equivalence of permutational halo products, going beyond the framework of standard halo products, using a new notion of orbit equivalence of pairs. Combined with our asymptotics of isoperimetric profiles obtained in an earlier article, we prove that most of these constructions are quantitatively optimal. For instance, we show that $\\mathsf{Shuffler}(\\mathbb{Z}^{k+\\ell})$ and $\\mathsf{Shuffler}(\\mathbb{Z}^{k})$ are $\\mathrm{L}^p$ orbit equivalent if and only if $p<\\frac{k}{k+\\ell}$, thus quantifying how much the geometries of these non-quasi-isometric groups differ. We finally build orbit equivalence couplings using the notion of Følner tiling sequences.",
+          "authors": [
+            "Corentin Correia",
+            "Vincent Dumoncel"
+          ],
+          "published": "2026-04-16T12:38:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14903v1",
+          "entry_id": "http://arxiv.org/abs/2604.14903v1",
+          "title": "Groups with arbitrarily poor permutation stability",
+          "summary": "We propose a quantitative notion of permutation stability for finitely generated groups. Our notion is related to, but distinct from, the ``stability rate'' introduced by Becker and Mosheiff (which is valid within the class of finitely presented groups). We construct a family of finitely generated stable groups which exhibit, quantitatively, arbitrarily ``bad'' permutation stability. This means that any application of a ``sample-and-substitute'' algorithm will be very slow in ascertaining whether a given tuple of permutations satisfy the defining relations of our groups.",
+          "authors": [
+            "Henry Bradford"
+          ],
+          "published": "2026-04-16T11:47:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14827v1",
+          "entry_id": "http://arxiv.org/abs/2604.14827v1",
+          "title": "On Certain Pfaffians Connected with the Inverse Problem for Collinear Central Configurations",
+          "summary": "A. Albouy and R. Moeckel in 2000 found some interesting inequalities related to the inverse problem for collinear (Moulton) central configurations: the Pfaffian of a certain matrix is positive since all coefficients of some polynomials are positive, for the Newtonian (interaction potential $1/r$ and $n\\leq 6$). They conjectured that for all $n$ such Pfaffians, for the Newtonian case, are positive. In this article we analyze further the problem, and we prove that such inequalities hold true in more general cases (potentials with log-convex derivative, such as those with homogeneity parameters $α>0$, for all even $n\\leq 14$).",
+          "authors": [
+            "DL Ferrario"
+          ],
+          "published": "2026-04-16T09:59:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14763v1",
+          "entry_id": "http://arxiv.org/abs/2604.14763v1",
+          "title": "Tight spectral conditions for the Hamiltonicity of $K_{1,r}$-free split graphs",
+          "summary": "The Hamiltonicity and related subjects of split graphs, and in particular $K_{1,r}$-free split graphs with $r\\ge 3$ received much attention. Dai et al. [Discrete Math. 345 (2022) 112826] conjectured that every $(r-1)$-connected $K_{1,r}$-free split graph is Hamiltonian. They proved the case when $r=4$, and earlier Renjith and Sadagopan [Int. J. Found. Comput. Sci. 33 (2022) 1--32] proved the case when $r=3$. Recently, Liu, Song, Zhang and Lai [Discrete Math. 346 (2023) 113402] proved that a split graph is Hamiltonian if and only if it is fully cycle extendable. So for $r=3,4$ every $(r-1)$-connected $K_{1,r}$-free split graph is fully cycle extendable. We give tight spectral sufficient conditions for a $K_{1,r}$-free split graph to be Hamiltonian for $r=3,4$.",
+          "authors": [
+            "Yiting Cai",
+            "Haiyan Guo",
+            "Hong-Jian Lai",
+            "Bo Zhou"
+          ],
+          "published": "2026-04-16T08:23:36+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14759v1",
+          "entry_id": "http://arxiv.org/abs/2604.14759v1",
+          "title": "Beyond the Critical Depth: The Metabolic and Physical Drivers of Phytoplankton Persistence in a Changing Ocean",
+          "summary": "While the classical Critical Depth Hypothesis (CDH) effectively explains the onset of blooms as transient instabilities, it does not fully capture the seasonal decoupling of biological rates and the long-term persistence of phytoplankton communities in fluctuating thermal environments. To address these limitations, we introduce a parsimonious framework that leverages the theory of non-autonomous dynamical systems to diagnose the stability of phytoplankton communities throughout the entire annual cycle. By linearizing the dynamics around the extinction equilibrium, we identify the invasion growth rate -formally the Floquet exponent-and derive the critical nutrient requirement ($γ$crit) as a bifurcation point for uniform persistence. Using end-of-the-century projections from the GFDL-ESM4 model under a high-emission scenario (SSP5-8.5), we identify a global regime shift characterized by a widespread expansion of metabolic-driven regimes, which increasingly displace regions where stability was historically governed by physical mixing. Relevance to Life Sciences. Quantitative analysis of system stability challenges CDH by demonstrating that metabolic constraints increasingly modulates phytoplankton persistence in a changing ocean. Our results, based on high-emission projections, reveal a profound physical-biological decoupling at the poles: while warming reduces the critical nutrient requirement ($γ$crit) facilitating persistence in previously marginal waters, this metabolic expansion is offset at poles. A 1:4 ratio between newly viable niches and ice-free deserts suggests that cryospheric retreat does not guarantee a proportional expansion of life. In addition, we identify the North Atlantic Subpolar Gyre as a ''metabolic refuge'' where mixing dynamics still anchor the ecosystem against global thermalization. By providing a ''radiography'' of the future ocean's complexity, this methodology offers a mechanistic basis to deconstruct how the dynamic balance between environmental energy and metabolic demands may determine the functional integrity of the marine biosphere under extreme anthropogenic forcing. Mathematical Content. The temperature dependence of biological rates is modeled using a thermodynamic equation, coupling population dynamics with seasonal variations in mixed layer depth and temperature. Given the non-autonomous nature of the system under annual forcing, we characterize the stability of the extinction equilibrium through its associated invasion growth rate. This rate is analytically derived as the Floquet exponent $λ$P , which provides a rigorous condition for uniform persistence (Theorem 3.2). The numerical analysis of this exponent, projected onto a global scale, quantifies the relative influence of environmental drivers on the stability threshold $γ$crit. This allows for the definition of the thermal dominance index (DT ), a metric that identifies the geographic transition from mixing-driven to metabolic-driven ecological control.",
+          "authors": [
+            "Matías Neto",
+            "Pablo Marquet",
+            "Mara Freilich",
+            "Luis Martí",
+            "Nayat Sanchez-Pi"
+          ],
+          "published": "2026-04-16T08:20:17+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14686v1",
+          "entry_id": "http://arxiv.org/abs/2604.14686v1",
+          "title": "Locally Equienergetic Graphs",
+          "summary": "For a given graph \\( G \\), let \\( G^{(j)} \\) denote the graph obtained by the deletion of vertex \\( v_j \\) from \\( G \\). The difference \\( \\mathscr{E}(G) - \\mathscr{E}(G^{(j)}) \\) quantifies the change in the energy of \\( G \\) upon the removal of \\( v_j \\), termed as the local energy of \\( G \\) at vertex $v_j$, as defined by Espinal and Rada in 2024. The local energy of $G$ at vertex $v$ is denoted by \\(\\mathscr{E}_G(v)\\). The local energy of the graph \\( G \\), therefore, is the summation of these vertex-specific local energies across all vertices in \\( V(G) \\), expressed by \\( e(G) = \\sum \\mathscr{E}_G(v) \\). Two graphs of the same order are defined as locally equienergetic if they have identical local energy. In this paper, we have investigated several pairs of locally equienergetic graphs.",
+          "authors": [
+            "Cahit Dede",
+            "Kalpesh M. Popat"
+          ],
+          "published": "2026-04-16T06:44:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14673v1",
+          "entry_id": "http://arxiv.org/abs/2604.14673v1",
+          "title": "Unbalanced signed bipartite graphs containing no negative $C_4$ with maximum spectral radius",
+          "summary": "A signed graph $(G,σ)$ is a graph $G$ together with an assignment $σ$ of either a positive sign or a negative sign to each edge. A signed graph is unbalanced if it contains a cycle with odd number of negative edges. The spectral radius of a signed graph is the spectral radius of its adjacency matrix, in which for vertices $u,v$, the $(u,v)$-entry is $0$, $-1$, or $1$ depending on whether $uv$ represents no edge, a negative edge, or a positive edge, respectively. Recently, Conde, Dratman and Grippo [Discrete Math. 349 (2026) 114942] proved that there is only one unbalanced signed bipartite graph with maximum spectral radius, up to switching isomorphism. In this paper, we establish a spectral Turán type results for signed bipartite graphs. More precisely, we determine the unique graphs containing no negative cycles of length four with maximum spectral radius, up to switching isomorphism, among unbalanced signed bipartite graphs with fixed bipartite sizes and order, respectively.",
+          "authors": [
+            "Yiting Cai",
+            "Hongying Lin",
+            "Bo Zhou"
+          ],
+          "published": "2026-04-16T06:30:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14671v1",
+          "entry_id": "http://arxiv.org/abs/2604.14671v1",
+          "title": "On the independence number of de Bruijn graphs",
+          "summary": "We derive the asymptotic formula $α(k,q)=λ_{k-1}q^k+o(q^k)$, where $α(k,q)$ is the independence number of the de Bruijn graph $B(k,q)$, and $λ_{k-1}$ is a constant arising from a variational problem on the unit $(k-1)$-dimensional cube. When $k=4$, we show the bounds $91/240\\le λ_3\\le 11/28$. For odd prime $k$, we analyse the binary case $q=2$ via a phase reduction on rotation orbits. For $k=11$ and $k=13$ this yields certified optimal constructions, which combined with a lifting theorem by Lichiardopol give exact formulas for $α(11,q)$ and $α(13,q)$ for all $q\\ge2$, extending the known cases $k=3,5,7$.",
+          "authors": [
+            "Pietro Majer",
+            "Matteo Novaga"
+          ],
+          "published": "2026-04-16T06:28:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14670v1",
+          "entry_id": "http://arxiv.org/abs/2604.14670v1",
+          "title": "New results on proper orientation number of graphs",
+          "summary": "A proper orientation $D$ of an undirected graph $G$ is an orientation of $G$ such that $d_D^+(u)\\not=d_D^+(v)$ for any edge $uv\\in E(G)$. Denote the proper orientation number $\\vecχ(G)$ of an undirected graph $G$ as the minimum $Δ^+(D)$ among all proper orientations $D$ of $G$. Chen, Mohar and Wu (JCTB, 2023) proved that if $G$ is a $r$-partite graph, then $\\vecχ(G) \\leq \\frac{1}{2} \\text{Mad}(G)+O(\\frac{r\\log{r}}{\\log{\\log{r}}})$, where $\\text{Mad}(G)$ is the maximum average degree of $G$. Moreover, if $G$ is a bipartite graph, then $ \\vecχ(G) \\leq \\lceil \\frac{1}{2} \\text{Mad}(G)\\rceil +3$, and this bound is tight. They also asked whether $\\vecχ(G)-\\lceil \\frac{1}{2} \\text{Mad}(G)\\rceil$ can be bounded by a linear function of $r$. In this paper, we prove that $ \\vecχ(G) \\leq\\lceil \\frac{1}{2} \\text{Mad}(G)\\rceil +7$ for every 3-partite graph $G$. As a corollary, we also improve Chen, Mohar and Wu's bounds for the 3-colorable planar graphs and the outerplanar graphs. Our proof use the notion of potential out-degree and weighted matching lemma with special weighted functions. We also construct a class of $r$-partite graphs with $\\vecχ(G)\\geq\\lceil \\frac{1}{2} \\text{Mad}(G)\\rceil +r+1$ to be the possible extremal graphs.",
+          "authors": [
+            "Xiaolin Wang",
+            "Guangmiao Yu"
+          ],
+          "published": "2026-04-16T06:27:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14669v1",
+          "entry_id": "http://arxiv.org/abs/2604.14669v1",
+          "title": "Zeroth-Order Optimization at the Edge of Stability",
+          "summary": "Zeroth-order (ZO) methods are widely used when gradients are unavailable or prohibitively expensive, including black-box learning and memory-efficient fine-tuning of large models, yet their optimization dynamics in deep learning remain underexplored. In this work, we provide an explicit step size condition that exactly captures the (mean-square) linear stability of a family of ZO methods based on the standard two-point estimator. Our characterization reveals a sharp contrast with first-order (FO) methods: whereas FO stability is governed solely by the largest Hessian eigenvalue, mean-square stability of ZO methods depends on the entire Hessian spectrum. Since computing the full Hessian spectrum is infeasible in practical neural network training, we further derive tractable stability bounds that depend only on the largest eigenvalue and the Hessian trace. Empirically, we find that full-batch ZO methods operate at the edge of stability: ZO-GD, ZO-GDM, and ZO-Adam consistently stabilize near the predicted stability boundary across a range of deep learning training problems. Our results highlight an implicit regularization effect specific to ZO methods, where large step sizes primarily regularize the Hessian trace, whereas in FO methods they regularize the top eigenvalue.",
+          "authors": [
+            "Minhak Song",
+            "Liang Zhang",
+            "Bingcong Li",
+            "Niao He",
+            "Michael Muehlebach",
+            "Sewoong Oh"
+          ],
+          "published": "2026-04-16T06:23:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14639v1",
+          "entry_id": "http://arxiv.org/abs/2604.14639v1",
+          "title": "Unimodality and log-concavity of generalized Glasby-Paseman sequences",
+          "summary": "In this paper, we consider a two-parameter ($l$ and $a$) generalization of a sequence that Glasby and Paseman considered. Based on computer experiments, we conjecture its unimodality, log-concavity, peak positions, and the asymptotic behavior of the maximum values. Then we prove this conjecture for the case where $l=2$ and $a=1$. We finish the paper by making some comments about the conjecture on the generalized sequence.",
+          "authors": [
+            "Seok Hyun Byun",
+            "Svetlana Poznanović"
+          ],
+          "published": "2026-04-16T05:30:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14628v1",
+          "entry_id": "http://arxiv.org/abs/2604.14628v1",
+          "title": "Orbits and incidence matrices for points, planes and lines regarding the twisted cubic in PG(3,q), q = 2, 3, 4",
+          "summary": "In the three-dimensional projective space PG(3,q) over the finite field F_q with q elements, we consider the normal rational curve known as a twisted cubic and the projectivity group G_q that fixes it. For q = 2, 3, 4, we solve the open problems of classifying the orbits of points, planes, and lines under G_q and of determining the corresponding incidence matrices between points, planes, and lines partitioned into these orbits.",
+          "authors": [
+            "Alexander A. Davydov",
+            "Stefano Marcugini",
+            "Fernanda Pambianco"
+          ],
+          "published": "2026-04-16T05:13:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14542v1",
+          "entry_id": "http://arxiv.org/abs/2604.14542v1",
+          "title": "The $n$-Point Function of $t$-Core Partitions and Topological Vertex",
+          "summary": "In this paper, we study the $n$-point function of $t$-core partitions. The main tool is the topological vertex, originally developed to study the topological string theory for toric Calabi--Yau 3-folds. By virtue of the topological vertex, we introduce the $q$-deformed $n$-point function that generalizes both the ordinary $n$-point function of all integer partitions studied by Bloch--Okounkov and $t$-core partition case treated here. As a consequence, we provide a closed formula for the $n$-point function of $t$-core partitions in terms of theta functions, and prove that the corresponding correlation functions are quasimodular forms.",
+          "authors": [
+            "Chenglang Yang"
+          ],
+          "published": "2026-04-16T02:19:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.14512v1",
+          "entry_id": "http://arxiv.org/abs/2604.14512v1",
+          "title": "CBCL: Safe Self-Extending Agent Communication",
+          "summary": "Agent communication languages (ACLs) enable heterogeneous agents to share knowledge and coordinate across diverse domains. This diversity demands extensibility, but expressive extension mechanisms can push the input language beyond the complexity classes where full validation is tractable. We present CBCL (Common Business Communication Language), an agent communication language that constrains all messages, including runtime language extensions, to the deterministic context-free language (DCFL) class. CBCL allows agents to define, transmit, and adopt domain-specific \"dialect\" extensions as first-class messages; three safety invariants (R1--R3), machine-checked in Lean 4 and enforced in a Rust reference implementation, prevent unbounded expansion, applying declared resource limits, and preserving core vocabulary. We formalize the language and its safety properties in Lean 4, implement a reference parser and dialect engine in Rust with property-based and differential tests, and extract a verified parser binary. Our results demonstrate that homoiconic protocol design, where extension definitions share the same representation as ordinary messages, can be made provably safe. As autonomous agents increasingly extend their own communication capabilities, formally bounding what they can express to each other is a precondition for oversight.",
+          "authors": [
+            "Hugo O'Connor"
+          ],
+          "published": "2026-04-16T00:57:48+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-04-19T05:11:37.321448+00:00",
+      "updated_at": "2026-04-19T05:11:37.321448+00:00",
+      "finalized_at": null
     }
   ]
 }
