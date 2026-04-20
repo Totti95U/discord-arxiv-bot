@@ -33620,6 +33620,448 @@
       "created_at": "2026-04-19T05:11:37.321448+00:00",
       "updated_at": "2026-04-19T08:04:02.394948+00:00",
       "finalized_at": "2026-04-19T08:04:02.394918+00:00"
+    },
+    {
+      "pipeline_id": "20260420T052224Z-ec4875d1",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/lkkz7nworu4zz7i1ew2cyetu7518tr9l5obr",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16291v1",
+          "entry_id": "http://arxiv.org/abs/2604.16291v1",
+          "title": "Global dynamics and regime shifts in a resource-consumer model with facilitation and habitat loss",
+          "summary": "Modelling how populations respond to habitat loss is crucial for understanding ecosystem stability, especially when positive interactions among resource species, such as plant-plant facilitation, play a key role. Habitat loss not only reduces available organic nutrients and space for primary producers but also disrupts the positive feedbacks that sustain resource populations, thereby affecting consumer persistence and the overall system's stability. We analyse a cubic planar model describing resource-consumer dynamics with facilitation under progressive habitat loss. Our study characterizes the parameter space and enumerates all the phase portraits within the Poincaré disk under ecologically relevant conditions. We show that the system has a unique stable limit cycle and characterize analytically the heteroclinic bifurcation curve involving the collapse of the resource and the consumer, enabling us to determine how the parameter region sustaining coexistence oscillations narrows under habitat destruction. To further explore these dynamics, we construct a piecewise-linear (PWL) approximation that preserves the system's qualitative behaviour, allowing us to obtain an explicit expression for the heteroclinic bifurcation. Finally, we investigate how extrinsic noise affecting the resource species impacts the overall dynamics, showing that stochasticity can anticipate the onset of the heteroclinic bifurcation causing earlier co-extinctions.",
+          "authors": [
+            "Teodoro Mayayo",
+            "Josep Sardanyés",
+            "Joan Torregrosa"
+          ],
+          "published": "2026-04-17T17:53:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16282v1",
+          "entry_id": "http://arxiv.org/abs/2604.16282v1",
+          "title": "Geometric regularization of autoencoders via observed stochastic dynamics",
+          "summary": "Stochastic dynamical systems with slow or metastable behavior evolve, on long time scales, on an unknown low-dimensional manifold in high-dimensional ambient space. Building a reduced simulator from short-burst ambient ensembles is a long-standing problem: local-chart methods like ATLAS suffer from exponential landmark scaling and per-step reprojection, while autoencoder alternatives leave tangent-bundle geometry poorly constrained, and the errors propagate into the learned drift and diffusion. We observe that the ambient covariance~$Λ$ already encodes coordinate-invariant tangent-space information, its range spanning the tangent bundle. Using this, we construct a tangent-bundle penalty and an inverse-consistency penalty for a three-stage pipeline (chart learning, latent drift, latent diffusion) that learns a single nonlinear chart and the latent SDE. The penalties induce a function-space metric, the $ρ$-metric, strictly weaker than the Sobolev $H^1$ norm yet achieving the same chart-quality generalization rate up to logarithmic factors. For the drift, we derive an encoder-pullback target via Itô's formula on the learned encoder and prove a bias decomposition showing the standard decoder-side formula carries systematic error for any imperfect chart. Under a $W^{2,\\infty}$ chart-convergence assumption, chart-level error propagates controllably to weak convergence of the ambient dynamics and to convergence of radial mean first-passage times. Experiments on four surfaces embedded in up to $201$ ambient dimensions reduce radial MFPT error by $50$--$70\\%$ under rotation dynamics and achieve the lowest inter-well MFPT error on most surface--transition pairs under metastable Müller--Brown Langevin dynamics, while reducing end-to-end ambient coefficient errors by up to an order of magnitude relative to an unregularized autoencoder.",
+          "authors": [
+            "Sean Hill",
+            "Felix X. -F. Ye"
+          ],
+          "published": "2026-04-17T17:44:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16271v1",
+          "entry_id": "http://arxiv.org/abs/2604.16271v1",
+          "title": "Parallelizing the branch-and-bound with isomorphism pruning algorithm for classifying orthogonal arrays",
+          "summary": "We provide a method for parallelizing the branch-and-bound with isomorphism pruning algorithm developed by Margot [Symmetric ILP: Coloring and small integers, Discrete Optimization (4) (2007), 40-62]. We apply our method to classify orthogonal arrays. For classifying all non-OD- equivalent OA(128, 9, 2, 4) and OA(144, 9, 2, 4) our method results in linear speedups. Finally, our method enables classifying all non-OD-equivalent OA(192, k, 2, 4) for k = 9, 10, 11 for the first time.",
+          "authors": [
+            "Dursun Bulutoglu"
+          ],
+          "published": "2026-04-17T17:28:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16255v1",
+          "entry_id": "http://arxiv.org/abs/2604.16255v1",
+          "title": "Multisymmetric functions on eventually constant cyclic graphs",
+          "summary": "The study of spanning trees and related structures is central in graph theory, closely connected to understanding functions between finite sets. This paper generalizes the established relationship between rooted trees and eventually constant endomorphisms to a wider context including $k$-tuples of functions among $k$ disjoint vertex sets. We derive a weighted count of eventually constant $k$-tuples, which are characterized by their stabilization to constancy upon iterated composition. This construction is the set-theoretic analogue of the nilpotent cone and offers new insight into the combinatorial structure of cyclic digraphs. By identifying these $k$-tuples with their induced digraphs, we construct explicit formulas for their generating polynomials and analyze the cardinality of the set of eventually constant $k$-tuples. These polynomials are multisymmetric in $k$ sets of variables and can be re-expressed as the character of a representation of the product of general linear groups. We extend the ideas to the more general structures of eventually $N$-cyclic and $λ$-cyclic $k$-tuples, which we define and provide similar theorems for their generating functions and cardinality.",
+          "authors": [
+            "Radford Green",
+            "Cornell Holmes",
+            "Mee Seong Im"
+          ],
+          "published": "2026-04-17T17:14:39+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16252v1",
+          "entry_id": "http://arxiv.org/abs/2604.16252v1",
+          "title": "Universal dualities for Wilson loops in lattice Yang-Mills",
+          "summary": "We identify a universal finite-$N$ structure underlying Wilson loop expectations in lattice Yang-Mills, in any dimension $d\\geq 2$, for gauge group $\\mathrm{U}(N)$, and for arbitrary smooth central plaquette actions. The starting point is a state-sum expansion in plaquette labels by irreducible representations, in which each term factorizes into an action-dependent spectral weight and an action-independent topological coefficient. We then analyze these coefficients in three exact ways: as a gauge/string expansion over decorated spanning surfaces, as a local spin-foam/channel model on the dual incidence graph, and as a universal finite-$N$ master loop equation that closes on the coefficient side. As a consequence, several recent Wilson-action results are recovered as specializations of our broader action-agnostic framework.",
+          "authors": [
+            "Thibaut Lemoine"
+          ],
+          "published": "2026-04-17T17:11:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16188v1",
+          "entry_id": "http://arxiv.org/abs/2604.16188v1",
+          "title": "Some results on small ordered and cyclic Ramsey numbers",
+          "summary": "Let $k \\in \\mathbb{N}$ and let $H_1, H_2, \\ldots, H_k$ be simple graphs such that for each $j \\in \\{ 1, 2, \\ldots, k \\}$, the vertex set of $H_j$ is $\\{ 0, 1, 2, \\ldots, n_j - 1 \\}$ for some $n_j \\in \\mathbb{N}$. The ordered Ramsey number $R_\\mathrm{ord}(H_1, H_2, \\ldots, H_k)$ is the smallest $n \\in \\mathbb{N}$ for which every $k$-edge-coloring of the complete graph on the vertex set $\\{ 0, 1, 2, \\ldots, n - 1 \\}$ contains $H_j$ as a monochromatic subgraph of color $j$ for some $j \\in \\{ 1, 2, \\ldots, k \\}$, with the vertices appearing in the same order as in $H_j$. Inspired by the work of Poljak, we apply the Kissat SAT solver to determine new small two-color ordered Ramsey numbers of various classes of graphs: monotone paths, monotone cycles, alternating paths, stars, complete graphs and nested matchings. In addition, we introduce the cyclic Ramsey numbers $R_\\mathrm{cyc}(H_1, H_2, \\ldots, H_k)$ as a natural relaxation of the ordered Ramsey numbers, and once again use Kissat to determine various such numbers for the two-color case. By observing structural patterns in the computational results, we determine all ordered or cyclic Ramsey numbers for several pairs of classes of graphs. Furthermore, we obtain some bounds on ordered and cyclic Ramsey numbers where one argument is a connected graph, while the other is a monotone path or a monotone cycle. We also explore how reinforcement learning can be used through the recently developed Reinforcement Learning for Graph Theory (RLGT) framework to obtain lower bounds on ordered and cyclic Ramsey numbers. Finally, we introduce the permutational Ramsey numbers to show how the different Ramsey-type formulations involving standard, ordered and cyclic Ramsey numbers can be unified within a group-theoretic framework.",
+          "authors": [
+            "Nino Bašić",
+            "Ivan Damnjanović",
+            "Dragan Stevanović",
+            "Ivan Stošić"
+          ],
+          "published": "2026-04-17T15:57:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16159v1",
+          "entry_id": "http://arxiv.org/abs/2604.16159v1",
+          "title": "Halfspace separation in geodesic convexity",
+          "summary": "Let $G = V, E$ be a simple connected undirected graph. A set $X \\subseteq V$ is \\emph{geodesically convex} if for any pair of vertices $x, y \\in X$, all vertices on all shortest paths in $G$ from $x$ to $y$ are contained in $X$. A set $H \\subseteq V$ is said to be a {halfspace} if both $H$ and its complement (denoted by $H^c$) are convex. Given two sets $A, B \\subseteq V$, the { halfspace separation} problem asks if there exist complementary halfspaces $H, H^c$ such that $A \\subseteq H$ and $B \\subseteq H^c$. The halfspace separation problem is known to be NP-complete for the geodesic convexity of general graphs. We show that geodesic halfspace separation is polynomial for weakly bridged graphs, pseudo-modular graphs, and the basis graphs of matroids.",
+          "authors": [
+            "Niranjan Nair"
+          ],
+          "published": "2026-04-17T15:29:15+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16153v1",
+          "entry_id": "http://arxiv.org/abs/2604.16153v1",
+          "title": "The QBF Gallery 2023",
+          "summary": "The QBF Gallery 2023, the last QBF evaluation event, continues the tradition to survey and document the state of the art in solving quantified Boolean formulas (QBFs). It provides a detailed overview by collecting newly developed solvers and formulas as benchmarks.\n  This report documents the solvers and formulas submitted by the community and introduces a new, consolidated benchmark set that combines well-evaluated formulas with the submitted instances. The resulting formula set is made publicly available. With this benchmark set, we conduct a comparative analysis of the submitted solvers and publicly available solvers, assessing their performance and current capabilities. In addition, we report on the present status of the QBF Gallery and discuss ideas and directions for future editions to further support research and benchmarking within the QBF community.",
+          "authors": [
+            "Simone Heisinger",
+            "Luca Pulina",
+            "Martina Seidl"
+          ],
+          "published": "2026-04-17T15:23:30+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16151v1",
+          "entry_id": "http://arxiv.org/abs/2604.16151v1",
+          "title": "Extremal results for graphs with binding number strictly less than $1/r$",
+          "summary": "The binding number $b(G)$ of a graph, introduced by Woodall [J. Combin. Theory, Ser. B, 1973], is a central topic of both structural and extremal graph theory. It is closely related to fundamental combinatorial and structural properties of graphs.\n  The graphs with $b(G)\\geq1$ exhibit strong expansion properties and a highly connected global structure. In contrast, the structure for graphs with $b(G)<1$ remains far less well understood. Kane et al. [J. Graph Theory, 1981] proved that if $b(G)<1$, then every binding set of $G$ is independent. Goddard and Swart [Quaest. Math., 1990] showed that if $b(G)\\leq1$, then the toughness $τ(G)\\leq b(G).$ This makes it particularly interesting to investigate extremal problems for graphs with \\(b(G)<1\\). For any integer $r\\geq1,$ we completely characterize the unique extremal graph that maximizes the size (spectral radius) among all graphs of order $n$ satisfying $b(G)<\\frac{1}{r}.$\n  For any bipartite graph $G=(X,Y)$ on $n$ vertices, it is readily seen that $b(G)\\leq\\min\\{|X|/|Y|,|Y|/|X|\\}\\leq1.$ Notably, the complete balanced bipartite graph $K_{\\frac{n}{2}, \\frac{n}{2}}$ achieves the maximum size (spectral radius) among all bipartite graphs with $b(G)=1$. In this paper, we completely determine the extremal graphs maximizing the size or the spectral radius among all bipartite graphs with $b(G)<\\frac{1}{r}$, where $r\\geq1$ is an integer.",
+          "authors": [
+            "Ruifang Liu",
+            "Hongyu Chen",
+            "Ao Fan"
+          ],
+          "published": "2026-04-17T15:21:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16141v1",
+          "entry_id": "http://arxiv.org/abs/2604.16141v1",
+          "title": "Generation of Generalised Wreath Products of Symmetric Groups",
+          "summary": "Let I be a finite partially ordered set and let (Sym(Δi),Δi)i be a sequence of symmetric groups indexed by I. Construct the generalised wreath product (F, Δ) on this sequence of permutation groups. We determine the minimum number d(F) of generators required for this generalised wreath product.",
+          "authors": [
+            "Jiaping Lu"
+          ],
+          "published": "2026-04-17T15:13:04+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16125v1",
+          "entry_id": "http://arxiv.org/abs/2604.16125v1",
+          "title": "Generic families of circle diffeomorphisms have many coexisting periodic orbits",
+          "summary": "We prove that for a generic family of circle diffeomorphisms every parameter value that corresponds to an irrational rotation number is approximated by parameter values for which the diffeomorphisms have arbitrarily large finite numbers of periodic orbits. This phenomenon implies that families where irrational rotation numbers appear are not weakly structurally stable. Moreover, we prove that any locally residual set of one-parameter families with nonconstant rotation number yields a continuum of weak equivalence classes of families.",
+          "authors": [
+            "Ivan Shilin"
+          ],
+          "published": "2026-04-17T14:59:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16091v1",
+          "entry_id": "http://arxiv.org/abs/2604.16091v1",
+          "title": "Cluster topography",
+          "summary": "Using the LP algebraic toolkit, Conway's original topograph is rethought of as a cluster construction, paving the way for a wider topography based on mutation-type local rules. As a remarkable application of such cluster-driven upgrade, both the process of analytic continuation for Painlevé VI and the reduction algorithm for quadratic forms are endowed with the Laurent phenomenon. En passant, the rattlesnake is defined so to complete the bijection between snake graphs and rationals to the whole of $\\mathbb{Q}$.",
+          "authors": [
+            "Davide Dal Martello"
+          ],
+          "published": "2026-04-17T14:21:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16078v1",
+          "entry_id": "http://arxiv.org/abs/2604.16078v1",
+          "title": "Wedderburn decomposition of the rational group algebras of $\\operatorname{SL}_2(q)$ and $\\operatorname{PSL}_2(q)$",
+          "summary": "In this article, we derive explicit combinatorial formulas, depending only on $q$, for the Wedderburn decomposition of the rational group algebras of the finite linear groups $\\operatorname{SL}_2(q)$ and $\\operatorname{PSL}_2(q)$. Furthermore, we also determine the number of pairwise non-isomorphic simple $\\mathbb Q G$-modules of each possible dimension for $G$ being either $\\operatorname{SL}_2(q)$ or $\\operatorname{PSL}_2(q)$.",
+          "authors": [
+            "Ram Karan Choudhary",
+            "Saikat Panja"
+          ],
+          "published": "2026-04-17T14:05:28+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16046v1",
+          "entry_id": "http://arxiv.org/abs/2604.16046v1",
+          "title": "Rainbow Separating Path Systems",
+          "summary": "We introduce a colorful version of separating path systems, in which two edges can only be separated from each other by two paths of distinct colors. We calculate the minimum sizes of such systems for various standard classes of graphs and numbers of colors. With respect to this setup, we identify three possible asymptotic behaviors for a class of graphs as the number of colors goes to infinity, and we find a wide range of examples that display each of these behaviors.",
+          "authors": [
+            "Alexander Clifton",
+            "George Kontogeorgiou",
+            "S Taruni",
+            "Ana Trujillo-Negrete"
+          ],
+          "published": "2026-04-17T13:20:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16016v1",
+          "entry_id": "http://arxiv.org/abs/2604.16016v1",
+          "title": "Extracting an $\\mathbb{N}$-filtered differential modality from a differential modality",
+          "summary": "A differential modality is a comonad on an additive symmetric monoidal category $(\\mathsf{C},\\otimes,I)$, whose underlying functor we denote $!\\colon\\mathsf{C} \\rightarrow \\mathsf{C}$, together with some additional structure including a differential operator $\\partial\\colon!A \\otimes A \\rightarrow !A$. A morphism $f\\colon !A \\rightarrow B$ is interpreted as a smooth function from $A$ to $B$. The notion of an $\\mathbb{N}$-filtered differential modality is a variant in which a notion of degree is present. Instead of a single functor $!\\colon \\mathsf{C} \\rightarrow \\mathsf{C}$, we ask for a family of functors $!_{\\le n}\\colon\\mathsf{C} \\rightarrow \\mathsf{C}$ where $n \\in \\mathbb{N}$. Now, a morphism $f\\colon !_{\\le n} A \\rightarrow B$ is interpreted as a smooth function from $A$ to $B$, with degree less than $n$ for some notion of degree. We prove that under mild conditions, every differential modality on an additive symmetric monoidal category with underlying functor $!\\colon \\mathsf{C} \\rightarrow \\mathsf{C}$ yields an $\\mathbb{N}$-filtered differential modality with underlying functors $!_{\\le n}\\colon\\mathsf{C} \\rightarrow \\mathsf{C}$. A morphism $f\\colon !_{\\le n}A \\rightarrow B$ corresponds to a polynomial map of degree less than $n$ from $A$ to $B$, in the sense that the $(n+1)$-th derivative of $f$ is $0$.",
+          "authors": [
+            "Jean-Baptiste Vienney"
+          ],
+          "published": "2026-04-17T12:45:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.16012v1",
+          "entry_id": "http://arxiv.org/abs/2604.16012v1",
+          "title": "The Erdős-Faudree Problems and the Isolate-Free Core",
+          "summary": "In 1981, Erdős and Faudree asked whether there exists an infinite family of graphs $G_N$ on $N$ vertices with $Δ(G_N)<N-1$ and $\\sri(G_N)=1$, and whether every family with $|V(G_N)|=N$ and $Δ(G_N)<c$ for some fixed constant $c$ must satisfy $\\sri(G_N)\\to 0$. We show first that the literal forms of the two questions are controlled entirely by isolated vertices: for every nonempty graph $G$, the whole sequence $\\bigl(\\sr(tK_2,G)\\bigr)_{t\\ge 1}$ depends only on the isolate-free core $\\core(G)$. Consequently, Problem 1 has a positive answer and Problem~2 has a negative answer in exactly their original form. We then turn to the genuine content behind the two problems. For Problem 1 we study connected graphs and prove a complete limit theorem: for every $α\\in[0,1]$ there exists a family of connected bipartite graphs $G_N$ with $|V(G_N)|=N$ and $\\sri(G_N)\\toα$; in particular there are connected graphs with $Δ(G_N)=N-2$ and $\\sri(G_N)\\to 1$. For Problem~2 we prove a strengthened positive statement: if $Δ(G_N)<c$ for a fixed constant $c$ and the isolate-free core of $G_N$ has order tending to infinity, then $\\sri(G_N)\\to 0$. In particular every connected bounded-degree family satisfies $\\sri(G_N)\\to 0$. Thus the original Erdős-Faudree questions are resolved in their literal form, and the mechanism behind their connected and disconnected behavior is identified precisely.",
+          "authors": [
+            "Yaping Mao"
+          ],
+          "published": "2026-04-17T12:38:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15992v1",
+          "entry_id": "http://arxiv.org/abs/2604.15992v1",
+          "title": "Solving Fuzzy Satisfiability via Mixed-Integer Non-Linear Programming",
+          "summary": "This paper introduces SATFuL, a SAT solver for fuzzy logics. In contrast to the Boolean case, for which numerous SAT solvers exist, the SAT problem for fuzzy logics has attracted less attention, even though these tools have interesting applications. Unlike existing SAT solvers for fuzzy logics, SATFuL uses MINLP (Mixed Integer Non-Linear Programming) solvers to check the satisfiability of fuzzy formulas. This approach offers certain benefits; for instance, our tool can handle all major variations of fuzzy propositional logic, whereas other fuzzy solvers are usually tailored to specific versions of fuzzy logic. We conduct some experiments and demonstrate that the performance of our tool is comparable with state-of-the-art fuzzy solvers for Lukasiewicz logic, and outperforms available solvers for Product logic. The approach is sound and complete and can be easily extended to accommodate new fuzzy operators.",
+          "authors": [
+            "Pablo F. Castro"
+          ],
+          "published": "2026-04-17T12:16:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15943v1",
+          "entry_id": "http://arxiv.org/abs/2604.15943v1",
+          "title": "Masures associated with split Kac--Moody groups over valued fields",
+          "summary": "Masures are generalizations of Bruhat-Tits buildings adapted to the study of Kac--Moody groups over valued fields. They were introduced by Gaussent and Rousseau in 2007. Rousseau defined an axiomatic for these object and we simplified it. In this paper, which is mainly expository, we construct the masure associated with a split Kac--Moody group over a valued field, and we prove that it satisfies our axiomatic.",
+          "authors": [
+            "Auguste Hebert"
+          ],
+          "published": "2026-04-17T11:03:42+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15925v1",
+          "entry_id": "http://arxiv.org/abs/2604.15925v1",
+          "title": "Structure preserving properties of higher order moment closures for TASEP",
+          "summary": "The totally asymmetric simple exclusion process (TASEP) is a stochastic model for the unidirectional flow of interacting particles on a 1D-lattice that is much used in systems biology and statistical physics. Its master equation describes the evolution of the probability distribution on the configuration space. The size of the master equation grows exponentially with the length of the lattice. It is known that the complexity of the system may be reduced using mean-field approximations. We provide a rigorous definition of a family of such models using moments of any order and an extension to the pair approximation for obtaining closures for the system. The dimension of these models grows linearly with the lattice size and exponentially in the order of the approximation. Moreover, we show that the states of these models still have a probabilistic interpretation and that basic structural properties of the master equation are preserved. This extends known results on the Ribosome Flow Model which can be viewed as the first order approximation for TASEP.",
+          "authors": [
+            "Kilian Pioch",
+            "Lars Grüne",
+            "Thomas Kriecherbauer",
+            "Michael Margaliot"
+          ],
+          "published": "2026-04-17T10:29:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15909v1",
+          "entry_id": "http://arxiv.org/abs/2604.15909v1",
+          "title": "The general position number of digraphs",
+          "summary": "The general position number for graphs ask for largest vertex subsets $S$ such that no three vertices are contained on a common shortest path. We examine this problem in the setting of directed graphs. We provide bounds for the general position number of digraphs, show that the problem is NP-complete for oriented graphs, investigate the problem for some important families of digraphs such as circulant digraphs, Kautz digraphs and permutation digraphs, and study the general position numbers obtained from all orientations of an undirected graph.",
+          "authors": [
+            "Ullas Chandran S. V.",
+            "Gabriele Di Stefano",
+            "Grahame Erskine",
+            "Haritha S",
+            "Elias John Thomas",
+            "James Tuite"
+          ],
+          "published": "2026-04-17T10:10:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15844v1",
+          "entry_id": "http://arxiv.org/abs/2604.15844v1",
+          "title": "Uniform estimates for Delannoy numbers and dimension-free estimates for discrete maximal functions over cross-polytopes",
+          "summary": "We prove a uniform upper and lower bound for Delannoy numbers. This is achieved by using the representation of Delannoy numbers as the number of lattice points in high-dimensional cross-polytopes (also known as hyper-octahedrons or $\\ell^1$ balls) and proving a uniform (dimension-free) count for these lattice points. Using this count, we establish dimension-free estimates for discrete maximal functions over cross-polytopes. By proving a comparison principle with the continuous setting, we obtain a dimension-free estimate on all $\\ell^p(\\mathbb{Z}^d)$ spaces for radii $R>C d^{3/2}.$ We also treat the full maximal function on $\\ell^2(\\mathbb{Z}^d)$ for small radii $R\\le d^{1-\\varepsilon}$ and the dyadic maximal function for any radii.",
+          "authors": [
+            "Dariusz Kosz",
+            "Jakub Niksiński",
+            "Błażej Wróbel"
+          ],
+          "published": "2026-04-17T08:45:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15843v1",
+          "entry_id": "http://arxiv.org/abs/2604.15843v1",
+          "title": "Polish spaces for countable and separable structures through quotient encodings",
+          "summary": "We develop a unified framework for locating natural properties of algebraic and analytic structures within the Borel hierarchy. Objects are presented as quotients of a universal generator and definability is read directly from the quotient data.\n  For separable Banach-type structures (Banach algebras, $C^*$-algebras, Banach lattices, TROs) the kernel space is Polish under the Wijsman topology, and the quotient-norm functional $K\\mapsto \\|x+K\\|$ is continuous, yielding a uniform definability scheme whose Borel ranks are bounded by quantifier alternation depth. For countable algebraic structures (groups, rings, lattices) we work on compact Polish spaces of congruences where atomic predicates are clopen.\n  We obtain explicit Borel upper bounds: in the \\emph{unital} $C^*$-algebra coding based on $C^*_{\\max}(F_\\infty)$, stable finiteness is closed, nuclearity is Borel, simplicity is~$G_δ$, AF-ness lies in~$Π^0_3$, nuclear dimension~$\\le n$ lies in~$Π^0_3$, and for fixed exact~$D$, $D$-absorption is analytic. For countable groups, soficity is~$G_δ$; for abelian groups, slenderness is~$Π^0_3$. We give an internal Borel coding of the $K_0$-assignment in the quotient/Wijsman framework; for each fixed coordinate the corresponding section is $F_σ$, and suspension together with Bott periodicity yields Borel codings of all higher $K$-groups. We also show that several bounds are optimal ($Σ^0_2$- and $Π^0_2$-complete). To calibrate the method's reach, we exhibit a $Π^1_1$-complete property (separable dual in the commutative $C^*$-setting), provably outside the Borel hierarchy.",
+          "authors": [
+            "Tomasz Kania"
+          ],
+          "published": "2026-04-17T08:44:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15839v1",
+          "entry_id": "http://arxiv.org/abs/2604.15839v1",
+          "title": "Discover and Prove: An Open-source Agentic Framework for Hard Mode Automated Theorem Proving in Lean 4",
+          "summary": "Most ATP benchmarks embed the final answer within the formal statement -- a convention we call \"Easy Mode\" -- a design that simplifies the task relative to what human competitors face and may lead to optimistic estimates of model capability. We call the stricter, more realistic setting \"Hard Mode\": the system must independently discover the answer before constructing a formal proof. To enable Hard Mode research, we make two contributions. First, we release MiniF2F-Hard and FIMO-Hard, expert-reannotated Hard Mode variants of two widely-used ATP benchmarks. Second, we introduce Discover And Prove (DAP), an agentic framework that uses LLM natural-language reasoning with explicit self-reflection to discover answers, then rewrites Hard Mode statements into Easy Mode ones for existing ATP provers. DAP sets the state of the art: on CombiBench it raises solved problems from 7 (previous SOTA, Pass@16) to 10; on PutnamBench it is the first system to formally prove 36 theorems in Hard Mode -- while simultaneously revealing that state-of-the-art LLMs exceed 80% answer accuracy on the same problems where formal provers manage under 10%, exposing a substantial gap that Hard Mode benchmarks are uniquely suited to measure.",
+          "authors": [
+            "Chengwu Liu",
+            "Yichun Yin",
+            "Ye Yuan",
+            "Jiaxuan Xie",
+            "Botao Li",
+            "Siqi Li",
+            "Jianhao Shen",
+            "Yan Xu",
+            "Lifeng Shang",
+            "Ming Zhang"
+          ],
+          "published": "2026-04-17T08:40:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15824v1",
+          "entry_id": "http://arxiv.org/abs/2604.15824v1",
+          "title": "Odd Edge Colorings of Graphs with Odd Order",
+          "summary": "An {\\em odd subgraph} of a graph is a subgraph in which every vertex has odd degree. A graph $G$ is said to be {\\em odd $k$-edge-colorable} if there exists an edge-coloring $E(G) \\rightarrow \\{1,2, \\ldots, k\\}$ such that each non-empty color class induces an odd subgraph of $G$. The {\\em odd chromatic index} of $G$, denoted by $χ'_o(G)$, is the minimum $k$ for which $G$ is odd $k$-edge-colorable. In this paper, we prove that every $4$-connected simple graph of odd order is odd 3-edge-colorable, and show that the $4$-connectedness assumption is necessary. We also prove that for a connected Eulerian graph $G$ of odd order, there exists an edge $e$ such that $G-e$ is odd $2$-edge-colorable.",
+          "authors": [
+            "Mikio Kano",
+            "Shun-ichi Maezawa",
+            "Kenta Ozeki"
+          ],
+          "published": "2026-04-17T08:23:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15818v1",
+          "entry_id": "http://arxiv.org/abs/2604.15818v1",
+          "title": "Amorphic complexity and entropy for symbolic model sets",
+          "summary": "We show a continuity result for the Weyl pseudometric on subshifts which are generated by model sets. This fact is then used for multiple constructions of subshifts that exhibit different behavior regarding entropy, amorphic complexity and their maximal equicontinuous factor.",
+          "authors": [
+            "Jamal Drewlo"
+          ],
+          "published": "2026-04-17T08:17:10+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15806v1",
+          "entry_id": "http://arxiv.org/abs/2604.15806v1",
+          "title": "On the Turán number of double stars",
+          "summary": "The Turán number of a graph $F$, $ex(n,F)$, is the maximum number of edges in a graph on $n$ vertices which does not contain $F$ as a subgraph. Let $S_{a,b}$ denote a double star with a central edge $uv$, $a$ leaves connected to $u$ and $b$ leaves connected to $v$. The function $ex(n,S_{a,b})$ has been studied for $a=1,2$, their extremal graphs are disjoint copies of $K_{a+b+1}$ and either a small clique or a near $b$-regular graph. In this paper, we further study $ex(n,S_{3,b})$ and determine the extremal graphs, which have more structures than those of $a=1,2$.",
+          "authors": [
+            "Ping Hu",
+            "Ting Lan"
+          ],
+          "published": "2026-04-17T08:06:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15803v1",
+          "entry_id": "http://arxiv.org/abs/2604.15803v1",
+          "title": "Entropy on Homogeneous Spaces and Classification Results for Subgroups with the Pair Rapid Decay Property",
+          "summary": "We study pair rapid decay for homogeneous spaces \\(G/H\\) and its applications to random walks and subgroup structure. The entropy framework for groups with rapid decay is extended to homogeneous spaces, proving that the asymptotic Shannon entropy on \\(G/H\\) agrees with a spectral-radius quantity \\(c(G,H;μ)\\) for measures with finite entropy and suitable finite moment, and that the lower and upper asymptotic Rényi entropy rates converge to the Shannon entropy as \\(α\\downarrow1\\). For finitely supported measures, we also obtain a spectral-radius formula for the asymptotic Rényi entropy rates \\(h_α(X,μ)\\), \\(α\\in(1,2]\\), and hence continuity at \\(α=1\\). We further introduce the notion of subexponential Lorentz control for pairs \\((G,H)\\) and study the associated classification problems for finitely generated subgroups \\(H\\le G\\) for which \\((G,H)\\) has pair rapid decay or belongs to \\(\\mathbf{SLC}_{\\mathrm{subexp}}\\). We obtain a complete criterion in the strongly relatively hyperbolic case and explicit classifications in several hyperbolic settings. We also show that for \\(G=\\mathrm{SL}_n(\\mathbb Z)\\), \\(n\\ge3\\), the conditions \\((G,H)\\in \\mathbf{SLC}_{\\mathrm{subexp}}\\), pair rapid decay, and finite index of \\(H\\) in \\(G\\) are equivalent.",
+          "authors": [
+            "Jvbin Yao"
+          ],
+          "published": "2026-04-17T08:05:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15727v1",
+          "entry_id": "http://arxiv.org/abs/2604.15727v1",
+          "title": "Structured Abductive-Deductive-Inductive Reasoning for LLMs via Algebraic Invariants",
+          "summary": "Large language models exhibit systematic limitations in structured logical reasoning: they conflate hypothesis generation with verification, cannot distinguish conjecture from validated knowledge, and allow weak reasoning steps to propagate unchecked through inference chains. We present a symbolic reasoning scaffold that operationalizes Peirce's tripartite inference -- abduction, deduction, and induction -- as an explicit protocol for LLM-assisted reasoning. The framework enforces logical consistency through five algebraic invariants (the Gamma Quintet), the strongest of which -- the Weakest Link bound -- ensures that no conclusion in a reasoning chain can exceed the reliability of its least-supported premise. This principle, independently grounded as weakest link resolution in possibilistic logic and empirically validated for chain-of-thought reasoning, prevents logical inconsistencies from accumulating across multi-step inference. We verify all invariants through a property-based testing suite of 100 properties and 16 fuzz tests over 10^5+ generated cases, providing a verified reference implementation of the invariants suitable as a foundation for future reasoning benchmarks.",
+          "authors": [
+            "Sankalp Gilda",
+            "Shlok Gilda"
+          ],
+          "published": "2026-04-17T05:59:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15716v1",
+          "entry_id": "http://arxiv.org/abs/2604.15716v1",
+          "title": "Mathematical modeling of biochemical signal propagation in many-stage enzymatic pathways",
+          "summary": "Biochemical signalling cascades transduce extracellular stimuli into cellular responses through sequences of discrete, node-to-node activations. While signal fidelity depends critically on local interaction kinetics, the mechanisms governing information propagation in realistic, highly variable kinetic contexts remain poorly understood. In this paper, we develop a mathematical framework for travelling waves in canonical feed-forward pathways governed by nonlinear Michaelis-Menten-type kinetics. For uniform pathways, we characterise the complete steady-state landscape and demonstrate that activation bias (the contribution of the binary states of each node to downstream activation) between connected nodes acts as a key bifurcation parameter dictating wave existence. Extending this framework to heterogeneous networks, we show how parameter gradients and random kinetic variations distort wavefronts and induce heavy fluctuations in propagation speed. To recover predictable signal transmission, we introduce a novel reciprocal-velocity spatial rescaling technique. We demonstrate that this coordinate transformation inherently absorbs local kinetic variations, effectively smoothing wave velocities and preserving wavefront profiles without requiring bespoke parameter tuning or continuous limits. Finally, by testing the framework's limits against extreme parameter variability, we reveal how severe kinetic bottlenecks lead to functional pathway fragmentation, offering a mathematically justified basis for rational model reduction in complex biochemical networks.",
+          "authors": [
+            "Chathranee Jayathilaka",
+            "Mark B. Flegg"
+          ],
+          "published": "2026-04-17T05:39:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15713v1",
+          "entry_id": "http://arxiv.org/abs/2604.15713v1",
+          "title": "Just Type It in Isabelle! AI Agents Drafting, Mechanizing, and Generalizing from Human Hints",
+          "summary": "Type annotations are essential when printing terms in a way that preserves their meaning under reparsing and type inference. We study the problem of complete and minimal type annotations for rank-one polymorphic $λ$-calculus terms, as used in Isabelle. Building on prior work by Smolka, Blanchette et al., we give a metatheoretical account of the problem, with a full formal specification and proofs, and formalize it in Isabelle/HOL. Our development is a series of experiments featuring human-driven and AI-driven formalization workflows: a human and an LLM-powered AI agent independently produce pen-and-paper proofs, and the AI agent autoformalizes both in Isabelle, with further human-hinted AI interventions refining and generalizing the development.",
+          "authors": [
+            "Kevin Kappelmann",
+            "Maximilian Schäffeler",
+            "Lukas Stevens",
+            "Mohammad Abdulaziz",
+            "Andrei Popescu",
+            "Dmitriy Traytel"
+          ],
+          "published": "2026-04-17T05:34:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15698v1",
+          "entry_id": "http://arxiv.org/abs/2604.15698v1",
+          "title": "Rate-Distortion Theory for Deductive Sources under Closure Fidelity",
+          "summary": "We study lossy compression of a finite statement source generated in a fixed deductive environment. The source symbols are statements in a knowledge base endowed with a proof system, and reconstruction fidelity is measured by preservation of deductive closure rather than by symbolwise equality. This induces, once the proof system and canonical order are fixed, a decomposition of the source into an irredundant core and redundant stored consequences. Under a natural disjointness condition on zero-distortion reconstruction sets, we show that the minimum zero-distortion rate equals the source mass of the core times the entropy of the source conditioned on that core. For reconstruction alphabets contained in the deductive closure of the source knowledge base, we further prove that the full rate-distortion function depends only on the core, so redundant states are invisible to both rate and distortion. When the decoder is limited to a bounded number of inference steps, we obtain an exact fixed depth rate-delay-distortion characterization. Under an additional order-robustness assumption identifying the chosen core with the order-free essential set, this characterization interpolates between classical symbolwise compression and unconstrained deductive compression. These results formulate deductive compression as a structured source coding problem and quantify how shared inference structure changes the fundamental limits of communication.",
+          "authors": [
+            "Jianfeng Xu"
+          ],
+          "published": "2026-04-17T04:53:04+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15656v1",
+          "entry_id": "http://arxiv.org/abs/2604.15656v1",
+          "title": "Positive and negative 3-energies of graphs",
+          "summary": "For a simple graph $G$ with $n$ vertices, let $A_G$ denote the adjacency matrix of $G$, and let $λ_1(G) \\geq λ_2(G) \\geq \\dots \\geq λ_n(G)$ be its eigenvalues. For an integer $p \\geq 2$, the positive $p$-energy and negative $p$-energy of $G$, denoted $\\mathcal{E}^+_p(G)$ and $\\mathcal{E}^-_p(G)$, are defined as follows: $\\mathcal{E}^+_p(G) = \\sum_{λ_i(G) > 0} |λ_i(G)|^p$ and $\\mathcal{E}^-_p(G) = \\sum_{λ_i(G) < 0} |λ_i(G)|^p,$ respectively. Tang, Liu, and Wang proposed a conjecture that, for any integer $p \\geq 2$, every connected $n$-vertex graph $G$ satisfies $\\mathcal{E}^+_p(G) \\geq \\mathcal{E}^+_p(P_n)$. Akbari, Kumar, Mohar, and Pragada conjectured that, for any $p \\geq 2$, every connected $n$-vertex graph $G$ satisfies $\\mathcal{E}^-_p(G) \\geq \\mathcal{E}^-_p(K_n)$, and they proved this conjecture for $p \\geq 4$. In this paper, we prove that every connected $n$-vertex graph, except for $K_1$, $K_2$, and $P_3$, satisfies $\\mathcal{E}^+_3(G) \\geq \\frac{\\sqrt{5}}{2}n$. Moreover, we show that for any integer $p \\geq 3$, every connected $n$-vertex graph $G$ satisfies $\\mathcal{E}^-_p(G) \\geq \\mathcal{E}^-_p(K_n)$, which improves upon the previously known result.",
+          "authors": [
+            "Zhengbo Chen",
+            "Zhouningxin Wang",
+            "Xiao-Dong Zhang"
+          ],
+          "published": "2026-04-17T03:14:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15649v1",
+          "entry_id": "http://arxiv.org/abs/2604.15649v1",
+          "title": "Signless Laplacian index conditions for trebly chorded cycles in graphs with given order",
+          "summary": "It is proved that for a graph of order $n$, where $n\\ge 6$, if the signless Laplacian index is larger than or equal to certain value depending on $n$, then the graph contains a trebly chorded cycle, where the chords incident to a common vertex, unless it is one of two specified graphs.",
+          "authors": [
+            "Jin Cai",
+            "Bo Zhou"
+          ],
+          "published": "2026-04-17T02:47:29+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15643v1",
+          "entry_id": "http://arxiv.org/abs/2604.15643v1",
+          "title": "On the asymptotic behavior of online Ramsey numbers for paths and cycles",
+          "summary": "The online Ramsey game for graphs $G$ and $H$ is played on the infinite complete graph $K_\\mathbb{N}$. Each round, Builder chooses an edge, and Painter colors it red or blue. The online Ramsey number $\\tilde{r}(G,H)$ is the smallest integer $t$ for which Builder has a strategy that guarantees a red copy of $G$ or a blue copy of $H$ in at most $t$ rounds. In this paper, we prove that for every positive integer $k$, there is a constant $L$ such that $\\lim_{n\\to\\infty}\\frac{\\tilde{r}(P_k,P_n)}{n}=\\lim_{n\\to\\infty}\\frac{\\tilde{r}(P_k,C_n)}{n}=L$.",
+          "authors": [
+            "Sam Beilis",
+            "Israel R. Curbelo"
+          ],
+          "published": "2026-04-17T02:39:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15627v1",
+          "entry_id": "http://arxiv.org/abs/2604.15627v1",
+          "title": "A note on the Burnside problem for homeomorphism groups of manifolds",
+          "summary": "This note studies the Burnside problem for homeomorphism groups of compact connected manifolds. For surfaces, we prove that the identity component of the homeomorphism group is torsion-free precisely when the surface is not the sphere, torus, projective plane, or Klein bottle. An extension argument based on the Tits alternative for mapping class groups then implies that every finitely generated periodic subgroup of the full homeomorphism group is finite for all surfaces outside this exceptional list, recovering and extending a theorem of Guelman and Liousse to non-orientable surfaces. For the circle, we prove that every finitely generated periodic subgroup of its homeomorphism group is finite and cyclic. We close with remarks on manifolds with boundary and open questions on the Burnside problem for hyperbolic three-manifolds and doubled handlebodies.",
+          "authors": [
+            "Donggyun Seo"
+          ],
+          "published": "2026-04-17T02:08:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15620v1",
+          "entry_id": "http://arxiv.org/abs/2604.15620v1",
+          "title": "$PG-NODE^{TB}$: Physics-Guided Neural Ordinary Differential Equations for Tuberculosis Transmission Dynamics",
+          "summary": "Tuberculosis (TB) remains a leading global infectious disease, causing approximately 1.3 million deaths and 10.6 million new infections annually. Classical compartmental ODE models are the standard epidemiological tool for TB, yet their fixed-parameter structure cannot adapt to time-varying dynamics, unmodeled effects, or heterogeneous real-world data. This paper presents a methodological framework and proof-of-concept for applying Physics-Guided Neural Ordinary Differential Equations (PG-NODE) to TB transmission modeling within a SLIR (Susceptible, Latent, Infectious, Recovered) compartmental framework. We perform a rigorous mathematical analysis of the SLIR model, including derivation of the basic reproduction number $\\mathcal{R}_0$, equilibrium analysis, and normalized sensitivity indices. We then reformulate the SLIR system as a PG-NODE, preserving compartmental conservation laws and biological constraints while enabling neural network components to learn unknown or time-varying rate functions from data. Three simulation scenarios illustrate the framework's intended capabilities: (i) adaptive tracking of time-varying transmission rates, (ii) correcting for unmodeled treatment and relapse dynamics with 27\\% lower RMSE than the classical SLIR, and (iii) comparative forecasting of competing intervention policies over a 20-year horizon. Simulation results indicate that PG-NODE has strong potential for improving predictive accuracy while maintaining epidemiological interpretability; full adjoint-based training on real WHO surveillance data is identified as the key next step for empirical validation.",
+          "authors": [
+            "Selain K. Kasereka",
+            "Eric M. Mafuta",
+            "Fadi Al Machot",
+            "Emmanuel M. Kabengele",
+            "Jean Chamberlain Chedjou",
+            "Kyandoghere Kyamakya"
+          ],
+          "published": "2026-04-17T01:58:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.15599v1",
+          "entry_id": "http://arxiv.org/abs/2604.15599v1",
+          "title": "Making ends meet or just meeting at the ends? Assessing end-to-end distance in folded RNA sequences and other branched structures",
+          "summary": "Researchers have repeatedly found that the ends of an RNA sequence are significantly closer than expected for a random linear chain. However, we prove that the ends of a branched structure are almost certainly close. Our results are obtained via combinatorial branching models of increasing complexity using tools from multivariate analytic combinatorics. We completely characterize parameters tracking end-to-end distance, including means and variances. Then, we compare to existing datasets of known RNA structures, as well as the minimum free-energy structures of randomized shuffles. We find that the shuffled structures resemble our theoretical distributions while the known RNA structures have similar parameter values but are more concentrated.",
+          "authors": [
+            "Torin Greenwood",
+            "Christine Heitsch"
+          ],
+          "published": "2026-04-17T00:41:55+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-04-20T05:22:24.695877+00:00",
+      "updated_at": "2026-04-20T05:22:24.695877+00:00",
+      "finalized_at": null
     }
   ]
 }
