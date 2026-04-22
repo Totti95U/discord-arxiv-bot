@@ -34191,6 +34191,309 @@
       "created_at": "2026-04-20T05:22:24.695877+00:00",
       "updated_at": "2026-04-20T07:52:56.706765+00:00",
       "finalized_at": "2026-04-20T07:52:56.706741+00:00"
+    },
+    {
+      "pipeline_id": "20260422T050816Z-d0bac1e9",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/hz843jlnu9dxnz2jp17rosxy3c5bog58g6zo",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17661v1",
+          "entry_id": "http://arxiv.org/abs/2604.17661v1",
+          "title": "Maximum Cuts and Fractional Cut Covers: A Computational Study of a Randomized Semidefinite Programming Approach",
+          "summary": "We present experimental work on a primal-dual framework simultaneously approximating maximum cut and weighted fractional cut-covering instances. In this primal-dual framework, we solve a semidefinite programming (SDP) relaxation to either the maximum cut problem or to the weighted fractional cut-covering problem, and then independently sample a collection of cuts via the random-hyperplane technique. We then simultaneously certify the approximate optimality of a cut and a fractional cut cover. We present several implementations which reliably achieve the celebrated Goemans and Williamson approximation ratio of $α_{\\mathrm{GW}} \\approx 0.878$ for both optimization problems simultaneously, after $\\lceil 128 \\ln m \\rceil$ samples, a number significantly smaller than the best theoretical bounds.\n  This is the first experimental work approximating the weighted fractional cut-covering problem, and we deliver robust and repeatable results despite the use of randomized algorithms and floating-point arithmetic. Careful pre-processing of instances and post-processing of numeric results allow for good empirical outcomes with both first-order and second-order SDP solvers. Nearly optimal SDP solutions are suitably perturbed to ensure better probabilistic and numerical behavior. Our experiments deviate from theory by using a linear programming (LP) solver to compute fractional cut covers. For most instances studied, LP solving produces certifiably better results than the theoretical algorithm after $\\lceil 128 \\ln m \\rceil$ samples. All our experiments strictly follow a unified pipeline which explicitly documents all parameters used in each run.",
+          "authors": [
+            "Nathan Benedetto Proença",
+            "Marcel K. de Carli Silva",
+            "Cristiane M. Sato",
+            "Levent Tunçel"
+          ],
+          "published": "2026-04-19T23:22:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17613v1",
+          "entry_id": "http://arxiv.org/abs/2604.17613v1",
+          "title": "Forbidden subgraphs in divisor graphs and an Erdős divisibility problem",
+          "summary": "Erdős asked for the largest size $f(n)$ of a subset of $\\{1,\\dots,n\\}$ with no element dividing two others. We show that $f(n)=c_2\\,n+o(n)$ for an effectively computable constant $c_2$, and moreover that the number $q(n)$ of such subsets satisfies $q(n)=β_2^{n+o(n)}$ for a computable constant $β_2$. To prove this, we recast the divisibility constraint as forbidding a certain directed subgraph in the divisor graph on $\\{1,\\dots,n\\}$ and prove a more general result: for any finite family of connected forbidden subgraphs of the divisor graph, both the extremal density and counting rate are effectively computable. The proof uses a theorem of McNew on local statistics of divisor graphs.",
+          "authors": [
+            "Damek Davis"
+          ],
+          "published": "2026-04-19T20:55:53+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17608v1",
+          "entry_id": "http://arxiv.org/abs/2604.17608v1",
+          "title": "Uniform Hyperbolicity and Symbolic Dynamics: Markov Partitions, Shadowing, and the Coding of Axiom A Systems",
+          "summary": "This paper establishes the geometric theory of uniformly hyperbolic sets with explicit quantitative bounds throughout, and contains five main theorems. The Stable Manifold Theorem is proved via the backward graph transform, with a complete fiber-contraction argument yielding $C^r$ regularity and Hölder dependence of the local stable and unstable manifolds on the base point, with explicit manifold-size estimate in terms of the contraction rate $λ$ and the second-derivative bound of the diffeomorphism. The Spectral Decomposition Theorem gives the unique decomposition of the nonwandering set into basic sets, with explicit mixing rates for the topologically mixing factors. The Shadowing Lemma provides explicit error bounds controlling how far a pseudo-orbit deviates from a tracking true orbit. The existence of Markov partitions of arbitrarily small diameter is established constructively, with explicit diameter bounds expressed in terms of the shadowing constants. Finally, the coding map from the subshift of finite type to the hyperbolic set is constructed and shown to be Hölder continuous with quantitative control on the exceptional set where it fails to be injective. Along the way we establish canonical coordinates through the bracket map with quantitative bounds. All constants are expressed in terms of the contraction rate, the Hölder exponent of the derivative, the manifold dimension, and the injectivity radius, providing the quantitative infrastructure required to transfer the symbolic spectral theory of Part I and the variational theory of Part II to the smooth setting. This paper constitutes Part III of a six-part series on the thermodynamic formalism for hyperbolic dynamical systems.",
+          "authors": [
+            "Abdoulaye Thiam"
+          ],
+          "published": "2026-04-19T20:44:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17607v1",
+          "entry_id": "http://arxiv.org/abs/2604.17607v1",
+          "title": "On (distance) Laplacian characteristic polynomials of power graphs",
+          "summary": "The characteristic polynomials of the Laplacian and the distance Laplacian matrices of power graphs of groups of order $ pqr $, where $ p,q $ and $ r $ are { primes,} are obtained. Further, the characteristic polynomials of these matrices for proper power graphs of cyclic and dicyclic groups are given. The important inequalities for the zeros of the distance Laplacian characteristic polynomials of power graphs of finite groups are presented in comments.",
+          "authors": [
+            "Bilal Ahmad Rather",
+            "Mustapha Aouchiche",
+            "Victor A. Bovdi"
+          ],
+          "published": "2026-04-19T20:43:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17595v1",
+          "entry_id": "http://arxiv.org/abs/2604.17595v1",
+          "title": "Fundamental cycles in grid graphs",
+          "summary": "We show that the average length of a fundamental cycle with respect to any fixed spanning tree of the $n\\times n$ square grid is at least $Ω(\\log n)$; the bound is asymptotically tight. This result answers in the affirmative a question posed by McCarty in relation to sparse representations of binary matroids.",
+          "authors": [
+            "Bartłomiej Kielak",
+            "Daniel Král'",
+            "Ander Lamaison",
+            "Xichao Shu"
+          ],
+          "published": "2026-04-19T20:02:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17592v1",
+          "entry_id": "http://arxiv.org/abs/2604.17592v1",
+          "title": "TensorRocq: Enabling diagrammatic reasoning in Rocq",
+          "summary": "Symmetric monoidal categories (SMCs) are a common framework for reasoning about computation, focusing on the parallel and sequential compositionality of operations. String diagrams are a ubiquitous and powerful tool for reasoning about equations in SMCs, leveraging eliding the fine details of compositionality to focus on connectivity. However, when working with SMCs in a proof assistant, the rigid equational structure of composition occludes the essential connective information, longer proofs filled with uninformative syntactic manipulation. To address the gap between proof assistants and paper proof, we have developed verified tools for diagrammatic reasoning in Rocq, including inferring term equivalence and rewriting modulo the deformation of string diagrams. This is achieved by converting between syntactic representations of SMC terms and hypergraphs with interfaces, while preserving a common tensor semantics. We provide tools to develop simple SMC theories from generators and relations, and perform equational reasoning these systems. We also enable our tactics to be used in existing verification projects about SMCs which can be given semantics as tensor expressions.",
+          "authors": [
+            "Benjamin Caldwell",
+            "William Spencer",
+            "Robert Rand"
+          ],
+          "published": "2026-04-19T19:52:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17588v1",
+          "entry_id": "http://arxiv.org/abs/2604.17588v1",
+          "title": "A framework for the study of the qualitative dynamics of general Iterated Function Systems",
+          "summary": "We develop a qualitative-dynamics framework for general Iterated Function Systems (IFSs) on locally compact spaces. Our approach extends to IFSs a framework recently developed in the semiflows setting by James Yorke and the present author based on binary relations (streams) that encode which point can be regarded as \"downstream\" from which. This leads to a graph representation of the global qualitative dynamics that separates recurrent behavior from gradient-like behavior.",
+          "authors": [
+            "Roberto De Leo"
+          ],
+          "published": "2026-04-19T19:38:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17557v1",
+          "entry_id": "http://arxiv.org/abs/2604.17557v1",
+          "title": "Causal-Temporal Event Graphs: A Formal Model for Recursive Agent Execution Traces",
+          "summary": "We introduce causal-temporal event graphs (CTEGs) as a formal model for fully resolved recursive agent execution records under single-parenthood causal semantics. We formalise direct event emissions and recursive subagent invocations as extension procedures on generic typed temporal graphs and show that the recursive closure $\\mathscr{E}_\\infty$ of the induced maximal dynamics starting from single causal roots consists entirely of finite sequences of CTEGs. A CTEG is a rooted arborescence whose nodes carry timestamps and event types, subject to the constraint that timestamps be strictly increasing along causal paths. We realise $\\mathscr{E}_\\infty$ as the increasing union of a recursive hierarchy $\\mathscr{E}_0 \\subseteq \\mathscr{E}_1 \\subseteq \\cdots$ of agent execution levels parametrised by recursion depth, which is recognised as the ascending Kleene chain of a monotone operator $\\varphi$ admitting $\\mathscr{E}_\\infty$ as its least fixed point. Although the introduction of the full hierarchy is natural, stabilisation occurs already at $\\mathscr{E}_1$ if one insists that the internal construction of a subagent execution trace be a delegated and opaque computational unit. The CTEG formalism supports compositional construction of globally well-formed execution traces from local agent behaviour without centralised coordination, preserves well-formedness under partial execution failure, and admits a natural relational database encoding. The arborescent structure of CTEGs is further compatible with cryptographic Merkle tree commitments for tamper-evident session verification.",
+          "authors": [
+            "Simon Foldvik"
+          ],
+          "published": "2026-04-19T17:57:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17531v1",
+          "entry_id": "http://arxiv.org/abs/2604.17531v1",
+          "title": "The Geometry of Thermodynamic Equilibrium: Pressure, Tangent Functionals, and Phase Transitions",
+          "summary": "We develop the convex-analytic structure of the thermodynamic formalism for continuous maps on compact metric spaces. The pressure functional is the Legendre-Fenchel transform of the negative entropy, and the biconjugate recovery of the entropy from the pressure establishes a complete duality. Equilibrium states are elements of the subdifferential of the pressure, uniqueness of equilibrium states corresponds to Gâteaux differentiability, and first-order phase transitions correspond to non-differentiability. For systems with specification and Hölder potentials, the pressure is Fréchet differentiable in the Hölder norm, and the second derivative of the pressure equals the asymptotic variance of the Birkhoff sums. We prove a universal variational principle that unifies the classical additive, the subadditive, and the relative variational principles through a single theorem on convex functionals satisfying convexity, lower semi-continuity, coercivity, and cocycle invariance. Extensions to systems with the specification property and to non-compact spaces under coercivity conditions are included, with applications to countable Markov shifts via Sarig's recurrence classification. This paper constitutes Part II of a six-part series on the thermodynamic formalism for hyperbolic dynamical systems.",
+          "authors": [
+            "Abdoulaye Thiam"
+          ],
+          "published": "2026-04-19T16:45:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17528v1",
+          "entry_id": "http://arxiv.org/abs/2604.17528v1",
+          "title": "Gibbs Measures on Symbolic Spaces: A Unified Treatment of Five Characterizations with Explicit Constants",
+          "summary": "We prove that five characterizations of Gibbs measures for Hölder potentials on topologically mixing subshifts of finite type are equivalent: the Jacobian condition, the classical cylinder-based Gibbs property, the eigenmeasure of the Ruelle transfer operator, the variational equilibrium state, and the minimizer of the large deviations rate function. The equivalence is established in a single theorem with explicit constants expressed in terms of the Hölder exponent, the potential norm, the alphabet size, and the mixing time. The proof yields explicit spectral gap estimates for the transfer operator via the Birkhoff cone contraction technique, Lipschitz stability of the Gibbs measure in Wasserstein distance under perturbation of the potential, and statistical limit theorems including a central limit theorem with Berry-Esseen bounds and a large deviations principle. This paper constitutes Part I of a six-part series on the thermodynamic formalism for hyperbolic dynamical systems.",
+          "authors": [
+            "Abdoulaye Thiam"
+          ],
+          "published": "2026-04-19T16:42:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17511v1",
+          "entry_id": "http://arxiv.org/abs/2604.17511v1",
+          "title": "Atomic Decision Boundaries: A Structural Requirement for Guaranteeing Execution-Time Admissibility in Autonomous Systems",
+          "summary": "Autonomous systems increasingly execute actions that directly modify shared state, creating an urgent need for precise control over which transitions are permitted to occur. Existing governance mechanisms evaluate policies prior to execution or reconstruct behavior post hoc, but do not enforce admissibility at the exact moment a state transition is committed. We introduce the atomic decision boundary, a structural property of admission control systems in which the decision and the resulting state transition are jointly determined as a single indivisible step. Formalizing execution as a labeled transition system (LTS), we distinguish two classes: atomic systems, where evaluation and transition are coupled within a single LTS step, and split evaluation systems, where they are separate transitions that may be interleaved by environmental actions. Under realistic concurrent environments, we prove that no construction can make a split system equivalent to an atomic system with respect to admissibility under all execution traces. This limitation is structural, not a matter of policy expressiveness or state availability. We further formalize the Escalate outcome -- absent from classical TOCTOU analyses -- and show its resolution is itself subject to the atomic boundary requirement. We map RBAC and OPA to the split model and contrast them with atomic systems. Admissibility is a property of execution, not evaluation. This paper is the formal foundation of a 4-paper Agent Governance Series: ACP/Paper 1 (arXiv:2603.18829), IML/Paper 2 (10.5281/zenodo.19643761), Fair Allocation/Paper 3 (10.5281/zenodo.19643928), Irreducibility/Paper 4 (10.5281/zenodo.19643950).",
+          "authors": [
+            "Marcelo Fernandez"
+          ],
+          "published": "2026-04-19T16:03:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17509v1",
+          "entry_id": "http://arxiv.org/abs/2604.17509v1",
+          "title": "Rado's covering problem for cubes and balls: a semi-survey",
+          "summary": "What is the largest constant $c\\in [0,1]$ with the property that every finite collection $\\mathcal{C}$ of axis-parallel squares in the plane admits a disjoint sub-collection $\\mathcal{S}$ occupying at least a fraction $c$ of the area covered by $\\mathcal{C}$? This problem was first raised by T.~Radó in 1928, who was motivated by a classical covering lemma in real analysis due to Vitali. R.~Rado later generalized the problem from axis-parallel squares in the plane to homothetic copies of any given convex body $K$ in $\\mathbb{R}^d$, where now we are looking for an optimal constant $F(K)$.\n  Our utmost interest is for cubes and balls in the high-dimensional regime $d\\rightarrow \\infty$. The estimates that we currently have for cubes are much more precise than those for balls: namely if $Q^d$ is a $d$-dimensional cube, then \\[ (e^{-1}+o(1))\\frac{2^{-d}}{d \\log{d}} \\leq F(Q^d)\\leq 2^{-d}, \\] while denoting $B^d$ a $d$-dimensional Euclidean ball, then \\[ (1+ε_d)3^{-d}\\leq F(B^d)\\leq 2.447^{-d}, \\] where $ε_d>0$ vanishes exponentially fast as $d\\rightarrow \\infty$. The latter upper bound is obtained here by using the Kabatiansky--Levenshtein bound for the sphere packing problem.",
+          "authors": [
+            "Gian Maria Dall'Ara",
+            "Adrian Dumitrescu"
+          ],
+          "published": "2026-04-19T16:00:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17462v1",
+          "entry_id": "http://arxiv.org/abs/2604.17462v1",
+          "title": "Complete Isocategorical Classification of Groups of Order 64 via GAP",
+          "summary": "The classification of finite groups under monoidal equivalence is a fundamental topic in the study of finite quantum groups. While a complete classification has been established for all groups of order strictly less than 64, the case for order 64 has remained limited to the construction of specific examples. In this study, we achieve the complete classification for groups of order 64 by developing an original computational approach using GAP. We describe our methodology and demonstrate that there exist exactly two pairs of non-isomorphic isocategorical groups of this order.",
+          "authors": [
+            "Shoki Sato"
+          ],
+          "published": "2026-04-19T14:22:10+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17447v1",
+          "entry_id": "http://arxiv.org/abs/2604.17447v1",
+          "title": "Quandles from gauge transformations",
+          "summary": "In this paper, we investigate a quandle structure induced by an augmented rack arising from a gauge transformation group. We construct a quandle from a principal bundle and its discrete generalization. When we see a group as a (discrete) principal bundle over a point, this quandle becomes equivalent to the generalized Alexander quandle for its inner automorphism. Moreover, we construct a Lie and Noether quandle structure from a smooth gauge transformation.",
+          "authors": [
+            "Ryo Hayami"
+          ],
+          "published": "2026-04-19T13:59:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17445v1",
+          "entry_id": "http://arxiv.org/abs/2604.17445v1",
+          "title": "Orderings of Generalized k-Markov Numbers",
+          "summary": "A $k$-Markov number is a positive integer that appears in a positive integral solution to the Diophantine equation $x^2 + y^2 + z^2 + k(xy + xz + yz) = (3+3k)xyz$. This equation was introduced by Gyoda and Matsushita. When $k =0$, this definition recovers that of ordinary Markov numbers. The set of $k$-Markov numbers can be indexed by pairs of coprime positive integers. There is a consistent way to label non-coprime pairs with positive integers as well, yielding a larger set of ``generalized $k$-Markov numbers.''\n  In this paper, we classify lines along which the generalized $k$-Markov numbers grow monotonically, extending work in the ordinary case by Lee-Li-Rabideau-Schiffler and by the second author. We find that, as $k$ grows, the $k$-Markov numbers are more likely to be monotonic along a random line. This gives evidence that a $k$-version of Frobenius' uniqueness conjecture, which has been proposed by Gyoda and Maruyama, could be true.",
+          "authors": [
+            "Esther Banaian",
+            "Min Huang"
+          ],
+          "published": "2026-04-19T13:52:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17424v1",
+          "entry_id": "http://arxiv.org/abs/2604.17424v1",
+          "title": "Elementary symmetric polynomials and a potentially injective family of maps on partitions",
+          "summary": "In this article, we provide an infinite family of examples to disprove a recent conjecture due to Ballantine and her collaborators on the injectivity of a class of maps, namely pre_k, defined on integer partitions. These maps arise from applying the sequence of elementary symmetric polynomials to integer partitions, where pre_k is associated with the kth polynomial. Subsequently, we state a modified version of their conjecture. Throwing fresh light on these class of maps, we study the inter-relationships between them, deviating from the approaches so far, which study these maps one at a time. Though one case of the conjecture (k=2) has now been settled independently by the work of Ballantine and collaborators, and Li, we provide alternate proofs of three subcases corresponding to this settled case. We also discuss lower bounds for the number of partitions of n which are in the image of the map pre_2.",
+          "authors": [
+            "Aman Devnani",
+            "Pramod Eyyunni"
+          ],
+          "published": "2026-04-19T13:09:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17387v1",
+          "entry_id": "http://arxiv.org/abs/2604.17387v1",
+          "title": "The inversion number statistic for inversion sequences",
+          "summary": "Inversion sequences, also known as subexcedant sequences, form a fundamental class of objects in enumerative combinatorics. In this paper, we study the joint distribution of five statistics on inversion sequences. While several statistics on inversion sequences have been extensively investigated, our contribution is to introduce the inversion number statistic, originally defined for permutations, into the context of inversion sequences. As special cases, we recover classical permutation statistics, including the Stirling, Mahonian and Eulerian distributions, as well as the Catalan and Narayana numbers. Somewhat unexpectedly, our specializations also include the number of involutions in the symmetric group.\n  Our study arises from a $q$-analog of Comtet's expansion formula obtained by substituting the classical derivative operator $D$ with the $q$-derivative operator $D_q$.",
+          "authors": [
+            "Lora R. Du",
+            "Guo-Niu Han"
+          ],
+          "published": "2026-04-19T11:28:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17370v1",
+          "entry_id": "http://arxiv.org/abs/2604.17370v1",
+          "title": "Weighted Automata and Regular Expressions for Financial Systems",
+          "summary": "We introduce weighted finite finance automata (WFFA), a formal framework for modeling and analyzing quantitative properties of financial systems driven by uncertain economic variables such as stock prices, interest rates, and exchange rates. The model provides a compositional and language-theoretic approach to scenario-based financial analysis, enabling systematic evaluation of financial instruments and trading strategies. To specify such systems, we introduce weighted finance regular expressions, a declarative language for quantitative financial properties. We establish a Kleene-Schützenberger-type correspondence between WFFAs and weighted finance regular expressions, together with effective translation procedures between the two formalisms. On the algorithmic side, we investigate fundamental decision and optimization problems for WFFAs, including the computation of extremal payoffs, and identify expressive yet computationally tractable subclasses. These results provide a foundation for formal, compositional, and efficient analysis of financial systems under multiple market scenarios.",
+          "authors": [
+            "Manfred Droste",
+            "Vitaly Nürnberg"
+          ],
+          "published": "2026-04-19T10:53:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17356v1",
+          "entry_id": "http://arxiv.org/abs/2604.17356v1",
+          "title": "Ramsey-finiteness for graph pairs: A complete solution to the Burr-Erdős-Faudree-Schelp conjectures",
+          "summary": "For finite graphs $G$ and $H$, let $\\RR(G,H)$ denote the isomorphism classes of Ramsey-minimal graphs for $(G,H)$. We prove two 1981 conjectures of Burr, Erdős, Faudree, Rousseau, and Schelp: Ramsey-finiteness is preserved by adjoining disjoint matchings, and $(G,H)$ is Ramsey-infinite unless both graphs are odd stars or one graph has a $K_2$ component. We also refute Burr's stronger 1979 survey conjecture via an explicit finite counterexample from the star-forest theorem, and reformulate Faudree's 1991 theorem as a complete forest-classification corollary.",
+          "authors": [
+            "Yaping Mao"
+          ],
+          "published": "2026-04-19T10:03:04+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17275v1",
+          "entry_id": "http://arxiv.org/abs/2604.17275v1",
+          "title": "Solving Stochastic Constraints by Oracle-based Gradient Descent and Interval Arithmetic",
+          "summary": "Stochastic constraints, which incorporate both deterministic parameters and random variables, extend classical deterministic constraints by explicitly accounting for uncertainty. These constraints are increasingly prevalent in data science, artificial intelligence, and bioinformatics; however, solving them requires addressing quantitative satisfaction problems that remain a significant challenge in computer science. In this paper, we propose a novel framework for deciding deterministic parameters that maximize the satisfaction probability. Our approach features a unique synergy between stochastic optimization and symbolic techniques: at the high level, it employs \\emph{oracle-based stochastic gradient descent} to identify high-quality parameter candidates, while at the low level, it utilizes \\emph{interval arithmetic} to compute rigorously certified lower bounds. This framework produces a sequence of sound and increasingly tight lower bounds for the true maximum satisfaction probability, supported by a high-probability convergence guarantee. We demonstrate the effectiveness and efficiency of our approach through its application to Stochastic Satisfiability Modulo Theories (SSMT) problems and a stochastic trajectory planning task.",
+          "authors": [
+            "Xiakun Li",
+            "Hao Wu",
+            "Bican Xia",
+            "Tengshun Yang",
+            "Naijun Zhan"
+          ],
+          "published": "2026-04-19T06:07:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17253v1",
+          "entry_id": "http://arxiv.org/abs/2604.17253v1",
+          "title": "Large Deviations for the Nonlinear Schrodinger Equation with Randomized Quasi-Periodic Initial Data in Higher Dimensions: Beyond the Critical Time Scale",
+          "summary": "We study the cubic weakly nonlinear Schrödinger equation with randomized spatially quasi-periodic initial data in higher dimensions. Under a polynomial decay assumption in Fourier space, we establish a {\\em Large Deviations Principle} for rogue waves in the time regime $\\mathcal O(\\varepsilon^{-1-η})$ ($0 \\le η< 1$), extending beyond the currently known critical time scale $\\mathcal O(\\varepsilon^{-1} |\\log \\varepsilon|)$ in the one-dimensional periodic setting \\cite{GGKS23, FL25, LW25}.\n  The proof proceeds in two main steps. We first characterize the distribution of the linear solution and establish the corresponding linear large deviations principle. The lower bound is obtained via pointwise estimates, while the upper bound follows from a combination of truncation and probabilistic arguments. We then perform a detailed combinatorial analysis of the Picard iteration, deriving an effective size for the Duhamel term and thus establishing the nonlinear large deviations principle.",
+          "authors": [
+            "Fei Xu",
+            "Yong Li"
+          ],
+          "published": "2026-04-19T04:37:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17242v1",
+          "entry_id": "http://arxiv.org/abs/2604.17242v1",
+          "title": "Generalized spectral Turán problems for disjoint cliques",
+          "summary": "The generalized Turán number $\\text{ex}(n, H, F)$ denotes the maximum number of copies of $H$ in an $n$-vertex $F$-free graph. Let $kK_{r+1}$ be the disjoint union of $k$ copies of the complete graph $K_{r+1}$. Recently, Gerbner determined $\\text{ex}(n, K_{t},kK_{r+1})$ for all sufficiently large $n$. In this paper, we study a spectral analogue of this problem via the $t$-clique tensor of a graph. We prove that if an $n$-vertex $kK_{r+1}$-free graph $G$ maximizes the $t$-clique spectral radius, then for sufficiently large $n$, $G$ is the join of a complete graph $K_{k-1}$ and the $r$-partite Turán graph $T_{r}(n-k+1)$. This establishes a spectral counterpart of Gerbner's Theorem. Moreover, in the case $t=2$, our result recovers a theorem of Ni, Wang, and Kang on the maximum spectral radius of $kK_{r+1}$-free graphs.",
+          "authors": [
+            "Yi Xu",
+            "Yi-Zheng Fan"
+          ],
+          "published": "2026-04-19T04:04:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17232v2",
+          "entry_id": "http://arxiv.org/abs/2604.17232v2",
+          "title": "Alternating and Symmetric Separability of Free Products",
+          "summary": "Let $F \\ast G$ be a free product of a free group $F$ and a LERF group $G$. In this note, we provide sufficient conditions for a subgroup $H$ of $F \\ast G$ to be $\\mathcal{A} \\cup \\mathcal{S}$-separable, that is, for any finite set $\\{γ_1, \\ldots, γ_n\\} \\subset (F \\ast G) \\setminus H$, there is a surjection $f$ from $F \\ast G$ to an alternating or symmetric group such that $f(γ_i) \\notin f(H)$ for all $i$. As a corollary, any finitely generated infinite-index subgroup of a free group is $\\mathcal{A} \\cup \\mathcal{S}$-separable in the free product of the free group and an arbitrary LERF group, generalizing a result of Wilton.",
+          "authors": [
+            "Dongxiao Zhao",
+            "Qiang Zhang"
+          ],
+          "published": "2026-04-19T03:31:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17226v1",
+          "entry_id": "http://arxiv.org/abs/2604.17226v1",
+          "title": "Separating Matchings in Cubic Graphs",
+          "summary": "We study separating matchings in graphs, that is, matchings whose removal increases the number of connected components, and focus on determining the maximum size of such a matching in a graph $G$, denoted by $\\mathrm{mms}(G)$. We show that every subcubic graph admits a separating matching, except for exactly eight graphs, which allows us to focus on bounding $\\mathrm{mms}(G)$ for cubic graphs. Our main results show that every cubic graph $G$ on $n$ vertices that admits a separating matching satisfies $\\mathrm{mms}(G) \\ge n/2 - 2$. For bipartite cubic graphs, assuming a conjecture of Funk, the problem reduces to a recursively defined class $\\mathcal{F}$, for which we prove that $\\mathrm{mms}(G) \\ge n/2 - 1$, up to four exceptional graphs. In contrast, we show that every claw-free cubic graph satisfies $\\mathrm{mms}(G) = n/2$. These results extend previous work on matching cuts and disconnected $2$-factors, and provide the first systematic study of maximum separating matchings.",
+          "authors": [
+            "Juan Gutiérrez",
+            "Renzo Gómez"
+          ],
+          "published": "2026-04-19T03:20:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17221v1",
+          "entry_id": "http://arxiv.org/abs/2604.17221v1",
+          "title": "Bilinear Input Modulation for Mamba: Koopman Bilinear Forms for Memory Retention and Multiplicative Computation",
+          "summary": "Selective State Space Models (SSMs), notably Mamba, employ diagonal state transitions that limit both memory retention and bilinear computational capacity. We propose a factorized bilinear input modulation that augments the SSM with a state-input product, interpretable as a finite-dimensional Koopman bilinear form. After introducing a shared state across channels (Coupled SSM), the modulation admits two implementations. Coupled Bilinear Input Modulation (Coupled-BIM) retains the full bilinear product at the cost of sequential computation, while Coupled Gated Modulation (Coupled-GM) linearizes it into a gate modulation that is compatible with the parallel scan. Experiments on a multiple input-delay pendulum (memory retention) and NARMA-10 (bilinear computation) reveal a clear dissociation. Coupled-GM substantially improves memory retention but not bilinear computation, while Coupled-BIM improves both. A pathway ablation confirms that the two downstream routes of the bilinear signal serve complementary roles. The improvement is statistically robust, with Coupled-BIM consistently outperforming all other variants on bilinear computation. Furthermore, only Coupled-BIM benefits from increasing the SSM state dimension, while coupling or gate modulation alone show no improvement, establishing the bilin-ear mechanism as uniquely capable of exploiting larger state spaces.",
+          "authors": [
+            "Hiroki Fujii",
+            "Masaki Yamakita"
+          ],
+          "published": "2026-04-19T03:03:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2604.17203v1",
+          "entry_id": "http://arxiv.org/abs/2604.17203v1",
+          "title": "Functional correlation bound for random Lasota--Yorke maps with holes and its applications to conditional normal approximations",
+          "summary": "This paper investigates the statistical properties of random open dynamical systems generated by families of Lasota--Yorke maps. Open systems, in which trajectories may escape through `holes', model transient phenomena and present additional difficulties for statistical analysis because the underlying ensemble loses mass over time. We show that the framework of functional correlation bounds (FCB), originally developed for closed systems, can also be adapted to this random open setting. The extension requires new ingredients based on Lasota--Yorke type inequalities in order to control the effect of escaping trajectories. We establish an FCB with exponential decay and combine it with the abstract normal-approximation results of \\cite{LNN25,LS20} to obtain a conditional CLT with rates in Wasserstein distance and a conditional functional CLT with a rate in an integral distance over Barbour's class of smooth test functions. Additionally, we adapt Tikhomirov's method to obtain a bound in Kolmogorov distance for the conditional CLT.",
+          "authors": [
+            "Juho Leppänen",
+            "Yuto Nakajima",
+            "Yushi Nakano"
+          ],
+          "published": "2026-04-19T02:10:04+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-04-22T05:08:16.787857+00:00",
+      "updated_at": "2026-04-22T05:08:16.787857+00:00",
+      "finalized_at": null
     }
   ]
 }
