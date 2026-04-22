@@ -34194,7 +34194,7 @@
     },
     {
       "pipeline_id": "20260422T050816Z-d0bac1e9",
-      "status": "summarize_running",
+      "status": "completed",
       "interest_job_name": "batches/hz843jlnu9dxnz2jp17rosxy3c5bog58g6zo",
       "summarize_job_name": "batches/nfoxd1i93dtvcuzkw23p3ldd2oi9ciaekbrl",
       "papers": [
@@ -34499,14 +34499,171 @@
         "http://arxiv.org/abs/2604.17232v2",
         "http://arxiv.org/abs/2604.17226v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.17661v1": {
+          "title": "最大カットと分数カットカバー：ランダム化半正定値計画法（SDP）アプローチの計算研究",
+          "summary": "本論文では、最大カット問題と重み付き分数カットカバー問題を同時に近似する主双対フレームワークに関する実験的研究を提示している。このフレームワークは、SDP緩和を解いた後にランダム超平面法を用いてカットをサンプリングし、最大カットと分数カットカバーの両方の近似最適性を同時に証明するものである。実験では、理論的な境界よりも大幅に少ない ⌈128 ln m⌉ 回のサンプル数で、Goemans-Williamson の近似比 α_GW ≈ 0.878 を安定的に達成した。重み付き分数カットカバーの近似に関する初の実験的研究であり、浮動小数点演算やランダム化アルゴリズムを用いながらも、適切な前処理や摂動、LPソルバーの活用により、堅牢で再現性の高い結果を得ている。",
+          "keywords": [
+            "Maximum Cut",
+            "Fractional Cut Cover",
+            "Semidefinite Programming",
+            "Random-hyperplane technique",
+            "Approximation Algorithm"
+          ],
+          "appendix": "本論文は、浮動小数点演算を用いた数値計算結果に対して近似性能の証明（certification）を行うプロセスを含んでおり、計算手法の信頼性という観点で「validated numerics（精度保証付き計算）」の分野と関連があります。"
+        },
+        "http://arxiv.org/abs/2604.17608v1": {
+          "title": "一様双曲性と記号力学系：マルコフ分割、シャドウイング、およびAxiom Aシステムの符号化",
+          "summary": "本論文は、一様双曲集合の幾何学的理論を明示的な定量的境界とともに確立し、5つの主要な定理を提示している。後方グラフ変換による Cʳ 安定多様体定理の証明、非遊走集合のスペクトル分解、擬軌道に対する明示的な誤差評価を伴うシャドウイング補題、構成的な手法によるマルコフ分割の存在証明、そして有限型サブシフトから双曲集合へのヘルダー連続な符号化写像の構築が行われている。すべての定数は収束率 λ、微分のヘルダー指数、多様体次元、および単射半径で表現されており、記号力学系の理論を滑らかな設定へ移行するための基盤を提供している。",
+          "keywords": [
+            "Uniform Hyperbolicity",
+            "Symbolic Dynamics",
+            "Markov Partitions",
+            "Shadowing Lemma",
+            "Axiom A Systems"
+          ],
+          "appendix": "本論文は、興味ある分野のうち symbolic dynamics（記号力学系）に直接関連しており、有限型サブシフトを用いたシステムの符号化を扱っています。また、シャドウイングや軌道制御に関する明示的な定量的境界の導出は、validated numerics（精度保証付き数値計算）の基盤としても重要です。"
+        },
+        "http://arxiv.org/abs/2604.17588v1": {
+          "title": "一般的な反復関数系における定性的力学系の研究に向けた枠組み",
+          "summary": "局所コンパクト空間上の一般的な反復関数系（IFS）を対象とした、定性的力学系の解析枠組みを提案している。本研究は、James Yorkeらによって半流れ（semiflows）の文脈で開発された手法をIFSへと拡張したものであり、点間の関係性を記述する二項関係（streams）を用いて定義される。このアプローチにより、大域的な力学系をグラフ構造として表現し、回帰的な挙動と勾配的な挙動を明確に分離して評価することが可能となる。",
+          "keywords": [
+            "Iterated Function Systems",
+            "qualitative dynamics",
+            "binary relations",
+            "graph representation",
+            "recurrent behavior"
+          ],
+          "appendix": "本論文は反復関数系（IFS）の力学系的性質を扱っており、[興味ある分野]のうち complex dynamics や symbolic dynamics に深く関連する内容となっています。"
+        },
+        "http://arxiv.org/abs/2604.17531v1": {
+          "title": "熱力学的平衡の幾何学：圧力、接汎関数、および相転移",
+          "summary": "本論文は、コンパクト距離空間上の連続写像に対する熱力学形式の凸解析的構造を構築したものです。圧力汎関数を負のエントロピーのルジャンドル・フェンシェル変換として定義し、それらの双対性を確立しています。平衡状態を圧力の劣微分として捉え、平衡状態の一意性がガトー微分可能性に対応することや、一次相転移が非微分性に対応することを明らかにしました。また、特定化性質（specification property）やヘルダー連続なポテンシャルを持つ系において、圧力のフレシェ微分可能性と漸近分散の関係を示しています。さらに、凸性、下半連続性、強圧性、コサイクル不変性を満たす汎関数の定理を通じて、古典的な加法的・劣加法的・相対的変分原理を統合する普遍的な変分原理を証明しています。",
+          "keywords": [
+            "Thermodynamic formalism",
+            "Pressure functional",
+            "Equilibrium states",
+            "Phase transitions",
+            "Convex analysis"
+          ],
+          "appendix": "本論文は symbolic dynamics に深く関連しており、特に関数解析的手法を用いた記号力学系の熱力学的性質の解明に寄与しています。"
+        },
+        "http://arxiv.org/abs/2604.17528v1": {
+          "title": "記号空間上のギブス測度：5つの特徴付けの明示的な定数を用いた統一的な取り扱い",
+          "summary": "本論文では、位相的混合性を持つ有限型部分シフト上のHölderポテンシャルに対するギブス測度の5つの主要な特徴付け（Jacobian条件、古典的なシリンダーに基づくギブス特性、Ruelle転送作用素の固有測度、変分平衡状態、大偏差レート関数の最小化点）が同値であることを証明しています。この同値性は、Hölder指数、ポテンシャルノルム、アルファベットサイズ、混合時間などのパラメータを含む明示的な定数を用いた単一の定理として提示されます。証明の過程で、Birkhoff錐収縮技術を用いた転送作用素の明示的なスペクトルギャップ評価、ポテンシャルの摂動に対するWasserstein距離下でのギブス測度のLipschitz安定性、およびBerry-Esseen境界を伴う中心極限定理や大偏差原理といった統計的極限定理が導出されています。本稿は、双曲型力学系の熱力学的形式化に関する6部作の第1部にあたります。",
+          "keywords": [
+            "Gibbs measures",
+            "subshifts of finite type",
+            "Ruelle transfer operator",
+            "thermodynamic formalism",
+            "spectral gap"
+          ],
+          "appendix": "興味ある分野のうち、symbolic dynamicsに直接関連する内容です。また、双曲型力学系の熱力学的形式化に関する全6部構成のシリーズの第1部であるという背景情報を持ちます。"
+        },
+        "http://arxiv.org/abs/2604.17511v1": {
+          "title": "原子的な決定境界：自律システムにおける実行時許容性（Execution-Time Admissibility）保証のための構造的要件",
+          "summary": "本論文は、自律システムが共有状態を変更する際の制御において、決定とその結果としての状態遷移を不可分な単一のステップとして扱う構造的特性「原子的な決定境界（atomic decision boundary）」を提案している。ラベル付き遷移システム（LTS）を用いた形式化を通じて、評価と遷移が結合した「原子的システム」と、それらが分離され環境作用の割り込みを許す「分割評価システム」を区別し、現実的な並行環境下では分割システムが原子的システムと等価になり得ないことを証明した。既存のRBACやOPAを分割モデルとして位置付け、TOCTOU分析を拡張したEscalate結果の定式化を行うことで、実行時許容性の保証に関する理論的基盤を構築している。",
+          "keywords": [
+            "atomic decision boundary",
+            "Execution-Time Admissibility",
+            "labeled transition system",
+            "split evaluation systems",
+            "TOCTOU"
+          ],
+          "appendix": "本論文はラベル付き遷移システム（LTS）を用いたシステムの挙動解析を行っており、オートマトン理論（automata theory）の分野に関連しています。また、エージェント・ガバナンスに関する4部構成のシリーズ論文の第1報としての役割を担っています。"
+        },
+        "http://arxiv.org/abs/2604.17447v1": {
+          "title": "ゲージ変換から導かれるカンドル",
+          "summary": "本論文では、ゲージ変換群から生じる拡大ラック（augmented rack）によって誘導されるカンドル（quandle）構造について考察している。主束およびその離散的な一般化からカンドルを構成し、群を一点上の（離散）主束とみなした場合、このカンドルは内部自己同型に対する一般化アレクサンダーカンドルと等価になることを示している。さらに、滑らかなゲージ変換からリー・カンドルおよびネーター・カンドルの構造を構築している。",
+          "keywords": [
+            "quandle",
+            "gauge transformation",
+            "augmented rack",
+            "principal bundle",
+            "generalized Alexander quandle"
+          ],
+          "appendix": "ゲージ変換群という大きな群の代数的構造を扱っている点において、興味ある分野の「structure of large countable infinite group」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.17387v1": {
+          "title": "転倒列における転倒数統計",
+          "summary": "本論文では、数え上げ組合せ論における基本対象である転倒列（subexcedant sequences）において、5つの統計量の同時分布を調査した。主な貢献は、元来置換に対して定義されていた転倒数（inversion number）統計を転倒列の文脈に導入したことである。この結果、Stirling分布、Mahonian分布、Eulerian分布といった古典的な置換統計量や、Catalan数、Narayana数、さらには対称群における対合（involution）の個数を特殊なケースとして得ることができた。本研究は、古典的な微分演算子 D を q-微分演算子 D_q に置き換えることで得られる Comtet の展開公式の q-類似に由来している。",
+          "keywords": [
+            "inversion sequences",
+            "inversion number",
+            "joint distribution",
+            "q-analog",
+            "Comtet's expansion formula"
+          ],
+          "appendix": "本論文は数え上げ組合せ論（enumerative combinatorics）を扱っており、列や置換の性質を議論していることから、「combinatorics on words」の分野と特に関連があります。"
+        },
+        "http://arxiv.org/abs/2604.17370v1": {
+          "title": "金融システムのための重み付きオートマトンと正規表現",
+          "summary": "本論文では、株価、金利、為替レートといった不確実な経済変数に依存する金融システムの定量的性質をモデル化・解析するための枠組みとして、「重み付き有限金融オートマトン（WFFA）」を提案している。このモデルは、シナリオベースの金融分析に対して構成的かつ言語理論的なアプローチを提供し、金融商品や取引戦略の体系的な評価を可能にする。また、定量的な金融特性を記述する宣言型言語として「重み付き金融正規表現」を導入し、WFFAとの間のKleene-Schützenberger型の対応関係と相互の変換アルゴリズムを確立した。さらに、極値ペイオフの計算などの決定・最適化問題を調査し、計算量的に扱いやすい部分クラスを特定することで、複数の市場シナリオ下における効率的な金融分析の基盤を構築している。",
+          "keywords": [
+            "Weighted finite finance automata (WFFA)",
+            "weighted finance regular expressions",
+            "Kleene-Schützenberger-type correspondence",
+            "extremal payoffs",
+            "compositional financial analysis"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に強く関連しています。形式言語理論における古典的な対応関係を金融システムという具体的なドメインに拡張・適用した内容となっています。"
+        },
+        "http://arxiv.org/abs/2604.17275v1": {
+          "title": "オラクルに基づく勾配降下法と区間演算を用いた確率制約の解消",
+          "summary": "決定論的パラメータと乱数変数の両方を含む確率制約は、不確実性を明示的に扱うための枠組みである。本論文では、充足確率を最大化する決定論的パラメータを決定するための新しいフレームワークを提案する。この手法は、オラクルに基づく勾配降下法を用いて高品質なパラメータ候補を特定し、区間演算を用いて厳密に保証された下限値を計算するという、確率的最適化と記号的手法の相乗効果を特徴としている。提案手法は、真の最大充足確率に対して健全かつ次第にタイトになる下限値のシーケンスを生成し、高い確率での収束が保証されている。確率充足可能性モジュロ理論（SSMT）や確率的軌道計画タスクへの適用を通じて、その有効性と効率性を実証した。",
+          "keywords": [
+            "Stochastic constraints",
+            "Oracle-based stochastic gradient descent",
+            "Interval arithmetic",
+            "Stochastic Satisfiability Modulo Theories (SSMT)"
+          ],
+          "appendix": "本論文は、区間演算（Interval arithmetic）を用いて厳密な下限を計算するというアプローチをとっており、興味ある分野のうち「validated numerics（精度保証付き数値計算）」と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2604.17232v2": {
+          "title": "自由積の交代群および対称群による分離性",
+          "summary": "本論文では、自由群 F と LERF 群 G の自由積 F * G における部分群の A ∪ S-分離性（交代群または対称群への全射準同型によって、部分群 H に属さない有限個の元 {γ₁, ..., γₙ} を H の像と重ならないように分離できる性質）の十分条件を導出している。主な成果として、自由群の任意の有限生成かつ無限指数の部分群は、その自由群と任意の LERF 群との自由積において A ∪ S-分離的であることを示し、Wilton による結果を一般化した。",
+          "keywords": [
+            "free product",
+            "LERF group",
+            "A ∪ S-separable",
+            "alternating group",
+            "symmetric group"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「structure of large countable infinite group」に強く関連しています。自由群や自由積の構造、およびそれら無限群の有限群への表現を通じた分離特性を扱っています。"
+        },
+        "http://arxiv.org/abs/2604.17226v1": {
+          "title": "3次グラフにおける分離マッチング",
+          "summary": "本論文では、除去することでグラフの連結成分数を増加させるマッチングである「分離マッチング（separating matching）」の最大サイズ mms(G) を決定することに焦点を当てている。8つの例外を除くすべての劣3次グラフが分離マッチングを持つことを示し、さらに分離マッチングを持つ頂点数 n の3次グラフ G において mms(G) ≥ n/2 - 2 が成り立つことを証明した。二部3次グラフについては mms(G) ≥ n/2 - 1 という下界を（特定の例外を除き）示し、claw-free な3次グラフでは mms(G) = n/2 となることを明らかにした。本研究はマッチングカットや非連結 2-factors に関する先行研究を拡張し、分離マッチングの最大化に関する初の体系的な知見を提供するものである。",
+          "keywords": [
+            "Separating matching",
+            "Cubic graph",
+            "Matching cut",
+            "Maximum size",
+            "Subcubic graph"
+          ],
+          "appendix": "本論文はグラフ理論および組合せ論を扱っており、提示された興味ある分野の中では広義の combinatorics に関連しています。特に3次グラフの構造的・組合せ論的な性質を詳細に分析しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.17661v1",
+        "http://arxiv.org/abs/2604.17608v1",
+        "http://arxiv.org/abs/2604.17588v1",
+        "http://arxiv.org/abs/2604.17531v1",
+        "http://arxiv.org/abs/2604.17528v1",
+        "http://arxiv.org/abs/2604.17511v1",
+        "http://arxiv.org/abs/2604.17447v1",
+        "http://arxiv.org/abs/2604.17387v1",
+        "http://arxiv.org/abs/2604.17370v1",
+        "http://arxiv.org/abs/2604.17275v1",
+        "http://arxiv.org/abs/2604.17232v2",
+        "http://arxiv.org/abs/2604.17226v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-22T05:08:16.787857+00:00",
-      "updated_at": "2026-04-22T10:45:27.403425+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-22T13:05:19.387001+00:00",
+      "finalized_at": "2026-04-22T13:05:19.386972+00:00"
     }
   ]
 }
