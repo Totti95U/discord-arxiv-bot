@@ -34667,7 +34667,7 @@
     },
     {
       "pipeline_id": "20260423T051141Z-ddb8552a",
-      "status": "summarize_running",
+      "status": "completed",
       "interest_job_name": "batches/iikbeszmrcyhv0su83sztw7ixnjb0ja5ywed",
       "summarize_job_name": "batches/ozoki9dm2tac79w36zcqxh4e9vk7i3ybucgi",
       "papers": [
@@ -35261,14 +35261,285 @@
         "http://arxiv.org/abs/2604.17777v1",
         "http://arxiv.org/abs/2604.17684v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2604.18903v1": {
+          "title": "相互接続されたケモスタットの直列構成と異なる除去率を伴うAM2モデル",
+          "summary": "本論文では、異なる希釈率を持つ2つの相互接続された直列ケモスタットにおけるAM2モデルの力学系を調査している。システムは非線形微分方程式によって記述されるが、希釈率が異なるために従来の8次元から4次元へのシステム簡約が不可能であるという特徴を持つ。著者らは、主要な操作パラメータを用いて9種類の平衡状態の存在、多重性、および局所安定性に関する必要十分条件を特定し、完全な定性的研究を提供している。特に、第2バイオリアクターにおける2種の共存平衡は、存在する場合でも常に安定とは限らず、ヤコビ行列のトレースに関する追加条件が必要であることを示した。ホップ分岐やリミットサイクルを導くパラメータ集合の特定は今後の課題として残されている。",
+          "keywords": [
+            "AM2 model",
+            "interconnected chemostats",
+            "dilution rates",
+            "steady states",
+            "local stability"
+          ],
+          "appendix": "本論文は、非線形微分方程式の解析を通じて「complex dynamics」の分野に関連していますが、提示された特定の興味ある分野（symbolic dynamics, automata theory等）に直接関連する記述は見受けられませんでした。"
+        },
+        "http://arxiv.org/abs/2604.18891v1": {
+          "title": "3次元の一般的体積保存Anosov流の時間1写像の摂動",
+          "summary": "s > 1 を大きな整数とし、3次元コンパクト多様体上のCˢ級かつ一般的体積保存Anosov流の時間1写像に対し、Cˢ位相で十分に近くにある微分同相写像 f を考える。滑らかな密度を持つ任意の確率測度 μ について、fⁿ⁎ μ が全台を持つ共通の極限測度へ指数的に速く収束することを示す。この帰結として、f の位相的混合性、全ルベーグ測度の吸引域を持つ一意な物理測度（かつ一意なu-Gibbs状態）の存在、および f が体積保存であれば体積形式に関して指数的混合的であることが導かれる。応用として、Axiom A写像でCˢ近似不可能な推移的Anosov流の時間1写像のクラスを提示し、Palis-Pugh（1974）の問いに否定的な回答を与えるほか、Cˢ安定推移的なAnosov流の時間1写像や、周期点を持たないCˢ安定推移的微分同相写像の初例を提示する。",
+          "keywords": [
+            "Anosov flow",
+            "time-1 map",
+            "u-Gibbs state",
+            "exponentially mixing",
+            "stably transitive"
+          ],
+          "appendix": "複素力学系（complex dynamics）に関連する力学系理論の高度なトピックを扱っています。"
+        },
+        "http://arxiv.org/abs/2604.18882v1": {
+          "title": "依存型理論による特許分析の形式検証：ハイブリッドAIとLean 4パイプラインによるマシンチェック可能な証明書",
+          "summary": "本論文は、特許分析のための形式検証済みフレームワークを提案している。機械学習（ML）と対話型定理証明支援系Lean 4を組み合わせたハイブリッドパイプラインを構築し、特許請求の範囲（claims）を有向非巡回グラフ（DAG）としてエンコードすることで、依存型理論に基づく厳密な解析を可能にした。具体的には、包含関係（coverage）のコアアルゴリズムが、完全束（complete lattice）上の単調関数による信頼度伝播として定式化され、Lean 4のカーネルによって計算の正当性が機械検証されている。これにより、自由実施（FTO）や均等論（DOE）などの法的分析に対し、MLによる確率的なスコアを前提としつつも、その下流の論理的推論については数学的な正当性を保証する証明書を発行できる。これは知的財産権分析に形式検証を適用した初の試みである。",
+          "keywords": [
+            "Lean 4",
+            "Dependent Type Theory",
+            "Formal Verification",
+            "Patent Analysis",
+            "Interactive Theorem Proving"
+          ],
+          "appendix": "本論文は、形式言語（formal languages）やオートマトン理論（automata theory）的なアプローチを用いて法的なテキストを構造化・検証している点で、計算機科学の理論的側面と関連がありますが、指定された「興味ある分野」に直接合致する内容は含まれていません。"
+        },
+        "http://arxiv.org/abs/2604.18869v1": {
+          "title": "半群における大域的な積集合の共通部分の集合",
+          "summary": "半群の部分集合族 (A_q)_{q∈Q} において、積の共通部分と共通部分の積が一致する指数 h ∈ ℕ の集合、すなわち (∩_q A_q)ʰ = ∩_q A_qʰ を満たす h の集合を積共通部分集合と定義する。本論文では、どのような ℕ の部分集合が積共通部分集合になり得るかという Nathanson の問いに対し、任意の部分集合族および減少列となる部分集合族の双方について完全な分類を与えた。特に |Q| ≥ 2 の場合、1 を含む ℕ の任意の部分集合が積共通部分集合として実現可能であることを示している。これらの分類は Harmonic が開発した形式推論エージェント Aristotle によって発見され、定理証明支援系 Lean を用いて形式的に検証された。",
+          "keywords": [
+            "Product intersection set",
+            "Semigroup",
+            "Nathanson's problem",
+            "Formal verification",
+            "Lean"
+          ],
+          "appendix": "本論文は定理証明支援系 Lean による形式検証を伴っており、計算機科学と数学の境界領域に位置します。提示された「興味ある分野」に直接合致する項目はありませんが、半群の代数的構造に関する研究です。"
+        },
+        "http://arxiv.org/abs/2604.18822v1": {
+          "title": "インボリューションによって生成される群上の弱順序",
+          "summary": "本論文では、対合（インボリューション）の集合 S によって生成される群 W である「インボリューション系」の一般的な研究を提案している。インボリューション系には、(W, S) の Cayley グラフの向き付けから導かれる「弱順序」が自然に備わっている。Coxeter 系において弱順序が完備交差半束になるという Björner の結果に基づき、本稿ではどのようなインボリューション系において弱順序が完備交差半束になるかを考察している。この条件を満たすクラスは Coxeter 系よりも広く、Cactus 群などが含まれる。符号指標を持つインボリューション系については、生成元と関係式による有限表示やランク 3 での分類を行っている。さらに、弱順序による Coxeter 系の新たな特徴付けや、幾何学的表現、mediangle グラフ、双自動構造 (biautomatic structures) との関連性についても論じている。",
+          "keywords": [
+            "involution systems",
+            "weak order",
+            "complete meet-semilattice",
+            "Coxeter systems",
+            "Cactus groups"
+          ],
+          "appendix": "本論文は、双自動構造 (biautomatic structures) に関する議論を含んでおり、オートマトン理論 (automata theory) に関連があります。また、無限群の構造を扱う点から、巨大な可算無限群の構造 (structure of large countable infinite group) の分野とも関連しています。"
+        },
+        "http://arxiv.org/abs/2604.18769v1": {
+          "title": "正則木における等周問題",
+          "summary": "本研究では、d-正則木 T_d における内頂点等周問題を調査し、有限連結領域 D ⊂ T_d に対する内頂点等周プロファイル I_d(k) = min{ |∂D| | D ⊂ T_d 有限連結, |D|=k } の厳密な値を決定した。また、境界分岐過剰量 (boundary branching excess) τ(D) と呼ばれる不変量を導入し、領域 D が等周的に最適であるための必要十分条件が τ(D) ≤ d-2 であることを示した。さらに、T_d 内のすべての領域は「完全領域 (full domains)」と呼ばれる境界が葉のみで構成される領域の反復的な接着として標準分解可能であることを示し、等周最小化の完全な記述を与えた。",
+          "keywords": [
+            "regular tree",
+            "isoperimetric problem",
+            "boundary branching excess",
+            "full domains"
+          ],
+          "appendix": "本論文で扱われる正則木の幾何学的性質は、幾何学的群論の観点から「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.18577v1": {
+          "title": "染色漸近的近似群について",
+          "summary": "本研究では、アーベル群の部分集合の組に対する染色漸近的近似群の彩色理論を、Nathansonの染色和集合の定式化と近似群理論における漸近的被覆の概念を組み合わせて構築した。この枠組みは、複数の色クラスにおける同時的な加法的増加を符号化する。一般的なリフティングと不変原理を示すとともに、有限の組や非有界線形集合の有限和からなる組に対する染色被覆定理を確立し、翻訳された部分モノイドなどの集合に対する正確な構造定理を得た。また、有限および非有界線形ケースにおいて、従来の格子被覆評価よりも鋭い二項係数による境界を得ている。整数の設定では、各固定閾値 t に対する染色層が漸近的近似族を形成することを示し、Nathansonの最終的な区間と端点の記述を用いてサイズ r+2 の一様上界を導出した。",
+          "keywords": [
+            "chromatic sumset",
+            "asymptotic approximate groups",
+            "chromatic covering theorems",
+            "abelian groups",
+            "additive growth"
+          ],
+          "appendix": "本論文は加法的組合せ論に関連しており、[興味ある分野]の中では combinatorics on words や structure of large countable infinite group との関連性が深い内容となっている。"
+        },
+        "http://arxiv.org/abs/2604.18532v1": {
+          "title": "LTLf+ における Obligation プロパティのシンボリック合成",
+          "summary": "本論文では、LTLf を無限トレースへ拡張した LTLfₚ における Obligation プロパティの合成手法を研究している。Obligation プロパティは Safety プロパティと Guarantee プロパティの正の論理結合であり、Manna と Pnueli の時間階層の第2レベルを構成する。これらは無限トレース上で定義されるが、LTLf の簡潔さを維持しており、トレースの接頭辞に対するシンボリック DFA から誘導されるシンボリック決定性弱オートマトン（DWA）への変換が可能であることを示している。DWA は論理閉包性や多項式時間最小化などの優れた特性を持ち、合成問題は DWA 構築後、線形時間で解くことができる。実験評価により、LTLfₚ の合成が LTLf 合成と実質的に同等の効率で実行可能であることを示している。",
+          "keywords": [
+            "LTLf+",
+            "Obligation properties",
+            "Deterministic Weak Automata",
+            "Symbolic Synthesis"
+          ],
+          "appendix": "本論文は、興味ある分野のうち Automata theory および Formal languages に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.18458v1": {
+          "title": "C*-単純性、confined subalgebra、および作用素環的一様回帰性",
+          "summary": "本論文では、群フォン・ノイマン環の文脈において confined subalgebra の概念を導入し、Uniformly Recurrent Subgroup（一様回帰的部分群）の作用素環的な類似物である Uniformly Recurrent State を定義した。これらの枠組みを用いることで、可算離散群が C*-単純であることの必要十分条件は、非自明でアメナブルな confined subalgebra を持たないことであることを示した。この結果は、アメナブルな一様回帰的部分群を用いて C*-単純性を特徴付けた Kennedy の既知の結果を一般化するものである。",
+          "keywords": [
+            "C*-simplicity",
+            "confined subalgebras",
+            "Uniformly Recurrent States",
+            "Uniformly Recurrent Subgroups",
+            "group von Neumann algebra"
+          ],
+          "appendix": "この論文は、指定された興味ある分野のうち「structure of large countable infinite group」に深く関連しています。可算離散群の C*-単純性という代数的な性質を、confined subalgebra や Uniformly Recurrent State といった作用素環論的・力学系的な概念を用いて特徴付けています。"
+        },
+        "http://arxiv.org/abs/2604.18410v1": {
+          "title": "円周上の非極小作用に付随する交差積C*-環",
+          "summary": "円周上への可算無限離散アーベル群の非極小かつ自由な作用に付随する交差積C*-環について、Putnam, Schmidt, Skauらの研究を拡張する検討を行った。単位的、可分、核型、かつ非単純なC*-環の広範なクラスが、準対角性、安定階数1、および一意なトレース状態を持つことを明らかにした。また、これらのイデアル構造を特定し、核次元の一様な上界を改善した。さらに、群が ℤᵈ の場合には、順序付きK理論とトレースペアリングの計算を行った。",
+          "keywords": [
+            "Crossed product C*-algebras",
+            "non-minimal actions",
+            "discrete abelian groups",
+            "ordered K-theory",
+            "nuclear dimension"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に関連しています。可算無限離散アーベル群の作用という観点からC*-環の構造を解析しています。"
+        },
+        "http://arxiv.org/abs/2604.18403v1": {
+          "title": "到達可能性規則を用いたホーン節により特徴付け可能な等号付き量子化様相論理のための入れ子式シーケント",
+          "summary": "本論文は、内部および外部ドメインを持つ関係モデルによって定義される広範な量子化様相論理（QML）に対し、カット除去可能な入れ子式シーケント体系を提案している。提案手法では、入れ子式シーケントを拡張して項の多重集合（シグネチャ）を含めることで、ドメインの増大・減少・一定性などの条件を自然に扱えるようにした。最大の特徴は、semi-Thueシステム（形式文法）に基づく到達可能性規則を導入し、シーケント内のパスに沿った情報の伝播を制御している点である。本研究は、このモデル構造に基づくQMLに対して健全かつ完全な体系を初めて構築し、構造規則の可逆性や構文的なカット除去定理を証明した。",
+          "keywords": [
+            "Nested sequents",
+            "Quantified modal logics",
+            "Reachability rules",
+            "Semi-Thue systems",
+            "Cut-elimination"
+          ],
+          "appendix": "本論文は「formal languages」の分野に関連しています。推論規則が semi-Thue システムという形式文法の一種によってパラメータ化されている点が特徴的です。"
+        },
+        "http://arxiv.org/abs/2604.18333v1": {
+          "title": "マルコフ多項式の飽和",
+          "summary": "マルコフ方程式の一般化された解であるマルコフ多項式に関する最近の予想を証明した論文です。本論文では、マルコフ数に関連する組合せ論的な対象である「マルコフ・スネーク・グラフ」を用いた構成的な証明手法を提示しており、マルコフ方程式と組合せ論の間の結びつきをより深めています。",
+          "keywords": [
+            "Markov equation",
+            "Markov polynomials",
+            "Markov snake graph",
+            "Markov numbers",
+            "Combinatorics"
+          ],
+          "appendix": "本論文は、マルコフ数やスネーク・グラフという組合せ論的構造を扱っているため、興味ある分野のうち「combinatorics on words」と関連性が高い内容となっています。"
+        },
+        "http://arxiv.org/abs/2604.18202v1": {
+          "title": "不動点の多様体に沿った写像に対する中心多様体定理",
+          "summary": "本論文では、不動点からなる境界付き多様体に沿った写像に対する中心多様体定理を証明している。また、応用として、2層行列分解問題における大きなステップサイズを用いた勾配降下法の解析にこの定理を適用している。",
+          "keywords": [
+            "centre manifold theorem",
+            "fixed points",
+            "gradient descent",
+            "matrix factorisation"
+          ],
+          "appendix": "本論文は勾配降下法の挙動を力学系として解析しており、不動点や多様体上の写像を扱う点で complex dynamics などの力学系理論に関連する側面を持つ。"
+        },
+        "http://arxiv.org/abs/2604.18142v1": {
+          "title": "近似的な推移性、混合性、および超周期性に対する距離空間的枠組み",
+          "summary": "連続写像における推移性、混合性、超周期性の指標を、fⁿ(U) ∩ B_δ(V) ≠ ∅ という形式の交差に基づく距離空間的なバージョンとして研究している。δ-位相的推移性、δ-位相的混合性、および下方一様なδ-混合性（UFB-δ-TM）を導入し、UFB-δ-TM ⇒ δ-TM ⇒ δ-TT という包含関係を証明した。また、可分なF-空間上の線形作用素に対して「δ-超周期性判定条件」を定式化し、これがδ-超周期性を導くこと、および古典的な超周期性判定条件が任意の δ > 0 に対してδ-判定条件を満たすことを示した。さらに、重み付き後方シフト作用素がδ-位相的混合性を満たすための十分条件を導出し、λB が任意の δ > 0 に対してδ-超周期性判定条件を満たすことを明らかにしている。",
+          "keywords": [
+            "topological transitivity",
+            "topological mixing",
+            "hypercyclicity",
+            "F-spaces",
+            "weighted backward shifts"
+          ],
+          "appendix": "力学系における性質（推移性、混合性）を扱っており、complex dynamics や symbolic dynamics の解析手法とも関連する基礎的な動的な性質を研究しています。"
+        },
+        "http://arxiv.org/abs/2604.18104v1": {
+          "title": "有限生成群における自己同型軌道の数え上げ",
+          "summary": "有限生成群における共役増大関数の類似として「自己同型増大関数」を導入し、その性質を調査している。この関数は半径 n の球体に含まれる自己同型軌道の数を計測する。著者らは、仮想アーベル群の反例を用いて、この増大関数が共役不変量ではないことを示した。さらに、階数 2 以下の仮想アーベル群、ハイゼンベルク群、有限階自由群、およびトンプソン群 T と V の自己同型増大率を分類した。この計算により、トンプソン群 T および V が指数的な共役増大度を持つことが導かれた。",
+          "keywords": [
+            "automorphic growth function",
+            "conjugacy growth",
+            "virtually abelian groups",
+            "Thompson's groups",
+            "finitely generated groups"
+          ],
+          "appendix": "本論文は、トンプソン群や無限群の幾何学的増大度を扱っており、「structure of large countable infinite group」の分野に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2604.18050v1": {
+          "title": "データセットの位相的双対：AlphaGeometry形式データのための論理-位相エンコーディング",
+          "summary": "AlphaGeometryをはじめとするニューロ・シンボリック推論モデルは、シンボリック推論エンジンのスケーリングのボトルネックと、入力表現が構造的理解ではなく表層的な符号化に依存しているという課題を抱えている。本論文では、観測の論理（Logic of Observation）に基づき、可観測な理論における証明可能性と位相の双対性を活用した「論理-位相エンコーディング」を提案する。データセットの位相的双対という概念を導入することで、モデルの潜在空間における構造的不変量を明らかにし、複雑な発見パスにおけるメカニスティックな解釈可能性を向上させるための枠組みを提供する。",
+          "keywords": [
+            "AlphaGeometry",
+            "Neuro-symbolic reasoning",
+            "Logic of Observation",
+            "Topological dual",
+            "Mechanistic interpretability"
+          ],
+          "appendix": "本論文は、ドメイン特化言語（DSL）と自然言語の同型性や論理体系の構造を扱っている点から、興味ある分野のうち「formal languages」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.17921v1": {
+          "title": "部分作用を超えた亜群、内部平均可能性、およびKirchberg環のモデルについて",
+          "summary": "本論文では、離散群の部分作用からは得られない、内部平均可能（inner amenable）ではない局所コンパクトハウスドルフ・エタール亜群の最初の明示的な例を構築し、Anantharaman--DelarocheおよびExelの問いに回答した。具体例として、非平均的な剰余有限群に付随するHigson--Lafforgue--Skandalis亜群や、その主（principal）な変種が挙げられる。また、単位空間が連結なDeaconu--Renault亜群の多くが部分作用から生じないことを示す一方で、全不連結な場合にはUCT類に属するすべての単位的Kirchberg環に対して豊富な変換亜群モデルを与えた。最後に、粗亜群（coarse groupoids）が離散群の部分作用から生じるための条件を、群への粗埋め込みを用いて特徴付けた。",
+          "keywords": [
+            "étale groupoids",
+            "inner amenability",
+            "partial actions",
+            "Kirchberg algebras",
+            "coarse groupoids"
+          ],
+          "appendix": "本論文は、非平均的な剰余有限群から構成される亜群の構造を扱っており、「strucure of large countable infinite group」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.17809v1": {
+          "title": "beta-展開に対する高木関数の一般化",
+          "summary": "本論文では、底 1 < β ≤ 2 の beta-展開に関連する一般化高木関数を、beta-展開の数字出現頻度集合のマルチフラクタル解析の観点から考察しています。この関数は、任意の α ∈ (0, 1) に対して各点 α-Hölder 連続ですが、ルベーグ測度 0 の集合を除いて各点 Lipschitz 連続ではないことを示しています。証明には、数字の和の振動を反映した一般化高木関数の公式と、対応する beta-写像に関する基本的な極限定理が用いられています。",
+          "keywords": [
+            "Takagi function",
+            "beta-expansion",
+            "multifractal analysis",
+            "Hölder continuity",
+            "beta-map"
+          ],
+          "appendix": "beta-展開およびその力学系の性質を扱うため、興味ある分野のうち symbolic dynamics（記号力学系）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.17784v1": {
+          "title": "安全な部分観測量子ペトリネットにおける現状態不透明性：真の並行意味論と厳密なシンボリック検証",
+          "summary": "古典的な不透明性理論がハイブリッドアーキテクチャにおけるセキュリティ侵害を十分に捉えられないという課題に対し、安全な部分観測量子ペトリネットの枠組みで現状態不透明性を定式化。古典的な観測を部分順序マルチセットとして表現する真の並行意味論を導入し、攻撃者の局所的な量子状態間のトレース距離に基づいた定量的リーク評価を定義している。さらに、スタビライザー形式（stabilizer formalism）と展開構成（unfolding configurations）を組み合わせることで、状態爆発や量子密度行列の計算コストを回避しつつ、厳密なシンボリック検証を可能にするアルゴリズムを提案した。エントロピー交換の事例研究を通じて、その計算効率と検証の厳密性を実証している。",
+          "keywords": [
+            "safe partially observed quantum Petri nets",
+            "true-concurrency semantics",
+            "current-state opacity",
+            "stabilizer formalism",
+            "exact symbolic verification"
+          ],
+          "appendix": "本論文は、オートマトン理論（automata theory）や形式言語理論に関連するペトリネットの動態を扱っており、特に不透明性の検証アルゴリズムはシンボリックな計算手法に基づいているため、指定された興味ある分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2604.17777v1": {
+          "title": "多項式時間計算量境界を持つ SLₙ(ℤ) の一様な2生成元表示",
+          "summary": "ランク3以上の整数係数特殊線形群 SLₙ(ℤ) に対する、具体的かつ一様な有限2生成元表示を構成した。本研究は Conder–Liversidge–Vsemirnov の知見に基づき、Trott による奇数ランクの生成元ペアを符号補正によって偶数ランクへと拡張している。構成された表示は定量的な制御が可能であり、転置行列（transvection）語の長さが2次、関係式の個数が4次、総関係式長が6次という多項式的な計算量境界を持つ。また、合同部分群の商や射影商への応用、および関係式の正確な個数についても示されている。",
+          "keywords": [
+            "special linear groups",
+            "two-generator presentations",
+            "polynomial complexity",
+            "transvection words",
+            "congruence quotients"
+          ],
+          "appendix": "この論文は「structure of large countable infinite group」の分野と密接に関連しており、巨大な可算無限群である SLₙ(ℤ) の具体的な代数的構造とその表示の複雑さを扱っています。"
+        },
+        "http://arxiv.org/abs/2604.17684v1": {
+          "title": "Γ-switch ラムゼー数",
+          "summary": "本論文では、古典的なm色ラムゼー数の変種である「Γ-switch ラムゼー数」を定義し、その基礎的な理論的結果を提示している。この変種では、群 Γ ≤ Sₘ の元を用いて、頂点に接続する辺の色を置換することが許容される。様々な性質を持つ群に対して、Γ-switch ラムゼー数の境界を古典的パラメータの関数として導出した。具体的な成果として、R_{C₃}(4,4,4) = R(3,3,3) + 1、R_{C₄}(3,4,3,4) = R(2,3,2,3) + 1、および 43 ≤ R_{C₄}(4,4,4,4) ≤ R(3,3,3,3) + 1 であることを証明した。",
+          "keywords": [
+            "Γ-switch Ramsey number",
+            "m-colour Ramsey number",
+            "group action",
+            "graph coloring"
+          ],
+          "appendix": "本論文はグラフ理論におけるラムゼー理論を扱っており、指定された興味ある分野の中では combinatorics (組合せ論) と密接に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2604.18903v1",
+        "http://arxiv.org/abs/2604.18891v1",
+        "http://arxiv.org/abs/2604.18882v1",
+        "http://arxiv.org/abs/2604.18869v1",
+        "http://arxiv.org/abs/2604.18822v1",
+        "http://arxiv.org/abs/2604.18769v1",
+        "http://arxiv.org/abs/2604.18577v1",
+        "http://arxiv.org/abs/2604.18532v1",
+        "http://arxiv.org/abs/2604.18458v1",
+        "http://arxiv.org/abs/2604.18410v1",
+        "http://arxiv.org/abs/2604.18403v1",
+        "http://arxiv.org/abs/2604.18333v1",
+        "http://arxiv.org/abs/2604.18202v1",
+        "http://arxiv.org/abs/2604.18142v1",
+        "http://arxiv.org/abs/2604.18104v1",
+        "http://arxiv.org/abs/2604.18050v1",
+        "http://arxiv.org/abs/2604.17921v1",
+        "http://arxiv.org/abs/2604.17809v1",
+        "http://arxiv.org/abs/2604.17784v1",
+        "http://arxiv.org/abs/2604.17777v1",
+        "http://arxiv.org/abs/2604.17684v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-04-23T05:11:41.051420+00:00",
-      "updated_at": "2026-04-25T07:50:36.419260+00:00",
-      "finalized_at": null
+      "updated_at": "2026-04-25T09:43:35.068346+00:00",
+      "finalized_at": "2026-04-25T09:43:35.068322+00:00"
     },
     {
       "pipeline_id": "20260424T051723Z-51f15453",
