@@ -42451,7 +42451,7 @@
     },
     {
       "pipeline_id": "20260507T054136Z-cd44fa53",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/pfl27b1er9i32s3zeej79ck3ys2k39gbkv2e",
       "summarize_job_name": "batches/ihcm4vg10vjgp4zi2kg57ej5gvyggbji8cux",
       "papers": [
@@ -43205,14 +43205,313 @@
         "http://arxiv.org/abs/2605.02226v1",
         "http://arxiv.org/abs/2605.02160v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2605.03200v1": {
+          "title": "第2種チェビシェフ多項式の高階導関数を含む級数の解析的和とその畳み込み線形回帰数列への応用",
+          "summary": "本論文では、多項式の次数が導関数の階数に関連付けられた、第2種チェビシェフ多項式の高階導関数を項とする関数項級数を考察しています。解析的和の手法を用いて、これらの級数が収束する有理関数を決定し、それらを特定の引数におけるチェビシェフ多項式で表現しました。また、第2種チェビシェフ多項式の導関数と、線形回帰数列から生成される特殊な数値数列との関係を確立しました。その結果として、フィボナッチ数、リュカ数、ペル数、およびそれらの畳み込みに関する新しい閉形式の和の公式や組合せ論的な恒等式を導出しています。さらに、解析接続を用いることで、古典的なオイラーの公式に対応する形式的発散級数の和も求めています。",
+          "keywords": [
+            "Chebyshev polynomials of the second kind",
+            "higher-order derivatives",
+            "linear recurrence sequences",
+            "combinatorial identities",
+            "analytic summation"
+          ],
+          "appendix": "本論文は線形回帰数列の畳み込みや組合せ論的な恒等式を扱っており、指定された「興味ある分野」の中では combinatorics (組合せ論) に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.03176v1": {
+          "title": "反復構成の代数学 (The Algebra of Iterative Constructions)",
+          "summary": "本論文では、完備束上の連続な自己写像の不動点反復を扱うための純代数的な手法である『反復構成の代数（AIC）』を提案している。AICは等式論理を用いることで、添字を用いた明示的な計算を介さずに、Kleeneの不動点定理の一般化であるTarski-Kantorovich原理や、ソフトウェア検証におけるk-inductionの不動点論的な一般化など、様々な不動点定理を導出できる。例えば、F ◇ F* ⊥ = ◇ F* ⊥ という式は、supₙ Fⁿ(⊥) がFの不動点であることを表現する。さらに、任意の状態から開始した反復の束論的な下極限および上極限として不動点を得る新しい定理を提示し、Isabelle/HOLによる形式化と自動証明を実現している。また、有限の公理系では標準モデルに対して不完全であるが、無限項公理を用いることで完全性が得られることも証明している。",
+          "keywords": [
+            "Algebra of Iterative Constructions",
+            "Fixed point iteration",
+            "Complete lattices",
+            "Equational logic",
+            "Isabelle/HOL"
+          ],
+          "appendix": "不動点理論およびそのソフトウェア検証への応用という側面において、『automata theory』や『formal languages』の分野と関連性があります。"
+        },
+        "http://arxiv.org/abs/2605.03161v1": {
+          "title": "尖点を持つ双曲格子の放物型保存変形",
+          "summary": "SO(n,1)の非共コンパクト格子からSU(n,1)およびSO(n+1,1)への表現の変形について研究している。n ≥ 3において、これらの変形が離散的かつ忠実であり続けるための必要条件は、放物型部分群が放物型かつ離散的なままであることであり、本論文ではこれを強放物型保存的と呼称する。8の字結び目群がSU(3,1)へのZariski稠密な放物型保存変形の1パラメータ族を持つことや、Bianchi群の曲げ変形においてSU(3,1)では無限個の強放物型保存的な例が存在する一方でSO(4,1)では存在しないことを示した。さらに、任意のn ≥ 3において、SU(n,1)への放物型保存変形の1パラメータ族を持つ、互いに通約不可能な尖点を持つ双曲n次元多様体が無限に存在することを証明した。",
+          "keywords": [
+            "cusped hyperbolic lattices",
+            "parabolic-preserving deformations",
+            "figure-eight knot group",
+            "Bianchi groups",
+            "SU(n,1)"
+          ],
+          "appendix": "本論文は、離散群の表現や双曲幾何学における構造を扱っており、指定された興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.03107v1": {
+          "title": "代数群の合同剛性",
+          "summary": "本論文では、有限アデール点によって特徴付けられる代数体上の単純代数群の特定を行っている。合同部分群性質（CSP）およびグロタンディーク剛性を仮定することで、高ランクの算術群が「profinitely solitary」（射有限共役類が、有限生成かつ残留有限な群の間での共役類を決定する性質）であるための条件を実質的に明らかにしている。本研究は、分裂群を対象としていた先行研究を任意の代数群へと一般化したものである。",
+          "keywords": [
+            "Congruence rigidity",
+            "Algebraic groups",
+            "Arithmetic groups",
+            "Profinite solitary",
+            "Congruence Subgroup Property"
+          ],
+          "appendix": "本論文は、算術群の構造や射有限完備化の性質を扱っており、指定された興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.03094v1": {
+          "title": "3次元斜多項式環の正規順序化における組合せ論的側面",
+          "summary": "本論文では、BellとSmithによって定義および分類された3次元斜多項式環における正規順序化の組合せ論的側面について論じている。数式処理システムSageMathを活用することで、これらの代数の交換関係に現れるPBW形式や正規順序化の計算工程を短縮することに成功した。",
+          "keywords": [
+            "3-dimensional skew polynomial rings",
+            "normal ordering",
+            "PBW forms",
+            "commutation rules",
+            "SageMath"
+          ],
+          "appendix": "本研究で扱われる代数の正規順序化やPBW形式の計算は、語の書換え系としての側面を持つため、興味ある分野のうち combinatorics on words との関連性があります。"
+        },
+        "http://arxiv.org/abs/2605.03040v1": {
+          "title": "準平面的(almost planar)な有限表示群",
+          "summary": "k-planarなケイリーグラフを持つ有限表示群は、平面的なケイリーグラフを持つ有限指数部分群を持つことを示した。また、より一般的な結果として、GeorgakopoulosとPapasogluの問いに対し、粗く単連結(coarsely simply connected)なグラフの特殊なケースにおいて回答を与えている。具体的には、k-planarかつ粗く単連結で、連結、局所有限、準推移的なグラフは、平面グラフと準等長(quasi-isometric)であることを証明している。",
+          "keywords": [
+            "finitely presented groups",
+            "k-planar Cayley graphs",
+            "coarsely simply connected graphs",
+            "planar graphs",
+            "quasi-isometric"
+          ],
+          "appendix": "本論文は、有限表示群のケイリーグラフの幾何学的性質と群の代数的構造の関係を扱っており、興味ある分野のうち「structure of large countable infinite group」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.02889v2": {
+          "title": "Gluing diagrams 第1部：Higman-Thompson 群の同型問題に対する構成的な解法",
+          "summary": "本論文では、有向グラフの shift pseudogroup および full group of shifts の間の準同型を構成するための組み合わせ論的道具として「gluing diagrams」を導入しています。どのような図が同型写像を導くかを解明し、その応用として Higman-Thompson 群を特定のグラフの full groups of shifts として解釈することで、Higman が予想し Pardo によって存在が証明された同型写像を具体的に記述する構成的な手順を確立しています。",
+          "keywords": [
+            "gluing diagrams",
+            "Higman-Thompson groups",
+            "shift pseudogroups",
+            "full groups of shifts",
+            "directed graphs"
+          ],
+          "appendix": "この論文は symbolic dynamics および structure of large countable infinite group の分野と密接に関連しています。Higman-Thompson 群の同型写像を具体的な組み合わせ論的構造（gluing diagrams）を用いて構成的に記述している点が重要です。"
+        },
+        "http://arxiv.org/abs/2605.02823v1": {
+          "title": "Deroin-Tholozan表現における不変測度",
+          "summary": "相対的 PSL₂(ℝ) 指標多様体のコンパクトな連結成分である Deroin-Tholozan 表現の指標多様体において、写像類群不変な確率測度の分類を行った。エルゴード測度は、有限軌道上の数え上げ測度であるか、あるいは Goldman シンプレクティック形式から誘導されるリウヴィル測度と一致することを示した。本研究の手法は、横断的なラグランジュ・トーラス・ファイブレーションに沿った測度分解に基づいている。",
+          "keywords": [
+            "Deroin-Tholozan representations",
+            "mapping class group",
+            "character varieties",
+            "invariant probability measures",
+            "Goldman symplectic form"
+          ],
+          "appendix": "本論文は群論的・幾何学的な側面を持ちますが、指定された「興味ある分野」との直接的な関連性は見受けられません。"
+        },
+        "http://arxiv.org/abs/2605.02793v1": {
+          "title": "チェリーの離散和におけるラムゼー数およびガライ–ラムゼー数",
+          "summary": "グラフ G₁, ..., Gₖ に対するラムゼー数 R(G₁, ..., Gₖ) は、完全グラフ K_N の任意の k 辺彩色が少なくとも1つの単色コピー Gᵢ を含む最小の正の整数 N である。ガライ–ラムゼー数 GR(G₁, ..., Gₖ) も同様に定義されるが、彩色は虹色三角形（rainbow triangle）を含まないガライ彩色に限定される。本論文では、チェリー（P₃）の離散和 nᵢP₃ に関する2つの予想 R(n₁P₃, ..., nₖP₃) = N および GR(n₁P₃, ..., nₖP₃) = N（ここで N = 2 max{n₁, ..., nₖ} + Σᵢ₌₁ᵏ nᵢ - k + 1）を検証した。その結果、ラムゼー数に関する予想については反証し、正確な値を決定するための十分条件を提示した。一方、ガライ–ラムゼー数に関する予想については、正しいことを証明した。",
+          "keywords": [
+            "Ramsey numbers",
+            "Gallai-Ramsey numbers",
+            "disjoint unions",
+            "cherries",
+            "Gallai colorings"
+          ],
+          "appendix": "本論文はグラフの彩色問題とラムゼー理論を扱っており、指定された分野の中では組合せ論（combinatorics）に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.02787v1": {
+          "title": "再帰的 SHACL の静的解析",
+          "summary": "SHACL (Shapes Constraint Language) における文書間の含意関係、すなわち、ある SHACL 文書を検証するすべてのグラフが別の文書も検証するかどうかを決定する静的解析の問題を論じている。ターゲット定義と再帰的形状定義を含む文書を対象とし、Supported semantics および Stable model semantics の下では判定不能であることを示す一方で、Well-founded semantics の下では単一指数時間 (EXPTIME) で判定可能であることを明らかにした。SHACL をハイブリッド μ-演算 (hybrid mu-calculus) に変換することで、不動点様相論理と well-founded モデルの新たな関係を提示し、オートマトンに基づく決定手続を提案している。",
+          "keywords": [
+            "SHACL",
+            "static analysis",
+            "well-founded semantics",
+            "hybrid mu-calculus",
+            "automata theory"
+          ],
+          "appendix": "本論文は、オートマトンに基づく決定手続（automata-based decision procedure）を扱っており、興味ある分野として挙げられた「automata theory」に深く関連している。"
+        },
+        "http://arxiv.org/abs/2605.02988v1": {
+          "title": "シフトされたレヴィ・ドラゴン曲線と有向グラフ",
+          "summary": "レヴィ・ドラゴン曲線上の各点が複素べき級数として自然に表現できるという性質に基づき、その表現を特徴づける有向グラフ G₁ を導入する。本論文では、この曲線を s = -1/2 + i/2 だけ平行移動させた場合の性質を研究し、移動後の曲線を特徴づける別の有向グラフ G₂ を同定した。この G₂ は、元のグラフ G₁ が持つものと同様の回転構造（revolving structure）を備えていることが示されている。",
+          "keywords": [
+            "Lévy's Dragon Curve",
+            "complex power series",
+            "directed graph",
+            "translation",
+            "revolving structure"
+          ],
+          "appendix": "本論文はフラクタル図形の幾何学的性質をグラフ理論的に扱っており、興味ある分野のうち complex dynamics や symbolic dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.02668v1": {
+          "title": "アフィンA型におけるCoxeter sortable元とReadingによる非交叉分割との全単射の一般化",
+          "summary": "本論文では、有限コクセター群におけるCoxeter sortable（c-sortable）元とc-非交叉分割の間のReadingの全単射を、アフィン対称群へと一般化する。反射のbiclosed集合を用いることで、アフィン置換の一行記法に対応する「ℤ上の翻訳不変全順序（TITO on ℤ）」を導入し、パターンの回避条件によってc-sortable元を特徴付ける。さらに、c-sortable biclosed集合を定義し、環状の非交叉分割や環状非交叉弧図式（cyclic noncrossing arc diagrams）を介して、これらとc-非交叉分割との間の全単射を構築している。",
+          "keywords": [
+            "affine symmetric group",
+            "c-sortable elements",
+            "noncrossing partitions",
+            "biclosed sets",
+            "pattern avoidance"
+          ],
+          "appendix": "本論文は「combinatorics on words」および「structure of large countable infinite group」に関連する内容を含んでいます。アフィン対称群という無限群の構造解析や、パターン回避を用いた組み合わせ論的な特徴付けが行われています。"
+        },
+        "http://arxiv.org/abs/2605.02585v1": {
+          "title": "測地流の再パラメータ化に対する幾何学的対応",
+          "summary": "非基本かつねじれのない双曲群において、語の指標に擬等長な左不変グロモフ双曲計量と、付随するMineyevのフロー空間の連続な再パラメータ化との間の対応を確立した。この対応を用いることで、負曲率多様体上の測地流において、すべての周期軌道が整数長を持つような連続な再パラメータ化の最初の例を提示した。また、曲面群や自由群に対して、ロキソドロミック元がちょうど非単純元と一致するようなグロモフ双曲空間への等長作用を導出した。証明の鍵として、Mineyevのフロー空間の幾何学的性質（metric-Anosov性など）の解析や、計量のモジュライ空間におけるグリーン計量の稠密性を利用している。さらに、Bowen–Margulis–Sullivan測地カレント写像の連続性を示し、曲面群のHitchin成分における位相的埋め込みへの応用についても論じている。",
+          "keywords": [
+            "Gromov-hyperbolic metrics",
+            "Mineyev's flow space",
+            "geodesic flows",
+            "Bowen–Margulis–Sullivan geodesic current",
+            "Hitchin components"
+          ],
+          "appendix": "本論文は、双曲群の幾何学的性質を扱っている点から「structure of large countable infinite group」に関連があり、また測地流の再パラメータ化や力学系的な解析を行っている点から「symbolic dynamics」の分野とも密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.02488v1": {
+          "title": "複合イベント認識のための効率的なTemporal Datalogマテリアライゼーション",
+          "summary": "高速な記号イベントストリームから重要な状況をタイムリーに検出する要求に応えるため、本論文では様々なイベント仕様言語を「層化否定を持ち未来依存のないTemporal Datalog⁻」へとマッピングする枠組みを提案している。効率的なストリーム推論を実現するために、Datalogマテリアライゼーション技術を拡張した「Streaming Trigger Graphs」を導入し、多様な言語に適用可能な統一的な複合イベント認識メカニズムを構築している。",
+          "keywords": [
+            "Temporal Datalog",
+            "Composite Event Recognition",
+            "Stream Reasoning",
+            "Streaming Trigger Graphs",
+            "Event Specification Languages"
+          ],
+          "appendix": "本論文は記号イベントの処理やイベント仕様言語を対象としているため、興味ある分野のうち「automata theory」および「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.02459v1": {
+          "title": "平面多項式自己同型写像のランダム力学系",
+          "summary": "複素平面 A²_ℂ の自己同型群において、有限台を持つ確率測度 μ に関するランダム力学系を調査した論文。μ の台によって生成される群が非初等的で loxodromic 元のみを含むとき、ランダム積に付随する力学的グリーン関数の存在を証明している。その帰結として、μ-定常測度がコンパクトな台を持つことを導出。また、作用が非散逸的な場合には Roda の定理を適用することで、stiffness（剛性）が示される。",
+          "keywords": [
+            "plane polynomial automorphisms",
+            "random dynamics",
+            "Green functions",
+            "stationary measures",
+            "loxodromic elements"
+          ],
+          "appendix": "この論文は「complex dynamics」に関連する内容を扱っています。"
+        },
+        "http://arxiv.org/abs/2605.02365v1": {
+          "title": "皮質集団ダイナミクスによる逐次的認知状態のモデリング",
+          "summary": "本研究は、ヘテロクリニック・ダイナミクスと離散神経場モデルを組み合わせ、脳活動の周期性および逐次的パターンを記述する数学モデルを提案している。空間離散的な神経場方程式は、生物学的に現実的な平衡点においてヘテロクリニック軌道を保持できないという制約がある一方、Lotka-Volterra型の系は神経過程を直接的には反映しない。そこで、万能近似定理を用いて、高次元のAmari型神経場システムとして解釈可能なネットワークにより任意のターゲットダイナミクスを近似する手法を導入した。この手法により、ヘテロクリニック・サイクルを含むターゲット軌道を忠実に追随する周期軌道を生成可能となる。事例研究として、注意集中瞑想における認知プロセスの逐次的遷移を再現し、近似ダイナミクスの神経学的解釈を提示している。",
+          "keywords": [
+            "heteroclinic dynamics",
+            "neural-field models",
+            "Universal Approximation Theorem",
+            "Amari-type neural-field system",
+            "focused-attention meditation"
+          ],
+          "appendix": "本論文は、非線形力学系における複雑な軌道形成を扱うことから「complex dynamics」に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2605.02362v1": {
+          "title": "(非)同期 must-preorder の統一的な特徴付け",
+          "summary": "メッセージパッシング・ソフトウェアにおけるプログラムの改善関係を定義する De Nicola および Hennessy の must-preorder は、これまで同期・非同期や値渡しの有無といった設定ごとに個別の定義が必要であり、統一的な証明手法が欠如していた。本論文は、計算モデルに依存しない公理的アプローチと、新たに導入した「label abstraction」という概念を用いることで、これらすべての設定を網羅する初の統一的な特徴付けを提案している。このアプローチにより、ブロッキングおよびノンブロッキング・アクションの役割を明確化し、健全性と完全性の証明を統一した。本成果は Rocq (Coq) を用いて完全に機械化されている。",
+          "keywords": [
+            "must-preorder",
+            "label abstraction",
+            "message passing",
+            "formal verification"
+          ],
+          "appendix": "本論文は、プロセス代数やラベル付き遷移系を扱う点において、オートマトン理論 (automata theory) および形式言語 (formal languages) の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.02304v1": {
+          "title": "群作用における高次近接領域関係と位相的特性因子について",
+          "summary": "群作用における高次近接領域関係について、代数的および再帰的な観点から研究している。普遍極小系の部分群上に τ-位相の高次版となる新しい位相を導入することで、アーベル群作用における関係 RPᵈ の代数的特徴付けを与えた。また、回帰集合を用いた解析により、ℤ-作用における既存の結果を一般の群作用へ拡張した。位相的特性因子に関しては、概一対一因子の法の下で、次数 d-1 の最大因子が次数 d の位相的特性因子であることを、一般の群作用の立方体構成および有限生成アーベル群作用の等差数列に対して証明した。これにより、有限生成アーベル群作用において RPᵈ と APᵈ が極小点上で一致することを示し、等差数列に沿った独立性の解析に応用した。",
+          "keywords": [
+            "higher-order regionally proximal relations",
+            "topological characteristic factors",
+            "group actions",
+            "universal minimal system",
+            "arithmetic progressions"
+          ],
+          "appendix": "本論文は力学系における高次構造を扱っており、興味ある分野のうち symbolic dynamics や arithmetic dynamics に関連している。"
+        },
+        "http://arxiv.org/abs/2605.02268v1": {
+          "title": "シフトグラフの語表現可能性",
+          "summary": "グラフ G=(V, E) が語表現可能（word-representable）であるとは、頂点集合 V 上のある語 w において、文字 x と y が交互に現れることと頂点間に枝 xy ∈ E が存在することが同値であることをいう。整数 n > k > 0 に対するシフトグラフ G(n, k) は、1 ≤ x₁ < x₂ < ... < xₖ ≤ n を満たす増加 k-tuples を頂点集合とし、一方が他方のシフト（xᵢ₊₁ = yᵢ または yᵢ₊₁ = xᵢ）である場合に隣接する。シフトグラフは、任意の高い彩色数と奇数内径を持つ疎なグラフの古典的な例であり、簡約化された de Bruijn グラフの誘導部分グラフとして自然に現れる。本論文では、すべてのシフトグラフおよび隣接条件を拡張した一般化シフトグラフが語表現可能であることを証明した。この結果、頂点数が5以上の場合に線グラフ（line graph）は語表現可能ではない一方で、線有向グラフ（line digraph）は語表現可能であるという、構成法の違いによる対照的な性質を示す具体的なグラフ族が得られた。",
+          "keywords": [
+            "Word-representable graphs",
+            "Shift graphs",
+            "de Bruijn graphs",
+            "Line graphs",
+            "Line digraphs"
+          ],
+          "appendix": "本論文は、語の組合せ論（combinatorics on words）に直接関連しており、また de Bruijn グラフやシフト構造を扱う点において記号力学系（symbolic dynamics）の分野とも関連性があります。"
+        },
+        "http://arxiv.org/abs/2605.02254v1": {
+          "title": "二面体群上のケイリーグラフにおけるGroverウォークの完全状態転送",
+          "summary": "本論文では、二面体群 Dₙ 上のケイリーグラフにおけるGroverウォークの完全状態転送（PST）について調査している。先行研究の多くはアーベル群上のケイリーグラフを対象としていたが、本研究では非アーベル群である二面体群上の正規および非正規ケイリーグラフを包括的に扱っている。n のパリティ（偶奇）とケイリーグラフの正規性に基づき、Cay(Dₙ, S) における PST の発生条件を完全に特徴付け、必要十分条件を確立した。特に、n が奇数の場合の正規ケイリーグラフでは PST が存在しないことを示し、一方で PST を持つ正規・非正規ケイリーグラフの無限族を具体的に構成している。解析には二面体群の表現論が用いられている。",
+          "keywords": [
+            "Perfect state transfer",
+            "Grover walk",
+            "dihedral group",
+            "Cayley graph",
+            "representation theory"
+          ],
+          "appendix": "本研究は群の代数的構造とグラフ上の量子ウォークの関係を扱っており、興味ある分野のうち combinatorics や structure of large countable infinite group との関連性を有している。"
+        },
+        "http://arxiv.org/abs/2605.02242v1": {
+          "title": "曲面群の指標",
+          "summary": "本論文では、曲面群の指標およびそれに対応する跡付き表現（tracial representations）の研究が行われています。筆者らは、任意の跡付き表現がWasserstein位相において、スペクトルギャップを持つ因子跡付き表現（factorial tracial representations）によって任意に良く近似できることを示しました。この結果の帰結として、曲面群の跡の空間がPoulsen単体であることが導かれ、Orovitz、Slutskyらによって提起されていた問題が肯定的に解決されました。",
+          "keywords": [
+            "surface groups",
+            "tracial representations",
+            "spectral gap",
+            "Poulsen simplex",
+            "Wasserstein topology"
+          ],
+          "appendix": "本論文は、曲面群という無限群の表現や跡の空間の構造を扱っており、提示された興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.02226v1": {
+          "title": "サブシフト上の有限依存過程",
+          "summary": "本論文では、ℤᵈサブシフトなどの組合せ論的モデルにおける定常な有限依存過程の存在性について調査している。先行研究では4彩色には存在し、d>1の3彩色には存在しないなど、その存在は謎に包まれていた。ポジティブな結果として、有限拡張特性（finite extension property）のような強い混合性を持つサブシフト上には、定常な有限依存過程の稠密な集合が存在することを示す。一方、ネガティブな結果として、サブシフトのコホモロジーがこれら過程の存在の障害となり得ることを示した。具体的には、Conway-Lagarias-Thurstonの高さ関数を用いて、ℤ²のボックスによるタイル貼り空間上に有限依存過程が存在するための条件を特徴付け、先行研究の未解決問題を解決した。さらに、強既約サブシフト上の連続コサイクルが、特定の群（グロモフ双曲群など）において群準同型の摂動として表されることも示している。",
+          "keywords": [
+            "Finitely dependent processes",
+            "Subshifts",
+            "Finite extension property",
+            "Cohomology",
+            "Conway-Lagarias-Thurston height functions"
+          ],
+          "appendix": "本論文は symbolic dynamics（サブシフトの性質）および structure of large countable infinite group（グロモフ双曲群や自由積を値域とするコサイクルの解析）の分野に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.02160v1": {
+          "title": "Quasi-Periodic Gevrey コサイクルにおけるリャプノフ指数の連続性",
+          "summary": "Gevrey空間 Gˢ における準周期コサイクルおよび劣指数的 Brjuno クラスの周波数 Ω(η) において、1 < s + η < 2 という条件下で、リャプノフ指数が連続性を持つことが示されています。",
+          "keywords": [
+            "Quasi-periodic cocycles",
+            "Gevrey space",
+            "Lyapunov exponent",
+            "Brjuno class frequency"
+          ],
+          "appendix": "この論文は、力学系におけるリャプノフ指数の性質を扱っており、興味ある分野のうち complex dynamics に関連する内容を含んでいます。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2605.03200v1",
+        "http://arxiv.org/abs/2605.03176v1",
+        "http://arxiv.org/abs/2605.03161v1",
+        "http://arxiv.org/abs/2605.03107v1",
+        "http://arxiv.org/abs/2605.03094v1",
+        "http://arxiv.org/abs/2605.03040v1",
+        "http://arxiv.org/abs/2605.02889v2",
+        "http://arxiv.org/abs/2605.02823v1",
+        "http://arxiv.org/abs/2605.02793v1",
+        "http://arxiv.org/abs/2605.02787v1",
+        "http://arxiv.org/abs/2605.02988v1",
+        "http://arxiv.org/abs/2605.02668v1",
+        "http://arxiv.org/abs/2605.02585v1",
+        "http://arxiv.org/abs/2605.02488v1",
+        "http://arxiv.org/abs/2605.02459v1",
+        "http://arxiv.org/abs/2605.02365v1",
+        "http://arxiv.org/abs/2605.02362v1",
+        "http://arxiv.org/abs/2605.02304v1",
+        "http://arxiv.org/abs/2605.02268v1",
+        "http://arxiv.org/abs/2605.02254v1",
+        "http://arxiv.org/abs/2605.02242v1",
+        "http://arxiv.org/abs/2605.02226v1",
+        "http://arxiv.org/abs/2605.02160v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-05-07T05:41:36.986623+00:00",
-      "updated_at": "2026-05-07T05:44:43.394324+00:00",
-      "finalized_at": null
+      "updated_at": "2026-05-07T08:18:32.595007+00:00",
+      "finalized_at": "2026-05-07T08:18:32.594989+00:00"
     }
   ]
 }
