@@ -43515,7 +43515,7 @@
     },
     {
       "pipeline_id": "20260508T051341Z-20878ec8",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/w7w77p0dld0lzwrfn5i9sul7o9rv6v6nfgdz",
       "summarize_job_name": "batches/nnq67w8t3m68fibrosnd8pr8rbao2qgiqyln",
       "papers": [
@@ -44287,14 +44287,296 @@
         "http://arxiv.org/abs/2605.03557v1",
         "http://arxiv.org/abs/2605.03535v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2605.04362v1": {
+          "title": "領域の変形下における周期的なビリヤード軌道の持続性",
+          "summary": "特定の組合せ論的基準を満たす周期的ビリヤード軌道を持つ多角形が存在するとき、パラメータ空間内に多角形のパスが存在し、そのパス上の全ての多角形が同一タイプの周期的ビリヤード軌道を持つことを証明している。",
+          "keywords": [
+            "periodic billiard orbit",
+            "combinatorial criterion",
+            "polygon",
+            "parameter space"
+          ],
+          "appendix": "この論文は組合せ論的基準を扱っており、symbolic dynamics や combinatorics on words との関連が示唆されます。"
+        },
+        "http://arxiv.org/abs/2605.04352v1": {
+          "title": "代数的トラップドアを用いた言語モデルにおける構造的数学推論の探査",
+          "summary": "本論文は、言語モデルの構造的な数学的推論能力を評価するための新たなベンチマークを提案している。このベンチマークは、SL(3, ℤ)における部分群生成問題に基づいており、暗号学的な検証者・証明者の非対称性（トラップドア）を利用している。具体的には、有限生成部分群の指数や所属判定といった算術的不変量を問うが、これらは生成時の情報を知っていればO(1)の閉形式で解ける一方、未知の状態ではAschbacher分類やMcLaughlinの定理、Property (T)、合同部分群特性といった高度な代数的知識を必要とする。実験の結果、最新のモデルが決定可能性の境界において「わからない」と回答を控えるといった、高度なメタ認知能力を示すことが確認された。標準的な正誤判定では捉えきれない、モデルの確信度と正確性の関係を4つの分類で評価することを提唱している。",
+          "keywords": [
+            "Algebraic Trapdoors",
+            "Structural Mathematical Reasoning",
+            "SL(3, ℤ)",
+            "Aschbacher classes",
+            "Metacognition"
+          ],
+          "appendix": "本論文はSL(3, ℤ)の部分群構造やProperty (T)、合同部分群特性などの代数的性質を主題としているため、「structure of large countable infinite group」の分野に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.04343v1": {
+          "title": "分子および凝縮相系における隠れた素因数部分群",
+          "summary": "ショアのアルゴリズムなどの隠れた部分群問題を群論的に解析し、分子や凝縮相の対称性と関連付けた研究である。分子軌道や光学ビームなどの物理系が、素因数分解のような数学的な難問の解を保持し得ることを示している。具体的には、原子軌道の対称適合線形結合（SALC）から構築される分子軌道が、対応する整数の素因数に関する情報を含んでいることを議論しており、暗号分野への応用可能性も示唆している。",
+          "keywords": [
+            "Shor's algorithm",
+            "hidden subgroup problems",
+            "molecular orbitals",
+            "group theory",
+            "prime-factoring"
+          ],
+          "appendix": "本論文は群論的な解析を基盤としており、興味ある分野に含まれる「structure of large countable infinite group」に関連する数学的背景を扱っています。"
+        },
+        "http://arxiv.org/abs/2605.04337v1": {
+          "title": "ニューラルネットワークによる記号回帰 (Symbolic Regression via Neural Networks)",
+          "summary": "動的システムの支配方程式を特定することは、数学から生物学まで多岐にわたる分野で極めて重要である。従来のディープラーニングはデータから力学系を近似する能力に優れているが、入出力の写像がブラックボックスであり解釈性に欠けるという課題があった。また、既存の基底関数を用いたモデル選択手法は、直感的な洞察を必要とするか、過学習やモデルの簡潔性の欠如に陥りやすい。本論文では、ディープラーニングの柔軟性と記号解の実用性を組み合わせた、支配方程式の記号表現を生成する新しいニューラルネットワークアーキテクチャを提案し、古典的な動的システムにおいてその精度の高さを示した。",
+          "keywords": [
+            "Symbolic Regression",
+            "Neural Networks",
+            "Dynamical Systems",
+            "Deep Learning",
+            "Governing Equations"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「complex dynamics」に関連する動的システムの解析を扱っています。従来の数値的な近似を行う深層学習に対し、記号的な表現を得ることでシステムの理解を深める手法を提案しています。"
+        },
+        "http://arxiv.org/abs/2605.04330v1": {
+          "title": "Transformerにおける潜在的演繹推論のスケーリング特性",
+          "summary": "Horn節に対する潜在的演繹推論における、深さ制限のあるTransformerのスケーリング特性を調査した研究である。証明可能性と偽の相関（spurious features）を系統的に分離し、アルゴリズム的アラインメントを強制することで、双方向プレフィックスマスクを備えた十分に深いモデルにおいて、潜在的推論が明示的なChain-of-Thought (CoT) の性能に近づくことを明らかにした。ただし、モデルが訓練時よりも深い論理構造へ外挿（depth extrapolation）を行う場合には、依然としてCoTが必要とされる。",
+          "keywords": [
+            "implicit deductive reasoning",
+            "Horn clauses",
+            "Transformers",
+            "algorithmic alignment",
+            "Chain-of-Thought"
+          ],
+          "appendix": "論理体系であるHorn節上の推論を扱っていることから、興味ある分野のうち「formal languages」に関連があります。また、Transformerの推論能力をアルゴリズム的な観点から解析しています。"
+        },
+        "http://arxiv.org/abs/2605.04328v1": {
+          "title": "Fibonacci cubeのpebbling数",
+          "summary": "第n Fibonacci cube Γₙは、連続する1の連続を含まないバイナリ文字列によって誘導されるハイパーキューブ Qₙの部分グラフである。本論文では、n ≤ 6 において π(Γₙ) = 2ⁿ であることを示した。これは、Γₙの頂点数が Qₙ に比べて大幅に少ないにもかかわらず、そのpebbling数が周囲のハイパーキューブ Qₙ と一致することを示している。下限の証明には標準的なポテンシャル論法を用い、上限については Weight Function Lemma から得られる 2ⁿ+1 という値に対し、MILP（混合整数線形計画法）を用いた全探索的検証を行うことで 2ⁿ への絞り込みを行った。すべての n について π(Γₙ) = 2ⁿ が成り立つと予想している。",
+          "keywords": [
+            "Fibonacci cube",
+            "pebbling number",
+            "hypercube",
+            "Weight Function Lemma",
+            "MILP"
+          ],
+          "appendix": "本研究は、特定の制約を持つバイナリ文字列（単語）の構造を扱うため、興味ある分野のうち「combinatorics on words」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.04232v1": {
+          "title": "集中不等式を用いた浮動小数点丸め誤差の確率論的解析",
+          "summary": "浮動小数点演算における丸め誤差は、科学計算や最適化などの数値集約型プログラムにおいて予期せぬ失敗を招く可能性がある。従来の決定論的な丸め誤差の閾値は保守的になりすぎる傾向があるため、本研究では集中不等式をFPTaylorのテイラー展開に適用した新しい確率論的解析手法を提案する。絶対値演算を含む多項式表現の期待値計算を可能にする過剰近似手法や、分数表現を多項式に変換する手法、さらに範囲分割による精度向上の手法を導入した。期待値の線形性と独立性を活用することで、従来手法と比較して数桁高速でありながら、同等の精度で誤差閾値を導出できるスケーラビリティを実現している。",
+          "keywords": [
+            "concentration inequalities",
+            "floating-point round-off",
+            "probabilistic analysis",
+            "Taylor expansion",
+            "range partitioning"
+          ],
+          "appendix": "本論文は、数値計算の誤差解析と正当性保証を扱っており、指定された[興味ある分野]のうち「validated numerics」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.04022v1": {
+          "title": "独立数が2であり、強奇完全グラフ浸入を持たないグラフの彩色",
+          "summary": "本論文では、独立数が2以下（α(G) ≤ 2）であり、完全グラフの強奇浸入（strong odd immersion）を排除するグラフの彩色数について調査している。正の整数 t に対し、グラフ G が強奇 Kₜ-浸入を持たないならば、その彩色数 χ(G) は ⌈3(t-1)/2⌉ 以下であることを証明した。",
+          "keywords": [
+            "chromatic number",
+            "independence number",
+            "strong odd immersion",
+            "clique immersion"
+          ],
+          "appendix": "本論文はグラフ理論における構造的性質と彩色問題を扱っており、広義の組合せ論に分類されます。"
+        },
+        "http://arxiv.org/abs/2605.03938v1": {
+          "title": "磁気測地線、ホッジ・ラプラシアンの固有値、および等周不等式",
+          "summary": "本論文では、長さと安定面積（または双曲多様体における安定交換子長）を関連付ける等周定数が、共完全1形式に作用するホッジ・ラプラシアンの最小固有値に対するチーガー定数として機能することを示しています。共完全固有形式の微分に付随する磁気測地流の性質や、Mañéの臨界エネルギーレベルにおける挙動を解析することで、定数や体積依存性が改善されたチーガー型不等式の新たな証明を提示しています。また、多様体が双曲的である場合のMañéの臨界値と固有値の関係についても考察を行っています。",
+          "keywords": [
+            "Magnetic geodesics",
+            "Hodge Laplacian eigenvalues",
+            "Isoperimetric inequalities",
+            "Mañé's critical energy level",
+            "Hyperbolic manifolds"
+          ],
+          "appendix": "磁気測地流のダイナミクスを扱っているため、広義にはcomplex dynamicsに関連する可能性がありますが、提示された興味ある分野との直接的な強い関連性は認められませんでした。"
+        },
+        "http://arxiv.org/abs/2605.03928v1": {
+          "title": "線形な「サイズから高さ」への増加を伴う木変換器（および線形論理の加法的連言）",
+          "summary": "本論文では、正規文字列関数を扱うHennie機械を木構造へ自然に拡張した「木対木Hennie機械」を調査している。このモデルは、有界訪問制限の下で入力木のノードラベルを書き換える機能を持つ木巡回木変換器であり、MSO変換（正規木関数）よりも広い、出力の高さが入力サイズに対して線形に増加する（LSHI）関数クラスを計算する。著者らは、このクラスがLSHIマクロ木変換器（MTT）とMSO集合解釈の中間に位置することを証明し、MTTとの合成に関する閉包性を示すことで、その頑健性を明らかにしている。また、線形論理の加法的タプル（additive tuples）を用いたλ計算による別個のキャラクタライゼーションも与え、ゲーム意味論や相互作用の幾何学を用いた証明手法を提示している。",
+          "keywords": [
+            "Tree-walking tree transducers",
+            "Hennie machines",
+            "Macro tree transducers",
+            "Linear size-to-height increase",
+            "Linear logic"
+          ],
+          "appendix": "本論文は、オートマトン理論 (automata theory) および形式言語理論 (formal languages) に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.03833v1": {
+          "title": "非単純曲線の出現頻度に関する高種数漸近解析",
+          "summary": "閉曲面における非単純曲線の出現頻度に関する数式を提示し、種数が大きい（large genus）場合におけるこれらの曲線の相対的頻度を調査した。本研究は、Mirzakhaniによるコンツェビッチ多項式を用いた頻度の定式化、およびDelecroix-Goujard-Zograf-Zorichによる高種数漸近解析の結果を、非単純曲線のケースへと拡張するものである。具体的には、交差数Kを固定した際に、どのような種類の曲線が最も一般的であるかを特定した。",
+          "keywords": [
+            "non-simple curves",
+            "large genus asymptotics",
+            "Konsevitch polynomials",
+            "closed surfaces"
+          ],
+          "appendix": "本論文は曲面の幾何学およびトポロジーを扱っており、指定された『興味ある分野』との直接的な関連は希薄ですが、幾何的な構造を扱う点で複素力学系（complex dynamics）や組み合わせ論（combinatorics）の文脈と広義に関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2605.03735v1": {
+          "title": "有限指数までの中心化群に関する降鎖条件を持つ擬有限群における可解根基の可解性",
+          "summary": "有限指数までの中心化群に関する降鎖条件（DCC）を満たす擬有限群において、すべての可解正規部分群によって生成される部分群（可解根基）が可解であることを示している。また、定義可能なセクションが同様の中心化群に関する鎖条件を満たすような、有限生成の擬有限群は存在しないことを明らかにしている。",
+          "keywords": [
+            "pseudo-finite groups",
+            "descending chain condition on centralizers",
+            "solvable radical",
+            "finitely generated groups"
+          ],
+          "appendix": "本論文は、擬有限群という無限群のクラスを扱っており「structure of large countable infinite group」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.04121v1": {
+          "title": "シューアの定理への力学的アプローチ",
+          "summary": "1904年のシューアの定理（中心による剰余群 E/Z(E) が有限ならば、導来部分群 [E, E] も有限であるという定理）を、離散群に限らない位相ハウスドルフ群の文脈で力学系の視点から再解釈した研究である。Adler, Konheim, McAndrew による位相エントロピーの概念を用い、まず閉導来部分群がコンパクトな極大概周期群（GrosserとMoskowitzのZ-群を含む）における連続自己準同型のエントロピーを調査した。その結果、有限な位相エントロピーを持つ連続自己準同型を備えたZ-群 G において、その閉導来部分群の閉包 overline{[G, G]} もまた有限な位相エントロピーを持つことを示し、古典的なシューアの定理の新しい力学的解釈を提示した。",
+          "keywords": [
+            "Schur's Theorem",
+            "topological entropy",
+            "topological Hausdorff groups",
+            "Z-groups",
+            "continuous endomorphisms"
+          ],
+          "appendix": "本論文は群の構造とエントロピーの関係を扱っており、巨大な可算無限群の構造 (structure of large countable infinite group) の一般化や位相的性質に関連する議論を含んでいます。"
+        },
+        "http://arxiv.org/abs/2605.04120v1": {
+          "title": "一般化されたGause系のLiouvillian可積分性と解析的可積分性",
+          "summary": "本論文では、一般化されたホリング型反応関数とロジスティック成長を持つ捕食者・被食者系（Gauseモデル）を対象に、Liouvillian可積分性が成立しないパラメータ領域を特定している。解析は、代数的な枠組みを統一するために複素領域で行われ、得られた非可積分条件は生物学的に意味のある実領域においても有効である。この分析の結果、系から導出される多項式係数を持つ第二種アーベル微分方程式の非可積分性が確立された。また、平衡点近傍における局所的な解析的第一積分の存在についても検討を行っている。",
+          "keywords": [
+            "Liouvillian integrable",
+            "predator-prey system",
+            "Gause model",
+            "Abel differential equation",
+            "analytic first integral"
+          ],
+          "appendix": "複素領域における力学系の解析を扱っているため、興味ある分野の「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.03705v1": {
+          "title": "iSMC: 対話的証明による検証機能を備えたBDDベースのシンボリックモデルチェッカ",
+          "summary": "iSMCは、対話的証明システムの理論に基づいた対話的検証パラダイムを導入した、初の自己証明型モデルチェッカである。BDDを用いたシンボリックな手法により、ジャスティス（公平性）制約を持つCTL（計算樹論理）の任意の性質を検証する。モデル検査の実行後、ユーザーが選択した高い確率で結果の正しさを保証する証明手続きを行う。本ツールはCAV 2023で提案された対話的検証付きQBFソルバの技術をCTLモデル検査向けに拡張・改良し、再実装したものである。",
+          "keywords": [
+            "iSMC",
+            "BDD-based Symbolic Model Checker",
+            "Interactive Certification",
+            "Computation Tree Logic",
+            "Interactive Proof Systems"
+          ],
+          "appendix": "本論文はCTLやモデル検査のアルゴリズムを扱っており、興味ある分野の中では「automata theory」と特に関連があります。"
+        },
+        "http://arxiv.org/abs/2605.03645v2": {
+          "title": "しきい値グラフのラプラシアン固有ベクトルに関する一考察",
+          "summary": "しきい値グラフは、P₄、C₄、2K₂を誘導部分グラフとして含まないグラフとして特徴付けられ、特定の正の整数の数列 a₁, ..., aᵣ (a₁ ≥ 2, Σaᵢ = |V(G)|) によっても定義される。しきい値グラフは、同じ次数のグラフにおいて共通の整数ラプラシアン固有基底を持つという顕著な性質を有しており、この性質がしきい値グラフを特徴付けることが先行研究で示されている。本論文では、この結果に対して異なるアプローチによる証明を与える。",
+          "keywords": [
+            "Threshold graphs",
+            "Laplacian eigenvectors",
+            "Laplacian eigenbasis",
+            "Integer eigenvectors"
+          ],
+          "appendix": "本論文はグラフの組合せ論的構造と固有値問題を扱っており、提示された興味ある分野の中では combinatorics (組合せ論) に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.03628v1": {
+          "title": "Transition Algebra における帰納規則",
+          "summary": "Transition Algebra (TA) は書換え系を扱うための無限論理の一種であるが、既存の体系はコンパクト性を欠いていた。本研究では、(Star) 規則を帰納法に制限し、自然演繹に代わってシーケント計算を採用することで、コンパクトな証明体系を構築した。さらに、この体系を完全にするセマンティクスを導入し、その応用として Craig の補間定理のモデル理論的な証明を与えた。",
+          "keywords": [
+            "Transition Algebra",
+            "rewriting systems",
+            "induction rules",
+            "sequent proof system",
+            "Craig interpolation"
+          ],
+          "appendix": "本研究は、書換え系や論理体系を扱っており、提示された「興味ある分野」の中では automata theory や formal languages と深い関連があります。"
+        },
+        "http://arxiv.org/abs/2605.03613v1": {
+          "title": "命題論理プログラムにおける集合的演算",
+          "summary": "本論文では、命題ホーン論理プログラムを代数的に合成および分解するための枠組みを提案し、ルールの本体に対する集合的な操作を導入している。主な成果として、プログラムをより単純なコンポーネント（特にルール本体が1つ以下の原子からなるKromプログラム）に分解し、それらの意味論から元のプログラムの最小モデルを再構成または近似できることを示した。これは、論理プログラムに対する新たな代数的視点を与え、構成的な推論やプログラム構築の基礎となるものである。",
+          "keywords": [
+            "logic programs",
+            "set-like operations",
+            "least model semantics",
+            "Krom programs",
+            "compositional reasoning"
+          ],
+          "appendix": "本論文は数理論理学およびプログラム理論に関するものであり、指定された「興味ある分野」との直接的な関連性は認められません。しかし、形式体系の構造的な操作と意味論の再構成という点において、理論計算機科学の基礎的な議論を展開しています。"
+        },
+        "http://arxiv.org/abs/2605.03606v1": {
+          "title": "相互抑制を伴うスロウ・ファスト系における尖点特異点（cusped singularities）による混合モード振動の組織化",
+          "summary": "相互抑制を伴う結合スロウ・ファスト系において、臨界多様体の尖点（cusp points）に位置する折り畳まれた特異点である「尖点特異点」が、混合モード振動（MMOs）を発生させる普遍的なメカニズムであることを解明した。幾何学的特異摂動論とブローアップ法に基づき、尖点特異点が小振幅振動（SAOs）を誘発し、それが適切なリターンメカニズムと結合することでMMOsが形成されることを理論的に示している。この構造は特異ホップ分岐の発生と密接に関連しており、CurtuレートモデルやMorris-Lecarニューロンモデルを用いた検証を通じて、従来のサドルノード型MMOsとは異なる特有の交互パターンの存在を実証した。",
+          "keywords": [
+            "mixed-mode oscillations",
+            "cusped singularities",
+            "slow-fast systems",
+            "mutual inhibition",
+            "singular Hopf bifurcation"
+          ],
+          "appendix": "本論文で扱われている複雑な振動ダイナミクスの幾何学的解析は、興味ある分野のうち「complex dynamics」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.03567v1": {
+          "title": "制約付きDyckパスによるカタラン数の恒等式",
+          "summary": "カタラン数とそのDyckパスによる解釈は、応用数学や計算機科学の様々な分野で広く利用されている。本論文では、制約付きDyckパスに対する一般的なアプローチを提案する。具体的には、高さが最大h以下で、かつ高さh-1においてk-1個の連続する谷が連続しないという制約を持つDyckパスを研究する。このパスのクラスに組合せ論的な定義を与え、古典的な格子パスの数え上げ技法を用いて列挙公式を導出する。この分析を通じて、既存の文献にはないカタラン数に関する新たな恒等式を導いている。",
+          "keywords": [
+            "Catalan numbers",
+            "Dyck paths",
+            "lattice paths",
+            "combinatorial description",
+            "enumeration formulas"
+          ],
+          "appendix": "本論文の内容は、数え上げ組合せ論や形式言語理論（Dyck言語）に関連しており、提示された興味ある分野の中では「combinatorics on words」や「formal languages」に深く関わっています。"
+        },
+        "http://arxiv.org/abs/2605.03557v1": {
+          "title": "サドルノード分岐を持つ2つの系の局所相互作用：相利共生的および混合的なケース",
+          "summary": "本論文は、2つの一般的に結合された系が同時にサドルノード分岐を起こす際のダイナミクスの展開（unfolding）を解析した研究です。この相互作用を記述するには4つのパラメータが必要であり、単一のサドルノード分岐に比べて非常に複雑な挙動を示すことが示されました。解析の結果、サドルノード、ホップ、余次元2の局所分岐だけでなく、ホモクリニック分岐やSNIC、SNICeroclinic、非中心SNIC分岐といった多様な大域的分岐が確認されました。さらに、これらの余次元2分岐をパラメータ空間で追跡するための数値続行法（numerical continuation techniques）の開発についても述べられています。",
+          "keywords": [
+            "saddle-node bifurcation",
+            "numerical continuation",
+            "codimension-two bifurcation",
+            "SNIC bifurcation",
+            "global bifurcation"
+          ],
+          "appendix": "本論文は「complex dynamics」の分野に密接に関連しており、動的な系の複雑な分岐構造を扱っています。また、数値的な追跡手法の開発という点において「validated numerics」に関連する計算手法の基盤となるテーマを含んでいます。"
+        },
+        "http://arxiv.org/abs/2605.03535v1": {
+          "title": "決定性レジスタオートマトンに対するハイパー最小化",
+          "summary": "決定性レジスタオートマトン(DRA)におけるハイパー最小化の手法を提案している。まず、決定性有限オートマトンにおける古典的な概念をDRA向けに再定義し、各状態が一意のレジスタ型を持つ「well-typed DRA」を対象としたハイパー最小化アルゴリズムを提示した。このアルゴリズムにより得られるオートマトンは、状態数とレジスタ数の両方において最小であることが保証される。また、提案手法の正当性を証明することで、well-typed DRAのハイパー最小化が決定可能であることを明らかにしている。",
+          "keywords": [
+            "Deterministic register automata",
+            "Hyper-minimization",
+            "well-typed DRAs",
+            "decidability"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「automata theory」および「formal languages」に直接関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2605.04362v1",
+        "http://arxiv.org/abs/2605.04352v1",
+        "http://arxiv.org/abs/2605.04343v1",
+        "http://arxiv.org/abs/2605.04337v1",
+        "http://arxiv.org/abs/2605.04330v1",
+        "http://arxiv.org/abs/2605.04328v1",
+        "http://arxiv.org/abs/2605.04232v1",
+        "http://arxiv.org/abs/2605.04022v1",
+        "http://arxiv.org/abs/2605.03938v1",
+        "http://arxiv.org/abs/2605.03928v1",
+        "http://arxiv.org/abs/2605.03833v1",
+        "http://arxiv.org/abs/2605.03735v1",
+        "http://arxiv.org/abs/2605.04121v1",
+        "http://arxiv.org/abs/2605.04120v1",
+        "http://arxiv.org/abs/2605.03705v1",
+        "http://arxiv.org/abs/2605.03645v2",
+        "http://arxiv.org/abs/2605.03628v1",
+        "http://arxiv.org/abs/2605.03613v1",
+        "http://arxiv.org/abs/2605.03606v1",
+        "http://arxiv.org/abs/2605.03567v1",
+        "http://arxiv.org/abs/2605.03557v1",
+        "http://arxiv.org/abs/2605.03535v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-05-08T05:13:41.851290+00:00",
-      "updated_at": "2026-05-08T05:16:30.414330+00:00",
-      "finalized_at": null
+      "updated_at": "2026-05-08T07:02:51.624090+00:00",
+      "finalized_at": "2026-05-08T07:02:51.624069+00:00"
     }
   ]
 }
