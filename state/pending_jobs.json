@@ -44580,7 +44580,7 @@
     },
     {
       "pipeline_id": "20260509T052949Z-3921651c",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/rboact7h1gd2mw818epl8y4qluhxm6d2pwk1",
       "summarize_job_name": "batches/9krl7ozs01sxpfbmvf131tar494jjast3074",
       "papers": [
@@ -45388,14 +45388,296 @@
         "http://arxiv.org/abs/2605.04391v1",
         "http://arxiv.org/abs/2605.04379v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2605.05498v1": {
+          "title": "部分集合和の少ない集合",
+          "summary": "n個の正の実数からなる集合が少なくとも ((n+1)n)/2 + 1 個の異なる部分集合和を持ち、n ≥ 4 のとき等差数列においてのみ等号が成立するという古典的な事実に対し、本論文ではこの逆定理の安定性バージョンを2つの領域で確立する。第一に、パラメータ M ≤ n - 4 に対して部分集合和の数が ((n+1)n)/2 + 1 + M 個以下となる集合の構造を厳密に特徴付ける。第二に、任意の定数 C に対して部分集合和が Cn² 個以下である集合の構造を、定数の差異を除いて正確に決定する。さらに、d ≥ 2 における ℝᵈ のn元部分集合で部分集合和の数が o(nᵈ⁺¹) となるものの構造についても制約を与える。",
+          "keywords": [
+            "subset sums",
+            "arithmetic progressions",
+            "inverse theorem",
+            "stability"
+          ],
+          "appendix": "本論文は加法的組合せ論を扱っており、提示された興味ある分野の中では combinatorics on words と関連性が高い内容となっています。"
+        },
+        "http://arxiv.org/abs/2605.05484v1": {
+          "title": "pℤₚ 上の Schneider 写像におけるべき平均のマルチフラクタル解析",
+          "summary": "本研究では、p進整数環 pℤₚ 上の Schneider 連分数写像に付随する係数の漸近べき平均を調査している。熱力学形式の手法を用いることで、対応するレベル集合のハウスドルフ次元を算出し、関連するマルチフラクタル・スペクトルの明示的な公式を導出した。幾何学的ポテンシャルが局所定数であるという性質により、古典的な実数空間での設定とは異なり、ポリ対数関数を用いた精密な記述が可能となっている。",
+          "keywords": [
+            "Multifractal analysis",
+            "Schneider map",
+            "Thermodynamic formalism",
+            "Hausdorff dimension",
+            "Polylogarithm functions"
+          ],
+          "appendix": "この論文は、p進数上の力学系を扱っていることから arithmetic dynamics に、また連分数展開の性質を利用している点から symbolic dynamics に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.05455v1": {
+          "title": "有限アフィン空間上の三目並べにおける閾値",
+          "summary": "本論文では、有限体 𝔽_q 上の m 次元アフィン空間 𝔽_q^m を舞台とした三目並べのバリエーションである (m, n)_q ゲームを導入し、解析している。このゲームでは、2人のプレイヤーが交互に点を取り合い、先に n 次元アフィン部分空間の全点を占有したプレイヤーが勝利する。戦略盗み論法および阻止集合を用いた解釈により、このゲームは先手必勝か引き分けのいずれかであり、先手必勝の性質が次元 m に関して単調であることを示した。これにより、先手必勝となる最小次元としての閾値 T(n, q) を定義し、Graham-Rothschild の多次元ラムゼーの定理を用いた上界と、Erdős-Selfridge の判定法による下界を導出している。特に q=2 の場合、𝔽_2^m 上のフーリエ解析と帰納的な持ち上げ議論を組み合わせることで T(n, 2) ≤ 2^(n+1) であることを示し、T(1, q)=2 (q∈{2, 3, 4}) や T(2, 2)=4 といった具体的な値を決定した。また、ペアリング戦略による幾何学的な下界 T(n, q) ≥ n+2 も提示している。",
+          "keywords": [
+            "Tic-Tac-Toe",
+            "Finite affine spaces",
+            "Strategy-stealing",
+            "Ramsey theorem",
+            "Maker-Breaker games"
+          ],
+          "appendix": "本論文は、組み合わせ論（combinatorics）的手法やラムゼー理論を用いてゲームの閾値を解析しており、興味ある分野のうち combinatorics on words と密接に関連する組合せ論的な性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2605.05378v1": {
+          "title": "一般化ガウス連分数写像を用いた高品質な疑似乱数の生成",
+          "summary": "ロジスティック写像やテント写像などの既知のカオス写像は暗号学的に安全な疑似乱数生成に利用されてきたが、ガウス連分数写像を起点とした高品質な疑似乱数生成の研究はほとんど行われていない。本論文では、ガウス写像を一般化した r-連分数写像（r-continued-fraction maps）の族に着目し、それらを用いた疑似乱数生成を提案した。Dieharder、PractRand、TestU01といった統計テストスイートによる評価の結果、提案手法は Mersenne Twister などの標準的な生成器を上回る統計的品質を示した。これにより、これらの写像が新規の乱数生成器の基礎として有望であることを示し、理論的・実践的な研究の動機付けを行っている。",
+          "keywords": [
+            "r-continued-fraction maps",
+            "Gauss map",
+            "pseudorandom number generator",
+            "chaotic maps"
+          ],
+          "appendix": "本論文は、カオス写像の動的な性質を利用している点から complex dynamics（複素動力学）や arithmetic dynamics（算術動力学）といった分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.05184v1": {
+          "title": "整関数のBaker領域の境界：より精緻なアプローチ",
+          "summary": "付随する内部関数のDenjoy-Wolff点が特異点ではないような、二重放物的Baker領域を持つ超越整関数について考察している。境界上の力学系を測度論的観点から極めて精密な方法で記述し、そのトポロジーとダイナミクスの理解を深めている。具体的には、z + e⁻ᶻ のBaker領域に関する先行研究の結果を改善した。これらの結論は、一成分二重放物的内部関数の動径方向への拡張に関する力学系の新結果を適用することで得られており、既存の記号力学系や熱力学形式を用いた手法を強化するものである。",
+          "keywords": [
+            "Baker domains",
+            "transcendental entire functions",
+            "boundary dynamics",
+            "inner functions",
+            "doubly parabolic Baker domains"
+          ],
+          "appendix": "本論文は「complex dynamics」および「symbolic dynamics」の分野に深く関連しています。特に内部関数の動径方向への拡張や熱力学形式（thermodynamic formalism）を扱っており、複素力学系の境界ダイナミクスを理解する上で重要な貢献をしています。"
+        },
+        "http://arxiv.org/abs/2605.05087v1": {
+          "title": "ユークリッド数環上の特殊線形群の主合同部分群における最高次コホモロジー",
+          "summary": "ユークリッド数環 R 上の特殊線形群 SLₙ(R) のレベル p 主合同部分群 Γₙ(p) のコホモロジーを研究する。Borel-Serre は、Γₙ(p) のコホモロジーが n の二次式で表される次数 ν を超えると消失することを示した。本論文では、Lee-Szczarba が R=ℤ の場合に提起した、コホモロジー群 Hᵛ(Γₙ(p)) と Tits building の商の簡約ホモロジー群 H̃ₙ₋₂(𝒯ₙ(K)/Γₙ(p)) の間の同型性に関する問いの一般化を扱う。結果として、自然な写像 Hᵛ(Γₙ(p)) → H̃ₙ₋₂(𝒯ₙ(K)/Γₙ(p)) が常に全射であることを証明し、さらにこの写像が同型となるための p ∈ R に関する十分条件のセットを与える。",
+          "keywords": [
+            "principal congruence subgroups",
+            "Euclidean number rings",
+            "Tits building",
+            "top cohomology",
+            "Borel-Serre"
+          ],
+          "appendix": "本論文は特殊線形群の合同部分群という無限群の性質を扱っており、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.05078v1": {
+          "title": "自己相似測度の最小生成重み付きIFSについて",
+          "summary": "本論文では、実数直線上の自己相似測度を生成する重み付き反復関数系(IFS)の構造を研究している。自己相似測度の最小生成重み付きIFSが存在するための様々な十分条件を提示し、特に均質性の条件下では、分離条件を課すことなく実数直線上の「ほとんど」の自己相似測度が最小生成重み付きIFSを持つことを示した。証明には、指数多項式の零点分布と因数分解理論、対数的共測性を用いた力学系の議論、および自己相似集合の生成IFSの構造に関する結果が用いられている。",
+          "keywords": [
+            "self-similar measure",
+            "weighted IFS",
+            "exponential polynomials",
+            "logarithmic commensurability",
+            "generating IFS"
+          ],
+          "appendix": "本論文は、力学系の議論やIFSの構造を扱っていることから、symbolic dynamicsやcomplex dynamicsの分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.05075v1": {
+          "title": "一般化Markov-Hurwitz方程式における対数的漸近現象",
+          "summary": "本論文では、従来のMarkov-Hurwitz方程式にn−1次の相互作用項を導入し、行田・松下による一般化Markov方程式をn変数へと拡張した「一般化Markov-Hurwitz方程式」を提案している。また、これらの方程式における正の整数解の分布に関して、対数的漸近現象が成立することを証明している。",
+          "keywords": [
+            "generalized Markov-Hurwitz equations",
+            "logarithmic asymptotic phenomenon",
+            "positive integer solutions"
+          ],
+          "appendix": "本論文は数論的な方程式の解の挙動を扱っており、興味ある分野のうち arithmetic dynamics (数論的動力学) に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.05047v2": {
+          "title": "2色グラフにおける局所的ホモフィリーはP完全である",
+          "summary": "2色グラフ上での「局所的ホモフィリー（local homophily）」という局所的な変換操作を提案している。この操作は多数決力学とホモフィリーに基づいた適応的ネットワークに着想を得ており、頂点が近傍の多数派の色に合わせて自身の更新を行い、かつ同色の近傍とは結合し異色の近傍とは切断されるという規則を持つ。本論文では、この局所的ホモフィリーを用いてブール回路を模倣できることを示し、反復適用後に特定の頂点ペアが接続されるかどうかの判定問題が対数領域還元においてP完全であることを証明した。",
+          "keywords": [
+            "local homophily",
+            "bicolored graphs",
+            "majority dynamics",
+            "P-complete",
+            "adaptive networks"
+          ],
+          "appendix": "本研究は多数決力学などの動的なシステムを扱っており、興味ある分野の中では complex dynamics との関連性があります。"
+        },
+        "http://arxiv.org/abs/2605.04987v1": {
+          "title": "置換におけるマッチング",
+          "summary": "2つの置換 [n] → [n] がある元 x を同じ元 y に写すとき、それらは交差すると定義される。置換族におけるマッチングとは、互いに交差しない（どの2つの置換も交差しない）置換の集合のことである。本論文では、サイズ s のマッチングを含まない置換族（s-matching-free families）を調査し、その最大サイズの族の特定や Hilton-Milner 型の結果を導出している。さらに、完全順列（derangements）の族についても検討を行っている。",
+          "keywords": [
+            "permutations",
+            "matchings",
+            "s-matching-free families",
+            "Hilton-Milner type result",
+            "derangements"
+          ],
+          "appendix": "本研究は極値組合せ論（Extremal Combinatorics）の分野に属しており、提示された「興味ある分野」の中では置換の組合せ的性質を扱う点において combinatorics on words と関連があります。"
+        },
+        "http://arxiv.org/abs/2605.04982v1": {
+          "title": "穴あきオービフォールドからのクラスター展開",
+          "summary": "穴あきオービフォールド上の弧に関連付けられた一般化クラスター代数の元について、スネークグラフ、ラベル付き半順序集合、行列、およびT-walksを用いた複数の組合せ論的な展開公式を提示し、それらの同値性を実証している。本研究は、曲面や穴のないオービフォールドにおける既存の組合せ論的展開公式を一般化および統一するものである。",
+          "keywords": [
+            "generalized cluster algebras",
+            "punctured orbifolds",
+            "snake graphs",
+            "combinatorial expansion formulas",
+            "T-walks"
+          ],
+          "appendix": "本研究は、組合せ論的な展開公式やスネークグラフを扱う点で「combinatorics on words」等の組合せ論的分野と関連しています。"
+        },
+        "http://arxiv.org/abs/2605.04851v1": {
+          "title": "双対代数的coframeにおける剰余層化とCantor-Bendixson構造",
+          "summary": "本論文では、代数学におけるFrattini部分群とT1位相空間におけるCantor-Bendixson導関数の両方を一般化する概念として、前順序集合の要素に対する「剰余導関数（residual derivative）」を導入する。順序と両立する位相を持つ双対代数的coframeにおいて、束のCantor-Bendixson構造とその要素の剰余導関数の間の部分的対応を確立し、特に最初の2つのCantor-Bendixsonレベルを剰余構造によって完全に特徴付けた。この枠組みは、代数学から関数解析、力学系に至る広範な領域の位相空間におけるCantor-Bendixson構造を統一的に研究するための視点を提供し、分野間での解析手法の移転を容易にする。",
+          "keywords": [
+            "residual derivative",
+            "Cantor-Bendixson structure",
+            "dual algebraic coframe",
+            "preordered set",
+            "Frattini subgroup"
+          ],
+          "appendix": "本論文は代数学と力学系の両面に関わるCantor-Bendixson構造を扱っており、興味ある分野のうち「structure of large countable infinite group」や各種力学系（complex dynamics, symbolic dynamics等）に関連する理論的基盤を提供する可能性があります。"
+        },
+        "http://arxiv.org/abs/2605.04799v1": {
+          "title": "交わりで重み付けされたErdős-Ko-Rado定理",
+          "summary": "本論文では、一様集合族の各集合をその集合と族内の他の集合との最小の交わりの大きさに応じて重み付けした、Erdős-Ko-Rado（EKR）型の和について考察している。台集合のサイズが十分に大きい場合、この和は最大で1であり、等号はスター（特定の1点を共有する集合族）の場合にのみ成立することを証明した。この結果は、任意の交わり閾値tに対する従来のEKR定理を包含する一般化となっており、副次的結果としてcross-intersectingな集合族に関するHiltonの定理の拡張も得られている。",
+          "keywords": [
+            "Erdős-Ko-Rado theorem",
+            "intersection-weighted",
+            "uniform family",
+            "cross-intersecting families"
+          ],
+          "appendix": "本論文は組合せ論（combinatorics）における極値問題を取り扱っており、提示された興味ある分野の中では combinatorics on words と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.04714v1": {
+          "title": "NIP理論におけるn-distality、n-trivialityおよびハイパーグラフ正則性について",
+          "summary": "本論文では、NIP理論における強n-distalな構造におけるKeisler測度について研究を行い、従来のdistal理論における結果を一般化している。主な成果として、ハイパーグラフ版のdistal正則性補題の確立や、定義可能なfsg群におけるコンパクト支配の証明が挙げられる。また、Poizatのforkingの全自明性（total triviality）との関連を用いることで、安定理論における強n-distality階層が厳密であることを示している。さらに、多パーティ間通信計算量における不一致（discrepancy）の結果を応用し、無限の強n-distal NIP体の標数が0であることを証明している。",
+          "keywords": [
+            "n-distality",
+            "NIP theories",
+            "Keisler measures",
+            "hypergraph regularity lemma",
+            "total triviality"
+          ],
+          "appendix": "本論文は、定義可能なfsg群の性質を扱っており、「巨大な無限群の構造」に関連する側面を持っています。また、モデル理論的観点から組合せ論的手法（ハイパーグラフ正則性）を扱っています。"
+        },
+        "http://arxiv.org/abs/2605.04689v1": {
+          "title": "証明論的意味論における継続と完全性",
+          "summary": "本論文は、直観主義命題論理の証明論的意味論（基底拡張意味論）における完全性証明と、計算理論の基本概念である継続渡し意味論（CPS）の間の関係を探究している。継続渡し意味論を自然演繹やλ計算における簡約、および証明探索の観点から解説し、Sandqvistによる完全性定理の証明をKripke意味論やHeyting意味論の数学的視点から分析する。この分析を通じて、継続の構文的表現が「意味」と「使用」の関係に関する内包的な意味論的直観をどのように体現しているかを、証明論的意味論の道具を用いて精密化している。",
+          "keywords": [
+            "Proof-theoretic semantics",
+            "Base-extension semantics",
+            "Continuation-passing semantics",
+            "Completeness theorem",
+            "Intuitionistic propositional logic"
+          ],
+          "appendix": "本論文は論理学と計算理論の境界領域を扱っており、指定された「興味ある分野」の中では automata theory や formal languages と広義の関連性を持ちますが、研究の主眼は証明論および意味論に置かれています。"
+        },
+        "http://arxiv.org/abs/2605.04657v1": {
+          "title": "コンテキスト自由ハイパープロパティのための論理",
+          "summary": "再帰的システムにおける情報フローなどを記述するための、コンテキスト自由ハイパープロパティ（context-free hyperproperties）を扱う新しい論理を提案している。この論理は、HyperLTLがLTLを拡張したのと同様に、visibly pushdown automataをトレース量子化によって拡張したものである。モデル検査の決定可能性について調査しており、スタックの高さの変動が最初の量子化ブロックのトレースにのみ依存する場合、単一の量子化記号の交代（quantifier alternation）を持つ論理式については決定可能であることを示した。一方で、スタック挙動が第2の量子化ブロックに依存する場合や、2回以上の交代を含むフラグメントの多くは決定不能となる。",
+          "keywords": [
+            "Context-free Hyperproperties",
+            "Visibly Pushdown Automata",
+            "HyperLTL",
+            "Model-checking",
+            "Quantifier Alternation"
+          ],
+          "appendix": "興味ある分野のうち、automata theoryおよびformal languagesに関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2605.04646v1": {
+          "title": "リース積および半直積の幾何学",
+          "summary": "剰余類幾何（コセット幾何）は、群 G とその部分群の体系 (Gᵢ)ᵢ ∈ I から構築される入射幾何学の一種である。本論文では、半直積に関連する2つの演算である「ツイスト（twisting）」および「リース積」を剰余類幾何の枠組みに拡張する方法を詳しく調査している。これらの演算が、旗推移性、剰余連結性、および thin 性（thinness）といった幾何学の主要な性質を保持することを示す。また、これらの演算をポリトープやハイパートープに適用することで、散在単純群をソックルに持つ概単純群において正ポリトープおよび正ハイパートープが存在することを証明している。",
+          "keywords": [
+            "Coset geometries",
+            "Wreath product",
+            "Semi-direct product",
+            "Polytopes",
+            "Hypertopes"
+          ],
+          "appendix": "本論文はリース積や半直積による群の構成を扱っており、群の構造という観点から「structure of large countable infinite group」の分野に関連する数学的背景を有しています。"
+        },
+        "http://arxiv.org/abs/2605.04629v1": {
+          "title": "CombOL: 組合せクラスの実践的な列挙およびボルツマンサンプリングのためのライブラリ",
+          "summary": "CombOL（Combinatorial Objects Library）は、組合せクラスの列挙とボルツマンサンプリングを実行するためのオープンソースライブラリである。簡潔な文字列構文でクラスを指定でき、母関数を自動導出することで計数シーケンスの生成やサンプラーの構築を可能にする。本ライブラリは、自動パラメータ調整による特定のサイズを対象とした棄却サンプリングに加え、新規の早期棄却スキームや、数値精度を動的に高めることで浮動小数点演算の丸め誤差によるバイアスを排除し統計的正当性を保証する機能を備えている。Pythonインターフェースを介して、グラフや化学構造といったドメイン固有のオブジェクトへのマッピングも容易である。",
+          "keywords": [
+            "Boltzmann sampling",
+            "Combinatorial classes",
+            "Generating functions",
+            "Rejection sampling",
+            "Enumeration"
+          ],
+          "appendix": "数値精度を動的に高めて統計的正当性を保証する手法は「validated numerics」に関連しており、組合せクラスの定義や生成は「formal languages」や「combinatorics on words」の分野に深く関わっています。"
+        },
+        "http://arxiv.org/abs/2605.04473v1": {
+          "title": "キネマティックな転移前線を用いたオリガミの逐次的展開のプログラミング",
+          "summary": "本研究は、幾何学的制約のみに支配される「キネマティックな転移前線」の伝播を、離散力学系におけるヘテロクリニック軌道との対応関係として定式化する系統的な設計枠組みを提案した。可展かつ平坦折り可能な4次頂点オリガミにおいて、隣接する折り目間の非対称な結合が非線形漸化式を導き、その合成が展開状態と平坦折り状態を接続するヘテロクリニック軌道を生成することで、ドミノ倒しのような逐次的展開が可能になることを示した。さらに、漸化式の不変性を利用することで、伝播挙動に影響を与えず巨視的な形状を独立にプログラミングできることを実証している。",
+          "keywords": [
+            "transition fronts",
+            "heteroclinic orbits",
+            "discrete dynamical systems",
+            "degree-4 origami",
+            "kinematic propagation"
+          ],
+          "appendix": "離散力学系におけるヘテロクリニック軌道を基盤とした設計手法を扱っており、興味ある分野のうち complex dynamics や、状態遷移のシーケンスという点で symbolic dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.04417v1": {
+          "title": "奇素数冪を法とするチェビシェフ多項式の不動点のリフティングとゴースト周期点",
+          "summary": "本論文では、奇素数 p と n ≥ 2 に対し、ℤ/pᵏℤ 上における第n次チェビシェフ多項式 Tₒ の不動点および周期点を解析している。ᴳᴘ 上の不動点数については、split および nonsplit なソースグループに基づく4つの最大公約数(GCD)を用いた公式を導出している。さらに、Henselのリフティングを適用し、p ≥ 5 の場合の任意のレベル k ≥ 1 における不動点数 Nᵏ の一般式を、Tₒ'(a) ≡ 1 (mod p) を満たす不動点類 a の個数 d を用いて与えている。周期点に関しては、チェビシェフ位数(Chebyshev order)を定義し、メビウスの反転公式を用いて正確な周期を持つ点の数を算出している。p ≂ n の場合、p² を法とするリフティングにより、周期が保持されるか、あるいは「ゴースト周期点」が発生するメカニズムを明らかにしている。",
+          "keywords": [
+            "Chebyshev polynomials",
+            "fixed points",
+            "periodic points",
+            "Hensel lifting",
+            "arithmetic dynamics"
+          ],
+          "appendix": "本論文は、数論的動力学（arithmetic dynamics）に直接関連しており、有理写像の有限環上での振る舞いを解析している点で当該分野と密接に関わっています。"
+        },
+        "http://arxiv.org/abs/2605.04391v1": {
+          "title": "対応の下での有理軌道",
+          "summary": "代数的関数（例：F(x) = √(x³ - 1)）の反復合成における有理点の振る舞いについて、曲線上の対応（correspondence）という枠組みを用いて解析している。標数0の有限生成体 K 上で定義された ℙ¹ から自身への対応 F が特定の条件を満たす場合、n ≥ 12 の各 n に対して Fⁿ(p) が K-有理点を含むような p ∈ ℚ は有限個しか存在しないか、あるいは F が既知の例外的な対応のリストに含まれるかのいずれかであることを示した。",
+          "keywords": [
+            "correspondences",
+            "rational orbits",
+            "algebraic functions",
+            "arithmetic dynamics",
+            "finitely generated field"
+          ],
+          "appendix": "この論文は「arithmetic dynamics」および「complex dynamics」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.04379v1": {
+          "title": "集合族におけるマッチングに関するエルデシュ・クライトマン問題の続報",
+          "summary": "n元集合の部分集合族において、互いに素なs個の要素を含まない族の最大サイズをe(n,s)とする。1968年にKleitmanはすべてのm, s ≥ 1に対してe(sm-1, s)およびe(sm, s)を決定した。その後、FranklとKupavskiiはℓ ≤ (s-3)/(m+3)の範囲でe(s(m+1)-ℓ, s)を決定し、その極値例がErdős Matching Conjectureの極値例と密接に関連していることを示し、同様の結果がℓ ≤ s/2でも成立すると予想した。本論文では、s ≥ s₀(m)においてこの予想の近似版を証明する。",
+          "keywords": [
+            "Erdős--Kleitman problem",
+            "set families",
+            "matchings",
+            "Erdős Matching Conjecture"
+          ],
+          "appendix": "本論文は組み合わせ論の一分野である極値集合論（Extremal Set Theory）を扱っています。提示された「興味ある分野」の中では広義の組み合わせ論（combinatorics）に関連しますが、語の組み合わせ論（combinatorics on words）とは直接の関連はありません。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2605.05498v1",
+        "http://arxiv.org/abs/2605.05484v1",
+        "http://arxiv.org/abs/2605.05455v1",
+        "http://arxiv.org/abs/2605.05378v1",
+        "http://arxiv.org/abs/2605.05184v1",
+        "http://arxiv.org/abs/2605.05087v1",
+        "http://arxiv.org/abs/2605.05078v1",
+        "http://arxiv.org/abs/2605.05075v1",
+        "http://arxiv.org/abs/2605.05047v2",
+        "http://arxiv.org/abs/2605.04987v1",
+        "http://arxiv.org/abs/2605.04982v1",
+        "http://arxiv.org/abs/2605.04851v1",
+        "http://arxiv.org/abs/2605.04799v1",
+        "http://arxiv.org/abs/2605.04714v1",
+        "http://arxiv.org/abs/2605.04689v1",
+        "http://arxiv.org/abs/2605.04657v1",
+        "http://arxiv.org/abs/2605.04646v1",
+        "http://arxiv.org/abs/2605.04629v1",
+        "http://arxiv.org/abs/2605.04473v1",
+        "http://arxiv.org/abs/2605.04417v1",
+        "http://arxiv.org/abs/2605.04391v1",
+        "http://arxiv.org/abs/2605.04379v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-05-09T05:29:49.961809+00:00",
-      "updated_at": "2026-05-09T07:47:34.877087+00:00",
-      "finalized_at": null
+      "updated_at": "2026-05-09T09:10:03.646726+00:00",
+      "finalized_at": "2026-05-09T09:10:03.646697+00:00"
     }
   ]
 }
