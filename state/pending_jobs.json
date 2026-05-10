@@ -45681,7 +45681,7 @@
     },
     {
       "pipeline_id": "20260510T054557Z-0aefa5c4",
-      "status": "summarize_running",
+      "status": "completed",
       "interest_job_name": "batches/m4rk9qcd55pojov4ackh09bifvz67mkn88ex",
       "summarize_job_name": "batches/p2yrvfl4vanutat4ev37pcr8mp0pg8gwm3os",
       "papers": [
@@ -46243,14 +46243,287 @@
         "http://arxiv.org/abs/2605.05677v1",
         "http://arxiv.org/abs/2605.05605v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2605.06569v1": {
+          "title": "量子キャット写像の固有関数の等分布性",
+          "summary": "Kimと著者によって構成された量子キャット写像の短周期固有関数が、半古典測度の意味でトーラス T² 上で等分布することを証明した。また、これらの固有関数の対数的に大きな ℓ^∞ ノルムが、有界な数の座標に漸近的に集中することを示した。これにより、強い座標局在化と半古典的な等分布性が共存することが確認され、これはFaure、Nonnenmacher、De Bièvreらによって観察されたスカー現象（scarring phenomena）とは対照的な結果である。",
+          "keywords": [
+            "Quantum cat maps",
+            "Equidistribution",
+            "Eigenfunctions",
+            "Semiclassical measures",
+            "Coordinate localization"
+          ],
+          "appendix": "この論文は symbolic dynamics および complex dynamics と関連しています。"
+        },
+        "http://arxiv.org/abs/2605.06533v1": {
+          "title": "関係的双対性と双模倣",
+          "summary": "Kripke意味論における関係フレーム（計算体系）と代数（論理述語）の間の範疇論的双対性を、体系間の関係（双模倣など）と述語間の関係の対応へと拡張することを目的とした研究である。無限古典命題論理におけるTarski双対性および無限古典様相論理におけるThomason双対性の関係的拡張を構築することで、異なる体系間の論理式を関連付ける証明体系を提案している。",
+          "keywords": [
+            "Relational dualities",
+            "Bisimulation",
+            "Kripke semantics",
+            "Tarski duality",
+            "Thomason duality"
+          ],
+          "appendix": "計算体系や双模倣（bisimulation）を論理的に扱う性質上、興味ある分野のうち「automata theory」と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.06499v1": {
+          "title": "symplectic Steinberg加群の射影分解",
+          "summary": "Borel–Serreは、分体Kを持つ数環Rに対し、シンプレクティック群Sp₂ₙ(R)が仮想双対群であり、symplectic Steinberg加群Stω₂ₙ(K)がその双対加群であることを証明した。本論文では、Lee–Szczarbaが特殊線形群に対して構築した分解に類似した形式で、Sp₂ₙ(R)表現としてのsymplectic Steinberg加群の射影分解を構成した。Rがユークリッド数環である場合、この分解を利用して、自然な写像Rˣ → (R/(p))ˣが全射となるような素数pにおけるSp₂ₙ(R)の主レベルp合同部分群の最高次コホモロジーを計算した。",
+          "keywords": [
+            "symplectic Steinberg module",
+            "symplectic group",
+            "virtual duality group",
+            "projective resolution",
+            "cohomology of congruence subgroups"
+          ],
+          "appendix": "本論文は、算術的群のコホモロジーや加群の構造を扱っており、興味ある分野のうち「structure of large countable infinite group」に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2605.06471v1": {
+          "title": "合成スキーマのためのLeapジェネレータ",
+          "summary": "[Duchon et al. '04]で提案された、超臨界(supercritical)なC = Seq(B)型の構造に対するサイズ指定のランダム生成法であるLeapジェネレータを、合成スキーマ C = A ∘ B へ拡張した。得られた生成器は、サンプリング計算量に関する条件下で線形時間計算量を維持するが、完全な一様性は一般に失われる。しかし、生成される分布(leap distribution)は漸近的に一様であり、一様分布との全変異距離は、超臨界ケースで(c + o(1))n⁻¹/²、平面写像の族に関連する特定の臨界ケースでは ~ c n⁻¹/³ となる。本手法は実装が容易であり、ポーヤ木や歩道、平面写像といった様々なクラスに適用可能である。",
+          "keywords": [
+            "Leap generators",
+            "Composition schemes",
+            "Random generation",
+            "Supercritical case",
+            "Total variation distance"
+          ],
+          "appendix": "本論文は組み合わせ構造のランダム生成を扱っており、列(Sequence)の生成という観点から「combinatorics on words」や「formal languages」と関連があります。また、木や平面写像といった構造の解析は組み合わせ論の重要なテーマです。"
+        },
+        "http://arxiv.org/abs/2605.06384v1": {
+          "title": "MinMax 回帰型ニューラルカスケード",
+          "summary": "MinMax代数に基づく回帰構造を用いたMinMax Recurrent Neural Cascades (RNCs)を提案する。本モデルは勾配消失・爆発の問題を克服し、正則言語をすべて表現できる高い表現能力を備えている。理論的には、並列計算による対数時間での評価が可能であり、状態や活性化が常に有界であるといった優れた特性を持つ。実験では、合成タスクにおいて既存のRNNを上回る性能を示したほか、127Mパラメータのモデルによる次単語予測タスクにおいても実用的なポテンシャルが確認された。",
+          "keywords": [
+            "MinMax algebra",
+            "Recurrent Neural Cascades",
+            "vanishing gradient",
+            "regular languages",
+            "finite-memory system"
+          ],
+          "appendix": "本論文は表現能力として正則言語（regular languages）をすべて含むと言及しており、興味ある分野のうち「automata theory」および「formal languages」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.06381v1": {
+          "title": "共役類における軌道の数え上げ",
+          "summary": "本論文では、適切な空間に作用する特定の離散群に対する制限付き軌道数え上げ問題を扱う。特に、単一の共役類に制限された軌道内の点の数に関する漸近挙動を提示する。具体例として、負曲率が抑えられた単連結多様体に等長的に作用する離散群の余コンパクト作用や、より一般的にはCAT(-1)空間上の凸余コンパクト作用についての結果を得ている。",
+          "keywords": [
+            "discrete groups",
+            "orbital counting",
+            "conjugacy classes",
+            "CAT(-1) spaces",
+            "convex cocompact actions"
+          ],
+          "appendix": "この論文は離散群の作用を扱っているため、興味ある分野のうち「structure of large countable infinite group」に関連があります。"
+        },
+        "http://arxiv.org/abs/2605.06334v1": {
+          "title": "MANTRA: ツール利用型 LLM エージェントのための SMT 検証済みコンプライアンス・ベンチマークの合成",
+          "summary": "ツールを利用する大規模言語モデル（LLM）エージェントが、自然言語で書かれた手続き型マニュアルの規則を遵守しているかを評価するためのフレームワーク「MANTRA」を提案する。従来の手作業によるベンチマーク構築や LLM による判定は、スケーラビリティや信頼性に欠けるという課題があった。MANTRA は、マニュアルとツールのスキーマから、手続き上の依存関係を捉えるシンボリックな世界モデルと、トレースレベルのコンプライアンス・チェックを自動生成し、SMT ソルバを用いてそれらの一貫性を検証する。一貫性に問題がある場合は修正ループを介して解決し、50ページを超える膨大なマニュアルに対しても最小限の人的労力で、信頼性の高いベンチマークを生成できることを示した。",
+          "keywords": [
+            "tool-using LLM agents",
+            "SMT solving",
+            "compliance benchmarks",
+            "symbolic world model",
+            "procedural manuals"
+          ],
+          "appendix": "本論文はシンボリックな表現や SMT ソルバによる形式的な検証手法を扱っていますが、指定された「興味ある分野」（symbolic dynamics, automata theory, formal languages 等）に直接関連する理論的内容は含まれていません。"
+        },
+        "http://arxiv.org/abs/2605.06292v1": {
+          "title": "計算モデルとしての時系列因果モデル",
+          "summary": "因果依存関係を表現する構造方程式モデル（SEM）を時系列設定に拡張した「時系列構造方程式モデル（TSEM）」が、計算モデルとして解釈可能であることを示した論文である。TSEMが線形有界オートマトン（LBA）をエンコード可能であり、文脈依存言語を表現できることを証明したほか、可算無限個の変数を持つTSEMがチューリング完全であることを明らかにした。これにより、因果推論における反事実推論技術を計算理論に統合するための形式的な接続が確立された。",
+          "keywords": [
+            "Temporal SEMs",
+            "Linear Bounded Automata",
+            "Turing completeness",
+            "Causal reasoning",
+            "Structural Equation Models"
+          ],
+          "appendix": "本論文は線形有界オートマトンやチューリング完全性、文脈依存言語について議論しており、興味ある分野のうち「automata theory」および「formal languages」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.06269v1": {
+          "title": "有限値トランスデューサの編集距離",
+          "summary": "トランスデューサは、入力語に対して出力語を生成することで語の間の関係を定義するオートマトンの一般化である。各入力に対して高々k個の出力を生成するものは有限値（finite-valued）トランスデューサと呼ばれ、k=1の場合は関数型と呼ばれる。二つのトランスデューサ間の編集距離は、各入力語について、一方のトランスデューサの出力を他方の出力へ変換するために必要な最小編集回数として定義される。この距離は関数型トランスデューサにおいては計算可能であるが、一般的なトランスデューサでは計算不能であることが知られている。本研究では、関数型よりも表現力が高い有限値トランスデューサのクラスにおいて、編集距離が計算可能であることを示した。",
+          "keywords": [
+            "Finite-valued transducers",
+            "Edit distance",
+            "Computability",
+            "Automata theory"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「automata theory」および「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.06268v1": {
+          "title": "連続時間遷移系のための次数付きモナド余代数",
+          "summary": "本論文では、離散的なステップで進化する遷移系を扱う従来の関手余代数を拡張し、連続時間遷移系をモデル化するために「次数付きモナドの次数付き余代数」を導入している。著者らは、次数付きモナド間の次数付き分配法則を含む次数付き余代数の理論を構築し、終余代数の存在条件を明らかにしている。また、分岐時間およびトレース意味論を定義し、それらをFeller-Dynkin過程に関する最近の研究と関連付けている。さらに、プロセス意味論のための余代数的様相論理を開発し、不変性と表現力に関する状態基準を提示している。",
+          "keywords": [
+            "graded monads",
+            "continuous-time transition systems",
+            "graded coalgebras",
+            "Feller-Dynkin processes",
+            "coalgebraic modal logics"
+          ],
+          "appendix": "本論文は遷移系の抽象的なモデル化を扱っており、広義のオートマトン理論（automata theory）および形式言語（formal languages）の理論的基盤に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.06163v1": {
+          "title": "2次元ユークリッド・ビルディング上の格子に対する正規部分群定理",
+          "summary": "2次元ユークリッド・ビルディング上に固有かつ余コンパクトに作用するすべての群が、正規部分群の性質（Normal Subgroup Property）を持つことを証明した。具体的には、任意の正規部分群は、指数有限であるか、あるいは作用の有限核に含まれるかのいずれかであることを示した。この帰結として、過去に構成された非剰余有限な格子が仮想的に単純（virtually simple）であることが示され、これらは既約ユークリッド・ビルディングにおける最初の単純格子の例となる。",
+          "keywords": [
+            "Normal Subgroup Theorem",
+            "Euclidean buildings",
+            "lattices",
+            "virtually simple",
+            "non-residually finite"
+          ],
+          "appendix": "この論文は、無限群の正規部分群の構造や単純格子の存在を論じているため、興味ある分野のうち「structure of large countable infinite group」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.06023v1": {
+          "title": "非正曲率群における簡潔な論理式",
+          "summary": "アシリンドリカル双曲群およびその特定の拡大群において、一階述語論理式が簡潔（concise）であることを示す。また、バーンサイド群、icc群、'Big Powers'条件を満たす群、トーラス結び目群などを含むさらなる群のクラスを対象に、広範な論理式に対する簡潔性を証明する。さらに、論理式の種類に基づき、これらの群における定義可能集合の有限性などの性質についても探求する。",
+          "keywords": [
+            "acylindrically hyperbolic groups",
+            "first-order formulae",
+            "Burnside groups",
+            "definable sets",
+            "non-positive curvature"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に関連しています。アシリンドリカル双曲群や非正曲率群の性質、および群論におけるモデル理論的な側面を扱っています。"
+        },
+        "http://arxiv.org/abs/2605.06000v1": {
+          "title": "Deep-Koopman-KANDy：Kolmogorov-Arnold Networks for Dynamicsを用いたDeep-Koopman作用素のための辞書発見",
+          "summary": "データ駆動型動的システムにおけるKoopman辞書の選択という課題に対し、Deep-KoopmanモデリングとKolmogorov-Arnold Networks for Dynamics (KANDy)を統合した、事後的にシンボリック辞書を読み出す手法を提案する。エンコーダとデコーダに2層のKANsを採用し、レベルセット構築と連鎖律に基づく勾配恒等式を用いることで、学習された観測量の合成構造を抽出する。Lorenz系での辞書復元や、標準写像でのフーリエ基底の抽出、Ikeda写像における葉層構造の座標 g ≈ x² + y² の特定に成功した。また、有限次元のKoopman閉包が存在しないArnold cat写像ではスパースな閉包が発見されないことを確認し、手法の妥当性を示している。",
+          "keywords": [
+            "Deep-Koopman Operators",
+            "Kolmogorov-Arnold Networks for Dynamics",
+            "Dictionary Discovery",
+            "Dynamical Systems",
+            "Symbolic Regression"
+          ],
+          "appendix": "本論文は動的システムの解析と構造発見を主眼としており、興味ある分野のうち complex dynamics および symbolic dynamics と深い関連があります。"
+        },
+        "http://arxiv.org/abs/2605.05968v1": {
+          "title": "最大大偏差とYoung Towersのためのマルチンゲール法",
+          "summary": "可逆力学系における定量的な最大大偏差の見積もりを得るための、マルチンゲール近似の枠組みを開発した。適切な相関の減衰からこれらの見積もりを導出し、その応用として、大部分が拡大的な中心方向を持つ部分双曲型微分同相写像に対して一致する再帰テイルを持つYoung構造を構築した。さらに、劣指数的な収縮・拡大を伴うYoung towersによってモデル化された系における最大大偏差の見積もりを証明し、混合の遅いビリヤードの多くの例に適用可能であることを示した。",
+          "keywords": [
+            "martingale approximation",
+            "maximal large deviations",
+            "Young towers",
+            "partially hyperbolic diffeomorphisms",
+            "slowly mixing billiards"
+          ],
+          "appendix": "本論文はYoung towersを扱っており、力学系の統計的性質の観点から symbolic dynamics や complex dynamics に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2605.05935v1": {
+          "title": "カウンタを超えたエネルギー目的を持つ無限状態ゲーム",
+          "summary": "無限状態アリーナ上のゲーム理論において、プッシュダウンシステム等の再帰ベースのモデルとVASS（ベクトル加算システム）等のカウンタベースのモデルの間には決定可能性に関して大きな隔たりがある。本論文では、カウンタの非負性を勝利条件の一部とするエネルギーセマンティクスを「生存性ゲーム（viability games）」として定義し、グラフモノイド上の原子価システム（valence systems）という広範な枠組みでその決定可能性と複雑性の景観を完全に記述した。その結果、プッシュダウンとカウンタの特定の組み合わせにおいて、停止性ゲームや制御状態到達可能性が決定不能であっても生存性ゲームは決定可能になることを明らかにした。",
+          "keywords": [
+            "infinite-state games",
+            "energy semantics",
+            "viability games",
+            "valence systems",
+            "graph monoids"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.05840v1": {
+          "title": "シンボリックモデル性を用いた一階述語論理の断片における決定可能性の結果",
+          "summary": "潜在的に無限な一階述語構造を有限に表現する手法である「シンボリック構造」を、標準モデルを持つ任意の基礎理論に適用できるよう一般化した。ある論理の断片において、充足可能な論理式が常にシンボリックモデルを持つという「シンボリックモデル性」が成立する場合、シンボリック構造上のモデル検査が決定可能であることから、その断片自体の決定可能性が導かれる。本研究では、層状論理式（stratified formulas）の断片を拡張し、特定の制限下で自己ループを持つ関数を許容するような断片において、シンボリックモデル性を構築する汎用的な手法を用いて決定可能性を証明した。",
+          "keywords": [
+            "symbolic structures",
+            "symbolic model property",
+            "decidability",
+            "stratified formulas",
+            "first-order logic"
+          ],
+          "appendix": "本論文は、一階述語論理の決定可能な断片の特定とモデル検査を扱っており、計算理論や自動定理証明の文脈において automata theory および formal languages の分野と関連があります。"
+        },
+        "http://arxiv.org/abs/2605.05823v1": {
+          "title": "マルチモーダル円周写像に対するブラシュケ型モデル",
+          "summary": "各整数 m ≥ 1 に対して、単位円への制限が 2m-マルチモーダル写像となるブラシュケ型積の有理写像の有限次元族を構成した。適切な力学的条件を満たすすべての後期的臨界有限（post-critically finite）な 2m-マルチモーダル円周写像が、この族の元と位相同型であることを示している。この実現は回転を除いて一意であり、この族はこのクラスのすべての組合せ構造を実現する標準的なモデルを提供する。証明には、ブラシュケ型写像の臨界幾何の解析と、パラメータ空間上のプルバック演算子に対するサーストン型の不動点定理が用いられている。",
+          "keywords": [
+            "Blaschke-type products",
+            "multimodal circle maps",
+            "post-critically finite",
+            "topological conjugacy",
+            "Thurston-type fixed point argument"
+          ],
+          "appendix": "本論文は「complex dynamics」の分野に深く関連しており、有理写像の力学的性質と組合せ的な構成を扱っています。"
+        },
+        "http://arxiv.org/abs/2605.05797v1": {
+          "title": "混合不確実性に直面する資源制約下のロボットプランニング",
+          "summary": "本論文は、定量化可能なノイズから未知の不確実性、および限られた資源という制約条件下で、ロボットの堅牢な戦略を合成する手法を提案している。著者らは、非決定的な行動、混合不確実性、および資源消費を統一的に扱うモデルとして「集合値遷移を伴う消費マルコフ決定過程 (CMDPST)」を導入した。タスク仕様には有限トレース上の線形時相論理 (LTLf) を採用し、資源を枯渇させることなく目標達成確率を最大化する戦略合成問題に取り組んでいる。解法として、直接的な展開に基づく手法と、状態空間のプルーニングを活用した効率的な手法を提案し、倉庫搬送ネットワークを用いた実験によりその有効性を実証した。",
+          "keywords": [
+            "Consumption Markov Decision Process with Set-valued Transitions",
+            "Mixed Uncertainty",
+            "Linear Temporal Logic over finite traces",
+            "Resource-Constrained Strategy Synthesis",
+            "State-space pruning"
+          ],
+          "appendix": "本論文はLTLfを用いたタスク仕様の記述や状態空間の探索を扱っており、オートマトン理論 (automata theory) や形式言語 (formal languages) に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2605.05786v1": {
+          "title": "量子プログラムの自動検証のための実用的な仕様記述言語（テクニカルレポート）",
+          "summary": "量子プログラムの正当性を推論する基盤としてホーア流の検証が挙げられるが、既存の手法では完全な自動化が困難であった。特に集合ベースのアサーションをオートマトンに変換する際の指数関数的な計算量の増大が実用上の制限となっていた。本論文では、拡張された集合ベースの仕様記述言語と、量子ビット数に対して線形な計算量で変換を行うアルゴリズムを提案する。制御オートマトンの構築と量子ビットの順序変更を導入することで、表現力と効率性を両立し、これまで困難であった規模のプログラムに対する完全自動検証を実現している。",
+          "keywords": [
+            "quantum program verification",
+            "Hoare-style verification",
+            "automata-based verification",
+            "specification language"
+          ],
+          "appendix": "本研究は、興味ある分野のうち automata theory (オートマトン理論) と強く関連しています。仕様記述をオートマトンへ効率的に変換する手法を提案しており、形式言語理論の応用例といえます。"
+        },
+        "http://arxiv.org/abs/2605.05677v1": {
+          "title": "拡張Dynkin図形のfoldingによって構成されるルート系",
+          "summary": "ルート系の拡張アフィンWeyl群は、対応するWeyl群とcoweight格子の半直積として表される。本論文では、基本アルコーブに対する拡張アフィンWeyl群の安定部分群が拡張Dynkin図形の自己同型群を誘導することを利用し、その部分群の元によるfolding（畳み込み）操作を通じて有限ルート系を構成する手法について述べている。",
+          "keywords": [
+            "extended affine Weyl group",
+            "coweight lattice",
+            "extended Dynkin diagram",
+            "folding",
+            "root system"
+          ],
+          "appendix": "拡張アフィンWeyl群という無限群の構造的性質を扱っているため、興味ある分野のうち「structure of large countable infinite group」に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2605.05605v1": {
+          "title": "Coulomb摩擦を伴う強制振動衝撃振動子の混合グローバルダイナミクスとそのシンプレクティック構造、KAMトーラス、および持続性",
+          "summary": "本論文は、Amonton-Coulomb摩擦と弾性壁を持つ強制振動衝撃振動子において、ハミルトン系の安定島と散逸系の吸引子が単一の位相空間内に共存する現象を数学的に解析したものである。著者らは、関連するFilippov流のグローバルな適切性を証明し、被覆多様体上の区分的に滑らかなハミルトン系への持ち上げを構成した。最大前方不変な非固着集合において、時間 T ストロボ写像が完全シンプレクティックであることを示し、対称 T-周期軌道の存在条件およびパラメータ依存のサドル・センター分岐（f_sc(F, ω, R)）を導出した。Moserのねじれ定理を用いて楕円型非固着周期軌道近傍のKAMトーラスの存在を証明し、メルニコフ解析によって双曲型ダイナミクスを確認した。また、反発係数の不完全性や粘性減衰が保守構造を破壊し、ハミルトン島が漸近安定な吸引流域に置き換わることを示した。さらに、多粒子系への拡張や、計算機援用証明による周期軌道の存在と楕円性の検証も行っている。",
+          "keywords": [
+            "Vibro-impact oscillator",
+            "Coulomb friction",
+            "Symplectic structure",
+            "KAM tori",
+            "Filippov flow"
+          ],
+          "appendix": "本論文は、周期軌道の存在と楕円性を検証するための計算機援用証明を用いている点で「validated numerics」に関連しており、またKAMトーラスや双曲型ダイナミクスの解析を行っている点で「complex dynamics」の分野と深い関わりがあります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2605.06569v1",
+        "http://arxiv.org/abs/2605.06533v1",
+        "http://arxiv.org/abs/2605.06499v1",
+        "http://arxiv.org/abs/2605.06471v1",
+        "http://arxiv.org/abs/2605.06384v1",
+        "http://arxiv.org/abs/2605.06381v1",
+        "http://arxiv.org/abs/2605.06334v1",
+        "http://arxiv.org/abs/2605.06292v1",
+        "http://arxiv.org/abs/2605.06269v1",
+        "http://arxiv.org/abs/2605.06268v1",
+        "http://arxiv.org/abs/2605.06163v1",
+        "http://arxiv.org/abs/2605.06023v1",
+        "http://arxiv.org/abs/2605.06000v1",
+        "http://arxiv.org/abs/2605.05968v1",
+        "http://arxiv.org/abs/2605.05935v1",
+        "http://arxiv.org/abs/2605.05840v1",
+        "http://arxiv.org/abs/2605.05823v1",
+        "http://arxiv.org/abs/2605.05797v1",
+        "http://arxiv.org/abs/2605.05786v1",
+        "http://arxiv.org/abs/2605.05677v1",
+        "http://arxiv.org/abs/2605.05605v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-05-10T05:45:57.901640+00:00",
-      "updated_at": "2026-05-10T09:26:48.256197+00:00",
-      "finalized_at": null
+      "updated_at": "2026-05-10T21:40:06.772218+00:00",
+      "finalized_at": "2026-05-10T21:40:06.772195+00:00"
     }
   ]
 }
