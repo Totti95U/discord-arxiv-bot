@@ -46527,7 +46527,7 @@
     },
     {
       "pipeline_id": "20260511T060811Z-8c475760",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/a6f99aarjvypt7862qq1rzw9f85f1c0zmjmw",
       "summarize_job_name": "batches/ys07v1xwq91kum1di547e7s4onqnhu1w5lsi",
       "papers": [
@@ -47024,14 +47024,184 @@
         "http://arxiv.org/abs/2605.07433v1",
         "http://arxiv.org/abs/2605.07373v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2605.08033v1": {
+          "title": "Bruhat順序のMacNeille完備化における弱順序",
+          "summary": "本論文では、Coxeter群 W のBruhat順序のMacNeille完備化 Mac(W) 上に0-Heckeモノイドの作用を導入し、それを用いて Mac(W) 上の弱順序および降下集合統計量を定義している。この構成は Type A の場合には交互符号行列（ASM）や単調三角形を用いた既存の研究を一般化するものである。この作用を応用し、Knutson–Miller部分語複体の特定の和が頂点分解可能であることを示したほか、ASM多様体のCohen–Macaulay性に関するEscobar–Klein–Weigandtの予想を証明した。一方で、Hamaker–ReinerによるASM弱順序の区間のトポロジーに関する予想への反例も提示している。さらに、Mac(W) 上の非可逆力学系として「MacNeille pop-stack演算子」を導入し、有限既約Coxeter群において底状態へ至る最大反復回数が Coxeter数 h に対して h-1 回であることを証明した。また、本研究の一部は大規模言語モデル（ChatGPT 5.4 Pro）を自律的に用いて得られた数学的成果のケーススタディとしての側面も持つ。",
+          "keywords": [
+            "MacNeille completion",
+            "Bruhat order",
+            "0-Hecke monoid",
+            "alternating sign matrices",
+            "pop-stack operator"
+          ],
+          "appendix": "本論文で導入されたMacNeille pop-stack演算子は、指定された興味ある分野のうち「complex dynamics」や「arithmetic dynamics」に関連する動的システム的な側面を持っています。また、大規模言語モデルを用いた証明の自動生成という計算機科学的なアプローチも含まれています。"
+        },
+        "http://arxiv.org/abs/2605.07968v1": {
+          "title": "無限語上の Measure-Many 量子有限オートマトン",
+          "summary": "無限語を処理するための量子計算モデルとして、従来の Measure-many Quantum Finite automata (MMQFA) を Büchi 受理条件を用いて拡張した Measure-Many Quantum Büchi Automata (MMQBA) を提案している。MMQBA はユニタリ変換と射影測定を繰り返しながら状態を遷移させ、特定のカットポイント p ∈ (0, 1] に基づき、受理状態を無限回訪問しつつ、累積受理確率の極限が p 以上、かつ累積拒否確率の極限が p 未満である場合に無限語を受理する。本論文では、MMQBA 言語が MMQFA 言語の極限 lim(L(M, p)) として記述できることを示し、非停止部分空間の分解手法を開発した。また、和集合については閉じているが、共通部分や補集合については閉じていない。計算の複雑さについては、空判定問題が半決定可能である一方、万能性、包含関係、等価性、および帰属性判定は非決定であることを証明した。",
+          "keywords": [
+            "Measure-Many Quantum Büchi Automata",
+            "infinite words",
+            "Büchi acceptance condition",
+            "language-theoretic characterization",
+            "decidability"
+          ],
+          "appendix": "本論文は [興味ある分野] のうち、automata theory および formal languages に関連しています。量子オートマトンにおける無限語の受理特性と、その決定不可能性について論じた内容です。"
+        },
+        "http://arxiv.org/abs/2605.07944v1": {
+          "title": "射影平面上における余次数1および次数4の同次pre-foliation",
+          "summary": "本論文では、複素射影平面 P² 上の余次数1、次数4の同次 pre-foliation を、射影自己同型を除いて分類した。特に、Legendre変換が平坦な4-web（flat 4-web）を定義するものを対象としている。次数3の基礎となる同次葉層構造 H の接層の次数 deg(T_H) が 2, 3, 4 となるケースのうち、既知であった 2 のケースを除き、3 および 4 のケースを完結させた。証明には Bedrouni の曲率正則性基準、明示的な正規形、および記号計算（symbolic computation）が組み合わされており、H の Gauss 写像の分岐データによってパラメータ化された、具体的な 1 形式の有限リストを導出している。",
+          "keywords": [
+            "Homogeneous pre-foliations",
+            "Legendre transform",
+            "Flat 4-web",
+            "Curvature-holomorphy criteria",
+            "Symbolic computation"
+          ],
+          "appendix": "本論文は、複素射影平面上の幾何学的構造を扱っていることから「complex dynamics」に関連する内容を含んでいます。また、手法として記号計算（symbolic computation）が用いられています。"
+        },
+        "http://arxiv.org/abs/2605.07893v1": {
+          "title": "アーベル群の非tameな抽象基本クラスの例",
+          "summary": "本論文では、捩れのないアーベル群の抽象基本クラス（AEC）において、非tame（non-tame）な性質を持つ具体例を構成している。著者らは、(<ℵ₀)-tameではないがℵ₀-tameであるクラスK₁を構成することで、先行研究の疑問に回答した。さらに、最初の可測基数より小さい任意の正則非可算基数μに対して、(<μ)-tameではないクラスK₂(2^μ)を構成した。これらは代数的な理由から非tameとなる例であり、自然な言語における非tameな抽象基本クラスの最初の例である。",
+          "keywords": [
+            "abstract elementary class",
+            "abelian groups",
+            "tame",
+            "torsion-free",
+            "measurable cardinal"
+          ],
+          "appendix": "この論文は無限アーベル群の代数的構造を扱っており、興味ある分野の「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.07853v1": {
+          "title": "グラフ積の核の普遍的構造",
+          "summary": "有限単体的グラフ Γ 上のグラフ積 G_Γ から、その頂点群の直積への標準的準同型の核 K_Γ に関する研究である。従来、K_Γ はグラフ Γ と頂点群の濃度のみに依存することが知られていたが、本論文ではこれを関手的な観点から洗練させた。頂点群間の集合写像の集合が核の間の準同型を自然に誘導し、この構成が関手的であることを示している。また、いくつかの応用についても議論されている。",
+          "keywords": [
+            "Graph product kernels",
+            "Functorial refinement",
+            "Canonical homomorphism",
+            "Simplicial graph",
+            "Vertex groups"
+          ],
+          "appendix": "この論文はグラフ積という群の構成法とその核の性質を扱っており、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.07758v1": {
+          "title": "SMTに基づく重み付きオートマトンの能動学習",
+          "summary": "非決定性重み付きオートマトン（WFA）の能動学習に向けた、SMT（満足度評価式）に基づく新しいアルゴリズムを提案している。本手法は従来のHankel行列やL*アルゴリズムを用いる手法に代わる実用的なアプローチであり、任意の半環に対して適用可能である。アルゴリズムが終了すれば、最小のWFAを生成することが保証されており、有限半環においては常に終了する。実験では、既存手法と比較して教師との対話回数が少なく、より小さいサイズのオートマトンを効率的に学習できることが示された。",
+          "keywords": [
+            "Active Learning",
+            "Weighted Automata",
+            "SMT-Based",
+            "Semiring",
+            "Nondeterministic Weighted Automata"
+          ],
+          "appendix": "この論文は「automata theory」および「formal languages」の分野に深く関連しています。非決定性重み付きオートマトンの最小化と能動学習をSMTソルバによって解決する実用的な手法を提供しています。"
+        },
+        "http://arxiv.org/abs/2605.07710v1": {
+          "title": "項書き換えを用いた木オートマトンの学習",
+          "summary": "Angluin型の学習アルゴリズムを木オートマトンへ拡張し、演繹的推論を統合した手法を提案している。このアルゴリズムは、対象となる木言語の性質（特定の記号下における部分木の順序が不変であることなど）を記述する項書き換えシステム（TRS）を用いる。このTRSを利用して一部の問い合わせに対する回答を推論することで、学習における問い合わせ計算量を削減する。自然な木構造データの性質を表現する書き換えシステムの例を通じて、問い合わせ回数の大幅な削減が可能であることを示している。",
+          "keywords": [
+            "Tree automata",
+            "Term rewriting system",
+            "Angluin-style learning",
+            "Query complexity",
+            "Deductive inference"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「automata theory」および「formal languages」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.07705v1": {
+          "title": "Cross-Attention と Encoder-Decoder Transformer: 論理的特徴付け",
+          "summary": "LLMの基礎となるエンコーダ・デコーダ型トランスフォーマーに対し、浮動小数点演算とソフトアテンションを考慮した実用的設定下での論理的特徴付けを提案している。エンコーダ入力への計数グローバルモダリティとデコーダ入力への過去モダリティを導入した新しい時相論理を用い、さらに分散オートマトンによる特徴付けも示している。この結果はアーキテクチャの細かな差異やマスキングの変更にも対応可能であり、自己回帰設定についても考察されている。",
+          "keywords": [
+            "cross-attention",
+            "encoder-decoder transformers",
+            "temporal logic",
+            "distributed automata"
+          ],
+          "appendix": "この論文は興味ある分野のうち「automata theory」および「formal languages」と密接に関連しています。トランスフォーマーの表現能力を計算理論的・論理学的な観点から厳密に定義しようとする試みです。"
+        },
+        "http://arxiv.org/abs/2605.07587v1": {
+          "title": "Pons-Batle恒等式への組合せ論的枠組み：Young Tableaux、格子路、および極限定理",
+          "summary": "系統樹ネットワークの一種であるtree-child networkにおいて、葉の数nと細網節点数kに関するPons-Batle予想を、kが有界な場合に証明した。壁と穴を持つYoung tableauxを導入し、Pons-Batle語との全単射を構築することで、この恒等式の直接的な組合せ論的説明を与えた。また、装飾されたDyck路への射影と微分演算子を用いた代数的母関数の解析により、TCₙ,ₖの漸化式と閉形式を導出した。さらに、k=1における構造パラメータがスケーリング後にBeta分布に収束することを示し、特異点の合流に伴う非解析的な転移を明らかにした。",
+          "keywords": [
+            "Tree-child networks",
+            "Pons-Batle identity",
+            "Young tableaux",
+            "Lattice paths",
+            "Limit laws"
+          ],
+          "appendix": "本論文はPons-Batle wordsの数え上げと性質を扱っており、興味ある分野のうち combinatorics on words に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.07542v1": {
+          "title": "Brikの数列：奇妙な再帰",
+          "summary": "本論文では、初期語をB₁ = 101、漸化式をBᵢ₊₁ = BᵢCᵢ（ここでCᵢはBᵢの先頭i文字を取り除いたもの）として定義される語の列(Bᵢ)、およびその極限としての無限二進列bの性質を調査した。bは回帰的であるが、一様回帰的ではないことが示された。また、bの因子の複雑さ（factor complexity）は指数関数的であり、射影的（morphic）ではない。さらに、bにおける1の密度は存在し、その値は超越数であることが証明された。",
+          "keywords": [
+            "Brik's sequence",
+            "recurrent sequence",
+            "factor complexity",
+            "morphic word",
+            "transcendental density"
+          ],
+          "appendix": "本論文は、combinatorics on wordsおよびsymbolic dynamicsの分野に関連している。"
+        },
+        "http://arxiv.org/abs/2605.07500v1": {
+          "title": "力学系における計算機援用証明：Shimizu--Morioka系におけるヘテロクリニック軌道の事例研究",
+          "summary": "本論文では、準ニュートン作用子の縮小に基づく事後検証法であるradii polynomial approachを用いて、Shimizu--Morioka系における横断的ヘテロクリニック軌道の存在を計算機援用証明しています。平衡点と固有値対、パラメータ化法による局所不変多様体、および境界値問題としての接続軌道のそれぞれについて、零点問題の定式化、近似零点、近似逆作用子、有界評価という4つのステップからなる統一的な手順で検証を行っています。また、Julia言語のRadiiPolynomialライブラリを用いた実装についても言及されています。",
+          "keywords": [
+            "radii polynomial approach",
+            "computer-assisted proof",
+            "Shimizu--Morioka system",
+            "heteroclinic orbit",
+            "parameterization method"
+          ],
+          "appendix": "興味ある分野のうち「validated numerics（精度保証付き数値計算）」に直接関連する研究内容です。"
+        },
+        "http://arxiv.org/abs/2605.07433v1": {
+          "title": "Weighted MaxSMTを用いた定常状態データからの定性的モデルの推論",
+          "summary": "複雑な生物学的システムのモデリングにおいて、測定誤差に起因する制約の矛盾（充足不能性）は定性的モデル推論の大きな課題である。本論文では、不確実な観測データを重み付きのソフト制約として符号化する、Weighted MaxSMTに基づいた頑健な推論手法を提案する。この手法はBooleanおよび多値の変数ドメインに対応し、離散化された値や発現量の順序関係に関する制約を扱うことができる。200から1300の遺伝子を含む神経細胞分化モデルの推論において、観測データと最も整合するモデルを特定できることを示した。",
+          "keywords": [
+            "Weighted MaxSMT",
+            "Qualitative models",
+            "steady-state data",
+            "Inference",
+            "Biological systems"
+          ],
+          "appendix": "本論文は、記号的な符号化（symbolic encodings）や自動推論を用いてモデルの仕様を扱う点において、オートマトン理論（Automata theory）や形式手法の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.07373v1": {
+          "title": "有限的な真の並行双模倣",
+          "summary": "プロセス言語の先行双模倣（prebisimulation）先行順序に基づく完全抽象な表示的モデルを構築する際、標準的な表示的解釈では有限の観測が同一視される点と、先行双模倣が無限の観測に基づきプロセスを区別してしまう点という2つの問題が生じる。完全抽象性を得るためには先行双模倣の有限的な部分が必要となる。本論文では、論理的および振る舞い的な形式の既存研究に基づき、真の並行（truly concurrent）先行双模倣とその有限的な定義を提示する。",
+          "keywords": [
+            "Prebisimulation",
+            "Truly concurrent",
+            "Denotational model",
+            "Finitary bisimulation",
+            "Full abstraction"
+          ],
+          "appendix": "本論文はプロセス言語の形式意味論を扱っており、オートマトン理論や形式言語理論に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2605.08033v1",
+        "http://arxiv.org/abs/2605.07968v1",
+        "http://arxiv.org/abs/2605.07944v1",
+        "http://arxiv.org/abs/2605.07893v1",
+        "http://arxiv.org/abs/2605.07853v1",
+        "http://arxiv.org/abs/2605.07758v1",
+        "http://arxiv.org/abs/2605.07710v1",
+        "http://arxiv.org/abs/2605.07705v1",
+        "http://arxiv.org/abs/2605.07587v1",
+        "http://arxiv.org/abs/2605.07542v1",
+        "http://arxiv.org/abs/2605.07500v1",
+        "http://arxiv.org/abs/2605.07433v1",
+        "http://arxiv.org/abs/2605.07373v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-05-11T06:08:11.459362+00:00",
-      "updated_at": "2026-05-11T06:32:35.185251+00:00",
-      "finalized_at": null
+      "updated_at": "2026-05-11T10:04:46.394798+00:00",
+      "finalized_at": "2026-05-11T10:04:46.394773+00:00"
     }
   ]
 }
