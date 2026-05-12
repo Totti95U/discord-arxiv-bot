@@ -47202,6 +47202,353 @@
       "created_at": "2026-05-11T06:08:11.459362+00:00",
       "updated_at": "2026-05-11T10:04:46.394798+00:00",
       "finalized_at": "2026-05-11T10:04:46.394773+00:00"
+    },
+    {
+      "pipeline_id": "20260512T054812Z-87b75bcd",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/555b9mipred6nauwr32aiorr52ccvdsfhz2f",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2605.09229v1",
+          "entry_id": "http://arxiv.org/abs/2605.09229v1",
+          "title": "Average Hitting Times and Recurrence STRUCTURES I: Powers of Cycle Graphs",
+          "summary": "We investigate the average hitting times of simple random walks on the $k$-th power graph $C_N^k$ of the cycle graph $C_N$. First, we show that the average hitting times are characterized by a difference equation corresponding to the graph Laplacian. Next, by using the cyclic symmetry of $C_N^k$, we derive a spectral representation via Fourier analysis. Furthermore, by applying factorization and partial fraction decomposition of the corresponding difference operator, we obtain an explicit formula for the average hitting times consisting of a quadratic term and finitely many correction terms. These correction terms are described by second-order linear recurrence sequences associated with the characteristic polynomials, and can be regarded as natural generalizations of Fibonacci-type sequences. As a consequence, our formulas recover the known results for cycle graphs and squares of cycle graphs in a unified way. Moreover, from the formulas obtained for average hitting times, we derive explicit formulas for the effective resistances, the numbers of spanning trees, the numbers of two-component spanning forests, and the numbers of spanning trees of vertex-identified graphs. In particular, for the third power graph $C_N^3$ of the cycle graph, all of these quantities are written explicitly in terms of complex conjugate Fibonacci-type sequences. Our results clarify structural relations between random walk quantities and combinatorial quantities on cycle power graphs.",
+          "authors": [
+            "Tsuyoshi Miezaki",
+            "Shunya Tamura"
+          ],
+          "published": "2026-05-09T23:57:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.09215v1",
+          "entry_id": "http://arxiv.org/abs/2605.09215v1",
+          "title": "No-three-in-line sets on the checkerboard grid",
+          "summary": "The classical no-three-in-line problem asks for the largest number (D(n)) of points that can be chosen from an (n \\times n) grid with no three collinear. We study the checkerboard-restricted variant in which all chosen points lie in one fixed parity class of (x+y \\pmod 2). Let (D_{\\mathrm{mono}}(n)) be the corresponding optimum. The slope-(\\pm1) diagonals give the elementary bound (D_{\\mathrm{mono}}(n) \\le 2n-2).\n  The main tool is a four-direction linear-programming relaxation on a fixed parity class, using rows, columns, and the two diagonal families of slopes (\\pm1). For the ordinary square-grid problem this relaxation is trivial, but on the checkerboard it gives substantially tighter finite bounds. After symmetry reduction, the dual relaxation has three one-dimensional forms, according to the parity of (n) and the chosen colour class.\n  The main rigorous result is an exact continuum dual certificate for the formal continuum problem associated with the scaled odd-fat case. We construct explicit nonnegative functions satisfying the continuum obstacle inequalities and having objective value (α), where (401α^3-1744α^2+2240α-768=0) and (α) is the middle real root. This proves the upper bound (Λ_{\\mathrm{fat}}\\leα) for the odd-fat continuum relaxation. Finite LP computations are consistent with (α) as a limiting slope, and exact small-(n) data suggest the same scale for the original checkerboard optimum.",
+          "authors": [
+            "Thomas Prellberg"
+          ],
+          "published": "2026-05-09T23:17:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.09179v1",
+          "entry_id": "http://arxiv.org/abs/2605.09179v1",
+          "title": "A Reversible Crumbling Abstract Machine for Plotkin's Call-by-Value",
+          "summary": "Landauer's embeddings enable the reversibility of computations for non-reversible programming languages, augmenting each intermediate state with enough data to reconstruct the previous state. An interesting research question is therefore to try to reduce the space overhead required. In this work we propose a Landauer's embedding for Plotkin's call-by-value calculus (CbV). In order to control the computational complexity of CbV and turn the number of $β$-steps into a cost model, CbV is typically implemented via reduction machines. We show that one machine, that has not received much attention, exhibits a particularly compact Landauer's embedding, requiring only constant space overhead for each step.",
+          "authors": [
+            "Nicolò Pizzo",
+            "Claudio Sacerdoti Coen"
+          ],
+          "published": "2026-05-09T21:42:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.09103v1",
+          "entry_id": "http://arxiv.org/abs/2605.09103v1",
+          "title": "Local Universal Splitting Integrators for Contact Hamiltonian Systems",
+          "summary": "Contact Hamiltonian systems extend symplectic Hamiltonian mechanics to dissipative settings while retaining geometric structure. We develop a structure-preserving splitting framework for contact Hamiltonian systems on $J^1(\\mathbb{R}^n)$ based on two tractable classes of exact-contact subflows: strict contactomorphisms and prolonged diffeomorphisms. Our main theoretical result is that the Lie algebra generated by the corresponding strict and prolonged Hamiltonians contains all polynomial-in-$p$ Hamiltonians and is therefore dense, in the $C^r$ topology on compact sets, in the Lie algebra of smooth contact Hamiltonians. This yields a local universality result and contact splitting integrators built from exact strict and prolonged subflows. We then show how these subflows can be realized numerically by lifting symplectic integrators on $T^*\\mathbb{R}^n$ and ODE integrators on $\\mathbb{R}^n\\times\\mathbb{R}$. Finally, we illustrate the framework on a sequence of low-dimensional examples.",
+          "authors": [
+            "George A Kevrekidis"
+          ],
+          "published": "2026-05-09T18:18:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.09077v1",
+          "entry_id": "http://arxiv.org/abs/2605.09077v1",
+          "title": "Set Automata and Limits of Decidability of Two-Variable Logic on Data Words",
+          "summary": "We extend the two-variable logic on data words with guarded regular binary predicates of the form $\\widetilde{L}(x,y)$ that is true if positions $x$ and $y$ are in the same class and the factor strictly between $x$ and $y$ is in the regular language $L$. We characterise the class of monoids for which the extension of the two-variable logic with guarded predicates recognised by the monoid is decidable, namely the class of idempotent monoids whose two-sided ideals are linearly ordered. For this, we introduce an automata formalism, set automata, that is equivalent to the class automata of Bojańczyk and Lasota and thus has an undecidable emptiness problem. We identify a subclass of set automata called ordered quasi-normal set automata that has a decidable emptiness problem by reduction to the emptiness problem of ordered multicounter automata. We show that the two-variable logic extended with guarded regular predicates recognised by a semigroup $S$ is expressively equivalent to a quasi-normal set automaton with the semigroup of transformations $S$. In particular, if $S$ is a linear band monoid then the resulting automaton is ordered, and the decidability result follows.",
+          "authors": [
+            "Shibashis Guha",
+            "Amaldev Manuel",
+            "S P Rishal"
+          ],
+          "published": "2026-05-09T17:38:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.09062v1",
+          "entry_id": "http://arxiv.org/abs/2605.09062v1",
+          "title": "Scaling Symmetries and Conformal Relative Equilibria on Poisson Manifolds, with Applications to Lie--Poisson Systems",
+          "summary": "We investigate conformal relative equilibria for Hamiltonian systems on exact Poisson manifolds equipped with scaling symmetries. By introducing conformally Poisson actions and conformal momentum maps, we characterize these equilibria through an augmented Hamiltonian formulation; in the nondegenerate case, this recovers the conditions recently developed for the exact symplectic case.\n  Specializing to Lie--Poisson manifolds, where the natural scaling action canonically provides an exact Poisson structure on the dual of any finite-dimensional Lie algebra, we establish a purely algebraic criterion: a homogeneous Hamiltonian system admits a nontrivial conformal relative equilibrium if and only if the underlying Lie algebra contains a hyperbolic element. This yields a complete classification in dimension three via the Bianchi classification. As a prominent application, we show that nontrivial conformal relative equilibria emerge in the dynamics on $\\mathfrak{so}(2,1)^*$, but are strictly obstructed for the classical free rigid body on $\\mathfrak{so}(3)^*$.",
+          "authors": [
+            "Manuele Santoprete"
+          ],
+          "published": "2026-05-09T17:12:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08993v1",
+          "entry_id": "http://arxiv.org/abs/2605.08993v1",
+          "title": "Reconstructing resonant phase oscillator interactions from noisy time series",
+          "summary": "We present a method for reconstructing resonant interactions in weakly coupled phase oscillator systems from noisy time series. Instead of attempting to recover the full phase equations, which may be non-identifiable in the presence of bounded observational uncertainty, the method reconstructs the resonant normal form terms that determine the leading-order drift dynamics. We develop first-order and second-order reconstruction procedures based on finite libraries of resonant Fourier modes and least-squares estimation. We prove error bounds for the reconstructed coefficients under natural assumptions on the observation noise and the distribution of initial conditions. The second-order method detects effective resonant interactions generated by the interplay of nonresonant first-order couplings. Numerical examples illustrate the reconstruction of resonant subnetworks and emergent higher-order interactions.",
+          "authors": [
+            "Bengi Dönmez",
+            "Bob Rink"
+          ],
+          "published": "2026-05-09T15:22:30+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08990v1",
+          "entry_id": "http://arxiv.org/abs/2605.08990v1",
+          "title": "Well-Scoped Locally Nameless Representation of Syntax",
+          "summary": "When using interactive theorem provers based on dependent type theory to define and reason about languages involving binding constructs, we advocate the use of a well-scoped version of the locally nameless method of representing syntax. This paper describes generic code parameterized by a Plotkin-style binding signature for this style of syntax representation within the Agda theorem prover, gives a proof of its adequacy with respect to naive nameful syntax modulo alpha-conversion and discusses some examples of its use.",
+          "authors": [
+            "Andrew M. Pitts"
+          ],
+          "published": "2026-05-09T15:17:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08968v1",
+          "entry_id": "http://arxiv.org/abs/2605.08968v1",
+          "title": "Proofs of four generating function conjectures for arbor polytopes",
+          "summary": "This paper proves four conjectured generating series, due to Chapoton, which concern invariants of posets and polytopes associated with a specific sequence of arbors. Two of these conjectures provide closed-form formulas for the generating series of the Zeta polynomial and the generating series of the M-triangle of the poset, respectively. The remaining two conjectures pertain, respectively, to the Ehrhart polynomial and the Laplace transform of the volume function of the associated arbor polytope.",
+          "authors": [
+            "Feihu Liu",
+            "Jinlong Tang"
+          ],
+          "published": "2026-05-09T14:22:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08929v1",
+          "entry_id": "http://arxiv.org/abs/2605.08929v1",
+          "title": "Cyclicity of centers on center manifolds in a 3D chaotic system with a four-wing attractor",
+          "summary": "In this work, we investigate the conditions that guarantee the existence of centers on the center manifold, arising from Hopf points, in the new three-dimensional quadratic chaotic system introduced by B. Khaled et al. in 2024 in the Int. J. Data Netw. Sci. For some of the Hopf points of the system, we solve the center-focus problem on the center manifold, analyzing both its isochronicity and cyclicity. Our results significantly improve the previously known lower bound on the number of limit cycles bifurcating from Hopf points in this system, as established by B. M. Mohammed in 2025 in the Int. J. Bifurc. Chaos Appl. Sci. Eng.",
+          "authors": [
+            "Vitor Gusson",
+            "Claudio Pessoa"
+          ],
+          "published": "2026-05-09T13:01:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08921v1",
+          "entry_id": "http://arxiv.org/abs/2605.08921v1",
+          "title": "Effective resistance and spanning trees in complete graphs with distance-class deletions",
+          "summary": "In this paper, we consider circulant graphs obtained from the complete graph $K_N$ by deleting all edges belonging to a prescribed distance class. We study, in a unified manner, the effective resistance, the expected hitting time, the number of spanning trees, and the number of two-component spanning forests of these graphs. For general distance-class deletions, these quantities admit natural spectral representations in terms of the Laplacian eigenvalues. However, such representations typically remain at the level of finite Fourier sums, and concise closed forms are not expected in general. We focus on the case of a single deleted distance class. When the number of vertices $N$ is odd and $\\gcd(r,N)=1$, the graph $G_{N,r}$ is isomorphic to $G_{N,1}$. In this setting, we derive explicit exponential-type formulas for the effective resistance and the number of spanning trees, and obtain corresponding closed expressions for two-component spanning forests and expected hitting times. Our results show that the case $r=2$ is not essentially new, but follows from a general isomorphism structure underlying distance-class deletions. We also clarify the relation of our formulas to earlier results on the complete graph with a Hamiltonian cycle removed, and provide a unified derivation within a spectral framework. Moreover, by asymptotic analysis, we show that the ratio $τ(G_{N,1})/τ(K_N)$ converges to $e^{-2}$ as $N \\to \\infty$.",
+          "authors": [
+            "Shunya Tamura"
+          ],
+          "published": "2026-05-09T12:41:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08909v1",
+          "entry_id": "http://arxiv.org/abs/2605.08909v1",
+          "title": "An Upper Bound for Discrete Isometric Filling of Cycles",
+          "summary": "We study the discrete graph-metric analogue of Gromov's filling area problem for the cycle graph \\(C_n\\). An abstract triangulation \\(K\\) is an isometric filling of \\(C_n\\) if \\(\\partial K=C_n\\) and the graph distance between any two boundary vertices is not shortened inside the \\(1\\)-skeleton of \\(K\\). Let \\(D(n;ε)\\) denote the minimum number of vertices in a \\((1-ε)\\)-Lipschitz filling of \\(C_n\\), and set \\[ D^*=\\liminf_{ε\\to0^+}\\liminf_{n\\to\\infty}\\frac{D(n;ε)}{n^2}. \\] Previous work gives the general lower bound \\(D^*\\ge 1/8\\), while discretizing the hemisphere gives the upper bound \\[ D^*\\le \\frac{1}{π\\sqrt3}. \\] In this paper we give an explicit discrete construction which improves the hemispherical upper bound. More precisely, we construct isometric fillings \\(K_n\\) of \\(C_n\\) with \\[ |V(K_n)|\\le \\left(\\frac16+o(1)\\right)n^2, \\] and hence \\[ D^*\\le \\frac16<\\frac{1}{π\\sqrt3}. \\] This can directly illustrate the discrete filling area problem is a proper relaxation of Gromov's original filling area problem and cannot be used to settle Gromov's conjecture. The construction is a concentric annular filling.",
+          "authors": [
+            "Runtai He"
+          ],
+          "published": "2026-05-09T12:08:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08892v1",
+          "entry_id": "http://arxiv.org/abs/2605.08892v1",
+          "title": "The Pascal matrix in the multivariate Riordan group",
+          "summary": "We generalize the concept of Pascal matrices to matrices associated with sets of points by considering multidimensional binomial coefficients as entries. We study their properties and prove that the infinite matrix associated with the set vectors with integral coordinates is in fact an element of the multivariate Riordan group.",
+          "authors": [
+            "Helena Cobo"
+          ],
+          "published": "2026-05-09T11:18:17+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08848v1",
+          "entry_id": "http://arxiv.org/abs/2605.08848v1",
+          "title": "Ramsey-type $χ$-bounds for $χ$-bounded graph classes",
+          "summary": "We prove that for every path $P$, the class of graphs with no induced $P$ and no induced four-cycle $C_4$ is linearly $χ$-bounded. More generally, we ask for which pairs $\\{T,H\\}$ where $T$ is a forest and $H$ is a complete multipartite graph, every graph $G$ with no induced $T$ and no induced $H$ has chromatic number at most $C \\cdot R(α(H),ω(G)+1)$ for some constant $C$ depending only on $T$ and $H$, where $R(\\cdot,\\cdot)$ denotes the usual Ramsey numbers. We show that this holds in the following two instances, which strengthen the case $T=P$ and $H=C_4$ mentioned above:\n  (1) every component of $T$ is a broom and $H$ is complete multipartite; or\n  (2) $T$ is a forest and $H$ is complete bipartite.\n  These two unify and substantially extend a number of previous results on linear and polynomial $χ$-boundedness for various graph classes.\n  For case (2), we also provide a new proof (with better bounds) of a recent result of Fox, Nenadov, and Pham on the existence of an induced copy of a fixed tree in a graph satisfying certain sparsity conditions.",
+          "authors": [
+            "Tung Nguyen",
+            "Sang-il Oum"
+          ],
+          "published": "2026-05-09T10:02:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08803v1",
+          "entry_id": "http://arxiv.org/abs/2605.08803v1",
+          "title": "Fixed-point approximation for self-consistent transfer operators with Newton's method",
+          "summary": "Self consistent transfer operators arise naturally in the study of mean-field coupled dynamical systems and are closely related to kinetic PDEs such as the Vlasov equation. Despite substantial progress on existence and uniqueness of fixed points for self-consistent transfer operators, the development of fast, reliable, and provably accurate numerical methods remains largely unresolved. In this work, we construct a nonlinear Fourier-Fejér discretisation and establish convergence of the resulting finite-dimensional fixed point to that of the original self-consistent transfer operator. Further, using the nonlinear Fourier-Fejér discretisation, we prove exponential convergence of a sequential iteration scheme and develop a Newton framework with quadratic convergence. We present numerical examples demonstrating the efficiency and flexibility of the above methods.",
+          "authors": [
+            "Wael Bahsoun",
+            "Gary Froyland",
+            "Maxence Phalempin"
+          ],
+          "published": "2026-05-09T08:47:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08746v1",
+          "entry_id": "http://arxiv.org/abs/2605.08746v1",
+          "title": "The Global Empirical NTK: Self-Referential Bias and Dimensionality of Gradient Descent Learning",
+          "summary": "In training a neural network with gradient descent (GD), each iteration induces a linear operator that governs first-order updates to a model's internal state variables. We define this operator as the Global Empirical Neural Tangent Kernel (NTK). In finite-width networks, the NTK is typically intractable to form, leading prior work to focus on restrictive settings such as tracking outputs only or taking infinite-width limits. Here, we study the structure of the NTK for a range of models. Formulating the model state as the solution to a single global implicit constraint, we derive the NTK as a product of two operators: K, accounting for immediate parameter-to-state interactions, and P, describing internal state-to-state dependencies. For a broad class of weight-based models, including RNNs and transformers, we prove a universal Kronecker-core theorem showing that K admits an exact, computable form given by the Gram matrix of weight-site variables. This core structure reveals that the NTK is structurally bottlenecked, constraining its effective rank and giving rise to a self-referential bias whereby GD preferentially learns within dominant modes of joint hidden and input activity. For recurrent models, we examine the spectrum of the NTK and show when it is biased and low-rank in space or time under the proposed decomposition. We further demonstrate that model dynamics at initialization bias the NTK, restricting learning and preventing task components from being learned effectively. Finally, we show that the NTK associated with a self-attention transformer is likewise structurally constrained to be low-rank. Overall, we show that the NTK possesses tractable structure that explains GD bias toward task solutions and the emergence of low-rank representations. To enable use of the NTK as a practical metric, we build kpflow, a library relying on randomized matrix-free numerical linear algebra.",
+          "authors": [
+            "James Hazelden",
+            "Laura Driscoll",
+            "Eli Shlizerman",
+            "Eric Shea-Brown"
+          ],
+          "published": "2026-05-09T07:22:29+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08743v1",
+          "entry_id": "http://arxiv.org/abs/2605.08743v1",
+          "title": "Inverter Redistribution through Self-Dual and Self-Anti-Dual Function Transformation",
+          "summary": "And-Inverter Graph (AIG)-based logic synthesis has been a cornerstone of digital design automation for several decades. While numerous optimization techniques have been developed for both technology-independent and technology-dependent synthesis stages, existing technology mapping approaches predominantly employ graph-covering strategies directly on AIG representations without adequately addressing complemented edge distribution. Neglecting inverters creates a significant disconnect: complemented edges are systematically overlooked in technology-independent cost functions, yet they abruptly become critical during technology-dependent mapping. In this work, we introduce a delay-driven pre-processing stage that operates prior to technology mapping, designed to strategically redistribute complemented edges and mitigate the inverter-induced costs on critical paths. Experimental validation demonstrates that our delay-targeted methodology not only preserves original delay characteristics but also enables performance improvements. Notably, arithmetic logic in the EPFL combinational benchmark exhibits particular sensitivity to this approach, with our method achieving an average delay reduction of 0.49% and a maximum improvement of 3.86% on the case sqrt.",
+          "authors": [
+            "Jingren Wang",
+            "Guangyu Hu",
+            "Shiju Lin",
+            "Hongce Zhang"
+          ],
+          "published": "2026-05-09T07:07:05+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08706v1",
+          "entry_id": "http://arxiv.org/abs/2605.08706v1",
+          "title": "Normal approximation of the numbers of isolated edges and isolated 2-stars in uniform simple graphs with given vertex degrees",
+          "summary": "We consider the configuration model and the uniform simple graph with given degree sequence $\\boldsymbol{d}=\\left(d_i\\right)_{i=1}^n$. We derive quantitative bounds for the errors in (i) joint normal-Poisson approximation to the numbers of isolated edges, isolated 2-stars, self-loops and double edges in the configuration model, and (ii) normal approximation to the numbers of isolated edges and isolated 2-stars conditioned on that the configuration model is simple. The latter provides the first finite sample normal approximation results for the uniform simple graph with given vertex degrees. To achieve this, we develop a new Stein's method for joint normal-Poisson approximation and a new coupling approach to sums of indicators, which may be of independent interest.",
+          "authors": [
+            "Ryo Imai"
+          ],
+          "published": "2026-05-09T05:41:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08688v1",
+          "entry_id": "http://arxiv.org/abs/2605.08688v1",
+          "title": "Reconciling Consistency-Based Diagnosis with Actual-Causality-Based Explanations",
+          "summary": "We establish, from the point of view of Explainable AI (XAI), connections between Consistency-Based Diagnosis (CBD), on one side, and Actual Causality and Causal Responsibility, on the other. CBD has received little attention from the XAI community. Connections between these two areas could have a fruitful impact on XAI and Explainable Data Management.",
+          "authors": [
+            "Leopoldo Bertossi"
+          ],
+          "published": "2026-05-09T04:53:04+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08676v1",
+          "entry_id": "http://arxiv.org/abs/2605.08676v1",
+          "title": "Moonflowers and efficient code sparsification",
+          "summary": "We introduce \\emph{moonflowers}, a weaker analogue of sunflowers. A family of sets $S_1,\\ldots,S_k$ is a $k$-moonflower if each set $S_i$ contains at least one element that is absent from all the others. We study the extremal problem of determining the largest possible size of a family of sets of size at most $w$ that avoids a $k$-moonflower, and obtain near-optimal bounds.\n  As an application, we revisit the code sparsification problem studied by Brakensiek and Guruswami (STOC 2025) and improve the bounds to near optimal. Concretely, we improve the dependence on the block length from poly-logarithmic to logarithmic, and show that such a dependence is necessary.",
+          "authors": [
+            "Shachar Lovett",
+            "Raghu Meka",
+            "Yimeng Wang"
+          ],
+          "published": "2026-05-09T04:26:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08661v1",
+          "entry_id": "http://arxiv.org/abs/2605.08661v1",
+          "title": "A search for Hadamard matrices of Williamson type",
+          "summary": "In this article, we consider a special class of Williamson type matrices which we call them near Williamson matrices. They are in fact four $n\\times n$ $(-1, 1)$-matrices $A, B, C, D$ so that $A$ is circulant, $B,C,D$ are symmetric circulant, and they satisfy $AA^\\top+BB^\\top+CC^\\top+DD^\\top=4nI$. Using a computer search, we find all inequivalent near Williamson matrices for all odd orders at most $35$. We also show that such matrices exist for all odd orders up to $63$. As a consequence, we find the first known example of a quaternary Hadamard matrix of order $118$.",
+          "authors": [
+            "Hadi Kharaghani",
+            "Ali Mohammadian",
+            "Behruz Tayfeh-Rezaie"
+          ],
+          "published": "2026-05-09T03:58:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08654v1",
+          "entry_id": "http://arxiv.org/abs/2605.08654v1",
+          "title": "On the multipliers of a Singer quadrangle",
+          "summary": "A finite generalized quadrangle $\\cS$ is a Singer quadrangle if it has an automorphism group that acts sharply transitively on its points. In this paper, we introduce the notion of multipliers for a Singer quadrangle and study their basic properties. As an application, we show that a point-primitive automorphism group of a thick generalized quadrangle cannot have O'Nan-Scott type HS (holomorph simple), which answers an open problem in \\cite{Bamberg 2019}.",
+          "authors": [
+            "Wendi Di",
+            "Tao Feng"
+          ],
+          "published": "2026-05-09T03:47:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08641v1",
+          "entry_id": "http://arxiv.org/abs/2605.08641v1",
+          "title": "Invariant measure for double base expansions",
+          "summary": "Given a pair $Q=(q_0,q_1)\\in(1,\\infty)^2$ with $q_0+q_1\\ge q_0q_1$, a sequence $(c_i)\\in\\set{0,1}^\\infty$ is called a $Q$-expansion of $x$ if<br/>\\begin{equation*}<br/>x=\\sum_{i=1}^{\\infty}\\frac{c_i}{q_{c_1}\\cdots q_{c_i}}.<br/>\\end{equation*}<br/>We primarily study the dynamical properties of the greedy and lazy maps, which are the piecewise-linear maps on the interval $I_Q=[0,\\,1/(q_1-1)]$ defined by the corresponding algorithms for $Q$-expansions. <br/>We show that the greedy and lazy maps each of which has a unique absolutely continuous invariant probability measure, equivalent to the Lebesgue measure on the intervals<br/>\\begin{equation*}<br/>\\left[0,\\frac{q_0}{q_1}\\right)\\qtq{and}\\left(\\frac{q_1}{q_0(q_1-1)}-1,\\frac{1}{q_1-1}\\right],<br/>\\end{equation*}<br/>respectively. <br/>Furthermore, the corresponding dynamical systems are exact on $I_Q$. <br/>As a dynamical consequence, under the stronger condition $q_0+q_1>q_0q_1$ the set of points having unique $Q$-expansions has Lebesgue measure zero, and almost every $x\\in I_{Q}$ admits a continuum of $Q$-expansions.",
+          "authors": [
+            "Wenduo Huang",
+            "Vilmos Komorni",
+            "Yuru Zou"
+          ],
+          "published": "2026-05-09T03:22:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08609v1",
+          "entry_id": "http://arxiv.org/abs/2605.08609v1",
+          "title": "Sheaves as a Means of Maintaining Consistency in Model-based Systems Engineering",
+          "summary": "We propose that the sheaf condition on a presheaf of design spaces provides a mathematical model for multi-view consistency in the architecture of cyber-physical systems (CPS). In model-based systems engineering, multiple engineering views -- electrical, thermal, mechanical, and software -- must be kept mutually consistent, yet current practice relies on informal procedures without a precise semantic account of global consistency. We construct an architectural site: a topological space whose points are pairwise interfaces between engineering domains and whose open sets represent engineering views. A design presheaf assigns to each view its local design space and to each inclusion the corresponding restriction map. We show that the sheaf condition on this presheaf is equivalent to compatibility on pairwise overlaps, yielding a local criterion for global multi-view consistency. The equivalence and a concrete three-view worked example are machine-verified in Lean 4 using Mathlib. The formalization establishes that the design presheaf is a sheaf, that the sheaf condition is equivalent to pairwise overlap compatibility, and that compatible local design families glue to unique global designs. Global consistency of an arbitrary number of views can be certified by checking only pairwise interface compatibility; compatible local designs determine a unique global design; derived properties computed by limit-preserving functors inherit the same consistency guarantee; and the entire verification chain admits machine-checkable proofs in Lean.",
+          "authors": [
+            "Josh Gibson"
+          ],
+          "published": "2026-05-09T02:08:42+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08607v1",
+          "entry_id": "http://arxiv.org/abs/2605.08607v1",
+          "title": "On finite groups containing an element whose Engel sink is small",
+          "summary": "For an element $g$ of a group $G$, a right Engel sink of $g$ is a subset of $G$ containing all sufficiently long commutators $[...[[g ,x],x],\\dots ,x]$ for all $x\\in G$. A left Engel sink of $g$ is a subset of $G$ containing all sufficiently long commutators $[...[[x ,g ],g ],\\dots ,g]$ for all $x\\in G$. Using the classification of finite simple groups we prove that if a finite group $G$ has an element $g$ such that $G=[G,g]$, then the order of $G$ is bounded in terms of a right Engel sink of $g$, as well as in terms of a left Engel sink of $g$. Earlier Guralnick and Tracey proved this in the case where $g$ is an involution without using the classification.",
+          "authors": [
+            "Evgeny Khukhro",
+            "Pavel Shumyatsky"
+          ],
+          "published": "2026-05-09T02:00:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08605v1",
+          "entry_id": "http://arxiv.org/abs/2605.08605v1",
+          "title": "Lattice Deduction Transformers",
+          "summary": "We introduce the Lattice Deduction Transformer (LDT), a recurrent transformer that approximates logically sound deduction by projecting its latent state through a lattice between forward passes. We train on-policy in a process that mirrors deduction in a search-based constraint solver and supervise training via a domain-agnostic, abstract-interpretation-based approximation of the set of solution candidates. An $800$K-parameter LDT achieves $100\\%$ accuracy on Sudoku-Extreme and Snowflake Sudoku, at a fraction of the training cost of prior small recurrent reasoners, while remaining empirically sound: the model returns a correct answer or abstains. A $1.8$M-parameter variant reaches $99.9\\%$ accuracy on Maze-Hard. Frontier LLMs score $0\\%$ on all three benchmarks.",
+          "authors": [
+            "Liam Davis",
+            "Leopold Haller",
+            "Alberto Alfarano",
+            "Mark Santolucito"
+          ],
+          "published": "2026-05-09T01:55:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08603v1",
+          "entry_id": "http://arxiv.org/abs/2605.08603v1",
+          "title": "Intersecting families with covering number three II",
+          "summary": "A family $\\mathcal{F}\\subset \\binom{[n]}{k}$ is called intersecting if $F\\cap F'\\neq \\emptyset$ for all $F,F'\\in \\mathcal{F}$. The covering number of a family $\\mathcal{F}$ is defined as the minimum size of $T\\subset [n]$ such that $T\\cap F\\neq \\emptyset$ for all $F\\in \\mathcal{F}$. In 1980, the first author proved that for sufficiently large $n$, any intersecting $k$-graph $\\mathcal{F}$ with covering number at least three, satisfies $|\\mathcal{F}|\\leq \\binom{n-1}{k-1}-\\binom{n-k}{k-1}-\\binom{n-k-1}{k-1}+\\binom{n-2k}{k-1}+\\binom{n-k-2}{k-3}+3$. There was very little progress during more than forty years but recently (cf. \\cite{FW25}) with a completely\n  different approach we proved the same result for the full range $n\\geq 2k$ and $k\\geq 7$. In this short paper we prove the same inequality for all the remaining cases.",
+          "authors": [
+            "Peter Frankl",
+            "Jian Wang"
+          ],
+          "published": "2026-05-09T01:51:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08602v1",
+          "entry_id": "http://arxiv.org/abs/2605.08602v1",
+          "title": "Young tableau descriptions for the polyhedral realizations of crystal bases in type $A_n$",
+          "summary": "By utilizing the combinatorial properties of various tableau models, we establish an explicit correspondence between the polyhedral realizations of the crystal bases $\\mathcal B(λ)$ (resp. $\\mathcal B(\\infty)$) of type $A_n$ and the reverse semi-standard Young tableaux (resp. reverse marginally large tableaux), thereby providing a combinatorial description of the corresponding polyhedral realizations. Furthermore, a crystal structure on the set of Gelfand-Tsetlin patterns is obtained via the correspondence between the polyhedral realization of $\\mathcal{B}(λ)$ and the reverse tableaux. As applications of our framework, we present concrete combinatorial realizations of the crystal embedding of $\\mathcal B(λ)$ into $\\mathcal B(\\infty)$ and the set of Lusztig data.",
+          "authors": [
+            "Shaolong Han"
+          ],
+          "published": "2026-05-09T01:51:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08596v1",
+          "entry_id": "http://arxiv.org/abs/2605.08596v1",
+          "title": "Length parameters of finite groups and their Hall subgroups",
+          "summary": "Let $π$ be a set of primes containing $2$ and an odd prime $p$. It is proved that if a finite group $G$ has a Hall $π$-subgroup $H$, then the non-$p$-soluble length of $G$ is bounded above by the generalized Fitting height of $H$. The proof uses the fact, obtained in [4] using the classification of finite simple groups, that a finite simple group of order divisible by $p$ cannot have a nilpotent Hall $\\{2,p\\}$-subgroup. As a corollary, it is proved that if in addition $H$ is soluble, then the non-$p$-soluble length of $G$ is bounded above by $2l_2(H)+1$, where $l_2(H)$ is the $2$-length of $H$.",
+          "authors": [
+            "Evgeny Khukhro",
+            "Pavel Shumyatsky"
+          ],
+          "published": "2026-05-09T01:29:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.08588v1",
+          "entry_id": "http://arxiv.org/abs/2605.08588v1",
+          "title": "Node-Weighted Triangles: Faster and Simpler",
+          "summary": "Weighted variants of triangle detection are an important object of study because of their prominence in fine-grained complexity. We revisit the Node-Weighted Triangle problem, where the goal is to decide if a vertex-weighted graph contains a triangle whose node weights sum to zero. This problem has been the focus of a celebrated line of work, beginning with a subcubic-time algorithm [Vassilevska, Williams; STOC '06], and culminating in algorithms running almost in matrix multiplication time, $O(\\textsf{MM}(n) + n^2\\cdot 2^{O(\\sqrt{\\log n})})$ [Czumaj, Lingas; SODA '07], [Vassilevska W., Williams; STOC '09]. This runtime is almost-optimal, since even detecting an unweighted triangle is conjectured to require matrix multiplication time $\\textsf{MM}(n)$. However, the superpolylogarithmic $2^{Ω(\\sqrt{\\log n})}$ overhead persists in a world where near-optimal matrix multiplication is possible (i.e., $\\textsf{MM}(n) \\leq n^2\\text{poly}(\\log n)$).\n  In this paper, we present a new algorithm solving Node-Weighted Triangle in $O(\\textsf{MM}(n))$ time, closing the gap to unweighted triangle detection completely. Remarkably, our algorithm is much simpler than previous approaches, which use involved recursion schemes and communication protocols.",
+          "authors": [
+            "Shyan Akmal",
+            "Nick Fischer"
+          ],
+          "published": "2026-05-09T01:08:13+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-05-12T05:48:12.600872+00:00",
+      "updated_at": "2026-05-12T05:48:12.600872+00:00",
+      "finalized_at": null
     }
   ]
 }
