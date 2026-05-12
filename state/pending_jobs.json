@@ -47205,7 +47205,7 @@
     },
     {
       "pipeline_id": "20260512T054812Z-87b75bcd",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/555b9mipred6nauwr32aiorr52ccvdsfhz2f",
       "summarize_job_name": "batches/hgukgpkwvy7cqo6j3llusuz9jyeq8rtgudjl",
       "papers": [
@@ -47549,14 +47549,107 @@
         "http://arxiv.org/abs/2605.08641v1",
         "http://arxiv.org/abs/2605.08605v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2605.09179v1": {
+          "title": "PlotkinのCall-by-Valueのための可逆なCrumbling Abstract Machine",
+          "summary": "Landauerの埋め込みは、計算の各中間状態に以前の状態を再構成するための情報を付加することで、非可逆なプログラミング言語の可逆性を実現する手法だが、その空間オーバーヘッドの削減が課題となっている。本論文では、PlotkinのCall-by-Value (CbV) 計算系に対するLandauerの埋め込みを提案している。CbVの計算複雑性を制御し、βステップをコストモデルとして扱うために用いられる抽象機械のうち、これまで注目されていなかった特定の機械が、各ステップにおいて定数空間のオーバーヘッドしか必要としない非常にコンパクトなLandauerの埋め込みを可能にすることを示している。",
+          "keywords": [
+            "Landauer's embedding",
+            "Call-by-Value calculus",
+            "Reversible computing",
+            "Abstract machine",
+            "Computational complexity"
+          ],
+          "appendix": "本論文は、計算モデルや簡約機構である抽象機械を扱っており、広義の計算理論やautomata theoryに関連しています。"
+        },
+        "http://arxiv.org/abs/2605.09077v1": {
+          "title": "データ語上の二変数論理における集合オートマトンと決定可能性の限界",
+          "summary": "本論文では、同じクラスに属する二つの位置 x と y の間の文字列が正規言語 L に属するかを判定するガード付き正規二項述語 L̃(x,y) を用いて、データ語上の二変数論理を拡張した。この拡張された論理が決定可能となるためのモノイドのクラスを、両側イデアルが線形順序をなす冪等モノイド（linear band monoids）として特徴付けた。この分析のために「集合オートマトン（set automata）」という形式を導入し、これが既存のクラスオートマトンと等価であり、一般には空性判定が不能であることを示した。一方で、順序付き多重カウンタオートマトンに帰着させることで決定可能となる「順序付き準正規集合オートマトン」を特定した。半群 S によって定義されるガード付き正規述語を持つ二変数論理が、S を変換半群とする準正規集合オートマトンと表現力において等価であることを示し、S が linear band monoid の場合に論理の決定可能性が導かれることを証明した。",
+          "keywords": [
+            "two-variable logic",
+            "data words",
+            "set automata",
+            "decidability",
+            "linear band monoids"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に関連しています。データ語上の論理体系の決定可能性の境界を、代数的なモノイドの構造によって特徴付けている点が重要です。"
+        },
+        "http://arxiv.org/abs/2605.08993v1": {
+          "title": "雑音を含む時系列データからの共鳴位相振動子相互作用の再構築",
+          "summary": "本論文は、観測雑音を伴う時系列データから、弱く結合した位相振動子系における共鳴相互作用を再構築する手法を提案している。観測の不確実性が存在する場合、完全な位相方程式の同定は困難であるため、本手法では主次のドリフトダイナミクスを決定する共鳴正規形の項を復元することに注力する。共鳴フーリエモードの有限集合と最小二乗推定に基づく1次および2次の再構築手順を開発し、観測雑音や初期条件の分布に関する仮定の下で、再構築された係数の誤差評価を証明した。2次の再構築手法は、非共鳴な1次結合の干渉によって生じる実効的な共鳴相互作用を検出することが可能である。",
+          "keywords": [
+            "resonant phase oscillator interactions",
+            "noisy time series",
+            "resonant normal form",
+            "least-squares estimation",
+            "higher-order interactions"
+          ],
+          "appendix": "本研究は、結合振動子系の複雑な挙動を解析する点で complex dynamics の分野に関連しています。また、誤差評価を伴う数値的手法の提案という側面から validated numerics とも関連性を持ちます。"
+        },
+        "http://arxiv.org/abs/2605.08990v1": {
+          "title": "Well-Scoped な Locally Nameless 法による構文表現",
+          "summary": "依存型理論に基づく対話型定理証明器において、束縛構造を持つ言語を定義・推論する手法として、well-scoped な locally nameless 法を提案している。本論文では、Agda を用いて Plotkin 流の束縛シグネチャによってパラメータ化されたジェネリックな構文表現の実装を記述し、α換算を考慮した素朴な名前付き構文に対する妥当性（adequacy）の証明、および具体的な使用例の検討を行っている。",
+          "keywords": [
+            "locally nameless representation",
+            "dependent type theory",
+            "Agda",
+            "binding signatures",
+            "adequacy"
+          ],
+          "appendix": "本論文は、プログラミング言語の構文論という観点から形式言語（formal languages）に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.08803v1": {
+          "title": "ニュートン法を用いた自己整合転送作用素の不動点近似",
+          "summary": "平均場結合力学系やブラソフ方程式といった動力学的偏微分方程式に由来する自己整合転送作用素（self-consistent transfer operators）について、高速で信頼性の高い数値解法を提案している。具体的には、非線形Fourier-Fejér離散化を構築し、その有限次元不動点が元の作用素の不動点へ収束することを示した。また、逐次反復法の指数収束性を証明し、2次収束を実現するニュートン法の枠組みを開発した。数値例を用いて、提案手法の効率性と柔軟性を実証している。",
+          "keywords": [
+            "self-consistent transfer operators",
+            "mean-field coupled dynamical systems",
+            "Fourier-Fejér discretisation",
+            "Newton's method",
+            "fixed-point approximation"
+          ],
+          "appendix": "本論文は、数値計算の収束性と精度を数学的に扱っており、興味ある分野の中では「validated numerics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.08641v1": {
+          "title": "二重基底展開における不変測度",
+          "summary": "本論文では、q₀ + q₁ ≥ q₀q₁ を満たすペア Q = (q₀, q₁) ∈ (1, ∞)² に対する Q-展開の力学的性質を研究している。具体的には、区間 I_Q = [0, 1/(q₁ - 1)] 上で定義されるグリーディ写像（greedy map）およびレイジー写像（lazy map）について、それぞれがルベーグ測度と同値な一意の絶対連続不変確率測度を持つことを示した。また、これらの力学系が I_Q 上でエキザクト（exact）であることを証明している。さらに、q₀ + q₁ > q₀q₁ という強い条件下では、一意な Q-展開を持つ点集合のルベーグ測度は 0 であり、ほとんど全ての x ∈ I_Q が連続体濃度の Q-展開を持つことを導いている。",
+          "keywords": [
+            "double base expansions",
+            "invariant measure",
+            "greedy map",
+            "lazy map",
+            "exactness"
+          ],
+          "appendix": "本論文は、興味ある分野のうち symbolic dynamics および arithmetic dynamics と強い関連性があります。"
+        },
+        "http://arxiv.org/abs/2605.08605v1": {
+          "title": "ラティス演繹トランスフォーマー",
+          "summary": "本論文は、フォワードパスの間に潜在状態をラティス（束）へと射影することで、論理的に健全な演繹を近似する再帰的トランスフォーマー「Lattice Deduction Transformer (LDT)」を提案している。このモデルは、探索ベースの制約ソルバーにおける演繹プロセスを模倣したオンポリシー学習を行い、抽象解釈に基づく解候補集合の近似を用いて学習を監督する。80万パラメータのLDTは、Sudoku-ExtremeおよびSnowflake Sudokuにおいて100%の精度を達成し、180万パラメータのモデルはMaze-Hardで99.9%の精度に達した。既存の小規模な再帰型推論器と比較して訓練コストが低く、フロンティアLLMがこれらのベンチマークで0%の精度に留まる中、正解を返すか棄権するという「経験的な健全性」を維持しつつ極めて高い性能を示した。",
+          "keywords": [
+            "Lattice Deduction Transformer",
+            "Abstract Interpretation",
+            "Recurrent Transformer",
+            "Constraint Solver",
+            "Empirical Soundness"
+          ],
+          "appendix": "本論文で扱われる論理的演繹や抽象解釈に基づく近似手法は、形式言語 (formal languages) やオートマトン理論 (automata theory) の枠組みと密接に関連しています。また、健全性を保証しながら計算を行うアプローチは、精度保証付き数値計算 (validated numerics) の概念とも共通点があります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2605.09179v1",
+        "http://arxiv.org/abs/2605.09077v1",
+        "http://arxiv.org/abs/2605.08993v1",
+        "http://arxiv.org/abs/2605.08990v1",
+        "http://arxiv.org/abs/2605.08803v1",
+        "http://arxiv.org/abs/2605.08641v1",
+        "http://arxiv.org/abs/2605.08605v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-05-12T05:48:12.600872+00:00",
-      "updated_at": "2026-05-12T05:51:22.400156+00:00",
-      "finalized_at": null
+      "updated_at": "2026-05-12T08:27:34.146205+00:00",
+      "finalized_at": "2026-05-12T08:27:34.146179+00:00"
     }
   ]
 }
