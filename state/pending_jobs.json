@@ -49566,7 +49566,7 @@
     },
     {
       "pipeline_id": "20260517T055626Z-9cae0ae6",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/1m8yy4zart1bzc8xejih9uogkwduh9wqw9yn",
       "summarize_job_name": "batches/so9f6pjwuvyisfbxcw9kznjvn2mn9fk997m2",
       "papers": [
@@ -50334,14 +50334,299 @@
         "http://arxiv.org/abs/2605.14234v1",
         "http://arxiv.org/abs/2605.14213v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2605.15169v1": {
+          "title": "モーダル群論：準同型",
+          "summary": "任意の群準同型を「可能性」として解釈するモーダル群論の研究。準同型写像による要素の同一視や関係の追加といった「崩壊の可能性」に基づく意味論を用いて、巡回部分群への所属、有限生成性、ねじれ（torsion）などの性質が様相言語で定義可能であることを示した。さらに、有限提示群の準同型様相理論が真の算術（true arithmetic）と計算可能同型であることを証明し、特定の群のクラスにおける命題様相論理の妥当性がS5やS4.2に対応することを明らかにした。",
+          "keywords": [
+            "Modal group theory",
+            "group homomorphisms",
+            "definability",
+            "true arithmetic",
+            "modal logic"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」に関連する群論的な性質（有限生成性や群の構造）を論理学的な観点から扱っています。"
+        },
+        "http://arxiv.org/abs/2605.15161v1": {
+          "title": "離散時間系における連続なイマージョンの非存在性について",
+          "summary": "非線形力学系を有限次元線形系にイマージョン（浸漬）させることは、線形システム理論の知見を非線形ダイナミクスに適用するために重要である。本論文は、複数のω-極限集合を持つ連続時間系には1対1かつ連続な線形イマージョンが存在しないという先行研究の結果を、離散時間系へと拡張したものである。離散時間においても同様の幾何学的な制約が存在することを示し、さらにα-極限集合を用いた一般化についても論じている。",
+          "keywords": [
+            "Discrete-time systems",
+            "Nonlinear dynamics",
+            "Continuous immersion",
+            "Omega-limit sets",
+            "Alpha-limit sets"
+          ],
+          "appendix": "力学系の極限集合や軌道の定性的性質を扱う内容であるため、興味ある分野の中では「complex dynamics」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.15143v1": {
+          "title": "トポロジー上のパラメータ化されたプログラムに関する完全な局所推論",
+          "summary": "本論文では、多様な通信トポロジー上における無限状態のパラメータ化された並行プログラムの、アルゴリズム的安全性検証問題を扱っている。トポロジーの各ノードに対して全称化された帰納的不変量の形式で、正当性の証明を自動生成することを目的とする。トポロジーに対する妥当な仮定の下で、この検証問題が局所的な証明の集合へと帰着される構成的なスキームとして、完全な形で解決可能であることを示している。提案手法をツールとして実装し、様々なトポロジーを用いたベンチマーク評価を通じて、パラメータ化されたプログラムの安全性を証明する上での有効性を実証した。",
+          "keywords": [
+            "parameterized concurrent programs",
+            "safety verification",
+            "inductive invariants",
+            "communication topologies",
+            "local reasoning"
+          ],
+          "appendix": "プログラムの安全性検証や帰納的不変量の自動生成に関する研究であり、形式言語や計算モデルを扱う観点から automata theory に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.15094v1": {
+          "title": "ループの停止性と一般化 Collatz 数列",
+          "summary": "線形制約ループ（遷移関係が線形不等式系で規定されるプログラム）の停止性問題は、整数・有理数・実数のいずれの領域においても未解決である。本論文では、整数上のループが、各剰余類ごとに線形な写像で生成される「一般化 Collatz 数列」と密接に関連していることを示す。長年未解決となっている一般化 Collatz 数列に関する予想が正しいと仮定すれば、1変数の線形制約ループの停止性は多項式時間で判定可能であることを証明した。逆に、1変数ループの判定手続きが存在すれば、現在未解決であるこの予想の特定のインスタンスを証明または反証できることを示した。さらに、1変数ループが巡回的なトレースを持つ場合、その長さが高々2であることを明らかにした。",
+          "keywords": [
+            "Linear-constraint loops",
+            "Generalized Collatz sequences",
+            "Termination problem",
+            "Cyclic trace"
+          ],
+          "appendix": "本論文は数論的力学系（arithmetic dynamics）に関連しており、一般化されたコラッツ予想という力学系的な性質を介してプログラムの停止性という計算機科学的課題を論じています。"
+        },
+        "http://arxiv.org/abs/2605.15072v1": {
+          "title": "入れ子状の同値関係を伴う Guarded Fragment",
+          "summary": "一階述語論理の決定可能な断片である Guarded Fragment (GF) に対し、入れ子状の同値関係 E₁, E₂, ... (Eₖ₊₁ は Eₖ より粗い) を導入した拡張について研究した。等号を含まない GF において、入れ子状の同値関係を伴う場合は有限モデル性（FMP）を保持し、充足可能性問題が決定可能であることを示した。計算複雑性は一般に TOWER 完全であり、同値関係の個数を K に固定した場合は (K+2)-ExpTime 完全となる。一方で、入れ子条件を外すと 2 つの同値関係で、あるいは等号を導入すると 1 つの同値関係で充足可能性問題が不能となることを明らかにした。",
+          "keywords": [
+            "Guarded Fragment",
+            "Nested equivalence relations",
+            "Finite model property",
+            "Satisfiability problem",
+            "Computational complexity"
+          ],
+          "appendix": "この論文は automata theory (オートマトン理論) に関連する論理の決定可能性と計算複雑性を扱っています。"
+        },
+        "http://arxiv.org/abs/2605.15063v1": {
+          "title": "ランダム置換の位数のRényiエントロピー",
+          "summary": "本論文では、[n]上のランダム置換の位数の分布をRényiエントロピーの観点から分析し、1 ≤ q ≤ ∞の全範囲におけるRényi q-エントロピーの漸近挙動を導出しています。特にq > 1において、エントロピーの漸近的振る舞いとnの算術的性質との間の密接な関連性を明らかにしました。主な成果として、特定の位数が発生する最大確率（q = ∞）が1/nに漸近することを示し、その最大値を与える要素を特定しました。また、2つの独立なランダム置換の位数が一致する確率（q = 2）については、nの関数としてc/n²から(log*n)/n²の範囲にあることを決定しました。本研究は、1960年代のErdősおよびTuránの研究に端を発する、ランダム置換の位数に関する未解決問題に対して本質的な解答を与えるものです。",
+          "keywords": [
+            "Rényi entropy",
+            "random permutation",
+            "order of a permutation",
+            "asymptotic behaviour",
+            "arithmetic properties"
+          ],
+          "appendix": "本論文は組合せ論的な構造を扱うため、興味ある分野のうち「combinatorics on words」や「arithmetic dynamics」に関連する数学的手法を含んでいます。また、Erdős-Turán以来の古典的な組合せ論的問題に対して、情報理論的なエントロピーの概念を用いて新たな知見を与えています。"
+        },
+        "http://arxiv.org/abs/2605.15027v1": {
+          "title": "アフィン標準Lyndon語の鎖",
+          "summary": "本論文は、全タイプのアフィン標準Lyndon語の鎖における周期性を確立し、その周期に対するタイトな境界を特定した研究である。arXiv:2305.16299におけるA型の結果を大幅に一般化しており、解析には凸性と単調性の性質に加え、増加鎖および減少鎖によって与えられるルート系の分極を考慮するという新しい手法を用いている。",
+          "keywords": [
+            "affine standard Lyndon words",
+            "periodicity",
+            "root system",
+            "convexity",
+            "monotonicity"
+          ],
+          "appendix": "この論文は「combinatorics on words」の分野に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.14955v1": {
+          "title": "有限語における有理べき因子(Rational Power Factors)の個数について",
+          "summary": "本論文では、長さnの有限語に含まれる相異なる有理べき(rational power)因子の最大個数について研究している。有理べきとは、非空の語p、1より大きい整数k、およびpの接頭辞p'を用いてu = pᵏp'と表される語であり、k乗(k-power)の一般化にあたる。先行研究では、k乗の個数Cₖ(w)が(n-1)/(k-1)以下であることが示されていたが、本研究では有理べき因子の個数RP(w)が1/8n² + O(n)以下であることを初めて証明した。また、語のグラフ理論的表現と語方程式を用い、パターン数え上げ問題を制約付き極値問題へと変換する新しい手法を提案している。",
+          "keywords": [
+            "rational power factors",
+            "finite word",
+            "word equations",
+            "pattern-counting",
+            "extremal problem"
+          ],
+          "appendix": "本論文は「combinatorics on words」および「formal languages」の分野に密接に関連しています。語における特定のパターン出現回数の解析という点で組合せ論的側面が強く、グラフ理論的手法を用いたアプローチが特徴的です。"
+        },
+        "http://arxiv.org/abs/2605.14921v1": {
+          "title": "アンカー付きDyck路",
+          "summary": "本論文は、Springer繊維の研究において現れ、有理カタラン数を一般化する数式に対し、Simentalが提起した問いに答える組合せ論的な解釈を提示している。著者らは、バイナリ・ネックレス（binary necklaces）およびアンカー付きDyck路（anchored Dyck paths）を用いた二通りの解釈を与えている。",
+          "keywords": [
+            "rational Catalan numbers",
+            "Springer fibers",
+            "binary necklaces",
+            "anchored Dyck paths"
+          ],
+          "appendix": "本論文はバイナリ・ネックレスやDyck路を扱っており、興味ある分野のうち「combinatorics on words」と関連しています。"
+        },
+        "http://arxiv.org/abs/2605.14881v1": {
+          "title": "QSeqSim: 順序量子回路を用いたQiskit whileループのためのシンボリックシミュレータ",
+          "summary": "QSeqSimは、Qiskitネイティブでサポートされていないwhileループを含む量子プログラム、およびそれによって誘導される順序量子回路をシミュレーションするためのQiskit統合シンボリックバックエンドである。OpenQASM 3への変換を通じて、whileループに対して内部および外部量子ビットを明示した精密な順序回路意味論を割り当てる。BDD（二分決定図）ベースのシンボリック表現と重み付きモデル計数を組み合わせ、構造化・疎なBDDにおける共有性を活用して測定確率を効率的に計算する。さらに、状態合成と状態保持のための専用シンボリック演算子を導入することで、順序量子回路の効率的なシンボリック実行を可能にしている。実験では、量子ランダムウォークにおいて1000量子ビット以上、10回以上のループ反復を含む大規模な回路のシミュレーションに成功している。",
+          "keywords": [
+            "Qiskit",
+            "while-loop",
+            "sequential quantum circuits",
+            "Binary Decision Diagram (BDD)",
+            "weighted model counting"
+          ],
+          "appendix": "本論文は、状態合成や状態保持のためのシンボリック演算子の導入、およびプログラムの精密な意味論を扱う点で、automata theory や formal languages の手法を量子計算に適用したものと関連があります。"
+        },
+        "http://arxiv.org/abs/2605.14872v1": {
+          "title": "StabilizationとTransducerを用いた文字列制約解消（テクニカルレポート）",
+          "summary": "本論文では、文字列制約ソルバZ3-Noodlerに採用されている安定化に基づくオートマトン的手法を拡張し、有限状態トランスデューサによって表現される関係制約（例：replaceAll制約）を扱えるようにした。オートマトンを用いた文字列制約解消の主要なボトルネックである高コストな結合（concatenation）の除去を最小限に抑えることで、長さ制約の効率的な処理を実現している。また、実用上の性能を大幅に向上させる強力なヒューリスティクスを提案した。実装された手法は、既存のソルバと比較して関係制約を含むベンチマークにおいてより多くのインスタンスを数桁速く解くことができる。",
+          "keywords": [
+            "string constraint solving",
+            "finite-state transducers",
+            "stabilization",
+            "automata-based string solving",
+            "length constraints"
+          ],
+          "appendix": "本論文は、オートマトン理論 (automata theory) および形式言語 (formal languages) の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.14862v1": {
+          "title": "無限対称群と変換モノイドの可換分解",
+          "summary": "群Gの可換部分群幅とは、Gがk個の可換部分群の積で表される最小のkを指す。本論文では、無限集合上の対称群Sym(ℕ)の可換部分群幅が4以上9以下であることを示した。これは、先行研究による上界14を改善し、Seressの問いに答えるものである。また、全変換モノイドℕ^ℕ、部分変換モノイドP_ℕ、対称逆モノイドI_ℕの可換部分モノイド幅が正確に3であることを示した一方で、無限対称逆モノイドの可換逆部分モノイド幅は常に無限大になることを明らかにした。",
+          "keywords": [
+            "commutative subgroup width",
+            "symmetric group",
+            "transformation monoid",
+            "symmetric inverse monoid"
+          ],
+          "appendix": "この論文は、巨大な可算無限群の構造（structure of large countable infinite group）に関する研究であり、無限対称群の代数的特性を扱っています。"
+        },
+        "http://arxiv.org/abs/2605.14850v1": {
+          "title": "入れ子リセットカウンタシステムの計算複雑性",
+          "summary": "本論文は、カウンタが他のカウンタを要素として持つ高階カウンタシステムの一般化である「入れ子カウンタシステム（NCS）」に、リセット操作を追加した「入れ子リセットカウンタシステム（NRCS）」を提案している。階数kのNRCSにおける被覆可能性問題が、急成長階層におけるF_{Ωₖ}完全であることを明らかにした。この結果は、高さkのωの塔に対応する計算量クラスの階層において、初の自然な完全問題の例となる。また、証明のために有限集合上のマルチセット操作に関する長さ関数定理を開発し、XML処理、グラフ変換、π計算、論理、パラメータ化検証などの諸問題に対し、計算量の上限の改善と完全性の証明を行った。",
+          "keywords": [
+            "Nested Reset Counter Systems",
+            "coverability problem",
+            "fast-growing hierarchy",
+            "higher-order counters",
+            "parameterized verification"
+          ],
+          "appendix": "本研究は、興味ある分野のうち「automata theory（オートマトン理論）」および「formal languages（形式言語）」に強く関連しています。急成長階層（fast-growing hierarchy）を用いた複雑性解析は、無限状態システムの検証において重要な役割を果たします。数式のUnicode表記：F_{ε₀}、F_{Ωₖ}。"
+        },
+        "http://arxiv.org/abs/2605.14682v1": {
+          "title": "q-Catalan三角形とその一般化に関する組合せ論的研究",
+          "summary": "本論文では、漸化式 Cₙ,₀(q) = qⁿ⁽ⁿ⁻¹⁾/² および Cₙ,ₖ(q) = Cₙ,ₖ₋₁(q) + qⁿ⁻ᵏ⁻¹Cₙ₋₁,ₖ(q) によって定義されるq-Catalan三角形 Cₙ,ₖ(q) に関する一連の研究成果を提示している。inversion（転倒）やco-inversion統計量で重み付けされた4種のパターン回避置換、Dyckパス、バイナリワード、および三角形分割の計7つの構成要素からなる普遍的な組合せ論的族を用いた解釈を確立した。また、鏡像多項式 C̃ₙ,ₖ(q) = qⁿ⁽ⁿ⁻¹⁾/²Cₙ,ₖ(q⁻¹) を導入し、その双対漸化式とco-inversionによる解釈を証明した。さらに、q,p-Catalan三角形や、円分q-アナログへの道を開く多変数への一般化についても議論している。",
+          "keywords": [
+            "q-Catalan triangle",
+            "pattern-avoiding permutations",
+            "Dyck paths",
+            "binary words",
+            "triangulations"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち combinatorics on words と密接に関連しています。特にバイナリワードやパターン回避置換における統計的性質の解析において、語の組合せ論的手法が中心的な役割を果たしています。"
+        },
+        "http://arxiv.org/abs/2605.14613v1": {
+          "title": "Munariniグラフ：Fibonacci cubeとPellグラフの一般化（第1部）",
+          "summary": "本論文では、Fibonacci cubeおよびPellグラフの新たな一般化として「Munariniグラフ」を導入する。これまでに提案された(k+1)進文字列に基づく一般化とは異なり、MunariniグラフはFibonacci cubeやPellグラフと同様にdaisy cubeの性質を持つという利点がある。第1部となる本稿では、グラフのサイズ、再帰的構造、ならびにcube多項式や極大cube多項式といった基本的なグラフ理論的性質について調査・検討を行っている。",
+          "keywords": [
+            "Fibonacci cube",
+            "Pell graphs",
+            "Munarini graphs",
+            "daisy cubes",
+            "cube polynomials"
+          ],
+          "appendix": "グラフ理論および組み合わせ論の側面から、combinatorics on wordsに関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2605.14440v1": {
+          "title": "POMDP方策の合成：学習を介したサンプリングとモデル検査の融合",
+          "summary": "不確実性下での意思決定の標準的な枠組みである部分観測マルコフ決定過程（POMDP）において、サンプリング手法のスケーラビリティと形式的手法の厳密な保証を両立させる合成フレームワークを提案している。AngluinのL*アルゴリズムに着想を得て、サンプリングをメンバーシップオラクル、モデル検査を等価性オラクルとして用いることで、形式的保証を伴う有限状態コントローラを合成する。サンプリングにより誘導される方策が正則であれば相対的完全性が満たされる。実験の結果、既存の形式的合成ツールでは解決が困難であった閾値安全性問題を解決できることが示された。",
+          "keywords": [
+            "POMDP",
+            "Finite-state controllers",
+            "L* algorithm",
+            "Model-checking",
+            "Automata learning"
+          ],
+          "appendix": "本論文はL*アルゴリズムを用いたオートマトン学習や有限状態コントローラの合成を扱っているため、興味ある分野のうち「automata theory」および「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.14405v1": {
+          "title": "近傍を注視せよ：局所的な相空間情報を活用した統計的に正確なカオス系の学習",
+          "summary": "カオス系は初期値鋭敏性により微小な誤差が指数関数的に増大するため、データ駆動型のダイナミクス構築において大きな課題となっている。従来の研究は、局所的な伸縮を制御するヤコビ行列の再現、または長期的な統計的性質の再現のいずれかに重点を置いてきた。本研究では、これら二つのパラダイムを統合する新しい学習フレームワークを提案する。相空間上のカオス・アトラクタを局所的な被覆（covering）として捉え、そのダイナミクスによる押し出し分布間の最大平均偏差（Maximum Mean Discrepancy）を最小化することで、正確なヤコビ行列と統計的性質を併せ持つサロゲートモデルを構築する。実験の結果、提案手法はヤコビ行列の精度を大幅に改善しつつ、既存の最先端手法と同等の統計的再現性を達成した。",
+          "keywords": [
+            "Chaotic systems",
+            "Phase space",
+            "Jacobian",
+            "Maximum Mean Discrepancy",
+            "Surrogate model"
+          ],
+          "appendix": "本論文で扱われるカオス系の解析は、興味ある分野のうち「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.14390v1": {
+          "title": "群の有限拡大におけるモデル理論的な手なずけやすさ",
+          "summary": "ω-安定群の有限指数拡大および有限指数部分群が、モデル理論的な意味で「ワイルド（wild）」になり得ることを示した論文である。具体的には、あるω-安定群 G が存在し、有限言語における任意の可算な第一階構造が、G のある有限指数拡大およびある有限指数部分群の両方において解釈可能であることを証明している。",
+          "keywords": [
+            "ω-stable groups",
+            "finite-index extensions",
+            "finite-index subgroups",
+            "model-theoretically wild",
+            "interpretability"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」に関連する内容を含んでいます。ω-安定群という本来はモデル理論的に「手なずけられた（tame）」性質を持つ群であっても、有限指数というわずかな構造の変化によって、任意の第一階構造を解釈できるほど複雑になり得ることを示しています。"
+        },
+        "http://arxiv.org/abs/2605.14356v1": {
+          "title": "行列積状態（Matrix Product States）に対する線形連鎖論理（Linear Chain Logic）を用いたモデル検査",
+          "summary": "本論文では、1次元量子多体系の基底状態を表現する行列積状態（MPS）の、空間的およびシステムサイズ依存の特性を検証するための論理的枠組み「線形連鎖論理（LCL）」を提案しています。周期的なMPSが仮想空間上の完全正写像を誘導するという性質を利用し、システムサイズの増大に伴う漸近的なパターンや非自明な性質を効率的に解析する手法を開発しました。従来の数値手法を補完する形で、大規模なシステムサイズに対するスケーラブルな推論と自動検証を可能にしています。",
+          "keywords": [
+            "Matrix product states",
+            "Linear Chain Logic",
+            "Quantum model checking",
+            "Completely positive map",
+            "Asymptotic analysis"
+          ],
+          "appendix": "本研究は、オートマトン理論や形式言語理論の手法を用いて量子状態の構造を解析する側面があり、興味ある分野のうち「automata theory」および「formal languages」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.14342v1": {
+          "title": "フィボノミアル行列式",
+          "summary": "本論文では、フィボノミアル係数を表現するいくつかの行列式を導出しています。また、フィボノミアル係数に関する母関数、ヴァンデルモンドの等式、および連分数表示についても示しています。",
+          "keywords": [
+            "Fibonomial coefficients",
+            "determinants",
+            "generating functions",
+            "Vandermonde identity",
+            "continued fractions"
+          ],
+          "appendix": "本論文は、提示された「興味ある分野」のうち、組み合わせ論（combinatorics）に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.14234v1": {
+          "title": "Kolakoski数列の群論",
+          "summary": "正の整数aを長さaのラン（連続する同一要素の列）に置き換えるランレングス復号操作、およびその反復操作を、アルファベット{p, q}上の数列に適用した際の性質を研究した論文である。特にKolakoski数列を定義するこの操作は、自然に関連付けられた置換オートマトンA_n^{p,q}によって制御される。本論文では、これらオートマトンの変換群K_n^{p,q}が、深さn+1の二分木の自己同型群の部分群であることを示し、複雑な再帰構造を持つ特定の群J_n^{p,q}との関係を分析した。その応用として、奇数nにおける任意の入力数列に対するオートマトンの最大長軌道の数を決定している。",
+          "keywords": [
+            "Kolakoski sequence",
+            "Run-length decoding",
+            "Permutation automata",
+            "Transformation groups",
+            "Branch groups"
+          ],
+          "appendix": "この論文は、興味ある分野のうち「symbolic dynamics」、「combinatorics on words」、「automata theory」、および「structure of large countable infinite group」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.14213v1": {
+          "title": "反転可能なバイナリ文字列の数列A032123に関するMatharの2013年の漸化式予想の短縮証明",
+          "summary": "OEIS（オンライン整数列大辞典）の数列A032123、すなわち「反転を考慮した、n個の黒いビーズを含む長さ2nの白黒文字列の数」に関して、2013年にR. J. Matharが提唱した5階のP-recursiveな漸化式予想の簡潔な証明を提示している。著者らはBurnsideの補題を適用することで、a(n) = 1/2(₂ₙCₙ + [n is even]ₙCₙ/₂) という閉じた形式の解を導出した。この式の2つの項がそれぞれ1階および2階の基本的な漸化式を満たすこと、およびMatharの5階演算子を各項に個別に適用した際に得られる多項式恒等式が、簡潔な計算によってゼロに簡約されることを示すことで、予想を証明した。また、SymPyを用いた記号計算による検証およびn=6から5000までの数値的な確認も行っている。",
+          "keywords": [
+            "OEIS",
+            "P-recursive recurrence",
+            "Burnside's lemma",
+            "binary string",
+            "combinatorial sequence"
+          ],
+          "appendix": "この論文は、文字列の数え上げと組み合わせ的構造を扱っているため、「combinatorics on words」の分野に関連しています。また、漸化式の証明に計算機代数（SymPy）を用いた検証が含まれています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2605.15169v1",
+        "http://arxiv.org/abs/2605.15161v1",
+        "http://arxiv.org/abs/2605.15143v1",
+        "http://arxiv.org/abs/2605.15094v1",
+        "http://arxiv.org/abs/2605.15072v1",
+        "http://arxiv.org/abs/2605.15063v1",
+        "http://arxiv.org/abs/2605.15027v1",
+        "http://arxiv.org/abs/2605.14955v1",
+        "http://arxiv.org/abs/2605.14921v1",
+        "http://arxiv.org/abs/2605.14881v1",
+        "http://arxiv.org/abs/2605.14872v1",
+        "http://arxiv.org/abs/2605.14862v1",
+        "http://arxiv.org/abs/2605.14850v1",
+        "http://arxiv.org/abs/2605.14682v1",
+        "http://arxiv.org/abs/2605.14613v1",
+        "http://arxiv.org/abs/2605.14440v1",
+        "http://arxiv.org/abs/2605.14405v1",
+        "http://arxiv.org/abs/2605.14390v1",
+        "http://arxiv.org/abs/2605.14356v1",
+        "http://arxiv.org/abs/2605.14342v1",
+        "http://arxiv.org/abs/2605.14234v1",
+        "http://arxiv.org/abs/2605.14213v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-05-17T05:56:26.021975+00:00",
-      "updated_at": "2026-05-17T06:16:42.870008+00:00",
-      "finalized_at": null
+      "updated_at": "2026-05-17T08:23:14.108623+00:00",
+      "finalized_at": "2026-05-17T08:23:14.108597+00:00"
     }
   ]
 }
