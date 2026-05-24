@@ -51772,7 +51772,7 @@
     },
     {
       "pipeline_id": "20260524T061115Z-75d843be",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/efp70847j0298t4xwovxbgzf12asq10l922u",
       "summarize_job_name": "batches/qi0l4sx64ewb89qkzxzd954bewyr51oykvxp",
       "papers": [
@@ -52363,14 +52363,184 @@
         "http://arxiv.org/abs/2605.21921v1",
         "http://arxiv.org/abs/2605.21896v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2605.22762v1": {
+          "title": "非一様セルオートマトンにおける極小性、推移性および鋭敏性",
+          "summary": "推移的なセルオートマトン(CA)は初期値に対して鋭敏であるという性質を持つが、本論文では、各セルに有限個の異なる局所更新規則が割り当てられた非一様セルオートマトン(NUCA)という、より一般的な文脈においてこの関係を調査した。その結果、極小（したがって推移的）でありながら、初期値に対して鋭敏ではない2次元のNUCAを構築した。この構築は、最初のセルのみが異なる規則を使用する、{0,1,2}^ℕ上のオドメーターNUCAに基づいている。一方で、セルへの局所規則の割り当てが再帰的である場合には、推移性が鋭敏性を包含することを示した。",
+          "keywords": [
+            "non-uniform cellular automata",
+            "minimality",
+            "transitivity",
+            "sensitivity to initial conditions",
+            "odometer"
+          ],
+          "appendix": "symbolic dynamicsに関連する研究です。"
+        },
+        "http://arxiv.org/abs/2605.22624v1": {
+          "title": "行列係数を持つ有理べき級数の自己相似性について",
+          "summary": "素数 p 上の正方行列を係数とする n 変数多項式 P, Q に対し、有理関数 PQ⁻¹ のべき級数展開の係数分布が自己相似性を持つことを示した。この係数分布は ℝⁿ 上の単位立方体によるタイリングと見なすことができ、その自己相似性は置換（substitutions）の下での不変性として記述される。本研究は、パスカルの三角形（二項係数）を p で割った余りが示すフラクタル的な自己相似性を、行列係数を持つ多変数有理級数へと一般化するものである。",
+          "keywords": [
+            "rational power series",
+            "matrix coefficients",
+            "self-similarity",
+            "substitutions",
+            "tilings"
+          ],
+          "appendix": "本論文は、置換（substitutions）を用いたタイリングの性質を論じているため、興味ある分野のうち symbolic dynamics および combinatorics on words と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.22477v1": {
+          "title": "ノイズを伴う高次元経路空間における厳密な隠蔽経路の復元",
+          "summary": "高次元の離散経路空間において、不完全またはノイズを含む観測データから特定の隠蔽された経路を厳密に復元するための数学的・暗号学的フレームワークを提案している。本研究は経路積分の観点に着想を得ており、近似的な再構築と、微視的なシーケンスを特定する厳密な復元を明確に区別している。線形化、格子攻撃、動的計画法、SAT/SMT、量子探索などの攻撃手法についても定式化を行い、将来の暗号プリミティブの基礎となる枠組みを提示している。",
+          "keywords": [
+            "Exact recovery",
+            "Path integral",
+            "High dimensional discrete path spaces",
+            "Cryptographic framework",
+            "Attack surfaces"
+          ],
+          "appendix": "離散的な経路（シーケンス）の復元という性質上、symbolic dynamics、combinatorics on words、およびautomata theoryの各分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.22466v1": {
+          "title": "厳密に前周期的な臨界点を持つPCF写像の樹状ガロア群",
+          "summary": "数体 k 上で定義され、2つの臨界点が共に厳密に前周期的である後臨界有限（PCF）二次有理関数 f(x) = 2/(x-1)² に付随する算術的および幾何学的反復モノドロミー群について研究している。幾何学的反復モノドロミー群の位相的生成元に関する明示的な再帰的記述を与え、算術的反復モノドロミー群のハウスドルフ次元が0になることを示した。また、関連する樹状ガロア群が最大サイズとなるための値 a ∈ k を決定する明示的な判定法を記述した。特に、樹状ガロア群の最大性は計算可能なレベル4で検証できることを示している。最後に、非アーベル定数体を持つPCF二次写像の初の包括的な研究として、算術的反復モノドロミー群の定数体と k(μ_{2^∞}) の共通部分を特定した。",
+          "keywords": [
+            "Arboreal Galois groups",
+            "Postcritically finite (PCF)",
+            "Iterated monodromy groups",
+            "Arithmetic dynamics",
+            "Hausdorff dimension"
+          ],
+          "appendix": "本研究は興味ある分野のうち「arithmetic dynamics」および「complex dynamics」に強く関連しており、反復モノドロミー群の性質を調べる点で「structure of large countable infinite group」とも関わりがあります。"
+        },
+        "http://arxiv.org/abs/2605.22430v1": {
+          "title": "安定化部分群と簡約交叉積の単純性",
+          "summary": "可算群 G のコンパクト空間 X への極小作用 G ↷ X について、簡約交叉積 G ⋉ᵣ C(X) が単純であれば、安定化部分群が自明な amenable radical を持つような点が存在することを証明しました。この結果により、可算な線形群、双曲群、および可算個の amenable 部分群を持つ群の極小作用における簡約交叉積の単純性を完全に特徴付け、Ozawa(2014) の問いに答えました。さらに、C*-単純群の無限一様再帰部分群において、全台を持つ非原子的な確率測度に関して、ほとんどすべての部分群が自明な amenable radical を持つことも示しています。",
+          "keywords": [
+            "reduced crossed product",
+            "minimal action",
+            "stabilizer subgroup",
+            "amenable radical",
+            "C*-simple group"
+          ],
+          "appendix": "本論文は、巨大な可算無限群の構造 (structure of large countable infinite group) の研究に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.22257v1": {
+          "title": "形式的定理証明における適切な対称性とは何か？",
+          "summary": "大規模言語モデル（LLM）に基づく形式的定理証明器は、問題表現の表面的な変化に極めて敏感であり、意味的に等価な言明であっても証明の成功率が大きく異なるという、数学的構造に備わっているはずの対称性を尊重できていない現状がある。本研究では、証明タクティクによって引き起こされる合成的で一般に非可逆な変換を捉える圏論的枠組みとして「rewriting categories」を導入し、「証明の共変性（proof equivariance）」と「成功の不変性（success invariance）」という2つの対称性の概念を定式化した。現在のLLMベースの証明器はこれらの性質をどちらも満たしていないが、入力の等価な書き換えをテスト時に集約する手法を用いることで、サンプリングの極限において理論的に成功の不変性を回復できることを示し、固定された推論予算内での頑健性と性能の向上を実証した。",
+          "keywords": [
+            "formal theorem proving",
+            "large language models",
+            "rewriting categories",
+            "proof equivariance",
+            "success invariance"
+          ],
+          "appendix": "本論文は形式言語（formal languages）を用いた証明記述や、証明探索のオートマトン的側面に関連があると考えられます。"
+        },
+        "http://arxiv.org/abs/2605.22244v1": {
+          "title": "可換な2つの超越整関数の力学集合の一致",
+          "summary": "本論文では、可換な超越整関数 f および g の力学系について研究している。g が afᵖ + b (a, b ∈ ℂ, p ∈ ℕ, a ≠ 0, 1) の形をとるとき、f と g の escaping set、filled Julia set、および bungee set がすべて一致することを示した。これにより Julia set の一致も導かれ、Poon と Yang (1998) の成果を拡張した。さらに、非定数多項式 Q に対する関係式 Q(g) = aQ(f) + b (a ≠ 0, 1) を満たすより一般的な設定においても、同様の力学集合の等価性を証明した。",
+          "keywords": [
+            "commuting transcendental entire functions",
+            "escaping set",
+            "filled Julia set",
+            "bungee set",
+            "Julia set"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「complex dynamics」に深く関連しています。超越整関数の反復合成における集合の等価性について、先行研究を拡張する結果を提示しています。"
+        },
+        "http://arxiv.org/abs/2605.22241v1": {
+          "title": "1変数のcatalytic variableを持つ線形方程式の正値系における組合せ論と漸近解析",
+          "summary": "格子パスの数え上げやスタックソート可能な置換の数え上げなどの組合せ論的問題に現れる、1つのcatalytic variableを持つ線形方程式の正値系について、完全な組合せ論的および漸近的解析を行っている。本論文では、対応する生成関数が文脈自由文法に関連付けられる正の多項式方程式系を満たすことを示し、さらに普遍的な漸近挙動を証明している。",
+          "keywords": [
+            "catalytic variable",
+            "lattice path counting",
+            "stack-sortable permutation",
+            "context-free grammar",
+            "asymptotic behavior"
+          ],
+          "appendix": "文脈自由文法 (context-free grammar) を扱っているため、興味ある分野のうち formal languages と強い関連がある。"
+        },
+        "http://arxiv.org/abs/2605.22235v1": {
+          "title": "複素力学系の解釈可能な発見に向けたKolmogorov-Arnold Networkを用いた正則Neural ODE",
+          "summary": "z² + cのような正則写像に支配される複素力学系は、初期値に対する極端な鋭敏性を持つフラクタル境界を形成する。従来のNeural ODEで用いられる多層パーセプトロン(MLP)は、コーシー・リーマンの方程式のような複素解析的な事前知識を欠き、支配方程式を提示できないブラックボックス的な近似器として機能する。本研究では、エッジ上に学習可能なB-スプライン活性化関数を持つKolmogorov-Arnold Network (KAN)を採用し、正則構造を維持するための微分可能な正則化としてコーシー・リーマンの方程式を組み込んだ「Holomorphic KAN-ODE」を導入した。MLPベースのモデルと比較して16分の1のパラメータ数でありながら、速度場のR²値で0.95以上を達成し、自動的なスプラインから数式へのフィッティングを通じて正しい記号的支配方程式を特定、Julia集合のフラクタル境界を最大98.0%の精度で再構成した。また、MLPに比べ顕著に高いノイズ耐性と転移学習能力を示し、物理学に基づいた複素力学系の発見における解釈可能な代替手法としての有用性を実証した。",
+          "keywords": [
+            "Holomorphic Neural ODEs",
+            "Kolmogorov-Arnold Networks",
+            "Complex Dynamics",
+            "Cauchy-Riemann Equations",
+            "Symbolic Discovery"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「complex dynamics」に深く関連しています。また、記号的な式の同定という側面から「symbolic dynamics」との接点も持ち合わせています。"
+        },
+        "http://arxiv.org/abs/2605.22101v1": {
+          "title": "一般化対称群における Aldous 型のスペクトルギャップ",
+          "summary": "任意の有限群 G に対する一般化対称群 G ≀ Sₙ において、Aldous のスペクトルギャップ予想の類似を証明した。また、Caputo によるハイパーグラフへの予想の拡張が、通常の対称群で成り立つならば、これらの群においても成立することを示した。",
+          "keywords": [
+            "Aldous' spectral gap conjecture",
+            "generalized symmetric groups",
+            "hypergraphs",
+            "spectral gaps"
+          ],
+          "appendix": "本論文は一般化対称群の構造を扱っており、興味ある分野の中では「structure of large countable infinite group」に関連する群の代数的・組合せ論的性質の解析に寄与する内容を含んでいる。"
+        },
+        "http://arxiv.org/abs/2605.22065v1": {
+          "title": "スター型コクセター系の対称性と剛性",
+          "summary": "有限なスター型コクセター図形を持つコクセター群 Aut(W) の自己同型群に関する完全な記述を行う。各自己同型は、内部自己同型、グラフ自己同型、ならびに、トランズベクションおよび2つの族からなる部分共役の積として分解されることを証明した。また、Moussongの双曲性基準を用いて、これらの群が R∞ 性を持つことを示し、さらに剛性に関する性質の確立とスター型コクセター系における同型問題の解決を提示している。",
+          "keywords": [
+            "Automorphism group",
+            "Coxeter group",
+            "Star-shaped Coxeter diagram",
+            "R∞-property",
+            "Isomorphism problem"
+          ],
+          "appendix": "この論文は「structure of large countable infinite group」の分野に関連しており、無限群としてのコクセター群の内部構造や自己同型群の構成を扱っています。"
+        },
+        "http://arxiv.org/abs/2605.21921v1": {
+          "title": "凸多角形の重み付き部分三角形分割について",
+          "summary": "本論文では、凸多角形の重み付き部分三角形分割をサンプリングする問題について研究しています。各部分三角形分割 σ が、対角線の数 |σ| とモデルパラメータ λ > 0 に対して λ^|σ| に比例する確率で選ばれる分布を扱います。このモデルは格子三角形分割やダイアディック・タイリング、カタラン構造に関連する幾何学的分割問題の広いクラスに属します。従来のマルコフ連鎖を用いた手法では混合時間の境界が準最適である場合が多かったのに対し、本論文では期待時間 O((n√λ + 1)log n) で動作する効率的な完全サンプリングアルゴリズムを提案しており、これは重み付き部分三角形分割に対するほぼ最適なサンプリング手法となっています。",
+          "keywords": [
+            "Weighted partial triangulations",
+            "Convex polygon",
+            "Exact sampling",
+            "Catalan structures",
+            "Randomized algorithm"
+          ],
+          "appendix": "本論文で議論されているカタラン構造は、興味ある分野に含まれる combinatorics on words などの組合せ論的な概念と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.21896v1": {
+          "title": "ビリヤード軌道による芝刈り問題",
+          "summary": "単位正方形内における周期的なビリヤード軌道に限定した芝刈り問題（Lawn Mowing Problem）について論じた研究である。軌道の組合せ論的なデータに基づき、領域を完全に被覆するために必要な刃の半径の最適値を決定し、任意の固定された半径において正方形を被覆する最短の経路を特定している。",
+          "keywords": [
+            "Lawn Mowing Problem",
+            "periodic billiard paths",
+            "covering radius",
+            "combinatorial data",
+            "unit square"
+          ],
+          "appendix": "この論文はビリヤード軌道の組合せ論的情報を扱っているため、興味ある分野のうち symbolic dynamics や combinatorics on words に関連する可能性があります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2605.22762v1",
+        "http://arxiv.org/abs/2605.22624v1",
+        "http://arxiv.org/abs/2605.22477v1",
+        "http://arxiv.org/abs/2605.22466v1",
+        "http://arxiv.org/abs/2605.22430v1",
+        "http://arxiv.org/abs/2605.22257v1",
+        "http://arxiv.org/abs/2605.22244v1",
+        "http://arxiv.org/abs/2605.22241v1",
+        "http://arxiv.org/abs/2605.22235v1",
+        "http://arxiv.org/abs/2605.22101v1",
+        "http://arxiv.org/abs/2605.22065v1",
+        "http://arxiv.org/abs/2605.21921v1",
+        "http://arxiv.org/abs/2605.21896v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-05-24T06:11:15.325975+00:00",
-      "updated_at": "2026-05-24T06:31:56.152127+00:00",
-      "finalized_at": null
+      "updated_at": "2026-05-24T08:18:17.761391+00:00",
+      "finalized_at": "2026-05-24T08:18:17.761367+00:00"
     }
   ]
 }
