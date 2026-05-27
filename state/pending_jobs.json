@@ -53345,7 +53345,7 @@
     },
     {
       "pipeline_id": "20260527T064020Z-88924798",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/6tejnpt6xdcr1cog5qjky1aoo7n1ngb335ak",
       "summarize_job_name": "batches/ef17yyqdyhvi20o6iufyc8r4wg97xlh66y4v",
       "papers": [
@@ -53708,14 +53708,133 @@
         "http://arxiv.org/abs/2605.24979v1",
         "http://arxiv.org/abs/2605.24845v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2605.25265v2": {
+          "title": "トレース多項式の定量的側面について",
+          "summary": "FrickeとKleinの古典的結果に基づき、自由群F(a,b)の任意の語wに対し、SL(2,C)行列のトレース関係を記述する一意な整数係数多項式f_w(x,y,z)が存在する。本論文では、巡回約化された語wに対し、f_wの最高次均一次数に関する厳密な公式を導出し、多項式の次数deg(f_w)が語の長さnに対し⌈n/2⌉ ≤ deg(f_w) ≤ nの範囲にあることを示した。特に正の語に対してはdeg(f_w)=n-s（sはブロック数）という公式を得ている。また、ランダムな語における次数の振る舞いや、多項式の係数ノルムの指数関数的な増大、さらにf_wを計算するO(n⁵)の時間計算量およびO(n⁴)の領域計算量を持つアルゴリズムを提示し、SL(2,C)指標等価性が多項式時間で決定可能であることを証明した。",
+          "keywords": [
+            "trace polynomials",
+            "SL(2,C)",
+            "free group",
+            "word length",
+            "character equivalence"
+          ],
+          "appendix": "この論文は、語の組合せ論（combinatorics on words）および自由群の構造に関連しており、提示された興味ある分野と密接に関わっています。"
+        },
+        "http://arxiv.org/abs/2605.25264v1": {
+          "title": "Δ特性：スプリットグラフと数論の架け橋",
+          "summary": "スプリットグラフSにおける2-switchの組合せ論は、誘導サイクル長が高々4のマルチグラフであるファクターグラフΦ(S)によって符号化される。本論文では、ある自然数nに対して、そのファクターグラフがn-simple triangle（すべての辺の多重度がnである三角形）を含むようなスプリットグラフSが存在するかという問題に取り組んでいる。この回答は、nの補約数の和と差に関する純粋な算術的条件である「Δ特性」によって支配されることが示され、これによりグラフ理論と数論の間の双方向の関連性が確立された。",
+          "keywords": [
+            "split graph",
+            "2-switches",
+            "factor graph",
+            "n-simple triangle",
+            "Δ property"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうちcombinatoricsに関連しており、グラフの組合せ論的構造を数論的性質へと橋渡しする内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2605.25253v1": {
+          "title": "高次元オートマトン(Higher-Dimensional Automata)におけるFO定義可能言語の代数的特徴付け",
+          "summary": "高次元オートマトン(HDA)は、高次元のセルを用いて事象の同時実行をモデル化する並列計算モデルであり、有限語を一般化したpomset(部分順序マルチセット)の言語を認識する。本論文では、pomset言語が正規であることの必要十分条件が、pomsetの圏から有限圏への関手による逆像であることを証明した。さらに、McNaughton-Papertの定理をHDA言語に拡張し、言語が一次述語論理(FO)で定義可能であることと非周期的な圏によって認識されることが同値であることを示した。また、counter-freeなHDAによって受理される言語がFO定義可能であることを示したが、その逆の成立については未解決の課題としている。",
+          "keywords": [
+            "Higher-dimensional automata",
+            "pomset languages",
+            "FO-definable",
+            "algebraic characterization",
+            "aperiodic category"
+          ],
+          "appendix": "本論文は、指定された興味ある分野のうち「automata theory」および「formal languages」に密接に関連しています。オートマトンと言語の論理的・代数的な対応関係を扱う理論的な研究です。"
+        },
+        "http://arxiv.org/abs/2605.25229v1": {
+          "title": "多胞体射影の統語論：PermutohedraからAssociahedraへ",
+          "summary": "本論文は、PermutohedronからAssociahedronへのTonksの射影、およびLoday-Ronco写像という、置換を平面二分木に対応付ける2つの写像について、統語的な記述を与えている。これらの写像は、1つの二項生成元から生成される自由な非対称・非単位的オペラドの等式計算において定義される。Tonks射影の頂点制限は反転置換に対するhead-insertion encodingによって、Loday-Ronco写像はdecreasing encodingによってそれぞれ得られることを示した。また、オペラドを用いた局所的な証明により、Tonksの頂点写像が弱ブルア順序（weak Bruhat order）からタマリ順序（Tamari order）への順序保存写像であることを証明している。",
+          "keywords": [
+            "Permutohedron",
+            "Associahedron",
+            "Operad",
+            "Weak Bruhat order",
+            "Tamari order"
+          ],
+          "appendix": "本論文は、置換や木の符号化を扱う点で「combinatorics on words」に関連し、等式計算やオペラドといった代数的・形式的な体系を扱う点で「formal languages」とも深い関わりがあります。"
+        },
+        "http://arxiv.org/abs/2605.25164v1": {
+          "title": "素数法における有理写像族の同時周期性",
+          "summary": "数体 K 上の2次以上の有理写像 φ₁,…,φg について、非周期的な点の集合 𝒜₁,…,𝒜g が与えられたとき、それらすべての点が各写像の法 𝔭 に関して非周期的となる素数 𝔭 の集合が正の密度を持つことを示している。樹状体（arboreal field）を用いた「ジェネリック」という概念を従来よりも厳密に定義し、ジェネリックな場合だけでなく、非ジェネリックな期待されるケースの多くについても同様の結果が成り立つことを証明した。さらに、この結果を応用して、特定の写像族における座標ごとの作用に対する力学系 Mordell–Lang 予想を解決した。",
+          "keywords": [
+            "arithmetic dynamics",
+            "arboreal representations",
+            "dynamical Mordell–Lang conjecture",
+            "rational maps",
+            "simultaneous periods"
+          ],
+          "appendix": "本論文は arithmetic dynamics および complex dynamics と密接に関連しており、数論的性質と力学系の相互作用を扱っています。"
+        },
+        "http://arxiv.org/abs/2605.25082v1": {
+          "title": "エキゾチックな余次元1アノソフ流",
+          "summary": "閉双曲3次元多様体上の円束（circle bundle）におけるアノソフ流を構成し、Verjovskyの予想に対する反例を提示した。得られた一部の4次元多様体は、軌道同値を除いて無限に多くの異なるアノソフ流を許容する。この構成には、双曲3次元多様体内の擬アノソフ・擬測地流に付随するCannon-Thurston写像が用いられている。",
+          "keywords": [
+            "Anosov flows",
+            "circle bundles",
+            "Verjovsky's conjecture",
+            "Cannon-Thurston maps",
+            "pseudo-Anosov quasigeodesic flows"
+          ],
+          "appendix": "複素力学系（complex dynamics）における重要な概念であるCannon-Thurston写像を扱っており、力学系の構造や分類に関連する研究です。"
+        },
+        "http://arxiv.org/abs/2605.25080v1": {
+          "title": "SL(3,ℤ) は Howson 群ではない",
+          "summary": "本論文では、SL(3,ℤ) における 2 つの 2 生成部分群であって、その交差が有限生成ではないものを具体的に構成している。この構成は、標準的な放物型部分群 ℤ² ⋊ SL(2,ℤ) 内部で行われる。主要な手法として、自由群の ℤ² へのアフィン作用における点の固定部分群として部分群の交差を同定し、その作用の Schreier グラフを用いることで、当該固定部分群が有限生成でないことを証明している。さらに、交差が有限生成でありながら、そのランクが任意に大きくなるようなランク 4 の部分群の列 H_q, K_q （rank(H_q ∩ K_q) ≥ q+1）が存在することも示している。",
+          "keywords": [
+            "Howson property",
+            "SL(3,ℤ)",
+            "finitely generated subgroups",
+            "Schreier graph",
+            "affine action"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に深く関連しており、線形群の離散部分群の交差構造に関する重要な知見を提供しています。"
+        },
+        "http://arxiv.org/abs/2605.24979v1": {
+          "title": "純粋ツイン群の交換子群とロンドル",
+          "summary": "三重点変形（triple-point modifications）に関する有限位数のロンドル（rondle）不変量と、純粋ツイン群の部分群の低次中心列との間の関係を定式化している。この定式化を用いて、任意の固定された位数まで同一の不変量を共有する素な平面曲線の無限列を、無限に構成できることを示した。",
+          "keywords": [
+            "pure twin group",
+            "rondle",
+            "lower central series",
+            "triple-point modification",
+            "prime plane curve"
+          ],
+          "appendix": "純粋ツイン群という無限群の代数的構造を扱っているため、興味ある分野の「structure of large countable infinite group」に関連があります。"
+        },
+        "http://arxiv.org/abs/2605.24845v1": {
+          "title": "重み付き一階述語モデル計数を用いた組合せ論的数え上げ問題の解決",
+          "summary": "本論文では、構造的・算術的制約下での部分集合、順列、分割、組成などの組合せ論的な数え上げ問題を、宣言的に記述し解決するための言語「Cofola」を提案している。従来の命題論理への変換は対称性を損なうという課題があったが、Cofolaは対象を直接記述するプリミティブを備え、それらを重み付き一階述語モデル計数（WFOMC）のインスタンスに変換するコンパイルパイプラインを採用している。これにより、エンティティのグループ化や対称性の破棄を行いながら、複雑な制約を持つ数え上げ問題を実用的な時間で一貫して解決できることを示した。",
+          "keywords": [
+            "Combinatorial counting",
+            "Weighted first-order model counting",
+            "Declarative language",
+            "Symmetry-preserving encoding",
+            "Domain-liftable fragments"
+          ],
+          "appendix": "本論文は[興味ある分野]のうち「combinatorics on words」や「formal languages」の基盤となる、組合せ論的な数え上げ問題の自動解決や記述言語に関わっており、計算機科学的なアプローチからこれらの分野の発展に寄与する可能性があります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2605.25265v2",
+        "http://arxiv.org/abs/2605.25264v1",
+        "http://arxiv.org/abs/2605.25253v1",
+        "http://arxiv.org/abs/2605.25229v1",
+        "http://arxiv.org/abs/2605.25164v1",
+        "http://arxiv.org/abs/2605.25082v1",
+        "http://arxiv.org/abs/2605.25080v1",
+        "http://arxiv.org/abs/2605.24979v1",
+        "http://arxiv.org/abs/2605.24845v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-05-27T06:40:20.790241+00:00",
-      "updated_at": "2026-05-27T06:58:55.685162+00:00",
-      "finalized_at": null
+      "updated_at": "2026-05-27T07:56:30.396384+00:00",
+      "finalized_at": "2026-05-27T07:56:30.396357+00:00"
     }
   ]
 }
