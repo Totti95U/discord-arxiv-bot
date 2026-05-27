@@ -53342,6 +53342,370 @@
       "created_at": "2026-05-25T06:47:15.431384+00:00",
       "updated_at": "2026-05-25T11:33:36.507458+00:00",
       "finalized_at": "2026-05-25T11:33:36.507422+00:00"
+    },
+    {
+      "pipeline_id": "20260527T064020Z-88924798",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/6tejnpt6xdcr1cog5qjky1aoo7n1ngb335ak",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25289v1",
+          "entry_id": "http://arxiv.org/abs/2605.25289v1",
+          "title": "Inductive approach to chromatic and characteristic polynomials",
+          "summary": "In this article we describe a new inductive approach to compute the chromatic polynomial of simple graphs and the characteristic polynomial of central hyperplane arrangements.",
+          "authors": [
+            "Madison Cox",
+            "Michele Torielli"
+          ],
+          "published": "2026-05-24T23:10:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.26167v1",
+          "entry_id": "http://arxiv.org/abs/2605.26167v1",
+          "title": "Planning Neural Dynamics with Lie Group Embedding through Supervised Projective Manifold Learning",
+          "summary": "We propose Lie group embedded dynamical neural networks (LieEDNN) and the corresponding learning algorithms based on gradient descent and metric projection on smooth manifold, where we treat Lie group as an intrinsic representation for continuous symmetry of manifold geometry. Thereby we achieve learnable and stable dynamics on the underlying manifold for general Lie group, and we are able to utilize the powerful representation capability of Lie group such as SO(3) and SE(3) to solve real world engineering problems in areas such as robotics, graphics, and control. Two core challenges are: (i) General Lie groups are incompatible with addition arithmetic, which is necessary for neural network interactions. (ii) The dynamics evolve in the nonlinear representation space of special algebra rather than the normal Euclidean space, which violates the paradigm of common neural ODEs. To address these two challenges, we firstly introduce adjoint Lie group action on the Lie algebra, which induces a linear mapping and transfer to the block-wise structure of weight matrices, such that addition could operate on the Lie algebra as a vector space. Then we parameterize the Lie algebra and the adjoint action as linear transformation so that the architecture is aligned with neural network perceptrons. Explicitly, this embedding appears as block-wise manifold constraints on weights, and we develop algorithms to learn the equilibrium with stability guarantees of the temporal neural network dynamics. Experiments are implemented on a specific Lie group SE(3), with the application scenario of telescopic manipulators.",
+          "authors": [
+            "Tianwei Wang",
+            "Bryan Chen",
+            "Qian Zuo",
+            "Qiyue Xia",
+            "Xin Li",
+            "Wei Pang"
+          ],
+          "published": "2026-05-24T22:47:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25274v1",
+          "entry_id": "http://arxiv.org/abs/2605.25274v1",
+          "title": "Pal's permanent conjecture: proof for block uniform matrices",
+          "summary": "Consider a symmetric function $\\mathcal{C}(x,y)$ on $[0,1]\\times[0,1]$ which is twice continuously differentiable up to the boundary, and which satisfies $ \\mathcal{C}(x,y)=\\mathcal{C}(1-x,1-y)$. Let $A^{(n)} = \\big(a^{(n)}_{i,j}\\, :\\, i,j \\in [n]\\big)$ be the matrix with entries $a^{(n)}_{i,j}\\, =\\, \\exp(-\\mathcal{C}(i/n,j/n))$. Soumik Pal conjectured the asymptotics $$\\operatorname{perm}\\big(A^{(n)}\\big)/n!\\sim \\exp\\big(n Λ[\\mathcal{C}]\\big)/ \\sqrt{\\mathcal{D}[\\mathcal{C}]}$$ as $n \\to \\infty$ for known functionals that arise naturally in the context of entropy regularized optimal transport. The functional $Λ[\\mathcal{C}]$ is the known large deviation rate function, already proved rigorously by Sumit Mukherjee. It is $\\int_{0}^1 \\int_0^{1} (α(x)+β(y))\\, dx\\, dy$ where $α(x)+β(y)$ is chosen such that $ρ(x,y) := \\exp(-\\mathcal{C}(x,y)-α(x)-β(y))$ has uniform marginals. The algebraic term $\\mathcal{D}[c]$ is given by Peter McCullagh's formula for doubly stochastic matrices: $\\operatorname{det}_F(I+J-T^*T)$, the Fredholm determinant, where $I$ is the identity on $L^2([0,1])$, $Jf(x) \\equiv \\int_{0}^1 f(z)\\, dz$ (for all $x$) and $Tf(x) = \\int_0^1 ρ(x,y) f(y)\\, dy$. We prove the conjecture for functions $\\mathcal C$ that are constant on blocks, exploiting a well-known Ross Pinsky's combinatorial decomposition of permutations in blocks.",
+          "authors": [
+            "Andrea Ottolini",
+            "Shannon Starr"
+          ],
+          "published": "2026-05-24T22:02:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25265v2",
+          "entry_id": "http://arxiv.org/abs/2605.25265v2",
+          "title": "On quantitative aspects of trace polynomials",
+          "summary": "By the classic results of Fricke and Klein, for every word $w$ in the free group $F(a,b)$ there exists a unique integer \\emph{trace polynomial} $f_w(x,y,z)\\in Z[x,y,z]$ such that $Tr(w(A,B))=f_w(Tr A, Tr B, Tr AB)$ for all $A,B\\in SL(2,C)$. In this paper we study quantitative aspects of trace polynomials. We prove an exact formula for the leading homogeneous part of $f_w$ for every nontrivial cyclically reduced word $w\\in F(a,b)$. In particular, if $w=u_1\\cdots u_n$ is cyclically reduced over $\\{a,A,b,B\\}$, where $A=a^{-1}$ and $B=b^{-1}$, and if $N_{rs}(w)$ denotes the number of cyclic occurrences of the adjacent pair $rs$, then \\[\n  deg (f_w)=n-N_{ab}(w)-N_{BA}(w)\n  =n-\\frac{1}{2}\\bigl(N_{ab}(w)+N_{ba}(w)+N_{AB}(w)+N_{BA}(w)\\bigr). \\] Consequently we obtain sharp general bounds $\\lceil n/2\\rceil\\le deg (f_w)\\le n$ for arbitrary $w\\in F(a,b)$ and an exact formula formula $deg (f_w)=n-s$ for positive words $w=a^{α_1}b^{β_1}\\dots a^{α_s}b^{β_s}$. We also study $deg (f_w)$ for random positive words and for random freely reduced and random cyclically reduced words. We also obtain explicit exponential upper bounds for the growth of the $\\ell_1$ and $\\ell_\\infty$ norms of $f_w$ and exhibit examples with exponential coefficient growth at rate $\\varphi^n$, where $\\varphi$ is the golden ratio. Finally, we give a deterministic algorithm which computes the fully expanded polynomial $f_w$ in time $O(n^5)$ and space $O(n^4)$, in terms of the input word length $n$, and prove an $Ω(n^3)$ output-size lower bound for all algorithms that output $f_w$ in fully expanded sparse binary form. As a consequence, $SL(2,C)$-character equivalence for elements $v,w\\in F(a,b)$ is decidable in time $O(n^5)$, where $n$ is the maximum of the lengths of $v$ and $w$.",
+          "authors": [
+            "Ilya Kapovich"
+          ],
+          "published": "2026-05-24T21:34:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25264v1",
+          "entry_id": "http://arxiv.org/abs/2605.25264v1",
+          "title": "The $Δ$ property: a bridge between split graphs and Number Theory",
+          "summary": "For a split graph $S$, the combinatorics of 2-switches on $S$ is faithfully encoded by the factor graph $Φ(S)$, a multigraph whose induced cycles have length at most $4$. In this paper we address the following question: for which $n \\in \\mathbb{N}$ is there a split graph $S$ whose factor graph contains an $n$-simple triangle, that is, a triangle all of whose edges have multiplicity $n$? We show that the answer is governed by a purely arithmetic condition, the $Δ$ property, relating the differences and sums of complementary divisors of $n$, and thereby establish a two-way bridge between Graph Theory and Number Theory.",
+          "authors": [
+            "Victor N. Schvöllner"
+          ],
+          "published": "2026-05-24T21:34:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25253v1",
+          "entry_id": "http://arxiv.org/abs/2605.25253v1",
+          "title": "Algebraic Characterization of FO-definable Languages of Higher-Dimensional Automata",
+          "summary": "Higher-dimensional automata (HDA) are a model of concurrency that models simultaneous execution of events using higher dimensional cells. HDA recognize languages of pomsets, a generalization of finite words whose letters are partially ordered. We prove a new algebraic characterization of HDA languages: a language of pomsets is regular if and only if it is the inverse image of a functor from the category of pomsets into a finite category. Furthermore, the language is definable in first-order logic exactly when it is recognized by an aperiodic category, generalizing the McNaughton-Papert theorem to HDA languages. We also investigate a notion of counter-free HDA, and show that if a language is accepted by a counter-free HDA, it must be definable in first-order logic. The converse, however, is still open.",
+          "authors": [
+            "Enzo Erlich",
+            "Jérémy Ledent",
+            "Krzysztof Ziemiański"
+          ],
+          "published": "2026-05-24T20:47:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25237v1",
+          "entry_id": "http://arxiv.org/abs/2605.25237v1",
+          "title": "Local network evolution rules drive shortest path multiplicity",
+          "summary": "The shortest path multiplicity is an important metric of complex networks. The shortest path multiplicity of real networks is high and it correlates with their community structure. Since local network evolution induces network communities, it is possible that a high shortest path multiplicity is the natural expectation of local evolution rules. Here I demonstrate, by means of numerical simulations, that this is indeed the case.",
+          "authors": [
+            "Alexei Vazquez"
+          ],
+          "published": "2026-05-24T19:47:30+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25232v1",
+          "entry_id": "http://arxiv.org/abs/2605.25232v1",
+          "title": "Specification-Based Code-Text-Code Reengineering for LLM-Mediated Software Evolution",
+          "summary": "Direct Code2Code transformation remains challenging to control because it can preserve surface-level syntax while introducing semantic drift, hidden behavioral changes, loss of traceability, non-idiomatic target implementations, or incomplete reconstruction of domain logic. This paper proposes a specification-based Code2Text2Code reengineering framework for LLM-mediated software evolution. The central idea is to transform source code into a neutral textual specification that captures program behavior, identifiers, computational flow, conditions, side effects, data dependencies, and domain-specific intent without directly transferring the source language syntax. The proposed framework combines factual context extraction, Code2Text generation, iterative verification between source code and text specification, Text2Code generation, target code verification, retrieval-augmented grounding, and semantic-aware chunking, and transformation loss estimation. The knowledge representation layer integrates metadata derived from AST, graph-based dependency structures, neutral natural language specifications, technical documentation, business documentation, and architecture-level representations. The conducted experiments include a Code2Text2Code dataset built from multiple programming languages and SQL dialects, comparison of intermediate representations, retrieval evaluation, documentation transformation evaluation, and prompt tuning using DSPy. A graph formalization using structural preservation, reverse compatibility, interface stability, and total graph similarity is implemented to estimate transformation losses. The results support the interpretation of the Code2Text2Code approach not as a simple code transformation, but as a controlled specification-based reengineering process for LLM-mediated software evolution.",
+          "authors": [
+            "Oleg Grynets",
+            "Vasyl Lyashkevych",
+            "Arsen Dolichnyi",
+            "Roman Piznak",
+            "Taras Zelenyy",
+            "Volodymyr Morozov"
+          ],
+          "published": "2026-05-24T19:36:04+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25229v1",
+          "entry_id": "http://arxiv.org/abs/2605.25229v1",
+          "title": "The Syntax Of Polytopal Projections: From Permutohedra To Associahedra",
+          "summary": "Tonks' projection from the permutohedron to the associahedron and the Loday--Ronco map both send permutations to planar binary trees. We give a syntactic account of these maps in the equational calculus of the free non-symmetric, non-unital operad on one binary generator. The vertex restriction of Tonks' projection is obtained by evaluating the head-insertion encoding on the reversed permutation, while the Loday--Ronco map is obtained by evaluating the decreasing encoding. We also give a local operadic proof that Tonks' vertex map is order-preserving from the weak Bruhat order to the Tamari order.",
+          "authors": [
+            "Miloš Adžić",
+            "Filip D. Jevtić"
+          ],
+          "published": "2026-05-24T19:31:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25221v1",
+          "entry_id": "http://arxiv.org/abs/2605.25221v1",
+          "title": "Data-Specific Hyper-Parameter Design: A Paradigm Shift in Reservoir Computing",
+          "summary": "Reservoir computing typically relies on large, randomly generated reservoirs, enabling simple, often linear readouts. Over the past two decades, most constructions have exploited the freedom to select the reservoir, constrained primarily by stability conditions based on state contraction or memory capacity. However, these designs are largely independent of the input data and learning objective, resulting in a trial-and-error methodology driven by randomness. In high dimensions, the reservoir acts as a random embedding of the input history, implicitly relying on Johnson--Lindenstrauss--type concentration phenomena to preserve information. In contrast, we develop reservoir design principles from a geometric perspective for inputs generated by deterministic dynamical systems. Rather than relying on random embeddings, we require reservoir state increments to align within a cone around an input-determined vector subspace, and prove that such a cone concentration reduces ridge-regression training error. When the cone angle is small, the variance of reservoir states concentrates in the input-determined subspace, improving conditioning of the empirical second-moment matrix and strengthening alignment between dominant covariance directions and the state-target cross-covariance. For echo state networks, we provide a constructive approach to reservoir design. The reservoir matrix is chosen so that associated Krylov-chain directions remain nearly closed within an input-determined subspace while permitting controlled mixing in its orthogonal complement. We also provide a spectral diagnostic for ridge regression training that identifies when reservoir geometry concentrates predictive information into a few dominant covariance modes and when ``spectral pollution'' inhibits forecasting. Numerical experiments demonstrate consistent performance gains over arbitrary reservoir constructions.",
+          "authors": [
+            "G Manjunath",
+            "Juan-Pablo Ortega",
+            "Alma van der Merwe"
+          ],
+          "published": "2026-05-24T19:13:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25203v1",
+          "entry_id": "http://arxiv.org/abs/2605.25203v1",
+          "title": "Influence-Inspired Spectral Rotations for Extreme Low-Bit LLM Quantization",
+          "summary": "We apply the influence-adaptive Walsh geometry of a companion theory paper (arXiv:2605.01637) to extreme low-bit weight-only LLM quantization. The recipe is one math-invariant transformation: WHT-rotate each linear layer's weight matrix and rescale its columns by per-coordinate Walsh-basis activation energy before handing off to a reconstruction-error quantizer (Intel auto-round). This biases per-group integer rounding toward high-spectral-energy channels.\n  On four pretrained decoder-only models from 135M to 1.5B parameters, BBT-spectral reduces wikitext-2 perplexity by 15-58% relative to vanilla auto-round at W2A16; we also report a TinyLlama-1.1B auxiliary data point. Three extensions transfer the recipe to families it failed on: a per-head PCA matrix-Gamma replacement of q_norm/k_norm for Qwen3 attention (PPL 136.76 -> 88.99 on Qwen3-0.6B); an SO(2) per-pair rotation that commutes with RoPE (PPL 36.93 -> 21.84 on Qwen2.5-1.5B); and an MoE-aware input-side absorption fix identified by architectural fuzzing of Laguna-style fused-expert layouts.\n  A W2-vs-W4 ablation gives a deliberate negative control: the redistribution payoff falls within the +/-0.5 PPL noise floor at W4, consistent with the Schur-convexity intuition that the cost of unconcentrated influence vanishes as the noise budget shrinks. All quantized weights export to OpenVINO IR and run on Intel NPU + Arc dGPU + CPU with PPL invariant to device within +/-0.1.\n  We do not claim a formal Boolean-to-real-valued transfer of the theory paper's majorization argument: the WHT activation energy used here is not the Boolean influence of the theory paper, the link is intuitive, and the contribution is engineering value rather than a transferred theorem. Head-to-head benchmarks against SpinQuant, QuaRot, QuIP-sharp, AQLM, OmniQuant, and ButterflyQuant at matched calibration are the main future-work item.",
+          "authors": [
+            "Gorgi Pavlov"
+          ],
+          "published": "2026-05-24T18:05:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25192v1",
+          "entry_id": "http://arxiv.org/abs/2605.25192v1",
+          "title": "Synchronization of coupled wind turbines",
+          "summary": "In the context of renewable energies, wind energy appears as a sustainable alternative to address current environmental and energy challenges. This work studies the synchronization and stability of a network of wind turbines subjected to strong disturbances, by integrating a realistic modeling of wind variability by using the Ornstein-Uhlenbeck stochastic process. The dynamics of each wind turbine are described by a Kuramoto-type equation, while synchronization is analyzed through the time evolution of the phases. Stability is studied by analyzing the basin of attraction to the synchronous solution, namely the set of initial conditions leading to the stable synchronous state. Simulations carried out on various models ranging from an isolated wind turbine with constant power to an isolated wind turbine with variable wind power, reveal that the stability of the system is strongly influenced by inertia, damping, wind speed, wind fluctuation rate, correlation time, and coupling strength. Physically, these parameters control the balance between injected mechanical power, energy dissipation, grid-induced restoring forces, and the temporal structure of wind fluctuations, thereby determining the ability of the wind turbine to absorb perturbations and maintain synchronization under fluctuating wind conditions.",
+          "authors": [
+            "Nadia Kevine Kouonang",
+            "Jeanne Sandrine Takam Mabekou",
+            "Thierry Njougouo",
+            "Timoteo Carletti"
+          ],
+          "published": "2026-05-24T17:47:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25180v1",
+          "entry_id": "http://arxiv.org/abs/2605.25180v1",
+          "title": "DateSAT: A Framework for Solving Date and Period Constraints",
+          "summary": "Dates and calendar periods (i.e., days, months, years) appear frequently in tasks involving analysis of software, data, and documents. Prior research has shown that computer logic involving dates and calendrical calculations is error-prone due to tricky rules (e.g., irregularly sized months), ambiguities (e.g., scheduling one month from \"Jan 31st\"), and edge cases (e.g., leap years). However, existing program analysis and verification tools do not provide native support for dates, making it hard to reason about operations involving calendrical arithmetic symbolically.\n  This paper presents DateSAT, the first framework for expressing and solving satisfiability constraints involving dates and calendar periods. The paper first formalizes an input language and the semantics of date and period arithmetic. The paper then presents five separate strategies for solving DateSAT constraints based on reductions to SMT formulas involving integers, which we have implemented using Z3 as a backend. We curate a dataset of 450 DateSAT constraints synthesized using LLM prompting, grammar-based sampling, and mining legal documents, and then present an empirical evaluation of DateSAT solver performance.",
+          "authors": [
+            "Leyi Cui",
+            "Shrey Tiwari",
+            "Rohan Padhye"
+          ],
+          "published": "2026-05-24T17:20:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25164v1",
+          "entry_id": "http://arxiv.org/abs/2605.25164v1",
+          "title": "Simultaneous Periods for Families of Rational Maps Modulo Primes",
+          "summary": "Let $K$ be a number field, and $\\varphi_{1},\\ldots,\\varphi_{g}\\in K(t)$ be finitely many rational maps, each of degree at least $2$. We first show that for generic finite sets $\\mathcal{A}_{1},\\ldots,\\mathcal{A}_{g}$ consisting entirely of points that are not $\\varphi_{i}$-periodic, there exists a set of primes $\\mathfrak p$ of $K$ of positive density such that for each $\\mathcal{A}_{i}$ and every $α\\in\\mathcal{A}_i$, $α$ is not $\\varphi_i$-periodic modulo $\\mathfrak p$. The notion of genericity used here is defined in terms of the associated arboreal fields and is sharper than those previously used in the literature. Leveraging our proof in the generic case, we then show that the same conclusion holds for most \\textit{expected} cases of non-generic sets $\\mathcal{A}_{i}$. Finally, we apply our result to confirm the dynamical Mordell--Lang conjecture for coordinate-wise actions of a class of maps that includes rational maps that are generic in this sense.",
+          "authors": [
+            "Bhawesh Mishra"
+          ],
+          "published": "2026-05-24T16:44:41+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25150v1",
+          "entry_id": "http://arxiv.org/abs/2605.25150v1",
+          "title": "On the Vertex Decomposability of $r$-Independence Complexes of Trees",
+          "summary": "Let $G$ be a graph and $r \\ge 1$. A vertex subset is $r$-independent if every connected component of its induced subgraph has size at most $r$. The family of all such subsets forms a simplicial complex, the $r$-independence complex $\\Ind_r(G)$, generalizing the classical independence complex.\n  Recent work has focused on shellability and vertex decomposability of these complexes. For chordal graphs, $\\Ind_r(G)$ has the homotopy type of a wedge of spheres for all $r$, and some chordal subfamilies are known where these complexes are not even sequentially Cohen-Macaulay. Thus, determining chordal graph classes and values of $r$ for which $\\Ind_r(G)$ is sequentially Cohen-Macaulay, shellable, or vertex decomposable remains an active area. Existing methods, based on chordal hypergraphs or special graph properties, do not extend to arbitrary chordal graphs.\n  In this paper, we show that for every tree $T$ and every integer $r \\ge 1$, the complex $\\Ind_r(T)$ is vertex decomposable, resolving a conjecture \\cite[Conjecture 3.15]{PD23chordal} of Abdelmalek et al. Our approach gives a structural description of shedding vertices via rooted subtrees and uses it to prove vertex decomposability recursively.",
+          "authors": [
+            "Rutuja Sawant"
+          ],
+          "published": "2026-05-24T16:05:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25126v1",
+          "entry_id": "http://arxiv.org/abs/2605.25126v1",
+          "title": "Equality in a Reverse Minkowski Shell Bound for Integral Lattices via Spherical Designs",
+          "summary": "For a full-rank integral lattice $\\mathcal{L}\\subset\\mathbb{R}^n$, Regev and Stephens-Davidowitz proved that \\[N_{=k}(\\mathcal{L}):=|\\{y\\in\\mathcal{L}:\\lVert y\\rVert^2=k\\}|\\le 2\\binom{n+2k-2}{2k-1}.\\] We classify the equality cases. For $n\\ge2$, equality holds if and only if either $k=1$ and $\\mathcal{L}\\cong\\mathbb{Z}^n$, or $n=8$, $k=2$, and $\\mathcal{L}\\cong E_8$. For $n=1$, equality holds exactly when $\\mathcal{L}$ represents $k$.\n  The proof shows that equality is rigid. Saturation of the shell bound forces the normalized norm-$k$ shell to be an antipodal tight spherical $(4k-1)$-design. The associated Delsarte--Goethals--Seidel annihilator polynomial gives an arithmetic root condition, which isolates $E_8$ at $k=2$, rules out $k=3$, and combines with the Bannai--Damerell/Bannai theorem and an elementary circle argument to exclude all remaining cases in dimension at least $2$.",
+          "authors": [
+            "Scott Duke Kominers"
+          ],
+          "published": "2026-05-24T15:12:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25108v1",
+          "entry_id": "http://arxiv.org/abs/2605.25108v1",
+          "title": "Pointwise behavior of SU(1,1) nonlinear Fourier transform",
+          "summary": "We show that SU(1,1) NLFT can diverge pointwise for square-summable coefficients. As a consequence, we prove that the classical pointwise asymptotics of polynomials orthogonal on the unit circle can fail for measures in the Szegö class. We also discuss some special cases when the pointwise convergence holds.",
+          "authors": [
+            "Sergey A. Denisov"
+          ],
+          "published": "2026-05-24T14:49:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25088v1",
+          "entry_id": "http://arxiv.org/abs/2605.25088v1",
+          "title": "The size of the spanning-tree spectrum of simple graphs",
+          "summary": "For a graph $G$, let $τ(G)$ denote the number of spanning trees. We show that for every fixed $0 < c < 1/4$, the number of distinct values of $τ(G)$, as $G$ ranges over simple graphs on $n$ vertices, is at least $\\exp(c n \\log n)$ for all sufficiently large $n$. This is optimal up to the choice of the constant $c$ and resolves a conjecture of Chan-Kontorovich-Pak regarding a problem of Sedláček from the late 1960s.",
+          "authors": [
+            "Vishesh Jain"
+          ],
+          "published": "2026-05-24T14:05:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25082v1",
+          "entry_id": "http://arxiv.org/abs/2605.25082v1",
+          "title": "Exotic codimension one Anosov flows",
+          "summary": "We construct Anosov flows in certain circle bundles over closed hyperbolic 3-manifolds, producing counterexamples to a conjecture of Verjovsky. Some of these 4-manifolds admit infinitely many distinct Anosov flows up to orbit equivalence. The construction is made by using Cannon-Thurston maps associated to pseudo-Anosov quasigeodesic flows in hyperbolic $3$-manifolds.",
+          "authors": [
+            "Sergio Fenley",
+            "Kathryn Mann",
+            "Rafael Potrie"
+          ],
+          "published": "2026-05-24T13:46:04+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25080v1",
+          "entry_id": "http://arxiv.org/abs/2605.25080v1",
+          "title": "SL(3,Z) is not Howson",
+          "summary": "We give an explicit construction of two $2$-generated subgroups $H,K\\leq \\SL(3,\\Z)$ whose intersection is not finitely generated. The construction takes place inside the standard parabolic subgroup $\\Z^2\\rtimes \\SL(2,\\Z)\\leq \\SL(3,\\Z)$. The main point is to identify $H\\cap K$ with the stabilizer of a point for an affine action of a free group on $\\Z^2$, and then to prove, using the Schreier graph of this action, that this stabilizer is not finitely generated. Furthermore, we prove that there exists a sequence of subgroups $H_q, K_q \\leq \\SL(3,\\mathbb{Z})$ such that $\\rank(H_q)=\\rank(K_q)=4$, and \\[ \\rank(H_q\\cap K_q)\\geq q+1, \\] while $H_q\\cap K_q$ is finitely generated.",
+          "authors": [
+            "Shengkui Ye",
+            "Qiang Zhang"
+          ],
+          "published": "2026-05-24T13:45:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.25065v1",
+          "entry_id": "http://arxiv.org/abs/2605.25065v1",
+          "title": "Asymptotic probability of irreducibles III: Anti-SEQ",
+          "summary": "In this paper, we study the structure of the complete asymptotic expansion of the probability that a large combinatorial object is connected or consists of a given number of connected components. For rapidly growing labeled families of structures, the coefficients involved in these expansions are possibly negative integers. Using species theory, we interpret these coefficients as the difference between the counting sequences of two derivative species of structures. In particular, we show that this difference can be viewed as the counting sequence of the virtual species obtained with the help of an \"anti-$\\mathrm{SEQ}$\" operator applied to the initial family of structures. Applications include $P$-angulated discrete surfaces, quadratic square-tiled surfaces, and non-orientable graph encoded manifolds, which were not reachable with our previous methods.\n  Moving on to the weighted species, we establish the whole structure of the asymptotic expansion of the probability that a graph is connected in the Erdős-Rényi model $G(n,p)$. Here, the asymptotic coefficients are polynomials in $\\frac{p}{1-p}$ and can be described both in terms of simple graphs and irreducible tournaments with ties. We also provide general asymptotic results for sequence and cycle decomposition, as well as the complete asymptotic expansion of the probability that a random labeled tournament with ties is irreducible.",
+          "authors": [
+            "Thierry Monteil",
+            "Khaydar Nurligareev"
+          ],
+          "published": "2026-05-24T13:21:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.24984v1",
+          "entry_id": "http://arxiv.org/abs/2605.24984v1",
+          "title": "Impartial games on two finite Groups",
+          "summary": "In this paper, we study impartial achievement games and impartial avoidance games introduced by Anderson and Harary. Using the criteria of maximal subgroups, we study the game for Frobenius groups and non-abelian groups with all abelian subgroups.",
+          "authors": [
+            "Ratan Lal",
+            "Muskan",
+            "Vipul Kakkar"
+          ],
+          "published": "2026-05-24T10:23:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.24979v1",
+          "entry_id": "http://arxiv.org/abs/2605.24979v1",
+          "title": "Commutators of pure twin groups and rondles",
+          "summary": "We formulate a relationship between finite-order rondle invariants with respect to triple-point modifications and the lower central series of subgroups of a pure twin group. Using our formulation, we construct infinitely many infinite sequences of prime plane curves such that, for each sequence, the curves share the same invariants up to any fixed order.",
+          "authors": [
+            "Noboru Ito"
+          ],
+          "published": "2026-05-24T10:18:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.24968v1",
+          "entry_id": "http://arxiv.org/abs/2605.24968v1",
+          "title": "Circular Induction",
+          "summary": "The Circularity Principle was successfully applied for developing a coinductive proving technique, known as circular coinduction. In this paper, we show that the same principle can be used to develop an inductive proving technique. A main advantage of this uniform approach is that the two proving techniques can be easily combined during the verification process. Circular induction is simple, flexible, generic, and therefore it is a good candidate framework for combining different proving schemes into a competitive tool. We exhibit this potential by presenting how the circular induction is implemented in CIRC, a prover built around the Circularity Principle.\n  Disclaimer. This paper was written in 2010, at the time the CIRC prover was developed, and the main body reflects the state of the work and of the prover as of that date. For this arXiv technical report, only the related-work discussion (Section 6) and the concluding section have been revised: Section 6 has been extended to situate circular induction within the cyclic-proof and infinite-descent literature that has appeared or matured since 2010. No other part of the paper-its definitions, results, proofs, examples, or implementation description-has been modified, and the technical content should be read as a 2010 contribution. References to developments after 2010 appear only in the updated related-work section.",
+          "authors": [
+            "Dorel Lucanu",
+            "Grigore Rosu",
+            "Eugen Goriac",
+            "Georgiana Caltais"
+          ],
+          "published": "2026-05-24T09:44:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.24952v1",
+          "entry_id": "http://arxiv.org/abs/2605.24952v1",
+          "title": "Hurwitz numbers of a fixed partition (m, 1^{n-m}) via enumeration of unrooted hypermaps",
+          "summary": "This manuscript studies a special case of the Hurwitz enumeration problem: for branched covers from genus g compact Riemann surface to the Riemann sphere, with three branch points, and require the branching data at one of the branch points to be of the partition (m 1^{n-m}), obtain a formula of Hurwitz number. The Hurwitz enumeration problem can be transformed into enumeration of a class of unrooted hypermaps. We first provide a enumeration formula for rooted hypermaps, thereby obtaining the weighted Hurwitz numbers. Next give the quantitative relationship between the enumeration of unrooted hypermaps and that of rooted hypermaps in the general setting. Finally, combining these two results, we obtain a formula for the unrooted hypermaps or the Hurwitz numbers in the special setting.",
+          "authors": [
+            "Yi Song"
+          ],
+          "published": "2026-05-24T09:05:59+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.24940v1",
+          "entry_id": "http://arxiv.org/abs/2605.24940v1",
+          "title": "Decomposition of degree-regular graphs into quasi-random pairs without the Regularity lemma",
+          "summary": "The Szemerédi Regularity Lemma, in combination with the Blow-up Lemma, form the Regularity Method, a fundamental tool in graph embeddings, albeit restricted to very large and dense graphs. We propose an alternative vertex-partitioning framework that remains effective even as the density tends to zero and without requiring astronomically large vertex sets. This approach, while narrower in scope, extends regularity-type techniques to relatively small graphs previously inaccessible to the Regularity Method. As an application, we use this novel vertex-partitioning method for bipartite packing problems.",
+          "authors": [
+            "Béla Csaba"
+          ],
+          "published": "2026-05-24T08:38:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.24864v1",
+          "entry_id": "http://arxiv.org/abs/2605.24864v1",
+          "title": "Codegrees of Irreducible Characters of VZ and Camina $p$-Groups",
+          "summary": "The character codegree of an irreducible character of a finite group $G$ is given by the index of its kernel in $G$ upon the character degree. We compute the codegrees of irreducible characters of VZ and Camina $p$-groups, and also obtain the character codegrees set of $p$-groups of order $\\leq p^5$, where $p$ is an odd prime.",
+          "authors": [
+            "Ayush Udeep"
+          ],
+          "published": "2026-05-24T04:49:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.24855v1",
+          "entry_id": "http://arxiv.org/abs/2605.24855v1",
+          "title": "On a conjecture of DeLaViña and Waller",
+          "summary": "The Wiener index of a connected graph is defined as the sum of distances between all its unordered pairs of vertices. Characterising graphs on $n$ vertices with a fixed diameter that maximise the Wiener index is a long-standing open problem. This problem has been resolved fully for trees on $n$ vertices with diameter $d \\in \\{1,2,3,4,n-3,n-2,n-1\\}$ while partial results are available for $d=5$ and $6$. In this context, a conjecture proposed by DeLaViña and Waller has remained open for the last 18 years.\n  In this paper, we establish a necessary condition for a tree to attain the maximum Wiener index among all trees on $n$ vertices with a given diameter. Using this condition, we characterise the maximal trees for diameter $n-4$ and $n-5$. Furthermore, we prove the DeLaViña Waller conjecture for the classes of graphs having $0,1,2,3$ or $n-4$ cut vertices.",
+          "authors": [
+            "Dinesh Pandey",
+            "Peruvemba Sundaram Ravi"
+          ],
+          "published": "2026-05-24T04:22:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.24853v1",
+          "entry_id": "http://arxiv.org/abs/2605.24853v1",
+          "title": "Tribonacci properties of identities, matrices, and determinants",
+          "summary": "This paper considers the properties of Tribonacci numbers on identities, matrices, and determinants. In the first front part, we obtain several symmetric identities of Tribonacci numbers by a matrix-based approach and binomial inversion technique. In the core section of the latter half, we present a determinant representation of Tribonacci numbers in a slightly modified Toeplitz--Hessenberg form derived from Bell polynomials.",
+          "authors": [
+            "Takao Komatsu",
+            "Tengfei Shen"
+          ],
+          "published": "2026-05-24T04:14:28+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.24845v1",
+          "entry_id": "http://arxiv.org/abs/2605.24845v1",
+          "title": "Solving Combinatorial Counting Problems with Weighted First-Order Model Counting",
+          "summary": "Combinatorial counting problems pervade artificial intelligence, statistics, and discrete mathematics. Whether the task is enumerating subsets, multisets, permutations, partitions, or compositions under structural and arithmetic constraints, solving it remains a stubbornly manual exercise. Closed-form derivations are powerful but brittle, while naive encodings to propositional model counting or constraint satisfaction destroy the exchangeability that makes counting tractable in the first place. We present Cofola (COmbinatorial counting LAnguage with First-Order logic), a typed declarative language whose primitives are the combinatorial objects that recur in everyday counting questions, including sets, bags, tuples, sequences, circles, partitions, and compositions, together with natural relational and arithmetic constraints over them. A denotational semantics maps every Cofola program to a well-defined combinatorial counting problem, and a three-phase compilation pipeline (preprocessing, decomposition, and symmetry-preserving encoding) reduces this problem to a weighted first-order model counting (WFOMC) instance augmented with coefficient-extraction constraints. To stay inside known domain-liftable fragments whenever possible, the encoding groups indistinguishable entities, breaks the symmetry of unordered groupings lexicographically, and encodes sequences and circles via order axioms. On a suite of representative combinatorial counting problems, ranging from textbook math problems to multi-object scenarios that the closest prior framework cannot express, Cofola produces concise specifications and a uniform solving pipeline that is practical end-to-end.",
+          "authors": [
+            "Yuanhong Wang",
+            "Juhua Pu",
+            "Yuxu Zhou",
+            "Yuyi Wang",
+            "Ondřej Kuželka"
+          ],
+          "published": "2026-05-24T03:29:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2605.24801v1",
+          "entry_id": "http://arxiv.org/abs/2605.24801v1",
+          "title": "Chain--collider--fork Decompositions of Transitive Tournament",
+          "summary": "A transitive tournament is an acyclic orientation of a complete graph. We study decompositions and packings of the transitive tournament \\(TT_n\\) into connected two-arc motifs. The three motifs considered are chains, colliders, and forks, which are also fundamental local configurations in directed acyclic graphs. We first construct decompositions of \\(TT_n\\) into mixtures of these motifs whenever such decompositions exist. We then consider the corresponding pure packing problem for each individual motif. For \\(H\\) equal to a chain, a collider, or a fork, we determine the maximum number of arc-disjoint copies of \\(H\\) in \\(TT_n\\). These results give a precise extremal description of two-arc motif packings in transitive tournaments and suggest further questions on motif decompositions in broader classes of directed acyclic graphs.",
+          "authors": [
+            "Ajani De Vas Gunasekara"
+          ],
+          "published": "2026-05-24T01:13:13+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-05-27T06:40:20.790241+00:00",
+      "updated_at": "2026-05-27T06:40:20.790241+00:00",
+      "finalized_at": null
     }
   ]
 }
