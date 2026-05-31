@@ -54394,7 +54394,7 @@
     },
     {
       "pipeline_id": "20260531T063513Z-26dbe7df",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/g21pd273j4s1z7nzxotfwqp7uvxjwtgtk4u6",
       "summarize_job_name": "batches/bk669zi1cdhqfw26z633d4ojknf12xrkx3kd",
       "papers": [
@@ -54931,14 +54931,294 @@
         "http://arxiv.org/abs/2605.29386v1",
         "http://arxiv.org/abs/2605.29337v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2605.30309v1": {
+          "title": "エルゴード定理、概不変集合、および平均値",
+          "summary": "本論文では、不変測度を持つ Zᵈ 作用に対する von Neumann、Birkhoff、Wiener のエルゴード定理、および Rokhlin の補題の関連する証明を簡潔に示している。エルゴード平均の偏差がどのように構造化されるかを明らかにし、それらが平均化によって作用に対し漸近的に概不変となり、殆ど至る所で 0 に収束することを示している。また、任意の自由なエルゴード的 Zᵈ 作用において、値のスケールを変更することで、これら偏差の分布が任意の与えられた分布に弱収束し得ることを導いている。",
+          "keywords": [
+            "ergodic theorems",
+            "Rokhlin's lemma",
+            "Z^d-actions",
+            "almost invariant sets",
+            "ergodic averages"
+          ],
+          "appendix": "本論文は Zᵈ 作用の性質を扱っており、大きな可算無限群の構造に関連があるため、指定された興味ある分野のうち「structure of large countable infinite group」に関連します。"
+        },
+        "http://arxiv.org/abs/2605.30306v1": {
+          "title": "purely morphic word のアーベル周期性について",
+          "summary": "射（morphism）によって生成される無限語の周期性の判定は、80年代にHarju、Linna、Pansiotらによって解決された組合せ論の古典的な問題である。本論文では、この問題をアーベル（abelian）的な設定で検討している。二つの語が同じ文字の出現回数を持つ場合にアーベル等価であると定義し、無限語がアーベル等価な語の連続として分解できるとき、それをアーベル周期語と呼ぶ。本研究では、二元アルファベット上の射が生成する語がアーベル周期語であるための必要十分条件を提示した。さらに、純粋アーベル周期語（purely abelian periodic words）の場合については、判定に必要なパラメータ K の上界を与えることで、この特徴付けがアルゴリズム的に判定可能であることを示した。",
+          "keywords": [
+            "purely morphic words",
+            "abelian periodicity",
+            "binary morphism",
+            "combinatorics on words"
+          ],
+          "appendix": "この論文は「combinatorics on words」という分野に直接関連しており、無限語の構造を扱う点で「symbolic dynamics」や「formal languages」のトピックとも密接に関わっています。"
+        },
+        "http://arxiv.org/abs/2605.30197v1": {
+          "title": "θ-法を介した hypocoercivity と hypocontractivity の接続",
+          "summary": "線形発展方程式の hypocoercivity 特性（指数減衰や伝搬関数ノルムの鋭い短時間減衰など）が、中点則による離散化においても維持されることが先行研究で示されている。本論文では、中点則以外の θ-法（θ ≠ 1/2）におけるこの接続について論じる。hypocoercive な連続時間発展方程式に対し、θ ∈ (1/2, 1] を用いた任意の陽的離散化は、単なる hypocontractive ではなく contractive（収縮的）になることを示す。また、coercive な連続時間発展方程式の場合、θ ∈ [0, 1/2) による離散化は時間ステップが十分に小さい場合に収縮的となる。",
+          "keywords": [
+            "hypocoercivity",
+            "hypocontractivity",
+            "θ-methods",
+            "linear evolution equations",
+            "discretization"
+          ],
+          "appendix": "本論文は精度保証付き数値計算（validated numerics）の基盤となる数値解法の安定性や収束性に関連しており、離散化スキームの挙動を厳密に評価する観点から興味ある分野と関連しています。"
+        },
+        "http://arxiv.org/abs/2605.30163v1": {
+          "title": "非一様指数成長を持つ有限表示群",
+          "summary": "非一様指数成長（non-uniform exponential growth）を持つ有限表示群、および単純群の最初の例を提示する。その具体例として、Thompsonの群Vがこの性質を持つことを示した。",
+          "keywords": [
+            "Finitely presented group",
+            "Simple group",
+            "Non-uniform exponential growth",
+            "Thompson's group V"
+          ],
+          "appendix": "この論文はThompsonの群という無限群の構造を扱っており、興味ある分野のうち「structure of large countable infinite group」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.30155v1": {
+          "title": "部分的な多ニューロン緩和を用いたニューラルネットワークの検証",
+          "summary": "深層ニューラルネットワークの安全性を形式的に保証するため、非線形活性化関数に対する線形緩和手法が用いられている。既存手法には、スケーラビリティに優れた単一ニューロン緩和と、より厳密な境界を導出できるが計算コストが高い多ニューロン緩和があるが、精度と計算効率のトレードオフが課題であった。本論文では、ヒューリスティックに選択した一部のニューロンに対してのみ多ニューロン緩和を適用する「部分的多ニューロン緩和」手法を提案する。この手法を検証器Marabouに統合した結果、既存の境界緊密化手法と比較して良好な成果が得られ、検証の効率向上に寄与することを示した。",
+          "keywords": [
+            "Neural Network Verification",
+            "Linear Relaxation",
+            "Multi-Neuron Relaxation",
+            "Marabou Verifier",
+            "Bound Tightening"
+          ],
+          "appendix": "本論文はニューラルネットワークの形式検証において厳密な境界計算を行う手法を提案しており、数値的な保証を伴う計算という点で「validated numerics」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.30138v1": {
+          "title": "Weihrauch束における有限生成群の残留的性質",
+          "summary": "マーク付けられた群の空間において、群のクラスCに対する最大の残留C商(residually-C quotient)を対応させる写像Res_Cの不連続性を、Weihrauch束を用いて定量化した。Cの等式的ネーター性や残留C群の集合が準多様体(quasivariety)をなすかどうかが、Weihrauch束内でのRes_Cの位置によって特徴付けられることを示している。具体的に、有限群、べき零群、k-べき零群(k ≥ 1)、有限表示群、LEF群、ねじれのない群などのクラスCに対し、Res_Cの正確な分類を与えている。",
+          "keywords": [
+            "marked groups",
+            "residually-C quotient",
+            "Weihrauch lattice",
+            "equational noetherianity",
+            "quasivariety"
+          ],
+          "appendix": "この論文は有限生成群の商構造や残留的性質を扱っており、興味ある分野のうち「structure of large countable infinite group」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.30092v1": {
+          "title": "Johnson スキームにおける 3 つの組合せ論的結果の短縮証明",
+          "summary": "本論文では、Johnson スキーム（または (n,k,L) システム）における極値問題に関する 3 つの定理の短縮証明を与える。主要な成果として Aljohani–Bamberg–Cameron 予想を証明した。この予想は、n > n₀(k) において (n,k,L) システムと (n,k,{0, ..., k-1} \\ L) システムのサイズの積が ⁿCₖ であるならば、それらはある t に対して t-intersecting family および Steiner system S(t,k,n) となることを主張するものである。",
+          "keywords": [
+            "Johnson scheme",
+            "(n,k,L)-systems",
+            "Aljohani–Bamberg–Cameron conjecture",
+            "extremal problems",
+            "Steiner system"
+          ],
+          "appendix": "本論文は組合せ論（combinatorics）における極値問題を扱っており、提示された興味ある分野のうち「combinatorics on words」などの離散数学の領域と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.30066v1": {
+          "title": "位相力学系における quasi-disjointness",
+          "summary": "Bergがエルゴード理論において導入したquasi-disjointnessの概念を極小系に対して導入し、その性質を調査した論文である。quasi-disjointnessの同値な特徴付けを提供し、この性質が因子、proximal extension、およびgroup extensionの下で保存されることを証明した。これにより、すべての極小 PI 系は任意の極小系とquasi-disjointであることが示された。また、変種としてstrong quasi-disjointnessを導入し、すべての AI 系が任意の極小系とstrong quasi-disjointであることを明らかにした。",
+          "keywords": [
+            "quasi-disjointness",
+            "minimal systems",
+            "PI system",
+            "AI system",
+            "topological dynamics"
+          ],
+          "appendix": "本論文は位相力学系の構造を扱っており、興味ある分野に含まれる symbolic dynamics に関連する基礎理論の研究です。"
+        },
+        "http://arxiv.org/abs/2605.30064v1": {
+          "title": "Hecke 三角群と特殊な双曲型元",
+          "summary": "λq = 2 cos(π/q) としたとき、λq ℚ(λq²) ∪ {∞} 上における Hecke 三角群 Gq の作用を調査した。特に q = 18 の場合において、Gq の特殊な双曲型元の不動点に関して、無限個の相異なる軌道が存在することを示した。また、他の複数の q の値に対しても新しい軌道を発見した。これらの結果は、正 q 角形の展開図上における特殊なアフィン pseudo-Anosov 同相写像の新しい例を与えるものである。特に正 18 角形の展開図において、特殊なアフィン pseudo-Anosov の下で不変な方向の Veech 群軌道が無限に存在することが導かれた。",
+          "keywords": [
+            "Hecke triangle groups",
+            "special hyperbolic elements",
+            "pseudo-Anosov homeomorphisms",
+            "Veech group orbits",
+            "regular q-gons"
+          ],
+          "appendix": "この論文は興味ある分野のうち、無限群の構造（Hecke triangle groups）に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.30048v1": {
+          "title": "いくつかの組合せ論的最小最大定理の線形および行列への一般化",
+          "summary": "ホールの「結婚定理」や二部グラフの最大マッチングに関するケーニグの定理について、既存の線形および行列への一般化を概説している。また、これらの定理を半順序集合における鎖と反鎖に関するディルワースの定理や、有向グラフにおける素パスに関するメンガーの定理の線形・行列への一般化と関連付けて考察している。",
+          "keywords": [
+            "Hall's marriage theorem",
+            "Kőnig's theorem",
+            "Dilworth's theorem",
+            "Menger's theorem",
+            "min-max theorems"
+          ],
+          "appendix": "本論文はグラフ理論や順序集合の構造を扱っており、基礎的な組合せ論の手法を提供する点において「combinatorics on words」などの関連分野と数学的基盤を共有しています。"
+        },
+        "http://arxiv.org/abs/2605.29936v1": {
+          "title": "組合せ論的構造における mex 統計量",
+          "summary": "組合せ数論において中心的な役割を果たす mex (minimum excluded value) の概念を、任意の組合せ論的構造へと拡張した。固定された mex を持つ対象の母関数を決定するための一般定理を証明し、さらに複数の古典的な組合せ論的構造に対して、mex 母関数やその係数の閉形式を具体的に導出している。",
+          "keywords": [
+            "mex",
+            "combinatorial number theory",
+            "generating function",
+            "combinatorial structure"
+          ],
+          "appendix": "本論文は組合せ論的構造を扱っており、興味ある分野のうち combinatorics on words と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.29918v1": {
+          "title": "不偏な減算ゲームにおける端局的利得を考慮したパートザン・サブトラクション・ニムについて",
+          "summary": "本論文では、両プレイヤーの選択肢（取り除ける石の数）は共通だが、終局時の残石数によって勝敗を決定するパートザン・ルールを適用したサブトラクション・ニムを考察している。具体的には、残石数が偶数なら先手（Left）の勝ち、奇数なら後手（Right）の勝ちとするルールにおいて、多くの石の集合 S に対して、十分大きな石の数 n ではほとんどの場合に Left が勝利する（L-position）という現象を報告している。主定理では、Right が勝利する（R-position）石の数 n が存在しても、その前後の n+1 および n-1 は必ず L-position になることを証明し、なぜ L-position が支配的になるのかという理論的背景を明らかにしている。",
+          "keywords": [
+            "Subtraction Nim",
+            "Partizan game",
+            "Outcomes",
+            "L-positions",
+            "R-positions"
+          ],
+          "appendix": "本論文は、組合せゲーム理論を扱っており、指定された興味ある分野の中では「combinatorics on words」や離散数学的な構造に関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2605.29853v1": {
+          "title": "無限語における平方フリーな等差数列のペア",
+          "summary": "Harju(2019)が提唱した、互いに素な整数pおよびqに対し、法pおよび法qでの部分列がいずれも平方フリー(square-free)となるような3文字アルファベット上の平方フリー無限語の存在に関する問題を研究している。p, q ≥ 3において、従来このような性質を満たすペアは(3, 11)と(5, 6)のみが知られていたが、本論文ではそのような無限語が存在しないペア(p, q)は有限個であることを証明した。証明には多値平方フリー準同型や循環平方フリー準同型の構築、さらに準同型の一般化であり独立した興味の対象となり得る「平方フリー変換器(square-free transducers)」という新概念を導入している。",
+          "keywords": [
+            "square-free words",
+            "arithmetic progressions",
+            "multi-valued square-free morphisms",
+            "circular square-free morphisms",
+            "square-free transducers"
+          ],
+          "appendix": "この論文は、興味ある分野のうちcombinatorics on words（語の組合せ論）およびautomata theory（オートマトン理論）に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.29837v1": {
+          "title": "navigable path systemを持つ群に対する弱ランク剛性",
+          "summary": "本論文では、navigable path systemと呼ばれる緩やかな非正曲率条件を満たす群が、弱ランク剛性予想（weak rank rigidity conjecture）を満たすことを示している。具体的には、これらの群は線形な発散（linear divergence）を持つか、あるいはMorse元を持つかのいずれかである。このクラスには、Helly群、Coxeter群、弱Garside群、階層的双曲群（hierarchically hyperbolic groups）などが含まれる。また、これらの群がMorse local-to-global属性を持つことを統一的に証明したほか、負の曲率を符号化する双曲空間として「一般化された収縮空間（generalised contraction space）」という新たな概念を導入している。",
+          "keywords": [
+            "navigable path system",
+            "weak rank rigidity",
+            "Morse element",
+            "non-positive curvature",
+            "generalised contraction space"
+          ],
+          "appendix": "本論文は、Coxeter群や階層的双曲群といった無限群の幾何学的・代数的性質を扱っており、興味ある分野のうち「structure of large countable infinite group（巨大な可算無限群の構造）」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.29780v1": {
+          "title": "時系列解析におけるエントロピー的および代数的 transcript に基づく手法",
+          "summary": "本論文は、記号が有限群に属する「代数的表現」を用いた時系列解析、特に結合時系列の分析手法を提案している。代表的な代数的表現である序列表現（ordinal representation）は、置換を記号とし、関数合成を演算とする対称群の構造を持つ。著者らは、2つの群要素間の遷移を記述する「transcript」という概念が、結合時系列の解析において極めて有効であることを示した。本稿では、エントロピー、ダイバージェンス、相互情報量などの情報理論的手法と、Cayley距離やKendall距離などの代数的手法を整理し、それらを比較評価している。さらに、新たな指標として平均Kendall距離に基づく「類似性距離」を導入し、結合システムにおける一般化同期の検出において、既存の手法よりも高い性能を示すことを実証した。",
+          "keywords": [
+            "Algebraic representations",
+            "Time series analysis",
+            "Ordinal patterns",
+            "Symmetric group",
+            "Kendall distance"
+          ],
+          "appendix": "時系列を記号化してその遷移を群論的に解析する手法は symbolic dynamics と密接に関連しており、また結合システムの同期現象を扱う点は complex dynamics の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.29735v1": {
+          "title": "強Hopf的混合アーベル群について",
+          "summary": "本論文では、(一様)強Hopf的および(一様)強余Hopf的アーベル群のクラスについて、混合群の場合を中心に調査を行っている。主な成果として、(一様)強余Hopf的な簡約群は常に(一様)強Hopf的であることが示された。また、ねじれのない群が(一様)強Hopf的であるための条件に関するChekhlov-Danchevの結果を、(グローバル)Warfield群の場合へと一般化した。",
+          "keywords": [
+            "strongly Hopfian abelian groups",
+            "strongly co-Hopfian abelian groups",
+            "mixed groups",
+            "Warfield groups"
+          ],
+          "appendix": "本論文は無限アーベル群の代数的構造を扱っており、提示された興味ある分野の中では「structure of large countable infinite group」に関連します。"
+        },
+        "http://arxiv.org/abs/2605.29537v1": {
+          "title": "量子化設定における順伝播型ニューラルネットワークの検証の複雑性",
+          "summary": "本論文は、量子化された環境における順伝播型ニューラルネットワーク（FNN）の検証に関する計算複雑性を調査した研究である。著者らは、有理数重みを用いる「有理FNN」、有限精度算術に基づく「量子化FNN」、有理数ネットワークを有限精度で評価する「動的量子化FNN」の3つのクラスを定義した。検証仕様としては、線形制約に基づくLP仕様と、ビットレベルの推論が可能なビットベクトル（BV）仕様の2種類を考慮している。解析の結果、固定精度の量子化FNNの検証は、LPおよびBV仕様のいずれにおいてもNP完全であり、有理数の場合と複雑性が一致することを示した。また、動的量子化FNNとBV仕様の組み合わせについては、既知のPSPACE困難性を補完する計算量の上限を確立した。",
+          "keywords": [
+            "Neural network verification",
+            "Computational complexity",
+            "Quantised settings",
+            "Bit-vector specifications",
+            "Feedforward neural networks"
+          ],
+          "appendix": "本論文は、計算機上での数値の表現精度や算術演算の正当性を扱うという側面において、「validated numerics（精度保証付き数値計算）」に関連するテーマを含んでいます。"
+        },
+        "http://arxiv.org/abs/2605.29520v1": {
+          "title": "TASEPの遷移確率における特定の組合せ論的表現について",
+          "summary": "本研究は、開境界条件を持つ全非対称単純排他過程(TASEP)の有限時間遷移確率における組合せ論的構造を調査したものである。定常状態の研究が主流である中で、本論文は過渡的なダイナミクスに焦点を当てている。まず、開境界TASEPの2つの配置間における遷移シーケンスの数え上げが、非古典的な形状を持つ標準ヤング盤(standard Young tableaux)の数え上げと等価であることを示した。これは周期境界TASEPと円筒状盤の間の対応関係を開境界設定へと拡張する結果である。また、セルの重複を許容するヤング図形に関連する盤状のオブジェクトを導入し、遷移行列の成分をこれらオブジェクトの指数型母関数の符号付き和として表現できることを証明した。これにより、開境界TASEPの遷移確率に対する組合せ論的および順序論的な解釈が提供される。",
+          "keywords": [
+            "TASEP",
+            "transition probabilities",
+            "open boundary conditions",
+            "standard Young tableaux",
+            "generating function"
+          ],
+          "appendix": "本論文は数え上げ組合せ論を主軸としており、[興味ある分野]の中では combinatorics on words と深い関連があります。TASEPの状態遷移は粒子配置を語(word)と見なした際の書き換え規則として記述されるため、本研究の成果は語の組合せ論的性質の理解に寄与します。"
+        },
+        "http://arxiv.org/abs/2605.29457v1": {
+          "title": "ランダムケイリーグラフの直径の閾値",
+          "summary": "本論文では、群 G の各要素を独立に確率 p で生成集合に含めることで定義されるランダムケイリーグラフのモデル 𝒢(G,p) において、直径の閾値確率を調査している。位数 Nₖ が無限大に発散する群の族 Gₖ と、特定の範囲 2 ≤ d ≤ d_Nₖ（ここで d_Nₖ は (log Nₖ / 2log log Nₖ) の平方根に比例する値）にある整数 d について、グラフの直径が高い確率で d 以下、あるいは d より大きくなるための p の境界条件を導出した。これらの閾値は Erdős-Rényi ランダムグラフと類似しているが、具体的な値は群の構造に依存する。また、得られた上下界が最良であることを示す具体的な群の族の例を提示している。",
+          "keywords": [
+            "Random Cayley graphs",
+            "Diameter",
+            "Threshold probability",
+            "Group theory"
+          ],
+          "appendix": "本研究は群の構造とグラフ理論的性質の接続を扱っており、興味ある分野のうち「structure of large countable infinite group」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.29422v1": {
+          "title": "アフィン・カクタス群のCAT(0)性と双曲性",
+          "summary": "すべての次数においてアフィン・カクタス群がCAT(0)群であることを示し、さらに次数3のアフィン・カクタス群AJ₃が双曲群であることを明らかにしている。",
+          "keywords": [
+            "affine cactus group",
+            "CAT(0) group",
+            "hyperbolic group"
+          ],
+          "appendix": "本論文はアフィン・カクタス群という無限群の幾何学的性質を扱っており、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.29386v1": {
+          "title": "ℂᵈにおける多項式収縮写像と次数の増大",
+          "summary": "d≧3の場合において、次数の増大が非有界となるℂᵈの多項式収縮自己同型写像の単純な例を提示している。ポアンカレ・デュラックの定理を用いることで、正則（holomorphic）には線形化可能であるが、代数的（algebraic）には線形化可能ではないℂᵈ（d≧3）の代数的自己同型写像の存在を示している。",
+          "keywords": [
+            "Polynomial contraction automorphism",
+            "Degree growth",
+            "Poincaré-Dulac theorem",
+            "Linearizable"
+          ],
+          "appendix": "この論文は複素動力学（complex dynamics）に関連しています。複素多項式写像の反復合成における次数の挙動や、不動点近傍での線形化の問題は、複素力学系における重要なテーマの一つです。"
+        },
+        "http://arxiv.org/abs/2605.29337v1": {
+          "title": "アフィン・コクセター群における共役の可視化",
+          "summary": "アフィン・コクセター群は数学や結晶学における基礎的な対象であり、共役な群要素は代数的・幾何学的に極めて類似した性質を持つ。本研究では、Milićević、Schwer、および第2著者による最新の構造的知見を利用し、2次元および3次元のアフィン・コクセター群における共役を可視化するアプリケーションを開発した。生成された画像は、美しい幾何学的対称性を示している。",
+          "keywords": [
+            "Affine Coxeter groups",
+            "conjugation",
+            "visualization",
+            "crystallography",
+            "geometric symmetries"
+          ],
+          "appendix": "本論文は無限群の構造を扱っているため、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2605.30309v1",
+        "http://arxiv.org/abs/2605.30306v1",
+        "http://arxiv.org/abs/2605.30197v1",
+        "http://arxiv.org/abs/2605.30163v1",
+        "http://arxiv.org/abs/2605.30155v1",
+        "http://arxiv.org/abs/2605.30138v1",
+        "http://arxiv.org/abs/2605.30092v1",
+        "http://arxiv.org/abs/2605.30066v1",
+        "http://arxiv.org/abs/2605.30064v1",
+        "http://arxiv.org/abs/2605.30048v1",
+        "http://arxiv.org/abs/2605.29936v1",
+        "http://arxiv.org/abs/2605.29918v1",
+        "http://arxiv.org/abs/2605.29853v1",
+        "http://arxiv.org/abs/2605.29837v1",
+        "http://arxiv.org/abs/2605.29780v1",
+        "http://arxiv.org/abs/2605.29735v1",
+        "http://arxiv.org/abs/2605.29537v1",
+        "http://arxiv.org/abs/2605.29520v1",
+        "http://arxiv.org/abs/2605.29457v1",
+        "http://arxiv.org/abs/2605.29422v1",
+        "http://arxiv.org/abs/2605.29386v1",
+        "http://arxiv.org/abs/2605.29337v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-05-31T06:35:13.422500+00:00",
-      "updated_at": "2026-05-31T07:08:55.702686+00:00",
-      "finalized_at": null
+      "updated_at": "2026-05-31T09:43:41.765927+00:00",
+      "finalized_at": "2026-05-31T09:43:41.765899+00:00"
     }
   ]
 }
