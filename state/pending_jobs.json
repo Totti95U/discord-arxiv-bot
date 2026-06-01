@@ -55222,7 +55222,7 @@
     },
     {
       "pipeline_id": "20260601T072319Z-4a7777f0",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/q10pu71n6cxj2dv7xwohw0i5hj9xkpy85x3x",
       "summarize_job_name": "batches/iteexux0y8e7zb380nskl2ruufr6q81f6c6h",
       "papers": [
@@ -55686,14 +55686,222 @@
         "http://arxiv.org/abs/2605.30923v1",
         "http://arxiv.org/abs/2605.30840v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2605.31547v1": {
+          "title": "カオス的代理モデリングにおける動的・確率的一貫性のギャップ",
+          "summary": "時系列データからダイナミクスを学習する力学系再構成（DSR）において、予測の不確実性と基礎となる力学的性質が乖離する「動的・確率的一貫性（DPC）ギャップ」を特定した論文。カオス系でガウス型ロールアウト目的関数を用いると、ヤコビ行列による共分散の増大がペナルティとなり、力学的な性質を劣化させる最適化のショートカットが生じることを示した。著者らはこれに対処するため、微分可能な拡張カルマンフィルタ（EKF）に基づき、局所ヤコビ行列を介して共分散を伝搬させる学習フレームワーク「KAFFEE」を提案した。これにより、Lorenz-96等の系において力学的不変量の再現性が向上し、予測精度とダイナミクスの一貫性が両立されることを実証した。",
+          "keywords": [
+            "Dynamical systems reconstruction",
+            "Chaotic systems",
+            "Dynamic-probabilistic consistency",
+            "Extended Kalman Filter",
+            "Surrogate modeling"
+          ],
+          "appendix": "本論文は力学系（complex dynamics）の解析およびモデリングに関連しています。特にカオス系における不変量の再構成とヤコビ行列に基づく不確実性伝搬の整合性に焦点を当てています。"
+        },
+        "http://arxiv.org/abs/2605.31538v1": {
+          "title": "ホロサイクル積は双曲構造のY-半順序集合を持つ",
+          "summary": "群 G がホロサイクル積 X ⋈ Y 上に幾何学的かつ正に作用する場合、G 上のすべての双曲構造（Gromov 双曲空間への粗 G 同変擬等長変換を除いた共境界的な作用）は、因子空間 X および Y への 2 つの作用から導かれることを示した。証明には Malcev 剛性とホロサイクル積の新しい「垂直」境界の概念が用いられている。また、2 つの混合 millefeuille 空間のホロサイクル積に幾何学的に作用する群の最初の例も提示している。",
+          "keywords": [
+            "hyperbolic structure",
+            "horocyclic product",
+            "Malcev rigidity",
+            "millefeuille space",
+            "Gromov hyperbolic space"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「大きな可算無限群の構造 (structure of large countable infinite group)」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.31524v1": {
+          "title": "スーパーマートリンゲル証明書としての価値関数",
+          "summary": "確率システムの検証において、一般の状態空間（可算無限および連続状態空間を含む）におけるω-正則特性の概収束（almost-sure）した充足を判定するために、実数値スーパーマートリンゲル証明書が用いられる。一方で、ω-正則タスクに対する強化学習は、有限の状態・行動空間を除いて、学習された方策が仕様を満たすという形式的な保証に欠けることが多い。本研究では、適切な報酬設定の下で、ω-正則特性を概収束で充足する方策に付随する価値関数が、その仕様に対するStreettスーパーマートリンゲル証明書を符号化していることを示し、これら2つの研究分野を接続した。この結果は有限・可算無限・連続状態空間で成立し、強化学習を通じた証明書合成の原理的な手法を示唆している。",
+          "keywords": [
+            "Supermartingale certificates",
+            "ω-regular properties",
+            "Reinforcement learning",
+            "Stochastic systems",
+            "Value functions"
+          ],
+          "appendix": "本論文は、ω-正則特性（ω-regular properties）という概念を扱うため、automata theoryおよびformal languagesの分野に関連しています。強化学習を用いて形式的検証の証明書を合成するというアプローチが特徴的です。"
+        },
+        "http://arxiv.org/abs/2605.31502v1": {
+          "title": "複素ディオファントス近似とカスプ逸脱",
+          "summary": "Hurwitz 写像を用いた統一的アプローチにより、複素ディオファントス近似の漸近近似速度および Bianchi 多様体 ℍ³/PSL(2, ℤ[i]) におけるカスプへの漸近平均逸脱時間の Hausdorff 次元スペクトルを研究した。Hurwitz 写像に対する等角グラフ誘導系 (CGDS) を構築し、その Lyapunov 指数が近似速度と平均逸脱時間の両方を同時に捉えることを示した。この系に対する Lyapunov 指数のマルチフラクタル解析を適用することで、Hausdorff 次元スペクトル関数の公式を導出し、その実解析性を明らかにした。",
+          "keywords": [
+            "complex Diophantine approximation",
+            "cusp excursions",
+            "Hurwitz map",
+            "conformal graph directed system",
+            "Lyapunov exponent"
+          ],
+          "appendix": "複素力学系 (complex dynamics) および数論的力学系 (arithmetic dynamics) の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.31491v1": {
+          "title": "共形相関関数の制約",
+          "summary": "不変式論、可換代数、および組合せ論の手法を用いて、スピンを持つ演算子の共形共変 n 点関数の空間を調査した研究である。Costaらによって導入された基本的な構成要素を用いて、これら関数の有理部分が表現できることを厳密に証明し、物理学の文献で広く利用されている結果に数学的根拠を与えた。n 点構造の列挙問題を分数マッチング多面体（fractional matching polytopes）における格子点計数として再定式化し、ベクトル分配関数、ヒルベルト関数、および Kostka 数を用いて計算を行っている。さらに、構成要素間の代数的な関係が Gram 制約から導かれることを示し、代数的に独立な要素の数を特定した。3 点関数に関しては、ボーズ対称性の有無にかかわらず、任意の整数スピンに対する計数公式を導出している。",
+          "keywords": [
+            "conformal correlators",
+            "invariant theory",
+            "commutative algebra",
+            "combinatorics",
+            "fractional matching polytopes"
+          ],
+          "appendix": "本論文は、分数マッチング多面体の格子点計数や Kostka 数といった組合せ論的手法を多用しており、指定された興味ある分野のうち「combinatorics on words」に関連する組合せ論的基礎を共有しています。また、代数的な制約を扱う手法は数理物理学と計算幾何学の交差点に位置する内容です。"
+        },
+        "http://arxiv.org/abs/2605.31451v1": {
+          "title": "円周上の任意の極小系は一意的なエルゴード的であるか、あるいは非統計的であるかのいずれかである",
+          "summary": "本論文では、位相力学とエルゴード理論における統計的性質の関連性を確立している。ルベーグ測度mに関する極小振動特性（ルベーグ測度の引き戻しの平均列が少なくとも2つの異なる測度に累積する性質）を持つ系が非統計的であることを示し、その結果、円周上の任意の極小系は「一意的なエルゴード的」か「ルベーグ測度に関して非統計的」のいずれかであるという鋭い二分法を導いている。これにより、ルベーグ測度に関する極小かつ非統計的な系の集合が空でないことが結論付けられる。",
+          "keywords": [
+            "minimal system",
+            "uniquely ergodic",
+            "non-statistical",
+            "Lebesgue measure",
+            "topological dynamics"
+          ],
+          "appendix": "本論文は、円周上の極小系という低次元の力学系を扱っており、複素力学系 (complex dynamics) や算術力学系 (arithmetic dynamics) とも関連の深いエルゴード理論的な性質（一意的エルゴード性や統計的性質）に焦点を当てています。"
+        },
+        "http://arxiv.org/abs/2605.31407v1": {
+          "title": "下方 Brin-Katok 局所エントロピーによる距離平均次元の変分原理",
+          "summary": "コンパクト距離力学系 (X, d, T) において、エルゴード測度 μ に対する下方 Brin-Katok 局所エントロピーと Katok 被覆エントロピーの間の有限スケールにおける比較定理を証明した。具体的には、任意の ε > 0 および δ ∈ (0, 1) に対して、不等式 hᴷ_μ(6ε, δ) ≤ h̲ᴮᴷ_μ(ε) が成立することを示している。この評価を、距離平均次元に関する従来の Katok 型の変分原理と組み合わせることで、下方 Brin-Katok 局所エントロピーを用いた対応する変分原理を導出した。",
+          "keywords": [
+            "metric mean dimension",
+            "lower Brin-Katok local entropy",
+            "Katok covering entropy",
+            "variational principle",
+            "ergodic measure"
+          ],
+          "appendix": "本論文は、力学系の不変量である平均次元を扱っており、興味ある分野に含まれる complex dynamics と理論的な接点を持ちます。"
+        },
+        "http://arxiv.org/abs/2605.31390v1": {
+          "title": "KMSの5つの影：Cuntz--Krieger環のスペクトル幾何学における統計的性質",
+          "summary": "トポロジカル・マルコフ連鎖およびCuntz--Krieger環の非可換幾何学に由来するスペクトル不変量の研究。log-Laplacianから構築されるスペクトル三つ組を用いて、統計的な固有値漸近挙動、局所熱核漸近挙動、局所ワイル則、およびConnesの跡定理の類似を証明した。すべての場合において、局所的な漸近挙動はCuntz--Krieger環上のゲージ作用に対するKubo--Martin--Schwinger（KMS）状態によって支配されることが示されている。",
+          "keywords": [
+            "Cuntz--Krieger algebras",
+            "topological Markov chains",
+            "spectral triples",
+            "Kubo--Martin--Schwinger state",
+            "spectral geometry"
+          ],
+          "appendix": "トポロジカル・マルコフ連鎖（symbolic dynamics）に関連する研究であり、Cuntz--Krieger環という作用素環の観点から力学系の統計的性質を記述しています。"
+        },
+        "http://arxiv.org/abs/2605.31298v1": {
+          "title": "Multi-welded twin groups",
+          "summary": "本論文では、k ≥ 1 および n ≥ 2 に対して、多重仮想双子群の溶接版（welded analogue）である多重溶接双子群 MₖWTₙ を導入した。この群は普遍溶接組み紐群 UWₙ(k) の商として得られ、普遍仮想および溶接組み紐型群の統一的枠組みに位置付けられる。著者らは、MₖWTₙ と関連する群（多重仮想双子群 MₖVTₙ、溶接双子群 WTₙ など）との間の商写像を確立したほか、アーベル化、n ≥ 5 における導来部分群の完全性、最小の非アーベル有限商が対称群 Sₙ であることなどの構造的性質を明らかにした。また、表現論の観点から MₖWTₙ の非自明な複素同次 2-ローカル表現を分類し、M₂WTₙ については 3-ローカル表現の分類、およびそれらの可約性や忠実性についても調査した。",
+          "keywords": [
+            "Multi-welded twin group",
+            "Universal welded braid group",
+            "Representation theory",
+            "Commutator subgroup",
+            "2-local representation"
+          ],
+          "appendix": "本論文で扱われている群の構造解析は、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.31288v1": {
+          "title": "多項式カオスを用いた確率的分岐解析：枝近似解の整合性と収束性",
+          "summary": "パラメータ依存型の力学系における分岐現象の解析は、従来の逐次的な計算手法では計算コストが膨大になるという課題がある。本研究では、汎用多項式カオス（gPC）展開を利用し、分岐図全体の枝を一度の計算で再構築する体系的な手法を提案する。パラメータを確率変数として扱い、ガラーキン射影を用いることで、領域全体で大域的に分岐枝を復元する。非一意性の領域において、得られるガラーキン系には高周波振動解と枝近似解の2つのクラスが現れるが、本論文では枝近似解が真の定常状態へ収束することを理論的に証明し、整合性と一意性を保証する枠組みを構築した。数値実験により、スカラーおよびベクトル値の常微分方程式系において、提案手法が複雑な分岐図を効率的かつ正確に捉えられることを示した。",
+          "keywords": [
+            "Polynomial Chaos",
+            "bifurcation analysis",
+            "Galerkin projection",
+            "convergence",
+            "branch-approximating solutions"
+          ],
+          "appendix": "本論文は力学系の分岐解析および数値計算の信頼性を扱っており、計算手法の収束性や整合性を理論的に保証するアプローチをとっている点において、興味ある分野の『complex dynamics』や『validated numerics』に関連があります。"
+        },
+        "http://arxiv.org/abs/2605.31260v1": {
+          "title": "関係構造上の1階述語論理で定義可能な演算について",
+          "summary": "関係構造における1階述語論理（FO）で定義可能な単項演算（FO-transduction）および離散和やデカルト積に基づく2項演算の定義と性質を概観する。特に出力構造のFO特性を入力構造の有限個のFO特性で表現可能にするBackwards Translation TheoremやSplitting Theoremに焦点を当てる。限定記号を含まない（QF）式による演算では、FO文の有限モデルのクラスが認識可能（recognizable）となり、これは木幅やクリック幅が有界な構造に対して、項上の有限オートマトンを用いた効率的なアルゴリズムをもたらす。また、法計算量化子を用いたFO文への拡張についても論じている。",
+          "keywords": [
+            "FO-transductions",
+            "Backwards Translation Theorems",
+            "Splitting Theorems",
+            "Recognizability",
+            "modulo counting quantifiers"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」に関連しています。具体的には、構造の認識可能性や項オートマトンを用いたアルゴリズム的性質が、形式言語理論の文脈と深く関わっています。"
+        },
+        "http://arxiv.org/abs/2605.31237v1": {
+          "title": "2つのブロック接着構成",
+          "summary": "2次元有限型シフト（SFT）におけるブロック接着（block gluing）に関して、2つの存在定理を証明した。1つ目は、指数関数と対数関数の間の広範な関数クラスが2次元SFTのブロック接着関数として実現可能であること、2つ目はエントロピー次元が1である非周期的な線形ブロック接着2次元SFTが存在することである。これらの結果は、ChandgotiaらやGangloff、Sablikらによって提示されていた未解決問題を解決するものである。",
+          "keywords": [
+            "block gluing",
+            "two-dimensional SFT",
+            "entropy dimension",
+            "aperiodic"
+          ],
+          "appendix": "本論文は「symbolic dynamics（記号力学系）」の分野に直接関連しています。"
+        },
+        "http://arxiv.org/abs/2605.31049v1": {
+          "title": "コード進化による解決と最適化の学習",
+          "summary": "産業界のAIアプリケーションにおける組合せ最適化問題の解決には、従来、専門家による問題の定式化やヒューリスティクスの設計が必要であった。本論文では、ツール「CHECKMATE」を導入し、アルゴリズムの『導出方法（how）』を定義するのではなく、『解決すべき対象（what）』という形式仕様のみからコード進化によってプログラムを自動生成するパラダイムシフトを提案している。自然言語による記述を進化プロセスのガイドとし、形式仕様によって解の正当性と性能評価を担保するこの手法は、構成問題やスケジューリング問題において既存の最先端ソルバーを凌駕する性能を示した。",
+          "keywords": [
+            "Combinatorial optimization",
+            "Code evolution",
+            "Formal specification",
+            "Algorithm generation",
+            "Heuristics"
+          ],
+          "appendix": "本論文で扱われている形式仕様（Formal specification）に基づいたアルゴリズムの自動生成や検証の枠組みは、興味ある分野のうち「Automata theory」や「Formal languages」の応用的な側面に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2605.30964v1": {
+          "title": "ランダム力学系における高次混合性を用いたクエンチ極限定理",
+          "summary": "高次混合性の概念をランダム力学系に拡張し、クエンチ中心極限定理およびポアソン極限定理を証明した。本手法は、混合推定におけるランダム定数への制約を大幅に緩和できる利点がある。具体的には、指数混合の設定において、中心極限定理には対数可積分性のみで十分であり、ポアソン極限定理には可積分条件を必要としない。また、標準的なスペクトル減衰に基づく手法が適用しにくい可逆系に対しても自然に適用可能である。",
+          "keywords": [
+            "random dynamical systems",
+            "mixing of all orders",
+            "quenched limit theorems",
+            "central limit theorem",
+            "Poisson limit theorem"
+          ],
+          "appendix": "本論文は力学系の統計的性質を扱っており、興味ある分野の中では complex dynamics などの力学系理論全般に関連します。また、数式表現 L^∞ は L∞ として記述しました。"
+        },
+        "http://arxiv.org/abs/2605.30923v1": {
+          "title": "Hutchinson作用素の等連続性について",
+          "summary": "本論文では、広範なクラスの反復関数系（Iterated Function System; IFS）におけるHutchinson作用素が等連続（equicontinuous）であることを証明しています。特に、アトラクタを持つすべての反復関数系は、等連続なHutchinson作用素を持つことが示されています。",
+          "keywords": [
+            "Hutchinson operator",
+            "Iterated Function System",
+            "equicontinuity",
+            "attractor"
+          ],
+          "appendix": "本論文は反復関数系の力学的性質を扱っており、興味ある分野のうち complex dynamics や symbolic dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2605.30840v1": {
+          "title": "強固なHowson性を持たない有限生成Howson群",
+          "summary": "2つの有限生成部分群の共通部分が再び有限生成となる群はHowson群と呼ばれる。さらに、その共通部分のランクが元の部分群のランクに依存して有界である場合、強固なHowson群（strongly Howson group）と呼ばれる。ZhangとZhaoは、無限生成のHowson群において強固なHowson性を持たない例を初めて示したが、本論文では有限生成の場合においても、捻れ要素を持つ例と持たない例の両方を構成することで、ZhangとZhaoの問いに対する回答を与えている。",
+          "keywords": [
+            "Howson group",
+            "strongly Howson group",
+            "finitely generated group",
+            "rank of intersection",
+            "torsion elements"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「structure of large countable infinite group」に関連する、群の代数的構造を扱った研究です。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2605.31547v1",
+        "http://arxiv.org/abs/2605.31538v1",
+        "http://arxiv.org/abs/2605.31524v1",
+        "http://arxiv.org/abs/2605.31502v1",
+        "http://arxiv.org/abs/2605.31491v1",
+        "http://arxiv.org/abs/2605.31451v1",
+        "http://arxiv.org/abs/2605.31407v1",
+        "http://arxiv.org/abs/2605.31390v1",
+        "http://arxiv.org/abs/2605.31298v1",
+        "http://arxiv.org/abs/2605.31288v1",
+        "http://arxiv.org/abs/2605.31260v1",
+        "http://arxiv.org/abs/2605.31237v1",
+        "http://arxiv.org/abs/2605.31049v1",
+        "http://arxiv.org/abs/2605.30964v1",
+        "http://arxiv.org/abs/2605.30923v1",
+        "http://arxiv.org/abs/2605.30840v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-01T07:23:19.682756+00:00",
-      "updated_at": "2026-06-01T10:36:21.435395+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-01T15:49:18.903202+00:00",
+      "finalized_at": "2026-06-01T15:49:18.903172+00:00"
     }
   ]
 }
