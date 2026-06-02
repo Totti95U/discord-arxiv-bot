@@ -55905,7 +55905,7 @@
     },
     {
       "pipeline_id": "20260602T065718Z-611c3263",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/69g1xbyy6cycb5pqq7pc7aqamto70ttl5giv",
       "summarize_job_name": "batches/ezrg1yyacqr8dzr4myvorkeh6w299ce5hmyd",
       "papers": [
@@ -56174,14 +56174,118 @@
         "http://arxiv.org/abs/2606.00646v1",
         "http://arxiv.org/abs/2606.00505v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.00863v1": {
+          "title": "Thompsonの群 Fₙ における生成問題について",
+          "summary": "本論文では、部分群の核（core）と閉包（closure）、および関連するオートマトンを用いて、Higman-Thompsonの群 Fₙ における生成問題を研究している。集合 X が Fₙ を生成するための十分条件を導出し、X が有限の場合にその条件を判定するアルゴリズムを提案した。応用として、Thompsonの群 F の極大部分群に関する Savchuk の問題に端を発する Aiello と Nagnibeda の問いに答え、任意の n ≥ 2 に対して、Fₙ が (0,1) 内に不動点を持たない無限指数の極大部分群（F₂ₙ₋₁ に同型）を含むことを示した。",
+          "keywords": [
+            "Higman-Thompson groups",
+            "generation problem",
+            "automata",
+            "maximal subgroups"
+          ],
+          "appendix": "本論文は、オートマトンを用いた群の解析手法や可算無限群の構造を扱っており、「automata theory」および「structure of large countable infinite group」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.00836v1": {
+          "title": "行列環上のgcdグラフについて",
+          "summary": "本論文では、有限体上の行列環を係数とする行列について定義されるgcdグラフ（最大公約数グラフ）を調査している。数論、代数、組合せ論、グラフ理論の密接な関連性を利用し、これらのグラフが持つ興味深いグラフ理論的性質を明らかにしている。また、行列環の構造に関する独立した価値を持ついくつかの結果も示されている。",
+          "keywords": [
+            "gcd-graphs",
+            "matrix rings",
+            "finite fields",
+            "combinatorics",
+            "graph theory"
+          ],
+          "appendix": "本論文は代数的組合せ論を扱っており、提示された「興味ある分野」の中では combinatorics との広義の関連がありますが、特定の細分分野（combinatorics on wordsなど）に直接合致するものではありません。"
+        },
+        "http://arxiv.org/abs/2606.00693v1": {
+          "title": "transvection group 上の kei word metric とその単位球",
+          "summary": "kei（圭）を用いて群上の両側不変な語距離（bi-invariant word metric）を定義し、その性質を解析している。具体的には、群論、力学系、複素幾何、およびシンプレクティック幾何学の各分野における様々な事例を対象に、定義された語距離が自明なものか、あるいは非自明なものとなるかを論じている。",
+          "keywords": [
+            "bi-invariant word metric",
+            "kei",
+            "transvection group",
+            "dynamical systems",
+            "symplectic geometry"
+          ],
+          "appendix": "この論文は、群の構造や力学系を扱っていることから、興味ある分野のうち 'structure of large countable infinite group' および 'complex dynamics' に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.00692v1": {
+          "title": "グリッドプログラム：計算における2次元かつ変数を用いないモデル",
+          "summary": "グリッドプログラムと呼ばれる新しい計算モデルを提案している。これは、命令を線形なシーケンスではなく、整数グリッド上の有限な2次元配置として扱う。このモデルの特徴は、命令ポインタが4つの基本方向に移動する平面構造、構文制約の欠如、および名前付き変数や明示的なメモリアドレスを排除した点にある。プログラムの状態はデータスタック、アドレススタック、および3つのポインタで操作される循環二重連結リストによって保持され、制御フローは命令ポインタの垂直方向への転換（空間的な分岐）により実現される。本研究では、算術、制御フロー、連結リスト操作を含む命令セットとフォーマルな操作的意味論を提示し、レジスタマシンのシミュレーションを通じてチューリング完全性を証明している。",
+          "keywords": [
+            "Grid Programs",
+            "Two-Dimensional Model of Computation",
+            "Stack-based languages",
+            "Turing-completeness",
+            "Spatial control flow"
+          ],
+          "appendix": "この論文は、オートマトン理論 (automata theory) や形式言語 (formal languages) の分野と密接に関連しています。従来の線形な命令列ではなく、2次元格子上のポインタ移動による計算モデルを提示している点が特徴です。"
+        },
+        "http://arxiv.org/abs/2606.00679v1": {
+          "title": "退化アフィン・ヘッケ環 (AHA) と RSK 対応",
+          "summary": "本論文は、対称群 Sₙ および退化アフィン・ヘッケ環 (AHA) Hₙ の表現論における Robinson-Schensted-Knuth (RSK) 対応のスペクトル的実現を提案する。RSK 対応は、置換から一対の標準ヤング盤を生成するアルゴリズムであるが、ここでは歪盤（skew tableau）を直盤（straight tableau）に変換する Jeu de Taquin（整流操作）の特殊なケースとして定式化される。具体的には、置換を Hₙ 加群のウェイトベクトルのラベルとして扱い、整流操作を正則表現上の演算子としてモデル化することで、Hₙ ウェイトベクトルと Sₙ ウェイトベクトルの間の基底変換を導出している。この基底変換に伴うラベルの対応関係が、まさに RSK 対応に一致することを数学的に示している。",
+          "keywords": [
+            "Robinson-Schensted-Knuth correspondence",
+            "degenerate affine Hecke algebra",
+            "symmetric group",
+            "Jeu de Taquin",
+            "Jucys-Murphy elements"
+          ],
+          "appendix": "本論文はヤング盤や置換の組み合わせ論を扱っており、興味ある分野のうち「combinatorics on words」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.00663v1": {
+          "title": "非決定性有限オートマトンの帯域幅",
+          "summary": "共転写スプライシングによるDNAテンプレートからのRNA配列生成において、従来の非決定性有限オートマトン（NFA）をエンコードする手法は、状態間距離に依存する長い部分配列の削除を必要とし、実際の局所的なスプライシングの性質と乖離していた。本論文では、遷移が最大k個の状態を跨ぐ性質を持つ「k-帯域幅NFA」を導入した。このオートマトンは言語クラスの厳密な階層を形成する。有限言語に対しては帯域幅2で十分であり、語のリストとして与えられた場合は帯域幅1の判定が多項式時間で可能である。一方、帯域幅の最小化問題はk ≥ 2においてNP困難であることが示された。",
+          "keywords": [
+            "Nondeterministic Finite Automata",
+            "Bandwidth",
+            "Co-transcriptional splicing",
+            "Formal languages"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「automata theory」および「formal languages」に直接関連する内容となっています。"
+        },
+        "http://arxiv.org/abs/2606.00646v1": {
+          "title": "制約付き置換における Fixed-Pixed Points 等分布の細分化",
+          "summary": "Bsilaらによるパターン回避置換上の fixed points および pixed points に関する最近の予想に着想を得て、descent 統計量を含む二変量の細分化された等分布性を証明した。具体的には、特定の集合 Π を回避する置換の集合 Sₙ(Π) において、統計量の対 (des, fix) と (ides, pix) が等分布であることを示した。この証明は、対応するパターン回避クラスの明示的な通常型母関数に基づいている。",
+          "keywords": [
+            "pattern-avoiding permutations",
+            "descent statistics",
+            "fixed points",
+            "pixed points",
+            "generating functions"
+          ],
+          "appendix": "本論文は「combinatorics on words」の分野に深く関連しています。置換のパターン回避や統計量の等分布性の研究は、語の組合せ論や離散構造の解析において重要なトピックです。"
+        },
+        "http://arxiv.org/abs/2606.00505v1": {
+          "title": "連分数における最長連の指定された実現",
+          "summary": "連分数展開における例外的な最長連（longest-run）の挙動について、特定の記号の連と全体の最長連の相互作用を調査した研究。任意の指定された部分商の値と許容される成長スケールに対して、その指定値の最長連が指定された漸近的成長を持ち、かつ全体の最大値を一意に実現するような無理数の集合を構成した。この集合がフル・ハウスドルフ次元を持つことを示しており、全体の最長連を担う記号を事前に指定してもハウスドルフ次元が失われないことを証明した。これにより、固定記号および全体の最長連に関する従来の次元の結果が同時に強化された。",
+          "keywords": [
+            "continued fraction expansions",
+            "longest-run behaviour",
+            "Hausdorff dimension",
+            "partial quotient",
+            "asymptotic growth"
+          ],
+          "appendix": "この論文は連分数展開の記号列としての性質を解析しているため、symbolic dynamics、combinatorics on words、および arithmetic dynamics の分野に関連があります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.00863v1",
+        "http://arxiv.org/abs/2606.00836v1",
+        "http://arxiv.org/abs/2606.00693v1",
+        "http://arxiv.org/abs/2606.00692v1",
+        "http://arxiv.org/abs/2606.00679v1",
+        "http://arxiv.org/abs/2606.00663v1",
+        "http://arxiv.org/abs/2606.00646v1",
+        "http://arxiv.org/abs/2606.00505v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-02T06:57:18.039293+00:00",
-      "updated_at": "2026-06-02T09:46:16.662664+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-02T13:52:54.130143+00:00",
+      "finalized_at": "2026-06-02T13:52:54.130116+00:00"
     }
   ]
 }
