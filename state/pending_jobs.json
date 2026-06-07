@@ -58037,7 +58037,7 @@
     },
     {
       "pipeline_id": "20260607T064222Z-139ae97b",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/fsvof56z5x3lqbh3s7otu4egahl1hbj32ayo",
       "summarize_job_name": "batches/opgi86mw3by087i5idqqqmm6ib04yjz185cg",
       "papers": [
@@ -58646,14 +58646,207 @@
         "http://arxiv.org/abs/2606.05619v1",
         "http://arxiv.org/abs/2606.05577v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.06400v1": {
+          "title": "解析的パッチ木：枝の界面継承とフラクタル次元場",
+          "summary": "先行研究の解析的フラクタル曲線木を解析的曲面パッチ木へと拡張し、親パッチの解析状態を子へと伝達する界面曲線の幾何学的構造を定義した。この界面は、界面・パッチ・木の自己相似性やトポロジーを決定する中心的な役割を果たす。本論文では、曲面パッチ木の可積分性と適切性のための解析的条件を確立し、等角性に関する制限を導入した。また、パッチ木を各々が固有のハウスドルフ次元を持つ1次元曲線木へと葉層化することで、滑らかな次元場が生成されることを示した。さらに、n-1次元の界面多様体を用いてn次元へと拡張し、パッチの次元と枝が発展する次元の乖離が解析的な性質を決定することを指摘している。",
+          "keywords": [
+            "Analytic patch trees",
+            "branch interface inheritance",
+            "fractal dimension fields",
+            "self-similarity",
+            "Hausdorff dimension"
+          ],
+          "appendix": "本論文は自己相似性やフラクタル構造、および解析的曲面を扱っており、複素動力学 (complex dynamics) の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.06274v1": {
+          "title": "C-型くりこみ2-サイクルの存在性",
+          "summary": "平面の非可逆写像の族におけるC-型カオスへのルートの普遍性を確立するため、C-型くりこみ2-サイクルの存在を証明した論文である。折り畳み（fold）型の臨界点を持つ2次元非可逆写像において、周期 4ⁿ や 2・4ⁿ の吸引的なサイクルが無限に共存し、周期が4倍になるごとに特定の普遍定数に従うスケーリング則が現れる。本研究では、解析関数のバナッハ空間においてくりこみ作用素の2-サイクルが存在することを示し、状態空間のスケーリング定数に対して厳密な評価を与えた。証明には、ニュートン法の変種が縮小写像であることを示すための精度保証付き計算（rigorous computations）が用いられている。この結果は、一方向結合写像（FS-型）に関する既存の結果を双方向結合写像へと拡張し、くりこみ群の不動点から周期軌道へと理論を一般化するものである。",
+          "keywords": [
+            "C-type renormalisation",
+            "two-cycle",
+            "non-invertible maps",
+            "period-doubling bifurcation",
+            "rigorous computations"
+          ],
+          "appendix": "精度保証付き計算（validated numerics）を用いて証明が行われており、指定された興味ある分野と密接に関連しています。また、くりこみ理論の観点から複素力学系（complex dynamics）とも深い関わりがあります。"
+        },
+        "http://arxiv.org/abs/2606.06192v1": {
+          "title": "統一された抽象的正則性補題",
+          "summary": "本論文では、Szemerédiのグラフ正則性補題、Greenの算術的正則性補題、およびBoolean関数に対する正則性補題を直接的な系として導出できる、統一された抽象的正則性補題を証明している。",
+          "keywords": [
+            "Abstract regularity lemma",
+            "Szemerédi's graph regularity lemma",
+            "Green's arithmetic regularity lemma",
+            "Boolean functions"
+          ],
+          "appendix": "本論文で扱われる正則性補題は組合せ論における中心的な概念であり、特に算術的正則性補題との関連から、興味ある分野に含まれるarithmetic dynamicsと密接に関係しています。"
+        },
+        "http://arxiv.org/abs/2606.06157v1": {
+          "title": "有界なマッチング数を持つグラフのスペクトル半径と最大マッチングに覆われるグラフの関係について",
+          "summary": "本論文では、グラフGの隣接行列における最大固有値であるスペクトル半径と、グラフの最大マッチングに関連する性質について論じている。グラフのすべての辺が少なくとも1つの最大マッチングに含まれるとき、そのグラフは「maximum matching covered」と呼ばれる。有界なマッチング数を持つグラフがmaximum matching coveredであるための、スペクトル半径に関する厳密な条件を導出している。",
+          "keywords": [
+            "spectral radius",
+            "adjacency matrix",
+            "maximum matching",
+            "maximum matching covered",
+            "matching number"
+          ],
+          "appendix": "本論文はグラフ理論のスペクトル解析を扱っており、[興味ある分野]の中では組合せ論（combinatorics）に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.06133v1": {
+          "title": "TLA-Prover: Preference-Optimized Low-Rank Adaptationによる検証可能なTLA+仕様合成",
+          "summary": "TLA+は分散システムや安全性クリティカルなプロトコルの検証に用いられる形式仕様記述言語であるが、既存のLLMではモデル検査器TLCをパスする仕様を生成することが困難であり、ベースラインの成功率は8.6%に留まっている。本論文では、200億パラメータのモデル「TLA-Prover」を提案する。このモデルは、検証済みデータを用いた教師あり微調整（SFT）に続き、TLCの実行結果を報酬信号とするGRPO（Group-Relative Policy Optimization）またはDPOを適用することで学習される。評価指標として、構文解析、警告の有無、TLCのパス（Gold）、およびプロパティの非自明性を検証するDiamondランクの4段階を導入した。TLA-Proverは、GoldおよびDiamondの両ランクで30%のpass@1を達成し、ベースラインに対して約3.5倍の性能向上を実現した。",
+          "keywords": [
+            "TLA+",
+            "Formal Specification Synthesis",
+            "Group-Relative Policy Optimization",
+            "TLC Model Checker",
+            "Preference Optimization"
+          ],
+          "appendix": "本論文は、形式仕様記述言語（Formal languages）やオートマトン理論（Automata theory）を基盤とするモデル検査技術に関連しており、指定された興味ある分野の中では特にこれらの領域に密接に関わっています。"
+        },
+        "http://arxiv.org/abs/2606.06122v1": {
+          "title": "安定Andrews-Curtis予想と自明群のthickenableな表示",
+          "summary": "本研究では、自明群のthickenableな平衡表示を標準的な1生成元の表示へと変換するために必要な安定Andrews-Curtis変形の回数について、明示的な上界を導出した。また、自明群のthickenableな平衡表示が(非安定な)Andrews-Curtis予想を満たすことの証明を提示した。",
+          "keywords": [
+            "stable Andrews-Curtis conjecture",
+            "thickenable balanced presentations",
+            "trivial group",
+            "Andrews-Curtis moves"
+          ],
+          "appendix": "本論文は組合せ群論における重要な未解決問題であるAndrews-Curtis予想を扱っており、興味ある分野の中では「structure of large countable infinite group」に関連する群の代数的構造や性質についての知見を提供しています。"
+        },
+        "http://arxiv.org/abs/2606.06095v1": {
+          "title": "ユニバーサル仮想組み紐群における禁止関係",
+          "summary": "本論文では、ユニバーサル仮想組み紐群 UVₙ(k) の自然な自己同型について研究している。これらの自己同型は外部自己同型群において可換な対合を導き、ℤ₂ᵏ × ℤ₂ に同型な部分群を生成する。著者らは、UVₙ(k) の2つの one-forbidden 商が互いに同型であることを示し、さらに、2つの禁止関係を同時に課すことで得られるユニバーサル非制限仮想組み紐群 UUVₙ(k) を導入して、ユニバーサルな設定から継承されるいくつかの構造的性質を導出した。multi-virtual braid group MₖVBₙ は UVₙ(k) の商群であるため、対応する結果は MₖVBₙ にも適用される。特に k=1 の場合、仮想組み紐群 VBₙ の2つの禁止関係による商が同型であることを証明し、非制限仮想組み紐群の構造的性質を得た。",
+          "keywords": [
+            "universal virtual braid group",
+            "forbidden relations",
+            "unrestricted virtual braid group",
+            "multi-virtual braid group",
+            "automorphism group"
+          ],
+          "appendix": "この論文は仮想組み紐群の代数的な構造を詳細に分析しており、指定された興味ある分野の中では「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.06091v1": {
+          "title": "非同期HyperLTLの複雑性",
+          "summary": "HyperLTLは情報流などのハイパープロパティを記述するためにLTLを拡張した重要な論理であるが、同期的な性質しか扱えないという制限がある。本研究では、トレース間の相対的な進行速度を制御する「トラジェトリ」の量化を導入した非同期HyperLTL (AHLTL) の計算複雑性を解明した。モデル検査は二階算術における真理判定と同値であること、また充足可能性については、トラジェトリが存在量化される場合はΣ₁¹完全、全称量化される場合はΣ₁¹困難かつΣ₂¹に属することを明らかにし、従来未解決であった複雑性のギャップを埋めた。",
+          "keywords": [
+            "HyperLTL",
+            "Asynchronous HyperLTL",
+            "Hyperproperties",
+            "Model-checking",
+            "Satisfiability"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「automata theory」や「formal languages」に密接に関連する、時相論理のモデル検査および充足可能性問題の計算複雑性を扱っています。"
+        },
+        "http://arxiv.org/abs/2606.06050v1": {
+          "title": "単調代数上のシンボリックオートマトンの受動学習",
+          "summary": "シンボリックオートマトンは、遷移のラベルをブール代数の述語とすることで、巨大または無限のアルファベットを扱うモデルである。本論文では、オラクルへの問い合わせを行わず、与えられたサンプルからモデルを学習する「極限における同定」という受動学習の問題を扱う。著者らは、a ≤ x < b の形式の述語を持つ単調代数上のシンボリックオートマトンを効率的に同定するアルゴリズム「SAI」を提案している。このアルゴリズムは、有限状態オートマトンのためのRPNIフレームワークを拡張したものであり、決定性リアルタイムオートマトン向けの学習手法RTIに着想を得た状態分割操作を導入している。状態の統合と分割を組み合わせることで遷移の述語をトップダウンで推論し、SAIが多項式サイズの特性集合（characteristic sample）を許容することを証明した。",
+          "keywords": [
+            "Symbolic automata",
+            "Passive learning",
+            "Identification in the limit",
+            "Monotonic algebras",
+            "RPNI"
+          ],
+          "appendix": "本論文は興味ある分野のうち「automata theory」および「formal languages」に直接関連しています。無限アルファベットを扱うオートマトンモデルの学習理論に関する研究です。"
+        },
+        "http://arxiv.org/abs/2606.06030v1": {
+          "title": "タイリングに対するErdős-Ko-Radoの定理",
+          "summary": "本論文では、集合 Λ に属する長さのタイルを用いた 1 × n のチェス盤のタイリングに対し、Erdős-Ko-Rado型の極値的な結果を証明する。2つのタイリングが「交差する」とは、同一のマス目セットを占有するタイルを共有している状態を指す。1 ∈ Λ のとき、交差するタイリング族の最大サイズは、その一端に固定された1マス分のタイルを含む全てのタイリングの集合によって達成されることを示した。この結果は、Λ = {1, 2} の場合に相当する Butler, Horn, および Tressler の定理を一般化するものである。",
+          "keywords": [
+            "Erdős-Ko-Rado theorem",
+            "Tilings",
+            "Extremal result",
+            "Intersecting family"
+          ],
+          "appendix": "本論文は極値組合せ論を扱っており、興味ある分野のうち「combinatorics on words」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.06012v1": {
+          "title": "重み付き位相エントロピーと Bedford--McMullen カーペットのランダムな平行移動の共通部分",
+          "summary": "力学系の因子写像に関連する Feng--Huang 重み付き位相エントロピーの相対化された変分原理を確立しました。この結果と Yin の定理を組み合わせることで、Feng--Huang エントロピーとファイバー上の組合せ論的バージョンがほとんど至る所で一致することを示しています。応用として、2つの Bedford--McMullen カーペットをランダムに平行移動して得られる共通部分のハウスドルフ次元を計算しました。得られた公式は、Kenyon--Peres の公式を自己相似な設定から自己アフィンな設定へと拡張するものであり、ランダム行列の積に関する新たな問題も提起しています。",
+          "keywords": [
+            "Weighted topological entropy",
+            "Bedford--McMullen carpets",
+            "Variational principle",
+            "Hausdorff dimension",
+            "Self-affine sets"
+          ],
+          "appendix": "本論文は、記号力学系 (symbolic dynamics) の手法を用いて自己アフィン集合の次元解析を行っており、提示された興味ある分野の中では symbolic dynamics と強い関連があります。"
+        },
+        "http://arxiv.org/abs/2606.05939v1": {
+          "title": "Event-Bにおける時間制約付きシステムの正しい構成による設計",
+          "summary": "リアルタイムシステムの開発において、既存の形式手法の多くはモデル検査による事後検証を目的としているが、Event-Bのような段階的な詳細化による「正しい構成による設計(Correct-by-Construction)」のアプローチには時間概念が欠けていた。本論文では、Timed Automataのセマンティクスに着想を得た時間とクロックをEvent-Bに非侵入的に組み込む手法を提案している。これにより、Event-Bのエコシステムを活用しながら、上位レベルから時間制約を取り込んだ複雑なシステムの逐次的な設計が可能となり、一階述語論理や集合論を用いたより精緻なモデリングが実現されている。",
+          "keywords": [
+            "Event-B",
+            "Timed Automata",
+            "Correct-by-Construction",
+            "Refinement",
+            "Real-time systems"
+          ],
+          "appendix": "本論文は、オートマトン理論 (Automata theory) のセマンティクスをベースにした時間モデルの構築に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.05792v1": {
+          "title": "LLMは正確なTLA+仕様を記述できるのか？：自然言語からTLA+生成における評価",
+          "summary": "AmazonやMicrosoftなどの産業界で検証に用いられるTLA+において、LLMが自然言語から正確な仕様を生成可能かを体系的に評価した初の研究。30種類のLLMを対象に205の仕様で実験した結果、構文的正確性は最大26.6%に対し、意味的正確性は8.6%に留まった。モデルの規模が必ずしも品質を保証しないことや、コード特化型モデルが既存言語の負の転移により性能を落とす傾向が明らかになった。現状のLLMによる生成には専門家の監視が必要であり、研究チームはハルシネーションの分析結果と共に評価フレームワークを公開している。",
+          "keywords": [
+            "TLA+ ",
+            "Large Language Models",
+            "Formal Specification",
+            "Model Checking",
+            "Natural-Language-to-TLA+"
+          ],
+          "appendix": "興味ある分野のうち「formal languages」および「automata theory」に関連しています。また、検証には形式仕様の構文解析器SANYやモデルチェッカTLCが使用されています。"
+        },
+        "http://arxiv.org/abs/2606.05619v1": {
+          "title": "一般的な混合Zⁿ作用におけるエントロピー不変量の非対称性",
+          "summary": "n > 1 の混合 Zⁿ 作用において、Kirillov-Kushnirenko エントロピーが 0 かつその逆作用のエントロピーが完全正（completely positive）となるような性質について論じている。本論文では、このようなエントロピーの非対称性が、混合 Zⁿ 作用の全体において一般的（generic）な性質であることを証明した。",
+          "keywords": [
+            "mixing Zⁿ-actions",
+            "Kirillov-Kushnirenko entropy",
+            "completely positive",
+            "entropy invariants"
+          ],
+          "appendix": "本研究はエルゴード理論における Zⁿ 作用を扱っており、興味ある分野のうち symbolic dynamics や structure of large countable infinite group に関連する内容を含んでいる。"
+        },
+        "http://arxiv.org/abs/2606.05577v1": {
+          "title": "制御入力の効果を最大化するための力学系におけるマルチパラメータ・パーシステンス",
+          "summary": "本論文では、力学系 f: X ⇀ X を備えた空間 X 上の部分関数 h: X ⇀ [-∞, ∞] を、パラメータ ε と p を用いて空間全体へと拡張する新しい位相的な手法を導入する。これにより、既存のトポロジカル・データ・アナリシス (TDA) の技術を空間全体に適用することが可能になる。また、拡張された関数 h_f^{ε-ℓ^p} を用いて、任意の点から h の定義域 dom h へ至り、h の値を最小化するような最適な ε-摂動パスが存在するための十分条件を、X = dom f ⊔ dom h = ⨆_{n=0}^∞ f⁻ⁿ(dom h) という条件の下で構築する。有限領域 X においては、この関数は再帰的に計算可能である。応用として、評価コストのノルム、制御の強度、および結果として得られる値の3つの因子の関係を明らかにする3パラメータ・フィルトレーションを構成し、最小パスを特定する。",
+          "keywords": [
+            "Multi-parameter persistence",
+            "Dynamical systems",
+            "Topological data analysis",
+            "Control inputs",
+            "Filtration"
+          ],
+          "appendix": "本論文は力学系 (Dynamical systems) の制御を扱っており、興味ある分野に含まれる symbolic dynamics や complex dynamics と理論的に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.06400v1",
+        "http://arxiv.org/abs/2606.06274v1",
+        "http://arxiv.org/abs/2606.06192v1",
+        "http://arxiv.org/abs/2606.06157v1",
+        "http://arxiv.org/abs/2606.06133v1",
+        "http://arxiv.org/abs/2606.06122v1",
+        "http://arxiv.org/abs/2606.06095v1",
+        "http://arxiv.org/abs/2606.06091v1",
+        "http://arxiv.org/abs/2606.06050v1",
+        "http://arxiv.org/abs/2606.06030v1",
+        "http://arxiv.org/abs/2606.06012v1",
+        "http://arxiv.org/abs/2606.05939v1",
+        "http://arxiv.org/abs/2606.05792v1",
+        "http://arxiv.org/abs/2606.05619v1",
+        "http://arxiv.org/abs/2606.05577v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-07T06:42:22.046332+00:00",
-      "updated_at": "2026-06-07T08:33:19.782961+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-07T10:22:38.231022+00:00",
+      "finalized_at": "2026-06-07T10:22:38.230991+00:00"
     }
   ]
 }
