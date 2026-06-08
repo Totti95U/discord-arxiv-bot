@@ -58850,7 +58850,7 @@
     },
     {
       "pipeline_id": "20260608T070320Z-8b8a59eb",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/73ftrbkw8ycyd6j7lly3f91vjpymusi21uyk",
       "summarize_job_name": "batches/fxeepvgl0syr9fkjokamrev2n353jo3kemo5",
       "papers": [
@@ -59341,14 +59341,156 @@
         "http://arxiv.org/abs/2606.06807v1",
         "http://arxiv.org/abs/2606.06785v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.07490v1": {
+          "title": "一様マトロイドの特異コホモロジー環：組合せ論とレフシェッツ性",
+          "summary": "本論文では、マトロイドの特異コホモロジー環（マトロイドの周環を一般化した代数的不変量）について、特に関数マトロイドにおける組合せ論的性質とレフシェッツ性を調査している。Koszulホモロジーを用いた具体的な基底を構成し、それに基づいてホッジ数を計算するための複数の公式を導出した。さらに、この基底を用いることで、一様マトロイドの特異コホモロジー環が、周環で見られるハード・レフシェッツ性をわずかに弱めた「準射影的強力レフシェッツ性（quasi-projective strong Lefschetz property）」を満たすことを示した。",
+          "keywords": [
+            "singular cohomology ring",
+            "uniform matroid",
+            "Lefschetz properties",
+            "Koszul homology",
+            "Hodge numbers"
+          ],
+          "appendix": "本論文は、マトロイドという組合せ論的構造の代数的性質を扱っており、興味ある分野のうち「combinatorics」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.07430v1": {
+          "title": "バシリカ群のシュライアーグラフにおけるスペクトル特性",
+          "summary": "多項式 z² - 1 の反復モノドロミー群であり、自己相似的かつ従順（amenable）だが基本従順（elementarily amenable）ではないオートマトン群の重要な例である「バシリカ群」について、そのシュライアーグラフ Γₙ 上のラプラシアンのスペクトル特性を調査した。先行研究を基に、これらのラプラシアンの特性多項式を計算するための新しい再帰的な枠組みを開発した。この分析によって単純な力学系の構造を明らかにし、Kesten-von Neumann-Serre (KNS) スペクトル測度に関する近似結果を証明している。",
+          "keywords": [
+            "Schreier graphs",
+            "basilica group",
+            "Laplacians",
+            "iterated monodromy group",
+            "Kesten-von Neumann-Serre spectral measure"
+          ],
+          "appendix": "この論文は、オートマトン群（automata theory）、複素力学系（complex dynamics）、および巨大な可算無限群の構造（structure of large countable infinite group）に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.07408v1": {
+          "title": "ストリーム木における Earliest query answering",
+          "summary": "巨大なJSONやXML文書をメモリ上に全展開せずに処理するストリーミング実行において、遅延とメモリ消費を最小化する手法である「Earliest query answering」を扱う。この手法は、ノードが解である、あるいは解になり得ないことが確定した瞬間に即座に応答・破棄を行うが、XPathやJSONpathのようなフィルタを含む複雑なクエリでは、将来の入力に依存するため実現が困難であった。本論文では、単調二階述語論理（MSO）で表現可能な全ての単項クエリに対し、定数更新時間を維持しながらこの処理が可能であることを示した。ただし、ノードの返却は個別ではなく、適切なイテレータを介して行う必要がある。",
+          "keywords": [
+            "Streaming",
+            "Earliest query answering",
+            "Monadic second order logic (MSO)",
+            "XPath",
+            "JSONpath"
+          ],
+          "appendix": "本論文はMSO（単調二階述語論理）を用いたクエリ処理を扱っており、興味ある分野のうち「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.07372v1": {
+          "title": "生態進化力学におけるNullcline、Subnullcline、および漸近的・過渡的アトラクタ",
+          "summary": "人口統計学的枠組みにおいて、死亡コストと出生報酬が相互作用や個体群密度に依存するハト派・タカ派ゲームの生態進化力学を分析した。頻度と密度のNullclineの交点によって決まる平衡点がヘテロクリニック軌道で結ばれることを示し、それらの軌道の束からNullcline間に位置する多様体「Subnullcline」を特定した。さらに、周期的な背景死亡率として環境の季節性を導入した拡張モデルでは、複雑なサイクリング挙動が生じ、Subnullclineが摂動に対するレジリエンスや抵抗性の閾値（障壁）として機能することを明らかにしている。",
+          "keywords": [
+            "Eco-evolutionary dynamics",
+            "Hawk-Dove game",
+            "Nullclines",
+            "Subnullclines",
+            "Heteroclinic orbits"
+          ],
+          "appendix": "本論文は、動的システムにおけるアトラクタ、多様体、および周期的な摂動下での複雑な挙動を扱っているため、興味ある分野のうち「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.07254v1": {
+          "title": "長期間の非可換状態トラッキングに向けた、ホールドアウト遷移ペアを用いた検証プロトコル",
+          "summary": "系列モデルは、非可換な変換を通じて進化する順序付きの潜在状態を追跡する能力において顕著な限界を示す。本研究では、有限非可換群（S₃ × S₃）の状態トラッキングを対象に、特定の生成元ペアの出現を訓練時に禁止し、評価時にそれらを要求することで局所的な遷移の暗記を阻止する「ホールドアウト遷移ペア反証器」を導入した。実験の結果、長さ8の系列のみで訓練された射影再帰状態モデル（projected recurrent state model）は、1,048,576トークンに及ぶ長期ホライゾンにおいても完璧な最終状態予測（全シードで250/250の精度）を達成した。一方、GRUや構造化状態空間モデル（SSM）などのベースラインは、同様の条件下でランダム精度に留まった。本結果は、明示的な射影を伴う非可換な状態合成が、長期の潜在状態追跡における強力な帰納バイアスとして機能することを示している。",
+          "keywords": [
+            "non-Abelian state tracking",
+            "projected recurrent state model",
+            "finite non-Abelian group",
+            "long-horizon generalization",
+            "inductive bias"
+          ],
+          "appendix": "本論文は、記号の連なりによる状態遷移を扱う点で symbolic dynamics や combinatorics on words と関連があり、また代数的構造（有限群）を用いた状態機械の振る舞いを分析している点で automata theory と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.07139v1": {
+          "title": "連分数集合のマルチスケール特性",
+          "summary": "正の整数の部分集合 D ⊂ ℕ (空ではなく、無限集合である可能性も含む) に制限された正則連分数展開を持つ実数集合の次元論について概説する。",
+          "keywords": [
+            "Dimension theory",
+            "Regular continued fraction expansion",
+            "Continued fraction sets"
+          ],
+          "appendix": "本論文は連分数展開を扱う性質上、興味ある分野のうち symbolic dynamics や arithmetic dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.06859v1": {
+          "title": "矩形有限自由熱流",
+          "summary": "矩形有限自由確率論の枠組みにおいて熱方程式の役割を果たす、多項式上の動的システム「矩形有限自由熱流」を定義し、その性質を詳述している。PDEや勾配流による定式化を含む複数の同値な特徴付けを示し、長時間および高次数限界における多項式の根の漸近分布を決定した。また、Calogero-Moser系やDunkl過程との関連性を論じ、この熱流がコンパクトリー群軌道の平均曲率展開を記述することを明らかにしている。",
+          "keywords": [
+            "Rectangular finite free probability",
+            "Heat flow",
+            "Calogero-Moser systems",
+            "Dunkl processes",
+            "Mean curvature expansion"
+          ],
+          "appendix": "多項式上の動的システムを扱っている点で complex dynamics との関連性があり、またコンパクトリー群の軌道を扱う幾何学的な側面も有しています。"
+        },
+        "http://arxiv.org/abs/2606.06852v1": {
+          "title": "非全域回路に含まれない要素のペアを持つ連結二値マトロイド",
+          "summary": "単純連結な二値マトロイド M において、ある要素 e を含むすべての回路が全域的（spanning）であるとき、M は 3 要素以上の回路であることが知られている。本論文では、特定の要素のペア {e, f} を含むすべての回路が全域的であるという条件下でのマトロイドの構造を決定した。その結果、このようなマトロイドの正準木分解（canonical tree decomposition）はパスの構造を持ち、その各頂点は回路、U₁,₃ のコピー、あるいは 1 つの非チップ要素（non-tip element）が削除された二値スパイク（binary spike）のいずれかであることが示された。",
+          "keywords": [
+            "binary matroid",
+            "connected matroid",
+            "spanning circuit",
+            "tree decomposition",
+            "binary spike"
+          ],
+          "appendix": "本論文はマトロイド理論（組合せ論）に関する研究です。提示された「興味ある分野」に直接該当するものはありませんが、組合せ論の構造的性質を扱う点で関連性があります。"
+        },
+        "http://arxiv.org/abs/2606.06824v1": {
+          "title": "木の自己同型群における2個の生成元による離散部分群",
+          "summary": "3次正則木の自己同型群において、2つの生成元によって生成される離散部分群の部分的な分類を提示している。特に生成元の幾何学的量に制限がある場合を重点的に扱い、その制限を緩和した場合の商グラフの構造や、群のグラフ (graphs of groups) の無限族の構成について議論している。さらに、与えられた自己同型の集合が離散部分群を生成するかどうかを判定するための、一般化されたポアンカレアルゴリズムを提案している。",
+          "keywords": [
+            "tree automorphism group",
+            "discrete subgroups",
+            "graphs of groups",
+            "quotient graphs",
+            "Poincaré algorithm"
+          ],
+          "appendix": "本論文は樹状構造への群作用やその部分群の構造を扱っており、指定された興味ある分野のうち「structure of large countable infinite group」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.06807v1": {
+          "title": "概加法的集合関数に対するKalton--Robertsの上界の半減",
+          "summary": "集合代数上の実数値概加法的集合関数に関するKalton--Roberts定数 K_KR の新たな上界を導出した論文である。KaltonとRobertsによる最初の上界 89/2 (44.5) や、その後の 38.8 という値を大幅に改善し、約 19.837 という値を証明した。手法としては従来通りエキスパンダー・グラフを用いるが、expander-recombinationステップにおけるソース・コレクションの構成を変更している。計算過程では厳密な有理区間演算を用いて4つのエキスパンダー・ファミリの性質を保証しており、証明全体が定理証明支援系Leanによって形式化されている。",
+          "keywords": [
+            "Kalton--Roberts constant",
+            "nearly additive set functions",
+            "expander graphs",
+            "exact rational interval arithmetic",
+            "Lean"
+          ],
+          "appendix": "厳密な有理区間演算を用いて数値的性質を証明しているため、興味ある分野のうち「validated numerics」に関連しています。また、定理証明支援系Leanによる形式化が行われている点も特筆すべき事項です。"
+        },
+        "http://arxiv.org/abs/2606.06785v1": {
+          "title": "ノイズを伴う拡大区間写像に対する経験転送作用素と有限標本変化検知",
+          "summary": "本研究では、1次元のノイズを伴う力学系において、分割に基づく定常状態の経験的近似を用いた有限標本変化検知手法を提案している。状態空間を分割して有限転移行列を推定し、Doeblin型の正則化を適用することで一意な定常分布を得る。基準となる窓とスライド窓の間で、推定された定常分布のL1距離 Sₜ = ||π̂ₜ,ρ - π̂₀,ρ||₁ をスコアとして計算し、不変密度や定常法則の変化を検知する。理論面では、サンプリング誤差、正則化バイアス、分割近似誤差、ノイズバイアスを考慮した有限標本の誤差評価を導出し、誤報率の保証や変化の検知条件を明らかにしている。ノイズを伴うベータ写像を用いた実験により手法の有効性を示している。",
+          "keywords": [
+            "Transfer Operators",
+            "Change Detection",
+            "Invariant Density",
+            "Expanding Interval Maps"
+          ],
+          "appendix": "関連する分野として complex dynamics や symbolic dynamics が挙げられます。本論文は拡大区間写像の不変統計量の推定と、その統計的な変化検知への応用を扱っています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.07490v1",
+        "http://arxiv.org/abs/2606.07430v1",
+        "http://arxiv.org/abs/2606.07408v1",
+        "http://arxiv.org/abs/2606.07372v1",
+        "http://arxiv.org/abs/2606.07254v1",
+        "http://arxiv.org/abs/2606.07139v1",
+        "http://arxiv.org/abs/2606.06859v1",
+        "http://arxiv.org/abs/2606.06852v1",
+        "http://arxiv.org/abs/2606.06824v1",
+        "http://arxiv.org/abs/2606.06807v1",
+        "http://arxiv.org/abs/2606.06785v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-08T07:03:20.867160+00:00",
-      "updated_at": "2026-06-08T11:51:34.375688+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-08T13:49:12.258853+00:00",
+      "finalized_at": "2026-06-08T13:49:12.258828+00:00"
     }
   ]
 }
