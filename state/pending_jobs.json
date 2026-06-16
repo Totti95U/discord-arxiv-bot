@@ -64642,7 +64642,7 @@
     },
     {
       "pipeline_id": "20260616T074239Z-b102b8b6",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/wnsobbo6aqjpxejvnlsm25r15za8tbm7u7ie",
       "summarize_job_name": "batches/zqwmeues85qr8nup3zcjfqvd0unvns40rui9",
       "papers": [
@@ -64917,14 +64917,68 @@
         "http://arxiv.org/abs/2606.15392v1",
         "http://arxiv.org/abs/2606.15375v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.15506v1": {
+          "title": "共有頂点を持つ単位正方形のペアによって生成される ℤ² 上の双対アフィン渦巻軌道",
+          "summary": "整数格子 ℤ² 上で、1つの頂点を共有するペアとなった単位正方形から始まる反復的な幾何学的構成法を提案する。各ステップで、共有頂点に隣接する外側の辺によって形成される直角二等辺三角形の斜辺上に、新たな正方形を外向きに構築する。このプロセスは ℤ² 上に2つの連動するアフィン渦巻軌道、すなわち Pₙ と Nₙ を生成する。これらの数列はガウス整数 1+i の乗算に基づく線形漸化式を満たし、定点 M=(-1/2, 1) に関して常に対称であり、不変量 Pₙ + Nₙ = (-1, 2) を保持する。この反復を逆写像の下で拡張すると、ツインドラゴン・フラクタルに類似したアトラクタを持つ反復関数系が得られ、格子の幾何学的観点からその構造を記述できる。また、関連する整数列 a(n) = (|Pₙ|² + |Nₙ|²)/5 = 2ⁿ⁺¹ + 1 - 2*Re((1+i)ⁿ) は、OEIS の A396151 として登録されている。",
+          "keywords": [
+            "Affine spiral orbits",
+            "Gaussian integer",
+            "Twindragon fractal",
+            "Integer lattice",
+            "Iterated function system"
+          ],
+          "appendix": "本論文は、フラクタルや反復関数系を扱っている点から complex dynamics に、ガウス整数を用いた格子上の漸化式を扱っている点から arithmetic dynamics に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.15499v1": {
+          "title": "アセンブリ空間：形式的定義とアセンブリ指数を近似するための高速な手法",
+          "summary": "アセンブリ理論は、生命探査のための実験的・理論的な枠組みであり、対象を構成する最小の手順数である「アセンブリ指数」と、その出現頻度である「コピー数」を主要な指標とする。本論文では、アセンブリ空間とアセンブリ指数を基底に依存しない形で数学的に一般化して定義し、分子アセンブリにおける多様な表現を整理するための統一的なパス階層フレームワークを導入した。さらに、形式文法アルゴリズムを応用することで、アセンブリ指数の計算を効率的に近似・制限する手法を提案し、化学や複雑系科学における実用性を高めている。",
+          "keywords": [
+            "Assembly theory",
+            "assembly index",
+            "assembly space",
+            "formal grammar algorithms",
+            "molecular biosignatures"
+          ],
+          "appendix": "本論文は「formal languages」および「combinatorics on words」の分野と密接に関連しています。特に、アセンブリ指数の計算において形式文法のアルゴリズムを応用している点は、語の組み合わせ論的な性質を利用して構造の複雑さを定量化するアプローチといえます。"
+        },
+        "http://arxiv.org/abs/2606.15392v1": {
+          "title": "冪零群の環誘導局所化",
+          "summary": "本論文では、可換環 R に対し、準同型 ℤ → R に関する局所化として定義される群の範疇における R 局所化関手を調査している。主な結果として、R が λ 環構造を持つ場合（例えば R が二項環の場合）、冪零群の R 局所化は再び冪零群になることを示している。特に、R を p 進整数環 ℤₚ とした場合、冪零性を保存する局所化関手の新しい例が得られる。また、R 局所群を Myasnikov-Remeslennikov の R 群の観点から特徴付け、冪零 R 局所群が Hall-Petresco 恒等式の一種を満たすことを明らかにしている。",
+          "keywords": [
+            "nilpotent groups",
+            "R-localization functor",
+            "λ-ring",
+            "binomial ring",
+            "Hall-Petresco identity"
+          ],
+          "appendix": "冪零群の構造やその局所化に関する性質を扱っており、巨大な可算無限群の構造（structure of large countable infinite group）に関連する群論的基盤を提供する内容となっている。"
+        },
+        "http://arxiv.org/abs/2606.15375v1": {
+          "title": "確率論、数論および力学系の交点における数値積分",
+          "summary": "本論文は、一般的な非コンパクト位相空間上の様一分布（u.d.）点列の研究を目的としている。T₄空間における様一分布点列の収束決定類と等価な特徴付けについて議論し、正則確率測度を備えたポーランド空間において、ボレル確率測度の緊密性を利用することで様一分布点列に対する可算な収束決定類が存在することを証明した。また、可算な収束決定類が存在するという条件下で、独立同分布（i.i.d.）に従うランダムサンプリング点列およびエルゴード変換の軌道点列が、測度1で様一分布となることを示している。",
+          "keywords": [
+            "uniformly distributed sequences",
+            "convergence-determining classes",
+            "Polish spaces",
+            "ergodic transformations",
+            "Borel probability measures"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「complex dynamics」や「arithmetic dynamics」などの力学系理論（Dynamical Systems）に関連する基礎的な数学的枠組みを提供しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.15506v1",
+        "http://arxiv.org/abs/2606.15499v1",
+        "http://arxiv.org/abs/2606.15392v1",
+        "http://arxiv.org/abs/2606.15375v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-16T07:42:39.644584+00:00",
-      "updated_at": "2026-06-16T10:59:01.772663+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-16T15:49:13.082846+00:00",
+      "finalized_at": "2026-06-16T15:49:13.082824+00:00"
     }
   ]
 }
