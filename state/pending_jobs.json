@@ -65353,7 +65353,7 @@
     },
     {
       "pipeline_id": "20260618T070548Z-708a405d",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/g84waruiulirfgu3l0x3emv1n6u0f4in9vai",
       "summarize_job_name": "batches/a52jzj9lqn73oag1e3ha6c480az5plw2o3bz",
       "papers": [
@@ -66193,14 +66193,358 @@
         "http://arxiv.org/abs/2606.16118v1",
         "http://arxiv.org/abs/2606.16095v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.17346v1": {
+          "title": "Property A を持つ空間の L₁ 作用と埋め込み",
+          "summary": "本論文では、有界次数のグラフにおける Property A の新しい特徴付けを行っている。具体的には、距離空間 (X, d) が Property A を持つことと、ある適切なゲージ ω に対して Lipschitz 自由空間 LF(X, ω ∘ d) が l₁ と同型になることが同値であることを示した。この帰結として、Property A を持つすべての有限生成群は l₁ 上への固有かつ一様 Lipschitz なアフィン作用を許容することが導かれる。さらに、有限 Nagata 次元を持つ群（SL(3, ℤ) など）に対しては、圧縮指数 1 を持つ作用が得られる。また、可算離散群が L₁ へ粗埋め込み可能であるための必要十分条件が、L₁ の部分空間上への固有な一様 Lipschitz アフィン作用を持つことであることを示した。",
+          "keywords": [
+            "Property A",
+            "Lipschitz free space",
+            "L₁ embedding",
+            "affine action",
+            "Nagata dimension"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に関連しており、Property A や有限 Nagata 次元を持つ群の幾何学的性質、および L₁ 空間への作用の構成について扱っています。"
+        },
+        "http://arxiv.org/abs/2606.17324v1": {
+          "title": "有限軌道作用と完全な復元",
+          "summary": "有限軌道を持つ集合 Ω 上の群 G の作用に対し、有限置換群の逆極限として副有限群 Γ_Ω を構成する手法を提案している。この Γ_Ω は、各点収束位相における G の像の閉包と正準的に位相同型であることを示した。さらに、部分群とその固定点集合の間に一対一の対応関係を与える「有限レベル完全性（FLEP）」という性質を導入し、その同値条件を明らかにしている。応用として、副有限群の復元条件や、ガロア理論における Krull 位相を持つガロア群 Gal(E/F) が有限軌道のデータから復元可能であることを証明している。",
+          "keywords": [
+            "Finite-orbit actions",
+            "Profinite group",
+            "Finite-level exactness property",
+            "Galois theory",
+            "Krull topology"
+          ],
+          "appendix": "本論文は、群作用の閉包や副有限群の構造を扱っており、巨大な可算無限群の構造（structure of large countable infinite group）に深く関連しています。また、ガロア群の構成に関する議論は算術力学系（arithmetic dynamics）の文脈でも重要な示唆を与えます。"
+        },
+        "http://arxiv.org/abs/2606.17275v1": {
+          "title": "統語的システムは意味的不変性を捉えることができない",
+          "summary": "本論文は、HetzlとVierlingによって提示された、開基納法（open induction）と節集合サイクル（clause set cycles）という2つの帰納理論が比較不能であるかという未解決問題に対し、一方の理論では交換法則 a+b = b+a を証明できないことを示すことで肯定的な解決を与えた。この証明から「統語的不変性原理（Syntactic Invariance Principle）」という、記号の操作に基づく証明系が数値的な事実（意味的順序など）に到達できない限界を示す一般原則を抽出している。さらに、この議論の形状が P対NP問題における既知の障壁（バリア）とも類似していることを指摘し、計算複雑性理論への応用的な考察を行っている。",
+          "keywords": [
+            "Open induction",
+            "Clause set cycles",
+            "Syntactic Invariance Principle",
+            "P versus NP",
+            "SAT"
+          ],
+          "appendix": "本論文は数理論理学や証明論を扱っており、直接的に「興味ある分野」として挙げられた symbolic dynamics や combinatorics on words などに合致するものではありませんが、計算の限界や構造的な制約を扱うという点では理論計算機科学の基盤に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.17228v1": {
+          "title": "剰余プロセス挙動に対するStone-Cech収集意味論",
+          "summary": "非停止計算によって残される剰余的挙動のためのコンパクトな収集意味論を構築した論文である。逐次時間において、これは観測空間のStone-Cechコンパクト化におけるストリームのテイル・クラスター集合として定義される。この意味論は、通常の再帰性、混合再帰的挙動、および非コンパクトな観測空間を通じた脱出挙動に対して共通の枠組みを与える。基本理論としてテイル不変性や連続観測下での関手性を確立し、閉開集合を用いた観測が「最終的な真（eventual truth）」や「再帰性（recurrence）」に対応することを示している。CCSへの応用では、無限実行を構造同値に関する剰余プロセスのストリームとして捉え、安定した発散や無限の剰余成長を伴う脱出などを区別できることを示した。",
+          "keywords": [
+            "Stone-Cech compactification",
+            "collecting semantics",
+            "residual process behavior",
+            "tail-cluster set",
+            "CCS"
+          ],
+          "appendix": "本論文は無限実行の漸近的な挙動を扱うものであり、symbolic dynamicsにおける記号列の極限集合や、automata theoryにおける無限語の受理条件（再帰性など）の概念と理論的な接点を持つ可能性があります。"
+        },
+        "http://arxiv.org/abs/2606.17224v1": {
+          "title": "Manneville-Pomeau写像におけるターゲット回避集合の強勝利性",
+          "summary": "本論文では、Manneville-Pomeau写像のターゲット回避集合がSchmidtのゲームにおいて強勝利（strong winning）であることを証明した。考察対象である非一様拡大区間写像のクラスにおいて、任意のターゲット p ∈ [0, 1] に対し、その前方軌道が p に累積しない点集合が α-強勝利となるような単一のパラメータ α > 0 が存在することを示している。証明の手法は、一様拡大領域 [r₁, 1] 上の誘導写像に基づいている。無限の枝を持つ第1帰還写像を有限枝の拡大写像で近似し、Hu-Li-Yuの定理を適用することで得られた戦略を、誘導写像、さらには元のManneville-Pomeau写像へと転送している。",
+          "keywords": [
+            "Manneville-Pomeau maps",
+            "target-avoidance sets",
+            "Schmidt's game",
+            "strong winning",
+            "nonuniformly expanding interval maps"
+          ],
+          "appendix": "本論文は力学系における軌道の性質を解析しており、興味ある分野のうち complex dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.17201v1": {
+          "title": "Boolean代数と関手を通じたendとtangle（およびそれらの辺バリアント）の記述",
+          "summary": "本論文では、無限グラフの不変量であるend空間と、それを拡張したtangle空間の代数的・圏論的な構造を研究しています。頂点連結性に基づく従来のend/tangleに対し、辺連結性に基づく「辺end」と「辺方向（edge-direction）」の概念を定義し、両者の対応関係を明確化しました。また、Stone双対性を用いて、tangle空間や辺方向空間を導出するBoolean代数の組合せ論的構成を提案しています。さらに、これらの構成を関手として定式化することで、圏論や代数的構造を用いた無限グラフ理論の新たな基盤を提供しています。",
+          "keywords": [
+            "end space",
+            "tangle space",
+            "edge-direction space",
+            "Boolean algebras",
+            "Stone duality"
+          ],
+          "appendix": "本論文は、無限グラフの構造を扱う点において、興味ある分野の「combinatorics on words」や「structure of large countable infinite group」に関連するグラフ理論的な基礎概念（連結性や空間のコンパクト化）を提供しています。"
+        },
+        "http://arxiv.org/abs/2606.17031v1": {
+          "title": "S-gapシフト上の更新型ポテンシャルにおける有効な固有エルゴード性",
+          "summary": "本論文は、片側S-gapシフト上の更新型ポテンシャルに対する有効な固有エルゴード性を確立した。記号[1]のシリンダー集合上への誘導を用いることで、システムをアルファベットS上のフルシフトへと帰着させ、付随する更新方程式の解Pがトポロジカル圧力となり一意な平衡状態μ_φが存在することを示した。主な成果として、自由エネルギーがトポロジカル圧力に近い不変測度は、ヘルダー連続な観測量に対してμ_φにO(√Δ)のオーダーで近いという有効な推定式を導出した。この結果の応用により、特定のシリンダーを避ける軌道集合における一様な圧力ギャップや、エントロピーおよびハウスドルフ次元の厳密なギャップが示されている。",
+          "keywords": [
+            "Effective Intrinsic Ergodicity",
+            "S-gap shifts",
+            "renewal-type potentials",
+            "equilibrium state",
+            "topological pressure"
+          ],
+          "appendix": "本論文は、興味ある分野のうち symbolic dynamics（記号力学系）に直接関連しています。また、エントロピーやハウスドルフ次元の評価手法は、複素力学系（complex dynamics）などの解析手法とも共通点があります。"
+        },
+        "http://arxiv.org/abs/2606.17021v1": {
+          "title": "ラムゼー数 R(K₄-e, K₇) の正確な値",
+          "summary": "本論文では、グラフ理論におけるラムゼー数 R(K₄-e, K₇) の具体的な値を計算し、その値が 28 であることを示した。",
+          "keywords": [
+            "Ramsey number",
+            "exact value",
+            "K₄-e",
+            "K₇"
+          ],
+          "appendix": "本論文は、指定された興味ある分野のうち「combinatorics (組合せ論)」に深く関連する内容を扱っています。"
+        },
+        "http://arxiv.org/abs/2606.16957v1": {
+          "title": "構成的選好関係：合理的LTL簡約における決定不能性の回避",
+          "summary": "本論文は、線形時相論理（LTL）におけるエピステミックな選好関係の計算的側面を研究したものである。信念簡約において選好関係の構築は通常自明視されるが、Büchiオートマトンで表現されるLTLにおいては、簡約の成功を保証する条件が決定不能であることを示した。この問題に対し、Dalalの距離尺度の一般化や階層的な構成法を用いることで、設計段階で必要な条件を満たす新しい選好関係の具体的な構成手法を提案し、合理的なLTL信念簡約を可能にした。",
+          "keywords": [
+            "Linear Temporal Logic",
+            "belief contraction",
+            "preference relations",
+            "Büchi automata",
+            "undecidability"
+          ],
+          "appendix": "本研究はBüchiオートマトンを用いた時相論理の計算的性質を扱っており、興味ある分野のうち「automata theory」および「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.16894v1": {
+          "title": "有界なBruhat区間とアフィンCoxeter群",
+          "summary": "Dyer (1991)は、固定された長さkに対して有限Coxeter群に現れるBruhat区間の同型類が有限個であることを示した。本論文では、この性質がアフィンCoxeter群においても保持されることを示し、さらにこの性質が無限Coxeter群の中でアフィン群を特徴づけるものであることを証明した。加えて、Coxeter群のKazhdan-Lusztig多項式におけるqの係数が有界であるための必要十分条件が、その群が有限またはアフィンであることであることを示している。",
+          "keywords": [
+            "Bruhat intervals",
+            "affine Coxeter groups",
+            "Kazhdan-Lusztig polynomials",
+            "Bruhat order"
+          ],
+          "appendix": "本論文は、無限群の構造的性質を扱っており、興味ある分野の「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.16893v1": {
+          "title": "記号的非形式化（Symbolic Informalization）：流暢で生産的な多言語対応",
+          "summary": "記号的非形式化（Symbolic Informalization）は、形式化された数学を精度を損なうことなく信頼性の高い自然言語へと変換する技術であり、機械検証された内容を人間が理解可能な形式にすることを目指している。本論文では、Agda、Lean、Rocqといった複数の証明支援系のハブとしてDeduktiを利用し、多言語への自然な翻訳をGrammatical Framework (GF)で制御するインターリンガル・アーキテクチャに基づくプロジェクト「Informath」の概要を述べている。これにより、AIによる自動証明や自己形式化（autoformalization）の結果を、流暢な数学的表現で説明することが可能となる。",
+          "keywords": [
+            "Symbolic informalization",
+            "Informath",
+            "Dedukti",
+            "Grammatical Framework",
+            "Autoformalization"
+          ],
+          "appendix": "本論文は、証明支援系における形式的な言語表現と自然言語の相互変換を扱っているため、興味ある分野のうち「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.16858v1": {
+          "title": "巡回群の作用に関するPhaganの定理への補足",
+          "summary": "巡回群Gによる集合Sへの作用（G ↷ S）において、特定の長さを持つ軌道の数と、部分群H ⊆ Gによる誘導作用（H ↷ S）の軌道の数の関係を示したPhaganの定理（arXiv:2509.14083）に対し、簡略化された証明を提示する。この組合せ論的な事実は、Phaganによって調査された代数体の算術的類似性（arithmetic similarity）の概念に応用を持つ。",
+          "keywords": [
+            "cyclic group",
+            "group action",
+            "orbit length",
+            "arithmetic similarity",
+            "number fields"
+          ],
+          "appendix": "この論文は代数体の算術的類似性に関する組合せ論的な性質を扱っており、提示された興味ある分野の中では arithmetic dynamics に関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2606.16775v1": {
+          "title": "バウチャーパズルから隣接積の極値和へ",
+          "summary": "自己言及的なパズルに着想を得て、各選択肢が次のコストを乗算するようなバウチャーの価格タグのシーケンスについて研究している。このパズルの設定を古典的な置換統計量（permutation statistics）に関連付け、「voucher cost」およびそれに関連する「pairwise cost」と「loop cost」という概念を導入した。これにより、予算管理に関する問題を置換上の極値問題に変換することが可能となった。集合 {1, 2, ..., n} の置換に関する既知の結果を概観し、さらにそれらを任意の相異なる非負の価格タグの集合へと拡張している。",
+          "keywords": [
+            "voucher cost",
+            "pairwise cost",
+            "loop cost",
+            "extremal problems on permutations",
+            "permutation statistics"
+          ],
+          "appendix": "本論文は、置換の統計量や順序に関わる極値問題を扱っており、提示された興味ある分野の中では combinatorics on words と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.16744v1": {
+          "title": "Finitary DiagramにおけるBisimilarityおよびモデル検査の計算複雑性",
+          "summary": "Dubut(2020)によって導入されたFinitary Diagram上のBisimilarityとDiagrammatic Path Logic(図式パス論理)の計算複雑性を解析した論文。従来EXPSPACEとされていたBisimilarityの判定に対し、可逆行列の存在量化理論(ETIM)に対する効率的な乱択アルゴリズムを用いることでNEXPへの改善、および有限体上でのPSPACEへの改善を達成した。また、モデル検査については従来のPSPACEからNPへ改善し、さらにGabrielの定理を用いた縮約によりNP困難性を示すことで、その複雑性を確定させた。",
+          "keywords": [
+            "Finitary diagrams",
+            "Bisimilarity",
+            "Model checking",
+            "Existential theory of invertible matrices",
+            "Gabriel's theorem"
+          ],
+          "appendix": "本論文で扱われるモデル検査や図式パス論理の計算複雑性の解析は、計算理論やオートマトン理論(Automata theory)に関連する側面を持っています。"
+        },
+        "http://arxiv.org/abs/2606.16739v1": {
+          "title": "連結分割イデアルとギャップ頻度分割",
+          "summary": "本論文では、近年再注目されている連結分割イデアル（linked partition ideals）の枠組みを用いて、各成分の出現頻度が制限されたギャップ頻度分割（gap-frequency partitions）を分析しています。具体的には、各成分が最大2回または3回現れるケースをスパン1の連結分割イデアルとして定式化し、それぞれの詳細な母関数を導出しました。さらに、各成分が最大k回現れる一般的なギャップ頻度分割に対しても、対応する母関数の純粋に組合せ論的な証明を提示しています。",
+          "keywords": [
+            "linked partition ideals",
+            "gap-frequency partitions",
+            "generating functions",
+            "combinatorial proof"
+          ],
+          "appendix": "この論文は、整数分割の理論を扱っており、提示された興味ある分野の中では組合せ論（combinatorics）に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.16738v1": {
+          "title": "実数体 ℝ 上の概 2 次 Elekes--Rónyai エクスパンダー予想に対する反例",
+          "summary": "実数体 ℝ 上の概 2 次 Elekes–Rónyai エクスパンダー予想を否定する内容となっている。具体的な反例として、固定された非特異な 2 次多項式と、その像が 2 次のサイズから一定の指数的な減少（power saving）を示すような、実代数的整数の任意に大きな有限集合を提示している。本結果は ChatGPT 5.5 Pro や Rethlas システムなどの生成 AI を用いて得られたものであり、証明には OpenAI が構築した代数体の無限塔に関する最新の構成法が利用されている。",
+          "keywords": [
+            "Elekes--Rónyai expander conjecture",
+            "nonspecial quadratic polynomial",
+            "real algebraic integers",
+            "infinite tower of number fields"
+          ],
+          "appendix": "本論文は多項式と代数的数を扱っており、興味ある分野のうち「arithmetic dynamics」に関連します。また、ChatGPT 5.5 Pro などの生成 AI を用いて数学的成果を得たという点が特筆すべき事項です。"
+        },
+        "http://arxiv.org/abs/2606.16736v1": {
+          "title": "Timed Bisimulationにおける証拠と反例",
+          "summary": "離散状態と連続時間を併せ持つ時間制約システムのモデル化には時間オートマトンが用いられるが、その無限の状態空間を扱うために、到達可能性問題などに対してはゾーン・グラフによるシンボリックな意味論が利用されてきた。時間オートマトン間の挙動の比較において、Timed Trace Equivalenceは決定不能であるが、Timed Bisimulation Equivalenceは決定可能である。本研究では、仮想クロック（virtual clocks）を用いたゾーン・グラフの拡張を提案し、これによってTimed Bisimulationの効率的な検証だけでなく、検証結果に対する有用な説明（証拠や反例）の導出を可能にした。等価性が成立する場合は共通の証拠を、成立しない場合は挙動の差を明示する反例を生成でき、これらはシステム洗練段階でのテストケースとして活用可能である。",
+          "keywords": [
+            "timed automata",
+            "timed bisimulation",
+            "zone graphs",
+            "virtual clocks",
+            "counterexamples"
+          ],
+          "appendix": "本論文は、時間オートマトン（timed automata）を用いた形式手法を扱っており、興味ある分野のうち「automata theory」および「formal languages」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.16728v1": {
+          "title": "ブートストラップ・パーコレーションと偏差分方程式",
+          "summary": "ℤᵈ上のブートストラップ・パーコレーション・プロセスにおいて、固定されたパターン集合𝒜のいずれかを完成させることで新たな点が占有される系を研究している。本研究の目的は、与えられた𝒜に対してパーコレーションを引き起こす最小のシードサイズを特定することであり、2次元における2つのパターンの場合、その最小サイズは各パターンの凸包の混合体積（mixed volume）によって本質的に決定されることを示した。この研究は偏差分方程式の理論に動機付けられており、得られた結果は2次元における2つの偏差分方程式系の整合性判定基準を提供している。",
+          "keywords": [
+            "Bootstrap percolation",
+            "Partial difference equations",
+            "Mixed volume",
+            "Percolating seed"
+          ],
+          "appendix": "本論文は格子上の組合せ論的な動態を扱っており、興味ある分野のうち symbolic dynamics や combinatorics on words に関連する背景を持っています。特に、偏差分方程式の整合性条件に関する考察は、記号力学におけるパターンの許容性や構成規則の理解に寄与する内容となっています。"
+        },
+        "http://arxiv.org/abs/2606.16588v1": {
+          "title": "bifoliated planesを用いたpseudo-Anosov軌道空間のキャラクタリゼーション",
+          "summary": "向き付け可能な閉3次元多様体上の推移的なpseudo-Anosovフローの軌道空間として生じるbifoliated planes上の作用を特徴付けた。分岐被覆、veering triangulations、および新しいコンパクト性の基準を用いることで、奇数個のプロングを持つ特異点が存在せず、かつ葉層の葉に沿った向きを保存する場合に限定されていた先行研究を拡張した。",
+          "keywords": [
+            "pseudo-Anosov flows",
+            "bifoliated planes",
+            "orbit spaces",
+            "veering triangulations",
+            "3-manifolds"
+          ],
+          "appendix": "本論文は3次元多様体上の力学系を扱っており、指定された興味ある分野の中ではsymbolic dynamicsやcomplex dynamicsと広義の力学系理論の文脈で関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2606.16567v1": {
+          "title": "TNODEV: Neural ODE検証のためのツールボックス",
+          "summary": "安全性が重視されるサイバー物理システム等で利用されるNeural ODE（ニューラル常微分方程式）に対し、TNODEVは初の健全な形式検証ツールを提供する。既存手法が単一の到達可能性解析に留まるのに対し、本ツールは偽反例チェッカー、連続時間混合単調性に基づく高速な区間演算バックエンド、3つの入力集合分割ヘイリスティクスを用いた反復的な検証・細分化ループ、および並列スケジューラを統合している。純粋なNeural ODE、ニューラルネットワーク制御器を含む閉ループ系、および一般化Neural ODE（GNODE）をサポートし、NNV 2.0やCORAを用いたベンチマークによりその有効性が示されている。",
+          "keywords": [
+            "Neural ODE",
+            "formal verification",
+            "reachability analysis",
+            "mixed monotonicity",
+            "closed-loop control"
+          ],
+          "appendix": "本論文で提案されている連続時間混合単調性に基づく区間到達可能性バックエンドは、信頼性の高い数値計算手法を扱う「validated numerics」の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.16543v1": {
+          "title": "max-flow min-cut 特性と複製予想 (replication conjecture) の検証",
+          "summary": "パッキング特性を持つ clutter が max-flow min-cut (MFMC) 特性を持つという「複製予想 (replication conjecture)」を、不適合点から誘導されるハミンググラフの次数が δ 以下の集合システムである cuboid に対して検証した。最小の反例の次元が δ 以下であることを証明して探索空間を有限化し、SAT ソルバを用いて次数 9 以下、および要素数 10 以下の clutter について予想を検証した。さらに、n 要素の clutter の MFMC 特性を確認するために必要な重みベクトル w ∈ {0, 1, ..., t}ⁿ の上限 t を t ≤ max(⌈n/2⌉, ⌊n - √(4n+1) + 1⌋) へと改善し、従来の指数関数的な上限を大幅に更新した。",
+          "keywords": [
+            "Replication conjecture",
+            "Max-flow min-cut property",
+            "Packing property",
+            "Clutter",
+            "Cuboid"
+          ],
+          "appendix": "本論文は組合せ最適化や整数計画法、可換環論に跨る問題を取り扱っており、提示された興味ある分野の中では組合せ論（Combinatorics）に深く関連します。"
+        },
+        "http://arxiv.org/abs/2606.16498v1": {
+          "title": "ランダムな円周の自己準同型写像における回転集合とトポロジカル・エントロピー",
+          "summary": "エルゴード的測度保存力学系上における次数1のランダムな円周の自己準同型写像の位相力学系を研究した論文である。可積分性の仮定の下で、ランダムな回転集合は、付随する上下のランダム写像の平均回転数を端点とする閉区間になることを証明した。また、ほとんど全ての軌道において平均変位の集積値がこの回転集合と一致することを示し、回転集合の長さが正であれば、ランダムなトポロジカル・エントロピーも正になることを明らかにした。これはランダムな単調写像のエントロピーが0であることと対照的である。最後に、区分的に線形な例を用いて、回転集合とトポロジカル・エントロピーの計算例を提示している。",
+          "keywords": [
+            "Random rotation set",
+            "Random topological entropy",
+            "Random circle endomorphisms",
+            "Ergodic measure-preserving dynamical system"
+          ],
+          "appendix": "本論文は力学系の性質を扱っており、興味ある分野のうち symbolic dynamics や complex dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.16283v1": {
+          "title": "片側位相的マルコフシフトの連続軌道同値における位相的エントロピー",
+          "summary": "片側位相的マルコフシフトの連続軌道同値類の中に、位相的エントロピーが任意に指定された正の実数よりも大きい、あるいは小さい別の片側位相的マルコフシフトが含まれることを証明している。",
+          "keywords": [
+            "continuous orbit equivalence",
+            "one-sided topological Markov shift",
+            "topological entropy"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「symbolic dynamics」に直接関連する研究内容を扱っています。"
+        },
+        "http://arxiv.org/abs/2606.16259v1": {
+          "title": "任意の次元における三角プラケット模型のスーパー・アレニウス緩和",
+          "summary": "本論文は統計物理学における三角プラケット模型の緩和時間について論じている。d ≥ 2の任意の次元において、ギブス測度に基づくグローバー動力学の無限体積緩和時間が、逆温度 β に対し e^{β²/C}/C ≤ T_{rel} ≤ Ce^{e^{Cβ}} を満たすことを示した。これは1999年にNewmanとMooreによって予想された e^{β²} スケーリングと一致し、East模型のような根付き速度制限模型（KCM）に見られる脆弱なガラスの現象論を速度制限なしで再現するものである。解析には極値および計数的組合せ論の新たな結果や、Ledrappierサブシフトとして知られる基底状態の繰り込み手法が用いられている。また、周期的境界条件のトーラス上と非周期的な有限領域上では緩和時間の漸近挙動が劇的に異なることを示し、幾何学的群論（Baumslag群の語の問題の計算量）やエルゴード理論への帰結についても言及している。",
+          "keywords": [
+            "triangular plaquette model",
+            "Glauber dynamics",
+            "relaxation time",
+            "Ledrappier subshift",
+            "Gibbs measure"
+          ],
+          "appendix": "本論文はLedrappierサブシフトを扱っており、興味ある分野の symbolic dynamics に深く関連しています。また、Baumslag群の語の問題の計算量への言及は structure of large countable infinite group の知見に関連し、証明に用いられる手法は combinatorics on words とも親和性があります。"
+        },
+        "http://arxiv.org/abs/2606.16134v1": {
+          "title": "多レベル三段論法の平均時計算量の再考：1995年のCourant技術報告書からLean 4による形式化まで",
+          "summary": "本研究は、多レベル三段論法（MLS）の平均時計算量に関するNYU Courant技術報告書（TR1995-711）の内容を、定理証明支援系Lean 4を用いて形式化したものである。Reischuk–Schindelhauerの平均時計算量クラスの符号化、MLS/EMLSの意味論、およびFerro–Omodeo–Schwartzの決定手続きの実装を行い、その健全性と部分的な完全性を証明した。また、特定の構造的公理を仮定した上での条件付きNP平均完全性および非AvP困難性の帰結についても示している。",
+          "keywords": [
+            "Multilevel Syllogistic",
+            "Lean 4 formalization",
+            "Average-case complexity",
+            "Ferro–Omodeo–Schwartz decision procedure",
+            "NP-average completeness"
+          ],
+          "appendix": "提示された「興味ある分野」に直接合致する項目はありませんが、決定手続きや計算複雑性、形式検証の観点から計算機科学の基礎理論に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.16118v1": {
+          "title": "限界を知る：法的推論におけるソルバーおよび形式化器としてのLLMの忠実性について",
+          "summary": "本論文は、法的な含意関係の推論において、大規模言語モデル（LLM）が論理的な推論を忠実に行っているのか、あるいはヒューリスティックな近似に過ぎないのかを検証しています。ContractNLIの再注釈付けデータセットを用い、LLMによる直接的な分類、LLMベースの形式推論、およびZ3 SMTソルバーを用いたソルバーベースの形式推論の3つのパラダイムを比較しました。その結果、LLMベースの形式推論は高い精度を示す一方で、「スコープ・ロンダリング（形式的推論を介さずに結論を出す）」、「暗黙的制約の盲点」、「プログラム合成の失敗」といった重大な失敗モードが全モデルで確認されました。これにより、ベンチマーク上の精度と実際の論理的な忠実性の間には根本的な乖離があることが示唆されています。",
+          "keywords": [
+            "Faithfulness",
+            "Legal Reasoning",
+            "Formal Reasoning",
+            "SMT Solver",
+            "Large Language Models"
+          ],
+          "appendix": "本論文は、形式言語やオートマトン理論に関連する「形式的表現を用いた推論の妥当性」や、記号実行（Symbolic Execution）の代替としてのLLMの評価を扱っており、形式手法（Formal Methods）の観点からautomata theoryやformal languagesの分野と関連性を持ちます。"
+        },
+        "http://arxiv.org/abs/2606.16095v1": {
+          "title": "パス代数およびグラフ代数の最大次元",
+          "summary": "N ≥ 1 本の辺を持つ非循環連結有向グラフのクラスにおいて、パスの総数の最適な上界を特定した論文である。著者らは、この上界を実際に実現するグラフを提示することでその最適性を証明した。さらに、これらの手法を応用して、N本の辺を持つ有限の非循環連結グラフ上のLeavittパス代数における最適な次元の上界を導出している。",
+          "keywords": [
+            "acyclic connected directed graphs",
+            "number of paths",
+            "optimal upper bound",
+            "Leavitt path algebras"
+          ],
+          "appendix": "本論文はグラフの構造とパスの数え上げ、およびそれに関連する代数構造を扱っており、興味ある分野のうち symbolic dynamics や combinatorics on words と深い関連があります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.17346v1",
+        "http://arxiv.org/abs/2606.17324v1",
+        "http://arxiv.org/abs/2606.17275v1",
+        "http://arxiv.org/abs/2606.17228v1",
+        "http://arxiv.org/abs/2606.17224v1",
+        "http://arxiv.org/abs/2606.17201v1",
+        "http://arxiv.org/abs/2606.17031v1",
+        "http://arxiv.org/abs/2606.17021v1",
+        "http://arxiv.org/abs/2606.16957v1",
+        "http://arxiv.org/abs/2606.16894v1",
+        "http://arxiv.org/abs/2606.16893v1",
+        "http://arxiv.org/abs/2606.16858v1",
+        "http://arxiv.org/abs/2606.16775v1",
+        "http://arxiv.org/abs/2606.16744v1",
+        "http://arxiv.org/abs/2606.16739v1",
+        "http://arxiv.org/abs/2606.16738v1",
+        "http://arxiv.org/abs/2606.16736v1",
+        "http://arxiv.org/abs/2606.16728v1",
+        "http://arxiv.org/abs/2606.16588v1",
+        "http://arxiv.org/abs/2606.16567v1",
+        "http://arxiv.org/abs/2606.16543v1",
+        "http://arxiv.org/abs/2606.16498v1",
+        "http://arxiv.org/abs/2606.16283v1",
+        "http://arxiv.org/abs/2606.16259v1",
+        "http://arxiv.org/abs/2606.16134v1",
+        "http://arxiv.org/abs/2606.16118v1",
+        "http://arxiv.org/abs/2606.16095v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-18T07:05:48.197561+00:00",
-      "updated_at": "2026-06-18T09:50:53.350446+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-18T12:46:43.867805+00:00",
+      "finalized_at": "2026-06-18T12:46:43.867778+00:00"
     }
   ]
 }
