@@ -67680,7 +67680,7 @@
     },
     {
       "pipeline_id": "20260620T064141Z-f2164cc4",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/gqh3tu8wqc44hf7ggc64zapbwvsoetkj5goe",
       "summarize_job_name": "batches/th131bwe73urdauozyw5barjkrn3bso51yhw",
       "papers": [
@@ -68234,14 +68234,301 @@
         "http://arxiv.org/abs/2606.18685v1",
         "http://arxiv.org/abs/2606.18674v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.19645v1": {
+          "title": "インフレーション系に対するくりこみ手法とその応用",
+          "summary": "本研究は、インフレーション生成系における厳密なくりこみ手法の最近の成果を概観したものです。まず、インフレーション系の基礎概念を整理し、window covariogramのような複雑で不規則な関数の厳密値を算出可能にする「くりこみ原理」を紹介しています。この手法を応用して最新の単一タイル（monotile）によるタイリングの回折パターンを任意精度で計算する例を示すほか、純点スペクトルを持つ系の不変量である「軌道分離次元」とくりこみの関係についても論じています。最後に、純点スペクトルを超えた設定において、くりこみとリャプヌフ指数を用いてスペクトルの絶対連続成分の存在を排除する手法を解説しています。",
+          "keywords": [
+            "inflation systems",
+            "renormalisation techniques",
+            "window covariograms",
+            "monotile tilings",
+            "pure-point spectrum"
+          ],
+          "appendix": "本論文は、興味ある分野のうち symbolic dynamics および combinatorics on words と深く関連しています。特に置換（substitution）によって生成される力学系やタイリングの性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2606.19632v1": {
+          "title": "決定木蒸留による学習済みマルチエージェント通信方策の形式検証",
+          "summary": "マルチエージェント強化学習（MARL）におけるニューラル方策は、安全性が重視される自律システムにおいて形式的な安全性保証が欠如しているという課題がある。本研究では、ニューラル方策を解釈可能な決定木に蒸留し、確率的モデルチェッカPRISMを用いてPCTL（確率計算樹論理）プロパティを検証するエンドツーエンドのフレームワークを提案した。5〜7台のドローン群を用いたVQ-VIB方策の評価では、蒸留モデルが97.9%の忠実度を達成し、検証された安全プロパティが元のネットワークへも極めて高い精度で転移することを確認した。これにより、深層MARLと形式的検証ワークフローを繋ぐ実用的な手法が提示された。",
+          "keywords": [
+            "Multi-agent reinforcement learning",
+            "Decision tree distillation",
+            "Formal verification",
+            "PRISM",
+            "VQ-VIB"
+          ],
+          "appendix": "本論文は、確率的モデルチェッカを用いた形式検証を扱っており、オートマトン理論（automata theory）や形式言語の理論的枠組みと密接に関連しています。また、数値的な安全限界の検証という点では、validated numerics の関心領域とも親和性があります。"
+        },
+        "http://arxiv.org/abs/2606.19606v1": {
+          "title": "外部自己同型群と Atiyah 予想",
+          "summary": "コンパクト曲面の基本群、有限生成自由群、または有限生成直角アルティン群 G に対し、その外部自己同型群 Out(G) の von Neumann 次元関数が ℚ の離散部分群に値を持つことを示した。これは Out(G) の有限指数ねじれなし部分群に対して強 Atiyah 予想を確立することで導かれる。また、任意の体 𝕂 に対し、群環 𝕂[H] が斜体に埋め込まれ、ゼロ因子予想を満たすような Out(G) の有限指数ねじれなし部分群 H が存在することも証明した。これらの成果は、G の pro-p 完備化の外部自己同型群とその完備群環における性質を解析することで得られている。",
+          "keywords": [
+            "Out(G)",
+            "Atiyah Conjecture",
+            "Right-angled Artin groups",
+            "von Neumann dimension",
+            "Zero Divisor Conjecture"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野と密接に関連しており、巨大な可算無限群である Out(G) の部分群構造や、その群環の代数的性質（Atiyah 予想やゼロ因子予想）について重要な知見を提供しています。"
+        },
+        "http://arxiv.org/abs/2606.19596v1": {
+          "title": "3つの等質量をもつ平面4体問題における凹凧型中心配位",
+          "summary": "3つの等質量物体を含む平面4体問題における、凹凧型（concave kite）の中心配位を完全に分類した。第4の質量が他の3つの質量が作る三角形の内部または外部にある場合で、2つの異なるタイプの中心配位が存在することを示した。厳密な計算機援用解析手法と固定座標系を用いることで、各ケースの中心配位が1パラメータ族を形成することを証明し、その完全な分類を得た。さらに、簡約空間における分岐点の存在とその種類を厳密に示し、質量比を0から+∞まで変化させた際の、対称および非対称な凹中心配位を含む大域的な分岐図を数値的に提示した。",
+          "keywords": [
+            "planar 4-body problem",
+            "central configurations",
+            "computer-assisted analytical method",
+            "bifurcation",
+            "concave kite configurations"
+          ],
+          "appendix": "この論文は「validated numerics（精度保証付き数値計算）」の分野に関連しています。著者らが用いている「rigorous computer-assisted analytical method」は、数値的な計算に数学的な厳密性を与える手法であり、本研究における中心配位の分類と分岐の証明において中心的な役割を果たしています。"
+        },
+        "http://arxiv.org/abs/2606.19532v1": {
+          "title": "Vancomycert: 検証済みニューロシンボリック薬物投与システム（ケーススタディ）",
+          "summary": "本論文は、医療分野の安全性要求に応えるため、抗生物質（バンコマイシン）の投与量を制御するニューラルネットワークの形式検証手法を提案している。臨床的に解釈可能なモデルを構築し、教師あり学習で訓練された制御器が、腎毒性を引き起こす過剰投与を回避することを無限時間ホライズンにおいて形式的に証明した。検証にはVehicle対話型定理証明器バックエンドを介したRocqが用いられ、各患者に対する安全性を保証しつつ柔軟な治療を可能にする検証パイプラインを実現している。",
+          "keywords": [
+            "formal verification",
+            "neural network controller",
+            "neuro-symbolic",
+            "antibiotic dosing",
+            "interactive theorem prover"
+          ],
+          "appendix": "本論文は、対話型定理証明器や形式検証の手法を扱っており、計算機科学的な観点から形式言語やオートマトン理論の安全性保証への応用に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.19500v1": {
+          "title": "マルチセットの順列、パーキング関数、および関連構造におけるサイクルについて",
+          "summary": "本論文では、マルチセットの順列（multiset permutations）とパーキング関数（parking functions）におけるサイクルの構造を、代数的および解析的な両側面から調査しています。マルチセットの順列は写像や順列の構成要素であり、パーキング関数はそれらの中間的な性質を持つ対象です。研究の結果、厳密な計数結果と漸近的な挙動の両方が示されました。特に、マルチセットの順列における「terminal closers」と「cyclic points」という2つの統計量の間に驚くべき対応関係があることが発見され、その組合せ論的構造が明らかになりました。",
+          "keywords": [
+            "multiset permutations",
+            "parking functions",
+            "cycles",
+            "terminal closers",
+            "cyclic points"
+          ],
+          "appendix": "本論文は、組合せ論的構造（マルチセットの順列やパーキング関数）を扱っているため、興味ある分野のうち「combinatorics on words」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.19473v1": {
+          "title": "頂点カットとメディアン分解",
+          "summary": "Stavropoulos (2015) によって導入されたツリー分解の一般化である「メディアン分解」の理論を、グラフの構造的性質を研究する道具として発展させた論文。入れ子状の頂点分離システムがツリー分解を生成するという既知の事実を一般化し、任意の頂点分離システムからメディアン分解を構成する方法を示している。この分解におけるメディアングラフはSageevの「デュアル・メディアングラフ」と一致し、システムが入れ子状の場合は従来のツリー分解に帰着する。応用として、グラフのメディアン幅がクリーク数に等しいという定理を無限グラフへ拡張したほか、群のメディアングラフへの幾何学的作用とケイリーグラフの標準的メディアン分解の関連についても示している。",
+          "keywords": [
+            "median decompositions",
+            "vertex separations",
+            "Sageev--Roller duality",
+            "median-width",
+            "coarse embeddings"
+          ],
+          "appendix": "大規模可算無限群の構造 (structure of large countable infinite group) と密接に関連しています。具体的には、有限生成群がメディアングラフに対して距離的固有あるいは幾何学的に作用するための条件を、ケイリーグラフの標準的なメディアン分解を通じて規定しています。"
+        },
+        "http://arxiv.org/abs/2606.19322v1": {
+          "title": "双正確群の存在包含は共役表現に関して剛性的である",
+          "summary": "非アメナブルな双正確群 Λ から Γ への存在埋め込み（existential embedding）が存在する場合、Λ とその共役群 gΛg⁻¹ の交わり（g は Γ\\Λ の元）が常にアメナブルになることを示している。この結果と Bekka および Kalantar の先行研究を組み合わせることで、準正則表現 λ_Γ/Λ の弱同値類が、Γ の自己通約的部分群の中における Λ を共役を除いて一意に決定することを証明した。",
+          "keywords": [
+            "bi-exact group",
+            "existential embedding",
+            "quasi-regular representation",
+            "amenable group",
+            "conjugacy representation rigid"
+          ],
+          "appendix": "この論文は、大きな可算無限群の構造（structure of large countable infinite group）に関連する、群の表現論および幾何学的群論の成果を扱っています。"
+        },
+        "http://arxiv.org/abs/2606.19260v1": {
+          "title": "単純放物型内部関数の力学系",
+          "summary": "Polya-Szegö内部関数の力学系を研究し、単純および二重放物性の等価条件などの基本特性を明らかにしています。単純放物型Polya-Szegö内部関数が前方および後方の商半円柱を許容することを示し、Lavaurs写像による力学系の拡張を行いました。特に有限のリャプノフ指数 (∫_ℝ log |F'| dℓ < ∞) を持つ場合、Lavaurs半群に関連するリーマン面ラミネーション上の測地流を定義してそのエルゴード性を証明しました。応用として、Lavaurs半群に対するチェザロ平均を用いた軌道計数定理を確立し、さらにFが放物型1成分内部関数であれば、測地流の混合性と完全な軌道計数定理が成立することを示しています。",
+          "keywords": [
+            "Polya-Szegö inner functions",
+            "Lavaurs map",
+            "Lyapunov exponent",
+            "geodesic flow",
+            "Orbit Counting Theorem"
+          ],
+          "appendix": "本論文は興味ある分野のうち、複素力学系 (complex dynamics) に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.19246v1": {
+          "title": "マルコフ的作用はAnosov的である",
+          "summary": "Barthelmé, Frankel, Mannによって導入されたAnosov的作用に着想を得て、平面上の群作用を研究している。具体的には、一対の横断的な特異葉層構造と、マルコフ分割の類似物である「強マルコフ族（strong Markovian family）」を保存する作用を対象とする。本論文では、このような作用がすべてAnosov的であることを証明した。特に、強マルコフ族の存在が不変な二重葉層の振る舞いを制限し、不動点を持つ無限個の元の存在など、双曲力学系の特徴的な性質を作用に与えることを示している。",
+          "keywords": [
+            "Anosov-like actions",
+            "strong Markovian family",
+            "Markov partition",
+            "hyperbolic dynamics",
+            "group actions"
+          ],
+          "appendix": "マルコフ分割の概念を発展させた強マルコフ族を扱っているため、symbolic dynamicsと密接に関連しています。また、群作用における双曲的な性質を議論している点で、complex dynamicsの分野とも接点があります。"
+        },
+        "http://arxiv.org/abs/2606.19234v1": {
+          "title": "組合せ論によるレベル1のsl̂ₙにおける古典的自由性",
+          "summary": "Dousse--Konanによる色付き分割に関するRogers--Ramanujan型の組合せ論的恒等式を用いて、レベル1のsl̂ₙに基づく単純頂点作用素代数の古典的自由性を証明している。具体的には、これらの恒等式を利用して関連するアーク代数（arc algebras）のグレブナー基底を構築している。",
+          "keywords": [
+            "Vertex operator algebras",
+            "Arc algebras",
+            "Rogers--Ramanujan-type identities",
+            "Gröbner bases",
+            "Coloured partitions"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「combinatorics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.19071v1": {
+          "title": "Floer 永続バーコードの永続エントロピー",
+          "summary": "本論文では、作用濾過付き Floer ホモロジーを定量的に記述する Floer 永続バーコードに対し、トポロジカルデータ解析における Shannon エントロピーに想を得た新たな不変量「永続エントロピー (persistent entropy)」を導入した。これはバーの長さの分布の反復下における漸近的線形成長率を測定するもので、バーの数の指数成長率を記録する既存の「バーコード・エントロピー」を補完する概念である。ハミルトン微分同相写像における両エントロピーの一致や、Liouville 領域における比較不等式の証明、負曲率多様体の余接円盤束における測地流の位相的エントロピーとの関連性の算出を行った。また、Hofer 安定性評価や Reeb 流における柔軟性・剛性問題についても論じている。",
+          "keywords": [
+            "Floer persistence barcodes",
+            "persistent entropy",
+            "barcode entropy",
+            "Hamiltonian diffeomorphisms",
+            "Liouville domains"
+          ],
+          "appendix": "ハミルトン系の反復や位相的エントロピー、力学系の不変量を扱う本論文の内容は、興味ある分野のうち「complex dynamics」などの動力学に関連する分野と理論的な接点を持っています。"
+        },
+        "http://arxiv.org/abs/2606.19045v1": {
+          "title": "ハイブリッドMittag-Leffler-Caputo-Fabrizio作用素を用いた分数的SVIR感染症モデルに対する構造保存スキーム",
+          "summary": "本研究では、非特異核を持つハイブリッドMittag-Leffler-Caputo-Fabrizio (MLCF) 分数階作用素を用いた分数階SVIR感染症モデルを提案し、その解析を行っている。このモデルは感染症伝播における短期および長期の記憶効果を考慮しており、分数階Gronwallの不等式を用いて解の正値性と有界性を証明した。基本再生産数 R₀ の導出、平衡点の安定性解析を、ヤコビ行列、対数リヤプノフ関数、分数階LaSalleの不変原理を用いて厳密に実施した。数値解法として、定性的特性を保存し、完全陰解法において無条件安定な θ 重み付き非標準有限差分 (NSFD) 法を開発した。数値実験や分岐解析を通じて、分数階パラメータの影響と手法の有効性を検証している。",
+          "keywords": [
+            "fractional-order SVIR epidemic model",
+            "Mittag-Leffler-Caputo-Fabrizio operator",
+            "nonstandard finite difference method",
+            "structure-preserving schemes",
+            "stability analysis"
+          ],
+          "appendix": "本論文は「validated numerics」に深く関連する、数値計算における定性的構造保存（正値性や有界性の維持）を扱っています。"
+        },
+        "http://arxiv.org/abs/2606.19017v1": {
+          "title": "Probabilistic Boolean Tapesに対する完全性",
+          "summary": "有限確率プログラミングのストリング図的基盤として提案された確率的ブール回路について、マルコフ核（Markov kernels）を意味論とする完全な公理系を提示する。この成果は、部分ブール回路の完全性、およびrig圏の図式的言語である確率的ブールテープの完全性という2つの中間的な結果に基づいている。",
+          "keywords": [
+            "Probabilistic Boolean circuits",
+            "finite probabilistic programming",
+            "Markov kernels",
+            "partial Boolean circuits",
+            "rig categories"
+          ],
+          "appendix": "本論文は計算の図式的表現や公理化を扱っており、形式言語や計算理論の基盤に関わる点でautomata theoryやformal languagesの分野と関連があります。"
+        },
+        "http://arxiv.org/abs/2606.18938v1": {
+          "title": "スライディング運動を伴う区分的に滑らかなベクトル場に対するシャドウイング定理について",
+          "summary": "本論文は、異なる状態間を遷移するダイナミクスを持つ、区分的に滑らかなベクトル場（Filippovシステム）におけるシャドウイング定理の確立を目的としている。まず、従来のC²クラスのベクトル場で一般的に用いられる仮定だけでは、区分的に滑らかな設定において同様の結果が得られないことを反証例によって示す。その後、適切な仮定の下で、この枠組みに特化したシャドウイング型の定理を証明する。さらに、C²設定では現れない、区分的に滑らかなベクトル場特有の現象を捉えるための複数の拡張についても提案している。",
+          "keywords": [
+            "Shadowing Theorem",
+            "piecewise-smooth vector fields",
+            "sliding motion",
+            "ordinary differential equations",
+            "chain of trajectories"
+          ],
+          "appendix": "本論文で扱われるシャドウイング特性は、計算機による近似解の近傍に真の軌道が存在することを保証する理論的根拠を与えるものであり、興味ある分野の中では「validated numerics（精度保証付き数値計算）」と強い関連があります。"
+        },
+        "http://arxiv.org/abs/2606.18926v1": {
+          "title": "力学系におけるブランケット時間",
+          "summary": "本論文では、典型的な軌道に沿った経験分布が不変測度に近似される速さを定量化する「動的ブランケット時間（dynamical blanket times）」を導入した。これは、空間内で軌道が稠密になる速さを測る「動的カバー時間」の測度論的な類似概念である。有限枝を持つ一様拡大区間写像において、期待ブランケット時間の上限を空間スケールと近似精度を用いて導出し、不変測度がルベーグ測度に対して絶対連続な場合には、十分小さなスケールにおいて期待ブランケット時間と期待カバー時間が比較可能であることを示した。解析手法として、ターゲットの位置と空間スケールに関して一様な到達時間の大きな偏差の見積もりと、多重フラクタル解析を用いた不変測度の離散化モデルを組み合わせている。",
+          "keywords": [
+            "dynamical blanket times",
+            "dynamical cover time",
+            "uniformly expanding interval maps",
+            "large deviation estimates",
+            "multifractal analysis"
+          ],
+          "appendix": "本論文は、symbolic dynamicsの分野と深く関連しており、特に力学系の軌道の統計的性質や分布の収束速度を扱う研究に位置づけられます。"
+        },
+        "http://arxiv.org/abs/2606.18880v1": {
+          "title": "SL₂(O) および PSL₂(O₂) 上のエンゲル語の全射性",
+          "summary": "本論文では、局所環上の線形群におけるエンゲル語写像 eₘ(x, y) = [[...[x, y], y], ..., y] の全射性について研究している。具体的には、完備局所主イデアル環 O または有限長の局所主イデアル環 O_ℓ 上の SL₂(R) および PSL₂(R) を対象としている。剰余体 k ≅ F_q の標数が 2 でないという条件のもと、q が十分に大きい（q ≥ q₀(m)）ならば、SL₂(k) の非スカラー元の SL₂(O) へのすべての持ち上げが第 m 次エンゲル語写像の像に含まれることを示した。さらに、長さ 2 の局所主イデアル環 O₂ 上の PSL₂(O₂) において、すべてのエンゲル語写像が全射であることを証明した。本成果は、体上のエンゲル語写像に関する既存の結果を一般化するものである。",
+          "keywords": [
+            "Engel word maps",
+            "SL₂(O)",
+            "PSL₂(O₂)",
+            "local rings",
+            "word maps"
+          ],
+          "appendix": "本論文は線形代数群および環上の群構造を扱っており、興味ある分野として挙げられた「structure of large countable infinite group」に関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2606.18878v1": {
+          "title": "複雑イベント認識のための計算可能なギャップ制約付き言語",
+          "summary": "文字列uの文字列Dへの部分列埋め込みにおいて、埋め込まれた文字間の要因が特定の正則言語Lに属することを要求する「ギャップ制約」付き部分列照合問題を検討している。一般にこの問題はNP完全であるが、本論文では「左凸性（left-convexity）」という新しい性質を持つ言語（uvw ∈ L かつ v ∈ L ならば uv ∈ L）を提案した。左凸言語は長さ制約など実用的なシナリオを表現可能であり、これを用いることで、任意のインターフェース構造を持つ制約に対して、SETHの下で最適に近い時間計算量 O(|D| (|u| + |C|)) で照合および列挙が可能であることを示した。一方で、非左凸言語を導入すると再びNP完全になることも示している。",
+          "keywords": [
+            "subsequence matching",
+            "gap-constraints",
+            "complex event recognition",
+            "left-convex languages",
+            "NP-complete"
+          ],
+          "appendix": "この論文は、正則言語のクラスやその組合せ論的性質を扱っているため、automata theory および combinatorics on words と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.19399v1": {
+          "title": "VERITAS: ゼロショット形式定理証明のための検証器誘導型証明探索",
+          "summary": "LLMを用いた形式定理証明において、検証器から得られる詳細な信号（構文エラー、型不一致、部分的なゴールの進捗）を単なる成否判定に留めず、証明探索のガイドとして活用するフレームワーク「VERITAS」を提案する。この手法は、Best-of-Nサンプリングを行う第1フェーズと、その失敗例を負の例として明示的に取り入れる批判モデル（Critic）誘導型のモンテカルロ木探索（MCTS）を行う第2フェーズの2段階プロトコルで構成される。miniF2Fベンチマークで40.6%の正解率を達成したほか、新たに導入した55の組合せ論問題からなる「VERITAS-CombiBench」において、検証器のフィードバックから補題名を反復的に特定する探索の有効性を示した。",
+          "keywords": [
+            "Zero-Shot Formal Theorem Proving",
+            "Verifier-Guided Proof Search",
+            "Monte Carlo Tree Search",
+            "Large Language Models",
+            "Formal Verification"
+          ],
+          "appendix": "本論文は組合せ論のベンチマークである「VERITAS-CombiBench」をリリースしており、興味ある分野の「combinatorics on words」を含む組合せ論全般に関連があります。また、証明の形式検証プロセスは「formal languages」や「automata theory」の応用領域としての側面も持っています。"
+        },
+        "http://arxiv.org/abs/2606.18754v1": {
+          "title": "白黒格子上のDyckパス",
+          "summary": "Dyckパスは、(0,0)から(n,n)へ至る(1,0)の右ステップと(0,1)の上ステップn個ずつからなり、直線y=xを超えない格子パスである。これらはカタラン数により数え上げられ、数え上げ組合せ論において中心的な役割を果たす。本論文では、整数格子をチェスボード状および列交互の2つのパターンで白黒に彩色し、パスの下にある白と黒のセルの数が等しくなるようなDyckパスの数え上げを行う。",
+          "keywords": [
+            "Dyck path",
+            "Catalan numbers",
+            "enumerative combinatorics",
+            "lattice path"
+          ],
+          "appendix": "数え上げ組合せ論や格子パスを扱う本研究は、興味ある分野のうち「combinatorics on words」と関連しています。"
+        },
+        "http://arxiv.org/abs/2606.18685v1": {
+          "title": "微分方程式の帰納的頑健性の公理化",
+          "summary": "本研究は、有界時間領域における多項式微分方程式を持つ動的システムの頑健な安全性（robust safety）に対する完全な公理化を確立したものである。安全性の性質を多項式不変量の公理系へと一律に還元し、論理的証明を可能にしている。また、任意の摂動パラメータ δ に対して、頑健な安全性の記号的証明を生成するか、あるいは δ レベルの摂動下で安全でないことを正しく判定する、近似的可決定なアルゴリズムを提示している。劣解析幾何学（subanalytic geometry）の結果を活用することで、境界での正の分離を必要とせずに、任意の有界な半代数的初期・終了条件に対する厳密さを維持した証明を可能とし、ハイブリッド動的システムにおける有限時間を超えた帰納的安全性の生成を実現している。",
+          "keywords": [
+            "robust safety",
+            "polynomial differential equations",
+            "axiomatization",
+            "approximate decidability",
+            "subanalytic geometry"
+          ],
+          "appendix": "本論文は「validated numerics」の分野に関連しています。動的システムの安全性に対する近似的可決定性の検討や、摂動パラメータを用いた計算手法は、精度保証付き数値計算の概念と深く関わっています。"
+        },
+        "http://arxiv.org/abs/2606.18674v1": {
+          "title": "SO(n, 1) の幾何学的有限な thin subgroup に対する Selberg の 3/16 定理の一般化",
+          "summary": "本論文では、算術的格子 Γ₀ < SO(n, 1) の幾何学的有限な thin subgroup である Γ について、その合同被覆における一様なスペクトルギャップの問題を扱っています。Bourgain-Gamburd-Sarnak による先行研究では、SL₂(ℝ) かつ臨界指数 δ_Γ > 1/2 の場合に一様なスペクトルギャップが示され、軌道へのアフィン篩法などの応用が示されました。本研究は、特に n ≥ 3 かつカスプが存在する場合に未解決であった δ_Γ ∈ (1/2, n - 2] という領域に焦点を当てています。カスプの存在に起因する可算無限のコーディングを扱うため、帰還軌道部分群の Zariski 稠密性および全トレース体性を証明する新しい手法を導入し、既存の理論の空白を埋めています。",
+          "keywords": [
+            "geometrically finite thin subgroups",
+            "congruence covers",
+            "spectral gap",
+            "critical exponent",
+            "Zariski density"
+          ],
+          "appendix": "本論文は、カスプを持つ群のコーディング（countably infinite coding）を扱っており、興味ある分野のうち「structure of large countable infinite group」および「symbolic dynamics」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.19645v1",
+        "http://arxiv.org/abs/2606.19632v1",
+        "http://arxiv.org/abs/2606.19606v1",
+        "http://arxiv.org/abs/2606.19596v1",
+        "http://arxiv.org/abs/2606.19532v1",
+        "http://arxiv.org/abs/2606.19500v1",
+        "http://arxiv.org/abs/2606.19473v1",
+        "http://arxiv.org/abs/2606.19322v1",
+        "http://arxiv.org/abs/2606.19260v1",
+        "http://arxiv.org/abs/2606.19246v1",
+        "http://arxiv.org/abs/2606.19234v1",
+        "http://arxiv.org/abs/2606.19071v1",
+        "http://arxiv.org/abs/2606.19045v1",
+        "http://arxiv.org/abs/2606.19017v1",
+        "http://arxiv.org/abs/2606.18938v1",
+        "http://arxiv.org/abs/2606.18926v1",
+        "http://arxiv.org/abs/2606.18880v1",
+        "http://arxiv.org/abs/2606.18878v1",
+        "http://arxiv.org/abs/2606.19399v1",
+        "http://arxiv.org/abs/2606.18754v1",
+        "http://arxiv.org/abs/2606.18685v1",
+        "http://arxiv.org/abs/2606.18674v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-20T06:41:41.497207+00:00",
-      "updated_at": "2026-06-20T09:47:47.371925+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-20T10:45:06.021244+00:00",
+      "finalized_at": "2026-06-20T10:45:06.021216+00:00"
     }
   ]
 }
