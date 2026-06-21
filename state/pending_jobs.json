@@ -68532,7 +68532,7 @@
     },
     {
       "pipeline_id": "20260621T070712Z-654b9e27",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/kvl2ojw33hcl6h4b9at045w6z9frjgexj5hv",
       "summarize_job_name": "batches/gourwmxe73qehgu4agl8hmo9zz4hb58vkk8b",
       "papers": [
@@ -69080,14 +69080,272 @@
         "http://arxiv.org/abs/2606.19779v1",
         "http://arxiv.org/abs/2606.19761v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.20509v1": {
+          "title": "大きなヒステリシスを持つ平面上の定数区分的滑らかなベクトル場",
+          "summary": "本論文では、疾患治療の投与・停止の切り替えなど、実社会で広く利用されながらも理論的基盤が未整備であったヒステリシスを伴う制御システムの数学的解析を行う。具体的には、病変細胞のレベルが閾値 C₁ を下回ると治療を停止し、より高い閾値 C₂ に達すると再開するようなモデルを想定している。本研究の第一歩として、2つの線形ベクトル場と2つのスイッチング境界を持つ平面上のシステムにおいて、極限集合の特定を試みる。",
+          "keywords": [
+            "hysteresis",
+            "piecewise smooth vector fields",
+            "limit sets",
+            "switching boundaries",
+            "control systems"
+          ],
+          "appendix": "本研究は力学系の極限集合の挙動を扱っており、複素力学系（complex dynamics）に関連する側面を含んでいます。"
+        },
+        "http://arxiv.org/abs/2606.20492v1": {
+          "title": "A-COMPASS: マイクロデータにおける匿名性解析の形式的基盤",
+          "summary": "情報社会における個人のプライバシー保護は重要な課題であり、多様なプライバシーモデルが登場しているが、それらの形式的検証は未だ十分に探索されていない。本論文では、先行研究であるCOMPASS言語を改良し、通常のマイクロデータ形式（1レコード1個人）に対応させたA-COMPASSを提案する。A-COMPASSは匿名性条件のチェックに加え、新たに匿名化アクションの実行機能を備えている。論文内では本言語の構文と意味論を定義し、決定論性や構成性といった重要な性質を証明するとともに、k-anonymityやl-diversityなどの匿名性指標を検証するメカニズムを提供している。",
+          "keywords": [
+            "A-COMPASS",
+            "microdata",
+            "formal verification",
+            "k-anonymity",
+            "l-diversity"
+          ],
+          "appendix": "本論文は言語の構文や意味論、および形式的な検証手法を扱っているため、興味ある分野のうち「formal languages」および「automata theory」に関連します。"
+        },
+        "http://arxiv.org/abs/2606.20456v1": {
+          "title": "単射半径の急速な増大と十分なloxodromic元を持つlacunary双曲群はselflessである",
+          "summary": "本論文では、十分なgeneric元を持ち、単射半径 rᵢ と双曲定数 δᵢ が条件 δᵢ(log rᵢ)⁷ = o(rᵢ) を満たすlacunary双曲群 G = lim Gᵢ が、Amrutam–Gao–Kunnawalkam Elayavalli–Patchellの定義におけるselflessであることを証明しました。証明にはacylindricity（円筒的双曲性）に基づく手法の代わりに、任意のδ-双曲空間に適用可能なArzhantsevaの測地的n角形判定法を用いています。この結果、捩れのないTarski monsterやGromov monster群などが特定のパラメータ選択においてこの条件を満たすことが示されました。また、アメナブルな例を用いることでselflessとC*-selflessの性質を分離し、Gromov monster群の例が厳密な比較（strict comparison）を持つ非核的C*-環の構成に繋がる可能性についても言及しています。",
+          "keywords": [
+            "Lacunary hyperbolic groups",
+            "Selfless groups",
+            "Injectivity radius",
+            "Gromov monster groups",
+            "C*-selfless"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「structure of large countable infinite group」と密接に関連しています。特に、Tarski monsterやGromov monsterといった巨大な離散無限群の幾何学的構造および、それらに付随するC*-環の性質についての重要な知見を提供しています。"
+        },
+        "http://arxiv.org/abs/2606.20454v1": {
+          "title": "接頭辞依存合同の下でのランダムMooreオートマトンの最小性",
+          "summary": "状態出力を伴うランダムな決定性遷移系における、接頭辞に依存する合同（prefix-dependent congruences）を研究した論文。この枠組みでは、2つの状態を比較するための許容可能な継続系列が観測された接頭辞に依存し、将来の出力を区別する共通の許容継続系列が存在しない場合にのみ状態が同一視される。遷移が独立かつ一様であるランダムモデルにおいて、各状態のラベル一致確率が1未満かつ許容シンボルが3つ以上存在する場合、誘導される合同は高い確率で自明（すべての状態が区別可能）になることを示した。証明には、ペアの枝刈りプロセスや衝突のない探索、一次モーメント法などが用いられている。",
+          "keywords": [
+            "prefix-dependent congruences",
+            "random deterministic transition systems",
+            "probabilistic deterministic finite automata",
+            "trivial congruence"
+          ],
+          "appendix": "この論文は興味ある分野の「automata theory」および「formal languages」に関連しています。確率的決定性有限オートマトン（PDFA）の最小化や構造的性質を確率論的手法で解明しており、オートマトン理論の基礎的な問いに答える内容となっています。"
+        },
+        "http://arxiv.org/abs/2606.20452v1": {
+          "title": "非支配的なedge-endを表示するtree-cut decomposition",
+          "summary": "本論文では、すべての非支配的なedge-endを表示し、有限のadhesionを持つ、linkedかつcomponentalな根付きtree-cut decompositionが任意のグラフに存在することを証明している。応用として、この分解が非支配的なedge-endのedge-degreeも表示することを示した。局所有限グラフにおいては、すべての端（end）が非支配的なedge-endとなるため、この結果はすべての端とそのedge-degreeを表示する有限の部片（parts）への連結された分解を与える。さらに、Thomassenの境界連結有限分割に関する定理や、BruhnとSteinによるオイラー的局所有限グラフの特徴付けに対する簡潔で統一的な導出を提供している。",
+          "keywords": [
+            "tree-cut decomposition",
+            "undominated edge-ends",
+            "edge-degree",
+            "locally finite graphs",
+            "finite adhesion"
+          ],
+          "appendix": "無限グラフの構造（ends）を扱っている点において「structure of large countable infinite group」と密接に関連しています。また、グラフの分割や連結性、オイラー的性質に関する議論は、組合せ論的な側面からも興味深い内容となっています。"
+        },
+        "http://arxiv.org/abs/2606.20439v1": {
+          "title": "奇数進法における4桁のカプレカ力学系",
+          "summary": "奇数進法 B > 3 における4桁のカプレカ・ルーチン（数字を降順と昇順に並べ替えて差を取る操作）の構造を解析した。全ての非定数な軌道は、高々3回の反復の後に特定の三角形領域 T_B に入り、その領域上で写像は射影的な2倍写像 {[r],[s]} ↦ {[2r],[2s]} と共役になることを示した。これにより、終端サイクルの長さや個数に関する完全な有限記述が可能となり、最大サイクル長が (B-1)/2 以下であることや、それが等号となる素数進法の条件（2ᵐ ≡ ±1 (mod p) を満たす最小の m が (p-1)/2 であること）を証明した。また、本成果は AxiomProver を介して Lean/mathlib により形式化されている。",
+          "keywords": [
+            "Kaprekar routine",
+            "arithmetic dynamics",
+            "projective doubling",
+            "terminal cycles",
+            "odd bases"
+          ],
+          "appendix": "本論文は「arithmetic dynamics」の分野に密接に関連しています。また、定理の証明が Lean/mathlib によって形式化されている点も特徴です。"
+        },
+        "http://arxiv.org/abs/2606.20407v1": {
+          "title": "連続体の同相写像群の普遍極小流",
+          "summary": "本論文では、プロジェクト的Fraïssé圏における「近似ラムゼイ属性（approximate Ramsey property）」という組合せ論的性質を定義した。連続体 F、その同相写像群の閉部分群 G、および Aut(𝔽) が G において稠密となるようなプロジェクト的Fraïssé圏 ℱ の極限 𝔽 について、ℱ が近似ラムゼイ属性を持つことと G が極めて従順（extremely amenable）であることが同値であることを示した。また、普遍疑似ソレノイド（universal pseudo-solenoid）の同相写像群が、距離化可能でない普遍極小流を持つことを証明した。",
+          "keywords": [
+            "approximate Ramsey property",
+            "projective Fraisse category",
+            "extremely amenable",
+            "universal minimal flow",
+            "continuum"
+          ],
+          "appendix": "この論文は、巨大な群の構造や性質を扱う点で「structure of large countable infinite group」の分野に関連しています。また、力学系理論の側面から symbolic dynamics とも接点を持ちます。"
+        },
+        "http://arxiv.org/abs/2606.20348v1": {
+          "title": "q-マトロイドの数え上げ",
+          "summary": "本論文では、古典的なマトロイドのq-類似であるq-マトロイドについて、固定された基底空間と階数を持つ場合の個数を調査している。特にpavingおよびsparse-paving q-マトロイドの数え上げに焦点を当て、定次元符号を用いた構成法により新たな下界を導出するとともに既存の推定値を改良した。上界については、paving q-マトロイドの従属超平面の数を制御する組合せ論的なアプローチと、簡約の下で閉じているクラスに適用可能なエントロピーに基づく数え上げ議論の2つの手法を開発した。これにより、対数的なq-マトロイドの数に対する明示的な上界を与え、漸近的な振る舞いの分析を通じて真の漸近的成長に関する予想を提示している。",
+          "keywords": [
+            "q-matroids",
+            "paving q-matroids",
+            "sparse-paving q-matroids",
+            "constant-dimension codes",
+            "enumeration"
+          ],
+          "appendix": "この論文は組合せ論（combinatorics）に深く関連しており、特に対象とするq-マトロイドの構造や数え上げの手法は、有限幾何や符号理論といった広義の組合せ論的性質に基づいています。"
+        },
+        "http://arxiv.org/abs/2606.20325v1": {
+          "title": "再帰型ニューラルネットワークは連続関数を近似する",
+          "summary": "従来の近似定理は目標精度が高まるたびに新しいネットワークを必要としていたが、本論文では「ネットワークの構造や重みを一度固定し、実行時間（ステップ数）を増やすだけで任意の精度を達成できるか」という問題を検討した。その結果、固定された隠れ層次元と重みを持つ単一のReLU再帰型ニューラルネットワーク（RNN）の時系列発展により、[-1, 1]上のあらゆる連続関数を一様に近似可能であることを証明した。この構築の核となるのは、多項式近似スキームを実装可能なアルゴリズム的自由度とRNNでのシミュレーション適合性を兼ね備えた新モデル「Turing machine with neural units (TMNU)」である。また、実行時間が単なる証明の産物ではなく、固定ネットワーク近似パラダイムにおける不可避なリソースであることを示すミニマックス下限も提示している。",
+          "keywords": [
+            "Recurrent neural networks",
+            "Turing machine with neural units",
+            "polynomial approximation",
+            "fixed-network approximation",
+            "minimax lower bounds"
+          ],
+          "appendix": "本論文で導入されたTuring machine with neural units (TMNU) や、固定されたネットワークの計算能力を扱う点は、automata theoryやformal languagesの分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.20188v1": {
+          "title": "繰り込み、等ポテンシャル環、およびハウスドルフ測度",
+          "summary": "次数 d の複素一変数多項式 f において、充填ジュリア集合 K が、f が次数 d_* < d の写像として作用する不変成分 K* を持つ場合を検討する。これは、Douady-Hubbard による正則多項式的繰り込みの最も単純な事例である。K* へ向かう滑らかなレイ、または折れ線状のレイの偏角の集合として定義される、円周上のカントール集合的集合 G' に注目し、G' のハウスドルフ次元および対応するハウスドルフ測度が K* の幾何学において果たす役割を記述する。具体的には、繰り込みのモジュラスに対する上限と下限を、K* のハウスドルフ測度を用いて与えている。",
+          "keywords": [
+            "Renormalization",
+            "Filled Julia set",
+            "Hausdorff measure",
+            "Holomorphic polynomial-like mapping"
+          ],
+          "appendix": "本論文は「complex dynamics」の分野に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.20147v1": {
+          "title": "超越整関数のリフトに関連する内部関数",
+          "summary": "超越整関数のFatou成分における挙動を解析するため、リーマン写像を用いて定義される単位円板上の内部関数（inner function）が利用される。本論文では、超越整関数 h のリフトとして構成される関数 f に対し、f の制限に付随する内部関数を h に付随する内部関数から計算する一般的な手法を提案した。この手法は、有限次数だけでなく無限次数の場合も含み、前方不変なFatou成分や遊走領域（wandering domains）に対しても有効である。本研究はEvdoridouらによる先行研究を大幅に一般化し、既存の多くの関数に適用可能であることを示している。",
+          "keywords": [
+            "transcendental entire function",
+            "inner function",
+            "Fatou component",
+            "wandering domain",
+            "lift"
+          ],
+          "appendix": "本論文は、超越整関数のFatou成分の構造を解析するものであり、指定された興味ある分野の「complex dynamics」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.20134v1": {
+          "title": "弱メモリ検証と頑健性のためのMSOフレームワーク",
+          "summary": "コンパイラやアーキテクチャの最適化によって生じる弱メモリモデルの検証を統一的に扱うため、モノディック二階論理 (MSO) をメタ理論として用いた理論的枠組みを提案している。具体的には、SCの下での実行は有界な木幅を持つがTSOでは持たないこと、およびRelease/AcquireやRC20などの広範なモデルがMSOで公理化可能であることを証明した。また、新たに「reads-from robustness」という概念を導入し、MSO公理化可能なモデルに対して、プログラムの検証または頑健性の欠如を報告するアルゴリズムを構築した。これにより、弱メモリの検証と頑健性判定における豊かな理論的基盤を確立している。",
+          "keywords": [
+            "Monadic Second-Order logic",
+            "weak-memory models",
+            "treewidth",
+            "reads-from robustness",
+            "MSO-axiomatizable"
+          ],
+          "appendix": "この論文は、オートマトン理論 (automata theory) や形式言語 (formal languages) と密接に関連する記述計算量の概念（MSO論理）をメモリモデルの検証に応用しており、計算機科学の理論的側面から「興味ある分野」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.20085v1": {
+          "title": "巨大な cross-intersecting 族の構造と性質",
+          "summary": "Erdős, Ko, Radoに始まる交差族（intersecting family）の研究を発展させ、本論文では2つの族の間の交差性を扱う cross-intersecting 族の構造を解明しています。Kupavskii の定理を cross-intersecting の設定へと拡張する構造定理を確立し、diversity と極大 cross-intersecting 拡張の観点から極値的な対を特徴付けました。これにより Han–Kohayakawa や Huang–Peng の古典的定理の cross-intersecting 版を導出しています。証明の鍵として、大域的な交差性を保ちつつ局所的な部分構造を維持する新しいシフト操作 S_{U,V}^{Q}-shift を導入しており、これは他の問題への応用も期待されます。",
+          "keywords": [
+            "cross-intersecting families",
+            "extremal combinatorics",
+            "diversity",
+            "shifting method",
+            "Hilton-Milner theorem"
+          ],
+          "appendix": "本論文は、極値組合せ論（extremal combinatorics）を扱っており、興味ある分野に含まれる combinatorics に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.20043v1": {
+          "title": "交差族の対称差に対する改良された境界",
+          "summary": "交差族 F ⊆ ([n] choose k) と、その対称差の集合 SD(F) = {F △ G : F, G ∈ F} を考える。2023年に Frankl, Kiselev, Kupavskii は、n > 10k のとき |SD(F)| ≤ Σ_{ℓ=0}^{k-1} (n-1 choose 2ℓ) が成立すると予想した。本論文では、集中不等式を用いることで、n ≥ 60k^{3/2} かつ k ≥ 50 という条件下でこの予想を証明した。また、等号を成立させる極値族が特定のスターのクラスであることを決定した。",
+          "keywords": [
+            "intersecting family",
+            "symmetric difference",
+            "extremal set theory",
+            "concentration inequality"
+          ],
+          "appendix": "本論文は、集合族の構造や極値問題を扱っているため、興味ある分野のうち combinatorics (組合せ論) に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.19936v1": {
+          "title": "Prismriver: Lean 4における音楽理論とアルゴリズム作曲の形式化",
+          "summary": "本論文では、数学的な規則や対称性を持つ音楽理論を、定理証明支援系であるLean 4を用いて形式化する手法を提案している。音楽理論を厳密な論理言語で記述することにより、検証可能なアルゴリズム作曲や伴奏生成、さらには音楽構造のモナド的解析といった応用を可能にしている。",
+          "keywords": [
+            "Lean 4",
+            "music theory",
+            "algorithmic composition",
+            "formalization",
+            "monadic analysis"
+          ],
+          "appendix": "本論文は、音楽の構造を形式的に記述・解析する手法を扱っており、興味ある分野のうち「formal languages」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.19880v1": {
+          "title": "自由群におけるRapid Decay性質へのRiesz-Thorinアプローチ",
+          "summary": "自由群のGromov境界上における準正則表現に付随する作用素のLᵖ有界性を確立した。p=2の場合にHaagerupの不等式を導出することで、自由群のRapid Decay性質に対する補間論を用いた新たな証明を与えている。",
+          "keywords": [
+            "free group",
+            "Gromov boundary",
+            "quasi-regular representation",
+            "Rapid Decay property",
+            "Haagerup's inequality"
+          ],
+          "appendix": "自由群の表現論や性質を扱っており、「structure of large countable infinite group」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.19822v1": {
+          "title": "交互リアルタイムオートマトンの学習",
+          "summary": "本論文では、メンバーシップクエリと等価性クエリを用いて交互リアルタイムオートマトン（ARTA）を学習するアルゴリズムであるAL*RTAを提案する。この手法は、交互有限オートマトンを学習するAL*と、非決定性リアルタイムオートマトンを学習するNL*RTAの着想を組み合わせたものである。著者らはARTAを定義し、交互性が表現力を維持したまま記述の簡潔さを向上させることを示した。また、AL*RTAの停止性を証明し、実験的評価を通じて、NL*RTAと比較してより多くのクエリを必要とするものの、より小さなオートマトンを学習できる傾向があることを明らかにした。",
+          "keywords": [
+            "alternating real-time automata",
+            "AL*RTA algorithm",
+            "membership and equivalence queries",
+            "succinctness"
+          ],
+          "appendix": "この論文は「automata theory」および「formal languages」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.19800v1": {
+          "title": "Full Gabor frame、その存在問題、および非一様なBalian-Low型定理",
+          "summary": "本論文では、数学および物理学において重要な意味を持つRⁿ内の広範なDelone集合に対し、非一様なBalian-Low型定理を証明し、任意次元nにおけるGabor frameの存在に関する逆問題を解決しています。著者らは「Full Gabor frame」というクラスを導入し、Schwartz関数を窓関数とするこのようなフレームがDelone集合上に存在することと、下Beurling密度が1より厳密に大きいことが同値であることを示しました。Feichtinger代数の窓関数を用いた従来のBalian-Low型の方向は任意の点集合に対して証明可能であり、先行研究の密度定理を改良しています。また、Riesz列に対する双対的な結果も得られています。手法としてはタイリング・グルポイド（tiling groupoid）の構築とC*-代数的な手法が用いられており、副産物としてタイリング・グルポイドの有界動的漸近次元に関する未解決問題を解決し、分類定理をツイスト（twisted）ケースに拡張しています。",
+          "keywords": [
+            "Full Gabor frames",
+            "Delone sets",
+            "Balian-Low type theorem",
+            "Tiling groupoids",
+            "Beurling density"
+          ],
+          "appendix": "本論文は、タイリング・グルポイドのC*-代数的性質や力学系の次元論（bounded dynamical asymptotic dimension）を扱っており、興味ある分野のうち「structure of large countable infinite group」に関連する群論的・位相幾何学的側面を含んでいます。"
+        },
+        "http://arxiv.org/abs/2606.19779v1": {
+          "title": "高ランクにおける相対的 Morse 群に対する大域的シャドウ補題",
+          "summary": "Patterson-Sullivan 測度は、境界付近における離散群作用の軌道の分布を記述するものである。本論文では、高ランク半単純 Lie 群の相対的 Morse 部分群に付随する Patterson-Sullivan 測度について、大域的シャドウ補題を証明した。この推定は、カスプの深部にある点を含む Gromov モデル内の任意の点を中心とするシャドウに対して一様であり、幾何学的有限な実双曲群に対する Stratmann-Velani の結果を拡張している。応用として、Patterson-Sullivan 測度の一様な局所評価を導出し、それらが視覚的擬距離から定義される Hausdorff 測度と定数倍を除いて一致するための十分条件を与えている。",
+          "keywords": [
+            "Patterson-Sullivan measures",
+            "relatively Morse subgroups",
+            "higher-rank semisimple Lie groups",
+            "global shadow lemma",
+            "Gromov model"
+          ],
+          "appendix": "本論文は、高ランク半単純 Lie 群の離散部分群の構造や測度論的性質を扱っているため、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.19761v1": {
+          "title": "ハイブリッド論理 L(∀) に対する Lean 4 による Oltean の完全性証明の完遂",
+          "summary": "本論文は、名辞(nominals)、満足型束縛子 ∀、およびボックス様相を持つハイブリッド論理 L(∀) の完全性定理を、定理証明支援系 Lean 4 を用いて形式化した研究である。Alex Oltean による先行研究（構文、意味論、健全性までを実装）を継承し、未完成であった完全性証明を完遂させた。証明の核心は、2つの異なる手法による「新鮮な名前」の生成にある。1つは Lindenbaum 構成において言語を拡張し無限の供給を確保する構造的な新鮮さであり、もう1つは Henkin 構成において先行する状態の目撃特性から証拠を抽出する手法である。本研究は mathlib v4.30.0 に対応し、sorry を含まない完全に検証された形式化（Γ ⊨ φ → Γ ⊢ φ）を実現している。",
+          "keywords": [
+            "Hybrid Logic",
+            "Lean 4",
+            "Completeness Theorem",
+            "Formal Verification",
+            "Henkin Construction"
+          ],
+          "appendix": "本論文は数理論理学および形式検証に関するものであり、指定された「興味ある分野」との直接的な関連はありません。証明支援系を用いた様相論理の形式化における、名前の新鮮さ（freshness）の管理という計算機科学的な技術課題を解決した内容となっています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.20509v1",
+        "http://arxiv.org/abs/2606.20492v1",
+        "http://arxiv.org/abs/2606.20456v1",
+        "http://arxiv.org/abs/2606.20454v1",
+        "http://arxiv.org/abs/2606.20452v1",
+        "http://arxiv.org/abs/2606.20439v1",
+        "http://arxiv.org/abs/2606.20407v1",
+        "http://arxiv.org/abs/2606.20348v1",
+        "http://arxiv.org/abs/2606.20325v1",
+        "http://arxiv.org/abs/2606.20188v1",
+        "http://arxiv.org/abs/2606.20147v1",
+        "http://arxiv.org/abs/2606.20134v1",
+        "http://arxiv.org/abs/2606.20085v1",
+        "http://arxiv.org/abs/2606.20043v1",
+        "http://arxiv.org/abs/2606.19936v1",
+        "http://arxiv.org/abs/2606.19880v1",
+        "http://arxiv.org/abs/2606.19822v1",
+        "http://arxiv.org/abs/2606.19800v1",
+        "http://arxiv.org/abs/2606.19779v1",
+        "http://arxiv.org/abs/2606.19761v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-21T07:07:12.153794+00:00",
-      "updated_at": "2026-06-21T10:26:15.797468+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-21T12:24:21.355359+00:00",
+      "finalized_at": "2026-06-21T12:24:21.355337+00:00"
     }
   ]
 }
