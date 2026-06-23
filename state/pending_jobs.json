@@ -69349,7 +69349,7 @@
     },
     {
       "pipeline_id": "20260623T061916Z-484b527c",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/lhcheedbq8wuhirz9up66z7iro50mw2jbkp3",
       "summarize_job_name": "batches/93q8d2k2dikzcz7xccysszbz4psgk8zp3fos",
       "papers": [
@@ -69659,14 +69659,94 @@
         "http://arxiv.org/abs/2606.21865v1",
         "http://arxiv.org/abs/2606.21817v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.22221v1": {
+          "title": "Panmagic PermutationとN項群",
+          "summary": "Panmagic Permutationとは、その置換行列がPanmagic Square（汎魔法陣）となるような置換を指し、これはトーラス上のチェス盤において互いに攻撃し合わないクイーンの最大配置に対応する。本論文では、法演算を用いた線形公式で記述されるアフィンPanmagic Permutationに焦点を当て、それらが3つ以上の要素を積にとることで顕著な代数的性質を示すことを明らかにする。群論の観点からは、これらは全アフィン置換群における二面体群の特別な剰余類として定義される。さらに、Panmagic Permutationを互いに素なサイクルに分解する問題を調査し、乗法位数、4k+1型の素数、原始根、二次剰余といった数論の古典的なトピックとの密接な関連性を示す。",
+          "keywords": [
+            "Panmagic permutations",
+            "Panmagic squares",
+            "N-ary groups",
+            "Affine permutations",
+            "Modular arithmetic"
+          ],
+          "appendix": "組合せ数学（Combinatorics）や数論的ダイナミクス（Arithmetic dynamics）に関連する数論的対象を扱っています。"
+        },
+        "http://arxiv.org/abs/2606.22155v1": {
+          "title": "対称彩色を用いた Hales-Jewett 数に対する下界の改善",
+          "summary": "本論文では、r色で彩色されたn次元の立方体 [t]ⁿ において単色組合せ線が必ず存在する最小次元である Hales-Jewett 数 HJ(t, r) について、HJ(3, 3) ≥ 22 および HJ(4, 2) ≥ 14 という新しい下界を示した。これは従来の HJ(3, 3) ≥ 14 および HJ(4, 2) ≥ 12 を更新するものである。これらの境界は、立方体を文字数カウントベクトルの離散単体に圧縮する座標対称彩色を用いて得られた。これにより、線が存在しない条件を多項式サイズの制約充足問題に変換している。境界の正当性は 600 セル未満の明示的な表と機械的なチェックによって証明され、SAT ソルバーによる発見プロセスとは独立して検証可能である。",
+          "keywords": [
+            "Hales-Jewett number",
+            "symmetric colorings",
+            "combinatorial line",
+            "constraint-satisfaction problem",
+            "SAT solver"
+          ],
+          "appendix": "この論文は「combinatorics on words」と密接に関連しています。Hales-Jewett 定理は語の組合せ論における基礎的な結果の一つであり、単色組合せ線の探索は記号力学系や有限オートマトン上の彩色問題とも深い繋がりがあります。"
+        },
+        "http://arxiv.org/abs/2606.22070v1": {
+          "title": "Pascal型Sprugnoli配列",
+          "summary": "本論文では、回文的（palindromic）またはPascal型のSprugnoli配列の構造と性質を調査しています。著者らは、これらに関連する2つの主要な族が存在することを明らかにし、各族の要素に対する閉形式の表現、およびそれらの逆配列の形式を導出しています。さらに、これらの配列を法2（modulo 2）で扱った際に生じる算術数列についても考察を行っています。",
+          "keywords": [
+            "Sprugnoli arrays",
+            "Pascal-like arrays",
+            "palindromic arrays",
+            "inverse arrays",
+            "arithmetic sequences"
+          ],
+          "appendix": "本論文は組み合わせ論的な配列や、その法2における性質を扱っており、数論的側面から「arithmetic dynamics」や、配列の生成パターンという点から「combinatorics on words」の分野に関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2606.21976v1": {
+          "title": "決定性および一意性有限オートマトンの族を用いた確率的モデル検査",
+          "summary": "本論文では、ω-正則言語を簡潔に表現するモデルである「決定性有限オートマトンの族（FDFA）」を用いた確率的モデル検査の有効性を検討している。まず、離散時間マルコフ連鎖（DTMC）がFDFAで表現された性質を満たす確率を多項式時間で計算する初のアルゴリズムを提案した。さらに、さらなる簡潔さを求めて「一意性有限オートマトンの族（FUFA）」を新たに導入した。FUFAは、FDFAや一意性Büchiオートマトンよりも指数的に簡潔な表現が可能であり、線形時相論理（LTL）からFUFAへの変換が単一指数関数的に行えることを示した。また、特定の条件を満たすFUFAに対しても、多項式時間の確率的モデル検査アルゴリズムが拡張可能であることを証明している。",
+          "keywords": [
+            "Families of Deterministic Finite Automata",
+            "Families of Unambiguous Finite Automata",
+            "Probabilistic model checking",
+            "Discrete-time Markov chains",
+            "ω-regular languages"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に関連しています。LTLからFDFAへの変換における二重指数関数的な下界に対し、FUFAを用いることで単一指数関数的な変換が可能になるという計算量的な利点が示されています。"
+        },
+        "http://arxiv.org/abs/2606.21865v1": {
+          "title": "Schreier型集合と線形漸化式：関連性と展開",
+          "summary": "本論文では、Schreier型集合の数え上げから線形漸化式を導出するための、公式、全単射による証明、数学的帰納法、包含排除の原理、特性多項式法などの共通手法を提示している。新規の貢献として、対称極大Schreier集合、特定の整数を含むSchreier集合、および特定の等差数列を避けるSchreier集合について調査している。これらの結果と多様な証明手法は、この分野に関心を持つ学部生の研究者にとって有益なリソースとなることが期待される。",
+          "keywords": [
+            "Schreier-type sets",
+            "Linear recurrences",
+            "Bijective proofs",
+            "Inclusion-exclusion principle",
+            "Characteristic polynomial method"
+          ],
+          "appendix": "本論文は数え上げ組合せ論の手法を詳述しており、興味ある分野の中では「combinatorics on words」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.21817v1": {
+          "title": "SL₂ の有界初等生成：ほぼ結末へ",
+          "summary": "大域体 K の S-整数環 𝒪ₛ において、すべての 2×2 単モジュラ行列は 7 個以下の初等行列の積として表されることを証明した。この結果は、50 年以上前に始まった SL₂(𝒪ₛ) の有界初等生成に関する研究において、ほぼ最適かつ決定的な境界を与えるものである。",
+          "keywords": [
+            "Bounded elementary generation",
+            "SL₂(𝒪ₛ)",
+            "Elementary matrices",
+            "S-integers",
+            "Global field"
+          ],
+          "appendix": "この論文は「structure of large countable infinite group」の分野、特に無限群の代数的構造や生成原理に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.22221v1",
+        "http://arxiv.org/abs/2606.22155v1",
+        "http://arxiv.org/abs/2606.22070v1",
+        "http://arxiv.org/abs/2606.21976v1",
+        "http://arxiv.org/abs/2606.21865v1",
+        "http://arxiv.org/abs/2606.21817v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-23T06:19:16.401103+00:00",
-      "updated_at": "2026-06-23T08:25:16.440489+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-23T10:55:34.788284+00:00",
+      "finalized_at": "2026-06-23T10:55:34.788250+00:00"
     }
   ]
 }
