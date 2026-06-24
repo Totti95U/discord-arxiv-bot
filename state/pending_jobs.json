@@ -69750,7 +69750,7 @@
     },
     {
       "pipeline_id": "20260624T061543Z-f383264f",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/kjggctf6hlvmz9plj1ef9zeus0rpi9b77a3a",
       "summarize_job_name": "batches/s1atxgkia5ezb1shjqzcyg4rypv5cbkxnx7g",
       "papers": [
@@ -69990,14 +69990,80 @@
         "http://arxiv.org/abs/2606.22422v1",
         "http://arxiv.org/abs/2606.22414v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.23748v1": {
+          "title": "k-交代順列の母関数の解析的導出",
+          "summary": "固定された整数 k ≥ 2 に対して、降下集合が k の倍数の集合に一致する順列の反転数を数え上げる。具体的には、このような順列の集合 Sₙ⁽ᵏ⁾ における反転数の多項式 aₙ⁽ᵏ⁾(q) を定義し、その q-指数型母関数 Fₖ(t;q) が 2 つの k 周期で打ち切られた q-指数級数の比として明示的な閉形式を持つことを示した。証明は q-指数級数の剰余類分解に基づく関数等式を用いた純粋に解析的な手法で行われ、ガウスの二項係数を含む畳み込み恒等式を導出している。これは周期的な降下制約を持つ順列クラスに対する、包除原理や構造的組合せ論に代わる解析的アプローチを提供している。",
+          "keywords": [
+            "k-alternating permutations",
+            "inversion enumerator",
+            "q-exponential generating function",
+            "Gaussian binomial coefficients",
+            "descent set"
+          ],
+          "appendix": "この論文は、順列の反転数や降下集合を扱う点において、[興味ある分野]の combinatorics on words と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.22585v1": {
+          "title": "(p,q)-変形一般化ワイル代数における正規順序化 I：代数的枠組みと組合せ論的恒等式",
+          "summary": "(p,q)-変形一般化ワイル代数の生成元 X, Y, Zₚ に関する正規順序化の問題を研究した論文である。本代数は、交換関係 XY - qYX = hYˢZₚ、XZₚ = pZₚX、ZₚY = pYZₚ（s ∈ ℕ₀）によって定義される。著者らはヤング図形を用いて任意の語を正規順序化する手法を調査し、特定の特殊なケースを明示的に導出している。特に、一般化スターリング数との関連性について詳細な考察が行われている。",
+          "keywords": [
+            "(p,q)-deformed generalized Weyl algebra",
+            "normal ordering",
+            "Young diagrams",
+            "generalized Stirling numbers"
+          ],
+          "appendix": "本論文は、生成元の代数的関係や語の書き換えを扱っているため、興味ある分野のうち「combinatorics on words」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.22485v1": {
+          "title": "VADAOrchestra: 適応型推論ワークフローのニューロシンボリック・オーケストレーション",
+          "summary": "実世界の意思決定における動的な推論プロセスをモデル化するため、ニューロシンボリック・フレームワークであるVADAOrchestraを提案している。従来のビジネスプロセス管理（BPM）システムが持つ厳密さと、大規模言語モデル（LLM）が持つ柔軟性を組み合わせるため、LLMベースのオーケストレーターがDatalog+/-の論理プログラムとしてワークフローを逐次的に計画・適応し、シンボリックエンジンがその推論を実行する。これにより、大規模データに対するスケーラビリティ、検証可能な推論トレース、および監査可能性を確保しており、金融分野の実用的なユースケースにおいて、従来のエージェントアーキテクチャと比較して高い忠実度と説明可能性を示している。",
+          "keywords": [
+            "Neurosymbolic",
+            "Datalog+/-",
+            "Large Language Models",
+            "Adaptive Reasoning",
+            "Orchestration"
+          ],
+          "appendix": "本論文で推論エンジンとして採用されているDatalog+/-は、理論計算機科学における「Automata theory」および「Formal languages」の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.22422v1": {
+          "title": "グラフにおけるk-limited支配について",
+          "summary": "支配頂点が外部の隣接頂点によって過負荷にならないよう容量制限（最大k個）を設けた新しい概念「k-limited支配」を提案している。グラフGの頂点集合Dがk-limited支配集合であるとは、Dが支配集合であり、かつD内の各頂点がDの外側に持つ隣接頂点がk個以下であることを指す。本研究では、この支配数に対する鋭い一般界を導出し、(1,t)-支配との関連性を示した。特にd-正則グラフにおいては、k-limited支配数が(1,d-k)-支配数に等しいことを証明している。また、k=1の場合にはグラフのパッキングと密接に関連することを示し、その特徴付けを行っている。",
+          "keywords": [
+            "k-limited domination",
+            "dominating set",
+            "graph packing",
+            "(1,t)-domination",
+            "regular graphs"
+          ],
+          "appendix": "グラフ理論および組合せ論の文脈で定義されており、興味ある分野の「combinatorics on words」などの組合せ論的分野と広義に関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2606.22414v1": {
+          "title": "じゃんけん型個体群動態における季節強制",
+          "summary": "本研究では、古典的なMay-Leonard競争系を拡張し、季節強制を導入した循環的優位モデルを調査している。成長率と相互作用項に時間周期的な係数を取り入れることで、環境の季節性が3種系の動態に与える影響を解析した。解析的評価と数値シミュレーションにより、多年にわたる周期サイクル、ヘテロクリニックサイクルへの遷移、カオス的振動など、複雑な振動挙動の出現を明らかにしている。周期的な変調は、安定した周期軌道を不安定化させ、新たなアトラクターを生成し、自律系には存在しない共存メカニズムをもたらす。これらの知見は、現実的で時間的に変化する生態学的条件下での生物多様性維持の理解に貢献するものである。",
+          "keywords": [
+            "Cyclic dominance models",
+            "May-Leonard framework",
+            "Seasonal forcing",
+            "Heteroclinic cycles",
+            "Chaotic oscillations"
+          ],
+          "appendix": "本論文は、周期的な外力を伴う非線形力学系における複雑な振動やカオス的挙動を扱っているため、興味ある分野の「complex dynamics」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.23748v1",
+        "http://arxiv.org/abs/2606.22585v1",
+        "http://arxiv.org/abs/2606.22485v1",
+        "http://arxiv.org/abs/2606.22422v1",
+        "http://arxiv.org/abs/2606.22414v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-24T06:15:43.067606+00:00",
-      "updated_at": "2026-06-24T06:40:18.634733+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-24T08:38:14.127943+00:00",
+      "finalized_at": "2026-06-24T08:38:14.127918+00:00"
     }
   ]
 }
