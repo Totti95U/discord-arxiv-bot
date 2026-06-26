@@ -71452,7 +71452,7 @@
     },
     {
       "pipeline_id": "20260626T062039Z-5db9fc5a",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/wfltv5z8b7wcscycud2is9f9a2f8e7q510kl",
       "summarize_job_name": "batches/ivilbehu76wkaldxauckjyzzczq7qjijlx3z",
       "papers": [
@@ -72331,14 +72331,259 @@
         "http://arxiv.org/abs/2606.24110v1",
         "http://arxiv.org/abs/2606.24074v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.25172v1": {
+          "title": "正規言語に対する厳密な局所アノテーション",
+          "summary": "正規言語は有限モノイドによって認識されるが、その局所的に検査可能な説明は、文字列の編集に際して非自明な更新幾何を持つ。本論文では、1文字置換操作下での正規言語に対する厳密な有界アリティ・アノテーションについて研究した。平衡積アノテーションを用いることで、定数局所性、線形サイズ、O(log n)の編集安定性、およびO(log n)の再検証コストでメンバーシップ判定が可能であることを示した。また、特定の積分解において1つの置換が祖先パス上の全ての商ラベルを変更するという設定のもと、下界がO(log n)に制限されることを証明した。さらに、アノテーションなしの有界ウィンドウ認識が厳密な局所性と一致することを示し、定数安定性の境界を有限障害問題として定式化した。",
+          "keywords": [
+            "regular languages",
+            "finite monoids",
+            "local annotations",
+            "edit stability",
+            "product decomposition"
+          ],
+          "appendix": "本論文は、automata theory, formal languages, combinatorics on wordsの分野に深く関連しています。補足資料にはLean、CP-SAT、CUDAによる証明や実験結果が含まれています。"
+        },
+        "http://arxiv.org/abs/2606.25109v1": {
+          "title": "素体上の二項数列",
+          "summary": "本論文では、パスカルの三角形の対角成分を素数pで割った余りに対応するp進二項数列（binomial p-ary sequences）について研究している。これまで周期が2のべき乗であるバイナリ数列（p=2）については、二項数列がその線形空間の基底をなすことや、線形複雑度、構成規則などの性質が詳細に分析されてきた。本研究ではこれを任意の素数pに拡張し、p進二項数列の固有の特性や形成規則を明らかにしている。具体的には、周期がpのべき乗であるp進数列の集合が有限体Fₚ上のベクトル空間を形成すること、および二項数列の集合がその空間の基底となることを証明している。",
+          "keywords": [
+            "binomial sequences",
+            "prime fields",
+            "Pascal's triangle",
+            "linear complexity",
+            "vector space"
+          ],
+          "appendix": "本論文は、数列の構造や組合せ論的な性質を扱っているため、興味ある分野のうち「combinatorics on words」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.25055v1": {
+          "title": "Pseudoshattering Pairs",
+          "summary": "[b]ᵏ の2つのベクトル x, y ∈ [b]ᵏ に対し、ある座標 t で (xₜ, yₜ) = (i, j) となる時に左側のノード i と右側のノード j を結ぶ二部グラフを構成し、任意の異なる2つのベクトルからなる二部グラフが閉路を持つような族 C ⊆ [b]ᵏ の最大サイズを調査している。本論文では、k が b に比して大きい場合に最適となる構成法を提案し、LYM型の上界がこの構成に対して漸近的にタイトであることを示した。特に k が b の倍数の時に厳密であり、k ≡ -1 (mod b) の場合にも円環順序を用いてタイトな境界を導出している。この問題は、Daniely–Shalev-Shwartz 次元や、多値アルファベットにおける Sauer-Shelah-Perles 補題の定式化に関連している。",
+          "keywords": [
+            "Pseudoshattering Pairs",
+            "bipartite graph",
+            "LYM-type upper bound",
+            "Daniely-Shalev-Shwartz dimension",
+            "Sauer-Shelah-Perles lemma"
+          ],
+          "appendix": "本研究は有限アルファベット上のベクトル（語）の組合せ論的な性質を扱っており、興味ある分野の「combinatorics on words」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.24878v1": {
+          "title": "Erdős-Lovászの被覆数問題における改良された下限",
+          "summary": "被覆数が r である r-一様交差ハイパーグラフの最小辺数を g(r) としたとき、Erdős と Lovász は g(r) ≥ 8r/3 - 3 という下限を証明していた。本論文では、まず g(r) ≥ 3r - 4 という初等的な証明を与え、さらに Kahn の小余次数ハイパーグラフ辺彩色定理を適用することで、この下限を g(r) ≥ (61/20 - o(1))r まで改良した。これは著者らの知る限り、Erdős-Lovász の結果に対して約50年ぶりに行われた初めての改善である。",
+          "keywords": [
+            "r-uniform intersecting hypergraph",
+            "cover number",
+            "Erdős-Lovász lower bound",
+            "Kahn's small-codegree hypergraph edge-colouring theorem"
+          ],
+          "appendix": "本論文は極値組合せ論およびハイパーグラフ理論の成果であり、提示された興味ある分野の中では「combinatorics on words」と同じ組合せ論の範疇に含まれます。"
+        },
+        "http://arxiv.org/abs/2606.24833v1": {
+          "title": "単項多項式の有界型 Siegel 円板の共形半径が最大となる集合には、すべての臨界点が境界上に位置するものが含まれる",
+          "summary": "次数 d ≥ 2 および有界型無理数 θ に対し、回転数 θ の周期 1 の Siegel 円板 Δ を持つ単項多項式の空間において、不動点に関する Δ の共形半径が最大となる軌跡には、すべての臨界点が Δ の境界上に存在する多項式が含まれることを証明した。この結果を応用し、ブルーノ条件の最適性に関する Douady の予想を、より弱い主張へと帰着させた。",
+          "keywords": [
+            "Siegel disk",
+            "conformal radius",
+            "critical points",
+            "monic polynomials",
+            "Bruno condition"
+          ],
+          "appendix": "本論文は「complex dynamics」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.25005v1": {
+          "title": "有限局所複雑性を持つ任意の置換に対する、置換タイル貼りおよび階層的タイル貼りのためのマッチング規則",
+          "summary": "Goodman-Straussの定理は、「ほとんどすべての」置換 τ に対して置換タイル貼りの族がsofic（タイルの装飾に関する局所的なマッチング規則によって定義可能）であることを示しているが、そのための条件は非常に複雑であった。本論文では、置換タイル貼りの族が有限局所複雑性（FLC）、すなわち τ-supertile に現れるクラウンの数が有限であるという非常に単純な条件に基づく、Goodman-Straussの定理の新バージョンを提案する。この定理は既知のすべての置換タイル貼りに対してマッチング規則を提供する。また、すべての置換タイル貼りを含む概念である「階層的（hierarchical）タイル貼り」の族に対しても、同様の定理が成立することを証明している。",
+          "keywords": [
+            "substitution tilings",
+            "matching rules",
+            "finite local complexity",
+            "hierarchical tilings",
+            "sofic"
+          ],
+          "appendix": "本論文は symbolic dynamics（記号力学系）に関連する内容である。置換系から生成されるタイル貼りの力学的な性質や、局所的なマッチング規則によって記述可能かというsofic性の問題は、記号力学系における重要な研究テーマの一つである。"
+        },
+        "http://arxiv.org/abs/2606.24741v1": {
+          "title": "代数的性質を持たない群におけるすべての混合恒等式の特異性",
+          "summary": "「algebraicity（代数的性質）」を持たない作用を許容する群Gにおいて、そのすべての混合恒等式（mixed identities）が特異（singular）であることを証明した論文である。この結果は、Abértによる「同様の群は法則を持たない（lawless）」という定理を拡張したものであり、Bodirsky、Schneider、およびThomによる予想を、オリゴモーフィックな置換群の大きなクラスに対して肯定的に解決した。この定理は、(Q; <) の自己同型群、Thompsonの群F, T, V、Grigorchukの群、さらには1次元以上の多様体の同相写像群といった幅広い群に適用可能である。また、特定の幾何学的条件を満たす作用を持つ群一般に対しても同様の結果を示しており、無限次元の一般線形群や射影線形群に関する先行研究の結果も包含している。",
+          "keywords": [
+            "mixed identities",
+            "algebraicity",
+            "oligomorphic permutation groups",
+            "Thompson's groups",
+            "homeomorphism groups"
+          ],
+          "appendix": "この論文は、オリゴモーフィックな置換群やThompsonの群、Grigorchukの群などの構造を扱っており、[興味ある分野]のうち「structure of large countable infinite group」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.24739v1": {
+          "title": "直径4の converse invariant な木について",
+          "summary": "本論文では、トーナメント T における有向グラフ D の出現回数 f_T(D) が、すべての辺の向きを反転させた有向グラフ D̄ に対しても等しい（f_T(D) = f_T(D̄)）という「converse invariant」な性質を持つ木を研究している。Aiらによる「最大次数3以上の有向木が converse invariant であるための必要十分条件は、それが自己反転的であるか、またはパスからの bridge-mirroring によって再帰的に構成されることである」という予想を、直径4の木の分類を通じて否定的に解決した。手法として、コピー数の差 f_T(D) - f_T(D̄) を表現する多重線形多項式 P_D を導入し、その係数公式を部分グラフの符号付き和として与えることで、直径4の木における完全な分類と新たな非自己反転的な例を示した。",
+          "keywords": [
+            "converse invariant",
+            "tournament",
+            "oriented tree",
+            "bridge-mirroring",
+            "digraph polynomial"
+          ],
+          "appendix": "本論文はグラフ理論および組合せ論を扱っており、指定された分野の中では combinatorics に関連しますが、combinatorics on words や automata theory などの具体的な小分野とは直接の関連はありません。数式表現において D̄ などの Unicode 表記を使用しています。"
+        },
+        "http://arxiv.org/abs/2606.24728v1": {
+          "title": "コサイクルで捻られた変換群群oidのC*-環の距離次元：増加度と力学系的な複雑さ",
+          "summary": "本論文では、Austadによって導入された層化cLip-normに由来する、コサイクルで捻られた変換群群oidのC*-環上の自然なコンパクト量子距離空間（CQMS）構造を考察しています。Xが有限のKolmogorov次元を持つコンパクト距離空間であり、Γが多項式成長を持つ離散群である場合、変換群群oid Γ ⋊ X およびそのコサイクル捻りの簡約C*-環の距離次元の上限を導出しました。一方、Γが指数成長を持つ場合には、次元は一般に+∞となることを示し、群の多項式成長と指数成長の二分法が、変換群群oidのコサイクル捻りを考慮した後でも維持されることを証明しています。",
+          "keywords": [
+            "Metric dimension",
+            "transformation groupoids",
+            "cocycle twist",
+            "polynomial growth",
+            "exponential growth"
+          ],
+          "appendix": "本論文は、離散群の増加度（成長度）という群の構造的性質を扱っているため、「structure of large countable infinite group」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.24695v1": {
+          "title": "単色誘導部分グラフの強制",
+          "summary": "本論文では、Chudnovsky、Scott、Seymourらによる「グラフ対の排除」定理を一般化した、ラムゼイ理論における新たな結果を示している。任意のc色による完全グラフの辺彩色において、特定のグラフH₁,...,Hₜの完全結合(complete join)の単色誘導コピーを排除する場合、その頂点集合V(G)はn個の集合の和集合として分割できる。各集合内（サイズが2以上の場合）では、ある色の辺集合が、誘導部分グラフとしてH₁,...,Hₜのうち少なくとも1つを排除する。これは、Hᵢが単一頂点の場合はラムゼイの定理に、c=2の場合は既存の排除定理に一致する。",
+          "keywords": [
+            "monochromatic induced subgraphs",
+            "complete join",
+            "Ramsey's theorem",
+            "induced subgraph"
+          ],
+          "appendix": "本論文は、グラフ理論および組合せ論における構造的特徴付けを扱っており、興味ある分野のうち「combinatorics on words」などの離散数学・組合せ論的側面と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.24693v1": {
+          "title": "全ての2次無理数に対するWangタイルの非周期集合",
+          "summary": "本論文は、垂直または水平な縞模様を持つWangタイルの集合が非周期性を持つための十分条件を提案している。証明には、放物線に外接する四角形を用いた幾何学的な議論が用いられ、縞模様の密度の無理数性が導かれる。この条件を適用することで、24個のWangタイルによるペンローズ・タイリングの符号化や、貴金属比Wangタイルの族といった既知のWangタイル集合の非周期性を再証明している。さらに、同じ2次体に含まれる任意の2つの無理数 (α,β) ∈ [0,1]² に対し、垂直な縞模様の密度が α、水平な縞模様の密度が β となるような、縞模様を持つ有限の非周期Wangタイル集合を構成できることを示した。",
+          "keywords": [
+            "Wang tiles",
+            "aperiodic set",
+            "quadratic irrational",
+            "density",
+            "tiling"
+          ],
+          "appendix": "この論文は、タイリングの非周期性やその幾何学的性質を扱っており、興味ある分野のうち symbolic dynamics に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.24583v1": {
+          "title": "AA と (A+1)(A+1) が共に小さくなり得る",
+          "summary": "Bloom, Sawin, Schildkraut, および Zhelezov による実数体 ℝ 上の和積予想（sum-product conjecture）を否定する構成手法を応用し、ある定数 c > 0 と、max{|AA|, |(A+1)(A+1)|} ≪ |A|²⁻ᶜ を満たす任意に大きな有限実数集合 A ⊆ ℝ が存在することを示しています。",
+          "keywords": [
+            "sum-product conjecture",
+            "finite sets",
+            "real numbers",
+            "product sets"
+          ],
+          "appendix": "本論文は加法的組合せ論における集合の積構造を扱っており、提示された興味ある分野の中では arithmetic dynamics の文脈、特に数論的構造を持つ集合の変換後の性質という点で関連性があります。"
+        },
+        "http://arxiv.org/abs/2606.24553v1": {
+          "title": "Böttcher座標の二代数的幾何学",
+          "summary": "BeckerとBergweilerは、非例外的な多項式fに対し、Böttcher座標 Ψ_f : D_R → B_∞(f) が超越関数であることを示した。本論文では、D_Rⁿの代数的集合であって、Ψ_fを各成分に適用した像が同次元の代数的集合に含まれるもの（f-二代数的集合）を調査する。Julia集合が非連結、または連結かつ非退化な局所連結モデルを持つという仮定の下で、二代数的集合の力学系的な完全な分類を与える。さらに、指数関数におけるAx–Lindemann–Weierstrass定理やAx–Schanuel予想の類似をΨ_fについて定式化し、Julia集合J_fが非連結な場合にそれらを証明する。",
+          "keywords": [
+            "Böttcher coordinates",
+            "bialgebraic sets",
+            "Julia set",
+            "Ax–Lindemann–Weierstrass theorem",
+            "Ax–Schanuel conjecture"
+          ],
+          "appendix": "本論文は、興味ある分野のうち complex dynamics および arithmetic dynamics に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.24520v1": {
+          "title": "McMullen ジュリア集合の剛性",
+          "summary": "ポストクリティカル有限な McMullen 写像 f_λ(z) = zⁿ + λ/zⁿ (λ ∈ ℂ*, n ≥ 2) のジュリア集合に関する完全な擬等角（quasisymmetric）分類を提供した。各ジュリア集合の擬等角群は、写像の自然な対称性によって生成される有限二面体群と正確に一致することを証明した。これらの結果は、Sierpiński カーペット型、ネックレス型、クラスター型を含む、この族におけるすべての位相的クラスに対して擬等角剛性を確立し、これら3つのクラスのそれぞれにおいて剛なジュリア集合の最初の既知の例を提示している。",
+          "keywords": [
+            "McMullen maps",
+            "Julia sets",
+            "quasisymmetric rigidity",
+            "postcritically finite",
+            "quasisymmetry group"
+          ],
+          "appendix": "この論文は複素力学系 (complex dynamics) の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.24443v1": {
+          "title": "緩和された自然形式言語を用いた数学の検証可能な自動形式化",
+          "summary": "数学の内容を定理証明器で処理可能な形式に変換する自動形式化において、自然言語に近い記述と厳密な形式言語のギャップを埋めるための中間表現「Relaxed Natural Formal Language (Relaxed NFL)」を提案する。この手法では、まず非形式的な推論構造を維持したままRelaxed NFLに翻訳し、その後の推敲プロセスを通じて厳密な意味論を持つ「Core NFL」へと変換する。この過程で生じる検証条件（proof gaps）は、LLMが生成する証明スクリプトやドメイン固有のソルバーによって解決され、数学的記述の正確な検証を可能にしている。",
+          "keywords": [
+            "Auto-formalization",
+            "Relaxed Natural Formal Language",
+            "Large Language Models",
+            "Formal verification",
+            "Theorem proving"
+          ],
+          "appendix": "興味ある分野のうち「formal languages」に関連しています。数学的証明を構造化・検証するための新しい形式言語の設計と変換プロセスに焦点を当てています。"
+        },
+        "http://arxiv.org/abs/2606.24289v1": {
+          "title": "エントロピー流：カオスへの遷移経路におけるドリフト",
+          "summary": "本論文では、滑らかな多様体上のベクトル場の1パラメータ族における秩序からカオスへの遷移を、熱力学第二法則に着想を得た「エントロピー流（Entropy flow）」という概念を用いて分析しています。このフローは相空間とパラメータ空間の直積上に定義され、元の系にパラメータ空間内のドリフトを加えることで、軌道をより無秩序で複雑な状態へと誘導します。周期倍分岐、Ruelle-Takens-Newhouse、間欠性といったカオスへの主要な経路においてエントロピー流が期待通りに機能することを示し、Conley indexを用いたトポロジーと分岐の関連性の議論や、Lorenz系、Rösslerアトラクタ、Shilnikovのホモクリニック・シナリオの崩壊といった具体例の解析を行っています。",
+          "keywords": [
+            "Entropy flow",
+            "route to Chaos",
+            "Conley index",
+            "bifurcations",
+            "one-parameter family of vector fields"
+          ],
+          "appendix": "本論文はカオスへの遷移や力学系の分岐、アトラクタの構造を扱っているため、指定された興味ある分野のうち「complex dynamics」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.24269v1": {
+          "title": "中心の位数が pⁿ⁻² である位数 pⁿ の非アーベル p 群における可換グラフ",
+          "summary": "本論文では、位数が pⁿ であり、中心の位数が pⁿ⁻² である非アーベル p 群の可換グラフ ζ(G, V) を調査している。特に、これらのグラフにおけるデトア距離（detour distance）、距離次元（metric dimension）、解法多項式（resolving polynomials）、およびスペクトル特性（spectral properties）について詳細な研究を行っている。",
+          "keywords": [
+            "commuting graph",
+            "non-abelian p-groups",
+            "detour distance",
+            "metric dimension",
+            "spectral properties"
+          ],
+          "appendix": "提示された興味ある分野（combinatorics on words や structure of large countable infinite group など）との直接的な関連は薄いが、有限群の構造をグラフ理論的性質から記述する代数的グラフ理論の研究である。"
+        },
+        "http://arxiv.org/abs/2606.24110v1": {
+          "title": "平均的なスタックソート深さの漸近挙動",
+          "summary": "Snにおける置換をソートするために必要なスタックソート写像 s の平均適用回数を 𝓓ₙ とする。本論文では、近年導入されたスタックソート・ダイアグラムおよびタブローの枠組みを用いることで、極限 lim_{n→∞} 𝓓ₙ/n が存在することを証明した。これにより、1990年にWestによって提案された長年の予想が解決された。また、この極限に収束する単調増加数列を導出し、Defantによる下界である λ ≈ 0.62433 を改善する結果を得た。",
+          "keywords": [
+            "stack-sorting map",
+            "permutation",
+            "stack-sorting diagrams",
+            "tableaux",
+            "West's conjecture"
+          ],
+          "appendix": "本論文は、置換の動態や構造を扱う性質上、[興味ある分野]における combinatorics on words と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.24074v1": {
+          "title": "Stochastic-Oracleの信頼性検証におけるトークン計算量",
+          "summary": "本論文では、Stochastic-Oracle Turing Machine (SOTM) フレームワークに基づき、確率的オラクルの信頼性を検証するために必要な期待トークンコストの最小値である「検証トークン計算量 (certification token complexity)」を定義している。具体的には、逐次確率比検定 (SPRT) を用いた検証アルゴリズムを提案し、誤り確率を一定以下に抑えつつオラクルの信頼性を判定するための計算量の上界を導出した。さらに、情報理論的な下界を導出することで、誤り確率がゼロに収束する極限において、提案手法が主要項のオーダーで最適であることを示している。",
+          "keywords": [
+            "Stochastic-Oracle Turing Machine",
+            "token complexity",
+            "Sequential Probability Ratio Test",
+            "information-theoretic lower bound"
+          ],
+          "appendix": "本論文はStochastic-Oracle Turing Machineという計算モデルを扱っており、計算理論やオートマトン理論 (automata theory) の分野に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.25172v1",
+        "http://arxiv.org/abs/2606.25109v1",
+        "http://arxiv.org/abs/2606.25055v1",
+        "http://arxiv.org/abs/2606.24878v1",
+        "http://arxiv.org/abs/2606.24833v1",
+        "http://arxiv.org/abs/2606.25005v1",
+        "http://arxiv.org/abs/2606.24741v1",
+        "http://arxiv.org/abs/2606.24739v1",
+        "http://arxiv.org/abs/2606.24728v1",
+        "http://arxiv.org/abs/2606.24695v1",
+        "http://arxiv.org/abs/2606.24693v1",
+        "http://arxiv.org/abs/2606.24583v1",
+        "http://arxiv.org/abs/2606.24553v1",
+        "http://arxiv.org/abs/2606.24520v1",
+        "http://arxiv.org/abs/2606.24443v1",
+        "http://arxiv.org/abs/2606.24289v1",
+        "http://arxiv.org/abs/2606.24269v1",
+        "http://arxiv.org/abs/2606.24110v1",
+        "http://arxiv.org/abs/2606.24074v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-26T06:20:39.764735+00:00",
-      "updated_at": "2026-06-26T06:48:51.817116+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-26T10:15:42.791396+00:00",
+      "finalized_at": "2026-06-26T10:15:42.791369+00:00"
     }
   ]
 }
