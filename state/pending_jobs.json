@@ -72587,7 +72587,7 @@
     },
     {
       "pipeline_id": "20260627T060158Z-d19494b1",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/w2nzsk5edcdndo9vti5smql81aw3f3o7xlwz",
       "summarize_job_name": "batches/dppf145shxwjvto75cg6judbw7xvzubcehn5",
       "papers": [
@@ -73302,14 +73302,256 @@
         "http://arxiv.org/abs/2606.25305v1",
         "http://arxiv.org/abs/2606.25289v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.26352v1": {
+          "title": "特性駆動型タイムステップ適応を用いた線形連続システムのスケーラブルな到達可能性解析",
+          "summary": "本論文では、有界入力を伴う線形時不変（LTI）システムの連続時間における安全検証手法を提案している。従来の到達可能性解析では固定されたタイムステップや近似誤差に基づく適応的なステップが用いられていたが、本手法では与えられた安全特性を維持しつつタイムステップを最大化する特性駆動型の適応アルゴリズムを導入した。行列指数の再計算を避ける最適化や誤差制御のバランス調整により、大きなタイムステップでも精度を保ちつつ計算効率を向上させている。SLICOTベンチマークを用いた実験では、既存の最先端手法を凌駕する性能とスケーラビリティが確認された。",
+          "keywords": [
+            "Reachability analysis",
+            "Linear continuous systems",
+            "Safety verification",
+            "Time-step adaptation",
+            "SLICOT benchmark"
+          ],
+          "appendix": "本研究は、厳密な誤差評価を伴いながら連続システムの計算を行うという点で、興味ある分野の「validated numerics」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.26335v1": {
+          "title": "等分な長方形の埋め込み",
+          "summary": "部分的なラテン方陣の補完はNP完全な問題であるが、本研究ではRyserによるラテン長方形の補完定理をより広い設定へと拡張した。n×nの配列の左上r×s部分に{1, 2, ..., k}の記号が配置されているとき、各記号ℓの総出現回数ρ_ℓを指定し、かつ任意の2行および2列間での各記号の出現回数の差が高々1（等分的）となるように残りのセルを埋めるための必要十分条件を決定した。これは、完全二部グラフKᵣ,ₛの部分辺彩色を、各彩色クラスが全域的かつ概正則で指定されたサイズを持つKₙ,ₙの辺彩色へと拡張する問題と同等である。本成果は、Hallの定理やRyserの定理、Baranyaiの定理などの古典的な結果を統合・一般化するものである。",
+          "keywords": [
+            "Partial Latin squares",
+            "Latin rectangles",
+            "edge-coloring",
+            "equitable",
+            "Baranyai's theorem"
+          ],
+          "appendix": "本研究は組合せ論（combinatorics）におけるグラフ彩色や行列の補完問題を扱っており、興味ある分野のうち「combinatorics on words」に関連する離散構造の基礎理論を提供しています。"
+        },
+        "http://arxiv.org/abs/2606.26286v1": {
+          "title": "skew left brace に対する Grün の補題と Baer の定理の類似",
+          "summary": "本論文では、群論における著名な定理である Grün の補題（完全群において中心と第2中心が一致する）および Baer の定理（中心による第 n 剰余群が有限であれば、降中心列の第 n+1 項も有限である）を、歪左ブレース（skew left brace）の枠組みへと拡張した。これらの成果は先行研究を大きく改善するものであり、証明の過程では skew left brace に随伴する三因子分解群（trifactorised group）が重要な役割を担っている。",
+          "keywords": [
+            "skew left braces",
+            "Grün's lemma",
+            "Baer's theorem",
+            "trifactorised group"
+          ],
+          "appendix": "この論文は、skew left brace という代数的構造の解析を通じて「structure of large countable infinite group」に関連する群論的性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2606.26082v2": {
+          "title": "D₅型Artin群の自己同型群",
+          "summary": "本論文では、D₅型Artin群およびその中心による商群の自己同型群を決定した。これにより、球面型Dₙ型Artin群の自己同型群の分類において唯一未解決であったn=5の場合が解決された。",
+          "keywords": [
+            "Artin group of type D₅",
+            "automorphism group",
+            "spherical type Artin groups",
+            "quotient by the center"
+          ],
+          "appendix": "本論文はArtin群の自己同型群の構造を扱っており、興味ある分野の中では「structure of large countable infinite group」に関連があります。"
+        },
+        "http://arxiv.org/abs/2606.26038v2": {
+          "title": "トロピカル半環上の単一アルファベット重み付きオートマトンの表現",
+          "summary": "本論文は、トロピカル半環 ℤ_∞(min, +) 上の重み付きオートマトン、特に一元アルファベット（unary alphabet）の場合の計算複雑性を考察している。Gaubertによって示された「重み付きオートマトンは決定性重み付きオートマトンの和として表現できる」という結果を、Chrobakの正規形の一般化として効率的に構成し、元のオートマトンのサイズの2次式で表現可能かつ多項式時間で計算可能であることを示した。これに基づき、決定性判定（determinisation）やレジスタ最小化、有界性判定（boundedness problem）が coNP 完全であることを証明した。さらに、決定性オートマトンの数をパラメータとした場合に、これらの問題が FPT ではない（coW₁困難である）ことを示している。",
+          "keywords": [
+            "Weighted automata",
+            "Tropical semiring",
+            "Unary alphabet",
+            "Determinisation",
+            "Computational complexity"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「automata theory」および「formal languages」に強く関連しています。一元アルファベットにおける正規言語の構造（Chrobak's normal form）の重み付きオートマトンへの拡張が議論の核心となっています。"
+        },
+        "http://arxiv.org/abs/2606.26033v1": {
+          "title": "強基本領域を持つ作用と群のSigma不変量",
+          "summary": "群Gが、強基本領域を持つ可縮なCW-複体上に作用し、その固定部分群が特定の性質を満たす場合、その群のホモロジー的Sigma不変量は空集合であるか、あるいは指標球面において稠密であることを示した。この性質は、直交アルティン群や自由群の純対称自己同型群などの特定の群の族において既知であったが、本論文ではこれを一般化し、直交アルティン群の純対称自己同型群への適用などの応用を提示している。",
+          "keywords": [
+            "strong fundamental domain",
+            "Sigma invariants",
+            "right-angled Artin groups",
+            "pure symmetric automorphisms",
+            "character sphere"
+          ],
+          "appendix": "本論文は、無限群の幾何学的・代数的構造やその不変量を扱っているため、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.25979v1": {
+          "title": "割引和特性のモニタリング",
+          "summary": "定量的シグナルのランタイムモニタリングにおいて、瞬時の観測（ノイズ）と長期平均（局所構造の隠蔽）のトレードオフを解消するため、割引和を用いた局所化手法を提案している。本論文では、決定論的および確率論的設定の両面から割引和のモニタリングを定式化した。有限メモリでは割引和の正確なモニタリングが不可能であることを示し、その解決策としてε-近似健全モニタリングを導入、必要なメモリと観測量の境界を導出した。さらに、確率過程における期待割引和へとフレームワークを拡張し、統計的最適性と精度限界を証明した。また、アフィンレジスタマシンによるリソース複雑性の形式化と最悪ケースの下界の証明、複数の割引和に対する仕様記述言語の提案と、アルゴリズムの公平性などの実用的なシナリオによる評価を行っている。",
+          "keywords": [
+            "Runtime monitoring",
+            "Discounted sums",
+            "Stochastic processes",
+            "ε-approximately sound monitoring",
+            "Resource complexity"
+          ],
+          "appendix": "オートマトン理論 (Automata theory) と関連があります。本論文では決定論的・確率論的な設定における性質や、アフィンレジスタマシンを用いた計算複雑性の解析、および仕様記述言語の形式化など、オートマトンや形式言語理論の枠組みに近いアプローチが取られています。"
+        },
+        "http://arxiv.org/abs/2606.25897v1": {
+          "title": "非固有作用に由来する多項式ホモロジー的デーン関数",
+          "summary": "群の高次ホモロジー的デーン関数が多項式であることを証明するためのホモロジー代数学的な枠組みを確立した。その応用として多項式デーン関数に関する結合定理を示しており、これは有限性条件に関するBrownの定理を想起させる性質を持つ。",
+          "keywords": [
+            "homological Dehn functions",
+            "homological algebra",
+            "combination theorem",
+            "non-proper actions"
+          ],
+          "appendix": "群のホモロジー的性質や有限性条件を扱っており、興味ある分野のうち structure of large countable infinite group に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.25881v1": {
+          "title": "第16回非古典的オートマトンモデルおよび応用に関する国際ワークショップ会議録",
+          "summary": "NCMA 2026は2026年6月29日から30日にフランスのルーアンで開催された国際ワークショップである。2009年から毎年開催されている本イベントは、非古典的および古典的なオートマトン、文法、あるいは関連するデバイスのモデルについて、理論と応用の両面から研究を行う場を提供している。",
+          "keywords": [
+            "non-classical models of automata",
+            "grammars",
+            "automata theory",
+            "formal models"
+          ],
+          "appendix": "本論文（会議録）は、興味ある分野のうち「automata theory」および「formal languages」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.25854v1": {
+          "title": "シャープな近似Carathéodoryの定理と反復Delaunay細分への応用",
+          "summary": "球面Delaunay複体の反復的な細分プロセスにおける単体直径の減少について分析しています。通常の細分とは異なり、Delaunay細分では先行する複体を包含するとは限らないため、メッシュの収縮は自明ではありません。本論文では、重心細分や辺細分のDelaunay版を含む複数のSteiner点集合に対し、具体的な収縮境界を導出しました。証明においては、Euclidean単体に対する精密な被覆評価へと問題を帰着させ、Maureyの経験的手法の強化や次元に依存する近似Carathéodoryの定理を用いることで、Delaunay細分が通常の細分よりも強力な収縮を達成することを理論と数値実験の両面から示しました。",
+          "keywords": [
+            "spherical Delaunay complexes",
+            "approximate Carathéodory theorem",
+            "Steiner points",
+            "mesh contraction",
+            "Maurey's empirical method"
+          ],
+          "appendix": "本論文は計算幾何学や数値解析に関連する内容を含んでいますが、指定された「興味ある分野」との直接的な関連性は見受けられません。"
+        },
+        "http://arxiv.org/abs/2606.25822v1": {
+          "title": "ラン数制限および低次削除ボール交差制約下における極値削除ボール交差",
+          "summary": "シーケンス再構成および再構成符号の研究に動機付けられ、本論文では有限アルファベット上の削除ボールの極値交差について調査している。主な成果として、まず低次の削除訂正制約下での有限な上界を導出し、x, yのs-1次削除ボールが互いに素である場合に、t次削除ボールの交差サイズが(2s choose s)(n-s choose t-s)で抑えられることを示した。これは先行研究の漸近的な上界を強化するものである。次に、ラン数と低次削除ボール交差の同時制約下における解析を行い、再構成符号の性質を半径sからより大きな半径tへ転送するリフティング定理を導いた。最後に、挿入ボールの交差および挿入再構成符号に対しても同様の並行的理論を確立している。",
+          "keywords": [
+            "sequence reconstruction",
+            "deletion ball",
+            "reconstruction codes",
+            "run counts",
+            "insertion ball"
+          ],
+          "appendix": "本論文は、語の組合せ論（combinatorics on words）に関連するシーケンスの組合せ構造を扱っており、興味ある分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.25766v1": {
+          "title": "3回転子の一致現象に基づく記号列とその語の複雑さ",
+          "summary": "3つの等質量点粒子が円周上で相互作用する「3回転子問題」の古典力学を、回転子のペアおよび3つの回転子の一致（coincidence）を4つの記号で記録することでデジタル化する手法を提案した。この記号化は粗いものであるが、軌道の記号列への置き換えによって、ダイナミクスの重要な質的特徴が語の統計を通じて捉えられる。語の複雑さ Cₙ（n文字の語の多様性）を指標とし、周期軌道では周期で飽和すること、超高エネルギー軌道では準周期性を持ちエントロピーが0かつ Cₙ = n+3 となることを Sturmian sequence への写像等から示した。一方、カオス軌道では Cₙ = 3 × 2ⁿ⁻¹ という指数関数的増大と位相的エントロピー log 2 が確認され、これらは有限型のサブシフト（subshift of finite type）としてモデル化可能であることを明らかにした。",
+          "keywords": [
+            "three-rotor problem",
+            "symbolic dynamics",
+            "word-complexity",
+            "topological entropy",
+            "Sturmian sequences"
+          ],
+          "appendix": "本研究は興味ある分野のうち symbolic dynamics（記号力学）および combinatorics on words（語の組合せ論）に密接に関連しています。力学系の軌道を記号列として扱い、その文法規則や複雑さを解析する手法をとっています。"
+        },
+        "http://arxiv.org/abs/2606.25475v1": {
+          "title": "ニアマルコフ・ソフィクシフトに関するクリーガーの埋め込み定理",
+          "summary": "クリーガーの古典的な埋め込み定理は、サブシフトを混合型の有限型シフト(SFT)へ真部分集合として埋め込むための必要十分条件を提示しているが、埋め込み先を一般的な混合型ソフィクシフトに置き換えた場合には成立しない。本論文では、クリーガーの条件を拡張し、サブシフトを混合型(既約)のニアマルコフ・ソフィクシフトへ埋め込むための必要十分条件を与えた。また、埋め込まれる側のサブシフトが既約ソフィクである場合、その埋め込み条件が有限回の操作で判定可能であることを示した。",
+          "keywords": [
+            "Krieger's embedding theorem",
+            "subshift",
+            "near Markov sofic shift",
+            "mixing shift of finite type",
+            "irreducible sofic shift"
+          ],
+          "appendix": "この論文は symbolic dynamics、automata theory、および formal languages の分野に関連しています。共役不変なソフィクシフトの特別なクラスであるニアマルコフ・ソフィクシフトを扱っています。"
+        },
+        "http://arxiv.org/abs/2606.25474v1": {
+          "title": "拡大有理半群における射影測度の完全次元性",
+          "summary": "拡大有理半群の次元論について、記号空間とリーマン球面上の歪積を用いて研究している。不変ボレル確率測度の記号因子上での分解と、条件付き測度の射影を解析し、Ledrappier–Young型の公式を証明した。不変測度がエルゴード的であれば、ほとんど全てのファイバーで射影条件付き測度は完全次元（exact dimensional）となる。これはFengおよびHu（2009）の結果の逆方向のアナログと見なせる。",
+          "keywords": [
+            "expanding rational semigroups",
+            "skew product",
+            "Ledrappier--Young type formula",
+            "exact dimensional",
+            "invariant measure"
+          ],
+          "appendix": "本論文は興味ある分野のうち、symbolic dynamics および complex dynamics に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.25448v1": {
+          "title": "TermCOMPにおけるHRSカテゴリの確立に向けて",
+          "summary": "本論文は、TermCOMPの高階カテゴリのセマンティクスにおけるbeta-first戦略と、Nipkowの高階書き換えシステム (HRS) に基づく書き換えが一致する、構文的に定義可能な単純なベンチマークのサブクラスを示している。これは、TermCOMPにおいてHRSカテゴリ (あるいはサブカテゴリ) を構築するための形式的な基盤を築くものであり、より多くのツールが互いに競合できる環境を整えるものである。",
+          "keywords": [
+            "higher-order rewrite systems",
+            "TermCOMP",
+            "termination problem database",
+            "beta-first strategy"
+          ],
+          "appendix": "本論文は停止性問題や書き換えシステムを扱っており、形式言語理論 (formal languages) の分野に関連があります。"
+        },
+        "http://arxiv.org/abs/2606.25440v1": {
+          "title": "Littlewood多項式の根におけるドラゴン曲線",
+          "summary": "係数が{-1, +1}であるLittlewood多項式において、高次多項式の根の多くは単位円付近に存在するが、全Littlewood多項式の根をプロットすると、単位円から離れた領域に「ドラゴン曲線」として知られる特定の反復関数系のアトラクタに似たフラクタル構造が現れることが数値実験で示唆されていた。本稿では、この現象に対して厳密な数学的説明を与え、ランダムな派生モデルの解析を通じて、このようなフラクタル的挙動が典型的であることを明らかにしている。",
+          "keywords": [
+            "Littlewood polynomial",
+            "dragon curves",
+            "iterated function system",
+            "fractal structures"
+          ],
+          "appendix": "本論文は複素平面上のフラクタル構造を扱っており、興味ある分野のうち complex dynamics（複素力学系）に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.25321v1": {
+          "title": "離散的な三角形の和集合に対するユニバーサル頂点と飽和数",
+          "summary": "本論文では、(m+1)個の頂点に共通部分を持たない三角形の和集合である(m+1)K₃-飽和グラフについて研究を行っている。すべてのm≧1およびn≧3m+3に対して、飽和数の均一な上界としてsat((m+1)K₃, n) = O(n³/²)を与える(m+1)K₃-飽和グラフの族を構築した。また、p=3の場合において、先行研究であるFaudreeらによるnの下限をn≧12m+3からn≧9m+5へと引き下げ、この範囲においてsat((m+1)K₃, n) = n+6m-1であることを証明した。さらに、(m+1)K₃-飽和グラフから次数が|V(G)|-1の頂点（ユニバーサル頂点）をすべて削除した後に得られる成分に関する2つの構造的制約も提示している。",
+          "keywords": [
+            "(m+1)K₃-saturated graphs",
+            "saturation number",
+            "universal vertices",
+            "disjoint triangles"
+          ],
+          "appendix": "この論文は組み合わせ論（Combinatorics）のグラフ理論に関する研究であり、提示された興味ある分野の中では「combinatorics on words」に近い「combinatorics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.25305v1": {
+          "title": "三分カントール集合上での二進近似に関する計量的結果",
+          "summary": "本論文では、三分カントール集合 C とその上のカントール・ルベーグ測度 μ を対象に、二進近似集合 W₂(τ) = {x ∈ [0,1] : ‖2ⁿx‖ < n⁻τ が無限に多くの n で成立} の測度に関する Velani の予想を検討しています。著者らは、C のハウスドルフ次元 γ = log 2 / log 3 を用いて、τ > 1/γ - (1-γ)/(3-γ) (≈ 1.429) および 0 < τ < γ/12 (≈ 0.052) の範囲でこの予想が成立することを証明しました。これは、先行研究による零集合部分（τ > 1.552）および全測度部分（0 < τ ≤ 0.01）の結果を大きく改善するものです。主な手法として、指数和の評価式 ∑ₙ₌₁ᴺ |μ̂(h2ⁿ)|² ≪ N¹⁻ᵞ を確立しており、このアプローチは欠損数字集合上の自己相似測度にも適用可能です。",
+          "keywords": [
+            "dyadic approximation",
+            "middle-third Cantor set",
+            "Cantor-Lebesgue measure",
+            "Velani's conjecture",
+            "Fourier transform"
+          ],
+          "appendix": "本論文は、カントール集合における二進展開の性質や自己相似測度の調和解析を扱っており、興味ある分野の中では symbolic dynamics や arithmetic dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.25289v1": {
+          "title": "双曲3次元多様体群における共役判別可能な剰余類",
+          "summary": "有限体積の双曲3次元多様体 M = ℍ³/Γ において、部分集合 S ⊂ G の全共役の和集合が副有限トポロジーにおいて閉じているとき、S は「共役判別可能（conjugacy distinguished）」であると言われる。本論文では、g ∈ Γ かつ H が Γ のアーベル部分群であるとき、剰余類 gH が Γ において共役判別可能であることを証明する。また、loxodromic 部分群の剰余類が Γ の極大放物的部分群のクラスに対して共役判別可能であることを示し、先行研究の結果を拡張している。",
+          "keywords": [
+            "Conjugacy distinguished",
+            "Hyperbolic 3-manifold groups",
+            "Profinite topology",
+            "Abelian subgroup",
+            "Maximal parabolic subgroups"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」に関連しています。具体的には、双曲3次元多様体群という無限群の副有限トポロジー的性質や、剰余類・部分群の代数的構造を扱っています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.26352v1",
+        "http://arxiv.org/abs/2606.26335v1",
+        "http://arxiv.org/abs/2606.26286v1",
+        "http://arxiv.org/abs/2606.26082v2",
+        "http://arxiv.org/abs/2606.26038v2",
+        "http://arxiv.org/abs/2606.26033v1",
+        "http://arxiv.org/abs/2606.25979v1",
+        "http://arxiv.org/abs/2606.25897v1",
+        "http://arxiv.org/abs/2606.25881v1",
+        "http://arxiv.org/abs/2606.25854v1",
+        "http://arxiv.org/abs/2606.25822v1",
+        "http://arxiv.org/abs/2606.25766v1",
+        "http://arxiv.org/abs/2606.25475v1",
+        "http://arxiv.org/abs/2606.25474v1",
+        "http://arxiv.org/abs/2606.25448v1",
+        "http://arxiv.org/abs/2606.25440v1",
+        "http://arxiv.org/abs/2606.25321v1",
+        "http://arxiv.org/abs/2606.25305v1",
+        "http://arxiv.org/abs/2606.25289v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-27T06:01:58.742237+00:00",
-      "updated_at": "2026-06-27T06:48:17.313551+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-27T09:09:39.910738+00:00",
+      "finalized_at": "2026-06-27T09:09:39.910710+00:00"
     }
   ]
 }
