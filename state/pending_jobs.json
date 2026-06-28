@@ -73555,7 +73555,7 @@
     },
     {
       "pipeline_id": "20260628T063705Z-b9d20505",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/0mh3uiqo8r0pncuhrywm6ghj8rn864ooivbf",
       "summarize_job_name": "batches/8yfteonnkeki38mhiqex8pln6zy1u0cf5p6i",
       "papers": [
@@ -74507,14 +74507,478 @@
         "http://arxiv.org/abs/2606.26503v1",
         "http://arxiv.org/abs/2606.26490v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.27272v1": {
+          "title": "放物型に有界な primitive な繰り込みにおける MLC",
+          "summary": "本論文では、繰り込みのタイプが primitive であり、かつマンデルブロ集合 M のカスプに接近し得るような無限回繰り込み可能なパラメータのクラスに対して、ア・プリオリな評価および MLC（マンデルブロ集合の局所連結性）を証明した。そのために、繰り込みの退化を制御するための様々な手法（Thin-Thick 分解、Value Calculus、Wanderers 定理、Wave 補題など）を開発・洗練させている。",
+          "keywords": [
+            "a priori bounds",
+            "MLC",
+            "infinitely renormalizable parameters",
+            "Thin-Thick Decomposition",
+            "Wanderers Theorem"
+          ],
+          "appendix": "本論文は complex dynamics（複素力学系）の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.27209v1": {
+          "title": "確率的双模倣距離の連続性について",
+          "summary": "ラベル付きマルコフ連鎖における確率的双模倣距離は、遷移確率の摂動に対して不連続となることがあり、実測データに基づくモデルへの適用を困難にしている。本論文では、以前に距離0における連続性の十分条件として提案された robust probabilistic bisimilarity が、必要条件でもあることを証明した。さらに、非双模倣的な状態ペアに対しても頑健性の概念を拡張することで、確率的双模倣距離の連続性に関する完全な特徴付けを与えた。この理論的成果に基づき、連続性を判定する多項式時間アルゴリズムを開発し、実験評価によって、連続性の判定が距離自体の計算に対して極めて低い追加コストで実行可能であることを示した。",
+          "keywords": [
+            "probabilistic bisimilarity distance",
+            "labeled Markov chains",
+            "continuity",
+            "robust probabilistic bisimilarity",
+            "polynomial time algorithm"
+          ],
+          "appendix": "ラベル付きマルコフ連鎖や計算モデルの等価性を扱うという点で、automata theory と関連しています。"
+        },
+        "http://arxiv.org/abs/2606.27198v1": {
+          "title": "アメナブル群の捻れ群C*-環とその包含関係に対するselflessness",
+          "summary": "本論文では、Robertの意味でのselflessnessという性質が、離散アメナブル群Gの捻れ群C*-環 C*_r(G, σ) においてどのような条件下で成立するかを論じている。特に、無限かつ有限生成なvirtually nilpotent群Gにおいて、これが(G, σ)がKleppnerの条件を満たすことと同値であることを示した。また、より広範なFC-hypercentral群のクラスに対しては、Z-安定性（または有限核次元）の条件下で同様の結果を得ている。さらに、正規部分群Hに対する包含関係 C*_r(H, σ') ⊆ C*_r(G, σ) について、相対的Kleppner条件を用いたselflessnessの特徴付けを行い、アメナブル群やvirtually nilpotent群における具体的な成立条件を導出している。",
+          "keywords": [
+            "selflessness",
+            "twisted group C*-algebras",
+            "amenable groups",
+            "Kleppner's condition",
+            "virtually nilpotent groups"
+          ],
+          "appendix": "興味ある分野のうち、「structure of large countable infinite group」に強く関連しています。具体的には、virtually nilpotent群やFC-hypercentral群といった特定の無限群の構造的性質が、その捻れ群C*-環の代数的性質（selflessness）にどのように帰着されるかを記述しています。"
+        },
+        "http://arxiv.org/abs/2606.27172v1": {
+          "title": "木トポロジー上のパラメータ化検証について",
+          "summary": "ランデブー同期を伴う有限状態プロセスのパラメータ化検証は、プロセスが線形順序である場合には決定不能であることが知られている。本論文では、木トポロジーにおける安全性確認の計算複雑性を、2種類の制限を設けることで特定した。木の深さを制限する場合、複雑性は急成長階層（fast growing hierarchy）に関連する。また、木における上方向と下方向の同期の交互切り替え（フェーズ）回数を制限する場合、フェーズ数が固定であればEXPSPACE完全、入力の一部であれば2EXPSPACE完全（いずれも深さは任意）となることが示された。",
+          "keywords": [
+            "Parameterized verification",
+            "Tree topologies",
+            "Safety checking",
+            "Fast growing hierarchy",
+            "Rendez-vous synchronization"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に関連しています。有限状態システムの安全性検証や計算複雑性の解析は、これらの分野における中心的なトピックです。"
+        },
+        "http://arxiv.org/abs/2606.27170v1": {
+          "title": "ℬ-admissibleおよび関連するサブシフトの自己同型について",
+          "summary": "本論文では、KimとRoushがソフィ・サブシフトの自己同型群の研究で開発した手法を拡張し、サブシフトが巨大な自己同型群を持つための十分条件を導出している。この手法を倍数集合によって定義される非ソフィ・サブシフトに適用し、特にℬ-admissibleサブシフトにおいて、その自己同型群が自明であるか、あるいはフルシフト{0,1}ᶻの自己同型群を埋め込みとして含む（巨大である）かという二分法を確立した。さらに、ℬが無限集合かつ無限の互いに素な部分集合を持たない場合、ℬ-freeサブシフトの遺伝的閉包の自己同型群が巨大であることを示した。",
+          "keywords": [
+            "ℬ-admissible subshift",
+            "automorphism group",
+            "sofic subshift",
+            "ℬ-free subshift",
+            "hereditary closure"
+          ],
+          "appendix": "興味ある分野のうち、symbolic dynamics、structure of large countable infinite group、および倍数集合を扱う性質からarithmetic dynamicsに関連する研究です。"
+        },
+        "http://arxiv.org/abs/2606.27166v1": {
+          "title": "VASにおける半線形帰納的不変式の前方のみによる構成",
+          "summary": "ベクトル加算システム (VAS) の可到達性問題に対し、非可到達性が常に半線形帰納的不変式によって証明可能であることを利用した、新たな前方のみの構成手法を提案する。従来の不変式構成は、ソースとターゲットの両方に依存する双方向的な手法であったが、本手法はソース構成のみから不変式を構築することで、システム構造をより反映した標準的な不変式の取得を可能にする。この手法は周期的VASに対して周期的帰納的不変式を生成し、分岐VAS (Branching VAS) への拡張に向けた重要な一歩となる。",
+          "keywords": [
+            "Vector Addition Systems",
+            "reachability problem",
+            "semilinear inductive invariants",
+            "Branching VAS",
+            "forward-only construction"
+          ],
+          "appendix": "本論文は興味ある分野のうち、automata theory および formal languages に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.27148v1": {
+          "title": "Hypercups: 2面より多くの状態を持つカップの反転問題",
+          "summary": "Man-Keung SiuとIan Stewartによる2010年の研究『n個のカップを一度にm個ずつ反転させる方法』を拡張し、カップがk ≥ 2個の状態を持つ「k-hypercups」を定義した。従来の2状態（正立・倒立）のパズルはパリティに依存していたが、本論文では、k-hypercupsにおける反転の可否は最大公約数（GCD）に依存することを示した。SiuとStewartの先行研究のすべての結果をk-hypercupsへと一般化しており、従来の結果を包含する理論体系を構築している。",
+          "keywords": [
+            "k-hypercups",
+            "inverting cups",
+            "greatest common divisors",
+            "parity"
+          ],
+          "appendix": "この論文は、離散的な状態遷移と可到達性を扱う点で combinatorics on words や automata theory の分野と関連があります。パリティから最大公約数への一般化は、代数的組合せ論の視点からも興味深い内容です。"
+        },
+        "http://arxiv.org/abs/2606.27104v1": {
+          "title": "Pinwheel Schedulingにおける密度閾値予想の証明",
+          "summary": "Pinwheel Scheduling問題とは、各タスクiに正の整数の周期aᵢが割り当てられ、各タスクをaᵢ日以内に少なくとも1回実行するようにスケジュールする問題である。本論文では、ChanとChinが1993年に提唱した、密度（各タスクの実行レート1/aᵢの総和）が5/6以下であれば常にスケジュール可能であるという予想を証明した。証明の手法として、問題を分数周期へと適切に一般化することで、有限個のケースに対する計算機探索へと帰着させている。また、2種類の異なる周期を持つ密度1以下のインスタンスの可スケジュールの証明や、Bamboo garden trimming問題に対する近似比4/3の高速なアルゴリズムも副産物として導出している。",
+          "keywords": [
+            "Pinwheel scheduling",
+            "Density threshold conjecture",
+            "Schedulability",
+            "Fractional periods",
+            "Bamboo garden trimming problem"
+          ],
+          "appendix": "本論文は、スケジュールの記号列としての性質を扱う点において「combinatorics on words」の分野に関連があります。"
+        },
+        "http://arxiv.org/abs/2606.27085v1": {
+          "title": "双曲群のcommensuratorにおける平均的な歪み",
+          "summary": "幾何学的に剛性（rigid）を持ち、かつ剰余有限（residually finite）な双曲群において、そのcommensurator（共測化群）が有界な平均的な歪み（average distortion）を持つことを証明している。",
+          "keywords": [
+            "commensurators",
+            "hyperbolic groups",
+            "average distortion",
+            "geometrically rigid",
+            "residually finite"
+          ],
+          "appendix": "この論文は「structure of large countable infinite group（巨大な可算無限群の構造）」の分野に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.27075v1": {
+          "title": "正則グラフ上の離散時空波動核とトレース恒等式",
+          "summary": "本研究では、(q+1)正則グラフ X におけるアフィン・ラプラス型作用素に関連した離散時空波動方程式を考察しています。前進時間差分スキームに対して、離散変形ベッセル関数と X 上の non-backtracking walk 数を用いた2つの波動核の明示的な公式を導出し、波動伝播とグラフの組合せ論的データの直接的な関係を明らかにしました。さらに、波動核の一意性を利用してアフィン・ラプラス型作用素に関する新しいトレース型公式を証明し、三角関数の和や二項係数を用いたチェビシェフ多項式の有限和に関する様々な組合せ論的恒等式の導出に応用しています。",
+          "keywords": [
+            "discrete space-time wave equation",
+            "regular graphs",
+            "affine Laplace-type operator",
+            "non-backtracking walk counts",
+            "trace-type formula"
+          ],
+          "appendix": "本論文は、グラフ上の組合せ論的構造と作用素の関連性を扱っており、[興味ある分野]の中では combinatorics に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.27074v1": {
+          "title": "代数的デーン充填を用いたGromov-Thurston多様体の判別",
+          "summary": "Gromov-Thurston多様体のホモトピー型を判別するための基準を開発しました。このアプローチは、多様体の基本群を相対的双曲群のバーチャルなデーン充填として記述することに基づいています。",
+          "keywords": [
+            "Gromov-Thurston manifolds",
+            "homotopy types",
+            "Dehn fillings",
+            "relatively hyperbolic groups",
+            "fundamental groups"
+          ],
+          "appendix": "本論文は基本群の構造を扱っており、興味ある分野のうち「structure of large countable infinite group」に関連があります。"
+        },
+        "http://arxiv.org/abs/2606.27062v1": {
+          "title": "ジャンプ、インタラクション、および交差型について",
+          "summary": "DanosとRegnierによって提案されたJumping Abstract Machine (JAM)は、GirardのGeometry of Interactionに基づくInteraction Abstract Machine (IAM)の最適化であり、Hyland-Ongのゲーム意味論の構文的な対応物であるPointer Abstract Machine (PAM)と同型である。本論文では、これらを一般化したParametric Jumping Abstract Machine (PaJAM)を導入し、非冪等交差型(non-idempotent intersection types)との密接な対応を明らかにした。PaJAMのバックトラッキングの深さを0に固定するとJAM/PAMを、無制限にするとIAMを再現できる。また、型理論的な手法を用いてPaJAMの計算量を解析し、バックトラッキングの深さが有限の範囲において、弱頭部β簡約のステップ数に対して多項式的であり、妥当なコストモデルとなることを示している。",
+          "keywords": [
+            "Jumping Abstract Machine",
+            "Interaction Abstract Machine",
+            "Intersection types",
+            "Geometry of Interaction",
+            "Game semantics"
+          ],
+          "appendix": "本論文で扱われる抽象機械の動作や計算量の解析は、広義にはオートマトン理論(automata theory)の基盤的な側面と関連性があります。"
+        },
+        "http://arxiv.org/abs/2606.27056v1": {
+          "title": "自由歪ブレースとYang--Baxter方程式の自由解",
+          "summary": "本論文では、Yang--Baxter方程式の自由な非退化双射解の構造歪ブレースが自由であることを証明し、冪零解の圏(RNSₙ)においても同様の結果を示しています。任意のクラスの自由右冪零歪ブレースの実用的な構成法を提示し、その自由オブジェクトが自由な加法群および乗法群を持つこと、また特定の条件下で残留有限かつホップ的であることを明らかにしました。この構成の主な帰結として、圏RNSₙにおける自由な非退化双射解の語の問題(Word Problem)が可解であることや、特定のタイプの有限解で成り立つ法則が同タイプのすべての解でも成立することを証明しています。さらに、アーベル型の自由両側歪ブレースやクラス2の自由中心冪零歪ブレースの具体的な実現についても論じています。",
+          "keywords": [
+            "Free skew braces",
+            "Yang--Baxter Equation",
+            "Right nilpotent skew braces",
+            "Word Problem",
+            "Non-degenerate bijective solution"
+          ],
+          "appendix": "本論文は「Word Problem」の可解性や「structure of large countable infinite group」に関連する群構造の性質を扱っており、興味ある分野の formal languages や代数的構造の解析に深く関わっています。"
+        },
+        "http://arxiv.org/abs/2606.27034v1": {
+          "title": "カントール集合における平均フーリエ推定と二進近似",
+          "summary": "この論文は、1/3カントール集合 C とその自然な確率測度 μ における、||2ⁿ x|| < n⁻τ という形式の二進近似の性質を調査している。γ = log 2 / log 3 と定義したとき、τ > 2 - γ では無限回成立する点の集合の測度が 0 となり、τ < (1 - γ)/2 では測度が 1 となることを示した。これらの結果は、1/3カントール集合における二進近似の零一法則に関する Velani の予想に向けた新たな進展を与えるものである。",
+          "keywords": [
+            "Averaged Fourier Estimates",
+            "Dyadic Approximation",
+            "Cantor set",
+            "Velani's conjecture",
+            "Zero-one law"
+          ],
+          "appendix": "本論文は興味ある分野のうち、arithmetic dynamics および symbolic dynamics に関連する内容を含んでいます。カントール集合のようなフラクタル集合上でのディオファントス近似の解析は、これらの分野において重要なテーマです。"
+        },
+        "http://arxiv.org/abs/2606.27020v1": {
+          "title": "格子空間におけるカスプへの偏移、多様体上の格子点、および溝畑・竹内予想",
+          "summary": "本論文では、力学系と数論幾何の手法を用いて、格子の空間におけるカスプへの偏移に関する新しい対数則を証明し、部分多様体近傍の格子点に対する定量的下限を導出している。この応用として、局所的な溝畑・竹内予想における冪指数の減衰（power loss）に関する新しい証明を具体的な誤差項とともに示し、さらにCk空間において冪指数の減衰が一般的（generic）であることを明らかにした。この構成には、高次元の確率論的評価が用いられており、既存手法で用いられていたランダムな直交部分空間をランダムなユニモジュラ格子に置き換えることで、より強力な境界条件と豊富な反例の族を提供している。",
+          "keywords": [
+            "cusp excursions",
+            "lattice points",
+            "Mizohata-Takeuchi conjecture",
+            "unimodular lattices",
+            "probabilistic estimates"
+          ],
+          "appendix": "本論文は「arithmetic dynamics」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.26943v1": {
+          "title": "2次元サンドパイルにおける非一様および重み付き交差ゲート",
+          "summary": "2次元サンドパイルの予測問題がNCに属するか、あるいはP完全であるかは数十年来の未解決問題である。MooreとNilssonは3次元サンドパイルにおいて論理回路を符号化することでP完全性を証明したが、2次元では交差ゲートの構築が不可能であるためその手法は適用できない。本研究では、非一様および重み付き格子における交差ゲートの存在を調査した。その結果、一様な重み付き交差ゲートと、primalと呼ばれる単純な非一様交差ゲートのクラスとの間の等価性を確立した。また、単一の交差ではなく本質的に複数の交差を必要とする交差ゲートを提示し、より一般的な設定では一様重み付きとprimalな交差の等価性が崩れることを示した。",
+          "keywords": [
+            "Two-Dimensional Sandpiles",
+            "Crossing Gates",
+            "P-completeness",
+            "Non-uniform grids",
+            "Weighted grids"
+          ],
+          "appendix": "本論文は、サンドパイルモデルの計算複雑性や組み合わせ論的性質を扱っており、興味ある分野のうち symbolic dynamics や combinatorics に関連する計算理論的な側面を持っています。"
+        },
+        "http://arxiv.org/abs/2606.26877v1": {
+          "title": "Lefschetzのポイントフリー周期性について",
+          "summary": "Lefschetzのポイントフリー周期性の研究に向けた2つの新しいアプローチを提案している。第一のアプローチはWeckenの性質を満たす空間に焦点を当てたもので、具体例としてバブル空間（bubble spaces）を調査している。第二のアプローチは、力学系のリペラー（repellers）の研究などで重要となる、Lefschetzのポイントフリー周期性の相対的な研究である。",
+          "keywords": [
+            "Lefschetz point-free periodicity",
+            "Wecken property",
+            "bubble spaces",
+            "repellers",
+            "dynamical systems"
+          ],
+          "appendix": "力学系のリペラーの研究に関連していることから、complex dynamicsやsymbolic dynamicsといった分野との関連性が示唆されます。"
+        },
+        "http://arxiv.org/abs/2606.26786v1": {
+          "title": "サンドパイル力学系を用いた有向グラフの雪崩ホモロジー",
+          "summary": "本論文では、サンドパイルモデルのダイナミクスに基づいた、(有向)グラフに対する新しいホモロジー理論「雪崩ホモロジー (avalanche homology)」を導入する。雪崩ホモロジーは、サンドパイルの各時間ステップにおいて生じる不安定な頂点の集合から構築される「雪崩複体」の単体的ホモロジーである。本研究では特に有向グラフに焦点を当て、特定の初期構成における有向道や有向サイクルの雪崩複体のホモトピー型を決定している。これらの単純な有向グラフにおいても多様なトポロジーが生じることを示し、既存の有向フラグ複体やバーニングホモロジーとの比較を行っている。さらに、このダイナミクスから自然にフィルター付き単体複体が得られるため、パーシステント雪崩ホモロジーへの拡張も提示している。",
+          "keywords": [
+            "sandpile model",
+            "avalanche homology",
+            "avalanche complex",
+            "digraphs",
+            "persistent homology"
+          ],
+          "appendix": "サンドパイルモデルという離散的なダイナミクスを扱っている点で、興味ある分野の symbolic dynamics と深い関連があります。"
+        },
+        "http://arxiv.org/abs/2606.26776v1": {
+          "title": "Artinモノイド、その準同型およびtwin",
+          "summary": "本論文は、Coxeter群およびHeckeモノイドにおけるtwin準同型問題に動機付けられ、Artinモノイドの標準準同型とその合成から導かれる広範な解のクラスを提示している。これらの準同型は、最適かつ生成元において単射である場合に単射となることが期待され、これは斉次準同型やParisによって解決されたTits予想を一般化するものである。また、互いに素な標準準同型を分類し、定義域のランクが2の場合における完全な分類を予想している。",
+          "keywords": [
+            "Artin monoids",
+            "Coxeter groups",
+            "Hecke monoids",
+            "twin homomorphism problem",
+            "Tits conjecture"
+          ],
+          "appendix": "本論文はArtinモノイドやCoxeter群の代数的構造を扱っており、指定された分野のうち「structure of large countable infinite group」に強く関連しています。また、モノイドの準同型や生成元の関係性は「combinatorics on words」の分野とも密接に関わります。"
+        },
+        "http://arxiv.org/abs/2606.26768v1": {
+          "title": "Emerson-Lei elevator automata の補集合化（テクニカルレポート）",
+          "summary": "Büchi elevator automata は、強連結成分が決定性または本質的に弱い（inherently weak）という性質を持つ Büchi オートマトンの一種であり、LTL モデル検査などの実用的な応用に広く現れる。本論文では、これを受容条件がより豊富な Emerson-Lei オートマトンへと拡張した Emerson-Lei elevator automata を提案する。さらに、一般的な Emerson-Lei オートマトンに対する従来手法よりも漸近的な計算量が大幅に改善された補集合化アルゴリズムを導入する。実験により、既存ツール Spot と比較して実用的な効率性が示されており、複雑な受容条件を持つオートマトンの実用的な処理に向けた重要な一歩となっている。",
+          "keywords": [
+            "Emerson-Lei elevator automata",
+            "complementation",
+            "Büchi automata",
+            "LTL model-checking",
+            "acceptance conditions"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に直接関連しています。"
+        },
+        "http://arxiv.org/abs/2606.26747v1": {
+          "title": "係数をフィボナッチ数列に制限した連分数展開の次元スペクトル",
+          "summary": "本論文では、一般化フィボナッチ数列 F₍ₐ₁,ₐ₂₎ に制限された係数を持つ連分数展開の次元スペクトルの構造を分析している。正の整数 a₁ < a₂ から始まる数列において、a₁ ≥ 2 または a₁ = 1 かつ a₂ ≥ 3 の場合、その連分数の集合は全次元スペクトルを持つことを証明した。一方で、Falk と Nussbaum によって開発された数値解析手法を用い、標準的なフィボナッチ数列 F₍₁,₂₎ およびリュカ数 F₍₂,₁₎ に制限された場合には次元スペクトルにギャップが生じることを示した。さらに、これら後者の場合でも、次元スペクトルが常に非自明な区間を含むことを証明している。",
+          "keywords": [
+            "dimension spectrum",
+            "continued fraction expansions",
+            "generalized Fibonacci sequence",
+            "Lucas numbers",
+            "numerical tools"
+          ],
+          "appendix": "本論文は、記号力学系 (symbolic dynamics) や計算機によって援用された数値解析 (validated numerics) の手法に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.26709v1": {
+          "title": "分散型Knowing Howにおけるモデル検査問題のΔᵖ₂完全性",
+          "summary": "分散型Knowing How（distributed knowing how）におけるモデル検査問題の計算複雑性を調査した論文です。解析の結果、この問題が複雑性クラスΔᵖ₂において完全（Δᵖ₂-complete）であることを示しています。",
+          "keywords": [
+            "distributed knowing how",
+            "model checking",
+            "computational complexity",
+            "Δᵖ₂-complete"
+          ],
+          "appendix": "本論文はモデル検査の計算複雑性を扱っており、提示された興味ある分野の中では『automata theory』や『formal languages』における形式手法の側面と関連があります。"
+        },
+        "http://arxiv.org/abs/2606.26705v1": {
+          "title": "深層学習のアルゴリズム的基礎：計算量理論的収束レートと普遍近似の性格付け",
+          "summary": "本論文は、順伝播型ニューラルネットワーク（NN）の表現力を、従来の最適基底展開という視点に加え、計算モデルとしての側面から再考している。実数値回路で計算可能な関数は、その回路の深さや幅、ゲート構造に基づいた複雑さでNNにより近似可能であり、NNの複雑さは正則性だけでなくアルゴリズム的複雑さによって支配されることを示した。また、並列化条件を満たす定義可能なNNモデルが普遍近似器であるための必要十分条件が非アフィンな非線形性を持つことであることを明らかにした。この理論により、Newton-Raphson法などの数値アルゴリズムの模倣や、グラフの最短経路計算において従来のLipschitz近似のスケールであるO(ε⁻ᶜᵏ²)を指数関数的に改善するO(log(1/ε))のパラメータ数での近似が可能であることを実証している。",
+          "keywords": [
+            "Algorithmic complexity",
+            "Universal approximation",
+            "Feedforward neural networks",
+            "Real-valued circuits"
+          ],
+          "appendix": "本論文で示された数値アルゴリズム（Newton-Raphson法等）の模倣は「validated numerics」に関連する内容を含んでいます。また、回路計算に基づくNNの解析手法は「automata theory」等の計算モデルに関する分野と関連性があります。"
+        },
+        "http://arxiv.org/abs/2606.26685v1": {
+          "title": "非一様なオートマトン族の複雑さに対して、サイズとシーリングの境界はどのように影響を与えるか？",
+          "summary": "本論文では、状態数やスタック状態数が制限された2方向有限オートマトンおよびプッシュダウンオートマトンの族について研究している。特に入力長が有界な場合に、これらがアドバイス付きの領域計算量クラスと直接的な関係を持つことに注目し、オートマトン族の複雑さに大きな影響を与える2つの要因として「サイズ（(スタック)状態複雑度）」と「シーリング（入力長の境界）」を定義した。これらの要因が異なる設定下でオートマトン族の計算能力にどのような影響を及ぼすかを詳細に調査している。",
+          "keywords": [
+            "two-way finite automata",
+            "pushdown automata",
+            "state complexity",
+            "space-bounded complexity classes",
+            "Karp-Lipton style advice"
+          ],
+          "appendix": "この論文は興味ある分野のうち「automata theory」および「formal languages」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.26684v1": {
+          "title": "並列通信有限オートマトン：非忘却モデル",
+          "summary": "本論文では、複数の有限オートマトンが互いの状態を照会することで通信を行う並列通信有限オートマトン（PCFA）のより現実的なモデルとして、照会中に自身の状態を保持する「非忘却（non-forgetting）モデル」を導入した。このモデルの計算能力を従来の忘却型システムや多ヘッド有限オートマトンと比較した結果、多くのバリアントにおいて、オートマトン数と同数のヘッドを持つ多ヘッド有限オートマトンと同等の能力を持つことが示された。ただし、非帰還モードの決定性集中型システムは例外的に厳密な包含関係が成り立つ。本研究により、従来の忘却型モデルにおいて未解決であったいくつかの問いに回答が与えられている。",
+          "keywords": [
+            "Parallel Communicating Finite Automata",
+            "non-forgetting model",
+            "multi-head finite automata",
+            "computational capacity"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「automata theory」および「formal languages」に密接に関連しています。従来のモデルにおける未解決問題に対し、非忘却モデルの性質を通じてアプローチしている点が特徴です。"
+        },
+        "http://arxiv.org/abs/2606.26683v1": {
+          "title": "半透明な入力文字を持つ有限オートマトンに関するいくつかの未解決問題について",
+          "summary": "半透明な入力文字を持つ有限オートマトンは、非連続的な入力処理を可能にする計算モデルであり、状態に応じて特定の記号をスキップする「半透明性」を特徴とする。本論文では、先行研究で提案された「帰還型(returning)」および「非帰還型(non-returning)」の2つのモデルについて、長年未解決であった性質を解明している。具体的には、非帰還型モデルにおける連結、クリーネ閉包、反転、逆準同型の下での非閉包性を示し、帰還型モデルについても逆準同型の下で閉じていないことを証明した。さらに、非帰還型モデルの空性判定問題が決定可能であることを明らかにした。",
+          "keywords": [
+            "finite automata",
+            "translucent input letters",
+            "closure properties",
+            "emptiness problem",
+            "formal languages"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「automata theory」および「formal languages」に深く関連する内容となっています。"
+        },
+        "http://arxiv.org/abs/2606.26682v1": {
+          "title": "Idefix-Free言語とその外部文脈文法における応用",
+          "summary": "正規言語の真の部分族である選択言語を用いた文脈文法の表現能力に関する研究。本論文では、infix-free、prefix-free、およびsuffix-free言語（これらを総称してidefix-free言語と呼ぶ）に着目し、有限言語、monoidal言語、nilpotent言語、可換言語などの他の劣正規（subregular）言語族と比較を行っている。さらに、外部文脈文法によって生成される言語族の階層構造をこれらの新しい選択言語のタイプと比較することで、既存の階層を拡張している。",
+          "keywords": [
+            "idefix-free languages",
+            "external contextual grammars",
+            "subregular languages",
+            "infix-free languages",
+            "prefix-free languages"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「formal languages」および「automata theory」に直接関連しています。特に、正規言語の様々な部分族が文脈文法の記述能力にどのような影響を与えるかを分類・比較しています。"
+        },
+        "http://arxiv.org/abs/2606.26680v1": {
+          "title": "2ヘッド2次元帰還有限オートマトン",
+          "summary": "本論文では、矩形配列（画像言語）上で動作し、2つのヘッドが互いに逆方向に移動する「2ヘッド帰還有限オートマトン」(2-HRFA)を導入した。2-HRFAが受理する言語クラスは、文脈自由行列文法(CFMG)が生成するクラスと比較不能であり、帰還プッシュダウンオートマトン(RPDA)が受理するクラスの真部分集合であることを示している。また、両ヘッドが同期して移動する制約付きの「両ヘッドステップ2ヘッド帰還有限オートマトン」(B2-HRFA)を定義し、包含関係 RFA ⊂ B2-HRFA ⊂ 2-HRFA が成り立つことを証明した。さらに、これらの言語族における閉包特性についても検討している。",
+          "keywords": [
+            "two head returning finite automata (2-HRFA)",
+            "picture languages",
+            "context-free matrix grammars (CFMG)",
+            "returning pushdown automata (RPDA)",
+            "closure properties"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に密接に関連しており、特に2次元の画像言語を扱うオートマトンの階層構造や閉包性に関する理論的枠組みを提供しています。"
+        },
+        "http://arxiv.org/abs/2606.26679v1": {
+          "title": "Sparse Counting-Setsを用いた効率的な正規表現マッチング",
+          "summary": "数値による範囲指定を伴う計数操作付き正規表現（c-regexes）において、複数のカウンタ値を一括更新するcounting-setデータ構造が提案されているが、分岐遷移時の複製コストが性能のボトルネックとなっていた。本論文では、必須のカウンタ値のみを管理することで複製のオーバーヘッドを削減するsparse counting-setアプローチを提案し、より効率的なマッチングアルゴリズムを実現した。",
+          "keywords": [
+            "c-regexes",
+            "counting-set",
+            "sparse counting-set",
+            "matching algorithm"
+          ],
+          "appendix": "本論文は興味ある分野のうち、automata theoryおよびformal languagesに関連しています。"
+        },
+        "http://arxiv.org/abs/2606.26678v1": {
+          "title": "効率的なバックトラッキング型正規表現マッチングのための選択的メモ化",
+          "summary": "バックトラッキング型の正規表現マッチングエンジンは、強力な表現力を持つ一方で、最悪の場合に指数関数的な実行時間を要するという課題がある。メモ化は冗長な計算を排除して線形時間を保証する有力な手法だが、完全なメモ化はメモリ消費が激しく実用的ではない。本論文では、オートマトンの最小フィードバック頂点集合の計算に基づく「最小フィードバックノード（MFN）メモ化スキーム」という選択的メモ化戦略を提案する。提案手法と既存のメモ化手法との関係を明らかにするとともに、ThompsonおよびGlushkovのオートマトン構成法における挙動の解析を行っている。",
+          "keywords": [
+            "Selective memoization",
+            "Backtracking regular expression matching",
+            "Minimum Feedback Vertex Set",
+            "Automata theory"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「automata theory」および「formal languages」に密接に関連しています。オートマトンのグラフ構造解析（フィードバック頂点集合）を正規表現のマッチング最適化に応用する手法を扱っています。"
+        },
+        "http://arxiv.org/abs/2606.26677v1": {
+          "title": "脱出するアリをどの程度の期間閉じ込めておけるか？",
+          "summary": "ラングトンのアリは、長期的には複雑な振る舞いを示し、最終的に有限の連結領域から脱出することが知られているが、その定量的な性質は十分に解明されていない。本論文では、アリが領域を離れるまでに行う最大ステップ数である「脱出時間（escaping time）」を研究した。領域サイズに応じた一般的な上界を確立し、特に正方形領域では階乗の上界、高さが2および3の長方形領域では線形の上界、固定された高さの長方形領域では多項式の上界を導出した。また、対称性を利用した最適化アルゴリズムとバックトラッキングを用いたシミュレーションによって厳密な値を計算し、線形上界が漸近的に最適であることを示した。",
+          "keywords": [
+            "Langton's ant",
+            "cellular automaton",
+            "escaping time",
+            "upper bounds",
+            "rectangular domains"
+          ],
+          "appendix": "本論文はセル・オートマトンを扱っており、指定された興味ある分野の中では「automata theory」や「complex dynamics」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.26665v1": {
+          "title": "局所分岐における指数的に小さい分離現象に関連する内部問題への幾何学的アプローチ",
+          "summary": "本論文では、局所分岐の展開における2次元の形式的接続に関連する「内部問題」を幾何学的に扱う手法を提案している。具体的には、独立変数 x ∈ ℂ および θ ∈ ℂ/(2πℤ) を持つ非線形偏微分方程式 x² y'ₓ(1+O(x)) + y'θ + x A y = O(x²) を対象とし、その解がGevrey-1型の係数を持つフーリエ級数のxに関する1-和（1-sum）であることを示した。この手法は、zero-Hopf分岐や共鳴Hopf-Hopf分岐といった例に応用され、不変多様体をブローアップ座標を通じて相空間上で直接表現することを可能にする。技術面では、BonckaertおよびDe MaesschalckによるBorel-Laplace法を解析的なフーリエ級数へと拡張し、Borel平面上で指数成長を持つ係数を含むフーリエ級数のBanach空間において偏微分方程式を解決している。",
+          "keywords": [
+            "exponentially small splitting",
+            "local bifurcations",
+            "inner problems",
+            "Borel-Laplace transformation",
+            "Gevrey-1 coefficients"
+          ],
+          "appendix": "本論文は、解析的な微分方程式や不変多様体の研究を扱っており、複素力学系（complex dynamics）の分野と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.26605v1": {
+          "title": "ランダムおよび同時力学系における乗法的エルゴード定理",
+          "summary": "本論文では、コンパクトな確率空間上で定義された測度保存写像の有限集合を対象とし、力学系の成長に関する2つの側面を考察しています。第一に、無限語によって決定される経路に沿った点軌道の進化を扱う設定、第二に、集合の軌道が進化し得るすべての可能な経路を考慮する集合値の設定です。これら2つのケースに対して、Oseledetsによる乗法的エルゴード定理の完全な記述を与えることを目的としています。",
+          "keywords": [
+            "multiplicative ergodic theorem",
+            "random dynamics",
+            "simultaneous dynamics",
+            "compact probability space",
+            "Oseledets"
+          ],
+          "appendix": "本論文は興味ある分野のうち、symbolic dynamics および combinatorics on words と密接に関連しています。特に、写像の適用順序を決定する無限語の扱いは、記号力学系や語の組合せ論的な手法と親和性が高い内容となっています。"
+        },
+        "http://arxiv.org/abs/2606.26525v1": {
+          "title": "計算機科学のための論理学における理論規模の自動形式化",
+          "summary": "既存の自動形式化研究が個別の命題に焦点を当てていたのに対し、本研究では数百もの相互依存する定義・補題・定理を整合的に翻訳する理論規模（theory-scale）の自動形式化に取り組んでいる。著者らは計算機科学の論理学に基づいたベンチマークLCS-Benchを提案し、概念グラフや反例探索を活用したエージェント的パイプラインと専門家の査読を通じて、Lean言語による膨大な宣言とコード群を構築した。定義の等価性チェッカーを含む新しい評価プロトコルを用いた実験の結果、現状の最高性能モデルでも20.1%の達成率に留まることが明らかになり、理論規模の形式化における課題と今後の方向性を提示している。",
+          "keywords": [
+            "Auto-formalization",
+            "Theory-scale",
+            "LCS-Bench",
+            "Lean",
+            "Definitional equivalence"
+          ],
+          "appendix": "本研究は計算機科学における論理学を題材としており、形式言語 (formal languages) やオートマトン理論 (automata theory) に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2606.26503v1": {
+          "title": "ラベル付き有限オートマトンにおける2次過去状態不透明性",
+          "summary": "本論文では、あるエージェントが、別のエージェントが現在および過去の観測に基づいて有限オートマトンの状態を一意に特定できたかどうかを確信できないという性質を、2次過去状態不透明性（order-2 bygone-state opacity）として定式化している。並行合成（concurrent composition）と古典的なオブザーバの手法に基づき、この性質を二重指数時間で検証する手法を導出した。この研究の意義は、有限オートマトンの推論を単一のエージェントから、順序関係のある2つのエージェントへと拡張した点にある。",
+          "keywords": [
+            "order-2 bygone-state opacity",
+            "labeled finite-state automata",
+            "concurrent composition",
+            "observer",
+            "inference"
+          ],
+          "appendix": "本論文は「automata theory」に関連する研究であり、オートマトンのセキュリティやプライバシーに関する特性である不透明性の検証を扱っている。"
+        },
+        "http://arxiv.org/abs/2606.26490v1": {
+          "title": "VeriFastのためのLLM生成仕様に関する経験的研究",
+          "summary": "静的検証ツール、特に分離論理（Separation Logic）に基づく検証器は、ヒープ操作を伴うプログラムの検証に優れているが、仕様記述に多大な労力を要する。本論文では、VeriFastを用いた303個のC関数に対し、LLMによる仕様生成の性能を包括的に評価した。8つのプロンプティング手法と10種類のLLMを検証した結果、機能の保持率は91%以上と高い一方、検証の成功率は31.4%に留まった。主なエラーの94%は、分離論理検証器に特有のドメイン知識の不足に起因している。",
+          "keywords": [
+            "Large Language Models",
+            "Separation Logic",
+            "VeriFast",
+            "Static Verification",
+            "Formal Specifications"
+          ],
+          "appendix": "本論文は形式仕様と言語を扱っており、[興味ある分野]の中では 'formal languages' と関連があります。また、論文内ではGemini 2.5 Pro（原文の記載通り）が高い成功率を示したことが報告されています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.27272v1",
+        "http://arxiv.org/abs/2606.27209v1",
+        "http://arxiv.org/abs/2606.27198v1",
+        "http://arxiv.org/abs/2606.27172v1",
+        "http://arxiv.org/abs/2606.27170v1",
+        "http://arxiv.org/abs/2606.27166v1",
+        "http://arxiv.org/abs/2606.27148v1",
+        "http://arxiv.org/abs/2606.27104v1",
+        "http://arxiv.org/abs/2606.27085v1",
+        "http://arxiv.org/abs/2606.27075v1",
+        "http://arxiv.org/abs/2606.27074v1",
+        "http://arxiv.org/abs/2606.27062v1",
+        "http://arxiv.org/abs/2606.27056v1",
+        "http://arxiv.org/abs/2606.27034v1",
+        "http://arxiv.org/abs/2606.27020v1",
+        "http://arxiv.org/abs/2606.26943v1",
+        "http://arxiv.org/abs/2606.26877v1",
+        "http://arxiv.org/abs/2606.26786v1",
+        "http://arxiv.org/abs/2606.26776v1",
+        "http://arxiv.org/abs/2606.26768v1",
+        "http://arxiv.org/abs/2606.26747v1",
+        "http://arxiv.org/abs/2606.26709v1",
+        "http://arxiv.org/abs/2606.26705v1",
+        "http://arxiv.org/abs/2606.26685v1",
+        "http://arxiv.org/abs/2606.26684v1",
+        "http://arxiv.org/abs/2606.26683v1",
+        "http://arxiv.org/abs/2606.26682v1",
+        "http://arxiv.org/abs/2606.26680v1",
+        "http://arxiv.org/abs/2606.26679v1",
+        "http://arxiv.org/abs/2606.26678v1",
+        "http://arxiv.org/abs/2606.26677v1",
+        "http://arxiv.org/abs/2606.26665v1",
+        "http://arxiv.org/abs/2606.26605v1",
+        "http://arxiv.org/abs/2606.26525v1",
+        "http://arxiv.org/abs/2606.26503v1",
+        "http://arxiv.org/abs/2606.26490v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-28T06:37:05.790815+00:00",
-      "updated_at": "2026-06-28T08:21:33.965825+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-28T09:55:17.578510+00:00",
+      "finalized_at": "2026-06-28T09:55:17.578484+00:00"
     }
   ]
 }
