@@ -74982,7 +74982,7 @@
     },
     {
       "pipeline_id": "20260630T063224Z-86d3a374",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/kqla0poj7mtssorxp6sxfnopz4yiduiaaal2",
       "summarize_job_name": "batches/pzjygxxqt56orpqve34kbicy9z0ty0j28ref",
       "papers": [
@@ -75325,14 +75325,132 @@
         "http://arxiv.org/abs/2606.28771v1",
         "http://arxiv.org/abs/2606.28718v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.29083v1": {
+          "title": "スペクトル的に正確なKoopman近似のための残差誘導型辞書学習",
+          "summary": "非線形動的事象を線形構造として捉えるKoopman作用素論において、数値的に算出されるスペクトルの信頼性を向上させる新たな辞書学習手法を提案している。従来のニューラルネットワークを用いた学習が予測精度のみを重視していたのに対し、本手法ではResidual Dynamic Mode Decomposition (RDMD)に基づく残差を最小化することで、算出された固有値やモードが真のKoopmanスペクトル対象であることを保証する。学習時には、観測値が不安定な座標系に収束するのを防ぐため、リフトされたデータ行列の条件数もペナルティとして加味される。これにより、保存系および散逸系のベンチマーク、さらには海面水温データにおいて、スペクトル汚染を抑制し、予測精度と数値的安定性の両立を実現している。",
+          "keywords": [
+            "Koopman theory",
+            "Dictionary learning",
+            "Residual Dynamic Mode Decomposition",
+            "Spectral reliability",
+            "Neural networks"
+          ],
+          "appendix": "本論文は、複素力学系（complex dynamics）や精度保証付き数値計算（validated numerics）に関連する、力学系のスペクトル解析における数値的信頼性の向上というテーマを扱っています。"
+        },
+        "http://arxiv.org/abs/2606.29075v1": {
+          "title": "クエリを用いた1次元における交差するアフィン加群の和集合の学習",
+          "summary": "本研究では、a + Σ bⱼℤ という形式で表される1次元のアフィン加群の有限和について、その完全学習可能性を調査した。特に、すべての加群が空でない共通部分を持つ表現が可能な「交差するアフィン加群の和集合」のクラスを対象としている。このクラスは、等価性クエリ（equivalence queries）と部分集合クエリ（subset queries）を用いることで、効率的に完全学習可能であることを示した。また、共通の要素が既知であれば、部分集合クエリは所属クエリ（membership queries）に置き換えることができる。提案手法の反例の数は、最小表現に含まれる加群の数を k、最大の反例を x_ℓ としたとき、高々 k log(2|x_ℓ|) + 2k であり、バイナリ表現において多項式時間での学習が可能であることを意味している。",
+          "keywords": [
+            "Affine modules",
+            "Exact learnability",
+            "Equivalence queries",
+            "Subset queries",
+            "Membership queries"
+          ],
+          "appendix": "本研究で扱われているアフィン加群の学習問題は、数論的構造を扱う計算学習理論の側面に加え、形式言語やオートマトン理論における述語の学習（automata theory, formal languages）や、整数の算術的性質を扱う点において arithmetic dynamics と関連があります。"
+        },
+        "http://arxiv.org/abs/2606.29057v1": {
+          "title": "アーベル多様体の自己準同型における稠密な軌道の横断性について",
+          "summary": "数体K上の滑らかな射影多様体Xと射f:X→Xについて、Zariski稠密な軌道を持つ点の存在を前提としたgrand (f, K)-軌道の分布に関する研究である。PastenとSilvermanは、Xが幾何学的に単純なアーベル多様体である場合に代表元の集合がZariski稠密になることを示したが、本論文ではこれを全てのアーベル多様体に拡張し、稠密な代表元の集合が存在することを実証した。",
+          "keywords": [
+            "Dense orbit",
+            "Endomorphisms",
+            "Abelian varieties",
+            "Zariski dense",
+            "Grand orbits"
+          ],
+          "appendix": "本論文は「arithmetic dynamics」の分野に関連している。PastenおよびSilvermanによる幾何学的に単純なアーベル多様体に関する先行研究を、全てのアーベル多様体へと一般化した内容となっている。"
+        },
+        "http://arxiv.org/abs/2606.29017v1": {
+          "title": "QI(ℝ₊) における dilation の中心化群の構造定理",
+          "summary": "本論文では、正の実数直線 ℝ₊ の準等長写像群における dilation の中心化群について研究している。無限遠における粗く稠密な数列を用いて定義される漸近不変量を導入し、dilation と粗く可換な準等長写像に関する剛性定理を確立した。その応用として、非空な漸近不変量を持つ要素からなる中心化群の部分群を特定し、それが正の実数の乗法群と自然に同型であることを証明している。",
+          "keywords": [
+            "quasi-isometry group",
+            "dilation",
+            "centralizer",
+            "asymptotic invariant",
+            "rigidity theorem"
+          ],
+          "appendix": "本論文は、巨大な可算無限群の構造 (structure of large countable infinite group) に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2606.28860v1": {
+          "title": "引き延ばされたラキュナリー整数列における最大空隙",
+          "summary": "比 aₙ₊₁/aₙ ≥ q > 1 を満たすラキュナリー整数列 (aₙ) ⊂ ℕ について、トーラス 𝕋 上の有限軌道 {a₁x, ..., a_Nx} における最大円周空隙 G_N(x) の漸近的挙動を研究した。ルベーグ測度に関してほとんど全ての x において、規格化された最大空隙 NG_N(x) / log N の下極限が 1/2 以上であり、上極限が (q+1)/(q-1) 以下であることを証明した。さらに、全ての n に対して aₙ | aₙ₊₁ が成り立つならば、ほとんど全ての x でこの値が 1 に収束することを示した。",
+          "keywords": [
+            "lacunary sequence",
+            "maximal circular gap",
+            "torus",
+            "dilated sequences",
+            "Lebesgue-almost every"
+          ],
+          "appendix": "本論文は、提示された分野のうち arithmetic dynamics および symbolic dynamics に関連しています。特にトーラス上の点列の分布や力学系的な性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2606.28841v1": {
+          "title": "LAMP: MCPと証明修復を備えたLeanベースのAgenticフレームワーク",
+          "summary": "本論文は、数学的推論における大規模言語モデルの信頼性向上を目指し、Lean 4を用いた形式化証明生成フレームワーク「LAMP」を提案している。具体的には、既存のMathlibでは不足している「語の組合せ論（Combinatorics on Words: CoW）」の分野に焦点を当て、93個の定義と補題からなる新しいライブラリを構築した。LAMPは、Planner、Builder、Verifierの各エージェントがModel Context Protocolを介してドメイン固有のオントロジーを活用するマルチエージェント構成をとっており、ファインチューニングなしで推論時に知識を提供することで、CoW分野の定理において96.7%という高い証明成功率を達成した。",
+          "keywords": [
+            "Lean 4",
+            "Combinatorics on Words",
+            "Agentic framework",
+            "Model Context Protocol",
+            "Formal verification"
+          ],
+          "appendix": "本論文は、興味ある分野として挙げられた「combinatorics on words」に直接関連する形式化ライブラリの構築および、それを用いた証明自動化を扱っています。"
+        },
+        "http://arxiv.org/abs/2606.28819v1": {
+          "title": "SAT-IT: オンライン対話型SATトレーサー",
+          "summary": "現代の充足可能性問題（SAT）ソルバーは、衝突駆動型節学習（CDCL）パラダイムに基づいて高い効率を実現しているが、高度に最適化されたデータ構造やアルゴリズムを持つため、その内部挙動の理解は困難である。本論文では、SATソルバーの基礎を可視化し対話的に学べるWeb環境「SAT-IT」を提案する。このツールは、単純なバックトラッキングからDPLL、さらに2-watched literalsを用いたフル機能のCDCLまでを段階的にカバーし、探索トレイルの可視化や統計分析を提供する。リテラルレベルのブレークポイント設定や、過去の決定を修正して別の分岐を探索する「what-if」機能などを備え、アルゴリズムの理解や問題エンコーディングの効率評価を支援する。",
+          "keywords": [
+            "Boolean Satisfiability",
+            "CDCL",
+            "DPLL",
+            "Two-watched literals",
+            "SAT solving algorithms"
+          ],
+          "appendix": "本論文はSATソルバーの教育およびデバッグ用ツールに関するものであり、提示された「興味ある分野」（オートマトン理論や形式言語など）との直接的な関連性は認められません。"
+        },
+        "http://arxiv.org/abs/2606.28771v1": {
+          "title": "エントロピーとマルチフラクタル解析による極小測度の豊富さ",
+          "summary": "本論文では、極小集合上に台を持つ極小測度の分布と豊富さを、一般的なエルゴード測度の稠密性に関する既知の結果を拡張する形で調査しています。著者らは、任意のエントロピー h_μ(f)=h およびポテンシャル積分 ∫ φ dμ = a を満たすエルゴード的極小測度の集合が、同条件を満たす不変測度の集合において稠密であるという「条件付き極小中間エントロピー特性」を導入しました。この特性が、トポロジカル拡大写像、推移的な算入可能マルコフシフト、および非一様構造を持つ記号力学系の3つの広範な力学系クラスで成立することを示しています。証明には、非コンパクト性や非一様性の課題に対処するために調整された、構成的なマルチホースシュー（multi-horseshoe）技術が用いられています。",
+          "keywords": [
+            "minimal measures",
+            "entropy",
+            "multifractal analysis",
+            "conditional minimal-intermediate-entropy property",
+            "symbolic systems"
+          ],
+          "appendix": "本論文は興味ある分野の「symbolic dynamics」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.28718v1": {
+          "title": "Thue--Morse生成関数の5乗および9乗の係数における2進評価",
+          "summary": "Thue--Morse数列の生成関数をT(x) = Π_{k=0}^{∞}(1-x^{2^k})とし、そのm乗の係数をt_m(n)とする。本論文では、t_5(n)およびt_9(n)の2進評価（2-adic valuation）に関する厳密な公式を証明した。具体的には、ν₂(t_5(4n+j))およびν₂(t_9(8n+j))がnの2進評価に依存する形式で与えられることを示している。これらの公式は、Gawron–Miska–Ulasによる先行研究の予想を肯定的に解決するものであり、すべてのnにおいてt_5(n)およびt_9(n)が非零であることを含意する。証明の鍵として、二項係数を要素に持つ行列群の行列式に対する閉形式の公式が用いられている。",
+          "keywords": [
+            "Thue--Morse sequence",
+            "2-adic valuations",
+            "generating function",
+            "binomial-coefficient entries"
+          ],
+          "appendix": "本論文はcombinatorics on wordsに関連するThue--Morse数列を扱っており、その代数的・数論的性質を解析しているため、興味ある分野のcombinatorics on wordsに深く関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.29083v1",
+        "http://arxiv.org/abs/2606.29075v1",
+        "http://arxiv.org/abs/2606.29057v1",
+        "http://arxiv.org/abs/2606.29017v1",
+        "http://arxiv.org/abs/2606.28860v1",
+        "http://arxiv.org/abs/2606.28841v1",
+        "http://arxiv.org/abs/2606.28819v1",
+        "http://arxiv.org/abs/2606.28771v1",
+        "http://arxiv.org/abs/2606.28718v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-06-30T06:32:24.742542+00:00",
-      "updated_at": "2026-06-30T07:44:45.883968+00:00",
-      "finalized_at": null
+      "updated_at": "2026-06-30T10:26:39.593660+00:00",
+      "finalized_at": "2026-06-30T10:26:39.593644+00:00"
     }
   ]
 }
