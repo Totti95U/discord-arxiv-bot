@@ -74979,6 +74979,350 @@
       "created_at": "2026-06-28T06:37:05.790815+00:00",
       "updated_at": "2026-06-28T09:55:17.578510+00:00",
       "finalized_at": "2026-06-28T09:55:17.578484+00:00"
+    },
+    {
+      "pipeline_id": "20260630T063224Z-86d3a374",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/kqla0poj7mtssorxp6sxfnopz4yiduiaaal2",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2606.29083v1",
+          "entry_id": "http://arxiv.org/abs/2606.29083v1",
+          "title": "Residual-Guided Dictionary Learning for Spectrally Accurate Koopman Approximation",
+          "summary": "Koopman theory promises linear structure in nonlinear dynamics, but numerical Koopman spectra are easy to compute and hard to trust. A finite EDMD matrix always has eigenvalues; the problem is that many of them may have nothing to do with the infinite-dimensional operator. In this paper we make spectral reliability the objective of dictionary learning. We train neural-network dictionaries not merely to predict the next snapshot, but to minimize Residual Dynamic Mode Decomposition residuals: operator-level a posteriori errors that test whether computed eigenvalues and modes are genuine Koopman spectral objects. To keep the learned observables from collapsing into an unstable coordinate system, the loss also penalizes the condition number of the lifted data matrix. Thus the method couples two requirements that should not be separated: small Koopman residuals and a well-conditioned representation. The result is a learned dictionary that is expressive, numerically stable, and spectrally disciplined. Across conservative and dissipative benchmark systems, the method sharply reduces spectral pollution, improves residual pseudospectral inclusion, and lowers forecast error relative to standard fixed dictionaries. On sea-surface temperature data, it gives cleaner Koopman diagnostics and substantially better one-step forecasts from noisy observations with no governing equations. The message is simple: neural Koopman learning should be judged not by prediction alone, but by whether its spectral claims can be certified. Residuals provide the certificate; conditioning makes it computable.",
+          "authors": [
+            "George Coote",
+            "Matthew J. Colbrook"
+          ],
+          "published": "2026-06-27T20:53:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.29075v1",
+          "entry_id": "http://arxiv.org/abs/2606.29075v1",
+          "title": "Learning Unions of Intersecting Affine Modules in One Dimension with Queries",
+          "summary": "We study the exact learnability of finite unions of intersecting affine modules in one dimension. An affine module is a set of the form $a+\\sum_{j=1}^{s}b_j \\mathbb{Z}$, where $a,b_1,\\ldots,b_s\\in\\mathbb{N}$. We say that a set definable as a finite union of affine modules is a union of intersecting affine modules if it admits a representation in which all modules have a non-empty intersection. We show that this class is efficiently exactly learnable using equivalence and subset queries. Moreover, subset queries can be replaced with membership queries when a common element is known. Our algorithm requires at most $k\\log(2|x_\\ell|)+2k$ counterexamples, where $k$ is the number of affine modules in the smallest representation and $x_\\ell$ is the largest counterexample. This implies polynomial-time learnability in the binary representation.",
+          "authors": [
+            "Eva González",
+            "Montserrat Hermo",
+            "Anthony Lin"
+          ],
+          "published": "2026-06-27T20:23:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.29057v1",
+          "entry_id": "http://arxiv.org/abs/2606.29057v1",
+          "title": "On Dense Orbit Transversality for Endomorphisms of Abelian Varieties",
+          "summary": "Let $X/K$ be a smooth projective variety defined over a number field and $f:X\\to X$ be a morphism defined over $K$. Assuming there exists a point in $X(K)$ whose $f$-orbit is Zariski dense in $X$ and up to replacing $K$ by a finite extension, Pasten and Silverman studied the distribution of grand $(f,K)$-orbits and proved that many sets of representatives of grand $(f,K)$-orbits on various classes of varieties are Zariski dense. In particular, they showed that if $X$ is a geometrically simple abelian variety, then all such sets of representatives are Zariski dense. We demonstrate the existence of a dense set of representatives for maps on all abelian varieties.",
+          "authors": [
+            "Kaiwen Lu"
+          ],
+          "published": "2026-06-27T19:31:04+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.29037v1",
+          "entry_id": "http://arxiv.org/abs/2606.29037v1",
+          "title": "The Gruenberg-Kegel graph of finite solvable groups that are character-quadratic or semi-rational",
+          "summary": "A finite group $G$ is said to be semi-rational if the set of generators of each cyclic subgroup of $G$ is contained in at most two $G$-conjugacy classes. This is equivalent to the following condition: for every column of the character table of $G$, the values appearing in the column are contained in a quadratic extension of the field of rational numbers (possibly a different one for each column). When the analogous condition holds for the rows, that is, when the field of values of every irreducible character is contained in a quadratic extension of the rationals, we say that the group is character-quadratic (these groups are often called quadratic rational in the literature). We obtain several results concerning the structure of the Gruenberg-Kegel graph of a finite solvable group that is either character-quadratic or semi-rational. More precisely, we first provide a complete classification of such graphs in the disconnected case. Also, we prove that if the graph has at most three vertices and the group is nontrivial, then it belongs to an explicit list of $20$ graphs (in the semi-rational case, this result is proved under the additional assumption that the order of the group is not divisible by $17$), and all of them are realizable except perhaps one. Finally, we show that if the graph has four vertices, then it must have at least four edges.",
+          "authors": [
+            "Irene Crispi",
+            "Sara C. Debon",
+            "Emanuele Pacifici",
+            "Angel del Rio",
+            "Marco Vergani"
+          ],
+          "published": "2026-06-27T18:11:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.29022v1",
+          "entry_id": "http://arxiv.org/abs/2606.29022v1",
+          "title": "An Explication of Optimal Equidistant Codes",
+          "summary": "We discuss the problem of characterizing equidistant binary codes of a given length $n$ having largest possible distance and the maximum number of codewords. Such characterizations have been studied by several authors over the years and they involve symmetric BIBDs with certain parameters. In this primarily expository paper, we investigate the history of this problem and give a unified presentation of the main results. Perhaps surprisingly, researchers on this problem were unaware of early relevant work by Marrero and Butson from 1973. Also, it turns out that published results on characterizations of equidistant binary codes have missed one of the possible subcases when $n \\equiv 2 \\bmod 4$.",
+          "authors": [
+            "Douglas R. Stinson"
+          ],
+          "published": "2026-06-27T17:40:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.29017v1",
+          "entry_id": "http://arxiv.org/abs/2606.29017v1",
+          "title": "A structure theorem for centralizers of dilations in $QI(\\mathbb{R}_{+})$",
+          "summary": "We study centralizers of dilations in the quasi-isometry group of the positive real line. We introduce an asymptotic invariant defined via coarsely dense sequences at infinity and establish a rigidity theorem for quasi-isometries that coarsely commute with a dilation. As an application, we identify the subgroup of the centralizer consisting of elements with non-empty asymptotic invariant and prove that it is naturally isomorphic to the multiplicative group of positive real numbers.",
+          "authors": [
+            "Swarup Bhowmik",
+            "Deblina Das"
+          ],
+          "published": "2026-06-27T17:32:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.29015v1",
+          "entry_id": "http://arxiv.org/abs/2606.29015v1",
+          "title": "Impartial Combinatorial Games and the Nuclear Escalation Ladder",
+          "summary": "We model Herman Kahn's escalation ladder as an impartial combinatorial game. Reindexing each rung by its distance to the nuclear threshold turns the ladder into a subtraction game, the most tractable class in combinatorial game theory, and the doctrinal fact that no side wishes to fire first selects the misere convention. We prove that single-ladder stability is governed by a congruence (Theorem 4.1) and derive a ladder-design corollary that makes the burden of first escalation a function of ladder length and escalation granularity (Corollary 4.2). For simultaneous theaters we show, under normal play, that joint stability is the Nim-sum of the theater-wise escalation distances (Theorem 5.2), a condition that is neither additive nor dominated by the most dangerous theater. We then show the Nim-sum reduction fails under misere play, introduce the misere quotient as its replacement, and prove by exhaustive backward induction that for two-step escalation the quotient is the order-six monoid with generators a, b satisfying a^2=1 and b^3=b, with loss set {a,b^2} (Theorem 6.3). To our knowledge, impartial combinatorial game theory has not previously been applied to nuclear escalation ladders; the existing game-theoretic literature on escalation is classical and payoff-based.",
+          "authors": [
+            "Arnav Garg"
+          ],
+          "published": "2026-06-27T17:24:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28976v1",
+          "entry_id": "http://arxiv.org/abs/2606.28976v1",
+          "title": "Powers of matrices with all principal minors equal to 1",
+          "summary": "Consider a square matrix $A$ whose all principal minors are equal to $1$. Over a field, this property is inherited by any power of $A$, but this is not the case over an arbitrary commutative ring. We show that it is the case over any regular ring, and also over the ring $\\mathbb{Z} / d$ for any integer $d$, and in some other settings (quotients of Prüfer domains and principal quotients of normal domains). This generalizes Problem B5 of the 2021 Putnam contest.\n  Over arbitrary commutative rings, we identify a stronger property that is always inherited by powers: We say that a matrix $A = \\left(a_{i,j}\\right)_{i,j\\in\\left[n\\right]}$ is strongly $1$-principled if all its diagonal entries are $1$ and if all the cyclic products $a_{i_1, i_2} a_{i_2, i_3} \\cdots a_{i_k, i_1}$ with $k>1$ vanish. We show that the latter products are always integral over the ideal generated by the principal minors of $A$ minus $1$.",
+          "authors": [
+            "Darij Grinberg"
+          ],
+          "published": "2026-06-27T15:27:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28945v1",
+          "entry_id": "http://arxiv.org/abs/2606.28945v1",
+          "title": "The heat-kernel master field on $\\mathbb{Z}^d$ at strong coupling",
+          "summary": "We solve large-$N$ Yang--Mills theory on $\\mathbb{Z}^d$, for every $d\\geq2$, at strong coupling, for structure group $\\mathrm{U}(N)$ and for the heat-kernel action. More precisely, we prove that normalized Wilson loop expectations have infinite-volume large-$N$ limits, factorize at leading order, and admit an all-order $1/N$-expansion with exponentially local coefficients, whose leading order characterizes the master field. We also prove an area-law upper bound for the heat-kernel master field, with a stronger coefficientwise version.\n  The proof is based on a rooted heat-kernel master loop equation. Unlike the Wilson-action equation or the two-dimensional Makeenko--Migdal equation, this equation does not close on Wilson loop observables alone; it closes on an extended space of loop observables coupled to compactly supported plaquette decorations. We prove a strong-coupling, order-truncated rooted trajectory expansion and then identify its leading term with the master field. The main inputs are the universal finite-$N$ duality formulas developed in the companion paper \\cite{Lem26a} and large-$N$ heat-kernel estimates from \\cite{LemMai25,LM2}.",
+          "authors": [
+            "Thibaut Lemoine"
+          ],
+          "published": "2026-06-27T14:35:08+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28908v1",
+          "entry_id": "http://arxiv.org/abs/2606.28908v1",
+          "title": "Note on the number of doppelsemigroups of small order",
+          "summary": "We study doppelsemigroups, i.e., algebraic structures equip\\-ped with two associative binary operations satisfying a specified system of axioms. We investigate duality and isomorphisms of doppelsemigroups and examine the relationships between commutative, abelian, strong, and rectangular doppelsemigroups. Several examples are constructed, including nontrivial iso-opposite doppelsemigroups, noncommutative iso-dual doppelsemigroups, nonabelian iso-cross-dual doppelsemigroups, and nonstrong rectangular iso-opposite doppelsemigroups. Furthermore, we refine the complete classification of nonisomorphic doppelsemigroups of order~3. Finally, we present computer-assisted calculations yielding the numbers of all pairwise nonisomorphic doppelsemigroups and strong doppelsemigroups of orders up to~$5$, as well as all pairwise nonisomorphic commutative, abelian, and rectangular doppelsemigroups of orders up to~$6$, obtained using \\texttt{GAP}, \\texttt{Python}, and \\texttt{C++}.",
+          "authors": [
+            "Volodymyr M. Gavrylkiv"
+          ],
+          "published": "2026-06-27T13:31:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28903v1",
+          "entry_id": "http://arxiv.org/abs/2606.28903v1",
+          "title": "All minimum $C_4$-saturated multipartite graphs",
+          "summary": "A subgraph $H$ of $G$ is said to be $F$-saturated relative to $G$, if $H$ does not contain any copy of $F$, but the addition of any edge $e$ in $E(G)\\backslash E(H)$ would create a copy of $F$. The minimum size of an $F$-saturated graph relative to $G$ is denoted by $sat(G,F)$. Let $K_k^n$ be the complete $k$-partite graph with $n$ vertices in each part. In this paper, we determine $sat(K_4^n,C_4)$ for all $ n \\geq 2$. Moreover, we determine all extremal configurations of $sat(K_k^n,C_4)$ for all $n\\ge 2$ and $k\\ge 4 $.",
+          "authors": [
+            "Yiduo Xu",
+            "Zhen He",
+            "Mei Lu",
+            "Yanzhe Qiu"
+          ],
+          "published": "2026-06-27T13:18:08+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28895v1",
+          "entry_id": "http://arxiv.org/abs/2606.28895v1",
+          "title": "Lumping of reaction networks: Generic and critical parameters",
+          "summary": "We investigate linear lumping for parameter-dependent mass action reaction networks, distinguishing between generic and critical parameter regimes. For generic parameters -- those ranging in some non-empty open subset of parameter space -- we prove that exact linear lumping yields only \"obvious\" reductions: elimination of non-reactant species or projections along stoichiometric first integrals. This characterization extends to reaction networks with product-form kinetics, including Michaelis-Menten and Hill-type rate laws. For mass action systems we proceed to develop an algorithmic approach to identify critical parameter sets -- algebraic subvarieties in parameter space where non-trivial lumpings become available. This procedure reduces the determination of lumping maps to a system of finitely many polynomial equations. It also applies to constrained lumping scenarios (which are frequently motivated by chemical considerations). We then review and extend results about proper lumpings. Finally, we discuss lumpings of a self-replicator system, and of a two-pathway enzyme mechanism, to document the viability of our methods in relevant scenarios. Our results clarify the relationship between structural (parameter-independent) and fine-tuned (parameter-dependent) reductions, with implications for approximate lumping when system parameters lie near critical values",
+          "authors": [
+            "Justin Eilertsen",
+            "Valery G. Romanovski",
+            "Santiago Schnell",
+            "Sebastian Walcher"
+          ],
+          "published": "2026-06-27T12:49:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28890v1",
+          "entry_id": "http://arxiv.org/abs/2606.28890v1",
+          "title": "Logarithmic convergence of finite projective planes",
+          "summary": "In this paper, we study the so-called log-convergence of graphs defined by Balázs Szegedy (arXiv:1504.00858). We answer his Question 4 affirmatively: the sequence of incidence graphs of projective planes over finite fields log-converges, and the limit coincides with that of a particular random graph model.",
+          "authors": [
+            "Márton Borbényi",
+            "Panna Tímea Fekete",
+            "Aranka Hrušková",
+            "Ander Lamaison"
+          ],
+          "published": "2026-06-27T12:34:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28873v1",
+          "entry_id": "http://arxiv.org/abs/2606.28873v1",
+          "title": "Devil's terraces: determining the organization of resonance tongues in a periodically forced dynamical system",
+          "summary": "In periodically forced dynamical systems, resonance tongues are open regions of a parameter plane in which the dynamics on an invariant torus locks to a stable periodic orbit. While individual resonance tongues are well understood, the principles governing their global arrangement remain largely unexplored. We develop a topological framework, grounded in applied topology and Morse theory, whose central object is the two-dimensional resonance surface, defined as the graph of the rotation number $ρ$ over a parameter plane. Within this framework, resonance tongues appear as terraces of the resonance surface at rational values of $ρ$, and their global arrangement is determined by the singularities of this surface. Resolving the resonance surface requires the accurate computation of $ρ$, and we present an algorithm that does so efficiently and at high resolution. As a specific example, we examine a periodically forced model of vertical mixing in the North Atlantic, a process relevant to the Atlantic Meridional Overturning Circulation, and study how its resonance surface changes under variation of a third parameter. We identify six distinct resonance-tongue arrangements and show that the resonance transitions between them are due to changes in the number and type of singularities on the boundary of the resonance surface.",
+          "authors": [
+            "John Bailie",
+            "Priya Subramanian",
+            "Bernd Krauskopf"
+          ],
+          "published": "2026-06-27T11:33:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28860v1",
+          "entry_id": "http://arxiv.org/abs/2606.28860v1",
+          "title": "Maximal Gaps for Dilated Lacunary Integer Sequences",
+          "summary": "Let \\((a_n)_{n\\ge1}\\subset\\mathbb{N}\\) be a lacunary sequence, \\(a_{n+1}\\ge q a_n\\) for \\(q>1\\). For \\(x\\in\\mathbb{T}\\), we study the maximal empty circular gap \\(G_N(x)\\) of the finite orbit \\(\\{a_1x,\\ldots,a_Nx\\}\\). We prove that, for Lebesgue-almost every \\(x\\), \\[\n  \\frac{1}{2}\n  \\le \\liminf_{N\\to\\infty}\\frac{NG_N(x)}{\\log N}\n  \\le \\limsup_{N\\to\\infty}\\frac{NG_N(x)}{\\log N}\n  \\le \\frac{q+1}{q-1}\\,. \\] If, in addition, \\(a_n\\mid a_{n+1}\\) for every \\(n\\), then this can be improved to \\[\n  \\lim_{N\\to\\infty}\\frac{NG_N(x)}{\\log N}=1 \\] for Lebesgue-almost every \\(x\\).",
+          "authors": [
+            "Yuval Peres",
+            "Bohan Yang"
+          ],
+          "published": "2026-06-27T10:54:00+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28844v1",
+          "entry_id": "http://arxiv.org/abs/2606.28844v1",
+          "title": "A solution to Ditor's problem",
+          "summary": "We settle the long-standing open question whether there exists a $3$-ladder of cardinality $\\aleph_2$. Given a positive integer $n$, an $n$-ladder is a lower finite lattice whose elements have at most $n$ lower covers. In 1984, Ditor proved that every $n$-ladder has cardinality at most $\\aleph_{n-1}$, and that this cardinal bound is sharp for $n = 1,2$. He then raised the question of whether the bound is attained for $n\\ge 3$ as well. An affirmative answer is known to be consistent with $\\mathsf{ZFC}$. We prove, relative to the consistency of a Mahlo cardinal, that the question is independent of $\\mathsf{ZFC}$. More precisely, we show that the nonexistence of a $3$-ladder of cardinality $\\aleph_2$ is equiconsistent with a Mahlo cardinal.",
+          "authors": [
+            "Lorenzo Notaro"
+          ],
+          "published": "2026-06-27T10:11:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28841v1",
+          "entry_id": "http://arxiv.org/abs/2606.28841v1",
+          "title": "LAMP: Lean-based Agentic framework with MCP and Proof Repair",
+          "summary": "Large language models are increasingly capable of mathematical reasoning, but the proofs they generate are often unreliable and hard to verify. Interactive theorem provers such as Lean 4 address this by accepting only kernel-checked proofs; however, their reach is bounded by the formalized knowledge available. While Mathlib, a repository of formalized Lean 4 theorems that covers diverse mathematical areas, certain specialized areas remain underrepresented; notably, the domain of Combinatorics on Words (CoW). CoW studies sequences, exploring their properties such as periodicity, borders, conjugacy, and morphisms. As a result, specialized provers, trained on Mathlib-centered data, lack the lemmas to operate in CoW. We present two contributions. First, we introduce a Lean 4 formalization of CoW containing eight modules and \\textbf{93} declarations of core definitions and foundational lemmas. Second, we present LAMP, a multi-agent framework that synthesizes kernel-verified Lean 4 proofs by providing explicit, structured domain knowledge at inference time through an ontology, rather than by fine-tuning a prover. LAMP coordinates a Planner, Builder, and Verifier with Model Context Protocol based access to a domain-specific CoW ontology. In a suite of 90 CoW theorems that span all eight modules and three difficulty levels, LAMP synthesizes verified proofs for 96.7% of theorems, substantially exceeding both an unscaffolded baseline and existing specialized provers. An ablation shows that removing LAMP's tool-grounded architecture or its Planner/Builder separation each cost roughly 12 percentage points, even with the backbone model held fixed.",
+          "authors": [
+            "Santhana Srinivasan R",
+            "Maithilee Patawar"
+          ],
+          "published": "2026-06-27T09:58:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28819v1",
+          "entry_id": "http://arxiv.org/abs/2606.28819v1",
+          "title": "SAT-IT: an Online Interactive SAT Tracer",
+          "summary": "Modern Boolean Satisfiability (SAT) solvers, based on the Conflict-Driven Clause Learning (CDCL) paradigm, achieve state-of-the-art efficiency but present a steep learning curve due to their sophisticated algorithms and highly optimized data structures. Understanding these complex mechanics and evaluating the effectiveness of problem encodings is notoriously challenging for students and emerging researchers. To ease this learning process, we introduce the Interactive SAT Tracer (SAT-IT), an open-access web environment designed to make the foundations of SAT solving highly visible and interactive. SAT-IT offers a staged pedagogical progression: from naive backtracking to DPLL and full CDCL with the two-watched literals scheme. Users can clearly inspect fundamental data structures, search space trails, and solving statistics. The tool interactive search space exploration is boosted with literal-level breakpoints for targeted inspection, alongside versatile automatic solving modes that offer both continuous real-time execution and state-based subroutine automation. Combined with a powerful ``what-if'' capability for stepping backward to explore alternative decisions, an instance manager, and an extensible architecture ready to support additional algorithms, SAT-IT serves as a practical, granular lens for experimenting with SAT solving algorithms and analysing encodings efficiency.",
+          "authors": [
+            "Wilber Bermeo",
+            "Jordi Coll",
+            "Pau Ferrer",
+            "Mateu Villaret"
+          ],
+          "published": "2026-06-27T09:04:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28797v1",
+          "entry_id": "http://arxiv.org/abs/2606.28797v1",
+          "title": "An Improved Upper Bound for the Bilu-Linial Conjecture via Interlacing Families",
+          "summary": "The Bilu-Linial conjecture asserts that every $d$-regular graph admits a signing $σ$ such that the spectral radius of the signed adjacency matrix $A_σ$ satisfies $ρ(A_σ)\\le 2\\sqrt{d-1}$. Bilu and Linial also proved the weaker bound $O(\\sqrt{d\\log^3 d})$ for graphs of maximum degree $d$. Marcus, Spielman, and Srivastava confirmed the conjecture in the case of $d$-regular bipartite graphs. In this paper, we prove that every graph of maximum degree $d$ has a signing $σ$ such that $$ρ(A_σ)\\le 2\\sqrt{3(d-1)}.$$ This removes the polylogarithmic factor from the estimate of Bilu and Linial and gives an explicit $2\\sqrt{3(d-1)}$ two-sided spectral bound.\n  The proof builds on the method of interlacing polynomials introduced by Marcus, Spielman, and Srivastava, together with results on mixed characteristic polynomials established by Marcus, Spielman, and Srivastava and by Bownik.",
+          "authors": [
+            "Zhiqiang Xu",
+            "Xinyue Zhang"
+          ],
+          "published": "2026-06-27T08:09:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28771v1",
+          "entry_id": "http://arxiv.org/abs/2606.28771v1",
+          "title": "Abundance of minimal measures via entropy and multifractal analysis",
+          "summary": "This paper investigates the distribution and abundance of minimal measures (measures supported on minimal sets) in various dynamical systems, extending the well-known density results for general ergodic measures. We introduce the conditional minimal-intermediate-entropy property, which asserts that for any given entropy $h$ and potential integral $a$, the set of ergodic minimal measures satisfying $h_μ(f)=h$ and $\\int \\varphi dμ= a$ is dense in the set of invariant measures satisfying these conditions. We establish that the conditional minimal-intermediate-entropy property holds for three broad classes of systems: topologically expanding maps (including topologically Anosov systems), transitive countable Markov shifts, and symbolic systems with non-uniform structure. Our proofs rely on a constructive multi-horseshoe technique adapted to handle challenges of non-compactness and non-uniformity.",
+          "authors": [
+            "Xiaobo Hou",
+            "Wanshan Lin",
+            "Xueting Tian",
+            "Yi Yuan",
+            "Xutong Zhao"
+          ],
+          "published": "2026-06-27T06:54:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28734v1",
+          "entry_id": "http://arxiv.org/abs/2606.28734v1",
+          "title": "Local Minima in Quadratic-Penalty Relaxations of Binary Linear Programs",
+          "summary": "Many combinatorial optimization problems admit quadratic unconstrained binary formulations (QUBO) which can often be relaxed to the box $[0,1]^n$ and optimized using scalable gradient-based methods. However, the resulting non-convex landscape can often contain local optima that are spurious or infeasible. In this paper, we establish sufficient structural conditions on quadratic penalties that rule out these failures, guaranteeing that every local minimizer of the relaxed problem is both binary and feasible. For each problem we study, we examine existing QUBO formulations when available, identify why they fail when they do, and propose alternative relaxed QUBOs that satisfy our conditions. We show for several common combinatorial problems, including open-pit mining, 0--1 knapsack, and traveling salesman formulations, that these constructions allow gradient-based methods such as projected gradient descent and Adam to be safely applied to obtain valid binary solutions. Our results clarify when differentiable optimization is a reliable local solver for quadratic combinatorial objectives.",
+          "authors": [
+            "Cheng-Han Huang",
+            "Yongliang Sun",
+            "Chaoyan Huang",
+            "Ismail Alkhouri",
+            "Rongrong Wang"
+          ],
+          "published": "2026-06-27T05:00:30+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28727v1",
+          "entry_id": "http://arxiv.org/abs/2606.28727v1",
+          "title": "Degree-restricted semi-saturation numbers of cliques and its applications",
+          "summary": "A graph $G$ is said to be $F$-semi-saturated if the addition of any nonedge $e \\not \\in E(G)$ would create a new copy of $F$ in $G+e$. The semi-saturation number $ssat(n,F)$ is the minimum number of edges in an $F$-semi-saturated graph of order $n$. In this paper we investigate the semi-saturation number of $K_r$ on $n$ vertices with maximal degree at most $Δ$, denoted by $ssat^Δ(n,K_r)$. This investigation was suggested by Erd\\H os, Rényi and Sós, who in 1966 considered the graph of diameter 2 with degree restrictions, equivalently $ssat^Δ(n,K_3)$.\n  The following are some of our results. For arbitrary $r \\geq 4$, we show that the limit $ \\lim_{n \\rightarrow \\infty} ssat^{cn}(n,K_r)/n$ exists for all $0 < c \\leq 1$, except for some sparse values of $c$ contained in a countable and rational sequence $c_i \\rightarrow 0$. Moreover, we establish the asymptotic behaviour of this limit for $\\frac{r}{r+2} < c <1$ and determine the exact value of $ssat^Δ(n,K_r)$ for some specific $Δ$. As an application, we determine the relation between the saturation number of the join graph $K_r \\vee F$ and that of $F$ for a large class of pairs $(r,F)$.",
+          "authors": [
+            "Zhen He",
+            "Mei Lu",
+            "Yanzhe Qiu",
+            "Yiduo Xu"
+          ],
+          "published": "2026-06-27T04:17:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28723v1",
+          "entry_id": "http://arxiv.org/abs/2606.28723v1",
+          "title": "Transition Matrices between Shifted $t$-Schur Bases and Cyclotomic Schur $Q$-Positivity",
+          "summary": "For a strict partition $λ$, let $\\mathcal Q_λ(X;t)=Q_λ[X-tX]$ be the shifted $t$-Schur function arising from the modified Greaves--Jing--Zhu operator on the odd power-sum ring. We study transition matrices between the shifted bases with parameters $t$ and $s$. The relative scaling operator is diagonal in the odd power-sum basis, leading to explicit spectral data, determinant and trace formulas, weighted symmetry, a spin-character formula, and a transition Cauchy identity.\n  For the cyclotomic specialization $C_{λμ}^{[M]}(t)=C_{λμ}(t^M,t)$, the relative operator becomes plethystic substitution by $1+t+\\cdots+t^{M-1}$. We prove Schur $Q$-positivity and reciprocity, derive factorization and root-of-unity rank formulas, and give an exact computation method. For $M=2$, all one-row transitions are computed explicitly, and the nonzero coefficients are unimodal.",
+          "authors": [
+            "S. -J. Lee"
+          ],
+          "published": "2026-06-27T04:06:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28718v1",
+          "entry_id": "http://arxiv.org/abs/2606.28718v1",
+          "title": "2-adic Valuations of Coefficients of the Fifth and Ninth Powers of the Thue--Morse Generating Function",
+          "summary": "Let $T(x)=\\prod_{k=0}^{\\infty}(1-x^{2^k})$ be the generating function of the Thue--Morse sequence, and write $T(x)^m=\\sum_{n\\geq 0}t_m(n)x^n$. We prove exact formulas for the $2$-adic valuations of the coefficients $t_5(n)$ and $t_9(n)$: \\[ ν_2\\bigl(t_5(4n+j)\\bigr)\n  =4\\Bigl\\lceil\\tfrac{ν_2(n+1)}{2}\\Bigr\\rceil-\\bigl(ν_2(n+1)\\bmod 2\\bigr), \\quad j\\in\\{0,1,2,3\\}, \\] \\[ ν_2\\bigl(t_9(8n+j)\\bigr)\n  =5\\Bigl\\lceil\\tfrac{ν_2(n+1)}{2}\\Bigr\\rceil-2\\bigl(ν_2(n+1)\\bmod 2\\bigr), \\quad j\\in\\{0,1,\\ldots,7\\}. \\] These formulas confirm Conjecture~5.2 of Gawron--Miska--Ulas~\\cite{ga} for $m=5$ and $m=9$, and imply that $t_5(n)\\neq 0$ and $t_9(n)\\neq 0$ for every $n\\geq 0$. A key structural ingredient is a closed-form formula for the determinant of a family of matrices with binomial-coefficient entries.",
+          "authors": [
+            "Zhao Shen",
+            "Xinping Wang"
+          ],
+          "published": "2026-06-27T03:52:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28693v1",
+          "entry_id": "http://arxiv.org/abs/2606.28693v1",
+          "title": "Discrete homotopy groups of cubical sets",
+          "summary": "We extend the notion of discrete homotopy groups of graphs to arbitrary cubical sets, and show that the discrete homotopy groups of quasisymmetric cubical sets are naturally isomorphic to the homotopy groups of their geometric realizations. Here, quasisymmetric cubical sets are cubical sets equipped with coordinate permutation symmetries that are compatible with faces and degeneracies, but not necessarily with connections. We give a purely combinatorial construction of the left adjoint of the forgetful functor from the category of quasisymmetric cubical sets to the category of cubical sets, and prove that the unit of this adjunction is an objectwise weak equivalence. As a consequence, we obtain a purely combinatorial description of the homotopy groups of the geometric realizations of arbitrary cubical sets. As an application, we establish the Hurewicz theorem for the discrete homotopy groups of quasisymmetric cubical sets.",
+          "authors": [
+            "Daisuke Kishimoto",
+            "Yichen Tong"
+          ],
+          "published": "2026-06-27T02:25:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28687v1",
+          "entry_id": "http://arxiv.org/abs/2606.28687v1",
+          "title": "A QUBO Formulation for Nowhere-Zero $k$-Flows",
+          "summary": "We consider the encoding of graph problems as Quadratic Unconstrained Binary Optimization (QUBO) problems, which are solvable by either quantum or classical annealers. Yet, the class of problems encoded as QUBO problems has not previously included nowhere-zero flows. Nowhere-zero flows are related to Tutte's $5$-flow conjecture and appear in many contexts in graph theory. We provide an encoding of nowhere-zero flows as a QUBO Hamiltonian and prove the correctness of the construction. Our construction yields a Hamiltonian $H_{\\mathrm{mod},k}$ whose ground state has zero energy if and only if the graph $G$ has a nowhere-zero $\\mathbb Z_k$-flow. By Tutte's equivalence theorem, zero ground energy is equivalent to $\\varphi(G)\\le k$, and the zero-energy degeneracy is given by the flow polynomial $F(G;k)$. In particular, when the ground-state energy is zero, this is also the ground-state degeneracy. The construction uses one-hot variables to represent the edge flow residues modulo $k$ and auxiliary variables to represent the per-vertex modular quotient. We prove that the correctness of the construction is independent of the choice of orientation, root vertex, and positive penalty weights. We verify the construction on $59$ examples of graphs and values of $k$ that include both yes-instances and no-instances. We exhaustively sweep orientations and root choices on selected robustness instances and test a finite suite of positive penalty weights. The resulting Hamiltonian is implemented using the dimod.BinaryQuadraticModel class, which is compatible with the D-Wave Ocean SDK. Quantum-hardware runs and claims about potential speedup using these devices are left to follow-up work.",
+          "authors": [
+            "Ali Lotfi",
+            "Adam Carter",
+            "Mohammad Meysami",
+            "Thuan Ha",
+            "Kwabena Abrefa Nketia",
+            "Steven J. Shirtliffe",
+            "Steven Rayan"
+          ],
+          "published": "2026-06-27T01:59:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28681v1",
+          "entry_id": "http://arxiv.org/abs/2606.28681v1",
+          "title": "Dimensional entropy of amenable group actions over stable sets and fibres",
+          "summary": "This paper is devoted to the study of Bowen's dimensional entropy on subsets for actions of amenable groups. We prove three main results. (1) First, topological conditional entropy is characterized by the dimensional entropy of stable sets (Theorem 1.1), answering a question of Dou, Wang and the second author of the present paper raised in [Fund. Math., 2025]. We remark that our Theorem 1.1 is the first characterization of topological conditional entropy via Bowen's dimensional entropy of stable sets even for $\\mathbb{Z}$-actions. (2) Second, we establish a dimensional entropy inequality for factor maps (Theorem 1.2). It relates dimensional entropy of a set to that of its image and topological entropy of fibres, and may be viewed as the dimensional-entropy counterpart of the factor-map inequality for packing topological entropy due to Dou, Zheng, and Zhou proved as Theorem 1.4 in [Ergodic Theory Dynam. Systems, 2023]. (3) Third, the relative topological entropy of a factor map is determined by the dimensional entropy of the fibres (Theorem 1.3). Notably, our proof of this formula (Theorem 1.3) is purely topological, in contrast to the recent measure-theoretic approach of Dou, Wang and Zhou based on relative Shannon--McMillan--Breiman theorems. These results (Theorem 1.2 and 1.3) not only generalize the work of Oprocha and the second author of the present paper [Nonlinearity, 2011] from single transformations to amenable group actions, but also provide a purely topological and self-contained proof of a fibre entropy characterization recently obtained through measure-theoretic arguments.",
+          "authors": [
+            "Xinyao He",
+            "Guohua Zhang"
+          ],
+          "published": "2026-06-27T01:46:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.28680v1",
+          "entry_id": "http://arxiv.org/abs/2606.28680v1",
+          "title": "Persistent Subdivisions of Coxeter Permutahedra",
+          "summary": "We investigate the realizations of Coxeter permutahedra which are also Coxeter matroid polytopes; these are polytopes of the form $\\mathrm{conv}(W \\cdot \\mathbf{a})$ where $W$ is a finite Coxeter group acting on $\\mathbb{R}^n$ and $\\mathbf{a}$ is generic. Our main focus is how the geometric properties of $\\mathrm{conv}(W \\cdot \\mathbf{a})$ change as $\\mathbf{a}$ changes, with particular attention to persistent simplices, triangulations, and subdivisions.",
+          "authors": [
+            "Timothy Blanton",
+            "Jesús A. De Loera",
+            "Melissa Sherman-Bennett"
+          ],
+          "published": "2026-06-27T01:41:35+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-06-30T06:32:24.742542+00:00",
+      "updated_at": "2026-06-30T06:32:24.742542+00:00",
+      "finalized_at": null
     }
   ]
 }
