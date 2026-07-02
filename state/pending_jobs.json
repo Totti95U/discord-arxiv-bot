@@ -76163,7 +76163,7 @@
     },
     {
       "pipeline_id": "20260702T060953Z-9df5420c",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/pyuey41k01a5i5dm6t3srzonwotm7vck3eto",
       "summarize_job_name": "batches/rrjej6nin1z7o1crd3wjoxjj9jlz2n6ht6pa",
       "papers": [
@@ -77040,14 +77040,348 @@
         "http://arxiv.org/abs/2606.29884v1",
         "http://arxiv.org/abs/2606.29740v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2606.30966v1": {
+          "title": "HyPOLE: 部分観測下におけるハイパープロパティ誘導型マルチエージェント強化学習",
+          "summary": "本論文では、形式仕様を用いたマルチエージェント強化学習（MARL）のための新しいフレームワーク「HyPOLE」を提案しています。部分観測環境において、時相論理HyperLTLなどのハイパープロパティが持つ表現力を学習の誘導に活用します。具体的には、集中学習・分散実行（CTDE）技術を統合して分散ポリシーを合成し、SMAC、MessySMAC、WildFireといったベンチマーク評価において、既存の手法よりも優れた性能を示すことを実証しました。",
+          "keywords": [
+            "Multi-Agent Reinforcement Learning",
+            "Partial Observability",
+            "Hyperproperties",
+            "HyperLTL",
+            "Centralized Training for Decentralized Execution"
+          ],
+          "appendix": "本研究は、ハイパープロパティの記述に用いられる時相論理（HyperLTL）や形式仕様を扱っており、オートマトン理論（automata theory）や形式言語（formal languages）の知見と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.30939v1": {
+          "title": "曲面上およびその先におけるカオス：力学的双曲性の新たな概念",
+          "summary": "滑らかな曲面同相写像のエントロピーを最大化する測度に関するNewhouse予想の解決に基づいた、カオス力学系の研究における進展を概説する。特に、Sylvain CrovisierおよびOmri Sarigとの共同研究で導入された、古典的なAnosov-Smaleの等質双曲性理論の一般化である「強正再帰性(strong positive recurrence)」に焦点を当てる。この性質は正のエントロピーを持つすべての滑らかな曲面同相写像に適用可能でありながら、指数混合性や正則関数に対する極限定理などの定量的な性質を保証する。高次元における普遍性などの未解決問題についても議論する。",
+          "keywords": [
+            "strong positive recurrence",
+            "smooth surface diffeomorphisms",
+            "uniform hyperbolicity",
+            "exponential mixing",
+            "Newhouse conjecture"
+          ],
+          "appendix": "関連分野として symbolic dynamics および complex dynamics が挙げられます。本論文で言及されている Sarig 氏との共同研究は、無限アルファベット上のマルコフ分配を用いた記号力学系の構築に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.30925v1": {
+          "title": "直積系およびスキュー直積系における大域力学系の構成性",
+          "summary": "Conley理論を用いて、直積系やスキュー直積系におけるアトラクタ束および回帰力学系の順序構造の構成性を分析した論文である。直積系において、2つのフローの直積から得られるアトラクタ束が、各成分フローのアトラクタ束のコプロダクト（余積）に同型であることを代数的に示した。さらに、特異摂動から生じる速い-遅い（fast-slow）スキュー直積系を扱い、大域的な力学系を低次元の部分系へと分解する枠組みや、Conley-Morse表現を構成的に構築するための計算手法を提案している。",
+          "keywords": [
+            "Conley theory",
+            "attractor lattices",
+            "skew-product systems",
+            "Conley-Morse representations",
+            "compositionality"
+          ],
+          "appendix": "本論文は力学系の構造を扱っており、興味ある分野のうち complex dynamics と関連があります。また、Conley-Morse表現の構築に関する計算手法の検討は、validated numerics の分野における計算的アプローチと密接に関連する内容です。"
+        },
+        "http://arxiv.org/abs/2606.30888v2": {
+          "title": "入れ子状データ型における自動推論",
+          "summary": "本論文では、入れ子状データ型 (nested datatypes) の理論を導入する。この理論は、データ型と配列の素朴な組み合わせを制限することで、非標準モデルの出現を防ぐように設計されている。著者らはこの理論に対する決定手続きを提示し、その正当性を証明した。さらに、提案された手続きの実装について述べ、実世界のデータセットおよび人工的なベンチマークを用いた評価結果を示している。",
+          "keywords": [
+            "nested datatypes",
+            "automated reasoning",
+            "decision procedure",
+            "non-standard models",
+            "arrays"
+          ],
+          "appendix": "本論文で扱われている決定手続きの正当性証明や理論構築は、興味ある分野のうち「automata theory」や「formal languages」の基礎理論と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.00044v1": {
+          "title": "滞在時間を伴う終点ラベル付き自己ループ系：内在的特徴付け、実現コスト、および認識",
+          "summary": "許容される可視遷移が事前に固定され、各可視状態に最小滞在時間が課される有限状態シンボリック制御器である、滞在時間を伴う終点ラベル付き自己ループ系（DLSLシステム）を研究した。滞在条件の導入により、現在の可視状態だけでは離脱可能か判断できなくなるという構造的な問題に対し、決定性トランスデューサがDLSLシステムとして実現されるための必要十分条件が「fiber-linear graph-respecting」であることを示した。また、滞在値 (dᵢ) を強制する決定性実現には、正確に ∑ᵢ dᵢ 個の制御状態が必要であることを証明した。さらに、計算量 O(|Q||Ω|) の認識・再構成アルゴリズムを提案し、後続のファイバーの内部フェーズに遷移するエッジエントリー・バリアントへの拡張分析も行った。",
+          "keywords": [
+            "Destination-labeled self-looping systems",
+            "Dwell requirement",
+            "Fiber-linear graph-respecting transducers",
+            "Realization cost",
+            "Finite-state symbolic controller"
+          ],
+          "appendix": "本論文は、有限状態制御器やトランスデューサを扱うことから、オートマトン理論 (automata theory) およびシンボリック動力学 (symbolic dynamics) に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.30820v1": {
+          "title": "混合整数線形計画法による Time Window Temporal Logic 仕様のためのロバスト性に基づく制御系合成",
+          "summary": "本論文では、明示的な時間制約を持つ逐次的タスクを簡潔に表現できる仕様言語 Time Window Temporal Logic (TWTL) を対象とし、離散時間線形システムにおける制御入力の合成手法を提案している。TWTLの定量的意味論（ロバスト性）に基づき、仕様を充足する条件を混合整数線形（MILP）制約として定式化することで、ロバスト性を最大化するMILP問題として合成問題を解決する。初期状態から全シーケンスを最適化するオープンループ手法に加え、決定性有限オートマトン（DFA）を用いて現在のサブタスクに応じた予測ホライゾンを動的に決定する、タスク適応型ホライゾンを用いたモデル予測制御（MPC）手法を構築している。これにより、各ステップの計算負荷を大幅に削減しつつ仕様の充足を保証している。",
+          "keywords": [
+            "Time Window Temporal Logic",
+            "Mixed-Integer Linear Programming",
+            "Model Predictive Control",
+            "Deterministic Finite Automaton",
+            "Cyber-Physical Systems"
+          ],
+          "appendix": "本論文は、TWTLの仕様を処理するために決定性有限オートマトンを利用しており、興味ある分野のうち「automata theory」に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.30767v1": {
+          "title": "Bₕ集合における一次方程式と彩色閾値",
+          "summary": "準最大サイズのBₕ集合におけるRoth型の結果の希薄なアナログを導出している。2h個より多い変数を持つ一次方程式の解を持たないBₕ集合は、Bₕ集合のサイズの既知の上限よりも定数倍小さい必要があることを示した。その主要なステップとして、極値的なBₕ集合がFourier擬似ランダムであることを確立した。また、Sidon集合（h=2）において、特定の条件を満たす非翻訳不変な方程式を排除する場合に、その集合が生成するCayleyグラフの彩色数が有界になるか、あるいは集合が極めて小さくなるかの二択であることを示している。これは彩色閾値に関する既存の研究の希薄なアナログと見なせる。",
+          "keywords": [
+            "Bh sets",
+            "Sidon sets",
+            "Fourier pseudorandom",
+            "chromatic threshold",
+            "linear equations"
+          ],
+          "appendix": "本論文は加法的組合せ論を扱っており、Cayleyグラフの性質を論じている点で「structure of large countable infinite group」の分野に関連する側面があります。"
+        },
+        "http://arxiv.org/abs/2606.30629v1": {
+          "title": "無限型IETにおけるRauzy-Veech誘導",
+          "summary": "Baker's surfaceなどの無限種数かつ有限面積を持つ平坦曲面に由来する無限型区間交換変換(IET)について研究し、これらをtail-reversing IETと定義した。有限型におけるKeaneの判定条件を拡張し、無限型IETのクラスに対するRauzy-Veech誘導を一般化することで、極小性の判定基準を確立した。さらに、無限型Rauzy図形の組合せ論的解析を通じて、tail-reversingな置換に対して一意的なエルゴード性を持つ長さの単体Δの部分集合が、ℓ¹位相において稠密なGδ集合であることを示した。また、誘導行列の直径を解析することで、一意的なエルゴード性のための明示的な条件も導出した。",
+          "keywords": [
+            "infinite-type IET",
+            "Rauzy-Veech induction",
+            "unique ergodicity",
+            "tail-reversing permutation",
+            "translation surfaces"
+          ],
+          "appendix": "この論文は、記号力学(symbolic dynamics)や語の組合せ論(combinatorics on words)と密接に関連するRauzy-Veech誘導を無限型に拡張しており、無限群の構造や力学系のエルゴード理論的な側面で興味ある分野と関連しています。"
+        },
+        "http://arxiv.org/abs/2606.30612v1": {
+          "title": "生成部分グラフにおけるほぼ一様な次数分布",
+          "summary": "d=o(n)を満たす任意のn頂点d-正則グラフが、次数分布がほぼ一様であるような生成部分グラフを含むことを示した。具体的には、0 ≤ i ≤ dの各整数iに対し、次数iを持つ頂点の数が(1+o(1))n/(d+1)個であることを証明している。本成果は、不規則な部分グラフに関するAlonとWeiの予想を肯定的に解決するものであり、Fox, Luo, Phamによる以前の研究結果を強化している。",
+          "keywords": [
+            "Spanning subgraph",
+            "Degree distribution",
+            "Regular graph",
+            "Alon-Wei conjecture"
+          ],
+          "appendix": "本論文はグラフ理論および離散数学を扱っており、提示された興味ある分野の中では「combinatorics on words」を含む組合せ論の分野と広義において密接な関連があります。"
+        },
+        "http://arxiv.org/abs/2606.30558v1": {
+          "title": "偶Artin群のコホモロジー環とp-局所的挙動",
+          "summary": "本論文では、right-angled Artin群に関する複数の古典的な結果を、ある種の偶Artin群の族へと一般化しています。具体的には、FC型の場合において、コホモロジー環の計算、pro-p完了の記述、およびp-Zassenhaus制限リー環の決定を行っています。また、その副産物として剛性に関する結果を証明しており、2つのFC型偶Artin群が同型であれば、任意の素数pに対してそれらの定義グラフのp-部分が同型であることを導いています。",
+          "keywords": [
+            "even Artin groups",
+            "cohomology ring",
+            "pro-p completion",
+            "p-Zassenhaus restricted Lie algebra",
+            "FC type"
+          ],
+          "appendix": "本論文は無限群の構造を扱っており、提示された興味ある分野のうち「structure of large countable infinite group」に関連しています。また、定義グラフを用いた剛性の議論は組合せ論的な側面も含んでいます。"
+        },
+        "http://arxiv.org/abs/2606.30496v1": {
+          "title": "一部のPisot位取り系から位相群へ",
+          "summary": "本論文では、Pisot数の最小多項式を特性多項式に持つ整数斉次線形漸化式から生成される、自然数ℕのPisot位取り系Uを考察する。著者らは、FrougnyとSolomyakがβ位取り系に対して導入した「条件F」に相当する「零を保存する」という性質を持つ系に対し、p進整数環の類似物となる位相群ℤ_Uを導入した。この位相群ℤ_Uがトーラスへの準同型射影を持つことを示し、さらにUが単モジュラである場合には、ℤ_Uがトーラスと連続同型になることを証明している。",
+          "keywords": [
+            "Pisot numeration system",
+            "p-adic integers",
+            "Condition F",
+            "topological group",
+            "torus"
+          ],
+          "appendix": "本論文は、数系を通じた記号力学系（symbolic dynamics）や語の組合せ論（combinatorics on words）、および算術力学系（arithmetic dynamics）に関連する位相的構造を扱っており、これらの分野と強い関連性を持っています。"
+        },
+        "http://arxiv.org/abs/2606.30418v1": {
+          "title": "ハイパーグラフにおけるあらゆる長さのBerge tight cycle",
+          "summary": "正の整数の集合Rに対し、各ハイパーエッジのサイズがRに含まれるハイパーグラフをR-グラフと呼ぶ。本論文では、r次最小次数δᵣ(H) ≥ 1を満たすn頂点のR-グラフHにおいて、Berge-Cₜʳ（頂点数tのr一様tight cycleのBerge版）の存在性を検討している。主な成果として、任意の正の整数rおよびk ≥ 2なる集合R ⊆ [k]に対し、ある整数n₀(k,r)が存在し、n ≥ n₀かつδᵣ(H) ≥ 1を満たすすべてのn頂点R-グラフは、r+1 ≤ t ≤ nなるすべてのtについてBerge-Cₜʳを含むことを証明した。特にk=4, r=3の場合、n ≥ 9であれば4 ≤ t ≤ nの範囲ですべてのBerge-Cₜ³が含まれることを示し、nが4から8の場合の反例も特定している。",
+          "keywords": [
+            "Berge-hypergraph",
+            "Tight cycle",
+            "Minimum degree",
+            "R-graph"
+          ],
+          "appendix": "この論文は、ハイパーグラフの構造的性質やサイクルの存在条件を研究しており、組み合わせ論（Combinatorics）の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.30405v1": {
+          "title": "過去演算子付きCTLとLTLの共通断片の決定問題",
+          "summary": "本論文は、過去演算子を備えた計算樹論理（PCTL）と線形時相論理（LTL）の共通断片（LTL ∩ PCTL）が決定可能であることを示した研究である。著者らは、LTLからPCTLへの変換可能性（LTL ∈ PCTL）およびその逆（PCTL ∈ LTL）という2つのメンバーシップ問題が共に決定可能であることを証明した。特に、PCTLの表現力を正確に記述するために、交互性パリティ木オートマトンに制約を加えた新しいクラス「counter-free hesitant weak tree automata (HWT_cf)」を導入した。LTL公式に対応する木言語 Δ[L] が HWT_cf で認識されることと、L が決定性Büchiオートマトン（DBW）で認識されることが同値であることを示し、LTL ∩ PCTL の決定可能性を導出した。この成果は、長年の未解決問題である LTL ∩ CTL の決定問題を、PCTLから過去演算子を除去できるかという問題（PCTL ∈ CTL）へと帰着させるものである。",
+          "keywords": [
+            "LTL",
+            "PCTL",
+            "common fragment",
+            "membership problem",
+            "tree automata"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「automata theory」および「formal languages」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.30337v1": {
+          "title": "Hoare仮説を伴うGuarded Kleene Algebra with Tests (GKAT)",
+          "summary": "Guarded Kleene Algebra with Tests (GKAT) は、単純な命令型プログラムの推論を可能にし、プログラムの等価性をほぼ線形時間で判定できるKleene代数の変種である。本論文では、プログラムに関する前提条件の下での推論という課題に取り組み、基本プログラムの前置・後置条件に関するドメイン知識をモデル化する「Hoare仮説」を導入した。著者らはこの公理化の健全性と完全性を示し、さらにHoare仮説をより一般的な「語仮説 (word hypotheses)」へと拡張した。オートマトン理論的手法を用いることで、語仮説の下でのGKATの等価性判定が、通常のGKATと同様に効率的に決定可能であることを証明している。",
+          "keywords": [
+            "Guarded Kleene Algebra with Tests",
+            "Hoare hypotheses",
+            "program equivalence",
+            "automata-theoretic approach",
+            "word hypotheses"
+          ],
+          "appendix": "本論文はオートマトン理論 (automata theory) および形式言語 (formal languages) の分野と密接に関連しており、特にGKATの等価性判定におけるオートマトンを用いた計算量的なアプローチが特徴です。"
+        },
+        "http://arxiv.org/abs/2606.30270v1": {
+          "title": "局所的論理制約下におけるブーリアンネットワークダイナミクスの周期アトラクタ検出",
+          "summary": "並列更新されるブーリアンネットワークにおいて、指定された周期 k (k ≥ 2) を持つ周期アトラクタの存在判定問題の計算複雑性を、Postの束に基づく局所的な論理規則のクラスごとに分類した。その結果、多数決的自己双対関数や混合単調関数を含むクラスではNP完全となる一方、線形（affine）関数や純粋な論理積・論理和を扱うクラスでは多項式時間で解けるという、完全な二分定理（dichotomy theorem）を導出した。この成果により、アトラクタの検出可能性がネットワーク構造だけでなく、局所的な更新規則の論理的性質に深く依存することが明らかになった。",
+          "keywords": [
+            "Boolean networks",
+            "Cyclic attractor",
+            "Computational complexity",
+            "Post's lattice",
+            "Local logical rules"
+          ],
+          "appendix": "本研究はブーリアンネットワークという離散力学系の性質を扱っており、記号力学 (symbolic dynamics) やオートマトン理論 (automata theory) と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.30232v1": {
+          "title": "素数底の二項係数合同式の構造解",
+          "summary": "本論文では、素数 q における合同式 binomial(qn, n) ≡ qⁿ (mod n) を研究している。OEISの数列 A080469 や、n = 3ᵗp という形式の解が無限に存在するという予想に基づき、n = qᵗp (p ≠ q は素数) という一般的な族を分析した。主な成果として、この族における合同式は、p を法とする合同条件と数字の和に関する不等式という2つの独立した条件に帰着されることを示した。これにより、解の探索は特定の整数の因数分解と底 q の数字和フィルターの適用に簡略化される。この判定法を用いて q ∈ {2, 3, 5, 7, 11} における新しい大きな解を生成した。また、平方数の解 n = p² は、底 q における Wieferich 素数によって完全に支配されることを証明した。",
+          "keywords": [
+            "Binomial Congruences",
+            "Wieferich primes",
+            "Digit-sum",
+            "Prime base"
+          ],
+          "appendix": "この論文は数論的な性質を扱っており、興味ある分野の中では arithmetic dynamics や combinatorics on words (数字の和の性質に関連) に関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2606.30127v1": {
+          "title": "全称量化された非線形多項式制約における絶対正値性を越えて",
+          "summary": "関数記号を自然数への多項式解釈に写像することは、項書き換え系の停止性解析や複雑度解析に用いられる単調代数およびウェルファウンデッド順序を導く。このような多項式解釈の発見には、自然数上の∃∀不等式系を解く必要がある。従来、∃∀不等式を∃不等式に簡約するために絶対正値性（absolute positiveness）基準が用いられてきた。本研究は、この絶対正値性を超えることで、既存の手法では到達できなかった非線形多項式解釈の発見を可能にする手法についての進捗報告である。",
+          "keywords": [
+            "polynomial interpretations",
+            "term rewrite systems",
+            "termination analysis",
+            "absolute positiveness",
+            "non-linear polynomial constraints"
+          ],
+          "appendix": "本論文は項書き換え系や多項式制約を扱っており、興味ある分野のうち「formal languages」や「automata theory」に関連します。"
+        },
+        "http://arxiv.org/abs/2606.30105v1": {
+          "title": "ニューラルネットワーク検証のための区間信頼構造の伝播と不正確なコピュラ",
+          "summary": "ニューラルネットワークの定量的検証において、入力分布とその依存構造の両方に存在する不確実性を扱うための、不正確確率論に基づく頑健なフレームワークが提案された。周辺分布の不確実性を区間信頼構造で、変数間の依存関係の不確実性を不正確なコピュラ（imprecise copulas）で表現し、これらをフィードフォワードニューラルネットワークを通じて伝播させる手法を開発している。混合不正確コピュラ体積を用いることで、アフィン変換や活性化関数を通じた健全なプッシュフォワード構成を導出し、指定された入力モデルと矛盾しないすべての確率モデルに対して有効な、安全性の確率的上下限を保証する。",
+          "keywords": [
+            "neural network verification",
+            "interval belief structures",
+            "imprecise copulas",
+            "quantitative verification",
+            "imprecise probability"
+          ],
+          "appendix": "本論文は、計算機による数学的証明の信頼性を担保する手法である validated numerics（精度保証付き数値計算）の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2606.30042v1": {
+          "title": "固定次元における連続ベクトル追加システム(CVASS)の到達可能性",
+          "summary": "ベクトル追加システム(VASS)の過剰近似モデルである連続ベクトル追加システム(CVASS)において、カウンタの数(次元)を固定した場合の到達可能性および被覆可能性問題の計算複雑性を調査した。非負の実数セマンティクスおよび有理数セマンティクス、さらに単項および二進エンコーディングの組み合わせによる計8つの問題に対し、遷移ベクトルが有理数の場合は、1次元ではAC¹、2次元以上ではNP完全となる複雑性の二分性を証明した。また、整数遷移ベクトルの場合についても、3次元以上でNP完全となることを示した。",
+          "keywords": [
+            "Vector Addition System with States",
+            "Continuous VASS",
+            "Reachability Problem",
+            "Complexity Theory",
+            "Egyptian prime fractions"
+          ],
+          "appendix": "本論文は、計算モデルの性質を扱う点でautomata theoryに関連しています。"
+        },
+        "http://arxiv.org/abs/2606.30013v1": {
+          "title": "トランスデューサの出力における保存定理",
+          "summary": "決定性有限状態トランスデューサ A に無限語 x を入力した際の出力 A(x) について、x が持つ性質がどの程度 A(x) に保存されるかを調査した論文である。具体的には、再帰性、morphic 性、因子頻度の存在といった組合せ論的性質の保存を検討している。証明の枠組みとして Krohn-Rhodes の定理を採用し、シフト空間などの記号力学系におけるエルゴード理論の手法を用いて解析を行っている。",
+          "keywords": [
+            "deterministic finite-state transducer",
+            "Krohn-Rhodes theorem",
+            "symbolic dynamical systems",
+            "shift spaces",
+            "ergodic theory"
+          ],
+          "appendix": "本論文は、興味ある分野のうち symbolic dynamics, combinatorics on words, および automata theory に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2606.29972v1": {
+          "title": "一階時相論理テンソルネットワーク (First-Order Temporal Logic Tensor Networks)",
+          "summary": "本論文は、従来のニューロシンボリックAIが静的な知識に偏っていた点に着目し、時間経過に伴い変化する対象の性質や関係を扱うための「一階時相論理テンソルネットワーク (FOT-LTN)」を提案している。これは既存のLogic Tensor Networks (LTN) を拡張したもので、一階線形時相論理の構文とLTNのファジィ実数値セマンティクスを統合している。これにより、時相演算子と限定記号を同時にサポートしつつ、完全に微分可能な学習フレームワークを実現した。時相ナレッジグラフ補完タスクにおいて、純粋なニューラル手法を上回る性能が示されている。",
+          "keywords": [
+            "Neuro-symbolic AI",
+            "Logic Tensor Networks",
+            "First-Order Linear Temporal Logic",
+            "Temporal Knowledge Graph Completion"
+          ],
+          "appendix": "本論文は、一階線形時相論理 (FOLTL) を基盤としているため、興味ある分野のうち「automata theory」や「formal languages」と、論理の表現能力や計算モデルの観点から関連があります。"
+        },
+        "http://arxiv.org/abs/2606.29967v1": {
+          "title": "極端な事象下における集団ゲームのリスク感受性学習：分岐とカオス力学",
+          "summary": "本論文は、極端な事象が意思決定に及ぼす影響を考慮し、集団混雑ゲームにおける離散時間マルチエージェント学習ルールの非線形力学を調査した研究です。リスク感受性型の乗数的重み更新（MWU）アルゴリズムを、エージェントの知覚リスクを更新する適応的期待値ルールと結合した2次元力学系を構築し、2パラメータ分岐解析を行っています。解析の結果、固定点の多安定性、不変曲線、周期・カオスアトラクタ、アーノルドの舌、フェイゲンバウム・カスケード、および境界クライシスなどの複雑な挙動が特定されました。リスクの導入が位相同期などの新しい動的現象を引き起こす一方で、軌道のチェザロ平均は依然として定常均衡に収束することを示しています。",
+          "keywords": [
+            "Risk-sensitive Learning",
+            "Population Games",
+            "Bifurcation Analysis",
+            "Chaotic Dynamics",
+            "Multiplicative Weights Update"
+          ],
+          "appendix": "本論文は、分岐解析、カオスアトラクタ、フェイゲンバウム・カスケードといった現象を詳述しており、指定された興味ある分野のうち「complex dynamics」に密接に関連する内容となっています。"
+        },
+        "http://arxiv.org/abs/2606.29958v1": {
+          "title": "セルオートマトンによる局所有限群の可逆性の特徴付け",
+          "summary": "有限アルファベット上のセルオートマトン(CA)においては全単射性が可逆性を意味するが、無限アルファベット上ではこの関係が成立しない場合がある。本論文では、群Gが局所有限群であることと、任意のアルファベット上のすべての全単射CA Aᴳ → Aᴳが可逆であることが同値であることを示し、群論的な完全な特徴付けを与えた。Gが局所有限でない場合、可算無限アルファベット上で逆写像がCAにならない（一様な有限メモリを持たない）全単射CAが存在することを証明した。これにより、Ceccherini-SilbersteinとCoornaertによって提示された未解決問題に肯定的な回答を与え、周期性の仮定が不要であることを示した。",
+          "keywords": [
+            "Cellular Automata",
+            "Locally Finite Groups",
+            "Reversibility",
+            "Infinite Alphabets",
+            "Bijectivity"
+          ],
+          "appendix": "symbolic dynamics、automata theory、およびstructure of large countable infinite groupの分野に深く関連しています。無限アルファベット上の力学系としてのセルオートマトンの性質を群論的視点から解明した研究です。"
+        },
+        "http://arxiv.org/abs/2606.29939v1": {
+          "title": "自由多ソート代数におけるクリーネの定理",
+          "summary": "本研究では、自由単一ソート代数におけるクリーネの定理を自由多ソート代数へと一般化した。主な結果として、適切な有限性の仮定の下で、自由多ソート代数における特定のソートの言語が、認識可能（recognizable）であることと正規（regular）であることは同値であることを示した。",
+          "keywords": [
+            "Kleene's theorem",
+            "free many-sorted algebras",
+            "recognizable language",
+            "regular language"
+          ],
+          "appendix": "本論文は興味ある分野のうち「automata theory」および「formal languages」に深く関連しています。クリーネの定理という計算機科学の基礎概念を、より抽象的な多ソート代数の枠組みで扱っています。"
+        },
+        "http://arxiv.org/abs/2606.29884v1": {
+          "title": "Bell数に対するより強い対数凸不等式",
+          "summary": "本論文では、Bell数 Bₙ に関する対数凸不等式のより強いバージョンを証明している。具体的には、n ≥ 5 に対して不等式 Bₙ₊₁Bₙ₋₁ - (Bₙ)² ≥ ∑ᵢ₌₁ⁿ Fᵢ (Bₙ₋ᵢ)² が成り立つことを示した。ここで Fᵢ は F₀=F₁=1 を初期値とする第 i 番目のフィボナッチ数である。この証明は主に組合せ論的な手法と初等的な不等式を用いた簡潔なものである。",
+          "keywords": [
+            "Bell numbers",
+            "log-convexity inequality",
+            "Fibonacci numbers",
+            "combinatorial proof"
+          ],
+          "appendix": "本論文はBell数やフィボナッチ数を扱っており、[興味ある分野]の中では組合せ論（combinatorics）に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2606.29740v1": {
+          "title": "Halve Nim と呼ばれる Nim の新変種における 2 山および 3 山のゲーム",
+          "summary": "標準的な Nim のルールに加えて、各山のコインをその半分の量に置き換える操作を許可した変種「Halve Nim」について調査している。本研究では、すべての 2 山の Halve Nim における P-ポジション（後手必勝局面）を特定した。また、1 つの山のコインの数が 10 個以下である場合のすべての 3 山の Halve Nim における P-ポジションを決定した。",
+          "keywords": [
+            "Halve Nim",
+            "Nim",
+            "P-positions",
+            "Two-pile games",
+            "Three-pile games"
+          ],
+          "appendix": "この論文は組合せ論 (combinatorics) に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2606.30966v1",
+        "http://arxiv.org/abs/2606.30939v1",
+        "http://arxiv.org/abs/2606.30925v1",
+        "http://arxiv.org/abs/2606.30888v2",
+        "http://arxiv.org/abs/2607.00044v1",
+        "http://arxiv.org/abs/2606.30820v1",
+        "http://arxiv.org/abs/2606.30767v1",
+        "http://arxiv.org/abs/2606.30629v1",
+        "http://arxiv.org/abs/2606.30612v1",
+        "http://arxiv.org/abs/2606.30558v1",
+        "http://arxiv.org/abs/2606.30496v1",
+        "http://arxiv.org/abs/2606.30418v1",
+        "http://arxiv.org/abs/2606.30405v1",
+        "http://arxiv.org/abs/2606.30337v1",
+        "http://arxiv.org/abs/2606.30270v1",
+        "http://arxiv.org/abs/2606.30232v1",
+        "http://arxiv.org/abs/2606.30127v1",
+        "http://arxiv.org/abs/2606.30105v1",
+        "http://arxiv.org/abs/2606.30042v1",
+        "http://arxiv.org/abs/2606.30013v1",
+        "http://arxiv.org/abs/2606.29972v1",
+        "http://arxiv.org/abs/2606.29967v1",
+        "http://arxiv.org/abs/2606.29958v1",
+        "http://arxiv.org/abs/2606.29939v1",
+        "http://arxiv.org/abs/2606.29884v1",
+        "http://arxiv.org/abs/2606.29740v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-07-02T06:09:53.467291+00:00",
-      "updated_at": "2026-07-02T08:45:33.649164+00:00",
-      "finalized_at": null
+      "updated_at": "2026-07-02T09:41:25.580870+00:00",
+      "finalized_at": "2026-07-02T09:41:25.580841+00:00"
     }
   ]
 }
