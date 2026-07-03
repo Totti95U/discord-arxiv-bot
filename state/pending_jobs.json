@@ -77382,6 +77382,1010 @@
       "created_at": "2026-07-02T06:09:53.467291+00:00",
       "updated_at": "2026-07-02T09:41:25.580870+00:00",
       "finalized_at": "2026-07-02T09:41:25.580841+00:00"
+    },
+    {
+      "pipeline_id": "20260703T060408Z-1ccf6db8",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/64lahrx2j12wzu61qb4vu0jkfgtuim0azoti",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2607.00263v1",
+          "entry_id": "http://arxiv.org/abs/2607.00263v1",
+          "title": "Determining the Complexity of Chromatic Sum in Classes Defined by a Set of Forbidden Graphs",
+          "summary": "The Chromatic Sum problem asks, given a graph $G$ and an integer $k$, whether $G$ admits a colouring $c$ with sum $\\sum_{v\\in V}c(v) \\leq k$. We study the complexity of Chromatic Sum on graph classes defined by some set of forbidden graphs. First, we show that three known frameworks fully classify the complexity of Chromatic Sum on $HH$-minor-free graphs and $HH$-topological-minor-free graphs for any set of graphs $HH$, and on $HH$-subgraph-free graphs for any finite set of graphs $HH$. To show this, we prove a new NP-completeness result for Chromatic Sum on certain subdivisions of planar subcubic graphs. Next, we consider other containment relations. We formalise a novel framework of problems that are NP-complete for planar graphs as well as for graphs of bounded independence number. For every problem in this framework, we obtain an almost complete complexity classification on $H$-induced-minor-free graphs, $H$-induced-topological-minor-free graphs, and $H$-free graphs for every graph $H$. We show that Chromatic Sum belongs to this framework, as do several other problems. We also define a more fine-grained framework for the induced subgraph relation. We apply this to obtain a complete complexity classification for Chromatic Sum on $H$-free graphs, as well as for several other problems. We justify the choice of this framework by proving that Chromatic Sum is NP-complete for graphs of clique-width at most $3$. This result complements a known polynomial-time result for graphs of clique-width at most $2$.",
+          "authors": [
+            "Clément Dallard",
+            "Daniël Paulusma",
+            "Erik Jan van Leeuwen"
+          ],
+          "published": "2026-06-30T23:25:42+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.00257v1",
+          "entry_id": "http://arxiv.org/abs/2607.00257v1",
+          "title": "Learning dynamical systems from noisy data with Weak-form Kernel Ridge Regression",
+          "summary": "Accurate prediction of complex dynamical systems from noisy measurements remains a significant challenge in scientific computing. Kernel ridge regression learning strategies are often effective when applied to clean data, but have limited success with noisy data. Recent work has observed that a weak formulation can act to filter noisy data, and different learning strategies have achieved increased noise robustness with a weak-form framework. In this manuscript, we give an overview of the filtering mechanism behind the weak formulation and provide a bias-variance error decomposition. Using these insights, we combine a weak formulation with a kernel learning strategy to propose Weak-form Kernel Ridge Regression (WKRR) for learning dynamical systems. The proposed framework is simple to implement, effective for both clean and noisy data, and outperforms several baseline methods. We demonstrate the performance of WKRR on chaotic benchmark systems in up to 64 dimensions, as well as 15,000-dimensional real-world fluid data.",
+          "authors": [
+            "Max Kreider",
+            "John Harlim",
+            "Daning Huang"
+          ],
+          "published": "2026-06-30T23:07:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.00256v2",
+          "entry_id": "http://arxiv.org/abs/2607.00256v2",
+          "title": "Structural Visibility in Dynamical Systems on Hypergraphs: A Pattern Formation Perspective",
+          "summary": "Hypergraphs encode rich multiway interactions, but not all structural information is equally accessible through the dynamics. By analyzing pattern-forming instabilities in reaction-diffusion systems on directed hypergraphs, this work develops a theory of structural visibility that characterizes which features of higher-order structure survive successive levels of dynamical reduction. It is established that higher-order structure is not automatically dynamically relevant. Linearization destroys most higher-order information. Meanwhile, nonlinear reduction recovers only specific higher-order marginals of the adjacency tensor, and projection along critical directions further filters what is dynamically visible. First, we show that the linearized dynamics depends on the hypergraph only through its first-tail-moment statistics, termed exposure. Consequently, exposure-equivalent hypergraphs are linearly indistinguishable in the sense that they exhibit identical dispersion relations and instability thresholds. Next, we define a hierarchy of hyperedge tail-moments that captures progressively detailed co-occurence, and we prove a structural decomposition theorem describing how contractions of these tensors, termed packing effects, influence the reduced amplitude dynamics. This leads to a visibility hierarchy in which successive asymptotic orders reveal increasingly richer structural information. More specifically, exposure governs linear onset while packing effects control post-onset dynamics. Finally, we establish results on nonlinear distinguishability, characterizing when linearly indistinguishable higher-order systems may exhibit different post-onset behaviors. In addition, we formalize when higher-order systems become dynamically indistinguishable from pairwise systems, leading to the notion of dynamical graph surrogacy. Numerical simulations support the theoretical predictions.",
+          "authors": [
+            "Moise R. Mouyebe",
+            "Anthony M. Bloch"
+          ],
+          "published": "2026-06-30T23:06:28+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.00244v1",
+          "entry_id": "http://arxiv.org/abs/2607.00244v1",
+          "title": "Independent Set Hardness in Graphs of Bounded Twin-Width and Low-Radius Merge-Width",
+          "summary": "For every $\\varepsilon > 0$, Max Independent Set admits a polynomial-time $n^\\varepsilon$-approximation algorithm on $n$-vertex graphs of effectively bounded twin-width [Bergé et al., STACS '23]. The approximation factor actually obtained is more precisely $n^{O(1/ \\log \\log n)}$. Prior to the current paper, no approximation hardness was known for this problem, and the existence of a polynomial-time approximation scheme (PTAS) was repeatedly raised as an open question. We answer this question in a strong sense: We show that there is a constant $γ> 0$ such that a polynomial-time $n^{γ/ (\\log \\log n)^2}$-approximation algorithm for Max Independent Set on graphs of twin-width at most 4 would refute the Exponential-Time Hypothesis (ETH). This lower bound further holds if a 4-sequence is provided as part of the input. We show the same hardness of approximation for Min Coloring, which also has a nearly matching $n^{O(1/ \\log \\log n)}$-approximation algorithm on graphs of effectively bounded twin-width.\n  We also clarify the parameterized complexity of $k$-Independent Set on graphs of bounded radius-$r$ merge-width when the range of $r$ is limited. There is a fixed-parameter tractable algorithm for $k$-Independent Set on graphs given with radius-$2^{O(k^2)}$ merge sequences of bounded width [Dreier and Toruńczyk, STOC '25]. We complement this result by showing that $k$-Independent Set is W[1]-hard on graphs given with radius-$o(k)$ merge sequences of bounded width. We further show that this result also holds for $k$-Dominating Set.",
+          "authors": [
+            "Édouard Bonnet",
+            "Maël Dumas",
+            "Julien Duron"
+          ],
+          "published": "2026-06-30T22:43:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.00238v1",
+          "entry_id": "http://arxiv.org/abs/2607.00238v1",
+          "title": "Duality and a Canonical Sheaf in Periodic Riemann Functions",
+          "summary": "Let $f\\colon{\\mathbb Z}^2\\to{\\mathbb Z}$ be a Riemann function whose weight $W$ is a perfect matching. Then there is a family of sheaves of $k$-vector spaces $\\{{M}_{W,{\\bf d}}\\}_{{\\bf d}\\in{\\mathbb Z}^2}$ on a five-point topological that models $f$ in that $f({\\bf d})=b^0({M}_{W,{\\bf d}})$ and that $$ b^1({M}_{W,{\\bf d}})= f^\\wedge_{\\bf K}({\\bf d}-{\\bf K}) $$ for any ${\\bf K}\\in{\\mathbb Z}^2$. Hence a Riemann-Roch formula for $f$ is equivalent to an Euler characteristic computation of ${M}_{W,{\\bf d}}$.\n  If $f$ and $W$ are $r$-periodic, then the sheaves ${M}_{W,{\\bf d}}$ become ${O}_r$-modules of finite type for a natural sheaf of rings ${O}={O}_r$. We show that in this case there is a ``canonical ${O}$-module'' $ω=ω_W$ and a pairing for $i=0,1$, $$ H^i(M_{W,{\\bf 0}}\\otimes F) \\times {\\rm Ext}^{1-i}(F,M_{W^\\wedge_{\\bf L},{\\bf K}})\\to H^1(ω)\\cong k $$ that is perfect when ${\\bf L}={\\bf K}+{\\bf 1}$ and ${F}$ is a certain type of line bundle or a certain type of skyscraper sheaf. In particular when ${F}$ is a line bundle, we realize the above formula for $b^1({M}_{W,{\\bf d}})$ as a duality theorem akin to Serre duality.\n  We show that canonical ${O}$-module $ω_W$ is a rather exceptional element in a family of tensor products of two modules ${M}\\otimes_{O}{M}'$, where ${M}$ and ${M}'$ vary over ${O}_r$-modules of the form ${M}_{W',{\\bf d}}$.\n  This article doesn't assume any background in sheaf theory; rather we describe all our sheaves as a ``diagrams of vector spaces,'' where each diagram is essentially a sheaf of vector spaces on a fixed topological space of five points.",
+          "authors": [
+            "Nicolas Folinsbee",
+            "Joel Friedman"
+          ],
+          "published": "2026-06-30T22:33:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.00227v1",
+          "entry_id": "http://arxiv.org/abs/2607.00227v1",
+          "title": "Implementation Filters and Delay-Budget Instability in Coupled Replicator--Mutator Dynamics",
+          "summary": "We model an adaptive contest in which two antagonistically coupled populations continually reallocate effort among competing methods, but decisions are not fielded instantly. Each side has an intended portfolio and a deployed portfolio: intended reallocations follow delayed observations of the opponent, while deployment follows intent through a first-order implementation filter. Under barycentric balance and uniform exploration, the linearized scalar branches have a characteristic factor in which hard observation and deployment lags enter only through their total sum, whereas implementation rates enter through real filter factors that cannot be absorbed into selection or exploration. In the strictly antagonistic class, negative spectral branches split into three regimes: weak branches have no positive-frequency crossing, intermediate branches lose stability through a delay-induced Hopf bifurcation, and strong branches are at or beyond the implementation-filter instability margin already at zero hard delay. This gives an operational delay-budget rule: in the delay-induced window, reducing any hard lag has the same first-order stabilizing leverage at onset; in the filter-induced regime, hard-lag reduction alone cannot restore stability. Balanced scalar performance observables generically show a mean shift and a second harmonic at twice the compositional frequency, and under strict antagonism the two performance signals are locked in antiphase with fixed amplitude ratio. For a baseline branch, a finite-dimensional Hopf normal-form calculation gives a negative cubic coefficient, and direct simulations reproduce the predicted threshold, amplitude scaling, and observable signatures. Motivating applications include cybersecurity and rapid technological countermeasure adaptation.",
+          "authors": [
+            "Alexander Omelchenko"
+          ],
+          "published": "2026-06-30T22:10:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.00212v1",
+          "entry_id": "http://arxiv.org/abs/2607.00212v1",
+          "title": "Strong Majority Edge-Coloring",
+          "summary": "A strong majority edge-coloring of a graph is an edge-coloring in which, for every edge $e$ and every color $i$, at most half of the edges adjacent to $e$ have color $i$. Such a coloring exists only for graphs with no pendant path of length two, which, following Kalinowski, Kamyczura, Pilśniak, and Woźniak, we call admissible. They proved that every admissible graph admits such a coloring with at most eight colors and conjectured that four colors always suffice. We improve the upper bound from eight to five.",
+          "authors": [
+            "Sylwia Antoniuk",
+            "Magdalena Prorok",
+            "Nika Salia"
+          ],
+          "published": "2026-06-30T21:43:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.00205v1",
+          "entry_id": "http://arxiv.org/abs/2607.00205v1",
+          "title": "Guesswork Under Linear Constraints: Exact Exponent for Coset Decoding",
+          "summary": "We establish the exact exponential growth rate of the $ρ$-th moment of the constrained guesswork $G_{\\mathrm{coset}}$ -- the rank of the true noise vector within its syndrome coset of a random binary linear code under i.i.d.\\ Bernoulli$(p)$ noise: \\( \\lim_{n\\to\\infty} \\frac{1}{n}\\log_2\\Eb\\!\\left[G_{\\mathrm{coset}}^ρ\\right] = ρ\\,h_{\\frac{1}{1+ρ}}(p)\\;+\\;ρ(R-1), \\, ρ>0, \\) where $h_α(p)$ is the binary Rényi entropy and $R=k/n$ is the code rate. The exponent shifts down by exactly $ρ(1-R)$ relative to the unconstrained Arıkan--Merhav exponent, with each of the $n(1-R)$ parity checks contributing equally. Finite-length simulations confirm convergence from below. We further establish: (i)~a transfer theorem expressing the partition-function exponent in terms of an arbitrary weight-enumerator growth rate $g(δ)$; (ii)~the exact exponent for $L_n$-list (``$k$-th'') constrained guesswork; and (iii)~a sharp second-order refinement of order $ρ\\log_2 n$. Beyond the binary i.i.d.\\ setting, we prove a universality theorem: for any code ensemble $\\mathcal{E}$ whose weight enumerator concentrates at rate $g_{\\mathcal{E}}(δ)$, the guesswork exponent equals $(1+ρ)ψ_{1/(1+ρ)}(g_{\\mathcal{E}})-ρ\\,ψ_1(g_{\\mathcal{E}})$, where $ψ_α(g)=\\sup_δ[g(δ)+α\\ell(δ)]$. As concrete applications, we instantiate this theorem for the $q$-ary extension, $Λ_q(ρ)=ρ\\,h^{(q)}_{1/(1+ρ)}(P)+ρ(R-1)\\log_2 q$, and for Gallager's regular LDPC ensemble, obtaining a closed-form guesswork exponent via an exact finite-length identity for the ensemble-average weight enumerator.",
+          "authors": [
+            "Hassan Tavakoli"
+          ],
+          "published": "2026-06-30T21:35:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.01273v1",
+          "entry_id": "http://arxiv.org/abs/2607.01273v1",
+          "title": "On Deranged Unit-Interval Parking Functions and the Deranged Bell Numbers",
+          "summary": "Unit-interval parking functions of length $n$ are enumerated by the Fubini numbers $F_n$ and are in explicit bijection with the ordered set partitions of $[n]$. We use this bijection to single out the unit-interval parking functions whose associated ordered set partition is \\emph{deranged} in the sense of Belbachir, Djemmada, and Németh -- no block occupies the position indexed by its minimum element -- and call them the \\emph{deranged unit-interval parking functions} $\\DUPF_n$. Since the bijection restricts to the deranged objects, $|\\DUPF_n| = \\tilde F_n$, the $n$-th deranged Bell number. We give an intrinsic, coordinate-wise characterization of the deranged condition through the lucky cars (equivalently, the block leaders) of a parking function, and we refine the enumeration by total displacement, obtaining $d_m\\Stir{n}{m}$ deranged unit-interval parking functions with $m$ blocks. We derive the exponential generating function $e^{1-e^x}/(2-e^x)$ by the symbolic method, prove a fixed-block convolution relating $F_n$, the Bell numbers, and $\\tilde F_n$, refine the count by singleton blocks via $2$-associated Stirling numbers, and describe an $r$-start extension together with a deranged Cayley-permutation model. Worked examples and a table of values are included.",
+          "authors": [
+            "Yahia Djemmada"
+          ],
+          "published": "2026-06-30T21:17:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.00181v1",
+          "entry_id": "http://arxiv.org/abs/2607.00181v1",
+          "title": "Parabolic subgroups of Dyer groups",
+          "summary": "For all Dyer groups, we find an algorithm to determine when two parabolic subgroups are conjugate. Given two conjugate standard parabolic subgroup, we fully describe the conjugating elements in terms of ribbons, showing that the ribbon conjecture holds true. In particular we give a description of the normaliser of a parabolic subgroup using ribbons. We prove the standardisation property for parabolic subgroups and deduce that an arbitrary intersection of parabolic subgroups is a parabolic subgroup.",
+          "authors": [
+            "María Cumplido",
+            "Marina Salamero",
+            "Giovanni Sartori",
+            "Mireille Soergel"
+          ],
+          "published": "2026-06-30T20:55:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.32024v1",
+          "entry_id": "http://arxiv.org/abs/2606.32024v1",
+          "title": "The sharp diagonal spectral correlation inequality on the discrete cube",
+          "summary": "We prove the sharp diagonal spectral correlation conjecture of Friedgut, Kahn, Kalai and Keller, proposed in their Fourier-analytic approach to Chvátal's conjecture. For every pair of increasing Boolean functions $f,g:\\{0,1\\}^n\\to\\{0,1\\}$, $$\\mathrm{Cov}(f,g)\\ge4\\sum_{\\varnothing\\ne S\\subseteq[n]}|S|\\hat{f}(S)^2\\hat{g}(S)^2.$$ Thus covariance controls the degree-weighted collision of the two nonconstant Fourier spectra, giving a sharp Fourier strengthening of the Harris--Kleitman inequality. The theorem also implies the unweighted diagonal conjecture of Friedgut--Kahn--Kalai--Keller for an increasing family and a maximal intersecting family.\n  The factor $4$ is optimal, and we determine all equality cases. Apart from pairs whose relevant coordinate sets are disjoint, equality occurs only for a common dictatorship and, up to relabelling coordinates and interchanging $f$ and $g$, for the two-coordinate AND-OR pair $(f,g)=(x_i x_j,\\,x_i\\vee x_j).$\n  The main novelty is a correlated four-restriction induction and a sharp endpoint convolution inequality. The usual two-restriction induction behind Harris--Kleitman sees only the parallel restricted pairs and loses the mixed Fourier information needed to control the degree-weighted diagonal spectral energy. We instead couple the four codimension-one restricted pairs with correlation $1/2$; this precise correlation extracts the missing degree-weighted energy as a nonnegative square.",
+          "authors": [
+            "Fan Chang",
+            "Hong Liu",
+            "Miao Liu"
+          ],
+          "published": "2026-06-30T17:52:59+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.32004v1",
+          "entry_id": "http://arxiv.org/abs/2606.32004v1",
+          "title": "PolicyGuard: From Organizational Policies to Neuro-SymbolicCompliance Review Engines",
+          "summary": "Policy-grounded document review requires determining whether a target document complies with organization-specific policies, guidelines, or playbooks. While large language models can assist with policy interpretation and document analysis, end-to-end prompting leaves the applied policy logic implicit, making compliance decisions difficult to inspect, update, and test. We present PolicyGuard, a neuro-symbolic framework for policy-grounded document compliance review. PolicyGuard converts organizational policy guidance into an executable review engine consisting of typed relational logic rules and atom-level extraction questions. During review, LLMs answer these local questions using retrieved document evidence, and a symbolic evaluator applies the formal rules to detect non-compliance. We instantiate and evaluate PolicyGuard on company-specific NDA compliance review, where contract clauses must be checked against organization-specific negotiation policies. By separating policy formalization, local document interpretation, and symbolic compliance evaluation, PolicyGuard makes document review more explicit, maintainable, and systematically testable.",
+          "authors": [
+            "Sameer Malik",
+            "Ayush Singh",
+            "Amar Prakash Azad"
+          ],
+          "published": "2026-06-30T17:37:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.00069v1",
+          "entry_id": "http://arxiv.org/abs/2607.00069v1",
+          "title": "On the Spectrum of the Line Graph of a Family of Bipartite Graphs Arising from the Boolean Lattice",
+          "summary": "The Boolean lattice $BL_n$, $n\\geq 3$, is the graph whose vertex set is the collection of all subsets of $[n]=\\{1,2,\\ldots,n\\}$, where two subsets $U$ and $W$ are adjacent if and only if their symmetric difference has precisely one element. In the graph $BL_n$, the \\emph{layer} $L_k$ is the family of all $k$-element subsets of $[n]$. The subgraph $BL_n(k-1,k)$ is the induced subgraph of $BL_n$ on layers $L_{k-1}$ and $L_{k}$. This graph is bipartite and, when $n=2k-1$, is $k$-regular and isomorphic to the bipartite double cover $2{\\cdot}O_k$ of the odd graph $O_k$. In this paper, we determine the full adjacency spectrum -- eigenvalues together with their multiplicities -- of the line graph $L(BL_n(k-1,k))$ for all admissible values of $n$ and $k$. As a consequence, we show that $L(BL_n(k-1,k))$ is an integral graph whenever $n = 2k-1$, and we recover as a special case the spectrum of the line graph $L(n)$ of $BL_n(1,2)$ established by Mirafzal~\\cite{pap-sm-1}.",
+          "authors": [
+            "Ali Zafari",
+            "Saeid Alikhani"
+          ],
+          "published": "2026-06-30T17:33:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31974v1",
+          "entry_id": "http://arxiv.org/abs/2606.31974v1",
+          "title": "Complexity of Universality and Related Decision Problems for Unary Two-Dimensional Automata",
+          "summary": "A two-dimensional automaton is able to move its input head through its input word in four directions: upward, downward, leftward, and rightward. If we prevent the input head from moving upward, then we obtain a three-way two-dimensional automaton; preventing both upward and leftward movements results in a two-way two-dimensional automaton. While much is known about the decidability and complexity properties of the two-dimensional automaton model, the unary variant of this model is less studied.\n  We show that the universality, equivalence, and inclusion problems for unary three-way deterministic two-dimensional automata are coNP-hard, while for the corresponding two-way model, the universality, equivalence, inclusion, and disjointness problems are in P. We further show that the universality, equivalence, and inclusion problems for unary two-way nondeterministic two-dimensional automata are coNP-hard and in ELEMENTARY; and the disjointness problem for the same model is NL-hard and in ELEMENTARY. Finally, we establish the decidability of a bounded variant of the universality problem for unary three-way nondeterministic two-dimensional automata, and show that this variant problem is coNP-complete.",
+          "authors": [
+            "Taylor J. Smith"
+          ],
+          "published": "2026-06-30T17:15:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31967v1",
+          "entry_id": "http://arxiv.org/abs/2606.31967v1",
+          "title": "On clique-to-clique densities",
+          "summary": "Let $k_r(G)$ denote the number of $r$-cliques in a graph $G$ and let $F_r(\\cdot)$ be the Lovász--Simonovits $r$-clique density function. For any integers $2\\le s<t$, we determine the asymptotically sharp lower bound on $k_t(G)$ in an $n$-vertex graph $G$ with a prescribed number $k_s(G)$, by showing that \\[ \\frac{k_t(G)}{n^t}\\ge F_t\\!\\left(F_s^{-1}\\!\\left(\\frac{k_s(G)}{n^s}\\right)\\right), \\] where $F_s^{-1}$ denotes the generalized inverse. This strengthens Bollobás's piecewise-linear interpolation bound and, in the case $s=2$, recovers Reiher's clique density theorem via a new inductive proof.",
+          "authors": [
+            "Jie Ma",
+            "Tianhen Wang",
+            "Tianming Zhu"
+          ],
+          "published": "2026-06-30T17:10:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31927v1",
+          "entry_id": "http://arxiv.org/abs/2606.31927v1",
+          "title": "Some Results on Causal Modalities in General Spacetimes",
+          "summary": "Causality is one of the fundamental structures of spacetimes, determining the possible behaviour and propagation of physical information. Causal structure can be analysed through the various modal logics it induces. The modal logics for the chronological and causal relations of the archetypal Minkowski spacetime have been classified. However, only partial results have been achieved for the strict variant of the causal relation, known as the after relation. Towards classification, it was shown by Shapirovsky and Shehtman that the after modality in Minkowski space satisfies a formula we call the 'after formula'.\n  The present work continues this analysis towards arbitrary spacetimes. In particular, we prove that the after modality in any smooth spacetime satisfies the after formula. We introduce a related modal formula that demonstrates that the logic of two-dimensional spacetimes are more expressive than higher-dimensional ones. Lastly, we study the interrelation between the logical properties and physical properties along the causal ladder.",
+          "authors": [
+            "Marco Lewis",
+            "Nesta van der Schaaf"
+          ],
+          "published": "2026-06-30T16:35:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31920v1",
+          "entry_id": "http://arxiv.org/abs/2606.31920v1",
+          "title": "Logics Containing wK4: Selection à la Fine",
+          "summary": "We generalize Fine's Iterative Selection Method to the weakly transitive setting. In particular, this provides a transparent frame-theoretic proof of the finite model property for (strongly) cofinal subframe logics extending wK4, which was previously established using algebraic methods. Using the same construction, we generalize Fine's Finite Width Theorem to the weakly transitive setting, connecting these two celebrated theorems of Fine.",
+          "authors": [
+            "Simon Santschi",
+            "Niels C. Vooijs"
+          ],
+          "published": "2026-06-30T16:26:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31908v1",
+          "entry_id": "http://arxiv.org/abs/2606.31908v1",
+          "title": "Is There An Ideal Color Wheel?",
+          "summary": "The familiar color wheel is a disk divided into six sectors, colored red, orange, yellow, green, blue, and purple, in circular order. Three of the colors can be obtained by blending the colors in the two neighboring sectors.\n  One might wonder: is there a color wheel in which all six of the sections have this property, without all the sections being the same color? We show that the answer is no, not just for the 6-cycle but for any finite connected graph; indeed, for any finite, strongly connected, edge-weighted digraph. The result generalizes the ``harmonic lemma\" for graphs, replacing the well-behaved averaging function by paint blending, about which almost nothing is assumed. Our proof makes use of a Markov chain stopping rule.",
+          "authors": [
+            "Tejo Madhavarapu",
+            "T. Kyle Petersen",
+            "Peter Winkler"
+          ],
+          "published": "2026-06-30T16:11:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31906v1",
+          "entry_id": "http://arxiv.org/abs/2606.31906v1",
+          "title": "A Gödel Modal Logic Over Witnessed Models",
+          "summary": "We introduce GW, a Gödel modal logic based on Kripke models in which the value of each modal formula is witnessed by an accessible world. This witnessed semantics eliminates the limit-based phenomena that preclude the finite model property in the usual Kripke semantics for Gödel modal logics, thereby yielding a more constructive semantic framework. We present a sound and complete refutation calculus for GW and design a terminating backward proof-search procedure with countermodel generation. As a direct consequence of this procedure, GW enjoys the finite model property.",
+          "authors": [
+            "Mauro Ferrari",
+            "Camillo Fiorentini",
+            "Paolo Giardini",
+            "Ricardo Oscar Rodriguez"
+          ],
+          "published": "2026-06-30T16:09:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31894v1",
+          "entry_id": "http://arxiv.org/abs/2606.31894v1",
+          "title": "On the degree of subvarieties on abelian varieties",
+          "summary": "Let $(X,Θ)$ be a very general principally polarized abelian variety of dimension $g$, and consider the minimal cohomology class $θ_k=[Θ]^k/k!$ for $k<g$. We show that the minimal positive multiple of $θ_k$ which is algebraic is divisible by all primes $p\\leq (k+1)/2$. In particular, these minimal multiples grow exponentially with $k$. Our main result follows from [EGFS25] together with a new combinatorial result about $\\mathbb F_p$-solutions of certain graphic matroids in their own Albanese graphs.",
+          "authors": [
+            "Philip Engel",
+            "Stefan Schreieder"
+          ],
+          "published": "2026-06-30T16:03:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31893v1",
+          "entry_id": "http://arxiv.org/abs/2606.31893v1",
+          "title": "Non-finite Axiomatizability of Generalized Medvedev Logics",
+          "summary": "We introduce a generalized form of Medvedev logics obtained by removing the greatest element from finite products of rooted Kripke frames with a top. We show that, before removing the top, the intermediate logic characterized by such finite products is exactly KC. Classical Medvedev logic is characterized by topless products of 2-chains, and a theorem of Maksimova, Skvortsov and Shehtman establishes that it is not finitely axiomatizable. Motivated by this result, Nick Bezhanishvili conjectured that non-finite axiomatizability extends to topless products of arbitrary finite chains and, more generally, to topless products of finite rooted frames with a top. We prove that every such generalized Medvedev logic is not finitely axiomatizable, thereby settling both conjectures in the affirmative. In 2003, van Benthem, Guram Bezhanishvili, and Gehrke introduced Cheq, the logic of chequered sets, and we show that whenever Cheq is a sublogic of a generalized Medvedev logic, the latter is not finitely axiomatizable over Cheq. Finally, we investigate the order structure of generalized Medvedev logics. We prove that there are at least countably many distinct generalized Medvedev logics and that no least such logic exists. These results extend the classical theory of Medvedev logic and clarify the behaviour of intermediate logics generated by topless product constructions.",
+          "authors": [
+            "Han Xiao"
+          ],
+          "published": "2026-06-30T16:02:30+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31892v1",
+          "entry_id": "http://arxiv.org/abs/2606.31892v1",
+          "title": "Better Understanding, Understanding Better",
+          "summary": "\"Any fool can know; the point is to understand.\" A well-known remark often attributed to Einstein captures a widely shared intuition: understanding is more than merely knowing. Yet epistemic logic has paid relatively little attention to understanding, despite its central role in contemporary epistemology, philosophy of science, and recent debates about AI. A recurring theme in the philosophical literature is that, unlike knowledge, understanding comes in degrees: one may understand something more or less well, and one's understanding may be better than another's. We introduce a comparative epistemic logic of understanding with level-indexed understanding modalities and a comparative connective for saying that one agent understands why a proposition better than another agent does. Semantically, we enrich multi-agent epistemic models with agent-indexed graded explanation structures and a justification-style term algebra. This yields a unified framework for representing minimal, ordinary, more demanding, and ideal understanding, together with comparisons between agents with respect to the same formula at issue. We distinguish a finitary bounded-level calculus from an infinitary full-language companion system. We establish soundness and strong completeness, and show that each fixed finite-level fragment is decidable.",
+          "authors": [
+            "Yu Wei"
+          ],
+          "published": "2026-06-30T16:02:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31891v1",
+          "entry_id": "http://arxiv.org/abs/2606.31891v1",
+          "title": "Knowing-Value Logic with Successor Arithmetic",
+          "summary": "In their prior work, Wang and Fan proposed conditional knowing-value logic and provided a complete axiomatization. However, in natural language scenarios and logic puzzles, knowing-value reasoning often appears together with arithmetic operations, which motivates us to enrich knowing-value logic with arithmetic function symbols. In this paper, we extend the language of conditional knowing-value logic with equality and the successor function. Due to the failure of compactness over the class of standard models, we additionally introduce non-standard models to facilitate the technical analysis. Our main results establish the finite model property and provide an axiomatization that is strongly complete with respect to the class of non-standard models and weakly complete with respect to the class of standard models. Furthermore, we extend our logic with public announcement operators and use the resulting system to formalize and solve the \"Consecutive Numbers\" puzzle. This work provides a novel framework for integrating epistemic logic with arithmetic.",
+          "authors": [
+            "Hongyi Wang"
+          ],
+          "published": "2026-06-30T16:01:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31890v1",
+          "entry_id": "http://arxiv.org/abs/2606.31890v1",
+          "title": "Uniform Lyndon Interpolation via Non-wellfounded Proofs",
+          "summary": "Non-wellfounded proof theory has been applied to establish uniform interpolation and Lyndon interpolation (separately) for multiple logics. However, it has not yet been used to prove uniform Lyndon interpolation. We close this gap by showing uniform Lyndon interpolation for the provability logic GLS. This logic was known to have uniform interpolation, but it was open whether it has uniform Lyndon interpolation (or at least non-uniform Lyndon interpolation). The methodology we provide is easy to adapt to other provability logics if a non-wellfounded sequent calculus is available for them. In addition, we offer an alternative proof of cut elimination for GLS via non-wellfounded proofs.",
+          "authors": [
+            "Borja Sierra Miranda",
+            "Thomas Studer"
+          ],
+          "published": "2026-06-30T16:01:42+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31888v1",
+          "entry_id": "http://arxiv.org/abs/2606.31888v1",
+          "title": "Non-classical Topological Evidence Logic",
+          "summary": "Topological Evidence Logic (TEL) is a recent approach to epistemic logic that uses topological tools to model coherent epistemic justification. Specifically, a hypothesis is coherently justified if and only if it is entailed by a dense open set. In its simplest form, TEL can be formulated as an extension of S4 with a global modality.  All currently studied forms of TEL are based on classical propositional logic, which has been heavily criticised for misrepresenting the way in which ordinary agents reason.  In this article, we show that the TEL approach is robust under modifications to the propositional base. We show that an extension of the intuitionistic modal framework recently introduced by de Groot and Shillito, incorporating a global modality, enables coherent justification to be expressed in an intuitionistic setting.  Furthermore, we adapt the recent work of Standefer et al., which extends relevant logic with a global modality, to show that coherent justification can be expressed in a relevant setting if an interior-of-complement operator is added to the language. Our main technical result is a soundness and completeness theorem for relevant TEL based on the weak relevant modal logic BS4.",
+          "authors": [
+            "Igor Sedlár"
+          ],
+          "published": "2026-06-30T16:01:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31887v1",
+          "entry_id": "http://arxiv.org/abs/2606.31887v1",
+          "title": "Uniform Interpolation of Basic Tense Logic",
+          "summary": "This paper establishes the uniform interpolation theorem for basic tense logic, which is also known as two-way modal logic or modal logic with converse. First introduced by Arthur Prior, basic tense logic is a syntactic expansion of basic modal logic with a converse modality. Its corresponding accessibility relation is defined as the converse of the standard accessibility relation in a given Kripke model. Although basic tense logic has been widely studied since its introduction, its uniform interpolation property has yet to be fully established. For basic modal logic K, Albert Visser (1996) provided a semantic argument formulated in terms of layered (or bounded) bisimulation, explicitly attributing the uniform interpolation property of K to Silvio Ghilardi. This paper extends Visser's semantic argument to demonstrate that basic tense logic also enjoys the uniform interpolation property.",
+          "authors": [
+            "Katsuhiko Sano"
+          ],
+          "published": "2026-06-30T16:01:10+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31886v1",
+          "entry_id": "http://arxiv.org/abs/2606.31886v1",
+          "title": "Analytic Cut in Epistemic Logics with Distributed Knowledge",
+          "summary": "Distributed knowledge is a notion of group knowledge studied in multi-agent epistemic logic. Semantically, the distributed knowledge of a group is interpreted via an accessibility relation given by the intersection of the epistemic accessibility relations of the agents in that group. This paper investigates sequent calculi for epistemic logics of distributed knowledge based on K45, KD45, and S5. While cut elimination holds in existing sequent calculi for modal logics K45 and KD45, it fails in all the systems mentioned above. Instead, we establish the analytic cut property for all three systems by adapting Takano' s (2018) strategy, which restricts the cut formulas to the set of subformulas of the conclusion of the cut rule. As a corollary, the Craig interpolation theorem holds for all logics considered. We also show that all proof-theoretic results remain valid when the empty group is allowed for the distributed-knowledge operator, in which case the distributed knowledge for the empty group is interpreted as the global modality.",
+          "authors": [
+            "Ryo Murai",
+            "Sizhuo Liu",
+            "Katsuhiko Sano"
+          ],
+          "published": "2026-06-30T16:00:53+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31885v1",
+          "entry_id": "http://arxiv.org/abs/2606.31885v1",
+          "title": "Halo Semantics for Modal Logic",
+          "summary": "In nonstandard analysis the halo of a point in a topological space is the intersection of the nonstandard extensions of all its open neighbourhoods. We define a parametric family of modal operators from the halo by varying which elements of the nonstandard extension are admitted as witnesses, and identify four canonical instances. Two recover well-known modalities: the topological closure and the Cantor derivative. A third reduces to Kripke semantics over the specialisation preorder. The fourth, purely nonstandard instance admits only nonstandard witnesses. The Transfer Principle forces it to coincide with the $ω$-accumulation point operator, a classical topological notion not previously studied in modal logic. Unlike the Cantor derivative, the $ω$-accumulation operator maps arbitrary sets to closed sets without any separation axiom, yielding an $ω$-Cantor-Bendixson decomposition on all topological spaces. Axiom 4 holds universally, again without separation conditions. We prove that K4 is the complete logic over infinite spaces, and GL over infinite $ω$-scattered spaces.",
+          "authors": [
+            "Yoàv Montacute"
+          ],
+          "published": "2026-06-30T16:00:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31884v1",
+          "entry_id": "http://arxiv.org/abs/2606.31884v1",
+          "title": "Intuitionistic Justification Logic, Semantically",
+          "summary": "Justification logics are explicit versions of modal logic. In the classical setting, this means boxes are refined with explicit proof terms and interact with each other through proof operations. This exercise was extended to intuitionistic modal logic with native diamonds. In this setting, diamonds are refined to satisfier terms and come equipped with additional operations.\n  Justification logic enjoys a connection to its corresponding modal logic through a realisation theorem. In the classical setting, this is achieved through either proof-theoretic or semantic methodology. So far, intuitionistic justification logic with satisfiers has only been presented syntactically with a proof-theoretic realisation theorem.\n  We present two classes of semantics for intuitionistic justification logic with soundness and completeness results: basic modular models, which extend possible world semantics for intuitionistic propositional logic; modular models which contain Kripke-style machinery to promote \"backwards compatibility\" to modal logic. Using modular models, we present a realisation theorem to establish a connection between intuitionistic justification logic and its corresponding intuitionistic modal logic.",
+          "authors": [
+            "Sonia Marin",
+            "Paaras Padhiar",
+            "Ian Shillito"
+          ],
+          "published": "2026-06-30T16:00:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31883v1",
+          "entry_id": "http://arxiv.org/abs/2606.31883v1",
+          "title": "Possibly Relevant Translations",
+          "summary": "We develop translations from relevant logics into normal modal logics, and use them to clarify structural connections between relevant and modal logic, obtain a few corollary results, and raise questions for future work.",
+          "authors": [
+            "Søren Brinck Knudstorp"
+          ],
+          "published": "2026-06-30T16:00:00+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31882v1",
+          "entry_id": "http://arxiv.org/abs/2606.31882v1",
+          "title": "Pointed Modal Abelian Logic, Algebraically",
+          "summary": "In this article, we investigate the pointed modal logic of reals. We first establish its relational (Kripke) semantics with bounded valuations in the Abelian l-group of real numbers with the distinguished negative constant -1. To study this logic algebraically, we introduce the variety of negatively pointed modal Abelian l-groups, in particular we focus on the strongly pointed members thereof. Constructing complex algebras and canonical frames, we establish a Truth Lemma connecting the relational and algebraic frameworks. Since finitary axiomatizations cannot fully capture the Kripke validities of the reals we introduce further algebraic constraints, in particular including an infinitary Archimedean-style rule. Finally, we prove a corresponding `infinitary algebraic completeness' result for pointed modal Abelian logic with respect to the variety of pointed modal Abelian l-groups.",
+          "authors": [
+            "Filip Jankovec",
+            "Wolfgang Poiger"
+          ],
+          "published": "2026-06-30T15:59:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31881v1",
+          "entry_id": "http://arxiv.org/abs/2606.31881v1",
+          "title": "Stratified Counterpossible Logic",
+          "summary": "This paper presents two logic systems, SCP and its extension SCP1, to distinguish between different types of impossibility. The semantics use a stratified structure that partitions worlds into logic-normal worlds (N) and anti-logic worlds (I). By defining a metaphysical accessibility relation within N, the systems separate metaphysical impossibility from logical contradiction. This allows for logical reasoning to be maintained even when dealing with metaphysical impossibilities. To address the challenge of vacuism, SCP1 implements a non-empty constraint on the selection function, ensuring that counterpossibles with impossible antecedents are not trivially true but depend on the connection between the antecedent and the consequent. We provide proofs for the soundness, completeness, and decidability of both systems. Finally, we indicate the possibility of applying this stratified approach to other modal domains, such as deontic or epistemic logic.",
+          "authors": [
+            "Chen Huang",
+            "Xuefeng Wen"
+          ],
+          "published": "2026-06-30T15:58:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31880v1",
+          "entry_id": "http://arxiv.org/abs/2606.31880v1",
+          "title": "On Modal Logics of Connectedness in Metric Spaces",
+          "summary": "For a positive number a, each metric space carries the relation  D_a  consisting of those pairs that are of distance less than a apart. A space X is said to be  a-connected, if the graph (X,D_a) is connected (that is, there is a D_a-path between every pair of points in X).  We give a complete axiomatization of a-connected metric spaces in the language with a family of distance modalities and  the universal modality. Then we give a complete axiomatization of the logic of connected (in the classical topological sense) metric spaces in the language with the topological modality, universal modality, and a single distance modality. We also show that these logics have the finite model property.",
+          "authors": [
+            "John Harding",
+            "Ilya Shapirovsky"
+          ],
+          "published": "2026-06-30T15:58:39+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31879v1",
+          "entry_id": "http://arxiv.org/abs/2606.31879v1",
+          "title": "Intuitionistic K is a Bisimulation-Invariant Fragment of Intuitionistic First-Order Logic",
+          "summary": "We define the notion of IK-bisimulation between the relational semantics for the intuitionistic modal logic IK, and prove that IK arises as the IK-bisimulation-invariant fragment of intuitionistic first-order logic. En route, we provide an intrinsic characterisation result of this logic by way of a Hennessy-Milner-style theorem and develop some intuitionistic first-order model theory, including  intuitionistic analogues of Los's Theorem, elementary embeddings and countable saturation.",
+          "authors": [
+            "Jim de Groot",
+            "João Marcos",
+            "Rodrigo Stefanes"
+          ],
+          "published": "2026-06-30T15:58:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31878v1",
+          "entry_id": "http://arxiv.org/abs/2606.31878v1",
+          "title": "Modal CEGAR-tableaux with RECAR and resolution-based SAT-shortcuts",
+          "summary": "We investigate two approaches for extending CEGAR-tableaux with SAT-shortcuts using a previously known approach called RECAR but also a totally new approach using the modal resolution theorem prover KSP  as an oracle. Our experiments using our C++ implementation CEGARBox++ of CEGAR-tableaux show that:\n  (1) CEGARBox++ with RECAR SAT-shortcuts is not competitive\n  (2) CEGARBox++ using KSP to provide SAT-shortcuts is superior to both CEGARBox++ and KSP,\n  particularly on large satisfiable problems.\n  As far as we know, this is the first effective integration of SAT, tableaux and resolution methods  for modal satisfiability which performs better than its parts.",
+          "authors": [
+            "Rajeev Goré",
+            "Cormac Kikkert"
+          ],
+          "published": "2026-06-30T15:58:08+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31877v1",
+          "entry_id": "http://arxiv.org/abs/2606.31877v1",
+          "title": "Taming Complexity in Intuitionistic Modal Logic: The Case of FIK and Its Shallow Calculus",
+          "summary": "Intuitionistic modal logics (IMLs) comprise many systems: from constructive modal logics such as CK and Wijesekera's CCDL to Fischer Servi/Simpson's IK, as well as some recently introduced variants. All of them are characterized by bi-relational semantics and have complete axiomatisations. However, from the perspective of proof theory and complexity, there are strong differences: while for constructive modal logics simple Gentzen calculi suffice, for IK more complex calculi, based on nested or labelled sequents, are needed. As a consequence, the decision problem for constructive modal logics has a PSPACE upper bound, whereas for IK is not known and it is even conjectured to be non-elementary. We study here the proof theory and complexity of FIK, a natural intuitionistic modal logic recently introduced. FIK is strictly in between CCDL and IK, yet it has the same forcing conditions as IK. We define a \"shallow\" sequent calculus for FIK which is a nested sequent calculus where sequents have at most one level of nesting. We prove its syntactic completeness by showing the admissibility of cut. By means of this calculus we show that decision problem for FIK is in EXPSPACE, whence significantly lower than the complexity conjectured for IK.",
+          "authors": [
+            "Han Gao",
+            "Nicola Olivetti"
+          ],
+          "published": "2026-06-30T15:57:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31874v1",
+          "entry_id": "http://arxiv.org/abs/2606.31874v1",
+          "title": "Topological Logics of Path-Reachability",
+          "summary": "The topological semantics of modal logic has been an active area of research ever since their introduction in the 1940s, with attention shifting in recent years from standard unimodal logic to more expressive frameworks. In particular, an Until-like path-reachability modality has recently been studied in Bezhanishvili et al. (2024) in polyhedral semantics; this paper investigates its topological counterpart. Focusing on the language combining said modality with the classical Cantor derivative modality, we exhibit an axiomatic system sound and complete both for the class of T1 topologies and for the class of all metric spaces, and establish its decidability. We also axiomatize the logic of all topological models in a weaker language obtained by substituting the closure modality for the Cantor derivative. To prove our results, we introduce an equivalent neighborhood-like semantics allowing for the finite model property.",
+          "authors": [
+            "Aleksandr Gagarin",
+            "David Fernández-Duque"
+          ],
+          "published": "2026-06-30T15:57:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31872v1",
+          "entry_id": "http://arxiv.org/abs/2606.31872v1",
+          "title": "Hyperformalism for Relevant Modal Logics",
+          "summary": "The property of hyperformalism has proven to be a powerful tool in the analysis of relevant logics, revealing that increasingly weak relevant logics are closed under increasingly strong classes of non-uniform substitutions. In such substitutions, two instances of the same atom may be treated independently in virtue of syntactic features of their appearances in a complex. In this work, we extend the scope of hyperformalism to relevant modal logics by considering MPos-hyperformalism, that is, a property in which relevant modal logics are closed under substitutions in which nesting within the scope of modal operators is taken into account. We prove that the weak relevant modal logic B-Box is MPos-hyperformal and investigate the classes of non-uniform substitutions under which several extensions are closed. We then consider corresponding refinements of the variable sharing property that hold of such logics. We conclude by introducing a modal logic K-MPos that constitutes the largest MPos-hyperformal sublogic of the classical modal logic K and provide soundness and completeness results.",
+          "authors": [
+            "Thomas Macaulay Ferguson",
+            "Shay Allen Logan"
+          ],
+          "published": "2026-06-30T15:56:53+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31870v1",
+          "entry_id": "http://arxiv.org/abs/2606.31870v1",
+          "title": "Intuitionistic Monotone Modal Logic: Proof Theory and Semantics",
+          "summary": "We study the recently introduced intuitionistic monotone modal logic IM. We first provide a semantic characterisation for a family of natural extensions of IM in terms of constructive neighbourhood models. We then present a calculus for IM and its extensions, obtained by adapting a structured calculus for the classical monotone modal logic M. Based on the calculus, we prove some preliminary results for IM, including its decidability. Our calculus also reveals an interesting analogy between constructive and intuitionistic variants of M and the corresponding variants of K, thereby further justifying IM as a faithful intuitionistic variant of M.",
+          "authors": [
+            "Tiziano Dalmonte",
+            "Jim de Groot"
+          ],
+          "published": "2026-06-30T15:56:05+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.01271v1",
+          "entry_id": "http://arxiv.org/abs/2607.01271v1",
+          "title": "On Strong Structural Completeness of Varieties and Quasivarieties",
+          "summary": "We study structural completeness in the infinitary sense (strong structural completeness) in an algebraic setting. A variety is structurally complete (SCpl) if it is generated, as a quasivariety, by its free algebras, and it is strongly structurally complete (SSCpl) if it is generated, as a prevariety, by its free algebras. A quasivariety is SSCpl if it is generated, as a prevariety, by its free algebras.\n  We prove that every quasivariety of finite type with the CEP that is generated by finite algebras and contains an infinite irreducible algebra is not SSCpl. Moreover, every congruence meet-semidistributive variety of finite type generated by finite algebras is SSCpl if and only if it is tabular. Thus, Dummett's and Medvedev's logics are SCpl but not SSCpl.\n  A variety is primitive if it is SCpl and all its subvarieties are SCpl; it is strongly primitive if it is SSCpl and all its subvarieties are SSCpl. We prove that in primitive congruence-distributive varieties of finite type, the tabular subvarieties, and only those, are strongly primitive. This observation also yields a criterion for strong primitivity.",
+          "authors": [
+            "Alex Citkin"
+          ],
+          "published": "2026-06-30T15:55:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31868v1",
+          "entry_id": "http://arxiv.org/abs/2606.31868v1",
+          "title": "Labelled Sequents for Inquisitive First-Order Modal Logic",
+          "summary": "In recent work, an inquisitive first-order modal logic has been proposed to reason about relations of modal dependence, including the notion of global supervenience (functional dependence among the extensions of predicates relative to a space of possibilities). At present, no proof system exists for this logic. We provide a complete labelled sequent calculus, extending a calculus developed by Litak and Sano for a weak version of inquisitive first-order logic. We prove strong completeness for the calculus and show that it enjoys desirable structural properties, including the invertibility of its rules and the admissibility of cut.",
+          "authors": [
+            "Ivano Ciardelli",
+            "Simone Conti"
+          ],
+          "published": "2026-06-30T15:55:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31866v1",
+          "entry_id": "http://arxiv.org/abs/2606.31866v1",
+          "title": "Inquisitive Action Logic",
+          "summary": "We introduce inquisitive action logic, InqAL, a multi-agent modal logic for reasoning about action. While traditional approaches focus on what properties of the outcome an agent can force, InqAL also captures what aspects of the outcome an agent determines through their actions. As we argue, such claims of agentive determination are naturally analyzed as modal claims involving questions.\n  Technically, InqAL is a multi-agent extension of inquisitive neighborhood logic based on concurrent game structures. With respect to statements, it is expressively equivalent to the individual-agent fragment of the socially friendly coalition logic recently proposed by Goranko and Enqvist.\n  We present an axiomatization of InqAL and prove completeness and decidability via the finite model property. Along the way, we establish a representation theorem for actual effectivity functions, associating to an agent the sets of outcomes corresponding to their possible actions; we give exact conditions under which a multi-agent neighborhood frame arises from a concurrent game structure.",
+          "authors": [
+            "Ivano Ciardelli"
+          ],
+          "published": "2026-06-30T15:55:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31865v1",
+          "entry_id": "http://arxiv.org/abs/2606.31865v1",
+          "title": "Goldblatt-Thomason Theorem for Probability Logic",
+          "summary": "Probability logic (PL) extends propositional logic with countably many probability operators, one for each rational number between 0 and 1. The formulas of this logic are interpreted over the class of Markov processes, i.e., structures of the form $(Ω, Σ, T)$, where$(Ω, Σ)$ is a measurable space and $T$ is a Markov kernel. The main contribution of this paper is the establishment of the Goldblatt-Thomason theorem for probability logic. As an application, we show that the class of Harsanyi type spaces is definable in PL. Moreover, we obtain some variants of the Goldblatt-Thomason theorem for specific subclasses of Markov processes.",
+          "authors": [
+            "Somayeh Chopoghloo",
+            "Massoud Pourmahdian",
+            "Reihane Zoghifard"
+          ],
+          "published": "2026-06-30T15:55:00+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31863v1",
+          "entry_id": "http://arxiv.org/abs/2606.31863v1",
+          "title": "Most Properties are Undecidable for Transitive Tense Logics",
+          "summary": "A logics' property is decidable in a class of logics if there exists an algorithm that decides whether a finitely axiomatizable logic in the class has the property. Many properties are undecidable for bimodal logics but decidable for linear tense logics, which leads to a general question on how the interactions of modalities affect the decidability of properties. In this paper, we study the decidability of properties for transitive tense logics and show that most properties are undecidable in the lattice NExt(K4t) of transitive tense logics, including Kripke completeness, the finite model property, and decidability. Our proof method adapts Chagrov's approach of constructing a reduction from an undecidable problem of Minsky machines to the decision problem for logics' properties, yielding a general scheme of proving the undecidability of these properties.",
+          "authors": [
+            "Qian Chen",
+            "Tenyo Takahashi"
+          ],
+          "published": "2026-06-30T15:54:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31862v1",
+          "entry_id": "http://arxiv.org/abs/2606.31862v1",
+          "title": "Modal Measurable Logics via a Modal Loomis-Sikorski Representation Theorem",
+          "summary": "We investigate a modal extension of the infinitary classical logic with countable meets and joins, formulated with an eye toward measure-theoretic work in dynamical systems and in point-free ergodic theory. We define a modal formalism in this language, which we call modal measurable logics. We also introduce a Kripke-like semantics for these logics in measurable spaces taking a designated modal sigma-ideal into consideration. Using a restriction of Jonsson-Tarski duality and a modal extension of the Loomis-Sikorski theorem, we prove completeness of modal measurable logics with respect to this new semantics.",
+          "authors": [
+            "Nick Bezhanishvili",
+            "Jim de Groot",
+            "Lawrence S. Moss"
+          ],
+          "published": "2026-06-30T15:54:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31861v1",
+          "entry_id": "http://arxiv.org/abs/2606.31861v1",
+          "title": "Belief Contraction in Dynamic Epistemic Logic",
+          "summary": "Dynamic epistemic logic represents belief change via model transformations induced by epistemic events. Its standard formulation (Baltag, Moss, Solecki, 1998) provides a natural account of belief expansion through the elimination of possibilities, but it cannot model belief contraction about factual propositions. A classic response enriches Kripke models with plausibility orderings, representing contraction as an update that promotes certain possibilities over others. We show that this approach has expressive limitations. In particular, the approach cannot model belief that violates positive introspection and contraction dynamics in response to a hedged public announcement that phi might be false. \n  Motivated by these considerations, we introduce a mechanism for belief contraction defined directly on standard Kripke models, without any constraints on the doxastic accessibility relation. We show that it satisfies some of the standard properties of belief contraction but not others, study the conditions under which contraction may be unsuccessful, and provide a sound and complete axiomatization of the logic via reduction axioms. We also define a more general dynamic logic that is an extension of standard DEL and accommodates belief contractions due to events such as private or semi-private announcements, and provide a complete and sound axiomatization of the general logic.",
+          "authors": [
+            "Gaia Belardinelli",
+            "Snow Zhang"
+          ],
+          "published": "2026-06-30T15:53:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31860v1",
+          "entry_id": "http://arxiv.org/abs/2606.31860v1",
+          "title": "Labelled Sequent Calculi for Propositional Team Logics",
+          "summary": "Team semantics is a general framework where formulas are not interpreted with respect to a single point of evaluation, but with respect to sets of such points. Team semantics is used in dependence logic, to reason about dependencies between variables, and in inquisitive logic, to formalize the meaning of questions. We provide sound and complete labelled sequent calculi for four logics based on team semantics: basic inquisitive logic, propositional intuitionistic dependence logic, and their respective extensions with tensor disjunction. For technical reasons, we restrict ourselves to languages with finitely many propositional atoms. The rules of weakening, contraction and cut are shown to be admissible in each of our calculi. In the last part of the paper, we present terminating proof search procedures for variants of our proof systems, in which labels have a simplified structure.",
+          "authors": [
+            "Fausto Barbero",
+            "Marianna Girlando",
+            "Valentin Müller",
+            "Fan Yang"
+          ],
+          "published": "2026-06-30T15:53:39+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31858v1",
+          "entry_id": "http://arxiv.org/abs/2606.31858v1",
+          "title": "The Logic of Data Access and Data Exchanges",
+          "summary": "We investigate a new logic that extends Dynamic Epistemic Logic (DEL), by combining standard epistemic modalities for (individual and distributed) propositional knowledge with operators for (conditional) non-propositional knowledge of a number (in which an agent or a group have knowledge of the value of some variable x, conditional on some additional information). We also generalize these operators, by considering formulas that express the fact that an agent or group can (conditionally) narrow down the possible values of the variable x to at most N possibilities (for some natural number N). In order to name and compare such hypothetical values, we extend the logic further with definite descriptions based on minimization operators, denoting the least of the N possible values of x (according to some fixed order) that are considered possible by the agent or group.  On this static base, we consider DEL-style extensions with dynamic modalities for general 'data-exchange events' (covering private and public propositional announcements, but also secret hacking of a private database, or public sharing of one's data via open-source repositories, etc.). In such scenarios, whole 'chunks' of information may be exchanged or modified: once access to a given source is gained, all the 'data' stored at that specific location becomes available. We give complete axiomatizations for the resulting logics, and prove their decidability and co-expressivity.",
+          "authors": [
+            "Alexandru Baltag",
+            "Sonja Smets"
+          ],
+          "published": "2026-06-30T15:53:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31855v1",
+          "entry_id": "http://arxiv.org/abs/2606.31855v1",
+          "title": "Resolving Asynchronous Distributed Knowledge",
+          "summary": "There are by now various epistemic modal logics with intersection modalities for distributed knowledge and intersection update modalities for dynamic phenomena like agents sharing (all their) information, agents receiving information from other agents, and full information protocols. One of those is the logic of Resolving Distributed Knowledge, by Agotnes and Wang. It has distributed knowledge modalities for arbitrary subsets of the set of all agents and it also has so-called resolution modalities for arbitrary subsets of agents sharing their knowledge. In that logic, the agents not involved in the knowledge sharing are aware of the agents sharing knowledge, agents are memory-less, and the kind of dynamics represents synchronous updates, where there is common awareness of the global clock. In contrast, in this contribution we present a logic for Resolving Asynchronous Distributed Knowledge. It is an asynchronous generalization of the synchronous logic of resolving distributed knowledge. The logical semantics is history-based: truth is not only with respect to a given world in a model, but also with respect to a given history of prior resolutions, of which each individual agent can only observe a part. In particular, an agent is unaware of resolutions for groups of agents not including her. As is to be expected, this comes with many technical complications, for example concerning the axiomatization. The synchronous axioms relating resolution to distributed knowledge are now invalid. The modelling advantages of such an asynchronous novel logic, for distributed computing and similar areas, are however substantial and a major asset.",
+          "authors": [
+            "Philippe Balbiani",
+            "Hans van Ditmarsch",
+            "Clara Lerouvillois"
+          ],
+          "published": "2026-06-30T15:53:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31853v1",
+          "entry_id": "http://arxiv.org/abs/2606.31853v1",
+          "title": "Conditionals and Modalities in Constructive Quantum Logics",
+          "summary": "We investigate logics that generalize both intuitionistic logic and quantum logic. In earlier work, we introduced Ex-logic, an extension of Holliday's fundamental logic that coincides with the intersection of orthologic and the implication-free fragment of intuitionistic logic. In this paper, we add an implication connective to Ex-logic and axiomatize iEx-logic, the intersection of full intuitionistic logic and orthomodular logic with the implication connective interpreted as the Sasaki hook. As a consequence, we obtain a characterization of the lattice of logics extending iEx-logic as the product of the lattice of intermediate logics and the lattice of orthomodular logics. We also explore the robustness of our algebraic approach by briefly discussing extensions of iEx-logic with modal operators.",
+          "authors": [
+            "Juan P. Aguilera",
+            "Guillaume Massas"
+          ],
+          "published": "2026-06-30T15:52:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31852v1",
+          "entry_id": "http://arxiv.org/abs/2606.31852v1",
+          "title": "On Modal Logics of Full Products of Neighborhood Frames",
+          "summary": "On the product of two neighborhood frames, three natural neighborhood functions can be defined: the horizontal one assigning to a point (x, y) the set of all supersets of the Cartesian product of U and y, where U is a neighborhood of x; the vertical analog; and the product neighborhood function assigning as neighborhoods all supersets of sets Cartesian products of U and V, for neighborhoods U of x and V of y.\n  We define the tri-modal logics Tx+T and Dx+D of classes of full products equipped with all three neighborhood functions of neighborhood frames validating the logic T or D; thereby extending known product results for S4 and D4 to weaker systems. Two interaction principles arise: (sub) = []p -> [1]p & [2]p and (mix) = []p -> [1][2]p & [2][1]p, where the modality [] stands for the product neighborhood function and [1], [2] the horizontal and vertical ones. Namely, we show that Tx+T = T*T*T + (mix) and Dx+D = D*D*D + (mix), where * denotes fusion. Notably, (sub) and (mix) are equivalent over S4*S4*S4 and thus S4*S4*S4 + (mix) axiomatizes the logic of full products of topological spaces.",
+          "authors": [
+            "Rajab Aghamov",
+            "Andrey Kudinov",
+            "Maik Thanh Nguyen",
+            "Jakob Piribauer"
+          ],
+          "published": "2026-06-30T15:52:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31821v2",
+          "entry_id": "http://arxiv.org/abs/2606.31821v2",
+          "title": "A generalization of partition identities of Göllnitz-Gordon, Rogers-Ramanujan and Nandi",
+          "summary": "We propose Andrews-Gordon type series for certain level 2 standard modules of type $A^{(2)}_{\\textrm{odd}}$, and prove the corresponding sum-product identities except for $A^{(2)}_{6n+3}$. These identities generalize the identities of Göllnitz-Gordon (mod 8), Rogers-Ramanujan (mod 5) and (partially) Nandi (mod 14).",
+          "authors": [
+            "Motoki Takigiku",
+            "Shunsuke Tsuchioka"
+          ],
+          "published": "2026-06-30T15:32:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31815v1",
+          "entry_id": "http://arxiv.org/abs/2606.31815v1",
+          "title": "Token sliding independent set reconfiguration on graphs with few $P_4$'s",
+          "summary": "We consider the INDEPENDENT SET RECONFIGURATION problem under the Token Sliding rule. Let $I$ be an independent set of a simple undirected graph $G$. Suppose that each vertex of $I$ has a token placed on it. The tokens are allowed to be moved, one at a time, by sliding along the edges of $G$, so that after each move, the vertices having tokens always form an independent set of $G$. The problem we deal is to decide if we can transform $I$ into $I'$ through a sequence of steps, each of which involves substituting a vertex in the current independent set with one of its neighbours to obtain another independent set. This problem of determining if one independent set of a graph \"is reachable\" from another independent set of it is known to be PSPACE-hard even for split graphs, planar graphs, and graphs of bounded treewidth. Polynomial time algorithms have been obtained for certain graph classes like trees, interval graphs, claw-free graphs, bipartite permutation graphs, block graphs, and cographs. We present a polynomial time algorithm for the problem on $P_4$-tidy graphs and $(q,q-4)$-graphs, both families of graphs generalizing cographs.",
+          "authors": [
+            "Lucia Busolini",
+            "Mario Valencia-Pabon"
+          ],
+          "published": "2026-06-30T15:28:00+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31802v1",
+          "entry_id": "http://arxiv.org/abs/2606.31802v1",
+          "title": "Feedback dynamics in matching networks drive behavioral differentiation despite overlapping objectives",
+          "summary": "Many bipartite social networks exhibit pronounced asymmetries in selectivity and matching opportunities: members of one side can afford to be highly selective, while members of the opposite side are forced to accept less desirable matches. While it is natural to try to explain this asymmetry in terms of the intrinsic characteristics of the two sides or other exogenous factors, here we show that such asymmetries can also emerge endogenously through a feedback process generated by the matching process itself: as one side becomes more selective, the other side is pushed to be less selective due to reduced matching opportunities, and vice versa. We develop a model in which individuals repeatedly form one-to-one matches across two groups and adapt their selectivity to achieve a target matching rate. Using both analytic and numerical methods, we show that when encounters are sufficiently frequent, the unique equilibrium is for one group to be highly selective and the other non-selective. This qualitative outcome holds even for heterogeneous groups with overlapping, almost indistinguishable distributions of target matching rates. The model makes several testable predictions, and it provides a mechanism for behavioral differentiation in repeated matching environments, with applications ranging from online dating to hiring and housing markets.",
+          "authors": [
+            "Alexandros Gelastopoulos"
+          ],
+          "published": "2026-06-30T15:20:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31787v1",
+          "entry_id": "http://arxiv.org/abs/2606.31787v1",
+          "title": "Pressure for the space of average pseudo-orbits with block sub-additive potentials",
+          "summary": "In this paper, we introduce the concept of block sub-additive potential. The topological and measure-theoretic pressures are then defined for the space of average pseudo-orbits relative to any block sub-additive potential and any open cover of a given compact metric space. A local variational principle connecting these pressures is established, and it is further proven that they are equivalent to the corresponding topological and measure-theoretic pressure (in the ergodic case), respectively, defined for the induced sub-additive potential and the specified open cover. Additionally, the global versions of these concepts are also investigated, and a result that bridges the global and local perspectives is presented.",
+          "authors": [
+            "Fangzhou Cai",
+            "Jie Li"
+          ],
+          "published": "2026-06-30T15:10:17+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31774v1",
+          "entry_id": "http://arxiv.org/abs/2606.31774v1",
+          "title": "Thurston norm, polytopes and splitting complexity",
+          "summary": "We show that if $G$ is a finitely generated torsion-free group satisfying the Strong Atiyah Conjecture with vanishing first $L^{2}$-Betti number, then the map that assigns to each surjective integral character the first $L^2$-Betti number of the kernel extends to a seminorm on the first cohomology group of $G$ with real coefficients. We call this seminorm the Thurston norm. Moreover, we show that this norm is induced by a polytope in the first homology group with real coefficients. We also generalize this result to higher $L^{2}$-Betti numbers of the kernels, thereby confirming a conjecture of Friedl, Lück and Tillmann.\n  In the case where $G$ is either a free-by-cyclic group or the fundamental group of an admissible $3$-manifold, we show that the Thurston norm of $G$ admits a combinatorial interpretation that relates it to the splitting complexity of the character. This confirms a conjecture of Gardam and Kielak. As an application, we show that there exists an algorithm to compute the Bieri--Neumann--Strebel invariant of free-by-cyclic groups, and discuss connections to the isomorphism problem in free-by-cyclic groups.",
+          "authors": [
+            "Andrei Jaikin-Zapirain",
+            "Monika Kudlinska",
+            "Pablo Sánchez-Peralta"
+          ],
+          "published": "2026-06-30T14:57:29+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31768v1",
+          "entry_id": "http://arxiv.org/abs/2606.31768v1",
+          "title": "Nonlinear Feedbacks Between Host Behavior and Vector Adaptation in a Multi-Host Vector-Borne Disease Model",
+          "summary": "Insecticide-treated nets (ITN) are an effective and low-cost intervention for controlling vector-borne disease (VBD), however, their use depends on individual decisions based on perceived cost and risk of infection. This study investigates a nonlinear multi-host model for the transmission of VBD with endogenous strategic control. We assume that hosts' adoption of ITN emerges from the payoff-based decision-making, creating a nonlinear coupling with disease prevalence. We model vector preference as a function of ITN coverage to probe the complex interplay among individual choices, disease prevalence, and its control in a multi-host setting. The qualitative behavior of the system is characterized by the thresholds $R_0$ and $R_c$, which determine the existence and local stability of the disease-free and endemic equilibria. The system exhibits rich dynamical behavior; hence, we provide a bifurcation analysis identifying the conditions for saddle-node and Hopf bifurcations. Our results demonstrate that the interaction between the perceived cost of ITN and the infection risk can induce critical transitions, including regime shift from stable endemic states to sustained periodic oscillations. Furthermore, we identify a counterintuitive effect whereby complete ITN adoption by the primary host can increase the overall prevalence in the secondary host due to adaptive shifts of vector feeding behavior.",
+          "authors": [
+            "Shravani Shetgaonkar",
+            "Anupama Sharma"
+          ],
+          "published": "2026-06-30T14:54:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31702v1",
+          "entry_id": "http://arxiv.org/abs/2606.31702v1",
+          "title": "List-Coloring and Chromatic-Choosability -- A Dynamic Survey",
+          "summary": "List-coloring, introduced independently by Vizing and by Erdős, Rubin, and Taylor in the 1970s, generalizes ordinary vertex coloring by assigning to each vertex its own set of admissible colors. A graph is chromatic-choosable if its list chromatic number equals its chromatic number. The previous survey on list-coloring by D R Woodall (2001), emphasized defective choosability, the list-coloring conjectures, and different methods used for list-coloring. This survey reviews major developments on list-coloring and chromatic-choosability, with emphasis on graph classes for which equality is known, graph classes exhibiting a nontrivial gap, and the principal methods used to prove such results. The survey covers embedded graphs, perfect graphs, complete bipartite and multipartite graphs, claw-free graphs, line graphs, powers of graphs, graph products, and selected variants of list-coloring.",
+          "authors": [
+            "Nandana K Vasudevan",
+            "K Somasundaram",
+            "N Narayanan"
+          ],
+          "published": "2026-06-30T14:10:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31640v2",
+          "entry_id": "http://arxiv.org/abs/2606.31640v2",
+          "title": "A Counterexample to Ziegler's Cross-Polytope Conjecture for Simplicial 0/1-Polytopes",
+          "summary": "Ziegler proved that every simplicial $d$-dimensional $0/1$-polytope has at most $2d$ vertices, and asked whether equality forces the polytope to be centrally symmetric and hence, equivalently, a $0/1$-realization of the $d$-dimensional cross polytope. In this note, we give a negative answer, exhibiting an explicit set of $14$ vertices in $\\{0,1\\}^7$ whose convex hull is a simplicial $7$-polytope and is not centrally symmetric. Moreover, via exhaustive enumeration we show that up to the symmetries of the cube, there are precisely five such polytopes in dimension $7$ (of two combinatorial types) that are not centrally symmetric.",
+          "authors": [
+            "Volker Kaibel",
+            "Sebastian Pokutta"
+          ],
+          "published": "2026-06-30T13:21:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31639v1",
+          "entry_id": "http://arxiv.org/abs/2606.31639v1",
+          "title": "A Lifecycle and Application-Stack Survey of Large Language Model Vulnerabilities: Attacks, Risks, Defenses, and Open Problems",
+          "summary": "Large language models are no longer only text generators. They are increasingly embedded in retrieval pipelines, enterprise assistants, coding environments, robotic systems, security-operation workflows, and autonomous agents that can read private data, call tools, write files, execute code, and act across organizational boundaries. This shift changes the security problem: risks do not arise from the model weights alone, but from the full lifecycle and application stack through which data, prompts, model outputs, tools, memories, and user authority interact. This paper systematizes the literature on vulnerabilities in large language model systems through a lifecycle and application-stack lens. We organize attacks across eight stages: data collection, pretraining, post-training alignment, model packaging and supply chain, retrieval and memory, prompting and inference, tool/agent execution, and deployment/maintenance. For each stage, we analyze attacker capabilities, affected security objectives, representative attacks, practical risks, evaluation practices, and defenses. We further map LLM-specific vulnerabilities to confidentiality, integrity, availability, safety, privacy, fairness, accountability, and agency-control objectives. Unlike taxonomies that list isolated attack names, the proposed systematization emphasizes where trust boundaries fail, how untrusted data becomes executable instruction, how delegated authority amplifies model errors, and why point defenses rarely compose. We close with a research agenda for secure LLM systems, including compositional security, provenance-aware retrieval, tool-call containment, long-horizon agent evaluation, privacy-preserving adaptation, realistic red teaming, and deployment-grade incident response.",
+          "authors": [
+            "Seyed Bagher Hashemi Natanzi",
+            "Bo Tang"
+          ],
+          "published": "2026-06-30T13:21:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31619v1",
+          "entry_id": "http://arxiv.org/abs/2606.31619v1",
+          "title": "Hybrid Topological Data Analysis and LSTM Networks for Enhanced Network Intrusion Detection Using CIC-IDS2017 Dataset",
+          "summary": "Network intrusion detection systems (NIDS) are crucial in cybersecurity infrastructure, needing advanced techniques to detect hostile activity in network traffic. This research introduces a hybrid approach that combines Topological Data Analysis (TDA) with Long Short-Term Memory (LSTM) networks to improve anomaly detection in network security. Our multi-layered design combines TDA's persistent homology with LSTM networks to capture topological characteristics of network traffic patterns and simulate temporal sequences. We assessed our methodology using the CIC-IDS2017 dataset, which includes over 2.8 million labelled flows, 77 network variables, and 14 attack categories that reflect modern threat landscapes such as DDoS, brute force, web attacks, penetration, and botnet activities. Integrating Betti curves and persistence diagrams with deep learning architectures enhances feature extraction performance. Our hybrid TDA+LSTM model has an AUC of 1.000 and F1-score of 1.000, with 5-fold cross-validation producing a mean AUC of 1.000 $\\pm$ 0.000 and mean F1 of 0.999 $\\pm$ 0.001. An ablation research demonstrates the complimentary contributions of topological (F1=0.990) and temporal characteristics (F1=1.000). Comparative research shows that the suggested strategy beats TDA+Random Forest (F1=0.994) and Isolation Forest (F1=0.835) baselines in several attack categories.",
+          "authors": [
+            "Amar Jeet",
+            "Bhaskar Ranjan Karn",
+            "Dinesh Kumar"
+          ],
+          "published": "2026-06-30T13:08:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31582v1",
+          "entry_id": "http://arxiv.org/abs/2606.31582v1",
+          "title": "Generalized Laura-Andoyer equations and the enumeration of some symmetrical classes of Dziobek configurations",
+          "summary": "We study the symmetrical Dziobek configurations where, in $\\mathbb{R}^{d}$, there are $d$ bodies with unit masses at the vertices of a regular $(d-1)$-dimensional simplex of unit edge length and two more bodies with nonzero masses $s,k$ are on the line passing through the center of the simplex and being orthogonal to it.\n  In the case of logarithmic potential, the finiteness is proved for all $s,k\\neq 0, d>1$, and we obtain the bifurcation surface in the $(s,k,d)$-space through Gröbner basis computation. Using cylindrical algebraic decompositions, we find $197232$ sample points in the complement of the bifurcation surface. We propose a method to reduce the number to only $202$. By Hermite's root counting theorem, we find that, generically, there can be $0,1,2,3$ or $4$ concave, $1,2,3, $ or $4$ convex, and in totality, $1,2,3,4$ or $5$ such configurations for all dimensions $d>1$. For positive $s$ and $k$, generically, there is a unique convex configuration, while the number of concave ones can be $0,2$ or $4$. All possible combinations for the numbers described above are realized when $d=2$.\n  We obtain a set of generalized Laura-Andoyer equations equivalent to the central configurations equations for all fixed number of bodies $n=d+h$ and configuration dimension $d$. For homogeneous force law with exponent $a\\in \\mathbb{R}$, we use the action of permutation group $S_d$ in the Laura-Andoyer equations to reduce the equivalent $\\binom{d+2}{2}\\binom{d}{2}$ Laura-Andoyer equations to only two generalized polynomial algebraic equations for the studied class of symmetric configurations with two variables representing the positions of the two bodies not at the vertices of the simplex in four parameters $a,d,s,k$.",
+          "authors": [
+            "Thiago Dias",
+            "Ya-Lun Tsai"
+          ],
+          "published": "2026-06-30T12:37:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31565v1",
+          "entry_id": "http://arxiv.org/abs/2606.31565v1",
+          "title": "Tournament Ranking: Duality and Efficiency",
+          "summary": "The feedback arc set problem on tournaments arises in a rich variety of applications, and has been studied extensively in several research fields over the past six decades. It is well known that this problem is $NP$-hard and admits a polynomial-time approximation scheme (PTAS) in general. A tournament $T=(V, A)$ is called cycle Mengerian (CM) if, for every nonnegative integral weight function defined on $A$, the minimum total weight of a feedback arc set is equal to the maximum size of a cycle packing. In 2020 Chen et al. obtained a structural characterization of all CM tournaments; however, their proof is not algorithmic in nature. In this paper we present combinatorial polynomial-time algorithms for finding both minimum feedback arc sets and maximum cycle packings in arc-weighted CM tournaments.",
+          "authors": [
+            "Ge Song",
+            "Mengxi Yang",
+            "Wenan Zang"
+          ],
+          "published": "2026-06-30T12:23:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31544v1",
+          "entry_id": "http://arxiv.org/abs/2606.31544v1",
+          "title": "The classification of real quadratic fields which satisfy Hammarhjelm's condition",
+          "summary": "A real quadratic field satisfies Hammarhjelm's condition if its ring of integers has unique factorization, and the Minkowski lattice of its ring of integers contains no point in a certain rectangle determined by the fundamental unit. Such fields have recently appeared in the study of visible points in algebraic cut-and-project sets. We prove that there are exactly seven real quadratic fields satisfying Hammarhjelm's condition, namely those with discriminant 8, 5, 13, 29, 53, 173, 293.\n  The proof is based on showing that for such fields, the fundamental unit is small relative to the discriminant, together with genus theory and Biro's classification of class number one fields in Yokoi's family.",
+          "authors": [
+            "Zeev Rudnick"
+          ],
+          "published": "2026-06-30T11:56:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31528v1",
+          "entry_id": "http://arxiv.org/abs/2606.31528v1",
+          "title": "Well-posedness and stationary distribution of free stochastic differential equations",
+          "summary": "This paper studies free stochastic differential equations driven by free Brownian motion. Under local operator Lipschitz and Lyapunov-type conditions on the coefficients, we prove the global well-posedness of solutions in the noncommutative probability setting using free Itô calculus. We further establish the existence and uniqueness of stationary solutions under appropriate dissipativity conditions. Our results extend classical theory to the free probability framework.",
+          "authors": [
+            "Jiaxin Wei",
+            "Zhi Yin"
+          ],
+          "published": "2026-06-30T11:42:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31526v1",
+          "entry_id": "http://arxiv.org/abs/2606.31526v1",
+          "title": "The number of labeled partial orders and topologies on 19 points",
+          "summary": "We report the exact value of the number of labeled partially ordered sets (equivalently, labeled $T_0$ topologies) on 19 points, P(19) = 646099441937791106493755218560442089979, a 39-digit integer extending OEIS A001035, whose largest previously computed term was P(18) (Brinkmann and McKay). By the Stirling transform we also obtain the number of labeled topologies on 19 points, A000798(19) = 689054943207246404281592791142107048261. Our route is the Erné-Stege moment reduction, which expresses P(19) through a few sums of antichain counts over the posets on at most 16 points. All of these are available from the posets on at most 15 points (whose number is catalogued, and which standard software generates on demand), except a single moment over the 16-point posets. That moment is obtained not by enumerating the 16-point posets but by inserting a single element into the 15-point ones, with a per-parent kernel that advances the sum at the cost of computing the parent's own antichain count. The result passes several independent checks, among them the residue predicted by the modular periodicity of A001035 and the recovery from the same sweep of the known count P(16) and the Erné-Stege moments G(16,1) and G(16,2). We also report the moments G(16,3) and G(16,4), the latter an input to the analogous computation for 20 points.",
+          "authors": [
+            "Rafael Ayala"
+          ],
+          "published": "2026-06-30T11:41:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31468v1",
+          "entry_id": "http://arxiv.org/abs/2606.31468v1",
+          "title": "Resolving the Klavžar-Kovše conjecture on opposite semicube isomorphisms in partial cubes and its extension",
+          "summary": "Partial cubes are a fundamental class of graphs that admit isometric embeddings into hypercubes. Klavžar and Kovše [Ars Combin. 93 (2009), 77--86] observed that the opposite semicubes of every harmonic-even partial cube are pairwise isomorphic, and asked whether the converse is true, that is, whether a partial cube is harmonic-even if and only if its opposite semicubes are pairwise isomorphic. In this paper, we answer this question in the negative by constructing an infinite family of partial cubes with pairwise isomorphic opposite semicubes that are not harmonic-even. This establishes that pairwise opposite-semicube isomorphism is strictly weaker than harmonic-evenness and naturally leads to the question of what additional condition restores the equivalence. To address this question, we introduce the opposite-semicube Helly property and prove that a finite partial cube satisfying this property is antipodal, or equivalently harmonic-even by Polat's theorem, if and only if it has pairwise isomorphic opposite semicubes.",
+          "authors": [
+            "Zhaoman Huang",
+            "Yan-Ting Xie",
+            "Shou-Jun Xu"
+          ],
+          "published": "2026-06-30T10:46:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31459v2",
+          "entry_id": "http://arxiv.org/abs/2606.31459v2",
+          "title": "Classification of Fuchsian groups with torsion",
+          "summary": "In their recent paper, Bergfalk and Smythe prove that the isometry equivalence relation on hyperbolic surfaces with finitely-generated fundamental group is concretely classifiable, and ask whether the same result holds true for 2-dimensional hyperbolic orbifolds, or equivalently, whether the action of $\\text{PSL}_2(\\mathbb{R})$ on its space of finitely-generated discrete subgroups is concretely classifiable. In this note we answer this question in the affirmative. We then use the result to prove that a nonsingular ergodic $\\text{PSL}_2(\\mathbb{R})$-space with nonelementary finitely-generated stabilizers is homogeneous, in similarity with a result of Stuck-Zimmer for lattices in semisimple lie groups. The main ingredients of our proof are Selberg's lemma and a result of Greenberg on commensurators.",
+          "authors": [
+            "George Peterzil"
+          ],
+          "published": "2026-06-30T10:36:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31452v1",
+          "entry_id": "http://arxiv.org/abs/2606.31452v1",
+          "title": "On homological properties of conic-line arrangements with simple singularities",
+          "summary": "We study arrangements of smooth conics and lines in the complex projective plane whose singularities are limited to nodes, tacnodes, and ordinary triple points. The first part of the paper gives numerical restrictions for plus-one generated conic arrangements with defect $ν(C)=3$ and explains how these restrictions interact with Bézout's theorem, the Dimca--Sernesi bound for the minimal degree of a Jacobian syzygy, and Hirzebruch-type inequalities. In particular, the possible numbers of conics are bounded, and the exceptional low-degree cases are separated from those that remain open. The second part concerns arrangements of total degree at most $6$. We identify the weak and strong Ziegler pairs occurring in the database recorded in the Appendix.",
+          "authors": [
+            "Artur Bromboszcz"
+          ],
+          "published": "2026-06-30T10:25:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31445v1",
+          "entry_id": "http://arxiv.org/abs/2606.31445v1",
+          "title": "Dynamics of Coupled Stochastic van der Pol Oscillators: Bifurcations, Synchronization and Chaos",
+          "summary": "This work presents a comprehensive analysis of coupled stochastic van der Pol oscillators, a paradigm for understanding synchronization, bifurcations, and chaos in nonlinear systems subject to random fluctuations. The system comprises two or more oscillators with nonlinear damping, linear diffusive coupling, and additive Gaussian white noise. We develop a unified framework that systematically connects global bifurcations, synchronization phenomena, and chaotic dynamics within a single coherent stochastic model. We explore the stochastic dynamics of coupled van der Pol oscillators by seamlessly blending theoretical principles with in-depth numerical simulations. This integrated approach forms a robust framework for analysis, with essential phenomena clearly depicted in the accompanying figures. We then extend this framework to a comprehensive investigation of large networks, focusing on their continuum limit, emergent pattern formation, the role of noise, and the onset of collective chaos.",
+          "authors": [
+            "Shenglan Yuan",
+            "Xiang Zhou"
+          ],
+          "published": "2026-06-30T10:22:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31398v1",
+          "entry_id": "http://arxiv.org/abs/2606.31398v1",
+          "title": "Image of Regular Unipotent under a Representation of $\\mathrm{GL}_3(\\mathbb{C})$",
+          "summary": "We study the image of a regular unipotent element under any finite-dimensional irreducible polynomial representations of $\\mathrm{GL}_3(\\mathbb{C})$. This problem is equivalent to decomposing certain compositions of irreducible representations as $\\mathrm{SL}_2(\\mathbb{C})$-modules. We give an explicit decomposition of this finding, its Jordan decomposition.",
+          "authors": [
+            "Dibyendu Biswas"
+          ],
+          "published": "2026-06-30T09:27:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31376v1",
+          "entry_id": "http://arxiv.org/abs/2606.31376v1",
+          "title": "The sharp threshold for rainbow stackings of random edge-colourings",
+          "summary": "A rainbow stacking of $m$ independent, uniformly random $r$-edge-colourings of $K_n$ is a tuple of vertex permutations that superimposes the colourings such that no two edges of the same colour overlap. The study of the critical palette size $r$ required for the existence of such stackings was recently initiated by Alon, Defant, and Kravitz [Bull. Lond. Math. Soc., 57, 2025], who bounded the phase transition within a constant-order window around $\\frac{m\\binom{n}{2}}{2\\log(n!)}$.\n  We determine the constant term in this transition. For every fixed $m\\ge2$ and every function $ω(n)\\to\\infty$, with high probability there is no rainbow stacking if $$r\\le \\frac{m\\binom{n}{2}}{2\\log(n!)}+\\frac{2m-1}{6}-\\frac{ω(n)}{(\\log n)^2},$$ while with high probability there is one if $$r\\ge \\frac{m\\binom{n}{2}}{2\\log(n!)}+\\frac{2m-1}{6}+\\frac{ω(n)}{(\\log n)^2}.$$ Our proof combines a chromatic-polynomial expansion for an auxiliary conflict graph with a refined estimate of the associated weighted permutation sum. Our result yields the exact threshold $\\Big\\lceil \\frac{m\\binom{n}{2}}{2\\log(n!)}+\\frac{2m-1}{6}\\Big\\rceil$ for a density-one set of integers $n$, resolving a problem of Alon, Defant and Kravitz.",
+          "authors": [
+            "Hong Liu",
+            "Guorui Ma",
+            "Yangrui Xiang",
+            "Zhifei Yan"
+          ],
+          "published": "2026-06-30T09:06:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31369v1",
+          "entry_id": "http://arxiv.org/abs/2606.31369v1",
+          "title": "Constant-factor approximation of maximum distance-2 independent set in graphs of bounded merge-width",
+          "summary": "We give a constant-factor approximation algorithm for Max Dist-2 Independent Set in graphs of bounded radius-2 merge-width. The same result holds for Min Dominating Set from [Bonamy and Geniet, 2025], [Chan et al., SODA '12]. Both approximation algorithms are LP-based, showing that the domination-to-2-independence ratio is bounded in graphs of bounded radius-2 merge-width. Moreover, this result is tight in the sense that the ratio can be unbounded in graphs of bounded radius-1 merge-width.",
+          "authors": [
+            "Maël Dumas"
+          ],
+          "published": "2026-06-30T09:02:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31344v1",
+          "entry_id": "http://arxiv.org/abs/2606.31344v1",
+          "title": "Spatial Model Checking of Images via Minimised Models and Branching Bisimilarity",
+          "summary": "Spatial models are of increasing interest in traditional computer science domains and beyond. Spatial minimisation procedures are crucial for efficient model checking of such models that are often large in size. For the recent notion of spatial bisimilarity for quasi-discrete closure models, called `Compatible Paths' (CoPa) bisimilarity, an effective minimisation method is proposed, and shown to be correct. Reasoning about space represented by quasi-discrete closure models involves two different conditional reachability modalities: a forward reachability, similar to that used in temporal logic, and a backward modality, representing the fact that a point can be reached from another point, under certain conditions. The core of our minimisation method is the encoding of closure models as labelled transition systems, enabling minimisation algorithms for branching bisimilarity to compute CoPa equivalence classes. A prototype toolchain, VoxMinX, is proposed to validate the minimisation method. VoxMinX preserves the relationship between equivalence classes and sets of pixels in the original image. Experimental validation of the toolchain via benchmark examples demonstrates a promising speed-up in model checking of spatial properties for models of realistic size.",
+          "authors": [
+            "Vincenzo Ciancia",
+            "Jan Friso Groote",
+            "Diego Latella",
+            "Mieke Massink",
+            "Erik P. de Vink"
+          ],
+          "published": "2026-06-30T08:43:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31254v1",
+          "entry_id": "http://arxiv.org/abs/2606.31254v1",
+          "title": "Some closed manifolds that do not fibre over the circle",
+          "summary": "We construct closed manifolds with vanishing L^2-Betti numbers over every field) which do not virtually fibre over the circle. The class of fundamental groups that occurs is the largest possible, and in many cases the dimension may be taken to be six. We construct aspherical closed manifolds with residually (torsionfree and nilpotent) fundamental groups in all dimensions at least three whose L^2-Betti numbers vanish (over every field) and which do not virtually fibre over the circle. In particular this implies that in Kielak's Theorem about virtually algebraic fibring for RFRS-groups one cannot weaken the condition RFRS to residually (torsionfree and nilpotent.",
+          "authors": [
+            "Sam Hughes",
+            "Ian Leary",
+            "Wolfgang Lueck"
+          ],
+          "published": "2026-06-30T07:31:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31240v1",
+          "entry_id": "http://arxiv.org/abs/2606.31240v1",
+          "title": "Obstructions to Total Rainbow Forests in Edge-Colored Graphs",
+          "summary": "A total rainbow forest in an edge-colored graph is a forest that contains every edge color exactly once. Using a necessary and sufficient condition that a total rainbow forest exists, we demonstrate the existence of huge numbers of edge-colored graphs that are minimal obstructions to such existence.",
+          "authors": [
+            "Marwa Mosallam",
+            "Thomas Zaslavsky"
+          ],
+          "published": "2026-06-30T07:15:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31221v1",
+          "entry_id": "http://arxiv.org/abs/2606.31221v1",
+          "title": "Generic dense free subgroups of the isometry group of the Urysohn space are NSS",
+          "summary": "The isometry group of the bounded Urysohn space, $G = \\mathrm{Iso}(\\U{1})$ is a central object in the study of Polish groups and topological dynamics. It is known that generic sequences in $G$ generate algebraically free dense subgroups. In this paper, we show that such generic free subgroups exhibit strong geometric rigidity. Specifically, we prove that for a comeager set of sequences generating dense free subgroups $F\\leq G$, every non-trivial element $h\\in F$ acts with maximal metric displacement, satisfying $\\sup_{n\\in \\N} d(h^n(x),x) = 1$ for every $x \\in \\U{1}$. As a consequence, these generic subgroups satisfy the \\emph{no small subgroup} ($\\nss$) property. We note that the method naturally extends to the full isometry group $\\mathrm{Iso}(\\mathbb{U})$ of the classical Urysohn space.",
+          "authors": [
+            "Víctor Hugo Yañez"
+          ],
+          "published": "2026-06-30T07:03:46+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31196v1",
+          "entry_id": "http://arxiv.org/abs/2606.31196v1",
+          "title": "Exclusion of Infinite Spin for N-body problem in $\\mathbb{R}^d$",
+          "summary": "We show that there is no infinite spin at total collisions for $-κ$-homogeneous N-body problem in higher dimensional Euclidean space $\\mathbb{R}^d$, in which $0 < κ< 2$ ($κ= 1$ the Newtonian case), provided the limiting normalized central configuration is isolated and is of dimension d or d - 1. In the Newtonian case $κ= 1$, this extends the work of Moeckel-Montgomery to $d \\ge 3$ and in the d = 3 case offers a different approach as compared to the current preprint of Pinzari-Zgliczynski.",
+          "authors": [
+            "Xiang Yu",
+            "Lei Zhao"
+          ],
+          "published": "2026-06-30T06:24:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31181v1",
+          "entry_id": "http://arxiv.org/abs/2606.31181v1",
+          "title": "Group Theoretic Constructions of Singular Set in a Long Range Segregation Model",
+          "summary": "In this paper, we construct several explicit examples of singular sets of Hausdorff dimension $(n-2)$ in $\\mathbb{R}^n$ on free boundaries for an elliptic system modeling long range segregation. The system has been previously studied by Caffarelli, Patrizi and Quitalo in \\cite{CL2} for the regularity of the free boundary in dimension two, and by the author and Torres in \\cite{ChPaTo26_2} for the partial regularity in higher dimensions. However, the dimension of the singular set is unknown, and no concrete examples of singular set are known in the literature due to the nonlocal nature of the elliptic system. In this paper, we overcome this difficulty by rigidity and finite group action. As a byproduct of our result, we see that singular points can exist for the model in any dimensions. We also show that our method can be applied to the study of the singular set in the adjacent model. Finally, we also discuss some related open problems for future studies.",
+          "authors": [
+            "Howen Chuah"
+          ],
+          "published": "2026-06-30T06:10:17+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31143v1",
+          "entry_id": "http://arxiv.org/abs/2606.31143v1",
+          "title": "On the completion of $ε$-dense partial Latin squares",
+          "summary": "A partial Latin square of order $n$ is called $ε$-dense if each row and each column contains at most $εn$ filled cells, and each symbol occurs at most $εn$ times. A partial Latin square is said to be completable if its empty cells can be filled to obtain a Latin square. Daykin and Häggkvist conjectured that every $\\frac{1}{4}$-dense partial Latin square is completable. In this paper, we show that for all sufficiently large integers $n$, every $\\frac{2}{25}$-dense partial Latin square of order $n$ is completable. The proof is obtained by establishing that there exists an $η> 0$ such that every triangle-divisible balanced tripartite graph on $3n$ vertices with partite minimum degree at least $(\\frac{23}{25}-η)n$ admits a fractional triangle decomposition.",
+          "authors": [
+            "Shikang Yu",
+            "Tao Feng"
+          ],
+          "published": "2026-06-30T05:16:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31080v1",
+          "entry_id": "http://arxiv.org/abs/2606.31080v1",
+          "title": "Beyond But-for Test: Counterfactual Explanation in Abstract Argumentation via Actual Causality (Extended Version)",
+          "summary": "Counterfactual explanation in abstract argumentation calls for an answer to the what-if query: would the topic argument still be accepted if the status of certain other arguments were changed? Existing approaches are limited to the but-for test and fail to accommodate more refined counterfactual conditions. To overcome these limitations, we introduce an intervention-based counterfactual reasoning framework in abstract argumentation. Our approach encodes the acceptance conditions of arguments as equations, then defines an intervention operator that supports (1) changing sets of arguments simultaneously, and (2) fixing witness arguments to their actual labels. Guided by the refined counterfactual condition introduced in the Halpern-Pearl definition, our method goes beyond the but-for test, thereby correctly identifying causes in argumentation structures such as Preemption and Overdetermination. Through comparison, we show that our method surpasses prior methods in both expressiveness and reliability.",
+          "authors": [
+            "Siyi Liu",
+            "Muyun Shao",
+            "Beishui Liao"
+          ],
+          "published": "2026-06-30T03:13:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31075v1",
+          "entry_id": "http://arxiv.org/abs/2606.31075v1",
+          "title": "Random partition for Tokushige's $r$-wise intersecting conjecture",
+          "summary": "Let $r\\ge 3$ and let $1>p_1\\ge p_2\\ge\\cdots\\ge p_n>0$. Let $μ_{\\mathbf p}$ denote the product measure on $2^{[n]}$ where each coordinate $i$ is included independently with probability $p_i$. A family $\\mathcal A\\subseteq 2^{[n]}$ is $r$-wise intersecting if $A_1\\cap\\cdots\\cap A_r\\neq\\emptyset$ for all $A_1,\\ldots,A_r\\in\\mathcal A$. In 2022, Tokushige proved that if $p_2<\\frac{r-1}{r}$, then every $r$-wise intersecting family $\\mathcal{A}\\subseteq 2^{[n]}$ satisfies $μ_{\\mathbf p}(\\mathcal{A})\\le p_1$, with equality only for stars centred at coordinates of maximum probability. He conjectured that the hypothesis $p_2<\\frac{r-1}{r}$ can be replaced by $p_{r+1}<\\frac{r-1}{r}$. In this paper, we prove this conjecture in full. The key novelty is the introduction of a new random partition method, which reduces the problem to at most $r$ coordinates and solves it exactly, thereby fully covering all cases with multiple supercritical coordinates.",
+          "authors": [
+            "Yongjiang Wu",
+            "Lihua Feng"
+          ],
+          "published": "2026-06-30T03:04:41+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31064v1",
+          "entry_id": "http://arxiv.org/abs/2606.31064v1",
+          "title": "Spectral extremal problems for fractional $ID$-$[a,b]$-factor-critical graphs",
+          "summary": "A factor of a graph is essentially a specific type spanning subgraph. In recent years, the spectral extremal problem of characterizing the existence of graph factors via eigenvalues has been widely studied. This paper focuses on fractional $ID$-$[a, b]$-factor-critical graphs, which are a natural generalization of fractional $[a,b]$-factors. Let $r \\ge 1$ be an integer. A graph $G$ is fractional $ID$-$[a, b]$-factor-critical if for every independent set $I$ of $G$ with $|I| = r$, $G - I$ has a fractional $[a, b]$-factor. In 2026, Jia, Fan and Liu posed the spectral version conjecture for a graph to be fractional $ID$-$[a, b]$-factor-critical [Linear Algebra Appl. 732 (2026) 1-17]. In this paper,\n  we first prove the conjecture holds for connected graphs when $b\\ge 2r+2$. Furthermore, for minimum degree $δ(G)\\ge a+r$, we present spectral radius and size conditions that ensure a graph is fractional $ID$-$[a, b]$-factor-critical, which improve the results of Jia, Fan and Liu.",
+          "authors": [
+            "Zengzhao Xu",
+            "Ligong Wang",
+            "Weige Xi"
+          ],
+          "published": "2026-06-30T02:51:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31051v1",
+          "entry_id": "http://arxiv.org/abs/2606.31051v1",
+          "title": "Capacity and measure approximations for Schrödinger operators",
+          "summary": "We prove that logarithmic capacity convergence for phase-union spectra of quasi-periodic Schrödinger operators in the zero Lyapunov exponent regime is robust, requiring only continuity of the potential. Let $S^+(p/q)$ denote the union, over the phase, of the spectra at rational frequency $p/q$. We show that if the Lyapunov exponent vanishes on the spectrum $Σ(α)$ at an irrational frequency $α$, then for every sequence $p_n/q_n\\toα$, the logarithmic capacities $Cap(S^+(p_n/q_n))\\longrightarrow Cap(Σ(α)).$ We also prove convergence of the corresponding harmonic measures.\n  As a consequence, the equilibrium measures of $S^+(p_n/q_n)$ converge in the weak$^*$ topology to the density of states measure of the quasi-periodic Schrödinger operator. We extend these results to multi-frequency Schrödinger operators and prove analogous convergence theorems, for logarithmic capacity, harmonic measure, and equilibrium measure, for ergodic Schrödinger operators in a general setting where the almost sure spectrum is approximated in the Hausdorff metric by union spectra of periodic operators. This abstract formulation applies, in particular, to uniformly almost periodic potentials along sequences of almost periods. We also provide counterexamples when the limiting frequency is rational.",
+          "authors": [
+            "Burak Hatinoğlu",
+            "Svetlana Jitomirskaya"
+          ],
+          "published": "2026-06-30T02:37:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31044v1",
+          "entry_id": "http://arxiv.org/abs/2606.31044v1",
+          "title": "Effective Resistance and Generalized Bejaia-Pisa Sequences on Complete Graphs with Circulant Distance Deletions",
+          "summary": "In this paper, we investigate the effective resistance on the graph $G_N^{(r)}$, which is obtained by deleting all edges corresponding to circular distances $\\{\\pm1, \\pm2, \\dots, \\pm r\\}$ from the complete graph $K_N$. We utilize the cyclic symmetry of the graph to diagonalize the Laplacian matrix via the discrete Fourier basis and derive a finite trigonometric sum representation for the effective resistance between two vertices at distance $\\ell$.\n  Specifically, we treat the cases $r=1$ and $r=2$ in detail and provide explicit formulas. For the case of $r=1$, we use Fourier analysis to rederive the closed form in terms of Bejaia and Pisa numbers given by Chair. For the case of $r=2$, we show that the denominator reduces to a quadratic polynomial with complex roots and introduce a generalized Bejaia-Pisa-type complex sequence. Using this sequence, we provide some closed forms for the effective resistance and various related formulas.",
+          "authors": [
+            "Shunya Tamura",
+            "Yuuho Tanaka"
+          ],
+          "published": "2026-06-30T02:27:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.31002v1",
+          "entry_id": "http://arxiv.org/abs/2606.31002v1",
+          "title": "Beyond Compilation: Evaluating Faithful Natural-Language-to-Lean Statement Formalization",
+          "summary": "Theorem-proving benchmarks evaluate proof search against fixed formal statements, but natural-language-to-Lean formalization must generate the formal statement itself. In this setting, compilation is only a validity check: a Lean declaration may type-check while omitting hypotheses, changing domains, or expressing a vacuous claim. We study faithful statement formalization as both an evaluation problem and a bottleneck-attribution problem. On a 400-entry graduate-level benchmark spanning real analysis, complex analysis, topology, and algebra, our protocol combines Lean compilation, cross-model semantic judging, and human expert calibration. The resulting picture is different from compile-rate evaluation: a full tool-augmented agent reaches 89.5% compilation but only 60.5% consensus faithfulness, exposing a 29.0-point compile-pass but consensus-unfaithful gap. Targeted human audits support the metric as a conservative decision boundary: across available case-level audits, 96.0% of consensus-positive outputs are human-confirmed faithful, while 82.4% of compile-pass consensus-negative outputs are human-confirmed semantic failures. Under this metric, existing one-shot formalizer models and prover-oriented Lean models remain low, suggesting that formal validity, proof-oriented Lean competence, and faithful statement generation should be reported separately. We then use a full $2^3$ factorial design to decompose three recurring interventions in formalization pipelines: parametric expert drafting, Mathlib/context search, and Lean elaboration feedback. Elaboration feedback is the largest validity intervention, but it also exposes a larger compile-pass semantic-failure bucket; search mainly improves grounding and selectivity; and fine-tuned drafting is largely substitutable in this tool stack once feedback and grounding are available.",
+          "authors": [
+            "Ke Zhang",
+            "Patricio Gallardo Candela",
+            "Sudhir Murthy",
+            "Yi Xie",
+            "Zhi Wang",
+            "Maziar Raissi"
+          ],
+          "published": "2026-06-30T00:27:53+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.30998v1",
+          "entry_id": "http://arxiv.org/abs/2606.30998v1",
+          "title": "Distributional results for the shortest distance between trajectories of different dynamics",
+          "summary": "We establish Extreme Value Distributions for the closest encounter between trajectories generated by different maps defined in the same reference phase space. For a class of strongly mixing maps, we show that the limit distribution depends on the length of the different trajectories and the co-dimension of the associated invariant measures. It is also modulated by an Extremal Index, that informs on the tendency of nearby points to diverge along with the evolution of their respective dynamics, serving as an indicator of their compatibility. We give a formula for this quantity for a class of chaotic maps of the interval and for the co-dimension in the case when the respective measures admit densities with isolated zeros and singularities. We present diverse examples of systems satisfying these assumptions and compute the different parameters modulating the limit distribution.",
+          "authors": [
+            "Romain Aimino",
+            "Théophile Caby",
+            "Jorge Milhazes Freitas",
+            "Duarte Sá Pinho"
+          ],
+          "published": "2026-06-30T00:21:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2606.30996v1",
+          "entry_id": "http://arxiv.org/abs/2606.30996v1",
+          "title": "Path-Minimality for Positive $p$-Energies, Laplacian-Type Spectra, and Line Graphs",
+          "summary": "We derive several applications of the path-minimality theorem for adjacency $p$-energy proved in the companion paper. First, we prove the sharp inequality $$\n  \\mathcal E_p^+(G)\\ge \\mathcal E_p^+(P_n), $$ where $P_n$ is the path on $n$ vertices, in three settings: connected bipartite graphs for every real $p\\ge2$, all connected graphs for every odd integer $p\\ge3$, and all connected graphs for $p=4$. Second, using subdivision graphs, we prove path-minimality for Laplacian and signless Laplacian-type spectral sums, including power sums, Estrada-type quantities, resolvent energies, and thresholded tails. Third, we prove an edge-count second-order stop-loss comparison for the signless Laplacian above the threshold $2$. This yields the sharp line-graph inequality $$\n  \\mathcal E_p^+(\\mathcal L(G))\\ge \\mathcal E_p^+(P_m) $$ for every connected graph $G$ with $m$ edges and every real $p\\ge2$.",
+          "authors": [
+            "Yinchen Liu",
+            "Quanyu Tang"
+          ],
+          "published": "2026-06-30T00:15:02+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-07-03T06:04:08.322722+00:00",
+      "updated_at": "2026-07-03T06:04:08.322722+00:00",
+      "finalized_at": null
     }
   ]
 }
