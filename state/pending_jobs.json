@@ -78629,7 +78629,7 @@
     },
     {
       "pipeline_id": "20260704T055452Z-f061c117",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/irupevga8mf8upotvak3crclt6xyrnorv98o",
       "summarize_job_name": "batches/458i7xbwg6s1ytr6r63m1xi9m1h3amecf6cp",
       "papers": [
@@ -79464,14 +79464,325 @@
         "http://arxiv.org/abs/2607.00367v1",
         "http://arxiv.org/abs/2607.00337v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2607.01544v1": {
+          "title": "形式化された q-級数：ロジャーズ・ラマヌジャン恒等式とその先へ",
+          "summary": "組合せ論、数論、表現論において重要な役割を果たす q-級数および基本超幾何級数の理論を、証明アシスタント Lean を用いて形式化した研究。代数的な恒等式と解析的な収束性を両立させるための設計を行い、q-ポッホハマー記号、q-二項係数、Bailey の補題といった基礎要素を構築した。その成果として Jacobi の三重積公式および Rogers-Ramanujan 恒等式の完全な検証済み証明を提供しており、今後のモックテータ関数やモジュラー形式の形式化に向けた厳密な計算基盤を確立している。",
+          "keywords": [
+            "q-series",
+            "Lean proof assistant",
+            "Rogers-Ramanujan identities",
+            "Jacobi Triple Product formula",
+            "basic hypergeometric series"
+          ],
+          "appendix": "本論文は証明アシスタントを用いた形式化を扱っており、広義の意味で formal languages の分野に関連します。また、数え上げ組合せ論的な側面を持つ q-級数は、提供された興味ある分野のいくつかと数学的基盤を共有しています。"
+        },
+        "http://arxiv.org/abs/2607.01501v1": {
+          "title": "一様に正な平均次元 (Uniformly Positive Mean Dimension)",
+          "summary": "本研究では、開被覆のレベルにおける一様に正なエントロピー（UPE）と一様に正な平均次元（UPMD）の関係を調査している。記号力学系 X から、各記号を共通のハブに接続された1次元のスポークで置き換えたハブ・アンド・スポーク系 Spoke(X) を構築した。主な成果として、X がフルサポートのシフト不変測度を持つ場合、Spoke(X) は完全に正な平均次元を持つこと、および X が UPE を持つ場合に Spoke(X) は UPMD を持つことを証明した。また、トーラス上の無理回転の記号符号化を用いることで、完全に正な平均次元を持ちながらも、UPMD や UPE を持たないハブ・アンド・スポーク系の構成例を示した。",
+          "keywords": [
+            "uniformly positive mean dimension",
+            "uniformly positive entropy",
+            "symbolic dynamics",
+            "hub-and-spoke system",
+            "completely positive mean dimension"
+          ],
+          "appendix": "本論文は、興味ある分野のうち symbolic dynamics（記号力学系）に直接関連しています。記号力学系の性質を基に、より複雑な空間上の力学系（ハブ・アンド・スポーク系）を構築し、平均次元やエントロピーといった力学的不変量の挙動を分析しています。"
+        },
+        "http://arxiv.org/abs/2607.01411v1": {
+          "title": "位相群から逆極限への準同型",
+          "summary": "特定の位相群から有界ねじれ群の逆極限への写像に関する制約を与える一般的な定理を証明し、自動連続性や超積に関する知見を導いている。具体例として、ポーランド群から可算でねじれのない剰余有限群へのすべての準同型が開核を持つことや、Grigorchuk群が群の非単項超積の準同型像となる条件が可測基数の存在と等価であることを示している。",
+          "keywords": [
+            "topological groups",
+            "inverse limits",
+            "automatic continuity",
+            "ultraproduct",
+            "Polish group"
+          ],
+          "appendix": "本論文は、指定された興味ある分野のうち「structure of large countable infinite group」に関連しています。特にポーランド群やGrigorchuk群といった群の構造、およびそれらに関する準同型の性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2607.01216v1": {
+          "title": "CUTオラクルを用いたハイパーグラフの連結性と学習可能性のクエリ計算量",
+          "summary": "未知のハイパーグラフの構造を特定するためのCUTクエリの性能を調査した論文である。単純なグラフではO(n)クエリで連結性が判定可能だが、ハイパーグラフでは異なるエッジ構成でも同一のカットプロファイルを持つという識別性の問題がある。本研究では、「独立集合族（independent families）」という概念を導入し、任意の重み付きハイパーグラフの連結成分を期待クエリ数O(n)で特定する無誤差乱択アルゴリズムを提案した。また、偶数パリティのハイパーグラフについてはMöbius変換を用いて構造を再構築できることを示し、r-有界な偶数ハイパーグラフのk-連結性証明をÕᵣ(kn)クエリで行う決定論的アルゴリズムを導出した。さらに、線形ハイパーグラフにおいてパリティやランクの制約を回避し、Õ(kn¹·⁵)のクエリ計算量でk-連結性を判定する手法を提示している。これにより、対称劣モジュラ関数最小化から導かれる一般的なÕ(n²)の境界を大幅に改善した。",
+          "keywords": [
+            "CUT oracles",
+            "Hypergraph connectivity",
+            "Query complexity",
+            "Learning algorithms",
+            "Möbius transform"
+          ],
+          "appendix": "提示された「興味ある分野」に直接該当する内容（例：記号力学系やオートマトン理論）は含まれていませんが、グラフ理論および計算量理論の観点から組合せ論的構造を解析する研究です。"
+        },
+        "http://arxiv.org/abs/2607.01206v1": {
+          "title": "Greedy Tamari 区間と 2 部平面写像の分解",
+          "summary": "本論文は、Dermenjianによって定義されたGreedy Tamariポセットの区間の数え上げに関する研究である。Bousquet-MélouとChapoton (2024)は、Greedy m-Tamariポセットの区間数が平面(m+1)-constellationと等しいことを解析的に示したが、本論文はm=1の場合に対し、2部平面写像の分解と同型な再帰的構造を用いることで組合せ論的な証明を与えた。これは先行研究の予想を裏付けるものであり、さらに一般のmに関する新しい予想も提案している。",
+          "keywords": [
+            "Greedy Tamari poset",
+            "Tamari lattice",
+            "Bipartite planar maps",
+            "Planar constellations"
+          ],
+          "appendix": "本論文はポセットや平面写像の列挙を扱っており、興味ある分野の中では Combinatorics on words に関連する手法（Dyck路の組合せ論など）と密接な関わりがあります。"
+        },
+        "http://arxiv.org/abs/2607.01196v1": {
+          "title": "Homeomorphism群の粗幾何：可算Stone空間の分類",
+          "summary": "非局所コンパクトな位相群に対する幾何学的群論の手法を発展させるため、可算Stone空間のHomeomorphism群を粗同値および準等長の観点から完全に分類した研究である。著者らは以前の論文でこれらの群を、粗有界（coarsely bounded）、粗有界集合で生成される非有界な群、粗有界集合で生成されない非有界な群の3つのクラスに分類したが、本論文ではこれらがまさに粗同値類であることを示した。また、第2のクラスの群がHamming cubeと準等長であることや、有限アルファベット上の無限Hammingグラフがすべてbi-Lipschitz同値であることを証明している。",
+          "keywords": [
+            "geometric group theory",
+            "homeomorphism groups",
+            "countable Stone spaces",
+            "coarse equivalence",
+            "quasi-isometry"
+          ],
+          "appendix": "本論文は、指定された興味ある分野のうち「structure of large countable infinite group」に深く関連しています。非局所コンパクトな群の幾何学的・構造的性質を、粗幾何学の枠組みで記述しています。"
+        },
+        "http://arxiv.org/abs/2607.01141v1": {
+          "title": "(p,q)-変形一般化ワイル代数における正規順序化 II：ルーク配置による解釈",
+          "summary": "変数 X, Y, Zₚ および関係式 XY - qYX = h YˢZₚ, XZₚ = pZₚX, ZₚY = pYZₚ（s ∈ ℕ₀）によって生成される (p, q)-変形一般化ワイル代数の組合せ論的構造を研究した論文である。この関係式から定義される正規順序化（normal ordering）プロセスを利用して、(p, q)-変形ルーク理論の新しいモデルを構築し、(p, q)-変形 s-ルーク数を導入した。これらの組合せ論的モデルを用いることで、階段状ボード上のルーク配置による (p, q)-一般化スターリング数の明示的な組合せ論的解釈を与えた。本成果は、既存の古典的・現代的な定式化を p ≠ 1 の一般設定へと拡張するものである。",
+          "keywords": [
+            "(p, q)-deformed generalized Weyl algebra",
+            "normal ordering",
+            "(p, q)-deformed rook theory",
+            "(p, q)-generalized Stirling numbers",
+            "staircase boards"
+          ],
+          "appendix": "本論文はルーク配置やスターリング数といった組合せ論的対象を扱っており、興味ある分野のうち「combinatorics on words」に関連する組合せ論的な手法と親和性があります。"
+        },
+        "http://arxiv.org/abs/2607.01011v1": {
+          "title": "一般化されたリーマン型関数のグラフのボックス次元について",
+          "summary": "1周期のLipschitz関数gと0 < δ ≤ 1を用いて G_δ(x) = ∑_{n=1}^{∞} g(n²x)n⁻¹⁻δ と定義される、一般化されたリーマン型関数のグラフのボックス次元を調査した。gのフーリエ係数が平方剰余の分布に関連する算術的な非消滅条件を満たす場合、グラフの下側ボックス次元が 7/4 - δ/2 以上であることを示した。さらにg'がLipschitz連続ならば、上側ボックス次元が 7/4 - δ/2 を超えないことを証明した。本研究は、関数gの正則性と関連する級数のフラクタル次元との間の深い関係を明らかにしている。",
+          "keywords": [
+            "Riemann-type functions",
+            "box dimension",
+            "Fourier coefficients",
+            "quadratic residues",
+            "fractal dimension"
+          ],
+          "appendix": "平方剰余の分布や算術的な非消滅条件がグラフのフラクタル次元に影響を与えるという点で、提示された分野のうち arithmetic dynamics と関連しています。"
+        },
+        "http://arxiv.org/abs/2607.00963v1": {
+          "title": "有限生成群に対する粗ユニバーサリティ（coarse universality）への障害",
+          "summary": "著者らは、群による有限余有界な粗擬作用を許容する任意の有界次数グラフ Λ について、Λ へ粗埋め込み（coarse embedding）できない有限生成群が存在することを証明した。さらに、そのようなグラフの可算族 (Λᵢ) に対しても、いずれの Λᵢ にも粗埋め込みできない有限生成群が存在することを示した。これにより、ユニバーサルなケイリーグラフおよび有限生成群のユニバーサルな擬等長同値類は存在しないという Simon Thomas の 2 つの予想が解決された。また、任意の局所コンパクト第二可算群がすべての有限生成群を粗包含（coarse containment）しないことも導かれた。証明には、Λ への (L,M)-正則写像を許容する有限グラフの個数の指数的な上界と、高ギルス（high-girth）な 3-正則グラフの超指数的な供給量を用い、グラフィカル小標語（graphical small-cancellation）の手法で障害となるグラフを群のケイリーグラフ内に実現している。",
+          "keywords": [
+            "coarse embedding",
+            "universal Cayley graph",
+            "finitely generated groups",
+            "graphical small-cancellation",
+            "quasi-isometry class"
+          ],
+          "appendix": "本論文は、提示された[興味ある分野]のうち「structure of large countable infinite group」に密接に関連しています。有限生成群の集合における粗幾何学的な万能構造の非存在を証明しており、無限群の幾何学的構造に関する重要な知見を提供しています。"
+        },
+        "http://arxiv.org/abs/2607.00818v1": {
+          "title": "3つの分岐点を持つある種の有理写像の実現可能性",
+          "summary": "本論文は、3つの分岐点を持つ有理写像に関するHurwitz存在問題を調査している。実現可能な分岐データの新たな族を複数確立するとともに、これまで報告されていなかった例外的なデータを特定している。本研究は、フットボール分解法を用いた先行研究を拡張する、Hurwitz問題に対する系統的な調査の第2部である。",
+          "keywords": [
+            "Hurwitz existence problem",
+            "rational maps",
+            "branch points",
+            "branch data",
+            "football decomposition"
+          ],
+          "appendix": "有理写像の性質を扱っているため、興味ある分野のうちcomplex dynamics（複素力学系）に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.00815v1": {
+          "title": "LRAT-Catcher: リフレクションによるLean 4へのSATソルバ証明書の導入",
+          "summary": "本論文では、DIMACS形式の論理式とLRAT証明書をLean 4の定理として取り込むための汎用ツール「LRAT-Catcher」を提案している。Leanのコアに実装されている検証済みのLRATチェッカーを、リフレクションを通じてコンパイル済みのネイティブコードとして実行することで、従来のMathlibによる明示的な証明項のインポートではメモリ不足に陥るような大規模な事例にも対応可能とした。また、cube-and-conquer手法による分割解法をLean内部で統合し、検証済みのエンコーディングを用いてCNFレベルの結果を元の組合せ問題と結びつける。評価として、Schur数 S(4) = 44 や Ramsey数 R(4,4) = 18 の定理化において、既存手法よりも高いスケーラビリティを持つことを示した。",
+          "keywords": [
+            "LRAT",
+            "Lean 4",
+            "SAT solver",
+            "reflection",
+            "cube-and-conquer"
+          ],
+          "appendix": "本論文は組合せ論の問題（Schur数やRamsey数）の形式検証を扱っており、指定された興味ある分野の中では組合せ論（combinatorics）に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.00814v1": {
+          "title": "Wythoff-Fibonacci数列と摂動を伴う貪欲概対合",
+          "summary": "本論文では、古典的なWythoff数列にフィボナッチ数に基づく補正項 ε(j) を加えることで定義される、下Wythoff-Fibonacci数列 (LWF) および上Wythoff-Fibonacci数列 (UWF) を導入する。これらの数列は自然数の集合を分割する性質を持つ。著者らはこれらを用いて、非負整数の置換であり、かつ差の数列 q*ⱼ - j がすべての整数をちょうど一度ずつ取るような数列 q*ⱼ の明示的な公式を提示した。この q*ⱼ は、j ≥ 5 において q*_{q*ⱼ} = j を満たす「概対合 (almost-involution)」としての性質を持つ。また、この数列を生成する別の貪欲アルゴリズムについても論じている。",
+          "keywords": [
+            "Wythoff-Fibonacci sequences",
+            "Fibonacci numbers",
+            "greedy algorithm",
+            "almost-involution",
+            "permutation"
+          ],
+          "appendix": "Wythoff数列はSturmian語などの性質と深く関わるため、本研究は「combinatorics on words」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.00782v1": {
+          "title": "区間抽象化による確率オートマトンの効果的なモデル検査 (延長版)",
+          "summary": "確率オートマトン(SA)は、一般の確率分布に従うカウントダウンタイマーを用いた連続時間確率モデルであり、故障や保守を含む高信頼性システムの解析に適している。従来のSA解析は統計的モデル検査や限定的なサブクラスへの適用に留まっていたが、本論文では区間抽象化と「big time steps」セマンティクスを組み合わせた、汎用的かつ効果的なモデル検査手法を提案する。この手法は、最大および最小到達確率の上下界を算出可能であり、ModestおよびJaniモデリング形式への拡張とRustによる実装を通じて、非自明な事例における有効性が示されている。",
+          "keywords": [
+            "Stochastic automata",
+            "Interval abstraction",
+            "Model checking",
+            "Reachability probabilities"
+          ],
+          "appendix": "本論文はオートマトン理論 (automata theory) に深く関連しており、確率的な性質を持つ連続時間システムを扱うための新しい形式的な検証手法を提案しています。"
+        },
+        "http://arxiv.org/abs/2607.00781v1": {
+          "title": "可算群のエルゴード的作用における方向膨張",
+          "summary": "本論文では、可算群の確率測度保存作用における「方向膨張（directional expansion）」を、表現論的な性質である「cyclic escape property」を通じて研究している。無限可算群がこの性質を持つ場合、すべての全エルゴード的作用において方向膨張が導かれる。具体的には、無限次有限生成ニルポテント群や、SLₙ(ℤ)（n ≥ 3）などの高ランク単純格子がこの性質を持つことを証明した。一方で、階数2以上の自由群はこの性質を持たない。証明には、ニルポテント群における中心的スペクトル構造と、高ランク格子における定常指標の剛性という2つの独立したメカニズムが用いられている。",
+          "keywords": [
+            "directional expansion",
+            "cyclic escape property",
+            "nilpotent groups",
+            "higher-rank simple lattices",
+            "unitary representations"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「structure of large countable infinite group」に密接に関連しており、特に無限可算群の表現論的性質とその力学系への影響を扱っています。"
+        },
+        "http://arxiv.org/abs/2607.00775v1": {
+          "title": "円周上の連続する断片の均衡化について",
+          "summary": "円周上の無限点列 a = (aᵢ)ᵢ₌₁∞ によって分割される円周の断片（ピース）のサイズバランスを考察した論文である。最初の n 個の点によって分割された n 個の断片のうち、連続する r 個の断片の最大サイズと最小サイズの比を μʳₙ(a) と定義する。De Bruijn と Erdős が提起した問題に関連し、本論文では、この比の漸近的な最小上界 μᵣ(a) = limsupₙ→∞ μʳₙ(a) を容易に計算できる点列の族を定義し、小さい r の値に対して inf μᵣ(a) の上界を導出している。",
+          "keywords": [
+            "sequences on a circle",
+            "consecutive pieces",
+            "De Bruijn and Erdős question",
+            "asymptotic least upper bound"
+          ],
+          "appendix": "本論文は、円周上の点分布の組合せ論的な性質を扱っており、興味ある分野のうち combinatorics on words や symbolic dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.00742v1": {
+          "title": "非決定性オートマトンと対称差オートマトンのアルゴリズムと細粒度複雑性",
+          "summary": "対称差オートマトン（XNFA）は、受理実行の数が奇数である場合に入力語を受理する有限オートマトンの変種であり、2元体上の重み付きオートマトンに相当する。本研究では、XNFAにおける受理問題、空性問題、等価性問題という基本的な決定問題の細粒度複雑性を調査し、実行時間の上界における多項式の次数の最適化を図った。多項式的曖昧さ（polynomial ambiguity）の仮定の下、NFAの受理問題をXNFAの受理問題へ変換するランダム化帰着を提示した。また、限定的な曖昧さを持つオートマトンにおいて、受理判定を一般の場合よりも高速化できることを示した。さらに、曖昧さの仮定なしに(非)空性や(非)等価性を検証する高速なアルゴリズムを提案しており、これらの成果の多くは他の半環や体上の重み付きオートマトンにも拡張可能である。",
+          "keywords": [
+            "Symmetric difference automata",
+            "fine-grained complexity",
+            "weighted automata",
+            "NFA acceptance",
+            "polynomial ambiguity"
+          ],
+          "appendix": "この論文は、指定された興味ある分野のうち「automata theory」および「formal languages」に深く関連しています。特に、重み付きオートマトンの決定問題の計算量的な性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2607.00697v1": {
+          "title": "多様体上におけるS-算術群の格子の作用",
+          "summary": "単純p-進群内の格子のコンパクト多様体上へのC¹微分同相写像による作用が、多様体の次元が群の階数（ランク）より小さい場合に有限であることを示した。また、この結果を全不連結なS-算術群の格子へと拡張し、臨界次元が単純因子の最大階数であることを明らかにした。この証明には、Brown、Fisher、Hurtadoによって開発された手法が用いられている。",
+          "keywords": [
+            "lattices",
+            "S-arithmetic groups",
+            "C¹ diffeomorphisms",
+            "compact manifolds",
+            "p-adic groups"
+          ],
+          "appendix": "この論文は「structure of large countable infinite group」に関連しています。S-算術群のような無限群の力学系的な性質や、多様体への作用を通じた群の構造解析に寄与する内容です。"
+        },
+        "http://arxiv.org/abs/2607.00674v1": {
+          "title": "スクエアフリー性の緩和",
+          "summary": "Entringerらによる非反復列の解析を、パラメータ化等価性や順序保持等価性などの非標準的な等価関係における等価性判定の緩和へと拡張した。本論文では、合計の長さが2ℓ以上であるスクエアとして定義される「ℓ⁺-スクエア」という概念を導入した。射による構成法を用いることで、無限3⁺-パラメータ化スクエアフリー3文字単語および無限3⁺-順序保持スクエアフリー2文字単語の存在を示した。また、複数の等価関係における最長のℓ⁺-スクエアフリー単語についても報告している。",
+          "keywords": [
+            "nonrepetitive sequences",
+            "parameterized equivalence",
+            "order-preserving equivalence",
+            "morphic constructions",
+            "square-free words"
+          ],
+          "appendix": "本論文はcombinatorics on words（語の組合せ論）の分野に直接関連しています。"
+        },
+        "http://arxiv.org/abs/2607.00651v1": {
+          "title": "一様に配向した Aₙ 型箙における拡大で閉じた加法的部分圏の数について",
+          "summary": "本論文では、OEISの数列 A393920 を計算するための漸化式を提示し、その数列とフィボナッチ数列 (A000045) との間の驚くべき接続を明らかにする。また、成長率に対する非自明な指数関数的な上下限の導出や、半順序集合、カタラン数、および有限鎖上の凸トポロジーとの関連性についての調査を行う。さらに、対象となる表現論的な格子の構造について、原子、余原子、結び既約元、および交わり既約元を記述する。",
+          "keywords": [
+            "extension closed additive subcategories",
+            "Aₙ quivers",
+            "Fibonacci sequence",
+            "Catalan numbers",
+            "lattices"
+          ],
+          "appendix": "本論文は数え上げ組み合わせ論や格子の構造を扱っており、指定された興味ある分野の中では combinatorics on words に関連する手法が含まれています。"
+        },
+        "http://arxiv.org/abs/2607.00521v1": {
+          "title": "実践における Semantic Labelling",
+          "summary": "停止性証明における Semantic Labelling の自動化は、領域が小さくても代数の数が極めて多くなるため、組合せ論的に困難な課題である。本論文では自作ツール Matchbox および MnM を用いた実験について報告し、制限された探索空間内での有界領域サイズに対する網羅的な列挙と、固定された代数に対する Semantic Context-closure という、複数のモデル探索戦略の比較検討を行っている。",
+          "keywords": [
+            "semantic labelling",
+            "termination proofs",
+            "model finding",
+            "Matchbox",
+            "MnM"
+          ],
+          "appendix": "本論文は停止性証明に関する研究であり、興味ある分野のうち「formal languages」および「automata theory」に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.00507v1": {
+          "title": "コンテクスト性に由来する頑健な量子メモリ優位性",
+          "summary": "量子コンテクスト性を利用することで、量子有限オートマトン (QFA) が古典決定性オートマトンに対して指数関数的かつノイズ耐性のあるメモリ優位性を持つことを示した。排反グラフ G 上の約束問題において、古典的モデルは彩色数 χ(G) 以上の状態数を必要とするが、QFAは「表現的コンテクスト性」を利用することで、直交階数に基づく d=ξ(G)+1 以下の次元で解決可能である。Boolean-orthogonality グラフにおいて、この差は d=O(n) 対 N=2^Ω(n) と指数関数的にスケールし、脱分極ノイズやコヒーレントノイズに対しても O(1) の閾値で頑健性を維持する。",
+          "keywords": [
+            "Quantum contextuality",
+            "Quantum finite automata",
+            "Exclusivity graph",
+            "Representational contextuality",
+            "Memory advantage"
+          ],
+          "appendix": "この論文は、指定された興味ある分野のうち「automata theory」および「formal languages」に関連しています。量子有限オートマトンの計算資源（状態数・次元）の優位性を、グラフ理論的なアプローチを通じて厳密に示しています。"
+        },
+        "http://arxiv.org/abs/2607.00372v1": {
+          "title": "Peres--Schlagのnonempty-interior問題と直積集合に対するshifted-product変種",
+          "summary": "本論文は、直積集合におけるPeres--Schlagのnonempty-interior問題の有限体における類似を研究したものである。有限体 𝔽ₚ の部分集合 A に対し、ある係数 t₁, ..., tₙ ∈ 𝔽ₚ が存在して t₁A + ⋯ + tₙA = 𝔽ₚ となる条件を検討し、n ≥ 3 において、従来の閾値 |A| ≫ p^(2/n) を改善する結果 |A| ≫ p^(3/(2n-1) + η) を得た。また、和積現象に触発されて、線形形式を shifted product (t₁ + A)⋯(tₙ + A) に置き換えた変種についても、線形の場合と同様の密度スケールでの被覆結果を証明した。さらに、ユークリッド空間上の実数集合 A においても、ハウスドルフ次元が dim_H A > 2/n であれば、n 個のコピーの shifted product が空でない開区間を含むことを示した。",
+          "keywords": [
+            "Peres--Schlag nonempty-interior problem",
+            "finite-field analogues",
+            "product sets",
+            "shifted product maps",
+            "Hausdorff dimension"
+          ],
+          "appendix": "本論文は有限体上の組合せ論や加法的組合せ論、およびハウスドルフ次元を扱っており、算術的な構造を議論している点で arithmetic dynamics との関連性があります。"
+        },
+        "http://arxiv.org/abs/2607.00367v1": {
+          "title": "ℤ²-シフト作用の有向シュライアーグラフにおける連続有向彩色数",
+          "summary": "ベルヌーイ・シフト ℤ² ↷ 2^(ℤ²) の自由部分において、2つの座標方向を辺とする有向シュライアーグラフ F⃗(2^(ℤ²)) を考察する。本論文では、このグラフの連続有向彩色数が7であることを証明した。すなわち、F⃗(2^(ℤ²)) から頂点数7のトーナメントへの連続グラフ準同型が存在する一方で、頂点数6以下のトーナメントへの連続グラフ準同型は存在しないことを示している。",
+          "keywords": [
+            "directed Schreier graphs",
+            "Bernoulli shift",
+            "continuous oriented chromatic number",
+            "tournament",
+            "graph homomorphism"
+          ],
+          "appendix": "この論文は、指定された興味ある分野のうち「symbolic dynamics」および「structure of large countable infinite group」に関連しています。ベルヌーイ・シフトという記号力学系の対象を、群作用に伴うシュライアーグラフの彩色問題として解析しています。"
+        },
+        "http://arxiv.org/abs/2607.00337v1": {
+          "title": "高次元におけるSchottky空間のトポロジー",
+          "summary": "本論文は、自由群の双曲空間への作用を記述するマーク付きSchottky空間の高次元におけるトポロジー的性質を扱っている。3次元の古典的なSchottky空間とは異なり、高次元では各生成元に軸と直交する方向の回転パラメータが加わる。主な成果として、階数の2倍に相当する境界次元において、空間全体の稠密な開部分の基本群は(ℤ/2ℤ)の直積（各生成元につき1つ）となるが、空間全体は単連結であることを証明した。これにより、この境界次元において同じ階数を持つ任意の2つのSchottky群が準等角同位（quasiconformally isotopic）であるという、Kapovichの問いに対する部分的な解答を得た。また、回転対称な核が強変形レトラクトであることや、特定の軌跡のホモトピー同値性、連結成分についても示している。",
+          "keywords": [
+            "Schottky spaces",
+            "hyperbolic space",
+            "quasiconformally isotopic",
+            "strong deformation retract",
+            "fundamental group"
+          ],
+          "appendix": "本論文はSchottky群の力学系的な側面に関連しており、興味ある分野のうち complex dynamics や structure of large countable infinite group と関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2607.01544v1",
+        "http://arxiv.org/abs/2607.01501v1",
+        "http://arxiv.org/abs/2607.01411v1",
+        "http://arxiv.org/abs/2607.01216v1",
+        "http://arxiv.org/abs/2607.01206v1",
+        "http://arxiv.org/abs/2607.01196v1",
+        "http://arxiv.org/abs/2607.01141v1",
+        "http://arxiv.org/abs/2607.01011v1",
+        "http://arxiv.org/abs/2607.00963v1",
+        "http://arxiv.org/abs/2607.00818v1",
+        "http://arxiv.org/abs/2607.00815v1",
+        "http://arxiv.org/abs/2607.00814v1",
+        "http://arxiv.org/abs/2607.00782v1",
+        "http://arxiv.org/abs/2607.00781v1",
+        "http://arxiv.org/abs/2607.00775v1",
+        "http://arxiv.org/abs/2607.00742v1",
+        "http://arxiv.org/abs/2607.00697v1",
+        "http://arxiv.org/abs/2607.00674v1",
+        "http://arxiv.org/abs/2607.00651v1",
+        "http://arxiv.org/abs/2607.00521v1",
+        "http://arxiv.org/abs/2607.00507v1",
+        "http://arxiv.org/abs/2607.00372v1",
+        "http://arxiv.org/abs/2607.00367v1",
+        "http://arxiv.org/abs/2607.00337v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-07-04T05:54:52.021414+00:00",
-      "updated_at": "2026-07-04T08:09:07.678983+00:00",
-      "finalized_at": null
+      "updated_at": "2026-07-04T09:35:12.139244+00:00",
+      "finalized_at": "2026-07-04T09:35:12.139219+00:00"
     }
   ]
 }
