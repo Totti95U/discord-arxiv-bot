@@ -80805,7 +80805,7 @@
     },
     {
       "pipeline_id": "20260707T061819Z-1b9bd8eb",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/gigrq1ld9x0vkmj6hl8id1mb9w2gjnqzyv63",
       "summarize_job_name": "batches/6qlze327gknkf12nrbvk1ynrjtg7mknh6dwi",
       "papers": [
@@ -81158,14 +81158,131 @@
         "http://arxiv.org/abs/2607.03655v1",
         "http://arxiv.org/abs/2607.03649v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2607.04038v1": {
+          "title": "Higman--Thompson 群 Fₙ における自己同型な部分群の無限鎖",
+          "summary": "本論文では、すべての n≧2 に対して Higman--Thompson 群 Fₙ が、自身と同型かつ無限指数の極大部分群を持つことを証明しています。具体的には、Fₙ と同型な部分群の減少列 Fₙ=H₀>H₁>H₂>⋯ を構成し、各 Hᵢ₊₁ が Hᵢ において極大であり、その共通部分が自明であることを示しました。また、カントール空間のホメオモルフィズムと半同期トランスデューサを結びつける手法を開発し、Fₙ を Fₘ へ共役させる条件を特定しています。応用として、Jones の 3 元有向部分群 F⃗₃ が F₄ と同型であることを示し、Thompson 群 F の極大部分群の構造に関する問題についても議論しています。",
+          "keywords": [
+            "Higman--Thompson groups",
+            "maximal subgroups",
+            "semi-synchronizing transducer",
+            "Cantor space",
+            "rational homeomorphisms"
+          ],
+          "appendix": "本論文は、トランスデューサ（automata theory）を用いて群の構造（structure of large countable infinite group）を解析しており、指定された興味ある分野と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.04015v1": {
+          "title": "遅延スタビライザーZX-計算",
+          "summary": "本論文では、格子符号や翻訳不変なグラフ状態、量子畳み込み符号といった、空間的または時間的に繰り返される無限の量子プロセスを表現するための有限なグラフ言語「遅延スタビライザーZX-計算」を提案している。従来のスタビライザーZX-計算に、時間ステップ間でデータを送る「遅延(delay)」という生成元を追加し、2つの意味論を定義した。第一の意味論では、量子チャネルの系列の等価類として振る舞いを解釈し、無限スタビライザー群を一意に決定することを示した。第二の意味論では、遅延を形式変数と見なし、パウリ演算子の族を母関数として記述する。さらに、一般化されたオイラー分解やカラー変更規則を含む完全な公理系を与え、正規形への簡約を通じて、母関数テーブル意味論に対する健全性、普遍性、および完全性を証明した。",
+          "keywords": [
+            "stabilizer ZX-calculus",
+            "translation-invariant processes",
+            "quantum error-correcting codes",
+            "generating functions",
+            "complete axiomatization"
+          ],
+          "appendix": "本論文で扱われている翻訳不変なプロセスや無限スタビライザー群の構造、および母関数を用いた定式化は、記号力学(symbolic dynamics)や無限群の構造(structure of large countable infinite group)に関連する側面を持っています。"
+        },
+        "http://arxiv.org/abs/2607.04001v1": {
+          "title": "1次元多様体の微分同相写像における歪み（非歪み）の証明方法（あるいは証明できない理由）",
+          "summary": "本論文は、1次元多様体 M 上の Cˢ 級コンパクト台付き微分同相写像が、その群 Diffᶜ⁺ˢ(M) において非歪み（undistorted）でありながら、より正則性の低い Cʳ 級の群において歪んでいる（distorted）という現象が起こり得るかを考察している。先行研究により (r,s)=(1,2) ではこの現象が起こり、(r,s)=(2, ∞) では起こらないことが知られている。前半部では、C¹ および C² 級で歪みの障害となるコサイクルのドリフトの手法を C³ 級の Liouville コサイクルへ拡張することを試みたが、C² 歪みを持つ写像に対してはそのドリフトが消失することを示した。後半部では、実数直線において十分な正則性（C²ʳ⁺² 以上）を持つ C² 歪み微分同相写像は、Cʳ においても歪んでいることを証明した。",
+          "keywords": [
+            "distortion",
+            "diffeomorphism",
+            "one-manifold",
+            "Liouville cocycle",
+            "drift"
+          ],
+          "appendix": "微分同相写像群の代数的・力学的な性質を扱っており、興味ある分野のうち「structure of large countable infinite group」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.03996v1": {
+          "title": "有限の観測、無限の振る舞い：状態を持つモノイダルプロセスに対する双圏的意味論",
+          "summary": "内部状態が直接観測できず、有限の入出力観測による制約のみが既知であるような時間依存プロセスに対し、観測に基づく振る舞いが同一であれば等価とみなす意味論的構成を導入している。この構成は、情報の廃棄（discarding）の概念を持つ順序付けられたモノイダル圏（discard bicategory）上で定義され、非決定性、確率的、量子的なプロセスを統一的に扱うことができる。また、非決定性システムに対して「圏論化されたコンパクト性定理」を証明し、有限の観測から無限の閉関係が一意に定まることを示した。これは、制御理論におけるWillemsの線形時不変システムの振る舞いの概念を一般化したものとなっている。",
+          "keywords": [
+            "bicategorical semantics",
+            "stateful monoidal processes",
+            "discard bicategory",
+            "feedback categories",
+            "compactness theorem"
+          ],
+          "appendix": "本論文は、状態を持つプロセスやその挙動を扱っていることから、興味ある分野のうち「automata theory」および「formal languages」に深く関連しています。特に、マシンの内部状態と外部から観測可能な振る舞いの関係性は、オートマトン理論の基礎的なテーマと合致しています。"
+        },
+        "http://arxiv.org/abs/2607.03785v1": {
+          "title": "離散区間交換変換における軌道の順序対称性と直交性",
+          "summary": "本論文では、k文字のアルファベット上の離散区間交換変換(T)における周期軌道の特性を、2つの異なる順序π=(<_D, <_A)を用いた順序対称性によって記述している。任意の単語u, vの共役集合間における順序の交差を分類し、その指数の差が各単語のParikhベクトルとπに依存する反対称行列Ωによって、λ(u)ᵀ Ωλ(v)と表されることを示した。この結果、離散区間交換変換の軌道のParikhベクトルはΩに関して直交し、3次元の場合には軌道数に関する算術的な公式や極小性の特徴付けが導かれる。また、この直交性から、一般のkにおいて相異なる軌道数の上限が⌊(k+d)/2⌋（dはΩの核の次元）となること、および対称な変換における特定の性質を持つ単語の数に関する上限も示されている。",
+          "keywords": [
+            "discrete interval exchange transformations",
+            "Parikh vectors",
+            "order symmetry",
+            "skew symmetric matrix",
+            "perfectly clustering words"
+          ],
+          "appendix": "本論文は symbolic dynamics および combinatorics on words に深く関連しており、アルファベット上の単語の組合せ論的性質を通じて力学系の軌道構造を解析しています。"
+        },
+        "http://arxiv.org/abs/2607.03727v1": {
+          "title": "対称群を含む tied-symmetric monoid の部分モノイドに関する注釈",
+          "summary": "対称群を含む tied-symmetric monoid の部分モノイド全体が分配束を形成することを示しています。さらに、そのような任意の部分モノイドに対して、極小生成系を決定しています。",
+          "keywords": [
+            "tied-symmetric monoid",
+            "symmetric group",
+            "distributive lattice",
+            "minimal generating set"
+          ],
+          "appendix": "本論文は代数的組合せ論や半群論に関連する内容であり、提示された「興味ある分野」に直接該当する特定のトピックは含まれていませんが、代数系の構造を詳細に記述する点では関連性があります。"
+        },
+        "http://arxiv.org/abs/2607.03686v1": {
+          "title": "結合Gumowski-Mira写像ネットワークにおける集団的な位相再編とクラスター同期",
+          "summary": "本研究では、拡散結合されたGumowski-Mira写像からなるネットワークの集団力学を調査し、局所振動子の固有の力学系がネットワークの位相構造をどのように再編成するかを分析した。結合強度と局所制御パラメータを分岐パラメータとして扱い、最大リアプノフ指数、同期誤差、クラスター統計、集団位相図を用いて集団状態を定量化した。その結果、局所力学の性質によって、同期領域が滑らかに組織化されるレジームと、同期領域が断片化しカオス的クラスター状態が強化されるレジームが存在することが判明した。これは、個々の写像の非線形力学系が同期しきい値を変化させるだけでなく、集団位相空間のトポロジーを根本的に再構築することを示唆している。",
+          "keywords": [
+            "Gumowski-Mira maps",
+            "cluster synchronization",
+            "phase reorganization",
+            "collective dynamics",
+            "nonlinear dynamics"
+          ],
+          "appendix": "本論文は、離散時間力学系を用いた複素力学系のネットワーク構造を扱っており、「complex dynamics」の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.03655v1": {
+          "title": "一般的な C¹ 円周微分同相写像族の回転数はヘルダー連続ではない",
+          "summary": "円周微分同相写像の単調な1パラメータ族において、パラメータに対する回転数の正則性を研究した。C² 級の単調な族の開かつ稠密な集合において、最適なヘルダー指数が正確に 1/2 であることを証明し、J. Graczyk による先行研究の結果が最良であることを示した。また、C¹ 級で稠密な C¹⁺ᵅ 級の族については、回転数が ᵅ/(1+ᵅ)-ヘルダー連続より高い正則性を持ち得ないことを示した。これらの結果の帰結として、一般的な C¹ 級の円周微分同相写像族において、その回転数はヘルダー連続ではないことが導かれる。",
+          "keywords": [
+            "circle diffeomorphisms",
+            "rotation number",
+            "Hölder exponent",
+            "C¹ family",
+            "regularity"
+          ],
+          "appendix": "本論文は円周上の力学系の性質を扱っており、力学系理論の広範な文脈において complex dynamics や symbolic dynamics と関連しています。"
+        },
+        "http://arxiv.org/abs/2607.03649v1": {
+          "title": "凸超曲面と頑健なヘテロ次元力学",
+          "summary": "本論文では、5次元以上の接触多様体における任意の閉じた向き付け可能な超曲面が、任意のC⁰-小なアイソトピーを介して頑健に非凸な超曲面とアイソトピックであることを証明しています。これはHonda-HuangおよびGirouxによる画期的な密度定理に対する強力な対抗結果であり、著者らによる先行研究を強化するものです。この証明は、ヘテロクリニック軌道を介した新しい凸性の障害と、Li-Turaevによる頑健なヘテロ次元力学の進展を組み合わせることで、局所的かつ頑健な凸性の障害となる「robust deconvexifying plug」を構築することで実現されました。",
+          "keywords": [
+            "convex hypersurfaces",
+            "contact manifold",
+            "robust heterodimensional dynamics",
+            "deconvexifying plug"
+          ],
+          "appendix": "本論文は、頑健なヘテロ次元力学（robust heterodimensional dynamics）を扱っており、力学系の構造変化や分岐理論の観点から、興味ある分野に含まれる「complex dynamics」などの動的システム理論に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2607.04038v1",
+        "http://arxiv.org/abs/2607.04015v1",
+        "http://arxiv.org/abs/2607.04001v1",
+        "http://arxiv.org/abs/2607.03996v1",
+        "http://arxiv.org/abs/2607.03785v1",
+        "http://arxiv.org/abs/2607.03727v1",
+        "http://arxiv.org/abs/2607.03686v1",
+        "http://arxiv.org/abs/2607.03655v1",
+        "http://arxiv.org/abs/2607.03649v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-07-07T06:18:19.386092+00:00",
-      "updated_at": "2026-07-07T08:50:01.753528+00:00",
-      "finalized_at": null
+      "updated_at": "2026-07-07T10:55:31.768800+00:00",
+      "finalized_at": "2026-07-07T10:55:31.768782+00:00"
     }
   ]
 }
