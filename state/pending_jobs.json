@@ -80802,6 +80802,360 @@
       "created_at": "2026-07-05T06:14:32.565821+00:00",
       "updated_at": "2026-07-05T08:26:29.607621+00:00",
       "finalized_at": "2026-07-05T08:26:29.607598+00:00"
+    },
+    {
+      "pipeline_id": "20260707T061819Z-1b9bd8eb",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/gigrq1ld9x0vkmj6hl8id1mb9w2gjnqzyv63",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04056v1",
+          "entry_id": "http://arxiv.org/abs/2607.04056v1",
+          "title": "A Policy Decomposition Framework for Dynamic Order Fulfillment Operations",
+          "summary": "Modern supply chains span diverse operational environments, ranging from e-commerce distribution networks to customized production-to-order manufacturing lines. Across these settings, operational efficiency depends on coordinating two highly interdependent stages: order preparation and downstream delivery. Although these stages are traditionally managed in isolation, real-world fulfillment systems must satisfy stringent delivery expectations under dynamic stochastic order arrivals. To bridge this gap, we introduce the Dynamic Order Fulfillment Problem (DOFP), a new problem class unifying logistical challenges previously studied separately. We model DOFP as a Markov decision process whose state and decision spaces are partitioned into preparation and delivery sub-spaces, linked by synchronization constraints. While recent approaches attempt to optimize both fulfillment stages simultaneously over myopic rolling horizons, our framework isolates and optimizes the downstream delivery policy, treating preparation strictly as a state-level constraint filter. To solve this, we develop the Decomposition-Driven Framework with Value Function Approximation (DDF-VFA), which utilizes a novel policy-level decomposition. This design partitions the search into a delivery-stage master problem and a preparation-stage compatibility subproblem, iteratively refined via feedback loops. DDF-VFA executes this strategy by combining a large-neighborhood search over partial delivery decisions with a neural-network value function approximation for the cost-to-go. Numerical illustrations on two example variants using real-world datasets show that DDF-VFA consistently outperforms benchmarks that optimize the two stages independently or jointly without decomposition. Finally, the framework naturally scales to accommodate additional real-world complexities such as batched or multi-stage preparation.",
+          "authors": [
+            "Gal Neria",
+            "Michal Tzur",
+            "Marlin W. Ulmer"
+          ],
+          "published": "2026-07-04T23:46:08+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04053v1",
+          "entry_id": "http://arxiv.org/abs/2607.04053v1",
+          "title": "Finite generating sets for monoids of $G$-equivariant functions",
+          "summary": "Given the action of a group $G$ on a set $X$, the set of all $G$-equivariant functions, i.e., those satisfying $f(g\\cdot x)=g\\cdot f(x)$ for all $g\\in G$ and $x\\in X$, forms a monoid under composition. In this work we study their generating sets. First, we propose bounds for the cardinalities of the generating sets of their group of units, denoted by $\\operatorname{Aut}_{G}(X)$. Subsequently, using so-called orbital infiltrations, certain transformations that turn out to be indispensable and provide relevant structural information about the monoid, we determine conditions on the group $G$, the set $X$, and the action that prevent the whole monoid $\\operatorname{End}_{G}(X)$ from admitting a finite generating set.",
+          "authors": [
+            "Ramón H. Ruiz-Medina",
+            "Victor M. Lara-Gómez",
+            "Gerardo Romero-Rosales"
+          ],
+          "published": "2026-07-04T23:21:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04050v1",
+          "entry_id": "http://arxiv.org/abs/2607.04050v1",
+          "title": "Bergeron's conjecture & a tale of two binomial coefficients",
+          "summary": "Bergeron's conjecture states that, if $1\\leq a<b<c<d$ are integers with $ad=bc$, then one has the coefficient-wise inequality ${\\binom{b+c}b}_q \\ge {\\binom{a+d}a}_q$ among two Gaussian polynomials. It originated in algebraic combinatorics and is wide open. The corresponding inequality for binomial coefficients (i.e., the case $q=1$) must be known to experts, but we could not find it in the literature. We give two proofs, each generalizing the statement in a separate direction. Binomial coefficients (and Gaussian polynomials) are fundamental combinatorial objects, and so one naturally hopes to see a combinatorial proof of this inequality. However, this seems hard to come by. We nevertheless give a combinatorial proof of a special case.",
+          "authors": [
+            "Tewodros Amdeberhan",
+            "Matthias Beck"
+          ],
+          "published": "2026-07-04T22:54:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04038v1",
+          "entry_id": "http://arxiv.org/abs/2607.04038v1",
+          "title": "Higman--Thompson groups $F_n$ all the way down",
+          "summary": "We prove that for every $n\\ge 2$ the Higman--Thompson group $F_n$ has a maximal subgroup of infinite index isomorphic to itself. In fact, we construct a chain of subgroups $F_n=H_0>H_1>H_2>\\cdots$, all isomorphic to $F_n$ and with trivial intersection, such that for every $i$ the only subgroups of $F_n$ containing $H_i$ are $H_i,H_{i-1},\\ldots,H_0=F_n$; in particular, each $H_{i+1}$ is maximal in $H_i$.\n  We prove that for all $n\\ge m\\ge 2$, every closed maximal subgroup of $F_m$ isomorphic to $F_n$ arises from a homeomorphism between the $n$-ary and $m$-ary Cantor spaces given by a finite semi-synchronizing transducer--a variation of the synchronizing transducers of Bleak, Cameron, Maissel, Navas and Olukoya. We characterize the homeomorphisms of Cantor spaces conjugating $F_n$ into $F_m$ as the order-preserving or order-reversing rational homeomorphisms whose minimal transducer is semi-synchronizing. At the heart of the paper is a machinery bridging transducers and Stallings $2$-cores of subgroups, which reduces the conjugation of finitely generated closed subgroups by such homeomorphisms to an algorithmic procedure. As applications, we prove that Jones' ternary oriented subgroup $\\vec F_3\\le F_3$ is isomorphic to $F_4$, answering questions of Aiello, and that all known maximal subgroups of infinite index of Thompson's group $F$ which act minimally on $(0,1)$ are isomorphic to Higman--Thompson groups. That raises the problem of whether all maximal subgroups of infinite index of $F$ which act minimally on $(0,1)$ are isomorphic to Higman--Thompson groups. We briefly discuss related results regarding fast groups of homeomorphisms and maximal subgroups of Thompson groups.",
+          "authors": [
+            "Gili Golan"
+          ],
+          "published": "2026-07-04T21:53:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04024v1",
+          "entry_id": "http://arxiv.org/abs/2607.04024v1",
+          "title": "Eternal domination in Cayley graphs",
+          "summary": "Eternal domination is a process in which a set of guards occupying a dominating set on a graph protects against an infinite sequence of attacks. After a vertex is attacked, one guard must move along an edge to the attacked vertex and each of the remaining guards may move along an edge so that the guards again occupy a dominating set on the graph and can defend the next attack. The minimum number of guards needed in a graph $Γ$ is the eternal domination number, denoted by $γ_{\\mathrm{all}}^\\infty(Γ)$. In this paper, we show that the eternal domination number of a vertex-transitive graph with an efficient dominating set is equal to its domination number. We show that a Cayley graph on a generalized dihedral group whose connection set contains few or many reflections is efficiently dominated. Then, we provide an infinite family of connected Cayley graphs for which $γ_{\\mathrm{all}}^{\\infty}(Γ) = γ(Γ)+1$, generalizing a result of [Braga et al., J. Combin. Math. Combin. Comput. 96 (2016), 13--22]. Finally, we build an infinite family of connected Cayley graphs with $γ_{\\mathrm{all}}^\\infty(Γ) \\geq γ(Γ)+2$.",
+          "authors": [
+            "MacKenzie Carr",
+            "Nancy E. Clarke",
+            "Gary MacGillivray",
+            "Joy Morris"
+          ],
+          "published": "2026-07-04T20:42:33+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04023v1",
+          "entry_id": "http://arxiv.org/abs/2607.04023v1",
+          "title": "Termination of Binary Trust-Gossip Dynamics: A Constructive No-Limit-Cycles Theorem",
+          "summary": "In the binary trust-gossip dynamics, $n$ agents each hold a directed binary opinion, trust or distrust, of every other agent, and a gossip step lets one agent copy another agent's opinion of a third whenever the copier trusts the source. We prove that under any fair schedule of such steps, every trajectory reaches an absorbing state in finitely many steps, one in which no gossip step changes any opinion; in particular, there are no limit cycles. The proof is constructive and rests on a single descent measure: the number of ordered pairs of distinct agents linked by a chain of trust. Trust-adding gossip leaves this count unchanged and trust-removing gossip can only lower it, so it never rises, and it is zero only at the all-distrust state. From any non-absorbing state we exhibit a finite run of steps that reaches an absorbing state or strictly lowers the count; since the count is a non-negative integer at most $n(n-1)$, the process halts at an absorbing state.",
+          "authors": [
+            "Nicholas Boichuk"
+          ],
+          "published": "2026-07-04T20:39:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04015v1",
+          "entry_id": "http://arxiv.org/abs/2607.04015v1",
+          "title": "The Delayed Stabilizer ZX-Calculus",
+          "summary": "Many stabilizer quantum error-correcting codes are built from a finite pattern repeated across space or time, such as lattice codes, translation-invariant graph states, and quantum convolutional codes. Ordinary stabilizer ZX-diagrams capture only finite truncations of such systems, obscuring the repeated structure that defines them. We introduce the delayed stabilizer ZX-calculus, a finite graphical language for these infinite, translation-invariant processes. It extends the odd-prime-dimensional stabilizer ZX-calculus with a single new generator, the delay, which feeds data from one time step to the next. We equip the calculus with two semantics. In the first semantics, we interpret the behaviour of a delayed ZX-diagram as an equivalence class of sequences of quantum channels; where two sequences are identified if they have the same information content. We show that the behaviour of a delayed ZX-diagram uniquely determines an infinite stabilizer group. In the second semantics, we interpret the delay as a formal variable, encoding the translation-invariant families of Pauli operators as generating functions. This allows us to represent a delayed ZX-diagram in terms of a tableau of generating functions, from which the infinite stabilizer group can be recovered. Finally, we give a complete axiomatization of the delayed stabilizer ZX-calculus, featuring generalised Euler decomposition and colour change rules. Using generalised forms of local complementation and pivoting, we reduce every diagram to a unique normal form. This establishes soundness, universality, and completeness for the generating tableau semantics.",
+          "authors": [
+            "Cole Comfort",
+            "Giovanni de Felice"
+          ],
+          "published": "2026-07-04T20:21:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04014v1",
+          "entry_id": "http://arxiv.org/abs/2607.04014v1",
+          "title": "Ample sets in Cartesian products",
+          "summary": "Ample sets of hypercubes, introduced by A. Dress in 1995, constitute a combinatorial structure with rich properties and important examples. Ample sets can be characterized in a multitude of combinatorial, graph-theoretical, recursive, and geometrical ways, and they are equivalent to lopsided sets introduced by J. Lawrence in 1983.\n  In this paper, we define and investigate ample sets of Cartesian products $U=U_1\\times\\cdots\\times U_m$. This is done using minor-subproducts of $U$, which correspond to products of partitions of factors: each minor-subproduct is obtained by partitioning each $U_i$ into blocks and contracting blocks into singletons. For a minor-subproduct $M$ and a set $S$, we define the notions of shattering of $M$ by $S$, of copy of $M$ in $S$, of projection $S_M$ of $S$ on $M$, and of strong-projection $S^M$ of $S$ on $M$. We call a set $S$ \\emph{ample} if for any minor-subproduct $M$ that is shattered by $S$, there exists a copy of $M$ included in $S$.\n  We prove that several characterizations of ample sets can be extended to ample sets of Cartesian products. In particular, we show that ampleness of $S$ is equivalent to the ampleness of the complement $S^*$, to superisometricity (isometricity of $S^M$ for any minor-subproduct $M$), and commutativity $(S^M)_{M'}=(S_{M'})^M$ for all minor-subproducts $M,M'$ with disjoint supports. We also provide more efficient characterizations of ampleness, in particular, by showing that $S$ is ample iff S is isometric and both $S_e$ and $S^e$ are ample for some elementary minor-subproduct, iff the intersection of S with any interval [u,v] with u,v in S is ample in the classical sense. We characterize ampleness by push downs and provide a decomposition theorem, allowing us to prove that their prism complexes are contractible. We provide new examples of ample sets arising from payoff games, prism-like polyhedra, and quasi-median graphs.",
+          "authors": [
+            "Victor Chepoi",
+            "Matthew Maat"
+          ],
+          "published": "2026-07-04T20:21:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04001v1",
+          "entry_id": "http://arxiv.org/abs/2607.04001v1",
+          "title": "How (not) to prove (un)distortion for diffeomorphisms of one-manifolds",
+          "summary": "This article addresses the following general question: Given a one-dimensional manifold $M$ and $1 \\le r < s \\le \\infty$, does there exist a $C^s$ orientation preserving compactly supported diffeomorphism of $M$ that is undistorted in the group $\\mathrm{Diff}_{c,+}^s(M)$ of such diffeomorphisms while distorted in the bigger group of $C^r$ diffeomorphisms? Interestingly, the answer is known to be positive in the case $(r,s)=(1,2)$ and negative in the case $(r,s)=(2,\\infty)$, according to arXiv:2004.07055 and arXiv:2507.13770, respectively.\n  The first part of this note originates from a failed attempt to extend the ideas of arXiv:2004.07055 to the case $(r,s)=(2,3)$. More precisely, in regularities $C^1$ and $C^2$, obstructions to distortion are provided by drifts of cocycles for isometric actions of $\\mathrm{Diff}_{c,+}^r(M)$ on Banach spaces for $r=1$ and $r=2$ (namely, the logarithmic and projective derivatives $f\\mapsto \\log Df$ and $f\\mapsto D\\log Df$, respectively). On $\\mathrm{Diff}_{c,+}^3(M)$, the so-called Liouville cocycle is a natural candidate when looking for new obstructions, but we show that its drift vanishes for $C^2$-distorted diffeomorphisms (and this holds more generally for any \"similar\" cocycle).\n  This does not rule out the existence of $C^2$-distorted diffeomorphisms that are $C^3$-undistorted. However, at least in the case of the real line, such a diffeomorphism should have very low regularity. Indeed, extending the methods and results of arXiv:2507.13770, in the second part of this article, we show that every compactly supported $C^2$-distorted diffeomorphism of the real line is $C^r$-distorted provided its differentiability class is larger than $C^{2r+2}$.",
+          "authors": [
+            "Hélène Eynard-Bontemps",
+            "Andrés Navas"
+          ],
+          "published": "2026-07-04T19:51:08+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03996v1",
+          "entry_id": "http://arxiv.org/abs/2607.03996v1",
+          "title": "Finite Observations, Infinite Behaviour: bicategorical semantics for stateful monoidal processes",
+          "summary": "Time-dependent processes are often described by machines with an internal state which is updated as time evolves. An external observer cannot see this state and learns about a process only through finite observations of its inputs and outputs, each of which imposes a constraint on the trajectories the process can exhibit. We introduce a semantic construction in which two stateful processes have the same behaviour when they have the same constraints, as determined by finite observations, independent of their internal state. The construction is defined over any preorder-enriched monoidal category with a compatible notion of discarding, which we call a discard bicategory, capturing partial, non-deterministic, probabilistic, and quantum processes. The resulting category of behaviours provides a functorial semantics for free feedback categories in the sense of Katis, Sabadini, and Walters. For non-deterministic systems, we prove a categorified compactness theorem: every compatible family of finite observations between compact Hausdorff spaces extends uniquely and functorially to an infinite closed relation. Restricted to affine relations over finite fields, the compactness theorem recovers Willems' notion of behaviour for linear time-invariant systems.",
+          "authors": [
+            "Cole Comfort",
+            "Giovanni de Felice"
+          ],
+          "published": "2026-07-04T19:38:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03979v1",
+          "entry_id": "http://arxiv.org/abs/2607.03979v1",
+          "title": "What $R_0$ Deletes: Eigenvectors, Non-Normality, and the Social Content of the Basic Reproduction Number",
+          "summary": "The basic reproduction number is the spectral radius of a matrix, $R_0=ρ(K)$. Taking that definition literally, we ask what $K\\mapstoρ(K)$ discards. A matrix carries three kinds of information: its dominant eigenvalue, its dominant eigenvectors, and its departure from normality. $R_0$ keeps only the first; the other two are where the epidemic's social structure lives. The right eigenvector is the burden distribution, the left the source distribution; they coincide when the system is normal and diverge under heterogeneity. Across the $177$ national contact matrices of Prem et al., the operator is \\emph{never} normal, and once age-specific susceptibility is included, its source and burden eigenvectors are misaligned by a median of $26^{\\circ}$, exceeding $40^{\\circ}$ in some countries: the groups that drive transmission are systematically not those that bear it. We prove that under reciprocal contact this misalignment obeys a Kantorovich bound set by the susceptibility contrast $q_{\\max}/q_{\\min}$ alone, and zero when susceptibility is uniform, with the excess in real, non-reciprocal matrices contributed by contact asymmetry. Transient amplification, by contrast, stays small, so the operative social content is the misalignment, not transient blow-up. The omission also has teeth: because minimizing $R_0$ protects those who \\emph{spread} infection, while minimizing deaths protects those who \\emph{die} from it, the two target different age groups; the former sometimes raises average infection fatality even as it lowers the scalar. When contact is strongly structured and susceptibility is heterogeneous, we suggest reporting $R_0$ along with its eigenvectors rather than reporting it alone.",
+          "authors": [
+            "Fabio Sanchez"
+          ],
+          "published": "2026-07-04T18:27:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03977v1",
+          "entry_id": "http://arxiv.org/abs/2607.03977v1",
+          "title": "Linked partition ideals and Russell's three-colored partitions",
+          "summary": "Russell recently introduced a family of three-colored partitions in analogy with earlier work by Alladi and Gordon. He showed that their enumerations are surprisingly connected to the classic Rogers-Ramanujan identities. Using the method of linked partition ideals, we elaborate on Russell's results by further counting each part color. Unlike Russell's proofs, our arguments do not require any use of computer algebra systems. With these multivariate generating function relations, we are led to confirm a conjecture of Russell. Furthermore, our results offer a combinatorial understanding of a new triple Rogers-Ramanujan type identity.",
+          "authors": [
+            "Shane Chern"
+          ],
+          "published": "2026-07-04T18:20:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03966v1",
+          "entry_id": "http://arxiv.org/abs/2607.03966v1",
+          "title": "Quantized Howe-type dualities via Koornwinder polynomials and the X=K phenomenon",
+          "summary": "We derive the equality between one-dimensional sums associated with tensor products of Kirillov-Reshetikhin column crystals of classical affine types and Lusztig q-analogues of weight multiplicities. The matching of the corresponding root systems is suggested by Howe duality. Our main tool is the dual Cauchy formula for Koornwinder polynomials due to Mimachi, which we combine with specializations in these polynomials. The mentioned dualities are proved for one-dimensional sums of all (twisted and untwisted) classical affine types except types B_n^(1) and D_n^(1). On another hand, all the Lusztig q-analogues of classical type are covered by our dualities, but they may have different parameters depending on the length of the roots in the underlying root system.",
+          "authors": [
+            "Thomas Gerber",
+            "Bogdan Ion",
+            "Cédric Lecouvey",
+            "Cristian Lenart"
+          ],
+          "published": "2026-07-04T17:54:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03951v1",
+          "entry_id": "http://arxiv.org/abs/2607.03951v1",
+          "title": "Why3-py: A Tool for Formal Verification of Hypothesis Testing and Meta-Analysis in Python",
+          "summary": "The reproducibility crisis in scientific research has received widespread recognition, thereby increasing the importance of meta-analyses that integrate statistical analyses from multiple studies. However, statistical methods often have ambiguous and implicit underlying assumptions, which can lead to their erroneous applications and interpretations. To address this issue, we propose a formal verification framework for statistical programs written in Python. Specifically, we present Why3-py, a Python front-end for the Why3 verification platform that transforms Python programs into verification-oriented WhyML representations suitable for formal verification, addressing the challenges arising from Python's dynamic typing and runtime polymorphism. Furthermore, we extend the StatWhy tool to support the verification of meta-analysis methods. These tools enable users to identify overlooked assumptions and misuse of analyses, and to verify the correctness of Python programs for hypothesis testing and for meta-analyses.",
+          "authors": [
+            "Akira Tanaka",
+            "Yusuke Kawamoto"
+          ],
+          "published": "2026-07-04T16:53:39+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03922v1",
+          "entry_id": "http://arxiv.org/abs/2607.03922v1",
+          "title": "Hayashi property for conjugation quandles over finite Coxeter groups",
+          "summary": "In this article, we show that for all finite irreducible Coxeter groups $G$ with a conjugation closed subset $C$, the conjugation quandle $\\rm{Conj}(G,C)$ satisfies the Hayashi property.",
+          "authors": [
+            "Dilpreet Kaur",
+            "Uday Bhaskar Sharma",
+            "Pushpendra Singh"
+          ],
+          "published": "2026-07-04T15:34:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03912v1",
+          "entry_id": "http://arxiv.org/abs/2607.03912v1",
+          "title": "A MacMahon Analysis View of 4 Diagonal DSPPs",
+          "summary": "We study skew double-shifted plane partitions with three-element profiles using MacMahon's partition analysis. We present new generating function formulas for these partitions, incorporating an extra bound on the number of non-zero diagonal elements. These objects are closely related to the Göllnitz-Gordon and little Göllnitz identities. Moreover, we investigate some infinite hierarchies of $q$-series identities that stem from our formulas. We also observe certain palindromic properties within these generating functions. Finally, we examine these same objects from the perspective of linear partitions, which leads to interesting new $q$-series identities.",
+          "authors": [
+            "Runqiao Li",
+            "Ali K. Uncu"
+          ],
+          "published": "2026-07-04T15:17:00+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03911v1",
+          "entry_id": "http://arxiv.org/abs/2607.03911v1",
+          "title": "Characteristic Polynomials of Graph- and Digraph-Deleted Catalan Arrangements",
+          "summary": "We study characteristic polynomials of arrangements obtained from the full $m$-Catalan arrangement by deleting hyperplanes indexed by graphs, digraphs, and gain-labeled digraphs. Zero-layer graph deletions give falling-factorial expansions with graphical Stirling coefficients. For a single deleted translated layer $x_i-x_j=l$, the coefficients are directed matching numbers when $1\\le l\\le\\lfloor m/2\\rfloor$, and directed path-cover numbers when $\\lfloor m/2\\rfloor<l\\le m$. For simultaneous deletions in several translated layers, the coefficients are admissible sets of deleted gain-labeled arcs. In the case $l=m$, an inclusion-exclusion expansion yields a Lah-number identity relating path covers of a digraph and its complement. We also obtain an $m$-independent criterion for integer linear factorization, compact region-count formulas for a complete bipartite orientation after essentialization, and directed Ish-type applications.",
+          "authors": [
+            "Yanru Chen",
+            "Ang Li",
+            "Suijie Wang"
+          ],
+          "published": "2026-07-04T15:12:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03894v1",
+          "entry_id": "http://arxiv.org/abs/2607.03894v1",
+          "title": "Counting perfect edge dominating sets: extremal results and linear-time algorithms",
+          "summary": "An edge of a graph \\emph{dominates} itself and each edge adjacent to it. A \\emph{perfect edge dominating set} is a subset of edges such that each edge outside the subset is dominated by exactly one edge of the subset. In this article, we characterize the extremal graphs on $n$ vertices in the classes of trees, forests, and chordal graphs with respect to the number of perfect edge dominating sets. Moreover, we derive linear-time algorithms for counting perfect edge dominating sets and for counting dominating induced matchings in generalized series-parallel graphs and chordal graphs.",
+          "authors": [
+            "Luciano N. Grippo",
+            "Min Chih Lin",
+            "Verónica Moyano",
+            "Camilo Vera"
+          ],
+          "published": "2026-07-04T14:21:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03864v1",
+          "entry_id": "http://arxiv.org/abs/2607.03864v1",
+          "title": "Spherical subgroups in reductive algebraic groups",
+          "summary": "In a paper from 2015, we determined all spherical affine homogeneous varieties for simple algebraic groups in arbitrary characteristic. The present paper extends this classification to semisimple groups. This generalizes work done independently by Brion and Mikityuk in characteristic zero. Our primary approach relies on a lifting lemma to characteristic zero, enabling us to directly apply Brion's and Mikityuk's results.",
+          "authors": [
+            "Friedrich Knop",
+            "Gerhard Roehrle"
+          ],
+          "published": "2026-07-04T13:11:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03856v1",
+          "entry_id": "http://arxiv.org/abs/2607.03856v1",
+          "title": "The exact generalized Turán number for \\(C_6\\) in \\(C_8\\)-free graphs",
+          "summary": "For graphs $F$ and $H$, let $\\ex(n,F,H)$ denote the maximum number of copies of $F$ in an $n$-vertex $H$-free graph. Gerbner, Győri, Methuku and Vizer proved that $\\ex(n,C_6,C_8)=Θ(n^3)$ and predicted that the unrestricted problem should have the same first-order asymptotics as the bipartite one. We determine the exact value for all sufficiently large $n$, showing that \\[\n  \\ex(n,C_6,C_8)=6\\binom{n-3}{3}+12(n-5). \\] Moreover, the unique extremal graph is $K_3\\vee (K_2\\cup I_{n-5})$. The main new ingredient is a codegree decomposition for $C_8$-free graphs: a packing lemma for triangles in the linear-codegree graph recovers an almost spanning common neighborhood, and a defect-absorption argument upgrades this stability to the exact extremal graph.",
+          "authors": [
+            "Zian Chen",
+            "Jinghua Deng"
+          ],
+          "published": "2026-07-04T12:48:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03854v1",
+          "entry_id": "http://arxiv.org/abs/2607.03854v1",
+          "title": "Magic Positivity for the Ehrhart Polynomials of Partial Permutohedra",
+          "summary": "For positive integers \\(m,n\\), the partial permutohedron $\\mathcal{P}(m,n)$ is a lattice polytope constructed as the convex hull of vectors in $\\{0, 1, \\dots, n\\}^m$ that have distinct non-zero entries. We prove that for $n \\ge m-1$, the Ehrhart polynomial of $\\mathcal{P}(m,n)$ is magic positive except for the single case \\((m,n)=(2,1)\\). In particular, the Ehrhart polynomial of the parking function polytope (integrally equivalent to $\\mathcal{P}(m,m-1)$) is magic positive for $m \\ge 3$. For $n<m-1$, we discuss the magic positivity of the Ehrhart polynomial of $\\mathcal{P}(m,n)$ for $n=1,2,3$. There exist infinitely many counterexamples with $n<m-1$ showing that the Ehrhart polynomial of $\\mathcal{P}(m,n)$ is not magic positive. This partially resolves an open problem proposed by Ferroni and Higashitani.",
+          "authors": [
+            "Feihu Liu",
+            "Zihao Zhang"
+          ],
+          "published": "2026-07-04T12:45:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03846v1",
+          "entry_id": "http://arxiv.org/abs/2607.03846v1",
+          "title": "Spectral analysis of small amplitude periodic $b$-Novikov equation under transverse perturbations",
+          "summary": "This paper is devoted to the transverse stability problem for small-amplitude periodic traveling waves of the $b$-Novikov equation, which arises as a two-dimensional extension of the $b$-family hierarchy. The perturbations under consideration fall into two groups. One group matches the fundamental period of the underlying wave along the longitudinal direction, while the other consists of profiles that are bounded or localized in the transverse direction. We perform spectral analysis of the associated linearized operator and derive precise stability and instability thresholds. The resulting conditions exhibit intricate dependence on two key parameters including the cubic coupling strength $b$ and the wavenumber $k$.",
+          "authors": [
+            "Lin Lu",
+            "Xiaokai He",
+            "Aiyong Chen"
+          ],
+          "published": "2026-07-04T12:30:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03838v1",
+          "entry_id": "http://arxiv.org/abs/2607.03838v1",
+          "title": "Uniform asymptotic stability and regions of attraction for systems on Riemannian manifolds",
+          "summary": "This paper studies uniform asymptotic stability of equilibrium points of ordinary differential equations on complete Riemannian manifolds and estimates of the corresponding regions of attraction. We first refine the classical Lyapunov stability theorem in Euclidean space and obtain a sharper estimate of the region of attraction. We then extend this result to systems on complete Riemannian manifolds and establish sufficient conditions for uniform asymptotic stability together with an explicit estimate of the corresponding region of attraction. The resulting estimate is constrained by both the injectivity radius at the equilibrium point and the Lyapunov comparison functions. Compared with a previous result, the obtained theorem removes the monotonicity assumption on the squared distance function along system trajectories. An example on the two-dimensional hyperbolic space illustrates the result and shows that this monotonicity condition may fail.",
+          "authors": [
+            "Li Deng",
+            "Yuan Wang"
+          ],
+          "published": "2026-07-04T12:01:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03785v1",
+          "entry_id": "http://arxiv.org/abs/2607.03785v1",
+          "title": "Order symmetry and orthogonality of trajectories in discrete interval exchange transformations",
+          "summary": "Let $π=(<_D,<_A)$ be a pair of distinct orders on a $k$-letter alphabet $A. $ The periodic trajectories $v_i^\\infty $ of a discrete $k$-interval exchange transformations $T$ with permutation $π$ are characterized by the following order symmetry : $v_i^ω<_D v_j^ω$ (lexicographically) if and only if $v_i^{-ω}<_Av_j^{-ω}$ (reverse lexicographically). For general words $u$ and $v$ over $A$, the orders need not agree in which case either $u^ω<_A v^ω<_D u^ω$ (Type 1) or $v^ω<_A u^ω<_D v^ω$ (Type 2). We partition all such order crossings amongst the set of conjugates of two words $u$ and $v$ into disjoint families $T_1(u,v)$ and $T_2(u,v)$ and define the index $i(u,v)$ by $|T_1(u,v)|+|T_2(u,v)|.$ Remarkably the difference, $|T_2(u,v)|-|T_1(u,v)|,$ depends only on the Parikh vectors $λ(u)$ and $λ(v).$ We show that $|T_2(u,v)|-|T_1(u,v)|=λ(u)^T Ωλ(v)$ where $Ω$ is a $k\\times k$ skew symmetric matrix depending only on $π.$ It follows that the Parikh vectors of the trajectories of a discrete interval exchange are orthogonal with respect to $Ω.$ Applied to dimension $3,$ we obtain an arithmetic formula for the number of orbits in a discrete $3$-interval exchange and hence a characterization of minimality. For general $k,$ the orthogonality of the trajectories gives an upper bound $\\lfloor \\frac{k+d}2 \\rfloor$ on the number of distinct trajectories where $d=\\dim \\ker (Ω).$ If $T$ is symmetric, then the number of distinct trajectories is at most$\\lfloor \\frac{k+1}2 \\rfloor.$ An alternate interpretation of this result is that on an ordered $k$-letter alphabet, there are at most $\\lfloor \\frac{k+1}2 \\rfloor$ primitive, pairwise non conjugate perfectly clustering words which perfectly cluster collectively in a single array in which all their conjugates are arranged in increasing order.",
+          "authors": [
+            "Sébastien S. Ferenczi",
+            "Luca Q. Zamboni"
+          ],
+          "published": "2026-07-04T09:17:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03777v1",
+          "entry_id": "http://arxiv.org/abs/2607.03777v1",
+          "title": "A Modern View on MCSat",
+          "summary": "The Model Constructing Satisfiability (MCSat) approach has shown strong performance in solving complex SMT problems, in particular in algebraic SMT theories such as non-linear integer and real arithmetic. In this paper we revisit the theory-independent MCSat framework as a proof system to provide a modern perspective that refines the original formulation of MCSat. By closely formalizing the implementation of MCSat within the Yices2 SMT solver, we incorporate design decisions that diverge from those in the seminal MCSat paper and thereby capture the current state-of-the-art in MCSat-based SMT reasoning. We present a general, theory-agnostic rule scheme for MCSat and instantiate it for several theories, including propositional logic, non-linear real arithmetic, and uninterpreted functions. We provide several detailed examples to illustrate the applicability of the presented calculus.",
+          "authors": [
+            "Thomas Hader",
+            "Theo Jauschneg",
+            "Daniela Kaufmann",
+            "Laura Kovacs"
+          ],
+          "published": "2026-07-04T08:59:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03727v1",
+          "entry_id": "http://arxiv.org/abs/2607.03727v1",
+          "title": "A note on the submonoids of the tied-symmetric monoid containing the symmetric group",
+          "summary": "We show that the submonoids of the tied-symmetric monoid containing the symmetric group form a distributive lattice. Furthermore, we determine a minimal generating set for any such submonoid.",
+          "authors": [
+            "Diego Arcis"
+          ],
+          "published": "2026-07-04T06:28:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03711v1",
+          "entry_id": "http://arxiv.org/abs/2607.03711v1",
+          "title": "A linear algebraic proof of the Laplacian spread conjecture",
+          "summary": "For a graph $G,$ let $α(G)$ denote its second smallest Laplacian eigenvalue. The Laplacian Spread Conjecture is that $α(G)+α(\\overline{G}) \\geq 1,$ where $\\overline{G}$ is the complement of $G.$ In this article, we provide a new proof of the Laplacian spread conjecture by means of linear algebra, which is more concise.",
+          "authors": [
+            "Bocheng Li",
+            "Qingzhong Ji"
+          ],
+          "published": "2026-07-04T05:32:53+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03686v1",
+          "entry_id": "http://arxiv.org/abs/2607.03686v1",
+          "title": "Collective Phase Reorganization and Cluster Synchronization in Networks of Coupled Gumowski--Mira Maps",
+          "summary": "We investigate the collective dynamics of networks composed of diffusively coupled Gumowski-Mira maps and analyze how modifications in the intrinsic dynamics of the local oscillator reorganize the emergent phase structure of the network. The coupling strength and the local control parameter are treated as bifurcation parameters, and the resulting collective states are quantified using the largest Lyapunov exponent, a synchronization error measure, cluster-count statistics, and collective phase-classification diagrams. Two representative regimes of the local dynamics are examined. In the first regime, the network exhibits a smooth and highly organized collective parameter space, featuring a synchronization wedge embedded within an extended region of periodic cluster states. In the second regime, the same coupling architecture yields a fragmented phase organization, comprising disconnected synchronization islands, incoherent domains, and enhanced chaotic-cluster states. These results indicate that variations in the intrinsic dynamics of the individual Gumowski-Mira oscillator do not simply shift synchronization thresholds but can fundamentally restructure the topology of the collective phase space. Our findings thus establish a direct relationship between local nonlinear dynamics and the emergent organization of collective phases in coupled discrete-time networks.",
+          "authors": [
+            "Hammed Olawale Fatoyinbo",
+            "Indranil Ghosh"
+          ],
+          "published": "2026-07-04T03:32:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03655v1",
+          "entry_id": "http://arxiv.org/abs/2607.03655v1",
+          "title": "The Rotation Number for a Generic $C^1$ Family of Circle Diffeomorphisms is Not Hölder",
+          "summary": "We study the regularity of the rotation number as a function of the parameter in monotone one-parameter families of circle diffeomorphisms. We prove that for an open and dense set of $C^2$ monotone families, the optimal Hölder exponent is exactly $1/2$, showing therefore that the earlier result by J. Graczyk is sharp. For a $C^1-$ dense set of $C^{1+α}$ families, we show that the rotation number cannot be more regular than $α/(1+α)-$Hölder. As a consequence, we get that the rotation number for a generic $C^1$ family of circle diffeomorphisms is not Hölder.",
+          "authors": [
+            "Xuzheng Lang"
+          ],
+          "published": "2026-07-04T01:12:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.03649v1",
+          "entry_id": "http://arxiv.org/abs/2607.03649v1",
+          "title": "Convex hypersurfaces and robust heterodimensional dynamics",
+          "summary": "We prove that any closed orientable hypersurface in a contact manifold of dimension five or greater is isotopic to a robustly non-convex hypersurface via an arbitrarily $C^0$-small isotopy. This strengthens a recent result of the first author and yields a strong counterpart to the groundbreaking density theorem of Honda-Huang and Giroux. This is proven by combining a new convexity obstruction via heteroclinics and recent advances in robust heterodimensional dynamics due to Li-Turaev to produce a robust deconvexifying plug, which is a local and robust convexity obstruction.",
+          "authors": [
+            "Julian Chaidez",
+            "Michael Huang"
+          ],
+          "published": "2026-07-04T00:18:35+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-07-07T06:18:19.386092+00:00",
+      "updated_at": "2026-07-07T06:18:19.386092+00:00",
+      "finalized_at": null
     }
   ]
 }
