@@ -81283,6 +81283,396 @@
       "created_at": "2026-07-07T06:18:19.386092+00:00",
       "updated_at": "2026-07-07T10:55:31.768800+00:00",
       "finalized_at": "2026-07-07T10:55:31.768782+00:00"
+    },
+    {
+      "pipeline_id": "20260708T053120Z-203fe569",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/rd5391b1z33u6eoj503mn0hrqh87dn21zqkl",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04532v1",
+          "entry_id": "http://arxiv.org/abs/2607.04532v1",
+          "title": "Embedding Induced Bounded Degree Graphs",
+          "summary": "We prove a sparse embedding theorem for induced embeddings of bounded-degree graphs. The theorem applies to pairs $G\\subseteq Γ$: the graph $G$ supplies the positive edges of the target graph, while the ambient graph $Γ$ supplies the induced constraints which must be avoided. Its main feature is that these two types of constraints are kept separate throughout the embedding process.\n  As an application, we show that, for every fixed $Δ,r\\ge2$, there are constants $A,C>0$ such that every $n$-vertex graph $H$ with maximum degree at most $Δ$ satisfies $r_{\\text{ind}}(H;r)\\le C n^{Δ+2}(\\log n)^A$. This improves the exponent in the polynomial bound of Conlon, Fox and Zhao for bounded-degree induced Ramsey numbers. The proof combines the aforementioned embedding theorem with a sparse random transference argument, in which the random host is used only to certify robust deterministic hypotheses for every colour class.",
+          "authors": [
+            "Gaia Carenini"
+          ],
+          "published": "2026-07-05T22:40:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04530v1",
+          "entry_id": "http://arxiv.org/abs/2607.04530v1",
+          "title": "Regularity of profinite isomorphisms of hyperbolic 3-manifolds",
+          "summary": "We strengthen a result of Liu from his papers arXiv:2011.09412, arXiv:2105.01022, by proving that profinite isomorphisms of hyperbolic 3-manifolds are regular in the sense of Boileau and Friedl arXiv:1505.07799",
+          "authors": [
+            "Liam Hanany"
+          ],
+          "published": "2026-07-05T22:24:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.05457v1",
+          "entry_id": "http://arxiv.org/abs/2607.05457v1",
+          "title": "Empirical Minimal-Realisation Compression of Deep Neural Networks via Controllability-Observability Tests",
+          "summary": "Deep neural networks often contain substantial hidden-state redundancy, but most compression methods operate directly on weights, neurons, or quantised representations without explicitly characterising the dynamical role of internal states. This paper proposes a controllability-observability framework for empirical state-order reduction of deep neural networks. By viewing a trained network as a depth-indexed nonlinear dynamical system, we construct data-driven reachability, observability, and balanced Gramians from hidden-state snapshots and output Jacobians. The resulting A/B/C tests estimate layer-wise reachable, observable, and jointly reachable--observable ranks. These ranks are then used not only as diagnostic measures of hidden-state redundancy, but also as actual compressed layer widths for realised reduced networks. Experiments on MNIST and CIFAR-10 compare the proposed balanced realisation against projection-based reduction, unstructured pruning, structured pruning, low-rank SVD, dynamic INT8 quantisation, and linear baselines. On MNIST, a four-layer SiLU DNN is reduced from state order 1024 to 277, giving 72.95% state compression and 73.48% parameter compression, while maintaining 95.45% accuracy compared with 96.60% for the full model. On CIFAR-10, a larger SiLU DNN is reduced from state order 4608 to 1339, giving 70.94% state compression and 83.09% parameter compression, while preserving accuracy from 54.45% to 54.44% and reducing CUDA inference latency by approximately 3X. The results show that balanced reachable-observable ranks provide a principled empirical minimal-realisation criterion for designing compact neural architectures with little or no loss in accuracy.",
+          "authors": [
+            "Anis Hamadouche",
+            "Amir Hussain"
+          ],
+          "published": "2026-07-05T22:07:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04511v1",
+          "entry_id": "http://arxiv.org/abs/2607.04511v1",
+          "title": "Mean Time to Remediate Is Not a Fielding Model: A Cadence Audit for Enterprise Vulnerability Management",
+          "summary": "Enterprise security teams commonly summarize remediation through mean time to remediate (MTTR), SLA compliance, dwell time, or detection delay. These metrics are useful, but they can hide how fixes actually reach the estate: continuously, through scheduled maintenance windows, in deployment rings, or through emergency bypass paths. This paper introduces a remediation-cadence audit for enterprise vulnerability management. The audit records routine mean lag, release period, release fraction, cohort geometry, emergency/routine split, non-fielding delay, local residual-pressure evidence, and declared rate scenario. It compares a continuous same-mean shortcut with the recorded release calendar and reports a local capacity verdict plus a calendar discount: the fraction of mean-only local capacity consumed by calendarized fielding. Worked notional packets with the same 30-day mean lag show why this matters. Under the normalized screening scenario, a two-month release train consumes 17.4\\% of mean-only capacity, a monthly train 5.2\\%, and a two-week screen 1.3\\%; across a 16-fold attacker-adjustment rate band, the two-month discount remains at least about 12\\% and the monthly discount stays in the resolution-sensitive 3--8\\% range. The audit therefore turns cadence assessment into an evidence-resolution question: when the discount is material relative to residual-pressure uncertainty or claimed headroom, MTTR/SLA should not be used alone as fielding evidence. Release-geometry checks show that deployment rings do not automatically recover the continuous benchmark, and cohort staggering can help or hurt near capacity. The result is a reproducible governance diagnostic, not a breach predictor or CVE prioritizer.",
+          "authors": [
+            "Alexander Omelchenko"
+          ],
+          "published": "2026-07-05T21:23:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04496v1",
+          "entry_id": "http://arxiv.org/abs/2607.04496v1",
+          "title": "Robust transitivity versus trapping regions for partially hyperbolic diffeomorphisms",
+          "summary": "We show that among partially hyperbolic diffeomorphisms with one dimensional center there is a $C^1$-open and dense subset for which either there is a proper quasi-attractor or both strong foliations are minimal. The same result holds among volume-preserving partially hyperbolic diffeomorphisms and has consequences about robust transitivity beyond the conservative setting. The proofs involve a careful study of minimal $\\mathcal{W}^u$-saturated sets and interact with recent results in the subject.",
+          "authors": [
+            "Sylvain Crovisier",
+            "Rafael Potrie"
+          ],
+          "published": "2026-07-05T20:44:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04494v1",
+          "entry_id": "http://arxiv.org/abs/2607.04494v1",
+          "title": "The Alon--Tarsi Number of Squares of Subcubic Planar Graphs without Cycles of Lengths $4$ to $8$",
+          "summary": "The Alon--Tarsi number $AT(G)$ of a graph $G$, defined via the graph polynomial, is a strengthening of the list chromatic number $χ_{\\ell}(G)$. We study the Alon--Tarsi number of squares of planar graphs. The square of a graph $G$ is the graph obtained by joining every pair of vertices whose distance in $G$ is at most $2$. Recently, Kim and Luo (2026) proved that $χ_{\\ell}(G^2)\\le 6$ for every subcubic planar graph containing no $k$-cycles for $4\\le k\\le 8$. We strengthen this result by proving that $AT(G^2)\\le 6$ for every such graph $G$.",
+          "authors": [
+            "Seog-Jin Kim",
+            "Xiaopan Lian",
+            "Rong Luo"
+          ],
+          "published": "2026-07-05T20:40:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04493v1",
+          "entry_id": "http://arxiv.org/abs/2607.04493v1",
+          "title": "Beyond DSA: Conjugacy-based Comparison of Dynamical Systems",
+          "summary": "Comparing whether two dynamical systems implement the same computation despite differences in coordinates or measurements is a central problem in neuroscience and machine learning. Dynamical Similarity Analysis [DSA; Ostrow et al., 2023] addresses this problem by aligning finite-dimensional Koopman approximations through an orthogonal similarity transformation. Here we show that orthogonal alignment is neither necessary nor sufficient for topological conjugacy: conjugate systems may require a non-orthogonal basis-transfer matrix that DSA cannot capture, while non-conjugate systems may have orthogonally equivalent Koopman operators that DSA fails to distinguish. We use this observation to formulate Conjugacy-based Similarity Analysis (CSA), which restricts alignments to those induced by candidate state-space bijections rather than arbitrary orthogonal matrices. We prove that CSA's fitted alignment is the finite-data projection of the composition operator associated with the candidate bijection, and use controlled examples to show why this distinction matters when observable dictionaries are chosen explicitly or implicitly from data. These results clarify what Koopman-based similarity measures must ensure to support claims of identifying conjugacies between computational systems.",
+          "authors": [
+            "Prakhar Godara",
+            "Pang Shiang Tay",
+            "Marcelo G. Mattar"
+          ],
+          "published": "2026-07-05T20:39:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04456v1",
+          "entry_id": "http://arxiv.org/abs/2607.04456v1",
+          "title": "Mathematical Model of Evolution of Non-Degenerate Replicator Systems",
+          "summary": "We propose and analyse a mathematical model of evolutionary adaptation for non-degenerate (permanent) replicator systems, in which the fitness landscape matrix evolves on a slow timescale -- the evolutionary time -- while the species dynamics unfold on a fast timescale. Under a two-timescale separation justified by Tikhonov's theorem, the adaptation problem reduces to maximising the mean fitness at steady state over a convex admissible set of fitness landscape matrices. We derive a fitness variation formula and establish necessary and sufficient conditions for a fitness maximum, showing that the optimisation reduces at each step to a linear programming problem. The algorithm is applied to four canonical replicator systems: the hypercycle, the bi-hypercycle, the anthill system, and the RNA molecule network. In all cases the evolutionary process follows a universal three-phase pattern: an initial phase of fitness growth without equilibrium shift, during which purely altruistic replication gives way to mixed altruistic-selfish behaviour; a second phase of dominant species emergence; and a stabilisation phase analogous to the error catastrophe threshold in quasispecies models. A key consequence is that all evolved systems acquire resistance to parasitic species. We further prove that without non-degeneracy constraints the process leads to sequential species annihilation, with a provable spectral lower bound on fitness increase by dimension reduction.",
+          "authors": [
+            "Alexander S. Bratus",
+            "Sergey Drozhzhin",
+            "Tatiana Yakushkina"
+          ],
+          "published": "2026-07-05T18:46:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04453v1",
+          "entry_id": "http://arxiv.org/abs/2607.04453v1",
+          "title": "Robustness Verification of an Autonomous Underwater Vehicle-based Plankton Classifier",
+          "summary": "The assessment of planktonic standing stocks and microorganism structures is critical for understanding upper ocean biological processes. Currently, autonomous underwater vehicles (AUVs) equipped with in-situ optical imaging and artificial intelligence (AI) methods offer a promising solution for persistent surveillance, mapping and monitoring of planktonic life. However, current AI methods often lack robustness in dynamic, unstructured environments, where environmental noise and non-biological artifacts lead to frequent misclassifications. Standard convolutional neural network (CNN) classifiers often struggle with such conditions, leading to misclassifications that require time-consuming manual validation by marine biologists.\n  To address this issue, we propose a novel robustness verification framework for in-situ plankton classifiers based on reachability analysis. We also introduce a continuous-time neural ordinary differential equation (neural ODE) classification model leveraging the high-resolution imaging capabilities of the SilCam particle imager. In this paper, we demonstrate the effectiveness of the proposed framework by formally verifying the robustness of the neural ODE model against environmental perturbations. We demonstrate that our verification framework acts as an automated filter providing formal guarantees of model stability against ambiguous data, thereby improving the reliability of autonomous sampling and reducing the post-processing workload.",
+          "authors": [
+            "Abdelrahman Sayed Sayed",
+            "Pierre-Jean Meyer",
+            "Asgeir J. Sørensen",
+            "Mohamed Ghazel"
+          ],
+          "published": "2026-07-05T18:32:59+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04421v1",
+          "entry_id": "http://arxiv.org/abs/2607.04421v1",
+          "title": "Sharpening Borel's result in Diophantine approximation",
+          "summary": "In this paper, we refine Borel's 1903 result in Diophantine approximation by providing sharper bounds for the minimum of three consecutive approximation coefficients $Θ_n(x)$, defined for any real number $x$ with regular continued fraction (RCF) expansion $x=[0;a_1,a_2,\\dots]$ as $Θ_n = q_n^2\\left| x-\\frac{p_n}{q_n}\\right|$. Here $\\frac{p_n}{q_n}$ is the $n$th RCF convergent of $x$. Borel's result states that for all (irrational) $x$ and all $n\\in\\mathbb{N}$, $$ \\min \\left\\{ Θ_{n-1}(x),Θ_n(x),Θ_{n+1}(x)\\right\\} \\leq \\frac{1}{\\sqrt{5}}. $$ We focus on the situation where $a_{n+1}=1$, since otherwise a result by F.~Bagemihl and J.R.~McLaughlin from 1966 implies that the Borel-bound $1/\\sqrt{5}$ can already be improver to $1/\\sqrt{8}$.",
+          "authors": [
+            "Savita S. Adhin",
+            "Ayreena Bakhtawar",
+            "Cor Kraaikamp"
+          ],
+          "published": "2026-07-05T17:30:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04404v1",
+          "entry_id": "http://arxiv.org/abs/2607.04404v1",
+          "title": "Predicting periodic solutions of cyclic Lotka-Volterra equations with dynamic mode decomposition",
+          "summary": "Cyclic Lotka-Volterra systems in form of ODEs and PDEs are solved by linearly implicit Kahan's method, that preserves the quadratic Poisson bracket, phase space volume, Hamiltonian ad Casimirs. The solutions are predicted applying dynamic mode decomposition (DMD). Numerical results show that the extended DMD with quadratic dictionaries and Hankel DMD with the delay embeddings, predict the periodic solutions with high accuracy, whereas the standard DMD fails. The Hamiltonians and Casimirs are also preserved accurately by the extend DMD and Hankel DMD.",
+          "authors": [
+            "Bülent Karasözen",
+            "Murat Uzunca"
+          ],
+          "published": "2026-07-05T16:51:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04373v1",
+          "entry_id": "http://arxiv.org/abs/2607.04373v1",
+          "title": "A sharp lower bound for some reciprocal Rado numbers",
+          "summary": "Let $f_r(k)$ be the smallest $n$ such that every $r$-coloring of $\\{1,2,\\ldots,n\\}$ has a monochromatic solution to the equation \\[\\frac{1}{x_1}+\\frac{1}{x_2}+\\cdots+\\frac{1}{x_k}=\\frac{1}{x_{k+1}}, \\] where $x_1,x_2,\\ldots,x_k$ are not necessarily distinct. In this paper, we prove that $f_r(2)\\geq 4^r/2$ for all $r\\geq1$, and $f_r(k)\\geq(2^r-1)k^r$ for all $k\\geq3$ and $r\\geq1$. When $r=2$, we show that, if $k=3\\cdot2^m$ for some positive integer $m$, then $f_2(k)=3k^2$; and if $k=p^m$ for some odd prime number $p$ and positive integer $m$, then $f_2(k)\\geq3k^2+1$. We also provide new computational results for $f_2(k)$ and $f_3(k)$, as well as a generalization of our lower bounds for $f_2(k)$ to equations with general coefficients.",
+          "authors": [
+            "Collier Gaiser",
+            "Mojtaba Ramezanpour"
+          ],
+          "published": "2026-07-05T16:04:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04368v1",
+          "entry_id": "http://arxiv.org/abs/2607.04368v1",
+          "title": "Paths of even length with equal-degree endpoints",
+          "summary": "Addressing a question posed by Erdős and Hajnal, Chen and Ma proved that, for all $n \\ge 600$, the complete bipartite graph $K_{n,n+1}$ is the unique graph on $2n+1$ vertices with at least $n^2+n$ edges that contains no two vertices of equal degree joined by a path of length three. In this paper, we extend this result and prove that for every fixed integer \\(\\ell\\ge 2\\) and sufficiently large \\(n\\), the unique \\(2n\\)-vertex graph with at least \\((n^2+n)/2\\) edges that contains no two vertices of equal degree joined by a path of length \\(2\\ell\\) is the half graph \\(H_n\\). This resolves the problem posed by Chen and Ma, as well as a related question of Attwa, Azócar Carvajal, Boyadzhiyska, Pierron, and Taraz concerning paths of even length with equal-degree endpoints.",
+          "authors": [
+            "Kaizhe Chen",
+            "Zhen Liu",
+            "Qinghou Zeng"
+          ],
+          "published": "2026-07-05T15:54:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04357v1",
+          "entry_id": "http://arxiv.org/abs/2607.04357v1",
+          "title": "Counting even cycles and even paths with bounded circumference",
+          "summary": "For an integer $L$, write $C_{\\ge L}$ for the family of cycles of length at least $L$. For $L=2a$ let $H(n,L)=K_a+\\overline K_{n-a}$, and for $L=2a+1$ let $H(n,L)$ be obtained from $K_a+\\overline K_{n-a}$ by adding one edge inside the independent part. We prove sharp results for two even target graphs, namely even cycles $C_{2s}$ and even paths $P_{2r+1}$. For even cycles, with $s\\ge3$ and $L\\ge2s$, we have \\[\n  \\mathrm{ex}(n,C_{2s},C_{\\ge L+1})=C_{2s}(H(n,L)) \\] for all sufficiently large $n$. Together with the known $C_4$ case of Zhu, Győri, He, Lv, Salia and Xiao~[Bull. Lond. Math. Soc. 55 (2023)], this verifies the even-cycle case of their conjecture on $\\mathrm{ex}(n,C_k,C_{\\ge L+1})$. For even paths, with $r\\ge2$ and $L\\ge2r$, we have \\[\n  \\mathrm{ex}(n,P_{2r+1},C_{\\ge L+1})=N(P_{2r+1},H(n,L)) \\] for all sufficiently large $n$. We also derive the corresponding exact results when the forbidden graph is a path $P_{p+1}$, sharpening the relevant even-cycle and even-path asymptotic results of Győri, Salia, Tompkins and Zamora~[Discrete Math. Theor. Comput. Sci. 21 no. 1 (2019)].",
+          "authors": [
+            "Xiamiao Zhao",
+            "Yuanpei Wang"
+          ],
+          "published": "2026-07-05T15:25:21+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04347v1",
+          "entry_id": "http://arxiv.org/abs/2607.04347v1",
+          "title": "Strong Subgraph-Count Stability in $C_{2\\ell+1}$-Free Graphs",
+          "summary": "Starting from the stability theorem of Erdős and Simonovits, stability problems for graphs forbidding a fixed subgraph have been studied in terms of edge numbers, spectral radii and subgraph counts. Let $\\mathcal{N}(F,G)$ denote the number of unlabeled copies of $F$ in $G$. It is known that, for every fixed path $P_t$ and even cycle $C_{2a}$, the maximum number of copies in an $n$-vertex $C_{2\\ell+1}$-free graph is attained by the bipartite Turán graph $T_{n,2}$.\n  In this paper we obtain strong structural stability for $C_{2\\ell+1}$-free graphs in terms of copies of paths and even cycles. For fixed $\\ell\\ge2$ and $3\\le r\\le2\\ell-1$, we show that if an $n$-vertex $C_{2\\ell+1}$-free graph contains at least as many copies of $P_t$ or $C_{2a}$ as the corresponding suspended extremal construction, then it has the corresponding suspension structure. This gives exact high-chromatic extremal theorems for paths and even cycles.\n  We also prove a counting theorem for nearly complete bipartite graphs. It shows that, for every fixed matching-admissible connected bipartite graph $F$, both imbalance between the two parts and missing cross-edges decrease the number of copies of $F$ by a term with a specified main coefficient. This theorem is independent of the forbidden odd cycle and converts subgraph-count assumptions into the edge bounds needed for the structural theorem.",
+          "authors": [
+            "Yuanpei Wang",
+            "Xiamiao Zhao"
+          ],
+          "published": "2026-07-05T15:05:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04324v1",
+          "entry_id": "http://arxiv.org/abs/2607.04324v1",
+          "title": "Connected graphs with a large dissociation numberattaining the minimum spectral radius",
+          "summary": "A dissociation set in a graph is a subset of vertices that induces a subgraph of maximum degree at most one, which is a natural generalization of the notion of an independent set. The dissociation number of a graph is defined as the maximum cardinality of a dissociation set. This paper studies the minimum spectral radius of connected graphs with a given order $n$ and a given dissociation number $ψ$. For $ψ=n-k$ with $k\\ge 4$ fixed and $n$ sufficiently large, we establish both upper and lower bounds for this minimum spectral radius and prove the extremal graphs must belong to a specific graph class.",
+          "authors": [
+            "Zejun Huang",
+            "Chenxi Yang"
+          ],
+          "published": "2026-07-05T14:14:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04323v1",
+          "entry_id": "http://arxiv.org/abs/2607.04323v1",
+          "title": "On the structure of dense graphs with given odd girth",
+          "summary": "A classical theorem of Andrásfai, Erdős, and Sós states that every $n$-vertex graph $G$ with odd girth at least $2k+1$ and minimum degree $δ(G)>\\frac{2n}{2k+1}$ is bipartite (i.e., homomorphic to $K_2$). Messuti and Schacht proved that the same odd girth condition with $δ(G)>\\frac{3n}{4k}$ forces a homomorphism to $C_{2k+1}$.\n  In this paper, we strengthen the above results by showing that every $n$-vertex graph $G$ with odd girth at least $2k+1$ and minimum degree $δ(G)>\\frac{4n}{6k-1}$ is homomorphic to the Möbius ladder on $4k$ vertices. This answers a question of Messuti and Schacht and generalizes a result of Brandt and Ribe-Baumann.",
+          "authors": [
+            "Xingyan Lu",
+            "Shipeng Wang"
+          ],
+          "published": "2026-07-05T14:14:28+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04321v1",
+          "entry_id": "http://arxiv.org/abs/2607.04321v1",
+          "title": "LogicProof: An Interactive Web-Based Educational Theorem Prover for Natural Deduction and Sequent Calculus across Classical and Constructive Logics",
+          "summary": "We present LogicProof, an interactive web-based theorem prover designed for educational use. The system supports natural deduction and sequent calculus for propositional and first-order logic in both classical and constructive variants. It emphasizes a modern user experience through real-time feedback and interactive visualization of proof trees. We evaluated LogicProof in a study involving 35 students. The results suggest that the system improves understanding of formal proof construction and supports student engagement with logical concepts. Compared to traditional pen-and-paper approaches, students reported faster iteration, easier error correction, and greater confidence in the correctness of their solutions. These findings indicate that LogicProof can serve as a practical supplement to existing teaching methods, particularly in supporting the learning process and reducing barriers associated with formal proof construction.",
+          "authors": [
+            "Ján Perháč",
+            "Vasyl Khashcha",
+            "Samuel Novotný"
+          ],
+          "published": "2026-07-05T14:10:20+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04318v1",
+          "entry_id": "http://arxiv.org/abs/2607.04318v1",
+          "title": "Algebraic Conjugacy of Linear Flows on Connected Lie Groups",
+          "summary": "We study algebraic conjugacy of linear flows on connected Lie groups. To each linear flow we associate a derivation of the Lie algebra, and we analyze how the conjugacy problem can be transferred to the infinitesimal level. In the connected and simply connected case, algebraic conjugacy is characterized by the conjugacy of the associated derivations. For non-simply connected Lie groups, we show that this condition must be supplemented by global restrictions arising from the universal covering group. More precisely, only projectable derivations define linear flows on the quotient, and only admissible Lie algebra isomorphisms descend to conjugacies between the quotient groups. This provides a framework for the algebraic classification of linear flows by computing projectable derivations and admissible automorphisms. We also describe fixed point subgroups and kernels of derivations as obstructions to algebraic conjugacy. Finally, we apply the general results to the three-dimensional Heisenberg group and to its central quotients, showing explicitly how the quotient topology restricts both the admissible derivations and the conjugating automorphisms.",
+          "authors": [
+            "S. N. Stelmastchuk"
+          ],
+          "published": "2026-07-05T14:08:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04300v1",
+          "entry_id": "http://arxiv.org/abs/2607.04300v1",
+          "title": "Topological full groups and stable rank one",
+          "summary": "We establish stable rank one for the reduced group C$^*$-algebras of the C$^*$-simple topological full groups and dynamical alternating groups constructed by Kerr and Tucker-Drob. The proof relies on both type II$_1$ and type III phenomena, in the first case via the use of Følner towers and in the second via Ozawa's recent results on selflessness as applied to direct products of free products.",
+          "authors": [
+            "David Kerr",
+            "Spyridon Petrakos"
+          ],
+          "published": "2026-07-05T13:27:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04289v1",
+          "entry_id": "http://arxiv.org/abs/2607.04289v1",
+          "title": "Chromatic Completeness and the Independence of Geometric Obstruction",
+          "summary": "We establish a strict logical separation between two distinct phenomena in orthogonality hypergraphs: chromatic completeness, the possibility of assigning a single globally consistent nondegenerate spectrum to all contexts, and geometric coordinatizability, the existence of a faithful orthogonal representation by rays. A strong chromatic number larger than the Hilbert-space dimension obstructs only the former. It does not, by itself, obstruct the existence of a faithful orthogonal representation. We make this separation explicit by comparing two three-dimensional examples with the same strong chromatic number. A completed 25-ray version of the Yu-Oh configuration has strong chromatic number four and nevertheless possesses an explicit faithful orthogonal representation in R^3. Conversely, Greechie's G_{32} hypergraph also has strong chromatic number four, and has a separating and unital set of two-valued states, but we give an elementary algebraic proof that it admits no faithful orthogonal representation in C^3. The obstruction in G_{32} is therefore not chromatic but projective-geometric: the incidence relations force two distinct atoms to collapse onto the same ray.",
+          "authors": [
+            "Karl Svozil"
+          ],
+          "published": "2026-07-05T13:05:41+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04231v1",
+          "entry_id": "http://arxiv.org/abs/2607.04231v1",
+          "title": "Ordered alternating paths and the depth of symbolic powers of cover ideals of graphs",
+          "summary": "Let $G$ be a simple graph with cover ideal $J(G)$ in a polynomial ring $S$ in $|V(G)|$ variables. For a matching $M$ of $G$, we denote by $\\ell(M)$ the length of the longest $M$-alternating path in $G$. We define $α_t(G)$ to be the maximum size of an ordered matching $M$ of $G$ such that $\\ell(M) \\le 2t-1$. We then prove that $$\\operatorname{depth}(S/J(G)^{(t)}) \\le |V(G)| - 1 - α_t(G)$$ for all $t \\ge 1$, where $J(G)^{(t)}$ denotes the $t$-th symbolic power of $J(G)$, and that equality holds when $G$ is a forest.",
+          "authors": [
+            "Nguyen Thu Hang",
+            "Nguyen Thi Thanh Tam",
+            "Thanh Vu"
+          ],
+          "published": "2026-07-05T11:05:59+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04217v1",
+          "entry_id": "http://arxiv.org/abs/2607.04217v1",
+          "title": "Log-concavity and log-convexity in the theory of the Graham--Knuth--Patashnik recurrences",
+          "summary": "We study the triangular array $T(n,k;μ)$ defined by the Graham--Knuth--Patashnik recurrences $$ T(n,k) \\;=\\; (αn + βk + γ) \\, T(n-1,k) +\n  (α' n + β' k + γ') \\, T(n-1,k-1) $$ with initial condition $T(0,k)=δ_{k,0}$ and parameters $μ=(α,β,γ,α',β',γ')$, which are considered to be indeterminates. We first prove that, for any fixed $n\\ge 0$, the sequence $(T(n,k;μ))_{k\\ge 0}$ is strongly log-concave with the coefficientwise partial order in the variables $α,β,γ,α',β',γ'$. Moreover, we show that the sequence of the corresponding row-generating polynomials $(P_n(x;μ))_{n\\ge 0}$ is strongly log-convex with the coefficientwise partial order in the variables $x$ and $α,β,γ,α',β',γ'$. Finally, we show that this sequence is coefficientwise Hankel-totally positive of order 2 with the same partial order.",
+          "authors": [
+            "Jesús Salas"
+          ],
+          "published": "2026-07-05T10:20:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04214v1",
+          "entry_id": "http://arxiv.org/abs/2607.04214v1",
+          "title": "Scattering and Low-Speed Critical Elements for the 3D Focusing Energy-Critical NLS",
+          "summary": "The below-threshold scattering problem is considered for the three-dimensional focusing energy-critical nonlinear Schrödinger equation. A main non-radial obstruction is the possible drift of the concentration center of a soliton-like critical element, which prevents a fixed-center localized virial estimate from closing directly. It is shown that such a compact critical solution must vanish if it has an $L_t^\\infty L_x^q$ bound and its center drifts sufficiently slowly. The result covers the pure-energy, endpoint $L^4$, and finite-mass regimes and gives a corresponding conditional scattering criterion.",
+          "authors": [
+            "Pang-Hung Chung",
+            "Dan Han"
+          ],
+          "published": "2026-07-05T10:05:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04207v1",
+          "entry_id": "http://arxiv.org/abs/2607.04207v1",
+          "title": "Uniform mixing and $ε$-uniform mixing on cycles",
+          "summary": "We study continuous-time quantum walks on cycles. We prove two complementary results. Firstly, the cycle $C_9$ does not admit uniform mixing at any time. Using the similar idea and Dickson polynomials, we prove that $C_{15}$ does not admit uniform mixing at any time neither. Secondly, for every prime $p$, we show that the cycle $C_{p^2}$ admits $ε$-uniform mixing.",
+          "authors": [
+            "Xiwang Cao",
+            "Cuiwen Zhu"
+          ],
+          "published": "2026-07-05T09:56:05+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04187v1",
+          "entry_id": "http://arxiv.org/abs/2607.04187v1",
+          "title": "Existence of the Lyapunov exponent for $S$-unimodal maps",
+          "summary": "In this paper, we show that for any $S$-unimodal map $T$ on $[0,1]$ with a non-flat critical point the Lyapunov exponent exists for Lebesgue almost every point and is equal to a constant $λ_T\\in\\mathbb{R}$. Moreover, $λ_T=0$ if and only if $T$ admits neither an absolutely continuous $T$-invariant probability measure with positive entropy nor a strictly stable periodic orbit. Consequently, if an $S$-unimodal map with a non-flat critical point is infinitely renormalizable or non-statistical then for Lebesgue almost every $x\\in [0,1]$ the Lyapunov exponent along the orbit of $x$ exists and is equal to $0$. A key ingredient is the following result of independent interest. If an $S$-unimodal map with a non-flat critical point has no periodic attractor then for Lebesgue almost every $x\\in [0,1]$ the lower Lyapunov exponent along the orbit of $x$ is non-negative. This shows that, in the absence of periodic attractors, exponential contraction cannot occur along the orbit of Lebesgue almost every point.",
+          "authors": [
+            "Yuya Arima"
+          ],
+          "published": "2026-07-05T09:20:10+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04185v1",
+          "entry_id": "http://arxiv.org/abs/2607.04185v1",
+          "title": "The Complexity of Weak Saturation for Complete graphs and Balanced Complete Bipartite Graphs",
+          "summary": "For graphs $F$ and $H$, a spanning subgraph $G$ of $F$ is weakly $H$-saturated in $F$ if the edges in $E(F)\\setminus E(G)$ can be added one at a time, each addition creating a new copy of $H$. Recently, Tancer and Tyomkyn proved that, given an $n$-vertex graph $F$, deciding whether $\\mathrm{wsat}(F,K_3)=n-1$ is NP-hard. In this paper, we study the decision version of the weak saturation problem and show that, for every fixed integer $r\\ge 3$, given a graph $F$ and an integer $k$, deciding whether $\\mathrm{wsat}(F,H)\\le k$ is NP-complete when $H\\in\\{K_r,K_{r,r}\\}$. Our approach uses new graph-theoretic and topological ideas and techniques, yielding new constructions that build on the construction of Tancer and Tyomkyn. In particular, our proofs further reveal a connection between weak saturation and the flag-no-square property, a fundamental property in topology that is of independent interest.",
+          "authors": [
+            "Yihan Chen",
+            "Tianying Xie"
+          ],
+          "published": "2026-07-05T09:03:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04174v1",
+          "entry_id": "http://arxiv.org/abs/2607.04174v1",
+          "title": "Results on the postsingular set of compositions of transcendental entire functions",
+          "summary": "In this paper, we study the dynamics of commuting transcendental entire functions $f$ and $g$, where $g=af^p+b$ with $a,b\\in\\mathbb{C}$, $p\\in\\mathbb{N}$, and $a\\neq 0,1$. We examine how singular values and postsingular sets behave under composition. Within this framework, we show that if one of the functions is postsingularly finite (respectively, postsingularly bounded, hyperbolic), then the other function also has this property, and so do their compositions. As an application, we derive several results concerning transcendental semigroups, including situations in which Eremenko's conjecture is satisfied.",
+          "authors": [
+            "Manisha Kumari",
+            "Dinesh Kumar"
+          ],
+          "published": "2026-07-05T08:45:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04157v1",
+          "entry_id": "http://arxiv.org/abs/2607.04157v1",
+          "title": "A Stretched-Exponential Bound for an Erdos--Graham Unit-Fraction Problem",
+          "summary": "For a finite multiset $A$ of positive integers, write $\\mathcal{R}(A)=\\sum_{a\\in A}a^{-1}$ and let $\\varepsilon(A)$ be the distance from $1$ to the largest reciprocal subsum of $A$ that does not exceed $1$. Erdős and Graham proved that $\\varepsilon(A)\\ll K^{-2}$ whenever $\\mathcal{R}(A)>K$, and asked whether one always has $\\varepsilon(A)\\leq \\exp(-cK)$ for an absolute constant $c>0$. We prove the stretched-exponential estimate $$ \\varepsilon(A)\\leq \\exp\\bigl(-c\\sqrt{K\\log K}\\bigr) $$ for all sufficiently large $K$.",
+          "authors": [
+            "Samuel Korsky"
+          ],
+          "published": "2026-07-05T07:53:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04142v1",
+          "entry_id": "http://arxiv.org/abs/2607.04142v1",
+          "title": "CSB: A Counting and Sampling tool for Bit-vectors",
+          "summary": "Satisfiability modulo theory (SMT) solvers have significantly advanced automated reasoning due to their effectiveness in solving problems across various fields. With the advancement in SMT solvers, there is growing interest in exploring capabilities beyond mere satisfiability, similar to the progression observed in Boolean satisfiability solvers that expanded into counting and sampling. In this study, we investigate the following question: Can we rely on modern CNF model counters and CNF samplers to extend modern SMT solvers to handle the problems of counting and sampling over bit-vectors?\n  The main contribution of this work is the development of an efficient and user-friendly tool, csb, that solves a bunch of problems around model counting and sampling on the theory of bit-vectors, namely exact and approximate projected and non-projected model counting, along with the almost-uniform and uniform-like sampling. In the case of exact counting, projected counting, and uniform sampling. Our tool csb converts the bit-vector formula into a CNF formula using bit-blasting techniques before applying CNF model counters or samplers to perform counting or sampling. Our experiments demonstrate significant performance improvements over existing methods.",
+          "authors": [
+            "Arijit Shaw",
+            "Kuldeep S. Meel"
+          ],
+          "published": "2026-07-05T07:02:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04141v1",
+          "entry_id": "http://arxiv.org/abs/2607.04141v1",
+          "title": "Sequential cable constructions and linear rank-width",
+          "summary": "We introduce split-free cable terms and cable plays, a sequential graph-construction language whose live cables impose uniform GF(2)-row behaviour across the current cut. Every play of width w gives a birth-order layout whose cutrank is at most half of w, rounded down, so the sequential split-free width is at least twice the linear rank-width. At the first nontrivial level we prove an exact characterization: a connected graph with at least two vertices has linear rank-width at most one exactly when it admits a stream, equivalently a singleton-birth play of width at most four. We show that unrestricted term width and sequential width differ unboundedly on trees, calibrate the construction on the net graph, and formulate an affine upper-bound conjecture relating sequential split-free width to linear rank-width. For the rank-two case we prove a two-accumulator scheduling criterion that yields width-six plays under a natural future-uniformity hypothesis.",
+          "authors": [
+            "Antonios Kalampakas"
+          ],
+          "published": "2026-07-05T06:59:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04138v1",
+          "entry_id": "http://arxiv.org/abs/2607.04138v1",
+          "title": "Hives from deformed GUE minor processes",
+          "summary": "We construct random hives from deformed GUE minor processes. Starting from two independent diagonally deformed GUE matrices \\[ X=\\sqrt{n}(wG+uD),\\qquad Y=\\sqrt{n}(w'G'+u'D'), \\] where \\(D,D'\\) are diagonal and have GUE spectra, we use their minor processes to form a double hive and then apply the octahedron recurrence. Under the matching condition \\[ \\frac{u}{w^2}=\\frac{u'}{(w')^2}, \\] we prove that the resulting hive law is close, in relative entropy, to a GUE hive law. More precisely, if \\[ a^2=w^2+u^2,\\qquad b^2=(w')^2+(u')^2, \\] then the produced hive density $q_n$ satisfies \\[ D_{\\mathrm{KL}}\\!\\left( q_n\\, \\middle\\|\\, \\operatorname{Density}\\bigl(H_n(a\\sqrt n,b\\sqrt n,c_{**}\\sqrt n)\\bigr) \\right) = O(n\\log n). \\] The third scale $c_{**}$ is determined by a limiting tetrahedral optimization problem; equivalently, writing \\(δ=u+u'\\), \\[ δ^2 = \\frac{ 2c_{**}^4(c_{**}^2-a^2-b^2) }{ (c_{**}^2-a^2+b^2)(c_{**}^2+a^2-b^2) }. \\] Thus the construction realizes GUE hive laws, up to subleading relative entropy, throughout the right-angled and obtuse regime. The appendix records two explicit surface-tension approximations and numerical comparisons which motivated the construction.",
+          "authors": [
+            "Hariharan Narayanan"
+          ],
+          "published": "2026-07-05T06:43:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04111v1",
+          "entry_id": "http://arxiv.org/abs/2607.04111v1",
+          "title": "The last distribution-equivalence class of mesh patterns of length 2",
+          "summary": "We prove the remaining conjectural distribution-equivalence of mesh patterns of length 2 from 2019. This completes the classification of distribution-equivalence and Wilf-equivalence classes for mesh patterns of length 2. Consequently the numbers of such classes are 105 and 46, respectively. We approach this by constructing a marked occurrence bijection, in the spirit of the cluster method for consecutive patterns.",
+          "authors": [
+            "Zuo-Ru Zhang",
+            "Hongkuan Zhao"
+          ],
+          "published": "2026-07-05T04:35:29+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.04094v1",
+          "entry_id": "http://arxiv.org/abs/2607.04094v1",
+          "title": "When arrow patterns meet classical patterns",
+          "summary": "Seeking to bridge the structural divide between a permutation's cycle notation and its one-line notation, Berman and Tenner introduced a novel notion of permutation pattern known as the arrow pattern. Recently, Archer and Laudone initiated a systematic study of arrow pattern avoidance, leaving behind three intriguing conjectures. In this paper, we resolve all three conjectures. First, we enumerate all six subclasses of permutations that simultaneously avoid a classical pattern of length 3 and a fixed arrow pattern of length 3, thereby confirming the first two conjectures. Second, we settle the third conjecture (which involves a different arrow pattern) by providing two independent proofs. These proofs rely on a restriction of Biane's bijection to non-nesting involutions and Krattenthaler's bijection from 321-avoiding permutations to Dyck paths, respectively.",
+          "authors": [
+            "Shishuo Fu",
+            "Zhenghe Yang"
+          ],
+          "published": "2026-07-05T03:13:12+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-07-08T05:31:20.224139+00:00",
+      "updated_at": "2026-07-08T05:31:20.224139+00:00",
+      "finalized_at": null
     }
   ]
 }
