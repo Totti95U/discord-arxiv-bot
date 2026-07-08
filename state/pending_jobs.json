@@ -81286,7 +81286,7 @@
     },
     {
       "pipeline_id": "20260708T053120Z-203fe569",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/rd5391b1z33u6eoj503mn0hrqh87dn21zqkl",
       "summarize_job_name": "batches/1xtwgk77zyys83zkak9nsjjuhrs67owdqy7k",
       "papers": [
@@ -81675,14 +81675,130 @@
         "http://arxiv.org/abs/2607.04111v1",
         "http://arxiv.org/abs/2607.04094v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2607.04530v1": {
+          "title": "双曲3次元多様体のprofinite同型写像の正則性",
+          "summary": "本論文は、Liuによる先行研究の結果を強化し、双曲3次元多様体間のprofinite同型写像がBoileauおよびFriedlの意味において正則（regular）であることを証明しました。これにより、3次元多様体の基本群のprofinite完備化に関する性質がより精密に記述されます。",
+          "keywords": [
+            "profinite isomorphisms",
+            "hyperbolic 3-manifolds",
+            "regularity"
+          ],
+          "appendix": "本論文は、無限群の構造やその完備化を扱うという点で「structure of large countable infinite group」の分野と深い関連があります。"
+        },
+        "http://arxiv.org/abs/2607.04493v1": {
+          "title": "DSAを超えて：共役性に基づく力学系の比較",
+          "summary": "座標系や測定手法が異なる2つの力学系が、本質的に同一の計算を実行しているかを判定することは、神経科学や機械学習における中心的な課題である。本論文では、直交類似変換を用いてKoopman近似を整列させる従来の手法であるDSA（Dynamical Similarity Analysis）の限界を指摘する。直交整列は位相共役（topological conjugacy）に対して必要条件でも十分条件でもなく、DSAは非直交な基底変換行列を必要とする共役系を捉えられなかったり、非共役な系を誤って同一視したりする可能性がある。これに対し、本論文は状態空間の全単射によって誘導される整列に制限したCSA（Conjugacy-based Similarity Analysis）を提案する。CSAによる整列は、全単射に伴う合成作用素の有限データ射影であることを証明し、観測辞書の選択が力学系の識別においていかに重要であるかを制御された例を用いて示す。",
+          "keywords": [
+            "Dynamical Similarity Analysis",
+            "Conjugacy-based Similarity Analysis",
+            "Koopman approximations",
+            "Topological conjugacy",
+            "State-space bijections"
+          ],
+          "appendix": "本論文は力学系の共役性を扱っており、興味ある分野のうち complex dynamics や symbolic dynamics に関連します。"
+        },
+        "http://arxiv.org/abs/2607.04453v1": {
+          "title": "自律型水中航走体を用いたプランクトン分類器のロバスト性検証",
+          "summary": "海洋生物学的なプロセス理解に不可欠なプランクトンの現存量調査において、AUVとAIを用いた自動観測が期待されている。しかし、従来のCNNを用いた分類手法は、動的で非構造的な環境下でのノイズや人工物に弱く、誤分類が多いという課題がある。本論文では、到達可能性解析に基づくプランクトン分類器の新しいロバスト性検証フレームワークを提案する。SilCamの高解像度画像を活用した連続時間型Neural ODE分類モデルを導入し、環境摂動に対するモデルの安定性を形式的に検証することで、曖昧なデータに対する自動フィルタリングを実現し、信頼性の向上と後処理の負荷軽減を実証した。",
+          "keywords": [
+            "Reachability analysis",
+            "Neural ODE",
+            "Autonomous Underwater Vehicle",
+            "Plankton classification",
+            "Formal verification"
+          ],
+          "appendix": "本論文は、検証された数値計算（validated numerics）や形式言語・オートマトン理論に関連する形式的な検証（Formal verification）の手法を、ニューラルネットワークの安定性評価に応用している点で、興味ある分野と関連性を持ちます。"
+        },
+        "http://arxiv.org/abs/2607.04421v1": {
+          "title": "ディオファントス近似におけるBorelの結果の精緻化",
+          "summary": "本論文では、1903年のBorelによるディオファントス近似の結果を精緻化し、連分数展開における3つの連続する近似係数 Θₙ(x) = qₙ²|x - pₙ/qₙ| の最小値に対するより厳密な下限を与えている。Borelは、すべての無理数 x と正の整数 n に対して min{Θₙ₋₁(x), Θₙ(x), Θₙ₊₁(x)} ≤ 1/√5 であることを示したが、本研究では特に aₙ₊₁=1 の場合に焦点を当てている。aₙ₊₁ ≠ 1 の場合には、BagemihlとMcLaughlinによる1966年の結果から、この上限を 1/√8 まで改善できることが知られている。",
+          "keywords": [
+            "Diophantine approximation",
+            "continued fraction expansion",
+            "approximation coefficients",
+            "Borel's result"
+          ],
+          "appendix": "本論文は算術力学（arithmetic dynamics）に関連するディオファントス近似の収束精度を扱っており、数論的な側面から関連性があります。"
+        },
+        "http://arxiv.org/abs/2607.04300v1": {
+          "title": "位相的完全群と安定階数1",
+          "summary": "KerrおよびTucker-Drobによって構成されたC*-単純な位相的完全群および力学系交互群の簡約群C*-環において、安定階数が1であることを証明した。本研究の証明手法は、Følnerタワーを用いたタイプII₁現象、および自由積の直積におけるOzawaのselflessnessに関する最新の結果を応用したタイプIII現象の両方に依拠している。",
+          "keywords": [
+            "Topological full groups",
+            "Stable rank one",
+            "C*-simple",
+            "Dynamical alternating groups",
+            "Følner towers"
+          ],
+          "appendix": "本論文は位相的完全群の性質を扱っており、指定された興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.04187v1": {
+          "title": "S-単峰写像におけるリアプノフ指数の存在",
+          "summary": "本論文では、非平坦な臨界点を持つ[0, 1]上の任意のS-単峰写像Tにおいて、ルベーグほとんどすべての点についてリアプノフ指数が存在し、一定の値λₜ ∈ ℝをとることを証明した。λₜ = 0となる必要十分条件は、正のエントロピーを持つ絶対連続なT不変確率測度も強安定な周期軌道も存在しないことである。これにより、無限回繰り込み可能または非統計的なS-単峰写像のリアプノフ指数がルベーグほとんど至る所で0になることが示された。また、周期アトラクタを持たない場合、ルベーグほとんどすべての点において下リアプノフ指数が非負となり、指数的な収縮が発生しないことも明らかにしている。",
+          "keywords": [
+            "S-unimodal map",
+            "Lyapunov exponent",
+            "non-flat critical point",
+            "periodic attractor",
+            "absolutely continuous invariant probability measure"
+          ],
+          "appendix": "本論文は複素力学系 (complex dynamics) と密接に関連する一次元力学系のエルゴード理論的性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2607.04174v1": {
+          "title": "超越整関数の合成のポスト特異点集合に関する結果",
+          "summary": "本論文では、可換な超越整関数 f と g（ただし g = afᵖ + b, a, b ∈ ℂ, p ∈ ℕ, a ≠ 0, 1）の力学系を研究している。具体的には、合成における特異値およびポスト特異点集合の振る舞いを調査した。一方の関数がポスト特異点有限、ポスト特異点有界、または双曲的であれば、もう一方の関数およびそれらの合成も同じ性質を持つことを示している。さらに応用として、超越半群に関するいくつかの結果を導出し、Eremenko's conjecture（エレメンコ予想）が満たされる状況についても論じている。",
+          "keywords": [
+            "transcendental entire functions",
+            "postsingular set",
+            "singular values",
+            "transcendental semigroups",
+            "Eremenko's conjecture"
+          ],
+          "appendix": "この論文は興味ある分野のうち、複素力学系（complex dynamics）に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.04111v1": {
+          "title": "長さ2のメッシュパターンの最後の分布等価類",
+          "summary": "2019年に残されていた長さ2のメッシュパターンの分布等価性に関する予想を証明した。これにより長さ2のメッシュパターンにおける分布等価類（distribution-equivalence classes）およびWilf等価類（Wilf-equivalence classes）の分類が完全に終了し、クラス数はそれぞれ105および46であることが確定した。手法としては、連続パターンに対するクラスター法の着想に基づき、標識付き出現全単射（marked occurrence bijection）を構築することでアプローチしている。",
+          "keywords": [
+            "mesh patterns",
+            "distribution-equivalence",
+            "Wilf-equivalence",
+            "marked occurrence bijection",
+            "cluster method"
+          ],
+          "appendix": "本論文は数え上げ組合せ論を扱っており、指定された興味ある分野の中では「combinatorics on words」に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.04094v1": {
+          "title": "Arrow patterns と古典的パターンが交差するとき",
+          "summary": "置換のサイクル表記と1行表記の構造的差異を埋めるために導入された arrow pattern に関する Archer と Laudone の3つの予想を完全に解決した。長さ3の古典的パターンと特定の arrow pattern を同時に回避する6つの置換クラスの計数を行い、最初の2つの予想を肯定した。さらに、非包含対合への Biane の全単射や 321 回避置換から Dyck path への Krattenthaler の全単射を用いて、残る予想を2通りの独立した手法で証明している。",
+          "keywords": [
+            "arrow pattern",
+            "permutation pattern",
+            "classical pattern",
+            "non-nesting involutions",
+            "Dyck paths"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「combinatorics on words」に密接に関連しています。置換のパターン回避の数え上げや全単射を用いた証明は、語の組合せ論における典型的な手法と深く関わっています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2607.04530v1",
+        "http://arxiv.org/abs/2607.04493v1",
+        "http://arxiv.org/abs/2607.04453v1",
+        "http://arxiv.org/abs/2607.04421v1",
+        "http://arxiv.org/abs/2607.04300v1",
+        "http://arxiv.org/abs/2607.04187v1",
+        "http://arxiv.org/abs/2607.04174v1",
+        "http://arxiv.org/abs/2607.04111v1",
+        "http://arxiv.org/abs/2607.04094v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-07-08T05:31:20.224139+00:00",
-      "updated_at": "2026-07-08T06:43:58.574795+00:00",
-      "finalized_at": null
+      "updated_at": "2026-07-08T07:43:58.903751+00:00",
+      "finalized_at": "2026-07-08T07:43:58.903726+00:00"
     }
   ]
 }
