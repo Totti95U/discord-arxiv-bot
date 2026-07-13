@@ -85973,7 +85973,7 @@
     },
     {
       "pipeline_id": "20260713T054825Z-72a878fd",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/utqbnou6ig5tvm6u0aey9b8hnr9idn45dygk",
       "summarize_job_name": "batches/snv3up5p7sgfdjvz2gsrnl6qes0tuldb3jtx",
       "papers": [
@@ -86540,14 +86540,167 @@
         "http://arxiv.org/abs/2607.09245v1",
         "http://arxiv.org/abs/2607.09128v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2607.09618v1": {
+          "title": "区分的に滑らかなベクトル場におけるホモクリニック定理",
+          "summary": "本論文では、スライディング運動（sliding motion）を含まない区分的に滑らかなベクトル場に対して、Birkhoff-Smaleのホモクリニック定理およびλ-Lemmaの拡張を提示する。独立変数に関してT-周期的であり、かつ横断的なホモクリニック点を持つベクトル場において、そのtime-T-mapがベルヌーイ・シフトと共役であることを証明し、そのベクトル場がカオス的であることを示す。ここで考慮されるベルヌーイ・シフトは、任意の有限個または可算無限個の記号を持つことができる。",
+          "keywords": [
+            "Birkhoff-Smale Homoclinic Theorem",
+            "λ-Lemma",
+            "piecewise smooth vector fields",
+            "Bernoulli Shift",
+            "chaotic"
+          ],
+          "appendix": "本論文で証明されるベルヌーイ・シフトとの共役性は、興味ある分野の「symbolic dynamics」に直接関連しています。"
+        },
+        "http://arxiv.org/abs/2607.09564v1": {
+          "title": "アラカルトな双方向エラボレータ",
+          "summary": "Rocq、Lean、Agda、Idrisなどの証明アシスタントにおいて、暗黙的な記述を含む表面構文を明示的なコア構文へ変換するエラボレーション・アルゴリズムの正当性を保証する新しい手法を提案している。本論文では、正規形の表現や変換チェックのアルゴリズムから抽象化された、依存型付きモナディックDSLを導入した。このDSLを用いてMartin-Löf型理論のための双方向型付け言語をシャロー埋め込みすることで、構成的に正しく、かつ型理論の等価性や代入に対して安定なエラボレーションを実現している。最終的に、Martin-Löf型理論の自然モデルから構築された層モデルを用いて、具体的なアルゴリズムを代数的に抽出している。",
+          "keywords": [
+            "Bidirectional elaboration",
+            "Correct-by-construction",
+            "Monadic DSL",
+            "Martin-Löf type theory",
+            "Presheaf model"
+          ],
+          "appendix": "本論文は型理論および形式言語（formal languages）の設計に関わっており、証明アシスタントの核となる変換アルゴリズムの数学的基盤を提供しています。"
+        },
+        "http://arxiv.org/abs/2607.09558v1": {
+          "title": "Semilinear Inductive InvariantsによるBranching Vector Addition Systemsの可到達性問題の解決",
+          "summary": "本論文は、長年の未解決問題であったBranching Vector Addition Systems (BVAS) の可到達性問題を解決した。著者らは、BVASの構成要素が到達不能である場合、その構成要素を含まない半線形集合（semilinear set）としての誘導不変量が存在することを証明した。この性質に基づき、BVASの可到達性問題を解くための非常に単純な列挙型アルゴリズムを導出している。",
+          "keywords": [
+            "branching vector addition systems",
+            "reachability problem",
+            "semilinear inductive invariants",
+            "semilinear set"
+          ],
+          "appendix": "この論文は、計算機科学における数理モデルや計算理論に関わっており、automata theoryおよびformal languagesの分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.09534v1": {
+          "title": "不定な因果順序を持つ高階プログラム：量子プロセスのコヒーレント制御への線形アプローチ",
+          "summary": "量子スイッチに代表される不定な因果順序（ICO）は、量子操作の実行順序を重ね合わせる高階量子プロセスである。本論文では、ユニタリ操作に限定されず、任意の量子チャネルに対してコヒーレント制御を定義可能な線形型システムを備えた高階量子関数型言語を提案している。この言語は、デバイス参照を用いた操作的意味論と、因果的カテゴリCaus[CPM]に基づく表示的意味論を持ち、物理的に意味のある写像のみを静的に保証する。第一階で全量子チャネルを、第二階で量子スイッチを含む量子制御付き量子回路（QC-QCs）の広範なサブクラスを表現可能であり、再帰を含む非線形系への拡張性も備えている。",
+          "keywords": [
+            "Indefinite Causal Order",
+            "Quantum Switch",
+            "Higher-order quantum programming",
+            "Linear type system",
+            "Causal category"
+          ],
+          "appendix": "本研究は新しい量子プログラミング言語の型システムと意味論を構築しており、提示された興味ある分野のうち「formal languages」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.09469v1": {
+          "title": "グラフ状態をクラスタリングするための組合せ論的フレームワーク：rank-integrityに対するアルゴリズムと困難性",
+          "summary": "本論文では、同一の量子ビット集合上にある2つのグラフ状態 |G⟩ と |G'⟩ の間の新しい距離尺度を提案する。この距離は、1量子ビットのCliffordゲート、Pauli測定、および古典通信を用いて両状態を容易に生成可能なグラフ状態 |Ĝ⟩ に必要な補助量子ビットの最小数として定義される。この尺度はvertex-minorsを用いたグラフ理論的記述が可能であり、グラフ編集距離問題の量子ネットワーク版としての側面を持つ。この枠組みを用いて、グラフ状態内の「高エンタングル・クラスター」を特定するアルゴリズムを開発した。特に関連するrank-integrity問題（GF(2)上の隣接行列の和の最小ランクに基づく問題）について、パラメータkに関してXPであること、およびW[1]-困難であることを示した。また、k=1の場合の ancilla integrity に対して O(n⁶) 時間のアルゴリズムを提示した。",
+          "keywords": [
+            "graph states",
+            "vertex-minors",
+            "rank-integrity",
+            "quantum network",
+            "ancilla integrity"
+          ],
+          "appendix": "本論文は、グラフ理論的な組合せ論の手法を量子状態の解析に適用しており、指定された「興味ある分野」とは直接的な重なりはありませんが、計算複雑性やグラフ構造の解析という観点で数学的基礎を共有しています。"
+        },
+        "http://arxiv.org/abs/2607.09394v1": {
+          "title": "力学系における相転移の豊富さについて",
+          "summary": "本研究では、離散時間および連続時間力学系において相転移を引き起こすメカニズムを調査し、相転移を示すヘルダー連続なポテンシャルの存在を導く単純なトポロジー的条件を証明した。その結果として、多くのシナリオにおいて相転移が典型的であることを示している。具体的には、C¹級微分同相写像およびC¹級ベクトル場において、非推移的な系の間で相転移がジェネリックであることを示した。低次元においては、非アノソフ系において相転移がジェネリックであると結論付けた。さらにC⁰級の設定では、4次元以外の任意のコンパクトな位相多様体上で、相転移を示す有限エントロピーを持つホームオモルフィズムの集合が稠密に存在することを証明した。",
+          "keywords": [
+            "Phase Transitions",
+            "Dynamical Systems",
+            "Hölder continuous potentials",
+            "C¹ diffeomorphisms",
+            "Generic properties"
+          ],
+          "appendix": "複素力学系（complex dynamics）における相転移や、力学系の構造に関連する研究であり、興味ある分野と密接に関わっています。"
+        },
+        "http://arxiv.org/abs/2607.09376v1": {
+          "title": "重み付き二進数桁和のハンケル行列式",
+          "summary": "任意の複素重み配列 w = (w_j)ⱼ ≥ ₀ に関連付けられた重み付き二進数桁和関数 s_w について、ハンケル行列式 H_w(n) = det [s_w(i+j)]₀ ≤ i,j < n を調査し、すべての n に対して H_w(n) を効率的に計算できる一般的な漸化式を導出している。通常の二進数桁和 (w_j=1) に適用することで、Allouche と Shallit によって提示された問題の一部を解決する、H_w(⌈2ᵏ⁺²/3⌉) = (-1)^{(k+2)(k+3)/2}(k+1) などの簡潔な閉形式の公式を得ている。また、重みが w_j = tʲ の場合の多項式としての性質や零点の分布、さらには s_w の階差に関するハンケル行列式の積公式についても論じている。",
+          "keywords": [
+            "Hankel determinants",
+            "binary sum-of-digits",
+            "weighted sum-of-digits",
+            "period-doubling sequence"
+          ],
+          "appendix": "本論文は、数論的関数や数列の組み合わせ論的性質を扱っており、combinatorics on words や automata theory の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.09358v1": {
+          "title": "IP_rat多項式回帰と大きな共通部分",
+          "summary": "本論文では、有理的に独立な非線形整数値多項式列 p₁, ..., pₖ に対し、任意の集合 E ⊆ ℕ、フェルナー列 Φ、および ε > 0 について、共通部分 E ∩ (E + p₁(n)) ∩ ... ∩ (E + pₖ(n)) の密度が d_Φ(E)ᵏ⁺¹ - ε を超えるような n の集合が、有理スペクトルを持つ列によって生成される任意のIP集合と交差することを示した。この手法は、IP集合に沿った多重エルゴード多項式平均の特性因子（characteristic factors）の解析を含んでいる。また、その帰結として、有理スペクトルを持つIP集合に沿った多項式平均の各点収束定理を証明し、Leibmanによる先行研究の結果を一般化した。",
+          "keywords": [
+            "IP_rat-polynomial recurrence",
+            "large intersections",
+            "ergodic polynomial averages",
+            "characteristic factors",
+            "pointwise convergence"
+          ],
+          "appendix": "本論文はエルゴード理論における回帰や密度の問題を扱っており、関連分野として symbolic dynamics や arithmetic dynamics と深い関わりがあります。"
+        },
+        "http://arxiv.org/abs/2607.09314v1": {
+          "title": "動的環境下における多型Galton-Watson過程",
+          "summary": "環境が力学系 (X, T) に従って変化する、動的環境における多型Galton-Watson過程のモデルを定義し、その性質を分析した。この過程には「一様劣臨界」「臨界」「一様超臨界」という3つの挙動が存在することを示し、それぞれのレジームを判定するための基準を提示している。また、一様超臨界ケースにおける絶滅確率 q の連続性についても詳細な検討を行っている。",
+          "keywords": [
+            "multi-type Galton-Watson processes",
+            "dynamical environments",
+            "dynamical system",
+            "probability of extinction"
+          ],
+          "appendix": "この論文は、環境の変化を記述するために力学系 (X, T) を用いており、興味ある分野の中では symbolic dynamics や complex dynamics との関連性が高いと考えられます。"
+        },
+        "http://arxiv.org/abs/2607.09283v1": {
+          "title": "グラフの点推移的閉包",
+          "summary": "本論文では、グラフ Γ と同一の頂点集合を持ち、点推移的であるような拡大グラフである「点推移的閉包」について研究している。グラフ Γ の点推移数 dᵥₜ(Γ) を、そのグラフの点推移的閉包が存在する最小の次数（正則度）として定義し、代数的および組合せ論的な手法を用いて、点推移的閉包および点推移数に関する諸性質を明らかにしている。",
+          "keywords": [
+            "Vertex-transitive closure",
+            "Vertex-transitive number",
+            "Algebraic methods",
+            "Combinatorial methods"
+          ],
+          "appendix": "本論文は代数的および組合せ論的な手法を用いてグラフの対称性を扱っており、興味ある分野のうち「structure of large countable infinite group」に関連する群の作用や、広義の組合せ論に関わります。"
+        },
+        "http://arxiv.org/abs/2607.09245v1": {
+          "title": "k-一様ハイパーグラフにおけるハミルトン ℓ-サイクルの余次数閾値について",
+          "summary": "k-一様ハイパーグラフにおけるハミルトン ℓ-サイクルの余次数（codegree）閾値に関するHanおよびZhaoの予想の未解決ケースを解決した論文。具体的には、k ≥ 3, 3k/4 ≤ ℓ < k かつ k ≢ 0 (mod k-ℓ) の条件下で、頂点数 n が十分に大きく k-ℓ で割り切れる場合、最小余次数 δₖ₋₁(H) ≥ n / ((k-ℓ) ⌈k/(k-ℓ)⌉) を満たす n-頂点 k-一様ハイパーグラフ H はハミルトン ℓ-サイクルを持つことを示した。本研究はGan, Han, Xuの枠組みに基づき、その議論を洗練させることで、正確な閾値においてハミルトンサイクルを構成するために必要なパスの族を特定している。",
+          "keywords": [
+            "Hamilton ℓ-cycles",
+            "k-uniform hypergraphs",
+            "codegree threshold",
+            "Han and Zhao conjecture"
+          ],
+          "appendix": "この論文は極値組合せ論における重要な未解決課題を扱っており、指定された興味ある分野の中では『combinatorics on words』と広義の組合せ論的性質において関連します。ハイパーグラフ上の構造的な問題は、記号力学系やオートマトン理論におけるパスやサイクルの理論的基礎とも通底する部分があります。"
+        },
+        "http://arxiv.org/abs/2607.09128v1": {
+          "title": "完全な抽象解釈の帰納論的構造：捕捉困難だが被覆可能",
+          "summary": "抽象解釈における局所的完全性と不完全性を帰納論的観点から研究した論文である。局所的完全性とは、特定の事前条件において抽象計算が精度の損失なく具体的計算の抽象化と一致する性質を指し、検証における偽陽性の排除を可能にする。本論文では、非自明な抽象ドメインに対して局所的完全性を導くプログラムのクラスが、帰納論的な意味で「捕捉困難（elusive）」な集合、すなわち計算列挙不可能な生産的集合であることを示した。このクラスは算術的階層の Π⁰₂ に、その補集合は Σ⁰₂ に属する。一方で、これらのクラスが決定可能な被覆（decidable coverings）を許容するという性質を利用し、プログラム変換を通じて、内側からは列挙不可能なクラスを外側から完全にカバーする代表的なプログラムの部分集合を有効に列挙できることを明らかにしている。",
+          "keywords": [
+            "abstract interpretation",
+            "local completeness",
+            "recursion theory",
+            "productive sets",
+            "decidable coverings"
+          ],
+          "appendix": "本論文は計算論的側面からプログラム解析の基礎理論を扱っており、提示された興味ある分野の中では automata theory や formal languages と理論的な背景で関連を持ちますが、主眼は抽象解釈の完全性に関する帰納論的性質の解明にあります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2607.09618v1",
+        "http://arxiv.org/abs/2607.09564v1",
+        "http://arxiv.org/abs/2607.09558v1",
+        "http://arxiv.org/abs/2607.09534v1",
+        "http://arxiv.org/abs/2607.09469v1",
+        "http://arxiv.org/abs/2607.09394v1",
+        "http://arxiv.org/abs/2607.09376v1",
+        "http://arxiv.org/abs/2607.09358v1",
+        "http://arxiv.org/abs/2607.09314v1",
+        "http://arxiv.org/abs/2607.09283v1",
+        "http://arxiv.org/abs/2607.09245v1",
+        "http://arxiv.org/abs/2607.09128v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-07-13T05:48:25.442483+00:00",
-      "updated_at": "2026-07-13T08:11:39.958575+00:00",
-      "finalized_at": null
+      "updated_at": "2026-07-13T11:35:23.266166+00:00",
+      "finalized_at": "2026-07-13T11:35:23.266144+00:00"
     }
   ]
 }
