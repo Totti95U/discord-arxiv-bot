@@ -3,7 +3,7 @@
   "jobs": [
     {
       "pipeline_id": "20260716T052017Z-a9b5a517",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/g7jdpxzro7y1qo10v23rse6gz7r6sk5ugq04",
       "summarize_job_name": "batches/qkh6u7osbmdr2o86alokk9zmmrrrvurb8xhh",
       "papers": [
@@ -919,14 +919,326 @@
         "http://arxiv.org/abs/2607.11171v1",
         "http://arxiv.org/abs/2607.11033v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2607.12192v2": {
+          "title": "単位円上の特徴付けられた部分群",
+          "summary": "ω上のイデアル ℐ に対し、整数列 a=(aₙ) を用いて ℐ-limₙ→∞ aₙx = 0 を満たす単位円 𝕋 上の部分群を「ℐ-特徴付けられた部分群」と定義し、その位相的・代数的性質を分析している。本論文では、これらの部分群の位相的複雑さの上界をイデアルの複雑さに基づき提供し、Rudin-Keisler 簡約や Rudin-Blass 簡約が部分群の包含関係を誘導することを示した。また、痩せたイデアル (meager ideal) において全ての可算部分群が特徴付け可能であることや、Hₐ(ℐ) = 𝕋 が supp(a) ∈ ℐ を導くための条件を、ℰ𝒟 や nwd、null を含むイデアルのクラスに対して証明し、既存の未解決問題に対して複数の回答を与えている。",
+          "keywords": [
+            "characterized subgroups",
+            "ideals on ω",
+            "topological complexity",
+            "unit circle",
+            "Rudin-Keisler reduction"
+          ],
+          "appendix": "本論文は単位円上の部分群の構造と位相的性質、およびイデアルによる収束の記述を扱っており、興味ある分野のうち「structure of large countable infinite group」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.12170v1": {
+          "title": "アルゴリズム・デバッグのための小さな定量的オートマトンのランダム生成",
+          "summary": "定量的オートマトンの解析アルゴリズムは複雑で検証が困難であり、既存のベンチマークやランダム生成手法では微細な実装バグの発見が難しい。本論文では、1) 非退化な定量的オートマトンをランダムに生成し、2) 対象の性質をテストし、3) 違反を局所最適まで縮小（シュリンク）して簡潔な反例を得るフレームワークを提案した。これをパラメトリック・タイムド・オートマトン (PTA) 用のモデルチェッカー IMITATOR に適用した結果、5つの未知のバグを発見し、そのうち1つはわずか2ロケーション・1遷移という極めて小さな反例により特定された。",
+          "keywords": [
+            "Quantitative automata",
+            "Random generation",
+            "Parametric Timed Automata",
+            "Algorithm debugging",
+            "IMITATOR"
+          ],
+          "appendix": "本論文は「automata theory」に深く関連しています。定量的オートマトンやパラメトリック・タイムド・オートマトンといった理論的モデルの解析および検証アルゴリズムの信頼性を高める手法を提案しています。"
+        },
+        "http://arxiv.org/abs/2607.12078v1": {
+          "title": "完全到達可能道路彩色問題",
+          "summary": "本論文では、有向グラフの枝を有限アルファベットの文字でラベル付けした際に、結果として得られるラベル付き有向グラフが「完全到達可能オートマトン（completely reachable automaton）」となるための条件を決定している。このような有向グラフは多項式時間で認識可能であるが、ラベルアルファベットのサイズが固定されている場合は、その判定問題がNP完全になることを示した。さらに、すべての枝のラベル付けが完全到達可能オートマトンとなるような有向グラフの分類も行っている。",
+          "keywords": [
+            "edge labeling",
+            "completely reachable automaton",
+            "digraphs",
+            "NP-complete",
+            "road coloring"
+          ],
+          "appendix": "この論文は「automata theory」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.12069v1": {
+          "title": "nilpotent群に対する非可換Floquet--Bloch理論：表現論的基礎",
+          "summary": "古典的なFloquet--Bloch理論は可換格子上の周期問題を指標トーラス上で分解するが、非可換なnilpotent格子においては、non-type Iという障害によりユニタリ双対を同様にパラメータ化することが困難である。本論文では、この障害を回避するのではなく、有理Kirillovデータと有限次元有理ファイバーから得られる表現論的部分において、厳密なBloch型の代替構造を構築する。具体的には、捩れのない有限生成nilpotent群ΓとそのMalcev完備化Gに対し、有理Kirillovパラメータに付随するGの既約ユニタリ表現πₗのΓへの制限定理を証明する。この分解は有理偏極に付随する誘導表現によって記述され、さらに有限次元既約表現へと分解される。また、有限次元有理ファイバー上に正の有限加法的Plancherel測度を構成し、nilpotent格子におけるフーリエ逆変換と正規化トレース恒等式を導出した。",
+          "keywords": [
+            "nilpotent groups",
+            "Floquet--Bloch theory",
+            "representation theory",
+            "Kirillov data",
+            "Plancherel measure"
+          ],
+          "appendix": "本論文は、有限生成nilpotent群という離散群の表現論的構造を扱っている点において「structure of large countable infinite group」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.12026v1": {
+          "title": "対称性のグラフ的性質の学習",
+          "summary": "有限群の代数的構造を反映するケイリーグラフの幾何学的性質を、機械学習や統計的解析を通じて調査した研究である。位数767以下（512を除く）の全群を網羅する131,406個のケイリーグラフからなるデータセットを構築し、グラフ、サイクル、距離、スペクトル統計量などのデータを記録した。このデータセットにより、モノリシック群や特定の生成元数を持つ群に関する新しい数列をOEISに寄与させたほか、冪零群のスペクトルギャップやグラフの無秩序度に関する新たな推測を導出している。さらに、多層パーセプトロン(MLP)やグラフニューラルネットワーク(GNN)を用いてケイリーグラフから代数的性質を予測する実験を行い、GINやGCNなどのグラフ特化型アーキテクチャが構造的シグナルを効果的に学習できることを示した。",
+          "keywords": [
+            "Cayley graphs",
+            "Finite groups",
+            "Graph Neural Networks",
+            "Graph statistics"
+          ],
+          "appendix": "本論文は有限群の構造をグラフ理論的に解析しており、興味ある分野のうち「structure of large countable infinite group」の基礎となる有限構造の研究や、数え上げに関する「combinatorics」の側面に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.11775v1": {
+          "title": "外部自己同型群が自明な捩れのない超可解群",
+          "summary": "Kourovka Notebookの問題13.23に対する否定的な解決を与える研究である。Hirsch長が14であり、1 = G₀ ◁ G₁ ◁ ... ◁ G₁₄ = G という、各項 Gᵢ が G の正規部分群かつ各剰余群が無限巡回群であるような有限列を持つ、捩れのない群 G を構成した。この群は、外部自己同型群 Out(G) が自明であるという特徴を持つ。",
+          "keywords": [
+            "Kourovka Notebook",
+            "Torsion-free group",
+            "Supersoluble group",
+            "Hirsch length",
+            "Outer automorphism group"
+          ],
+          "appendix": "この論文は、特定の性質を持つ無限群の構成を扱っており、[興味ある分野]の「structure of large countable infinite group」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.11752v1": {
+          "title": "ゲーム理論的均衡のパラドックスと Price of Anarchy",
+          "summary": "本論文は、アルゴリズム的ゲーム理論の基盤である静的な解概念（ナッシュ均衡、相関均衡、粗相関均衡）と Price of Anarchy (PoA) の限界を指摘している。まず、ナッシュ均衡がベクトル場の情報を欠くため、最悪ケースの均衡が位相的に不安定な鞍点やリペラーとして現れることを示し、PoAの代数的感度や非有界性を証明した。また、後悔最小化アルゴリズムによる学習過程が、厳密に支配された戦略やカオス的な挙動を排除できないことを明らかにした。さらに、非原子的な混雑ゲームにおいて、離散時間学習下では唯一の均衡が Li-Yorke カオスへと不安定化し、時間平均された非効率性が多項式の次数に対して指数関数的に悪化することを証明している。",
+          "keywords": [
+            "Price of Anarchy",
+            "Nash Equilibria",
+            "No-regret learning",
+            "Li-Yorke chaos",
+            "Congestion games"
+          ],
+          "appendix": "本論文は、力学系におけるカオス的な挙動や不安定性を扱っており、[興味ある分野]のうち complex dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.11748v1": {
+          "title": "不変カントール集合の外側でアフィン力学系を持つC¹級のDenjoyの例",
+          "summary": "任意の無理数に対して、その無理数を回転数とし、かつ例外的な極小集合（カントール集合）の補集合に含まれる各区間上で厳密にアフィンとなるような、C¹級のDenjoyの例を構成している。",
+          "keywords": [
+            "Denjoy example",
+            "rotation number",
+            "affine dynamics",
+            "exceptional minimal set",
+            "C¹ class"
+          ],
+          "appendix": "本論文は、円周上の同相写像や不変集合の構造を扱う symbolic dynamics および complex dynamics の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.11709v1": {
+          "title": "並進不変な全順序（TITO）のための計算ツール",
+          "summary": "本論文では、並進不変な全順序（Translation-Invariant Total Orders; TITOs）の表現と計算を行うソフトウェアパッケージ「TITO_Explore」を提案している。TITOの標準的なウィンドウ表記を定義し、与えられたTITOの正規化、反転集合（inversion set）の計算、2つのTITO間の弱順序（weak order）の比較、および結び（join）の算出を行うアルゴリズムを実装した。特に弱順序の比較は反転集合を互いに素な部分集合に分割することで効率化し、結びの算出はエッジ重み付き有向グラフ上の経路問題に帰着させて解いている。",
+          "keywords": [
+            "Translation-Invariant Total Orders",
+            "inversion set",
+            "weak order",
+            "join algorithm",
+            "TITO_Explore"
+          ],
+          "appendix": "この論文は、語の組合せ論（combinatorics on words）に関連する全順序の構造を扱っており、組合せ論的側面において興味ある分野と関連しています。"
+        },
+        "http://arxiv.org/abs/2607.11616v1": {
+          "title": "C¹ 級のエキゾチックな Denjoy の例",
+          "summary": "本論文では、不変なカントール極小集合を持つ円周上の C¹ 級同相写像を構成しています。この構成において、カントール集合の補集合の連結成分の長さを降順に並べた際、隣接する成分の長さの比が 1 に収束しないという性質を持っています。これは、Dusa McDuff によって提示された長年の問いに対する否定的な解答を与えるものです。",
+          "keywords": [
+            "C¹-diffeomorphism",
+            "Denjoy example",
+            "invariant Cantor minimal set",
+            "circle diffeomorphism"
+          ],
+          "appendix": "本論文は symbolic dynamics と密接に関連する円周上の同相写像およびカントール集合の構造を扱っています。"
+        },
+        "http://arxiv.org/abs/2607.11605v1": {
+          "title": "p-群のリース積におけるエンゲル確率",
+          "summary": "本論文では、群 Wₖ = (Cₚ ≀ Cₚᵏ)² における第nエンゲル語の方程式 eₙ(x, y) = g の解の個数について、その上下界を導出しました。この結果から、Wₖ におけるエンゲル語に対する Amit-Ashurst 予想の強化版を証明しました。また、任意の大きさのリース積の商 Wₖ を持つ副有限群において、エンゲル語が確率的恒等式にならないことを示しました。最後に、(Cₚ ≀ ℤₚ)² の閉部分集合であって、正のハール測度を持ち、内部が空であり、かつエンゲル語写像の逆像となるものを構成しました。",
+          "keywords": [
+            "Engel word",
+            "wreath product",
+            "p-group",
+            "Amit-Ashurst conjecture",
+            "Haar measure"
+          ],
+          "appendix": "本論文は副有限群の商や無限リース積の構造を扱っており、興味ある分野の「structure of large countable infinite group」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.11549v1": {
+          "title": "正のRokhlinエントロピーは無限L¹オービット多重度を導く：Thouvenotの問いへの否定的な回答",
+          "summary": "可算無限アメナブル群の自由なエルゴード的測度保存作用において、正のRokhlinエントロピーが無限の複素L¹オービット多重度（L¹およびその平均ゼロ部分空間L¹₀の両方において）を導くことを証明した。これはIwanikによって記録されたJ.-P. Thouvenotの問いに対する否定的な回答であり、正のエントロピーがp > 1に対して無限Lᵖ多重度を導くというIwanikの定理を、p = 1の端点の場合へと拡張するものである。証明には、独立乱数に対するMalykhinの剛性定理、SewardのBernoulli因子定理、およびFølner集合を用いた議論が組み合わされている。",
+          "keywords": [
+            "Rokhlin entropy",
+            "L¹-orbit multiplicity",
+            "amenable group",
+            "Bernoulli factor theorem",
+            "ergodic measure-preserving action"
+          ],
+          "appendix": "可算無限アメナブル群の構造やその作用を扱っているため、興味ある分野の「structure of large countable infinite group」に関連があります。"
+        },
+        "http://arxiv.org/abs/2607.11525v1": {
+          "title": "純同質的アーベル群",
+          "summary": "純埋め込み（pure embeddings）を備えたアーベル群のFraïsséクラスについて研究している。有限共生成群、有限群、およびκ（強到達不能基数）未満の濃度の群に対し、普遍的かつ同質なアーベル群の特性付けを行っている。",
+          "keywords": [
+            "Fraïssé classes",
+            "Abelian groups",
+            "pure embeddings",
+            "universal and homogeneous groups",
+            "finitely co-generated groups"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野と関連しており、無限群の構造をFraïssé理論の観点から記述しています。"
+        },
+        "http://arxiv.org/abs/2607.11482v1": {
+          "title": "アーベル被覆上の自己相似な変換流とMaharam-Pollicott-Ruelle共鳴",
+          "summary": "本論文では、コンパクトな変換曲面のℤᵈ被覆における自己相似な変換流について、一般のMaharam測度に関するエルゴード的性質を研究しています。そのために、異方的な分布空間上で作用する擬アノソフ写像に関連した捻れ転移作用素の族を用いた、新しい繰り込み手法を開発しました。これらの作用素の離散スペクトルを、適切な捻れコホモロジー群上での擬アノソフ写像の作用として記述しています。また、周辺固有値に対応する双対作用素の共鳴状態が、変換流の下で不変なMaharam分布を導くことを示し、これらをMaharam-Pollicott-Ruelle共鳴と定義しました。応用として、平滑な観測量のエルゴード積分の漸近公式、Frobeniusコサイクルの中心極限定理、およびMaharam測度のハウスドルフ次元の計算結果を提供しています。",
+          "keywords": [
+            "Maharam-Pollicott-Ruelle resonances",
+            "self-similar translation flows",
+            "abelian covers",
+            "pseudo-Anosov map",
+            "Maharam measures"
+          ],
+          "appendix": "この論文は、自己相似な力学系や変換流の性質を扱っており、symbolic dynamicsやcomplex dynamicsの分野と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.11408v1": {
+          "title": "セクター繰り込みの組合せ論",
+          "summary": "本稿は、剛体回転におけるセクター繰り込み操作の基本的な算術的・組合せ論的性質を体系的に構築することを目的としている。セクター繰り込みに適した修正連分数展開の枠組みを採用し、その性質を分析する。この枠組みでは、第一回帰時間を無限に許容することで、普遍性によって特徴付けられる力学的なコンパクト化が得られる。また、対応する自然な延長や時間の（半）群の概念についても論じる。例として、無理回転のセクター繰り込みの双無限塔を、単一の力学的平面内における翻訳のカスケードとしてパッケージ化する方法を示す。本稿は、無理的な中立固定点を持つ正則写像、特に中立二次多項式の幾何学的性質を研究するための基礎的な組合せ論的ツールを提供する。",
+          "keywords": [
+            "sector renormalization",
+            "rigid rotations",
+            "modified continued fractions",
+            "dynamical compactification",
+            "natural extension"
+          ],
+          "appendix": "この論文は、中立二次多項式の幾何学的性質を扱う「complex dynamics」および連分数や無理回転を扱う「arithmetic dynamics」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.11404v1": {
+          "title": "計算可能なエルゴード最適化",
+          "summary": "物理システムと計算可能性の関連性を探求した研究であり、絶対零度のエルゴード最適化の文脈において、計算可能なポテンシャルと特定の条件下で最大エルゴード平均が計算可能実数となり、最大化測度の集合がΠ₁-計算可能コンパクト集合であることを証明している。また、記号力学系における有限型サブシフト上の有限範囲相互作用に焦点を当て、これらを有限時間で計算するための具体的なアルゴリズムを提案し、対応する実装コードも提供している。",
+          "keywords": [
+            "Ergodic optimisation",
+            "Computability",
+            "Symbolic dynamics",
+            "Subshifts of finite type",
+            "Maximum ergodic average"
+          ],
+          "appendix": "興味ある分野のうち、symbolic dynamics に直接関連する内容を含んでいます。また、具体的なアルゴリズムの提示という点で validated numerics とも親和性がある研究です。"
+        },
+        "http://arxiv.org/abs/2607.11360v1": {
+          "title": "グラフ的 C(4)-T(4) および C(6) 小標語複体に対する局所から大域への不動点性質",
+          "summary": "本論文では、古典的な小標語理論を拡張した「グラフ的小標語理論」を扱い、特に C(4)-T(4) および C(6) 条件を満たす提示によって定義される群の性質を調査している。著者らは、無限の可能性があるグラフ的 C(4)-T(4) 小標語提示で定義される群の捩れ部分群が有限であることを示した。また、C(6) 小標語提示においても、 torsion-essentially C(6)-free という追加条件下で同様の結果を証明した。これらの成果は、単連結なグラフ的小標語複体に作用する捩れ群の「局所から大域への不動点性質」に関するより一般的な結果から導かれている。",
+          "keywords": [
+            "graphical small cancellation",
+            "fixed point properties",
+            "torsion subgroups",
+            "C(4)-T(4) condition",
+            "C(6) condition"
+          ],
+          "appendix": "この論文は、巨大な可算無限群の構造 (structure of large countable infinite group) に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.11333v1": {
+          "title": "回転ラプラシアン行列のスペクトルを用いた有向グラフおよびマルコフ連鎖における概周期成分の検出",
+          "summary": "有向グラフのスペクトル近似に関する近年の進展に基づき、回転ラプラシアン行列（rotated Laplacian matrices）のスペクトルを用いて有向グラフ内の周期構造を検出するスペクトルアルゴリズムを研究している。Trevisanによる2部グラフ性（bipartiteness ratio）を一般化した「周期比（periodicity ratio）」という概念を導入し、これが回転ラプラシアン行列のスペクトルと密接に関連することを示した。特に強連結なマルコフ連鎖において、周期比は連鎖が周期 p を持つ状態にどれほど近いかを定量的に測定する指標となる。既存のスペクトルアルゴリズムの周期比変異版を提案・解析し、ランダム化多項式時間で多くの概周期成分（周期比が小さい成分）を検出できることを証明した。また、解析の過程で複素ガウス乱数に関する新しい不等式も導出している。",
+          "keywords": [
+            "digraphs",
+            "Markov chains",
+            "rotated Laplacian matrices",
+            "periodicity ratio",
+            "spectral algorithm"
+          ],
+          "appendix": "有向グラフの組合せ論的構造やスペクトル解析を扱っており、興味ある分野のうち combinatorics に関連する側面を含んでいます。"
+        },
+        "http://arxiv.org/abs/2607.11330v1": {
+          "title": "代数体における 𝔅-free 整数の固有エルゴード性",
+          "summary": "代数体 K の整数環 𝒪_K における Erdős 型のイデアル族 𝔅 に関連する 𝔅-free サブシフト (X_𝔅, (S_a)_{a∈𝒪_K}) が、固有エルゴード的（一意な最大エントロピー尺度を持つ）であることを証明した。この尺度は ∏_{𝔟∈𝔅} 𝒪_K/𝔟 上のハール回転の比較的独立な拡張として明示的に特定される。これは1次元を超える 𝔅-free システムに対する固有エルゴード性の最初の証明であり、格子点上の k-free/𝔅-free ケースや代数体上の k-free ケースも包含する。証明には、単一サイト相対エントロピー引数と、Peckner の induce-and-split スキームを正確なタイル貼りで実現する手法という、2つの独立したアプローチが用いられている。",
+          "keywords": [
+            "intrinsic ergodicity",
+            "𝔅-free integers",
+            "number fields",
+            "measure of maximal entropy",
+            "symbolic dynamics"
+          ],
+          "appendix": "本論文は symbolic dynamics および arithmetic dynamics の分野に関連しています。特に高次元の数論的サブシフトにおける力学的性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2607.11311v1": {
+          "title": "TSPにおける最適な連鎖密度、エントロピー、および時空トレードオフ",
+          "summary": "本論文は、集合系におけるサイズとフル・チェイン（全鎖）の数の間のトレードオフという極値集合論における重要な問題に対して、ほぼ最終的な解を与えている。この問題は、巡回セールスマン問題（TSP）に対するBellman-Held-Karp型の動的計画法アルゴリズムの空間・時間複雑性に関係しており、先行研究では空間と時間の積 γⁿ⁺ᵒ⁽ⁿ⁾ において 3.015 ≤ γ ≤ 3.572 であることが示されていた。著者らは、この組合せ論的問題を2つの乱数による「情報 vs エントロピー」のトレードオフとして再定式化することで、主双対証明書を用いた解析を可能にし、γ ≈ 3.1819 という実質的に最適な境界を導出した。これにより、空間と時間の積が O(3.1819ⁿ) となるTSPアルゴリズムの実現可能性が示されるとともに、この枠組みにおける改善の限界が明示された。また、副次的な成果としてブール格子のファイバーの最小サイズに関する境界の改善も行っている。",
+          "keywords": [
+            "Traveling Salesman Problem",
+            "Space-time tradeoff",
+            "Extremal combinatorics",
+            "Entropy",
+            "Set systems"
+          ],
+          "appendix": "興味ある分野のうち、組合せ論（Combinatorics）に深く関連しており、特に集合系や格子の構造解析という点で共通の関心を持ちます。また、エントロピーを用いた解析手法は Symbolic dynamics や複雑系の理論とも接点があります。"
+        },
+        "http://arxiv.org/abs/2607.11180v2": {
+          "title": "指数sの動的Borel-Cantelli補題と待ち時間問題",
+          "summary": "GalatoloとKimによって示された、減少する球の列に対する動的Borel-Cantelli特性と待ち時間問題の間の密接な関係を、Tsengが導入した指数sの設定へと拡張した。s ≥ 1において、s-指数単調収縮ターゲット特性（sMSTP）は、より強い発散条件 Σₙ μ(Bₙ)ˢ = ∞ を満たす中心を持つ球の減少列に対してのみBorel-Cantelliの結論を要求する。本論文では、sMSTPが、-log μ(B(y, r))のスケールで測定される下限待ち時間指数をほとんど至る所で [1, s] の範囲に強制することを証明した。また、この特性の定量的な形式（s-strong）が上限指数をsで抑えること、および逆に指数sの待ち時間推定が、臨界発散指数sに一致する校正された減衰条件に従う球の減少列に対するBorel-Cantelli特性を導くことを示した。さらに、β < 1/(s d̲_μ(y)) に対する定量的な軌道近似の言明 liminfₙ nᵝ d(Tⁿx, y) = 0 を導出し、指数1の普遍的な下限が理論を s ≥ 1 に固定することを確認し、円周回転におけるディオファントス型との関連についても議論している。",
+          "keywords": [
+            "dynamical Borel-Cantelli lemma",
+            "waiting time problem",
+            "shrinking target property",
+            "orbit approximation",
+            "Diophantine type"
+          ],
+          "appendix": "本論文は力学系における収縮ターゲット問題や軌道の統計的性質を扱っており、興味ある分野のうち complex dynamics や arithmetic dynamics の解析手法（特にディオファントス近似に関連する側面）と数学的な関連性があります。"
+        },
+        "http://arxiv.org/abs/2607.11178v1": {
+          "title": "Gaussian整数およびEisenstein整数による一様近似に対する0-1法則",
+          "summary": "ガウス整数およびアイゼンシュタイン整数の商による複素数の一様ディオファントス近似に関する、2つの異なる0-1法則を確立した。等質力学系の手法を用い、SL₂(ℂ)の等質空間における収縮標的問題（shrinking target problem）へと帰着させて解析を行っている。主要な成果として、対応する臨界軌跡の近傍における測度評価、および短距離混合の寄与を制御するための新しい非交差性の主張が挙げられる。ガウス整数とアイゼンシュタイン整数の場合で臨界軌跡の性質が異なるため、これらの測度評価はそれぞれ異なる議論によって導出されている。",
+          "keywords": [
+            "zero-one laws",
+            "uniform Diophantine approximation",
+            "Gaussian integers",
+            "Eisenstein integers",
+            "homogeneous dynamics"
+          ],
+          "appendix": "複素数の一様近似やSL₂(ℂ)上の力学系を扱っていることから、complex dynamicsおよびarithmetic dynamicsに関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2607.11171v1": {
+          "title": "距離空間上のいくつかのコホモロジー的にC⁰安定な連続群作用の分類",
+          "summary": "Katokによって導入された、実C⁰コバウンダリの空間がC⁰(M)において閉集合となる「コホモロジー的C⁰安定性」の概念を、有限生成群による作用へと拡張し分類した。Kocsardによる単一の同相写像が周期的な場合に限るという結果を一般化し、任意の有限生成群作用 α: G → Homeo(M) がコホモロジー的C⁰安定であるための必要十分条件は、その像 α(G) が有限群であることであることを示した。本研究では、非アメナブル作用におけるスペクトルギャップ現象が、HölderやSobolev、L²範疇とは異なり一様ノルム（C⁰範疇）においては可視化されない理由を明らかにしている。また、滑らかな円周微分同相写像のℤᵏ作用におけるC∞安定性に関する予想についても議論している。",
+          "keywords": [
+            "cohomologically C⁰-stable",
+            "finitely generated group actions",
+            "coboundaries",
+            "spectral-gap phenomena",
+            "circle diffeomorphisms"
+          ],
+          "appendix": "この論文は、群作用の構造を扱っている点で「structure of large countable infinite group」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.11033v1": {
+          "title": "成分除去後のスパースなランダムグラフおよびパーコレーションされたトーラスにおける極限定理",
+          "summary": "成分の次数に基づいて枝刈りを行った非常にスパースなErdős-Rényiグラフ(pₙ=cₙ/n, cₙ→0)において、MSO₂の0-1法則が成立することを証明した。具体的には、次数がf(n)未満の成分を削除した際、f(n)(log f(n)+log(1/cₙ))=o(log n)という条件下で、頂点集合および辺集合上の量化を含むMSO₂論理式に対する0-1法則が示される。また、離散トーラスTₗᵈ上のボンドパーコレーションについても考察し、特定の閾値以下での枝刈りが0-1法則をもたらすことや、多項式領域における収束法則と0-1法則の境界を明らかにした。さらに、MSO₁がトーラスの辺の長さの偶奇を二部グラフ性を通じて検出できることを示し、決定論的な領域におけるモナディック収束の障害を特定した。",
+          "keywords": [
+            "Erdős-Rényi graph",
+            "MSO₂ zero-one law",
+            "percolated tori",
+            "limit laws",
+            "component-pruned"
+          ],
+          "appendix": "本論文は、グラフ理論的な構造を扱う点で興味ある分野のcombinatoricsに関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2607.12192v2",
+        "http://arxiv.org/abs/2607.12170v1",
+        "http://arxiv.org/abs/2607.12078v1",
+        "http://arxiv.org/abs/2607.12069v1",
+        "http://arxiv.org/abs/2607.12026v1",
+        "http://arxiv.org/abs/2607.11775v1",
+        "http://arxiv.org/abs/2607.11752v1",
+        "http://arxiv.org/abs/2607.11748v1",
+        "http://arxiv.org/abs/2607.11709v1",
+        "http://arxiv.org/abs/2607.11616v1",
+        "http://arxiv.org/abs/2607.11605v1",
+        "http://arxiv.org/abs/2607.11549v1",
+        "http://arxiv.org/abs/2607.11525v1",
+        "http://arxiv.org/abs/2607.11482v1",
+        "http://arxiv.org/abs/2607.11408v1",
+        "http://arxiv.org/abs/2607.11404v1",
+        "http://arxiv.org/abs/2607.11360v1",
+        "http://arxiv.org/abs/2607.11333v1",
+        "http://arxiv.org/abs/2607.11330v1",
+        "http://arxiv.org/abs/2607.11311v1",
+        "http://arxiv.org/abs/2607.11180v2",
+        "http://arxiv.org/abs/2607.11178v1",
+        "http://arxiv.org/abs/2607.11171v1",
+        "http://arxiv.org/abs/2607.11033v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-07-16T05:20:17.122863+00:00",
-      "updated_at": "2026-07-16T07:34:10.874403+00:00",
-      "finalized_at": null
+      "updated_at": "2026-07-16T08:39:13.315984+00:00",
+      "finalized_at": "2026-07-16T08:39:13.315959+00:00"
     }
   ]
 }
