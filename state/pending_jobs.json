@@ -1242,7 +1242,7 @@
     },
     {
       "pipeline_id": "20260717T052252Z-758cc4bc",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/aa3j5pxrmc304g07hcqlknxfkbsyndskvlpa",
       "summarize_job_name": "batches/we6r31rg5t9prgwdzq0rklcvfgk90msfsdnc",
       "papers": [
@@ -1965,14 +1965,249 @@
         "http://arxiv.org/abs/2607.12411v1",
         "http://arxiv.org/abs/2607.13097v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2607.13316v1": {
+          "title": "ブレイド群とバーンサイド群",
+          "summary": "本論文では、代数学、トポロジー、および幾何学における多くの興味深い構成に関連するブレイド群の例外的な商写像 Br₄ ↠ Br₃ について考察している。この商写像は、半ねじり生成元にねじれ関係式を加えた「切り詰められた（truncated）」ブレイド群の間の商写像 Br₄(d) ↠ Br₃(d) へと誘導される。著者らは、この切り詰められた商写像の核の表示が「原始的（primitive）」バーンサイド群と呼ばれる形式を持つことを見出し、それらの有限性に関するいくつかの結果を示した。手法は純粋に群論的なものであるが、最後にレフシェッツ・フィブレーションを伴う解釈についても言及している。",
+          "keywords": [
+            "Braid groups",
+            "Burnside groups",
+            "Truncated braid groups",
+            "Lefschetz fibrations"
+          ],
+          "appendix": "本論文は、群の表示や有限性、および核の構造を扱っており、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.13295v1": {
+          "title": "Transformerの力学系について",
+          "summary": "リーマン多様体 M 上の相互作用する粒子系としてTransformerのトークン力学を記述する幾何学的枠組みを提案した。アテンション機構を多様体上の積空間 M × M における引き戻し束 π₂*(TM) の切断である二体相互作用則として定式化している。本研究では、Transformerが非局所的かつ非相反的な力を実現し、高次元多様体上のベクトル場を効率的にパラメータ化できることを示した。主要な定理として、多様体の次元に依存せずに任意の有向グラフ（アテンション・ダイグラフ）を実現可能な普遍的な相互作用則の族を導出した。また、この実現コストが多様体の次元 dim M ではなく、グラフの双クリック被覆数や hub-chromatic index といった組合せ論的不変量に依存することを解明した。",
+          "keywords": [
+            "Transformer dynamics",
+            "Riemannian manifold",
+            "attention mechanism",
+            "attention digraph",
+            "biclique cover number"
+          ],
+          "appendix": "本論文はアテンション機構をグラフ理論および力学系の視点から解析しており、興味ある分野のうち「combinatorics on words」に関連するグラフの組合せ論的性質や、「complex dynamics」に関連する多体系の力学モデルを扱っています。"
+        },
+        "http://arxiv.org/abs/2607.13271v1": {
+          "title": "k-copwinアルゴリズムの再現：理論と実装",
+          "summary": "Cops and Robbers（警官と泥棒）はグラフ理論や計算機科学で広く研究されている追跡・逃避ゲームであり、グラフを攻略するために必要な最小の警官の数（cop number）を特定することが中心的な課題である。本研究では、あるグラフがk-copwinであるかを効率的に判定するためにPetr, Portier, およびVersteegen（2022）が提案したアルゴリズムの再現に焦点を当て、Pythonによる実装の詳細を提示する。また、アルゴリズムの重要な側面を明確化し、将来の実用的な展開に向けた示唆についても議論している。",
+          "keywords": [
+            "Cops and Robbers",
+            "cop number",
+            "k-copwin algorithm",
+            "graph theory",
+            "Python implementation"
+          ],
+          "appendix": "本論文はグラフ理論および計算機科学の理論に関連しており、アルゴリズムの実装と検証に焦点を当てています。"
+        },
+        "http://arxiv.org/abs/2607.13225v1": {
+          "title": "グラフパズル III.1：Sabidussiの両立性予想の証明",
+          "summary": "本論文はSabidussiの両立性予想（compatibility conjecture）を証明するものである。最小次数が4以上ですべての頂点の次数が偶数である有限連結マルチグラフGにおいて、すべての辺を一度だけ通る閉じたトレイル（オイラー・トレイル）Tが与えられたとき、Tにおいて連続して使用される2つの辺を同一の回路（連結な2-正則部分グラフ）に含まないように辺を回路分割できることを示した。さらに、辺を4色で彩色し、Tの連続する辺のペアが常に異なる色を持ち、かつ各色の辺によって形成される部分グラフが各頂点で偶数次数を持つように構成できることを証明した。また、Lean 4による形式化も行われている。",
+          "keywords": [
+            "Sabidussi's compatibility conjecture",
+            "multigraph",
+            "Eulerian trail",
+            "circuit partition",
+            "Lean 4"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「combinatorics on words」に関連するグラフの組合せ論を扱っています。また、定理の証明が定理証明支援系Lean 4によって形式化されている点も特筆すべき事項です。"
+        },
+        "http://arxiv.org/abs/2607.13208v1": {
+          "title": "彩色グラフおよび多色ジョンソングラフ上へのリー環 slₙ の作用",
+          "summary": "本論文では、N個の頂点からなる(n-1)色の彩色グラフの空間を、テンソル積空間 (ℂⁿ)⊗ᵐ (ただし m=N(N-1)/2) と同一視し、リー環 glₙ および slₙ の作用を考察している。特定のプロファイル α を持つ彩色グラフを頂点とし、2つのエッジ状態の単一交換を隣接関係とするグラフ J(m; α)（マルチスライス上の互換グラフ）について、その隣接作用素を slₙ のルート作用素を用いて表現した。さらに、glₙ の2次カシミール作用素とシューア・ワイル分解を用いることで、そのスペクトルを導出している。この隣接作用素は代数 Endₛₘ(𝒞_α) の中心に属し、各固有値の重複度はコストカ数とスペヒト加群の次元によって記述される。応用として、連結性の証明、独立集合に対するホフマン界の導出、および n=2 の場合の古典的ジョンソングラフの帰結などが示されている。",
+          "keywords": [
+            "Lie algebra slₙ",
+            "Multicolored Johnson graphs",
+            "Quadratic Casimir operator",
+            "Schur-Weyl decomposition",
+            "Multislice"
+          ],
+          "appendix": "本論文は、単語上の組合せ論 (combinatorics on words) に関連するマルチスライス上の置換グラフを扱っており、代数的組合せ論の観点から深い関連があります。"
+        },
+        "http://arxiv.org/abs/2607.13186v1": {
+          "title": "量子行列式の多項式時間における計算",
+          "summary": "本論文では、右量子行列のCayley行列式を多項式サイズで計算する代数的分岐プログラムを提示しています。これは非可換行列式の効率的な計算における稀な例であり、量子群に関しては初の成果です。さらに、q-右量子行列のq-Cayley行列式やその多パラメータ一般化に対しても結果を拡張しています。証明は完全に組合せ論的であり、語（words）に対する全単射や対合を用いることで、Cayley、Moore、Valiantの各式行列式の関係性を明らかにしています。最終的に、MahajanとVinay（SODA'97）による行列式構成法を適用することで多項式時間計算を実現しています。",
+          "keywords": [
+            "algebraic branching program",
+            "quantum determinant",
+            "quantum groups",
+            "combinatorics on words",
+            "noncommutative determinant"
+          ],
+          "appendix": "本論文は『combinatorics on words』の分野と深く関連しています。証明において、語（words）に対する全単射や対合といった組合せ論的な手法が中心的な役割を果たしているためです。"
+        },
+        "http://arxiv.org/abs/2607.12914v1": {
+          "title": "非自律系に対する離散時間一般化正準変換",
+          "summary": "本論文では、時間依存ハミルトン系（非自律系）を離散化するための、一般化正準変換に基づく幾何学的な手法が提案されています。標準的な数値積分法（オイラー法など）は、非自律系における余シンプレクティック体積やポアソン構造を保存できないという課題がありました。本手法では、拡張相空間 T*(Q × ℝ) 上のシンプレクティック同相写像を構築し、それを T*Q × ℝ へ射影することで構造保存的な離散流を定義します。これにより、各時刻のファイバーにおける体積形式、ポアソン括弧、およびシンプレクティック構造といった主要な不変量の保存が保証されます。",
+          "keywords": [
+            "non-autonomous Hamiltonian systems",
+            "generalized canonical transformations",
+            "cosymplectic geometry",
+            "structure-preserving integrator",
+            "extended phase space"
+          ],
+          "appendix": "本論文は、数値計算における構造保存（validated numerics）の観点から、興味ある分野と関連性があります。"
+        },
+        "http://arxiv.org/abs/2607.12873v1": {
+          "title": "交代順列のレコード組成と非可換対称関数",
+          "summary": "Amdeberhan、Shareshian、およびStanleyによって提案された、分割アイゼンシュタイン級数の理論に由来する関数の「レコード」分割に関する性質を、レコード組成（record composition）へと拡張した研究。交代順列 {1, ..., 2n} において、与えられたレコード組成 (α₁, ..., α_ℓ) を持つ順列の数が、オイラー数 E_k と二項係数の積 Π_{j=1}^{ℓ} binom(2sⱼ-1, 2αⱼ-1)E_{2αⱼ-1} （ここで sⱼ = α₁ + ... + αⱼ）で表されることを示した。この数値は、非可換対称関数の枠組みにおける第一種非可換べき乗和の展開係数として解釈される。また、これらの結果は対話型定理証明支援系Leanを用いて自律的に生成および検証されている。",
+          "keywords": [
+            "alternating permutations",
+            "record compositions",
+            "noncommutative symmetric functions",
+            "Euler number",
+            "sprout symmetric function"
+          ],
+          "appendix": "本論文は、交代順列や対称関数などの組合せ論的構造を扱っており、興味ある分野のうち「combinatorics on words」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.13117v1": {
+          "title": "再帰的ハイブリッド量子プログラムに対するグラフ級数意味論とアーベル正則化",
+          "summary": "量子オーケストラモナドによって解釈される再帰的なハイブリッド量子プログラムに対し、次数付きグラフ級数意味論を導入する。実行を古典的な結果を伴う有向路として表現し、継続の接ぎ木（continuation grafting）を用いて結果依存の逐次合成をモデル化する。有限再帰プログラムにおいて、次数nでのグラフ級数の打ち切りは、Scott連続な再帰汎関数の第nクリーネ近似に一致し、その評価は最小不動点表示を復元する。また、q=e⁻ᵗを用いたアーベル正則化により、t→0⁺の極限で元の表示を再構築する手法を提案し、フィードバック構造におけるフレドホルム行列式を用いた特異構成の検出についても論じる。",
+          "keywords": [
+            "recursive hybrid quantum programs",
+            "quantum orchestra monad",
+            "graph-series semantics",
+            "Abel regularization",
+            "Fredholm feedback determinant"
+          ],
+          "appendix": "本論文は再帰的な量子プログラムの形式意味論を扱っており、指定された興味ある分野（symbolic dynamics, automata theory 等）と直接的な関連性は認められません。計算理論および量子計算の数学的基礎に焦点を当てた内容です。"
+        },
+        "http://arxiv.org/abs/2607.12658v1": {
+          "title": "制御された証明探索のためのストラテジー言語",
+          "summary": "本論文では、推論規則と証明探索を明確に分離したメタ証明器「Pgeon」のストラテジー言語を提案している。ストラテジーを証明状態に対する関数として定義し、それらを逐次合成、選択、反復、およびインターリービング（交互配置）によって組み合わせる演算子の意味論を提示する。この言語は、深さ優先探索では完全性が保証されない半決定可能な論理において、公平な証明探索を実現するために設計されている。一階述語論理や様相論理を用いたケーススタディを通じて、この手法の表現力と有効性を示している。",
+          "keywords": [
+            "meta-prover",
+            "proof search",
+            "strategy language",
+            "semi-decidable logics",
+            "completeness"
+          ],
+          "appendix": "本論文は「automata theory」や「formal languages」の分野において、証明探索のアルゴリズム設計や言語の形式的意味論の観点から関連性を持つ可能性があります。"
+        },
+        "http://arxiv.org/abs/2607.12655v1": {
+          "title": "PVSにおける反単一化の完備性分析",
+          "summary": "本論文は、Prototype Verification System (PVS) を用いて、構文的反単一化（anti-unification）の推論規則に基づく関数型アルゴリズムの完備性を形式的に証明する過程を詳述している。反単一化は、項の共通点を見出し相違点を抽象化する手法であり、帰納的推論の自動化からコードクローンの検出、並列化などの多岐にわたる応用を持つ。本研究では、停止性と健全性の検証に関する先行研究を踏まえ、反単一化と単一化の形式化における重要な差異を強調しつつ、完全な形式的証明に必要な全側面を分析している。",
+          "keywords": [
+            "anti-unification",
+            "PVS",
+            "completeness",
+            "inference rules",
+            "syntactic anti-unification"
+          ],
+          "appendix": "本論文は、推論規則やアルゴリズムの形式的検証を扱っており、興味ある分野のうち「automata theory」や「formal languages」の基盤となる自動推論や形式手法に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.12654v1": {
+          "title": "証明論と依存型理論：証明支援系設計のための異なる基盤",
+          "summary": "本論文は、対話型証明支援系の設計における証明論と依存型理論（DTT）の基礎的な違いを検討している。現在多くのシステムが依存型λ計算を採用しているが、著者は構造的証明論（特にシークエント計算）が有力な代替案になると主張する。論理と証明構造の分離、証明再構成における非決定性の活用、宇宙階層や証明無関連性といった複雑な型規律の回避など、証明論的視点が優位である6つのトピックを提案している。特に束縛の扱いについては、lambda-tree syntaxと∇限量子を用いたAbella証明支援系の手法を例に、複雑な束縛を含む言語や論理のメタ理論の推論における優位性を示している。",
+          "keywords": [
+            "Proof theory",
+            "Dependent type theory",
+            "Sequent calculus",
+            "Proof assistants",
+            "Lambda-tree syntax"
+          ],
+          "appendix": "本論文は、言語のメタ理論の推論環境について論じており、形式体系の表現という観点から「formal languages（形式言語）」の分野と関連があります。"
+        },
+        "http://arxiv.org/abs/2607.12652v1": {
+          "title": "Belugaにおけるπ-計算のBarbed Similarity：共内容的推論のケーススタディ",
+          "summary": "本論文では、証明アシスタントBelugaを用いて、π-計算における強Barbed Similarityを形式化した。Concurrent Calculi Formalization Benchmarkへの取り組みの一環として、レプリケーションを含む形式化を行い、バーブと内部アクションに基づく振る舞い同値性の共帰的なエンコーディングを実現した。Belugaのコパターンに基づく共帰的証明により、互換性やコンテキスト補題などの簡潔かつ構成的な証明が可能となり、HOASと共帰的推論を組み合わせた並行計算形式化の有効性を示している。",
+          "keywords": [
+            "pi-calculus",
+            "Beluga",
+            "Barbed Similarity",
+            "HOAS",
+            "coinductive reasoning"
+          ],
+          "appendix": "本論文は並行計算の形式化および証明アシスタントに関する研究であり、提示された「興味ある分野」に直接関連する項目は含まれていません。"
+        },
+        "http://arxiv.org/abs/2607.12580v1": {
+          "title": "連通通信プロセスに対するZielonka型の構成法",
+          "summary": "トレース閉な正規言語で与えられた仕様から決定性非同期オートマトン(AA)を合成するZielonkaの定理は複雑であるため、制約を設けた簡略化が研究されている。本論文では「連通通信プロセス」を持つ決定性有限オートマトン(DFA)仕様に対する新しい構成法を提案する。これは、一定の遅延dを超えて通信がないプロセス間は、以降も通信が発生しないという制約であり、クライアント・サーバ間の通信切断のような状況を許容する「公平性」制約の緩和となっている。この構成法により、各プロセスの局所状態数がDFAの状態数に対して多項式サイズであり、指数の爆発が遅延dとプロセスの分離深度のみに依存するAAを構築できる。",
+          "keywords": [
+            "Zielonka's theorem",
+            "deterministic asynchronous automaton",
+            "connectedly communicating processes",
+            "trace-closed regular language",
+            "finite-state automata"
+          ],
+          "appendix": "この論文はautomata theory（オートマトン理論）およびformal languages（形式言語理論）の分野に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.12561v1": {
+          "title": "小次数の曲線の種数とゴナリティ、力学的一様有界性、および分岐",
+          "summary": "本論文では、算術力学系におけるゴナリティ予想を証明しています。具体的には、P¹上の有理写像の非等軸的な1変数代数族に対し、異なる力学原子曲線のゴナリティが無限大に発散することを示しました。より一般には、柔軟なラテス族を除き、水平曲線の小次数列のゴナリティは無限大に発散し、その種数はパラメータ曲線上の次数に対して超線形的に増大します。また、自然な分岐や乗数生成性の仮定のもとで、高次元への拡張も得られています。これらの応用として、数体上の反復逆像の一様有界性と、関数体上の前周期点に関する幾何学的一様有界性を証明しました。証明には算術的等分布性、編み込まれた電流（woven currents）、および分岐理論が組み合わされており、特に分岐のメカニズムが種数とゴナリティの増大を強制する要因となっています。",
+          "keywords": [
+            "arithmetic dynamics",
+            "gonality",
+            "bifurcation theory",
+            "Lattès family",
+            "preperiodic points"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「arithmetic dynamics」および「complex dynamics」に直接関連する成果を含んでいます。"
+        },
+        "http://arxiv.org/abs/2607.12506v1": {
+          "title": "有向グラフの乗法性について",
+          "summary": "グラフカテゴリにおいて乗法的（multiplicative）なオブジェクトを特徴付けることは、有向・無向グラフの両方において重要な未解決問題である。本論文では、pushable準同型を射とする有向グラフのカテゴリにおける乗法的グラフについて研究を行っている。有向二部グラフ、有向サイクル、および推移的トーナメントにおける乗法性の完全な特徴付けを与え、その帰結として通常の有向グラフカテゴリにおける非乗法的な有向グラフの新しい無限クラスを提示した。さらに、Dasら(CALDAM 2026)が提起した、pushable準同型に関する指数有向グラフの存在に関する未解決問題を解決し、その解法を証明の道具として活用している。",
+          "keywords": [
+            "Multiplicative graphs",
+            "Directed graphs",
+            "Pushable homomorphism",
+            "Graph homomorphism",
+            "Exponential directed graphs"
+          ],
+          "appendix": "本研究はグラフ理論の構造的性質を扱っており、[興味ある分野]に含まれるcombinatorics（組合せ論）に密接に関連します。"
+        },
+        "http://arxiv.org/abs/2607.12411v1": {
+          "title": "リース積における共役問題",
+          "summary": "1966年にJane Matthewsは、2つの非自明な群AとBの標準的な制限付きリース積A ≀ Bにおける共役問題の可解性について、AとBの共役問題が可解であり、かつBのべき乗問題が可解であることを必要十分条件として提示した。本論文では、さらに「Aが可換群であるか、またはBの位数問題が可解である」という追加条件が必要であることを示す。また、置換制限付きリース積A ≀_{B/H} Bにおける共役問題の可解性について、Aが無限個の共役類を持つ場合などを想定し、軌道位数問題や特定の集合への属否判定問題(H γ⟨β⟩への属否など)を含む4つの必要十分条件を明らかにした。",
+          "keywords": [
+            "Conjugacy problem",
+            "Wreath products",
+            "Power problem",
+            "Orbit order problem",
+            "Membership problem"
+          ],
+          "appendix": "本論文は、リース積の構造と群における決定問題を扱っており、提示された興味ある分野のうち「structure of large countable infinite group」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.13097v1": {
+          "title": "区間構造に基づく反応系 (Reaction Systems) のための統一的な枠組み",
+          "summary": "本論文は、多重度、リソース管理、並行性、状態遷移の扱いが異なる多様な反応系の計算モデルを包括する、区間構造に基づいた統一的なセマンティックフレームワークを提案している。このフレームワークは、運用セマンティクスをリソース、生成、更新、実行という独立した戦略に分解することで、古典的な反応系、マルチセット反応系、さらにはペトリネットといった異なるモデルを共通の基盤上で記述・比較することを可能にする。既存モデルの統合だけでなく、新たな計算形式の開発や分析のための柔軟な基盤を提供するものである。",
+          "keywords": [
+            "Reaction systems",
+            "Interval structures",
+            "Operational semantics",
+            "Multiset reaction systems",
+            "Petri nets"
+          ],
+          "appendix": "本研究は計算モデルの形式的セマンティクスを扱っており、興味ある分野のうち「automata theory」や「formal languages」に関連しています。反応系は生化学に触発された計算モデルであり、計算理論や形式言語の文脈で広く研究されています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2607.13316v1",
+        "http://arxiv.org/abs/2607.13295v1",
+        "http://arxiv.org/abs/2607.13271v1",
+        "http://arxiv.org/abs/2607.13225v1",
+        "http://arxiv.org/abs/2607.13208v1",
+        "http://arxiv.org/abs/2607.13186v1",
+        "http://arxiv.org/abs/2607.12914v1",
+        "http://arxiv.org/abs/2607.12873v1",
+        "http://arxiv.org/abs/2607.13117v1",
+        "http://arxiv.org/abs/2607.12658v1",
+        "http://arxiv.org/abs/2607.12655v1",
+        "http://arxiv.org/abs/2607.12654v1",
+        "http://arxiv.org/abs/2607.12652v1",
+        "http://arxiv.org/abs/2607.12580v1",
+        "http://arxiv.org/abs/2607.12561v1",
+        "http://arxiv.org/abs/2607.12506v1",
+        "http://arxiv.org/abs/2607.12411v1",
+        "http://arxiv.org/abs/2607.13097v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-07-17T05:22:52.058113+00:00",
-      "updated_at": "2026-07-17T05:25:25.501566+00:00",
-      "finalized_at": null
+      "updated_at": "2026-07-17T07:12:19.462439+00:00",
+      "finalized_at": "2026-07-17T07:12:19.462411+00:00"
     }
   ]
 }
