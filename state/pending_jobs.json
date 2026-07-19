@@ -3388,7 +3388,7 @@
     },
     {
       "pipeline_id": "20260719T053144Z-5f773c41",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/tuy8jakq46o3mkykl6e1y5tvhjxgvg0jvl3t",
       "summarize_job_name": "batches/soqclrr7mqjo38c3n424qx7y7ms81xap3862",
       "papers": [
@@ -4028,14 +4028,284 @@
         "http://arxiv.org/abs/2607.14562v1",
         "http://arxiv.org/abs/2607.14444v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2607.15264v1": {
+          "title": "単体の直積はカノニカル・ラムゼー（canonically Ramsey）である",
+          "summary": "空間内の点集合 C がカノニカル・ラムゼーであるとは、任意の彩色数を用いた彩色に対し、常に単色またはレインボー（すべての点が異なる色）な C のコピーが含まれるような点集合 S が存在することを指す。本論文では、これまでに示されていた「直方体」や「単体」がカノニカル・ラムゼーであるという結果を拡張し、すべての「単体の直積」がカノニカル・ラムゼーであることを証明した。",
+          "keywords": [
+            "canonically Ramsey",
+            "simplices",
+            "products of simplices",
+            "monochromatic copy",
+            "rainbow copy"
+          ],
+          "appendix": "本論文は、組合せ論（combinatorics）におけるラムゼー理論を扱っており、指定された「興味ある分野」の中では combinatorics on words に関連する数学的構造を含んでいます。"
+        },
+        "http://arxiv.org/abs/2607.15223v1": {
+          "title": "確率的ハイパープロパティのためのDisintegration時相論理",
+          "summary": "本論文は、確率的非干渉性や完全な不可識別性などの広範な確率的ハイパープロパティを表現可能な新しい時相論理「Disintegration Temporal Logic (DTL)」を提案している。DTLは確率論の測度分解（measure disintegration）の概念に基づいており、プログラム実行中のイベント系列に対する条件付き確率を扱うことができる。これにより、相互作用する確率システムやマルコフ決定過程の分布特性の解析が可能になる。完全なDTLのモデル検査は不能解であるが、本研究では線形代数的手法を用いる線形フラグメントと、HyperCTL*のアルゴリズムを拡張したオートマトン理論的手法を用いる質的フラグメントという、2つの決定可能な部分クラスを特定し、その手続きを導出している。",
+          "keywords": [
+            "Disintegration Temporal Logic",
+            "probabilistic hyperproperties",
+            "measure disintegration",
+            "model checking",
+            "probabilistic automata"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「automata theory（オートマトン理論）」に密接に関連しています。特に、質的フラグメントのモデル検査においてHyperCTL*のアルゴリズムを拡張したオートマトン理論的アプローチが用いられている点や、無限語上の確率オートマトンへの応用が議論されている点が挙げられます。"
+        },
+        "http://arxiv.org/abs/2607.15213v1": {
+          "title": "半標準次数の漸近的Brill-Noether存在性：エネルギー・ペアリング、Cheegerの不等式、および被覆半径",
+          "summary": "本論文では、数論的幾何学に触発された手法を用いて、グラフ上における漸近的Brill-Noether存在予想を検討しています。偶数次数のエキスパンダーグラフ、5次以上の固定次数を持つ準ラマヌジャングラフ、および特定のランダムグラフを含む、連結性の高い複数のグラフ族において、半標準次数（およびその近傍）での漸近的な存在予想が成立することを確認しました。特に、任意の固定されたk ≥ 5に対し、ほとんどすべての単純連結k-正則グラフが、定数倍の範囲で半標準次数におけるBrill-Noether存在予想を満たしています。主要な手法として、グラフに関連するエネルギー二次形式に関する周期集合の被覆半径について、Cheeger型の不等式を導入しました。応用として、反転システム（reversal systems）と呼ばれる力学系に関連するグラフの直径の下限を導出しています。",
+          "keywords": [
+            "Brill-Noether existence conjecture",
+            "expander graphs",
+            "covering radius",
+            "energy quadratic form",
+            "reversal systems"
+          ],
+          "appendix": "本論文は、dynamical systemsの一種であるreversal systemsに関連するグラフの幾何学的性質を扱っており、興味ある分野のarithmetic dynamicsやcomplex dynamicsに関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2607.15029v1": {
+          "title": "ラベル付き遷移系の現実的な巨大ランダムモデルとその0-1法則に向けて",
+          "summary": "本論文では、ソフトウェア検証において重要な役割を果たすラベル付き遷移系（LTS）の典型的な挙動を理解するため、ランダムグラフ理論を用いた大規模なLTSの確率的モデルを構築しています。Model Checking Contestから得られた実証データに基づき、モデルに現実的なパラメータ値を付与した上で、LTLやCTLといった主要な様相論理における漸近的挙動を解析しました。システムサイズが無限大に増大する際、論理式が成立する確率が一定値に収束する収束法則、あるいはその極限値が0または1になる0-1法則が成立することを示し、これらの極限を決定するためのアルゴリズムと計算複雑性についても論じています。",
+          "keywords": [
+            "Model checking",
+            "Random graphs",
+            "0-1 laws",
+            "Labeled transition systems",
+            "Modal logic"
+          ],
+          "appendix": "本論文は、遷移系のモデル化と性質検証を扱っていることから、オートマトン理論 (automata theory) や形式言語 (formal languages) に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.15021v1": {
+          "title": "単位直角三角形におけるハイルブロン問題：n ≤ 8に対する保証付き最適配置",
+          "summary": "単位直角三角形内に配置されたn個の点によって形成される(n 3)個の三角形のうち、最小面積を最大化するハイルブロンの三角形問題を研究した。n ≥ 5において、頂点が占有されていない場合に境界上に少なくとも4つの点が存在するという境界構造の結果を証明した。アフィンS₃対称性を利用した混合整数モデルにより、n = 7, 8を含むn ≤ 8までの大域的最適性を証明し、従来のグリッド探索や分枝限定法による未解決部分を解消した。n ≤ 7については厳密な最適配置を特定し、n = 8については最適解が7次多項式の実根であるという予想を250桁の精度で確認した。また、そのガロア群がS₇であり、べき根による解の表示が存在しないことを示した。",
+          "keywords": [
+            "Heilbronn's triangle problem",
+            "mixed-integer model",
+            "global optimality",
+            "Galois group"
+          ],
+          "appendix": "本研究は数値計算を用いて最適性の厳密な証明を行っているため、興味ある分野の中では「validated numerics」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.14999v1": {
+          "title": "RocqにおけるDPLL遷移システムの形式検証",
+          "summary": "本論文は、命題論理の充足可能性判定（SAT）のためのDPLL手続きを、Rocq証明助手を用いて形式検証した研究である。Nieuwenhuisらの手法に倣い、DPLLを具体的なアルゴリズムではなくルールベースの抽象遷移システムとしてモデル化している。命題論理の構文と意味論を形式化した上で、基本および古典的DPLLシステムの健全性、完全性、および良基礎性（well-foundedness）に基づく停止性を証明した。また、純リテラル規則による拡張や、抽象的な戦略（strategy）の概念を導入し、特定の条件を満たす戦略から停止するソルバーが導出できることを示している。最終的にRocq上での具体的な戦略の実装とその検証を行っている。",
+          "keywords": [
+            "DPLL",
+            "Transition System",
+            "Formal Verification",
+            "Rocq",
+            "SAT Solving"
+          ],
+          "appendix": "本論文は遷移システムをモデルとして扱っており、状態遷移の定義や性質の証明という点においてAutomata theory（自動機理論）の分野と関連性を持ちます。また、使用されているRocqはCoq証明助手の新しい名称です。"
+        },
+        "http://arxiv.org/abs/2607.14983v1": {
+          "title": "3-VASSの可到達性問題はEXPSPACEに属する",
+          "summary": "次元を固定したベクトル加算システム（VASS）の可到達性問題は、理論計算機科学における長年の課題である。次元が入力に含まれる場合はACKERMANN完全であることが示されているが、固定次元（特に3次元）における正確な計算量は未解明であった。本論文では、階層的なパンパビリティ（pumpability）解析に基づき、2つの構成間の最短実行パスに対して2重指数関数の長さ境界を導出することで、3-VASSの可到達性問題がEXPSPACEに属することを示した。これは先行研究の2-EXPSPACEという結果を改善するものである。",
+          "keywords": [
+            "VASS",
+            "reachability problem",
+            "EXPSPACE",
+            "hierarchical pumpability analysis",
+            "dimension 3"
+          ],
+          "appendix": "本論文はautomata theoryに関連しています。"
+        },
+        "http://arxiv.org/abs/2607.14956v1": {
+          "title": "μCRLおよびmCRL2の包括的な歴史",
+          "summary": "本論文は、形式言語μCRLとその継承であるmCRL2の誕生から現在に至るまでの歴史的背景、設計動機、および発展を概説している。これらはプロセス代数、項書き換え、および様相μ計算に基づいた、コンパクトでありながら高い表現力を持つ形式化手法である。主に、メッセージ交換を通じて相互に作用するシステムの振る舞いをモデル化・解析するために開発された。数学的な基礎を重視しながらも実用性を追求した結果、理論的な正当性証明の枠組みとしてだけでなく、複雑なコンピュータ制御システムの検証を支援する強力な自動ツールの基盤へと進化を遂げている。",
+          "keywords": [
+            "μCRL",
+            "mCRL2",
+            "process algebra",
+            "term rewriting",
+            "modal mu-calculus"
+          ],
+          "appendix": "本論文で扱われているプロセス代数や形式的な振る舞い解析は、興味ある分野のうち「automata theory」および「formal languages」と深く関連しています。特に、並行システムのモデル化における数学的基盤の構築について記述されています。"
+        },
+        "http://arxiv.org/abs/2607.14937v1": {
+          "title": "力学系のゼロショット再構成のための最小かつ解釈可能なアーキテクチャ",
+          "summary": "本論文では、力学系(DS)のゼロショット再構成において、高い汎化性能を持ちつつ極めて単純な構造を持つ「DynaBase」を提案している。強力な最新モデルであるDynaMixを、現在の潜在状態とインコンテキストな近傍点およびその時間的後続点の線形結合という、わずか2パラメータの形式まで削ぎ落とした。この極小のモデルは、他の基盤モデルよりも数桁少ないパラメータ数でありながら、カオス系や周期系において競争力のある再構成精度を実現する。また、その単純さゆえに解析解の導出や直接的な最適化が可能であり、短期的予測とDS再構成のトレードオフや、既存アルゴリズムとの数学的関係を明らかにしている。",
+          "keywords": [
+            "Zero-Shot Reconstruction",
+            "Dynamical Systems",
+            "In-Context Learning",
+            "Interpretable Architecture",
+            "DynaBase"
+          ],
+          "appendix": "本論文は、カオス系や周期系の動態を扱う点において complex dynamics (複素動態/複雑な動態) に関連しており、さらに力学系の構造を最小限のメカニズムで記述しようとする試みは、記号力学系や計算理論的な観点からも興味深い示唆を含んでいます。"
+        },
+        "http://arxiv.org/abs/2607.14933v1": {
+          "title": "コア・エントロピーの最大化",
+          "summary": "次数 d の多項式空間の組合せ論的モデルである、次数 d の primitive majors の空間 PM(d) 上で定義されるコア・エントロピー関数 h: PM(d) → ℝ についての研究である。各 d における大域的極大値、および特定の層（strata）に沿った極大値を分類する手法を導入した。その結果、PM(d) 全体には d-1 個の大域的極大値が存在すること、および unicritical な層における極大値の集合はカントール集合になることを示した。",
+          "keywords": [
+            "core entropy",
+            "primitive majors",
+            "unicritical stratum",
+            "global maximum"
+          ],
+          "appendix": "本論文は complex dynamics（複素力学系）および symbolic dynamics（記号力学系）に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2607.14873v1": {
+          "title": "Möbius 変換に対するカーネル法と群の双曲表現",
+          "summary": "実または複素双曲空間における群の等長作用に対する新しいカーネル法を提案している。この手法により、PSL₂(ℝ) の表現の分類が可能になるほか、任意の群における 2 つの表現が共役であるための必要十分条件が与えられる。",
+          "keywords": [
+            "kernel method",
+            "Möbius transformations",
+            "hyperbolic representations",
+            "isometric actions"
+          ],
+          "appendix": "Möbius 変換を扱っているため complex dynamics に、群の表現を扱っているため structure of large countable infinite group に関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2607.14856v1": {
+          "title": "既約格子の昇鎖、bi-reversible automata、およびアフィン算術群",
+          "summary": "本論文では、n ≥ 2 の各整数に対し、n 個の等質木の直積における既約格子の昇鎖を構築しています。また、与えられた整数の組 m₁, m₂ ≥ 1 に対し、オートマトン B から定義される群 G_B の有限性長さが m₁（すなわち、タイプ F_{m₁} であるがタイプ FP_{m₁+1} ではない）であり、かつ双対オートマトン B* から定義される群 G_{B*} の有限性長さが m₂ となるような bi-reversible automaton B を明示的に定義しています。これらの構成は、大域関数体のアフィン群における S-算術群の考察に基づいています。",
+          "keywords": [
+            "irreducible lattices",
+            "bi-reversible automata",
+            "finiteness length",
+            "S-arithmetic groups",
+            "affine group"
+          ],
+          "appendix": "本論文は「automata theory」および「structure of large countable infinite group」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.14774v1": {
+          "title": "3の累乗の2進展開における非周期性と部分語複雑性",
+          "summary": "本論文では、3ᵐの2進展開の微細構造に関する2つの主要な結果を証明している。第一に、任意の固定された周期 p に対して、3ᵐの2進展開が p 周期性を損なう位置の数は、log m / log log m のオーダーで増加する。これは、log m の固定された累乗を超える深さのウィンドウにおいて、p 周期性が保持されないことを意味する。第二に、3ᵐの下位桁によって形成される有限の2進語は、十分大きな m において、長さ n の部分語複雑性が p_3ᵐ(n) ≥ n + 1 を満たし、完全な下位部分語複雑性を持つことが示された。",
+          "keywords": [
+            "binary expansion",
+            "periodicity",
+            "subword complexity",
+            "powers of three"
+          ],
+          "appendix": "本論文は、記号力学系 (symbolic dynamics) や語の組合せ論 (combinatorics on words) の手法を用いて、3ᵐ の2進展開という算術的性質を解析しており、興味ある分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.14732v1": {
+          "title": "Hales-Jewett数再訪",
+          "summary": "Hales-Jewett数の上界を、従来のWaW（タワー関数の反復）から指数関数のタワー（tower of exponentiations）へと大幅に改善した。アルファベットサイズ |Λ| に関する帰納法のステップにおいて、従来のタワー関数を用いる手法を2段階の指数関数を用いた手法へと置き換えることでこの評価を達成している。本稿では、この帰納的ステップを独立したパーティション定理として提示するほか、密度版Hales-Jewett定理、Graham-Rothschildの定理、アフィン・ラムゼイ定理、および多項式版への応用と背景についても述べている。",
+          "keywords": [
+            "Hales-Jewett numbers",
+            "partition theorem",
+            "Graham-Rothschild Theorem",
+            "Affine Ramsey Theorem"
+          ],
+          "appendix": "本論文は、組合せ論の一種である「combinatorics on words」に深く関連する内容であり、多次元の語における重要な定数の評価を扱っています。"
+        },
+        "http://arxiv.org/abs/2607.14715v1": {
+          "title": "いくつかの通約不可能な非コンパクト双曲的Coxeter多面体の族",
+          "summary": "本論文では、8つの面を持つ5次元の有限体積双曲的Coxeter多面体141個（そのうち125個は非コンパクト）を完全に分類した。また、極大尖点密度およびBogachev-Douba-Raimbaultの議論の非コンパクト版の手法を用いることで、4、5、6、7、および9次元において、互いに通約不可能な非コンパクトCoxeter多面体の無限族を構成した。さらに、これらの通約類の数は体積の増大に対して少なくとも指数関数的に増加することを示した。",
+          "keywords": [
+            "hyperbolic Coxeter polytopes",
+            "noncompact",
+            "incommensurability",
+            "maximal-cusp density",
+            "commensurability classes"
+          ],
+          "appendix": "Coxeter群の幾何学的実現とその分類を扱っているため、大きな可算無限群の構造 (structure of large countable infinite group) に関する分野と深い関連があります。"
+        },
+        "http://arxiv.org/abs/2607.14693v1": {
+          "title": "Sturmian格子による非周期タイル集合の構成",
+          "summary": "本論文は、2次無理数の傾きを持つSturmian語に基づいた非周期タイル集合を構成する明示的なアルゴリズムを提案しています。この手法は任意の2次無理数に対して適用可能であり、構成されるタイル集合のスケーリング定数は任意の実2次体の単数となります。この構築には、非周期モノタイル「Smith Turtle」に関連して現れた格子構造である「Sturmian lattices」と、Delone集合の有界置換同値性（bounded displacement equivalence）という2つの重要な要素が用いられています。",
+          "keywords": [
+            "aperiodic tile sets",
+            "Sturmian words",
+            "Sturmian lattices",
+            "bounded displacement equivalence",
+            "Delone sets"
+          ],
+          "appendix": "本論文は、キーワードにも含まれるSturmian語などの観点から、興味ある分野のうち「symbolic dynamics」および「combinatorics on words」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.14668v1": {
+          "title": "ユークリッド・ビルディングにおける余コンパクト格子の境界作用の安定性",
+          "summary": "局所コンパクトなユークリッド・ビルディング X において、その等長変換群は視覚境界上の k-単体の空間に同相写像として作用する。本論文では、X にコンパクトな商を持って作用する離散等長変換群に対するこれらの作用の摂動を考察し、十分に小さな摂動はすべて元の作用と準共役であることを示した。特に、半単純 p-進 Lie 群 G の任意の放物型部分群 Q に対し、G の余コンパクト格子による G/Q 上の誘導作用が位相的に安定であることを証明している。",
+          "keywords": [
+            "Euclidean buildings",
+            "visual boundary",
+            "cocompact lattices",
+            "semi-conjugate",
+            "topologically stable action"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に関連しています。特に p-進 Lie 群の格子という無限群の構造および、その幾何学的な作用の安定性について扱っています。"
+        },
+        "http://arxiv.org/abs/2607.14617v1": {
+          "title": "一般化された高さ制約付きバインディングの下での順序なし項木パターンに対する効率的なパターンマッチング",
+          "summary": "本論文では、兄弟間の順序を無視した階層構造のモデル化に有用な「順序なし項木パターン」を扱う。先行研究では高さ制約付き変数を用いたパターンマッチングを扱っていたが、変数の子ポートがバインディング木の葉に対応しなければならないという制約があった。本研究ではこの制約を排除し、子ポートが根以外の任意の頂点に対応できる「一般化されたバインディング」モデルを提案する。このモデルにおけるメンバーシップ問題を定式化し、多項式時間で動作するパターンマッチングアルゴリズムを開発した。計算実験の結果、提案手法は実用的な実行時間で動作することが確認された。",
+          "keywords": [
+            "unordered term tree patterns",
+            "height-constrained variables",
+            "pattern matching algorithm",
+            "generalized bindings",
+            "membership problem"
+          ],
+          "appendix": "本論文は、木構造やパターンマッチングを扱っており、興味ある分野のうち「automata theory」や「formal languages」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.14599v1": {
+          "title": "円分多項式と写像類群の類型に対するホモロジー的判定法",
+          "summary": "本論文では、閉曲面 S_g の写像類群 Mod(S_g) から 1次ホモロジー群への作用によって誘導される表現 Ψ: Mod(S_g) → Sp(2g, ℤ) を通じ、代数的有限型の写像類から生じる整数シンプレクティック行列の特性多項式を調査している。特に円分多項式の場合について完全な特徴付けを行っており、n ≥ 3 において円分多項式 φₙ(x) が代数的有限型の写像類によって実現されるための必要十分条件が、n の異なる素因数が高々2個であることであることを示した。この結果、n が3個以上の異なる素因数を持つ平方フリーな整数の場合、特性多項式 φₙ(x) を持つすべての写像類は擬アノソフ（pseudo-Anosov）となる。これは Casson–Bleiler の判定法を補完するものであり、シンプレクティック多項式が擬アノソフな写像類によってのみ実現されるための完全な判定条件を与えるものである。",
+          "keywords": [
+            "Cyclotomic polynomials",
+            "Mapping class group",
+            "Symplectic matrices",
+            "Pseudo-Anosov",
+            "Algebraically finite type"
+          ],
+          "appendix": "本論文は、擬アノソフ写像類の動力学的性質に関連しており、複素力学系（Complex dynamics）や数論的力学系（Arithmetic dynamics）の観点からも興味深い対象を扱っています。"
+        },
+        "http://arxiv.org/abs/2607.14562v1": {
+          "title": "アルキメデス的知性を超えて：内在的なp-進学習理論に向けて",
+          "summary": "現代の機械学習が実数体やユークリッド距離に基づくアルキメデス的な数学に依存しているのに対し、本論文は超距離空間のトポロジー、幾何学、代数、および測度構造から導かれる内在的な非アルキメデス的学習理論を提唱する。著者は「内在的非アルキメデス的学習の原理」を定式化し、情報の状態を入れ子状の超距離球として、学習を情報の階層的な精緻化と再分配として表現する公理的枠組みを導入した。ℤₚ上において精緻化の深さが共通接頭辞の深さと一致し、有限商 ℤ/pᴺℤ がレベルNまでの階層構造を保持することを示すことで、階層性が学習されるべき補助的な構造ではなく、情報空間の幾何学に固有の性質であることを証明している。",
+          "keywords": [
+            "p-adic",
+            "ultrametric spaces",
+            "non-Archimedean learning",
+            "hierarchical representation",
+            "valuation depth"
+          ],
+          "appendix": "p-進数を用いた学習理論の構築は、数論的性質を力学系に応用する arithmetic dynamics や、記号列の階層構造を扱う symbolic dynamics、さらには無限語の性質を研究する combinatorics on words と強い関連性を持っています。"
+        },
+        "http://arxiv.org/abs/2607.14444v1": {
+          "title": "測度保存流における Belinskaya の定理の類似物",
+          "summary": "本論文では、自由かつエルゴード的な測度保存流について、Belinskaya の定理の類似が成立することを証明しています。具体的には、2つの流の L¹ 全群（full groups）が抽象群として同型であれば、それらはスカラー倍の時刻変更を除いて共役であることを示しました。この過程で、軌道同値関係を共有し、一方が他方の L¹ 全群に含まれる場合、時間反転の可能性を除いてそれらの正の半軌道が相応（commensurate）になることを示し、Katznelson の基準を用いることで結論を得ています。また、実数直線の可測集合に関する新たな相応性基準も提示されており、これは2エージェントAIシステムによって自律的に発見されました。",
+          "keywords": [
+            "measure-preserving flows",
+            "L¹ full groups",
+            "Belinskaya's theorem",
+            "orbit equivalence",
+            "commensuration criterion"
+          ],
+          "appendix": "この論文は、群の構造に関する議論（L¹ full groups）を含んでいるため、興味ある分野の「structure of large countable infinite group」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2607.15264v1",
+        "http://arxiv.org/abs/2607.15223v1",
+        "http://arxiv.org/abs/2607.15213v1",
+        "http://arxiv.org/abs/2607.15029v1",
+        "http://arxiv.org/abs/2607.15021v1",
+        "http://arxiv.org/abs/2607.14999v1",
+        "http://arxiv.org/abs/2607.14983v1",
+        "http://arxiv.org/abs/2607.14956v1",
+        "http://arxiv.org/abs/2607.14937v1",
+        "http://arxiv.org/abs/2607.14933v1",
+        "http://arxiv.org/abs/2607.14873v1",
+        "http://arxiv.org/abs/2607.14856v1",
+        "http://arxiv.org/abs/2607.14774v1",
+        "http://arxiv.org/abs/2607.14732v1",
+        "http://arxiv.org/abs/2607.14715v1",
+        "http://arxiv.org/abs/2607.14693v1",
+        "http://arxiv.org/abs/2607.14668v1",
+        "http://arxiv.org/abs/2607.14617v1",
+        "http://arxiv.org/abs/2607.14599v1",
+        "http://arxiv.org/abs/2607.14562v1",
+        "http://arxiv.org/abs/2607.14444v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-07-19T05:31:44.927518+00:00",
-      "updated_at": "2026-07-19T05:35:13.570439+00:00",
-      "finalized_at": null
+      "updated_at": "2026-07-19T07:38:28.359733+00:00",
+      "finalized_at": "2026-07-19T07:38:28.359720+00:00"
     }
   ]
 }
