@@ -5054,7 +5054,7 @@
     },
     {
       "pipeline_id": "20260721T052947Z-85958689",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/va0oix7kj0h6jpdqluhahtktevy84cc84mcx",
       "summarize_job_name": "batches/lxvjni7ulszuilyqgscawtls5fadbo50lj8u",
       "papers": [
@@ -5383,14 +5383,106 @@
         "http://arxiv.org/abs/2607.16830v1",
         "http://arxiv.org/abs/2607.16757v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2607.16994v1": {
+          "title": "アメナブルな剰余有限群上のフルシフトにおける一意的にエルゴード的な測度のエントロピー密度",
+          "summary": "本研究は、アメナブルな剰余有限群を作用とするフルシフトにおけるエントロピー密度を扱っている。エントロピー密度とは、任意の不変測度が特定の族の測度によって弱*位相およびエントロピーの両面で近似可能であることを意味する。先行研究では、整数環 ℤ のシフト作用において、一意的にエルゴード的な測度がエルゴード的測度の中でエントロピー稠密であることが知られていた。本論文はこの結果を拡張し、アメナブルな剰余有限群上のフルシフトにおいて、一意的にエルゴード的な部分系上の不変測度が、エルゴード的不変測度の集合においてエントロピー稠密であることを示した。これは有限生成アーベル群上のフルシフトにも適用される。証明には Cortez–Petite Følner タイル貼りと、有限指数部分群に適したブロック置換構成法が用いられている。",
+          "keywords": [
+            "entropy density",
+            "full shifts",
+            "amenable residually finite groups",
+            "uniquely ergodic measures",
+            "symbolic dynamics"
+          ],
+          "appendix": "本論文は興味のある分野のうち「symbolic dynamics」および、アメナブルな剰余有限群という群の性質を扱っている点から「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.16909v1": {
+          "title": "積空間におけるアフィンBirkhoff-Kellogg型の結果とその微分方程式系への応用",
+          "summary": "本論文では、積空間におけるアフィン変換を伴うBirkhoff-Kelloggの定理の一形式を証明している。これはパラメータに依存する関数微分方程式系を扱う際に自然に生じる枠組みである。すべての成分が非自明であるようなパラメータ依存解の存在基準を提示し、その理論的結果を時間や状態に依存する偏差引数（deviated arguments）を含む2階関数微分方程式系に適用した。さらに具体的な例に対して、理論的枠組みと整合する数値近似解を提供し、抽象的な結果に必要とされるすべての定数の算出および推定を行っている。",
+          "keywords": [
+            "Birkhoff-Kellogg theorem",
+            "product spaces",
+            "functional-differential equations",
+            "parameter-dependent solutions",
+            "deviated arguments"
+          ],
+          "appendix": "本論文は具体的な数値近似や定数の推定を行っているため、興味ある分野のうち「validated numerics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.16884v1": {
+          "title": "Σ-Chain積：オートマトンの（分解）構成に関する簡潔なモデル（拡張版）",
+          "summary": "カスケード積はオートマトン理論における基本的な構成手法であり、Krohn-Rhodes定理に代表されるオートマトンの階層的分解において中心的な役割を果たす。しかし、従来のカスケード積は各コンポーネントが先行する全てのコンポーネントに依存するため、アルファベットサイズが指数関数的に増大するという課題があった。本論文では、各コンポーネントが入入力アルファベットと直前のコンポーネントのみに依存する「Σ-Chain積」を提案する。Σ-Chain積は線形サイズの表現を可能にし、従来のカスケード積よりも指数的に簡潔な表現を実現する。また、置換・リセット・オートマトンのΣ-Chain積が正規言語のクラスと一致することを示し、スターフリー言語のサブクラスとの構造的な関係についても分析している。",
+          "keywords": [
+            "Σ-chain product",
+            "automata decomposition",
+            "Krohn-Rhodes theorem",
+            "permutation-reset automata",
+            "succinctness"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に密接に関連しています。特に、オートマトンの代数的構造の分解や、記述計算量の観点からの表現の簡潔さ（succinctness）を扱っています。"
+        },
+        "http://arxiv.org/abs/2607.16860v1": {
+          "title": "指定された辺数を持つグラフにおける固定されたグラフのコピーの最大化",
+          "summary": "本論文では、辺数 m のグラフに含まれるグラフ H のラベル付き埋め込みの最大数 emb(H, m) について考察しています。Erdős が提示したこの問題に対し、著者らは、分数独立数（fractional independence number）が v_H/2 である全てのグラフ H について、n が十分に大きい場合の emb(H, (n choose 2)) の値を決定しました。また、マッチングの場合を除き、そのような H と n に対して埋め込み数を最大化する唯一のグラフが完全グラフ Kₙ であることを示しました。これにより、Kₙ が埋め込みの最大数を達成するグラフの性質が完全に特徴付けられました。",
+          "keywords": [
+            "labeled embeddings",
+            "fractional independence number",
+            "maximal number of embeddings",
+            "K_n"
+          ],
+          "appendix": "本論文は極値グラフ理論を扱っており、提示された「興味ある分野」の中では組合せ論（combinatorics）に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.16855v1": {
+          "title": "Rtl2lean: 階層的定理生成と補題再利用を用いた自動RTL-to-Lean変換",
+          "summary": "本論文は、SystemVerilogで記述されたレジスタ転送レベル（RTL）の設計を、対話型定理証明支援系Lean 4の実行可能なモデルへと自動変換するフレームワーク「Rtl2lean」を提案しています。このモデルはハードウェアの実行を純粋な状態遷移関数として表現し、組合せ回路、順序回路、単一サイクル動作、および到達可能性・不変条件の4層からなる階層的定理ライブラリを構築します。証明が困難な高レベルの属性に対しては、LLMを用いた証明ループが中間補題を提案し、Leanカーネルで検証されたもののみを再利用可能な補題プールに追加します。実験では、生成された403個の定理すべてがLeanで検証され、基礎補題の80.2%が自動再利用可能であることを示しました。",
+          "keywords": [
+            "RTL-to-Lean Translation",
+            "Interactive Theorem Proving",
+            "Formal Verification",
+            "LLM-based Proving",
+            "Lemma Reuse"
+          ],
+          "appendix": "本論文は、ハードウェア設計の形式検証に関するものであり、オートマトン理論（automata theory）や形式言語（formal languages）の概念をハードウェアの状態遷移モデルの検証に応用している点で、指定された興味ある分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.16830v1": {
+          "title": "超楕円型の特定の線形対合における位相的弱混合性",
+          "summary": "線形対合は、一般化置換と長さベクトルによって定義される不連続な区間のペア上の単射な区分的等長写像である。本論文では、超楕円型の一般化置換 σ_{s,r} のRauzyクラスにおける典型的な線形対合について、その自然な記号符号化が位相的弱混合性を持つことを証明した。この証明は、対象の一般化置換が少なくとも1つの単純な文字を持ち、関連する種数が十分に大きいという条件下で成立する。これは、典型的な線形対合が測度論的に弱混合的であるという予想に対する位相的モデルからのアプローチである。",
+          "keywords": [
+            "Linear involution",
+            "Topological weak mixing",
+            "Generalized permutation",
+            "Rauzy class",
+            "Hyperelliptic type"
+          ],
+          "appendix": "本論文は symbolic dynamics および combinatorics on words の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.16757v1": {
+          "title": "確率プロセスにおける新たな分岐双模倣",
+          "summary": "本論文では、確率プロセスを対象とした新しい分岐双模倣（branching bisimulation）を導入している。この手法は、観測不能な動作を抽象化する既存のどの等価関係よりも精密な等価関係を導くものである。また、その rooted 版は、再帰を含む静的・動的構成要素を備えた確率プロセス記述言語において、合同（congruence）性を満たすことが示されている。",
+          "keywords": [
+            "branching bisimulation",
+            "probabilistic processes",
+            "equivalence relation",
+            "unobservable actions",
+            "congruence"
+          ],
+          "appendix": "本研究は、遷移システムや等価性の判定を扱う点で「automata theory」や「formal languages」に関連しています。特に確率モデルにおける抽象化と合同性の議論は、オートマトン理論の重要な応用分野です。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2607.16994v1",
+        "http://arxiv.org/abs/2607.16909v1",
+        "http://arxiv.org/abs/2607.16884v1",
+        "http://arxiv.org/abs/2607.16860v1",
+        "http://arxiv.org/abs/2607.16855v1",
+        "http://arxiv.org/abs/2607.16830v1",
+        "http://arxiv.org/abs/2607.16757v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-07-21T05:29:47.370559+00:00",
-      "updated_at": "2026-07-21T05:33:40.869580+00:00",
-      "finalized_at": null
+      "updated_at": "2026-07-21T07:44:55.389408+00:00",
+      "finalized_at": "2026-07-21T07:44:55.389387+00:00"
     }
   ]
 }
