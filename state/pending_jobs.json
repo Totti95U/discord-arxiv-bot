@@ -5051,6 +5051,338 @@
       "created_at": "2026-07-20T05:49:09.543207+00:00",
       "updated_at": "2026-07-20T11:19:18.844275+00:00",
       "finalized_at": "2026-07-20T11:19:18.844253+00:00"
+    },
+    {
+      "pipeline_id": "20260721T052947Z-85958689",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/va0oix7kj0h6jpdqluhahtktevy84cc84mcx",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2607.17002v1",
+          "entry_id": "http://arxiv.org/abs/2607.17002v1",
+          "title": "Stochastic stability of master-slave synchronization for dissipative PDEs with Burgers-type nonlinearity and application to data assimilation",
+          "summary": "We investigate the stochastic stability of master--slave synchronization for a class of nonlinear dissipative evolution equations with a Burgers-type convective nonlinearity and a polynomial linear differential operator. The family includes the Burgers, Kuramoto--Sivashinsky, Kawahara, Benney--Lin, and Nikolaevskiy equations. Under periodic boundary conditions, each equation is represented through a finite-dimensional Fourier truncation, yielding a complex state vector coupled to a slave system driven by observations of the master. We first establish local exponential stability of the deterministic synchronization manifold under a simple condition on the coupling strength. We then introduce observational noise in the coupling signals, which transforms the slave system into an Itô diffusion and prevents exact synchronization. Our analysis focuses on the deviation $Δ(t)$ between the stochastic synchronization error and the exponentially stable deterministic reference error. We prove an $\\mathcal{O}(σ^2)$ finite-time mean-square bound on $\\|Δ(t)\\|^2$, together with a corresponding tail-probability estimate. Under a global one-sided dissipativity assumption, the localization is removed and an $\\mathcal{O}(σ^2)$ time-uniform bound is obtained. These estimates are derived in Fourier space and translated to physical space via Parseval's relation. Finally, we interpret the stochastic slave dynamics as a continuous-time synchronization-based data-assimilation scheme and compare its structure with the ensemble Kalman--Bucy filter, emphasizing the difference between prescribed stability-oriented and adaptive covariance-based gains.",
+          "authors": [
+            "Joaquín Miguez",
+            "Inés P. Mariño"
+          ],
+          "published": "2026-07-18T23:33:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16997v1",
+          "entry_id": "http://arxiv.org/abs/2607.16997v1",
+          "title": "PriorProof: A Point-in-Time Measure of Technique Novelty for Formal Proofs",
+          "summary": "Mathematicians distinguish proofs that explain, simplify, or introduce a nonstandard route, but these judgments are difficult to operationalize. We study a deliberately narrower construct: time-relative proof-route nonstandardness in formal mathematics. For a Lean theorem, PriorProof extracts the dependency footprint of its elaborated proof term and scores the weighted surprisal of that footprint under a retrieval-conditioned, hierarchically smoothed prior built only from an earlier quarterly snapshot of Mathlib. The method requires no hand-built technique ontology and no human labels: statement retrieval is learned from proof-derived contrastive pairs, while the scored object is read mechanically from proof terms. In a blinded topology study, 100 presentations collapse to 76 distinct underlying pairs: 12 canonical contrasts shown three times for consistency screening and 64 distinct stratified pairs. Against the majority of three retained domain raters, PriorProof agrees on 53/76 pairs (69.7%, Wilson 95% CI 58.7-78.9%), including 11/12 canonical pairs (91.7%, 64.6-98.5%) and 42/64 stratified pairs (65.6%, 53.4-76.1%). Score-gap quartiles are nonmonotone after repeat collapse; the endpoints are 12/19 (63.2%, 41.0-80.9%) in the smallest-gap bin and 16/19 (84.2%, 62.4-94.5%) in the largest, supporting an endpoint-calibration tendency rather than a resolved staircase. The best language-model condition agrees on 60/76 pairs (78.9%, 68.5-86.6%); on paired outcomes, PriorProof alone is correct on 8 pairs and the model alone on 15 (exact two-sided McNemar p = 0.210), so the difference is not established at this sample size. We therefore present PriorProof not as a replacement for expert or model judgment, but as a decomposable, time-anchored signal whose score gap provides an interpretable reliability indicator.",
+          "authors": [
+            "Neel Somani"
+          ],
+          "published": "2026-07-18T23:10:00+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16994v1",
+          "entry_id": "http://arxiv.org/abs/2607.16994v1",
+          "title": "Entropy Density of Uniquely Ergodic Measures for Full Shifts over Amenable Residually Finite Groups",
+          "summary": "We study entropy density for full shifts over amenable residually finite groups.\n  Entropy density means that every invariant measure can be approximated in the weak$^*$ topology, together with its entropy, by measures from a distinguished family.\n  In symbolic dynamics it is known, by a result of Weiss, that uniquely ergodic measures are entropy dense among ergodic measures for the shift action of $\\mathbb Z$.\n  We extend this result to full shifts over amenable residually finite groups: invariant measures supported on uniquely ergodic subsystems are entropy dense in the collection of ergodic invariant measures.\n  This applies in particular to full shifts over finitely generated abelian groups.\n  The proof uses Cortez--Petite Følner tilings and a block-replacement construction adapted to finite-index subgroups.",
+          "authors": [
+            "Martha Łącka",
+            "Marcel Mroczek"
+          ],
+          "published": "2026-07-18T22:54:15+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16964v1",
+          "entry_id": "http://arxiv.org/abs/2607.16964v1",
+          "title": "Variations on a circular Hessenberg pair",
+          "summary": "A square matrix is called Hessenberg whenever each entry below the subdiagonal is zero and each entry on the subdiagonal is nonzero. A Hessenberg pair is an ordered pair of diagonalizable linear maps on a nonzero finite-dimensional vector space, that each act on an eigenbasis of the other one in a Hessenberg fashion. A Hessenberg system $Φ$ an `oriented' version of a Hessenberg pair. It is known that $Φ$ is determined up to isomorphism by its parameter array; this consists of the eigenvalue sequence of $Φ$, the dual eigenvalue sequence of $Φ$, and a sequence of nonzero scalars $\\{φ_i\\}_{i=1}^d$ called the split sequence of $Φ$. We are interested in some types of Hessenberg matrices, said to be circular, quasi-circular, tridiagonal, and irreducible tridiagonal. We are interested in the families of Hessenberg systems for which the associated Hessenberg matrices have one of the above types. A Hessenberg system of irreducible tridiagonal type is often called a Leonard system. In this case the associated Hessenberg pair\n  satisfies two relations, called the tridiagonal relations. We are interested in the family of Hessenberg systems for which the associated Hessenberg pair satisfies the tridiagonal relations. We are also interested in the family of Hessenberg systems for which the eigenvalue sequence and dual eigenvalue sequence\n  satisfy a linear three-term recurrence. In the present paper we have two main goals. First, we show how the above families of Hessenberg systems are related to each other. Second, we describe each family in terms of the parameter array.",
+          "authors": [
+            "Kazumasa Nomura",
+            "Paul Terwilliger"
+          ],
+          "published": "2026-07-18T20:54:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16948v1",
+          "entry_id": "http://arxiv.org/abs/2607.16948v1",
+          "title": "Uniform Sobolev inequalities on geometric graphs",
+          "summary": "There is significant interest in the study of calculus on graphs, especially regarding the use of gradient-based methods for applications in data driven problems such as classification, clustering and regularisation for inverse problems. Geometric graphs, whose vertices are take from from a Euclidean domain and whose edge structure is determined by the distance between the nodes in the domain, have been central in theoretical studies. Typical approaches for analysis, such as studying consistency and the existence of continuum limits, rely on $Γ$-convergence. This technique has some limitations, as it requires the typical length scale which determines the connectivity structure of the graph to be much larger than the scales frequently used for applications. Moreover, it may fail to provide quantitative results. This paper provides necessary and sufficient conditions on the asymptotic behaviour of this length scale for the existence of a uniform collection of Sobolev inequalities on a sequence of geometric graphs. Furthermore, these inequalities hold when the length scales are much smaller than what is typically assumed for $Γ$-convergence results and within the range of what is used for data-driven problems. The Sobolev inequalities provide a quantitative estimate on the $L^q$-regularisation effect of discrete gradients.",
+          "authors": [
+            "Samuel Mercer",
+            "Yves van Gennip"
+          ],
+          "published": "2026-07-18T20:04:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16909v1",
+          "entry_id": "http://arxiv.org/abs/2607.16909v1",
+          "title": "An affine Birkhoff-Kellogg type result in product spaces and its application to differential systems",
+          "summary": "We prove a version of the Birkhoff-Kellogg theorem in product spaces, under affine transformations. This is a fairly natural framework that arises when dealing with parameter-dependent systems of functional-differential equations. We provide criteria on the existence of parameter-dependent solutions that have all the components nontrivial. The theoretical results are illustrated in the case of systems of second order functional-differential equations, where the functional part can cover the interesting cases of time and state-dependent deviated arguments. We provide a concrete example, for which we furnish numerically approximated solutions, coherent with our theoretical framework, and in which we compute or estimate all the constants that are required by our abstract results.",
+          "authors": [
+            "Alessandro Calamai",
+            "Gennaro Infante",
+            "Giuseppe Antonio Veltri"
+          ],
+          "published": "2026-07-18T18:06:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16890v1",
+          "entry_id": "http://arxiv.org/abs/2607.16890v1",
+          "title": "Decoding Desarguesian spread codes beyond half minimum distance",
+          "summary": "Spread codes are a well-known family of constant-dimension subspace-metric codes. For constant dimension $k$ and ambient space dimension $n$ being a multiple of $k$, these codes have minimum distance $2k$ and a rich geometric structure. In this paper, we study the decoding capabilities of the Nearest Neighbor Decoder for Desarguesian spread codes, establishing that unique decoding is still achievable beyond half the minimum distance. Motivated by this, we develop a new decoding algorithm to uniquely decode Desarguesian spread codes in the presence of both insertions and deletions, which increase and decrease, respectively, the dimension of the transmitted codeword. Even when the sum of the dimensions of insertions and deletions exceeds half the minimum distance, provided that deletions are of dimension at most $k-2$, the algorithm succeeds with a small decoding failure. We also propose two refinements to this algorithm that, empirically, can handle nearly as many insertions as the Nearest Neighbor Decoder.",
+          "authors": [
+            "Ermes Franch",
+            "Chunlei Li",
+            "Angelica Piccirillo"
+          ],
+          "published": "2026-07-18T17:14:59+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16889v1",
+          "entry_id": "http://arxiv.org/abs/2607.16889v1",
+          "title": "Neighbourhood complexity and identification problems for graphs of bounded treewidth and pathwidth",
+          "summary": "The neighbourhood complexity $nc(G,k)$ of a graph $G$ is a quantity measuring, for a graph $G$ and an integer $k$, the maximum possible number (over all vertex subsets $S$ of size $k$) $|\\{N[v]\\cap S, v\\in V(G)\\}|$ of $S$-neighbourhoods in $G$. This notion is important in structural graph theory and algorithm design (especially in parameterized complexity, in particular model checking and kernelization).\n  While generally $nc(G,k)\\leq 2^k$ and this bound can be achieved, it is known that sparse graphs and structured dense graphs have linear neighbourhood complexity, that is, $nc(G,k)\\in O(k)$ for any such graph $G$. However, for many graph classes, the best possible constants are not known. We focus on graphs of bounded treewidth and pathwidth, showing that (when $k\\geq w+1$) (i) if $G$ has treewidth $w\\geq 2$, then $nc(G,k)\\leq (k-w+1)2^{w}+w$, and (ii) if $G$ has pathwidth $w\\geq 2$, then $nc(G,k)\\leq (k-w+2)2^{w-1}+2k-w-2$. Moreover, we provide constructions that reach these bounds, whenever $w\\geq 2$ and $k\\geq 2w+1$ ($k\\geq 2w-1$ for pathwidth).\n  Interestingly, in contrast, we also have the tight bound $nc(G,k)\\leq \\frac{7}{3}k$, for graphs $G$ with pathwidth 1 or treewidth 1.",
+          "authors": [
+            "Gaétan Berthe",
+            "Florent Foucaud",
+            "Tuomo Lehtilä",
+            "Aline Parreau"
+          ],
+          "published": "2026-07-18T17:11:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16884v1",
+          "entry_id": "http://arxiv.org/abs/2607.16884v1",
+          "title": "The $Σ$-Chain Product: A Succinct Model of Automata (De)Composition (Extended Version)",
+          "summary": "The cascade product is a fundamental construction in automata theory, enabling hierarchical composition of automata and playing a central role in decomposition results such as the Krohn-Rhodes theorem. However, its use is limited by the exponential size required to represent cascades, which stems from the fact that each component may depend on all preceding ones, leading to exponentially large alphabets. To address this issue, we introduce the $Σ$-chain product, a restricted variant in which each component depends only on the input alphabet and the component immediately preceding it. We show that $Σ$-chains achieve linear-size representations and can be exponentially more succinct than cascades. We prove that $Σ$-chains and cascades are expressively equivalent to specific classes of automata, such as permutation-reset automata. As a consequence, we derive that a language is regular if and only if it is recognized by a $Σ$-chain of permutation-reset automata. Finally, we analyze structural properties of $Σ$-chains of reset automata, including a relation with well-known subclasses of star-free languages.",
+          "authors": [
+            "Roberto Borelli",
+            "Davide Bresolin",
+            "Luca Geatti",
+            "Angelo Montanari",
+            "Matteo Zavatteri"
+          ],
+          "published": "2026-07-18T16:58:59+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16879v1",
+          "entry_id": "http://arxiv.org/abs/2607.16879v1",
+          "title": "Complexity Classification of Colouring Problems with Parity Constraints",
+          "summary": "We study variants of graph colouring with parity constraints. More specifically, we consider $q$-colourings $c\\colon V(G)\\rightarrow \\{1,\\dots,q\\}$ of a graph $G$ where, for every vertex $v\\in V(G)$, the number of neighbours $w$ of $v$ with $c(w)=c(v)$ is restricted to be odd, even, positive, zero or a combination thereof. For every colour $i\\neq c(v)$ the number of neighbours $w$ of $v$ with $c(w)=i$ is restricted by a constraint of similar type. Many known colouring problems such as proper colouring, defective colouring, exact defective colouring, odd colouring, and strong odd colouring can be described within this framework of constraining graph colourings, and therefore considering variants constitutes a natural generalisation of known colouring problems. We provide a comprehensive study of the computational complexity of different combinations of constraints involving parity.",
+          "authors": [
+            "Rémy Belmonte",
+            "Juan Pablo Bravo",
+            "Noleen Köhler",
+            "Haiko Müller"
+          ],
+          "published": "2026-07-18T16:34:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16860v1",
+          "entry_id": "http://arxiv.org/abs/2607.16860v1",
+          "title": "Maximizing copies of a fixed graph in graphs with a prescribed number of edges",
+          "summary": "For a graph $H$ denote by $\\operatorname{emb}\\left(H, m\\right)$ the maximal number of labeled embeddings of $H$ in a graph of size $m$. Erdős posed the question of finding $\\operatorname{emb}\\left(H, m\\right)$ for different values of $H$ and $m$. Following related asymptotic and stability results, we determine the value of $\\operatorname{emb}\\left(H, {\\binom{n}{2}}\\right)$ for every graph $H$ with fractional independence number $v_H/2$ and all sufficiently large $n$. We also show that for those $H$ (except for matchings) and $n$ the only graph with a maximal number of embeddings is $K_n$. This fully characterizes the graphs for which $K_n$ achieves the maximal number of embeddings.",
+          "authors": [
+            "Yishai Meir"
+          ],
+          "published": "2026-07-18T15:49:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16855v1",
+          "entry_id": "http://arxiv.org/abs/2607.16855v1",
+          "title": "Rtl2lean: Automated RTL-to-Lean Translation with Hierarchical Theorem Generation and Lemma Reuse",
+          "summary": "Formal verification with interactive theorem provers can provide strong correctness guarantees for register transfer level designs, but applying it to existing SystemVerilog code requires substantial manual effort in semantic modeling and proof construction. This paper presents Rtl2lean, a framework that automatically translates RTL designs into executable Lean 4 models and builds a hierarchical theorem library for subsequent verification. The generated model represents hardware execution as a pure state transition function, while a four layer theorem framework captures combinational semantics, sequential updates, single cycle behavior, and reachability and invariants. When a high level property cannot be discharged by the existing theorem base, an LLM based proving loop proposes intermediate lemmas from the current proof context and Lean feedback. Only lemmas accepted by the Lean kernel are added to the reusable lemma pool. Experiments on six SystemVerilog designs generate 403 theorems, all of which are successfully checked by Lean. Among 358 foundational lemmas, 287 are available for automatic reuse, yielding a reusable lemma ratio of 80.2 percent. The results demonstrate that Rtl2lean can construct machine checked RTL proof libraries with low checking overhead and substantial cross property lemma reuse.",
+          "authors": [
+            "Hongqin Lyu",
+            "Junxing Dong",
+            "Yonghao Wang",
+            "Zhiteng Chao",
+            "Tiancheng Wang",
+            "Huawei Li"
+          ],
+          "published": "2026-07-18T15:40:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16854v1",
+          "entry_id": "http://arxiv.org/abs/2607.16854v1",
+          "title": "Linear Turán Numbers of Uniform Hypertrees",
+          "summary": "A hypergraph is \\emph{linear} if every pair of vertices is contained in at most one hyperedge. For a family $\\mathcal{F}$ of $r$-uniform hypergraphs, the linear Tur'an number $ex^{\\mathrm{lin}}_r(n,\\mathcal{F})$ is the maximum number of hyperedges in an $n$-vertex $\\mathcal{F}$-free linear $r$-uniform hypergraph. Extending the work of Gy'arf'as, Ruszink'o, and S'ark\"ozy on $3$-uniform linear hypertrees, we study linear Tur'an numbers for higher uniformity.\n  We determine the linear Tur'an number of the $r$-uniform linear star $S_k^r$, proving [ex^{\\mathrm{lin}}_r(n,S_k^r)\\le \\frac{n(k-1)}{r},] with equality exactly for $(k-1)$-regular linear $r$-uniform hypergraphs, whenever they exist. We also construct dense $T_k^r$-free hypergraphs showing that, under suitable divisibility and design-existence assumptions, [ex^{\\mathrm{lin}}_r(n,T_k^r)\\ge \\frac{n(k-1)}{r}] for every linear $r$-uniform hypertree $T_k^r$ with $k$ hyperedges.\n  We then study all linear hypertrees with four hyperedges. For the broom $B_4^r$, we prove [ex^{\\mathrm{lin}}_r(n,B_4^r)\\le \\frac{(r+1)n}{r},] and characterize the extremal hypergraphs as disjoint unions of Steiner systems $S(2,r,r^2)$, whenever such systems exist. For the crown $E_4^r$, we establish [ex^{\\mathrm{lin}}_r(n,E_4^r)\\le \\frac{(2r-1)n}{r},] together with a lower-bound construction leaving only a constant-factor gap.\n  For the linear path $P_4^r$, we construct $P_4^r$-free hypergraphs with $(r+1)n/r$ hyperedges and conjecture this is the optimal general bound. We verify the conjecture for connected hypergraphs under suitable degree conditions. Finally, for $r=4$, we identify counterexamples to a key structural claim in a previous proof of Zhang and Wang, give a new proof that [ex^{\\mathrm{lin}}_4(n,P_4^4)\\le \\frac{5n}{4},] and show that equality holds precisely for disjoint unions of Steiner systems $S(2,4,16)$.",
+          "authors": [
+            "Rajat Adak",
+            "Pragya Verma"
+          ],
+          "published": "2026-07-18T15:32:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16832v1",
+          "entry_id": "http://arxiv.org/abs/2607.16832v1",
+          "title": "Ideal Gårding polynomials",
+          "summary": "We introduce ideal Gårding polynomials, a convexity-enhanced subclass of Gårding polynomials whose Gårding components are recursively convex under partial differentiation. This class strictly contains real stable polynomials and, after translation and homogenization, lies in the Lorentzian class.\n  Our main result is that ideal Gårding polynomials still admit a robust structure theory despite this additional convexity: they are preserved under polarization, satisfy natural closure properties, and support a linear preserver theory. A key contribution of this paper is a universal model for univariate Gårding polynomials, described by monotone root sequences and equivalently by volume polynomials of Pitman--Stanley polytopes. We establish quotient concavity, and Newton--Maclaurin type inequalities, which leads to the polarization theorem, and suggests further connections with convex geometry and Lorentzian polynomials.",
+          "authors": [
+            "Hao Fang",
+            "Biao Ma"
+          ],
+          "published": "2026-07-18T14:07:17+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16830v1",
+          "entry_id": "http://arxiv.org/abs/2607.16830v1",
+          "title": "Topological weak mixing for certain linear involutions of hyperelliptic type",
+          "summary": "A linear involution is an injective piecewise isometry defined on a pair of disjoint intervals. They are defined by a combinatorial data given by a generalized permutation and a length vector. As it was done for interval exchange transformations, it is conjectured that, except for some combinatorial data, a typical linear involution is measure-theoretically weakly mixing. In this direction, one may first explore the question of topological weak mixing for topological models of linear involutions. In this article we prove topological weak mixing for the natural symbolic codings of typical linear involutions defined by some generalized permutations of hyperelliptic type. We consider the generalized permutation \\[\n  σ_{s,r}\n  =\n  \\begin{pmatrix}\n  0 & A & 1 & 2 & \\cdots & s & A & s+1 & s+2 & \\cdots & s+r \\\\\n  s+r & \\cdots & s+2 & s+1 & B & s & \\cdots & 2 & 1 & B & 0\n  \\end{pmatrix}. \\] We prove that the natural symbolic coding of a typical linear involution defined by a generalized permutation in the Rauzy class of $σ_{s,r}$ is topologically weakly mixing, provided that it has at least a simple letter and its associated genus is sufficiently large.",
+          "authors": [
+            "Felipe Arbulú",
+            "Bastián Espinoza",
+            "Alejandro Maass"
+          ],
+          "published": "2026-07-18T14:06:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16827v1",
+          "entry_id": "http://arxiv.org/abs/2607.16827v1",
+          "title": "Projectional continuous data assimilation on the torus: Resonant and kernel-free regimes",
+          "summary": "We study continuous data assimilation for the two-dimensional incompressible Navier-Stokes equations on the periodic torus using a single signed scalar velocity projection in a prescribed spatially varying direction. We prove exponential synchronization in both L2 and H1 through two complementary mechanisms. In the regular resonant regime, nontrivial invisible currents are controlled through a moving-frame expansion, adapted coordinates, and Farhat-Lunasin-Titi logarithmic estimates, provided the resulting geometric shear defect is viscously absorbable. This recovers the periodic one-component mechanism for constant rational directions and applies to genuinely nonconstant projection fields. In the kernel-free regime, qualitative injectivity and compactness yield observability with arbitrarily small viscous leakage, giving synchronization for every sufficiently large gain without an upper gain restriction. For sufficiently regular projection fields, both mechanisms extend to L2-stable Type-I coarse scalar observations satisfying a first-order approximation property, under the usual gain-resolution condition. A common parabolic smoothing argument then upgrades all four L2-synchronization results to H1-synchronization without additional observation hypotheses.",
+          "authors": [
+            "Tsogtgerel Gantumur"
+          ],
+          "published": "2026-07-18T14:02:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16810v1",
+          "entry_id": "http://arxiv.org/abs/2607.16810v1",
+          "title": "The unlabeled list color function of disconnected graphs",
+          "summary": "Given a graph $G$, its chromatic polynomial $P (G, k)$ counts proper $k$-colorings, while the corresponding list color function $P_{\\ell} (G, k)$ counts the minimum number of proper colorings across all assignments of $k$ colors to each vertex. While it is clear that $P_{\\ell} (G, k) \\leq P (G, k)$, Donner showed in 1992 that $P_{\\ell} (G, k) = P (G, k)$ whenever $k$ is sufficiently large. In 1985, Hanlon defined and studied the chromatic polynomial for an unlabeled graph. A list version of Hanlon's notion was introduced in 2024 by Kaul and Mudrock, who further raised the question of whether the analog of Donner's result holds in the unlabeled case. While they proved this for all connected point-determining graphs, even the case of the edgeless graph on $n$ vertices remained open and was posed as a conjecture. We prove this conjecture and show that it implies that, more generally, a disconnected graph satisfies the unlabeled analog of Donner's result if all of its connected components do.",
+          "authors": [
+            "Hemanshu Kaul",
+            "Jeffrey A. Mudrock",
+            "Armin Straub"
+          ],
+          "published": "2026-07-18T13:04:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16797v1",
+          "entry_id": "http://arxiv.org/abs/2607.16797v1",
+          "title": "Equivariant Schubert Calculus for Inverse Grassmannian Permutations",
+          "summary": "We give a Graham-positive expansion for the product of two double Schubert polynomials indexed by two inverse Grassmannian permutations. Surprisingly, the nonzero structure constants are double Schubert polynomials in two disjoint sets of equivariant variables. We also give a positive expansion for the product of two single Schubert polynomials indexed by a $321$-avoiding permutation (e.g., a Grassmannian permutation) and an inverse Grassmannian permutation. Unexpectedly, the nonzero structure constants are Edelman--Greene coefficients.",
+          "authors": [
+            "Yiming Chen",
+            "Neil J. Y. Fan",
+            "Rui Xiong",
+            "Ming Yao"
+          ],
+          "published": "2026-07-18T12:28:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16778v1",
+          "entry_id": "http://arxiv.org/abs/2607.16778v1",
+          "title": "Treewidth of Products of Graphs with High Treewidth",
+          "summary": "Treewidth is the standard measure for how ``tree-like'' a graph is. This paper studies how the treewidth of a product graph depends on the treewidth of its factors. Kozawa, Otachi, and Yamazaki [2014] and Hickingbotham and Wood [2025] independently showed that $\\text{tw}(G\\boxtimes H)\\geq (\\text{tw}(G)+1)\\text{had}(H)-1$ for all graphs $G$ and $H$, where $\\text{had}(H)$ is the Hadwiger number of $H$. We improve this bound to $\\text{tw}(G\\boxtimes H)\\geq (\\text{tw}(G)+1)(\\text{tw}(H)+1)-1$, thereby solving an open problem of Hickingbotham and Wood. We also prove analogous product inequalities for pathwidth, Cartesian products, and strict bramble number, which is a parameter that is tied to treewidth. As an application of our results, we show that products of expanders have large subgraphs that are expanders.",
+          "authors": [
+            "Raj Kaul"
+          ],
+          "published": "2026-07-18T11:27:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16773v1",
+          "entry_id": "http://arxiv.org/abs/2607.16773v1",
+          "title": "Revisiting the Stability of the Ingleton Inequality: A Tropicalization-Free Approach",
+          "summary": "The classical Ingleton inequality is known to hold for entropic points under specific exact conditional independence constraints. Recently, Matveev and Romashchenko (2026) investigated the stability of these implications, quantifying the extent to which the Ingleton inequality can be violated when a group of conditional mutual information terms is small but non-zero. While their proofs relied fundamentally on the complex framework of tropical probability spaces, we revisit these stability results using a completely tropicalization-free approach. By developing an alternative framework, we significantly streamline the underlying concepts and proofs, derive explicit error terms, and improve some estimates. Furthermore, we resolve an open problem posed in prior work by exhibiting a new infinite family of entropy inequalities that establishes the stability of the sum of two Ingleton expressions.",
+          "authors": [
+            "Laszlo Csirmaz"
+          ],
+          "published": "2026-07-18T11:18:30+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16772v1",
+          "entry_id": "http://arxiv.org/abs/2607.16772v1",
+          "title": "On Zarankiewicz's bounds for valued vector spaces",
+          "summary": "We establish absolute and relative almost-linear Zarankiewicz bounds for semilinear relations in valued vector spaces. For every fixed arity and description complexity, a $K_{t,\\ldots,t}$-free semilinear $r$-partite hypergraph has at most \\[\n  O\\!\\left(n^{r-1}(\\log n)^c\\right) \\] edges, where $c$ depends only on the arity and the number of valuative literals. In the bipartite case a separate arbitrary-trace argument gives the explicit bound $O(n(\\log n)^{2s})$ for description complexity $(ρ,s)$. We also prove a relative extension theorem: intersecting any relation with a hereditary almost-linear profile by $s$ affine moving-radius comparisons increases the logarithmic exponent by at most $2s$. For the additive affine-valuative structures on $\\mathbb Q_p$ and $\\mathbb C_p$, quantifier elimination converts these semilinear results into bounds for all definable relations. Finally, over every valued field with infinite value group, we construct $K_{2,2}$-free semilinear point--box graphs of description complexity $(1,4)$ with $Ω(n\\log n/\\log\\log n)$ edges.",
+          "authors": [
+            "Hongyi Gou",
+            "Mihir Mittal",
+            "Chieu-Minh Tran",
+            "Zhenyu Yang"
+          ],
+          "published": "2026-07-18T11:14:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16757v1",
+          "entry_id": "http://arxiv.org/abs/2607.16757v1",
+          "title": "A New Branching Bisimulation for Probabilistic Processes",
+          "summary": "We introduce a new branching bisimulation for probabilistic processes, which induces a more refined equivalence relation than any known equivalence that abstracts from unobservable actions, with a rooted version that is a congruence for a language of probabilistic process with the usual static as well as dynamic constructs including recursion.",
+          "authors": [
+            "Guo Li",
+            "Zhaokai Li",
+            "Xinxin Liu",
+            "Zhiming Liu",
+            "Quan Sun",
+            "Wei Zhang"
+          ],
+          "published": "2026-07-18T10:44:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16746v1",
+          "entry_id": "http://arxiv.org/abs/2607.16746v1",
+          "title": "Supersaturation in Nosal graphs: Triangles and books",
+          "summary": "In this paper, we use the spectral surplus $λ(G) - \\sqrt{m}$ to measure how far $G$ lies above the Nosal threshold, and prove the following edge-spectral supersaturation results for triangles and books.\n  (a) Every graph $G$ with $m\\ge 3$ edges and $λ(G) \\ge 1 + \\sqrt{m-2}$ contains at least $m-2$ triangles, with equality if and only if $G = K_3 \\vee \\tfrac{m-3}{3} K_1$. This can be viewed as the third-layer supersaturation in the jump phenomenon, after the first layer $t(G) \\ge \\lfloor \\tfrac{1}{2}(\\sqrt{m}-1) \\rfloor$ proved by Ning and Zhai, and the second layer $t(G) \\ge \\tfrac{m-1}{2}$ by Zhang and Zhai.\n  (b) Every $m$-edge graph $G$ satisfies $t(G) \\ge m\\bigl(λ- \\sqrt{m}\\,\\bigr)$, with equality if and only if $G$ is complete bipartite. Consequently, $λ(G) \\ge \\sqrt{m} + q$ forces $t(G) > q m$ for every real $q > 0$. This is an edge-spectral counterpart of the Lovász--Simonovits theorem, and it improves the Bollobás--Nikiforov bound $t(G) \\ge \\tfrac13 λ(λ^2 - m)$ in the range $\\sqrt m \\le λ(G) \\le 1.3\\sqrt m $.\n  (c) Every $m$-edge Nosal graph $G$ contains a book of size greater than $\\tfrac14 \\sqrt{m}$. This improves two recent results on the booksize constant: $\\tfrac{1}{24}$ proved by Li, Liu and Zhang, and $\\tfrac19$ by Zhai, Li and Lou. This narrows the gap toward the conjectured optimal constant $\\tfrac13$.\n  (d) Every $m$-edge Nosal graph $G$ contains at least $\\bigl(\\tfrac{1}{8} - o(1)\\bigr) m$ copies of the kite $C_4^+=B_2$, and the constant $\\tfrac18$ is best possible. This determines the sharp asymptotic constant for counting $C_4^+$ and strengthens the $Ω(m)$ bound of Li, Liu and Zhang.",
+          "authors": [
+            "Hongzhang Chen",
+            "Yongtao Li",
+            "Quanyu Tang"
+          ],
+          "published": "2026-07-18T10:16:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16737v1",
+          "entry_id": "http://arxiv.org/abs/2607.16737v1",
+          "title": "Degree-similar Unicyclic Graphs are Isomorphic",
+          "summary": "Two graphs are degree-similar if their adjacency matrices and degree matrices are simultaneously similar. Godsil and Sun asked whether non-isomorphic degree-similar unicyclic graphs exist. We prove that they do not exist. Every graph degree-similar to a unicyclic graph is isomorphic to it. The proof uses a symbolic leaf-peeling algorithm to recover the rooted trees attached to the unique cycle, and a rigidity lemma for colored cycles to identify automorphisms of the cycle.",
+          "authors": [
+            "Yi-Liu Zhang",
+            "Yi-Zheng Fan"
+          ],
+          "published": "2026-07-18T09:51:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16694v1",
+          "entry_id": "http://arxiv.org/abs/2607.16694v1",
+          "title": "An alternative proof of the upper bound for the generalised Erdős box problem",
+          "summary": "In this article, we present an alternative proof of the classical theorem of Erdős on the Turán numbers of complete $r$-partite $r$-uniform hypergraphs. More precisely, we establish that for finite sets $A_{1},\\ldots,A_{r}$ with $|A_{1}|\\leq\\cdots\\leq|A_{r}|$ and sufficiently large positive integer $n$, \\[ \\mathrm{ex}(n,\\mathbb{K}^{(r)}[A_{1},\\ldots,A_{r}]) =O\\left(n^{r-\\frac{1}{|A_{1}|\\cdots|A_{r-1}|}}\\right). \\] Our approach develops a framework based on repeated applications of Hölder's inequality and the enumeration of configurations through multiple sums. The method combines the principle of inclusion--exclusion with a discrete analogue of Fubini's theorem, yielding recursive estimates for extremal quantities. This provides an alternative proof of Erdős's classical upper bound and offers a unified perspective on the generalized Erdős box problem.",
+          "authors": [
+            "Subhankar Dash",
+            "Kaushik Majumder"
+          ],
+          "published": "2026-07-18T08:04:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16690v1",
+          "entry_id": "http://arxiv.org/abs/2607.16690v1",
+          "title": "Euler's partition theorem and lecture hall partition theorem",
+          "summary": "Euler's partition theorem was an important step in the establishment of Integer Partitions as a field in its own right. It has attracted many great mathematicians' attention, including Sylvester, and has foreshadowed a number of further results. Another deep result in Partition Theory is the beautiful Lecture Hall Partition Theorem, which is a finite version of Euler's identity. In this work, we introduce the lecture hall length to partitions into distinct parts, and devise a bijection from partitions into odd parts to partitions into distinct parts, which unifies many results together. Various recent theorems regarding the minima excludant and block index become immediate consequences of this bijection. We also pose an interesting conjecture which may uncover a deep relation between Euler's partition theorem and lecture hall partition theorem.",
+          "authors": [
+            "Andrew Y. Z. Wang",
+            "Lei Zhang"
+          ],
+          "published": "2026-07-18T07:53:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2607.16679v1",
+          "entry_id": "http://arxiv.org/abs/2607.16679v1",
+          "title": "A Log-Log Saving for Matrix-Algebra Length and Terseness",
+          "summary": "Let $\\ell(\\Mat_n(F))$ denote the length of the full matrix algebra for a field $F$, i.e. the largest of the least word length needed to span $\\Mat_n(F)$, over all generating sets $S$ of $\\Mat_n(F)$. Šitov proved the general estimate $$\n  \\ell(\\Mat_n(F)) \\leq 2n\\log_2 n+4n-4. $$ The purpose of this paper is to obtain a log-log saving, and prove that for every $n>1$, $$\n  \\ell(\\Mat_n(F)) \\leq 2n\\log_2 n-2n\\log_2\\log_2 n+5n. $$\n  A theorem of Specht gives a word-criterion for unitary similarity of complex $n\\times n$ matrices. The trace argument of Freedman--Gupta--Guralnick, as used by Pappacena, shows that any upper bound on $\\ell(\\Mat_n(F))$ can be used to bound the \\emph{terseness} $τ(n)$, i.e. the least upper bound for the length of words needed in Specht's theorem. Thus, for $n> 1$, $$\n  τ(n)\\leq 4n\\log_2 n-4n\\log_2\\log_2 n+10n+1. $$",
+          "authors": [
+            "Florian Ito Sprung"
+          ],
+          "published": "2026-07-18T07:19:29+00:00"
+        }
+      ],
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-07-21T05:29:47.370559+00:00",
+      "updated_at": "2026-07-21T05:29:47.370559+00:00",
+      "finalized_at": null
     }
   ]
 }
