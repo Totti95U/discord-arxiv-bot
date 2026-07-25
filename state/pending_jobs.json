@@ -8287,7 +8287,7 @@
     },
     {
       "pipeline_id": "20260725T052405Z-a8919895",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/a3f9d174r6gt0ud48d6dkujv7e0tyzuoasq4",
       "summarize_job_name": "batches/8onp9ueu845tbzg11ckxjjb7f7cnrpsirjwh",
       "papers": [
@@ -9240,14 +9240,323 @@
         "http://arxiv.org/abs/2607.19687v1",
         "http://arxiv.org/abs/2607.19675v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2607.20765v1": {
+          "title": "長さ333のLegendre pairにおけるmultiplierの障害",
+          "summary": "長さ333のLegendre pairは、Hadamard予想において現在最小の未解決次数である668のHadamard行列を導く重要な対象である。本論文では、(ℤ/333ℤ)ˣの共通の部分群Hの作用に対して不変な構造を持つLegendre pairを研究し、そのようなペアが存在するためには|H| ≤ 6でなければならないことを証明した。mod-3圧縮によって問題を108次の核へと縮小し、候補となる30個の部分群のうち、次数9以上の19個すべてを含む計21個を除外した。除外には、中間一致（meet-in-the-middle）列挙や擬似ブール符号化を用いたソルバーが活用され、DRAT証明や算術証明書による独立した検証が行われている。",
+          "keywords": [
+            "Legendre pairs",
+            "Hadamard matrix",
+            "multiplier obstructions",
+            "compression",
+            "pseudo-Boolean encoding"
+          ],
+          "appendix": "本論文は、系列の組合せ論的性質を扱っているため「combinatorics on words」に関連があります。また、計算機を用いた証明とその検証というアプローチは「validated numerics」の広義の側面に関連します。"
+        },
+        "http://arxiv.org/abs/2607.20750v1": {
+          "title": "置換とその回転におけるパターン回避",
+          "summary": "置換の回転とは、最初の数個の項を末尾に移動させて得られる新しい置換を指し、その全ての回転の集合は円順列と呼ばれる。本論文では、長さ3の特定のパターンを最初のk≧2回の回転にわたって回避する置換の数、および最初の3回の回転がそれぞれ特定の長さ3のパターンの回転を回避するような置換の数について、厳密な公式を提示している。長さ3のパターンを回避する置換や円順列の従来の性質とは異なり、本研究で扱われるWilf同値類は、補数（complements）と逆置換（reverses）のみによって完全に決定される。また、最初の2回の回転がそれぞれ異なる長さ3のパターンを回避する置換の分類と数え上げも行っている。",
+          "keywords": [
+            "Pattern avoidance",
+            "Permutations",
+            "Rotations",
+            "Wilf-equivalence",
+            "Circular permutations"
+          ],
+          "appendix": "本論文は、組合せ論的手法を用いた置換の性質を扱っており、興味ある分野のうち「combinatorics on words」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.20735v1": {
+          "title": "任意の無限列に沿ったLi--Yorkeカオス：相対混合、SoficエントロピーおよびRokhlinエントロピー",
+          "summary": "可算無限離散群 G のコンパクト距離化可能 G 空間 X における非自明な相対混合拡大 π:(X,μ,G) → (Y,ν,G) を対象とし、ある定数 δ > 0 が存在して、G 内の任意の単射列 (sᵢ) に対して Li--Yorke カオスの条件（点対の軌道の距離の下極限が 0 かつ上極限が δ より大きい）を満たすカントール集合が存在することを証明した。この結果は、Sofic 群における正の位相同型 Sofic エントロピーに関する既存の問いに答えるものであり、また正の Rokhlin エントロピーを持つ作用に対しても適用可能である。",
+          "keywords": [
+            "Li--Yorke Chaos",
+            "Relative mixing",
+            "Sofic entropy",
+            "Rokhlin entropy"
+          ],
+          "appendix": "本論文は、興味ある分野のうち symbolic dynamics および structure of large countable infinite group に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.20405v1": {
+          "title": "Prefix--Suffix Duplication操作によるFibonacci Wordの生成",
+          "summary": "Fibonacci wordは語の組合せ論における古典的な対象であり、生物学的着想を得た言語操作を用いることで、それらが局所的な書き換え機構からどのように生じるかを研究できる。本論文では、Dumitranの予想を解決・強化し、1 ≤ p ≤ nにおいて、長さk ≥ 3の接頭辞重複操作のみを用いて、同じパリティのインデックスを持つFibonacci word（F₂ₚからF₂ₙ、またはF₂ₚ₊₁からF₂ₙ₊₁）を生成可能であることを示した。また、この重複長さの境界値3が最適であることを証明し、目標とするFibonacci wordの長さに対して線形時間で導出過程を生成するアルゴリズムを提示した。",
+          "keywords": [
+            "Fibonacci words",
+            "prefix--suffix duplication",
+            "combinatorics on words",
+            "Dumitran's conjecture"
+          ],
+          "appendix": "この論文は「combinatorics on words」および「formal languages」の分野に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.20401v1": {
+          "title": "有限表示群における共役元長",
+          "summary": "有限生成群 G における共役元長関数とは、互いに共役な元を表す語のペアに対し、それらを共役させる元の長さの最小上界を、元の語の長さの和の関数として定義したものである。本論文では、共役元長関数の重要性の解説、既知の知見のサーベイ、および基本的な手法や具体例の提示を通じて、この関数の体系的な研究を促進することを目的としている。",
+          "keywords": [
+            "conjugator length function",
+            "finitely generated group",
+            "conjugate elements"
+          ],
+          "appendix": "本論文は、有限生成群という無限群の構造を扱っており、「structure of large countable infinite group」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.20595v1": {
+          "title": "彩色擬対称関数のe-対数凹性に対する13頂点の反例",
+          "summary": "本論文では、彩色擬対称関数の基本対称関数（elementary-basis）係数が、正かつ回文的かつ単峰的であるが、対数凹性（log-concave）を持たない13頂点の連結な単位区間グラフの存在を示した。具体的には、特定のヘッセンベルグ関数hと分割λに対して、e_λの係数列が対数凹性を満たさないことを計算によって証明した。これにより、Abreu--NigroやTom、Sagan--Tomらによって提唱されていた予想を否定した。この計算結果は、厳密な整数および有理数演算を用いた決定論的検証プログラムによって保証されている。",
+          "keywords": [
+            "chromatic quasisymmetric functions",
+            "unit interval graph",
+            "e-log-concavity",
+            "Hessenberg function",
+            "elementary-basis coefficient"
+          ],
+          "appendix": "本論文は、単位区間グラフや彩色擬対称関数の組合せ論的性質を扱っており、興味ある分野のうち「combinatorics on words」に関連する組合せ論的な手法が含まれています。"
+        },
+        "http://arxiv.org/abs/2607.20273v1": {
+          "title": "固定費1のための積近傍判定法",
+          "summary": "本論文では、固定費1（fixed price one）であるための柔軟な判定法を証明している。この判定法は、局所体上の高階格子や、エキゾチックな建物（building）の格子を含むアフィン建物の自己同等群に適用可能であり、従順群（amenable groups）が固定費1を持つという既存の結果も包含する。さらに、これを局所コンパクト群の状況に拡張し、2つの非コンパクトかつコンパクト生成な単峰型局所コンパクト群の積、およびその積の中の格子が固定費1を持つことを導出している。",
+          "keywords": [
+            "fixed price one",
+            "higher-rank lattices",
+            "affine buildings",
+            "amenable groups",
+            "locally compact groups"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野と密接に関連しており、特に高階格子や無限群の力学系的な性質である固定費（fixed price）を扱っています。"
+        },
+        "http://arxiv.org/abs/2607.20222v1": {
+          "title": "Skew Bracesにおける有限指数問題",
+          "summary": "本論文では、skew brace（斜ブレース）における有限指数に関連する複数の問題を調査している。まず、skew brace Bの部分skew brace Aにおいて、加法的な指数が有限であることと乗法的な指数が有限であることは同値であり、有限な場合はそれらが一致することを証明した。また、指数3の強左イデアルを持ちながら有限指数のイデアルを含まない左ブレースを構成し、既存の問いに対して否定的な回答を与えた。さらに、有限の加法・乗法共役類と有限のλ軌道を持つ元が(s)-元となることを示した。最後に、n ≥ 3における自由右冪零（right-nilpotent）skew braceにおいて、イデアルとしては有限生成であるが、skew braceとしては有限生成ではない指数2のイデアルが存在することを明らかにした。",
+          "keywords": [
+            "skew braces",
+            "finite index",
+            "strong left ideal",
+            "right-nilpotent",
+            "(s)-element"
+          ],
+          "appendix": "本論文はskew braceの代数的構造を扱っており、群論的な性質の探究という観点から「structure of large countable infinite group」に関連する側面があります。また、skew braceはYang-Baxter方程式の解の構成と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.20190v1": {
+          "title": "GDPRの目的適合性のためのMultiparty Session Types",
+          "summary": "GDPR（一般データ保護規則）が定める「目的制限」の原則に対し、マルチパーティ・セッション型を用いた形式的な検証枠組みを提案する論文である。従来のソフトウェア開発では目的の宣言が非形式的であり、特に分散システムにおける実効的な検証が困難であった。本研究では、目的をエンティティ間の構造化された相互作用プロトコルとして定義し、プロセス計算と型システムを用いることで、実装が宣言された目的から逸脱しないことを数学的に保証（主節削減と目的への忠実性を証明）する。医療システムの事例研究を通じて、ライフサイクル駆動型のプライバシー・バイ・デザイン手法としての実用性を示している。",
+          "keywords": [
+            "Multiparty Session Types",
+            "GDPR",
+            "Purpose Compliance",
+            "Process Calculus",
+            "Privacy-by-design"
+          ],
+          "appendix": "本研究は分散システムのプロトコルや型システムを扱っており、理論計算機科学の文脈において「automata theory」や「formal languages」の分野と深い関連があります。"
+        },
+        "http://arxiv.org/abs/2607.20186v1": {
+          "title": "LeanにおけるDAG状の証明からブール回路への変換",
+          "summary": "本論文では、純粋含意最小論理における自然演繹の証明を水平圧縮して得られるDAG状導出構造（DLDS）を、ブール回路として符号化する手法を提案している。DLDSは、論理的正当性を維持しながら木状の証明を有向非巡回グラフへと圧縮し、冗長性を削減する。研究では回路構築プロセスを形式的に定義し、固定されたパス割り当てに対してブール回路が意図された依存性伝播セマンティクスと一致するという点別正当性を確立した。また、Leanを用いた形式化により、回路評価器に対する機械チェック済みの保証を与えている。この手法は自動定理証明や形式的認証に新たな視点を提供するものである。",
+          "keywords": [
+            "Natural Deduction",
+            "Dag-Like Derivability Structures",
+            "Boolean circuits",
+            "Lean formalization",
+            "minimal logic"
+          ],
+          "appendix": "本論文は、回路評価や証明構造の形式化を扱っており、計算理論の観点から「automata theory」や「formal languages」の分野に関連しています。また、定理証明支援系Leanを用いた形式検証が行われています。"
+        },
+        "http://arxiv.org/abs/2607.20183v1": {
+          "title": "Path Predicate Modal Logic の基礎的モデル理論",
+          "summary": "Path Predicate Modal Logic (PPML) は、命題記号の代わりに関係述語を原子として扱う基本様相論理の一般化であり、XPath や DataGL といったデータ認識型の形式体系を抽象的に研究するための枠組みである。本論文では、PPML の表現力を特徴付けるため、Hennessy-Milner クラスの様々な定義手法や van Benthem の特徴付け定理を含む、基礎的なモデル理論的側面を調査している。標準的な手法との類似点を整理しつつ、PPML 独自の機能がもたらす主要な課題について論じている。",
+          "keywords": [
+            "Path Predicate Modal Logic",
+            "Model Theory",
+            "Hennessy-Milner classes",
+            "van Benthem characterization theorem",
+            "Data-aware formalisms"
+          ],
+          "appendix": "本論文は XPath などのクエリ言語の抽象化を扱っており、計算機科学におけるオートマトン理論 (automata theory) や形式言語 (formal languages) の分野と関連を有しています。"
+        },
+        "http://arxiv.org/abs/2607.20180v1": {
+          "title": "通信プロトコル検証のための並列演算子を備えた動的論理",
+          "summary": "本論文では、暗号プロトコルの真正性と安全性を形式検証するために、並列演算子を導入した動的論理を提案している。この論理は通信アクションを組み込み、特に攻撃者が存在する環境下でのプロトコル実行を推論するように設計されている。既存の並列動的論理に対し、Dolev-Yao攻撃者モデルに基づく概念を導入することで拡張を行った。基礎となる論理が完全な公理系を持つことを利用し、拡張されたシステムにおいても完全な公理化を実現している。さらに、提案論理のためのタブロー計算を開発し、その停止性、健全性、および完全性を証明している。",
+          "keywords": [
+            "dynamic logic",
+            "parallel operator",
+            "cryptographic protocols",
+            "Dolev-Yao intruder model",
+            "tableau calculus"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「automata theory」や「formal languages」と、形式手法や論理体系の観点で密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.20178v1": {
+          "title": "非決定性選択のための論理的3値意味論",
+          "summary": "リアクティブかつ非決定的なシステムにおける計算エラーの論理的形式化を提案した論文。並列計算で生じる非決定的な選択を忠実に表現するため、新しい3値対称非決定性選言を導入している。この結合子は非決定性行列（Nmatrices）の枠組みで定義され、Kleeneの意味論とBochvarの論理を最小限に組み合わせることで、McCarthyの論理のような逐次評価に伴う非対称性を排除している。これにより、エラーを含む混合ケースにおいて非決定的な結果を許容しながら、交換法則と演算の対称性を維持する意味論を実現している。",
+          "keywords": [
+            "Nondeterministic choice",
+            "3-valued semantics",
+            "Nondeterministic matrices",
+            "Kleene's semantics",
+            "Bochvar's logic"
+          ],
+          "appendix": "計算体系の論理的側面を扱っており、非決定性システムの振る舞いに関する記述は、計算モデルの基礎としてオートマトン理論 (automata theory) や形式言語 (formal languages) の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.20170v1": {
+          "title": "量子項書き換えシステム：計算量解析への応用",
+          "summary": "項書き換えシステム (TRS) を量子計算に拡張した「量子項書き換えシステム (QTRS)」を提案し、その計算量解析への応用について論じている。QTRSは物理的に実現可能なプロセスに対応しており、停止性証明や簡約長の境界推定といったTRSの静的解析手法を適応させることが可能である。特定の条件下で停止するQTRSは、簡約長によってサイズが制限された量子回路の族へとコンパイル可能であり、量子回路に対して普遍性を持つ。さらに、量子多項式時間で計算可能な関数のクラスである FBQP の特徴付けを示している。",
+          "keywords": [
+            "Quantum Term Rewrite Systems",
+            "static analysis",
+            "complexity analysis",
+            "quantum circuits",
+            "FBQP"
+          ],
+          "appendix": "本研究は新しい計算モデルの提案およびその性質の解析を行っており、計算理論の基礎である automata theory や formal languages の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.20164v1": {
+          "title": "内部関数に対する反復対数法則",
+          "summary": "原点を固定する非回転的な内部関数の反復合成の線形結合に対し、係数への緩い条件下で反復対数法則（LIL）を証明した。Aleksandrov--Clark分解と内部関数の測度保存性を用いて、線形結合に近い逆マーチンゲールを構築する手法をとっている。Feller型の仮定の下で逆マーチンゲール差の部分和に対するLILを証明し、それを内部関数の反復へと転移させることで、LILの成立および極限点集合の特定に成功している。",
+          "keywords": [
+            "inner function",
+            "law of iterated logarithm",
+            "reverse martingale",
+            "Aleksandrov--Clark decomposition"
+          ],
+          "appendix": "本論文は複素動力学（complex dynamics）の分野に深く関連しています。内部関数の反復合成という力学系的な対象に対し、確率論的な漸近挙動を解析しています。"
+        },
+        "http://arxiv.org/abs/2607.20135v1": {
+          "title": "Lamplighter群の多項式Hilbert-Schmidt安定性",
+          "summary": "本論文では、Lamplighter群の安定性レートおよび安定性半径に関する明示的な多項式界を確立しました。これは、安定性半径に対して明示的な上界が示された無限提示群の最初の例であり、既存の未解決問題に答えるものです。手法として、近似不変測度の解析を含む新しい力学的概念を導入し、周期点が存在する場合の有効な連続タワー分解手順を構築しました。多項式界の導出には、記述組合せ論や分散LOCALアルゴリズムの最新技術が活用されています。",
+          "keywords": [
+            "lamplighter group",
+            "Hilbert-Schmidt stability",
+            "approximately invariant measures",
+            "descriptive combinatorics",
+            "distributed LOCAL algorithms"
+          ],
+          "appendix": "本論文は、Lamplighter群という無限群の性質を扱っているため「structure of large countable infinite group」の分野に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.20132v1": {
+          "title": "nestohedraの面における一般化されたflip order",
+          "summary": "置換や二分平面根付き木（permutohedraおよびassociahedraの頂点に対応）における古典的なshuffle積は、それぞれ弱Bruhat順序やTamari順序の区間として記述できることが知られています。本論文ではこの現象を広く一般化し、特定のnestohedraの族の面におけるshuffle積が、一般化されたflip orderに関する区間として記述できることを示します。この順序は、面を符号化する木状の組合せ論的オブジェクトに対する初等的な分割・融合操作を通じて定義され、BarnardとMcConvilleによる頂点上のflip orderを全ての面に拡張したものです。さらに、Dermenjian-Hohlweg-Pilaudのfacial weak orderやRoncoの一般化Tamari順序との比較、および（一般化された）inversionによる特徴付けも行っています。",
+          "keywords": [
+            "nestohedra",
+            "shuffle product",
+            "flip order",
+            "Tamari order",
+            "weak Bruhat order"
+          ],
+          "appendix": "本論文は、組合せ論（combinatorics）における多面体上の順序構造や積の性質を扱っており、[興味ある分野]のcombinatorics on wordsや、代数的な構造を伴う形式言語理論（automata theory, formal languages）の基礎研究と関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2607.20099v1": {
+          "title": "相対論的二体問題における散乱力学系とカオス運動",
+          "summary": "本研究では、ケプラー・ポテンシャルへの摂動を含む、エネルギー固定の条件下での平面相対論的二体問題を解析している。時間の再パラメータ化を通じて、相対論的力学系を臨界的な強力特異点を持つ古典的な二体問題へと帰着させることで、Maupertuis 汎関数に基づいた変分法の適用を可能にした。記号的な行程を指定した衝突のない相対論的軌道を構築し、許容される記号列によるダイナミクスのコーディングを実現している。具体的には、有界軌道、指定された漸近方向を持つ散乱解、および一方の時間方向で漸近的に自由であり他方で指定された記号的挙動を示すトラップされた軌道の存在を証明した。",
+          "keywords": [
+            "relativistic two-centre problem",
+            "symbolic dynamics",
+            "Maupertuis functional",
+            "scattering solutions",
+            "chaotic motion"
+          ],
+          "appendix": "本論文は「興味ある分野」のうち、記号力学系 (symbolic dynamics) と密接に関連しています。ダイナミクスを記号列として表現するコーディング手法を用いて、複雑な軌道の存在を数学的に証明しています。"
+        },
+        "http://arxiv.org/abs/2607.19960v1": {
+          "title": "フィボナッチ長方形ゲーム：2つの初手クラスと三角形から導かれる選択",
+          "summary": "正方形を順次追加してフィボナッチ数列やフィボナッチ螺旋を生成する幾何学的ルールにおいて、初期状態が正方形でない長方形の場合、初手の配置は「長辺側」と「短辺側」の2つの同値類に分類されることを示した。これら両方のクラスは、初期条件こそ異なるものの同一のフィボナッチ型漸化式に従い、そのアスペクト比は黄金比 φ に収束する。また、直角三角形を用いたHypotenuse-Axis Intercept (HAI) 作図により、これら2つの初手クラスを決定付ける自然なシードが生成されることを幾何学的に考察している。",
+          "keywords": [
+            "Fibonacci numbers",
+            "Fibonacci spiral",
+            "aspect ratio",
+            "golden ratio",
+            "Hypotenuse-Axis Intercept"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2607.19955v1": {
+          "title": "Skew Brace におけるイデアルと可解性",
+          "summary": "本論文では、有限 Skew Brace の乗法群のベキ零性が、そのイデアル構造や可解性に与える制約について調査している。主な結果として、有限 Skew Brace (B, +, ·) の乗法群がベキ零であれば、加法 Fitting 部分群 F(B, +) は非ゼロのイデアルになることを示している。これにより、乗法群がベキ零な有限単純 Skew Brace は素数位数の自明な Brace に同型であることなどが導かれる。また、Two-sided Skew Brace においては、可解性の概念が拡張され、有限の場合には加法群または乗法群のいずれかが可解であることと Skew Brace 自体の可解性が同値であることを証明している。",
+          "keywords": [
+            "skew braces",
+            "nilpotent group",
+            "solvability",
+            "ideal structure",
+            "Fitting subgroup"
+          ],
+          "appendix": "本論文は Skew Brace の代数的構造（イデアルや可解性）に焦点を当てており、直接的な関連は明記されていませんが、群構造の解析手法は「structure of large countable infinite group」などの群論的な興味関心と親和性があります。"
+        },
+        "http://arxiv.org/abs/2607.19841v1": {
+          "title": "Zariski密な部分半群に対する強非算術性",
+          "summary": "本論文では、実簡約代数群のZariski密な部分半群における複素固有値の非算術的性質を証明している。この性質は、ランダム行列の積の作用素ノルムに関する局所極限定理（local limit theorem）を確立するために重要な役割を果たす。",
+          "keywords": [
+            "Zariski dense subsemigroups",
+            "Real reductive algebraic groups",
+            "Complex eigenvalues",
+            "Local limit theorem",
+            "Operator norm"
+          ],
+          "appendix": "本論文は代数群の部分構造や性質を扱っており、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.19740v1": {
+          "title": "韓国刑法のためのニューロ・シンボリックAI：量刑予測と文書作成",
+          "summary": "韓国の略式手続（guyaksik）における事務負担を軽減するため、非構造的な法的記述から法定刑を導出するニューロ・シンボリック・フレームワークを提案する。大規模言語モデル（LLM）を意味抽出のみに限定し、算術的な制約を伴う法定刑の算定をSMT（Satisfiability Modulo Theories）ソルバへ分離することで、LLM特有のハルシネーションを抑制し決定論的な結果を保証する。2026年交通犯罪量刑基準の実装とHuman-in-the-Loopによる検証を通じ、信頼性の高い司法支援を実現している。",
+          "keywords": [
+            "Neuro-Symbolic AI",
+            "Satisfiability Modulo Theories",
+            "Legal Judgment Prediction",
+            "Sentencing Guidelines",
+            "Human-in-the-Loop"
+          ],
+          "appendix": "本論文は、法的論理の形式化という側面で「formal languages」に関連し、また確率的な推論ではなく厳密な充足可能性問題として計算を扱う点で「validated numerics」の概念的関心と親和性があります。特に、SMTソルバを用いた決定論的アプローチによる信頼性向上は、数理的な検証手法の法的応用例として位置づけられます。"
+        },
+        "http://arxiv.org/abs/2607.19687v1": {
+          "title": "大域的最小値における定量的非一意的積の景観：Nielsen-Soelberg群",
+          "summary": "NielsenとSoelbergは、ねじれのない群の有限部分集合AにおいてA・Aが一意的積（unique product）を持たないとき、|A| ≥ 8 であることを示し、その下限を達成する2つの群G₁とG₂を提示した。本研究では、これら両群の厳密かつ独立に検証されたモデルを構築し、大域的最小値における初の定量的不変量を計算した。G₁においては、半径6の球内にはサイズ8の対称な証拠（witness）が存在せず、Nielsen-Soelbergの証拠が半径7の球内に存在することから、大域的最小値が分散していることを示した。G₂においては、サイズ8で非一意的積（non-UP）となる集合が半径1の球内に2つのみ存在し、n=9では一意的積の階段が1をとることを確認した。これは積集合がちょうど1つの一意的に表される要素を持つ初の既知の最小化例であり、Promislow群で見られたt.u.p.とu.p.の同時失敗が普遍的ではないことを示唆している。また、普遍群G₃についても探索座標モデルを構築し、サイズ15の対称な証拠の存在やその剛性、希少性を明らかにした。これによりm₁(G₃) ∈ [8, 15] であることが示された。",
+          "keywords": [
+            "unique product property",
+            "torsion-free groups",
+            "Nielsen-Soelberg groups",
+            "computational group theory",
+            "quantatitive invariants"
+          ],
+          "appendix": "この論文は、ねじれのない無限群の構造（structure of large countable infinite group）に関連しています。特に、nilpotentな群の性質や群内の有限部分集合の組合せ論的性質を扱っており、計算機を用いた検証（validated numericsの側面）も含まれています。"
+        },
+        "http://arxiv.org/abs/2607.19675v1": {
+          "title": "輪状スペクトル降下法によるone-clusterオートマトンに対するČerný予想の証明",
+          "summary": "同期one-clusterオートマトンにおいて、状態数n、長さmの唯一のサイクルCを持つ文字aが存在し、全状態をCへ写す最小ステップをℓ ≥ 1としたとき、リセット語の長さが(m-1)(n-1)+mℓ ≤ (n-1)²となることを示し、Černý予想を証明した。これはKisielewiczらによるone-clusterオートマトンに関する予想の「正のレベル」部分を解決するものである。また、n ≥ 4においてリセット閾値が3n-5となる構成例を示し、得られた上界の鋭さを確認した。証明には有限次元線形代数的手法が用いられている。",
+          "keywords": [
+            "Černý conjecture",
+            "one-cluster automata",
+            "synchronizing automata",
+            "reset word",
+            "annular spectral descent"
+          ],
+          "appendix": "本論文は「automata theory」および「combinatorics on words」の分野に密接に関連しています。また、OpenAI Codex (GPT-5.6 Sol) との対話を通じて証明が得られ、著者がそれを検証したという特異な背景が記述されています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2607.20765v1",
+        "http://arxiv.org/abs/2607.20750v1",
+        "http://arxiv.org/abs/2607.20735v1",
+        "http://arxiv.org/abs/2607.20405v1",
+        "http://arxiv.org/abs/2607.20401v1",
+        "http://arxiv.org/abs/2607.20595v1",
+        "http://arxiv.org/abs/2607.20273v1",
+        "http://arxiv.org/abs/2607.20222v1",
+        "http://arxiv.org/abs/2607.20190v1",
+        "http://arxiv.org/abs/2607.20186v1",
+        "http://arxiv.org/abs/2607.20183v1",
+        "http://arxiv.org/abs/2607.20180v1",
+        "http://arxiv.org/abs/2607.20178v1",
+        "http://arxiv.org/abs/2607.20170v1",
+        "http://arxiv.org/abs/2607.20164v1",
+        "http://arxiv.org/abs/2607.20135v1",
+        "http://arxiv.org/abs/2607.20132v1",
+        "http://arxiv.org/abs/2607.20099v1",
+        "http://arxiv.org/abs/2607.19960v1",
+        "http://arxiv.org/abs/2607.19955v1",
+        "http://arxiv.org/abs/2607.19841v1",
+        "http://arxiv.org/abs/2607.19740v1",
+        "http://arxiv.org/abs/2607.19687v1",
+        "http://arxiv.org/abs/2607.19675v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-07-25T05:24:05.289164+00:00",
-      "updated_at": "2026-07-25T05:37:03.025466+00:00",
-      "finalized_at": null
+      "updated_at": "2026-07-25T07:31:57.767383+00:00",
+      "finalized_at": "2026-07-25T07:31:57.767357+00:00"
     }
   ]
 }
