@@ -10715,7 +10715,7 @@
     },
     {
       "pipeline_id": "20260727T055958Z-fbf22865",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/8x4chx4am98kvm60thlvghqys74xs0h8trrq",
       "summarize_job_name": "batches/8p3yvjq3uue0crjveej5195uh5jb157jwgjz",
       "papers": [
@@ -11211,14 +11211,272 @@
         "http://arxiv.org/abs/2607.21935v1",
         "http://arxiv.org/abs/2607.21923v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2607.22524v1": {
+          "title": "Lean 4におけるKannan-Bachem Smith標準形の機械的に検証された算術ビット計算量",
+          "summary": "本研究では、非特異な正方整数行列に対するKannan-BachemのSmith標準形（SNF）アルゴリズムをLean 4で形式化した。このプログラムは、S, U, U⁻¹, V, V⁻¹を返し、UAV=S、U⁻¹SV⁻¹=A、4つの逆行列恒等式、Smith除法条件、およびSが標準形であることの正当性を証明する。アルゴリズムの停止性は、各再帰パスにおいてアクティブなピボットのバイナリサイズが厳密に減少することによって保証される。また、算術演算のトレースを生成し、多項式包絡線計算法（polynomial-envelope calculus）を用いることで、トレースコストと出力される5つの行列の符号化長に対する固定の多項式束縛（polynomial bounds）を導出した。本検証は算術プリミティブの複雑性を対象としており、Leanのランタイムなどはモデル化されていない。",
+          "keywords": [
+            "Kannan-Bachem algorithm",
+            "Smith normal form",
+            "Lean 4",
+            "bit complexity",
+            "formal verification"
+          ],
+          "appendix": "本論文は、厳密な計算の正当性を保証する点で「validated numerics」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.22447v1": {
+          "title": "階層的双曲群におけるCannon-Thurston写像の非存在性",
+          "summary": "本論文は、階層的双曲群（hierarchically hyperbolic groups; HHG）の双曲的正規部分群において、Morse境界および階層的双曲境界のいずれにおいてもCannon-Thurston写像が存在しないことを証明したものである。この結果は、種数 g ≥ 2 の曲面の写像類群の正規部分群における広範なクラスに適用される。また、系として多くの自由群の巡回拡大（free-by-cyclic groups）の部分群に関する非存在性も示している。さらに、孤立したフラットを持つCAT(0)群の可視境界が、それが作用する空間の相対的階層的双曲境界と同相であることを証明し、既知の非存在性結果を再導出している。",
+          "keywords": [
+            "Cannon-Thurston maps",
+            "hierarchically hyperbolic groups",
+            "mapping class groups",
+            "Morse boundaries",
+            "CAT(0) groups"
+          ],
+          "appendix": "本論文は、幾何学的群論の観点から巨大な可算無限群の構造（structure of large countable infinite group）に関連する研究であり、群の境界構造や部分群の性質を詳細に記述しています。"
+        },
+        "http://arxiv.org/abs/2607.22350v1": {
+          "title": "重み制限付きカットダウン・ド・ブラウン系列",
+          "summary": "2012年にRuskey、Sawada、およびWilliamsは、ハミング重みが r または r+1 であるすべての n-タプルをちょうど一度ずつ含むバイナリ・カットダウン・ド・ブラウン系列が、すべての可能な r に対して構成可能であることを示した。本論文では、アルファベットのサイズが任意（有限）である場合にこの結果を拡張することを検討する。n-タプルに適用される3種類の重み様関数を定義し、それぞれの場合について、Ruskeyらの結果と同様の構成が可能であることを立証した。",
+          "keywords": [
+            "de Bruijn sequence",
+            "n-tuples",
+            "Hamming weight",
+            "cut-down de Bruijn sequences",
+            "alphabet"
+          ],
+          "appendix": "本論文は、提示された「興味ある分野」のうち、combinatorics on words（語の組合せ論）に深く関連しています。特定の重み制約を持つ系列の構成を扱っているためです。"
+        },
+        "http://arxiv.org/abs/2607.22318v1": {
+          "title": "Rulkov神経写像の相互結合について",
+          "summary": "Rulkov神経写像の新たな結合手法を導入し、スロー変数への摂動が無視できない大きさへ遷移する現象に対する生物学的な解釈を提案している。提案された結合系において、運動の有界性や（Marottoの定理を通じてDevaneyのカオスを導く）スナップバック・リペラーの存在が元の系から維持されることを解析的に証明した。2つのカオス的Rulkov写像の結合系の数値シミュレーションでは、非整数のKaplan-Yorke次元を持つフラクタルなストレンジアトラクタの発生を確認した。さらに、リアプノフ指数、分岐図、吸引領域の解析を行い、多変数への一般化についても言及している。",
+          "keywords": [
+            "Rulkov neural maps",
+            "cross coupling",
+            "snap-back repeller",
+            "strange attractor",
+            "Marotto theorem"
+          ],
+          "appendix": "カオス力学系の解析を行っている点から、興味ある分野のうち complex dynamics や validated numerics に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2607.22308v1": {
+          "title": "q-有理数の一意性の精緻化",
+          "summary": "本論文では、指標多様体を用いることで、共役を除いたq-有理数の一意性を証明している。一意性が存在する一方で、モジュラー対称性を有する有理数の2パラメータ変形族を提示した。通常のq-整数を導く変形は、Morier-GenoudおよびOvsienkoによる既存のものと、本研究で新しく定義されたものの2種類のみであることを明らかにしている。この新しい族は、既存のものと共役の関係にあるが、新たな正値性を備えており、有理結び目のジョーンズ多項式の直接的な計算を可能にする。",
+          "keywords": [
+            "q-rational numbers",
+            "character varieties",
+            "modular symmetry",
+            "Jones polynomial",
+            "rational knots"
+          ],
+          "appendix": "提示された「興味ある分野」との直接的な関連は本文中には明示されていませんが、本研究は結び目理論や表現論に関わる内容です。数式表記: q-rationals, q-integers。"
+        },
+        "http://arxiv.org/abs/2607.22303v1": {
+          "title": "群のグラフ積の同型写像と自己同型写像",
+          "summary": "本論文では、群のグラフ積における同型問題を解決した。また、群のグラフ積の自己同型群に対する生成系を提示し、LaurenceおよびServatiusが直角アルティン群（right-angled Artin groups）に対して与えた生成系の結果を一般化した。",
+          "keywords": [
+            "graph product of groups",
+            "isomorphism problem",
+            "automorphism group",
+            "right-angled Artin groups"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「structure of large countable infinite group」に関連している。群のグラフ積という無限群の構成要素の代数的構造を扱っているためである。"
+        },
+        "http://arxiv.org/abs/2607.22298v1": {
+          "title": "差集合の大きさが制限された最大Sperner族",
+          "summary": "1985年にFranklによって提案された「L-differencingな集合族(相異なる任意の2集合A, Bに対して|A\\B|が集合Lに含まれるようなもの)のサイズは最大でnC|L|である」という長年の予想に対し、固定されたLに対する漸近的な解決と特定の条件下での厳密な解を与えた。具体的には、(1) Lが[s]と等しくない場合、集合族のサイズは(s/(s+1) + o_L(1))nCs以下に抑えられること、(2) L=[s]かつn≧2s-1の場合、最大サイズはnCsとなり、等号成立はnCsまたはnC(n-s)に限られることを示した。手法として、有向差分をハミング距離に帰着させる手法や、新たに開発した同次多項式法が用いられている。",
+          "keywords": [
+            "Sperner families",
+            "L-differencing family",
+            "Frankl's conjecture",
+            "Hamming distances",
+            "homogeneous polynomial method"
+          ],
+          "appendix": "この論文は、極値集合論および組合せ論に関連する内容を含んでおり、指定された「興味ある分野」の中では combinatorics on words と基盤となる組合せ論的手法において関連性があります。"
+        },
+        "http://arxiv.org/abs/2607.22284v1": {
+          "title": "局所環上の ²Aₗ 型 (ℓ ≥ 5) ねじれシュヴァレー群の自己同型",
+          "summary": "本論文は、可換環上のねじれシュヴァレー群の自己同型および同型を分類する一連の研究の第一報である。本稿では、2が可逆である局所環上において、²Aₗ 型 (ℓ ≥ 5) のねじれシュヴァレー群のすべての自己同型が標準的（standard）であることを証明している。",
+          "keywords": [
+            "twisted Chevalley groups",
+            "automorphisms",
+            "local rings",
+            "type ²Aₗ"
+          ],
+          "appendix": "本論文は群の構造と自己同型の分類を扱っており、興味ある分野の「structure of large countable infinite group」に関連するテーマを含んでいます。"
+        },
+        "http://arxiv.org/abs/2607.22223v1": {
+          "title": "カントール集合をジュリア集合に持つℝⁿの一様準正則写像",
+          "summary": "n ≥ 3 の任意の次元において、ジュリア集合がカントール集合となるような、多項式型の一様準正則（uniformly quasiregular）なℝⁿの自己写像を構成した。",
+          "keywords": [
+            "uniformly quasiregular maps",
+            "Julia set",
+            "Cantor set",
+            "polynomial type"
+          ],
+          "appendix": "本論文は複素力学系（complex dynamics）の多次元への一般化を扱っており、指定された興味ある分野の中では complex dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.22216v1": {
+          "title": "Meandering-hyperbolic 作用の局所的 C⁰-半剛性",
+          "summary": "Kapovich, Kim, Lee によって導入された Meandering hyperbolicity は、古典的な双曲性を単語双曲群の設定を超えて拡張する概念である。本論文では、すべての Meandering-hyperbolic 作用が C⁰ 位相において局所的に半剛性であることを証明した。これにより、これまでに確立されていた Lipschitz C⁰ 位相における安定性理論を完全な C⁰ 位相へと拡張した。その結果、単語双曲群の境界作用と半単純 Lie 群内の余コンパクト格子の境界作用の両方の C⁰-局所的半剛性を、単一の力学系原理から導出することに成功した。",
+          "keywords": [
+            "Meandering hyperbolicity",
+            "local semi-rigidity",
+            "C⁰ topology",
+            "word-hyperbolic groups",
+            "boundary actions"
+          ],
+          "appendix": "本研究は、単語双曲群の境界作用や大規模な可算無限群の構造に関連しており、興味ある分野である「structure of large countable infinite group」と密接に関わっています。"
+        },
+        "http://arxiv.org/abs/2607.22202v1": {
+          "title": "メルセンヌ表現、Conolly数列、および有限体上のソリトンプロファイル",
+          "summary": "非負整数のメルセンヌ表現（Mersenne representation）とそのバイナリおよび非バイナリ成分への分解に関する研究である。非バイナリ側の構造を用いて、OEISの数列A055938とA080578の間の予想されていた関係を直接的に証明し、バイナリ側の計数関数をシフトされたConolly数列として同定した。また、親写像（parent map）やメルセンヌ・タウ関数などの概念を導入し、それらが桁の再構成やタウ欠損の公式を与えることを示した。応用として、有限体上の箱玉系（BBS）における1-ソリトン解のプロファイルをメルセンヌ組合せ論を用いて再構成し、整数値の進行波解やウィンドウ計数定理を導出している。",
+          "keywords": [
+            "Mersenne representation",
+            "Conolly sequence",
+            "soliton profiles",
+            "finite-field BBS",
+            "tau function"
+          ],
+          "appendix": "本論文は数表現の組合せ論的性質を扱っており、combinatorics on words や、可積分系としての振る舞いから arithmetic dynamics に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2607.22156v1": {
+          "title": "ランプライター群へのランダム行列によるアプローチ",
+          "summary": "有限生成アーベル群 Λ と自由群 Γ = ℤ^{*d} のリース積 G = Λ ≀ Γ におけるケイリーグラフの性質を、ランダム行列モデルを用いて解析した研究である。行列サイズ N が無限大に際して、各生成元に対応するランダム行列の和 X_N のトラフィック分布が、群 G の簡約 C*-環における生成元の像の分布に収束することを示した。これにより、X_N のスペクトル測度が G のケイリーグラフのスペクトル測度に収束することが導かれる。特に Γ = ℤ の場合、線形統計量に関する中心極限定理を確立し、漸近的 R-変換の公式を用いて極限の2次分布を1次分布から導出した。",
+          "keywords": [
+            "random matrix model",
+            "lamplighter groups",
+            "wreath product",
+            "spectral measure",
+            "R-transform"
+          ],
+          "appendix": "リース積（wreath product）や群のケイリーグラフの構造を扱っているため、[興味ある分野]の中では「structure of large countable infinite group」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.22066v1": {
+          "title": "カントール集合の局所単調同相写像群および一般化された区間交換変換群におけるディストーション",
+          "summary": "本論文では、一般化された区間交換変換、または実直線上のカントール部分集合における局所単調同相写像 f について、次の3つの条件が同値であることを証明している。1. fⁿ の不連続点数が有界である。2. ある n ≥ 1 が存在し、f が n 個の円の非交和上の同相写像を閉不変部分集合へ制限したものと共役である。3. f が一般化された区間交換変換群またはカントール集合の局所単調同相写像群においてディストーション（歪み）を持つ。",
+          "keywords": [
+            "generalized interval exchange transformation",
+            "locally monotone homeomorphism",
+            "Cantor set",
+            "distortion"
+          ],
+          "appendix": "本論文は symbolic dynamics および structure of large countable infinite group の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.22017v1": {
+          "title": "冪乗和の最大値に関する評価 (Exterior power sums)",
+          "summary": "任意の固定された λ > 0 と十分に大きな n に対して、|zⱼ| ≥ 1 を満たす任意の複素数 z₁, ..., zₙ が max_{2 ≤ k ≤ n+1} |Σⱼ zⱼᵏ| > e^(-λn) を満たすことを証明した。その結果、最適な最大値の n 乗根は 1 に収束し、Erdős 973 における定数 C > 1 は存在しないことが示された。証明には、切り捨てられた指数関数の因数分解、単位円板外の開集合における過収束、および Cauchy 変換に対する正規族の障害が用いられている。",
+          "keywords": [
+            "Power sums",
+            "Erdős problem",
+            "Cauchy transforms",
+            "Overconvergence",
+            "Normal families"
+          ],
+          "appendix": "本論文は、複素平面上での関数の挙動（Cauchy transforms や Normal families）を扱っており、Complex dynamics と関連があります。また、Erdős が提示した Turán の冪乗和問題という、組合せ論的・解析的数論の文脈を持つ問題に取り組んでいます。"
+        },
+        "http://arxiv.org/abs/2607.22008v1": {
+          "title": "パス型および巡回型ブロック・ポリトープにおける転移行列とEhrhart理論",
+          "summary": "等しいサイズのブロックに分割された変数と隣接ブロック間の局所的な制約を持つブロック・ポリトープを対象に、その計数幾何学的性質を研究した。パス型配列に対しては、転移行列を用いた長さ方向の列挙手法を開発し、母関数の分子と分母を重み付き高さ行列の行列式や漸化式によって明示的に記述した。巡回型配列についても同様の解析を行い、母関数が行列式の対数微分によって支配されることを示した。Ehrhart理論の観点では、パス型（ブロック数 m ≥ 2）および偶数巡回型ポリトープが完全グラフの安定集合ポリトープであることを示し、それらが余次数 2a + 1 のGorenstein性を持ち、回文的かつ単峰な h*-多項式（次数 a(m-2)）を有することを証明した。一方、奇数巡回型は周期2のEhrhart擬多項式を持つ。 ",
+          "keywords": [
+            "block polytopes",
+            "transfer matrices",
+            "Ehrhart theory",
+            "stable-set polytopes",
+            "h*-polynomials"
+          ],
+          "appendix": "本論文で用いられている転移行列を用いた母関数の構成やパス・巡回構造の解析は、記号力学系 (symbolic dynamics) やオートマトン理論 (automata theory)、あるいは語の組合せ論 (combinatorics on words) における手法と理論的な親和性があります。"
+        },
+        "http://arxiv.org/abs/2607.22001v1": {
+          "title": "擬アフィン自己等角測度におけるフーリエ減衰と非減衰",
+          "summary": "本論文では、直線上の自己等角測度が多項式的なフーリエ減衰を持つための十分条件の鋭さを研究している。主な成果として、第一に、自己相似系とC¹共役ではないC∞反復関数系（IFS）において、ライクマン測度ではない定常測度が存在する構成例を示した。第二に、強分離条件を満たす任意のベルヌーイ畳み込みμと1 ≤ r < ∞に対し、μの台において微分h'が一定であるにもかかわらず、像測度hμが多項式的なフーリエ減衰を持つようなCʳ同相写像hを構築した。これらは著者らが以前に導入した擬アフィン反復関数系の枠組みで議論されている。",
+          "keywords": [
+            "pseudo-affine self-conformal measures",
+            "Fourier decay",
+            "Rajchman measure",
+            "iterated function system",
+            "Bernoulli convolution"
+          ],
+          "appendix": "本論文は複素力学系（complex dynamics）におけるフラクタル上の測度の性質を扱っており、力学系の不変測度に関する深い議論を含んでいます。"
+        },
+        "http://arxiv.org/abs/2607.21976v1": {
+          "title": "力学系におけるpoint-to-set原理",
+          "summary": "Lutz, Lutz, および Mayordomo による Hausdorff 次元と packing 次元の point-to-set 原理のアナロジーとして、力学系における上下の位相的圧力および BS 次元（ひいては上下のエントロピー）に対する Kolmogorov 複雑度を用いた point-to-set 原理の枠組みを開発した。この枠組みの適用例として、Climenhaga による Bowen の圧力方程式の結果を拡張するとともに、Bowen の圧力方程式の各点版（pointwise version）を証明した。",
+          "keywords": [
+            "Point-to-set principle",
+            "Kolmogorov complexity",
+            "Topological pressure",
+            "BS dimension",
+            "Bowen pressure equation"
+          ],
+          "appendix": "本論文は、位相的圧力やエントロピーといった力学系の不変量に関する性質を扱っており、興味ある分野に含まれる symbolic dynamics と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.21950v1": {
+          "title": "任意の非共鳴性と低正則性を伴う準周期性を介した重み付き Birkhoff 平均における指数収束の可能性",
+          "summary": "エルゴード定理には一般に有効な収束レートが存在しないことが知られているが、本論文では準周期的なトーラス回転において、任意の非共鳴周波数に対して低正則性の観測量と適切な重みを選択することで、重み付きBirkhoff平均が指数関数的な速さで一様に収束することを示した。これは従来の高正則性を必要とする直感に反する新たな現象であり、非共鳴性と正則性の深い相互作用を明らかにするとともに、Yoccoz型の結果に対応する重み付きの結果となっている。",
+          "keywords": [
+            "weighted Birkhoff averages",
+            "quasi-periodicity",
+            "nonresonance",
+            "low regularity",
+            "ergodic theory"
+          ],
+          "appendix": "本論文は、準周期運動や非共鳴周波数を扱っており、力学系理論の観点から複素力学系 (complex dynamics) や数論的力学系 (arithmetic dynamics) に関連する性質を有しています。"
+        },
+        "http://arxiv.org/abs/2607.21935v1": {
+          "title": "特異懸垂流と無限位相エントロピー",
+          "summary": "無限の位相エントロピーを持つ同相写像から構成される擬特異懸垂流（pseudo-singular suspension flows）が、有限かつ任意に小さな正のエントロピーを持ち得ることを示し、無限エントロピーが特異な時間変更の下で保存されないことを明らかにした。一方で、残留集合に属する同相写像については、すべての擬特異懸垂流が正のエントロピーを保持することを証明した。また、n ≥ 2 のコンパクト多様体において、無限位相エントロピーを持つ極小同相写像が存在し、適切な一重の特異点を持つ擬特異懸垂流ではエントロピーがゼロになることも示した。エントロピーの正値性は一般的（generic）に安定しているが、無限性は特異な再パラメータ化に対して脆弱であることが結論付けられている。",
+          "keywords": [
+            "Singular suspension flows",
+            "Infinite topological entropy",
+            "Pseudo-singular suspensions",
+            "Minimal homeomorphisms",
+            "Singular reparametrizations"
+          ],
+          "appendix": "力学系の性質を扱う本研究は、シンボリック動力学（symbolic dynamics）の理論的背景や複素力学系（complex dynamics）におけるエントロピー概念と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.21923v1": {
+          "title": "射影空間の自己写像の臨界軌跡",
+          "summary": "Kを代数的閉体とし、次数d ≥ 2の射影空間Pⁿ_Kにおける一般の自己準同型の臨界概型が、既約な超曲面であることを示した。本研究はIngram–Ramadas–Silvermanによる結果を任意の標数へ拡張したものである。多項式環の性質を用いて特定の例が絶対既約なヤコビ行列式を持つことを証明した。特に、標数が次数を割り切るワイルドな状況においては、斉次ヤコビ行列式を模倣した新たな多項式を導入することで解析を行っている。",
+          "keywords": [
+            "Critical scheme",
+            "Projective space",
+            "Endomorphism",
+            "Jacobian determinant",
+            "Arbitrary characteristic"
+          ],
+          "appendix": "本論文は射影空間上の力学系を扱っており、算術力学 (Arithmetic dynamics) および複素力学 (Complex dynamics) の分野に関連している。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2607.22524v1",
+        "http://arxiv.org/abs/2607.22447v1",
+        "http://arxiv.org/abs/2607.22350v1",
+        "http://arxiv.org/abs/2607.22318v1",
+        "http://arxiv.org/abs/2607.22308v1",
+        "http://arxiv.org/abs/2607.22303v1",
+        "http://arxiv.org/abs/2607.22298v1",
+        "http://arxiv.org/abs/2607.22284v1",
+        "http://arxiv.org/abs/2607.22223v1",
+        "http://arxiv.org/abs/2607.22216v1",
+        "http://arxiv.org/abs/2607.22202v1",
+        "http://arxiv.org/abs/2607.22156v1",
+        "http://arxiv.org/abs/2607.22066v1",
+        "http://arxiv.org/abs/2607.22017v1",
+        "http://arxiv.org/abs/2607.22008v1",
+        "http://arxiv.org/abs/2607.22001v1",
+        "http://arxiv.org/abs/2607.21976v1",
+        "http://arxiv.org/abs/2607.21950v1",
+        "http://arxiv.org/abs/2607.21935v1",
+        "http://arxiv.org/abs/2607.21923v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-07-27T05:59:58.508957+00:00",
-      "updated_at": "2026-07-27T08:52:41.298137+00:00",
-      "finalized_at": null
+      "updated_at": "2026-07-27T12:12:26.137037+00:00",
+      "finalized_at": "2026-07-27T12:12:26.137013+00:00"
     }
   ]
 }
