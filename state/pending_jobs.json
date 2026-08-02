@@ -12007,7 +12007,7 @@
     },
     {
       "pipeline_id": "20260802T053617Z-f1194665",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/mx746vvkzzypqecxrouidhsdulk0720tv9h8",
       "summarize_job_name": "batches/0isihu679sseqmmy797fuikapqoycm9wbjlk",
       "papers": [
@@ -12727,14 +12727,284 @@
         "http://arxiv.org/abs/2607.27573v1",
         "http://arxiv.org/abs/2607.27552v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2607.28597v1": {
+          "title": "非核Bunce-Deddens環",
+          "summary": "本論文では、カントール空間上への非順応な可算離散剰余有限群の自由なオドメーター作用に付随する簡約接合積C*-環として、非核Bunce-Deddens環を導入した。これはOrfanosが導入した一般化Bunce-Deddens環の非核的な対応物である。広範な群のクラスにおいて、これらの環がリアルランク0、安定ランク1、正の元の厳密な比較、および一意なトレース状態の保持といった多くの正則性を共有することを示した。また、多くの場合においてselflessであり、したがってpureであることを導いた。最後に、非可換自由群上のBunce-Deddens環のK理論を計算した。",
+          "keywords": [
+            "Nonnuclear Bunce-Deddens algebras",
+            "reduced crossed product C*-algebras",
+            "nonamenable groups",
+            "odometer actions",
+            "K-theory"
+          ],
+          "appendix": "この論文は、非順応な剰余有限群の性質を扱っているため、興味ある分野の「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.28459v1": {
+          "title": "LeanCSP: Leanにおける制約の再定式化および求解を保証するためのフレームワーク",
+          "summary": "制約プログラミングにおける再定式化の正当性とソルバーの求解結果を検証するための、Lean定理証明器上のフレームワーク「LeanCSP」を提案する。本フレームワークは、定式化レベルでの等価性や等充足可能性、対称性の打破（symmetry-breaking）の正当性を証明する機能と、MiniZincやSMT-LIBなどの外部フォーマットを介してソルバーが出力した証明書をチェックする機能の両方を備えている。これにより、外部ソルバーを信頼することなく問題の充足可能性をエンドツーエンドで保証できる。実験の結果、検証済みの対称性の打破によって探索効率が最大で2×10⁷倍向上し、Lean内での検証時間も数分程度と実用的であることが示された。",
+          "keywords": [
+            "Lean theorem prover",
+            "Constraint programming",
+            "Symmetry-breaking",
+            "Certificate checking",
+            "Reformulation"
+          ],
+          "appendix": "本論文は制約プログラミングを用いた組合せ問題（combinatorial problems）の解決を扱っており、[興味ある分野]の中では combinatorics に関連する側面を持ちますが、直接的に combinatorics on words や symbolic dynamics を扱っているわけではありません。Leanを用いた形式的検証手法の確立が主眼です。"
+        },
+        "http://arxiv.org/abs/2607.28433v1": {
+          "title": "PGL_dの標準算術商における頂点体積、格子極小値の裾、および高さゼータ関数",
+          "summary": "PGL_d(F_q((t⁻¹)))に付随するアフィンBruhat-Titsビルディングの標準的な非一様算術商を対象に、その幾何学的および解析的性質を研究した。まず、ビルディング理論的な手法である安定化群の計数やカットセット再帰を用いて、頂点体積を閉じた積の形で算出した。また、相似不変な正規化格子極小値の高さ α を導入し、その可積分性の閾値が 0 < r < d であること、および尖点近傍の裾（cusp-tail）が T⁻ᵈ のオーダーで推定できることを示した。さらに、尖点高さ分布のメリン変換に相当する高さゼータ関数が Re(s) < d で収束し、q^{s/d} の有理関数として解析接続されることを明らかにした。これにより、優等セクターの座標が体積、尖点の減衰、およびゼータ関数の解析的構造を同時に制御することが示された。",
+          "keywords": [
+            "Bruhat-Tits building",
+            "PGL_d",
+            "height zeta function",
+            "arithmetic quotient",
+            "lattice-minima height"
+          ],
+          "appendix": "本論文は PGL_d(F_q((t⁻¹))) に付随するビルディングや算術商を扱っており、巨大な可算無限群の構造 (structure of large countable infinite group) に関連する性質を幾何学的・数論的な観点から記述しています。"
+        },
+        "http://arxiv.org/abs/2607.28406v1": {
+          "title": "トンプソン群 V と仮想絡み目理論",
+          "summary": "1965年に導入されたトンプソン群 F ⊂ T ⊂ V は多岐にわたる分野で応用されている。2014年に V. F. R. Jones が F から 3次元球面内の絡み目のアイソトピー類への全射を通じたユニタリ表現を構成し、その後、第二著者によって T から厚みのあるアニュラス内のチェッカーボード彩色可能（CC）な絡み目への全射に拡張された。本論文ではこれを V に拡張し、V から厚みのあるコンパクトな向き付けられた曲面内の CC 仮想絡み目の仮想等価類への全射 Lᵥ を定義する。これにより Jones の向き付けられた部分群を含む新しい部分群 V⃗ が得られ、これがすべての向き付けられた「概古典的」仮想絡み目を実現することを証明する。さらに、kei および演算子クアンドル彩色不変量から V および V⃗ のユニタリ表現を構成する。",
+          "keywords": [
+            "Thompson's groups",
+            "virtual link theory",
+            "unitary representations",
+            "checkerboard colorable links",
+            "quandle coloring invariants"
+          ],
+          "appendix": "トンプソン群の構造に関連しており、興味ある分野のうち「structure of large countable infinite group」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.28387v1": {
+          "title": "最適制御を用いた有理数の eventually greedy best エジプト分数下近似",
+          "summary": "本論文では、分母の重複を許可する場合と禁止する場合の両方において、すべての正の有理数が eventually greedy best エジプト分数下近似を持つことを証明しました。これは Erdős と Graham が提起し、後に Nathanson が再検討した問題に対する肯定的な回答であり、特定の有理数に収束する単位分数級数における分母の最大漸近成長に関する応用をもたらします。著者はこの問題を動的システムの最適制御問題として再定式化し、適切な利得関数を構成して関連するベルマン関数の性質を解析する手法を採っています。さらに、一意的かつ greedy な best エジプト分数下近似を持つ無理数を構成することで、Nathanson による別の問いにも回答しています。",
+          "keywords": [
+            "Egyptian underapproximations",
+            "optimal control",
+            "unit fraction series",
+            "Bellman function",
+            "dynamical system"
+          ],
+          "appendix": "本論文は、動的システムの枠組みを用いて有理数や級数の性質を研究しているため、arithmetic dynamics の分野に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.28361v1": {
+          "title": "連続関数空間上の重み付き合成作用素におけるシャドウイング特性",
+          "summary": "本論文では、バナッハ数列空間における重み付きシフトのシャドウイング（追跡）特性を特徴づけ、Bernardesら(2020)の研究を拡張しています。この結果を連続関数からなるバナッハ空間上の重み付き合成作用素に適用し、特に実数直線上の連続関数空間 C_b(ℝ) および C_0(ℝ) における両側重み付き移動作用素のシャドウイング特性を明らかにしました。さらに、重み付き合成作用素がシャドウイング特性を持つための十分条件を導出し、これを用いて Hardy 空間 Hᵖ(𝔻) (p ∈ [1, ∞]) や、H∞(Ω)、C_b(Θ) 上の乗算作用素におけるシャドウイング特性の完全な特徴づけを与えています。",
+          "keywords": [
+            "shadowing property",
+            "weighted composition operators",
+            "Banach sequence spaces",
+            "weighted shifts",
+            "Hardy spaces"
+          ],
+          "appendix": "本論文は symbolic dynamics や complex dynamics と関連しています。特に、シフト写像の力学的性質や Hardy 空間上の作用素論を扱っています。"
+        },
+        "http://arxiv.org/abs/2607.28316v1": {
+          "title": "Mixed-identity-freeness と群環の原始性",
+          "summary": "本論文では、mixed-identity-free (MIF) かつ非アーベル自由部分群を含む任意の可算群 G において、任意の体 K 上の群環 KG が原始的であることを示している。著者らはこの結果を導くための純粋に力学系的な判定条件を提案した。この判定条件は、円筒双曲群（acylindrically hyperbolic groups）に関する既存の原始性の結果を包含するだけでなく、Thompson 型の群、双曲群の共役化群、一部の Kac-Moody 群といった新しい例にも適用可能であることを示している。",
+          "keywords": [
+            "mixed-identity-free",
+            "primitivity",
+            "group rings",
+            "non-abelian free subgroup",
+            "dynamical criterion"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に関連しており、可算無限群の代数的構造（群環の原始性）と力学系的性質の関係を論じています。"
+        },
+        "http://arxiv.org/abs/2607.28273v1": {
+          "title": "線形部分語複雑度を持つ語における部分語の出現頻度",
+          "summary": "Balková-Pelantováの手法を用い、有限アルファベット上の右無限語 w における長さ N+1 の部分語の出現頻度（上頻度、下頻度、および存在する場合は通常の頻度）の個数について、3(p_w(N+1) - p_w(N)) + 1 以下という上界を示した。ここで p_w(n) は部分語複雑度関数である。特に、部分語複雑度が線形に抑えられている語に対しては、一様な上界が存在することを意味する。一方で、任意の弱増加関数 f(n) に対して、部分語複雑度が O(nf(n)) でありながら、長さ N の部分語の異なる頻度の個数が N→∞ において無限大となる例も提示した。",
+          "keywords": [
+            "subword complexity",
+            "frequencies of subwords",
+            "infinite words",
+            "linear subword complexity"
+          ],
+          "appendix": "本論文は、combinatorics on words および symbolic dynamics の分野に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.28241v1": {
+          "title": "クリックを超えた厳密な準同型閾値",
+          "summary": "本論文は、ErdősとSimonovitsの問いに端を発する「彩色閾値（chromatic threshold）」およびThomassenの問いに基づく「準同型閾値（homomorphism threshold）」を扱った研究です。特定のグラフHを含まないH-freeグラフにおいて、線形な最小次数条件が有界な彩色数や有界位数のH-freeグラフへの準同型の存在をいつ強制するのかを分析しています。これまでの研究でクリック（完全グラフ）の場合の閾値は決定されていましたが、本論文ではクリック以外のより広範なグラフ族へと結果を拡張し、その族における厳密な準同型閾値を決定しました。",
+          "keywords": [
+            "chromatic threshold",
+            "homomorphism threshold",
+            "H-free graphs",
+            "minimum-degree condition"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「combinatorics on words」と同じく広義の組合せ論（極値グラフ理論）に関連する研究です。彩色数や準同型といったグラフ理論の基礎的概念の閾値決定という重要な問題に取り組んでいます。"
+        },
+        "http://arxiv.org/abs/2607.28157v1": {
+          "title": "撹乱置換行列とオービット・ハーモニクス",
+          "summary": "本論文では、体 𝔽 上の n × n 変数多項式環 S = 𝔽[xₙₓₙ] において、撹乱置換行列（derangement permutation matrices）の軌跡 𝔇ₙ に関連するオービット・ハーモニクス商環 R(𝔇ₙ) = S/gr I(𝔇ₙ) を研究している。著者らは、消滅イデアルの随伴次数付きイデアル gr I(𝔇ₙ) の明示的な生成系を提示し、R(𝔇ₙ) のヒルベルト級数と Foata 変換および対称群 𝔖ₙ 上の最長増加部分列統計量との関係を明らかにした。さらに、R(𝔇ₙ) の次数付き 𝔖ₙ 指標に対する交代和公式を導出しており、これらの証明にはホモロジー代数における写像錐（mapping cone）の構成が活用されている。",
+          "keywords": [
+            "derangement permutation matrices",
+            "orbit harmonics",
+            "Hilbert series",
+            "Foata transformation",
+            "mapping cone"
+          ],
+          "appendix": "本論文は組み合わせ論（Combinatorics）の手法を深く用いており、興味ある分野のうち combinatorics on words と数学的基礎において関連性を持ちます。"
+        },
+        "http://arxiv.org/abs/2607.28139v1": {
+          "title": "Anosov流における軌道の補集合の双曲性",
+          "summary": "3次元多様体上のAnosov流が向き付け可能な安定・不安定葉層を持つ場合、充填的な周期軌道の補集合は双曲多様体となることを示した。これは双曲曲面の単位接束における閉じた充填測地線軌道の補集合に関する既知の結果を一般化したものである。また、不変葉層の向き付け可能性がこの性質に必要であることを反例の構成により示した。さらに、懸垂流の場合は任意の周期軌道集合の補集合が双曲的になり、測地流の場合は不変葉層の向き付け可能性にかかわらず、充填的かつ環状でない周期軌道集合の補集合が双曲的になることを示した。",
+          "keywords": [
+            "Anosov flows",
+            "hyperbolic manifold",
+            "periodic orbit",
+            "stable and unstable foliations"
+          ],
+          "appendix": "この論文は力学系（特にAnosov流）と多様体の幾何学（双曲幾何学）に関するものであり、指定された[興味ある分野]（symbolic dynamics, combinatorics on words等）と直接的に重なる主要テーマは明示されていませんが、Anosov流の解析においてsymbolic dynamicsの手法が背景として用いられることがあります。"
+        },
+        "http://arxiv.org/abs/2607.28138v1": {
+          "title": "有限および無限盤面におけるHexの最適戦略",
+          "summary": "盤面ゲームHexにおける最短勝利パスの長さλ(n)と、先手勝利に必要な最小石数δ(n)の構造的性質を分析した論文。主な成果として、Campbellが2004年に提示した予想の1つであるλ(5)=7を証明した。また、無限盤面（5×∞の帯）における同様の問題ではλ(5×∞)=5となり、有限盤面よりも厳密に小さくなることを示した。これにより、有限盤面と無限盤面における最適勝利戦略の性質に根本的な違いがあることを明らかにしている。",
+          "keywords": [
+            "Hex",
+            "optimal play",
+            "winning strategy",
+            "finite and infinite boards",
+            "connection games"
+          ],
+          "appendix": "この論文は、組合せ論（combinatorics）における接続ゲームを扱っており、指定された「興味ある分野」の1つであるcombinatorics on wordsと同様に、離散構造の解析や組合せ的な最適化の性質に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.28088v1": {
+          "title": "クラウド型IoTアクセス制御ポリシーにおける情報フローの検証（拡張版）",
+          "summary": "IoTクラウドプロバイダが提供するアクセス制御機構の設定ミスは、セキュリティ上の深刻な脆弱性を招く恐れがある。本研究では、AWS IoT Coreのコンポーネントを形式的にモデル化し、ポリシーによって許可されるデバイス間の通信を捉える情報フローグラフを定義した。SMTソルバを活用してこのグラフの有限表現を構築することで、デバイス間の意図しない情報フローの検証を可能にしている。提案手法をツール「IOT:POKER」として実装し、現実的なシナリオや実世界のポリシーを用いてその有効性を評価した。",
+          "keywords": [
+            "Access Control Policies",
+            "Information Flow",
+            "AWS IoT Core",
+            "SMT solver",
+            "Formal modeling"
+          ],
+          "appendix": "本論文は、システムの形式的モデル化やグラフ表現を通じた検証を行っており、興味ある分野のうち「automata theory」に関連する手法を基礎としています。"
+        },
+        "http://arxiv.org/abs/2607.28071v1": {
+          "title": "ファノ平面におけるランダムなトゥーランの定理",
+          "summary": "ファノ平面 F（7頂点7辺の3様均一ハイパーグラフ）において、Kₙ⁽³⁾の最大F-free部分ハイパーグラフが二部グラフになるというFranklとFürediらの結果を、ランダム設定へと拡張した。本論文では、臨界値 p̂ = Θ_F ⋅ n⁻²/³ (log n)¹/⁶ を境界として、p がこれを超える場合には高確率で最大F-free部分グラフが二部グラフとなり、下回る場合には非二部グラフになるというシャープな閾値を決定した。これは、ランダムハイパーグラフにおけるトゥーラン型問題でシャープな閾値を得た初めての研究である。",
+          "keywords": [
+            "Fano plane",
+            "Turán-type problem",
+            "random hypergraphs",
+            "sharp threshold",
+            "bipartite"
+          ],
+          "appendix": "本論文は組み合わせ論（combinatorics）における極値理論を扱っており、興味ある分野の「combinatorics on words」と関連する組み合わせ論的手法が用いられています。"
+        },
+        "http://arxiv.org/abs/2607.28001v1": {
+          "title": "SL₂(ℤ[1/p])の可換性に関する分類空間と中心化群",
+          "summary": "Adem, F. Cohen, および Torres-Giese によって導入された、群 SL₂(ℤ[1/p]) における可換性に関する分類空間のホモトピー型を決定した。離散群としての構造と SL₂(ℝ) からの相対位相の両方を考慮しており、幾何学的群論の手法を用いて極大アーベル部分群（非中心元の中心化群に一致）の構造を詳細に解析している。",
+          "keywords": [
+            "SL₂(ℤ[1/p])",
+            "classifying space for commutativity",
+            "maximal abelian subgroups",
+            "centralizers",
+            "geometric group theory"
+          ],
+          "appendix": "本研究は、SL₂(ℤ[1/p]) という無限群の代数的・幾何的構造を扱っており、興味ある分野として挙げられた「structure of large countable infinite group」に深く関連している。"
+        },
+        "http://arxiv.org/abs/2607.27989v1": {
+          "title": "フルサポートおよび切断されたサポートを持つパルチザン・サブトラクション",
+          "summary": "本論文では、プレイヤーごとに石を取り除ける数の上限が異なるパルチザン・サブトラクション・ゲームである「Full Support (FS)」について調査している。FSでは、移動の選択肢が多いプレイヤーが、有限個の例外を除いたほぼ全ての山のサイズで勝利することを、一般的正準形およびアトミック・ウェイトの算出を通じて示している。また、公平性を回復させるために選択肢を制限する「Truncated Support (TS)」を導入し、切断の深さが勝敗や周期性に与える影響を分析した。特定のバランスの取れた切断レベルにおいては、非自明な周期性と共に、無限のPポジションおよびNポジションが出現することが明らかになった。",
+          "keywords": [
+            "Partizan Subtraction",
+            "Full Support",
+            "Truncated Support",
+            "Atomic weights",
+            "Canonical form"
+          ],
+          "appendix": "本研究は、ゲームの周期性やポジションの配列を扱う性質上、combinatorics on words や automata theory との関連性があります。"
+        },
+        "http://arxiv.org/abs/2607.27880v1": {
+          "title": "マーカー性質を持たない場合の力学的次元とシフトへの埋め込み可能性",
+          "summary": "先行研究で構築された、マーカー性質（marker property）を持たない有限平均次元力学系の例である非周期的逆極限系について調査した。この系の平均次元とMeyerovitchの力学的次元がいずれもNであることを証明した。マーカー性質を欠いているにもかかわらず、この系はアルファベット次元が3N+2の立方体シフト（cubical shift）へ等変位相埋め込みが可能であることを示した。補助的な結果として、任意のコンパクト距離化可能なアルファベット上のフルシフトの力学的次元が、その次元が無限の場合も含め、アルファベットの被覆次元に一致することを証明した。",
+          "keywords": [
+            "mean dimension",
+            "dynamical dimension",
+            "marker property",
+            "shift embeddability",
+            "inverse-limit system"
+          ],
+          "appendix": "本論文は、記号力学系（symbolic dynamics）における埋め込み問題や次元論に関連しており、指定された興味ある分野と密接に関わっています。"
+        },
+        "http://arxiv.org/abs/2607.27753v1": {
+          "title": "n-color分割に対するフランクリンの等式と付随するベック型の等式",
+          "summary": "本論文では、通常の分割に対して成立するいくつかの古典的な等式が、n-color分割（サイズnのパーツが1, 2, ..., nのn色の色を持つことができる分割）においても正確な類似物を持つことを示しています。具体的には、パーツのサイズと色の両方がrで割り切れる異なるパーツがちょうどj個ある集合と、少なくともr回出現する異なるパーツがちょうどj個ある集合の間に成立する、n-color版のフランクリンの等式を証明しています。さらに、これに付随する2つのベック型の等式も導出しており、すべての定理に対して解析的および組合せ論的な証明の両方を与えています。",
+          "keywords": [
+            "n-color partitions",
+            "Franklin's identity",
+            "Beck-type identities",
+            "combinatorial proofs"
+          ],
+          "appendix": "この論文は組合せ論（combinatorics）の手法を用いて分割の等式を証明しており、興味ある分野の一つである組合せ論に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.27582v1": {
+          "title": "良好な再帰性（nice recurrence）を持たない多項式写像とその応用",
+          "summary": "整数値多項式 p: ℤ → ℤ (p(0)=0) は常に良好な再帰性を持つことが知られているが、本論文では p(0)=0 を満たしながらもこの性質を持たない多項式写像 p: 𝔽₂^ω → 𝔽₂^ω の存在を示した。これにより、任意の可算無限アーベル群間の多項式写像は良好な再帰性を持つという Bergelson と McCutcheon の予想（2000年頃）を否定した。また、多項式経路に沿った交叉の大きさが次数に敏感（degree-sensitive）であることを示す力学的なメカニズムを構築した。さらに、𝔽₂^ω 値多項式に対する Furstenberg-Sarkozy 定理が、密度多項式 Hales-Jewett 予想の対称差による弱体化版と等価であることを示し、同予想の証明や反証に向けた戦略に制約を与える新たな知見を提供している。",
+          "keywords": [
+            "nice recurrence",
+            "polynomial maps",
+            "Furstenberg-Sarkozy theorem",
+            "density polynomial Hales-Jewett conjecture",
+            "countable infinite abelian groups"
+          ],
+          "appendix": "本論文は可算無限アーベル群の性質や構造を議論しており、提示された興味ある分野のうち「structure of large countable infinite group」に強く関連しています。また、密度多項式 Hales-Jewett 予想を扱っている点から、組合せ論的な文脈での関わりもあります。"
+        },
+        "http://arxiv.org/abs/2607.27573v1": {
+          "title": "2-連結グラフの mixed metric dimension",
+          "summary": "サイクルではない 2-連結グラフ G において、混合次元 (mixed metric dimension) は G のサイクロマチック数 c(G) の 2 倍以下であることを示した。これにより、Sedlar および Škrekovski によって提案されていた予想を肯定的に解決した。",
+          "keywords": [
+            "mixed metric dimension",
+            "2-connected graph",
+            "cyclomatic number",
+            "Sedlar and Škrekovski conjecture"
+          ],
+          "appendix": "本論文はグラフ理論および組合せ論の分野に属しており、提示された興味ある分野の中では Combinatorics に関連します。"
+        },
+        "http://arxiv.org/abs/2607.27552v1": {
+          "title": "測定葉層構造に対する穿孔忘却写像とそのTeichmüller空間および複素力学系への応用",
+          "summary": "本論文では、測定葉層構造における穿孔忘却写像を導入し、写像類群、Teichmüller空間、および極値的長さとの関係を調査している。そのために、前ホモトピー的マルチカーブの立方体複体およびCAT(0)立方体複体上の樹状座標系の概念を構築した。応用として、リーマン球面上のポストクリティカル有限な有理写像の力学系において、Kevin Pilgrimが提唱した有限曲線アトラクター予想に対する部分的な結果を得ている。さらに、Teichmüller空間上の普遍曲線におけるホロ球と測地流の間の関係を明らかにしている。",
+          "keywords": [
+            "measured foliations",
+            "mapping class groups",
+            "Teichmüller spaces",
+            "CAT(0) cube complexes",
+            "post-critically finite rational maps"
+          ],
+          "appendix": "本論文は[興味ある分野]のうち、complex dynamics（複素力学系）に直接関連しています。特にポストクリティカル有限な有理写像の力学系や曲線アトラクター予想を扱っています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2607.28597v1",
+        "http://arxiv.org/abs/2607.28459v1",
+        "http://arxiv.org/abs/2607.28433v1",
+        "http://arxiv.org/abs/2607.28406v1",
+        "http://arxiv.org/abs/2607.28387v1",
+        "http://arxiv.org/abs/2607.28361v1",
+        "http://arxiv.org/abs/2607.28316v1",
+        "http://arxiv.org/abs/2607.28273v1",
+        "http://arxiv.org/abs/2607.28241v1",
+        "http://arxiv.org/abs/2607.28157v1",
+        "http://arxiv.org/abs/2607.28139v1",
+        "http://arxiv.org/abs/2607.28138v1",
+        "http://arxiv.org/abs/2607.28088v1",
+        "http://arxiv.org/abs/2607.28071v1",
+        "http://arxiv.org/abs/2607.28001v1",
+        "http://arxiv.org/abs/2607.27989v1",
+        "http://arxiv.org/abs/2607.27880v1",
+        "http://arxiv.org/abs/2607.27753v1",
+        "http://arxiv.org/abs/2607.27582v1",
+        "http://arxiv.org/abs/2607.27573v1",
+        "http://arxiv.org/abs/2607.27552v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-02T05:36:17.971384+00:00",
-      "updated_at": "2026-08-02T07:28:49.282923+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-02T09:32:34.708209+00:00",
+      "finalized_at": "2026-08-02T09:32:34.708188+00:00"
     }
   ]
 }
