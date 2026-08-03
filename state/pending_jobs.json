@@ -13008,7 +13008,7 @@
     },
     {
       "pipeline_id": "20260803T055212Z-6a2fb4e7",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/uqyl02o3rb3j8rt1u8w8ue21b2ifdkba7623",
       "summarize_job_name": "batches/bjiavqhr8zmqk7oaowy4f6jwcfbyfs5gcct4",
       "papers": [
@@ -13509,14 +13509,236 @@
         "http://arxiv.org/abs/2607.28992v1",
         "http://arxiv.org/abs/2607.28949v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2607.29681v1": {
+          "title": "奇閉路のシャノン容量に対するLeanで検証された下界",
+          "summary": "本論文では、小さな奇閉路のシャノン容量に関する新たな下界を提示している。具体的には、C₇に対する3.258805369885…以上という値をはじめ、C₁₁、C₁₃、C₁₅、C₁₉、C₂₁、C₂₃の各奇閉路について従来よりも精密な下界を導出した。これらの境界値は、Gao (2026) および Itty, Rosin, Carstensen and Reichman (2026) の手法に基づく反復的手順によって得られたものであり、その計算過程および結果は対話型定理証明支援系Leanによって完全に形式化・検証されている。",
+          "keywords": [
+            "Shannon capacity",
+            "odd cycles",
+            "Lean",
+            "formal verification",
+            "lower bounds"
+          ],
+          "appendix": "本論文は、組合せ論的なグラフ理論の課題であるシャノン容量を扱っており、[興味ある分野]のうち validated numerics (精度保証付き数値計算) の文脈、あるいは形式検証を通じた計算結果の正当性確保という観点で関連性があります。"
+        },
+        "http://arxiv.org/abs/2607.29612v1": {
+          "title": "格子道、パターン統計、および Riordan 配列",
+          "summary": "彩色されたステップを持つ格子道に関連する新しい Riordan 行列のクラスを提案している。この行列のクラスが pseudo-involution の性質を持つことを示し、行列の各成分に対する生成関数および組合せ論的な明示式を導出した。さらに、これらの行列を用いて格子道内における任意のパターンの出現統計を計算する手法を確立している。最後に、格子道集合上に分配束の構造を定義し、得られた行列と束の Whitney 数との関係性を明らかにしている。",
+          "keywords": [
+            "Riordan matrices",
+            "lattice walks",
+            "pattern statistics",
+            "pseudo-involutions",
+            "Whitney numbers"
+          ],
+          "appendix": "本論文は格子道におけるパターンの統計を扱っており、興味ある分野のうち「combinatorics on words」や「symbolic dynamics」に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2607.29571v1": {
+          "title": "完全群による拡大に対する強収束ユニタリ表現",
+          "summary": "本論文では、完全群（exact groups）による拡大から生じる可算群の様々な新しい設定において、強収束ユニタリ表現が存在することを証明している。具体的には、アメナブル群との半直積、アーベル群を基底とする一般化リース積、グラフリース積、Gersten群を含む様々なfree-by-cyclic群、およびC*-環上の一般的なベルヌーイ・シフト交叉積における存在を示している。",
+          "keywords": [
+            "Strongly converging unitary representations",
+            "exact groups",
+            "semidirect products",
+            "wreath products",
+            "free-by-cyclic groups"
+          ],
+          "appendix": "本論文は可算無限群の表現論的性質を扱っており、興味ある分野のうち「structure of large countable infinite group」に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.29496v1": {
+          "title": "Transcript-Managed Transformers: 単調なマルチエージェントの崩壊と2つのPop可能なTranscriptによる普遍性",
+          "summary": "本論文は、有限精度の因果的TransformerにおけるTranscript管理の計算能力を数理的に分析しています。Transcriptを複数のチャンネルに分割し、ブロックの追加（Push）と直近ブロックの削除（Pop）を許容する「Transcript-Managed Transducer (TMT)」を定義しました。Pop操作を持たない標準的な追加専用のモデル（RTMT）は、エージェントの数に関わらず決定性有限状態変換（DFT）の範疇に限定されますが、Pop操作を導入することで計算能力が飛躍的に向上します。具体的には、1つのPop可能チャンネルで決定性文脈自由言語（DCFL）を、2つ以上のチャンネル（単一エージェントまたは複数エージェント間）で帰納的可算集合（RE）を表現可能であり、チューリング完全な計算能力（Universality）を持つことを示しました。",
+          "keywords": [
+            "Transcript-Managed Transducer",
+            "Causal Transformers",
+            "Stack Automata",
+            "Computational Complexity",
+            "Universality"
+          ],
+          "appendix": "本論文はオートマトン理論 (automata theory) および形式言語理論 (formal languages) に深く関連しており、Transformerのアーキテクチャが持つ計算上の制約と、スタック構造を用いた計算能力の階層（DCFLやRE）へのマッピングを論じています。"
+        },
+        "http://arxiv.org/abs/2607.29449v1": {
+          "title": "Grigorchuk-Erschler群のBasilica群",
+          "summary": "FrancoeurとGarridoは、無限指数の極大部分群を持つ有限生成ブランチ群の初の具体例としてGrigorchuk-Erschler群を提示した。本研究では、PetschickとRajeevが導入したBasilica演算を利用し、Grigorchuk-Erschler群の第2Basilica群も同様に無限指数の極大部分群を持つことを証明している。",
+          "keywords": [
+            "branch groups",
+            "maximal subgroups of infinite index",
+            "Grigorchuk-Erschler group",
+            "Basilica operation"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に関連しており、有限生成ブランチ群の極大部分群の構造という重要なテーマを扱っています。"
+        },
+        "http://arxiv.org/abs/2607.29386v1": {
+          "title": "有理ヤコビ回転と混合整数二次計画法の近似の計算複雑性",
+          "summary": "整数変数の数および目的関数のヘッセ行列における負の固有値の数が固定されている設定において、混合整数二次計画法（MIQP）のε-近似解を多項式時間で計算するアルゴリズムを提案しています。P≠NPを仮定すると、これらの制約は近似を効率的に行うために不可欠であり、これによりMIQP近似の計算複雑性が完全に特徴付けられました。技術的な核は、無理数演算を回避し、チューリングマシン上で実行可能な「有理ヤコビ回転」を用いた同時対角化手法です。これによって、楕円体を球体へ写像しつつ、目的関数を微小な摂動を除いて分離可能に変換します。",
+          "keywords": [
+            "Mixed Integer Quadratic Programming",
+            "Rational Jacobi Rotations",
+            "Computational Complexity",
+            "Simultaneous Diagonalization",
+            "Approximation Algorithms"
+          ],
+          "appendix": "本論文は「興味ある分野」として挙げられた項目に直接関連するものではありませんが、計算複雑性理論および数理最適化における重要な成果です。特に、実数演算ではなくチューリングマシン上での演算可能性を保証するために有理数のみを用いた「有理ヤコビ回転」を導入している点は、精度保証付き数値計算（validated numerics）の基礎的な関心事である計算の厳密性とも親和性があります。"
+        },
+        "http://arxiv.org/abs/2607.29369v1": {
+          "title": "ポリオミノによるタイリングの自動列挙",
+          "summary": "本論文では、ポリオミノによるタイリングを列挙するためのZeilbergerによる計算フレームワークを再検討し、回転を許容したL-テトロミノによるk × nボードのタイリングの計数への適用を実証している。BělohoubekとSlavíkによって最近示された2n × 4ボードのL-テトロミノ・タイリングの母関数を自動的に復元することで手法の検証を行い、さらにこの手法を幅5から9までのボードに適用した。その結果、陽な形での有理母関数を得ることに成功し、OEIS（オンライン整数列大辞典）に未登録の新しい整数列を導出した。",
+          "keywords": [
+            "polyomino tilings",
+            "L-tetrominoes",
+            "generating functions",
+            "enumeration",
+            "Zeilberger's framework"
+          ],
+          "appendix": "この論文は、タイリングの数え上げや母関数の導出を扱っており、興味ある分野のうち combinatorics on words と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.29326v1": {
+          "title": "マンデルブロ集合の先端における精緻な漸近挙動",
+          "summary": "二次写像 f_c(z) = z² + c において、ジュリア集合 J_c のハウスドルフ次元が1となるのは c = 0 と c = -2 のみである。本論文では、非双曲的なパラメータであるマンデルブロ集合の先端 c = -2 付近における次元関数の不連続な振る舞いを解析し、その下包絡線に対する鋭い一次の漸近評価を導出した。具体的には、c ∈ M のとき dim_H(J_c) が漸近的に 1 + Ω√|c + 2| 以上になることを示した（ここで Ω = √(2/3) / (π log 2) は Jaksztas 定数）。この証明のために、退化するボックス写像（box mappings）の族に対する熱力学形式を構築し、指数関数的裾の性質を利用して圧力関数の制御を行っている。",
+          "keywords": [
+            "Mandelbrot set",
+            "Hausdorff dimension",
+            "Thermodynamic formalism",
+            "Box mappings",
+            "Julia set"
+          ],
+          "appendix": "本論文は複素力学系（complex dynamics）の分野に関連しており、Yoccoz problem（アトラクターの展開）に対する具体的な数学的貢献を含んでいます。"
+        },
+        "http://arxiv.org/abs/2607.29275v1": {
+          "title": "動的Möbius-Sarnak過程のスペクトル解析とMöbius関数の位相的エントロピーについて",
+          "summary": "本論文では、エントロピーとスペクトルにおける可算ルベーグ成分を関連付けるRokhlin-Sinaiの仕組みを拡張し、動的Möbius-Sarnak過程が可算ルベーグ成分を持つことを示しました。また、バナッハ空間上の全演算子に対してスペクトル測度の概念を拡張し、Möbiusフローの位相的エントロピーが 6/π² log 3 であることを無条件で証明しました。これらの結果から、Möbius関数の任意の準ジェネリック測度に対して、そのフローが可算ルベーグスペクトル成分を持つことが導かれ、スペクトルが特異な任意の位相力学系においてSarnakのMöbius直交性予想が成立することが示されました。さらに、Möbius関数のすべての潜在的なスペクトル測度がルベーグ測度に対して絶対連続であることも明らかにしています。",
+          "keywords": [
+            "dynamical Möbius-Sarnak process",
+            "topological entropy",
+            "countable Lebesgue component",
+            "Sarnak Möbius orthogonality conjecture",
+            "spectral measure"
+          ],
+          "appendix": "本論文は、記号力学系 (symbolic dynamics) および算術力学系 (arithmetic dynamics) の分野に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.29272v1": {
+          "title": "時系列グラフにおけるロール彩色",
+          "summary": "グラフのロール彩色（同じ色の頂点が、隣接頂点の色集合に関して同一の構成を持つような彩色）の概念を時系列グラフへと拡張する。時系列ロールは、現在の色や過去・現在の隣接関係の情報を捕捉するオートマトンを用いて定義される。静的グラフにおける問題からの帰着により、時系列ロール彩色問題がNP完全であることを示した。計算の困難性に対処するため、オートマトンの状態数とグラフの幅尺度（vertex-interval-membership widthやtree-interval-membership width）を組み合わせたパラメータや、基礎グラフの木幅・生存期間・色数を組み合わせたパラメータにおいて、問題が固定パラメータ可能（FPT）であることを証明した。",
+          "keywords": [
+            "role colouring",
+            "temporal graphs",
+            "NP-complete",
+            "fixed-parameter tractability",
+            "automata theory"
+          ],
+          "appendix": "時系列ロールがオートマトンを用いて定義されており、解析においてもオートマトンの状態数がパラメータとして扱われていることから、「automata theory」に深く関連する内容です。"
+        },
+        "http://arxiv.org/abs/2607.29255v1": {
+          "title": "新たな有効なジャグリング・シーケンスに関する2つの結果について",
+          "summary": "本論文では、ジャグリングの数理モデルであるサイトスワップ（siteswap）シーケンスを拡張するための2つの簡潔な操作、「first throws」と「last catches」について研究している。これらの構成法は、既存のパターンに対して衝突を発生させずに開始時に投げを追加したり、終了時にキャッチを追加したりするための手法である。着地時間（landing times）および置換テスト（permutation test）を用いることで、任意の有効なサイトスワップに対してこれらの操作を適用した際に、再び有効なサイトスワップが生成されるための必要十分条件を明らかにした。",
+          "keywords": [
+            "siteswap sequences",
+            "permutation test",
+            "landing times",
+            "first throws",
+            "last catches"
+          ],
+          "appendix": "本論文はジャグリングパターンの組合せ論的性質を扱っており、「combinatorics on words」や「symbolic dynamics」の分野と関連があります。"
+        },
+        "http://arxiv.org/abs/2607.29236v1": {
+          "title": "三角形面を最大化する擬直線配置の列挙と分類",
+          "summary": "n本の擬直線（nは奇数）から成る単純な配置において、三角形面の数を最大化する配置を網羅的に列挙・分類するアルゴリズムを提案した。この手法は、最長置換 w₀ の簡約語を深さ優先探索で列挙する際、幾何学的制約に基づき偶数インデックスの生成元のみを分岐させる枝刈りを行う。得られた配置は、交換関係、ユークリッド変換、および射影変換の同値類によって階層的に分類され、完全な対称群や軌道・固定部分群のプロファイルが特定される。n=27までの完全な列挙（56,646の射影クラスなど）に加え、n=93までの部分的な探索結果を報告しており、探索の完全性も証明されている。",
+          "keywords": [
+            "pseudoline arrangements",
+            "reduced words",
+            "wiring diagrams",
+            "enumeration",
+            "projective classification"
+          ],
+          "appendix": "本論文は、word上の組合せ論（combinatorics on words）における最長置換の簡約語（reduced words）の表現や、幾何学的な配置の組合せ構造を扱っており、興味ある分野の「combinatorics on words」と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2607.29233v1": {
+          "title": "高次元記号力学：3-graphのためのテキスタイル・フレームワーク",
+          "summary": "本論文では、2次元の有限型シフトのモデル化で知られるテキスタイル・システムを3次元へと拡張し、3-graphとの関連性を調査している。左分解的なテキスタイル・システムが2-graphのKumjian-Pask代数と一致するという既存の性質を拡張し、3次元テキスタイル・システムがすべての3次元有限型シフトを捉え、かつ3-graphの構造（3彩色グラフから3-graphを構成する際の結合律を含む条件など）を単純なプルバック図として記述できることを示した。さらに、3次元テキスタイルのホモロジー群を定義し、それが対応する3-graphのホモロジー群と一致することを証明することで、構築したフレームワークのホモロジー的な整合性を立証している。",
+          "keywords": [
+            "textile systems",
+            "3-graphs",
+            "shifts of finite type",
+            "Kumjian-Pask algebras",
+            "homology groups"
+          ],
+          "appendix": "本論文は記号力学（symbolic dynamics）における多次元の有限型シフトを扱っており、興味ある分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2607.29111v1": {
+          "title": "Fittingの定理と正規部分群の半環",
+          "summary": "群 G の正規部分群の集合に対して、非単位的かつ一般には非結合的な、可換半環の構造を定義しました。この視点を用いることで、2つのベキ零正規部分群の結びはベキ零であるというFittingの古典的な定理を、環論的な用語で再構成することができます。このアプローチにおける重要な要素は、非結合的な設定での二項展開と、2つの正規部分群の交換子群が各因子に含まれるという事実です。本研究はLeanで形式化されており、主要な定義や結果にはMathlibが活用されています。",
+          "keywords": [
+            "Fitting's theorem",
+            "normal subgroups",
+            "semirings",
+            "Lean",
+            "Mathlib"
+          ],
+          "appendix": "本論文は群論的な構造を扱っていますが、指定された「興味ある分野」との直接的な関連性は特に認められません。"
+        },
+        "http://arxiv.org/abs/2607.29105v1": {
+          "title": "N-素数グラフ問題は素数グラフ問題と同等である",
+          "summary": "有限群 G の整数群環における正規化単元群 V(ℤG) についての研究。V(ℤG) のすべての N-素数アークは、G 内に既に存在するか、あるいは異なる素数位数の可換な証拠を持つかのいずれかであることを証明した。これにより、V(ℤG) の N-素数グラフ A(Γ_N(V(ℤG))) を A(Γ_N(G)) と Γ_GK(V(ℤG)) の辺の対称化の和として表す公式を導出し、結果として N-素数グラフ問題が G に対して肯定的に解決されることと、素数グラフ問題が肯定的に解決されることが同値であることを示した。",
+          "keywords": [
+            "normalized units",
+            "integral group ring",
+            "N-Prime Graph Question",
+            "Prime Graph Question",
+            "finite group"
+          ],
+          "appendix": "群環の単元群の構造に関連する研究であり、有限群の代数的構造を扱っています。提示された「興味ある分野」に直接合致するキーワードは含まれていませんが、群の構造論という観点から関連性を持ちます。"
+        },
+        "http://arxiv.org/abs/2607.28992v1": {
+          "title": "Permuton標本における最小転倒数について",
+          "summary": "置換から生成される転倒グラフの最小次数（最小転倒数）に関する研究である。一様置換における先行研究を拡張し、平面上の特定の分布（Permuton）からサンプリングされた点集合の順序として得られる置換を対象としている。分布に対する正則性の仮定のもと、適切にスケーリングされた最小転倒数が特定の閾値を超える確率が指数関数的に減衰することを示した。また、任意のβ∈[0,1]に対して、最小転倒数が漸近的にn^βのオーダーでスケールするような分布が存在することを証明している。",
+          "keywords": [
+            "permutation",
+            "inversion graph",
+            "permuton",
+            "minimal degree",
+            "asymptotic scaling"
+          ],
+          "appendix": "この論文は、置換やグラフの構造を扱うため、興味ある分野のうち「combinatorics on words」や離散構造の漸近的性質に関連があります。"
+        },
+        "http://arxiv.org/abs/2607.28949v1": {
+          "title": "算術的双曲多様体の等長写像群と格子の正規化群",
+          "summary": "本論文では、PSL(2, ℂ) のすべての算術的格子および PO(n, 1) (n ≥ 2) における最も単純な型のすべての算術的格子が、自身の任意に多くの部分格子の正規化群となることを証明した。先行研究と組み合わせることで、PSL(2, ℂ) 内のすべての格子がこの性質を持つことが導かれ、PSL(2, ℂ) における profinitely flexible な格子の集合が、空であるか、さもなくば可算無限集合であることが示される。さらに、格子の正規化群の研究と部分群増加理論に基づき、すべての有限群がある算術的双曲 n-次元多様体の完全等長写像群として実現可能であることを示した。",
+          "keywords": [
+            "arithmetic lattice",
+            "PSL(2, ℂ)",
+            "isometry group",
+            "hyperbolic manifold",
+            "subgroup growth theory"
+          ],
+          "appendix": "本論文は、格子の構造や正規化群を扱っており「structure of large countable infinite group」の分野に深く関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2607.29681v1",
+        "http://arxiv.org/abs/2607.29612v1",
+        "http://arxiv.org/abs/2607.29571v1",
+        "http://arxiv.org/abs/2607.29496v1",
+        "http://arxiv.org/abs/2607.29449v1",
+        "http://arxiv.org/abs/2607.29386v1",
+        "http://arxiv.org/abs/2607.29369v1",
+        "http://arxiv.org/abs/2607.29326v1",
+        "http://arxiv.org/abs/2607.29275v1",
+        "http://arxiv.org/abs/2607.29272v1",
+        "http://arxiv.org/abs/2607.29255v1",
+        "http://arxiv.org/abs/2607.29236v1",
+        "http://arxiv.org/abs/2607.29233v1",
+        "http://arxiv.org/abs/2607.29111v1",
+        "http://arxiv.org/abs/2607.29105v1",
+        "http://arxiv.org/abs/2607.28992v1",
+        "http://arxiv.org/abs/2607.28949v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-03T05:52:12.298544+00:00",
-      "updated_at": "2026-08-03T08:32:03.108559+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-03T11:53:53.026540+00:00",
+      "finalized_at": "2026-08-03T11:53:53.026517+00:00"
     }
   ]
 }
