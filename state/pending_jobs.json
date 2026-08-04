@@ -13742,7 +13742,7 @@
     },
     {
       "pipeline_id": "20260804T052500Z-58bdee25",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/lq8kb8h4a0mmkmy7jbuxazetyy45f7helbul",
       "summarize_job_name": "batches/nc5h8bv0mgqe9srjxolknlzn9rrjsubpqx80",
       "papers": [
@@ -14195,14 +14195,118 @@
         "http://arxiv.org/abs/2608.00398v1",
         "http://arxiv.org/abs/2608.00386v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2608.00755v1": {
+          "title": "Lie型の有限群における一様膨張",
+          "summary": "ランクが有界な素数 p に対する有限単純群 G(p) が、特定の例外的な素数を除いて一様膨張（uniform expansion）を持つことを証明している。これは、すべての Cayley グラフの族が両側エクスパンダーの族を構成することを意味する。また、任意の素数冪 q について、一様膨張の例外となり得る集合は「次元ゼロ」であることが示された。さらに、これらの結果は半単純代数群や完全代数群へも拡張されている。",
+          "keywords": [
+            "finite simple groups of Lie type",
+            "uniform expansion",
+            "Cayley graphs",
+            "expanders",
+            "algebraic groups"
+          ],
+          "appendix": "本論文は有限群の構造やエクスパンダーグラフを扱っており、興味ある分野のうち「structure of large countable infinite group」の研究における有限近似などの群論的側面に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.00735v1": {
+          "title": "Parking Cascades: 最も単純な数列から Motzkin 数および Catalan 数まで",
+          "summary": "本論文では、最大 k 回までの車の連鎖的な移動（bumping cascades）を許容する駐車関数の一般化である k-cascading parking functions を導入する。k = 0 の場合は古典的な駐車関数に、k = 1 の場合は MVP 駐車関数に一致する。集合としては従来の駐車関数と同等であるが、写像としては異なるため、結果のファイバーの数え上げを検討した。主要な成果として、任意の k ≥ 0 における置換のファイバーのサイズを決定する、置換パターンに基づいた再帰公式を提示した。この公式を最長語に適用すると、k = 0（最も単純な数列）、k = 1（Motzkin 数）、k ≥ n - 1（Catalan 数）の間を補完する整数列が得られる。また、layered permutations への適用により、Motzkin や Catalan の畳み込み三角形の行和に関する新たな組合せ論的解釈が導かれる。",
+          "keywords": [
+            "k-cascading parking functions",
+            "Motzkin numbers",
+            "Catalan numbers",
+            "permutation patterns",
+            "convolution triangles"
+          ],
+          "appendix": "本論文は「combinatorics on words」の分野に深く関連しています。置換パターンや数列の組合せ論的性質を扱っており、Motzkin 数や Catalan 数といった重要な概念に対する新たな解析手法を提供しています。"
+        },
+        "http://arxiv.org/abs/2608.00587v1": {
+          "title": "離散サイクルを持つグラフ上の力学系とその応用",
+          "summary": "本論文では、正規形を持つ離散サイクルを備えた連結有限グラフの概念を導入し、任意のそのようなグラフが有限回のin-splittingおよびout-splittingによって正規形に変換可能であることを示しました。この成果に基づき、3つの離散サイクルからなる「長さ3のメテオグラフ」が強シフト同値（strongly shift equivalent）であるための数論的基準を提示しています。さらに、サイクル長が互いに素である長さ3のメテオグラフにおいて、シフト同値、強シフト同値、対応するLeavitt経路代数の次数付きMorita同値、および次数付きK理論（K₀ᶢʳ）のℤ[x, x⁻¹]加群同型がすべて同値であることを証明しました。これにより、サイクル長が互いに素な3つのサイクルを含むグラフに対し、Williams予想およびHazratの次数付きMorita同値予想が成立することを導いています。",
+          "keywords": [
+            "connected finite graphs",
+            "disjoint cycles",
+            "shift equivalence",
+            "strong shift equivalence",
+            "Leavitt path algebras"
+          ],
+          "appendix": "本論文は、記号力学系（symbolic dynamics）における中心的な課題であるシフト同値および強シフト同値の判定に関する研究であり、Leavitt経路代数や次数付きK理論といった代数的手法を用いてWilliams予想等にアプローチしています。"
+        },
+        "http://arxiv.org/abs/2608.00575v1": {
+          "title": "Complementary Bell数のファイバーの有限性",
+          "summary": "1999年にSubbaraoとVermaが提案した、Bell多項式 Bₙ(x) を用いて f(n) = Bₙ(-1) と定義されるComplementary Bell数に関する未解決問題を解決した。具体的には、「数列 f(n) が任意の値を高々有限回しか取らないか」という問いに対して肯定的な回答を与えた。証明には、有限差分法、部分Motzkinパス、Gaussノルムに関するTate代数の完備性、およびStrassmannの定理を組み合わせた手法が用いられている。",
+          "keywords": [
+            "complementary Bell numbers",
+            "Bell polynomials",
+            "partial Motzkin paths",
+            "Tate algebra",
+            "Strassmann's theorem"
+          ],
+          "appendix": "組合せ論的な手法とp進解析的な手法（Tate代数やStrassmannの定理）を組み合わせて数列の性質を解明しており、興味ある分野のうち combinatorics や arithmetic dynamics と関連がある。"
+        },
+        "http://arxiv.org/abs/2608.00504v1": {
+          "title": "Kourovka Notebookにおける問題17.102への否定的な回答",
+          "summary": "本論文では、群論における未解決問題集である「Kourovka Notebook」に掲載された問題17.102を検討し、その問いに対して否定的な回答を与えています。",
+          "keywords": [
+            "Kourovka Notebook",
+            "Question 17.102",
+            "Group Theory"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」に関連する分野を扱っています。"
+        },
+        "http://arxiv.org/abs/2608.00479v1": {
+          "title": "シングルトンを含まない分割と巡回隣接を含まない分割の間の最適かつ細分順序に適合した全単射",
+          "summary": "集合 [n] のシングルトン（単元集合）を含まない分割と、巡回的な隣接要素 {i, i+1 mod n} を同一ブロックに含まない分割の数は等しいことが知られている。本論文では、これら2つのクラス間の直接的な「1ラウンド」の全単射を構築し、先行研究における複雑なアルゴリズム的手法を改善した。この写像は分割の細分順序と密接な適合性を持ち、片方向はブロックの分解のみ、逆方向はブロックの結合のみを行い、nが偶数の場合を除いて最適であることを示した。また、この全単射は修正なしで非交叉分割のクラスにも適用可能である。",
+          "keywords": [
+            "singleton-free partitions",
+            "cyclic adjacencies",
+            "refinement order",
+            "noncrossing partitions",
+            "bijection"
+          ],
+          "appendix": "この論文は組合せ論（combinatorics）に関する内容を扱っており、興味ある分野のうち「combinatorics on words」などの離散構造の解析に関連する手法を含んでいます。"
+        },
+        "http://arxiv.org/abs/2608.00398v1": {
+          "title": "無限区間拡大写像：カオス、エルゴード性、および不変集合の複雑性",
+          "summary": "本論文では、無限個の滑らかな拡大枝によって定義される1次元区分的写像のクラスを研究している。このクラスは非滑らかな力学系の文脈、特に滑りシルニコフ接続（sliding Shilnikov connections）付近で局所的に定義される第一帰還写像において自然に出現する。共形反復関数系（CIFS）の理論を用いて、これらの写像の力学的な諸性質と不変集合の位相的複雑性を調査した。具体的には、不変集合に制限された力学系が、自然数の無限列上のシフト空間 ℕᴺ と位相共役であることを示し、さらに、その写像の下で不変かつエルゴード的な唯一の共形測度が存在することを確立した。",
+          "keywords": [
+            "piecewise expanding maps",
+            "conformal iterated function systems",
+            "invariant set complexity",
+            "ergodicity",
+            "sliding Shilnikov connections"
+          ],
+          "appendix": "本論文は、不変集合上の力学系がシフト空間 ℕᴺ と位相共役であることを示しており、興味ある分野に含まれる symbolic dynamics と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.00386v1": {
+          "title": "双曲3次元多様体上のライン束に対する準最適なスペクトル・ギャップ",
+          "summary": "閉双曲3次元多様体上において、体積が無限大に向かうような2-torsionエルミート・ライン束の系列が存在し、それらがラプラス演算子の最小固有値について漸近的に最適な値を持つことを証明した。本研究の証明手法は、離散群の強収束単位表現（strongly convergent unitary representations）のプログラムにおける近年の進展に基づいている。",
+          "keywords": [
+            "hyperbolic three-manifolds",
+            "Hermitian line bundles",
+            "spectral gap",
+            "Laplacian",
+            "unitary representations"
+          ],
+          "appendix": "本論文は離散群の表現論に関する成果に基づいているため、[興味ある分野]のうち「structure of large countable infinite group」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.00755v1",
+        "http://arxiv.org/abs/2608.00735v1",
+        "http://arxiv.org/abs/2608.00587v1",
+        "http://arxiv.org/abs/2608.00575v1",
+        "http://arxiv.org/abs/2608.00504v1",
+        "http://arxiv.org/abs/2608.00479v1",
+        "http://arxiv.org/abs/2608.00398v1",
+        "http://arxiv.org/abs/2608.00386v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-04T05:25:00.705274+00:00",
-      "updated_at": "2026-08-04T07:39:46.895212+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-04T08:22:46.940721+00:00",
+      "finalized_at": "2026-08-04T08:22:46.940707+00:00"
     }
   ]
 }
