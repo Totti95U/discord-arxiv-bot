@@ -16623,7 +16623,7 @@
     },
     {
       "pipeline_id": "20260807T043306Z-7e2f0bd3",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/s9usw7xymuve36jhwz41z2cmydmmm6v5hzk3",
       "summarize_job_name": "batches/ouycimdetyacz9ulgv3d4ix06a6hddomcyon",
       "papers": [
@@ -17388,14 +17388,257 @@
         "http://arxiv.org/abs/2608.03144v1",
         "http://arxiv.org/abs/2608.02982v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2608.04228v1": {
+          "title": "Scoped Computational Pathsに対するトポロジカルセマンティクス",
+          "summary": "計算パスを原子的なステップの有限トレースによる等価性の記録と捉え、Scopedな書き換え表現に対するトポロジカルセマンティクスを提案している。各表現に対して、標準的なfinal-domain亜群（groupoid）構造を持つ商矢空間を構築し、その乗法が連続となる条件や、通常の引き戻し位相と一致するための条件を明らかにしている。幾何学的ホモトピー類への実現写像は連続な亜群準同型であり、幾何学的完備性のもとで忠実となる。円周やトーラス（ℤおよびℤ²による分類）の例を用いた検証に加え、Lean 4による定理の形式化も行われている。",
+          "keywords": [
+            "Computational paths",
+            "Topological semantics",
+            "Groupoid structure",
+            "Geometric realization",
+            "Lean 4"
+          ],
+          "appendix": "本論文は亜群構造やホモトピーを扱っており、興味ある分野のうち「structure of large countable infinite group」の理論的側面に関連する可能性があります。また、計算パスや書き換えシステムの幾何学的解釈は「automata theory」等の計算機科学的領域にも通じるテーマです。"
+        },
+        "http://arxiv.org/abs/2608.04153v1": {
+          "title": "2|E|-|V| < |σ| < 2|E| を満たすすべての並列チップファイアリング・ゲームは周期 2 を持つ",
+          "summary": "本論文は、グラフ上の並列チップファイアリング・ゲームにおける活動関数の振る舞いに関する予想を証明したものである。Levine (2010) が完全グラフ Kₙ において活動関数が悪魔の階段状のパターンに収束することを発見して以来、活動が 0 または 1 となる境界の一般化が進められてきた。本研究では、Ji, Li, Wang (2024) による「活動が 1/2 となるゲームにも同様の一般的な境界が存在する」という予想を GPT-5.6-Sol を用いて解決した。これにより、木、サイクル、完全グラフ、完全 2 部グラフに関する既存の結果が統合され、悪魔の階段の中央の段がすべてのグラフに対して一般化された。",
+          "keywords": [
+            "parallel chip-firing games",
+            "activity functions",
+            "devil's staircase",
+            "complete graph",
+            "GPT-5.6-Sol"
+          ],
+          "appendix": "本研究は、離散力学系のダイナミクスを扱う点から symbolic dynamics や combinatorics on words に関連しており、また活動関数の収束パターンとして complex dynamics における「悪魔の階段」の性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2608.04111v1": {
+          "title": "GEB-Bench: 多様な表現形式によって記述される抽象的構造",
+          "summary": "「自己参照」や「不思議な環（strange loop）」といった、領域横断的な抽象的構造の認識能力を評価するベンチマーク「GEB-Bench」を提案。自然現象、民話、数学的定理、プログラムという異なる表現形式（voice）を介して同一の構造を提示し、モデルの構造認識および形式を跨いだマッピング能力を測定した。評価の結果、単一の形式内での構造認識に比べ、形式間を跨ぐマッピングにおいて全てのモデルで性能が著しく低下する「マッピングの乖離」が確認された。この誤差は知覚的な特徴よりも形式的な幾何学構造に起因しており、最先端モデルであっても表面的な複雑さに構造理解が阻害される傾向が示された。",
+          "keywords": [
+            "GEB-Bench",
+            "abstract structural motif",
+            "cross-voice mapping",
+            "strange loop",
+            "self-reference"
+          ],
+          "appendix": "民話の構造を機械的に検証可能な形式装置として扱う点や、プログラムのスケルトン（骨組み）を用いて抽象構造を記述する手法は、Formal LanguagesやAutomata Theoryの分野と強い関連性があります。"
+        },
+        "http://arxiv.org/abs/2608.03836v2": {
+          "title": "Resume Means Resume: ワークフロー永続化層におけるチェックポイント・中断・再開セマンティクスのための機械検証済み適合性契約",
+          "summary": "エージェント・ワークフロー・フレームワークにおける実行状態の永続化と再開に関するセマンティクスを形式化した研究である。既存の5つの主要フレームワーク（LangGraph, CrewAI等）において、再開時の挙動が機械検証可能な契約を欠き、一貫性のない動作や副作用の二重実行を引き起こすことを示した。本論文では、prefix continuationやexactly-onceなど6つの性質からなる「RESUME CONTRACT」を定義し、TLA+を用いてモデル検証を行った。また、検証済みの回復コアを持つ参照実装REMITを提案し、既存フレームワークで見られた並行実行時の二重消費問題などを解決できることを実証している。",
+          "keywords": [
+            "Workflow Persistence",
+            "Exactly-once Semantics",
+            "TLA+",
+            "Checkpoint Validity",
+            "Fault Tolerance"
+          ],
+          "appendix": "automata theory に関連しており、ワークフローの実行状態や遷移の形式的なモデル化、およびその検証においてオートマトン理論的なアプローチが背景にあります。"
+        },
+        "http://arxiv.org/abs/2608.03813v2": {
+          "title": "Thompson 群 V の Dehn 関数は高々 6 次である",
+          "summary": "Thompson の群 F や T の Dehn 関数が 2 次であることが先行研究で示されている中、本論文では Thompson の群 V の Dehn 関数について、従来知られていた上界 n¹¹ を n⁶ へと大幅に改善した。また、明示的な van Kampen 図を通じて群の定義関係の複雑な構造を解析している。",
+          "keywords": [
+            "Thompson's group V",
+            "Dehn function",
+            "van Kampen diagrams"
+          ],
+          "appendix": "興味ある分野である「structure of large countable infinite group」に関連しています。Thompson 群は幾何学的群論における無限群の代表的な例であり、その計算量的な性質（Dehn 関数）を特定する研究です。"
+        },
+        "http://arxiv.org/abs/2608.03792v1": {
+          "title": "アフィンFPF W-グラフの分子と漸近的行Beissinger対応",
+          "summary": "Kazhdan-Lusztig W-グラフはHecke環のセル構造を記述し、その双方向連結成分は分子と呼ばれます。有限A型ではRobinson-Schensted対応がセルと分子を記述するのに対し、本論文では、アフィン固定点なし（FPF）対合によって添え字付けられたアフィンFPF W-グラフに焦点を当てます。著者らは、アフィンFPF対合に対して完全2サイクル切断と有限行Beissinger挿入を行うことで、アフィン行列・ボール構成（AMBC）のTabloidと支配的ウェイトの両方を漸近的に復元できることを証明しました。また、AMBCにおける双対同値移動を用いてΓₙᵐの双方向エッジを特定し、その分子の分類を与えています。",
+          "keywords": [
+            "affine FPF W-graph",
+            "affine matrix-ball construction",
+            "Beissinger correspondence",
+            "dual equivalence moves",
+            "Kazhdan-Lusztig cells"
+          ],
+          "appendix": "本論文は、アフィン・ワイル群の組合せ論的構造を扱っており、興味ある分野のうち「combinatorics on words」および「structure of large countable infinite group」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.03561v1": {
+          "title": "有限直積商と一様 Kazhdan 定数",
+          "summary": "有限生成群 Γ が、任意の個数の非自明な有限群の直積からなる有限商を持つとき、その一様 Kazhdan 定数 κᵤ(Γ) が 0 となることを示した。具体的には、m 個の直積因子を持つ商から κ(Γ, Sₘ) ≤ 2/√m を満たす有限生成集合 Sₘ が得られる。この結果を異なる素数による剰余の同時簡約に応用することで、n ≥ 2 における SLₙ(ℤ) の一様 Kazhdan 定数が 0 であることを導いている。",
+          "keywords": [
+            "uniform Kazhdan constant",
+            "finitely generated group",
+            "finite direct-product quotients",
+            "SLₙ(ℤ)"
+          ],
+          "appendix": "この論文は「structure of large countable infinite group」に関連しており、無限群のユニタリ表現や Kazhdan の性質 (T) に関わる一様定数の消失条件を提示しています。"
+        },
+        "http://arxiv.org/abs/2608.03473v1": {
+          "title": "並列字句解析のための証明済み分割点：完全一致および法によるトークン破棄の条件下で",
+          "summary": "テーブル駆動型DFAによる字句解析は本質的に逐次的であるが、本論文では最長一致則を用いるスキャナにおいて、投機的実行や重複スキャンを必要とせずに並列処理を可能にする二つの条件を提示している。一つ目は、特定のバイト（証明済み分割記号）が出現した際に、その位置が必ずトークンの開始点となるための必要十分条件である。二つ目は、コメントや空白などの破棄されるトークン集合を許容するように条件を緩和した、より実用的で保守的な判定条件である。これらの条件をmunchライブラリに実装し、C言語風の構文やJSONを用いた実験を行った結果、8スレッド環境で92.6-95.3%の並列効率を達成し、区切り文字ベースの並列字句解析を言語固有の仮定からコンパイラが検証可能な属性へと昇華させた。",
+          "keywords": [
+            "Parallel Lexing",
+            "DFA",
+            "Longest-match scanner",
+            "Certified split symbol",
+            "munch library"
+          ],
+          "appendix": "本論文は、オートマトン理論（automata theory）および形式言語（formal languages）の分野に深く関連しており、DFAの状態遷移やトークン化の構造を形式的に扱っています。"
+        },
+        "http://arxiv.org/abs/2608.03439v1": {
+          "title": "パターン数え上げに対する品質管理アルゴリズム",
+          "summary": "本論文では、与えられた入力が真にランダムであるかを判定する「品質管理問題」を、数列におけるパターン出現回数の観点から研究している。特に、独立同一分布（i.i.d.）に従う指標と、特定のパターンが部分列として過剰または過少に出現する数列を区別することを目的とする。有限アルファベット上のパターン数え上げ、および実数値数列における置換パターン数え上げの両方を扱い、最悪ケースの計算量がパターンの長さkに対して指数関数的になるのに対し、品質管理問題の非対称性（平均的な完全性と最悪ケースの健全性）を利用することで、kの多項式時間で動作する効率的なアルゴリズムを提案している。また、特定の自然な分布において、品質管理アルゴリズムにはkに対して超線形なクエリ数が必要であることを証明している。",
+          "keywords": [
+            "quality control problems",
+            "pattern counting",
+            "permutation patterns",
+            "average-case completeness",
+            "randomness"
+          ],
+          "appendix": "本論文は、数列上のパターン出現（combinatorics on words）やランダム性の統計的性質を扱っており、興味ある分野のうち combinatorics on words と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.03404v1": {
+          "title": "3×3 相関写像における不動点、安定性、およびベイスンの幾何学",
+          "summary": "半世紀以上にわたり、クラスタリングや情報可視化に使用されてきた反復ピアソン相関写像の極限力学系について、3次元の場合の不動点分類とリアプノフ安定性問題を完全に解明した研究。n次元において非退化な符号値不動点が 2ⁿ⁻¹-1 個存在することを証明し、n=3 の場合には7つの不動点（3つの階数1のパターン点、3つの階数2の混合点、1つの階数2の等相関点）を特定した。ヤコビ行列の記号計算により、パターン点のみが局所漸近安定であることを示し、数値計算によって全測度収束予想を支持する結果を得ている。",
+          "keywords": [
+            "Iterated Pearson correlation",
+            "fixed-point classification",
+            "Lyapunov stability",
+            "elliptope",
+            "basin geometry"
+          ],
+          "appendix": "本論文は complex dynamics や validated numerics に関連する内容を含んでおり、力学系の安定性解析や数値的な収束検証の手法が用いられています。"
+        },
+        "http://arxiv.org/abs/2608.03394v1": {
+          "title": "全ての部分群が欠数5以下の正規部分群である、べき零次数6のねじれのない群",
+          "summary": "Casoloは、全ての部分群が欠数 n 以下の正規部分群であるようなねじれのない群は、常にべき零次数が n 以下になるかという問いを立てた。この問いは n ≤ 4 のときには肯定的であることが証明されていたが、本論文では、べき零次数が6であり、かつ任意の部分群 H に対して [G, ₅H] ≤ H を満たす2生成のねじれのないべき零群 G を構成した。これにより、n = 5 の場合においてCasoloの問いに対する否定的な回答を与えた。",
+          "keywords": [
+            "torsion-free group",
+            "nilpotency class",
+            "subnormal subgroup",
+            "defect"
+          ],
+          "appendix": "この論文は、指定された興味ある分野のうち「structure of large countable infinite group」に深く関連しています。べき零群の構造論における未解決問題（Casolo's question）への具体的な反例を提示しています。"
+        },
+        "http://arxiv.org/abs/2608.03363v1": {
+          "title": "Narayana多項式およびq=-1におけるq-Narayana多項式に関連する数列と数三角形",
+          "summary": "Catalan数はDyckパスの数として解釈できることが知られているが、Narayana多項式およびq=-1におけるq-Narayana多項式も同様にこれらのパスの特定の重みとして解釈できる。本論文では、有界なDyckパスにおける対応する重みに関する情報を得ることを目的とし、これまで他の文脈で現れていた数列やパスカルの三角形の類似体を導き出す。具体的な例の検討を通じて、いくつかの得られた結果と予想を提示している。",
+          "keywords": [
+            "Narayana polynomials",
+            "q-Narayana polynomials",
+            "Dyck paths",
+            "Catalan numbers",
+            "Pascal's triangle"
+          ],
+          "appendix": "本論文で扱われるDyckパスは「combinatorics on words」や「formal languages」の分野において重要な概念であり、これらに関連する組み合わせ論的性質を論じています。"
+        },
+        "http://arxiv.org/abs/2608.03352v1": {
+          "title": "モジュラー積の独立数について",
+          "summary": "グラフ G と H のモジュラー積 G ⋄ H における独立数 α(G ⋄ H) を研究した論文。まず G ⋄ H の全ての独立集合を構造的に特徴付けることで α(G ⋄ H) の正確な値を導出した。この結果から、特定の条件下における α(G ⋄ H) のタイトな境界や正確な値が示されている。さらに、部分構造の独立集合からモジュラー積の独立集合を構築するための枠組みとして、G ⋄ H に関連付けられた分割グラフ（partition graph）を導入している。",
+          "keywords": [
+            "modular product",
+            "independence number",
+            "independent set",
+            "partition graph"
+          ],
+          "appendix": "本論文は、グラフ理論における独立集合の組み合わせ論的な性質を扱っており、興味ある分野の「combinatorics on words」などの組合せ論的手法に関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2608.03274v2": {
+          "title": "消去型セミ・トゥエ・システムにおける右除法性：攻撃者演繹問題のミニマルな視点",
+          "summary": "本論文では、記号的セキュリティプロトコル解析の核となる「攻撃者演繹問題（intruder deduction problem）」を、構造的な観点から最小化した設定で調査している。関数記号がすべて単項である場合、項は単語となり、演繹問題はセミ・トゥエ・システムにおける右除法性（与えられた単語 u, v に対し、wu ≡_S v となる w が存在するか）に帰着する。著者らは、収束する接頭辞消去型および接尾辞消去型セミ・トゥエ・システムに対して新たな可判定性を示した。さらに、この視点をコンテキストを消去しつつ変数を持ち上げる項書き換えシステムへと拡張したが、収束する同時変数持ち上げシステムにおいてさえ演繹問題は決定不能であることを示し、より複雑な等式理論への拡張の限界を明らかにしている。",
+          "keywords": [
+            "intruder deduction problem",
+            "semi-Thue systems",
+            "right-divisibility",
+            "convergent rewrite systems",
+            "decidability"
+          ],
+          "appendix": "本論文は、単語上の組合せ論（combinatorics on words）や形式言語（formal languages）、オートマトン理論（automata theory）に関連する決定問題や計算機科学的な代数構造を扱っています。"
+        },
+        "http://arxiv.org/abs/2608.03271v1": {
+          "title": "染色数、辺数、および最小固有値に関する予想の証明",
+          "summary": "辺数 m、染色数 χ、最小固有値 λ を持つ空でない単純グラフ G に関して、不等式 χ(χ-1) ≤ (m+1-λ²) + √((m+1-λ²)² - 4(λ²-1)(λ²-m)) が成立することを証明した。等号成立の必要十分条件は、G が（孤立点を除いて）完全グラフまたは完全二部グラフであることである。本成果は、Tang および Elphick (2026) により提示された予想を肯定的に解決したものである。",
+          "keywords": [
+            "chromatic number",
+            "least eigenvalue",
+            "graph size",
+            "complete bipartite graph",
+            "spectral graph theory"
+          ],
+          "appendix": "本論文はグラフの固有値と構造的属性の関係を扱っており、提示された分野の中では combinatorics（組合せ論）に特に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.03243v1": {
+          "title": "回文的ギャップ列を持つ分割について",
+          "summary": "本論文では、連続する成分間の差（ギャップ）の列が回文となるような分割（palindromic-gap partitions）を定義し、その性質を調査している。成分数が奇数と偶数の場合に分けて母関数を導出し、特定の成分数 r を持つ n の分割数に対する明示的な公式を提示した。また、palindromic-gap partitions と、成分数が制限された通常の分割との間の全単射を構成し、重みの対応関係を明らかにした。幾何学的には、左揃えのフェラーズ図形が付随する長方形内で180°回転に対して自己補完的（self-complementary）であることと、palindromic-gap partition であることが同値であることを証明した。これにより、Keith の提唱した補完可能な分割と自己補完的な分割に関する問題に部分的な解答を与え、n=15 において両者が異なることを具体例で示した。",
+          "keywords": [
+            "palindromic-gap partitions",
+            "generating function",
+            "bijection",
+            "Ferrers diagram",
+            "self-complementary partitions"
+          ],
+          "appendix": "回文（palindrome）という語の組合せ論的概念を整数分割に適用しており、combinatorics on words の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.03167v1": {
+          "title": "先読み付き正規表現の有限オートマトンへの変換",
+          "summary": "従来の正規表現の実装の多くはバックトラッキングに基づいており、最悪の場合の実行速度が遅いという課題がある。本論文では、実用的な拡張であるサブマッチ指定などを扱うための効率的なマッチングアルゴリズムの開発を目指し、先読みおよび否定先読みを含む正規表現（REwLA）を研究対象とする。まず、サイズ m の REwLA を O(2^{2^m}) 状態の決定性有限オートマトンへ変換する手法を提案する。次に、サブマッチ指定の計算を可能にする重み付き正規表現を検討し、重み付き REwLA を O(2^{2^m}) 状態の重み付き非決定性有限オートマトンへ変換する手法を提案する。",
+          "keywords": [
+            "regular expression with lookaheads",
+            "REwLA",
+            "deterministic finite automaton",
+            "weighted regular expression",
+            "weighted nondeterministic finite automaton"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.03144v1": {
+          "title": "CMSOのunbreakableなグラフへの簡約の非計算可能性",
+          "summary": "Lokshtanovら(2018)は、任意のCMSO論理式φに対し、一般のグラフ上での判定を適切なパラメータを持つ(q,k)-unbreakableなグラフに帰着できることを示したが、その証明は非構成的であった。本論文では、パラメータqをφの計算可能関数として求めることが不可能であることを証明し、この帰着を構成的に行うことはできないという否定的な解決を与えた。",
+          "keywords": [
+            "CMSO",
+            "unbreakable graphs",
+            "computability",
+            "graph algorithms"
+          ],
+          "appendix": "本論文は、グラフ上の論理と計算可能性の限界を扱っており、オートマトン理論（automata theory）や形式言語（formal languages）の発展的な側面に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.02982v1": {
+          "title": "Higman in balls: Promislow群の整数単位に対するmod-2二分法",
+          "summary": "捩れのない（torsion-free）群Gについて、整数群環 ℤ[G] が自明な単位元のみを持つというHigmanの単位予想は、Gardamが体係数における単位予想を否定したPromislow群 P において未解決のままである。本研究では、P に対する整数単位予想を法2（mod 2）の下で2つの部分問題に厳密に帰着させる手法を提案する。Craven-Pappasの小長さ定理の結果を基底ケースとして用い、整数問題の境界が語の半径（word-radius）4にあることを示す。半径4において自明性定理が証明されれば、整数環 ℤ と任意の体を区別する初めての成果となる。本論文の主張はすべて特定の語の半径内に限定されたものである。",
+          "keywords": [
+            "Higman's conjecture",
+            "Promislow group",
+            "unit conjecture",
+            "torsion-free group",
+            "integral group ring"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」の分野に関連しています。可算無限群であるPromislow群（Hantzsche-Wendt群）の代数的構造およびその群環 ℤ[P] における単位元の性質を扱っているためです。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.04228v1",
+        "http://arxiv.org/abs/2608.04153v1",
+        "http://arxiv.org/abs/2608.04111v1",
+        "http://arxiv.org/abs/2608.03836v2",
+        "http://arxiv.org/abs/2608.03813v2",
+        "http://arxiv.org/abs/2608.03792v1",
+        "http://arxiv.org/abs/2608.03561v1",
+        "http://arxiv.org/abs/2608.03473v1",
+        "http://arxiv.org/abs/2608.03439v1",
+        "http://arxiv.org/abs/2608.03404v1",
+        "http://arxiv.org/abs/2608.03394v1",
+        "http://arxiv.org/abs/2608.03363v1",
+        "http://arxiv.org/abs/2608.03352v1",
+        "http://arxiv.org/abs/2608.03274v2",
+        "http://arxiv.org/abs/2608.03271v1",
+        "http://arxiv.org/abs/2608.03243v1",
+        "http://arxiv.org/abs/2608.03167v1",
+        "http://arxiv.org/abs/2608.03144v1",
+        "http://arxiv.org/abs/2608.02982v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-07T04:33:06.640909+00:00",
-      "updated_at": "2026-08-07T05:29:07.803159+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-07T06:41:41.940938+00:00",
+      "finalized_at": "2026-08-07T06:41:41.940914+00:00"
     }
   ]
 }
