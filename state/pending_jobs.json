@@ -18632,7 +18632,7 @@
     },
     {
       "pipeline_id": "20260809T035248Z-08d669ad",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/n5t4pm7jsjpuxhrn0jtmxos9optsu2st5aah",
       "summarize_job_name": "batches/2zg1yt4fbdcrf8kv0d2pgssokd2cez2g2ddr",
       "papers": [
@@ -19371,14 +19371,275 @@
         "http://arxiv.org/abs/2608.04456v1",
         "http://arxiv.org/abs/2608.04304v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2608.05470v1": {
+          "title": "squarefull kernel を持つ関数と不変平均を持つ関数の漸近的無相関性",
+          "summary": "本論文では、1986年に Ivić と Tenenbaum によって導入された squarefull kernel を持つ算術関数（s-関数）の性質を研究している。具体的には、一意的にエルゴード的な位相力学系において、素因数個数関数 Ω(n) に沿った軌道（不変平均を持つ関数と見なせるもの）と、s-関数およびその「ずらし畳み込み和（shifted convolution sums）」が漸近的に無相関であることを示した。この結果の帰結として、s-関数の局所分布を通じた素数定理（PNT）の精密化が得られるほか、複数の関連する変種についても論じている。",
+          "keywords": [
+            "squarefull kernel",
+            "arithmetic functions",
+            "uniquely ergodic",
+            "prime Omega function",
+            "shifted convolution sums"
+          ],
+          "appendix": "一意的にエルゴード的な力学系を扱っている点から symbolic dynamics に、また素数や算術関数と力学系の関連を扱っている点から arithmetic dynamics に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.05443v1": {
+          "title": "逐次的イノベーション帰着可能性とイノベーション・スペクトラム (Sequential-Innovation Reducibility and the Innovation Spectrum)",
+          "summary": "本論文では、因果的予測器による予測誤差から生成されるイノベーション列を用い、個別の二進列に対する「イノベーション・スペクトラム」と、逐次的情報抽出に基づく新しい帰着可能性の概念を導入している。この帰着可能性は truth-table 帰着を細分化する一方で、幾何学的には異なる性質を持つ。次数構造は、truth-table 次数と同型な「truth-table spine」と、計算可能な予測可能リザーバが抽出不能な「reservoir-immune 領域」の2つに分解される。研究の結果、reservoir immunity が逐次的イノベーションの下で保存されることや、Martin-Löf 乱数列の次数が reservoir-immune 領域内で下方に閉じた部分構造を形成することが示された。これにより、従来の神託計算ではなく、因果的予測可能性に基づく新しい幾何学的組織化が明らかになった。",
+          "keywords": [
+            "Sequential prediction",
+            "Innovation spectrum",
+            "Truth-table reducibility",
+            "Reservoir immunity",
+            "Martin-Löf-randomness"
+          ],
+          "appendix": "本論文は無限二進列の性質や予測可能性を扱っており、symbolic dynamics や combinatorics on words の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.05400v1": {
+          "title": "地球-月系の平面円制限三体問題における衝突および無限遠への振動運動",
+          "summary": "本論文では、地球と月の平面円制限三体問題において、衝突および無限遠への振動運動が存在することを、計算機援用証明（computer assisted proof）を用いて示しています。特に、双曲運動、放物運動、無限遠への振動運動、衝突への振動運動、および衝突で終わる運動といった、あらゆる種類の運動を組み合わせることが可能であることを証明しました。また、任意に大きな放出・衝突軌道の存在も示しています。これらの結果は、Levi-Civita 正則化、McGehee 正則化、トポロジー的手法、および厳密な数値計算を駆使して得られたものです。",
+          "keywords": [
+            "Earth-Moon planar circular restricted three body problem",
+            "oscillatory motion",
+            "computer assisted proof",
+            "Levi-Civita regularization",
+            "McGehee regularization"
+          ],
+          "appendix": "本論文は、厳密な数値計算（rigorous numerical computations）を用いて数学的証明を構築しており、指定された興味ある分野のうち『validated numerics』に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.05362v1": {
+          "title": "Kazhdan群のsofic近似の中心化群",
+          "summary": "本論文では、対称群の距離ウルトラ積へのsofic埋め込みを持ち、その中心化群が付随するLoeb確率空間上にエルゴード的に作用するようなKazhdan群は、有限群で局所埋め込み可能(LEF)であることを証明しています。特に、このような埋め込みを持つ有限表示Kazhdan群は剰余有限となります。主要な技術的成果として、Kazhdan群のsofic埋め込みの中心化群自体が置換群の距離ウルトラ積になることを示しています。",
+          "keywords": [
+            "Kazhdan group",
+            "sofic embedding",
+            "metric ultraproduct",
+            "LEF",
+            "residually finite"
+          ],
+          "appendix": "この論文は、興味ある分野のうち「structure of large countable infinite group」に強く関連しています。Kazhdan群の構造やsofic近似、LEFおよび剰余有限性といった無限群の性質を専門的に扱っています。"
+        },
+        "http://arxiv.org/abs/2608.05311v1": {
+          "title": "幾何学的に無限な収束群作用の位相的特徴付けと軌道一様距離",
+          "summary": "本論文では、Gromov双曲空間上の作用における幾何学的有限性の既知の特徴付けを、一般的な収束群(convergence group)作用へと拡張しています。著者は「軌道一様距離(orbit uniform metric)」という概念を導入し、ある点が円錐極限点(conical limit point)または有界放物型点(bounded parabolic point)であるための必要十分条件が、その軌道が軌道一様距離に関して離散的であることであることを示しました。この結果として、幾何学的無限性を「非円錐極限点の集合の非可算性」や「双曲型元の逃避列(escaping sequences)の存在」によって特徴付けられることを証明しました。",
+          "keywords": [
+            "convergence group actions",
+            "geometric finiteness",
+            "orbit uniform metric",
+            "conical limit points",
+            "escaping sequences"
+          ],
+          "appendix": "本論文は、巨大な可算無限群の構造(structure of large countable infinite group)に関連する収束群の力学的な性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2608.05142v1": {
+          "title": "BerkovichとUncuによる分割定理の全単射による証明",
+          "summary": "2016年にBerkovichとUncuによって証明された、厳密な分割(strict partitions)に関する定理に組合せ論的な証明を与えた。具体的には、非負整数i, j, nに対し、「i個の奇数インデックスの奇数パーツとj個の偶数インデックスの奇数パーツを持つnの厳密な分割」の数と、「1 mod 4に合同なi個のパーツと3 mod 4に合同なj個のパーツを持つnの厳密な分割」の数が等しいという定理に対し、2-modular diagram、Chenらによる挿入アルゴリズム、およびGlaisherの全単射を組み合わせることで明示的な全単射を構築した。また、この主定理の証明はAxiomProverを用いてLeanで形式化・検証された。",
+          "keywords": [
+            "partition theorem",
+            "strict partitions",
+            "bijective proof",
+            "2-modular diagrams",
+            "Glaisher's bijection"
+          ],
+          "appendix": "本論文は、興味ある分野のうち「combinatorics on words」に関連する組合せ論の話題を扱っています。"
+        },
+        "http://arxiv.org/abs/2608.05047v1": {
+          "title": "co-safe LTL プランニングにおける厳密なモデルフリー方策反復法",
+          "summary": "有限マルコフ決定過程におけるco-safe線形時相論理(sc-LTL)目標のモデルフリー強化学習について研究し、ベルマン方程式の解の非一意性と非収縮性によるTD学習やQ学習の収束失敗問題を解決する新たな二段階手法を提案している。第一段階で割引率を導入した代用指標により解の非一意性を解消するクランプ集合を特定し、第二段階で非割引の方策評価と方策改善を行うことで、最適方策への収束を理論的に保証し、グリッドワールド上での実験によりその有効性を検証した。",
+          "keywords": [
+            "co-safe linear temporal logic",
+            "Markov decision processes",
+            "model-free reinforcement learning",
+            "policy iteration",
+            "Bellman equation"
+          ],
+          "appendix": "本論文は、オートマトン理論 (automata theory) や形式言語 (formal languages) と密接に関連する線形時相論理 (LTL) を扱っており、これらをマルコフ決定過程と組み合わせる標準的なプロダクト構成を用いる点で、指定された興味ある分野と関連性があります。"
+        },
+        "http://arxiv.org/abs/2608.05037v1": {
+          "title": "疎なランダム被覆と一次ホモロジーにおけるねじれ部分の増大",
+          "summary": "本論文では、scaffolded Poisson processesと呼ばれる手法を用いて、高ランクの局所対称空間におけるランダムな開被覆を構成する。実ランクr≧2の非コンパクト型対称空間X=G/Kに対し、十分大きな全単射半径Rを持つねじれのない格子Γについて、生成系の最小サイズd(Γ)および一次ホモロジーのねじれ部分の対数に対する上界式 max{d(Γ), log|H₁(M; ℤ)ₜₒᵣₛ|} ≤ C_X vol(M) R^((1-r)/2) (log R)² を示した。この結果は、Benjamini-Schramm収束列における正規化されたねじれの消滅を導き、Abértらの問いへの回答やBergeron-Venkatesh予想の高ランク設定における一次の消滅に関する検証となっている。また、アフィン・ビルディングに対しても同様の命題を証明している。",
+          "keywords": [
+            "scaffolded Poisson processes",
+            "locally symmetric spaces",
+            "torsion in first homology",
+            "Benjamini-Schramm convergence",
+            "affine buildings"
+          ],
+          "appendix": "格子の生成系やホモロジー群の構造を解析している点において、興味ある分野の「structure of large countable infinite group」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.04966v1": {
+          "title": "臨界指数と単位表現を通じた離散部分群のザリスキー密度について",
+          "summary": "本論文では、有限中心を持ちコンパクト因子を持たない連結実半単純線形代数群Gにおいて、そのリーマン対称空間Xの体積増大エントロピーh_vol(X)に近い臨界指数を持つ離散部分群Γが、必ずGにおいてザリスキー稠密になることを示している。具体的には、ある定数ε>0が存在し、Γの臨界指数がh_vol(X) - εより大きければΓはザリスキー稠密となる。特に実、複素、またはクォータニオン双曲空間の等長写像群の場合には、ザリスキー稠密性を保証する臨界指数の最小値を特定した。この結果は、格子のザリスキー稠密性に関するボレルの密度定理を一般化するものである。証明の鍵として、Benoist–LiangによるL²(G/H)の準正則表現の一般化されたテンパード性判定条件を用いている。",
+          "keywords": [
+            "Zariski density",
+            "discrete subgroups",
+            "critical exponents",
+            "unitary representations",
+            "volume growth entropy"
+          ],
+          "appendix": "本論文は、大きな可算無限群の構造（structure of large countable infinite group）に関連する離散部分群の性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2608.04874v1": {
+          "title": "近環と歪ブレース",
+          "summary": "本論文は、Rumpによって提案された根基環とブレースの間の対応関係を、より一般的な近環の枠組みへと拡張するものである。乗法単位元を持つ右近環 (R,+,∘) に対し、新たな演算を定義することでモノイドを構成し、さらにフィルター付けによる適合条件を課すことで、このモノイドが位相群、ひいては位相右歪ブレースとなることを示した。この理論は、従来の根基環によるブレースを包含するだけでなく、写像の合成による近環にも適用可能である。具体的な応用として、ノッティンガム群、三角関数のなす群、任意群の反復跡積、および自由冪零群のIA-自己同型群が、この位相歪ブレースの乗法群として自然に現れることを明らかにしている。",
+          "keywords": [
+            "Near-Rings",
+            "Skew Braces",
+            "Radical Rings",
+            "Nottingham Group",
+            "IA-automorphisms"
+          ],
+          "appendix": "ノッティンガム群や自由冪零群のIA-自己同型群など、巨大な可算無限群の構造（structure of large countable infinite group）に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2608.04846v1": {
+          "title": "非線形7階Caudrey-Dodd-Gibbon-KP方程式の定性的解析、カオス構造および厳密解",
+          "summary": "本研究は、(2+1)次元7階Caudrey-Dodd-Gibbon-KP (sCDG-KP) 方程式の進行波解と動的特性を調査したものである。適切な波変換によって方程式を常微分方程式(ODE)に還元し、(G'/(G'+G+A))法を適用することで、ブライトソリトンやアンチキンクソリトンなどの厳密解を導出した。さらに、還元されたODEを2次元力学系へと変換し、分岐解析、相図、アトラクタ解析、感度解析、フラクタル次元、リカレンスプロット、パワースペクトル等を通じて、システムの複雑なカオス挙動を詳細に解析している。",
+          "keywords": [
+            "seventh-order Caudrey-Dodd-Gibbon-KP equation",
+            "exact solution",
+            "soliton solution",
+            "bifurcation analysis",
+            "chaotic attractor"
+          ],
+          "appendix": "本論文は、非線形波動方程式におけるカオスやアトラクタを扱っており、興味ある分野のうち「complex dynamics（複雑な力学系）」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.04650v1": {
+          "title": "2元生成1関係式逆モノイドの語の問題",
+          "summary": "本論文では、2つの生成元と1つの関係式を持つ逆モノイドにおける語の問題の決定可能性および非決定可能性について研究している。著者らは、Inv ⟨ a, b | w = 1 ⟩ の形を持つ2元生成1関係式逆モノイドにおいて、語の問題が非決定可能となる初めての例を提示した。この証明には、1関係式逆モノイドの語の問題と1関係式群の部分モノイド構成員問題の間の関連性が利用されている。また、多項式成長するモノドロミーを持つ free-by-cyclic 群において、部分モノイド構成員問題が決定可能であるための必要十分条件を、外部自己同型群における定義自己同型の位数が有限であることとして示した。これらの結果を応用し、極大群像が多項式成長の free-by-cyclic 群である場合に、語の問題が決定可能となるためのアルゴリズム的に判定可能な十分条件を導出している。",
+          "keywords": [
+            "one-relator inverse monoids",
+            "word problem",
+            "submonoid membership problem",
+            "free-by-cyclic groups",
+            "polynomial growth"
+          ],
+          "appendix": "本論文は、1関係式群の構造や自由群の自己同型、および無限群の決定問題に関する深い知見を提供しており、興味ある分野のうち「strucure of large countable infinite group」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.04608v1": {
+          "title": "Cayleyグラフにおける情報と局所性",
+          "summary": "本論文では、de Bruijn配列を頂点識別問題のプロトタイプと見なし、Cayleyグラフ上の観測パターンのラベルから頂点を特定するための3つのパラメータ（自由な分離数sep_q(G)、連結連結分離数csep_q(G,S)、1ステップ数χ_1(G,S)）を定義・解析している。特に、情報量と局所性のトレードオフに焦点を当て、炭素トーラス（一般化二面体群）や球面上のA₅、PSL₂(𝔽₇)などの具体的な有限単純群を例に挙げ、これらのパラメータの上下限や構成手法を議論している。具体的には、有限体上の幾何学的構造や行列係数の制限付きパッキングなどの手法が用いられている。",
+          "keywords": [
+            "Cayley graphs",
+            "de Bruijn sequence",
+            "separating pattern",
+            "connected separation",
+            "locality"
+          ],
+          "appendix": "本論文はcombinatorics on words（de Bruijn配列の一般化）や、有限群の構造を扱う点からstructure of large countable infinite groupの有限群論的基礎に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.04551v1": {
+          "title": "力学系におけるβ-n-感度およびその他のより強い形式の感度について",
+          "summary": "本論文では、離散力学系におけるβ-n-感度と他の感度形式との関係を調査している。強くβ-n-感度であるための幾つかの異なる十分条件（および必要十分条件）を提示し、既存の研究結果を改良・拡張した。また、αに関する準強β-n-感度および（強）多重β-n-感度を導入し、その性質を研究した。さらに、強多重推移性が強多重感度を導くことを証明し、既存の結果を改善した。最後に、（準）強β-n-感度は反復の下で保存されるが、通常のβ-n-感度は保存されないことを示した。",
+          "keywords": [
+            "β-n-sensitivity",
+            "discrete dynamical systems",
+            "semi-strong β-n-sensitivity",
+            "multi-β-n-sensitivity",
+            "strongly multi-transitivity"
+          ],
+          "appendix": "本論文は、記号力学系 (symbolic dynamics) や複素力学系 (complex dynamics) などの理論的基礎となる力学系の性質を扱っており、興味ある分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.04520v1": {
+          "title": "アフィンビルの対蹠的なイデアルチャンバーの三組の幾何学",
+          "summary": "本論文では、局所有限アフィンビルXにおける対蹠的なイデアルチャンバーの三組に対して、イデアル境界X∞で定義される「ideal-genericity」と、アフィンビルX内部から定義される「affine-genericity」という2つのジェネリシティの概念を調査している。ideal-genericityはaffine-genericityを包含するが、affine-genericな三組に関連付けられた重心写像（barycenter map）を構築する上では後者の概念がより適している。この視点により、重心写像が局所定数であり、したがって連続であることを示している。さらに、全ての対蹠的なイデアルチャンバーの三組がこれら2つのジェネリシティを満たすためのアフィンワイル群に対する幾何学的条件を提示し、非ジェネリックな構成を構築するためのアルゴリズム的手法を提案している。ランク2以上の既約有限ワイル群の計算によれば、全ての対蹠的な三組に対して自動的にideal-genericityが成立するのはタイプB₂=C₂、G₂、およびB₃の場合のみである。",
+          "keywords": [
+            "affine buildings",
+            "ideal chambers",
+            "affine Weyl group",
+            "barycenter map",
+            "genericity"
+          ],
+          "appendix": "本論文は「structure of large countable infinite group」に関連しており、特にアフィンビルという無限グラフや幾何学的構造上の群作用や、ワイル群といった群論的対象の幾何学的性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2608.04500v1": {
+          "title": "Wilson根集合と部分群束を用いた局所可解根基について",
+          "summary": "本論文では、群Gの各要素gに対して、任意のx∈Gとの生成群⟨g,x⟩が可解となる要素の集合S(G)が、いつ局所可解根基R_L𝔖(G)と一致するかを調査している。Wilsonの射影収束語列を用いた解析により、すべての局所（可解-by-有限）群および局所線形群において、R_L𝔖(G) = R_L𝔑(G) = S(G) = W_ω(G)が成立することを示した。また、4共役要素や7可換子による根基への属否判定、および次数が6と互いに素なねじれ要素に対する2共役判定の結果を得ている。さらに、準モジュラー部分群束を持つ群においても、局所可解根基がS(G)と一致することを独立して証明した。",
+          "keywords": [
+            "Locally solvable radicals",
+            "Wilson radical sets",
+            "Subgroup lattices",
+            "Locally linear groups",
+            "Profinite word sequences"
+          ],
+          "appendix": "この論文は「structure of large countable infinite group」の分野と密接に関連しており、無限群の代数的構造やその根基の性質を扱っています。"
+        },
+        "http://arxiv.org/abs/2608.04468v1": {
+          "title": "整数の組成における連続する異なる絶対差の反復操作について",
+          "summary": "本論文では、整数の組成（composition）から出発し、その連続する要素間の絶対差がすべて0でなく、かつ互いに異なる場合に、それらを任意に並べ替えて新たな組成を作る反復操作を定義している。この操作が連続して可能な最大回数を「深さ（depth）」と呼び、与えられた深さnを持つ最小の正整数a(n)を決定した。具体的には、a(n) = n + 1 + ⌈n(n + 1) / 4⌉ + ⌊n / 2⌋ となる。また、a(n) 以上のすべての整数kが深さn以上の組成を持つことを証明し、深さの最大値d(k)を定義した。最後に、最小値a(n)を達成する組成の分類と、nを4で割った余りに基づく4つの階乗公式を用いた列挙を行っている。",
+          "keywords": [
+            "integer compositions",
+            "absolute differences",
+            "depth of a composition",
+            "extremal problems"
+          ],
+          "appendix": "本論文は、組み合わせ論（combinatorics）に関する研究であり、興味ある分野の中では「combinatorics on words」や数論的動機を持つ「arithmetic dynamics」に近い性質を持っています。"
+        },
+        "http://arxiv.org/abs/2608.04457v1": {
+          "title": "Eigenius: 認識論的成層化とInstitutionを介した推論を備えた型付き知識グラフDBMS",
+          "summary": "「AI Scientist」による研究自動化が進む中、データの正当性と証明を保証するための統合カーネルを備えた、オープンソースの型付き知識グラフDBMS「Eigenius」を提案する。本システムは、依存型理論、Institution理論に基づく統合境界、およびコンテンツ指向の不変ストレージを3つの柱とし、データの由来（プロバナンス）を構造的な不変条件として扱う。認識論的ステータス（宣言/観測/派生/検証済み）をコミット時に強制し、異なるシステム間の翻訳をコモーフィズムとしてグラフ内に永続化することで、多言語・多システム間のボトルネックを解消する。また、正当化論理に基づく経験科学と、Lean 4を用いた形式的証明を同一プロセス内で統合評価できる設計となっており、既存のNature誌の研究結果を再計算したところ、元の研究における4つの不整合を機械的に検出することに成功した。",
+          "keywords": [
+            "Knowledge-Graph DBMS",
+            "Epistemic Stratification",
+            "Institution Theory",
+            "Dependent Type Theory",
+            "Formal Verification"
+          ],
+          "appendix": "本論文は、計算機科学における形式言語やオートマトン理論、さらには信頼性の高い計算（validated numerics）に関連する「型システムを用いた推論の正当性検証」という側面で、指定の興味ある分野と親和性があります。特に、Lean 4を用いた形式的な証明の埋め込みや、システムの不変条件を型理論的に保証するアプローチは、数学的構造の厳密な扱いにおいて重要です。"
+        },
+        "http://arxiv.org/abs/2608.04456v1": {
+          "title": "Outer spaceの単体境界におけるボンド肥厚",
+          "summary": "本研究では、グラフ理論的な連結性に基づいて定義される肥厚化（thickenings）を用いて、Culler-Vogtmann Outer spaceの単体境界 ∂FS を調査している。著者らは、3-辺連結（3-edge connected）でない安定グラフとその面をすべて加えた自由分裂複体の部分複体を C' とし、包含写像 ∂FS ↪ C' が (2n-3)-連結であることを証明した。切断頂点を持つグラフの追加はホモトピー同値である一方、2-ボンド肥厚における非縮約的なファイバーは θ-グラフ上でのみ現れる。この結果は、∂FS が (2n-3)-球面的であるという、共通基底複体に関するRognesの連結性予想の Out(Fₙ) 類似体に対するさらなる証拠を与えるものである。",
+          "keywords": [
+            "Outer space",
+            "simplicial boundary",
+            "bond thickening",
+            "free splitting complex",
+            "graph connectivity"
+          ],
+          "appendix": "この論文は自由群の自己同型群 Out(Fₙ) の幾何的対象を扱っており、「structure of large countable infinite group」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.04304v1": {
+          "title": "局所的 Maximal-Canard 閾値における Runge--Kutta バイアス：Chain-Tree 条件",
+          "summary": "本論文では、固定ステップの Runge--Kutta 法を用いた離散化が、吸引的および反発的スロー多様体から形成される maximal canard のパラメータ閾値をどのようにずらすかを分析しています。多項式モデル x'=x²-y+xy, y'=ε(x-λ) を対象に、流れと Runge--Kutta 写像の閾値を比較した結果、3次の B-series defect のうち chain-tree の座標のみが閾値のずれに関与することを明らかにしました。これにより、先行バイアスの解消には条件 bᵀAc=1/6 が不可欠であることが示され、van der Pol 方程式や Rosenzweig--MacArthur モデルへの適用、および高精度計算による理論の検証が行われています。",
+          "keywords": [
+            "Runge--Kutta methods",
+            "maximal canards",
+            "slow manifolds",
+            "B-series",
+            "Gaussian Melnikov quadrature"
+          ],
+          "appendix": "validated numerics の分野において、離散化スキームが力学系の定性的構造（この場合は canard 閾値）に与える影響を厳密に評価している点で関連性があります。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.05470v1",
+        "http://arxiv.org/abs/2608.05443v1",
+        "http://arxiv.org/abs/2608.05400v1",
+        "http://arxiv.org/abs/2608.05362v1",
+        "http://arxiv.org/abs/2608.05311v1",
+        "http://arxiv.org/abs/2608.05142v1",
+        "http://arxiv.org/abs/2608.05047v1",
+        "http://arxiv.org/abs/2608.05037v1",
+        "http://arxiv.org/abs/2608.04966v1",
+        "http://arxiv.org/abs/2608.04874v1",
+        "http://arxiv.org/abs/2608.04846v1",
+        "http://arxiv.org/abs/2608.04650v1",
+        "http://arxiv.org/abs/2608.04608v1",
+        "http://arxiv.org/abs/2608.04551v1",
+        "http://arxiv.org/abs/2608.04520v1",
+        "http://arxiv.org/abs/2608.04500v1",
+        "http://arxiv.org/abs/2608.04468v1",
+        "http://arxiv.org/abs/2608.04457v1",
+        "http://arxiv.org/abs/2608.04456v1",
+        "http://arxiv.org/abs/2608.04304v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-09T03:52:48.335635+00:00",
-      "updated_at": "2026-08-09T04:43:35.840478+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-09T05:41:48.898183+00:00",
+      "finalized_at": "2026-08-09T05:41:48.898161+00:00"
     }
   ]
 }
