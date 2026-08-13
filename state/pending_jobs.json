@@ -21672,7 +21672,7 @@
     },
     {
       "pipeline_id": "20260813T042034Z-0d3c2e5d",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/m6zpponxyv3hez8fs6fw718ju6arlsg6mdrr",
       "summarize_job_name": "batches/qlu0389cmlwhcwocpiws137yxyfa72y8vjnt",
       "papers": [
@@ -22435,14 +22435,223 @@
         "http://arxiv.org/abs/2608.09092v1",
         "http://arxiv.org/abs/2608.09078v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2608.10254v1": {
+          "title": "サイバーフィジカルシステム（CPS）の保守的な離散抽象化を構築するための実用的ガイド",
+          "summary": "サイバーフィジカルシステムの時相論理特性を検証するためのシンボリックモデル検査において、連続状態ダイナミクスを有限状態の抽象モデルへ変換する「保守的な離散抽象化」の構築手法を提案している。健全性を損なう一般的な落とし穴（状態空間や遷移の過小近似、特異な挙動の不適切な削除など）を回避するための、構成的に保守性を担保する4段階のワークフローを提示する。具体的には、状態空間の分割、有界ボックスや多面体、PAC学習を用いた保守的遷移構築、反例に基づく抽象化精緻化（CEGAR）、およびLTL仕様の健全なリフティングを含み、3つのケーススタディを通じてその有効性と性能への影響を示している。",
+          "keywords": [
+            "Symbolic model checking",
+            "Discrete abstractions",
+            "Cyber-physical systems",
+            "Conservative approximation",
+            "Linear Temporal Logic"
+          ],
+          "appendix": "本論文は「automata theory」および「validated numerics」の分野に関連しています。連続系から離散的なオートマトン表現を抽出するプロセスや、計算上の誤差や近似を保証しつつ遷移を構築する手法が、それぞれの関心領域と重なります。"
+        },
+        "http://arxiv.org/abs/2608.10164v1": {
+          "title": "準等長写像、縮約、および交差グラフ",
+          "summary": "本論文では、グラフGが準平面（平面グラフと準等長である）であるための必要十分条件を明らかにしています。具体的には、各辺を一定の長さのパスに細分する操作と、Gを被覆する連結部分グラフの族から交差グラフを作成する操作を、有限回繰り返すことで得られるグラフであることを証明しています。この結果は無限グラフおよび一定の定数を持つ有限グラフ族の両方に適用可能です。また、副産物として、準平面グラフの縮約マイナーも準平面であることや、境界の直径が有界で各バッグが準平面である樹状分解を持つグラフは、それ自身も準平面であることを導出しています。",
+          "keywords": [
+            "quasi-isometry",
+            "quasi-planar graph",
+            "intersection graph",
+            "contraction minor",
+            "tree-decomposition"
+          ],
+          "appendix": "本論文は、構造的なグラフ理論に関連しており、特に無限群の幾何学的構造を理解する上で重要な「準等長（quasi-isometry）」を扱っているため、興味ある分野のうち「structure of large countable infinite group」に関連します。"
+        },
+        "http://arxiv.org/abs/2608.10150v1": {
+          "title": "疑似ランダム性と一様twin-width",
+          "summary": "本論文では、非自明な有限群において、その疑似ランダム次数が一様twin-widthの多項式下界を与える一方で、最小忠実複素表現次数が線形上界を与えることを示しています。非可換有限単純群においてこれら二つのパラメータは一致し、Gowersの意味での疑似ランダム性の新しい定義を導きます。この下界を用いて有限群全体で一様twin-widthが非有界であることを証明し、有限なtwin-widthを持つが無限の一様twin-widthを持つ有限提示群を構成することで、Bonnetらによる問いに回答しました。さらに、3つのThompson群すべての一様twin-widthを決定しています。",
+          "keywords": [
+            "Quasirandomness",
+            "Uniform twin-width",
+            "Finite simple groups",
+            "Thompson groups",
+            "Finitely presented groups"
+          ],
+          "appendix": "有限提示群の構造やThompson群の性質を扱っており、興味ある分野のうち「structure of large countable infinite group」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.10114v1": {
+          "title": "非分裂標数2の強k-可移作用およびその一般化のための単純な非円筒的作用のレシピ",
+          "summary": "δ-双曲空間上に非円筒的（acylindrically）に作用する群Gが、k-集合上で強可移的（k-sharp transitive）な作用を持つための簡潔な条件のリストを提示している。この作用では、任意のk-集合Aの集合的安定化群が、あらかじめ指定された対称群Symₖの部分群ΘとしてAに作用するという性質を持つ。本手法により、有限生成あるいは有限表示の、分裂する強2-可移および強3-可移作用の例を容易に多数構成することができる。",
+          "keywords": [
+            "acylindrical action",
+            "δ-hyperbolic metric space",
+            "k-sharp",
+            "sharply 2-transitive",
+            "sharply 3-transitive"
+          ],
+          "appendix": "本論文は幾何学的群論における双曲空間への群作用を扱っており、興味ある分野のうち「structure of large countable infinite group（巨大な可算無限群の構造）」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.09796v1": {
+          "title": "エタール亜群のファイバー別アメナビリティ",
+          "summary": "本論文では、エタール亜群（étale groupoids）に対する新しいアメナビリティの性質である「ファイバー別アメナビリティ (fiberwise amenability)」と、その強化版である「遍在的ファイバー別アメナビリティ (ubiquitous fiberwise amenability)」を導入している。これらの概念はエタール亜群の粗幾何学的な視点から自然に導出されるものであり、変換亜群の特殊なケースにおいては、作用の位相的アメナビリティではなく、作用する群自体のアメナビリティと一致する。また、この性質は単位空間上の不変測度の存在と密接に関連している。本研究ではエタール亜群の粗幾何学的枠組みを体系的に構築することで、これらのアメナビリティの基礎的性質を明らかにした。応用として、極小エタール亜群に対する Følner--paradoxical dichotomy を証明しており、これはエタール亜群の概初等性（almost elementariness）を扱う後続の研究において重要なツールとなる。",
+          "keywords": [
+            "fiberwise amenability",
+            "étale groupoids",
+            "coarse geometry",
+            "invariant measures",
+            "Følner--paradoxical dichotomy"
+          ],
+          "appendix": "本論文はアメナビリティの性質や亜群の構造を扱っており、興味ある分野のうち「structure of large countable infinite group」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.09770v1": {
+          "title": "置換におけるCaged subsequence",
+          "summary": "実数列 a:=(a₁, ..., aₙ) において、その部分列 b=(a_{i₁}, ..., a_{iₖ}) が「caged」であるとは、bの最大値と最小値が最初と最後の要素である a_{i₁} または a_{iₖ} のいずれかであることを指す。本論文では、置換 π∈Sₙ における極大な caged subsequence の問題を考察する。また、一様ランダムな置換、およびRSK対応を通じて長方形の形状を持つ置換の中から一様に選ばれたランダムな置換のそれぞれについて、同様の問題を検討している。",
+          "keywords": [
+            "Caged subsequences",
+            "Permutations",
+            "Random permutations",
+            "RSK correspondence",
+            "Rectangular shape"
+          ],
+          "appendix": "本論文は、置換の性質やRSK対応を扱っていることから、興味ある分野のうち「combinatorics on words」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.09769v1": {
+          "title": "演算子意味論の抽象化としての抽象コンパイル：コスト解析への応用",
+          "summary": "プログラムの意味論における最小不動点は、それを生成した再帰構造を抽象化して消し去ってしまうという課題がある。本論文では、プログラムを演算子として扱う構文と伝統的な表示意味論の中間的な意味表現である「演算子意味論」を導入している。抽象コンパイルをこれらの演算子の抽象化として捉え、合成を核とした高階抽象領域と、健全かつモジュール的な抽象コンパイラを構築するための圏論的な枠組みを開発した。この枠組みを漸化式に基づく静的コスト解析に適用し、代数的データ型上の再帰プログラムに対して、一般的な関数未知数やカタモーフィックな尺度をサポートする、ソルバーに依存しない最適な漸化式抽出手法を実現している。",
+          "keywords": [
+            "operator semantics",
+            "abstract compilation",
+            "static cost analysis",
+            "least fixpoints",
+            "catamorphic metrics"
+          ],
+          "appendix": "本論文は、プログラム意味論、抽象解釈、および形式的なコスト解析を主題としています。提示された「興味ある分野」と直接的な関連はありませんが、計算モデルの形式化という点において、formal languagesの理論的基盤と密接に関わっています。"
+        },
+        "http://arxiv.org/abs/2608.09761v1": {
+          "title": "並列字句解析のための証明付き分割ウィンドウ：いかなるバイトも証明しない境界における復元",
+          "summary": "本論文は、並列字句解析において、シリアルなトークンストリームを保持したまま入力を分割するための「証明付き分割ポイント」を、従来の1バイト単位から有限長のウィンドウ（有界ウィンドウ）へと一般化する手法を提案している。先行研究では、文字列、コメント、空白ランを含む特定のトークンセットにおいて、どの1バイトも分割点として証明できないケースがあった。本研究では、ウィンドウの最終バイトを覆うトークンがどこから始まったかを、周囲のコンテキストに関係なく特定する手法を構築した。最長一致（maximal-munch）スキャナの履歴を保存的にモデル化し、有限商における到達可能性を網羅的に検証することで、ウィンドウとその原点を証明する。実験では、先行研究で1バイトの証明が不可能であったトークンセットの多くで、2〜4バイトのウィンドウを用いることで証明が可能になることを示した。",
+          "keywords": [
+            "parallel lexing",
+            "maximal-munch scanner",
+            "certified split point",
+            "automata theory",
+            "finite quotient"
+          ],
+          "appendix": "本論文は、オートマトン理論 (automata theory) や形式言語 (formal languages) に深く関連しており、特に字句解析器の振る舞いを有限状態機械の履歴としてモデル化し、その到達可能性を検証する手法は、オートマトンを用いた形式的な言語解析の枠組みに属します。"
+        },
+        "http://arxiv.org/abs/2608.09599v1": {
+          "title": "マルチセットの Quasi-Stirling 置換における減少ラン",
+          "summary": "本論文は、Stirling 置換の自然な拡張である quasi-Stirling 置換について、減少ラン（decreasing runs）および減少連続パターンの分布を研究している。Yan, Yang, Huang, Zhu による先行研究のバイジェクション的手法を拡張し、マルチセット M={1^{k₁},2^{k₂},...,n^{kₙ}} 上の quasi-Stirling 置換における減少ランの分布が、より単純なマルチセット M'={1^{k₁+k₂+...+kₙ-n+1},2,...,n} 上の分布と一致すること（分布の不変性）を証明した。この結果として得られた多重度再分配バイジェクションにより、quasi-Stirling 置換におけるこれらの統計量の分布に関する明示的な漸化式と母関数を導出している。",
+          "keywords": [
+            "quasi-Stirling permutations",
+            "multiset",
+            "decreasing runs",
+            "decreasing consecutive patterns",
+            "joint distribution"
+          ],
+          "appendix": "この論文は組合せ論的な置換の統計量を扱っており、興味ある分野のうち「combinatorics on words」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.09535v1": {
+          "title": "階層的双曲群における代数的直交性からRAAGの埋め込みの障害へ",
+          "summary": "本論文では、コンパクト特殊群および写像類群に基づいた階層的双曲群（HHG）の構造を対象に、最小の非有界領域とその軸方向を記録する「拡張コアグラフ」を導入しました。主な構造定理として、直角アルティン群（RAAG）の埋め込みにおいて、標準的な生成元を正のべき乗に置き換えることで、適切に支持された軸的要素によって生成される中間RAAGを介して分解されることを示しました。特にコンパクト特殊群モデルの場合、この中間RAAGは準等長的に埋め込まれます。さらに、拡張グラフが拡張コアグラフに埋め込まれることを示し、これを用いてRAAGの埋め込みに対するKim-Koberda型の障害を提示、ランク2以下の場合の完全な埋め込み基準を確立しました。また、写像類群の標準的なHHG構造において拡張コアグラフは本質的曲線の不交グラフに一致し、RAAGの自然なリッチファミリー構造では拡張グラフを復元することを示しました。",
+          "keywords": [
+            "hierarchically hyperbolic groups",
+            "right-angled Artin groups",
+            "expanded core graph",
+            "extension graph",
+            "mapping class groups"
+          ],
+          "appendix": "本論文は、階層的双曲群や直角アルティン群（RAAG）という巨大な可算無限群の構造（structure of large countable infinite group）を扱っており、興味ある分野と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.09394v1": {
+          "title": "Halinの可撤辺定理のマッチングへのシャープな拡張",
+          "summary": "k-連結グラフGの部分グラフHがk-可撤（k-removable）であるとは、GからE(H)を除去してもk-連結性が維持されることをいう。Halinは、最小次数δ(G) ≥ k+1を満たすk-連結グラフが少なくとも1つのk-可撤辺を持つことを証明した。本論文では、正の整数kおよびmに対し、δ(G) ≥ max{k+1, 2m-2}を満たすk-連結グラフG（K₂ₘ₋₁、または(k,m)=(1,2)かつGがサイクルの場合を除く）がサイズmのk-可撤マッチングを持つことを示し、この結果を任意サイズの面マッチングへと拡張した。これはLi、Zhou、Fujita、Maoらによる予想を肯定するものであり、得られた最小次数の境界はシャープである。証明には、Halinの定理の強化版と、最大k-可撤マッチングの極値解析が用いられている。",
+          "keywords": [
+            "k-connected graph",
+            "k-removable matching",
+            "Halin's removable-edge theorem",
+            "minimum degree"
+          ],
+          "appendix": "本研究はグラフ理論（組合せ論）に関するものであり、指定された興味ある分野の中では combinatorics に関連します。"
+        },
+        "http://arxiv.org/abs/2608.11265v1": {
+          "title": "作用素環のBruhat分解",
+          "summary": "TitsによるW-距離の定義に基づき、Coxeter系上のC*-環の分解という概念を導入・研究した。適切な条件付き期待値を持つ分解からFockヒルベルト加群と簡約C*-環 Aʳ を構成し、これはVoiculescuやCaspers-Fimaの構成を統一するとともに、建物に作用する離散群のC*-環の非可換類似を与える。また、建物の極小組合せコンパクト化に対応する非可換な共変C*-環を構築し、長谷川やKlisseのアプローチに従って普遍性を証明した。この構造定理により、群環の場合においても新規となる近似性質を導出している。",
+          "keywords": [
+            "Bruhat decomposition",
+            "Coxeter system",
+            "C*-algebra",
+            "Fock Hilbert module",
+            "Building"
+          ],
+          "appendix": "離散群の作用や建物（building）のコンパクト化を扱っており、「structure of large countable infinite group」の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.09275v1": {
+          "title": "捩れ有理写像の力学次数",
+          "summary": "本論文では、相対代数力学系において自然に現れる「捩れ有理写像 (twisted rational maps)」の枠組みを用いて力学次数の理論を拡張しています。有理自己写像がファイブレーションを保存する際、生成ファイバー上に誘導される写像は通常、関数体上の通常の有理自己写像ではなく捩れ有理写像となります。著者は、この枠組みにおいて力学次数の定義限界が存在すること、分極の選択に依存しないこと、および双有理不変であることを示しました。また、準共役の相対力学次数を生成ファイバー上の捩れ有理写像の力学次数と同一視し、混合次数公式を証明しました。さらに、アフィン多様体の捩れ自己準同型における第一力学次数の代数性に関する結果も導出しています。",
+          "keywords": [
+            "twisted rational maps",
+            "dynamical degrees",
+            "relative algebraic dynamics",
+            "birational invariants",
+            "mixed degree formula"
+          ],
+          "appendix": "本論文は、興味ある分野のうち complex dynamics および arithmetic dynamics に強く関連しています。代数多様体上の動的な複雑さを測る力学次数の研究は、これらの分野における中心的なトピックの一つです。"
+        },
+        "http://arxiv.org/abs/2608.10038v1": {
+          "title": "相対基本トランヴェクション群の正規性",
+          "summary": "本論文では、環のイデアルに関する相対トランヴェクション群が、それぞれの自己同型群において正規であることを証明している。A. A. SuslinとV. I. Kopeikoは、初等線形群、シンプレクティック群、および直交群における正規性とその相対版を証明した。その後、A. Bak、R. Basu、およびR. A. Raoはこれらの結果を加群の設定におけるトランヴェクション群へと一般化したが、本研究はそれらの結果をさらに強化し、相対トランヴェクション群の正規性を確立するものである。",
+          "keywords": [
+            "relative transvection groups",
+            "normality",
+            "automorphism groups",
+            "elementary linear groups",
+            "modules"
+          ],
+          "appendix": "本論文は群の構造を扱っており、興味ある分野のうち「structure of large countable infinite group（巨大な可算無限群の構造）」に密接に関連しています。線形群や自己同型群の正規部分群の構造決定は、代数的K理論や群論における重要なテーマです。"
+        },
+        "http://arxiv.org/abs/2608.09092v1": {
+          "title": "再起動型ヨセフス問題における厳密な周期性、全射性、およびハール極限定理",
+          "summary": "本論文では、生存者が線形順序を保持し、脱落が発生するたびに現在の左端の生存者からカウントを再開する「再起動型ヨセフス問題」を研究しています。ステップサイズをm、q=m-1、n人の中での生存者の初期位置をFₙ(q)としたとき、漸化式Fₖ(q)=Fₖ₋₁(q)+1_{q mod k < Fₖ₋₁(q)}が導かれます。筆者らはこの系において3つの主要な結果を示しました。第一に、Fₙの完全周期群が最小公倍数Lₙ=lcm(1,...,n)の整数倍に一致すること。第二に、Fₙが集合{1,...,n}への全射であること。この証明は中国剰余定理を用いた構成的かつ計算機援用によるものです。第三に、qをLₙを法とする一様分布としたとき、正規化された生存位置が[0,1]上の対称で非退化な法則に収束することを、ハール結合を用いて証明しました。",
+          "keywords": [
+            "Josephus process",
+            "residue system",
+            "Haar limit law",
+            "Chinese-remainder construction",
+            "prime estimates"
+          ],
+          "appendix": "本論文は、数論的性質や組合せ論的な再帰構造を扱っており、興味ある分野のうち「arithmetic dynamics」や「combinatorics on words」に関連する側面を持っています。また、全射性の証明において「validated numerics」の手法に通ずる計算機援用による検証が行われています。"
+        },
+        "http://arxiv.org/abs/2608.09078v1": {
+          "title": "2つのパターン回避置換クラスにおけるq-差分方程式",
+          "summary": "本論文では、入れ子構造を持つ置換クラス Av(4123, 4231, 4312) ⊂ Av(4123, 4312) についての研究を行っています。著者らは、これらのクラスに対応する母関数 D⁽²⁾(z) および D⁽³⁾(z) を q-差分方程式に関連付けました。これらの方程式を解くことにより、各母関数がD-有限（D-finite）ではないことを示し、各係数の漸近挙動が [zⁿ]D⁽³⁾(z) ∼ 0.018967... (4.468408... )ⁿ および [zⁿ]D⁽²⁾(z) ∼ 0.084983... (3+2√2)ⁿ n⁻³/² となることを導出しました。",
+          "keywords": [
+            "Pattern Avoiding Permutations",
+            "Generating functions",
+            "q-difference equations",
+            "D-finite",
+            "Asymptotic analysis"
+          ],
+          "appendix": "本論文は、組み合わせ論（combinatorics）におけるパターン回避置換を扱っており、興味ある分野の中では combinatorics on words と密接に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.10254v1",
+        "http://arxiv.org/abs/2608.10164v1",
+        "http://arxiv.org/abs/2608.10150v1",
+        "http://arxiv.org/abs/2608.10114v1",
+        "http://arxiv.org/abs/2608.09796v1",
+        "http://arxiv.org/abs/2608.09770v1",
+        "http://arxiv.org/abs/2608.09769v1",
+        "http://arxiv.org/abs/2608.09761v1",
+        "http://arxiv.org/abs/2608.09599v1",
+        "http://arxiv.org/abs/2608.09535v1",
+        "http://arxiv.org/abs/2608.09394v1",
+        "http://arxiv.org/abs/2608.11265v1",
+        "http://arxiv.org/abs/2608.09275v1",
+        "http://arxiv.org/abs/2608.10038v1",
+        "http://arxiv.org/abs/2608.09092v1",
+        "http://arxiv.org/abs/2608.09078v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-13T04:20:34.935106+00:00",
-      "updated_at": "2026-08-13T05:28:58.586434+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-13T06:55:41.944452+00:00",
+      "finalized_at": "2026-08-13T06:55:41.944427+00:00"
     }
   ]
 }
