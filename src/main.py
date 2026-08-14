@@ -17,8 +17,8 @@ client_genai = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 STATE_FILE_PATH = os.getenv("PENDING_JOBS_FILE", "state/pending_jobs.json")
 STATE_SCHEMA_VERSION = 1
-INTEREST_MODEL = "gemini-2.5-flash"
-SUMMARY_MODEL = "gemini-3-flash-preview"
+INTEREST_MODEL = os.getenv("INTEREST_MODEL", "gemini-3.5-flash-lite")
+SUMMARY_MODEL = os.getenv("SUMMARY_MODEL", "gemini-3.6-flash")
 COMPLETED_BATCH_STATUS = (
     "JOB_STATE_SUCCEEDED",
     "JOB_STATE_FAILED",
