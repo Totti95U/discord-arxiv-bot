@@ -24973,7 +24973,7 @@
     },
     {
       "pipeline_id": "20260816T031238Z-1325bf3f",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/opk3aeb5ffyzmk8itloanikgi1giaaam56pb",
       "summarize_job_name": "batches/sceu394apd61gsk7db81lwrz9xpgsm56g3p8",
       "papers": [
@@ -25983,14 +25983,115 @@
         "http://arxiv.org/abs/2608.11763v1",
         "http://arxiv.org/abs/2608.12420v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2608.12604v1": {
+          "title": "単調等差数列を回避する置換の密度界",
+          "summary": "自然数および整数の部分集合において、長さ3の単調等差数列を含まない無限置換が存在する集合の補集合の密度に関して、上限密度の下限を2/3に強化した。また、対称下密度が1に極めて近い、長さ4の単調等差数列を回避する置換を持つ整数の部分集合を構成することにより、β_ℤ(4) = 1であることを証明した。",
+          "keywords": [
+            "permutations",
+            "monotone arithmetic progressions",
+            "upper density",
+            "lower density"
+          ],
+          "appendix": "組み合わせ論（Combinatorics）に関連する研究であり、興味ある分野の combinatorics on words と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.12574v1": {
+          "title": "大規模有限集合上の制約付きデコーディングのための Trie オートマトン",
+          "summary": "大規模言語モデルにおいて有限集合からのテキスト生成を制約する際、従来の文法コンパイル手法では候補数が増大すると速度低下（濃度壁）が発生する。本論文では、Aho-Corasick多重パターンマッチングを用いてノードごとのトークンマスクを事前計算するTrieオートマトンを提案する。これにより、XGrammar等の既存手法と比較して、トークン計算のステップあたりの時間を大幅に短縮し、バッチ処理におけるスループットを最大29倍向上させた。出力の妥当性を100%保証しながら、候補数が増大しても安定した高速処理を実現している。",
+          "keywords": [
+            "Trie Automata",
+            "Constrained Decoding",
+            "Aho-Corasick",
+            "Finite Sets",
+            "Token Masking"
+          ],
+          "appendix": "本論文はオートマトン理論 (automata theory) および形式言語理論 (formal languages) と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.12284v1": {
+          "title": "平坦半環 S(W) の有限基底問題",
+          "summary": "本論文では、空でない語の任意の集合 W に対する平坦半環 S(W) の有限基底問題を扱う。W に含まれるすべての語の長さが 3 以下である場合、S(W) は Cross 多様体を生成し有限基底を持つことを証明する。一方で、W が xᵏ⁺²-free だが xᵏ⁺¹-free ではないような k ≥ 3 が存在する場合、S(W) は有限基底を持たない。特に、長さ k のすべての語の集合を Wₖ とすると、S(Wₖ) が有限基底を持つのは k ≤ 3 のときに限られる。さらに、W が有限かつ x⁴-free でない場合も S(W) は有限基底を持たない。これらの結果は、Jackson ら (2022) によって提起された未解決問題に対する部分的な解答を与える。",
+          "keywords": [
+            "flat semirings",
+            "finite basis problem",
+            "Cross variety",
+            "combinatorics on words"
+          ],
+          "appendix": "本論文は「combinatorics on words（語の組み合わせ論）」の分野と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.12201v1": {
+          "title": "自由群の外部自己同型群におけるニールセン類",
+          "summary": "n ≥ 8 の各整数に対し、GL(n, ℤ) および SL(n, ℤ) の生成系の対について、可算無限個のニールセン同値類を代表する具体的な族を構成した。これらの対は Out(Fₙ) およびその指数2の部分群 SOut(Fₙ) における捩れ生成系の対のホモロジー像として得られ、両方の外部群においても生成対の可算無限個のニールセン類をもたらす。構成された各族において、すべての対は自他な座標を1つ追加する安定化の後にニールセン同値となる。また、1回安定化された生成タプルのニールセン同値性に対する関係加群の障害を導出し、Evans の非可除性の例を用いてこの障害が非自明であり、1回安定化された生成タプルのニールセン類を区別できることを示した。",
+          "keywords": [
+            "Nielsen classes",
+            "outer automorphism groups",
+            "free groups",
+            "relation-module obstruction"
+          ],
+          "appendix": "本論文は「strucure of large countable infinite groups」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.12080v1": {
+          "title": "(ℤ/2ℤ)≀𝔽_dの語長スペクトルトリプルはメトリックではない",
+          "summary": "固有的長さ関数を備えた可算離散群から構成される縮小群C*代数上の標準的なスペクトルトリプルにおいて、関連するConnes擬距離が状態空間上の弱*位相を再現し、Rieffelの意味でのコンパクト量子距離空間となるかは非可換幾何学における重要な問題である。多項式成長群や語双曲的群などではこの性質が成り立つことが知られていたが、語長関数が常にコンパクト量子距離空間を導くわけではないと予想されつつも明示的な反例は存在しなかった。本論文では、整数 d ≥ 2 に対するランプライター群 (ℤ/2ℤ)≀𝔽_d と有限対称生成系に付随する語長関数から構成される標準的スペクトルトリプルがスペクトル距離空間にならないことを示し、初の明示的な反例の族を提供する。",
+          "keywords": [
+            "spectral triple",
+            "compact quantum metric space",
+            "Lamplighter group",
+            "word-length function"
+          ],
+          "appendix": "本論文は「strucure of large countable infinite groups」分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.11909v1": {
+          "title": "RoPEの表現力の解明",
+          "summary": "Rotary Position Embeddings（RoPE）の成功に対する2つの理論的説明（周期的な位置情報による加群述語モデルと、局所的オフセットを強調する機構）を、有限精度のソフトアテンションTransformerにおいて定式化した論文。全ての回転コンポーネントが周期的である場合、RoPE Transformerは加群述語を持つ過去時相論理で定義可能な言語を正確に認識することを解明した。一方で、通常のRoPEは回転が繰り返さないため固定オフセットのバックトラック演算子を擬似的に表現する動作となり、 modular 言語に対する長尺への般化特性や長距離コンテキストへのアクセスにおいて異なる挙動を示すことを理論と実験の両面から明らかにした。",
+          "keywords": [
+            "Rotary Position Embeddings",
+            "soft-attention transformers",
+            "temporal logic",
+            "length generalization"
+          ],
+          "appendix": "本論文は形式言語理論（formal languages）および時相論理やオートマトン理論に関連する論理的表現力（automata theory）の分野と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.11763v1": {
+          "title": "無理回転の編集距離指数",
+          "summary": "本論文では、トーラス上の無理回転 x ↦ x+α における記号符号化に対し、無理数度指数 μ(α) を用いた編集距離の漸近挙動を定量的に研究している。区間 [0,β) による2値符号化において、長さ N の語の集合 𝒲_N の編集距離直径 diam_E(𝒲_N) の成長指数を算出した。任意の無理数 α とほとんどすべての β∈(0,1) に対して、lim sup_(N→∞) (log diam_E(𝒲_N))/(log N) = (μ(α)-1)/μ(α) であり、対応する lim inf は 1/2 となることを示した。また、非周期的な円周同相写像やストゥルム語への応用を導き出し、高次元トーラス 𝕋ᵈ の回転では、ほとんどすべての回転ベクトルに対して編集距離指数が d/(d+1) になることを証明した。",
+          "keywords": [
+            "edit distance",
+            "irrational rotation",
+            "symbolic coding",
+            "irrationality exponent",
+            "Sturmian sequences"
+          ],
+          "appendix": "本論文は Symbolic Dynamics（記号力学系）および Combinatorics on Words（語の組合せ論）に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.12420v1": {
+          "title": "補間集合からのクロネッカー・ワイルの定理",
+          "summary": "離散アーベル群の可算無限な独立部分集合に対し、ε-クロネッカー集合と呼ばれる補間集合を用いて弱一様分布に関する古典的なクロネッカー・ワイルの定理の類似を得た。具体的には、弱一様分布数列を誘導する準同型写像の全体が稠密なG_δ集合をなすことを示すことで、その位相的な大きさを決定した。",
+          "keywords": [
+            "Kronecker-Weyl theorem",
+            "weak uniform distribution",
+            "epsilon-Kronecker sets",
+            "homomorphisms",
+            "dense G-delta set"
+          ],
+          "appendix": "本論文は、可算無限群の構造やその上の動的性質に関連しており、「strucure of large countable infinite groups」の分野と関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.12604v1",
+        "http://arxiv.org/abs/2608.12574v1",
+        "http://arxiv.org/abs/2608.12284v1",
+        "http://arxiv.org/abs/2608.12201v1",
+        "http://arxiv.org/abs/2608.12080v1",
+        "http://arxiv.org/abs/2608.11909v1",
+        "http://arxiv.org/abs/2608.11763v1",
+        "http://arxiv.org/abs/2608.12420v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-16T03:12:38.751855+00:00",
-      "updated_at": "2026-08-16T03:25:32.459436+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-16T04:05:47.015011+00:00",
+      "finalized_at": "2026-08-16T04:05:47.014983+00:00"
     }
   ]
 }
