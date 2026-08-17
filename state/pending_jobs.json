@@ -26095,7 +26095,7 @@
     },
     {
       "pipeline_id": "20260817T031236Z-beea1ae7",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/q0x9kw0vk5xfjiwqiuwhmuepkjq76c9a8v40",
       "summarize_job_name": "batches/voz38qyv3p01bh613qcwndnci4rattg3eqsm",
       "papers": [
@@ -27022,14 +27022,103 @@
         "http://arxiv.org/abs/2608.12774v1",
         "http://arxiv.org/abs/2608.13620v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "notification_sent": false,
+      "summaries": {
+        "http://arxiv.org/abs/2608.13433v1": {
+          "title": "Transformerの長さ汎化における代数的分解理論",
+          "summary": "Transformerは訓練時より長い系列に汎化することがあるが、どの言語でこれが可能かは未解明であった。本研究では、長さ汎化を捉える記述言語C-RASPにおける正規言語の完全な特徴付けを行い、統語モノイドのサイズに対して多項式時間で動作する判定アルゴリズムを提示した。有限半群に対する従来のKrohn-Rhodes分解理論では扱えないC-RASPの能力を分析するため、無限加法群（整数群）への拡張分解理論を構築し、整数の反復リース積によってC-RASPを特徴付けた。実験的にも本理論がTransformerの長さ汎化挙動を正確に予測することが確認された。",
+          "keywords": [
+            "Transformer",
+            "Length Generalization",
+            "Regular Languages",
+            "C-RASP",
+            "Krohn-Rhodes Decomposition"
+          ],
+          "appendix": "本論文は、正規言語や状態機械の構造解析を扱っており、フォーマル言語理論やオートマトン理論（automata theory, formal languages）と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.13273v1": {
+          "title": "組合せゲームへの有限オートマトンによるアプローチ",
+          "summary": "本研究では、有限オートマトンを用いて様々な組合せゲームを自動解析する手法を提案する。局面や手が正規言語とその演算として表現できるゲームに対し、候補となる有限オートマトンの構築と厳密な形式検証を行う2段階の自動解析アルゴリズムを開発した。この手法をパートザン（非同値）オクターゲームやそのミザール（逆イム）条件、またKotzig's nimに適用し、数々の未解決予想の証明や解の周期性の解明に成功した。",
+          "keywords": [
+            "finite automata",
+            "combinatorial games",
+            "partizan octal games",
+            "Kotzig's nim"
+          ],
+          "appendix": "automata theory, formal languages, combinatorics on words"
+        },
+        "http://arxiv.org/abs/2608.13199v1": {
+          "title": "整数およびガウス整数の連分数における最適な局所収束条件",
+          "summary": "本論文では、整数およびガウス整数連分数における、収束を保証するための係数に対する最適な局所的制限の解明を目的とする。整数連分数においては長さ2の語に関するすべての極小制限を同定し、これはConway--Coxeter quiddity系列における長さ2の極小不可避語の分類と同等であることを示す。ガウス整数連分数に対しては長さ2の可逆な極小制限をすべて同定する。また、任意の有限制限集合よりも厳密に強い、無限濃度の標準的な制限集合を構成する。",
+          "keywords": [
+            "integer continued fractions",
+            "Gaussian integer continued fractions",
+            "local convergence criteria",
+            "quiddity sequences"
+          ],
+          "appendix": "語の組合せ論（combinatorics on words）に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2608.13021v1": {
+          "title": "シルニコフ・ホップ分岐に関するボッシュ・シモ予想",
+          "summary": "本論文では、シルニコフ・ホップ分岐の展開におけるストレンジアトラクターの豊富さに関するボッシュ・シモ予想の厳密な数学的証明を提供する。この余次元2のシナリオにおける本質的な大域的幾何構造を捉える散逸帰還マップの一般的なクラスを構築することにより、Broer-Simó-Tatjerの意味での「大型の」ストレンジアトラクターが、力学系において永続的かつ統計的に堅牢な特徴であることを示す。強い横断的収縮と特異な角度拡大による1次元モデルへの次元削減を利用し、正のルベーグ測度を持つパラメータ集合に対して、システムが一意なSRB測度を担うアトラクターを認めることを証明する。さらに、このカオス的レジームには超安定周期軌道を与えるパラメータ列が散在していることを示し、分岐の特異極限における秩序運動とカオス運動の間の遷移を特徴付ける。",
+          "keywords": [
+            "Shilnikov-Hopf bifurcation",
+            "strange attractors",
+            "Sinai-Ruelle-Bowen (SRB) measure",
+            "dissipative return maps"
+          ],
+          "appendix": "本論文は「complex dynamics」の分野と関連しています。"
+        },
+        "http://arxiv.org/abs/2608.12784v1": {
+          "title": "複数の安定的固定点を持つ間欠写像の熱力学フォーマリズムと相転移",
+          "summary": "複数の安定的固定点を持つ区間上の間欠全枝写像および不連続な可能性のあるポテンシャルに対して熱力学フォーマリズムを構築した。ポテンシャルの双曲性仮定のもとで、正の相関衰減と指数関数的相関衰減を持つ一意な平衡状態の存在を示した。さらに、1パラメータ族 βφ (β>0) に対する相転移を特徴付け、臨界パラメータにおいて複数のエルゴード的平衡状態が共存する可能性を示し、正のエントロピーを持つものは高々1つであることを証明した。本アプローチは共形測度の詳細な解析に基づいている。",
+          "keywords": [
+            "Thermodynamic formalism",
+            "Intermittent maps",
+            "Neutral fixed points",
+            "Phase transitions",
+            "Conformal measures"
+          ],
+          "appendix": "本論文はエルゴード理論や力学系理論を扱っており、複素力学系（complex dynamics）や記号力学系（symbolic dynamics）などの領域に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.12774v1": {
+          "title": "類似対に対するラミネーションと外部角",
+          "summary": "本論文では、|s|<1を満たすパラメータsにより2つの写像f:z → sz-1およびg:z → sz+1で生成される複素平面ℂ上の力学系「類似対」を研究する。この力学系に付随するアトラクタをΛ、Λが連結となるs∈𝔻の集合をバーンズリー・ハリントン・マンデルブロ集合ℳとし、連結なΛの充填集合をKとする。s∈∂ℳに対して、∂K上の半群の作用が定数勾配を持つ不連続な区分線形作用に位相同型であることを示す。さらに、∂ℳの多くの点sで成立する予想のもと、Kが切断点を持つための必要十分条件を∂K上の力学系を用いて与え、明示的な再帰的アルゴリズムから得られる有向グラフIGにおける無限歩行を用いて全ての切断点の集合を記述する。",
+          "keywords": [
+            "Similarity Pair",
+            "Mandelbrot Set",
+            "Complex Dynamics",
+            "Laminations",
+            "Cut Points"
+          ],
+          "appendix": "本論文は、複素力学系（complex dynamics）の分野に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.13620v1": {
+          "title": "トンプソン群 F の FC 中心に関する注記",
+          "summary": "トンプソン群 F の FC 中心（共役類が有限であるすべての要素からなる部分群）が自明であることを示している。",
+          "keywords": [
+            "FC-center",
+            "Thompson's group F",
+            "finite conjugacy classes",
+            "trivial subgroup"
+          ],
+          "appendix": "本論文は「strucure of large countable infinite groups（大きな可算無限群の構造）」の分野に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.13433v1",
+        "http://arxiv.org/abs/2608.13273v1",
+        "http://arxiv.org/abs/2608.13199v1",
+        "http://arxiv.org/abs/2608.13021v1",
+        "http://arxiv.org/abs/2608.12784v1",
+        "http://arxiv.org/abs/2608.12774v1",
+        "http://arxiv.org/abs/2608.13620v1"
+      ],
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-17T03:12:36.328550+00:00",
-      "updated_at": "2026-08-17T03:26:02.827976+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-17T04:09:22.209763+00:00",
+      "finalized_at": "2026-08-17T04:09:22.209733+00:00"
     }
   ]
 }
