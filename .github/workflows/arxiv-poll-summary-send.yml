@@ -51,6 +51,8 @@ jobs:
       - name: Run poll-summary-send stage
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          INTEREST_MODEL: ${{ vars.INTEREST_MODEL }}
+          SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL }}
           ARXIV_RECOMMENDER_WEBHOOK_URL: ${{ secrets.ARXIV_RECOMMENDER_WEBHOOK_URL }}
           TZ: America/New_York
         run: python src/main.py --stage poll_summary_send
