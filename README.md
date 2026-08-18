@@ -20,19 +20,27 @@ Gemini api および Discord の Webhook URL を使用する都合上, このリ
 
 1. [Google AI Studio](https://aistudio.google.com) に行き, Gemini API の API key を取得してください
     - 無料枠でも使用可能です
-2. arXiv の情報を流すための Discord のチャンネルを作り, サーバー設定の連携アプリから webhook URL を取得してください
+2. arXiv の情報を流す Discord の inbox チャンネルを作り, サーバー設定の連携アプリから webhook URL を取得してください
+    - 別に Forum チャンネルも作ってください. inbox の論文に 📖 リアクションを付けると, 全文リーディングメモがこの Forum に作成されます
 3. このリポジトリをフォークしてください. GItHub Actions を使用するため, GitHub アカウントが Free プランの場合はフォークしたリポジトリは Public にしてください
 4. フォークしたリポジトリの secret として gemini api key と discord webhook url を登録してください
     - Gemini api key は `GEMINI_API_KEY` として登録してください
     - Discord webhook url は `ARXIV_RECOMMENDER_WEBHOOK_URL` として登録してください
-5. `src/prompt_check_interest.txt` および `src/prompt_summarize.txt` にある `## 興味ある分野` の部分に自身が興味ある分野名やキーワードを入れてください
-    - **ヒント:** これら2つのファイルは Gemini が読み取ります.
+    - Discord Developer Portal で Bot を作成し, token を `DISCORD_BOT_TOKEN` として登録してください
+    - Bot の招待時の permission integer には `34359831616` を使えます
+      - 少なくとも View Channel, Send Messages, Embed Links, Add Reactions, Read Message History が必要です
+      - inbox と Forum のチャンネル毎の権限オーバーライドでもこれらを許可してください
+    - GitHub Actions の repository variable `DISCORD_FORUM_CHANNEL_ID` に Forum チャンネル ID を登録してください
+    - 特定のユーザーの 📖 だけを処理する場合は, repository variable `DISCORD_USER_ID` にその Discord user ID を登録してください
+      - 未設定なら Bot 以外のユーザーが付けた 📖 を処理します
+5. `src/prompt_check_interest.txt`, `src/prompt_summarize.txt`, `src/prompt_reading_memo.txt` の興味分野を自分用に調整してください
+    - **ヒント:** これらのファイルは Gemini が読み取ります.
 6. `src/main.py` の27行目にある `(cat:math.DS OR cat:math.CO OR cat:math.GR OR cat:cs.LO OR cat:cs.FL OR cat:cs.DM)` の部分を自身が興味のある arXiv のカテゴリに変えてください
     - 単に削除することで全てのカテゴリからプレプリントを取得するようになりますが, Gemini api のリクエスト回数が大幅に増加する可能性があります
 7. (Gemini api 無料枠の場合) Gemini api の無料枠を使用する場合は, 対象カテゴリや検索対象日数を減らして1日の処理件数を抑えてください
     - `src/main.py` の `search_papers()` 内の `max_results` と日付レンジ (`days`) を調整してください
 
-通常では次の 3 つの workflow が動作します.
+通常では次の 4 つの workflow が動作します.
 
 - `.github/workflows/arxiv-summarizer.yml`
   - 毎日1回, arXiv 検索と興味判定 batch の submit を実行
@@ -40,6 +48,10 @@ Gemini api および Discord の Webhook URL を使用する都合上, このリ
   - 30分ごとに, 興味判定 batch を poll して完了分の要約 batch を submit
 - `.github/workflows/arxiv-poll-summary-send.yml`
   - 30分ごとに, 要約 batch を poll して完了分を Discord に送信
+  - 送信した message ID を state に保存し, Bot が 📖 を付与
+- `.github/workflows/arxiv-poll-reading-requests.yml`
+  - 10分ごとに 📖 リアクションを確認
+  - 選択された論文の arXiv PDF 全文だけを Gemini に渡し, 1論文1件の Forum post を作成
 
 この構成により, Gemini Batch API の完了待ちが長引いても単一ジョブがタイムアウトしにくくなります.
 
@@ -94,10 +106,14 @@ Gemini api および Discord の Webhook URL を使用する都合上, このリ
 2. secret/外部設定を確認
    - `GEMINI_API_KEY`
    - `ARXIV_RECOMMENDER_WEBHOOK_URL`
+   - `DISCORD_BOT_TOKEN`
+   - `DISCORD_FORUM_CHANNEL_ID` (repository variable)
+   - 必要なら `DISCORD_USER_ID` (repository variable)
    - 必要なら `BATCH_TIMEOUT_HOURS`
 3. 該当 stage の workflow を `workflow_dispatch` で再実行
    - 興味判定側: `arxiv-poll-interest-submit-summary.yml`
    - 要約/送信側: `arxiv-poll-summary-send.yml`
+   - 📖/全文メモ側: `arxiv-poll-reading-requests.yml`
 4. Discord 送信失敗時 (`send_failed`) は, Webhook を修正後に再実行
 5. 長期間停滞した job を手動で終了する場合は `status` を `failed` に変更して保存
 

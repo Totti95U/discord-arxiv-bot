@@ -1,6 +1,6 @@
 from google import genai
 from pydantic import BaseModel, Field
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Union
 import arxiv
 import time
 import os
@@ -8,7 +8,9 @@ import datetime
 import requests
 import json
 import argparse
+import io
 import uuid
+from urllib.parse import quote
 from zoneinfo import ZoneInfo
 
 # set up clients for arXiv, GenAI, and Discord
@@ -19,6 +21,10 @@ STATE_FILE_PATH = os.getenv("PENDING_JOBS_FILE", "state/pending_jobs.json")
 STATE_SCHEMA_VERSION = 1
 INTEREST_MODEL = os.getenv("INTEREST_MODEL", "gemini-3.5-flash-lite")
 SUMMARY_MODEL = os.getenv("SUMMARY_MODEL", "gemini-3.6-flash")
+READING_MODEL = os.getenv("READING_MODEL", SUMMARY_MODEL)
+DISCORD_API_BASE_URL = "https://discord.com/api/v10"
+READ_EMOJI = "📖"
+MAX_PDF_BYTES = 50 * 1024 * 1024
 COMPLETED_BATCH_STATUS = (
     "JOB_STATE_SUCCEEDED",
     "JOB_STATE_FAILED",
@@ -68,6 +74,17 @@ class Summary(BaseModel):
     appendix: Optional[str] = Field(None, description="補足情報")
 
 
+class ReadingMemo(BaseModel):
+    conclusion: str = Field(..., description="30秒で分かる結論")
+    main_claims: str = Field(..., description="主定理・主張")
+    method_outline: str = Field(..., description="証明・手法の骨格")
+    research_connection: str = Field(..., description="興味分野との接点")
+    reading_guide: str = Field(..., description="読むならここ")
+    follow_up_questions: List[str] = Field(
+        ..., min_length=3, max_length=3, description="次に尋ねるとよい質問"
+    )
+
+
 prompt_check_interest = ""
 with open("src/prompt_check_interest.txt", "r", encoding="utf-8") as f:
     prompt_check_interest = f.read()
@@ -75,6 +92,10 @@ with open("src/prompt_check_interest.txt", "r", encoding="utf-8") as f:
 prompt_summarize = ""
 with open("src/prompt_summarize.txt", "r", encoding="utf-8") as f:
     prompt_summarize = f.read()
+
+prompt_reading_memo = ""
+with open("src/prompt_reading_memo.txt", "r", encoding="utf-8") as f:
+    prompt_reading_memo = f.read()
 
 
 def now_iso_utc() -> str:
@@ -155,6 +176,7 @@ def serialize_paper(result: arxiv.Result) -> dict:
     return {
         "paper_id": result.entry_id,
         "entry_id": result.entry_id,
+        "pdf_url": result.pdf_url,
         "title": result.title,
         "summary": result.summary,
         "authors": [str(author) for author in result.authors],
@@ -323,6 +345,68 @@ def summarize_sequential_papers(
     return summaries, errors
 
 
+def pdf_url_for_paper(paper: dict) -> str:
+    pdf_url = paper.get("pdf_url") or paper.get("entry_id", "").replace("/abs/", "/pdf/")
+    return pdf_url.replace("http://arxiv.org/", "https://arxiv.org/", 1)
+
+
+def download_pdf(paper: dict) -> bytes:
+    pdf_url = pdf_url_for_paper(paper)
+    if not pdf_url:
+        raise ValueError("paper PDF URL is missing")
+
+    response = requests.get(
+        pdf_url,
+        headers={"User-Agent": "discord-arxiv-bot/reading-memo"},
+        stream=True,
+        timeout=(DISCORD_CONNECT_TIMEOUT_SECONDS, 60),
+    )
+    response.raise_for_status()
+    content_length_header = response.headers.get("content-length", "")
+    content_length = int(content_length_header) if content_length_header.isdigit() else 0
+    if content_length > MAX_PDF_BYTES:
+        raise ValueError(f"PDF is larger than {MAX_PDF_BYTES // (1024 * 1024)} MiB")
+
+    chunks = []
+    size = 0
+    for chunk in response.iter_content(chunk_size=64 * 1024):
+        size += len(chunk)
+        if size > MAX_PDF_BYTES:
+            raise ValueError(f"PDF is larger than {MAX_PDF_BYTES // (1024 * 1024)} MiB")
+        chunks.append(chunk)
+    pdf_data = b"".join(chunks)
+    if not pdf_data.lstrip().startswith(b"%PDF"):
+        raise ValueError("arXiv response is not a PDF")
+    return pdf_data
+
+
+def generate_reading_memo(paper: dict) -> dict:
+    print(f"Reading full PDF: {paper['paper_id']}")
+    uploaded_file = client_genai.files.upload(
+        file=io.BytesIO(download_pdf(paper)),
+        config={"mime_type": "application/pdf"},
+    )
+    try:
+        response = client_genai.models.generate_content(
+            model=READING_MODEL,
+            contents=[
+                uploaded_file,
+                f"Title: {paper['title']}\nURL: {paper['entry_id']}\n\n{prompt_reading_memo}",
+            ],
+            config={
+                "response_mime_type": "application/json",
+                "response_schema": ReadingMemo,
+                "thinking_config": {"thinking_level": "medium"},
+            },
+        )
+        return ReadingMemo.model_validate_json(response.text).model_dump()
+    finally:
+        try:
+            client_genai.files.delete(name=uploaded_file.name)
+        except Exception as exc:
+            print(f"Failed to delete temporary Gemini file: {short_error(exc)}")
+
+
 def extract_interest_check(batch_job, papers: List[dict]) -> Tuple[Dict[str, bool], Dict[str, str]]:
     interest_results: Dict[str, bool] = {}
     errors: Dict[str, str] = {}
@@ -422,16 +506,21 @@ def discord_retry_delay(response, attempt: int) -> float:
     return DISCORD_RETRY_BACKOFF_SECONDS * (2 ** (attempt - 1))
 
 
-def post_discord_payload(webhook_url: str, payload: dict, description: str) -> bool:
+def post_discord_payload(
+    webhook_url: str, payload: dict, description: str, wait: bool = False
+) -> Union[bool, dict]:
     for attempt in range(1, DISCORD_MAX_ATTEMPTS + 1):
         response = None
         try:
             response = requests.post(
                 webhook_url,
                 json=payload,
+                params={"wait": "true"} if wait else None,
                 timeout=(DISCORD_CONNECT_TIMEOUT_SECONDS, DISCORD_READ_TIMEOUT_SECONDS),
             )
-            if response.status_code == 204:
+            if response.status_code in (200, 204):
+                if wait and response.status_code == 200:
+                    return response.json()
                 return True
             retryable = response.status_code == 429 or 500 <= response.status_code < 600
             body = truncate_discord_text(response.text, 300, fallback="")
@@ -453,7 +542,7 @@ def post_discord_payload(webhook_url: str, payload: dict, description: str) -> b
     return False
 
 
-def post_summary_to_discord(webhook_url: str, paper: dict, summary: dict) -> bool:
+def post_summary_to_discord(webhook_url: str, paper: dict, summary: dict) -> Optional[dict]:
     authors = truncate_discord_text(", ".join(paper["authors"]), DISCORD_EMBED_FIELD_VALUE_LIMIT)
     embed = {
         "author": {
@@ -506,10 +595,133 @@ def post_summary_to_discord(webhook_url: str, paper: dict, summary: dict) -> boo
     fit_discord_embed_total_limit(embed)
 
     message = {"embeds": [embed]}
-    if post_discord_payload(webhook_url, message, f"paper {paper['paper_id']}"):
+    result = post_discord_payload(webhook_url, message, f"paper {paper['paper_id']}", wait=True)
+    if isinstance(result, dict) and result.get("id") and result.get("channel_id"):
         print(f"Sent paper: {paper['title']}")
-        return True
-    return False
+        return result
+    print(f"Discord did not return the message ID for {paper['paper_id']}")
+    return None
+
+
+def discord_bot_request(
+    method: str,
+    path: str,
+    bot_token: str,
+    description: str,
+    payload: Optional[dict] = None,
+    params: Optional[dict] = None,
+    success_codes: Tuple[int, ...] = (200, 204),
+    max_attempts: int = DISCORD_MAX_ATTEMPTS,
+) -> Optional[object]:
+    token = bot_token.removeprefix("Bot ").strip()
+    if not token:
+        print(f"DISCORD_BOT_TOKEN is missing; cannot {description}.")
+        return None
+
+    for attempt in range(1, max_attempts + 1):
+        response = None
+        try:
+            response = requests.request(
+                method,
+                f"{DISCORD_API_BASE_URL}{path}",
+                headers={"Authorization": f"Bot {token}"},
+                json=payload,
+                params=params,
+                timeout=(DISCORD_CONNECT_TIMEOUT_SECONDS, DISCORD_READ_TIMEOUT_SECONDS),
+            )
+            if response.status_code in success_codes:
+                return True if response.status_code == 204 else response.json()
+            retryable = response.status_code == 429 or 500 <= response.status_code < 600
+            body = truncate_discord_text(response.text, 300, fallback="")
+            print(
+                f"Failed to {description} (attempt {attempt}/{max_attempts}). "
+                f"Status: {response.status_code}, Body: {body}"
+            )
+            if not retryable:
+                return None
+        except requests.RequestException as exc:
+            print(
+                f"Failed to {description} (attempt {attempt}/{max_attempts}): "
+                f"{short_error(exc)}"
+            )
+
+        if attempt < max_attempts:
+            time.sleep(discord_retry_delay(response, attempt))
+    return None
+
+
+def add_read_reaction(bot_token: str, channel_id: str, message_id: str) -> bool:
+    result = discord_bot_request(
+        "PUT",
+        f"/channels/{channel_id}/messages/{message_id}/reactions/{quote(READ_EMOJI)}/@me",
+        bot_token,
+        f"add {READ_EMOJI} reaction to message {message_id}",
+    )
+    return result is not None
+
+
+def reaction_users_include_request(users: List[dict], discord_user_id: str = "") -> bool:
+    people = [user for user in users if not user.get("bot", False)]
+    if discord_user_id:
+        return any(str(user.get("id")) == discord_user_id for user in people)
+    return bool(people)
+
+
+def has_read_request(
+    bot_token: str, channel_id: str, message_id: str, discord_user_id: str = ""
+) -> bool:
+    users = discord_bot_request(
+        "GET",
+        f"/channels/{channel_id}/messages/{message_id}/reactions/{quote(READ_EMOJI)}",
+        bot_token,
+        f"get {READ_EMOJI} reactions for message {message_id}",
+        params={"limit": 100},
+    )
+    return isinstance(users, list) and reaction_users_include_request(users, discord_user_id)
+
+
+def build_reading_memo_embed(paper: dict, memo: dict) -> dict:
+    questions = "\n".join(f"- {question}" for question in memo["follow_up_questions"])
+    embed = {
+        "title": truncate_discord_text(paper["title"], DISCORD_EMBED_TITLE_LIMIT),
+        "url": paper["entry_id"],
+        "color": 0x5865F2,
+        "fields": [
+            {"name": "30秒で分かる結論", "value": memo["conclusion"], "inline": False},
+            {"name": "主定理・主張", "value": memo["main_claims"], "inline": False},
+            {"name": "証明・手法の骨格", "value": memo["method_outline"], "inline": False},
+            {"name": "研究との接点", "value": memo["research_connection"], "inline": False},
+            {"name": "読むならここ", "value": memo["reading_guide"], "inline": False},
+            {"name": "次に尋ねるとよい質問", "value": questions, "inline": False},
+        ],
+        "footer": {"text": "arXiv full-paper reading memo"},
+        "timestamp": datetime.datetime.now(ZoneInfo("Asia/Tokyo")).isoformat(),
+    }
+    for field in embed["fields"]:
+        field["value"] = truncate_discord_text(field["value"], 880)
+    fit_discord_embed_total_limit(embed)
+    return embed
+
+
+def post_reading_memo_to_forum(
+    bot_token: str, forum_channel_id: str, paper: dict, memo: dict
+) -> Optional[dict]:
+    result = discord_bot_request(
+        "POST",
+        f"/channels/{forum_channel_id}/threads",
+        bot_token,
+        f"create Forum post for {paper['paper_id']}",
+        payload={
+            "name": truncate_discord_text(paper["title"], 100),
+            "message": {
+                "embeds": [build_reading_memo_embed(paper, memo)],
+                "allowed_mentions": {"parse": []},
+            },
+        },
+        success_codes=(200, 201),
+        max_attempts=1,
+    )
+    return result if isinstance(result, dict) and result.get("id") else None
 
 
 def run_stage_enqueue_interest() -> int:
@@ -538,6 +750,8 @@ def run_stage_enqueue_interest() -> int:
             "interested_paper_ids": [],
             "summaries": {},
             "sent_paper_ids": [],
+            "discord_messages": {},
+            "reading_memos": {},
             "notification_sent": False,
             "retry_count": 0,
             "last_error": None,
@@ -656,8 +870,12 @@ def run_stage_poll_interest_submit_summary() -> int:
 
 def run_stage_poll_summary_send() -> int:
     discord_webhook_url = os.getenv("ARXIV_RECOMMENDER_WEBHOOK_URL")
+    discord_bot_token = os.getenv("DISCORD_BOT_TOKEN", "")
     if not discord_webhook_url:
         print("ARXIV_RECOMMENDER_WEBHOOK_URL is not set.")
+        return 1
+    if not discord_bot_token:
+        print("DISCORD_BOT_TOKEN is not set.")
         return 1
 
     state = load_state()
@@ -674,6 +892,7 @@ def run_stage_poll_summary_send() -> int:
 
         job["summaries"] = dict(job.get("summaries", {}))
         job["sent_paper_ids"] = list(job.get("sent_paper_ids", []))
+        job["discord_messages"] = dict(job.get("discord_messages", {}))
 
         if job.get("status") in ("summarize_submitted", "summarize_running"):
             timeout_anchor = job.get("updated_at") or job.get("created_at", "")
@@ -788,8 +1007,31 @@ def run_stage_poll_summary_send() -> int:
             if paper is None or summary is None:
                 all_success = False
                 continue
-            is_sent = post_summary_to_discord(discord_webhook_url, paper, summary)
-            if is_sent:
+
+            message_state = job["discord_messages"].get(paper_id)
+            if not message_state:
+                message = post_summary_to_discord(discord_webhook_url, paper, summary)
+                if message:
+                    message_state = {
+                        "message_id": message["id"],
+                        "channel_id": message["channel_id"],
+                        "reaction_added": False,
+                        "read_requested": False,
+                        "reading_memo_sent": False,
+                        "paper_thread_id": None,
+                    }
+                    job["discord_messages"][paper_id] = message_state
+                    updated = True
+
+            if message_state and (
+                message_state.get("reaction_added")
+                or add_read_reaction(
+                    discord_bot_token,
+                    message_state["channel_id"],
+                    message_state["message_id"],
+                )
+            ):
+                message_state["reaction_added"] = True
                 if paper_id not in job["sent_paper_ids"]:
                     job["sent_paper_ids"].append(paper_id)
                     updated = True
@@ -817,6 +1059,114 @@ def run_stage_poll_summary_send() -> int:
     return 0
 
 
+def run_stage_poll_reading_requests() -> int:
+    discord_bot_token = os.getenv("DISCORD_BOT_TOKEN", "")
+    forum_channel_id = os.getenv("DISCORD_FORUM_CHANNEL_ID", "")
+    discord_user_id = os.getenv("DISCORD_USER_ID", "").strip()
+    if not discord_bot_token:
+        print("DISCORD_BOT_TOKEN is not set.")
+        return 1
+    if not forum_channel_id:
+        print("DISCORD_FORUM_CHANNEL_ID is not set.")
+        return 1
+
+    state = load_state()
+    updated = False
+    for job in state["jobs"]:
+        messages = job.get("discord_messages", {})
+        if not messages:
+            continue
+
+        papers_by_id = {paper["paper_id"]: paper for paper in job.get("papers", [])}
+        job["reading_memos"] = dict(job.get("reading_memos", {}))
+        for paper_id, message_state in messages.items():
+            if message_state.get("reading_memo_sent"):
+                continue
+
+            if not message_state.get("read_requested"):
+                requested = has_read_request(
+                    discord_bot_token,
+                    message_state["channel_id"],
+                    message_state["message_id"],
+                    discord_user_id,
+                )
+                if not requested:
+                    continue
+                message_state["read_requested"] = True
+                message_state["read_requested_at"] = now_iso_utc()
+                message_state["reading_last_error"] = None
+                updated = True
+
+            paper = papers_by_id.get(paper_id)
+            if paper is None:
+                message_state["reading_last_error"] = "paper metadata is missing"
+                updated = True
+                continue
+
+            if paper_id not in job["reading_memos"]:
+                try:
+                    job["reading_memos"][paper_id] = generate_reading_memo(paper)
+                    message_state["reading_last_error"] = None
+                    updated = True
+                except Exception as exc:
+                    message_state["reading_retry_count"] = int(
+                        message_state.get("reading_retry_count", 0)
+                    ) + 1
+                    message_state["reading_last_error"] = short_error(exc)
+                    print(f"Reading memo generation failed for {paper_id}: {short_error(exc)}")
+                    updated = True
+                    continue
+
+            forum_post = post_reading_memo_to_forum(
+                discord_bot_token,
+                forum_channel_id,
+                paper,
+                job["reading_memos"][paper_id],
+            )
+            if forum_post:
+                message_state["reading_memo_sent"] = True
+                message_state["paper_thread_id"] = forum_post["id"]
+                message_state["reading_memo_sent_at"] = now_iso_utc()
+                message_state["reading_last_error"] = None
+                print(f"Created Forum post for {paper_id}: {forum_post['id']}")
+            else:
+                message_state["reading_retry_count"] = int(
+                    message_state.get("reading_retry_count", 0)
+                ) + 1
+                message_state["reading_last_error"] = "failed to create Forum post"
+            updated = True
+
+    if updated:
+        save_state(state)
+    else:
+        print("No reading requests updated.")
+    return 0
+
+
+def run_self_check() -> int:
+    assert pdf_url_for_paper({"entry_id": "http://arxiv.org/abs/2608.12345"}) == (
+        "https://arxiv.org/pdf/2608.12345"
+    )
+    assert not reaction_users_include_request([{"id": "bot", "bot": True}])
+    assert reaction_users_include_request([{"id": "user", "bot": False}], "user")
+    assert not reaction_users_include_request([{"id": "other", "bot": False}], "user")
+    memo = {
+        "conclusion": "a" * 2000,
+        "main_claims": "b" * 2000,
+        "method_outline": "c" * 2000,
+        "research_connection": "d" * 2000,
+        "reading_guide": "e" * 2000,
+        "follow_up_questions": ["f" * 1000] * 3,
+    }
+    embed = build_reading_memo_embed(
+        {"title": "title", "entry_id": "https://arxiv.org/abs/2608.12345"}, memo
+    )
+    assert discord_embed_text_length(embed) <= DISCORD_EMBED_TOTAL_LIMIT
+    assert all(len(field["value"]) <= DISCORD_EMBED_FIELD_VALUE_LIMIT for field in embed["fields"])
+    print("Self-check passed.")
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="arXiv summarizer pipeline")
     parser.add_argument(
@@ -825,6 +1175,8 @@ def main() -> int:
             "enqueue_interest",
             "poll_interest_submit_summary",
             "poll_summary_send",
+            "poll_reading_requests",
+            "self_check",
         ],
         default=os.getenv("PIPELINE_STAGE", "enqueue_interest"),
         help="Pipeline stage to execute",
@@ -837,6 +1189,10 @@ def main() -> int:
         return run_stage_poll_interest_submit_summary()
     if args.stage == "poll_summary_send":
         return run_stage_poll_summary_send()
+    if args.stage == "poll_reading_requests":
+        return run_stage_poll_reading_requests()
+    if args.stage == "self_check":
+        return run_self_check()
 
     return 1
 
