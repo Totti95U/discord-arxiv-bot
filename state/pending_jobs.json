@@ -28045,7 +28045,7 @@
     },
     {
       "pipeline_id": "20260819T031038Z-61da6ba9",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/it8k2czb36t5sg44c9wf8b0wbu3upl5g76cq",
       "summarize_job_name": "batches/aejjazpbutxzgd1bhdekd2mp9anlt7mpsmi7",
       "papers": [
@@ -28448,16 +28448,60 @@
         "http://arxiv.org/abs/2608.15406v1",
         "http://arxiv.org/abs/2608.15287v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2608.15406v1": {
+          "title": "右下三角ニールセン自己同型群の降中心列",
+          "summary": "階数 n ≥ 3 の自由群 Fₙ において、dᵢ,ⱼ(xᵢ) = xᵢxⱼ かつ k ≠ i に対して dᵢ,ⱼ(xₖ) = xₖ で定義されるニールセン自己同型によって生成される群 Dₙ = ⟨dᵢ,ⱼ | 1 ≤ j < i ≤ n⟩ の降中心列を決定する。まず 1 ≤ r < i ≤ n に対して dᵢ,ᵣ ∈ γᵢ₋ᵣ(Dₙ) ∖ γᵢ₋ᵣ₊₁(Dₙ) であることを示し、部分群 Uᵢ = ⟨dᵢ,₁, …, dᵢ,ᵢ₋₁⟩ のフィルトレーション {Wᵢ,꜀}꜀≥₁ を導出する。各 c ≥ 1 に対し、γ꜀(Dₙ) の部分群 Wᵢ,꜀ による明示的な反復半直積分解を得るとともに、Uᵢ ∩ γ꜀(Dₙ) = Wᵢ,꜀ であることを証明する。さらに、基本交換子を用いた商群 γ꜀(Dₙ)/γ꜀₊₁(Dₙ) の明示的な基底を与え、各交換子の正確な降中心深さを決定することで、Dₙ がマグナス群（Magnus group）であることを示す。",
+          "keywords": [
+            "lower central series",
+            "Nielsen automorphism groups",
+            "Magnus group",
+            "basic commutators",
+            "free group"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2608.15287v1": {
+          "title": "置換有向グラフ P(n, n-2) におけるハミルトン路",
+          "summary": "1 ≤ k < n に対し、[n] の k-順列を頂点集合とし、(k+1)-順列を有向辺（弧）とする有向重複グラフを P(n, k) とする。Isaak は n ≥ 4 のとき P(n, n-2) が有向ハミルトン閉路を持たないことを証明し、それでも有向ハミルトン路が存在するかどうかという問題を提起した。本論文では、P(n, n-2) がハミルトン路を持つことを示すことで、この未解決問題に肯定的な解答を与える。",
+          "keywords": [
+            "Hamiltonian paths",
+            "permutation digraphs",
+            "directed overlap graph",
+            "permutations"
+          ],
+          "appendix": "本研究は重なりグラフ（overlap graphs）や順列に関する組合せ論的構造を扱っており、combinatorics on words や symbolic dynamics などの研究分野と密接に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.15406v1",
+        "http://arxiv.org/abs/2608.15287v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2608.15406v1": {
+          "message_id": "1539485322906181644",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.15287v1": {
+          "message_id": "1539485337825443853",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-19T03:10:38.573548+00:00",
-      "updated_at": "2026-08-19T03:23:21.272953+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-19T04:05:08.736677+00:00",
+      "finalized_at": "2026-08-19T04:05:08.736643+00:00"
     }
   ]
 }
