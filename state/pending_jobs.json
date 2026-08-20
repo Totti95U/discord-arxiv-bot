@@ -29160,9 +29160,12 @@
           "message_id": "1539847605557792803",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1539871784965374024",
+          "read_requested_at": "2026-08-20T05:40:26.038681+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-08-20T05:40:43.204161+00:00"
         },
         "http://arxiv.org/abs/2608.15664v1": {
           "message_id": "1539847614365958215",
@@ -29181,7 +29184,20 @@
           "paper_thread_id": null
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2608.15670v1": {
+          "conclusion": "本論文は、語 w とその curling-number 変換 C(w) の両方が特定の反復（overlap や cube など）を同時に回避できるかという問題を研究しています。主要な結論として、w と C(w) がともに overlap-free（重複非含有）となる無限語が存在するための最小アルファベットサイズは 4 であることを示しました（3文字では最大長84で制限される）。反復回避理論や自動証明技術に関心のある研究者に有用な結果です。",
+          "main_claims": "1. 3文字アルファベット上では、語 w とその transform C(w) が共に overlap-free となる最大長は 84 である（Theorem 7, Section 4.1, p.6）。2. 4文字アルファベット上では、共に overlap-free となる無限語が存在する（Theorem 12, Section 5, p.8）。3. したがって、同時 overlap-freeness を達成する最小のアルファベットサイズは 4 である（Corollary 13, Section 5, p.9）。4. 2文字および3文字アルファベットにおける様々な指数（3+-free, (5/2)+-free, (9/4)+-free, (7/3)+-free 等）の境界条件について、無限語の存在または有限最大長（13, 17, 75, 84）を解明した（Table 1, Section 2, p.2）。",
+          "method_outline": "証明と手法の骨格は以下の通りです：1. 【理論的基盤】Thue-Morse 語から作られる 4 状態自動機械系列 p（OEIS A245188）を共通の補助系列として定義（既存技術の応用）。2. 【候補探索】一様準同型（uniform morphism）h を設定し、h(p) またはその変形から条件を満たす無限語の候補を幅優先探索で生成（新規手法）。3. 【無限性の検証】自動定理証明器 Walnut を用い、候補語およびその transform C(w) が目的の反復回避特性（overlap-free や α+-free など）を満たすかを判定する述語を記述・証明（新規手法・証明の自動化）。4. 【有限上限の導出】非存在結果および最大長（13, 17, 75, 84）については、有効な接頭辞に対する網羅的な幅優先探索（exhaustive BFS）を実施し、上限に達して探索が空になることで厳密に決定（計算機合成手法）。",
+          "research_connection": "【論文に明記された接点】combinatorics on words（語の組み合わせ論：Thueの反復回避語、Thue-Morse語）および automata theory / formal languages（自動機理論・形式言語理論：2-automatic sequence, 自動定理証明器 Walnut の利用）。【推測による接点】symbolic dynamics（記号力学系：置換力学系やシフト空間における不変言語・軌道の複雑度解析との関連）。※ その他の分野（complex dynamics, arithmetic dynamics, validated numerics, structure of large countable infinite groups）との明確な接点は論文中に確認できず。",
+          "reading_guide": "【前提知識】語の組み合わせ論の基本用語（square, cube, overlap, fractional power, exponent）および自動系列・Walnut の標準的な述語論理表現の知識。【最初に読むべき箇所】Table 1（p.2）で全結果の対比を確認後、2.1節（p.2-3）の curling-number transform の定義と Remark 1、そして 4.1節（p.6）の Theorem 7、5節（p.8）の Theorem 12。【精読の範囲】全般の結論や閾値定理の理解が目的なら Section 1, 2, Table 1, Section 4.1, 5 の精読で十分です。具体的な準同型構成や Walnut スクリプトの実装に関心がある場合のみ Section 3-5 の証明詳細および Appendix A を参照してください。",
+          "follow_up_questions": [
+            "Thue-Morse 語の2ブロック符号化 p からの一様準同型によって構成された C(w) が、シフトされた Thue-Morse 語の単なる文字置換（bijective coding）になる代数的な必要十分条件は何ですか？",
+            "4文字アルファベットにおける同時 overlap-free な無限語の構造について、他の自動系列（例：Paperfolding 語や Rudin-Shapiro 語など）を基体とした準同型構成は可能ですか？",
+            "幅優先探索で得られた最大長 84（3文字 overlap-free）などの境界長を与える語の構造に、代数的な対称性やリピート構造の法則性は存在しますか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
