@@ -28505,7 +28505,7 @@
     },
     {
       "pipeline_id": "20260820T030941Z-a0fc8d0c",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/6wnfg4vy1jgmegtqn8k8ndsqc7ks2n8bs42u",
       "summarize_job_name": "batches/qbdhfo6z21drpjqidy07myo4dbv60gfwdulq",
       "papers": [
@@ -29070,16 +29070,124 @@
         "http://arxiv.org/abs/2608.15664v1",
         "http://arxiv.org/abs/2608.15509v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2608.15925v1": {
+          "title": "Floretion三角座標における正三角形補完：局所性、積点、および鏡映対称性",
+          "summary": "本論文では、タイルの重心が非退化な正三角形をなす次数nのfloretion基底ベクトルの非順序3組について研究する。スケール変換された整数重心写像を用いて、ユークリッド補完を正三角格子上の厳密な算術に変換する。mod 3の剰余を用いることで、すべての正三角形重心が同一の向きを持つ3つのタイルを用いるという「同方向定理」を導き、有限三角格子における補完数と組み合わせることで正三角形の総数 |Eₙ| = 4ⁿ(4ⁿ - 1)/12 を得る。さらに、同期した局所巡回作用からなる部分クラスの計数や、mod 2の剛性論法による特定の台上の正三角形の局所性の証明を行う。また、符号なし頂点積とその重心である「積点」を導入し、局所サイクルにおいて積点がユークリッド中心と一致する条件を特徴付ける。このパリティオートマトンは線形漸化式やフィボナッチ部分族を生成し、積点中心を持つ鏡映対称な三角形などが導かれる。最後に、積点が原点であることと同値な、乗法的に生成される正三角形の分類と局所クラスにおける軌道の特徴付けを行っている。",
+          "keywords": [
+            "floretion triangular coordinates",
+            "equilateral completion",
+            "triangular lattice",
+            "parity automata",
+            "reflection symmetry"
+          ],
+          "appendix": "本研究でパリティオートマトン（parity automata）を介して線形漸化式や部分族を導出している点において、オートマトン理論（automata theory）や記号力学系（symbolic dynamics）との関連性が見られます。"
+        },
+        "http://arxiv.org/abs/2608.15747v1": {
+          "title": "局所準凸部分群の共通部分について",
+          "summary": "双曲群 G の局所準凸（locally quasiconvex）かつ捩れのない（torsion-free）部分群を H₁, H₂ とするとき、それらの共通部分の階数 rank(H₁ ∩ H₂) が rank(H₁) および rank(H₂) によって上から評価（バウンド）できることを証明しています。",
+          "keywords": [
+            "hyperbolic groups",
+            "locally quasiconvex subgroups",
+            "torsion-free subgroups",
+            "subgroup rank",
+            "intersections of subgroups"
+          ],
+          "appendix": "本論文は双曲群の無限部分群の階数や構造を扱っており、幾何学的群論の文脈から「strucure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.15670v1": {
+          "title": "カーリング数変換における繰り返しの回避",
+          "summary": "本論文では、語 w とそのカーリング数変換 C(w) における繰り返しの回避について研究している。アルファベットサイズが 2、3、4 の場合に対し、トゥエ・モース（Thue-Morse）に基づく射的構成と網羅的な有限探索を用いた。w と C(w) の両方が重複（overlap）を含まない 3 文字の語の長さは最大で 84 である一方、4 文字上では無限の例が存在する。したがって、同時に無限に overlap-free となる最小のアルファベットサイズは 4 である。無限の構成は Walnut で検証され、有限の最大長は網羅的な幅優先探索によって得られ、独立に検証された。",
+          "keywords": [
+            "repetition avoidance",
+            "curling-number transform",
+            "overlap-free",
+            "Thue-Morse",
+            "Walnut"
+          ],
+          "appendix": "本論文は「combinatorics on words」、「automata theory」、「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.15664v1": {
+          "title": "可算範疇的Engel群に対するLie理論的手法：4-Engel 5-群におけるWilson予想",
+          "summary": "本論文では、「局所冪零な可算範疇的群は冪零である」という1981年のWilson予想を扱う。Lie環における類似の予想に関する先行研究に基づき、Lie理論的手法を用いることで、n-Engel群に対するWilson予想の最初の非自明な場合を導出した。具体的には、可算範疇的3-Engel群および4-Engel 5-群が冪零であることを示し、これにより奇数指数の可算範疇的4-Engel群も冪零であると結論付けた。この結果は、計算機代数システムを用いて検証されたLazard対応の例外的なケースを通じて実現された。さらに、群、Lie環、結合多元環の3つの圏の間における冪零性の結果の移行性についても研究し、Wilson予想が可換な場合を除いて結合多元環における類似の冪零性命題を導くことなどを証明した。",
+          "keywords": [
+            "Wilson conjecture",
+            "countably categorical groups",
+            "Engel groups",
+            "Lie methods",
+            "Lazard correspondence"
+          ],
+          "appendix": "本論文は無限群の構造および性質を扱っており、「strucure of large countable infinite groups」の分野と関連しています。"
+        },
+        "http://arxiv.org/abs/2608.15509v1": {
+          "title": "強化学習のための時相論理に基づく普遍的タスク表現",
+          "summary": "既存の強化学習におけるタスク表現手法は特定コンテキスト向けに調整されており汎化が難しく、勾配信号への依存が学習効率や表現品質を低下させる課題があった。本研究では、任意の強化学習アルゴリズムに統合可能な時相論理（LTL）に基づく普遍的タスク表現フレームワーク「LOTUS」を提案する。LOTUSはLTL論理式からタスクの意味論を抽出し、エンコーダを方策として扱う更新機構と双模倣計量（bisimulation metric）を活用することで、行動等価性やロバスト性の理論的保証を持たせている。実験により、単一タスクの収束加速、未知タスクの成功率向上、複雑なマルチタスクにおける汎化性能の向上が確認された。",
+          "keywords": [
+            "Temporal Logic",
+            "Linear Temporal Logic",
+            "Task Representations",
+            "Reinforcement Learning",
+            "Bisimulation Metric"
+          ],
+          "appendix": "本研究は時相論理（LTL）や双模倣計量（bisimulation metric）をタスク表現および強化学習に応用している点において、形式言語理論（formal languages）やオートマトン理論（automata theory）と深く関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.15925v1",
+        "http://arxiv.org/abs/2608.15747v1",
+        "http://arxiv.org/abs/2608.15670v1",
+        "http://arxiv.org/abs/2608.15664v1",
+        "http://arxiv.org/abs/2608.15509v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2608.15925v1": {
+          "message_id": "1539847588684103691",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.15747v1": {
+          "message_id": "1539847597198417952",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.15670v1": {
+          "message_id": "1539847605557792803",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.15664v1": {
+          "message_id": "1539847614365958215",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.15509v1": {
+          "message_id": "1539847622561366017",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-20T03:09:41.528746+00:00",
-      "updated_at": "2026-08-20T03:22:59.288135+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-20T04:04:44.085965+00:00",
+      "finalized_at": "2026-08-20T04:04:44.085935+00:00"
     }
   ]
 }
