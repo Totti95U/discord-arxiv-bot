@@ -30339,9 +30339,12 @@
           "message_id": "1540211002375802961",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1540325707786231819",
+          "read_requested_at": "2026-08-21T11:44:07.507423+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-08-21T11:44:26.677991+00:00"
         },
         "http://arxiv.org/abs/2608.17137v1": {
           "message_id": "1540211010739241012",
@@ -30416,7 +30419,20 @@
           "paper_thread_id": null
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2608.17193v1": {
+          "conclusion": "本論文は、トンプソン群 F から自身への任意の単射準同型による像 ρ(F) が F の中で歪まない（undistorted、すなわち包含写像が擬等距離埋め込みである）ことを証明した論文です。これは Guba-Sapir や Brin らによって提起された「F は自身の中に歪んだコピーを含み得るか」という長年の未解決問題を否定的に解決するものであり、トンプソン群の幾何学的・代数的構造の理解において極めて高い価値を持ちます。",
+          "main_claims": "主要な結論は Theorem 1.1（Section 1, p. 2）「ρ : F → F を単射準同型とすると、像 ρ(F) は F 内で undistorted である」です。著者らの過去の研究（Guba-Sapir 1999, Davis-Olshanskii 2011 など）では F 内に多項式歪みを持つ可解部分群や Z ≀ Z の歪んだ部分群が存在すること、また Aut(F) や Thompson-Stein 群内での F のコピーが歪むことが知られていましたが、F 自身の自己埋め込みに関しては常に undistorted になるという強い剛性（rigidity）を示す点が本論文の最大の新規性です。",
+          "method_outline": "証明は以下の段階で構成されています。(1) 忠実な軌道の抽出（Lemma 6.1, p. 13）：H = ρ(F) の有限個の軌道から、H の作用が忠実となる軌道 J = (a, b) を選定する。(2) 局所移動定理による準共役の構成（Section 6.2, p. 13-14）：Brum-Matte Bon-Rivas-Triestino の理論（Theorem 6.2）を用い、(0,1) 上の F の標準作用と J 上の H の作用の間に連続全射な単調準共役 p : [a, b] → [0, 1] を作る。(3) 分割群（split group）への準同型の伸長（Section 5, Proposition 5.1, p. 11-12）：準共役 p を介して H の閉包 K = Cl_F(H) から分割群への準同型 β : K → S(F) を誘導し、L = β(K) を得る。(4) 拡大写像 σ_q の擬等距離埋め込み（Section 4, Proposition 4.2, p. 9-10）：L の生成元の分母の奇数部 q に対し、スケーリング写像 σ_q : F → F_{2,q} が擬等距離埋め込みであることを、標準的な dyadic 分割とキャレット数の比較により示す。(5) 歪み検出補題の適用（Lemma 2.2, Section 7, p. 14-15）：既知の「閉包 K は F 内で undistorted」（Theorem 3.1, Golan-Sapir）という結果と、構造写像 β を通じた L での比較を組み合わせ、H が F 内で undistorted であることを導出する。",
+          "research_connection": "【論文に明記された内容】幾何学的群論（Geometric Group Theory）における「可算無限群の構造（structure of large countable infinite groups）」および部分群の歪み（subgroup distortion）、語の距離（word metrics）に関する直接的な結果です。【推測・関連性】トンプソン群 F の元は有限二分木ペアや piecewise-linear 変換として表現されるため、オートマトン言語論（automata theory / formal languages）における木の置換系や、1次元力学系・記号動力学（symbolic dynamics / complex dynamics）での区間交換・自己相似作用の解析手法と強い構造的接点を持ちます。",
+          "reading_guide": "【必要な前提知識】幾何学的群論の基本概念（語距離、擬等距離埋め込み、歪み）、トンプソン群 F の定義（dyadic rational、スロープが2の累乗の区分線形同相写像、二分木ペアによるキャレット数評価 ν_1(f) ≍ |f|_F）。【最初に読むべき箇所】Theorem 1.1（主張の把握, p. 2）、Proposition 4.2（拡大写像の QI 埋め込み, p. 9）、Section 7（証明全体のまとめ, p. 14-15）。【方針】特定の拡大技法（Section 4）と準共役の理論（Section 6）が証明の主軸であるため、全体像を把握したい場合は Section 1, 2.3-2.4, 6.1, 7 を精読し、詳細は必要に応じて Section 4, 5 を参照する読み方が適しています。",
+          "follow_up_questions": [
+            "F から他の Thompson-Stein 群や F_{n,r} への単射準同型の場合、歪みが生じる条件と生じない条件の境界はどのように分類されますか？",
+            "準共役 p を用いた分割群 S(F) への拡大手法（Proposition 5.1）は、F 以外の Thompson 型の群（例：V や T）の自己埋め込みの歪み問題にも適用可能ですか？",
+            "今回の証明で使用されたスケーリング写像 σ_q の擬等距離性の評価（Proposition 4.2）において、定数 C や歪みの評価定数は q にどのように依存しますか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
