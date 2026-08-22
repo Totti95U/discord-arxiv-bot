@@ -30442,7 +30442,7 @@
     },
     {
       "pipeline_id": "20260822T030701Z-18ec5774",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/z1jgjqlpzxzylpwqlgo6o4fdxtn863orhoc2",
       "summarize_job_name": "batches/cdxmhuzhr7x553odgo8afvknx80ev9a666t2",
       "papers": [
@@ -31501,16 +31501,124 @@
         "http://arxiv.org/abs/2608.17243v1",
         "http://arxiv.org/abs/2608.17238v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2608.18007v1": {
+          "title": "同期正規表現に対する表示的意味論（拡張版）",
+          "summary": "本論文では、正規表現の演算子（クリーネスターや選択）にラベルを付与して拡張した純粋同期正規表現（pure sregex）および完全同期正規表現（full sregex）を提案する。同一スコープ内で同じラベルを持つ演算子は同期し、スターは同じ反復回数に、選択は同じ分岐に一致する。実用的な正規表現エンジンで用いられる後方参照付き正規表現はfull sregexに変換可能であることを示す。従来の後方参照に関する操作的意味論とは対照的に、論理学における付値のように具体化を扱う表示的意味論を定義する。また、単語のマッチング問題が後方参照と同様にNP完全であることを示し、同期言語族が連接・和集合・スター演算について閉じている一方で、ポンピング補題により共通部分について閉じていないことを証明し、他の言語モデルとの関係性についても議論している。",
+          "keywords": [
+            "synchronized regular expressions",
+            "backreferences",
+            "denotational semantics",
+            "NP-complete",
+            "synchronized languages"
+          ],
+          "appendix": "本研究は正規表現の拡張や同期言語族の閉包性・計算複雑性を扱っており、formal languages（形式言語理論）および automata theory（オートマトン理論）に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.17905v1": {
+          "title": "カオス的遍歴の解析に対する集合指向アプローチ",
+          "summary": "カオス的遍歴（Chaotic Itinerancy, CI）は、力学系の軌道が準アトラクター近傍での秩序ある運動と、それらの間を遷移するカオス的遍歴を交互に繰り返す現象である。本研究では、結合写像格子（CML）や大域結合写像（GCM）などの系を対象に、数値的手法および強連結成分分解などのグラフアルゴリズムを用いて解析を行う。状態空間を有限なグリッドに分割して多価写像（有向グラフ）として離散的に表現することで、大域的ダイナミクスを粗視化し、マルコフ連鎖や局所エントロピーの計算を通じて不変集合の特定や不安定性の評価を可能にする。これらに基づき、系がCI特性を持つかを判定するアルゴリズムを提案し、大域結合ロジスティック写像やCML系の変種に対して適用して有効性を示している。",
+          "keywords": [
+            "Chaotic itinerancy",
+            "Set-oriented numerics",
+            "Coupled map lattices",
+            "Globally coupled maps",
+            "Graph algorithms"
+          ],
+          "appendix": "本研究は状態空間の離散的・記号的表現および遷移グラフを用いたダイナミクスの解析を行っており、シンボリック・ダイナミクス（symbolic dynamics）や計算機支援による検証数理（validated numerics）に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.17606v1": {
+          "title": "ℤ/2ℤ上のDelannoy–Steinhaus三角形：重みスペクトル、平衡三角形、および極値",
+          "summary": "Delannoy数に支配される漸化式によって有限列から生成されるDelannoy–Steinhaus三角形について、ℤ/2ℤ上での構成を導入しその重み分布を調査した。関連するDelannoy係数がすべて奇数であることから、各成分は生成列の連続区間のパリティに帰着される。これらの区間パリティをプレフィックスパリティ列で符号化することにより、重みがプレフィックスパリティ列中の0と1の個数のみに依存する公式が得られる。この公式を用いて完全な重みスペクトルと各重みの厳密な重複度を決定し、その結果として、長さnの二値列から生成される平衡三角形が存在するための必要十分条件がn+1が完全平方数であることを示してそれらを数え上げた。さらに、標準基底ベクトルの重み、非ゼロの最小重み、2番目に小さい非ゼロ重み、最大重み、および平均重みを明らかにした。",
+          "keywords": [
+            "Delannoy-Steinhaus triangles",
+            "weight spectrum",
+            "balanced triangles",
+            "Delannoy numbers",
+            "prefix parities"
+          ],
+          "appendix": "本研究は二値列（語）のパリティや組み合わせ的構造を扱っており、興味ある分野の「combinatorics on words」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.17243v1": {
+          "title": "モジュラー交配族の対応における離散性軌跡のテセレーション",
+          "summary": "リーマン球面上の2:2正則対応のモジュラー交配族 Fₐ の連結性軌跡であるモジュラーマンデルブロ集合 M_Γ は、古典的なマンデルブロ集合 M と同相である。この族 Fₐ の「離散性軌跡」であるクライン結合軌跡 𝒦 は、a-平面において根の点でピンチされた M_Γ のピンチ近傍となる。本論文では、DouadyとHubbardによる有名な共形全単射 Φ: ℂ ∖ M → ℂ ∖ D̄ の構成に着想を得て、𝒦 ∖ M_Γ から双曲平面 ℍ への標準写像 Ψ を構成し、Ψ が解析的であることを証明する。この写像 Ψ は、モジュラー群の下で不変な ℍ のテセレーションを引き戻すことにより、𝒦 ∖ M_Γ のテセレーションを誘導する。また、𝒦 の構造、その境界、および Ψ(𝒦) ⊂ ℍ に関する一連の予想を展開する。",
+          "keywords": [
+            "modular mating family",
+            "discreteness locus",
+            "modular Mandelbrot set",
+            "holomorphic correspondences",
+            "tessellation"
+          ],
+          "appendix": "本論文は「complex dynamics（複素力学系）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.17238v1": {
+          "title": "ジェネリックな有限表示群に対する小消去安定性と同型剛性",
+          "summary": "自由群 Fₘ (m ≥ 2) において、長さ n の独立かつ一様ランダムな循環簡約語の q 組 Wₙ は、任意の 0 < λ < 1 に対して指数関数的に速く確率 1 に収束して「λ-安定」となることが証明された。すなわち、任意の自己同型 Φ ∈ Aut(Fₘ) に対して、Φ(Wₙ) は循環簡約および対称化後に C'(λ) 小消去条件を満たす。このジェネリックな λ-安定性を、Greendlinger の正規閉包剛性や既存のジェネリックな Nielsen 一意性・Whitehead 剛性の結果と組み合わせることで、ジェネリックな m 生成元 q 関係子群に対する同型剛性が確立された。これにより、2 つのジェネリックな群が同型であるための必要十分条件は、生成元の置換や反転を除いて、関係子組が関係子の順序変更・巡回置換・反転の違いを除いて一致することであると示された。応用として、同型問題をジェネリックに解く二次時間アルゴリズムが得られたほか、長さ n の循環簡約関係子をもつ表示によって表される同型型の漸近数が (2m-1)^(qn) / (2^(m+q) m! q! n^q) であることが示された。",
+          "keywords": [
+            "Small Cancellation Stability",
+            "Isomorphism Rigidity",
+            "Generic Finitely Presented Groups",
+            "Geodesic Currents",
+            "Isomorphism Problem"
+          ],
+          "appendix": "本論文で扱われている有限表示群の性質や同型問題、剛性の解析は「strucure of large countable infinite groups」および語の性質を用いる点から「combinatorics on words」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.18007v1",
+        "http://arxiv.org/abs/2608.17905v1",
+        "http://arxiv.org/abs/2608.17606v1",
+        "http://arxiv.org/abs/2608.17243v1",
+        "http://arxiv.org/abs/2608.17238v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2608.18007v1": {
+          "message_id": "1540571946775748689",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.17905v1": {
+          "message_id": "1540571955290177547",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.17606v1": {
+          "message_id": "1540571964429565953",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.17243v1": {
+          "message_id": "1540571974277926983",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.17238v1": {
+          "message_id": "1540571983253606502",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-22T03:07:01.940686+00:00",
-      "updated_at": "2026-08-22T03:13:09.499043+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-22T04:03:05.352076+00:00",
+      "finalized_at": "2026-08-22T04:03:05.352048+00:00"
     }
   ]
 }
