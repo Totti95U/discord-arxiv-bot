@@ -31622,7 +31622,7 @@
     },
     {
       "pipeline_id": "20260823T031507Z-801ced0c",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/crm6kiq0x4mjgc72hnsd9kv65xaoqx2q8bri",
       "summarize_job_name": "batches/ha3ivk1xxcfu9p4y6qq0xyz5p54faht5w9lm",
       "papers": [
@@ -32841,16 +32841,291 @@
         "http://arxiv.org/abs/2608.18485v1",
         "http://arxiv.org/abs/2608.18426v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2608.19457v1": {
+          "title": "等分配と無限遠における熱力学",
+          "summary": "本論文では、可算マルコフシフト上のポテンシャルおよび可算マルコフシフト上の懸動半流に対して、レベル2の大偏差原理の上界を証明する。強正再帰的ポテンシャルに対し、重み付き経験測度が対応する平衡状態へと等分配されることを確立する。さらに、これらの結果を区間写像へと応用し、特に境界点上に台を持つ測度に対する等分配性および大偏差評価を得る。Gauss写像への応用として、DavidとShapiraの定理を含む有理数上の等分配結果を導出する。",
+          "keywords": [
+            "countable Markov shifts",
+            "large deviations",
+            "equidistribution",
+            "equilibrium state",
+            "Gauss map"
+          ],
+          "appendix": "本研究は可算マルコフシフト（countable Markov shifts）を扱っており、興味ある分野の「symbolic dynamics」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.19453v1": {
+          "title": "オートマトンとストリームの邂逅：ストリーム型ロボティクス・タスク＆モーションプランニングのための時相論理コンパイル",
+          "summary": "ストリーム型タスク＆モーションプランニング（TAMP）は、離散的な記号的計画と動的に生成される連続的な幾何学的パラメータを統合しますが、従来のプランナーは目標到達可能性のみを考慮しており、長時間のタスクで求められる時相制約を満たすことができませんでした。また、ストリームが探索中に幾何学的オブジェクトを動的に拡張するため、既存の時相論理コンパイル技術は適用不可能でした。本論文では、有限トレース上の線形時相論理（LTL_f）仕様をストリーム型TAMPに適用するコンパイル手法「SAM-TD（Synchronous Action Monitoring with Token Destruction）」を提案します。SAM-TDはLTL_f制約をオートマトンに変換し、回帰させたオートマトンのガード条件を事前定義のアクションスキーマに埋め込むことで、プランナーの修正や固定オブジェクト集合の列挙を不要にします。探索中はオートマトンの状態を同期更新し、共有トークンを用いて制約違反ブランチを枝刈りします。実験により、LTL_f制約下でのストリーム型TAMPが初めて実証され、標準的な離散PDDLベンチマークにおいても既存の最先端手法と同等以上の性能を示すことが確認されました。",
+          "keywords": [
+            "Task and Motion Planning (TAMP)",
+            "Linear Temporal Logic over finite traces (LTL_f)",
+            "Automata",
+            "Stream-based planning",
+            "Temporal logic compilation"
+          ],
+          "appendix": "本論文はLTL_f仕様をオートマトンに変換してプランニングに応用する手法を扱っており、指定された興味ある分野のうち「automata theory」および「formal languages」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.19424v1": {
+          "title": "じゃんけんマンデルブロ集合",
+          "summary": "本論文では、じゃんけんの演算の双線型拡張を乗法とする3次元実代数上における、マンデルブロ集合の類似物を考察する。この設定において写像 x ↦ x² + c の力学系を研究するため、一般的な有限次元実代数上の関数に対する正則性の概念を導入している。穏やかな仮定のもとで、このような代数における正則性は、コーシー・リーマン方程式を一般化した有限線型1階偏微分方程式系を解くことと常に同値であることが示される。また、これらのフラクタルのアニメーションを生成し、ビデオゲーム形式で探索するためのコードも提供されている。",
+          "keywords": [
+            "Mandelbrot set",
+            "rock-paper-scissors algebra",
+            "holomorphy",
+            "Cauchy-Riemann equations",
+            "fractals"
+          ],
+          "appendix": "本論文はマンデルブロ集合の類似物や多次元代数上での多項式写像の反復力学系を扱っており、複素力学系（complex dynamics）に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.19397v1": {
+          "title": "文字列書換え系：簡潔な導入と未解決問題集",
+          "summary": "本書は、著者が数十年間にわたり大学院初年度向けコース（主に「形式手法」など、数理論理学や理論計算機科学の多様なトピックを含む講義）のために執筆した講義ノートを統合・再構成したものである。統合にあたり、文献情報を更新し、その間の研究の進展を反映させて記述を修正している。最終節には、執筆時点においても未解決である特殊なケースを集めた未解決問題のサンプルが収録されている。",
+          "keywords": [
+            "String Rewriting Systems",
+            "Formal Methods",
+            "mathematical logic",
+            "theoretical computer science",
+            "open problems"
+          ],
+          "appendix": "本論文のテーマである文字列書換え系および形式手法・理論計算機科学の内容は、「combinatorics on words」「automata theory」「formal languages」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.19349v1": {
+          "title": "Grigorchukグラフの連結定数",
+          "summary": "グラフGの連結定数μ(G)とは、ある頂点から始まる自己回避歩道の数の指数関数的増大度である。本論文では、数列ω ∈ {0,1,2}^ℕによって符号化される一般Grigorchuk群のケイリーグラフG_ωに対する連結定数の上下界を証明する。特に、ωに対する単純な条件のもとで、任意のケイリーグラフに対してμ(G_ω) > φ（ここでφ := (1+√5)/2は黄金比）が成り立つことを示す。これは、すべての無限頂点推移3正則グラフに対してμ(G) ≥ φであると予想した先行研究を拡張するものである。本研究には、一般Grigorchuk群の軌道シュライアーグラフにおける特定のラベル列の出現比率の解析も含まれている。",
+          "keywords": [
+            "connective constants",
+            "Grigorchuk graphs",
+            "self-avoiding walks",
+            "Cayley graphs",
+            "orbital Schreier graphs"
+          ],
+          "appendix": "本論文は一般Grigorchuk群とその作用（シュライアーグラフ）や記号列を扱っており、興味ある分野の「combinatorics on words」や「strucure of large countable infinite groups」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.19101v1": {
+          "title": "増大度ギャップと生成系",
+          "summary": "与えられた有限生成群の無限指数部分群に対する増大度ギャップ（growth gap）の存在が、選ぶ有限生成系に依存し得ることを示す。具体的には、カジュダン（Kazhdan）の性質(T)を持つ高ランク半単純リー群 G の任意の既約格子 Λ に対し、直積群 Λ × Λ は増大度ギャップを持つ有限対称生成系と、持たない有限対称生成系の両方を持つことを証明する。さらに、その増大度ギャップは任意に小さくできることも示す。これとは対照的に、非初等双曲群においては増大度ギャップの存在は有限生成系の選び方に依存しない。",
+          "keywords": [
+            "growth gap",
+            "generating sets",
+            "Kazhdan's property (T)",
+            "irreducible lattice",
+            "hyperbolic groups"
+          ],
+          "appendix": "本論文は無限群の幾何学的・代数的性質（増大度や格子、性質(T)など）を扱っており、「strucure of large countable infinite groups（大きな可算無限群の構造）」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.18987v1": {
+          "title": "バシリカ群のスペクトル力学系",
+          "summary": "単位的バナッハ環 𝒜 の元の組 A=(A₀, A₁, ..., Aₙ) に対する射影スペクトルとは、z₀A₀ + z₁A₁ + ... + zₙAₙ が 𝒜 において可逆でないような [z₀ : z₁ : ... : zₙ] ∈ ℙⁿ の集合である。本論文では、バシリカ群 ℬ を生成するオートマトンの3つの状態 e, a, b とクープマン表現 ρ による組 A_ρ=(ρ(e), ρ(a), ρ(b)) に対し、A_ρ の射影スペクトルを保存する力学系写像 F を構築する。さらに、F のジュリア集合と A_ρ の射影スペクトルの主要な共通部分集合、および F のファトゥ集合と A_ρ の射影レゾルベント集合の大きな共通部分集合を特定する。この結果は、F のジュリア集合と A_ρ の射影スペクトルが一致するという予想を部分的に支持するものである。",
+          "keywords": [
+            "projective spectrum",
+            "Basilica group",
+            "Koopman representation",
+            "Julia set",
+            "Fatou set"
+          ],
+          "appendix": "本論文は「automata theory（オートマトン理論）」、「complex dynamics（複素力学系）」、および「structure of large countable infinite groups（可算無限群の構造）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.18874v1": {
+          "title": "近傍条件下におけるシュライアー集合の数え上げ",
+          "summary": "本論文では、k-clustered、k-consecutive-free、k-neighbored、k-isolated、および整数2-平均に関して閉じているという各種の近傍条件を満たすシュライアー集合（Schreier sets）の数え上げを行う。最初の4つの条件については、初期のカウント数を決定し、線形漸化式を証明する。最後の条件については、約数関数（divisor counting function）を含む漸化式を証明する。",
+          "keywords": [
+            "Schreier sets",
+            "neighborhood condition",
+            "linear recurrence relations",
+            "divisor counting function"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2608.18859v1": {
+          "title": "2値の長さ減少周期書換えに対する合流性の決定不能性",
+          "summary": "有限停止性を持つ文字列や項の書換え系では、クリティカルペア解析により合流性が決定可能であり、長さ減少文字列に対しては多項式時間で決定できる。一方で、有限停止性を持つ（ハイパー）グラフ変換系では合流性が決定不能である。本論文では、回転同値な文字列である円環上の語（サイクル）において、すでに決定不能性が現れることを示す。固定されたアルファベット {0, 1} 上の有限サイクル書換え系において、各規則が空でない右辺を持ち厳密に長さを減少させる場合であっても、合流性は決定不能（具体的には Π⁰₁ 完全）である。この制限下では停止性は構文論的に自明であり、長さ n の空でないサイクルからの導出は n ステップ未満で終了する。この結果は2文字以上の任意の固定アルファベットでも同様に成り立つが、1文字の場合は決定可能である。したがって、回転の考慮のみでサイクル書換えと文字列書換えの性質が乖離することが示される。",
+          "keywords": [
+            "confluence",
+            "cycle rewriting",
+            "undecidability",
+            "length-reducing rewriting systems",
+            "critical-pair analysis"
+          ],
+          "appendix": "本論文は「combinatorics on words」や「formal languages」の分野（特に巡回語/サイクル上の書換え体系や計算理論・決定可能性）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.18813v1": {
+          "title": "O₂ の多重文脈自由言語性の強化",
+          "summary": "近年、O₂ が多重文脈自由文法（MCFG）によって生成される言語であることについて複数の証明が与えられており、これらの結果は計算言語学および計算代数学の双方に応用可能である。本稿では、文字列の組の分解（factorization）の観点から記述された最近の証明に着目し、既存の定理よりも強力な分解の特徴付けを与える新たな結果を示す。",
+          "keywords": [
+            "MCFL",
+            "MCFG",
+            "O2",
+            "factorizations of string tuples",
+            "computational linguistics"
+          ],
+          "appendix": "本論文は「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.18761v1": {
+          "title": "ホモクリニック接触近傍における単峰写像の摂動に対する極大アトラクター",
+          "summary": "本論文では、単峰写像族の小さな平面摂動が、ある不動点のホモクリニック接触近傍のパラメータにおいて極大アトラクター（捕捉領域の像の共通部分に等しいアトラクター）を持つことを示す。この結果は、特定の双曲的性質を示す一般的な単峰写像に対して成立する。したがって、対象となる許容族には、エノン的（Hénon-like）族、ロジ的（Lozi-like）族、あるいは境界衝突標準形の摂動などが含まれ、エノン的族に対するVianaの結果や、境界衝突標準形に対するGlendinningおよびSimpsonの結果を一般化するものである。",
+          "keywords": [
+            "maximal attractors",
+            "unimodal maps",
+            "homoclinic tangency",
+            "Hénon-like families",
+            "border collision normal forms"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2608.18485v1": {
+          "title": "強位相的Rohklin性質の有限指数リフトと記述的複雑性",
+          "summary": "本論文では、大域的実現可能タプルの観点から強位相的Rohklin性質（strong topological Rokhlin property）の有限な記号論的再定式化を与える。これを用いて、強位相的Rohklin性質が有限指数部分群から有限生成拡大群へと引き継がれることを証明する。また、強位相的Rohklin性質を持つ可算群のクラスの記述的複雑性（descriptive complexity）についても研究を行う。可算群の標準的なコンパクト空間において、このクラスはΠ⁰₄に属し、Σ⁰₂困難であることを示す。さらに、ボレル階層4に対する障壁を特定し、もしこのクラスがΣ⁰₃でないならば、強位相的Rohklin性質を持つ非有限表示群が存在することを示す。",
+          "keywords": [
+            "strong topological Rokhlin property",
+            "descriptive complexity",
+            "finite-index subgroup",
+            "countable groups",
+            "globally realizable tuples"
+          ],
+          "appendix": "本研究は可算群のクラスの記述的複雑性や有限生成群の性質を扱っており、「strucure of large countable infinite groups」および記号論的定式化の観点から「symbolic dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.18426v1": {
+          "title": "拡大反復関数系に対する相対変分原理",
+          "summary": "カオス力学系における不変測度の研究において変分原理は極めて重要なツールであり、近年では現実世界の現象をより適切にモデル化するためにランダム系や非定常系における手法が発展してきました。本論文では、拡大反復関数系のあるクラスに対して相対変分原理を証明します。特に、非定常Ruelle-Perron-Frobeniusの定理を用いることで、記号基底上のエルゴード的不変測度から与えられる周辺エントロピーが、誘導された歪積におけるファイバーに沿った平均位相エントロピーに等しくなることを示しています。",
+          "keywords": [
+            "variational principle",
+            "expanding iterated function systems",
+            "nonstationary Ruelle-Perron-Frobenius theorem",
+            "skew product",
+            "topological entropy"
+          ],
+          "appendix": "本論文は、記号基底上のエルゴード的不変測度やエントロピー解析を扱っていることから、[興味ある分野]の「symbolic dynamics」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.19457v1",
+        "http://arxiv.org/abs/2608.19453v1",
+        "http://arxiv.org/abs/2608.19424v1",
+        "http://arxiv.org/abs/2608.19397v1",
+        "http://arxiv.org/abs/2608.19349v1",
+        "http://arxiv.org/abs/2608.19101v1",
+        "http://arxiv.org/abs/2608.18987v1",
+        "http://arxiv.org/abs/2608.18874v1",
+        "http://arxiv.org/abs/2608.18859v1",
+        "http://arxiv.org/abs/2608.18813v1",
+        "http://arxiv.org/abs/2608.18761v1",
+        "http://arxiv.org/abs/2608.18485v1",
+        "http://arxiv.org/abs/2608.18426v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2608.19457v1": {
+          "message_id": "1540935582723870741",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.19453v1": {
+          "message_id": "1540935590554374175",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.19424v1": {
+          "message_id": "1540935598200586276",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.19397v1": {
+          "message_id": "1540935607277068319",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.19349v1": {
+          "message_id": "1540935615120416779",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.19101v1": {
+          "message_id": "1540935622989053973",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.18987v1": {
+          "message_id": "1540935631025479772",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.18874v1": {
+          "message_id": "1540935639334264973",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.18859v1": {
+          "message_id": "1540935647743840277",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.18813v1": {
+          "message_id": "1540935655750901833",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.18761v1": {
+          "message_id": "1540935671282401291",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.18485v1": {
+          "message_id": "1540935679255650395",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.18426v1": {
+          "message_id": "1540935687283408989",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-23T03:15:07.852886+00:00",
-      "updated_at": "2026-08-23T03:27:52.031505+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-23T04:08:18.861019+00:00",
+      "finalized_at": "2026-08-23T04:08:18.860990+00:00"
     }
   ]
 }
