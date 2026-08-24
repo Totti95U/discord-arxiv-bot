@@ -33129,7 +33129,7 @@
     },
     {
       "pipeline_id": "20260824T031619Z-f369dbc7",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/c897dh8cr69f902wyz4oan0tcrieiwbeifsy",
       "summarize_job_name": "batches/oe0lun6vdisj2h9mhz4y8z914oi61bk48spd",
       "papers": [
@@ -34185,16 +34185,223 @@
         "http://arxiv.org/abs/2608.20008v1",
         "http://arxiv.org/abs/2608.19886v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2608.20600v1": {
+          "title": "線形セル・オートマトンの可逆性の特徴付け",
+          "summary": "群 G、体 𝕂、および 𝕂 上のベクトル空間 V に対し、逆写像がセル・オートマトンとならない全単射な線形セル・オートマトン Vᴳ → Vᴳ が存在するための必要十分条件は、G が局所有限群ではなく、かつ dim_𝕂(V) ≥ |𝕂|^ℵ₀ であることであることを証明した。これにより、T. Ceccherini-Silberstein と M. Coornaert によって提示された未解決問題を解決した。",
+          "keywords": [
+            "linear cellular automata",
+            "reversibility",
+            "locally finite groups",
+            "vector spaces"
+          ],
+          "appendix": "本論文はセル・オートマトンの逆写像に関する性質や群上の力学系を扱っており、automata theory や symbolic dynamics、また群の性質（局所有限性）に焦点を当てていることから structure of large countable infinite groups に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.20592v1": {
+          "title": "準周期性と概同値類",
+          "summary": "確率測度を保存する同値関係の文脈において、ディックス（Dicks）とダンウッディ（Dunwoody）による概安定性定理（almost stability theorem）について議論する。",
+          "keywords": [
+            "almost stability theorem",
+            "probability measure preserving equivalence relations",
+            "quasi-periodicity",
+            "almost equality classes"
+          ],
+          "appendix": "本論文の主題である確率測度保存同値関係やDicks-Dunwoodyの理論は、無限群の幾何・測度論的性質や群作用（structure of large countable infinite groups）に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.20556v1": {
+          "title": "Logic-VLA: 時相論理を条件付けとした Vision-Language-Action モデル",
+          "summary": "Vision-Language-Action（VLA）モデルは自然言語指示に従うことができるものの、安全性に関わる要件や時空間要件を正確に規定することが困難である。本研究では、推論時に与えられる信号時相論理（STL）仕様を条件付ける形式要件対応型VLA「Logic-VLA」を提案する。Logic-VLAは、時相論理の意味論を捉えるよう事前学習された構文グラフベースのSTLエンコーダを利用し、充足デモに対するSTL条件付き教師あり微調整と、一致する充足・違反ロールアウト対に対する選好最適化（IPOのフローマッチング代理法）という2段階のポリシー適応を行う。シミュレーション環境でのクアッドコプター自律ナビゲーション実験において、未知のSTL論理式に対する汎化性を検証した結果、通常の自然言語タスク成功率をほぼ損なうことなく、ベースラインと比較してSTL充足率を24.8〜40.7ポイント大幅に向上させることを実証した。",
+          "keywords": [
+            "Vision-language-action (VLA)",
+            "Signal Temporal Logic (STL)",
+            "Temporal Logic Conditioned",
+            "Preference Optimization"
+          ],
+          "appendix": "本論文で扱われる時相論理（Signal Temporal Logic）および構文グラフによる論理式の表現・検証は、オートマトン理論（automata theory）や形式言語（formal languages）の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.20533v1": {
+          "title": "長い等差数列を含まない概連続数列について",
+          "summary": "1 ≤ i ≤ n-1 に対し a_{i+1} - a_i ∈ {1, 2} を満たす整数の列 a₁, …, aₙ は概連続（nearly consecutive）と呼ばれる。本論文では、k項の等差数列を含まない長さ Ω(2^k/k^2) の概連続数列が存在することを証明し、1998年の Alon と Zaks による従来の最良の限界を改善した。さらに、有界なギャップを持つ数列に対する一般化も証明している。",
+          "keywords": [
+            "nearly consecutive sequences",
+            "arithmetic progressions",
+            "bounded gaps",
+            "combinatorics"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2608.20472v1": {
+          "title": "大きな奇数の指数を持つ自由Burnside群のコストは1である",
+          "summary": "本論文では、生成元の個数が m ≥ 2 かつ指数 n が十分に大きい奇数（例えば m = 2 の場合は n ≥ 1003、m ≥ 3 の場合は n ≥ 665）である自由Burnside群 B(m, n) のコストが 1 であることを証明する。この結果から、B(m, n) が anti-treeable であること、およびその第1 ℓ²-Betti数 β₁⁽²⁾(B(m, n)) が 0 になることが従う。後者の帰結は、十分に大きい素数指数 p に対して β₁⁽²⁾(B(m, p)) = 0 であることを示した Feldkamp と Kionke（Proc. Amer. Math. Soc., 2023）の結果を再現し、拡張するものである。",
+          "keywords": [
+            "Free Burnside groups",
+            "cost",
+            "anti-treeable",
+            "ℓ²-Betti number"
+          ],
+          "appendix": "本論文は自由Burnside群のコストやℓ²-Betti数などの群論的性質を扱っており、「strucure of large countable infinite groups（大きな可算無限群の構造）」の分野と関連しています。"
+        },
+        "http://arxiv.org/abs/2608.20444v1": {
+          "title": "無限語の一般化モノイド：漸近的接頭辞-接尾辞商と代数的構造",
+          "summary": "双方向の接頭辞-接尾辞距離に基づく漸近同値関係によって、有限語の適度なネット（moderate net）の商として一般化された語のモノイド Σ̃\\* を構成した。主な代数的成果として、この商は Σ\\* を忠実に含み、反転対合（reversal involution）、自然な整除前順序、簡約性の破綻、および非自明な冪等元を持つモノイドとなることが示された。本構成は対数的接頭辞にのみ依存する任意の汎関数が商へと落ちるよう設計されており、対数接頭辞汎関数の明確な作用を与える。有限のスカラー値は、選択されたモールドとウィンドウに依存する追加の繰り込み汎関数を適用した後にのみ現れる。固定された切断単射に関して、このモノイドは古典的な集合 Σ^∞ を真に拡張しており、カントール空間内で極限を持たないが、その単射のもとで有限語や右無限語に由来しない Σ̃\\* の真の元を定義する具体的な振動ネットが提示されている。",
+          "keywords": [
+            "generalized monoid of words",
+            "prefix-suffix metric",
+            "asymptotic equivalence",
+            "logarithmic prefix",
+            "renormalization functional"
+          ],
+          "appendix": "本論文は「combinatorics on words」および無限語の位相・カントール空間との関係性から「symbolic dynamics」「formal languages」と関連しています。"
+        },
+        "http://arxiv.org/abs/2608.20191v1": {
+          "title": "refined Diophantine exponentのスペクトル",
+          "summary": "著者により近年導入されたrefined Diophantine exponentは、無限語の周期性を測る指標である。本論文では、この指数を組合せ論的および位相幾何学的観点から研究する。第一に、3文字アルファベット上において、refined Diophantine exponentのスペクトルが[1, ∞]となることを示す。第二に、この指数がリューヴィル数（Liouville numbers）の集合と類似した位相的性質を持つことを示す。最後に、Champernowne語、Rudin–Shapiro語、Thue–Morse語、区間による回転の符号化から得られる語、bracket語における具体例を提供する。",
+          "keywords": [
+            "refined Diophantine exponent",
+            "infinite word",
+            "spectrum",
+            "Liouville numbers",
+            "periodicity"
+          ],
+          "appendix": "本研究は、無限語の組合せ論的性質や具体的な語（Thue–Morse語や回転符号化語など）を扱っており、興味ある分野の「combinatorics on words」および「symbolic dynamics」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.20165v1": {
+          "title": "自由群作用の軌道同値性と全弱混合性",
+          "summary": "自由群のすべての自由かつエルゴード的な確率測度保存（pmp）作用の軌道同値類には、全弱混合作用（totally weak mixing action）が含まれることを証明した。同値な表現として、コスト n ∈ N ∪ {∞} を持つすべてのエルゴード的で木構造化可能（treeable）な pmp 同値関係は、Fₙ の自由な全弱混合作用によって生成される。これにより、Miller と Tserunyan の未解決問題が解決された。証明では、固定された混合変換に沿ったエッジスライディング（edge slidings）のポーランド空間を考察し、e でない任意の w ∈ Fₙ に対して、w の作用が弱混合となるエッジスライディング全体の集合が残余集合（comeager set）をなすことを示している。",
+          "keywords": [
+            "orbit equivalence",
+            "totally weak mixing",
+            "free group actions",
+            "treeable equivalence relation",
+            "edge slidings"
+          ],
+          "appendix": "本研究は、無限群の作用や測度保存同値関係を扱うエルゴード理論・記述集合論の成果であり、「strucure of large countable infinite groups（大きな可算無限群の構造）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.20008v1": {
+          "title": "複素力学系における放物型重複度への数論的アプローチ",
+          "summary": "ωが1の原始n乗根であるとき、2次多項式 F(z) = ωz(1 - z) および整関数 F(z) = ωz e⁻ᶻ は共に0に放物型不動点を持ち、その放物型重複度は1（すなわち c ≠ 0 として Fᵒⁿ(z) = z(1 + c zⁿ + O(zⁿ⁺¹))）となります。この事実の古典的な証明は超越的ですが、本論文では数論的な証明を提示します。超越的な整関数の場合は ℤ/(n - 1)ℤ 上での議論を必要とし、多項式の場合は (ℤ/pℤ)ˣ における2の位数がちょうどnとなる適切な素数pに対するp進体 ℚₚ 上での議論を必要とする新しい証明を与えています。",
+          "keywords": [
+            "parabolic multiplicity",
+            "complex dynamics",
+            "parabolic fixed point",
+            "p-adic field"
+          ],
+          "appendix": "本論文は「complex dynamics」および「arithmetic dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.19886v1": {
+          "title": "遅いフィボナッチウォークのギャップスペクトルと密度",
+          "summary": "正整数 n を n = aFₜ + bFₜ₋₁ （t ≥ 2, 1 ≤ a ≤ b ≤ Fₜ）と一意に表したとき、初期対 (b, a) から始まるフィボナッチウォークにおいて、n の次の項は t が偶数なら ⌊φn⌋、奇数なら ⌈φn⌉（φ は黄金比）となる。偶数・奇数の t に対応する整数の集合をそれぞれ D, U とおく。Chung、Graham、Spiro は全ての ℓ に対しギャップスペクトル D_ℓ と U_ℓ が一致すると予想し、それらの差が m となる集合 D_ℓ(m), U_ℓ(m) の密度について問うた。本論文では、3次および4次のギャップスペクトルを決定し、予想が ℓ = 3 で成立するものの ℓ = 4 では反例が存在することを示す。さらに、D_ℓ(m) と U_ℓ(m) が自然密度をもつ条件を特徴づけ、常に対数密度が存在して一致することを証明し、特に ℓ = 1 の場合にはその対数密度の厳密な値を導出している。",
+          "keywords": [
+            "Fibonacci walk",
+            "gap spectra",
+            "natural density",
+            "logarithmic density",
+            "golden ratio"
+          ],
+          "appendix": null
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.20600v1",
+        "http://arxiv.org/abs/2608.20592v1",
+        "http://arxiv.org/abs/2608.20556v1",
+        "http://arxiv.org/abs/2608.20533v1",
+        "http://arxiv.org/abs/2608.20472v1",
+        "http://arxiv.org/abs/2608.20444v1",
+        "http://arxiv.org/abs/2608.20191v1",
+        "http://arxiv.org/abs/2608.20165v1",
+        "http://arxiv.org/abs/2608.20008v1",
+        "http://arxiv.org/abs/2608.19886v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2608.20600v1": {
+          "message_id": "1541301272425140305",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.20592v1": {
+          "message_id": "1541301280759095478",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.20556v1": {
+          "message_id": "1541301289411944499",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.20533v1": {
+          "message_id": "1541301297133789188",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.20472v1": {
+          "message_id": "1541301305207816283",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.20444v1": {
+          "message_id": "1541301312992321578",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.20191v1": {
+          "message_id": "1541301321125072979",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.20165v1": {
+          "message_id": "1541301329740439553",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.20008v1": {
+          "message_id": "1541301337671602197",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.19886v1": {
+          "message_id": "1541301344969695266",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-24T03:16:19.124276+00:00",
-      "updated_at": "2026-08-24T03:29:48.268878+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-24T04:21:18.484022+00:00",
+      "finalized_at": "2026-08-24T04:21:18.483996+00:00"
     }
   ]
 }
