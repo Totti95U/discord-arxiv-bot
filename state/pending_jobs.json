@@ -34452,7 +34452,7 @@
     },
     {
       "pipeline_id": "20260825T031233Z-107f296c",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/hsvu3lnp8bliep0322v9be0siaguqjxr5l4f",
       "summarize_job_name": "batches/q8y19u9tek9tmyh2cyfwuenskof3lmagpjwr",
       "papers": [
@@ -35159,16 +35159,144 @@
         "http://arxiv.org/abs/2608.20703v1",
         "http://arxiv.org/abs/2608.21465v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2608.21680v1": {
+          "title": "123を避けるノンネスティング置換",
+          "summary": "多重集合 {1,1,2,2,...,n,n} のノンネスティング置換とは、a ≠ b なる部分列 abba を含まない語のことである。Elizalde と Luo は長さ3のパターンを2つ以上避けるノンネスティング置換を数え上げたが、単一のパターン 123 を避けるものの数え上げは未解決問題として残されていた。本論文ではこの問題を解決する。123 を避ける {1,1,...,n,n} のノンネスティング置換の数を cₙ、母関数を C(z) = ∑ₙ₌₀^∞ cₙ zⁿ としたとき、定数項が 1 である形式的べき級数の枝 V = 1 + zV² および U = 1 + 3z + zU² を用いて、C(z) = 1 + z(1+U)/(2 - z(1+U)(1+V)) と表されることを証明した。特に、C は ℚ(z) 上でちょうど4次の代数的関数であり、cₙ ∼ ((9+6√3)/(8√π)) 6ⁿ n⁻³ᐟ² という漸近挙動を示す。証明では、2つの非負整数をラベルに持つ生成木を構築し、核法（kernel method）を2回適用している。",
+          "keywords": [
+            "nonnesting permutations",
+            "pattern avoidance",
+            "generating tree",
+            "kernel method",
+            "algebraic generating function"
+          ],
+          "appendix": "本論文の対象である語の置換やパターン回避に関する組合せ論は、興味ある分野のうち「combinatorics on words」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.21352v1": {
+          "title": "ファイバー縮小拡大に対するコホモロジー的簡約：サブコホモロジーから熱力学形式まで",
+          "summary": "本論文では、局所同相写像のファイバー縮小拡大におけるコホモロジー、変分問題、および熱力学形式に対する簡約と転送の枠組みを構築する。ファイバーに沿った一様縮小性と大域的連続切断の存在のもとで、任意のヘルダー連続ポテンシャルが φ = ψ ∘ π + u - u ∘ F という明示的な分解を持つことを示す（ここで ψ は商空間上で定義され、u はファイバーごとの一様収束級数として得られる）。さらに、連続性とヘルダー正則性の定量的基準を与え、サブコホモロジーやLivšic型定理を商空間から拡大空間へと転送する。また、不変測度の一対一対応、不変平均の保存、およびファイバーの相対トポロジカルエントロピーがゼロであることを証明し、これによって測度論的エントロピー、エルゴード最適化、圧力、最小化測度、平衡状態が対応することを示す。加えて、Bowen球の測度に関する弱Gibbs転送やブロックワイズBowen逐次弱Gibbs転送などを確立し、最後にアフィン型および記号力学系的な縮小歪積を用いた具体例を提示している。",
+          "keywords": [
+            "cohomological reduction",
+            "fiber-contracting extensions",
+            "thermodynamic formalism",
+            "Livšic-type theorems",
+            "Gibbs transfer"
+          ],
+          "appendix": "本論文は記号力学系（symbolic dynamics）の縮小歪積（symbolic contracting skew-products）への応用や熱力学形式・コホモロジー方程式を扱っており、興味ある分野の「symbolic dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.21351v1": {
+          "title": "カノン順列におけるパターン回避",
+          "summary": "各文字のj番目のコピーが同一の順列σを形成する[n]上のk-正則語であるカノン順列（Elizaldeにより導入された非ネスティング多重順列の一般化）において、任意のkに対する古典的パターン回避を研究した。パターン112、122、211、221のいずれかを回避するものはk-Catalan数 (1/n)binom(kn, n-1) で数え上げられることを示す。これらのパターンの1つと任意のτ ∈ S₃を同時に回避するクラスを数え上げ、Gabrielらによる定理を一般化するk分木との全単射を与えた。さらに、ラベルの付け替えで閉じているパターン集合の回避問題が、n!の因子を除いてk-正則格子語における回避問題に帰着されることを示し、非ネスティング・非交差パターンの自然な一般化や{1ᵃ21ᵇ, 2ᵃ12ᵇ}などのパターン族を回避するカノン順列を数え上げた。",
+          "keywords": [
+            "canon permutations",
+            "pattern avoidance",
+            "k-Catalan numbers",
+            "k-ary trees",
+            "lattice words"
+          ],
+          "appendix": "本論文は語の組合せ論（combinatorics on words）に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.21084v1": {
+          "title": "2次元語のアーベル極大パターン複雑度",
+          "summary": "本論文では、アーベル同値性に関する2次元語の極大パターン複雑度（maximal pattern complexity）を研究している。横断的な再帰方向の存在または強再帰性のいずれかの仮定のもとで、射影によって二重周期的でない2次元語に対するアーベル極大パターン複雑度の下界を確立し、さらにこの評価が最良（sharp）であることを示す。その結果として、強再帰的な二値の非二重周期語の正確な複雑度および二重周期性の有界性判定条件が得られる。",
+          "keywords": [
+            "Abelian maximal pattern complexity",
+            "two-dimensional words",
+            "Abelian equivalence",
+            "strong recurrence",
+            "double periodicity"
+          ],
+          "appendix": "本論文は「combinatorics on words」および「symbolic dynamics」の分野と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.20703v1": {
+          "title": "群積の剛性とヒグマン・トンプソン再結合群",
+          "summary": "本論文では、アリティ r ≥ 2、群 G、および少なくとも2つの内部頂点を持つ完全順序 r 分木 T に対し、T に沿って反復される r 項演算 ω: Gʳ → G が全単射 F_T: G → G を介して通常の群積の像 F_T(x₁…xₙ) と一致するような ω を完全に分類している。その結果、ω は a, b ∈ G、d ∈ Z(G)、ψ ∈ Aut(G) を用いて ax₁…xᵣ、x₁…xᵣb、d ψ(x₁…xᵣ) のいずれかの形式に限られることが証明される。さらに逆問題として、これらの形式の ω に対して等式を満たす木 T の構造を決定し、その条件が G/Z(G) における元の位数や Aut(G) における自己同型の位数によって支配されることを示す。また、同じ葉の数を持つ2つの木 S, T に対し ω_S = ω_T となる結合性の度合いを考察し、反復演算を保存する括弧付けの変更に対応するヒグマン・トンプソン群 F_r の部分群を明示的に決定している。",
+          "keywords": [
+            "Higman-Thompson group",
+            "group-product rigidity",
+            "r-ary tree",
+            "associativity",
+            "automorphism group"
+          ],
+          "appendix": "本研究で扱われているヒグマン・トンプソン群（Higman-Thompson group）やその部分群の解析は、「strucure of large countable infinite groups」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.21465v1": {
+          "title": "関係子の安定交換子長は1関係子群の不変量ではない",
+          "summary": "aとbで生成される自由群の交換子群に属する2つの語 r = aabABabABBAbaabABBAb および r' = aabABabABabABBAbaBAb に対し、1関係子群 ⟨a, b | r = 1⟩ と ⟨a, b | r' = 1⟩ は同型であるが、r と r' の安定交換子長（stable commutator length）は異なることを示した。これにより、HeuerとLöhによって提示された未解決問題に否定的な解決を与えた。",
+          "keywords": [
+            "stable commutator length",
+            "one-relator groups",
+            "commutator subgroup",
+            "group invariant"
+          ],
+          "appendix": "本研究は自由群や1関係子群の代数的構造を扱っており、指定された興味ある分野の中では「strucure of large countable infinite groups」および語の性質を扱う点において「combinatorics on words」と関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.21680v1",
+        "http://arxiv.org/abs/2608.21352v1",
+        "http://arxiv.org/abs/2608.21351v1",
+        "http://arxiv.org/abs/2608.21084v1",
+        "http://arxiv.org/abs/2608.20703v1",
+        "http://arxiv.org/abs/2608.21465v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2608.21680v1": {
+          "message_id": "1541661181591298069",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.21352v1": {
+          "message_id": "1541661189975703553",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.21351v1": {
+          "message_id": "1541661200151093251",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.21084v1": {
+          "message_id": "1541661207977529428",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.20703v1": {
+          "message_id": "1541661216705871984",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.21465v1": {
+          "message_id": "1541661225547726869",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-25T03:12:33.782587+00:00",
-      "updated_at": "2026-08-25T03:24:51.420019+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-25T04:11:20.632658+00:00",
+      "finalized_at": "2026-08-25T04:11:20.632644+00:00"
     }
   ]
 }
