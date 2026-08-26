@@ -35300,7 +35300,7 @@
     },
     {
       "pipeline_id": "20260826T031736Z-e7245157",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/o8hiwvfqnajgmav3xuu9ylh4ff7i4e26bk5o",
       "summarize_job_name": "batches/ln0vni3dapyg30v4gtf5vnr7ri4o6vhymd3v",
       "papers": [
@@ -35734,16 +35734,123 @@
         "http://arxiv.org/abs/2608.21789v1",
         "http://arxiv.org/abs/2608.21703v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2608.22010v1": {
+          "title": "標準基底ベクトルによって生成される一般化シュタインハウス三角形：周期性と重み公式",
+          "summary": "一般化シュタインハウス s-三角形は、2進数列において連続する s 個の要素のブロックをその mod 2 の和で繰り返し置き換えることで得られる。本研究では、標準基底ベクトルから生成される三角形について考察する。各成分を biˢnomial 係数を用いて表現することで、連続する行の切り捨てられた係数プロファイルが純周期性を持つことを証明し、その厳密な周期を決定する。この周期性により、2のべき乗に関する導関数恒等式および同一の有限ブロックへの分解が得られる。その結果、1 の個数（重み）に関する厳密な漸化式が得られ、すべての剰余類においてこの重みが長さのアフィン関数となることを示す。さらに、有理母関数の導出、漸近的成長率の決定、およびこれらの標準三角形における 1 の密度が 0 であることを証明する。また、最初の2つの標準ベクトルおよび古典的ケースにおけるブロック重みについて明示的な公式を導出する。これらの結果は、標準基底ベクトルによって生成される一般化シュタインハウス三角形の周期構造および数え上げ構造に関する統一的な記述を提供する。",
+          "keywords": [
+            "generalized Steinhaus triangles",
+            "bi^s-nomial coefficients",
+            "periodicity",
+            "generating functions",
+            "weight formulas"
+          ],
+          "appendix": "本研究は2進数列の局所的な生成規則（セルオートマトンに類似する操作）や語・ブロックの周期性・母関数を扱っており、combinatorics on words や automata theory、symbolic dynamics に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.21999v1": {
+          "title": "TENSKEL：構造化された測定と再構成のための組合せ論的観測可能量テンソル",
+          "summary": "本論文では、離散領域上で定義されたテンソル表現に基づく、構造化測定および再構成のための組合せ論的観測可能量フレームワーク「TENSKEL」を提案している。本フレームワークは、二値潜在アンサンブルから出発し、逐次的な集約および畳み込み（folding）操作によって、測定コンテキストを潜在的なパスカル構造に結合するテンソルの階層を構築する。各測定コンテキストが同一の潜在アンサンブルに観測可能な分割を誘導することで、関連する組合せ論的多重度、シェル構造、縮退、および誘導される再構成幾何が明示化される。さらに、誘導されたテンソルカーネルを用いた正則化逆問題による潜在表現の構造的再構成や、多項分布への拡張、パスカルセルオートマトンとの関連性についても示されている。",
+          "keywords": [
+            "TENSKEL",
+            "observable tensor",
+            "Pascal cellular automata",
+            "structured measurement",
+            "combinatorial multiplicities"
+          ],
+          "appendix": "本論文は、パスカルセルオートマトン（Pascal cellular automata）との関連について言及されており、オートマトン理論（automata theory）に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.21912v1": {
+          "title": "パラメータ化周期性補題",
+          "summary": "FineとWilf（1965）による古典的な周期性補題では、周期 p および q を持つ長さ p + q - d（ただし d = gcd(p, q)）以上の文字列は周期 d も持つことが示されている。本論文では、パラメータ化文字列におけるFine-Wilf型の最適なしきい値を確立した。具体的には、σ 個の異なる文字を含む文字列 s がパラメータ化周期 p および q を持ち、|s| ≥ p + q + (σ - 3)d + 1 を満たすならば、d もまた s のパラメータ化周期となることを証明した。さらに、一致する下界のインスタンスを提示することで、任意の σ ≥ 2 においてこの境界が最適であることを示した。",
+          "keywords": [
+            "Parameterized Periodicity Lemma",
+            "Fine-Wilf theorem",
+            "parameterized strings",
+            "parameterized periods"
+          ],
+          "appendix": "本論文は「combinatorics on words」および「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.21789v1": {
+          "title": "グリッドグラフにおけるPotts模型分配関数の熱的漸化式階数",
+          "summary": "熱的2次元グリッドグラフ上のPotts模型分配関数における線形漸化式の階数（recurrence order）について研究する。転送行列を実結合軸に制限することで、物理的演算子はスペクトル定理のもとで対角化可能性を保持する。この熱的正則化によりKrylov部分空間が制約のない平面的状態容量を飽和させ、q ≥ 4 の場合には漸化式階数が反転同値を除いたDyck路の数（OEIS A007123）に固定されることを示す。さらに、q = 3 の場合には有限指数のJones-Wenzl射影により反転同値を除いた高さ制限付きDyck路の数（OEIS A001998）に縮小し、q = 2 の場合にはゼロ磁化保存セクター（OEIS A001405）に縮小することを示す。本枠組みは、グラフ理論的組合せ論と物理的ループ気体模型の表現論とを橋渡しするものである。",
+          "keywords": [
+            "Potts model partition function",
+            "linear recurrence order",
+            "transfer matrix",
+            "Dyck paths",
+            "Jones-Wenzl projections"
+          ],
+          "appendix": "本論文で扱われているDyck路などの離散構造や漸化式の解析は、形式言語理論（formal languages）や組合せ論と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.21703v1": {
+          "title": "Ornsteinのd̄距離における最大エントロピー測度の実効的一意性",
+          "summary": "位相的混合な有限型シフトはすべて一意な最大エントロピー測度（MME）を持ちます。Ornstein理論から、エントロピーが最大値に近い任意の不変測度は、d̄距離においてMMEに近いことが従います。本論文ではこれの定量的な評価を証明し、Wasserstein距離における実効的一意性を確立したKadyrovの先行結果を強化します。",
+          "keywords": [
+            "measure of maximal entropy",
+            "Ornstein's d-bar metric",
+            "shift of finite type",
+            "Wasserstein metric",
+            "effective uniqueness"
+          ],
+          "appendix": "本研究は有限型シフト（shift of finite type）の測度論的・エルゴード理論的性質を扱っており、興味ある分野の「symbolic dynamics」に強く関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.22010v1",
+        "http://arxiv.org/abs/2608.21999v1",
+        "http://arxiv.org/abs/2608.21912v1",
+        "http://arxiv.org/abs/2608.21789v1",
+        "http://arxiv.org/abs/2608.21703v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2608.22010v1": {
+          "message_id": "1542028459834867844",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.21999v1": {
+          "message_id": "1542028467422363650",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.21912v1": {
+          "message_id": "1542028475274371103",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.21789v1": {
+          "message_id": "1542028482907742251",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.21703v1": {
+          "message_id": "1542028491170513068",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-26T03:17:36.140846+00:00",
-      "updated_at": "2026-08-26T03:31:24.735046+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-26T04:30:43.523435+00:00",
+      "finalized_at": "2026-08-26T04:30:43.523409+00:00"
     }
   ]
 }
