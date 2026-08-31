@@ -40216,7 +40216,7 @@
     },
     {
       "pipeline_id": "20260831T083856Z-cde55a77",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/v87go0lx1zutb6hsx92chios74w9jx1sum55",
       "summarize_job_name": "batches/gma4j7bl862ekrdmee6o55cc4irnjhmwo13o",
       "papers": [
@@ -40794,16 +40794,166 @@
         "http://arxiv.org/abs/2608.28045v1",
         "http://arxiv.org/abs/2608.27797v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2608.28391v1": {
+          "title": "GR(1)ゲームのための適応的戦略",
+          "summary": "本論文では、グラフ上の2人GR(1)ゲームにおいて、環境プレイヤーAdamに対しシステムプレイヤーEveが仮定の論理積から保証の論理積への含意（□◇A₁ ∧ ... ∧ □◇Aₘ ⇒ □◇G₁ ∧ ... ∧ □◇Gₙ）を満たす問題を扱う。従来の静的戦略は過度に保守的であり、既存の改善手法は二重指数関数的な計算爆発を伴う。本研究では、Adamを目的が未知の非敵対的エージェントとして捉え、満たされる仮定を監視しながら満たす保証を最大化するように実行時に戦略を適応させるフレームワークを提案する。核となるのは活性性質□◇Sを監視する新しいアルゴリズムであり、仮定の部分集合ごとに事前計算した戦略に対する確率分布を実行時に動的に調整する。仮定が満たされない場合でも、Eveの確率的適応戦略が保証を最大化する決定論的戦略へ漸近的に収束することを証明し、プロトタイプ実装によって従来手法に対する有効性と優れた計算性能を示している。",
+          "keywords": [
+            "GR(1) games",
+            "adaptive strategies",
+            "liveness properties",
+            "runtime monitoring",
+            "reactive synthesis"
+          ],
+          "appendix": "本研究はゲーム理論的アプローチに基づくリアクティブ合成を扱っており、基礎理論としてオートマトン理論（automata theory）や形式言語（formal languages）の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.28385v1": {
+          "title": "半敵対的設定におけるオートマトンを用いた単語の分離",
+          "summary": "長さが高々 n である2つの異なる単語 u, v に対し、一方を受理し他方を拒絶する最小の決定性有限オートマトン（DFA）の状態数を求める問題（単語分離問題）を扱う。最悪ケースの上界は Õ(n^(1/3))、下界は Ω(log n) であることが知られている。本論文では、u を長さ n の一様ランダムな2値単語、v を任意の異なる単語とする「半ランダム・半敵対的」なケースを考察し、高い確率で O(log^(7/3) n polyloglog n) 状態の DFA によって u と v を分離可能であることを示した。この結果は、小さな決定性トランスデューサによるブロック単位の圧縮を利用して、分離問題をランレングス圧縮が短い単語のケースに帰着させる新しい解析に基づいている。",
+          "keywords": [
+            "separating words",
+            "deterministic finite automata",
+            "half-adversarial case",
+            "transducers",
+            "run-length encoding"
+          ],
+          "appendix": "本研究はオートマトン理論（automata theory）および単語上の組合せ論（combinatorics on words）、形式言語（formal languages）の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.28348v1": {
+          "title": "Coxeter群に対するTwist予想と同型問題",
+          "summary": "本論文では、MühlherrのTwist予想を証明した。すなわち、Coxeter群の任意の2つの角度両立（angle-compatible）なCoxeter生成集合は、有限回の初等 twist と共役の操作によって互いに移り変わることを示した。これとHowlett-MühlherrおよびMarquis-Mühlherrの先行研究を組み合わせることで、Coxeter群の同型問題の解決が完結する。さらに、すべてのCoxeter群 W に対して自己同型群 Aut(W) が有限生成であること、および任意のCoxeter行列から Aut(W) の有限生成集合を生成するアルゴリズムが存在することが導かれる。証明においては、Caprace-Mühlherrによる2-球面的Coxeter系の強剛性、Caprace-Przytyckiの枠組み、JSJ理論のアイデア、Mihalik-TschantzのCoxeter群の分裂に関する観察などが本質的に用いられている。",
+          "keywords": [
+            "Twist Conjecture",
+            "Isomorphism Problem",
+            "Coxeter groups",
+            "Aut(W)",
+            "JSJ theory"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2608.28229v1": {
+          "title": "境界内に留まる：文脈自由文法の遵守を保証する距離誘導型デコーディング",
+          "summary": "文脈自由文法（CFG）に基づく制約付きデコーディングにおいて、既存の局所的な接頭辞充足性の強制だけでは、トークナイザと文法の不一致や有限のトークン予算によって受理状態に到達できない場合がある。本研究では、プッシュダウンオートマトンに基づく先読み誘導型デコーディングフレームワークを提案する。オフラインで到達可能性ラベルと受理までの距離の上限を求めた有界プッシュダウン要約を計算し、オンラインでこれらを用いて探索範囲を考慮した枝刈りとビームサーチを誘導する。これにより、すべての出力が目的の文法に受理される構文的正しさが保証される。JSON、SQL、線形時相論理（LTL）を用いた実験により、構文的正しさの一貫性と出力品質の向上が示された。",
+          "keywords": [
+            "Grammar-constrained decoding",
+            "context-free grammars",
+            "pushdown automata",
+            "lookahead-guided decoding",
+            "beam search"
+          ],
+          "appendix": "本論文はプッシュダウンオートマトンおよび文脈自由文法を用いた制約付き生成を扱っており、興味ある分野の「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.28211v1": {
+          "title": "同相写像群の極大部分群",
+          "summary": "本論文では、有理数空間 ℚ、ベール空間 ℕ^ℕ、空間 ℕ×2^ℕ（2^ℕ はカントール集合）、順序位相を入れた順序数 ω^2、およびゾルゲンフライ直線 𝕊 の各同相写像群が、正確に 2^(2^ℵ₀) 個の極大部分群を持つことを示す。より一般に、位相空間に作用する群 G が少なくとも 2^(2^ℵ₀) 個の極大部分群を持つための十分条件を与える。さらに、Homeo(ℚ) および Homeo(ℕ^ℕ) に各点収束位相を入れた場合、Homeo(ℕ^ℕ) はちょうど 2^ℵ₀ 個の開極大部分群を持ち、Homeo(ℚ) はちょうど ℵ₀ 個の開極大部分群と 2^ℵ₀ 個の閉極大部分群を持つことを示す。",
+          "keywords": [
+            "homeomorphism groups",
+            "maximal subgroups",
+            "pointwise topology",
+            "Baire space",
+            "rational numbers"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2608.28045v1": {
+          "title": "群およびリー代数におけるユニモジュラ方程式の可解性",
+          "summary": "本論文では、有限生成可解群 G が冪零であることと、任意のユニモジュラ方程式（gᵢ ∈ G かつ ∑nᵢ = ±1 を満たす ∏ gᵢx^{nᵢ} = 1 の形の方程式）が解を持つことが同値であることを示す。同様の事実がリー代数においても成立することが明らかとなった。また、有限生成群 G 上のユニモジュラ方程式 w(x) = g において、任意の g ∈ G に対して解が存在するものの、一部の g ∈ G に対しては解が一意でないような例を提示する。さらに、冪零群 G に対し、自然に定義されるユニモジュラ写像 Gⁿ → Gⁿ の集合が写像の合成に関して群をなすことを示す。",
+          "keywords": [
+            "unimodular equations",
+            "finitely generated solvable group",
+            "nilpotent groups",
+            "Lie algebras",
+            "unimodular mappings"
+          ],
+          "appendix": "本論文は無限群の代数的構造（有限生成可解群および冪零群の性質）を扱っており、「strucure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.27797v1": {
+          "title": "CEDAR: 言語誘導型身体性行動のための検証可能なインターフェースとしてのオートマトン",
+          "summary": "身体性エージェントへの自然言語によるタスク指示には目標だけでなく環境変化に伴う制約が含まれるが、従来のコード生成LLMによる自由形式プログラムでは検証や制約の合成、失敗トレースからの修復が困難であった。本研究で提案するCEDARは、反例誘導型フレームワークを用いて指示を環境イベンントトレース上の正規言語として表現し、決定性有限オートマトン（DFA）としてスキルおよび仕様をモデル化する。これにより、スキルと制約仕様の積（共通部分）をとることで、プロンプトの繰り返しに頼らず構造的に制約を満たすコントローラを構築できる。Minecraftを用いた実験では、従来手法が破綻する時空間制約を維持し、スキルの再利用を通じてLLMのクエリ回数を削減できることを示した。",
+          "keywords": [
+            "deterministic finite automata",
+            "regular languages",
+            "counterexample-guided framework",
+            "embodied agents",
+            "large language models"
+          ],
+          "appendix": "本論文は「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」と強く関連しています。自然言語による指示やスキル、制約を正規言語および決定性有限オートマトン（DFA）として定式化し、言語の共通部分（積）演算などを通じて制約充足を保証するアプローチを扱っています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.28391v1",
+        "http://arxiv.org/abs/2608.28385v1",
+        "http://arxiv.org/abs/2608.28348v1",
+        "http://arxiv.org/abs/2608.28229v1",
+        "http://arxiv.org/abs/2608.28211v1",
+        "http://arxiv.org/abs/2608.28045v1",
+        "http://arxiv.org/abs/2608.27797v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2608.28391v1": {
+          "message_id": "1544022063969472576",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.28385v1": {
+          "message_id": "1544022072739762259",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.28348v1": {
+          "message_id": "1544022082483126396",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.28229v1": {
+          "message_id": "1544022091366539296",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.28211v1": {
+          "message_id": "1544022101143588949",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.28045v1": {
+          "message_id": "1544022110232514611",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.27797v1": {
+          "message_id": "1544022120189657139",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-08-31T08:38:56.772632+00:00",
-      "updated_at": "2026-08-31T09:10:50.862277+00:00",
-      "finalized_at": null
+      "updated_at": "2026-08-31T16:32:41.972332+00:00",
+      "finalized_at": "2026-08-31T16:32:41.972310+00:00"
     }
   ]
 }
