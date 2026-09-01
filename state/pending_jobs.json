@@ -40954,6 +40954,383 @@
       "created_at": "2026-08-31T08:38:56.772632+00:00",
       "updated_at": "2026-08-31T16:32:41.972332+00:00",
       "finalized_at": "2026-08-31T16:32:41.972310+00:00"
+    },
+    {
+      "pipeline_id": "20260901T074857Z-1f35a875",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/nyt2bg211pl3dmgeaszxhx9jmvpcgk24j92t",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29441v1",
+          "entry_id": "http://arxiv.org/abs/2608.29441v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29441v1",
+          "title": "It's Hard to PArcK",
+          "summary": "We show that Partizan Arc Kayles (PArcK), a generalization of Domineering to graphs, is PSPACE-complete via a reduction from Positive CNF and with recently-discovered techniques for creating PArcK positions with high temperature. The reduction uses only red and blue edges.",
+          "authors": [
+            "Kyle Burke",
+            "Jeffrey Leman",
+            "Craig Tennenhouse"
+          ],
+          "published": "2026-08-29T21:06:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29440v1",
+          "entry_id": "http://arxiv.org/abs/2608.29440v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29440v1",
+          "title": "Decidability of the Orbit Problem Over $\\mathbb{Q}(X)$",
+          "summary": "The orbit problem is the problem of whether, given $x, y\\in \\mathbb{Q}^n$ and an $n\\times n$ matrix $A$, there exists an $i\\in\\mathbb{N}$ such that $A^ix = y$. In 1980, Kannan and Lipton proved that the orbit problem is decidable. We show that a generalization of the orbit problem, where the field is $\\mathbb{Q}(X)$ for $X$ a countable set of transcendentals, is also decidable. We define the orbit power problem for an arbitrary group $G$ to be the problem of when, given $x, y\\in G$, there exists an $n\\in\\mathbb{Z}$ such that $x^n = y$. We then use the main result to show that the power orbit problem is decidable for an assortment of groups, including the braid groups and $\\operatorname{Aut}(F_2)$.",
+          "authors": [
+            "Joshua Holden",
+            "Alexa Renner"
+          ],
+          "published": "2026-08-29T21:00:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29383v1",
+          "entry_id": "http://arxiv.org/abs/2608.29383v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29383v1",
+          "title": "The average number of rational preperiodic points of polynomials over $\\mathbb{Q}$",
+          "summary": "Let $M_d(X)$ denote the average number of rational preperiodic points among degree-$d$ polynomials over $\\mathbb{Q}$ with vanishing $z^{d-1}$ coefficient, constant term $1$, and height at most $X$. We prove that for every integer $d\\ge3$ and every real number $C>4\\sqrt{2}$, $M_d(X) \\ll_d X^{-1} \\exp(C\\sqrt{\\log X / \\log \\log X})$. For $d=2$, we prove the optimal bound $M_2(X)\\ll X^{-1}$.",
+          "authors": [
+            "Jungin Lee"
+          ],
+          "published": "2026-08-29T17:50:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29380v1",
+          "entry_id": "http://arxiv.org/abs/2608.29380v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29380v1",
+          "title": "A quantum let within the lambda calculus",
+          "summary": "Since the seminal work of Selinger and Valiron, the standard design for quantum lambda calculi has kept the quantum state outside the program: terms manipulate pointers to an external register. This is largely due to the difficulty of eliminating tensor products. For example, the calculus $λ_ρ^\\circ$ embeds density matrices directly within terms, where terms carry the entire computation state, a feature particularly appealing for program verification. However, lacking a tensor elimination construct, it can neither access the individual qubits of a compound state nor discard them. Borgna showed that this inability to discard qubits makes the calculus strictly less expressive than the quantum lambda calculus of Selinger and Valiron.\n  In this paper we show that tensor elimination is possible in this setting. The key observation is that the Pauli decomposition, combined with the spectral decomposition of the Pauli matrices, allows any $n$-qubit density matrix to be expressed as a real linear combination of tensor products of single-qubit density matrices. Exploiting this fact, we extend $λ_ρ^\\circ$ with a construct $\\mathrm{let}\\ x^{\\otimes n} = ρ \\mathrm{in}\\ t$, which binds each $x_i$ to a single-qubit density matrix arising from the decomposition of $ρ$.\n  We equip the extended calculus with a rewrite system, a type system, and a denotational semantics, and prove Subject Reduction, Progress, Strong Normalisation, Soundness, and Adequacy. The new construct also recovers the missing ability to discard qubits, thereby restoring expressiveness. Moreover, we show that this is achieved in a physically principled way: a variable unused in $t$ is interpreted exactly as being partial-traced out, as dictated by the no-deleting theorem. We illustrate the resulting compositionality through quantum teleportation and the three-qubit bit-flip code.",
+          "authors": [
+            "Alejandro Díaz-Caro",
+            "Tomás Miguez"
+          ],
+          "published": "2026-08-29T17:38:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29375v1",
+          "entry_id": "http://arxiv.org/abs/2608.29375v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29375v1",
+          "title": "Proper Conflict-Free Choosability for Graphs with Bounded Average Degree",
+          "summary": "For a graph $G$, a proper coloring of $G$ is called proper conflict-free if for every non-isolated vertex $u$, there is at least one color appearing exactly once in $N_G(u)$. A graph $G$ is proper conflict-free $f$-choosable if for every list assignment $L$ with $|L(v)|\\ge f(v)$ for each vertex $v$, $G$ admits a proper conflict-free $L$-coloring.\n  Recently, Kashima, Škrekovski, and Xu proposed a conjecture on proper conflict-free list coloring. For a graph $G$, let $κ_G:V(G)\\to \\mathbb{N}$ be defined by \\[ κ_G(v)= \\begin{cases} 4, & \\text{if } d_G(v)=2,\\\\[4pt] d_G(v)+1, & \\text{if } d_G(v)\\neq 2. \\end{cases} \\] They conjectured that every connected graph other than $C_5$ is proper conflict-free $κ_G$-choosable.\n  In this paper, we confirm this conjecture in two classes of graphs with bounded average degree, thereby generalizing results of Kashima, Škrekovski, and Xu and of Wang and Zhang. We prove that every connected graph $G\\neq C_5$ with either $\\operatorname{mad}(G)<\\frac{12}{5}$ or $Δ(G)\\le3$ is proper conflict-free $κ_G$-choosable. To prove these results, we introduce a method based on systems of proper conflict-free representatives and develop a construction of auxiliary graphs that preserves the maximum average degree bound.",
+          "authors": [
+            "Zhijun Lu",
+            "Qirui Ying",
+            "Huimin Song"
+          ],
+          "published": "2026-08-29T17:22:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29354v1",
+          "entry_id": "http://arxiv.org/abs/2608.29354v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29354v1",
+          "title": "Harmonic Catalan Number Series via Half-Integer Binomial Coefficients",
+          "summary": "We develop a method for evaluating finite and infinite series involving Catalan numbers by specializing alternating binomial identities at half-integer parameters. The key ingredient is an explicit representation of the generalized binomial coefficients $\\binom{m+\\frac12}{k+1}$ in terms of Catalan numbers and products of odd linear factors. Combining this representation with Pascal-type identities and two identities of Batır and Sofo, we derive several families of closed-form summation formulas involving Catalan numbers, harmonic numbers, and odd harmonic numbers. As special cases, we obtain evaluations of finite sums together with their corresponding infinite-series analogues. The approach provides a systematic mechanism for transforming identities for generalized binomial coefficients into identities for Catalan-number series.",
+          "authors": [
+            "Kunle Adegoke",
+            "Robert Frontczak",
+            "Taras Goy"
+          ],
+          "published": "2026-08-29T16:22:23+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29339v1",
+          "entry_id": "http://arxiv.org/abs/2608.29339v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29339v1",
+          "title": "Sharp Logarithmic Quantum Dynamics for Quasiperiodic Schrödinger Operators",
+          "summary": "Dynamical localization requires all position moments of a quantum wavepacket to remain bounded in time, but for quasiperiodic Schrödinger operators such bounds are generally not uniform in phase. In the positive Lyapunov exponent regime, the best known phase-uniform estimates instead grow on a logarithmic scale. We prove that both the logarithmic scale and the dependence on the moment order are sharp for a class of one-frequency quasiperiodic Schrödinger operators with even potentials. Our main ingredient is a reflective version of semi-uniformly localized eigenfunctions, adapted to the two localization centers forced by a completely resonant phase, from which we obtain matching logarithmic lower bounds along sequences of times.",
+          "authors": [
+            "Wencai Liu",
+            "Xueyin Wang"
+          ],
+          "published": "2026-08-29T15:41:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29319v1",
+          "entry_id": "http://arxiv.org/abs/2608.29319v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29319v1",
+          "title": "The Emptiness Problem for Quantum Finite Automata with Classical States",
+          "summary": "Quantum Finite Automata with Classical states (QFACs) are nondeterministic finite automata over a finite alphabet of quantum operations. We study expressiveness of this model on finite words and the corresponding emptiness problem. We show that regular languages are incomparable with those definable by Quantum Finite Automata (QFAs) and that both are strictly subsumed by QFAC-definable languages.\n  We show that the emptiness problem for a QFAC can be reduced to the emptiness of the language intersection of a QFA and a finite automaton. This intersection is known to be decidable for strict thresholds but undecidable for non-strict cases. Furthermore, we consider the problem for flat QFACs, a restriction where the underlying automata contain no nested loops, and relate it to the higher-dimensional orbit problem, a long-standing open challenge in dynamical systems.\n  Finally, we propose a sound and semi-complete witness searching procedure to verify the non-emptiness of one-loop QFACs, which are sufficiently expressive to represent some prominent quantum algorithms, such as Grover's search and quantum random walks.",
+          "authors": [
+            "Jyun-Ao Lin",
+            "Patrick Totzke",
+            "Yun Chen Tsai",
+            "Di-De Yen"
+          ],
+          "published": "2026-08-29T15:04:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29274v1",
+          "entry_id": "http://arxiv.org/abs/2608.29274v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29274v1",
+          "title": "A Simplified Analysis of the Good-Bad $3/2$-Approximation Algorithm for Some Minimum-Cost Graph Problems",
+          "summary": "In this paper, we consider an easy greedy approximation algorithm, the good-bad algorithm, introduced by Couëtoux for finding a minimum-cost set of edges such that every connected component has at least $k$ vertices. Couëtoux proves that the good-bad algorithm achieves a $3/2$-approximation for this problem. Davis and Williamson extend this result to the more general problem of finding a minimum-cost edge set that contains at least one edge from every cut $S\\subseteq V$ satisfying $h(S) = 1$ where $h:2^V \\rightarrow \\{0,1\\}$ is downward monotone; that is, $h(S) = 1$ implies $h(T) = 1$ for every nonempty subset $T \\subseteq S$. The original problem corresponds to $h(S) =1$ when $|S|<k$. We give a simplified analysis of the good-bad algorithm for downward monotone functions.",
+          "authors": [
+            "Shayan Ranjbarzadeh",
+            "David P. Williamson",
+            "Hannane Yaghoubizade"
+          ],
+          "published": "2026-08-29T13:55:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29260v1",
+          "entry_id": "http://arxiv.org/abs/2608.29260v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29260v1",
+          "title": "Generalized Spectral Closedness and the Nonexistence of Walk-Realizable Supporters for Split Graphs",
+          "summary": "Let $\\mathcal F=\\{2K_2,C_4,C_5\\}$, so that $\\operatorname{Forb}(\\mathcal F)$ is the class of split graphs. Resolving a conjecture of Wang and Tang, we prove that the class of split graphs is generalized spectrally closed and that it admits no walk-realizable $\\mathcal F$-supporter of any finite order.",
+          "authors": [
+            "Yanyang Li"
+          ],
+          "published": "2026-08-29T13:27:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29231v1",
+          "entry_id": "http://arxiv.org/abs/2608.29231v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29231v1",
+          "title": "Polyomino Density",
+          "summary": "A de Bruijn polyomino has colored cells and includes exactly one instance of each possible coloring of another polyomino with those colors. This generalizes the notion of a de Bruijn sequence. We are interested in the de Bruijn polyominoes of minimum size. As a step toward finding these, we introduce the problem of finding the smallest polyominoes containing at least $N$ translated copies of the polyomino $p$, allowing overlaps. We say these are $(p,N)$-dense and have size $a_{p,N}$. For certain pairs of polyominoes $p$ and $q$ of equal size, we show there are polyomino transformations relating $a_{p,N}$ and $a_{q,N}$. Using these transformations, we identify classes of polyominoes which share the sequence $(a_{p,N})_{N=1}^\\infty$. We give closed forms for $(a_{p,N})_{N=1}^\\infty$ for most polyominoes with up to five cells. Leveraging these results we introduce novel de Bruijn polyominoes, as well as other colored polyforms with de Bruijn-like properties.",
+          "authors": [
+            "D. M. Condon",
+            "Eli B. Dugan",
+            "Laney M. Goldman",
+            "Emily R. Williams"
+          ],
+          "published": "2026-08-29T12:39:03+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29224v1",
+          "entry_id": "http://arxiv.org/abs/2608.29224v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29224v1",
+          "title": "Eulerian triangle is totally positive of order 3",
+          "summary": "Brenti conjectured that the Eulerian triangle is totally positive. In this paper, we prove that the Eulerian triangle is totally positive of order 3, thereby providing a partial affirmative answer to Brenti's conjecture. In addition, we establish total positivity of order 3 for several families of generalized Eulerian triangles.",
+          "authors": [
+            "Jianxi Mao"
+          ],
+          "published": "2026-08-29T12:28:33+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29219v1",
+          "entry_id": "http://arxiv.org/abs/2608.29219v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29219v1",
+          "title": "On Some More Problems from the Kourovka Notebook",
+          "summary": "We give solutions to several problems in combinatorial group theory recorded as open in the literature. Our main source is the Kourovka Notebook, although we also consider questions from elsewhere. All solutions were found with the assistance of large language models and checked by the authors.",
+          "authors": [
+            "Vasily Ionin",
+            "Artem Semidetnov"
+          ],
+          "published": "2026-08-29T12:07:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29216v1",
+          "entry_id": "http://arxiv.org/abs/2608.29216v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29216v1",
+          "title": "Maximizing Families and Typical Periodic Optimization for Almost Additive Sequences",
+          "summary": "In this paper, we study typical periodic optimization (TPO) for almost additive potentials in two perturbation spaces. Our main setting is the Banach quotient $\\mathcal E_{\\rm orb}(X,T)$ of orbit-Lipschitz almost additive potentials, where we extend the theory of maximizable sets and countable maximizable families developed by W. Huang, O. Jenkinson, L. Xu and Y. Zhang [Typical periodic optimization for dynamical systems: symbolic dynamics, Invent. Math. 245 (2026), 1--63], and establish a global structural theorem. For a countable maximizable family, global TPO holds if every non boundary member has $X$-extendable TPO and the boundary region has empty interior. As an application, we construct a compact system with global TPO for which $\\mathcal E_{\\rm orb}(X,T)$ is infinite-dimensional and the maximizing periods in open locking regions are unbounded. For a fixed almost additive potential $Φ$, we also develop relative TPO theory on its Lipschitz leaf. When $Φ=0$, this framework reduces to classical Lipschitz TPO. We prove the corresponding leafwise structural theorem and give a non additive rank-one matrix example on a full shift.",
+          "authors": [
+            "XiaoYu Zhang",
+            "Ercai Chen",
+            "Xiaoyao Zhou"
+          ],
+          "published": "2026-08-29T12:04:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29203v1",
+          "entry_id": "http://arxiv.org/abs/2608.29203v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29203v1",
+          "title": "Cyclically Compatible Deformations of the Braid Arrangement",
+          "summary": "We prove a characteristic-polynomial shift formula for two-sided extensions of cyclically compatible deformations of the braid arrangement. For a nonnegative integer matrix $M=(m_{ij})$ with zero diagonal, let $\\mathcal{A}_M$ be the arrangement \\[\n  x_i-x_j=s,\\qquad 1\\le i<j\\le n,\\quad\n  s\\in[-m_{ij},m_{ji}]_{\\mathbb{Z}}. \\] Given $α,β\\in\\mathbb{N}^n$, define its two-sided extension $\\mathcal{A}_M(α,β)$ by replacing this interval with \\[\n  [-m_{ij}-α_i-β_j,\\,\n  m_{ji}+α_j+β_i]_{\\mathbb{Z}}. \\] Call $M$ cyclically compatible if all pairwise distinct $a,b,c$ with $1\\le a,b,c\\le n$ satisfy \\[\n  m_{ac}\\le m_{ab}+m_{bc}+1. \\] Under this condition, for the reduced characteristic polynomial $\\widetildeχ(\\mathcal{A},t) =\\dfrac{χ(\\mathcal{A},t)}{t}$, we have \\[\n  \\widetildeχ(\\mathcal{A}_M(α,β),t)\n  =\n  \\widetildeχ(\\mathcal{A}_M,t-|α|-|β|). \\] The proof uses the finite-field method and a cyclic-gap enumeration formula. We also establish redistribution invariance, study weak-sum perturbations, and give applications to Shi, uniform interval, graphical, and Ferrers-type deformations.",
+          "authors": [
+            "Yanru Chen",
+            "Ang Li",
+            "Suijie Wang"
+          ],
+          "published": "2026-08-29T11:37:17+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29201v1",
+          "entry_id": "http://arxiv.org/abs/2608.29201v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29201v1",
+          "title": "Resolvable quantum Latin squares with maximal cardinality",
+          "summary": "A resolvable quantum Latin square of order $n$, denoted by $\\text{RQLS}(n)$, is a quantum Latin square admitting $n$ pairwise disjoint transversals. By employing complete mappings and extending the classical singular direct product construction to the quantum setting, we determine the existence of maximal-cardinality $\\text{RQLS}(n)$s with $17$ possible exceptions.",
+          "authors": [
+            "Yuyuan Zhang",
+            "Haitao Cao"
+          ],
+          "published": "2026-08-29T11:31:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29171v1",
+          "entry_id": "http://arxiv.org/abs/2608.29171v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29171v1",
+          "title": "Full Topological entropy of Xiong chaotic sets beyond the specification property",
+          "summary": "In this paper, we show that for a shift dynamical system $(X_{\\mathcal{L}}, σ)$ with a weakened form of the specification property, there exists a Xiong chaotic set $C$ of $X_{\\mathcal{L}}$ with full topological entropy everywhere (i.e. the intersection of $C$ and arbitrary non-empty open subset of $X_{\\mathcal{L}}$ has full topological entropy). Moreover, $C$ satisfies that for any non-empty subset $A$ and any continuous map $F: A\\rightarrow X_{\\mathcal{L}},$ there exists an increasing sequence $\\{p_{k}\\}_{k=1}^{+\\infty}$ of positive integers such that $\\lim\\limits_{k\\rightarrow +\\infty}σ^{p_{k}}(x)=F(x)$ holds for any $x\\in A.$",
+          "authors": [
+            "Xinyun Zhang"
+          ],
+          "published": "2026-08-29T09:43:00+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29163v1",
+          "entry_id": "http://arxiv.org/abs/2608.29163v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29163v1",
+          "title": "On $(1,2^4)$ and $(1,2^5)$-packing edge-coloring of sparse subcubic graphs",
+          "summary": "A $(1^j,2^k)$-packing edge-coloring of a graph $G$ is a partition of the edge set $E(G)$ into $j$ matchings and $k$ induced matchings. Hocquard, Lajou, and Lu\\v zar found a subcubic planar graph of girth $3$ that has no $(1,2^5)$-packing edge-coloring and also conjectured that every subcubic planar graph has a $(1,2^6)$-packing edge-coloring. We also notice that for every fixed positive integer $k$ there exists a subcubic planar graph with girth $k$ that is not $(1,2^3)$-packing edge-colorable.\n  It is natural to consider what is the minimum positive integer $k_1$ such that every subcubic planar graph with girth at least $k_1$ is $(1,2^5)$-packing edge-colorable. Furthermore, we also consider what is the minimum positive integer $k_2$ such that every subcubic planar graph with girth at least $k_2$ is $(1,2^4)$-packing edge-colorable. In this paper, we show both $k_1$ and $k_2$ are finite, and in fact $5 \\le k_1 \\le 12$ and $6 \\le k_2 \\le 16$.",
+          "authors": [
+            "Seog-Jin Kim",
+            "Xujun Liu",
+            "Boyan Xu"
+          ],
+          "published": "2026-08-29T09:26:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29149v1",
+          "entry_id": "http://arxiv.org/abs/2608.29149v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29149v1",
+          "title": "Random attractors and almost-sure stability under discretization of a stochastic autoparametric system",
+          "summary": "For a stochastic autoparametric block-and-pendulum system, the long-time dynamics exhibit two fundamental features: the almost-sure stability of the single mode solution, characterized by its Lyapunov exponent, and the global asymptotic dynamics when this single mode solution loses stability. This naturally raises the question of whether these dynamical features are preserved under discretization, since such preservation is essential for the resulting discrete system to faithfully capture the qualitative behavior of the continuous system. To address this question, we first establish the existence of a random attractor for the continuous system subject to multiplicative stochastic excitation, providing a rigorous characterization of the global asymptotic dynamics. We then propose a numerical discretization that induces a discrete random dynamical system and prove the convergence of its random attractor to the continuous one as the step size tends to zero. In addition, we show that the numerical Lyapunov exponent of the single mode solution has the same sign as its continuous counterpart for sufficiently small step sizes, thus preserving the corresponding almost-sure stability or instability classification. These results demonstrate that the proposed discretization captures both the global asymptotic dynamics and the stability characteristics of the underlying stochastic autoparametric system.",
+          "authors": [
+            "Chuchu Chen",
+            "Jialin Hong",
+            "Yibo Wang"
+          ],
+          "published": "2026-08-29T08:55:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29135v1",
+          "entry_id": "http://arxiv.org/abs/2608.29135v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29135v1",
+          "title": "Decay of correlations and normal approximation for nonstationary heterochaos baker maps",
+          "summary": "We study statistical properties of nonstationary compositions of a sequence of heterochaos baker maps. For maps whose central direction is mostly expanding, we establish three main results: exponential rate of memory loss for a broad class of measures (Theorem 1.1), a functional correlation bound with stretched exponential decay (Theorem 1.2), and an error bound for the multivariate central limit theorem (CLT) in the Wasserstein-1 distance (Theorem 1.3). The proofs are based on the construction of suitable Gibbs--Markov induced maps for the nonstationary compositions. In a certain special case we obtain a concrete estimate on the rate of convergence in the multivariate CLT (Theorem 1.4).",
+          "authors": [
+            "Juho Leppänen",
+            "Hiroki Takahasi"
+          ],
+          "published": "2026-08-29T08:23:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29134v1",
+          "entry_id": "http://arxiv.org/abs/2608.29134v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29134v1",
+          "title": "Mechanizing Typed Regulatory Actions for Security Tokens: Semantics, Falsification, and Bounded EVM Evidence",
+          "summary": "Security-token standards expose privileged transfer, freezing, recovery, and compliance mechanisms, but a mechanism does not by itself identify the legal effect being executed or the evidence and reversal obligations attached to it. We formalize in Isabelle/HOL a reference execution semantics for the six regulatory-action meanings proposed in ERC-8319: FREEZE, SEIZE, CONFISCATE, LIQUIDATE, RESTRICT, and RECOVER. The model distinguishes applied, rejected, and operational-failure outcomes and mechanizes reversal, replay, epoch, frame, case-local terminality, and receipt properties; the build has no unproved placeholders or added axioms. It proves an external-truth boundary: two concrete worlds that disagree about title, settlement, and entitlement induce the same kernel observation, so those external facts cannot be established from bound inputs. Constructive witnesses and direct mutations show reachability and falsification for the declared fault set. For one ERC-TRUST Solidity/EVM candidate, we report separately scoped Foundry, Certora, Kontrol/KEVM, mutation, deterministic-build, and runtime-identity evidence. The current publication profile qualifies all seven evidence packages and all 49 Core and 24 mandatory Supporting obligations with no partial credit; six optional obligations remain unclaimed. A mechanized abstraction relation is proved unique and functional under pinned-runtime premises, and package and row corollaries yield conditional, profile-scoped refinement theorems from hash-bound certificates. These results do not constitute a complete Isabelle-to-Solidity-to-EVM refinement theorem, compiler correctness, an audit, production readiness, or deployment verification. The contribution is a machine-checked domain semantics and a falsifiable map of what is proved, what is bounded evidence, what is assumed, and what remains open for a regulated-token execution standard.",
+          "authors": [
+            "Jinwook Kim"
+          ],
+          "published": "2026-08-29T08:23:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29125v1",
+          "entry_id": "http://arxiv.org/abs/2608.29125v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29125v1",
+          "title": "Cluster Geometry of Universal Schubert Polynomials I: Geometric Bases and Schubert Transitions",
+          "summary": "We study Fulton's universal Schubert polynomials $\\mathfrak S_w(c)$ as regular functions on the upper unitriangular group $U_N$. The standard triangular cluster structure associates a Schubert $\\sf g$-vector to every permutation. Their convex hull is unimodularly equivalent to $Δ_1\\times\\cdots\\timesΔ_{N-1}$, and their root-degree fibers are parabolic Bruhat intervals realized by the strata of staircase quiver Grassmannians. The geometric (i.e., generic, canonical, and Mirković--Vilonen) elements indexed by these vectors form integral bases of Fulton's standard-elementary module. We prove that $\\mathfrak S_w(c)$ is homogeneous under diagonal conjugation if and only if it is the corresponding canonical element, and that homogeneity of $\\mathfrak S_w(c)$ implies $Λ_Q$-rigidity of $Z_{\\sf g_w}$. We also classify simultaneously the unit columns of the geometric-to-Schubert transitions, determine support components of the PBW-to-geometric and code-to-Schubert transitions, and exhibit a permutation $w\\in S_{10}$ for which the three geometric basis elements are distinct.",
+          "authors": [
+            "Jiarui Fei"
+          ],
+          "published": "2026-08-29T08:07:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29101v1",
+          "entry_id": "http://arxiv.org/abs/2608.29101v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29101v1",
+          "title": "A Chvátal--Erdős type condition for supereulerian digraphs with $α_{2}=4$",
+          "summary": "A digraph is \\textbf{supereulerian} if it contains a spanning closed trail. Let $α_2(D)$ denote the maximum cardinality of a vertex set inducing no 2-cycle. In this paper, we characterize supereulerianity in a strong digraph $D$ with $α_2(D)=4$ by proving that a strong digraph $D$ with $α_2(D)=4$ and $λ(D)\\ge 2$ is supereulerian if and only if $D$ does not belong to an exceptional family $\\mathcal H$ of $2$-arc-strong digraphs with $α_2(D)=4$. Furthermore, every strong digraph satisfying $α_2(D)=4$ and $λ(D)\\geq3$ is supereulerian.",
+          "authors": [
+            "Zirui Liu",
+            "Jin Yan",
+            "Jia Zhou"
+          ],
+          "published": "2026-08-29T07:18:08+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29094v1",
+          "entry_id": "http://arxiv.org/abs/2608.29094v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29094v1",
+          "title": "Defining the Crick-Franklin-Watson genes of any robot (equals a finite state machine) and defining the Shannon genetic code attached to each gene. We also define the Krohn-Rhodes complexity of any regular maximal prefix code",
+          "summary": "This paper will discuss the relationships among three pillars of mathematics: important research in codes and automata by Marcel-Paul Schutzenberger and others; random walks on finite semigroups by Persi Diaconis and others; and advanced techniques from finite semigroup theory used in proving Krohn-Rhodes complexity c is decidable by Stuart Margolis, Anne Schilling, and myself. Very surprising connections exist between the Fundamental Lemma of Complexity c (epimorphisms between finite semigroups that are one-to-one on subgroups preserve c) and coupling from the past in Markov chains, Diaconis' strong stationary time, and the Crick-Franklin-Watson genes of a finite automaton (which will be defined in the paper).",
+          "authors": [
+            "John Rhodes"
+          ],
+          "published": "2026-08-29T06:56:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29065v1",
+          "entry_id": "http://arxiv.org/abs/2608.29065v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29065v1",
+          "title": "Involutions in the affine Conway group",
+          "summary": "The affine Conway group is the group of affine isometries of the Leech lattice. This group is isomorphic to the automorphism group of a standard fundamental domain for the action of the Weyl group on the even hyperbolic lattice II_{1, 25} of rank 26.\n  In this paper, we show that the affine Conway group has exactly nine conjugacy classes of involutions. We investigate their properties and show that, among these nine classes, one class can be regarded as an analogue of the class of Enriques involutions of K3 surfaces.\n  Motivated by possible applications to K3 and Enriques surfaces, we investigate in detail the orthogonal groups of the hyperbolic lattices arising as the invariant sublattices of involutions in II_{1, 25}. This computation is carried out using the Borcherds method. Unlike the examples considered previously, the induced chambers possess infinitely many walls.",
+          "authors": [
+            "Ichiro Shimada"
+          ],
+          "published": "2026-08-29T05:39:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29057v1",
+          "entry_id": "http://arxiv.org/abs/2608.29057v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29057v1",
+          "title": "Sparse Koopman Autoencoders Identify Local Dynamical Regimes in Multibasin Systems",
+          "summary": "Koopman autoencoders (KAEs) seek a higher-dimensional latent representation in which nonlinear dynamics evolve linearly. However, many interesting systems have multiple basins of attraction, and both theoretical and empirical work has shown these multibasin systems cannot generally admit a single finite-dimensional global Koopman embedding under standard assumptions. We posit that encoders with a sparsity-inducing objective encouraging few active latent coefficients will provide latent supports as an inspectable basin-modeling principle for Koopman autoencoders. We use these encoders producing sparse latents in training Sparse Koopman Autoencoders (SKAEs) without basin labels or other regime annotations, and treat the learned latent supports as model-produced regime variables after training. Across a range of procedurally generated multibasin systems and chaotic flows, we show that SKAEs have superior forecasting performance compared to dense-latent KAEs. We also perform a mechanistic study that shows latent supports produced by SKAEs are both essential for the quality of the representation and useful for identifying basins on held-out basin interior states, whereas dense-latent KAEs collapse to an uninformative single family. These results identify sparse latents and their corresponding supports as label-free, interpretable regime variables for Koopman learning in nonlinear systems with multiple local dynamical laws.",
+          "authors": [
+            "Aidan Li",
+            "Uday Kiran Reddy Tadipatri",
+            "Mahan Fathi",
+            "Sarath Chandar",
+            "Ross Goroshin"
+          ],
+          "published": "2026-08-29T05:23:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.29022v1",
+          "entry_id": "http://arxiv.org/abs/2608.29022v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.29022v1",
+          "title": "On the Existence of Geometrically Attracting Measures for Iterated Function Systems with Varying Sets of Transformations",
+          "summary": "In this paper, we focus on the asymptotic behavior of random iterated functions systems, in which both the family of transformations and the distribution of selecting them vary at each step. We consider two types of dynamics: the time-inhomogeneous Markov chain arising from forward iterates and the non-Markovian process generated by backward iterates. For both settings, we provide certain criteria for the existence of a probability measure that is geometrically attracting in the bounded Lipschitz distance, independently of the initial distribution. Finally, we illustrate our results through applications to specific models involving affine transformations.",
+          "authors": [
+            "Dawid Czapla",
+            "Rafał Kapica",
+            "Maciej Ślęczka"
+          ],
+          "published": "2026-08-29T03:29:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.28997v1",
+          "entry_id": "http://arxiv.org/abs/2608.28997v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.28997v1",
+          "title": "Verification abundance, adjudication scarcity: what happens to mathematical knowledge when proof checking becomes free",
+          "summary": "In May 2026 an OpenAI model produced a counterexample to the Erdős unit distance conjecture. Five mathematicians published a human-verified version the same day, and the result entered the literature within weeks. In August 2026 the same laboratory published ten mathematical and theoretical computer science results, each accompanied by a machine-checkable Lean 4 certificate with no unproved steps. Four weeks later, one remained the subject of an unresolved dispute over whether its formalization meant what it claimed.\n  We argue that this difference is structural. We distinguish three layers of verification: derivational validity, which a kernel checks; representational fidelity, whether the formal statement means the intended question; and epistemic significance. Only the first is mechanizable. Making it effectively free therefore does not eliminate verification work but shifts the burden to layers dependent on scarce expert attention.\n  Measurements of the August corpus illustrate the shift. The kernel-checked proofs total 20.6 MB, while the statements requiring human audit total 55.6 KB, a ratio of 379 to 1. Yet those statements contain 218 bespoke definitions rather than relying on community-vetted ones. The audit surface is therefore small in volume but irreducibly expert. We argue that machine checking produces verification abundance while leaving adjudication scarce. We propose a six-category taxonomy of representational mismatch, a disclosure schema for machine-generated mathematical claims, and implications for software, cryptography, and regulated decision systems.",
+          "authors": [
+            "Maher Kallel",
+            "Mohamed El Louadi"
+          ],
+          "published": "2026-08-29T02:09:18+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2608.28971v1",
+          "entry_id": "http://arxiv.org/abs/2608.28971v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.28971v1",
+          "title": "Calculus of the Facial Distance",
+          "summary": "We develop a few calculus rules to compute or lower bound the facial distance of a polytope. We illustrate our calculus rules on various popular polytopes. In particular, we provide a provide a lower bound on the facial distance of the Birkhoff polytope.",
+          "authors": [
+            "Javier Pena",
+            "Elias Wirth"
+          ],
+          "published": "2026-08-29T00:48:25+00:00"
+        }
+      ],
+      "interest_results": {},
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "discord_messages": {},
+      "reading_memos": {},
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-09-01T07:48:57.822371+00:00",
+      "updated_at": "2026-09-01T07:48:57.822371+00:00",
+      "finalized_at": null
     }
   ]
 }
