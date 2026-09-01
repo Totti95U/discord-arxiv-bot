@@ -40957,7 +40957,7 @@
     },
     {
       "pipeline_id": "20260901T074857Z-1f35a875",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/nyt2bg211pl3dmgeaszxhx9jmvpcgk24j92t",
       "summarize_job_name": "batches/j6dk3j82sstuf24mlq16tc26ibuvnfl57b31",
       "papers": [
@@ -41360,16 +41360,183 @@
         "http://arxiv.org/abs/2608.29171v1",
         "http://arxiv.org/abs/2608.29094v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2608.29440v1": {
+          "title": "ℚ(X) 上の軌道問題の決定可能性",
+          "summary": "軌道問題（Orbit Problem）とは、与えられたベクトル x, y ∈ ℚⁿ と n×n 行列 A に対して Aⁱx = y を満たす i ∈ ℕ が存在するかどうかを判定する問題であり、1980年に Kannan と Lipton によって決定可能であることが示された。本論文では、体を可算個の超越元の集合 X を持つ有理関数体 ℚ(X) に拡張した一般化軌道問題も決定可能であることを示す。さらに、任意の群 G に対する「軌道累乗問題（与えられた x, y ∈ G に対して xⁿ = y を満たす n ∈ ℤ の存在を判定する問題）」を定義し、主結果を適用することで、組みひも群（braid groups）や Aut(F₂) を含む様々な群に対してこの問題が決定可能であることを示す。",
+          "keywords": [
+            "orbit problem",
+            "decidability",
+            "orbit power problem",
+            "braid groups",
+            "Aut(F_2)"
+          ],
+          "appendix": "本論文で扱われている群上の決定問題や組みひも群、Aut(F₂) の解析は、提示された興味ある分野のうち「strucure of large countable infinite groups」および力学系的な決定可能性の観点から「arithmetic dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.29383v1": {
+          "title": "ℚ上の多項式における有理事前周期点の平均個数",
+          "summary": "M_d(X)を有理数体ℚ上で定義された次数dの多項式のうち、z^(d-1)の係数が0、定数項が1、かつ高さが高々Xであるものにおける有理事前周期点の平均個数とする。本論文では、任意の整数d ≥ 3および任意の実数C > 4√2に対して、M_d(X) ≪_d X^(-1) exp(C√(log X / log log X)) が成り立つことを証明する。さらに、d = 2の場合には最適評価である M_2(X) ≪ X^(-1) を証明する。",
+          "keywords": [
+            "rational preperiodic points",
+            "polynomials over Q",
+            "arithmetic dynamics",
+            "height"
+          ],
+          "appendix": "本論文は「arithmetic dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.29319v1": {
+          "title": "古典状態を持つ量子有限オートマトンの空性問題",
+          "summary": "本論文では、量子操作の有限アルファベット上の非決定性有限オートマトンである「古典状態を持つ量子有限オートマトン（QFAC）」の有限語に対する表現能力および空性問題を研究している。まず、正則言語と量子有限オートマトン（QFA）で定義可能な言語は互いに比較不能であるが、どちらもQFACで定義可能な言語に真に含まれることを示す。次に、QFACの空性問題がQFAと言語交差問題に帰着できることを示し、これが厳密なしきい値では決定可能、非厳密なしきい値では決定不能となる性質を導く。また、基底のオートマトンに入れ子ループを含まない「平坦なQFAC」に対しては、力学系における未解決問題である高次元軌道問題との関連性を明らかにする。最後に、Groverの探索や量子ランダムウォークなどの主要な量子アルゴリズムを表現可能な「1ループQFAC」の非空性を検証するための、健全かつ半完全な証拠探索手順を提案している。",
+          "keywords": [
+            "Quantum Finite Automata with Classical states (QFACs)",
+            "emptiness problem",
+            "orbit problem",
+            "quantum random walks"
+          ],
+          "appendix": "本論文は「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」と直接関連しています。また、平坦なQFACの空性問題と力学系における未解決問題（orbit problem）との関連性が示されていることから、「complex dynamics」や「arithmetic dynamics」などの力学系理論とも間接的に関係しています。"
+        },
+        "http://arxiv.org/abs/2608.29231v1": {
+          "title": "ポリオミノの密度",
+          "summary": "de Bruijn ポリオミノは、各セルが彩色され、別のポリオミノの可能なすべての彩色パターンをちょうど1つずつ含むものであり、これは de Bruijn 系列の概念を一般化したものである。本研究では、最小サイズの de Bruijn ポリオミノの探索を目的とし、その足がかりとして、ポリオミノ p の平行移動コピー（重複を許す）を少なくとも N 個含む最小のポリオミノを求める問題を導入する。これを (p, N)-稠密（dense）と呼び、そのサイズを a_{p,N} とする。同じサイズの特定のポリオミノのペア p と q に対して、a_{p,N} と a_{q,N} を関連付けるポリオミノ変換の存在を示し、これを用いて数列 (a_{p,N})_{N=1}^∞ を共有するポリオミノのクラスを特定した。また、最大5セルまでのほとんどのポリオミノについて (a_{p,N})_{N=1}^∞ の閉形式を与えた。これらの結果を活用して、新たな de Bruijn ポリオミノや、de Bruijn に類似した特性を持つ他の彩色ポリフォームを導入する。",
+          "keywords": [
+            "de Bruijn polyomino",
+            "de Bruijn sequence",
+            "polyomino density",
+            "polyforms",
+            "combinatorics"
+          ],
+          "appendix": "本論文のテーマである de Bruijn 系列の一般化やタイリング・重なりに関する組合せ論的性質は、combinatorics on words や symbolic dynamics（高次元への拡張）と関連しています。"
+        },
+        "http://arxiv.org/abs/2608.29219v1": {
+          "title": "コウロフカ・ノートブックのいくつかの未解決問題について",
+          "summary": "本論文では、文献上で未解決問題として記録されている組合せ論的群論のいくつかの問題に対する解を与える。主な問題の出典はコウロフカ・ノートブック（Kourovka Notebook）であるが、その他の文献からの問題も扱っている。なお、すべての解は大規模言語モデル（LLM）の支援を受けて発見され、著者らによって検証されたものである。",
+          "keywords": [
+            "combinatorial group theory",
+            "Kourovka Notebook",
+            "open problems",
+            "large language models"
+          ],
+          "appendix": "本論文は組合せ論的群論の諸問題を扱っており、「strucure of large countable infinite groups（大きな可算無限群の構造）」と関連しています。"
+        },
+        "http://arxiv.org/abs/2608.29216v1": {
+          "title": "概加法的列に対する最大化族と典型的周期最適化",
+          "summary": "本論文では、2つの摂動空間における概加法的ポテンシャルの典型的周期最適化（TPO）を研究している。主たる設定である軌道リプシッツ概加法的ポテンシャルのバナッハ商空間 ℰ_orb(X,T) において、最大化可能集合および可算最大化可能族の理論を拡張し、大域的構造定理を確立した。可算最大化可能族において、すべての非境界元が X-拡張可能 TPO を持ち、かつ境界領域の内部が空であれば大域的 TPO が成り立つことを示した。この応用として、ℰ_orb(X,T) が無限次元であり、開ロッキング領域内の最大化周期が非有界となるような大域的 TPO を持つコンパクト系を構成した。さらに、固定された概加法的ポテンシャル Φ に対してリプシッツ葉上の相対的 TPO 理論を展開し（Φ=0 の場合は古典的リプシッツ TPO に帰着）、葉ごとの構造定理の証明およびフルシフト上での非加法的ランク1行列の例を提示した。",
+          "keywords": [
+            "typical periodic optimization",
+            "almost additive potentials",
+            "countable maximizable families",
+            "Lipschitz leaf",
+            "locking regions"
+          ],
+          "appendix": "本論文は記号力学系（symbolic dynamics）および力学系理論全般に関連しています。特にフルシフト（full shift）上での構成や周期軌道の最適化問題など、symbolic dynamics の文脈で発展した理論を扱っています。"
+        },
+        "http://arxiv.org/abs/2608.29171v1": {
+          "title": "specification propertyを超えたXiongカオス集合の全位相エントロピー",
+          "summary": "本論文では、弱められた形式のspecification propertyを満たすシフト力学系 (X_ℒ, σ) において、至る所で全位相エントロピーを持つ（すなわち、任意の空でない開部分集合とCの共通部分が全位相エントロピーを持つ）X_ℒのXiongカオス集合Cが存在することを示す。さらに、この集合Cは、任意の空でない部分集合Aおよび任意の連続写像F: A → X_ℒに対し、正の整数の増加列 {p_k}_{k=1}^{+∞} が存在して、任意の x ∈ A に対して lim_{k→+∞} σ^{p_k}(x) = F(x) が成立するという性質を満たす。",
+          "keywords": [
+            "Topological entropy",
+            "Xiong chaotic set",
+            "specification property",
+            "shift dynamical system"
+          ],
+          "appendix": "本論文はシフト力学系を扱っており、指定された興味ある分野のうち「symbolic dynamics」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.29094v1": {
+          "title": "任意のロボット（有限状態機械と同等）のクリック・フランクリン・ワトソン遺伝子の定義と各遺伝子に付随するシャノン遺伝暗号の定義、および任意の正規極大接頭辞符号のクローン・ローズ計算量の定義",
+          "summary": "本論文では、符号とオートマトン理論（シュッツェンベルジェら）、有限半群上のランダムウォーク（ディアコニスら）、そしてクローン・ローズ計算量cの決定可能性の証明に用いられる有限半群論の高度な手法（マルゴリス、シリング、著者ら）という数学の3つの柱の関連性について議論する。特に、計算量cの基本補題（部分群上で単射となる有限半群間の全射準同型はcを保存する）と、マルコフ連鎖における過去からの結合（coupling from the past）、ディアコニスの強定常時間、そして本論文で定義される有限オートマトンのクリック・フランクリン・ワトソン遺伝子との間に驚くべき関係が存在することを示す。",
+          "keywords": [
+            "finite state machine",
+            "Krohn-Rhodes complexity",
+            "finite semigroups",
+            "coupling from the past",
+            "strong stationary time"
+          ],
+          "appendix": "本論文は有限状態機械（オートマトン）や符号理論、有限半群論に関する議論を含んでおり、興味ある分野のうち「automata theory」および「formal languages」と関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.29440v1",
+        "http://arxiv.org/abs/2608.29383v1",
+        "http://arxiv.org/abs/2608.29319v1",
+        "http://arxiv.org/abs/2608.29231v1",
+        "http://arxiv.org/abs/2608.29219v1",
+        "http://arxiv.org/abs/2608.29216v1",
+        "http://arxiv.org/abs/2608.29171v1",
+        "http://arxiv.org/abs/2608.29094v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2608.29440v1": {
+          "message_id": "1544366069097955410",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.29383v1": {
+          "message_id": "1544366078065508486",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.29319v1": {
+          "message_id": "1544366087720796254",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.29231v1": {
+          "message_id": "1544366096981692447",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.29219v1": {
+          "message_id": "1544366107388022926",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.29216v1": {
+          "message_id": "1544366115860521141",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.29171v1": {
+          "message_id": "1544366125197041818",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.29094v1": {
+          "message_id": "1544366134252281940",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-01T07:48:57.822371+00:00",
-      "updated_at": "2026-09-01T11:53:03.538483+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-01T15:19:41.321536+00:00",
+      "finalized_at": "2026-09-01T15:19:41.321509+00:00"
     }
   ]
 }
