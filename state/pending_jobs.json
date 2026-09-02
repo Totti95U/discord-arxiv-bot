@@ -41540,7 +41540,7 @@
     },
     {
       "pipeline_id": "20260902T070604Z-7d825875",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/ymzc9ie5q6okzssfrbp1o2rd8uewnt7evzkl",
       "summarize_job_name": "batches/jt57dfc01vdg9puvudbicric1mcfiu1fn268",
       "papers": [
@@ -42010,16 +42010,124 @@
         "http://arxiv.org/abs/2608.29595v1",
         "http://arxiv.org/abs/2608.29592v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2608.30002v2": {
+          "title": "カノン順列における3つの異なる文字を持つパターンの回避",
+          "summary": "本論文では、カノン順列（Canon permutations）における3つの異なる文字からなる長さ3のパターン回避を研究している。この問題を格子語（lattice words）におけるパターン回避の研究に帰着させることで、そのようなパターン回避クラスが6つ存在することを示し、元のカノン順列のパターン回避問題に対しては12のクラスが存在することを明らかにした。また、これらのクラスに対する降下統計量の細分化を与え、降下多項式が回文的かつγ-正となるパターンを分類した。γ-正となる場合は、Foata-Strehlのvalley hoppingに類似した群作用によってそのγ-正性を説明している。さらに、Laudoneによる基数に関する予想を受けて、1213、12112、1231のラベル付け替え軌道におけるパターン回避を研究し、それらの結果に対する全単射による証明を与えている。",
+          "keywords": [
+            "canon permutations",
+            "pattern avoidance",
+            "lattice words",
+            "descent polynomials",
+            "gamma-positivity"
+          ],
+          "appendix": "本論文は格子語（lattice words）やパターンの回避を扱っており、指定された興味ある分野のうち「combinatorics on words」に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.29639v1": {
+          "title": "構文概念束における有限モノイド圧縮：アリティ階層と擬多様体の三分法",
+          "summary": "本論文では、Clarkの構文概念束（SCL）およびその任意有限アリティへの拡張において、主層上の保護されたタプル代入をアリティ f まで保存する有限モノイド観測の最小像サイズ cmp_f(L) を研究している。正則言語に対し、cmp_f(L) は付点構文モノイドからの f 分離関係準同型の余域の最小濃度として正確に特徴づけられる。擬多様体 V 上でこれらの圧縮数が一様に安定する最小アリティを ch(V) と定義すると、ch(V) ∈ {1, 2, ∞} であり、ch(V) = ∞ となるのは Synt({ab}) ∈ V の場合に限られるという三分法定理が示される。これにより、3以上の有限の一様圧縮高は存在しないことが示され、無限の場合の厳密性や有限側での交換可能モノイド（アリティ1で安定）や完全正則モノイド（アリティ2までに安定）などの性質も解明されている。さらに、単項アリティにおける有限単純グラフの彩色数との関連や、cmp_1(L) ≤ 3 の判定がNP完全であることも示されている。",
+          "keywords": [
+            "syntactic concept lattice",
+            "finite monoid",
+            "pseudovariety",
+            "arity hierarchy",
+            "relational morphism"
+          ],
+          "appendix": "本論文は正則言語、構文モノイド、擬多様体などを扱っており、オートマトン理論 (automata theory) および形式言語理論 (formal languages) に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.29599v1": {
+          "title": "非コンパクトな局所コンパクトsofic群のポアソン作用は完全正エントロピーを持つ",
+          "summary": "本論文では、局所コンパクトsofic群のポアソン作用の測度soficエントロピーを研究するためにcompleted root viewsを用いる。任意の非コンパクト・局所コンパクト・第二可算sofic群および任意の局所コンパクトsofic近似に対して、各正強度ポアソン作用が完全正の測度soficエントロピーを持つことを証明する。また、平均化された空間公式および点ごとの空間公式とSinghのエントロピーを比較し、主張された定理において非コンパクト性が必須であることを示す。",
+          "keywords": [
+            "Poisson actions",
+            "locally compact sofic groups",
+            "measure sofic entropy",
+            "completed root views",
+            "completely positive entropy"
+          ],
+          "appendix": "本論文は群の測度論的作用やエントロピー論を扱っており、興味ある分野の「strucure of large countable infinite groups」や力学系理論（symbolic dynamicsなど）の拡張に関連するテーマを含んでいます。"
+        },
+        "http://arxiv.org/abs/2608.29595v1": {
+          "title": "反例生成マシンとしてのGPT",
+          "summary": "本論文では、GPT Proを用いて12か月間にわたって発見された、組合せ論、数論、凸解析、解析学などの分野における15件以上の反例を報告する。これらには比較的よく知られた問題からあまり知られていない問題までの反例が含まれている。また、リポジトリ（https://github.com/suvrit/count-ex-machina）が公開されており、オープンソースの反例ライブラリの構築に向けた新たな貢献を歓迎している。",
+          "keywords": [
+            "GPT",
+            "counterexamples",
+            "combinatorics",
+            "number theory",
+            "open-source countex library"
+          ],
+          "appendix": "本論文では組合せ論（combinatorics）や数論（number theory）における反例が扱われており、提示された興味ある分野のうち、組合せ論的手法や数論的ダイナミクス等に関連する数学的対象に対する反例探索としての関連性が考えられます。"
+        },
+        "http://arxiv.org/abs/2608.29592v1": {
+          "title": "セルプローブ下界を用いた構文解析表現文法の分離",
+          "summary": "本論文では、構文解析表現文法（PEG）に関する3つの未解決問題を解決している。線形文脈自由言語かつPEG言語でありながら、その反転言語が線形文脈自由言語であってもPEG言語ではない単一の言語 C を構築した。これにより、ある線形文脈自由言語がPEG言語ではないこと、およびPEG言語が反転操作に関して閉じていないことが証明され、Loff、Moreira、Reisの予想が肯定的に解決された。さらに同じ反転言語を分解することで、REG · PEG ⊆ PEG であるにもかかわらず PEG · REG ⊄ PEG という強い形でRubtsovとChudinovの連結閉包問題を否定的に解決し、Kleeneスター、準同型、代入の下での非閉包性も示した。主要な手法として、PEG言語の反転を特徴づけるスキャフォールディングオートマトン（SCA）をセルプローブモデルにおける動的データ構造へと変換し、セルプローブ下界を用いて非所属性を証明する転送法を開発している。多相内積問題にこの手法を適用し、Koのセルプローブ下界を用いることで目的の言語を導出した。なお、これらの議論はLean 4でも形式化されている。",
+          "keywords": [
+            "parsing expression grammars",
+            "cell-probe lower bounds",
+            "scaffolding automata",
+            "closure properties",
+            "linear context-free languages"
+          ],
+          "appendix": "本研究はオートマトン理論（automata theory）および形式言語理論（formal languages）に密接に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2608.30002v2",
+        "http://arxiv.org/abs/2608.29639v1",
+        "http://arxiv.org/abs/2608.29599v1",
+        "http://arxiv.org/abs/2608.29595v1",
+        "http://arxiv.org/abs/2608.29592v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2608.30002v2": {
+          "message_id": "1544671360645599264",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.29639v1": {
+          "message_id": "1544671369684320331",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.29599v1": {
+          "message_id": "1544671378706399303",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.29595v1": {
+          "message_id": "1544671387669504021",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.29592v1": {
+          "message_id": "1544671396683059271",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-02T07:06:04.907235+00:00",
-      "updated_at": "2026-09-02T07:13:25.265106+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-02T11:32:41.490531+00:00",
+      "finalized_at": "2026-09-02T11:32:41.490512+00:00"
     }
   ]
 }
