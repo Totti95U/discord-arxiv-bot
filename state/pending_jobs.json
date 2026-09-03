@@ -42131,7 +42131,7 @@
     },
     {
       "pipeline_id": "20260903T071023Z-645d62bf",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/620d5l9nkfuja6uud2q4v3i8wv76evhcka6x",
       "summarize_job_name": "batches/ojfvyahzs3po2h6wv5hexgsnj2avaou0awk6",
       "papers": [
@@ -43277,16 +43277,270 @@
         "http://arxiv.org/abs/2608.30231v1",
         "http://arxiv.org/abs/2608.30127v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2609.00382v1": {
+          "title": "生成元の長さに着目した自由群の部分群に関する2つの問題",
+          "summary": "本論文では、生成元の最大長が与えられた際の部分群のランクに対するタイトな上界を求めるDotsenkoの問題に解答する。さらに同様の手法を用いて、Kourovkaノートブック第10版に掲載されていたGrigorchukの長年の問題にも解答する。これらの結果は、Stallings折りたたみ（Stallings foldings）および基礎的なグラフ理論を用いて達成される。",
+          "keywords": [
+            "subgroups of free groups",
+            "lengths of generators",
+            "Stallings foldings",
+            "Kourovka notebook",
+            "graph theory"
+          ],
+          "appendix": "本論文は「strucure of large countable infinite groups（可算無限群の構造）」分野（自由群の部分群理論および幾何学的群論）に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.00379v1": {
+          "title": "LTLfからLTLへの簡約に関する覚書",
+          "summary": "有限語上の線形時相論理であるLTLfは、新しい原子命題を導入して無限語の接頭辞を表すことで通常のLTLへと簡約できることが先行研究で示されている。しかし、この簡約によって得られるLTL論理式はManna-Pnueli階層における義務特性（obligation property）を表現しているにもかかわらず、LTLの統語論的義務断片（syntactic obligation fragment）には属さないという問題があった。本稿では、変換後のLTL論理式が常に統語論的義務となるようSpotツールで修正された簡約手法を示す。これにより、統語論的義務に特化したアルゴリズム（例えば、統語論的義務から最小弱決定性Büchiオートマトンへの特化型変換など）をLTLf論理式に対しても適用可能になる。",
+          "keywords": [
+            "LTLf",
+            "LTL",
+            "syntactic obligation",
+            "Büchi automata",
+            "Spot"
+          ],
+          "appendix": "オートマトン理論（automata theory）および形式言語理論（formal languages）に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.00301v1": {
+          "title": "円周回転のコーディングに対する周期構造とシュレーディンガー作用素",
+          "summary": "無理数 α と区間 I ⊂ 𝕋 に対し、α による回転軌道を I と Iᶜ への所属によって符号化して得られる2区間コーディングサブシフト X^{(I, α)} を考える。各系列 c ∈ X^{(I, α)} に付随するシュレーディンガー作用素 H_c に関して、先行研究では α の連分数展開の要素の上極限が4以上であれば、ほとんどすべての c に対し固有値の非存在を意味する「3-block Gordon 構造」を持つことが示されていた。本論文ではこれを大幅に改善し、α が銀比（silver mean）とメビウス同値であり、かつ |I| ∈ ℤα + f(α)（f(α) は 1/2, α/2, (α+1)/2 のいずれかの値を取る無限級数）となる可算個の対 (α, |I|) を除くすべての (α, I) について、概確実に 3-block Gordon 構造が成り立つことを完全特徴づけた。さらに、全測度の α および任意の I に対し、軌道コーディングが 3-block Gordon 構造を持たない点の集合のハウスドルフ次元が 1 から離れて抑えられることも示した。",
+          "keywords": [
+            "Schrodinger operators",
+            "coding of circle rotations",
+            "subshift",
+            "3-block Gordon structure",
+            "Hausdorff dimension"
+          ],
+          "appendix": "本論文は記号力学系（symbolic dynamics）および語の組合せ論（combinatorics on words）に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.00217v1": {
+          "title": "内部関数の制限における双対混合性と準混合性",
+          "summary": "測度保存変換の双対準混合性および双対混合性は、Krickebergの準混合性および混合性をそれぞれ導く転送作用素の一様個別比率極限の性質である。上半平面の正規化された放物型内部関数の実軸への制限はルベーグ測度を保存し、それが完全（exact）であることと双対混合性を持つことは同値である。また、ある種の他の制限は「特異」双対準混合的となる。",
+          "keywords": [
+            "dual mixing",
+            "dual quasi-mixing",
+            "inner function",
+            "transfer operator",
+            "exactness"
+          ],
+          "appendix": "本論文は内部関数の力学系（複素力学系：complex dynamics）およびエルゴード理論の混合性に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.31103v1": {
+          "title": "Fₙ × ℤ における有限生成な正錐",
+          "summary": "本論文では、任意の偶数 n ≥ 2 に対し、半群として有限生成である Fₙ × ℤ 上の正錐を構成し、従来 n = 2 で知られていた構成を拡張する。Malicet、Mann、Rivas、Triestino により、Fₙ × ℤ が孤立した左順序をもつための必要十分条件は n が偶数であることが示されている。すべての有限生成正錐は孤立した左順序を定めるため、n ≥ 2 において群 Fₙ × ℤ が有限生成正錐をもつのは n が偶数の場合に限られることが導かれる。",
+          "keywords": [
+            "positive cone",
+            "finitely generated",
+            "isolated left-order",
+            "free group",
+            "left-orderable group"
+          ],
+          "appendix": "本論文は無限群の順序構造（left-order）に関する内容を扱っており、指定された興味ある分野のうち「strucure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.30965v1": {
+          "title": "高種数Cherry流とGIETのフルファミリー",
+          "summary": "Cherry流は、非自明な再帰力学系を示す2次元トーラス上の古典的なC^∞流である。本論文では、平坦な区間（flat pieces）を持つ一般化区間交換変換（GIET）が第一回帰写像として自然に現れるような、コンパクト曲面上での高種数における対応物を構築する。Keaneの条件を満たし曲面の位相と両立する組合せ論を持つ任意の区間交換変換を、半共役を除いて実現するC^∞ Cherry流の族を構成する。特に、任意の種数 g、鞍点指数の任意の指定、および各 k = 1, …, g に対して、唯一の準極小集合がちょうど k 個のエルゴード的不変測度を台とするCherry流が得られる。この構成の基礎となる1次元のメカニズムは、平坦な区間を持つGIETに対する「フルファミリー定理」であり、最適数のパラメータを持つ有限次元パラメータ族の中で、許容されるすべてのRauzy繰り込み経路を実現する。",
+          "keywords": [
+            "Cherry flows",
+            "generalized interval exchange transformations (GIETs)",
+            "Rauzy renormalization",
+            "higher genus surfaces",
+            "Keane property"
+          ],
+          "appendix": "本研究で扱われている区間交換変換（IET）やその一般化（GIET）、Rauzy繰り込みは、symbolic dynamics や combinatorics on words と深い関連があります。"
+        },
+        "http://arxiv.org/abs/2608.30928v1": {
+          "title": "単語の分離に関するさらなる考察",
+          "summary": "本論文では、Demaine、Eisenstat、Shallit、Wilsonらによって提起された単語の分離（separating words）に関する未解決問題、および反転問題に関するEbrahimnejadの追試問題を再検討する。差分単語がd個のランを持つ長さnの単語対に対してO(d log n)の上界を証明し、Demaineらのハミング距離に関する定理を拡張する。また、共役な単語に対してシフトの算術的性質に依存する境界を与える。さらに、2つの単語の順序によって非決定性分離の計算量が非有界な比率で変化し得ることを示し、Demaineらの未解決問題2を解決した。加えて、順方向と反転した決定性分離が非有界な比率で異なる可能性がある構成法を提示し、未解決問題1に対するEbrahimnejadの追試問題に答えるとともに、非決定性分離が反転に対して不変であることを利用して未解決問題3の下界を改善した。",
+          "keywords": [
+            "separating words",
+            "Hamming distance",
+            "nondeterministic separation",
+            "deterministic separation",
+            "conjugate words"
+          ],
+          "appendix": "本研究は単語の分離や有限オートマトンによる言語の識別に関連しており、興味ある分野のうち「combinatorics on words」「automata theory」「formal languages」と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.30881v1": {
+          "title": "完全不連結局所コンパクト群のグラフ間の準等長同型",
+          "summary": "すべての辺群がコンパクトであり、すべての頂点群の端数が高々1であるようなtdlc群（完全不連結局所コンパクト群）の有限グラフに分解される、コンパクト生成tdlc群GおよびHを考える。本論文では、Papasoglu-Whyteの結果をtdlc群へと拡張し、GとHが準等長同型であるための必要十分条件は、両者の端数が等しく、かつ一方の分解における各1端頂点群が他方の分解におけるある1端頂点群と互いに準等長同型であることであることを示す。その応用として、対ごとに非準等長同型なコンパクト生成非離散単純tdlc群を非可算個構成し、Smithの結果を強化する。",
+          "keywords": [
+            "totally disconnected locally compact groups",
+            "quasi-isometries",
+            "graphs of groups",
+            "ends of groups"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2608.30744v1": {
+          "title": "曲面上のリペラーおよび非線形平面IFSのアトラクターの次元",
+          "summary": "本論文では、1 < r ≤ ∞ におけるCʳ-ジェネリックな曲面上のリペラーにおいて、そのハウスドルフ次元およびボックス次元が、劣加法的位相的圧力関数の唯一の零点と正確に一致することを証明する。この枠組みの応用として、強分離条件（SSC）を満たす一様非共形かつ弱既約な平面上の非線形反復関数系（IFS）のアトラクターが、期待されるハウスドルフ次元およびボックス次元を達成することを示す。さらに、ジェネリックなリペラーに関する主定理の直接的な帰結として、SSCを満たすジェネリックなCʳ平面IFSに対してもこの次元公式が成り立つことを導く。また、このアプローチを用いて、RenとShen (2021) によるワイエルシュトラス型関数のグラフに関する二分性定理の実解析性という仮定を、任意の r > 1 に対するCʳ正則性へと弱めて拡張する。",
+          "keywords": [
+            "surface repellers",
+            "non-linear iterated function system",
+            "Hausdorff dimension",
+            "box dimension",
+            "topological pressure"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2608.30266v1": {
+          "title": "321-回避置換の反転・降下数え上げ多項式",
+          "summary": "本論文では、ヴィンキュラーパターン 321 を回避する置換について、反転数および降下数に関する数え上げ多項式の漸化式を与え、その結果としてこれらの数え上げ多項式の q-指数型母関数を導出する。さらに、制限成長語（restricted-growth words）の観点からこれらの数え上げ多項式に対する別の説明を与える。",
+          "keywords": [
+            "vincular pattern",
+            "inversion number",
+            "descent number",
+            "q-exponential generating function",
+            "restricted-growth words"
+          ],
+          "appendix": "本研究で扱われている制限成長語（restricted-growth words）に関する議論は、「combinatorics on words（語の組合せ論）」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2608.30231v1": {
+          "title": "神経回路における「More Is Different（多は異なりをもたらす）」：生物学的神経回路網の標準的再帰モチーフにおける有効理論の代数的創発",
+          "summary": "本論文では、除算正規化（DN）や勝者総取り（WTA）といった標準的な神経回路モチーフとその合成を、有限変換系として代数的にモデル化し、入力条件付き更新によって生成される遷移モノイドを解析しています。個々の生成元が非周期的（aperiodic）な更新であっても、合成を通じて非周期性が破れ、大域的には散逸的でありながら可逆的な局所サイクルが生成されることを示しています。特にWTAとDNの合成において、Krohn-Rhodesカスケード分解における群成分として真に複合的な局所サイクルが創発すること、そしてその結合自体が代数的性質を決定づけることをホロノミー解析によって証明しています。これにより、再帰的回路の合成を一種のプログラミングとして捉え、遷移モノイドが回路の計算可能なレパートリーを制約する枠組みを提示しています。",
+          "keywords": [
+            "transition monoids",
+            "transformation systems",
+            "Krohn-Rhodes cascade",
+            "canonical neural circuit motifs",
+            "compositional algebra"
+          ],
+          "appendix": "本研究はオートマトン理論（automata theory）や代数的代数構造理論（Krohn-Rhodes理論など有限半群・変換モノイドの理論）と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2608.30127v1": {
+          "title": "境界作用のスタビライザーに関連するC\\*-代数の単純性と純無限性",
+          "summary": "コンパクト空間Xに作用する離散群Γと、Xのスタビライザー部分群Λ≤Γに対し、共変(Λ, X)-表現のRieffel誘導を用いて、Λ上の特定の指標から誘導される表現のクラスおよびそれらが生成するC\\*-代数を研究する。XがΓ-境界である場合、トレースを持たない単純群C\\*-代数の新たなクラスが得られる。さらに、Γ-境界Xが極大境界（extreme boundary）である場合、関連する群C\\*-代数は純無限（purely infinite）にもなることを示し、Thompson群に関連するC\\*-代数についてKalantarとScarparoによって提起された未解決問題の一部を解決する。また、後者のC\\*-代数はRobertの意味でselflessであることも示される。",
+          "keywords": [
+            "C*-algebras",
+            "Rieffel induction",
+            "boundary actions",
+            "purely infinite",
+            "Thompson's groups"
+          ],
+          "appendix": "本論文はThompson群などの群C\\*-代数の構造を扱っており、興味ある分野の「strucure of large countable infinite groups」と関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2609.00382v1",
+        "http://arxiv.org/abs/2609.00379v1",
+        "http://arxiv.org/abs/2609.00301v1",
+        "http://arxiv.org/abs/2609.00217v1",
+        "http://arxiv.org/abs/2608.31103v1",
+        "http://arxiv.org/abs/2608.30965v1",
+        "http://arxiv.org/abs/2608.30928v1",
+        "http://arxiv.org/abs/2608.30881v1",
+        "http://arxiv.org/abs/2608.30744v1",
+        "http://arxiv.org/abs/2608.30266v1",
+        "http://arxiv.org/abs/2608.30231v1",
+        "http://arxiv.org/abs/2608.30127v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2609.00382v1": {
+          "message_id": "1545043371473772606",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.00379v1": {
+          "message_id": "1545043379736551485",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.00301v1": {
+          "message_id": "1545043390922756140",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.00217v1": {
+          "message_id": "1545043400691155015",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.31103v1": {
+          "message_id": "1545043411009273878",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.30965v1": {
+          "message_id": "1545043419175452735",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.30928v1": {
+          "message_id": "1545043428075774063",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.30881v1": {
+          "message_id": "1545043436015587501",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.30744v1": {
+          "message_id": "1545043444379025429",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.30266v1": {
+          "message_id": "1545043452511911987",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.30231v1": {
+          "message_id": "1545043460480827416",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2608.30127v1": {
+          "message_id": "1545043468982820965",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-03T07:10:23.251569+00:00",
-      "updated_at": "2026-09-03T09:21:43.334614+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-03T12:11:10.395416+00:00",
+      "finalized_at": "2026-09-03T12:11:10.395390+00:00"
     }
   ]
 }
