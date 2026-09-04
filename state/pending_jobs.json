@@ -43457,9 +43457,12 @@
           "message_id": "1545043390922756140",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1545366473697132548",
+          "read_requested_at": "2026-09-04T09:34:17.786114+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-04T09:34:39.540970+00:00"
         },
         "http://arxiv.org/abs/2609.00217v1": {
           "message_id": "1545043400691155015",
@@ -43534,7 +43537,20 @@
           "paper_thread_id": null
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2609.00301v1": {
+          "conclusion": "本論文は、無理数回転と2区間による円周回転の符号化サブシフトにおいて、ほぼすべての符号化系列が3-block Gordon構造（周期的な重複構造）を持つための必要十分条件を完全に特徴付けた論文です。例外となるカウント可能なパラメータの組を除き、関連するシュレーディンガー演算子がほぼ確実に点スペクトル（固有値）を持たないことを示し、さらに例外集合のHausdorff次元が1未満であることも証明しています。",
+          "main_claims": "1. Theorem 1.1 (p.2): サブシフト X^(I, α) がほぼ至る所で3-block Gordon構造を持たないのは、回転数 α の連分数展開の係数が lim a_n = 2 を満たし、かつ区間長 |I| ∈ Zα + f(α) （ただし f(α) ∈ {1/2, α/2, (α+1)/2}）のときに限る。\n2. Corollary 1.2 (p.2): 1.の例外条件に当てはまらない限り、ほぼすべての符号化系列に対してシュレーディンガー演算子 H_x は固有値を持たない。\n3. Theorem 1.3 (p.2): フル測度の α の集合において、3-block Gordon構造を持たない点の集合のHausdorff次元は1未満である。\n4. Theorem 5.1 (p.20): 例外ケース（lim a_n = 2 かつ |I| ∈ Zα + f(α)）では、3-block Gordon構造を持つ点が存在せず、十分長い語 w による www 型の語も含まない。\n新規性：従来のKaminaga (1996) などの結果（limsup a_k ≥ 4 等の十分条件）を大幅に改善し、ほぼ確実な3-block Gordon構造の成立条件を完全分類した点。",
+          "method_outline": "1. 幾何的帰着（Section 3, Lemma 3.2, Proposition 3.3）: 符号化系列の3-block Gordon構造の有無を、初期点 x が集合 T_k + (-ϵ_k, ϵ_k) に入らない条件に帰着させ、その補集合の測度 β_k の limsup が正であることを示す方針を立てる。\n2. 連分数と3-gap定理の応用（Section 2, 3）: Q_k = {iα : 0 ≤ i < q_k} が円周を2種類の長さのギャップ（S_k, L_k）に分割する性質（3-gap定理）を利用して、区間端点 a を加えた集合 T_k のギャップ構造を緻密に計算する。\n3. 大数字ケースの解析（Theorem 3.4）: limsup a_k ≥ 3 の場合、ギャップ長が十分大きいことを示し β_k の下限をバウンドする。\n4. 小数字ケースの5パターン分類（Theorem 3.10）: a_k ≤ 2 の場合、点 a が各スケールの短区間・長区間のどこに落ちるかに応じて5つのケースに分類し、いずれのケースでも β_k が正の下限を持つことを示す。\n5. 極限級数の導出（Theorem 3.13, 3.14）: a が常に短区間または長区間に留まり続ける極限状況を連分数の自己相似性（銀比 σ や金比 γ）を用いて解析し、例外級数 f(α) を特定する。",
+          "research_connection": "【論文に明記された接点】\n- Symbolic Dynamics / Combinatorics on Words: Sturmian shifts, Toeplitz shifts, Rote sequences などの低複雑度サブシフトにおける重複語（3-block Gordon構造）や不可逆性の解析。\n- Ergodic Schrödinger Operators: 1次元準周期シュレーディンガー演算子のスペクトル理論（点スペクトルの不在証明）。\n- Diophantine Approximation: 連分数展開、3-gap Theorem（Steinhaus予想）。\n\n【推測される接点】\n- Automata Theory / Formal Languages: Sturmian語や置換力学系（substitution dynamical systems）で生成される無限語の言語学的性質・自動機械可能性。\n- Complex/Arithmetic Dynamics, Validated Numerics, Structure of Large Countable Infinite Groups: 本論文で直接の言及・関連付けは確認できず。",
+          "reading_guide": "【前提知識】\n- 連分数の基本性質（近似分数 q_k, a_k, 3-gap定理）\n- 象徴動力学の基礎（サブシフト、一様エルゴード性）\n- 3-block Gordonの補題（Lemma 2.3）\n\n【最初に読むべき箇所】\n- Definition 2.2 (3-block Gordon structure)\n- Lemma 2.8 (3-gap Theorem)\n- Theorem 1.1 & Corollary 1.2 (主定理の主張)\n- Lemma 3.2 & Proposition 3.3 (証明の核心となる幾何学的アイデア)\n\n【精読範囲】\n全体構造の把握なら Section 1, 2, 3 の主要定理（1.1, 1.3, 3.10, 5.1）のステートメントと証明の概略のみで十分です。詳細な評価バウンドを追う場合のみ Section 3 のケース分け（Case 1〜5）を精読することを推奨します。",
+          "follow_up_questions": [
+            "1. lim a_n = 2 かつ |I| ∈ Zα + f(α) の「銀比ケース」において、3-block Gordon構造は存在しないものの、2-block Gordon構造やトレースマップ解析を用いて固有値の不在（または存在）を証明することは可能ですか？",
+            "2. k-区間による円周回転の符号化（k > 2）へ本手法を拡張する場合、limsup a_n ≥ 2k - 1 以外の条件でどのような技術的障害が生じますか？",
+            "3. 例外集合 T のHausdorff次元の評価（Theorem 1.3, Corollary 4.1）において、a_k ≥ 4 の密度条件を最適化することで、次元の上限（約0.99989）を大幅に改善できますか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
