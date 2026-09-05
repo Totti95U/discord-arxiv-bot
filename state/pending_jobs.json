@@ -44879,9 +44879,12 @@
           "message_id": "1545427711642697771",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1545725374602936371",
+          "read_requested_at": "2026-09-05T09:20:26.516461+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-05T09:20:47.662409+00:00"
         },
         "http://arxiv.org/abs/2609.01868v1": {
           "message_id": "1545427719955681281",
@@ -44919,9 +44922,12 @@
           "message_id": "1545427753791266837",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1545725474569977958",
+          "read_requested_at": "2026-09-05T09:20:48.640884+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-05T09:21:12.193302+00:00"
         },
         "http://arxiv.org/abs/2609.01382v1": {
           "message_id": "1545427764604051488",
@@ -45028,7 +45034,32 @@
           "paper_thread_id": null
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2609.01874v1": {
+          "conclusion": "本論文は、{1,...,n}の置換をWordleスタイルの位置情報フィードバックで推測する「Permutation Wordle」を提案し、その最適戦略「CircularShift」を解析した研究です。この戦略がちょうどk+1回で当てる置換の数はEulerian number A(n,k)に一致し、平均試行回数(n+1)/2回を達成します。さらに多項式法を用いて、任意の決定論的・確率的戦略の中でCircularShiftが最良（最適）であることを厳密に証明しています。",
+          "main_claims": "1. 定理7・補題8 (Section 4, p.7-8): 戦略CircularShiftが置換σを解くのに必要な試行回数は 1 + exc(σ) であり、ちょうどk+1回で解ける置換の数はEulerian number A(n,k)に等しい。2. Corollary 9 (Section 4, p.8): 一様ランダムな秘密置換に対するCircularShiftの平均試行回数は (n+1)/2 回である。3. 定理10・11、系12 (Section 5, p.9): 任意の決定論的/確率的戦略に対して、d+1回以内に解ける置換の数は高々 Σ_{k=0}^d A(n,k) であり、CircularShiftは成功確率最大化・平均回数最小化の意味で最適である（新規性：代数的組み合わせ論手法による完全な最適性証明）。",
+          "method_outline": "証明・手法の骨格は以下の通りです。 1. [戦略の定義] 正解した位置の値は固定し、不正解の位置の値を右に巡回シフトする決定論的戦略CircularShiftを定義(Definition 1)。 2. [組合せ論的解析] 正確な位置に達するまでに一巡(wrap around)する値の数が置換のexc(σ)(excedanceの数)と一致することを示し、試行回数とEulerian numberを直接対応付ける(Lemma 8)。 3. [多項式表現] 任意の決定論的戦略のフィードバック履歴Uに対し、間違えた位置を根に持つ多項式 P_U を定義(Section 5)。 4. [一次独立性] 履歴多項式 P_U が置換点集合 X_n 上で一次独立であることを三角行列性から示す(Proposition 14)。 5. [次元評価] 各変数次数d以下の多項式空間 V_d の次元を、Garsia-Stantonのdescent monomial基底 B_π と単項式順序による簡略化(straightening)を用いて dim V_d = Σ_{k=0}^d A(n,k) と算出し、解ける置換数の上限を証明(Proposition 15)。",
+          "research_connection": "【論文に明記されている接点】 Combinatorics on words / Enumerative combinatorics (Eulerian numbers, excedance, descent, Foataの基本変換, Garsia-Stanton基底) や Game theory / Mastermind (ゲームの minimax 値およびランダム化による敵対者への対抗)。 【推測される接点】 Automata theory / Formal languages (フィードバックに基づき状態遷移する決定性オートマトンとしての戦略の定式化) や Group structure (対称群 S_n の幾何構造およびコインバリアント環 C_n の多項式表現)。",
+          "reading_guide": "【前提知識】 初歩的な群論（対称群 S_n ）、組み合わせ論の基礎概念（置換、Eulerian number、descent/excedance）、線形代数・多項式の次元解析。【最初に読むべき箇所】 Definition 1 (CircularShift, p.4), Definition 2・3 (ExcedanceとEulerian number, p.5), Theorem 7 & Lemma 8 (Section 4, p.7-8), Theorem 10 (Section 5, p.9)。【精読方針】 ゲームの性質とEulerian numberの関わりに興味がある場合は Section 1〜4 で十分です。多項式法による最適性の厳密な代数証明まで追いかけたい場合は Section 5 まで精読することを推奨します。",
+          "follow_up_questions": [
+            "CircularShiftのフィードバック履歴多項式 P_U が一次独立であることを示す際、なぜ各変数の次数が d 以下に収まるのですか？",
+            "Section 7で言及されている「マルチカラー（Multicolor）版 Permutation Wordle」では高次Eulerian numberがどのように現れ、どのような最適性が予想されていますか？",
+            "Mastermindの数値的フィードバック（一致数のカウントのみ）とWordleの位置的フィードバック（各位置の正誤）の違いは、敵対的（アドバーサリアル）な出題者に対するリラベリング手法の有効性にどう影響しますか？"
+          ]
+        },
+        "http://arxiv.org/abs/2609.01399v1": {
+          "conclusion": "2次回転対称(RS) Boolean関数の重み漸化式に関する「Quadratic Easy Coefficients Conjecture (ECC)」を完全に証明した論文。記号力学系（有限型シフト）と動的ゼータ関数、および符号付き de Bruijn 転送行列のフーリエ分解を結びつけることで、重複度を含めた特性根の係数が一律に -1/2 になることを示しました。",
+          "main_claims": "Theorem 1.1 (2節, p.2): 2次RS Boolean関数の重み系列 w_n = wt(f_n) を逆方向に拡張した際、w_n = 2^{n-1} - (1/2)(η_1^n + ... + η_{2^M}^n) (n ≥ 1) が成立する。主要な新規性は、ルール行列の特性多項式に重複根が存在する場合も含め、代数的重複度を込めて普遍的な係数 (-1/2) が得られることをゼータ行列式 det(I - z R(f)) との直接対応 (Theorem 5.2, p.8) によって厳密に証明した点です。",
+          "method_outline": "1. 拡大ルール行列の再帰部分(recurrent core)を解析し、2^M × 2^M の符号付き de Bruijn 転送行列 B を抽出して R(f) が [B^T, 0; c, 2] のブロック三角行列に帰着することを示す (Theorem 3.3, p.4)。 2. RS Boolean関数から構成される有限型シフト X_f を F_2 上のスキュー積 Y_T として表現する (Lemma 4.1, p.5)。 3. F_2 座標のフーリエ変換により、隣接行列 A を非符号 de Bruijn 行列 U と符号付き行列 B の直和 U ⊕ B に対角ブロック化する (Theorem 5.1, p.6)。 4. 動的ゼータ関数 ζ_{X_f}(z) の分母 1/det(I - z R(f)) との等比対応を導く (Theorem 5.2, p.8)。 5. トレース等式 tr(B^n) = ∑_{x} (-1)^{f_n(x)} から重み wt(f_n) = 2^{n-1} - (1/2) tr(B^n) を導出し、逆向き漸化式の一意な拡張を保証して証明を完了する (7節, p.9)。",
+          "research_connection": "【明記された接点】symbolic dynamics（記号力学系）：有限型シフト (shift of finite type)、Artin-Mazur 動的ゼータ関数、de Bruijn グラフを用いて表現・解析している (1節, 4-5節)。 【推測による接点】combinatorics on words / automata theory：de Bruijn シーケンスや遷移グラフ、自動機の状態遷移構造と深く関連する。complex dynamics / arithmetic dynamics：動的ゼータ関数や周期点カウントのアプローチは数論的・解析的力学系と共通のツールを用いる。",
+          "reading_guide": "前提知識：Boolean関数、線形漸化式、記号力学系の基礎（有限型シフト・ゼータ関数）。 最初に読むべき箇所：Theorem 1.1（主定理の主張, p.2）、Theorem 3.3（ルール行列の分解, p.4）、Theorem 5.2（ゼータ分母とルール行列式の等号, p.8）。 読み方：全文精読を推奨（12ページとコンパクトで、代数と力学系の架け橋が明快に記述されているため）。",
+          "follow_up_questions": [
+            "2次より高い次数（3次以上）の回転対称Boolean関数に対して、同様の記号力学系や動的ゼータ関数によるEasy Coefficients Conjectureの証明は拡張可能ですか？",
+            "符号付き de Bruijn 行列 B の固有値の絶対値がすべて √2 であること（Lemma 2.1）は、重み系列の漸近的挙動や非線性度などの暗号学的性質にどのように影響しますか？",
+            "ルール行列の特性多項式が重複根を持つ場合（最小多項式と一致しない場合）、具体的にどのようなインデックス集合 T で重根が発生しますか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
