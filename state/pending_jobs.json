@@ -46153,7 +46153,7 @@
     },
     {
       "pipeline_id": "20260906T070738Z-a2fb6d07",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/h64v5gakfjrd44sf9t6eql5ngctxnaf4758z",
       "summarize_job_name": "batches/7ahr5o8puun8krnzz329vwco22hbdcq34ud0",
       "papers": [
@@ -47039,16 +47039,207 @@
         "http://arxiv.org/abs/2609.03567v1",
         "http://arxiv.org/abs/2609.03390v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2609.04122v1": {
+          "title": "最適アルファベット上の同期文字列",
+          "summary": "同期文字列（Synchronization strings）は、挿入や削除が生じても維持される決定論的な位置ラベルをストリームに付与する対象である。従来の先行研究では4文字アルファベットで十分である一方、2文字では任意長の同期文字列を構成できないことが示されていたが、本研究では未解決であった3文字（三進）の場合を解決し、任意の長さに対して三進 (2001/2002)-同期文字列が存在することを示した。これにより、定数アルファベットサイズの最小値が厳密に3であることが確定した。さらに、54-uniform族に基づく計算機援用による改良により、任意の ε > 226/227 に対する三進 ε-同期文字列の存在も示された。技術的な主貢献は「局所エントロピー転送定理」であり、Brinkhuis族における分岐構造、削除球の評価、非対称Lovász Local Lemmaなどを組み合わせることで、指数関数的に多くの有効な文字列の存在、Las Vegas多項式時間アルゴリズムによる構成、同期サイクルなどの結果を得ている。",
+          "keywords": [
+            "Synchronization strings",
+            "square-free words",
+            "Lovász Local Lemma",
+            "alphabet size",
+            "deletion-ball estimate"
+          ],
+          "appendix": "本論文は、square-free語などの組合せ論的性質を深く扱っており、「combinatorics on words」分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.03908v1": {
+          "title": "再帰的クエリ言語に対するプロパティテスティング",
+          "summary": "データベースクエリにおいて、プロパティテスティングは補完クエリやサイズクエリを用いてデータベースの劣線形部分のみを検査することで、高精度にクエリ結果を判定する枠組みを提供する。先行研究では、ブール結合クエリ q の非充足性が片側誤りかつ定数回のクエリでテスト可能であるための必要十分条件は q が α-非巡回クエリと等価であることだと示されている。本論文では、双方向正規パス言語（2RPQ）やモナディックDatalogを中心とした再帰的クエリ言語に対するプロパティテスティングの研究を開始する。主要な成果として、任意の 2RPQ の非解は片側誤りかつ定数回のクエリでテスト可能であることを示す。この結果は、再帰が線形に制限されルール本体が α-非巡回である特定のモナディックDatalogプログラムのクラスにも拡張される。さらに無制限のモナディックDatalogについて、ルール本体が自己結合を含まないという仮定の下、プログラム Π が α-非巡回プログラムと等価でない場合、Π の偽性は片側誤りかつ定数回のクエリではテスト不可能であることを示す。最後に、線形再帰に制限されない α-非巡回ルール本体を持つモナディックDatalogの未解決課題に対し、軽微に非線形であってもテスト可能な α-非巡回プログラムが存在することを指摘している。",
+          "keywords": [
+            "property testing",
+            "recursive query languages",
+            "two-way regular path queries (2RPQs)",
+            "monadic Datalog",
+            "α-acyclic"
+          ],
+          "appendix": "本研究で扱われる正規パス言語（2RPQs）やクエリ言語のモデルは、オートマトン理論（automata theory）や形式言語理論（formal languages）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.03896v1": {
+          "title": "素数時計仕掛け：剰余算術および乗法算術の力学的表現",
+          "summary": "本論文では、共通の+1シグナルによって駆動される自律的な2針時計のリストとして構成される、再帰的に成長する離散力学系「素数時計仕掛け（prime clockwork）」を提案している。この系は事前に素数を与えられることなく、既存の時計が鳴らない時刻nにおいて周期nの時計を順次追加することで、素数を内部的に生成する。明示的なmodやdiv演算を用いず、インクリメント、比較、リセット、繰り上がり操作のみで、時刻nにおけるp進付値νₚ(n)や素因数分解の一意な表現を局所的に導出できる。有限個の秒針配列が形成する状態空間の共通軌道は、中国の剰余定理の力学系的な対応物である「グランドサイクル」を形成し、gcd、lcm、ベズーの等式、オイラーのトーシェント関数などを自然に表現する。",
+          "keywords": [
+            "prime clockwork",
+            "discrete dynamical system",
+            "Chinese remainder theorem",
+            "valuation vector",
+            "prime factorization"
+          ],
+          "appendix": "本論文で扱われている「離散力学系を用いた数論的・算術的構造の表現や解析」は、興味ある分野のうち arithmetic dynamics に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.03838v1": {
+          "title": "拡大Thurston写像に対するperfect fitsの無限連鎖",
+          "summary": "樹枝状（dendritic）のJulia集合を持つ2つのpostcritically finite多項式の位相的matingは、円周ラミネーションの組 Λ^{±} によって符号化され、その崩壊はsphere-filling曲線を生成する。Λ^{+}の葉とΛ^{-}の葉が端点を共有するとき、それらはperfect fitを形成する。PetersenとMeyerによって記録されたEpsteinの未発表の命題は、真の次数d多項式のmatingにおいて無限直径のray同値類、すなわちperfect fitsの無限連鎖が存在しないことを示している。本研究では、この有限性が純粋に正則な現象であることを示す。力学系が周期的な臨界軌道を持つことを許容することで、いかなる拡大有理写像としても実現されないが、不変なsphere-filling曲線を許容し、さらにラミネーションΛ^{±}がperfect fitsの無限連鎖（実際にはそれらの無限個）を含むような、組合わせ論的拡大Thurston写像を構成する。",
+          "keywords": [
+            "expanding Thurston maps",
+            "topological mating",
+            "circle laminations",
+            "perfect fits",
+            "sphere-filling curves"
+          ],
+          "appendix": "本論文は複素力学系（complex dynamics）およびThurston写像の力学系に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.03670v1": {
+          "title": "マルコフ連鎖における目標割引和問題とマルコフ決定プロセスへの応用",
+          "summary": "有限アルファベットΣ上の重み列に対する割引和は、割引因子λを用いて ∑_{i∈ℕ} wᵢ λⁱ と定義される。現在未解決である目標割引和問題は、与えられたλ, Σおよび目標値tに対して、割引和がtに等しくなる無限列が存在するかを問うものである。本研究では、この問題の確率的変種である「マルコフ連鎖上の目標割引和問題」を扱い、これを解決した。具体的には、割引和が目標値に一致し、かつ無限個の相異なる接尾辞和を持つようなパス全体の成す事象の確率が0であることを証明した。この構造的性質を用いることで、オートマトン理論的手法によりマルコフ連鎖上の目標割引和問題を解くことが可能となる。さらに、この結果を目標割引和を目的関数とするマルコフ決定プロセスへ応用し、下限値および有限記憶上限値が擬多項式時間で計算可能であり、決定論的有限記憶戦略によって達成されることを示した。",
+          "keywords": [
+            "discounted sum",
+            "target discounted-sum problem",
+            "Markov chains",
+            "Markov decision processes",
+            "automata-theoretic technique"
+          ],
+          "appendix": "本論文はオートマトン理論的手法（automata theory）を用いて確率的システム上の割引和問題を解決しており、「automata theory」分野と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.03643v1": {
+          "title": "固定有限モノイド観測の下での相対素因数分解と有限状態表示",
+          "summary": "言語 L ⊆ Σ\\* と有限モノイドへの準同型 h: Σ\\* → M に対し、相対構文合同関係 θ_{L,h} := ≡_L ∩ ker h における厳密な因数分解および標準表示について研究した論文である。一意因数分解性と有限直接表示が分離されることを示し、有限商であっても一意因数分解性が有限相対表示性（FRP）を導かない例や、それを文脈自由言語へ拡張した例を提示した。さらに障害を特定するため、有限状態相対表示性（FSRP）を導入して FRP ⊊ FSRP を証明した。また、素ターゲット左除法決定性（PTLD）を提案し、これが一意因数分解性や規則数の二次バウンドなどを導くことを示すとともに、固定された観測 h の下での PTLD 標準表示に対する多項式時間更新の強い正データ学習アルゴリズムを与えている。",
+          "keywords": [
+            "relative syntactic congruence",
+            "unique prime factorization",
+            "finite-state relative presentation property",
+            "prime-target left-division determinism",
+            "grammatical inference"
+          ],
+          "appendix": "本論文は形式言語理論およびオートマトン理論（formal languages, automata theory）、語の組合せ論（combinatorics on words）に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.03610v1": {
+          "title": "脱出する指数写像の力学的（非）再帰性",
+          "summary": "本論文では、特異値が無限遠へ「ゆっくり」脱出する指数関数族の2つの例を通じて、指数写像が複雑な測度論的振る舞いを持ち得ることを示す。一方の例は再帰的（任意の正測度集合がそれ自身に無限回戻るという意味）であるのに対し、もう一方は非再帰的である。この結果は、Lyubich、Rees、Urbański-Zdunik、Hemkeらによる先行研究を補完するものである。さらに、Rempeの結果のパラメトリックな類似として、特異値が任意に遅い速度で無限遠へ脱出する指数写像の例も提示する。",
+          "keywords": [
+            "exponential maps",
+            "recurrence",
+            "measurable dynamics",
+            "escaping singular value"
+          ],
+          "appendix": "本論文は「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.03567v1": {
+          "title": "強シフト同値性に対する組合せ論的探索",
+          "summary": "記号力学系における最も重要な未解決問題は、2つの有限型サブシフトが共役であるか、あるいは同値として2つの非負整数行列が強シフト同値であるかを判定する手続きを見出すことである。この問題は一般には依然として困難であるが、文献には強シフト同値かどうかが不明である具体的な行列の例（Baker行列やAshleyの8×8行列など）が存在し、30年間にわたり未解決のままであった。本研究では、計算機実験を用いることで、小さなkの値に対してBaker行列が実際に強シフト同値であること、およびAshleyの8×8行列が1×1行列[2]と強シフト同値であることを示す。",
+          "keywords": [
+            "symbolic dynamics",
+            "strong shift equivalence",
+            "subshifts of finite type",
+            "Baker matrices",
+            "Ashley's eight-by-eight matrix"
+          ],
+          "appendix": "本論文は記号力学系（symbolic dynamics）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.03390v1": {
+          "title": "曲面上のエントロピーと準共役",
+          "summary": "疑似アノソフ同相写像 f と同じアイソトピー類に属し、かつ f と等しい位相的エントロピーを持つ C^∞ 微分同相写像 g を考える。Handel（1988年）は、g から f への準共役 π が存在することを示し、一般には π⁻¹(x) が非連結となる点 x が少なくとも1つ存在すると述べていた。本研究ではこれが誤りであることを示し、すべての x に対して π⁻¹(x) が縮小閉位相円板列の共通部分となり、したがって連結であることを証明した。さらに、f の最大エントロピー測度に射影される g-不変確率測度が一意に存在することを示す。この測度はエントロピー最大化測度であり、双曲的かつベルヌーイ性を持ち、準共役は対応する測度保存系間の測度同型を誘導する。",
+          "keywords": [
+            "semiconjugacy",
+            "pseudo-Anosov homeomorphism",
+            "topological entropy",
+            "measure of maximal entropy",
+            "Bernoulli measure"
+          ],
+          "appendix": null
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2609.04122v1",
+        "http://arxiv.org/abs/2609.03908v1",
+        "http://arxiv.org/abs/2609.03896v1",
+        "http://arxiv.org/abs/2609.03838v1",
+        "http://arxiv.org/abs/2609.03670v1",
+        "http://arxiv.org/abs/2609.03643v1",
+        "http://arxiv.org/abs/2609.03610v1",
+        "http://arxiv.org/abs/2609.03567v1",
+        "http://arxiv.org/abs/2609.03390v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2609.04122v1": {
+          "message_id": "1546142801962602537",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.03908v1": {
+          "message_id": "1546142815187247165",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.03896v1": {
+          "message_id": "1546142823101759601",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.03838v1": {
+          "message_id": "1546142831691833415",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.03670v1": {
+          "message_id": "1546142839426256967",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.03643v1": {
+          "message_id": "1546142847135256597",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.03610v1": {
+          "message_id": "1546142856261931091",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.03567v1": {
+          "message_id": "1546142864696676412",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.03390v1": {
+          "message_id": "1546142873030885438",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-06T07:07:38.636714+00:00",
-      "updated_at": "2026-09-06T09:09:29.429270+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-06T12:59:48.693020+00:00",
+      "finalized_at": "2026-09-06T12:59:48.692996+00:00"
     }
   ]
 }
