@@ -47180,9 +47180,12 @@
           "message_id": "1546142823101759601",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1547207212340875265",
+          "read_requested_at": "2026-09-09T11:28:32.689532+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-09T11:29:05.348535+00:00"
         },
         "http://arxiv.org/abs/2609.03838v1": {
           "message_id": "1546142831691833415",
@@ -47220,9 +47223,12 @@
           "message_id": "1546142864696676412",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1547207327168335909",
+          "read_requested_at": "2026-09-09T11:29:06.525228+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-09T11:29:32.749349+00:00"
         },
         "http://arxiv.org/abs/2609.03390v1": {
           "message_id": "1546142873030885438",
@@ -47233,7 +47239,32 @@
           "paper_thread_id": null
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2609.03896v1": {
+          "conclusion": "本論文は、素数ごとに独立した「2針の時計」（余りを示す秒針と周期完了数を示す分針）からなる成長型離散力学系「Prime Clockwork」を導入し、加算（+1シグナル）のみで素数の自動発生、中国式余り定理に対応する大周期軌道、素因数分解の一意性、Eulerのφ関数などの初等数論を視覚的・動的に統一して再構成・証明した論文です。",
+          "main_claims": "【主要な主張・定理】1. 素数の自動生成（Proposition 2, Section 2.1, p.4）：事前に素数を与えず、どの既存時計も0を指さない（鳴らない）ステップで新しい周期の時計が追加され、その発生時刻が正確に素数となる。 2. 大周期軌道（Theorem 6, Section 3.1, p.6）：k個の素数時計の直積空間X_kにおいて、+1作用は長さ P_k = p_1...p_k の単一軌道（Grand Cycle）を形成し、中国式余り定理を動的軌道として表現する。 3. 素因数分解の一意性（Theorem 12, Section 3.3, p.8）：p進評価値ベクトル V(n) の非反復性（Proposition 11, Section 3.3, p.8）から、割り算や合同式に依存せず一意性を証明。 4. 代数的数への拡張限界（Proposition 18, 19, Section 5, p.15）：評価値を有理数階層に拡張することで 2^(1/2) 等の代数的有理根表現が可能だが、1+2^(1/2) や黄金比 φ は加法非閉性により表現できない自然な境界を持つ。【著者の主張する新規性】定理自体の新しさではなく、初等数論の多様な概念を「+1作用のみで動く自律時計の直積力学系」という単一の表現・証明言語に統一した点に価値を主張している。",
+          "method_outline": "【手法・証明の骨格】1. (動的モデル定義) 各素数 p に対し、秒針 R_p と分針 M_p を持つ時計 C_p を定義し、+1シグナルでインクリメント・繰り上がりを行う (Eq. 1, p.2)。 2. (素数のオンライン検出) どの時計も0にならない時刻 n で新時計 C_n を追加する (Proposition 2, p.4)。 3. (Grand Cycle の構成) 素数周期の非ゼロ回転に関する補題 (Lemma 3, 4) と帰納法を用い、直積空間の全状態を一巡する単一軌道を証明 (Theorem 6, p.6)。 4. (評価値の局所計算と非反復性) 秒針が0の時に分針が指す過去アドレスの評価値から V_p(n) = 1 + V_p(M_p(n)) を計算 (Eq. 5, p.3)。最小の反復から分針アドレスへの下降（descent）によって評価ベクトルの重複を否定し、素因数分解の一意性を導出 (Proposition 11, Theorem 12, p.8)。 5. (有理数・代数的数拡張) 評価ベクトルを符号付き整数・有理数に拡張し、加法に対する非閉性から表現可能な代数的数の限界を示す (Section 4, 5, p.12-15)。※既存のCRTや素因数分解の知識を前提とせず、時計の軌道と降下法により独立して証明している点が特徴。",
+          "research_connection": "【明記された接点】離散力学系（discrete dynamical systems）、p進評価（p-adic valuations）、中国式余り定理（CRT）、Wheel sieve / Eratosthenes の篩（Section 1, 7）、複素指数関数を用いた連続時間埋め込み（Appendix B）。 【推測される接点】1. Symbolic dynamics / Automata theory: 時計群のゼロアラーム発生パターンや余り状態列を有限オートマトンや記号力学系の言語（周期語・Sturmian語の拡張）として定式化可能。 2. Complex / Arithmetic dynamics: 複素平面・円錐空間への連続埋め込み（Appendix B）における軌道解析や、評価値ベクトルのダイナミクスと算術力学系における分枝・不変測度研究との関連。 3. Validated numerics: 加算・比較のみで構築される決定性自動機ロジックは、精度保証付き計算における厳密な状態追跡に利用可能。 4. Structure of large countable infinite groups: 無限個の素数時計の直積力学系は、可算無限積群の作用やその極限軌道の構造解析と接点を持つ。",
+          "reading_guide": "【前提知識】初等数論の基本概念（素数、余り、素因数分解）、力学系の初歩（軌道、周期）。 【読むべき重要箇所】・Eq. (1)-(5) (p.2-3): 時計の更新規則と評価値の局所履歴参照。 ・Figure 2 (p.4) 及び Table 1, 2 (p.22-23): 具体的な動的軌道と評価値の挙動例。 ・Proposition 2 (p.4): 素数発生の動的ルール。 ・Theorem 6 (p.6): Grand Cycle 定理。 ・Theorem 12 (p.8): 時計形式による素因数分解の一意性。 【精読スタイル】論文全体を通して概念の整理と視点の提示が中心であるため、全体の流れを把握した上で Section 2, Section 3.1, Section 3.3, Section 5 の該当箇所を中心に読めば十分理解可能です。",
+          "follow_up_questions": [
+            "Appendix Bで紹介された複素指数関数による連続時間埋め込み（円錐・リボン構造）において、連続力学系としての不変測度やエルゴード性を定義・解析することは可能ですか？",
+            "modやdivを用いず加算と局所履歴参照のみで動作する本アルゴリズム（Appendix A）の時空間計算量は、従来のWheel sieve等の篩法と比較してどのように評価されますか？",
+            "1 + sqrt(2) や黄金比 φ が表現できないという「自然な境界」を超えて、より一般の代数的数体（number fields）や素イデアルに対応する時計システムへ拡張するには、どのような構造の追加が必要ですか？"
+          ]
+        },
+        "http://arxiv.org/abs/2609.03567v1": {
+          "conclusion": "記号力学系における50年来の最重要未決定問題である「有限型部分シフトの位相共役判定（非負整数行列の強シフト同値SSEの判定）」に対し、効率的な組み合わせ探索とパス最適化アルゴリズムを用いて、30年間未解決だったBakerの行列（k <= 10およびk=12）やAshleyの8x8行列がSSEであることを世界で初めて証明した論文です。",
+          "main_claims": "主要な結論は次の通りです。(1) Bakerの2x2行列 Ak, Bk は k <= 10 および k = 12 のときSSEである（Theorem 2, Section 2.1, p.4）。(2) Ashleyの8x8行列は1x1行列 (2) とSSEである（Theorem 5, Section 2.4, p.6）。(3) 3変数多項式半環 Z+[x,y,z] 上で Baker 行列の一般化 Ck, Dk (k=2,3,4) がSSEである（Theorem 3, Section 2.2, p.5）。(4) 行列 En, Fn は 50 未満の奇数 n (15, 21, 37, 45 を除く) でSSEであり、例外値ではSEすら満たさない（Theorem 4 & Lemma 1, p.5-6）。著者の主張する新規性は、計算機探索とWagoner複体に基づくホモトピー最適化により、これまで非同値の候補と目されていた具体的な具象例のSSE証明を完徹した点にあります。",
+          "method_outline": "手法の骨格は以下の通りです。(1)Williamsの定義に基づき、行/列の分割・併合、剪断（shear）、スケーリング等の基本移動を探索規則として定義する。(2)置換同値や零行/列のない本質的行列に限定してグラフ探索を行い、AからBへのSSEパスを探索する。(3)得られたSSEパスに対し、WagonerのSSE複体における2つの三角形の置き換え（ホモトピー同値変換）を反復適用して最小ステップ数に短縮・最適化する。(4)特定パラメータで得られたSSEパスの代数的構造を解析し、多項式半環上の一般化定理（Theorem 3）へと昇華させる。既存の道具（Williamsの移動規則、Wagonerの複体理論）に対し、本研究の独自部分は大規模計算機探索のアルゴリズム実装とパス短縮最適化手順の確立です。",
+          "research_connection": "【論文に明記された内容】Symbolic dynamics（有限型シフトの位相共役、Bowen-Franks群、次元群 invariant）、行列の半環論（Z+ や Z+[x,y,z] 上の代数）。【推測による接点】Combinatorics on words / Automata theory / Formal languages（部分シフトと言語・オートマトンの遷移行列の同値性判定）、Validated numerics（計算機援用による厳密な組合せ証明）、Complex / Arithmetic dynamics（符号化動力学やスペクトル・エントロピー不変量との接続）、Structure of large countable infinite groups（GL_n(Z)における行列同値性と群不変量）。",
+          "reading_guide": "前提知識として記号力学系の基礎（Lind-Marcusテキスト等）および強シフト同値(SSE)・シフト同値(SE)の定義（Williams 1973）が必要です。最初に読むべきは Section 1.1（Definition 1, Problem 1, p.2）、Section 2（Theorem 2, 3, 5, p.4-6）、Section 3.1-3.2（アルゴリズムと最適化, p.6-8）です。全体構造と結論を把握する目的であればSection 1〜4の精読で十分であり、具体ステップの確認が必要な場合のみAppendix B〜Eを参照する読書法が推奨されます。",
+          "follow_up_questions": [
+            "Bakerの行列において k=11 でSSEパスが発見されず k=12 で例外的に短く発見された構造的・代数的な要因は何ですか？",
+            "Theorem 3 で示された多項式半環 Z+[x,y,z] 上の一般化SSE証明は、任意パラメータ k >= 5 や一般の 2x2 行列のSSE決定問題へどう拡張できますか？",
+            "探索空間を縮小するために適用された「中間行列のコランク制限（corank 1等）」は、一般の強シフト同値判定アルゴリズムの計算複雑性にどのように寄与しますか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
