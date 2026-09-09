@@ -48143,7 +48143,7 @@
     },
     {
       "pipeline_id": "20260909T072250Z-26f505e4",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/slpkw8dhsyztk8zsol7sd8o38ondh2e46045",
       "summarize_job_name": "batches/hu9e991hrxb0sqp84i3kdkxbloxbpqggec5m",
       "papers": [
@@ -48724,16 +48724,82 @@
         "http://arxiv.org/abs/2609.06658v1",
         "http://arxiv.org/abs/2609.06565v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2609.06724v1": {
+          "title": "完全グラフおよび3-一様ハイパーグラフの巡回接続順序付け",
+          "summary": "本論文では、n頂点上の完全k-一様ハイパーグラフの全辺の巡回順序付けにおいて、各頂点の2値接続列が共通の語の巡回シフトとなるようなものを研究している。各シフトは頂点への所定の作用なしに独立に選ばれる。2 ≤ k < n に対し、隣接する辺が1頂点の交換のみで異なるという制約下でも gcd(n, k) = 1 が十分条件であることが知られているが、本研究では短い軌道の構成法を振り返りつつ、隣接条件を課さない設定において自明でない最初の2つのkについての必要十分条件を証明した。すなわち、k = 2 では n = 2 または n が奇数の場合、k = 3 では n = 3 または 3 ∤ n の場合に限り順序付けが存在する。必要性の証明には、反転畳み込み恒等式やペア交差カウントを用いて頂点シフトを捩れ剰余類に制限する手法を用い、k = 3 の場合は重複数保存拡大および条件付き素数冪容量評価を用いて議論を完結させている。",
+          "keywords": [
+            "Cyclic Incidence Orderings",
+            "Complete Graphs",
+            "3-Uniform Hypergraphs",
+            "Cyclic Shifts",
+            "Binary Incidence Sequences"
+          ],
+          "appendix": "本研究で扱われている、語の巡回シフト（cyclic shifts）や共通の語（common word）に関する議論は「combinatorics on words」と関連しています。"
+        },
+        "http://arxiv.org/abs/2609.06658v1": {
+          "title": "超越関数に対する無限エントロピーの等分布測度",
+          "summary": "有理関数の反復合成系において、原像や周期点は最大エントロピーを持つ一意な測度へと等分布することが知られている。本論文では、位相的エントロピーが無限大となる複素平面上の超越関数を対象に、同様の等分布性の確立を目指す。超越関数の設定において不変測度を構成する2つの手法（埋め込まれた記号力学系を経由する方法、および適切に選ばれた重みに付随する転移作用素を用いる方法）を導入し、後者において不変測度への収束を導く重みの3つの性質（正規性、緊密性、既約性）を特定した。これらを3つの超越整関数クラス（disjoint-type写像、strongly polynomial-like写像、Baker-Bishop写像）に適用し、適切に選ばれた重みに関して原像が無限エントロピーの不変混合確率測度に等分布することを示した。また、Baker-Bishop写像およびdisjoint-type写像については周期点の等分布性も証明した。有理関数の場合とは異なり、重みを変えることで無限に多くの異なる不変測度が得られる。",
+          "keywords": [
+            "Equidistribution",
+            "Transcendental Functions",
+            "Infinite Entropy",
+            "Symbolic Dynamical Systems",
+            "Transfer Operators"
+          ],
+          "appendix": "本論文は「symbolic dynamics」および「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.06565v1": {
+          "title": "カオスのスペクトル骨格：ポアンカレ切断上のクープマン波束",
+          "summary": "カオス力学系において、ポアンカレ切断による離散写像を関数近似することなく、クープマン作用素のスペクトルデータから直接大局的な輸送構造を抽出する手法を提案する。測度保存拡張動的モード分解（mp-EDMD）と riggedDMD を用いてスペクトル測度を近似し、正則化された有限波束を構成する。この波束の位相は有限解像度の輸送座標を提供し、低モジュラス領域は特異な骨格領域を特定する。レスラー系、32モードのクラモト・シヴァシンスキー系、強制ダフィング振動子へ適用した結果、構成された波束は粗い記号モデルを導き、観測された低周期軌道の組織化や新たな軌道の探索を可能にすることを示している。",
+          "keywords": [
+            "Koopman spectral data",
+            "Poincaré sections",
+            "wave packets",
+            "riggedDMD",
+            "symbolic models"
+          ],
+          "appendix": "本論文は波束の位相情報から粗い記号モデル（coarse symbolic models）を構築し軌道の組織化を行う点で、興味ある分野の「symbolic dynamics」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2609.06724v1",
+        "http://arxiv.org/abs/2609.06658v1",
+        "http://arxiv.org/abs/2609.06565v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2609.06724v1": {
+          "message_id": "1547269334013837425",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.06658v1": {
+          "message_id": "1547269342939578490",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.06565v1": {
+          "message_id": "1547269352380698656",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-09T07:22:50.236518+00:00",
-      "updated_at": "2026-09-09T11:38:49.360040+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-09T15:36:02.756415+00:00",
+      "finalized_at": "2026-09-09T15:36:02.756400+00:00"
     }
   ]
 }
