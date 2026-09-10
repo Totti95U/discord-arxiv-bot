@@ -48803,7 +48803,7 @@
     },
     {
       "pipeline_id": "20260910T071811Z-e41e6bd4",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/xxxgso1b2uffo4cswmr650zhxl38jubz14rx",
       "summarize_job_name": "batches/n5d9hseuuacdpmuoefvdl8gom83ik343vff0",
       "papers": [
@@ -49898,16 +49898,207 @@
         "http://arxiv.org/abs/2609.07325v1",
         "http://arxiv.org/abs/2609.07308v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2609.08056v1": {
+          "title": "Hammingスライスのエネルギー評価とその応用",
+          "summary": "n ≥ 3 に対し R = ℤ/(2ⁿ-1)ℤ とし、標準的な n 桁の二進展開におけるハミング重みが w である剰余の集合を S_w ⊆ R とする。本論文では、w について一様に成り立つ S_w の加法的エネルギーの漸近公式 E(S_w) = |S_w|⁴/|R| + O(|R|³ n⁻³) を導出した。この誤差項のオーダーは最適であり、w = ⌊n/2 + √n⌋ において一致する下界を持つ。この結果の応用として、任意の単数倍の3重和が ∏_{j=1}³ |S_{w_j}| / (|R| n⁻³/⁵)³ → ∞ のときに漸近的に一様な表現数を持つことや、2重和が |S_{w_1}| |S_{w_2}| / (|R| n⁻³/⁴)² → ∞ のときに漸近的に完全な台を持つことが示される。証明において、剰余の衝突を巡回二進繰り上がりオートマトン（cyclic binary carry automaton）を用いて表現しており、これはこの分野の問題における新しいアプローチである。",
+          "keywords": [
+            "Hamming slice",
+            "additive energy",
+            "cyclic binary carry automaton",
+            "modular collisions"
+          ],
+          "appendix": "本論文の証明手法において巡回二進繰り上がりオートマトンが用いられており、オートマトン理論（automata theory）に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.07994v1": {
+          "title": "無限グラフ上の半線形楕円型方程式の可解性",
+          "summary": "本論文では、層状構造を持つ局所有限な連結無限グラフ上における半線形楕円型方程式 Δu(x) = f(x, u(x)) を解くための構成的手法を開発しています。Eidelheitの定理を用いることで、任意の f に対して初期層のデータが大域解へと拡張されることを保証する結合基準を確立しました。この組合せ論的基準を適用し、葉のない無限木、整数格子、三角格子および六角格子、離散ハイゼンベルク群のケイリーグラフにおける可解性を証明しています。さらに、半直積 G ≅ ℤ ⋉_θ H のケイリーグラフの広範なクラスに対しても可解性を確立しました。特に、ℤ² 上において Δu = eᵘ は無限個の解を持ちますが、有限エネルギーを持つ解は存在しないことを示しています。また、2段階の結合条件下におけるバイラプラシアン、一意近傍条件下における p-ラプラシアン、さらには磁気ラプラシアンへの手法の拡張も行っています。",
+          "keywords": [
+            "semilinear elliptic equations",
+            "infinite graphs",
+            "Eidelheit's theorem",
+            "Cayley graphs",
+            "Laplacians"
+          ],
+          "appendix": "本論文で扱われている半直積群 G ≅ ℤ ⋉_θ H のケイリーグラフや離散ハイゼンベルク群上の解析は、可算無限群の構造（strucure of large countable infinite groups）に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.07891v1": {
+          "title": "Few Subpowers を持つ自動制約とグラフォイド認識",
+          "summary": "有限オートマトンは、その記述サイズに対して指数関数的に大きくなる非有界な項数の関係を表現できる。本論文では、有限ドメイン上の共通の固定されたエッジ操作（edge operation）によって各長さのスライスが保存される場合、そのような関係に対する制約充足問題（CSP）が多項式時間で解けることを証明する。提案アルゴリズムは、完全な解関係とその射影のコンパクトな表現を計算する。その中心技術は、非決定性有限オートマトン（NFA）を few-subpowers アルゴリズムに必要な fork witness や小さな射影へと多項式時間でコンパイルする手法である。Mal'tsev 条件を満たす場合、ドメインと演算表を入力として与えても多項式時間で動作する直接的な証明を与え、自動制約充足における Mal'tsev の扱いやすさ（tractability）に関する未解決問題に答えている。さらに、Mal'tsev 項も near-unanimity 項も持たない 3-エッジ代数の族について不変関係を完全に特徴づけ、NFA から構成可能な正準な表現を導出した。これらの結果は、グラフォイドオートマトンに対してグラフ幅の制限なしでの多項式時間認識などを提供する。",
+          "keywords": [
+            "finite automata",
+            "few-subpowers algorithm",
+            "constraint satisfaction problem",
+            "edge operation",
+            "graphoid automata"
+          ],
+          "appendix": "本論文は有限オートマトン（NFA）を用いた関係表現やアルゴリズムを扱っており、「automata theory」および「formal languages」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.07668v1": {
+          "title": "射影直線上の力学系のChow商モジュライ空間とリスケーリング極限",
+          "summary": "本論文では、射影直線上のd次有理自己写像のモジュライ空間に対するChow商コンパクト化を研究する。Clebsch–Gordanコンパクト化におけるすべての3次元軌道サイクルの次数を、主成分とhole depthを用いて計算する。その結果として、ジェネリックな軌道類および反復によって誘導されるChow商上の有理写像を得る。さらに、リスケーリング極限の族を記録するように設計された標識付きChow商を導入して装飾付き木によって記述し、標識なしChow商の正規化へ不動点乗数写像を拡張する。",
+          "keywords": [
+            "Chow quotient",
+            "moduli space",
+            "rational self-maps",
+            "rescaling limits",
+            "Clebsch--Gordan compactification"
+          ],
+          "appendix": "複素力学系（complex dynamics）および算術力学系（arithmetic dynamics）に関連する研究です。"
+        },
+        "http://arxiv.org/abs/2609.07550v1": {
+          "title": "孤立点を含むコンパクトなアルファベット上の原始的置換における一意エルゴード性と非一意エルゴード性",
+          "summary": "コンパクトハウスドルフアルファベット上の連続置換によって生成される一般化サブシフトを考察する。有限アルファベットの場合とは異なり、原始性は必ずしも一意エルゴード性を含意しないことが知られているが、本論文では自然数の1点コンパクト化という最も単純と考えられるケースにおいてさえ、原始性が一意エルゴード性や自然な長さ関数の存在を保証するのに不十分であることを示す。また、自然な長さ関数を持つ既約置換において、一意エルゴード性が再規格化された置換作用素 T の強ベキ収束を含意するという部分的な逆を示す。さらに、集積点が有限個のアルファベットにおいて T の本質的スペクトル半径の上界や公式を導出し、準コンパクト性や一意エルゴード性を示す手法を与える。最後に、少なくとも1つの孤立点を持つアルファベット上の原始的置換に対し、T の強ベキ収束、準コンパクト性、および置換の反復による語長の増加が一様であることの同値性を示す。",
+          "keywords": [
+            "generalised subshifts",
+            "compact alphabets",
+            "primitive substitutions",
+            "unique ergodicity",
+            "quasi-compactness"
+          ],
+          "appendix": "本論文は記号力学系（symbolic dynamics）および語の組合せ論（combinatorics on words）に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.07383v1": {
+          "title": "周期1および2の乗数からの有理写像の一般的復元",
+          "summary": "標数が2と異なる任意の体および d ≥ 2 である任意の整数 d に対し、次数 d の有理写像のモジュライ空間 𝓜_d 上で、周期1および2の周期点から構成される乗数スペクトル射がその像の閉包と同型（双有理）であることを証明した。したがって、標数が2と異なる任意の代数閉体上において、この射は一般的に単射であり、これにより標数0におけるJiとXieの最近の予想が証明された。証明には、固定指数正規形、2サイクルの非アルキメデス的退化、および対不変量からのアフィン固定点配置の双有理的復元が用いられている。",
+          "keywords": [
+            "rational maps",
+            "moduli space",
+            "multiplier spectrum morphism",
+            "birational reconstruction",
+            "non-archimedean degeneration"
+          ],
+          "appendix": "本論文は有理写像のモジュライ空間や乗数スペクトルを扱っており、興味ある分野の「complex dynamics」および「arithmetic dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.07345v1": {
+          "title": "HOLにおける単項2階述語論理：忠実性の自動化を伴う深層および浅層埋め込み（拡張プレプリント）",
+          "summary": "本論文では、Isabelle/HOLにおいて単項2階述語論理（MSO）に対する深層および浅層埋め込み（deep-and-shallow embedding）の手法を適用しています。深層埋め込み、最大浅層埋め込み、最小浅層埋め込みの3つを並行して構築し、2ソートの代入機構を導入することで全埋め込みの忠実性を機械化・自動化しました。主要な貢献として、2ソートの下向きレーヴェンハイム・スコーレムの定理を完全に機械化し、最小埋め込みがヘンキン流の一般解釈と一致することを示す一方で、標準解釈がより強いことを証明しました。さらに、ブール閉包やグラフスキーマなどの古典的なMSOの性質を検証し、解釈の違いによる振る舞いの差異を具体化しています。",
+          "keywords": [
+            "Monadic Second-Order Logic",
+            "Isabelle/HOL",
+            "Deep and Shallow Embedding",
+            "Downward Loewenheim-Skolem Theorem",
+            "Henkin Semantics"
+          ],
+          "appendix": "本研究で扱われている単項2階述語論理（MSO）は、記述複雑性やモデル検査などを通じてオートマトン理論（automata theory）や形式言語理論（formal languages）と密接に関連する論理体系です。"
+        },
+        "http://arxiv.org/abs/2609.07325v1": {
+          "title": "順列、語、および経路から生じる実根オイラー多項式",
+          "summary": "本論文では、6つのオイラー型多項式族について研究している。両立対（compatible-pair）の漸化式と有限記号の安定性を用いることで、完全順列（derangement）の降下多項式が実根を持つことを証明し、S. Fu、Z. Lin、J. Zengによる予想の完全順列に関する部分を解決した。また、OEIS A335340における実根性予想を解決し、even-top降下族の既知の行ごとの実根性を連続的強インターレース性へと強化した。さらに、U. Shankarの超オイラー多項式に対する実根性、連続インターレース性、およびγ多項式の実根性を証明した。増加ランで数え上げられる3元語に対しては、微分漸化式により連続的弱インターレース性を示した。最後に、ピーク値細分の安定性およびその正の重み付き対角成分の連続インターリービングを証明し、P. AlexanderssonとO. Nabawandaの予想を解決した。",
+          "keywords": [
+            "Eulerian polynomials",
+            "real-rootedness",
+            "derangements",
+            "interlacing",
+            "ternary words"
+          ],
+          "appendix": "本論文は3元語（ternary words）のラン構造などを扱っている点で「combinatorics on words」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.07308v1": {
+          "title": "可積分極限におけるジュリア集合および反ジュリア集合上のビッグクランチ",
+          "summary": "カオス系においてジュリア集合は反発周期点の閉包として定義されるが、本論文では可積分系でこの構造が現れない理由を解明する。著者らは周期方程式の発散点の閉包を「反ジュリア集合」（閉包をとる前のものをそれぞれプレジュリア集合、プレ反ジュリア集合）と命名した。実変形パラメータ a を導入し可積分力学系と非可積分力学系を補間する複素写像を考察することで、0 < a ≤ 1/2 においてジュリア集合と反ジュリア集合が複素平面上で一致する一方、それらのプレ集合は完全に素であることを示す。可積分極限 a → 0 において、これら2つの双対構造は臨界衝突を起こして対消滅し、宇宙論のビッグクランチを彷彿とさせる現象を引き起こす。1/2 < a < 1 ではプレ反ジュリア集合の境界がジュリア集合を含む。これらの現象について、特に可積分極限へ近づく際のプレ反ジュリア集合の漸近挙動に着目して解析的に特徴付けを行い、数値的な可視化によって機構を明らかにする。",
+          "keywords": [
+            "Julia set",
+            "anti-Julia set",
+            "integrable limit",
+            "Big Crunch",
+            "complex map"
+          ],
+          "appendix": "複素力学系（complex dynamics）に関連する研究です。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2609.08056v1",
+        "http://arxiv.org/abs/2609.07994v1",
+        "http://arxiv.org/abs/2609.07891v1",
+        "http://arxiv.org/abs/2609.07668v1",
+        "http://arxiv.org/abs/2609.07550v1",
+        "http://arxiv.org/abs/2609.07383v1",
+        "http://arxiv.org/abs/2609.07345v1",
+        "http://arxiv.org/abs/2609.07325v1",
+        "http://arxiv.org/abs/2609.07308v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2609.08056v1": {
+          "message_id": "1547571221841969275",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.07994v1": {
+          "message_id": "1547571230960263209",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.07891v1": {
+          "message_id": "1547571240359952435",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.07668v1": {
+          "message_id": "1547571249809592422",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.07550v1": {
+          "message_id": "1547571259460821053",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.07383v1": {
+          "message_id": "1547571268092428340",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.07345v1": {
+          "message_id": "1547571277018173462",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.07325v1": {
+          "message_id": "1547571286459293718",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.07308v1": {
+          "message_id": "1547571295242428459",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-10T07:18:11.703346+00:00",
-      "updated_at": "2026-09-10T07:44:36.624324+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-10T11:35:51.153308+00:00",
+      "finalized_at": "2026-09-10T11:35:51.153283+00:00"
     }
   ]
 }
