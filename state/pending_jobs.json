@@ -50102,7 +50102,7 @@
     },
     {
       "pipeline_id": "20260911T071733Z-9c88423b",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/u4ybr3gtfppvh3wvv9cipzklh8klzkyqz22h",
       "summarize_job_name": "batches/q5419pkfyj1hl59wjj2ahxp0fk091e3e3gc0",
       "papers": [
@@ -51480,16 +51480,330 @@
         "http://arxiv.org/abs/2609.08191v1",
         "http://arxiv.org/abs/2609.08091v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2609.09431v1": {
+          "title": "有限配置はルール30において定数トレースを生成できない",
+          "summary": "本論文では、ルール30（Rule 30）のセルオートマトンにおいて、中央のトレース（時間発展の列）が定数となるような、任意の右半平面に対する一意な左半平面の配置を決定している。初期中央セルが0の場合は右半平面の最初の1によって選ばれる交代末尾となり、1の場合は単一の普遍的なチェッカーボード状の配置となる。いずれのファイバーの非ゼロ元も無限個の1を持つため、定数トレースを生成する有限配置はゼロ行のみであることが示される。台の半径をwとしたとき、定数接頭辞の最大長のタイトな値は、初期中央が0のときは2⌈w/2⌉+1、1のときは2⌊w/2⌋+2であり、全体としての最大長はw+2となる。この最大長はwが偶数のときは厳密に2ʷ個、奇数のときは2ʷ - 1個の配置で達成される。したがって、非ゼロの有限配置から生成されるルール30の軌道のどの列も、最終的に定数（eventually constant）にはならない。",
+          "keywords": [
+            "Rule 30",
+            "central trace",
+            "finite configurations",
+            "cellular automata",
+            "constant-prefix length"
+          ],
+          "appendix": "本研究はセルオートマトンの軌道やパターンの性質を扱っており、記号力学系（symbolic dynamics）や語の組合せ論（combinatorics on words）、オートマトン理論（automata theory）に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.09406v1": {
+          "title": "符号化シフトにおける有限コアによる近似と厳密な逐次圧力近似の破綻",
+          "summary": "生成集合が連結集合を一意に表現するような符号化シフトX(𝒢)において、任意の連続ポテンシャルφに対し、有限個の生成元による部分シフト（有限コア）の圧力が逐次圧力P_seq(φ, 𝒢)に収束することを証明した。これにより、完全逐次圧力を持つことが、有限コアによって大域的圧力が復元されるための厳密な条件となる。この結果を応用し、生成元と許容語の列挙から、完全逐次圧力を持つ計算可能ポテンシャルの大域的圧力を計算するアルゴリズムを導出した。さらに、平衡状態集合が再帰的コンパクトであることや、ゼロポテンシャルにおける位相的エントロピーおよび最大エントロピー測度の計算可能性を示した。また、完全2進シフトの一意表現可能な表示を構成することで、Burr、Das、Wolf、Yangによる予想を反例によって否定した。",
+          "keywords": [
+            "coded shifts",
+            "sequential pressure",
+            "equilibrium states",
+            "topological entropy",
+            "computability"
+          ],
+          "appendix": "本論文は記号力学系（symbolic dynamics）およびオートマトン・形式言語理論（formal languages）に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.09018v1": {
+          "title": "距離グラフにおける密度領域、整数証明書、およびパッキング彩色",
+          "summary": "本論文では、整数距離グラフのパッキング彩色における同時色密度を研究している。D(1,6) において複数の正確な密度領域を特定し、色1から7までの最大結合密度が 211/252 であることを証明した。この最大値に近づくにつれ、7つの各色頻度は特定のベクトルへと収束することを強制される。また、最適な低色層において、非周期的な実現可能性を持ちながらも周期的な実現は存在しない密度ベクトルがあることを示し、関連する配置間の遷移に必要な累積密度損失量を決定した。さらに、十分に大きな追加色インデックスに対して、固定された有限グラフが結合密度領域を表現することを明らかにし、i ≡ 8 (mod 14) かつ i ≥ 36 を満たす各色について7頂点の領域を決定し、36がこの剰余類における最初の安定インデックスであることを証明した。これらの証明手法には、有限状態整数証明書、明示的構成、および極限の議論が組み合わされている。応用として、17 ≤ χ_ρ(D(1,6)) ≤ 20、18 ≤ χ_ρ(D(1,8)) ≤ 22、および χ_ρ(D(1,9)) ≤ 17 を導出している。",
+          "keywords": [
+            "packing colorings",
+            "distance graphs",
+            "density regions",
+            "integer certificates"
+          ],
+          "appendix": "本研究で用いられている有限状態を用いた解析（finite-state integer certificates）や非周期的・周期的な配置の解析は、automata theory や symbolic dynamics、combinatorics on words と関連しています。"
+        },
+        "http://arxiv.org/abs/2609.08911v1": {
+          "title": "実質冪零商上のファイバー積の有限性性質",
+          "summary": "CohenとShustermanによって最近確立されたn-(n+1)-(n+2)定理は、Fₙ₊₁型の2つの群がFₙ₊₂型の共通の商Qに全射し、核の1つがFₙ型である場合、そのファイバー積がFₙ₊₁型になることを示している。本論文では、Qが実質冪零群である場合に、この定理のより強力で対称的な変種を証明する。具体的には、2つの完全列 1 → Nᵢ → Γᵢ → Q → 1 (i=1,2) とそのファイバー積 P について、N₁, N₂ がそれぞれ FPₖ, FPₗ 型であり、Γ₁, Γ₂ がそれぞれ Fₘ, Fₙ 型であるとき、P は F_{min{k+l+1, m, n}} 型（ホモロジー的性質 FPᵣ でも同様）であることを示す。これにより、直積の部分群に対する有限性判定基準を与えるホモトピー的およびホモロジー的な Virtual Surjections Theorem の別証明が得られる。",
+          "keywords": [
+            "finiteness properties",
+            "fibre products",
+            "virtually nilpotent quotients",
+            "Virtual Surjections Theorem"
+          ],
+          "appendix": "本研究は、群の有限性性質（Fₙ型やFPₙ型）および直積の部分群の構造を扱っており、興味ある分野の「strucure of large countable infinite groups（可算無限群の構造）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.08863v1": {
+          "title": "冗長な巡回表示によって定義される可解群",
+          "summary": "⟨x₀, x₁ | U(x₀, x₁)U(x₁, x₀)⁻¹⟩ で定義される2生成元1関係子群を研究し、それらのうち階数2の自由部分群を含まないものを完全に決定した。そのような群はすべて可解なBaumslag-Solitar群 BS(1, m) であり、任意の整数値 m が現れ得ることを示した。これにより、m ∈ {-1, 0, 1} のみが生じると予測していた予想を反証した。",
+          "keywords": [
+            "two-generator one-relator groups",
+            "redundant cyclic presentations",
+            "solvable groups",
+            "Baumslag-Solitar groups",
+            "free subgroup"
+          ],
+          "appendix": "本論文は群論における2生成元1関係子群およびBaumslag-Solitar群の構造を扱っており、「strucure of large countable infinite groups（可算無限群の構造）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.08851v1": {
+          "title": "圧縮を用いたトランスフォーマーの系列長汎化",
+          "summary": "トランスフォーマーの系列長汎化理論において、C-RASP言語で解を表現できることと汎化可能性が同値であるとするC-RASP仮説は強力な実験的裏付けを持つ一方で、計算可能な汎化限界が存在しない点や矛盾する実験結果といった理論的課題が存在していた。本論文では、計算可能な限界を持つ断片であるC-RASP+およびC-RASP1を用いてこの仮説を改良する。従来の最悪ケースでの二重指数関数的なサンプルサイズ限界に対し、本研究では指数関数的にタイトな限界を与えることで未解決問題を解決した。さらに、power wordsとの新たな関連付けを通じて、圧縮された文字列を採用した場合にトランスフォーマーの系列長汎化限界が多項式オーダーになることを示し、C-RASP予想に対する反例的な実験結果を解決する詳細な解析を提供する。",
+          "keywords": [
+            "Length Generalization",
+            "Transformers",
+            "C-RASP hypothesis",
+            "Compression",
+            "Power Words"
+          ],
+          "appendix": "本研究は「combinatorics on words」および「formal languages」の分野と深く関連しています。特に、RASPプログラミング言語の断片や形式言語モデルの表現能力解析、ならびにpower words（語の冪乗）や文字列圧縮の組合せ論的性質を利用した計算限界の導出という点で関連性が見られます。"
+        },
+        "http://arxiv.org/abs/2609.08849v1": {
+          "title": "漸近的等角および漸近的剛体写像類群",
+          "summary": "本論文では、漸近的剛体写像類群、特に曲面のHoughton群 ℋ(S) が、S 上の双曲構造 X に対する漸近的等角モジュラー群 Mod₀(X) において有限指数を持つための条件を示す。これらの条件には、基礎となる剛体構造のピースに関する幾何学的条件や、漸近的等角である端周期的同相写像が ℋ(S) 内に存在することが含まれる。この帰結として、S が n ≥ 3 個の端を持つ場合、Mod₀(X) は Fₙ₋₁ 型であるが FPₙ 型ではないことが示される。また、Lᵖ モジュラー群に対しても同様の結果を確立する。",
+          "keywords": [
+            "asymptotically conformal modular group",
+            "asymptotically rigid mapping class group",
+            "surface Houghton group",
+            "finiteness properties",
+            "L^p modular groups"
+          ],
+          "appendix": "本論文は無限型曲面の写像類群や無限群の有限性（Finiteness properties: FₙやFPₙ型）を扱っており、興味ある分野の「strucure of large countable infinite groups（大きな可算無限群の構造）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.08843v1": {
+          "title": "グラフに基づくオートマトン",
+          "summary": "本論文では、辺彩色グラフまたは有向グラフから得られる非決定性有限オートマトンである「グラフに基づくオートマトン（graph-based automata）」を研究する。このオートマトンでは、すべての頂点が初期状態かつ受理状態であり、各辺が双方向の遷移の対に対応しており、その言語はグラフに写像される辺彩色経路または有向経路の集合に相当する。著者らはこの概念を木へ拡張して認識される言語の特徴付けを行い、双対性手法を用いて木言語に対するサイズ最小グラフの一意な存在性、および語と木言語の両方に対する準同型最小グラフの存在性を示した。さらに、可逆オートマトンとの関連性、可逆言語への分解、そして彩色数などのグラフの構造情報を捉える無向グラフの「残留言語（remanent language）」の導入など、グラフ理論とオートマトン理論の境界における知見を提示している。",
+          "keywords": [
+            "graph-based automata",
+            "tree languages",
+            "reversible automata",
+            "homomorphism-minimal graph",
+            "remanent language"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.08571v1": {
+          "title": "文脈自由言語に対するBucherの密度問題の解決",
+          "summary": "1980年にBucherは、U ∖ L が無限集合である文脈自由言語 L ⊆ U に対し、K ∖ L と U ∖ K の双方が無限集合となるような中間の文脈自由言語 K が常に存在するかという問題を提示した。本論文ではこれに対して否定的な解答を与える。著者らはまず、補言語が文脈自由であり、任意の正則言語 R に対して D ∩ R または D ∖ R のいずれかが有限となるような無限言語 D を構築した。D の単語は階乗の計算をエンコードしており、文字の反復によって有限オートマトンが D の有限個を除くすべての単語を受理または拒絶することを保証し、1カウンタオートマトンがエンコードの誤りを認識する。次に、D の補言語から L と U を構成する。文法に基づく議論により、仮に中間的な文脈自由言語 K が存在すれば、ある正則言語と同様の方法で D を分割してしまうことが示され、これにより所望の不可能性が証明される。なお、L と U はともに2値アルファベット上で構成可能である。",
+          "keywords": [
+            "Bucher's density problem",
+            "context-free languages",
+            "regular language",
+            "one-counter automaton"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.08530v1": {
+          "title": "カオス的プロセスのエクリュージョンフリー（方程式を用いない）データ駆動型モデリング",
+          "summary": "基礎となる微分方程式を仮定することなく、時系列データから非周期的な物理プロセスの予測モデルを直接構築する手法を提案する。観測データからプロセスの本質的なダイナミクスを捉える再帰的挙動を持つ離散的な発展規則を定義し、複数の幾何学的スケールにわたってこの挙動を解析することで、マルコフ連鎖形式の確率論的モデルを導出する。さらに、双曲性基準を用いて、これらのモデルがデータの一貫した統計的記述をいつ提供するかを特定する。本手法は、「Cell Process」と呼ばれる生体イメージングデータセットの解析に着想を得ており、その解析を通じて実証される。",
+          "keywords": [
+            "equation free",
+            "data-driven modelling",
+            "chaotic processes",
+            "Markov chains",
+            "hyperbolicity"
+          ],
+          "appendix": "本研究で扱われるマルコフ連鎖による離散力学系のモデル化や再帰的挙動の解析は、力学系の統計的性質やシンボリックダイナミクス（symbolic dynamics）の観点と親和性があります。"
+        },
+        "http://arxiv.org/abs/2609.08528v1": {
+          "title": "残存集合の数え上げ：素数許容集合との指数的同値性",
+          "summary": "各整数 n ≥ 1 に対して、2からnまでの各整数を法とする禁止剰余類を1つずつ選ぶことで得られる {2, ..., n+1} の異なる部分集合の数を N(n) とする（OEIS A396595）。これは大域的剰余プロファイル残存数列の族における初期制限複雑度と同値である。本論文では、局所的に異なる剰余プロファイルの数に対する閉じた公式（nの偶奇に依存）や、所定の残存集合を実現するプロファイルの厳密な包除公式を導出する。また、log N(n) の位数が n/log n であり、その主要定数が log 2 と 2 log 2 の間にあることを証明する。主比較定理として、N(n) が長さnの区間の素数許容部分集合のブロック複雑度と指数的に同値であることを示す。さらに、この比較定理で用いられる組合せ論的議論の一部は Lean 4/Mathlib で形式化されている。その他、構造的漸化式の確立、被覆基準による拡張可能性の特徴づけ、動的数え上げアルゴリズムの提示なども行っている。",
+          "keywords": [
+            "survivor sets",
+            "prime-admissible sets",
+            "block complexity",
+            "residue profiles",
+            "Lean 4"
+          ],
+          "appendix": "本研究で扱われているブロック複雑度（block complexity）や数列・パターンの組合せ論的性質は、興味ある分野の「symbolic dynamics」および「combinatorics on words」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.08519v1": {
+          "title": "双曲的パーコレーションにおけるランダムウォークの連続性：ドリフト、エントロピー、および次元",
+          "summary": "双曲群のケーリーグラフ上におけるベルヌーイ・ボンド・パーコレーションの無限クラスター上の単純ランダムウォークにおいて、ドリフトおよび漸近エントロピーが超臨界相全体でパーコレーション・パラメータに関して連続的に依存することを証明した。次元公式と組み合わせることで、グロモフ境界上の調和測度のハウスドルフ次元の連続性も導かれる。",
+          "keywords": [
+            "hyperbolic groups",
+            "Bernoulli bond percolation",
+            "random walks",
+            "asymptotic entropy",
+            "harmonic measure"
+          ],
+          "appendix": "本論文は双曲群上の幾何的・確率論的性質を扱っており、関連分野である「strucure of large countable infinite groups」と関係しています。"
+        },
+        "http://arxiv.org/abs/2609.08428v1": {
+          "title": "Leavitt代数 L_{𝔽₂}(1,2) 上の一般線型群およびSteinberg群",
+          "summary": "本論文では、R = L_{𝔽₂}(1,2) としたとき、任意の r ≥ 1 に対して GL_r(R) が整数係数で非輪状（integrally acyclic）であること、および任意の r ≥ 3 に対して標準的な写像 St_r(R) → GL_r(R) が同型写像であることを証明する。ホモロジーの計算には、順序付きフレームの同時拡張と、その安定化群に対する有限体の乗法群のスカラー作用を組み合わせている。また、同一のフレーム複体に関連する表示により、Steinberg写像の全射切断が定義される。さらに、KrstićとMcCoolの定理を用いることで、単元群 R^× の具体的な有限表示が導かれる。加えて、他の環における非輪状性およびSteinberg比較に関する個別の判定条件も定式化している。",
+          "keywords": [
+            "General linear groups",
+            "Steinberg groups",
+            "Leavitt algebra",
+            "acyclic groups",
+            "finite presentation"
+          ],
+          "appendix": "本論文で扱われている無限次元的な構造を持つ代数上の一般線型群やその有限表示は、可算無限群の構造論（structure of large countable infinite groups）と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.08191v1": {
+          "title": "単語分離問題に対する O~(n¹/³) 上界の初等的証明",
+          "summary": "長さ n の相異なる2つの二進単語に対し、その一方のみを受理する最小の決定性有限オートマトンを求める「単語分離問題」について、Chase はスパース多項式に対する複素解析的評価を用いて O~(n¹/³) の上界を示した。本研究ではその評価を有限差分による議論および2階実漸化式のカットオフに置き換えることで、初等的な証明を与え、O(n¹/³(log n)⁷/³) 状態という明示的な境界を導出した。",
+          "keywords": [
+            "separating words problem",
+            "deterministic finite automaton",
+            "sparse polynomials",
+            "finite-difference argument"
+          ],
+          "appendix": "本論文は「combinatorics on words」「automata theory」「formal languages」の分野に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.08091v1": {
+          "title": "より糸セルオートマトンモデルにおけるブレイド",
+          "summary": "より糸セルオートマトン（SCA）モデルは、各セルが0、1、または2本のストランドを保持できるセルのグリッドであり、ストランドの曲がりや交差の挙動を制御する2つのセルオートマトンを備えた、繊維芸術におけるパターンを研究するために開発されたモデルである。本研究では、ブレイド群の元としてのブレイドがSCAパターンによって表現されることの定義を与え、ある追加の特性をもつSCA表現をブレイドがいつ持つかを判定する複数のアルゴリズムを提案する。",
+          "keywords": [
+            "Stranded Cellular Automata",
+            "braid group",
+            "braids",
+            "cellular automata",
+            "fiber arts"
+          ],
+          "appendix": "セルオートマトンを扱っている点から、指定された興味ある分野のうち「automata theory」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2609.09431v1",
+        "http://arxiv.org/abs/2609.09406v1",
+        "http://arxiv.org/abs/2609.09018v1",
+        "http://arxiv.org/abs/2609.08911v1",
+        "http://arxiv.org/abs/2609.08863v1",
+        "http://arxiv.org/abs/2609.08851v1",
+        "http://arxiv.org/abs/2609.08849v1",
+        "http://arxiv.org/abs/2609.08843v1",
+        "http://arxiv.org/abs/2609.08571v1",
+        "http://arxiv.org/abs/2609.08530v1",
+        "http://arxiv.org/abs/2609.08528v1",
+        "http://arxiv.org/abs/2609.08519v1",
+        "http://arxiv.org/abs/2609.08428v1",
+        "http://arxiv.org/abs/2609.08191v1",
+        "http://arxiv.org/abs/2609.08091v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2609.09431v1": {
+          "message_id": "1547934055281066076",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.09406v1": {
+          "message_id": "1547934064059744257",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.09018v1": {
+          "message_id": "1547934072792424489",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.08911v1": {
+          "message_id": "1547934081759707217",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.08863v1": {
+          "message_id": "1547934091838623845",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.08851v1": {
+          "message_id": "1547934100676022273",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.08849v1": {
+          "message_id": "1547934109333196861",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.08843v1": {
+          "message_id": "1547934118011211887",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.08571v1": {
+          "message_id": "1547934127410520065",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.08530v1": {
+          "message_id": "1547934136411623447",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.08528v1": {
+          "message_id": "1547934147073282100",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.08519v1": {
+          "message_id": "1547934155596107777",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.08428v1": {
+          "message_id": "1547934164110548994",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.08191v1": {
+          "message_id": "1547934172843343993",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.08091v1": {
+          "message_id": "1547934181558984795",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-11T07:17:33.295440+00:00",
-      "updated_at": "2026-09-11T07:24:01.306886+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-11T11:37:50.021549+00:00",
+      "finalized_at": "2026-09-11T11:37:50.021517+00:00"
     }
   ]
 }
