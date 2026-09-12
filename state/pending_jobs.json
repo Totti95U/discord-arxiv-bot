@@ -50087,12 +50087,28 @@
           "message_id": "1547571295242428459",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1548296689499242649",
+          "read_requested_at": "2026-09-12T11:37:52.124470+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-12T11:38:16.875379+00:00"
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2609.07308v1": {
+          "conclusion": "本論文は、カオス的な2次有理マップ（ロジスティックマップ側）と可積分なメビウス変換を接続する変形ロジスティックマップ（DLM）において、周期解の「分子の根（pre-Julia集合）」と「分母の極（pre-anti-Julia集合）」が可積分極限（a→0）で衝突・対消滅する「Big Crunch」現象を理論的・数値的に明示した研究です。カオス的なインバリアント集合が消失し、不定点（IDP）へと退化する機構を代数的に解明しており、可積分・非可積分転移の全体像を理解する上で非常に重要です。",
+          "main_claims": "1. 主主張・定理：可積分極限 a→0 において、n周期方程式の分子 A_a^{(n)}(z)=0 と分母 D_a^{(n)}(z)=0 の根が同一の代数曲線に沿って接近・衝突し、大規模な因子相殺（Big Crunch）が起こる（Sec. IV A, pp. 5-6, Appendix A, pp. 14-15）。2. 消滅後の残差構造：消滅後に残る特異軌跡として、n-1 個の不定点（IDPs）z_k^* = -1 / (∑_{m=1}^k μ^m) (k=1,...,n-1) が重複度 2^{n-k-1} で出現する（Sec. IV B, Eq. (20), p. 6, Appendix A, p. 14）。3. 著者らの新規性：従来のJulia集合（周期点の集積）の追跡のみならず、その対偶となる「極の逆像集合（anti-Julia集合）」を初めて定義し、双対構造の衝突・相殺という観点から可積分転移の普遍的メカニズムを解明した点。",
+          "method_outline": "1. 変形ロジスティックマップ（DLM）f_a(z) = μz(1-az) / (1+μ(1-a)z) の導入（Sec. II A, Eq. (1)）。2. n周期方程式 f_a^{(n)}(z) - z = 0 を分子 A_a^{(n)}(z) と分母 D_a^{(n)}(z) に分離・定式化（Sec. III A, Eq. (3)-(5)）。3. a→0 極限における漸化式（Eq. (12)-(13), Appendix A Eq. (A1)-(A4)）の解析により、共通因子 K_{(k)}(z)^{2^{n-k}} の発生と分母分子の代数的相殺を証明（Sec. IV A, Appendix A）。4. 消滅後に残る解として、不定点 z_k^* の代数座標および重複度を算出（Sec. IV B, Eq. (20)）。5. 倍精度演算における桁落ちを防ぐ符号確定変数 T_i（Eq. (22)-(23)）を用いた安定化アルゴリズムを開発し、確定性フルツリー展開とラウンドトリップ誤差評価（Fig. 2）により高精度に可視化（Sec. IV C）。",
+          "research_connection": "【論文に明記された接点】Complex dynamics（Julia/Fatou集合、有理マップの反復、Sec. I, II B, App. B）、Integrable systems / Discrete integrable systems（KP階層、特異点閉じ込め、IVPP、IDP、Sec. I, II B）、Validated numerics / Precision numerics（桁落ち対策・数値誤差解析、Sec. IV C, Fig. 2）。【推測される接点（論文外）】Arithmetic dynamics（代数体・p進体上での極と周期点の代数的相殺および不定点への退化の数論的解析）、Symbolic dynamics / Combinatorics on words（フルツリー展開に伴う軌道記号列の記述）、Structure of large countable infinite groups（Aut(C_hat)＝メビウス群の作用および高次元群への拡張）。",
+          "reading_guide": "【必要な前提知識】複素力学系（Julia集合、有理関数の反復）の基礎、離散可積分系（特異点閉じ込め、不定点 IDP）の基本概念。【最初に読むべき箇所】Sec. II A（DLMの定義 Eq. 1）、Sec. III A（A_a^{(n)} と D_a^{(n)} の定義 Eq. 3-5）、Sec. IV A & B（Big Crunch相殺 Eq. 16 と IDPの座標 Eq. 20）、Fig. 1 & Fig. 3（対消滅の視覚的理解）。【読了方針】代数的相殺の厳密な証明（Appendix A）を含めて非常に見通しが良いため、本文とAppendixを通読することを推奨します。",
+          "follow_up_questions": [
+            "1次元DLMで明かされた Julia 集合と anti-Julia 集合の対消滅（Big Crunch）メカニズムは、2次元以上の多次元離散可積分系（離散オイラーのコマ等）における IVPP の生成や Arnold 拡散とどのように関係していますか？",
+            "可積分極限 a → 0 の近傍における Julia 集合および anti-Julia 集合のフラクタル次元（情報次元やボックス次元）の減少挙動・スケーリング法則は解析的に導出できますか？",
+            "Arithmetic dynamics の枠組み（代数体や p 進体）において、DLMのような可積分変形に伴う周期点と極の代数的相殺現象（IDP への退化）はどのように表現されますか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
@@ -51792,12 +51808,28 @@
           "message_id": "1547934181558984795",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1548296846932185181",
+          "read_requested_at": "2026-09-12T11:38:28.477277+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-12T11:38:55.241257+00:00"
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2609.08091v1": {
+          "conclusion": "本論文は、繊維芸術のモデル化に由来するStranded Cellular Automata (SCA) モデル上で、ブレイド群 B_n の元（ブレイド）を格子パターンとして表現する「SCA表現」の理論体系を定式化した研究です。与えられたパターンが特定のブレイドのSCA表現であるかの判定や、固定された高さ・幅、あるいはコンパクト性（ストランド間の空隙がない構造）を持つSCA表現の存在判定問題がすべて計算可能（決定可能）であることを証明しており、セルオートマトンと幾何学的群論の境界領域における構成的・アルゴリズム的基盤を提供しています。",
+          "main_claims": "【主要な定理と結論】1. 有限高格子パターンのSCA表現判定の決定可能性（Theorem 3.2, Section 3.1, p.11）: 与えられた格子パターン g とブレイド語 w に対し、g が w のSCA表現であるかは決定可能。 2. 固定高SCA表現の存在判定の決定可能性（Theorem 3.9, Section 3.2, p.14）: 与えられた高さ h とブレイド語 w に対し、高さ h のSCA表現が存在するかは決定可能。 3. 固定幅SCA表現の存在判定の決定可能性（Theorem 3.10, Section 3.3, p.15）: 与えられた幅 w とブレイド語 b に対し、幅 w 以下のSCA表現が存在するかは決定可能。 4. コンパクトSCA表現の存在判定と構造（Corollary 4.15, Section 4.2, p.25 / Proposition 4.16, Section 4.2, p.26）: 語 w がコンパクトなSCA表現を持つかは決定可能であり、特に 2 本ストランドのブレイド群 B_2 の全元はコンパクトSCA表現を持つ。【新規性】SCA格子からブレイド群への部分モノイド準同型 φ を構成し、Garsideアルゴリズムやパターンのブロック分解を組み合わせることで、ブレイド表現の決定可能性を包括的に証明した点にあります。",
+          "method_outline": "証明・手法の主要な流れ： 1. 【部分モノイド準同型の導入（代数基盤）】格子パターンのリスト結合のもとでの部分モノイド構造を定義し、格子からブレイド語 W_n への評価写像 ψ およびブレイド群 B_n への自然な全射 ι の合成 φ = ι ◦ ψ を構成。 2. 【連続性と交差・転換規則の判定（新規アルゴリズム）】与えられた格子が連続であり、かつSCAの転換規則・交差規則を満たすかをローカルなセルの接続関係から判定する Algorithm 1, 2 を定義（Section 3.1）。 3. 【Word Problemとの接合（既存手法の応用）】格子の像 ψ(g) と目標語 w が同一のブレイドを表すかの検証に、ブレイド群の語の問題を解く既存のGarsideアルゴリズムを適用（Theorem 3.2）。 4. 【ブロック分解と探索空間の有限化（新規の帰着手法）】固定高・固定幅の表現存在判定において、パターンを「ブロック」に分解（Definition 3.7）し、幅 w の格子における状態重複の周期限界（8^w 世代）を利用して有限の探索空間に帰着（Theorem 3.9, 3.10）。 5. 【γアルゴリズムとコンパクト化の必要十分条件（新規アルゴリズム）】任意語 w を直接コンパクト格子に変換する γ アルゴリズム（Section 4.1）を構築し、w がコンパクトSCA表現可能であることと γ(w) 自身がSCAパターンであることが同値（Lemma 4.11）であることを証明。",
+          "research_connection": "【論文に明記されている接点】 ・automata theory / formal languages: セルオートマトン（SCA）の転換・交差規則、パターンの連続性検証、各種決定可能性（Decidability）アルゴリズム。 ・structure of large countable infinite groups: ブレイド群 B_n（無限群）の代数的構造、Garsideアルゴリズムを用いた語の問題（Word Problem）の解決。 ・combinatorics on words: ブレイド語 W_n の結合、部分語、記号置換、評価写像 ν。 【論文内容からの推測・応用上の接点】 ・symbolic dynamics: 幅制限されたSCAパターンの世代発展における周期性（8^w 世代のカットオフ）はShift空間やCAの動力学系・記号動力学と深く関連。 ※ complex dynamics, arithmetic dynamics, validated numerics との直接の接点は論文中に見出されず、関連性は低いと推測されます。",
+          "reading_guide": "【前提知識】ブレイド群 B_n の生成元と基本関係式（Far commutativity, Triple relation）、Garsideアルゴリズムの基本概念、セルオートマトンの基礎知識。【最初に読むべき箇所】 ・Definition 2.3〜2.6 (Section 2, p.6-7): 部分モノイド準同型 φ と格子/SCA表現の定義。 ・Theorem 3.2 (Section 3.1, p.11): 単一格子のSCA表現判定の主定理。 ・Definition 4.1 (Section 4, p.17) & γ Algorithm (Section 4.1, p.18-20): コンパクト表現の概念と標準パターンの構成法。【精読方針】決定可能性アルゴリズムの全体像を把握したい場合は Section 1, 2 と Section 3.1, 3.2, 4.1 の主定理を中心に読めば十分です。各ケース分け証明の詳細を追う場合のみ Section 3.3, 4.2 を精読することを勧めます。",
+          "follow_up_questions": [
+            "Theorem 3.10 の証明において、幅 w のSCAパターンの周期性の上限として 8^w 世代を設定している根拠となる状態数の詳細な計算はどのようになっていますか？",
+            "γ アルゴリズムによって生成される格子パターン γ(w) がSCA規則を満たさず、コンパクトSCA表現が存在しないとされるブレイド語 w の具体例にはどのようなものがありますか？",
+            "Section 5 (Outlook) で挙げられている「B_n の全元におけるSCA表現可能性の決定問題」や「無限長SCA表現への拡張」を解決する上で、どのような理論的障害が想定されますか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
