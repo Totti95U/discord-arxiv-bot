@@ -55544,6 +55544,1120 @@
       "created_at": "2026-09-17T07:39:27.652866+00:00",
       "updated_at": "2026-09-17T14:22:28.726776+00:00",
       "finalized_at": "2026-09-17T14:22:28.726747+00:00"
+    },
+    {
+      "pipeline_id": "20260918T072430Z-4113525b",
+      "status": "interest_submitted",
+      "interest_job_name": "batches/3me3hb27pgn1hjf54qt60xxv56ne9kcbpx87",
+      "summarize_job_name": null,
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2609.19195v1",
+          "entry_id": "http://arxiv.org/abs/2609.19195v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.19195v1",
+          "title": "Lean-Certified Infinite Counterexamples to Written on the Wall II Conjecture 194",
+          "summary": "For a finite simple graph G, let alpha(G) denote its independence number and let\n  l_avg(G) = (1 / |V(G)|) sum_{v in V(G)} alpha(G[N_G(v)])\n  be the average independence number of its open neighbourhoods. Written on the Wall II Conjecture 194 asserts that every simple connected graph on n > 1 vertices satisfying alpha(G) <= 1 + l_avg(G) has a Hamiltonian path. We give a four-parameter family of counterexamples. Its principal two-parameter subfamily satisfies the proposed inequality with equality: for every pair of integers s >= 1 and t >= 3 it has (s + 1)t^2 vertices, independence number t + 1, l_avg(G) = t, and minimum degree s, but has no Hamiltonian path. This entire infinite subfamily is machine-checked in Lean 4: one universally quantified theorem certifies its order, connectivity, independence number, average neighbourhood independence, minimum degree, conjecture hypothesis, and failure of traceability. Thus no fixed lower bound on the minimum degree repairs the conjecture. The case (s,t) = (1,3) has 18 vertices, but the formal certificate is parametric rather than a verification of that one graph alone.",
+          "authors": [
+            "Cameron Beeley"
+          ],
+          "published": "2026-09-15T23:48:29+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17932v1",
+          "entry_id": "http://arxiv.org/abs/2609.17932v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17932v1",
+          "title": "A Better-Than-$3$ Approximation Algorithm for Demand Matching via Knapsack Intersection LP and Contention Resolution",
+          "summary": "The demand matching problem generalizes both the knapsack problem and the $b$-matching problem. In this problem, each edge of a graph has a demand and a weight, and each vertex has a capacity. The goal is to find a maximum weight subset of edges such that, at each vertex, the total demand of the incident selected edges does not exceed the vertex capacity. Parekh [IPCO 2011] proved that, if each edge is individually feasible, the natural LP relaxation for demand matching has integrality gap at most $3$, yielding a $3$-approximation algorithm. This bound is tight for the natural LP relaxation, matching the lower bound of Shepherd and Vetta [Math. Oper. Res. 2007].\n  We present a randomized $(3/2 + \\sqrt{2} + \\varepsilon) \\approx (2.914 + \\varepsilon)$-approximation algorithm for the demand matching problem for every $\\varepsilon > 0$, giving the first approximation ratio strictly better than $3$. For bipartite graphs, we obtain a randomized $(2 + \\varepsilon)$-approximation algorithm for every $\\varepsilon > 0$. Both algorithms run in time polynomial in $1/\\varepsilon$ and the input length. Our algorithms use a strengthened LP relaxation based on intersecting the integral knapsack polytopes associated with the vertices, together with a multiple-choice generalization. As a key ingredient, we prove the existence of a $(q, 1/(1+q))$-balanced contention resolution scheme for the integral knapsack polytope for every $q \\in [0, 1]$, which may be of independent interest. The balance guarantee $1/(1+q)$ is tight in the worst case over all knapsack instances.",
+          "authors": [
+            "Michel X. Goemans",
+            "Yuchong Pan"
+          ],
+          "published": "2026-09-15T23:44:53+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17914v1",
+          "entry_id": "http://arxiv.org/abs/2609.17914v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17914v1",
+          "title": "Separating Non-redundancy and Chain Length",
+          "summary": "For a constraint satisfaction problem defined by a relation $R$, its non-redundancy $\\text{NRD}(R,n)$ is the size of largest instance (as a function of the number $n$ of variables) for which no constraint is implied by the rest. Its chain length $\\text{CL}(R,n)$ is the largest such instance where the constraints can be ordered so that no constraint is implied by the preceding ones. Clearly $\\text{CL}(R,n) \\ge \\text{NRD}(R,n)$ but so far no asymptotic separation was known between these quantities. We exhibit an explicit arity $4$ relation for which $\\text{CL}(R,n) \\ge ω(\\text{NRD}(R,n))$.",
+          "authors": [
+            "Joshua Brakensiek",
+            "Venkatesan Guruswami",
+            "Aaron Putterman"
+          ],
+          "published": "2026-09-15T23:16:48+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17891v1",
+          "entry_id": "http://arxiv.org/abs/2609.17891v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17891v1",
+          "title": "Structural Parameterizations for Eternal Vertex Cover",
+          "summary": "Eternal Vertex Cover (EVC) is a turn-based attacker-defender game on an undirected graph $G$. To begin with, the defender places $k$ guards on vertices of $G$. The attacker, on their turn, can choose an edge $e$ not already occupied at both endpoints to \"attack\". The edge $e$ is defended if a guard moves along the edge $e$. The defender, on their turn, can move any subset of guards. A guard can only move to a neighboring vertex. The minimum number of guards needed to indefinitely defend against any sequence of attacks is called the eternal vertex cover number, generalizing the classic vertex cover number. Determining this number is NP-hard in general, motivating the study of parameterized and approximation algorithms. The problem is known to be FPT when parameterized by the cover number, but structural parameters remain relatively unexplored in the literature.\n  In this work, we explore structural parameterizations for EVC. We show that EVC is FPT parameterized by the cluster vertex deletion number, which generalizes the previously studied parameterization by vertex cover number. We next study the problem parameterized by vertex integrity, which is the smallest number of vertices we need to delete from $G$ so that the resulting graph is a disjoint union of constant-sized components. We first show that Eternal Vertex Cover is XP parameterized by vertex integrity. Then, we develop a polynomial-time approximation algorithm, which computes an additive $6k+1$ ($g(k)$) approximation, where $k$ is equal to the cluster vertex deletion number (vertex integrity). Finally, we show a FPT algorithm for when the deletion set produces \"nice\" connected components, which are components that are bounded in size and satisfy a technical condition.",
+          "authors": [
+            "Neeldhara Misra",
+            "Sebastian Ordyniak",
+            "Giacomo Paesani",
+            "Mateusz Rychlicki"
+          ],
+          "published": "2026-09-15T22:31:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17879v1",
+          "entry_id": "http://arxiv.org/abs/2609.17879v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17879v1",
+          "title": "Entropy and Translation Length in the Ray Graph",
+          "summary": "Let $Γ$ be the mapping class group of the plane minus a Cantor set, acting on the ray graph $\\mathcal{R}$, and for $γ\\in Γ$ let $τ(γ)$ denote the translation length of $γ$ on $\\mathcal{R}$. We prove that $τ(γ) \\le h(f)/\\log(2)$ for every $C^\\infty$ diffeomorphism $f$ of $S^2$ representing $γ$, where $h$ denotes topological entropy.\n  The proof falls into two parts: a combinatorial argument bounding distance between two rays in $\\mathcal{R}$ by the logarithm of the geometric intersection number; and a geometric argument that promotes geometric control (coarse length of iterates of a fixed ray) to combinatorial control (geometric intersection number). We conjecture that the $C^\\infty$ hypothesis on $f$ can be removed.",
+          "authors": [
+            "Juliette Bavard",
+            "Danny Calegari",
+            "Alden Walker"
+          ],
+          "published": "2026-09-15T22:08:20+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17877v1",
+          "entry_id": "http://arxiv.org/abs/2609.17877v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17877v1",
+          "title": "The Erdős--Sós Theorem",
+          "summary": "We present an exposition of a proof, discovered by GPT-6 Astra, of the Erdős--Sós Conjecture, which states that every graph with average degree greater than $t-2$ contains every tree on $t\\geq 2$ vertices.",
+          "authors": [
+            "David R. Wood"
+          ],
+          "published": "2026-09-15T22:06:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17874v1",
+          "entry_id": "http://arxiv.org/abs/2609.17874v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17874v1",
+          "title": "Hypercyclicity and Lipschitz-free operators",
+          "summary": "We study linearizations of dynamical systems and some of its topological properties. Special attention is paid to the case of Lipschitz-free operators, and they are shown to model the dynamics of very general linearizations. We provide a new criterion, called the targeting property, for the (weakly) mixing property in a linear dynamical system through a (possibly) non-linear restriction of it. We then apply this criterion to the linearization $T_f$ of a Lipschitz map $f\\colon M\\to M$, where $M$ is a metric space and the operator $T_f$ is defined on the corresponding Lipschitz-free space $\\mathcal F (M)$---the so-called Lipschitz-free operators. We show that, under some natural assumptions on the distance considered in $M$, the operator $T_f$ is hypercyclic if and only if the map $f$ has the targeting property.",
+          "authors": [
+            "Christian Cobollo",
+            "Romuald Ernst",
+            "Quentin Menet",
+            "Alfred Peris"
+          ],
+          "published": "2026-09-15T22:02:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17860v1",
+          "entry_id": "http://arxiv.org/abs/2609.17860v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17860v1",
+          "title": "Affine Fixed Points on Flat Manifold Pairs",
+          "summary": "In this paper we consider affine selfmaps of compact flat manifold pairs. We derive an explicit formula for the relative Nielsen number in terms of the ambient holonomy and the holonomy carried by the stabilizer of the lifted submanifold. The formula extends the flat specialization of Wong's nilmanifold-pair formula to finite holonomy, agrees with the author's earlier model-solvmanifold-pair formula on the flat overlap, and extends beyond it. We also show that the stabilizer holonomy cannot in general be replaced by the intrinsic holonomy of the submanifold. Examples exhibit interesting Schirmer theory and include flat pairs outside the model-solvmanifold class.",
+          "authors": [
+            "Aaron Reite"
+          ],
+          "published": "2026-09-15T21:39:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17840v1",
+          "entry_id": "http://arxiv.org/abs/2609.17840v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17840v1",
+          "title": "Behavioral Analysis of Timed Actors using Syntactic Slice Equivalence",
+          "summary": "Tiny twins are compact behavioral models derived from timed actor models for selected observable messages. When a source model evolves, regenerating its tiny twin requires state-space exploration and reduction even if the relevant behavior is unchanged. We present a static analysis for Timed Rebeca that compares backward slices of Rebeca dependence graphs for a given set of observable message names. For the Zeno-free fragment with after annotations and no delay statements, we prove that slice equivalence implies weak timed bisimulation under the selected observations. This preserves observable actions and total elapsed time across internal transitions, allowing the existing tiny twin to be reused. We evaluate the implementation on ten benchmark models paired with revisions that preserve their observable slices. The cost of static comparison depends on the size of the graphs representing source statements and their dependencies, while tiny-twin generation depends on the number of reachable states and transitions. This difference is reflected in the measurements: static comparison takes less than one second using tens of megabytes of memory, while tiny-twin generation can take over an hour and use hundreds of gigabytes.",
+          "authors": [
+            "Ali Ataollahi",
+            "Fatemeh Ghassemi",
+            "Eduard Kamburjan",
+            "Marjan Sirjani"
+          ],
+          "published": "2026-09-15T21:00:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17773v1",
+          "entry_id": "http://arxiv.org/abs/2609.17773v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17773v1",
+          "title": "Generalized short monochromatic odd cycles",
+          "summary": "Answering a question of Noga Alon, we generalize a result of Janzer and Yip to show that every $k$-edge-coloring of $K_{r^k+1}$ contains a monochromatic subgraph with chromatic number at least $r+1$ and diameter $O(k^{3/2}r^{k/2}\\log r)$.",
+          "authors": [
+            "Sammy Luo",
+            "Zixuan Xu"
+          ],
+          "published": "2026-09-15T19:36:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17760v1",
+          "entry_id": "http://arxiv.org/abs/2609.17760v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17760v1",
+          "title": "Every graph with no $K_7^=$ minor is 6-colorable",
+          "summary": "The first open case of Hadwiger's conjecture states that every $K_7$-minor-free graph is 6-colorable. We prove that this is the case for $K_7^=$-minor-free graphs, where $K_7^=$ denotes the graph obtained from $K_7$ by deleting two independent edges. The proof is based on an independently interesting density result: Every 5-connected $K_7^=$-minor-free graph with $n\\ge 6$ vertices has at most $4n-8$ edges.",
+          "authors": [
+            "Zdeněk Dvořák",
+            "Sergey Norin",
+            "Neil Rahman"
+          ],
+          "published": "2026-09-15T19:10:20+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17744v1",
+          "entry_id": "http://arxiv.org/abs/2609.17744v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17744v1",
+          "title": "The Theta Conjecture",
+          "summary": "We define a diagonal-inversion statistic on labeled Dyck paths carrying both decorated rises and decorated contractible valleys. This gives an explicit candidate for a bivariate refinement of the univariate Theta conjecture of D'Adderio, Iraci, and Vanden Wyngaerd, recently proved by D'Adderio, Pagaria, and the authors of this work. The univariate conjecture can be recovered from our bivariate version by setting $q=1$.\n  The new conjecture recovers the rise and valley versions of the Delta conjecture when either decoration parameter vanishes, and provides a combinatorial interpretation of the symmetric function $Θ_{e_l} Θ_{e_k}\\nabla e_{n-k-l}$, which is also conjectured to be the Frobenius characteristic of a certain graded module of diagonal coinvariants with two sets of commuting variables and two sets of anticommuting variables.\n  In support of the Theta conjecture and its touching refinement, we prove its Schröder case, that is, the scalar product of the symmetric function side with $e_{n-d} h_d$ matches the combinatorial side restricted to Schröder paths. The proof uses a finer combinatorial argument than the previously known cases, leveraging two Gaussian product identities.",
+          "authors": [
+            "Giovanni Interdonato",
+            "Alessandro Iraci"
+          ],
+          "published": "2026-09-15T18:56:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17743v1",
+          "entry_id": "http://arxiv.org/abs/2609.17743v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17743v1",
+          "title": "Fourier Decay of SRB Measures for Skew Products",
+          "summary": "We study Fourier decay of natural invariant measures for real analytic skew products $T(x,y)=(f(x),g(x,y))$ on $\\mathbb{S}^1 \\times [-1,1]$, where $f$ is expanding and $0<|\\partial_y g(x,y)|<1$. Let $\\mathcal S$ denote the associated solenoidal attractor. We prove a dichotomy: either $\\mathcal S$ is a single horizontal graph, or both the SRB measure and the measure of maximal entropy have polynomial Fourier decay. No transversality assumption is imposed.",
+          "authors": [
+            "Gaétan Leclerc",
+            "Haojie Ren"
+          ],
+          "published": "2026-09-15T18:51:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17712v1",
+          "entry_id": "http://arxiv.org/abs/2609.17712v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17712v1",
+          "title": "Range Failure, Resolvent Growth, and Resonance in Partially Dissipative Systems",
+          "summary": "We introduce several notions of resonance for systems exhibiting weak or partial dissipation: $\\dot u=Au+f(t)$, with $A$ the generator of a strongly stable semigroup $S(t)$ on a Hilbert space $H$. We refer to resonance as the phenomenon where a time-periodic $f$ may yield an unbounded $u$, classically occurring when $A$ has imaginary eigenvalues. In infinite dimensions, however, unbounded growth may depend on topological choices, and several sorts of``resonance\" may occur.\n  Classically, existence of $T$-periodic $u$ under $T$-periodic $f$ is equivalent to a range condition: $\\mathcal{R}(I-S(T))=H$. Consequently, its failure permits unbounded solution growth and we elucidate that connection through properties of $S(t)$. We describe a hierarchy of range failures, and provide an associated resonance taxonomy. The growth rate of ~$||(A-λI)^{-1}||_H$ on ~$i\\R$ dictates a regularity gap between $u$ and $f$, and, for rapid growth in $λ$, that gap can be infinite. In said case, we demonstrate implications for periodic solvability, and a mechanism for constructing smooth resonant forces.\n  The theory developed here is motivated by (and demonstrated for) a hyperbolic-parabolic system, where the latter component provides the only system dissipation. Such dynamics are a simplification of fluid-structure phenomena, which demonstrate strong stability but do not support unconditional periodic well-posedness. Though point-spectral resonance is ruled out, we note that $\\mathcal R(I-S(T))\\neq H$. Our main result here shows that, for a carefully constructed geometry, a classical heat-wave system possesses periods $T$ which yield infinite derivative loss and, via supporting results, yield resonance with smooth forcing.",
+          "authors": [
+            "Boris Muha",
+            "Sebastian Schwarzacher",
+            "Justin T. Webster"
+          ],
+          "published": "2026-09-15T18:21:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17700v1",
+          "entry_id": "http://arxiv.org/abs/2609.17700v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17700v1",
+          "title": "Integer Realization of an Equivelar Octahedron of Genus 3",
+          "summary": "We present an integer-coordinate realization of a genus-3 polyhedral surface with eight planar simple nonagonal faces. It has 24 vertices and 36 edges, and each vertex is incident with three faces. Every pair of faces shares an edge: 20 pairs share one edge and 8 pairs share two. Vertex coordinates, face walks, and plane equations are given. Exact verification confirms that all faces are planar, the surface is closed and orientable, no unintended intersections occur, and the realization has $C_4$ symmetry. The construction is based on an earlier construction and preserves its incidence structure.",
+          "authors": [
+            "Ruslan Mizhaev"
+          ],
+          "published": "2026-09-15T18:11:42+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17687v2",
+          "entry_id": "http://arxiv.org/abs/2609.17687v2",
+          "pdf_url": "https://arxiv.org/pdf/2609.17687v2",
+          "title": "Geometric Hybrid Dynamical Systems: Part I - Modeling and Stability",
+          "summary": "We present a framework for the modeling and analysis of geometric hybrid dynamical systems as hybrid inclusions on $C^1$-manifolds. Using tools from nonsmooth and set-valued analysis on manifolds, we derive coordinate-independent sufficient conditions for the existence of nontrivial solutions to this type of systems. We present geometric notions of uniform stability and attractivity of compact sets, and establish their equivalence to metric-based stability notions when the manifold is endowed with a Riemannian structure. We also introduce nonsmooth Lyapunov functions and a hybrid Lyapunov theorem providing sufficient conditions for uniform global asymptotic stability of compact sets. Finally, by characterizing $ω$-limit sets of precompact solutions, we derive a hybrid invariance principle for geometric hybrid dynamical systems. The results are demonstrated through several running examples.",
+          "authors": [
+            "Piyush P. Jirwankar",
+            "Daniel E. Ochoa",
+            "Ricardo G. Sanfelice"
+          ],
+          "published": "2026-09-15T18:02:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17529v1",
+          "entry_id": "http://arxiv.org/abs/2609.17529v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17529v1",
+          "title": "An Alon-Boppana Bound for the Non-Backtracking Operator",
+          "summary": "For any fixed $k$, we prove a lower bound on the $k$th largest modulus of an eigenvalue of the non-backtracking matrix $B$. Specifically, consider any deterministic or random family of graphs that converges locally to the unimodular Galton-Watson tree with root degree distribution $D$, and set $κ:=\\mathbb E[D(D-1)]/\\mathbb E[D]$. Given $κ>1$ and an exponential-moment bound on the empirical degree distributions, we show that $|λ_k(B)|\\geq\\sqrtκ-o_N(1)$, where $N$ is the number of vertices. When restricted to locally tree-like regular graphs, this recovers a well-known consequence of the Ihara-Bass formula. In the specific case where the graph is generated through the Erdős-Rényi model with expected degree $d>1$, this proves a conjecture of Bordenave, Lelarge, and Massoulié.\n  To do this, we show that the normalized log-determinant of the Bethe-Hessian of the graph is bounded by that of the Bethe-Hessian of its local limit. This bound is violated if the eigenvalues of the non-backtracking matrix are too small. We establish this using an effective-conductance interpretation of the tree Green's function recursion.",
+          "authors": [
+            "Theo McKenzie"
+          ],
+          "published": "2026-09-15T17:57:58+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17506v1",
+          "entry_id": "http://arxiv.org/abs/2609.17506v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17506v1",
+          "title": "Proof of the singularity conjecture for discrete subgroups of $\\mathrm{SL}_2(\\mathbb{R})$",
+          "summary": "Let $μ$ be a finitely supported probability measure on $\\mathrm{SL}_2(\\mathbb{R})$ whose support generates a Zariski-dense discrete subgroup. We prove that its stationary probability measure on $\\mathbb{P}^1(\\mathbb{R})$ is singular with respect to the $\\mathrm{SO}(2)$-invariant probability measure. The proof compares winding variances on finite covers of a closed hyperbolic surface and uses a topological obstruction.",
+          "authors": [
+            "Timothée Bénard"
+          ],
+          "published": "2026-09-15T17:45:15+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17493v2",
+          "entry_id": "http://arxiv.org/abs/2609.17493v2",
+          "pdf_url": "https://arxiv.org/pdf/2609.17493v2",
+          "title": "Twisted Bracelets for Sorting by Transpositions: the Transposition Diameter of $S_{16}$",
+          "summary": "Sorting By Transpositions (SBT) seeks the minimum number of transpositions required to sort a permutation $π$ on $n$ symbols into the identity $ι$. Let $N=n+1$. A cyclic-target pair $(ω,β)$ consists of an even permutation $ω$ and an $N$-cycle $β$ for which $ρ=ωβ$ is an $N$-cycle. An SBT instance is the special case $(\\barι {\\barπ}^{-1},\\barπ)$, where $\\barπ$ and $\\barι$ encode $π$ and $ι$, and $\\barι {\\barπ}^{-1}\\barπ=\\barι$. For a prescribed fixed-point-free cycle type, fixed-content words encode $ω$, with colors distinguishing cycles and ranks recording their orientations relative to $β$. A word is realizable exactly when $ρ=ωβ$ is an $N$-cycle. Permutations of equal-part colors and shifts of rank origins form auxiliary symmetries that, together with word rotation and position reflection coupled to rank inversion, define a twisted dihedral action. Its orbits are twisted bracelets, and its realizable orbits correspond bijectively to extended-toric equivalence classes of cyclic-target pairs, where reflection is adjoined to classical toric equivalence. This correspondence yields exact orbit counts and directly generates one representative per realizable class. The transposition diameter $TD(n)$ is the largest transposition distance in $S_n$. Combining fixed-point contraction and structural reductions with exhaustive verification of the remaining twisted bracelets, we prove $TD(16)=9$, closing a twenty-five-year gap. This result also yields $TD(19)=11$ and, for every $n\\equiv1\\pmod{3}$ with $n\\geq16$, $TD(n)\\leq\\left\\lfloor(2n-2)/3\\right\\rfloor-1$, improving the previous general upper bound by one for these $n$.",
+          "authors": [
+            "Luiz A. G. Silva",
+            "Luis A. B. Kowada",
+            "Noraí R. Rocco",
+            "Maria E. M. T. Walter"
+          ],
+          "published": "2026-09-15T17:35:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17481v1",
+          "entry_id": "http://arxiv.org/abs/2609.17481v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17481v1",
+          "title": "Kemeny's constant via matrix compression and eigenvalue interlacing",
+          "summary": "Kemeny's constant quantifies the expected time for a random walk to reach a randomly chosen vertex, capturing global properties of a Markov chain. We develop a matrix-analytic framework for bounding Kemeny's constant of a finite connected weighted graph using degree-weighted compressions of the normalized adjacency matrix, pinching inequalities, and eigenvalue interlacing. Our main partition theorem gives lower bounds in terms of the compressed spectrum, with complete equality characterizations, and converts structural graph information into spectrally computable estimates. For instance, when applied to proper color partitions, the proposed method yields a sharp lower bound on Kemeny's constant in terms of the chromatic number \\[\n  K(G)\\ge n-2+\\frac{1}{χ(G)}, \\] which extends a bipartite bound of Ciardo, Dahl, and Kirkland (2022) to arbitrary chromatic number, and which is incomparable with the normalized Hoffman bound by Chung (1997). For unweighted graphs, we also characterize all equality cases of this bound. We further illustrate the power of the proposed matrix framework by deriving spectral bounds for NP-hard graph problems involving normalized cuts and conductance. Our results include an asymptotically sharp conductance bound, two-sided interlacing bounds from principal submatrices and quotient matrices, and estimates for the change in Kemeny's constant under connectivity-preserving deletion of multiple edges.",
+          "authors": [
+            "A. Abiad",
+            "Á. Carmona",
+            "A. M. Encinas",
+            "E. Ghorbani",
+            "M. J. Jiménez",
+            "Á. Samperio"
+          ],
+          "published": "2026-09-15T17:23:59+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17468v1",
+          "entry_id": "http://arxiv.org/abs/2609.17468v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17468v1",
+          "title": "On Counting Independent Sets in Regular Hypergraphs",
+          "summary": "Balogh, Bollobás and Narayanan conjectured that among all finite simple $r$-uniform $d$-regular hypergraphs, the number of weak independent sets is maximized by a natural quasi-bipartite construction $H_{r,d}$. We give three types of evidence for this conjecture. For every fixed $r$, we prove the conjectured asymptotic exponential rate whenever the twin quotient has maximum pair codegree $o(d)$. The proof uses the hypergraph container method. For hypergraphs with no cross-edges, the occupancy method gives the sharper error bound $O_r(\\log d/d)$. We show that a stronger version of the conjecture in terms of the so-called occupancy fraction is not true, by providing a counterexample for every $r\\ge 3$. We also prove exact cases of the conjecture when the hypergraph is $2$-regular. Using an entropy decomposition in the dual edge-cover problem, we settle every odd $r$ and the case $(r,d)=(4,2)$.",
+          "authors": [
+            "Michail Sarantis",
+            "Prasad Tetali",
+            "Zeyu Zheng"
+          ],
+          "published": "2026-09-15T17:09:36+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17453v1",
+          "entry_id": "http://arxiv.org/abs/2609.17453v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17453v1",
+          "title": "One Arithmetic Gadget, Two Problems",
+          "summary": "There is an absolute constant $c>0$ such that, for every $0<\\varepsilon\\leq1$, arbitrarily large finite sets $A\\subset\\mathbb{C}$ satisfy \\[\n  |A+A|\\leq |A|^{1+\\varepsilon},\\qquad\n  |AA|\\leq |A|^{2-c\\varepsilon},\\qquad\n  ν_1(A)\\geq |A|^{1+c\\varepsilon}, \\] where $ν_1(A)$ counts unordered unit-distance pairs. We combine the arithmetic directions from the recent unit-distance construction with the multiplicative enlargement used in the recent sum-product construction. The arithmetic ingredients are stated as explicit inputs.",
+          "authors": [
+            "Jozsef Solymosi"
+          ],
+          "published": "2026-09-15T16:56:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17449v1",
+          "entry_id": "http://arxiv.org/abs/2609.17449v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17449v1",
+          "title": "Dynamics, periodic orbits and $C^1$ non-integrability of the ABC flow",
+          "summary": "We study the Arnold-Beltrami-Childress (ABC) flow in perturbative regimes near its three elementary integrable coordinate axes. Starting from a degenerate family of periodic streamlines of the limiting integrable system, we use first-order averaging to prove the existence of two isolated periodic solutions of the perturbed flow. The three perturbative regimes are related by the cyclic symmetry of the ABC vector field. In each case, the corresponding two-dimensional averaged system possesses two simple equilibria, one elliptic and the other hyperbolic, depending on the sign of the relevant parameter ratio. Poincaré sections illustrate how the degenerate periodic structure of the integrable limit breaks under perturbation and how the isolated periodic orbits predicted by averaging emerge within the surrounding dynamics. These periodic orbits provide the natural link between the perturbative analysis and the integrability problem. The eigenvalues of the linearized averaged system determine the leading-order behavior of the nontrivial characteristic multipliers of the bifurcating periodic solutions. Combining this relation with the Poincaré-Llibre-Valls criterion, we prove that, in a neighborhood of each of these periodic orbits, there exists no nonconstant first integral $H\\in C^1$ that is regular along the orbit. The analytical results are further illustrated and confirmed by direct shooting, monodromy-matrix computations, and continuation of the elliptic and hyperbolic branches, demonstrating that the first-order averaging approximation remains quantitatively accurate over a substantially wider parameter range than the strict asymptotic regime.",
+          "authors": [
+            "Wojciech Szumiński",
+            "Jaume Llibre"
+          ],
+          "published": "2026-09-15T16:53:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17446v1",
+          "entry_id": "http://arxiv.org/abs/2609.17446v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17446v1",
+          "title": "Relaxed coparking functions and Stanley's conjecture for matroid $h$-vectors",
+          "summary": "Stanley's conjecture asserts that the $h$-vector of a matroid is a pure $O$-sequence. Corry, Dochtermann, McClain, Perkinson and Yi introduced cycle systems, which give a bijective proof for the matroids that admit one, through coparking functions, and proposed generalized cycle systems. Every matroid admitting a cycle system is regular, and the Wagner and Petersen graphs admit no generalized cycle system consisting of circuits. We propose a relaxation. Where the coparking recursion breaks down, at the strata whose unique union is independent, the coparking functions are replaced by a fibre: a pure multicomplex with the $h$-vector of the dead node, the minor of the matroid attached to the stratum. We prove, for any matroid with a fixed basis, that whenever the required fibres exist the relaxed coparking functions form a pure multicomplex whose degree sequence is the $h$-vector of the matroid, so Stanley's conjecture follows. The proof rests on a version of Dhar's burning algorithm for a matroid with a fixed basis, which gives the purity, and on a deletion-contraction identity that computes the gap between the $h$-vector and the coparking functions as a sum of local $h$-vectors, one per dead node. Coned, biconed and triconed graphs carry a fibre system with their canonical spanning trees, as do the Wagner and Petersen graphs. Beyond graphs, every basis of a matroid of rank at most three, of a matroid of corank two or of a uniform matroid carries a fibre system, so Stanley's conjecture follows for those classes. We also give a graph of radius two on twelve vertices which, with its breadth-first spanning tree, carries no fibre system.",
+          "authors": [
+            "SuHo Oh"
+          ],
+          "published": "2026-09-15T16:51:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17651v1",
+          "entry_id": "http://arxiv.org/abs/2609.17651v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17651v1",
+          "title": "Homological invariants of Edge Ideals associated to powers of cycles",
+          "summary": "Let $G_{n,m}=\\overline{\\C_n^{[m]}}$, where $\\C_n^{[m]}$ denotes the\n  closed $m$th power of the $n$-cycle. We study the graded Betti numbers\n  and homological invariants of the edge ring of $G_{n,m}$ in the range\n  $n\\geq 3m+1$. These graphs form a natural family for the study of edge rings whose\n  regularity can be compared explicitly with the induced matching number.\n  In particular, for $n\\geq4m+1$, the graph $G_{n,m}$ has induced matching\n  number one, whereas its edge ring has regularity two.\n  Our approach is based on a characterization of the homology of the\n  induced subcomplexes of the independence complex\n  $Δ(G_{n,m})$. We introduce a family\n  $\\mathcal{S}_V(k,m)$ of vertex subsets characterized by their successive\n  gaps around the cycle and show that, for $W\\in\\mathcal{S}_V(k,m)$, the\n  induced subcomplex $Δ[W]$ has the homotopy type of $\\mathbb{S}^1$,\n  whereas for $W\\notin\\mathcal{S}_V(k,m)$ all its positive-dimensional\n  reduced homology groups vanish. Combining this characterization with\n  Hochster's formula and an explicit enumeration of\n  $\\mathcal{S}_V(k,m)$, we obtain a closed formula for the graded Betti\n  numbers in the second strand. We further determine the extremal Betti\n  number, regularity, and projective dimension of the edge ring of $G_{n,m}$. Finally, we\n  compute the $f$- and $h$-vectors of the independence complex and use\n  the Hilbert series to determine the graded Betti numbers in the linear\n  strand. The case $m=2$ recovers the corresponding results for complements of\n  squares of cycles obtained in~\\cite{RatherSquare}.",
+          "authors": [
+            "Shahnawaz Ahmad Rather",
+            "S. Pirzada",
+            "M. Aijaz"
+          ],
+          "published": "2026-09-15T16:48:39+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17438v2",
+          "entry_id": "http://arxiv.org/abs/2609.17438v2",
+          "pdf_url": "https://arxiv.org/pdf/2609.17438v2",
+          "title": "Quandles associated with group actions",
+          "summary": "A quandle is an algebraic system that can be regarded as a generalization of the conjugation operation in groups. In this paper, we establish a Cayley-type embedding theorem for finite quandles. To this end, we study a quandle construction associated with group actions and determine its fundamental structural properties. Applying the construction to the natural action of the symmetric group, we obtain a quandle into which every quandle of cardinality $n$ embeds.",
+          "authors": [
+            "Ryoya Kai"
+          ],
+          "published": "2026-09-15T16:45:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17410v1",
+          "entry_id": "http://arxiv.org/abs/2609.17410v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17410v1",
+          "title": "Uncountably many local isomorphism types of compactly generated simple groups",
+          "summary": "A major open question in the theory of locally compact groups is the following. Let $\\mathscr{S}$ be the class of non-discrete compactly generated totally disconnected locally compact groups that are topologically simple. Is the number of local isomorphism classes of groups in $\\mathscr{S}$ uncountable? We have answered this question, showing that there are $2^{\\aleph_0}$ local isomorphism classes in $\\mathscr{S}$. This preprint is an overview of our forthcoming paper.\n  Our result was obtained without the use of artificial intelligence; it arose from a problem session that ran over several days at the workshop \"Branch groups: subgroups, rigidity, topologies\" at the Universidad Complutense de Madrid, organised by Dominik Francoeur, Alejandra Garrido and Tatiana Nagnibeda.",
+          "authors": [
+            "Ilaria Castellano",
+            "Jorge Fariña-Asategui",
+            "Mikel Eguzki Garciarena",
+            "Bianca Marchionna",
+            "Martyn Quick",
+            "Colin D. Reid",
+            "Simon M. Smith",
+            "Stephan Tornier",
+            "Matteo Vannacci",
+            "John S. Wilson"
+          ],
+          "published": "2026-09-15T16:37:08+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17401v1",
+          "entry_id": "http://arxiv.org/abs/2609.17401v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17401v1",
+          "title": "Rings are $χ$-bounded",
+          "summary": "We prove that there is a function $f:\\mathbb N\\to\\mathbb N$ such that $χ(Γ(R))\\leq f(ω(Γ(R)))$ for the zero-divisor graph of any ring $R$, if the clique number is finite. On the one hand, this consolidates a disproved conjecture of Beck from 1988, claiming $χ(Γ(R))=ω(Γ(R))$ for unital commutative rings. While previous counterexamples satisfy $χ(Γ(R))\\leq ω(Γ(R))+2$, we obtain the lower bound $f\\geq k^{Ω(\\log k)}$ among finite commutative rings. Finally, we show that neither zero-divisor graphs of finite commutative semirings nor those of finite commutative nonassociative rings are $χ$-bounded.",
+          "authors": [
+            "Sara Asensio",
+            "Ignacio García-Marco",
+            "Kolja Knauer"
+          ],
+          "published": "2026-09-15T16:34:41+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17395v1",
+          "entry_id": "http://arxiv.org/abs/2609.17395v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17395v1",
+          "title": "The price of anarchy in the max-distance network creation game is not constant",
+          "summary": "At edge price $α=1$, we construct an infinite family of pure Nash equilibria of the unilateral max-distance network creation game with $\\PoA\\ge2^{\\sqrt{\\log_2 n}-O(\\log\\log n)}$. Together with the known upper bound, this gives $2^{Θ(\\sqrt{\\log n})}$ along the constructed sequence of population sizes. We subdivide every edge of the bipartite double cover of a distance-uniform graph with large diameter constructed by Lavrov, Loh and Messegué, and let each subdivision vertex buy its two incident edges. A distance calculation rules out every profitable unilateral deviation. The equilibria are not strict. We also give a short proof that the price of anarchy is constant for every polynomially vanishing edge price.",
+          "authors": [
+            "Christoph Schlegel"
+          ],
+          "published": "2026-09-15T16:31:32+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17392v1",
+          "entry_id": "http://arxiv.org/abs/2609.17392v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17392v1",
+          "title": "Predictable Modelling and Analysis of Software-defined Vehicle Implementations",
+          "summary": "Software-Defined Vehicles (SDVs) rely on middleware-based communication and hardware abstraction mechanisms that introduce temporal uncertainty affecting end-to-end timing guarantees. Previous work proposed probabilistic architectural models for early timing analysis, but the representativeness of these abstractions with respect to SDV implementations remained unclear. This paper presents an experimental framework combining probabilistic design-time timing analysis with a monitored Kuksa-based implementation. The same reaction-time analysis is applied both to simulation and implementation traces, enabling direct comparison between predicted and observed timing behaviour. We additionally introduce a comparison methodology separating conservative coverage from predictive fidelity of timing distributions. The results show that the proposed abstractions remain representative under different middleware load conditions while preserving conservative timing guarantees, supporting incremental timing verification approaches for SDV platforms.",
+          "authors": [
+            "Pavlo Tokariev",
+            "Yosri Ayari",
+            "Julien Deantoni"
+          ],
+          "published": "2026-09-15T16:27:51+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17389v1",
+          "entry_id": "http://arxiv.org/abs/2609.17389v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17389v1",
+          "title": "A perimeter analogue of Franklin's identity and an inequality related to the parity of parts",
+          "summary": "We prove two conjectures regarding partition perimeter inequalities. It was conjectured by Gray, Payne, and Watson that Franklin's partition identity becomes an eventual inequality if one replaces the size of the partition with its perimeter. We prove this conjecture by asymptotic analysis of the corresponding generating functions. Gray, Payne, Swisher, and Watson also conjectured that there is a bias for partitions with fixed perimeter to have more odd parts than even parts. We prove this conjecture by deriving the corresponding generating functions and give a positive recurrence for the coefficients. In the case that there are an equal number of odd parts and even parts we provide a connection to peakless Motzkin paths.",
+          "authors": [
+            "Philip Cuthbertson"
+          ],
+          "published": "2026-09-15T16:27:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17388v1",
+          "entry_id": "http://arxiv.org/abs/2609.17388v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17388v1",
+          "title": "Refining Timing Uncertainty from Logical Time Specification to Operation",
+          "summary": "Real-time and cyber-physical systems are developed through successive refinements from abstract requirements to platform deployments. While timing knowledge evolves throughout this process, existing stochastic real-time formalisms typically require uncertainty to be embedded from the outset or necessitate model reconstruction when new timing information becomes available, hindering iterative timing engineering. This paper presents a refinement-oriented timing specification framework built upon the Clock Constraint Specification Language (CCSL). It supports the progressive introduction of timing knowledge across three levels: logical timing relations, quantitative real-time constraints, and stochastic timing models. Instead of altering behavioural semantics, stochastic information is attached directly to timing quantities as a refinement. This enables implementation measurements and operational observations to be incorporated incrementally within a unified declarative framework. We implement our approach in an OCaml-based simulation tool and evaluate it on a simplified but representative Software-Defined Vehicle use case.",
+          "authors": [
+            "Pavlo Tokariev",
+            "Julien Deantoni"
+          ],
+          "published": "2026-09-15T16:26:37+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17370v1",
+          "entry_id": "http://arxiv.org/abs/2609.17370v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17370v1",
+          "title": "On the extended Shi arrangement of type $B_{\\ell}$",
+          "summary": "Motivated by Kawanoue's construction of a basis for the derivation module of the cone of the extended Catalan arrangement of type $B_\\ell$, we construct an explicit basis for the derivation module of $\\mathbf{c}Shi(B_\\ell,m)$. Our construction generalizes the previously known case $m=1$ to $m\\geq1$. It also provides a partial answer to a question of Abe and Terao concerning explicit constructions of simple-root bases.",
+          "authors": [
+            "Zixuan Wang"
+          ],
+          "published": "2026-09-15T16:05:41+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17368v1",
+          "entry_id": "http://arxiv.org/abs/2609.17368v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17368v1",
+          "title": "PrecPack: An Efficient Open-Source Exact Solver for Bin Packing with Generalized Precedence Constraints",
+          "summary": "Efficient resource use in packing and assembly-line applications requires decisions that jointly account for capacity and precedence constraints. The strongly NP-hard bin packing problem with generalized precedence constraints (BPP-GP) models such decisions by minimizing the number of ordered, capacitated bins required to pack weighted items, even when precedence requirements span multiple bins. Existing exact algorithms primarily focus on classical special cases, whereas general BPP-GP has been addressed only via compact integer models and heuristics, with no efficient open-source exact solver. We present PrecPack, a unified exact solver that extends branch-bound-and-remember (BBR) to arbitrary nonnegative precedence weights and naturally specializes to the classical cases. Generalized states capture restrictions that remain active across future bins, which are addressed through branching, dominance, and conflict-aware lower bounds. Root column generation uses fixed-point arithmetic to compute numerically valid dual bounds for pruning or to prove optimality. To support reuse and verification, we provide common programming and command-line interfaces, independent assignment checking, explicit termination statuses, and reproducible batch execution; the core procedures require no commercial software. In same-machine, single-threaded comparisons on classic assembly-line benchmarks, more instances are proven optimal, and average computing times are substantially reduced relative to leading source-available BBR implementations. Further comparisons with published benchmark results for bin packing with precedence constraints and BPP-GP also show that more instances were proved optimal and that reported average gaps were smaller on most benchmark sets. PrecPack is released under the MIT License at https://github.com/Sunkanghong-Wang/PrecPack.",
+          "authors": [
+            "Sunkanghong Wang",
+            "Zhengzhong Ricky You",
+            "Roberto Baldacci",
+            "Baichuan Mo",
+            "Hu Qin",
+            "Lijun Wei",
+            "Zhou Xu"
+          ],
+          "published": "2026-09-15T16:05:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17364v1",
+          "entry_id": "http://arxiv.org/abs/2609.17364v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17364v1",
+          "title": "The Classical Weisfeiler-Leman Algorithm Stabilizes in $O(n)$ Rounds",
+          "summary": "The classical Weisfeiler-Leman algorithm (also known as the $2$-dimensional Weisfeiler-Leman algorithm) is a simple combinatorial algorithm that was originally designed as a heuristic for the graph isomorphism problem. However, it has also numerous connections to other areas such as algebraic graph theory, logics, proof complexity, combinatorial optimization and machine learning.\n  We prove that the classical Weisfeiler-Leman algorithm terminates after $5(n-1)$ iterations. This improves over the previous best upper bound of $O(n \\log n)$ by Lichter, Ponomarenko and Schweitzer [LICS 2019], and asymptotically matches the known lower bound of $Ω(n)$ by Fürer [ICALP 2001].\n  Additionally, building on our results for the $2$-dimensional case, we obtain an improved upper bound of $O(n^{k-1}/(k-2)! + n^{k-2})$ on the number of iterations performed by the $k$-dimensional Weisfeiler-Leman algorithm, for every $k \\geq 3$. Our arguments actually hold for a larger class of sequences of colorings of $k$-tuples; in this larger class our upper bounds are essentially tight for all $k \\geq 3$.",
+          "authors": [
+            "Simon Döring",
+            "Daniel Neuen"
+          ],
+          "published": "2026-09-15T16:03:28+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17344v1",
+          "entry_id": "http://arxiv.org/abs/2609.17344v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17344v1",
+          "title": "Poset dimension and maximum comparability degree",
+          "summary": "In 1986, Füredi and Kahn showed that the dimension $\\dim(P)$ of any finite poset $P$ satisfies $\\dim(P) = O(d \\log^2 d)$, where $d$ is the maximum degree of the comparability graph of $P$. Scott and Wood more recently improved this bound to one of the form $d \\log^{1+o(1)} d$. We show that $\\dim(P) = O(d \\log d)$, thus confirming that the corresponding lower bound of Erdős, Kierstead, and Trotter is tight up to the implicit constant.",
+          "authors": [
+            "Carla Groenland",
+            "Richard Montgomery",
+            "Rajko Nenadov",
+            "Lisa Sauermann"
+          ],
+          "published": "2026-09-15T15:45:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17336v1",
+          "entry_id": "http://arxiv.org/abs/2609.17336v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17336v1",
+          "title": "Zero-Hopf bifurcation, periodic orbits and $C^{1}$ non-integrability of the classical Rössler system",
+          "summary": "We investigate the zero-Hopf bifurcation and the local $C^{1}$-non-integrability of the original Rössler system. First, we characterize the unique zero-Hopf equilibrium of the system and study its perturbation by means of the first-order averaging theory. We prove that, under suitable assumptions on the bifurcation parameters, three distinct families of periodic orbits bifurcate from the zero-Hopf equilibrium, substantially extending the previously known result in which only one bifurcating periodic orbit was obtained.\n  In the second part of the paper, these bifurcating periodic solutions are used to investigate the integrability properties of the Rössler system. By combining the first-order averaging theory with the classical Poincaré criterion for first integrals, we prove that the bifurcating periodic orbits constitute a generic obstruction to the existence of local first integrals of class $C^{1}$. This demonstrates that averaging theory provides not only an effective tool for detecting periodic solutions but also a powerful method for the integrability analysis.",
+          "authors": [
+            "Jaume Llibre",
+            "Wojciech Szumiński"
+          ],
+          "published": "2026-09-15T15:39:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17334v1",
+          "entry_id": "http://arxiv.org/abs/2609.17334v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17334v1",
+          "title": "Generating Functions and the Entropy Hierarchy of Strongly Connected Digraphs",
+          "summary": "We present a generating-function approach to the topological entropy of finite strongly connected digraphs, working throughout with digraphs in which loops are allowed but multiple edges are excluded. Using dominant singularities of path-generating functions, we recover by new analytic--combinatorial arguments the known first and second positive-entropy minimizers from the previously studied loopless spectral setting, and extend the corresponding extremal statements to the present framework.\n  For the class $\\mathcal{SC}_{m+1}(m)$ of strongly connected digraphs with $m$ vertices and $m+1$ edges, we introduce a unified $(t,k_1,k_2)$-butterfly parametrization. The entropy of $\\mathcal{B}^{\\,t}_{k_1,k_2}$ depends only on $(k_1,k_2)$ and is determined by the unique root $R\\in(0,1)$ of $1-z^{k_1}-z^{k_2}=0$ via $h=-\\ln R$.\n  This parametrization yields a detailed entropy hierarchy within $\\mathcal{SC}_{m+1}(m)$. We introduce the Pyramidal Entropy Diagram, determine the entropy order completely for $m\\leq 7$, and identify its first structural bifurcation at $m=8$. We further establish maximal stable initial and terminal segments consisting of ten entropy minima and two entropy maxima, respectively, and derive an explicit formula for the minimum order required to realize a positive entropy not exceeding a prescribed threshold.",
+          "authors": [
+            "Rostislav Klech"
+          ],
+          "published": "2026-09-15T15:38:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17324v1",
+          "entry_id": "http://arxiv.org/abs/2609.17324v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17324v1",
+          "title": "Universal Properties of Petri Net Unfoldings",
+          "summary": "It is an established idea in concurrency theory that every Petri net admits an unfolding semantics. This is a denotational object that represents its domain of possible executions. Unfoldings play an important role in practical analysis and verification. This paper is concerned with the following well-known problem: while the unfolding resembles a universal construction in the category of Petri nets, it generally fails to satisfy the expected universal property. This is because the unfolding construction overlooks the net's internal symmetries. There are two solutions: make these symmetries explicit to obtain a weak universal property (one that holds only ''up to symmetry''); or break the symmetries by assigning individual identities to components of the net. We review these two solutions and establish, in each case, a universal unfolding of Petri nets to event structures. This paper demonstrates a 2-categorical approach to Petri net unfoldings. We show that each unfolding semantics determines a 2-categorical relative adjunction involving Petri nets and event structures. Viewed in this way, the above two constructions can be related formally via an appropriate morphism of adjunctions. We exhibit a 2-density property of event structures which implies that unfolding functors are essentially unique.",
+          "authors": [
+            "Serge Lechenne",
+            "Hugo Paquet"
+          ],
+          "published": "2026-09-15T15:29:00+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17285v1",
+          "entry_id": "http://arxiv.org/abs/2609.17285v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17285v1",
+          "title": "CAT(0) square complexes that do not embed into finite products of trees",
+          "summary": "Answering a question of Chepoi and Hagen, we give two constructions of bounded degree CAT(0) square complexes that cannot be isometrically embedded into any finite product of trees.\n  The first is based on Burling graphs and has degree at most five, which is optimal. These square complexes topologically embed into $\\R^3$ since we further prove that every CAT(0) square complex whose vertices have degree at most five can be topologically embedded into the product of a line and a star. It turns out that in this setting, Burling graphs are the only obstruction: we prove that CAT(0) square complexes that topologically embed into $\\R^3$ and whose crossing graph forbids some induced Burling graph can be isometrically embedded into a finite product of trees.\n  Our second CAT(0) square complex has degree at most six and its crossing graph forbids an induced Burling graph. Of independent graph-theoretic interest, along the way we construct intersections of chordal and interval graphs with arbitrarily large girth and chromatic number. We also discuss connections to nice labellings of event structures.",
+          "authors": [
+            "James Davies",
+            "Harry Petyt"
+          ],
+          "published": "2026-09-15T14:58:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17280v1",
+          "entry_id": "http://arxiv.org/abs/2609.17280v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17280v1",
+          "title": "Concise tensors with maximal symmetries",
+          "summary": "Conner, Gesmundo, Landsberg and Ventura (2019) determined the largest stabilizer dimension of concise $n\\times n \\times n$ tensors that are binding, and they determined the corresponding maximizing tensors to be the null algebra tensors. They left as an open problem to extend this to all concise $n \\times n \\times n$ tensors (i.e. dropping binding). We solve this problem: We prove that the largest stabilizer dimension of concise $n\\times n\\times n$ tensors is $n^2 + 1$ and the maximizers are the null algebra tensors (as in the binding case) and the skew symmetric tensor $e_1 \\wedge e_2 \\wedge e_3$. As part of our approach we obtain upper bounds on the stabilizer dimension of matrix tuples under left-right action (generalized Kronecker quiver representations), which we think are of independent interest.",
+          "authors": [
+            "Annika Holtrup",
+            "Jeroen Zuiddam"
+          ],
+          "published": "2026-09-15T14:54:12+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17266v1",
+          "entry_id": "http://arxiv.org/abs/2609.17266v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17266v1",
+          "title": "Rank-One Matrix Discrepancy and Algorithmic Kadison--Singer",
+          "summary": "We give a deterministic polynomial-time algorithm that, given rational Hermitian matrices $H_1,\\dots,H_N$ of rank at most one, finds signs $s\\in\\{\\pm1\\}^N$ with $\\|\\sum_i s_i H_i\\|\\le 13\\|\\sum_i H_i^2\\|^{1/2}$. As a corollary, for vectors $v_i$ with $\\sum_i v_iv_i^*=I$ and $\\|v_i\\|^2\\leδ$, the signs yield a partition $[N] = S_1 \\cup S_2$ such that each part satisfies $\\|\\sum_{i \\in S_j} v_i v_i^* - \\frac{I}{2}\\| \\leq \\frac{13}{2}\\sqrtδ$ for $j = 1,2$. This gives a deterministic polynomial-time algorithm for the Kadison--Singer problem, in Weaver's equivalent discrepancy-theoretic $\\mathsf{KS}_2$ formulation, with a universal constant.",
+          "authors": [
+            "Ekene Ezeunala",
+            "Haotian Jiang"
+          ],
+          "published": "2026-09-15T14:46:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17250v1",
+          "entry_id": "http://arxiv.org/abs/2609.17250v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17250v1",
+          "title": "Weighted lattice point enumeration in lecture hall order polytopes",
+          "summary": "We consider weighted lattice point enumeration in lecture hall order polytopes. We observe that these half-open polytopes are closed under weight-lifting for a large class of polynomial weights, including monomials and weights given by binomial coefficients. For rooted trees, we prove that the corresponding (weighted) $h^\\ast$-polynomial is real-rooted thereby complementing previous results of Savage-Visontai and Brändén-Leander.",
+          "authors": [
+            "Katharina Jochemko",
+            "Krishna Menon"
+          ],
+          "published": "2026-09-15T14:31:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17232v1",
+          "entry_id": "http://arxiv.org/abs/2609.17232v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17232v1",
+          "title": "A system-centered probabilistic formalism linking multiple equilibria and biodiversity in ecological and evolutionary models",
+          "summary": "Ecological and evolutionary communities do not always settle into a single predictable configuration. Models such as Lotka-Volterra or replicator dynamics may predict several admissible states. The multiplicity of such states is central to understanding robustness, alternative community configurations, coexistence, and shifts in biodiversity. Yet, standard practices are often state-centered: they either focus on the properties of typical equilibria or pool states across systems, losing information about how many states can arise in a single system, including cases where no state exists. Here, we introduce a system-centered probabilistic formalism that captures this hidden structure and could be applied across a wide range of ecological and evolutionary dynamical models, drawing inspiration from hurdle and zero-inflated models. Each ecological system is viewed as generating a distribution over its possible outcomes. This allows us to jointly quantify the occurrence of a given state type, its multiplicity within each system, and the number of species co-existing within these states. The formalism is generic and can be applied to different families of dynamical models. To illustrate its scope, we consider two case studies: the generalized Lotka-Volterra and replicator dynamics with random and structured parameters. This unified perspective reveals patterns that remain invisible when equilibria are analyzed individually or pooled across systems. By turning the state space of a model into interpretable probabilistic quantities, our formalism offers a new way for studying the robustness of community structure, the likelihood of alternative outcomes under small changes in initial conditions, and the potential for shifts between states of low and high diversity.",
+          "authors": [
+            "Hiba Nassor",
+            "Hermine Biermé",
+            "Elisabeth Herniou",
+            "Sten Madec"
+          ],
+          "published": "2026-09-15T14:13:28+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17640v1",
+          "entry_id": "http://arxiv.org/abs/2609.17640v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17640v1",
+          "title": "Quiescence in Concert: Composing Multi-Channel Time-Outs for IOCO",
+          "summary": "In Model-Based Testing (MBT), test suites are generated automatically from a formal specification. The theory of testing real-time systems is rich, but often underused in practice, partly because applying the timed machinery demands expertise practitioners should not need. In prior work we addressed this for timed testing with a canonic lifting operator, which lets a modeller specify behaviour as plain labelled transition systems while implicitly obtaining the timed automata that express their quiescent behaviour (the explicit absence of outputs) with timers. This paper takes the next step: we show that our lifting still works when each component carries its own time-out on its own channel. This way, we introduce a multi-channel lifting. We show that it commutes with parallel composition, i.e. composing and lifting is the same as lifting first and then composing. We show that the MBT apparatus survives: conformance, test generation and verdicts are preserved by the lifting, on the testable traces that a time-out based tester can observe.",
+          "authors": [
+            "Laura Brandán Briones",
+            "Petra van den Bos",
+            "Marcus Gerhold"
+          ],
+          "published": "2026-09-15T14:03:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17215v1",
+          "entry_id": "http://arxiv.org/abs/2609.17215v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17215v1",
+          "title": "A classification of finite simply reducible groups of order at most 2000",
+          "summary": "We give a computer-assisted classification, up to isomorphism, of all nontrivial finite simply reducible groups of order at most 2000. There are 7889 such groups, all of even order. We provide representatives and a table of their numbers at each order. Order 1024, which is not available as a catalogue of group objects in the SmallGroups library of the computer algebra system GAP, requires a separate construction. Combining descendant generation with a classification of quadratic maps over $\\mathbb F_2$, we obtain exactly 803 groups of this order, including 221 of nilpotency class two. We also derive exact counting formulas on several infinite families of orders and explicit bounds from structural subclasses.",
+          "authors": [
+            "Yongzhi Luan"
+          ],
+          "published": "2026-09-15T14:02:10+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17199v1",
+          "entry_id": "http://arxiv.org/abs/2609.17199v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17199v1",
+          "title": "Classification and enumeration of skew morphisms of skew-type four on cyclic $2$-groups",
+          "summary": "A skew morphism on a finite group $A$ is a permutation $\\varphi$ on $A$ that fixes the identity element of $A$ and for which there exists an integer-valued function $π:A\\to\\mathbb{Z}_{|\\varphi|}$ such that $\\varphi(xy)=\\varphi(x)\\varphi^{π(x)}(y)$ for all $x,y\\in A$. The kernel of $\\varphi$ is the subgroup $\\Ker\\varphi=\\{x\\in A\\mid π(x)=1\\}$, and the index $[A:\\Ker\\varphi]$ is called the skew-type of $\\varphi$. In this paper we construct, classify and enumerate the skew morphisms of skew-type four on cyclic $2$-groups. Our main results give explicit formulas for all such skew morphisms and closed-form expressions for their numbers.",
+          "authors": [
+            "Kan Hu"
+          ],
+          "published": "2026-09-15T13:54:10+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17190v1",
+          "entry_id": "http://arxiv.org/abs/2609.17190v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17190v1",
+          "title": "Separation Conditions for Iterated Function Systems with a Common Attractor",
+          "summary": "Let $K$ be the non-singleton attractor of a finite iterated function system $Φ=\\{φ_i(x)=a_i O_i x+t_i\\}_{i=1}^m$ on $\\mathbb{R}^d$, where $0<a_i<1$, $t_i\\in\\mathbb{R}^d$ and the $O_i$ are orthogonal transformations on $\\mathbb{R}^d$. Suppose that $Φ$ satisfies the open set condition, but not the strong separation condition. We show that $K$ cannot be generated by any finite iterated function system of similitudes satisfying the strong separation condition. This removes the homogeneity assumption from a result of Feng, Ruan and Xiong and gives a negative answer to a folklore question about the separation conditions on the generating iterated function systems of self-similar sets.",
+          "authors": [
+            "Cai-Yun Ma"
+          ],
+          "published": "2026-09-15T13:47:34+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17154v1",
+          "entry_id": "http://arxiv.org/abs/2609.17154v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17154v1",
+          "title": "Characterization of graphs attaining the maximum signless Laplacian spectral radius under forbidden cycles and theta graphs",
+          "summary": "Spectral Turán-type problems ask how the absence of prescribed subgraphs constrains the spectral radius of a matrix associated with a graph. Given a family of graphs $\\mathcal{F}$, a graph is called $\\mathcal{F}$-free if it contains no member of $\\mathcal{F}$ as a subgraph. The theta graph $θ(l_1,\\ldots,l_k)$ consists of $k$ internally disjoint paths of lengths $l_1,\\ldots,l_k$ with two common end vertices. In this paper, we study two spectral Turán-type extremal problems for the signless Laplacian spectral radius. First, among all $\\{C_3,C_4\\}$-free graphs of fixed order with no pendant vertices, we determine the maximum signless Laplacian spectral radius and uniquely characterize the extremal graph attaining it. The extremal structure exhibits a parity phenomenon: odd and even orders give rise to two distinct graph families. These results, in particular, sharpen a recent general upper bound for this class given by Liu and Wang (2026). Next, we obtain the corresponding extremal results for all $\\{θ(1,2,2),θ(1,2,3)\\}$-free graphs of fixed size with no pendant vertices when the size is congruent to $1$ modulo $3$ and $2$ modulo $3$, again obtaining unique but structurally different maximizing graphs in the two cases. Together with the previously known result for sizes congruent to $0$ modulo $3$ by Liu and Wang (2026), this completes the fixed-size problem across all three congruence classes modulo $3$.",
+          "authors": [
+            "Mainak Basunia",
+            "Pratima Panigrahi"
+          ],
+          "published": "2026-09-15T13:19:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17129v1",
+          "entry_id": "http://arxiv.org/abs/2609.17129v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17129v1",
+          "title": "Selflessness, MIF and opposition in groups acting on exotic buildings",
+          "summary": "We prove that groups acting freely and cocompactly on (possibly exotic) affine buildings of type $\\tilde{A}_2$ and $\\tilde C_2$ are mixed-identity free and have selfless reduced $C^*$-algebras. These results follow from a strong form of ping-pong dynamics that we call 'transversal contractivity'. Our main geometric result regards domesticity properties of elements in the associated polygons at infinity: we prove that, in our context, the opposite geometry of a hyperbolic element is topologically large.",
+          "authors": [
+            "Corentin Le Bars",
+            "Elyasheev Leibtag",
+            "Itamar Vigdorovich"
+          ],
+          "published": "2026-09-15T12:54:56+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17127v1",
+          "entry_id": "http://arxiv.org/abs/2609.17127v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17127v1",
+          "title": "On a classical zero-sum invariant II: Disproof of a long-standing conjecture",
+          "summary": "For a nontrivial finite abelian group $G$, let $ν(G)$ be the smallest integer $\\ell$ such that every zero-sum free sequence $T$ over $G$ of length at least $\\ell$ has the following property: all nonzero elements of $G$ that do not occur as a subsequence sum of $T$ lie in a proper coset of some subgroup of $G$. It is easy to check that $\\mathsf d (G)-1 \\le ν(G) \\le \\mathsf d (G)$, where $\\mathsf d (G)$ is the small Davenport constant of $G$. A conjecture by Gao from the year 2000 stated that equality should always hold at the lower bound. This conjecture has since been confirmed for many families of groups (including all p-groups and groups of rank at most two). In the current note, we disprove the conjecture.",
+          "authors": [
+            "Alfred Geroldinger",
+            "Guoqing Wang",
+            "Wenkai Yang"
+          ],
+          "published": "2026-09-15T12:53:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17111v1",
+          "entry_id": "http://arxiv.org/abs/2609.17111v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17111v1",
+          "title": "Finding Common Mistakes In Modelling With Mathematical Formalisms Using LLMs",
+          "summary": "Modelling with mathematical formalisms like logical formulas, mathematical equations, or regular expressions is an important yet challenging task for students of computer science and other STEM disciplines. Identifying common mistakes occurring in this context is an important step towards helping struggling students by providing targeted high-quality feedback, e.g. in interactive learning systems.\n  We present a tool-supported workflow that allows to (1) identify candidates for common mistakes that explain many student mistakes in large educational data sets, (2) cluster candidates according to similarities, and (3) visualize resulting clusters for instructors and CS education researchers. The visualization is designed to help researchers to identify common modelling mistakes. The candidates for common mistakes are represented by bug fixing transformations that translate incorrect formalizations into correct formalizations; they are generated by an LLM and validated algorithmically.\n  We show that this approach works well by reproducing common mistakes in propositional logic modelling that were identified by hand in the literature; showing that, unlike other algorithmic approaches, the LLM-based approach is suitable for very large sets of data; and applying it to multiple other formalisms to showcase it generalizes beyond propositional logic.",
+          "authors": [
+            "Lilian Killich",
+            "Marko Schmellenkamp",
+            "Fabian Vehlken",
+            "Thomas Zeume"
+          ],
+          "published": "2026-09-15T12:40:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17108v1",
+          "entry_id": "http://arxiv.org/abs/2609.17108v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17108v1",
+          "title": "The forced colouring function of a graph",
+          "summary": "The forced colouring function of a graph gives the probability that a random assignment of colours to a random subset of vertices can be extended, by a simple local process called forcing, to give a proper colouring of the whole graph using the same set of available colours. This is a polynomial for each fixed number of colours, and was introduced as a subject for research on the general theory of graph polynomials. In this paper we establish its fundamental properties and give combinatorial interpretations of its derivatives at two particular points. We also prove that the problem of computing its value at any specific point in a certain interval is #P-hard.",
+          "authors": [
+            "G. E. Farr"
+          ],
+          "published": "2026-09-15T12:39:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17052v1",
+          "entry_id": "http://arxiv.org/abs/2609.17052v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17052v1",
+          "title": "On Cowling's $L^p$-integrability conjecture for Kunze--Stein groups",
+          "summary": "We prove a stronger form of Cowling's $L^p$-integrability conjecture for an admissible class of Kunze--Stein groups containing all $S$-algebraic groups and all closed CCR boundary-transitive subgroups of tree automorphism groups. We also disprove a cyclic version formulated by Samei--Wiersma.",
+          "authors": [
+            "Siwei Liang"
+          ],
+          "published": "2026-09-15T12:03:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17045v1",
+          "entry_id": "http://arxiv.org/abs/2609.17045v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17045v1",
+          "title": "Block-count constrained harmonic sums: spectral expansion and block-directed Euler-Maclaurin",
+          "summary": "We determine exactly how harmonic sums, taken over integers with a given number of occurrences of a fixed block of digits, depend on that number of occurrences. Language factorizations, combined with stochastic radix expansions, relate these harmonic sums to the iteration of an operator whose eigenvectors are the Lebesgue measure and distributional derivatives of singular measures. The dual picture is given by a Riesz basis of eigenpolynomials in a suitable Hardy space. The resulting modal expansion admits a natural interpretation as a block-directed Euler-Maclaurin formula interpolating between Euler-Maclaurin and Taylor expansions.",
+          "authors": [
+            "Jean-François Burnol"
+          ],
+          "published": "2026-09-15T11:52:41+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17027v1",
+          "entry_id": "http://arxiv.org/abs/2609.17027v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17027v1",
+          "title": "Palindromic Length in Free Groups: Reflections, Noncrossing Matchings, and Catalan Forms",
+          "summary": "Let $F=F(X)$ be a free group of finite rank, with palindromic length taken with respect to the fixed basis $X$. We embed $F$ as the index-two subgroup of the universal Coxeter group $W=F\\rtimes_θ\\langle t\\mid t^2=1\\rangle$, where $θ(x)=x^{-1}$ for $x\\in X$, and prove $\\mathrm{pl}(g)=\\min{\\ell_T(g),\\ell_T(gt)}$. Dyer's deletion theorem then identifies reflection length with the minimum number of unmatched positions in a noncrossing equal-label partial matching on a reduced Coxeter word. This gives an $O(n^3)$-time, $O(n^2)$-space algorithm for palindromic length, together with recovery of an optimal palindromic factorization.\n  The matching model also gives a structural characterization. For every ordered full binary tree with $k$ leaves we define a literal word template whose leaves are palindromes and whose internal vertices carry arbitrary words. A reduced word $w$ represents an element of palindromic length at most $k$ if and only if $w$ is a literal instance of one of these templates. Hence the $C_{k-1}$ ordered binary-tree shapes give a complete finite family for each fixed $k$. For $k=4$ the five templates are exactly the five forms proposed by Frid, proving the completeness of that list. A companion Lean 4 development verifies the four-palindrome classification end to end for every finite rank, including the ordinary reduced-word formulation and the literal five-form conclusion.",
+          "authors": [
+            "Junjie Liao"
+          ],
+          "published": "2026-09-15T11:35:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17020v1",
+          "entry_id": "http://arxiv.org/abs/2609.17020v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.17020v1",
+          "title": "List Decoding, Linear Hashing, and Furstenberg over $\\mathbb{F}_q$",
+          "summary": "We give new bounds for list sizes of random linear codes at capacity, max loads of linear hash functions, and Furstenberg sets, over every finite field $\\mathbb{F}_q$.\n  1. Random linear codes over $\\mathbb{F}_q$ with rate $1 - H_q(p) - ε$ are $(p, O(q H_q(p)/ε))$-list decodable with high probability for all values of $p, q, ε$, including the high error regime. This nearly matches the list size lower bound of $H_q(p)/ε$ due to Guruswami, Li, Mosheiff, Resch, Silas, and Wootters [IEEE Trans. Inf. Theory 2022]. Our bound is the first uniform improvement for $q > 2$ since Guruswami, Håstad, and Kopparty [STOC 2010].\n  2. Linear hash functions over $\\mathbb{F}_q$ hashing $n$ balls to $n$ bins achieve maximum load $O(q \\ln \\ln q / {\\ln q}) \\cdot \\ln n / {\\ln \\ln n}$, both in expectation and with probability $1-o(1)$. This nearly matches the lower bound of $\\ln n / {\\ln \\ln n}$. Previously, only a polylogarithmic upper bound was known for $q > 2$, due to Alon, Dietzfelbinger, Miltersen, Petrank, and Tardos [J. ACM 1999].\n  We reduce list decodability and linear hashing to strong Furstenberg set lower bounds, which we prove using a new polynomial method of multiplicity gaps. While previous polynomial methods analyze a set $S$ by studying polynomials that vanish on it, we consider polynomials that vanish everywhere, but with higher multiplicity inside $S$ than outside.",
+          "authors": [
+            "Vinayak M. Kumar",
+            "Geoffrey Mon"
+          ],
+          "published": "2026-09-15T11:29:42+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.17006v2",
+          "entry_id": "http://arxiv.org/abs/2609.17006v2",
+          "pdf_url": "https://arxiv.org/pdf/2609.17006v2",
+          "title": "Unipotence of a double commutator with transvections",
+          "summary": "Let $R$ be a nonzero commutative ring with identity, $n\\geq3$, and $σ\\in GL_n(R)$. We prove that there exist nonidentity transvections $τ_1,τ_2\\in GL_n(R)$ such that $\\big[[σ,τ_1],τ_2\\big]=I_n$. Hence, Kourovka Notebook Problem 10.46 has a stronger affirmative answer over commutative rings with identity. The proof uses rank-one operators and the existence of a nonzero functional annihilating a standard basis vector and its image under $σ$.",
+          "authors": [
+            "Ihechukwu Chinyere"
+          ],
+          "published": "2026-09-15T11:19:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16994v1",
+          "entry_id": "http://arxiv.org/abs/2609.16994v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16994v1",
+          "title": "Limiting shape of alternating sign matrices",
+          "summary": "In this note we announce the limiting shape for the height function of a uniformly distributed alternating sign matrix (equivalently, a six-vertex model with equal weights and domain-wall boundary conditions)",
+          "authors": [
+            "Alexey Bufetov",
+            "Evgeny Obukhov"
+          ],
+          "published": "2026-09-15T11:08:05+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16974v1",
+          "entry_id": "http://arxiv.org/abs/2609.16974v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16974v1",
+          "title": "Invariant random subgroups of $C^*$-simple groups",
+          "summary": "Let $Γ$ be a countable discrete $C^*$-simple group. Let $μ$ be a $Γ$-invariant Borel probability measure on $\\text{Sub}(Γ)$, i.e., an IRS. We show that $μ$-almost every subgroup $H$ is $C^*$-simple.",
+          "authors": [
+            "Tattwamasi Amrutam",
+            "Mehrdad Kalantar"
+          ],
+          "published": "2026-09-15T10:49:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16955v1",
+          "entry_id": "http://arxiv.org/abs/2609.16955v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16955v1",
+          "title": "The Aldous chain on cladograms mixes in order $n^2$ steps",
+          "summary": "Cladograms of size $n$ are unrooted binary trees whose leaves are labelled from 1 to $n$. Aldous introduced in 2000 a Markov chain on cladograms, a step of which consists of removing a leaf uniformly at random and reinserting it on a uniformly chosen edge. We introduce a coupling for this walk, which follows multiple colored subtrees in parallel. We go around the lack of independence of the colored components by finding a relevant statistic, namely the sum of the squares of the sizes of all colored components, which we prove has a drift. We deduce that the mixing time of the walk is of order $n^2$, solving a conjecture of Aldous.",
+          "authors": [
+            "Valentin Féray",
+            "Lucas Teyssier"
+          ],
+          "published": "2026-09-15T10:33:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16943v1",
+          "entry_id": "http://arxiv.org/abs/2609.16943v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16943v1",
+          "title": "The Distance Between the Adjacency Spectral Center and the Characteristic Set of a Tree",
+          "summary": "Let $\\mathcal S(T)$ be the adjacency spectral center of a tree $T$, and let $\\mathcal C(T)$ be its characteristic set. We determine the largest possible separation $d(T) := \\operatorname{dist}_T(\\mathcal{S}(T), \\mathcal{C}(T))$ among trees of every order $n\\ge3$. Writing $Δ_n:=\\max_{|V(T)|=n}d(T)$, we prove $Δ_n=0\\quad(3\\le n\\le11),\\quad Δ_{12}=1$, and $Δ_n=\\left\\lfloor\\frac{n-11}{2}\\right\\rfloor \\quad(n\\ge13)$. The argument rests on a simple opposition between two rooted-tree weights. An endpoint-rooted path minimizes adjacency spectral radius, but maximizes bottleneck Perron value. A one-sided replacement by a path therefore cannot decrease the distance between the two centers. Quantitatively, this gives the sharp estimate $|V(T)|\\ge 2d(T)+11\n  \\quad(d(T)\\ge2)$. A preliminary six-vertex barrier shows that disjoint center sets require at least twelve vertices, and the four-leaf broom is extremal for every $n\\ge12$.",
+          "authors": [
+            "Chaochao Zhu",
+            "Shipei Hu",
+            "Jingfu Huang",
+            "Qin Yue"
+          ],
+          "published": "2026-09-15T10:18:43+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16913v1",
+          "entry_id": "http://arxiv.org/abs/2609.16913v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16913v1",
+          "title": "Further results on non-negativity conjectures for copartition products",
+          "summary": "Burson and Eichhorn proposed infinite and finite coefficientwise non-negativity conjectures for products arising from copartitions. We obtain several further results. First, both products admit decompositions into elementary local blocks, and the finite conjecture reduces exactly to its diagonal specialization. The finite conjecture is proved when the first truncation parameter is one or when the two residue parameters are equal. We also prove that every finite product has non-negative coefficients below the third shifted signed exponent. For fixed finite parameters, the coefficient sequence is shown to be eventually quasipolynomial; an explicit period bound, an explicit onset for the quasipolynomial formula, and the leading term on every residue class are obtained. This yields eventual strict positivity, apart from forced odd-degree zeros in one solved diagonal case. For the infinite conjecture, we prove non-negativity under the broader condition $a\\equiv b\\pmod m$, which includes the known case $a=b$. Finally, for arbitrary $b\\mid a$, we improve the uniform initial non-negative range from degrees below $a+m$ to degrees below $a+2m$.",
+          "authors": [
+            "Haijun Li"
+          ],
+          "published": "2026-09-15T09:50:41+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16910v1",
+          "entry_id": "http://arxiv.org/abs/2609.16910v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16910v1",
+          "title": "Improved Approximation for Unsplittable CVRP via a Greedy Approach",
+          "summary": "We devise a polynomial-time $3.159$-approximation algorithm for the metric unsplittable Capacitated Vehicle Routing Problem. We build on the Relative Greedy Algorithm suggested by Traub (2025), which can be considered as a variant of the LP rounding algorithm of Friggstad, Mousavi, Rahgoshay, and Salavatipour (2025). Our main ingredient is the Average Greedy Algorithm, a new algorithm that controls both tour costs and the coverage of clients with high demand. This additional control enables a sharper averaging argument for the cost of subsequent greedy choices. Similarly to Zhao and Xiao (2026), combining the Average Greedy with variants of tour partitioning and a matching algorithm yields the final approximation guarantee.",
+          "authors": [
+            "Daniel Ebert",
+            "Leonard Weismantel"
+          ],
+          "published": "2026-09-15T09:47:42+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16908v1",
+          "entry_id": "http://arxiv.org/abs/2609.16908v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16908v1",
+          "title": "An Efficient Symbolic Algorithm for Computing Lyapunov Constants in Planar Switching Systems",
+          "summary": "Lyapunov constants are a crucial tool for analyzing bifurcation behavior in switching systems. This paper proposes an efficient algebraic symbolic algorithm for computing Lyapunov constants in planar switching systems. By mapping the vector fields into the complex domain, we construct a normal form algorithm based on Laurent poly?nomials. The classical Poincaré map method requires repeated symbolic integration, which may lead to substantial computational difficulties at high orders. Our ap?proach improves computational efficiency by replacing continuous integration with direct algebraic operations. We apply this approach to investigate two switching models. For a generalized switching quartic Liénard system, the algebraic method extracts the center conditions and proves the existence of 10 small-amplitude limit cycles, establishing a new lower bound for its cyclicity. Furthermore, a physically motivated circuit-level modification of the Alpazur oscillator is investigated. We show that at most one small-amplitude limit cycle can bifurcate from the center and that this upper bound is attainable, illustrating the applicability of the proposed algorithm to a practical switching circuit. This application shows that our method provides a systematic framework for analyzing and interpreting complex dynamical phenomena arising in practical piecewise smooth systems.",
+          "authors": [
+            "Cheng Zheng",
+            "Laigang Guo",
+            "Xiangyu Wang"
+          ],
+          "published": "2026-09-15T09:38:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16866v1",
+          "entry_id": "http://arxiv.org/abs/2609.16866v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16866v1",
+          "title": "Mining DTA with SMT by Exploiting Simple Elementary Language and Timed Augmented Prefix Acceptor",
+          "summary": "Timed automata, which extend finite state automata by introducing clock variables, serve as a popular formalism for specifying and analyzing the timed behaviors of real-time systems. Extracting the timed behaviors of a black-box, safety-critical system is crucial for designing and analyzing its real-time requirements, yet it remains challenging. In this paper, we address this problem by generating a deterministic timed automaton (DTA) consistent with a given set of system behaviors, comprising both positive and negative examples. To this end, we adapt the formalism of simple elementary languages (sEL) and introduce the timed augmented prefix tree acceptor (tAPTA). Our approach proceeds as follows: First, we preprocess samples by translating them into sEL, which discards redundancy and detects conflicts; then, we rewrite the resulting sELs in an incremental form and construct a tAPTA to further simplify the samples; finally, we encode the search for a DTA that accepts the simplified tAPTA as an SMT formula. We evaluate our approach on randomly generated benchmarks and a scheduling case study. The results demonstrate the effectiveness of our simplification method in reducing the size of the encoded SMT formula and the efficiency of our approach in mining a DTA.",
+          "authors": [
+            "Ziran Wang",
+            "Jie An",
+            "Naijun Zhan"
+          ],
+          "published": "2026-09-15T08:59:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16849v1",
+          "entry_id": "http://arxiv.org/abs/2609.16849v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16849v1",
+          "title": "Hall algebras of graphs and rooted trees",
+          "summary": "Hall algebras can be associated with a broad class of combinatorial structures through the theory of 2-Segal sets. In this paper, we study the Hall algebras arising from the 2-Segal sets of rooted trees, undirected graphs, and directed graphs. In each case, we establish an analogue of Green's theorem giving a twisted bialgebra structure to the Hall algebra, describe the primitive elements, and derive a presentation by generators and relations. As an application, we realize the Hall algebra of an undirected graph as the cohomology ring of a topological space. In the case of directed graphs, we introduce the Hall polynomial, defined as the Poincar{é} polynomial of the space of primitive elements. The Hall polynomial is an invariant of the underlying undirected graph which we show to be closely related to the Tutte polynomial. We furthermore give examples of graphs with equal Tutte polynomials but distinct Hall polynomials showing thus that the Hall polynomial encodes different information from that of the Tutte polynomial.",
+          "authors": [
+            "Lucas Toury"
+          ],
+          "published": "2026-09-15T08:41:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16848v2",
+          "entry_id": "http://arxiv.org/abs/2609.16848v2",
+          "pdf_url": "https://arxiv.org/pdf/2609.16848v2",
+          "title": "The Fourth Continuous Bounded Cohomology of the Complex Symplectic Group",
+          "summary": "We prove that $H_{\\mathrm{cb}}^4(\\Sp(4,\\CC);\\RR)=0$. Together with Blatz's secondary stability and the rank-one theorem of Bucher--Savini, this gives degree-four vanishing for all complex symplectic and odd complex orthogonal groups. In normalized symplectic Gram coordinates, we establish a bounded-primitive estimate and compute the measurable cohomology of the projective action. An explicit rational cocycle has divergent periods on a family of finite orbit cycles of uniformly bounded $\\ell^1$-mass. A two-cone averaging construction extends the period estimate to measurable cochains and excludes bounded representatives of every nonzero degree-four measurable action class.",
+          "authors": [
+            "Sixuan Gu",
+            "Yaoyu Cheng",
+            "Wei Qi"
+          ],
+          "published": "2026-09-15T08:41:06+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16798v1",
+          "entry_id": "http://arxiv.org/abs/2609.16798v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16798v1",
+          "title": "On Models of the Planar Lambda Calculus",
+          "summary": "We construct an adjunction relating two approaches to modelling the planar lambda calculus: semi-closed operads and planar lambda-models. We use this to obtain a planar version of Scott's representation theorem.",
+          "authors": [
+            "Chad Nester"
+          ],
+          "published": "2026-09-15T08:04:30+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16776v1",
+          "entry_id": "http://arxiv.org/abs/2609.16776v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16776v1",
+          "title": "Exact Labelled Layer-Order Classification for Period-2 Mountain--Valley Assignments on 2 x 2k Maps",
+          "summary": "We classify the labelled final layer orders of ordinary orthogonal 2 x 2k maps whose mountain-valley assignments are periodic with period two in each crease family. For k >= 2, local flat-foldability leaves 16 of the 64 formal period words. Eight pleat words have a unique labelled state. The remaining eight words reduce, under labelled symmetries, to two constant-row families described by row pivots. For the canonical word MMMMVV, an ordered pivot pair (a,b) is realizable exactly when a = 1, a = m, or a = b, where m = 2k - 1. For MVMMMM, realizability is equivalent to BR(a) = BR(b). In both families each compatible ordered pivot pair determines a unique labelled state. The resulting state counts are 0, 1, 6k - 5, and 4k - 3. The case k = 1 is treated separately because two formal period bits have no physical crease carriers.",
+          "authors": [
+            "Michael Fofonov"
+          ],
+          "published": "2026-09-15T07:44:01+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16767v1",
+          "entry_id": "http://arxiv.org/abs/2609.16767v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16767v1",
+          "title": "Ordered Ramsey numbers of 3-uniform hypergraphs with bounded weak degeneracy",
+          "summary": "The \\emph{ordered Ramsey number} $r_<(G,H)$ of ordered $k$-graphs $G$ and $H$ is the least integer $N$ such that every red-blue edge-coloring of the naturally ordered complete $k$-graph on $[N]$ contains a blue ordered copy of $G$ or a red ordered copy of $H$. We prove that there is an absolute constant $c>0$ such that, for every integer $d\\ge1$, there is a constant $C_d>0$ for which every weakly $d$-degenerate ordered $3$-graph $H$ on $t$ vertices satisfies \\[ r_<\\bigl(H,K_3^{(3)}(n)\\bigr) \\le t\\,2^{C_d n^{2-c/d}} \\] for every positive integer $n$. This resolves a problem posed by Balko and Vizer ({\\em SIAM J. Discrete Math., 2022}) in a stronger form.\n  Furthermore, we show that the weak-degeneracy hypothesis cannot be replaced by bounded standard degeneracy. In particular, for every sufficiently large $n$, there exists a $1$-degenerate ordered $3$-graph $F$ on at most $2^{O(n)}$ vertices such that $r_<\\bigl(F,K_3^{(3)}(n)\\bigr)>2^{Ω(n^2)}.$",
+          "authors": [
+            "Wen Chen",
+            "Zihan He",
+            "Qizhong Lin",
+            "Meng Liu"
+          ],
+          "published": "2026-09-15T07:39:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16765v1",
+          "entry_id": "http://arxiv.org/abs/2609.16765v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16765v1",
+          "title": "Ehrhart reciprocity and forced factors in three plane-partition enumerators",
+          "summary": "We study three plane-partition enumerators arising from Schreier-Aigner's quasi-symmetry classes. Their realizations as lattice-point enumerators, together with staircase translations of interior lattice points, yield factorizations by Ehrhart-Macdonald reciprocity. We determine the consecutive linear factors, the parity and degree of the residual polynomials, and explicit divisibility bounds for their coefficient denominators. The denominator argument includes the half-integral translation required by the second-kind classes. We also derive a corrected size-five formula for the symmetric second-kind class. Exact computations verify irreducibility of the quasi-symmetric residual polynomials for every size from $3$ to $24$.",
+          "authors": [
+            "Yinuo Cheng"
+          ],
+          "published": "2026-09-15T07:38:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16757v1",
+          "entry_id": "http://arxiv.org/abs/2609.16757v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16757v1",
+          "title": "Counterexamples and symmetry for uneven orthogonal mass partitions in the plane",
+          "summary": "Grünbaum asked whether every planar convex body admits, for every $0\\leq t\\leq 1/4$, two orthogonal lines cutting it into pieces with cyclically ordered areas $t,t,1/2-t,1/2-t$. Bárány posed the analogous question for well-behaved planar measures and conjectured that the answer there is negative.\n  We confirm Bárány's conjecture in a particularly robust form: for every fixed $0<t<1/4$ we construct smooth, strictly positive, centrally symmetric, strongly log-concave measures arbitrarily close to the standard Gaussian for which the prescribed partition does not exist. In contrast, we prove that the partition exists for every $t$ whenever the measure is invariant under an orientation-reversing affine involution. We also exhibit a $96$-point counterexample for which no pair of perpendicular lines produces cyclic counts $8,8,40,40$.",
+          "authors": [
+            "Leonardo Martínez-Sandoval"
+          ],
+          "published": "2026-09-15T07:33:15+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16756v1",
+          "entry_id": "http://arxiv.org/abs/2609.16756v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16756v1",
+          "title": "Mathieu groups as flag-transitive automorphism groups of block designs",
+          "summary": "In this article, we study $2$-$(v,k,λ)$ designs $\\mathcal{D}$ admitting a flag-transitive almost simple automorphism group $G$ with socle one of the Mathieu groups. In conclusion, we obtain all such $2$-designs with explicit constructions with appropriate references to known designs. To our knowledge, we obtain $101$ newly-constructed flag-transitive $2$-designs.",
+          "authors": [
+            "Fatemeh Bakhtiari",
+            "Ashraf Daneshkhah"
+          ],
+          "published": "2026-09-15T07:33:13+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16747v1",
+          "entry_id": "http://arxiv.org/abs/2609.16747v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16747v1",
+          "title": "Linear matroid products: a synthetic approach",
+          "summary": "The recently established duality between tensor, symmetric and exterior products of uniform matroids on the one hand, and abstract (bi-)rigidity matroids on the other hand, connects theorems and open questions from both areas, previously thought unrelated. In particular, a 1981 question of Mason asks if any two uniform matroids admit a freest product. Via duality, its reformulation due to Cruickshank, Jackson, Jordán and Tanigawa asks if the generic birigidity matroid is the freest abstract birigidity matroid for its parameters. A related conjecture of Jackson and Tanigawa asks if the generic $2$-hyperconnectivity matroid is the freest $\\{K_4,K_{3,3}\\}$-matroid. We show that these problems can be addressed effectively, and often solved completely for the class of linearly representable matroids.\n  To this end, we introduce star-basis normal forms that allow to compare representations of abstract (bi-)rigidity matroids over the same field, resulting in a refinement of the weak order relation on the underlying matroids. Utilizing it, we prove that the generic birigidity matroid is the freest linearly representable abstract $(a,b)$-birigidity matroid. This confirms Mason's conjecture for linear matroids. We prove that every representable abstract $2$-rigidity matroid admits a rigidity matrix representation. This is a strengthening of the maximality property of the generic $2$-rigidity matroid. We also prove that every representable abstract $2$-rigidity matroid in which every copy of $K_{3,3}$ is a circuit admits a hyperconnectivity matrix representation. It follows that the generic rigidity and hyperconnectivity families $\\mathcal{R}_2$ and $\\mathcal{H}_2$ are the only linearly representable $2$-rigidity families.",
+          "authors": [
+            "Mykhaylo Tyomkyn"
+          ],
+          "published": "2026-09-15T07:20:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.19177v1",
+          "entry_id": "http://arxiv.org/abs/2609.19177v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.19177v1",
+          "title": "The Remaining $K_4$-Free Case in the Multipartite Clique Problem",
+          "summary": "For integers $n,r,t$ with $2\\le t\\le r-1$, let $f(n,r,t+1)$ denote the largest possible minimum degree of a balanced $r$-partite graph with parts of size $n$ and containing no copy of $K_{t+1}$. Lo, Treglown and Zhao identified $f(n,7,4)$ as the only remaining case in their treatment of the $K_4$-free family. I determine this function for every $n\\ge1$. First, the corresponding three-colourable extremum $δ(n,7,3)$ is reduced to a $7\\times3$ integer matrix problem and determined exactly. Second, a structural argument shows that every balanced $7$-partite $K_4$-free graph $G$ with $δ(G)>\\frac{132}{31}n$ is three-colourable. Consequently, $f(n,7,4)=\\lfloor30n/7\\rfloor$ except when $n\\equiv4\\pmod7$ and $n\\ge11$, where it is one less.",
+          "authors": [
+            "Yuuki Kasugai"
+          ],
+          "published": "2026-09-15T07:07:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16715v1",
+          "entry_id": "http://arxiv.org/abs/2609.16715v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16715v1",
+          "title": "Reconstruction through a coisotropic reduction: the missing momentum on a Poincaré section as a branched covering",
+          "summary": "Determining the momentum missing on a Poincaré section of a two-degree-of-freedom Hamiltonian is usually posed as the root-finding problem $H(0,q_2,p_1,p_2)=E$, which degenerates at the boundary of the energetically allowed region. We argue that the degeneration is the visible symptom of a geometric object and reorganize the problem around it. The section is a coisotropic hypersurface, the missing momentum is its characteristic direction, and recovering it is a \\emph{reconstruction} through the associated coisotropic reduction. Its carrier is not the fibrewise least-energy function, which we show is informationally incomplete, but the correspondence $Σ_E^{\\mathrm{sec}}=Σ_E\\cap C$ together with the reducing projection $π_E$, a branched reconstruction over the admissible region whose discriminant is identified with the Hill boundary under a base-side regularity condition.\n  We prove, isolating for each conclusion its minimal hypothesis: that $π_E$ is proper and a covering away from the discriminant (coercivity); that the fibres have exactly two points over the interior (unimodality); that along the discriminant $π_E$ is a fold (fibrewise nondegeneracy and transversality); and that the discriminant coincides with the topological boundary of the admissible region precisely under a regularity of the least-energy function \\emph{on the base}, which no fibrewise hypothesis supplies. Strict convexity of $H$ in the momenta is shown to be a sufficient but non-fundamental bundle of these conditions. The boundary is a discriminant, not a Lagrangian caustic. Only afterwards does the squared fibrewise energy residual $F_b=(h_b-E)^2$ appear, as the analytic resolution of the fold; inside the admissible region it is a double well with two global minimizers, so branch selection is a separate rule.",
+          "authors": [
+            "E. Chan-López"
+          ],
+          "published": "2026-09-15T06:38:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16706v1",
+          "entry_id": "http://arxiv.org/abs/2609.16706v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16706v1",
+          "title": "Vibe-Coded and Tuned: A State-of-the-Art SMT Solver for QF-LRA",
+          "summary": "This paper presents the SMT solver primo, which is fully vibe-coded and then parameter-tuned, achieving state-of-the-art results on linear real arithmetic (QF-LRA). The performance of primo is achieved by a systematic literature survey, repeated profiling, and parameter tuning. The resulting solver outperforms the winner of the QF-LRA track of SMT-COMP~2026. This confirms that vibe-coding of automated reasoning tools will enable us to make great strides in the future.",
+          "authors": [
+            "Mikoláš Janota",
+            "Jan Jakubův"
+          ],
+          "published": "2026-09-15T06:31:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16704v1",
+          "entry_id": "http://arxiv.org/abs/2609.16704v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16704v1",
+          "title": "Point vortex dynamics in quasi-periodic channels: transporting trajectories and ergodic distribution of equilibria",
+          "summary": "We study the dynamics of a single point vortex in an unbounded planar channel whose interfaces are quasi-periodic in the longitudinal direction. The motion is governed by the Robin function. We introduce a hull formulation that lifts the quasi-periodic geometry to a periodic problem on a finite-dimensional torus and yields an exact quasi-periodic representation of the Robin function. Under a natural transversality condition, we construct global quasi-periodic invariant graphs describing transporting vortex trajectories and show that a full neighborhood of each boundary component is foliated by such graphs. Under a Diophantine condition on the spatial frequencies, the dynamics along each graph can be straightened to a constant drift, so that the vortex motion is quasi-periodic modulo translation. A central contribution concerns the distribution of vortex equilibria. In the quasi-periodic setting, where no fundamental spatial cell exists, we identify critical points of the Robin function with crossings of a hypersurface by a Kronecker flow on the hull torus. Exploiting unique ergodicity, we establish a general zero-counting theorem, allowing finite-order tangencies, which yields an explicit geometric flux formula for the asymptotic density of critical points and their limiting phase distribution. The result is nonperturbative once the critical hull is constructed. Explicit periodic and quasi-periodic models reveal bifurcations and phase transitions in the critical-point distribution, while numerical computations provide quantitative validation of the analytical results.",
+          "authors": [
+            "Mohamed Ali",
+            "Taoufik Hmidi"
+          ],
+          "published": "2026-09-15T06:29:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16701v1",
+          "entry_id": "http://arxiv.org/abs/2609.16701v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16701v1",
+          "title": "Annihilator Multiplication Modules: Ring Characterizations and Constructions",
+          "summary": "An $A$-module $E$ is annihilator multiplication if the annihilator of each element equals that of $IE$ for a finitely generated ideal $I$. We characterize rings for which every faithful module has this property as the commutative quasi-Frobenius rings, and rings for which every module has the property as the Artinian principal ideal rings. Both characterizations reduce to two-generated modules. Over a reduced ring with finitely many minimal primes, faithful annihilator multiplication modules are exactly the regular-torsion-free modules, and principal ideals suffice in the definition. An ascending chain condition on annihilator ideals gives finite detection of the module annihilator, yielding localization and graph rigidity results. We also prove equality of associated primes with those of the faithful quotient and establish projective tensor and trace characterizations. Over local square-zero rings, the property is equivalent to nonsingularity of a bilinear multiplication map. A projective dimension argument gives a sharp length bound, attained by explicit faithful indecomposable nonprojective modules whose endomorphism rings are computed. Every cyclic submodule of these examples embeds in the ring, although the whole module is not torsionless. Support, hereditary torsion, and amalgamation criteria connect these structural results with further module constructions.",
+          "authors": [
+            "Hwankoo Kim",
+            "Suat Koç"
+          ],
+          "published": "2026-09-15T06:25:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16677v1",
+          "entry_id": "http://arxiv.org/abs/2609.16677v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16677v1",
+          "title": "Newton geometry of Bogdanov-Takens degeneracies in integrable dilatonic models: invariant divisors and boundary multiplicity",
+          "summary": "The Kantowski--Sachs interior of Grumiller's two-dimensional dilaton gravity model reduces to $\\dot H=\\tfrac12(Λ-3H^2-u^2)+Qu$, $\\dot u=-Hu$, where $H$ is the expansion rate of the orbit two-spheres, $u$ their inverse areal radius, and $Q$ is minus twice the Rindler acceleration. For $Q\\neq0$ it has two distinct rank-one nilpotent equilibria with complementary Bogdanov--Takens (BT) degeneracies: $(a,b)=(0,\\neq0)$ with multiplicity $μ=3$, and $(a,b)=(\\neq0,0)$ with $μ=2$. We show that this complementarity is forced by a single divisor-organized structure. The system is Darboux integrable, $X=\\tfrac12u^4X_I$, where $I$ is the mass function and $u^4$ is an inverse integrating factor whose zero divisor is the invariant axis $\\{u=0\\}$. Off the divisor, every nilpotent equilibrium of $RX_I$ with $R(p)\\neq0$ has $b=0$, from $b=D_{q_0}\\operatorname{tr}DX$. On the divisor, invariance of the coordinate axis forces $a=0$ because $\\det DX|_{u=0}=Φ_xG$ and both factors vanish at the corner. Hence $ab=0$ throughout the class, so a versal two-parameter BT unfolding is impossible. The Bernstein--Kushnirenko bound fails at both points; instead, the exact local identity $μ_0=m_1\\ell_y+m_2\\ell_x$ gives $μ=3,2$ without a nondegeneracy hypothesis. Both multiplicities have a mixed-covolume interpretation, with $\\operatorname{Covol}=\\sum_{k,i}\\min(p_kq_i',p_i'q_k)$ on convenient diagrams; the corresponding general theorem for the non-convenient diagrams arising here remains open. For $\\dot H=\\tfrac{1-m}{2}H^2+ψ(u)$, $\\dot u=-Hu$, with $ψ(0)=0$, $ψ'(0)\\neq0$, $m\\neq1$, the vacuum always has $μ=3$, $a=0$, $b=-m$. Its Dumortier--Llibre--Artés discriminant is $b_1^2+8a_3=(m-2)^2$, so for every $m>1$ it has one hyperbolic and one elliptic sector, independently of $ψ$.",
+          "authors": [
+            "E. Chan-López",
+            "A. Martín-Ruiz",
+            "J. M. Paulin Fuentes"
+          ],
+          "published": "2026-09-15T05:59:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16631v1",
+          "entry_id": "http://arxiv.org/abs/2609.16631v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16631v1",
+          "title": "Kazhdan constants for two-element generating sets of $\\mathrm{SL}_n(\\mathbb Z)$",
+          "summary": "For $n\\geq3$, the group $\\mathrm{SL}_n(\\mathbb Z)$ has property $(T)$, so every finite generating set has a positive Kazhdan constant. However, it was recently shown that the infimum of these constants over all finite generating sets is $0$. This naturally raises the question of whether the infimum remains zero when the cardinality of the generating sets is bounded in advance. We prove that the infimum of the Kazhdan constants of $\\mathrm{SL}_n(\\mathbb Z)$ over all two-element generating sets is $0$ for every $n\\geq3$.",
+          "authors": [
+            "Jvbin Yao"
+          ],
+          "published": "2026-09-15T04:53:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16596v1",
+          "entry_id": "http://arxiv.org/abs/2609.16596v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16596v1",
+          "title": "On the number of palindromic factors of low complexity words",
+          "summary": "Factor complexity counts the distinct factors of each length in an infinite word, while palindromic complexity counts those invariant under reversal. For recurrent aperiodic words with reversal-closed language, the total number of palindromic factors in two consecutive lengths is at most the one-step growth of factor complexity plus two. We prove that equality is forced whenever the factor complexity at a given length does not exceed three halves of that length plus one. We construct examples showing that the bound is optimal. We also obtain an adaptive local criterion and consequences for reversal-closed quasi-Sturmian words and palindromic defect.",
+          "authors": [
+            "Dong Han Kim",
+            "Sanghoon Kwon"
+          ],
+          "published": "2026-09-15T03:42:05+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16576v1",
+          "entry_id": "http://arxiv.org/abs/2609.16576v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16576v1",
+          "title": "Non-uniqueness of characteristic curves of folding rational maps",
+          "summary": "A folding rational map is a postcritically finite rational map $f$ admitting an essential Jordan curve $β$, disjoint from the postcritical set $P_f$, whose preimage is disconnected and consists of Jordan curves homotopic to $β$ relative to $P_f$. Such $β$ is called a characteristic curve of $f$. We construct a real postcritically finite rational map $f$ of degree $6$ with $\\#P_f=4$, which admits two non-homotopic characteristic curves $β$ and $β'$. It is hyperbolic with orbifold signature $(2,2,3,\\infty)$. This non-uniqueness is not a Lattès phenomenon, nor does it arise from a mating decomposition. The map is constructed piecewise, and a numerical model is provided to illustrate its dynamics. Thurston obstructions are excluded by arc-lifting and intersection-number arguments.",
+          "authors": [
+            "Luxian Yang",
+            "Jinsong Zeng"
+          ],
+          "published": "2026-09-15T03:19:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16555v1",
+          "entry_id": "http://arxiv.org/abs/2609.16555v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16555v1",
+          "title": "Density and separation for augmented Zarankiewicz numbers",
+          "summary": "We study the augmented Zarankiewicz problem, in which disjoint pairs of cells are added to a binary matrix with no all-one $2\\times2$ submatrix. The pairs must satisfy compatibility conditions, and the objective counts each original occupied cell and each added pair once. We show that starting with a maximum $C_4$-free matrix can lower the final optimum, answering a question of Qi, Cui, and Xu.\n  Let ${z_A}(m,n)$ be the optimum over all $C_4$-free initial matrices, and ${z_L}(m,n)$ the optimum when the initial matrix must have the maximum number of occupied cells. As $n\\to\\infty$ with $n\\le m=o(n^2)$, we prove \\[\n  {z_A}(m,n)-{z_L}(m,n)\\ge\\left(\\frac1{30}-o(1)\\right)mn \\] and determine the sharp second-order term: \\[\n  {z_A}(m,n)=\\frac{mn}{3}+\\left(\\frac1{\\sqrt6}+o(1)\\right)n\\sqrt m. \\] An explicit construction gives a separation at $m=n=1893$. We also find a sharp density threshold: when $n\\to\\infty$ and $m/n^2\\to c>0$, the limited density ${z_L}(m,n)/(mn)$ tends to $1/3$ if and only if $c\\ge1/12$. The proofs combine density and stability estimates, combinatorial constructions, and an exact polynomial certificate.",
+          "authors": [
+            "Nikita Lebedev"
+          ],
+          "published": "2026-09-15T02:52:54+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16554v1",
+          "entry_id": "http://arxiv.org/abs/2609.16554v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16554v1",
+          "title": "Weighted averages and applications to sets of multiple recurrence",
+          "summary": "We introduce new techniques for determining combinatorial properties of sets of multiple recurrence by considering weighted averages with quickly growing weights. Our main result is a far-reaching generalization of Szemerédi's Theorem which additionally confirms a conjecture of Bergelson-Moreira-Richter and contains as special cases both the Polynomial Szemerédi Theorem due to Bergelson-Leibman-Lesigne and the fact that if $f$ belongs to a broad class of smooth functions and satisfies $x^{d-1}\\prec f(x)\\prec x^d$ for some $d\\in \\mathbb{N}$ then for any $\\ell\\in \\mathbb{N}$, any invertible measure preserving system $(X,\\mathscr{B},μ,T)$, and any $A\\in \\mathscr{B}$ with $μ(A)>0$, the set $\\{n\\in \\mathbb{N}: μ(A\\cap T^{-[f(n)]}A\\cap T^{-2[f(n)]}A\\cap \\cdots\\cap T^{-\\ell[f(n)]}A )>0\\}$ is thick, meaning that it contains arbitrarily long intervals of natural numbers. Additionally, we formulate and prove a generalization to weighted averages of Boshernitzan's criterion for uniform distribution which we use in the proof of our main result.",
+          "authors": [
+            "Vitaly Bergelson",
+            "Michael Reilly"
+          ],
+          "published": "2026-09-15T02:49:45+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16549v1",
+          "entry_id": "http://arxiv.org/abs/2609.16549v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16549v1",
+          "title": "Pretty good quantum state transfer via transcendental edge weights",
+          "summary": "We prove that if we take a rooted product of a circulant graph with universal perfect state transfer with a path of fixed length whose end edge is weighted with a transcendental number, then there is pretty good state transfer between any pair of endpoints of these paths. As a consequence, in a path with an even number of vertices with transcendental weights on the two edges incident to the endpoints, there is pretty good state transfer.",
+          "authors": [
+            "Addison Ballif",
+            "Mark Kempton",
+            "James B. Larsen",
+            "Kellon Sandall",
+            "Christino Tamon",
+            "Trevor Wai"
+          ],
+          "published": "2026-09-15T02:46:39+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16533v1",
+          "entry_id": "http://arxiv.org/abs/2609.16533v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16533v1",
+          "title": "Billiard Orbits in Young Diagrams: Medial Links, Bicycle Spaces, and Domino Tilings",
+          "summary": "We study diagonal billiard trajectories inside the Young diagram of an integer partition $λ$. A trajectory has slope $\\pm 1$, passes straight through sides shared by adjacent cells, and reflects from the exterior boundary until it closes. Let $σ(λ)$ be the number of closed orbits. This extends the mirror-curve model of Chokwe sona sand drawings studied by Gerdes from rectangular grids to arbitrary Young diagrams.\n  Let $G_λ$ be the cell-adjacency graph of $λ$, with its natural planar embedding. We identify the billiard orbits with the components of the medial link of $G_λ$, and deduce that $σ(λ) = 1 + \\dim \\mathcal{B}(G_λ) = \\mathrm{nullity}\\, L(G_λ)$ over $\\mathbb{F}_2$, where $\\mathcal{B}$ is the binary bicycle space and $L$ the mod-2 Laplacian. Writing $λ^\\square$ for the diagram obtained by deleting the first row and column of $λ$, we further prove $σ(λ) = 1 + \\mathrm{nullity}_{\\mathbb{F}_2} A(G_{λ^\\square})$. For rectangles this recovers Gerdes' formula $σ(n^m) = \\gcd(m,n)$ via identities for Fibonacci polynomials over $\\mathbb{F}_2$, and in general it gives the characterization: $σ(λ) = 1$ if and only if $λ^\\square$ has an odd number of domino tilings.\n  Using the checkerboard bipartition of $λ^\\square$, we decompose $σ(λ) - 1$ into a color-imbalance term, related to the BG-rank of Berkovich-Garvan, and an even rank-deficiency term. This yields parity restrictions and lower bounds for the orbit number, and shows that for any fixed $d$, asymptotically all partitions have more than $d$ orbits. We also prove that $σ(λ)$ is at most the Durfee length of $λ$, determine $σ(n, n-1, \\ldots, 1) = \\lceil n/2 \\rceil$ for staircase partitions, and show that the adjacency-nullity formula is independent of the ground field.",
+          "authors": [
+            "David J. Hemmer"
+          ],
+          "published": "2026-09-15T02:27:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2609.16479v1",
+          "entry_id": "http://arxiv.org/abs/2609.16479v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.16479v1",
+          "title": "A Heterogeneous FitzHugh-Nagumo Model Exhibiting Local and Regional Dynamics that Mimic Spontaneous Atrial Fibrillation",
+          "summary": "We study two-dimensional networks of FitzHugh-Nagumo oscillators in regimes that mimic cardiac tissue. The networks include small layers of cells that have fast-recovery characteristics and adjacent layers of cells that have slow-recovery. Numerical simulations show that the boundary between the fast- and slow-recovery cells can initiate fibrillatory-like behavior when activated by a single, healthy wave in the network. We discuss possible connections between these structures and the onset of atrial fibrillation, with the goal of improving our understanding and treatment of this costly condition.\n  Our main conclusion is that a single, normal excitation of small areas of heterogeneity embedded in healthy tissue can initiate arrhythmias and the two dimensional network can then sustain irregular firing patterns in the form of double swirling-back curves and spiral waves. This occurs with a very simple model of excitable cells and we give a clear mechanistic description of the arrhythmia. The model illustrates how increasing heterogeneity in heart tissue can progressively cause first intermittent and then persistent arrhythmic behavior. Another conclusion is that the center of problematic firings can drift away from the heterogeneity into healthy tissue, thus presenting phantom targets for treatment.",
+          "authors": [
+            "Alexander Hattoum",
+            "Camden Kilton",
+            "Martin Mohlenkamp",
+            "Graham Walther",
+            "Qiliang Wu",
+            "Todd Young"
+          ],
+          "published": "2026-09-15T01:09:34+00:00"
+        }
+      ],
+      "interest_results": {},
+      "interested_paper_ids": [],
+      "summaries": {},
+      "sent_paper_ids": [],
+      "discord_messages": {},
+      "reading_memos": {},
+      "notification_sent": false,
+      "retry_count": 0,
+      "last_error": null,
+      "created_at": "2026-09-18T07:24:30.798531+00:00",
+      "updated_at": "2026-09-18T07:24:30.798531+00:00",
+      "finalized_at": null
     }
   ]
 }
