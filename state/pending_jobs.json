@@ -55547,7 +55547,7 @@
     },
     {
       "pipeline_id": "20260918T072430Z-4113525b",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/3me3hb27pgn1hjf54qt60xxv56ne9kcbpx87",
       "summarize_job_name": "batches/gq23k3d4tef2amsj6usscrq1z643qhje19ig",
       "papers": [
@@ -56753,16 +56753,311 @@
         "http://arxiv.org/abs/2609.16596v1",
         "http://arxiv.org/abs/2609.16576v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2609.17493v2": {
+          "title": "転座による整列のためのねじれブレスレット：S₁₆ の転座直径",
+          "summary": "転座による整列（Sorting By Transpositions: SBT）は、n 個の記号の置換 π を恒等置換 ι に整列するために必要な最小転座数を求める問題である。本論文では、偶置換 ω と N 次巡回置換 β （ただし N = n + 1）からなる巡回ターゲット対 (ω, β) を固定長単語により符号化し、色置換や原点シフト、回転・反転が組み合わさった「ねじれ二面体群作用」を定義する。この軌道である「ねじれブレスレット（twisted bracelets）」の実現可能軌道は、拡張トーリック同値類と一対一に対応し、代表元を直接生成・数え上げることが可能となる。この代数的・組合せ論的枠組みに不動点縮約および構造的簡約を組み合わせ、残りのねじれブレスレットを網羅的に検証することで、25年間未解決であった転座直径 TD(16) = 9 を証明した。さらに TD(19) = 11 を導き、n ≡ 1 (mod 3) かつ n ≥ 16 を満たす任意の n に対して TD(n) ≤ ⌊(2n - 2)/3⌋ - 1 を示し、従来の一般的な上限を 1 改善した。",
+          "keywords": [
+            "Sorting By Transpositions",
+            "transposition diameter",
+            "twisted bracelets",
+            "cyclic-target pair",
+            "toric equivalence"
+          ],
+          "appendix": "語の組合せ論（combinatorics on words）に関連する符号化手法および対称性の解析が用いられています。"
+        },
+        "http://arxiv.org/abs/2609.17410v1": {
+          "title": "コンパクト生成単純群における局所同型類の非可算性",
+          "summary": "局所コンパクト群論における主要な未解決問題として、非離散・コンパクト生成・完全不連結かつ位相的に単純な局所コンパクト群のクラス𝒈における局所同型類の数が非可算であるかという問いが存在した。本研究ではこの問いを肯定的に解決し、𝒈における局所同型類が2^ℵ₀（連続体濃度）個存在することを示した。本プレプリントは今後発表される論文の概要をまとめたものである。",
+          "keywords": [
+            "locally compact groups",
+            "compactly generated groups",
+            "totally disconnected locally compact groups",
+            "topologically simple groups",
+            "local isomorphism classes"
+          ],
+          "appendix": "本論文のテーマである完全不連結局所コンパクト群やブランチ群（branch groups）は、無限群の構造論（strucure of large countable infinite groups）やオートマトン理論、記号力学系などの周辺分野とも密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.17334v1": {
+          "title": "母関数と強連結有向グラフのエントロピー階層",
+          "summary": "本論文では、自己ループを許容し多重辺を除外した有限強連結有向グラフの位相的エントロピーに対して、母関数を用いたアプローチを提示する。パス生成母関数の支配的特異点を利用することで、過去の自己ループを持たないスペクトル設定で知られていた正のエントロピーを最小化する第1・第2の極値グラフを解析的・組合せ論的な新たな議論によって再現し、本枠組みへと拡張する。さらに、m個の頂点とm+1本の辺を持つ強連結有向グラフのクラスSC_{m+1}(m)に対して統一的な(t, k₁, k₂)-バタフライパラメータ化を導入する。このパラメータ化によりエントロピー階層を詳細に解析し、ピラミッド型エントロピー図を導入してm ≦ 7におけるエントロピー順序の完全な決定やm = 8での最初の構造的分岐の特定を行うとともに、10個の極小元と2個の極大元からなる最大安定切断の確立や、指定された閾値以下の正のエントロピーを実現するために必要な最小頂点数の明示式を導出している。",
+          "keywords": [
+            "Generating Functions",
+            "Topological Entropy",
+            "Strongly Connected Digraphs",
+            "Dominant Singularities",
+            "Entropy Hierarchy"
+          ],
+          "appendix": "本研究は有向グラフのパス生成母関数や位相的エントロピーを扱っており、エントロピー解析やグラフのシフト空間の文脈を通じて「symbolic dynamics」と強い関連を持ちます。"
+        },
+        "http://arxiv.org/abs/2609.17640v1": {
+          "title": "協調する静止状態：IOCOのためのマルチチャネルタイムアウトの合成",
+          "summary": "モデルベーステスト（MBT）におけるリアルタイムシステムのテスト理論を実用しやすくするため、先行研究ではラベル付き遷移システム（LTS）の仕様からタイマー付き静止動作（出力の明示的な欠如）を表す時間オートマトンを暗黙的に得る標準的リフティング作用素が提案された。本論文ではこれを拡張し、各コンポーネントが個別チャネル上に独自のタイムアウトを持つ場合にも適用可能な「マルチチャネルリフティング」を導入する。このリフティングが並行合成と可換であること（合成してからリフティングすることと、リフティングしてから合成することが等価であること）を示し、適合関係、テスト生成、判定といったMBTの枠組み全体が、タイムアウトに基づくテスターが観測可能なテスト可能トレース上で保存されることを示す。",
+          "keywords": [
+            "Model-Based Testing",
+            "IOCO",
+            "Quiescence",
+            "Timed Automata",
+            "Parallel Composition"
+          ],
+          "appendix": "本論文は「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」と関連しています。特に、時間オートマトン（timed automata）やラベル付き遷移システム（LTS）を用いた並行システムの振る舞いモデル化および形式的テスト理論を扱っています。"
+        },
+        "http://arxiv.org/abs/2609.17129v1": {
+          "title": "エキゾチックなアフィン・ビルディングに作用する群におけるSelflessness、MIF、および対立性",
+          "summary": "本論文では、Ã₂型およびC̃₂型の（エキゾチックなものを含む）アフィン・ビルディングに自由かつ余コンパクトに作用する群が、mixed-identity free（MIF）であり、selflessな簡約C\\*-代数を持つことを証明する。これらの結果は、「横断的縮小性（transversal contractivity）」と呼ばれるピンポン力学系の強い形態から導かれる。主な幾何学的結果として、無限遠の関連する多角形における元のdomesticityの性質を扱い、双曲元に対する反対側の幾何学（opposite geometry）が位相幾何学的に大きいことを示す。",
+          "keywords": [
+            "exotic buildings",
+            "mixed-identity free",
+            "selfless C*-algebras",
+            "transversal contractivity",
+            "opposition geometry"
+          ],
+          "appendix": "本論文は無限離散群の代数的・幾何学的・力学系構造およびC*-代数への応用を扱っており、「strucure of large countable infinite groups」の分野と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.17045v1": {
+          "title": "ブロック出現数制約付き調和和：スペクトル展開とブロック指向オイラー・マクローリン公式",
+          "summary": "特定の固定された数字ブロックが指定された回数だけ出現する整数全体にわたる調和和について、その出現数に対する正確な依存関係を決定する。言語の因数分解と確率的基数展開を組み合わせることで、これらの調和和を、ルベーグ測度および特異測度の超関数微分を固有ベクトルとして持つ作用素の反復に関連付ける。その双対描像は、適切なハーディ空間における固有多項式のリース基底によって与えられる。得られたモード展開は、オイラー・マクローリン展開とテイラー展開の間を補間する「ブロック指向オイラー・マクローリン公式」としての自然な解釈を持つ。",
+          "keywords": [
+            "harmonic sums",
+            "language factorizations",
+            "stochastic radix expansions",
+            "spectral expansion",
+            "Euler-Maclaurin formula"
+          ],
+          "appendix": "本論文で用いられる「language factorizations（言語の因数分解）」やブロックの出現に関する議論は、formal languages（形式言語理論）や combinatorics on words（語の組合せ論）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.17027v1": {
+          "title": "自由群における回文長：鏡映、非交差マッチング、そしてカタラン形式",
+          "summary": "有限ランクの自由群 F を普遍コクセター群 W の指数2の部分群として埋め込むことで、自由群の回文長 pl(g) が W における鏡映長 min{ℓ_T(g), ℓ_T(gt)} と一致することを示す。Dyerの削除定理を用いて鏡映長を既約コクセター語上の非交差同ラベル部分マッチングにおける不一致位置の最小数と対応付けることで、回文長および最適回文因数分解を計算する O(n³) 時間、O(n²) 領域のアルゴリズムを得る。さらに、葉が回文、内部頂点が任意語である木テンプレートを導入し、回文長が高々 k の元を表す既約語は C_{k-1} 個の順序二分木形状から定まるテンプレートのいずれかの文字通りのインスタンスであることを証明する。k=4 の場合の5つのテンプレートはFridにより提唱された5つの形式と一致し、その完全性が証明されるとともに、Lean 4 による形式的検証も行われている。",
+          "keywords": [
+            "palindromic length",
+            "free groups",
+            "universal Coxeter group",
+            "reflection length",
+            "noncrossing matchings"
+          ],
+          "appendix": "本論文は「combinatorics on words」および「strucure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.16974v1": {
+          "title": "C\\*-単純群の不変ランダム部分群",
+          "summary": "Γを可算離散C\\*-単純群とし、μをΓの部分群空間 Sub(Γ) 上のΓ-不変ボレル確率測度（すなわち不変ランダム部分群：IRS）とする。このとき、μ-ほとんどすべての部分群 H がC\\*-単純であることを示す。",
+          "keywords": [
+            "invariant random subgroups",
+            "C*-simple groups",
+            "countable discrete groups",
+            "Borel probability measure"
+          ],
+          "appendix": "本論文は「strucure of large countable infinite groups（大きな可算無限群の構造）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.16908v1": {
+          "title": "平面スイッチング系におけるリアプノフ定数を計算するための効率的な記号アルゴリズム",
+          "summary": "本論文では、平面スイッチング系におけるリアプノフ定数を計算するための効率的な代数的記号アルゴリズムを提案する。ベクトル場を複素領域へ写像することで、ローラン多項式に基づく正規形アルゴリズムを構築した。従来のポアンカレ写像法では高次で膨大な計算困難をもたらす反復的な記号積分が必要であったが、本手法は連続積分を直接的な代数演算に置き換えることで計算効率を大幅に向上させる。本手法を2つのスイッチング系モデルに適用し、一般化されたスイッチング4次リエナール系において中心条件を抽出して10個の小振幅リミットサイクルの存在を証明し、その周期性（cyclicity）の新たな下限を確立した。さらに、Alpazur発振器の回路モデルに適用し、中心から分岐する小振幅リミットサイクルが高々1個であり、その上限が達成可能であることを示すことで、実用的な区分的平滑系における複雑な力学現象の解析に対する本手法の有用性を示した。",
+          "keywords": [
+            "Lyapunov constants",
+            "planar switching systems",
+            "symbolic algorithm",
+            "normal form",
+            "limit cycles"
+          ],
+          "appendix": "本論文は複素力学系（complex dynamics）や記号計算の枠組みと関連性を持っていますが、提示された「興味ある分野」（symbolic dynamics, combinatorics on words, automata theory, formal languages, complex dynamics, arithmetic dynamics, validated numerics, strucure of large countable infinite groups）の中では、複素領域への埋め込みを利用した力学系解析という観点で「complex dynamics」に近接する側面があります。"
+        },
+        "http://arxiv.org/abs/2609.16866v1": {
+          "title": "単純要素言語と時間拡張接頭辞受理器を活用したSMTによる確定性時間オートマトンのマイニング",
+          "summary": "ブラックボックスなリアルタイムシステムの挙動を特定・解析するための確定性時間オートマトン（DTA）を受理・非受理のサンプル挙動から学習（マイニング）する手法を提案する。本手法では、サンプルを単純要素言語（sEL）に変換して冗長性の排除や矛盾検出を行い、それを増分形式に書き換えて時間拡張接頭辞木受理器（tAPTA）を構築することでサンプルを簡約化する。最終的に、簡約化されたtAPTAを受理するDTAの探索をSMT論理式に符号化して解く。ランダム生成ベンチマークおよびスケジューリング事例による評価の結果、SMT論理式のサイズ削減とDTAマイニングの効率性が実証された。",
+          "keywords": [
+            "Deterministic Timed Automaton",
+            "SMT",
+            "Simple Elementary Language",
+            "Timed Augmented Prefix Tree Acceptor",
+            "Real-time Systems"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.16776v1": {
+          "title": "2 × 2k 地図上の周期2の山谷割り当てに対する厳密なラベル付き層順序の分類",
+          "summary": "本論文では、各折り線族において周期2の山谷割り当てを持つ通常の直交する 2 × 2k 地図のラベル付き最終層順序を分類している。k ≥ 2 の場合、局所的な平坦折り畳み可能性により、64個の形式的周期語のうち16個が残る。8個のプリーツ語は一意なラベル付き状態を持つ。残りの8個の語は、ラベル付き対称性のもとで、行ピボットによって記述される2つの定数行族に帰着される。標準語 MMMMVV については、順序付けられたピボット対 (a, b) が実現可能であるための必要十分条件は、m = 2k - 1 として a = 1、a = m、または a = b であることである。MVMMMM については、実現可能性は BR(a) = BR(b) と同値である。両族において、適合する各順序付きピボット対は一意なラベル付き状態を決定する。その結果得られる状態数は 0, 1, 6k - 5, 4k - 3 である。なお、k = 1 の場合は、2つの形式的周期ビットに対応する物理的折り線が存在しないため個別に扱われる。",
+          "keywords": [
+            "mountain-valley assignments",
+            "layer orders",
+            "flat-foldability",
+            "period words",
+            "row pivots"
+          ],
+          "appendix": "形式的周期語（formal period words）を介した組合せ論的分類手法は、combinatorics on words と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.16631v1": {
+          "title": "SLₙ(ℤ) の2元生成系に対するカジュダン定数",
+          "summary": "n ≥ 3 に対して群 SLₙ(ℤ) は性質 (T) を持つため、任意の有限生成系は正のカジュダン定数を持つ。しかし近年、すべての有限生成系に対するこれら定数の下限が 0 であることが示された。これにより、生成系の濃度をあらかじめ制限した場合でも下限が 0 のままかという自然な疑問が生じる。本論文では、すべての n ≥ 3 に対して、SLₙ(ℤ) のすべての2元生成系にわたるカジュダン定数の下限が 0 であることを証明する。",
+          "keywords": [
+            "Kazhdan constants",
+            "generating sets",
+            "SL_n(Z)",
+            "property (T)"
+          ],
+          "appendix": "本論文は無限群の幾何・代数的構造に関する研究であり、「興味ある分野」の「strucure of large countable infinite groups」と関連しています。"
+        },
+        "http://arxiv.org/abs/2609.16596v1": {
+          "title": "低複雑度無限語の回文因子の数について",
+          "summary": "因子複雑度は無限語における各長さの相異なる因子の数を数え、回文複雑度は反転に対して不変な因子を数える。反転閉包な言語をもつ再帰的非周期語において、連続する2つの長さにおける回文因子の総数は、因子複雑度の1ステップの増加量に2を加えた値以下となる。本論文では、ある長さでの因子複雑度がその長さの3/2に1を加えた値を超えない場合、常に等号が成立することを証明する。また、この限界が最適であることを示す例を構築する。さらに、適応的な局所基準を得るとともに、反転閉包な準Sturmian語（quasi-Sturmian words）および回文欠陥（palindromic defect）に対する帰結を導く。",
+          "keywords": [
+            "factor complexity",
+            "palindromic complexity",
+            "recurrent aperiodic words",
+            "quasi-Sturmian words",
+            "palindromic defect"
+          ],
+          "appendix": "この論文は「combinatorics on words」および「symbolic dynamics」の分野と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.16576v1": {
+          "title": "折りたたみ有理写像の特徴曲線の非一意性",
+          "summary": "折りたたみ有理写像（folding rational map）とは、ポストクリティカル集合 P_f と交わらない本質的ジョルダン曲線 β を持ち、その逆像が非連結かつ P_f に対して β とホモトピックなジョルダン曲線からなるポストクリティカル有限（PCF）有理写像 f のことである。このような β は f の特徴曲線と呼ばれる。本研究では、互いにホモトピックでない2つの特徴曲線 β と β' を持つ、次数6かつ #P_f = 4 の実ポストクリティカル有限有理写像 f を構成した。この写像はオービフォールド指標 (2, 2, 3, ∞) を持つ双曲型である。この非一意性はラテス現象によるものではなく、写像の合成（mating）分解から生じるものでもない。この写像は区分的に構成されており、力学系を説明するための数値モデルも提供されている。また、弧のリフティングおよび交点数の議論により Thurston 障害が排除されている。",
+          "keywords": [
+            "folding rational map",
+            "postcritically finite rational map",
+            "characteristic curve",
+            "Thurston obstructions",
+            "orbifold signature"
+          ],
+          "appendix": "本論文は複素力学系（complex dynamics）の分野に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2609.17493v2",
+        "http://arxiv.org/abs/2609.17410v1",
+        "http://arxiv.org/abs/2609.17334v1",
+        "http://arxiv.org/abs/2609.17640v1",
+        "http://arxiv.org/abs/2609.17129v1",
+        "http://arxiv.org/abs/2609.17045v1",
+        "http://arxiv.org/abs/2609.17027v1",
+        "http://arxiv.org/abs/2609.16974v1",
+        "http://arxiv.org/abs/2609.16908v1",
+        "http://arxiv.org/abs/2609.16866v1",
+        "http://arxiv.org/abs/2609.16776v1",
+        "http://arxiv.org/abs/2609.16631v1",
+        "http://arxiv.org/abs/2609.16596v1",
+        "http://arxiv.org/abs/2609.16576v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2609.17493v2": {
+          "message_id": "1550484242549579859",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.17410v1": {
+          "message_id": "1550484252116914248",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.17334v1": {
+          "message_id": "1550484260723363840",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.17640v1": {
+          "message_id": "1550484269162307635",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.17129v1": {
+          "message_id": "1550484277177749535",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.17045v1": {
+          "message_id": "1550484285276823613",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.17027v1": {
+          "message_id": "1550484293795577979",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.16974v1": {
+          "message_id": "1550484301974606027",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.16908v1": {
+          "message_id": "1550484310107099237",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.16866v1": {
+          "message_id": "1550484319473242203",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.16776v1": {
+          "message_id": "1550484327891206157",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.16631v1": {
+          "message_id": "1550484340549361766",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.16596v1": {
+          "message_id": "1550484348656943215",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.16576v1": {
+          "message_id": "1550484357922299935",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-18T07:24:30.798531+00:00",
-      "updated_at": "2026-09-18T11:33:50.297924+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-18T12:31:19.306335+00:00",
+      "finalized_at": "2026-09-18T12:31:19.306309+00:00"
     }
   ]
 }
