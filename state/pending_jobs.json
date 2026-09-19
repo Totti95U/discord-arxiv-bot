@@ -57061,7 +57061,7 @@
     },
     {
       "pipeline_id": "20260919T072001Z-f8cfb41d",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/7k3yclecd5qddyk76h0c34id7dj2g0wsrc3r",
       "summarize_job_name": "batches/jyhd3bgs6q9spr4uwnv1i666xgfy5nch7zl3",
       "papers": [
@@ -58198,16 +58198,291 @@
         "http://arxiv.org/abs/2609.18061v1",
         "http://arxiv.org/abs/2609.18053v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2609.19409v1": {
+          "title": "アルファベット文字列における相異なる部分文字列の期待数",
+          "summary": "各記号が等確率 1/d、あるいはより一般に確率 pⱼ（∑₁≤ⱼ≤dpⱼ = 1）で出現する独立同分布（i.i.d.）試行の列 X = {X₁, X₂, …, Xₙ} を対象とする。本論文では、X に含まれるすべての長さ 1 ≤ k ≤ n の相異なる部分文字列の総数を表す確率変数 D を考察し、その期待値 E(D) に関する結果を証明する。",
+          "keywords": [
+            "distinct substrings",
+            "expected number",
+            "i.i.d. trials",
+            "alphabet string"
+          ],
+          "appendix": "本研究は文字列中の部分文字列の数え上げや確率的性質を扱っており、「combinatorics on words（語の組合せ論）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.19301v1": {
+          "title": "ソボレフ混合定数と有理モジュライ空間におけるコンパクト性",
+          "summary": "本論文では、有理写像および一様擬正則写像に対するソボレフ混合評価の一様性について研究を行っている。固定された次数を持つ有理写像に対して、最適化された中心化ソボレフ境界トレース定数 A_f はメビウス・モジュライ空間上の連続な固有写像となる。したがって、A_f の一様有界性はモジュライ空間における相対コンパクト性を特徴付け、各次数において最小化クラスが存在する。また、不変共形構造を持つ閉 n 次元多様体上の次数 d ≥ 2 の一様擬正則自己準同型写像において、臨界ソボレフエネルギーから平衡測度の L¹ への第 k 中心化転送作用素のノルムは A_f d^{-k/n} となる。平均ゼロのソボレフ空間上では、そのスペクトルおよびフレドホルム本質スペクトルは半径 d^{-1/n} の閉円板となり、その内部全体で無限次元の固有空間を持つ。これらの証明には、引き戻しのエネルギースケーリング、有界平衡トレース、および中間質量の原子による障害が用いられる。この障害を共形重心正規化および DeMarco-Faber の退化定理と組み合わせることで、モジュライのコンパクト性判定条件が得られる。",
+          "keywords": [
+            "Sobolev mixing constants",
+            "rational moduli space",
+            "uniformly quasiregular mappings",
+            "transfer operator",
+            "compactness criterion"
+          ],
+          "appendix": "本論文は有理写像のモジュライ空間やダイナミクスを扱っており、興味ある分野の「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.19078v1": {
+          "title": "単純ケイリー置換",
+          "summary": "本論文では、膨張（inflation）と両立するケイリー置換（Cayley permutation）の「単純性（simplicity）」の概念を提案する。通常の置換と同様の代入分解（substitution decomposition）がケイリー置換においても成り立つことを証明し、それを用いて単純ケイリー置換、原始単純ケイリー置換、および単純な制約付き成長関数（restricted growth function）の数え上げを行う。さらに、有限個の単純元しか持たない任意の遺伝的ケイリー置換クラスは、有限基底を持ち、その母関数が代数的になることを証明する。",
+          "keywords": [
+            "Cayley permutations",
+            "simple permutations",
+            "substitution decomposition",
+            "restricted growth functions",
+            "generating functions"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2609.19073v1": {
+          "title": "MightyPPL：MTLモデル検査に向けて",
+          "summary": "実時間システムに対する距離区間時相論理（MITL）モデル検査の理論的基礎は1990年代初頭に確立されたが、未来MITLをサポートする実用的なツール（MightyL）が登場したのは2017年のことであった。近年、過去モダリティ、プヌエリ（Pnueli）モダリティ、および特異区間の限定的な利用を含む、より表現力の高い論理演算子をサポートするためのツールチェーン拡張への関心が高まっている。本稿では、そのツールチェーンの一つであるMightyPPLの拡張版を提案する。本ツールは、プヌエリモダリティや過去モダリティに加え、「イベントpが発生したときは常に、正確にk時間単位後にイベントqが続く」という形式の距離時相論理（MTL）性質のモデル検査を初めて可能にする。ツールの基盤となるアーキテクチャと実装について議論し、様々な充足可能性およびモデル検査ベンチマークにおいてTemporaツールとの性能評価を行い、MightyPPLが大幅に優れた性能を発揮することを示す。",
+          "keywords": [
+            "Metric Temporal Logic",
+            "Model Checking",
+            "Metric Interval Temporal Logic",
+            "MightyPPL",
+            "Timed Systems"
+          ],
+          "appendix": "automata theory, formal languages"
+        },
+        "http://arxiv.org/abs/2609.18630v1": {
+          "title": "共役によって誘導されないDlab群の順序自己同型",
+          "summary": "2つのDlab順序のいずれかを備えた群 G = D_⟨2⟩([0,1]) において、ある順序自己同型 α が存在することを示す。この自己同型 α は、ℝ_{>0}^× の任意の階数1の部分群 H、それに対応する線形順序を備えた6つの各Dlab群 A、任意の順序保存埋め込み e: G ↪ A、および任意の u ∈ A に対して、e(α(f)) ≠ u⁻¹e(f)u を満たす f ∈ G が常に存在するような性質を持つ。",
+          "keywords": [
+            "Dlab group",
+            "order automorphism",
+            "conjugation",
+            "linear orders",
+            "order-preserving embedding"
+          ],
+          "appendix": "本論文は無限群の代数的・順序的構造を扱っており、「strucure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.19218v1": {
+          "title": "3次元立方体における1つの生成元からループ順序へ",
+          "summary": "本論文では、3次元立方体 Q₃ の1次元骨格上の基点付き閉歩道のモノイド 𝒲（その基本群は自由群 F₅）を研究している。アーベル群へのエッジ重みの和として与えられる加法的一歩読み取りは有向遷移カウントを経由して因数分解されることを示し、同一の遷移カウントを持ちながら異なる被約ループ語を持つ閉歩道の存在を示すことで、可換な集約では被約ループ語を決定できないことを明らかにした。さらに、自明なアーベル化を持ちながら非自明な2次交換子情報を持つ最短の閉歩道の長さが14であることを特定した。また、有限状態と非有界メモリの分離定理を導出し、非有界スタックによって常に被約ループ語が復元できることを示した。加えて、四元数クロックによる別の順序依存合同関係の構成や、一般の超立方体 Qₙ (n ≥ 3) への拡張についても論じている。",
+          "keywords": [
+            "three-dimensional cube",
+            "fundamental group",
+            "reduced loop word",
+            "closed walks",
+            "finite-state reading"
+          ],
+          "appendix": "本論文は、オートマトン理論（automata theory）や形式言語理論（formal languages）における有限状態認識やスタックメモリによる言語/語の復元能力、語の組合せ論（combinatorics on words）、および自由群などの群論的構造（structure of large countable infinite groups）と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.19214v1": {
+          "title": "3次元における強非周期モノタイル",
+          "summary": "SocolarとTaylorが提起した、形状のみによって非周期性を強制し弱非周期タイリングを許容しない単一の単連結3次元プロトタイルの存在問題に対し、有理多面体3次元球体「Chair44 (R44)」を提示する。R44は24個の露出した単位面に微小な四角錐の突起を持つ7つの立方体からなる椅子型立体であり、鏡映を含む合同コピーによってℝ³を充填できること、そしてすべての充填が並進周期を持たず対称群の位数が高々24であることを証明した。すべてのタイリングはホモカイラルであり、入れ子状の超タイルの唯一の無限階層構造を持つ。この証明は幾何学的議論と網羅的な有限列挙を組み合わせており、Lean 4による形式検証（native_decideのコンパイラフックを除くカーネルチェック）が行われている。",
+          "keywords": [
+            "aperiodic monotile",
+            "strongly aperiodic",
+            "supertiles",
+            "Lean 4",
+            "Six Birds emergence calculus"
+          ],
+          "appendix": "本論文のタイル構造が持つ階層性や符号化の性質、有限状態のテストなどの手法は、symbolic dynamicsやformal languages、automata theoryと密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.18484v1": {
+          "title": "有理還元と定数回路計算量をもつ正規言語",
+          "summary": "本論文では、非有界ファンインのブール回路族の観点から正規言語の回路計算量を研究している。正規定語付き1変数1階述語論理、スタンプの擬多様体QEJ₁、適切な語の合同関係、および正規表現を用いて定数回路計算量の正規言語を特徴付け、中立文字をもつ場合についても同様の特徴付けを与える。下界の結果として、劣対数回路計算量の正規言語クラスは定数回路計算量のクラスと一致することを示し、非決定性有限オートマトンで与えられた正規言語が定数回路計算量をもつかの判定問題がPSPACE完全であることを示す。さらに、代数的に定義された言語クラスに適した「有理真理値表還元（rational truth-table reduction）」を導入し、穏やかな（mild）関数クラスに対してこの還元が回路計算量の上下界を保存することを示すとともに、定数回路計算量を拡張した擬多様体QEAComの正規言語クラスの特徴付けと対数計算量の上界を導出している。",
+          "keywords": [
+            "circuit complexity",
+            "regular languages",
+            "rational truth-table reduction",
+            "pseudovariety",
+            "PSPACE-complete"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.18476v1": {
+          "title": "有限および無限のバリケード",
+          "summary": "高さ h の n-バリケード（n-barrycade）とは、すべてのプレフィックス和（累積和）が異なる [n] の h 個の置換からなる集合である。本論文では、無限に多くの n に対して線形の高さ（ある定数 c > 0 に対し、高さが少なくとも cn）を持つ n-バリケードが存在することを証明する。また、この問題の無限バリアントについても探求し、貪欲法（greedy）、バッタ法（grasshopper）、および精密バッタ法（precise grasshopper）という3つの構成法を提案して、より良好な結果を得る。さらに、その過程で新しい整数列を見出し、計算データによって強く裏付けられた、除外された要素、欠損した部分和、および無限バリケードの語表現に関する予想を定式化している。",
+          "keywords": [
+            "barrycades",
+            "prefix sums",
+            "permutations",
+            "integer sequences",
+            "word representations"
+          ],
+          "appendix": "本論文で議論されている「無限バリケードの語表現（word representations）」や記号列・整数の構成に関する内容は、combinatorics on words や symbolic dynamics に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.18218v1": {
+          "title": "ガード付きベキ言語作用素に対するPicard反復における文脈自由不動点と軌道の完全な分類",
+          "summary": "本論文では、ガード付きq-ベキ言語作用素に対する不動点および有限Picard反復の言語理論的構造を研究している。一般的な作用素に対し、文脈自由な初期言語（シード言語）が一意な文脈自由不動点を決定することを証明し、初期言語に依存せずこの不動点を生成する文脈自由文法の効果的な構成法を与える。さらに、2つの新しい記号によって再帰的寄与とシードの寄与が分離される、マーク付き単一ガードの特殊な場合を考察する。この設定では、正則スライスと固定語商を用いることで、任意の有限Picard反復から初期言語を追跡し完全に復元できる。これにより、有限時間写像の単射性と抽象的な有限時間クラス保存原理が導かれ、初期言語のチョムスキー階層における正確な位置に応じた有限Picard反復の分類が得られる。したがって、すべてのPicard軌道が同一の文脈自由不動点に収束する一方で、厳密な言語理論的複雑性はすべての有限段階において保持され得る。",
+          "keywords": [
+            "Picard iteration",
+            "guarded q-power language operators",
+            "context-free fixed points",
+            "Chomsky hierarchy",
+            "finite Picard iterates"
+          ],
+          "appendix": "本論文は「formal languages」および「automata theory」の分野に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.18128v1": {
+          "title": "契約を用いたLLMエージェントの記号的時相監視",
+          "summary": "ツールを利用するLLMエージェントは複雑なマルチステップタスクを自動化できますが、ハルシネーションや不可逆なツール呼び出しにより有害な結果を招く恐れがあります。既存の安全性確保手法は、確率的なLLM評価者による事後評価か、単一の呼び出しごとのブロックに限られており、双方を決定論的に支援する枠組みはありませんでした。本研究では、エージェントの挙動を検証可能な述語列として形式化し、有限トレース上の線形時相論理（LTLf）における仮定保証契約を用いて要求仕様を記述するフレームワーク「ContrAgent」を提案します。各契約は決定性有限オートマトン（DFA）にコンパイルされ、オンラインでの行動制御とオフラインでのトレース評価の両方に利用されます。評価実験により、本手法は最先端のベースラインと同等の性能を達成しつつ、決定論的で再現性のある判定と、オンライン実行時における桁違いの低レイテンシを実現することを示しました。",
+          "keywords": [
+            "Large language model agents",
+            "assume-guarantee contracts",
+            "linear temporal logic over finite traces (LTLf)",
+            "deterministic finite automaton (DFA)",
+            "symbolic temporal supervision"
+          ],
+          "appendix": "本論文は「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」に関連しています。有限トレース上の線形時相論理（LTLf）で記述された契約を決定性有限オートマトン（DFA）へとコンパイルし、エージェントの振る舞いを言語受理問題として形式検証・監視する手法が扱われています。"
+        },
+        "http://arxiv.org/abs/2609.18061v1": {
+          "title": "可測力学系における有界連鎖",
+          "summary": "標準確率空間上の可算群の測度類保存作用（非特異作用）に対して、二重エルゴード性と距離エルゴード性の間に位置する1パラメータ族の概念「（本質的）k-chaining」（k ∈ ℕ）を導入し、弱混合作用を区別する無限個の新しい不変量を提供する。この枠組みを、境界に定常マルコフ測度を備えた有限階数 r ≥ 1 の自由群の境界作用の研究に応用し、この文脈において弱混合性が (2r-1)-chaining であること、およびマルコフ測度の遷移行列の厳密な既約性と同値であることを証明する。",
+          "keywords": [
+            "bounded chaining",
+            "measurable dynamics",
+            "double ergodicity",
+            "metric ergodicity",
+            "weak mixing"
+          ],
+          "appendix": "本論文は可算群の作用（境界作用）やマルコフ測度を扱っており、興味ある分野のうち「strucure of large countable infinite groups」および「symbolic dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.18053v1": {
+          "title": "双曲群におけるドリフトの揺らぎについて",
+          "summary": "CAT(-1)空間Xの等長変換群の凸余コンパクト群Γと、被覆変換群が語双曲群であるガロア被覆Y → X/Γを考える。X/Γの持ち上げ上のBowen-Margulis-Sullivan測度に関してほとんどすべての測地線ξに対し、あるm, σ > 0と標準ブラウン運動Bₛが存在して、任意のλ > 1/4について d(p(gₛ(ξ)), o) = ms + σBₛ + o(s^λ) が成り立つことを示した。ここでgₛはYの測地線に作用する測地流、p(gₛ)はYへの標準射影である。この結果は、従属増分を持つ双曲群上のランダムウォークに対する概確実不変原理から得られ、その証明には歪積に対する新しいRuelle作用素の定理および従属増分を持つランダムウォークのMartin境界手法が用いられている。",
+          "keywords": [
+            "hyperbolic groups",
+            "Bowen-Margulis-Sullivan measure",
+            "almost sure invariance principle",
+            "Ruelle operator",
+            "Martin boundary"
+          ],
+          "appendix": "本論文は群上の確率論・力学系に関するものであり、「strucure of large countable infinite groups」（語双曲群の性質）に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2609.19409v1",
+        "http://arxiv.org/abs/2609.19301v1",
+        "http://arxiv.org/abs/2609.19078v1",
+        "http://arxiv.org/abs/2609.19073v1",
+        "http://arxiv.org/abs/2609.18630v1",
+        "http://arxiv.org/abs/2609.19218v1",
+        "http://arxiv.org/abs/2609.19214v1",
+        "http://arxiv.org/abs/2609.18484v1",
+        "http://arxiv.org/abs/2609.18476v1",
+        "http://arxiv.org/abs/2609.18218v1",
+        "http://arxiv.org/abs/2609.18128v1",
+        "http://arxiv.org/abs/2609.18061v1",
+        "http://arxiv.org/abs/2609.18053v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2609.19409v1": {
+          "message_id": "1550838698768334849",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.19301v1": {
+          "message_id": "1550838707219595305",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.19078v1": {
+          "message_id": "1550838718808723479",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.19073v1": {
+          "message_id": "1550838727624892520",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.18630v1": {
+          "message_id": "1550838735866953829",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.19218v1": {
+          "message_id": "1550838745089966192",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.19214v1": {
+          "message_id": "1550838756465057874",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.18484v1": {
+          "message_id": "1550838764119531634",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.18476v1": {
+          "message_id": "1550838772613120041",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.18218v1": {
+          "message_id": "1550838780817186828",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.18128v1": {
+          "message_id": "1550838789167910982",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.18061v1": {
+          "message_id": "1550838798466687000",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.18053v1": {
+          "message_id": "1550838807270793319",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-19T07:20:01.737501+00:00",
-      "updated_at": "2026-09-19T11:17:07.508451+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-19T11:59:46.654745+00:00",
+      "finalized_at": "2026-09-19T11:59:46.654719+00:00"
     }
   ]
 }
