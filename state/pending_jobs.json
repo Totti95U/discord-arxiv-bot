@@ -60707,7 +60707,7 @@
     },
     {
       "pipeline_id": "20260922T074236Z-d9dd9e14",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/s3xmc1lz51fp52avuan3gkbc6iaroygb50h3",
       "summarize_job_name": "batches/ulfia4s0lzvt78qsp5td3sqn1z46490xnozp",
       "papers": [
@@ -61322,16 +61322,103 @@
         "http://arxiv.org/abs/2609.22740v1",
         "http://arxiv.org/abs/2609.22689v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2609.23174v1": {
+          "title": "ソフィック系と自己アフィン極限集合の極値点",
+          "summary": "同一の縮小行列 T を共有する平面上のアフィン反復関数系（IFS）に対し、アトラクター A の凸包 conv(A) に沿った極値点の集合を、conv(A) の辺上の有向グラフを用いて特徴付ける。このグラフは、IFS に付随する符号化空間上のソフィック系に対応する。また、T が固有直交行列または純実数である場合に conv(A) が有限多角形となる条件を示し、変換にさらなる対称性がある場合に A 自身が conv(A) と一致するための条件を与える。",
+          "keywords": [
+            "sofic systems",
+            "extreme points",
+            "self-affine limit sets",
+            "iterated function system",
+            "convex hull"
+          ],
+          "appendix": "本論文で扱われているソフィック系（sofic system）や符号化空間（coding space）の有向グラフによる特徴付けは、記号力学系（symbolic dynamics）およびオートマトン理論（automata theory）や形式言語理論（formal languages）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.23106v1": {
+          "title": "独立パラメータの計数による、任意のkおよびアルファベットサイズに対する異なるk-deckの数の改善された上界",
+          "summary": "合成DNAデータの読み出しモデルとして、長さnの語に含まれる長さkの部分列の頻度ベクトルである「k-deck」が研究されている。本論文では、より短いdeckを固定した際にk-deckに残る自由度を解析した。各文字の多重度を指定した語のクラスにおいて、長さkの成分が制限されるアフィン部分空間の次元が、同一多重度を持つリンドン語（Lyndon word）の数に一致することを示し、メビウスの反転公式を用いた閉じた形で導出した。これにより、サイズqのアルファベット上の相異なるk-deckの数 D_{q,k}(n) に対して改善された上界 O(n^{E_q(k)}) （ただし E_q(k) = ∑_{j=1}^k j L_q(j) - 1）を得た。さらに、自明でない最初の2つのケースにおいて一致する下界を証明し、得られた上界の次数が常に正しいという予想を支持する結果を示した。",
+          "keywords": [
+            "k-deck",
+            "shotgun sequencing",
+            "Lyndon words",
+            "combinatorics on words",
+            "degrees of freedom"
+          ],
+          "appendix": "本論文は「combinatorics on words」分野に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.22740v1": {
+          "title": "超越整関数のシェルピンスキー・カーペット・ジュリア集合",
+          "summary": "本論文では、活動的な臨界軌道をちょうど1つ持つ有限型の超越整関数の自然な族において、その分岐軌跡の中でシェルピンスキー・カーペット・パラメータが稠密であることを証明する。さらに、吸引的ベイスン、放物的ベイスン、ジーゲル円板、または遊走領域のいずれかを含むような、シェルピンスキー・カーペット・ジュリア集合を持つ特定の超越整関数を構成する。証明は主に多項式類似くりこみの適用と、先行研究で得られた超越ジュリア集合の局所連結性に関する結果に基づいている。",
+          "keywords": [
+            "Sierpiński carpet Julia sets",
+            "transcendental entire functions",
+            "bifurcation loci",
+            "polynomial-like renormalization",
+            "local connectivity"
+          ],
+          "appendix": "本論文は「complex dynamics」の分野と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.22689v1": {
+          "title": "チェビシェフ級数展開による効率的かつ厳密な接続 I",
+          "summary": "本論文では、力学系に現れる解多様体の大域的接続（continuation）について研究し、解多様体のチェビシェフ級数展開に基づく厳密な接続手法を提案する。まず解の枝を高次のチェビシェフ補間多項式で近似し、その近似近傍における準ニュートン作用素の縮小性を検証することで明示的な誤差限界を得る。この縮小性は重み付き ℓ¹ 空間上で定式化され、一様縮小写像定理による典型的な C⁰ 誤差限界よりも精密な制御が可能である。さらに、接続パラメータが局所座標として機能しない場合の擬似弧長接続法への自然な適用や多パラメータ接続への拡張についても議論する。応用として、カーン・ヒリアード方程式の2パラメータ定常解族、および重定・川崎・寺本（SKT）モデルにおけるサドルノード分岐を起こす1パラメータ定常解族の計算を行う。",
+          "keywords": [
+            "rigorous continuation",
+            "Chebyshev series expansion",
+            "solution manifolds",
+            "pseudo-arclength continuation",
+            "quasi-Newton operator"
+          ],
+          "appendix": "本研究は精度保証付き数値計算（validated numerics）の分野に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2609.23174v1",
+        "http://arxiv.org/abs/2609.23106v1",
+        "http://arxiv.org/abs/2609.22740v1",
+        "http://arxiv.org/abs/2609.22689v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2609.23174v1": {
+          "message_id": "1551949012410703953",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.23106v1": {
+          "message_id": "1551949020740452353",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.22740v1": {
+          "message_id": "1551949029431181364",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.22689v1": {
+          "message_id": "1551949038075645963",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-22T07:42:36.937506+00:00",
-      "updated_at": "2026-09-22T08:08:17.326595+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-22T13:31:26.503063+00:00",
+      "finalized_at": "2026-09-22T13:31:26.503034+00:00"
     }
   ]
 }
