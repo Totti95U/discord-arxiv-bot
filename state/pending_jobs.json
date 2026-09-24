@@ -62537,12 +62537,28 @@
           "message_id": "1552373064782577737",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1552601944068067380",
+          "read_requested_at": "2026-09-24T08:45:27.530313+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-24T08:45:49.793456+00:00"
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2609.23401v1": {
+          "conclusion": "本論文は、語の各位置から始まる最長逆リンドン因子の長さを保持する Inverse Lyndon array (λ^-1) を新たに導入し、Nearest Greater Suffix (NGS) 配列と Longest Common Extension (LCE) による境界補正項を用いた一般アルファベット上の O(n) 時間・O(n) 領域構築アルゴリズムを提案した研究です。さらに、計算された λ^-1 から canonical inverse Lyndon factorization (ICFL) を O(n) 時間で復元できることも示しています。",
+          "main_claims": "1. 構造的関係式の提示 (3.1節 Lemma 6, Lemma 7, Corollary 1, p.6-7): 逆リンドン語が非自明な border (境界) を持ち得るため標準リンドン配列の等式が成立しない課題に対し、λ^-1[i] = next^-1[i] - i + lce(i, next^-1[i]) となること、および border の長さが NGS 上の LCE 値と正確に一致することを証明しました。\n2. 線形時間構築アルゴリズム (3.3節 Theorem 2, p.8-9): Ellert (2022) の NSS/PSS フレームワークを NGS/PGS 設定へ拡張し、追加の明示的 border 計算を伴わずに O(n) 時間・O(n) 領域で λ^-1 を構築する Algorithm 1 (LCE-NGS) を与えました。\n3. ICFL の線形時間復元 (4節 Theorem 3, Theorem 4, p.10-12): λ^-1 から最長逆リンドン接尾辞の開始位置配列 L を求式化し、右から左への走査によって ICFL(w) を O(n) 時間・O(n) 領域で復元する Algorithm 2, 3 を示しました。\n新規性: 逆リンドン語特有の border の存在による難しさを、LCE 値の直接再利用によって償却線形時間を維持したまま解決した点にあります。",
+          "method_outline": "1. 構造の定義と定式化: 逆リンドン語が反リンドン語の非自明な sesquipower である性質に基づき、NGS 配列 next^-1 と PGS 配列 prev^-1 を定義し、因子長と border 長の関係を定式化しました (Lemma 6)。\n2. border の LCE 同定: 最長逆リンドン因子の border 長が、その開始位置と NGS 位置との LCE 値 lce(i, next^-1[i]) に一致することを証明し、明示的 border 計算を不要にしました (Lemma 7)。\n3. LCE-NGS アルゴリズムの構築 (既存手法の拡張): Ellert による NSS/PSS 上の non-crossing 性や LCE 加速機構 (Lemma 8-10) を NGS/PGS 設定に移植し、Smart-Lce 手順を用いて文字比較の右端フロンティアを単調増加させることで O(n) 時間計算を実現しました (Algorithm 1)。\n4. ICFL 復元手順の設計: λ^-1 から各位置をカバーする最左開始位置配列 L を求めるアルゴリズム (Algorithm 2) を構築し、語の右端から左へ因子を切り出すことで ICFL(w) を線形時間で復元しました (Algorithm 3)。",
+          "research_connection": "【論文に明記された内容】combinatorics on words (語の組み合わせ論)、formal languages (形式言語理論)、automata theory (オートマトン理論) に直接関連します。具体的には、Chen-Fox-Lyndon (CFL) 分解の変種である ICFL や、Suffix Array / Suffix Tree 等の基本データ構造の構築問題と接点があります。\n【推測・発展性】symbolic dynamics (記号力学系) における周期軌道や回転数の符号化・因子分解解析や、アルゴリズム的群論における自由群の語の正規形分解（structure of large countable infinite groups 等）への応用が考えられます。arithmetic dynamics や validated numerics, complex dynamics との直接の関連は確認できません。",
+          "reading_guide": "【前提知識】語の組み合わせ論の基本（リンドン語、CFL分解）、Suffix Array、LCE クエリに関する基礎知識。\n【読むべき箇所】理論的核心とアルゴリズムを理解するなら、Definition 4, 7, 8 (p.5-6)、Lemma 6, 7 および Corollary 1 (p.6-7)、Algorithm 1 (p.9) を優先して読むと良いです。ICFL 復元に興味がある場合は 4節 (p.9-12) を追加で精読してください。\n【読み方の勧め】論文全体の構成が整理されているため、1-2節で概要を把握した後、3-4節の主要定理とアルゴリズムを中心に精読すれば十分理解できます。",
+          "follow_up_questions": [
+            "逆リンドン配列 λ^-1 を利用して、標準リンドン配列と同様に Suffix Array (接尾辞配列) を効率的に構築する具体的なアルゴリズムは設計可能か？",
+            "通常の Lyndon array が Runs (極大反復) の線形時間検出に利用されるのと同様に、Inverse Lyndon array を用いて文字列内のどのような特殊構造が効率抽出できるか？",
+            "定数サイズアルファベットや整列可能アルファベットなどの制約下で、Inverse Lyndon array の空間効率の良いオンライン構築やサブリニア時間構築は可能か？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
