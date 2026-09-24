@@ -62568,7 +62568,7 @@
     },
     {
       "pipeline_id": "20260924T073555Z-a4054f20",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/5135qub89zdl3ftj7uist2zxuqrk7rn3os6r",
       "summarize_job_name": "batches/kp3ht9qxqgi613jy1r5ccrs518gvjwawh8jo",
       "papers": [
@@ -64099,16 +64099,435 @@
         "http://arxiv.org/abs/2609.24154v1",
         "http://arxiv.org/abs/2609.24037v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2609.25497v1": {
+          "title": "重み付き位相エントロピーに対する2つのアプローチの比較",
+          "summary": "力学系間の同変連続写像に対する重み付き位相エントロピーについて、Feng–Huangの定義と被覆による定義の2つのアプローチを比較する。これら2つの量は変分原理により空間全体では一致するものの、非不変部分集合上では必ずしも一致しない。本論文では、不変性を仮定することなく、任意の部分集合上でFeng–Huangエントロピーが被覆エントロピーによって上から抑えられることを証明する。この証明は測度論に依存せず、主要な結果は2つの相対的な重み付き変分原理に対する新たな視点を提供する。",
+          "keywords": [
+            "weighted topological entropy",
+            "Feng--Huang entropy",
+            "covering entropy",
+            "variational principles",
+            "equivariant continuous maps"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2609.25438v1": {
+          "title": "PermuFormer：代数的組合せ論における置換表現のためのマルチタスク事前学習",
+          "summary": "AI for Mathの分野では自然言語を介したフロンティアモデルが注目される一方で、数学的対象を直接扱う専門化モデルも重要である。しかし、専門化モデルをスクラッチで学習させると、数学の多面的な性質を捉えた表現の獲得が制限される課題がある。本論文では、代数的組合せ論の置換に焦点を当てたタスク向けの事前学習手法「PermuFormer」を提案する。PermuFormerは28億トークンのマルチタスク・複数エンコーディングコーパスで訓練された自己回帰型Transformerである。事前学習に含まれない基本タスクや、より複雑な研究レベルのタスクへのファインチューニングにおいて、スクラッチ学習やベースラインMLP、同規模の汎用言語モデルを上回る性能を示した。さらに、プロンプトの内部表現から線形デコード可能なタスクと、複数ステップの生成を経て初めてデコード可能になるタスクが存在するなど、内部メカニズムの分析も行っている。",
+          "keywords": [
+            "PermuFormer",
+            "algebraic combinatorics",
+            "permutation representation",
+            "multi-task pretraining",
+            "autoregressive transformer"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2609.25365v1": {
+          "title": "可算群の極大部分群に関する一考察",
+          "summary": "任意の可算群に対して、極大部分群全体の集合は可算であるか、または濃度 2^ℵ₀ を持つことを示している。",
+          "keywords": [
+            "maximal subgroups",
+            "countable groups",
+            "cardinality"
+          ],
+          "appendix": "興味ある分野の「strucure of large countable infinite groups」と関連しています。"
+        },
+        "http://arxiv.org/abs/2609.26837v1": {
+          "title": "マルチブロット集合の計算的および等角写像による解析",
+          "summary": "単一臨界族 f_{c,j}(z) = z^j + c に対するマルチブロット集合 M_j は、j → ∞ のとき幾何学的に閉単位円板へ収束するが、この極限は有限次数での面積挙動を定量化しない。本研究では、反復閾値 K と空間サンプリング密度 ρ の影響を分離しながら、脱出時間ピクセル計数法を用いて M_j の面積を推定した。K = 1000 かつ ρ = 1024 において、面積推定値は C(j) ≈ π - 2.49216 j^{-0.57103} により良く記述される。また独立して、外部等角写像のローラン係数とグロンウォールの面積公式から有限打切り上界 U_{1000}(j) ≈ π - 2.07405 j^{-0.643427} を導出した。すべての検証次数においてグリッド推定値は対応する等角上界を下回り、双方の系列は π からの面積不足分に対して同様の冪乗減衰を示す。",
+          "keywords": [
+            "Multibrot sets",
+            "unicritical family",
+            "escape-time pixel counting",
+            "conformal map",
+            "Gronwall's area formula"
+          ],
+          "appendix": "本論文は複素力学系（complex dynamics）および精度保証付き数値計算（validated numerics）に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.25198v1": {
+          "title": "4次元多様体のトポロジーと群のcollision rank",
+          "summary": "本論文ではcollision rankを導入し、有限のcollision rankを持つ群が位相4次元多様体論の意味においてgoodであることを示す。また、有限生成でcollision rankが2である群が劣指数関数的従順群（subexponentially amenable groups）のクラスの外側に存在することを示す。このような具体例はSturmian系の位相完全群（topological full groups）の交換子群によって与えられ、これには同型でない連続体濃度の無限単純従順群が含まれる。",
+          "keywords": [
+            "collision rank",
+            "topological 4-manifolds",
+            "amenable groups",
+            "topological full groups",
+            "Sturmian systems"
+          ],
+          "appendix": "本論文は「symbolic dynamics」および「strucure of large countable infinite groups」と密接に関連しています。特に、Sturmian系の位相完全群の交換子群という記号力学系に由来する無限単純群の構造を解析し、4次元多様体論（good groups）へ応用しています。"
+        },
+        "http://arxiv.org/abs/2609.24923v1": {
+          "title": "双完全な輪積型直積群",
+          "summary": "本論文では、A がアメナブル群、B が双完全群、かつ作用 B ↷ I の固定化群がアメナブルであるとき、任意の輪積型直積群（wreath-like product group）G ∈ WR(A, B ↷ I) が双完全であることを証明する。応用として、対応する群フォン・ノイマン環の堅固性（solidity）を導き、既存の剛性定理と組み合わせることで、McDuff超剛性を示す新たな例を提供する。",
+          "keywords": [
+            "bi-exactness",
+            "wreath-like product groups",
+            "group von Neumann algebras",
+            "solidity",
+            "McDuff superrigidity"
+          ],
+          "appendix": "本論文は無限群の構造およびその作用や環論的性質（フォン・ノイマン環）を扱っており、「structure of large countable infinite groups」の分野と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.25188v1": {
+          "title": "因果グラフ書き換え",
+          "summary": "本論文では、有向非巡回グラフ（DAG）上で局所規則を非同期に適用する計算モデル「因果グラフ書き換え（causal graph rewriting）」を導入する。非同期性に起因する非決定性は、計算上の依存関係と局所性制約の両方として理解される有向辺（これ自体も書き換えの対象となる）によって制御される。粒子系や一般相対性理論を想起させる時間の遅れの例を通じて本モデルを例示する。また、書き換えの影響を受ける領域を分離・再結合する誘導部分グラフおよびグラフ合成の適切性や性質を調査し、局所的な書き換えが位置、境界、文脈をどのように保存するかという局所性について研究する。主結果として、任意の局所規則は自動的に \\*-局所的かつ \\*-拡張的であるため、局所性が単一の規則適用から任意の有効な列へと拡張されることを示す。さらに、任意の1次元セルオートマトンをシミュレーションできることを形式化し証明する。",
+          "keywords": [
+            "causal graph rewriting",
+            "directed acyclic graphs",
+            "locality",
+            "cellular automata",
+            "asynchronous computation"
+          ],
+          "appendix": "任意の1次元セルオートマトンのシミュレーションが可能であることが示されており、オートマトン理論（automata theory）と関連しています。"
+        },
+        "http://arxiv.org/abs/2609.24828v1": {
+          "title": "2つのニュートラル固定点を持つ非統計的区間写像に対する疎な経験測度",
+          "summary": "本論文では、2つのニュートラル固定点を持つ対称な二重間欠的（balanced doubly intermittent）全射ブランチ区間写像を考察する。通常の経験測度はルベーグ測度に関して概すべての初期点で収束しないが、サンプリング列が block-dominating である広範な決定的観測スキームの下でも、この非統計的振る舞いが持続することを示す。具体的には、概すべての軌道において両端点のディラック測度が疎な経験測度の集積点となる。また、境界指数 β=1 を含むこのクラスのすべての写像が強い自然測度（natural-measure）特性を持つことを示し、絶対連続な初期確率測度の押し出しが特定の端点混合測度 ν_\\* に収束することを証明する。さらに、対称2次写像 g₁ については二進共分散条件を検証し、二進経験測度が概すべての初期点に対して (1/2)(δ₋₁ + δ₁) に収束することを導いている。",
+          "keywords": [
+            "interval maps",
+            "empirical measures",
+            "neutral fixed points",
+            "non-statistical behavior",
+            "natural-measure property"
+          ],
+          "appendix": "本論文は区間写像上の間欠性やカオス的挙動を扱う動力学系の研究であり、提示された興味ある分野（symbolic dynamics や complex dynamics など）と基礎的な力学系の理論的側面で関連性を持っています。"
+        },
+        "http://arxiv.org/abs/2609.24820v1": {
+          "title": "ランク1システムに対する定量的軌道同値性",
+          "summary": "本論文では、任意の2つのランク1（rank-one）システムが劣L¹軌道同値（sub-L¹ orbit equivalent）であることを証明し、一般的な変換のクラスに対する定量的軌道同値性を完全に解明する。系として、Belinskayaの定理の無条件の最適性を確立する。",
+          "keywords": [
+            "Quantitative orbit equivalence",
+            "rank-one systems",
+            "sub-L^1 orbit equivalent",
+            "Belinskaya's theorem"
+          ],
+          "appendix": "本研究は力学系・エルゴード理論における軌道同値性を扱っており、エルゴード変換の分類や symbolic dynamics の基礎概念と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.24701v1": {
+          "title": "例外写像と後方軌道におけるアーベル点",
+          "summary": "代数体 K、正規射影多様体上の偏極自己準同型 f: X → X、および f に対する非例外点 α を考える。本論文では、α の後方軌道によって生成される拡大体 K(f⁻^{∞}(α))/K が事実上アーベル（virtually abelian）であるための必要十分条件は、f が虚数乗法（CM）を持つ例外写像であり、かつ α が f-前周期点であることであることを示す。これは Andrews と Petsche による予想を解決し、高次元へと拡張するものである。この目的のために、複素数体 ℂ 上の正規射影多様体における例外写像の理論を発展させ、乗法的に独立な次数を持つ可換な偏極自己準同型が例外写像であることを証明する。",
+          "keywords": [
+            "exceptional maps",
+            "backward orbits",
+            "polarized endomorphism",
+            "virtually abelian extension",
+            "preperiodic point"
+          ],
+          "appendix": "本論文は数論的力学系（arithmetic dynamics）および複素力学系（complex dynamics）に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.24695v2": {
+          "title": "不動点近傍における1共鳴双正則写像の扇形正規化",
+          "summary": "本論文では、ℂⁿ における非退化な1共鳴双正則写像に対して、多項式正規形への扇形変換が存在することを証明する。さらに、それらの正則同値類による分類（正則分類）を与える。",
+          "keywords": [
+            "sectorial transformation",
+            "polynomial normal form",
+            "1-resonant biholomorphism",
+            "holomorphic classification"
+          ],
+          "appendix": "本論文は多変数複素解析および複素力学系（complex dynamics）に関連する研究です。"
+        },
+        "http://arxiv.org/abs/2609.24665v1": {
+          "title": "正規性を保存する操作について",
+          "summary": "本論文では、正規性を保存する算術演算および写像について研究している。Dayan、Ganguly、Weissによる最近の議論を再検討し、固定された整数底において非ゼロの有理数が乗法的正規性保存数と完全に一致することの確率論的証明を、効率的かつ自己完結的な形で提示する。また、HochmanとShmerkinの定理を用いて、すべての底で同時に成り立つ拡張も扱う。加法的ケースについては、固定された整数底における決定論的数に関するRauzyの特徴付けを絶対正規数へと拡張し、平行移動が絶対正規性を保存する必要十分条件は、そのパラメータがすべての整数底で決定論的であることであることをスパースなランダム摂動論法を用いて証明する。最後に、局所C²級の正規性保存写像はアフィン線形写像に限られることを示す。この正則性の仮定はC¹,¹に弱めることはできず、すべての整数底で正規性を保存し、したがって絶対正規性も保存する非アフィンなC¹,¹微分同相写像を構成している。",
+          "keywords": [
+            "normal numbers",
+            "absolutely normal numbers",
+            "normality preserving operations",
+            "deterministic numbers",
+            "sparse random perturbation"
+          ],
+          "appendix": "本研究は数論および力学系理論における正規数や絶対正規数の性質を扱っており、興味ある分野のうち「arithmetic dynamics」や「symbolic dynamics」と関連性があります。"
+        },
+        "http://arxiv.org/abs/2609.24623v1": {
+          "title": "次元の減少から非周期的秩序へ",
+          "summary": "本論文では、(x, y) ∈ ℕ² に対するパラメータ付き集合族 E(x, y) = { ∑_{n=1}^∞ εₙ / 4ⁿ : (εₙ) ∈ {0, x, y, x+y}^ℕ } を考察する。この集合族は「斉次自己相似集合」「bi-geometric 級数の到達可能集合（achievement set）」「4コーナー・カントール集合の有理直交射影」という3つの視点から捉えることができ、これらを統合して E(x, y) の完全な位相的分類を得ている。さらに、E(x, y) が内部を持つか否かという二値分類に縮約すると、格子 ℕ² 上に非周期的な2色タイリング T が現れ、非自明な平行移動対称性を持たないことが示される。この分類は自己相似集合の族における「次元の減少（dimension drop）」の出現も同時に記述している。最後に、タイリングの数論的性質を調べることでその置換構造を特徴づけ、T が数論的に定義された4つの「隠れた」状態上の置換タイリングの因子であることを明らかにする。",
+          "keywords": [
+            "self-similar sets",
+            "dimension drop",
+            "aperiodic order",
+            "substitution tiling",
+            "achievement sets"
+          ],
+          "appendix": "本論文の置換構造や非周期的秩序に関する内容は、興味ある分野の symbolic dynamics や combinatorics on words と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.24506v1": {
+          "title": "環境フィードバックを有するマルチエージェントシステムにおけるプロアクティブなインセンティブ規制",
+          "summary": "環境フィードバックを伴うシステムにおいて、合理的エージェントの利己的行動は協力体制と環境の持続可能性を損なうことが多い。本論文では、資源状態に応じたインセンティブ強度を結合させたマルチエージェント環境フィードバックゲームの枠組みを構築し、資源の豊富・希少両条件下でのシステムダイナミクスを解析した。その結果、資源が豊富な段階での罰則導入は共有地の悲劇から完全協調を可能にする双安定領域へと遷移させる一方で、資源枯渇後の罰則導入は内部安定性やヘテロクリニック軌道、ホップ分岐などの複雑な挙動を引き起こし、安定した協調の創発を阻害することが判明した。これにより、環境悪化後の後手対応よりも良好な環境下での予防的介入（プロアクティブな規制）が協調維持に有効であることが示された。",
+          "keywords": [
+            "environmental feedback systems",
+            "multi-agent systems",
+            "incentive regulation",
+            "tragedy of the commons",
+            "Hopf bifurcations"
+          ],
+          "appendix": "本論文で解析されているホップ分岐やヘテロクリニック軌道などの力学系の振る舞いは、力学系理論（complex dynamics 等の関連分野）と親和性があります。"
+        },
+        "http://arxiv.org/abs/2609.24449v1": {
+          "title": "複素エノン写像に対するマーカー自己準同型",
+          "summary": "本論文では、エノン写像のモノドロミー作用の研究において現れる複合マーカー自己準同型（compound marker endomorphisms）の諸性質を調査している。主結果として、単一のマーカー自己準同型が全単射であるかどうかを判定するための計算可能な基準を提示する。また、エノン力学系の観点を踏まえた直接的な系も展開している。さらに、複合マーカー自己準同型をHedlundによって導入された置換可能関数（permutive functions）の観点から再定式化し、Hedlundの既存の諸結果を直接適用することを可能にしている。",
+          "keywords": [
+            "marker endomorphisms",
+            "complex Hénon maps",
+            "monodromy action",
+            "permutive functions",
+            "bijectivity criterion"
+          ],
+          "appendix": "本研究は、エノン写像の力学系を扱う「complex dynamics」および、Hedlundの置換可能関数（permutive functions）や自己準同型を扱う「symbolic dynamics」と強い関連があります。"
+        },
+        "http://arxiv.org/abs/2609.25151v1": {
+          "title": "Niemiecの普遍付値アーベル群はLévyであり、強エキゾチックかつ極小アメナブルであり、Gᵣ(0)はジェネリックに単生成である",
+          "summary": "Niemiecによって構成された普遍付値アーベル群 𝔾ᵣ(N)（r ∈ {1, ∞}、N ∈ {0, 2, 3, …}）の諸性質を証明した論文。まず、可算群 Γ₀ = ⨁_{n∈ℕ} ℚ/ℤ や Γ_N = ⨁_{n∈ℕ} ℤ/Nℤ のジェネリックな不変距離による完備化が 𝔾ᵣ(N) と等長群同型であることを示し、先行研究の予想を解決した。このジェネリック性に関する結果とMelleray–Tsankovの判定法を組み合わせることで、𝔾ᵣ(N) が極小アメナブル（extremely amenable）であることを導いた。さらに、これらの群がLévy群であり強エキゾチック（strongly exotic）であるという、より強い性質を満たすことを示した。最後に 𝔾ᵣ(0) が単生成（monothetic）であることを示し、ウリゾーン球面上に単生成な群構造が存在することを導くことで、Cameron–Vershikの結果の有界版を与えNiemiecの未解決問題を解決した。",
+          "keywords": [
+            "universal valued Abelian groups",
+            "extreme amenability",
+            "Lévy groups",
+            "strongly exotic",
+            "monothetic groups"
+          ],
+          "appendix": "本論文は可算無限群のジェネリックな完備化やその普遍群の構造を扱っており、興味ある分野の「strucure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.24272v1": {
+          "title": "任意に小さい強誤りを持つPに対する定数コインターン完全情報ディベート",
+          "summary": "確率的有限状態検証者が証明者と反論者の交互のメッセージを読み取る完全情報ディベートシステムを研究する。先行研究では、クラスPの任意の言語が定数個のランダムビットと任意に小さい弱誤りで検証可能であることが示されていたが、非停止を失敗とみなす強誤りの設定では誤り確率を任意に小さくできなかった。本論文ではこのギャップを解消し、Pに属する任意の言語Lと任意のε > 0に対して、定数個のプライベートなコイントスを用い、完全完全性と高々εの強誤りを達成する定数領域検証者が存在することを示す。この検証者は多ヘッド有限オートマトンを模倣し、反論者が特定の戦略に従うことで停止性を保証し、反復による強誤りの低減を可能にしている。",
+          "keywords": [
+            "debate systems",
+            "probabilistic finite-state verifier",
+            "complexity class P",
+            "strong error",
+            "alternating multihead finite automaton"
+          ],
+          "appendix": "本論文は有限状態検証者や多ヘッド有限オートマトン（automata theory）および計算複雑性・形式言語に関連しており、automata theory や formal languages の分野と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.24217v1": {
+          "title": "漸近自律写像：ヘテロクリニック結合、分裂、および位相誘起ティッピング",
+          "summary": "本研究では、漸近的な振る舞いが保存的または散逸的になり得る漸近自律写像の反復によって生成される離散時間力学系を考察する。適切な時間コンパクト化を行うことで、過去および未来の無限遠は正規双曲不変超平面となり、系の妥当な漸近状態は安定・不安定葉層の適切なファイバーや漸近多様体の適切な切断を考えることで決定できる。この枠組みのもと、位相変化によって誘起されるティッピング（位相シフトが系の発展にどのように影響を与えるか）が、過去の方程式のコンパクト不変部分集合の不安定多様体にどのように符号化されているかを探索する。さらに、ティッピング現象を不変多様体の分裂と関連付け、ティッピングを防止できる特定の系の可逆性を特定する。本理論的枠組みは、文献で導入されている位相変化誘起ティッピングの様々な概念間の関係を明確にするものである。",
+          "keywords": [
+            "Asymptotically autonomous maps",
+            "Heteroclinic connections",
+            "Phase-induced tipping",
+            "Splitting of invariant manifolds",
+            "Normally hyperbolic invariant hyperplanes"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2609.24154v1": {
+          "title": "Baker omitted value をもつ指数多項式",
+          "summary": "本論文では、F_l(z) = P_1(z)exp(Q_1(z)) + P_2(z)exp(Q_2(z)) + ... + P_{l-1}(z)exp(Q_{l-1}(z)) + P_l(z) （ここで l ≥ 2、各 Q_i は非定数多項式、P_i (i=1,...,l-1) は多項式、P_l は非定数多項式）という形の指数多項式を考察する。無限遠点における真性特異点の近傍の F_l による逆像の位相幾何を研究し、無限遠点の任意の近傍 D に対し、逆像 F_l⁻¹(D) が連結であり、すべての境界成分が有界な無限連結領域になることを証明する（この状況において無限遠点 ∞ はその関数の Baker omitted value と呼ばれる）。さらに、これらの関数は Baker 遊走領域（Baker wandering domain）をもたず、したがってすべての Fatou 成分が単連結であることを示す。",
+          "keywords": [
+            "Exponential polynomials",
+            "Baker omitted value",
+            "Fatou component",
+            "Baker wandering domain",
+            "Essential singularity"
+          ],
+          "appendix": "本論文は複素力学系（complex dynamics）に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.24037v1": {
+          "title": "正方モデルにおけるランダム群は密度5/12以上で性質(T)を持つ",
+          "summary": "正方モデル 𝒬(n, d) におけるランダム群は、n 個の生成元と、それらに関する長さ4の巡回簡約された (2n - 1)⁴ᵈ 個の一様ランダムな関係子集合による表示で与えられる。本論文では、d > 5/12 のとき、𝒬(n, d) におけるランダム群が漸近的ほぼ確実に（a.a.s.）カジュダンの性質(T)を持つことを証明した。これにより、d ∈ (5/12, 1/2) の場合に無限語双曲的カジュダン群の新たな構成法が提供される。さらに d > 5/12 において、ランダム群が a.a.s. で増加する範囲の p に対して性質(FLᵖ)を持ち、また任意の固定された一様曲率を持つバナッハ空間 X に対して性質(F_X)を持つことを示し、境界の共形次元に対する評価を導いた。この過程で、長さ4の関係子で表示される群に対して性質(T)などの不動点性質のスペクトルリンク基準を適用する手法を考案し、トレース法を用いて必要なスペクトルギャップ仮説を検証した。",
+          "keywords": [
+            "random groups",
+            "square model",
+            "property (T)",
+            "word-hyperbolic groups",
+            "spectral gap"
+          ],
+          "appendix": "本論文は無限離散群の幾何学的・代数的構造やランダム群を扱っており、興味ある分野の「strucure of large countable infinite groups」と密接に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2609.25497v1",
+        "http://arxiv.org/abs/2609.25438v1",
+        "http://arxiv.org/abs/2609.25365v1",
+        "http://arxiv.org/abs/2609.26837v1",
+        "http://arxiv.org/abs/2609.25198v1",
+        "http://arxiv.org/abs/2609.24923v1",
+        "http://arxiv.org/abs/2609.25188v1",
+        "http://arxiv.org/abs/2609.24828v1",
+        "http://arxiv.org/abs/2609.24820v1",
+        "http://arxiv.org/abs/2609.24701v1",
+        "http://arxiv.org/abs/2609.24695v2",
+        "http://arxiv.org/abs/2609.24665v1",
+        "http://arxiv.org/abs/2609.24623v1",
+        "http://arxiv.org/abs/2609.24506v1",
+        "http://arxiv.org/abs/2609.24449v1",
+        "http://arxiv.org/abs/2609.25151v1",
+        "http://arxiv.org/abs/2609.24272v1",
+        "http://arxiv.org/abs/2609.24217v1",
+        "http://arxiv.org/abs/2609.24154v1",
+        "http://arxiv.org/abs/2609.24037v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2609.25497v1": {
+          "message_id": "1552736137074835610",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.25438v1": {
+          "message_id": "1552736145417179167",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.25365v1": {
+          "message_id": "1552736154250645536",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.26837v1": {
+          "message_id": "1552736164501258244",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.25198v1": {
+          "message_id": "1552736174093901826",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24923v1": {
+          "message_id": "1552736182486568981",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.25188v1": {
+          "message_id": "1552736191030239364",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24828v1": {
+          "message_id": "1552736199431426050",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24820v1": {
+          "message_id": "1552736207945859083",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24701v1": {
+          "message_id": "1552736216707891211",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24695v2": {
+          "message_id": "1552736224911954001",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24665v1": {
+          "message_id": "1552736232663027777",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24623v1": {
+          "message_id": "1552736240900767816",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24506v1": {
+          "message_id": "1552736248672682146",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24449v1": {
+          "message_id": "1552736257489244191",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.25151v1": {
+          "message_id": "1552736267182280846",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24272v1": {
+          "message_id": "1552736275436539935",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24217v1": {
+          "message_id": "1552736284286652498",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24154v1": {
+          "message_id": "1552736293740351518",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.24037v1": {
+          "message_id": "1552736303009759275",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-24T07:35:55.176523+00:00",
-      "updated_at": "2026-09-24T12:48:20.882736+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-24T17:39:45.081009+00:00",
+      "finalized_at": "2026-09-24T17:39:45.080983+00:00"
     }
   ]
 }
