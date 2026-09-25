@@ -64364,9 +64364,12 @@
           "message_id": "1552736137074835610",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1552956213350764575",
+          "read_requested_at": "2026-09-25T08:13:05.454820+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-25T08:13:33.948536+00:00"
         },
         "http://arxiv.org/abs/2609.25438v1": {
           "message_id": "1552736145417179167",
@@ -64436,9 +64439,12 @@
           "message_id": "1552736216707891211",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1552956358016499724",
+          "read_requested_at": "2026-09-25T08:13:39.672047+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-25T08:14:08.400234+00:00"
         },
         "http://arxiv.org/abs/2609.24695v2": {
           "message_id": "1552736224911954001",
@@ -64476,9 +64482,12 @@
           "message_id": "1552736257489244191",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1552956450337202197",
+          "read_requested_at": "2026-09-25T08:14:09.068423+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-25T08:14:30.713837+00:00"
         },
         "http://arxiv.org/abs/2609.25151v1": {
           "message_id": "1552736267182280846",
@@ -64521,7 +64530,44 @@
           "paper_thread_id": null
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2609.25497v1": {
+          "conclusion": "本論文は、動力学系の同変連続マップにおけるFeng–Huang型重み付き位相エントロピー h^w_FH(Ω, T) と被覆型重み付き位相エントロピー h^w_top(Ω, T) を、不変とは限らない任意の部分集合 Ω ⊂ X 上で比較した研究である。全空間 Ω=X では両者は一致するが、一般の部分集合では一致しない。本論文の主結果は、測度論を用いない純位相的・組合せ論的手法により、任意の非空部分集合 Ω に対し h^w_FH(Ω, T) ≦ h^w_top(Ω, T) が成立すること（定理1.1）を証明した点にある。相対重み付き変分原理の構造解明やフラクタル幾何への応用に寄与する重要な成果である。",
+          "main_claims": "主定理（Theorem 1.1, Section 1.1, p.4）: 0 ≦ w ≦ 1 とし、π: (X, T) → (Y, S) を動力学系間の同変連続マップとする。任意の非空部分集合 Ω ⊂ X に対して h^w_FH(Ω, T) ≦ h^w_top(Ω, T) が成立する。また、閉かつ非不変な部分集合 Ω に対して h^w_top(Ω, T) < h^w_FH(Ω, T) < h^w_top(Ω, T) となる具体例（Section 4, Proposition 4.2, p.32-33）を構成し、limsup版の h^w_top が本質的でありliminf版では置き換えられないことを示した。著者が主張する新規性は、既存の全空間での一致証明（[Tsu23]）が変分原理と測度論を経由していたのに対し、有限次元の組み合わせ論（線形計画法の双対性）と純位相的構造のみで直接証明した点、および非不変集合に一般化した点にある。",
+          "method_outline": "(1) 全空間 Ω=X の場合（Section 2）: 木構造 Γ 上の単位流（unit flow）を構築し、カットセットに対応するBowenボール被覆のコストを流の保存則により評価する。(2) 一般集合への拡張とスケール下降（Section 3.1）: 非不変集合では時間を前方へ延ばせないため、参照時間 N から短時間スケール（N, ⌈wN⌉, ...）へ下降するスケール下降不等式（Lemma 3.1）を導入する。(3) LP双対性の利用（Section 3.2, 3.3）: 無限次元関数解析（Hahn–Banach等）の代わりに有限次元線形計画法の双対性を用いて、有限担体確率測度に対する有限的動力学系Frostman補題（Lemma 3.5）を証明する。(4) 境界誤差の制御（Section 3.4）: 制御された例外集合を持つ分割族（Lemma 3.6）を導入し、Shannon条件付きエントロピー評価（Lemma 3.7）により境界効果を排除する。(5) 統合（Section 3.5）: これらを組み合わせて2段階被覆数とFrostman測度のエントロピーを比較し、目的の不等式を完成させる。",
+          "research_connection": "【論文に明記された接点】 symbolic dynamics: Section 4の反例構成において、アルファベット {0,1,2,3}×{0,1} 上の1側面フルシフト X や自然な射影 π、不変でない閉部分集合 Ω が直接用いられている。 combinatorics on words: Section 4の補題4.1にて、整数部分集合 I のカウント関数 A(n) の数値的挙動やKraftの不等式型の評価が使われている。 【論文内容からの推測】 complex dynamics / arithmetic dynamics: Bedford–McMullenカーペット等のフラクタル集合の幾何学的次元評価や相対変分原理を通じたアトラクター解析への応用。 automata theory / formal languages: 非不変集合上の軌道制約や部分シフトの言語理論的構造との関連。 validated numerics / structure of large countable infinite groups: 直接の記述はなく、一般群作用（amenable群等）への拡張は今後の課題と考えられる。",
+          "reading_guide": "【前提知識】 位相動力学系の基礎概念（Bowenエントロピー、Kolmogorov–Sinaiエントロピー）、線形計画法の双対性（LP duality）、Shannonエントロピーの基本性質。 【最初に読むべき箇所】 Section 1.1（背景と問題設定、Theorem 1.1）、Section 2（Ω=X に対する流を用いた直観的な証明）、Section 4（Proposition 4.2 の具体的反例）。 【精読の指針】 主なアイデアや組合せ論的直観を把握したい場合は Section 1, 2, 4 のみを読めば十分である。一般の非不変集合に対する証明の技術的詳細を把握したい場合は Section 3 を順を追って精読することを推奨する。",
+          "follow_up_questions": [
+            "Section 2 で用いられている木構造上の流（flow）の構築と、幾何学的測度論におけるFrostmanの補題の証明（BP17等）との具体的な類似点・相違点は何ですか？",
+            "Section 4 の反例において、部分集合 Ω を T-不変な閉部分集合に限定した場合、h^w_FH(Ω, T) と h^w_top(Ω, T) は常に一致しますか？",
+            "本論文で提示されたLP双対性やスケール下降不等式に基づく手法は、Z^d 作用や可当群（amenable group）作用における重み付き位相エントロピーの比較にどのように拡張できますか？"
+          ]
+        },
+        "http://arxiv.org/abs/2609.24701v1": {
+          "conclusion": "本論文は、数体K上の正規射影多様体Xと分極端型同態（polarized endomorphism）fに対し、非例外点αの逆軌道が生成する体拡大K_∞(f, α)/Kが実質可換（virtually abelian）となる条件を完全に特徴付けた研究です。結論として、それが実質可換になるのはfが複素乗法（CM）を持つ例外写像（exceptional map）であり、かつαがfの前周期点である場合に限ることを示しました（Theorem 1.6 / Theorem 7.12）。これによりAndrews-Petscheの予想（Conjecture 1.1）が肯定的に解決され、高次元代数力学系への拡張が達成されました。",
+          "main_claims": "主定理は、数体上の分極端型同態における逆軌道のGalois拡大が実質可換になるための必要十分条件の決定（Theorem 1.6 / Theorem 7.12, p.7, p.84）です。中間結果として、乗法的に独立な次数を持つ可換な分極端型同態f, gが例外写像になること（Theorem 1.5 / Theorem 5.7, p.6, p.54）、およびアーベル拡大上の小点の正則系列に対する剛性定理（Theorem 1.10 / Theorem 6.13, p.8, p.67）を証明しています。著者の新規性は、トルスとアーベル多様体のファイバー束である「AT-variety」を用いた例外写像の純代数的な新定義を導入し、Dinh-Sibonyの剛性理論を高次元射影多様体へ拡張・定式化した点にあります。",
+          "method_outline": "1. 逆軌道から構成されるアーベル点の小系列に対し、非アルキメデス的局所体上のYuanの均等分布定理を適用し、X × X 上の双有限対応（bi-finite correspondence）を構成します。\\n2. 対応の反復により幾何学的商 Y = X / R を構築し、fがY上の端型同態に下降して互いに素な次数を持つ可換端型同態gと可換になることを示します。\\n3. C上のPoincaré写像と局所アフィン剛性理論（Dinh-Sibony手法の一般多様体への拡張）を用いて、可換な端型同態がAT-varietyのd-liftから誘導される例外写像であることを証明します（Section 4, 5）。\\n4. Zarhinの定理（アーベル多様体のトーション点とCMの関係）とChebotarevの稠密性定理・Frobeniusリフトを用いて、ベースのアーベル多様体のCMの存在とGalois拡大の実質可換性の必要十分性を結び付けます（Section 7）。",
+          "research_connection": "【論文に明記された接点】代数力学系（Arithmetic Dynamics）および複素力学系（Complex Dynamics）：分極端型同態、樹状Galois表現（arboreal Galois representations）、Chebyshev多項式、Lattès写像、Dinh-Sibony剛性定理、アデール束とYuanの均等分布定理。\\n【推測される接点】\\n・Symbolic Dynamics / Automata Theory / Formal Languages：逆軌道の木構造（preimage tree）は樹状オートマトンや語の力学系（combinatorics on words）の代数的・群論的表現と関連しますが、論文内では代数幾何・数論力学系の枠組みで議論されています。\\n・Structure of Large Countable Infinite Groups：Galois群 Gal(K_∞(f, α)/K) の構造解析はプロ有限木と同相群の理論に関わります。",
+          "reading_guide": "【前提知識】数論力学系（分極端型同態、高さ関数）、代数幾何学（アーベル多様体、CM理論、torsor）、Berkovich空間と非アルキメデス的均等分布定理。\\n【最初に読むべき定義・定理】\\n・Definition 1.2 & Definition 1.4（AT-varietyと例外写像の定義, p.5）\\n・Theorem 1.5 & Theorem 1.6（主定理のステートメント, p.6-7）\\n・Definition 2.7 & Definition 2.11（双有限対応と同値関係, p.18, 20）\\n【読み方】全体の把握にはSection 1（p.2-10）とSection 3.1（p.21-28）を中心にお読みいただき、主要な代数力学系の証明を追う場合はSection 6とSection 7を精読するのが効率的です。",
+          "follow_up_questions": [
+            "AT-variety（abelian-by-torus variety）を用いた例外写像の代数的定義は、Dinh-Sibonyによる従来の解析的定義と具体的にどのように対応・一致していますか？",
+            "Gal(K_∞(f, α)/K) が実質可換にならない一般的なケースにおいて、そのGalois群の大きさや構造についてどのような動的・幾何学的特徴付けが予想されますか？",
+            "Yuanの非アルキメデス的均等分布定理を用いて双有限対応を構築する手法は、他の小点系列や代数力学系の剛性問題にどのように応用可能ですか？"
+          ]
+        },
+        "http://arxiv.org/abs/2609.24449v1": {
+          "conclusion": "複素Hénon写像のモノドロミー作用に関連する単一マーカー端型射（single marker endomorphism）が全単射（自己同型）になるための必要十分条件として「飽和（saturated）」概念を導入し、それが対合（involution）と同値であることを証明した論文。さらに複合マーカー端型射をHedlundの置換可能関数（permutive functions）として再定式化し、シフト空間の自己同型群Aut(Σ2)の構造解析に寄与している。",
+          "main_claims": "主結果は第3節のTheorem 3.3（5ページ）。語α, ωで生成される単一マーカー端型射ϕ=α*ωにおいて、(1) ϕが飽和（saturated）である、(2) ϕが対合（involution）である、(3) ϕが全単射である、の3条件が同値であることを示した。新規性として、従来判定が困難であった単一マーカー射の全単射性を計算可能な組み合わせ論的条件（飽和）に帰着させた点、および第6節Theorem 6.4（9ページ）で複合マーカー端型射の全体がHedlund(1969)のx0で置換可能な関数の集合P_∞と一致することを示した点が挙げられる。",
+          "method_outline": "証明・手法の骨格は以下の通り。1. 単一マーカー端型射における文字の「交換」が干渉しない条件として飽和性（Definition 3.1）を定義。2. 飽和性から対合（したがって全単射）であることを直接的に証明（Theorem 3.3の順方向）。3. 未飽和な文字が存在する場合、周期的な系列や不変なブロック構造を構築して単射性の破綻（非全単射性）を背理法的に証明（Lemma 3.4, Lemma 3.5）。4. 複合マーカー端型射については、Hedlund(1969)のシフト空間上の連続可換写像の理論を適用し、中心変数x0に関する置換可能性（permutive）の概念と1対1に対応させる（Theorem 6.4）。既存のHedlundの理論やAraiの区間演算アルゴリズムを活用しつつ、マーカー射の自己同型判定を統一的に整理した。",
+          "research_connection": "明記された接点：【complex dynamics / symbolic dynamics】複素Hénon写像のパラメータ空間におけるモノドロミー作用と、2文字シフト空間Σ2上の同相写像群Aut(Σ2)の関連。【combinatorics on words】語の重ね合わせ（overlaps）や飽和語を用いた端型射の解釈。【validated numerics】Appendix Aでの区間演算によるJulia集合の精度保証付き計算とモノドロミー検証。【automata theory / structure of large countable infinite groups】Hedlund(1969)によるシフト自己同型群Aut(Σ2)の構造解析とその生成系問題（Hubbard予想・Lipa予想）。（推測による接点：セルオートマトンの可逆性判定への応用）。",
+          "reading_guide": "前提知識：記号力学系（シフト空間Σ2とAut(Σ2)）、複素力学系の基礎概念。最初に読むべき箇所：第2節のDefinition 2.1, 2.2（マーカー端型射の定義）、第3節のDefinition 3.1とTheorem 3.3（主定理）。該当節のみでよいか：単一マーカー射の判定基準に興味がある場合は第2節〜第4節の解読で十分。モノドロミー作用やAut(Σ2)の生成系問題との関わりに興味がある場合は第1節, 第2節, 第6節およびAppendix Aを併せて精読するのが望ましい。",
+          "follow_up_questions": [
+            "複合マーカー端型射（compound marker endomorphisms）に対して、単一マーカー射における「飽和（saturated）」のような直観的かつ計算可能な全単射性判定基準を拡張構成することは可能ですか？",
+            "第6節のTheorem 6.4で示されたHedlundの置換可能関数P_∞との対応を用いて、複合マーカー自己同型とシフト写像σがAut(Σ2)を生成するかというQuestion 2.6に対する部分的な回答やアプローチは得られていますか？",
+            "Appendix Aで紹介されているAraiの区間演算アルゴリズムを用いて、実際にサイズが大きい単一マーカー自己同型や高次複合マーカー自己同型がHénon族のモノドロミー群Γに含まれるかを数値的に自動判定する際の実用的な上限や計算量のボトルネックは何ですか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
