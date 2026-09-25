@@ -64577,7 +64577,7 @@
     },
     {
       "pipeline_id": "20260925T074820Z-f119b033",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/r91m2n0p48s68inu2z7lq6h3kurd4if6tejo",
       "summarize_job_name": "batches/yqwki3yplzjct3oy708mcxi2a0j2gbe0df2l",
       "papers": [
@@ -65946,16 +65946,206 @@
         "http://arxiv.org/abs/2609.25739v1",
         "http://arxiv.org/abs/2609.25603v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2609.26650v1": {
+          "title": "すべてのリスト復号可能削除符号に対する下界",
+          "summary": "本論文では、符号語からkビットが削除された後に、元の符号語を含むサイズ高々tのリストを特定できる「t-リスト復号可能k-削除符号」について考察している。著者らは、t-リスト復号可能k-削除符号の最適サイズに対する下界Ω_k(2ⁿ t (log n)^(1/t) / n^(k + k/t))を証明した。これは、2-リスト復号可能2-削除符号に対する既存の最良の下界を√(log n)改善するものであり、t > 2またはk > 2の場合における初の非自明な下界を与えるものである。この下界はすべてのt ≤ n^kに対して成り立ち、t = Ω(log n)のときリスト復号可能削除符号の最適サイズがΘ_k(2ⁿ t / n^k)となり、既知の上界と漸近的に一致することを示している。また、任意の2つの二進文字列に対して、指定された長さを持つ共通部分列および共通超列の個数に関する上界も証明している。",
+          "keywords": [
+            "List-Decodable Deletion Codes",
+            "Deletion Codes",
+            "Common Subsequences",
+            "Common Supersequences"
+          ],
+          "appendix": "本研究で扱われている共通部分列や共通超列の組合せ論的性質、および文字列（二進列）の削除符号に関する解析は、組合せ論的文字列論（combinatorics on words）および形式言語理論（formal languages）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.26646v1": {
+          "title": "プロパー近接的でない性質(T)を持つICC群",
+          "summary": "本論文では、カジュダンの性質(T)を持ち、かつプロパー近接的（properly proximal）ではないSL₇(ℚ)の明示的なICC部分群を提示する。",
+          "keywords": [
+            "ICC group",
+            "Kazhdan's property (T)",
+            "properly proximal",
+            "SL_7(Q)"
+          ],
+          "appendix": "無限群の構造や性質（性質(T)やICC群、近接性など）を扱っており、指定された分野のうち「strucure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.26396v1": {
+          "title": "整除順序により定義される半環の有限基底と結び",
+          "summary": "本論文では、可換な語の部分語に整除順序を備えさせることで得られる加法冪等半環を研究する。1文字の冪に対応する有限半環は常に有限基底を持つ（finitely based）のに対し、線形な語に対応するものは語の長さが2以下の場合に限って有限基底を持つことを示す。ハイパーグラフ保存補題を用いて有限基底を持たない結果を導き、それを多様体の区間に拡張する。また、冪族と線形族の間の明確な包含基準を確立し、両族の各元によって生成される2つの多様体の結び（join）の有限基底性を決定する。さらに、非有界な冪族は有限基底を持たないmax-plus多様体を生成するが、非有界な線形族やそれと各有限冪元との結びは有限基底を持つことを示す。加えて、既存の6元極限半環を8元の線形語半環の部分半環の商として実現し、真の有限基底を持たない部分多様体を与えることで、対応する極小性の問題を解決している。",
+          "keywords": [
+            "additively idempotent semirings",
+            "divisibility order",
+            "finitely based",
+            "varieties",
+            "limit semiring"
+          ],
+          "appendix": "本論文で扱われている可換な語（commutative words）や部分語（subwords）に基づく代数構造の解析は、興味ある分野のうち「combinatorics on words」や「formal languages」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.26047v1": {
+          "title": "認識可能画像言語：通信計算量によるURECとcoURECの分離",
+          "summary": "本論文では、認識可能画像言語（recognizable picture languages）の研究に通​​信計算量のリフティング手法を導入する。その応用として、補集合がRECに属さないUREC内の言語を構成することにより、Anselmoら（2006）による長年の未解決問題を解決した。この下界の証明手法は、Göösら（2022）による一義的オートマトンへの通信計算量アプローチに着想を得ているが、画像言語の設定への適用には大幅に異なる技術的要素が必要となる。",
+          "keywords": [
+            "Recognizable Picture Languages",
+            "Communication Complexity",
+            "UREC",
+            "REC",
+            "Unambiguous Automata"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.26022v1": {
+          "title": "2色による完全矩形タイリング",
+          "summary": "4つの辺が2色のうちいずれか1色で塗られた単位正方形タイルを用いた有限タイリング問題を研究する。タイルの回転を許容した上で、与えられた矩形に対して、各セルが1つのタイルで占められ、隣接する辺の色が一致し、タイプ i のタイルがちょうど nᵢ 枚使用される「完全矩形タイリング」が存在するかどうかを問う。古典的なワンのタイリングや一般的な有限タイル配置問題とは異なり、タイルの種類（アルファベット）は固定かつ極小であり、各タイルの重複度（枚数指定）が入力の一部となるため、矩形のサイズと指定された重複度との相互作用から問題の計算複雑性が生じる。本研究では、2色辺タイルで可能な全6種類のタイルの部分集合の全クラスを網羅的に考察し、各クラスについて、常に完全矩形タイリングが可能であるか、あるいはその存在を効率的に判定可能であるかを特徴付けている。",
+          "keywords": [
+            "finite tiling problem",
+            "perfect rectangular tiling",
+            "Wang tilings",
+            "tile multiplicities",
+            "computational complexity"
+          ],
+          "appendix": "本研究で扱われるタイリング問題は、記号力学系（symbolic dynamics）やオートマトン理論（automata theory）における2次元シフト空間（多次元サブシフト）や有限制約充足問題とも密接に関連する数理構造を含んでいます。"
+        },
+        "http://arxiv.org/abs/2609.25915v1": {
+          "title": "対応関係に対する非線形熱力学形式",
+          "summary": "本論文では、コンパクト距離空間上の対応関係（correspondence）に対する非線形熱力学形式を構築している。連続なエネルギーは連続する状態の対の経験測度上で評価され、定常遷移対の測度論的圧力は核エントロピーと2つの連続する状態の結合分布のエネルギーの和として定義される。エルゴード的豊富性条件を満たす前方拡張的な対応関係に対して、変分原理および非線形平衡対の存在を証明した。さらに、漸近的に最大化するギブス集団の2座標射影の極限が平衡対の2座標分布の平均となることを示した。エネルギーが許容対の空間上の有限個のポテンシャルに依存する場合、ルジャンドル正則性仮定の下で自己無撞着方程式と大域最大化条件を通じて線形平衡対の中から非線形平衡対を同定した。また、1次元の実解析性と線形平衡対の一意性から非線形平衡集合の有限性が導かれる。有限状態の例では、連続転移および一次転移、準安定性、1座標周辺分布は同一だが2座標分布が異なる相が現れることを示し、テイラー展開に基づく基準によって関連する臨界指数を決定した。",
+          "keywords": [
+            "thermodynamic formalism",
+            "correspondences",
+            "variational principle",
+            "nonlinear equilibrium pairs",
+            "Gibbs ensembles"
+          ],
+          "appendix": "本研究は力学系・熱力学形式を扱っており、興味ある分野のうち symbolic dynamics や complex dynamics と関連する可能性があります。"
+        },
+        "http://arxiv.org/abs/2609.25742v1": {
+          "title": "素数を法とする(3,2) Raney数のゼロ連スペクトル",
+          "summary": "本論文では、素数 p を法とする (3,2)-Raney 数列におけるゼロの連続（ゼロ連）の構造を研究している。任意の素数 p に対して、ゼロ連の長さの左から右への最大値（歴代最大値）、完全なゼロ連スペクトル、および 0 ≤ n < pᵐ の範囲における非ゼロ項の正確な数を決定した。これらの振る舞いは p=2、p=3、p ≥ 5 の3つのケースに分かれ、それぞれ大きく異なる。p=2 の場合は奇数項を完全に特徴づけて歴代最大値の位置を決定し、Fibbinary整数、フィボナッチ数、ヤコブスタール数が関与することを示した。p=3 の場合は非ゼロ項とその剰余を完全に特徴づけた。p ≥ 5 の場合は、ゼロ連が p の累乗を法とする剰余区間のマルチスケールシステムによって支配されることを示し、それを通じて記録値と完全なゼロ連スペクトルの両方を導出した。",
+          "keywords": [
+            "Raney numbers",
+            "zero-run spectrum",
+            "Fibbinary integers",
+            "Fibonacci numbers",
+            "Jacobsthal numbers"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2609.25739v1": {
+          "title": "切断五角数級数の正値性とMercaのいくつかの予想について",
+          "summary": "正の整数 m の2進付値を ν₂(m)、Nₘ = m(1 + ν₂(m)/2) と定義する。本論文では、無限積 ∏_{m≥1} (1 - q^(2Nₘ)) および ∏_{r≥1} (q^(2^r r); q^(2^(r+1)r))_∞ で重み付けされた切断五角数級数の非負性に関する Merca の4つの予想を証明する。著者らの手法は、指数写像 m ↦ m(ν₂(m) + 2) を正の整数上の力学系と見なすことである。関連する商の因子はその前方軌道に沿って鎖状に結合し、1、4、5 を起点とする3つの軌道は互いに素であり、1/((1 - q)(1 - q⁴)(1 - q⁵)) に望遠鏡和（積）のように簡約される。Liu の先行研究の意味で指数三つ組 (1, 4, 5) は許容可能であり、これにより非負係数を持つ2つの級数への所望の因数分解が得られる。この軌道望遠鏡法（orbit telescoping technique）は、この種の正値性に関する既存の多くの結果の基礎となっている Pólya–Szegő の判定法を補完するメカニズムであると考えられる。",
+          "keywords": [
+            "truncated pentagonal number series",
+            "Merca's conjectures",
+            "2-adic valuation",
+            "orbit telescoping technique",
+            "Pólya-Szegő criterion"
+          ],
+          "appendix": "本論文で用いられている手法（正の整数上の指数写像を力学系とみなすアプローチ）は、数論的力学系（arithmetic dynamics）や記号力学系（symbolic dynamics）の観点と関連性があります。"
+        },
+        "http://arxiv.org/abs/2609.25603v1": {
+          "title": "シンボリック有限状態機械のテストと学習",
+          "summary": "シンボリック有限状態機械（SFSM）は、無限データ領域を許容するガードと出力割り当てを用いて入出力挙動を記述するモデルである。本研究では、ガードおよび出力割り当てが現在の入力のみに依存する、決定的かつ完全指定されたSFSMを対象とする。ガードの関連する重複に対する証拠や、それらの重複上で異なる出力割り当てを分離する証拠を含む有限な代表入力集合を定義し、有限な具体化における言語等価性が全入力領域上の言語等価性を導くという主定理を示した。これにより、許容されるガードと出力割り当ての有限集合、および識別可能な到達可能状態数の上限が既知である場合、決定的有限状態機械（DFSM）の完全テスト手法をSFSMへと転用可能となる。さらに、代表入力集合のサイズに関する限界を導出し、特定の仮定の下で正当性と停止性が保証されるSMTに基づく構築法を提案した。",
+          "keywords": [
+            "Symbolic finite state machines",
+            "Language equivalence",
+            "Complete testing",
+            "Automata learning",
+            "SMT solver"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2609.26650v1",
+        "http://arxiv.org/abs/2609.26646v1",
+        "http://arxiv.org/abs/2609.26396v1",
+        "http://arxiv.org/abs/2609.26047v1",
+        "http://arxiv.org/abs/2609.26022v1",
+        "http://arxiv.org/abs/2609.25915v1",
+        "http://arxiv.org/abs/2609.25742v1",
+        "http://arxiv.org/abs/2609.25739v1",
+        "http://arxiv.org/abs/2609.25603v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2609.26650v1": {
+          "message_id": "1553043356186312787",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.26646v1": {
+          "message_id": "1553043365581561939",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.26396v1": {
+          "message_id": "1553043373709983856",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.26047v1": {
+          "message_id": "1553043382073303151",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.26022v1": {
+          "message_id": "1553043390533476495",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.25915v1": {
+          "message_id": "1553043398880141323",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.25742v1": {
+          "message_id": "1553043407608221737",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.25739v1": {
+          "message_id": "1553043417146200197",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.25603v1": {
+          "message_id": "1553043426214158439",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-25T07:48:20.672814+00:00",
-      "updated_at": "2026-09-25T08:26:48.108137+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-25T14:00:08.934957+00:00",
+      "finalized_at": "2026-09-25T14:00:08.934926+00:00"
     }
   ]
 }
