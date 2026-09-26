@@ -67643,9 +67643,12 @@
           "message_id": "1553409637607284858",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1553459675587158017",
+          "read_requested_at": "2026-09-26T17:33:37.121299+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-26T17:34:08.759675+00:00"
         },
         "http://arxiv.org/abs/2609.28207v1": {
           "message_id": "1553409646180704279",
@@ -67667,9 +67670,12 @@
           "message_id": "1553409662274113582",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1553459797133631632",
+          "read_requested_at": "2026-09-26T17:34:09.490053+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-09-26T17:34:37.721266+00:00"
         },
         "http://arxiv.org/abs/2609.28023v2": {
           "message_id": "1553409670721314877",
@@ -67704,7 +67710,32 @@
           "paper_thread_id": null
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2609.28264v1": {
+          "conclusion": "本論文は、微分力学系の統計的複雑性を数量化する指標として著者が提唱した「エマージェンス（emergence）」に関する最近の研究進展と新規結果を網羅的にまとめたサーベイ論文です。統計的挙動を精度ϵで記述するのに必要な確率測度の最小数の成長率（超多項式的増加＝高エマージェンス）に着目し、エルゴード分解の量子化数（quantization number）との関係、高エマージェンスの典型的性（Kolmogorov typicality等）、局所エマージェンス、変分原理、エントロピー理論との対比などを体系的に解説しており、力学系の統計性質に関心のある研究者にとって必読の内容です。",
+          "main_claims": "1. 非保存系への拡張と物理測度：第2測度エマージェンス E'_μ(f) を導入し、その値が有限であれば全測度領域を被覆するバシンを持つ物理測度が有限個存在することを示した（Theorem 1.4, Section 1.1, p.5）。また非エルゴード系における量子化数との同値性を一般化した（Theorem 1.14, Section 1.2, p.7）。 2. 高エマージェンスの典型的性と具体例：シンプレクティック系（Theorem 2.3-2.5, p.11-12）、解析的疑似回転（Theorem 2.6, p.12）、迷入安定領域を持つ散逸系や複素Hénon写像（Theorem 2.9-2.10, p.14）、1次元二次マップや rational maps の分岐 locus における最大振動（Theorem 2.11-2.12, p.15）において高エマージェンスが存在・典型的であることを提示した。 3. 数学的性質の証明：測度の凸結合に対する局所エマージェンスの線形性（Theorem 4.4, p.20）、分割エントロピーによる下限評価（Theorem 4.13, p.23-24）、および第2位相エマージェンスに対する変分原理（Theorem 4.18, p.26）を新規に証明した。",
+          "method_outline": "1. 概念の定式化：経験測度 e_n^f(x) の弱*位相での被覆数や、エルゴード分解に対するKantorovich-Wasserstein距離上の量子化数（quantization number）を用いて各エマージェンスを定義（Section 1）。 2. 高エマージェンス系の構築手法：KAM理論、Anosov-Katokの共役近似法（AbC原理）、Newhouseドメインにおける迷入領域（wandering domains）、Hofbauer-Keller型パラメータの最大振動解析を組み合わせて具体例を構成（Section 2）。 3. エントロピー理論との対比：位相/測度エントロピー、Margulis-Ruelle不等式、Ledrappier-Youngの定理等と直交・並行する概念をまとめた辞書（Table 1）を作成（Section 3）。 4. 解析的証明：Helfterのスケール解析と Hausdorff/Packing 位数を用いて測度の凸結合に対する局所エマージェンスのアフィン性を証明し、Borel集合上の測度構成により変分原理を導出（Section 4）。",
+          "research_connection": "【論文に明記された接点】Symbolic dynamics（Subshifts of finite type における点状エマージェンスや不規則軌道の研究 [NZ21] への言及, p.4）、Complex dynamics（複素有理関数の分岐集合 Bif_d における最大振動や、C^2の複素Hénon写像の迷入Fatou成分, p.14-15）。 【推測による接点】Combinatorics on words / Automata theory / Formal languages：不規則軌道上の文字系列の非周期性・統計的複雑性の解析と関わります。Arithmetic dynamics：有理関数や多項式自同構のパラメータ空間における高エマージェンスの数論的類似。Validated numerics：高エマージェンス系は長時間の軌道統計の計算困難性（Cobham's thesis, p.10）を意味するため、数値シミュレーションの精度保証や限界評価の理論的根拠となります。Structure of large countable infinite groups：無限群作用におけるエルゴード分解や空間のエマージェンスへの拡張。",
+          "reading_guide": "【前提知識】エルゴード理論の基礎（Birkhoffのエルゴード定理、エルゴード分解）、確率測度空間上のKantorovich-Wasserstein距離と弱*位相、ボックス次元（Box dimension）および位数（Order）の定義。 【最初に読むべき箇所】Definition 1.1 & 1.2（測度エマージェンスの定義, p.4）、Theorem 1.12 & 1.14（量子化数との同値性, p.7）、Table 1（エントロピーとの対比辞書, p.16）。 【読書方針】概念の全貌やオープンプロブレムの把握が目的であればSection 1, Section 2.1, Section 3の精読で十分です。証明の論理（Helfterのスケール理論や変分原理の導出）を追いたい場合はSection 4を解読してください。",
+          "follow_up_questions": [
+            "Helfterのスケール理論に基づく局所エマージェンスと測度エマージェンスの不等式（Theorem 1.19）において、等号が成立するための力学系的な必要十分条件は何ですか？",
+            "Problem 3.5 に挙げられている Chirikov standard map や planar C^1-horseshoe、あるいは宇宙論モデル（Wainwright-Hsu ベクトル場）において、高エマージェンスの存在を証明する上での主な数学的障害は何ですか？",
+            "第2位相エマージェンスに関する変分原理（Theorem 4.18）において、最大位数を与える確率測度 μ の特徴づけや一意性（Problem 3.7 に関連する標準的測度の存在）はどのように議論されていますか？"
+          ]
+        },
+        "http://arxiv.org/abs/2609.28059v1": {
+          "conclusion": "本論文は有限アルファベット上の無限語におけるAbelian maximal pattern complexity（アーベル極大パターン複雑性）の下限・構造定理・極値的挙動を解明した研究です。再帰的非周期語に対する最小複雑性の実現条件（分離(ℓ-1)-interleaving構造）、非再帰語を含む一般の非周期語における漸近的平方根則 L_ℓ^ab(k) ~ √(2(ℓ-1)k)、および2進Abelian pattern Sturmian語の二部グラフ（フォレスト構造）による完全なグラフ理論的特徴付けを確立しており、象徴力学系や語の組合せ論における重要文献として読む価値が高いです。",
+          "main_claims": "1. Theorem A (Section 3.2, p.12): ℓ ≥ 2文字の再帰的非周期語 α に対して、任意の k ∈ N で p*ab_α(k) ≥ k + ℓ - 1 が成立する。 2. Theorem B (Section 4.2, p.15): ℓ ≥ 2文字の再帰的非周期語 α がすべての k で p*ab_α(k) = k + ℓ - 1 を満たす必要十分条件は、α が再帰的非周期2進語の分離(ℓ-1)-interleavingであることである。 3. Theorem C (Section 6.2, p.36): 各文字が無限回現れる非周期語 α ∈ A_ℓ に対し、k ≥ m(m-1)/(2(ℓ-1)) + ℓ - 2 ならば p*ab_α(k) ≥ m。これにより L_ℓ^ab(k) = √(2(ℓ-1)k) + O_ℓ(1) を導出 (Theorem 6.18)。 4. Theorem D (Section 5.1, p.24): 語 α が最終周期語であることと、ある k で p*ab_α(k) < f(k) （ここで f(k) = ⌈(1+√(8k+1))/2⌉）となることは同値である（Morse-Hedlund型定理の対応物）。 5. Theorem E (Section 7.1, p.41): 語 x が Abelian pattern Sturmian 語である必要十分条件は、x が2進文字の特性語 1_D であり、対応する二部グラフ Γ_D が閉路を持たない（フォレストである）ことである。",
+          "method_outline": "証明と手法の骨格は以下の通りです： 1. 選択補題と超定常性（superstationarity）: Kamae-Zamboniらの論法を拡張し、再帰語から尾部凍結（tail-freezing）性質を持つ超定常サブシステムを構成して下限を導出 (Section 3)。 2. 留数分解と分離の解析: 周期Quotient wordの極小周期 m に着目し、唯一の非周期留数とその他の定数留数への分解構造（分離interleaving）を特定 (Section 4)。 3. Ramsey理論とSidon集合: 2進極小複雑性の評価においてRamseyの定理を用いて一定パターンの出現を示し、最終周期性の判定条件を確立 (Section 5)。 4. 規準分割とアフィン独立性: アルファベットの極大周期分割 P_* を定義し、対応する残留グラフ上のベクトル列のアフィン独立性から一般のアルファベット依存下限を導出 (Section 6)。 5. 二部グラフの閉路解析: 特性語 1_D のパターン計数を二部グラフ Γ_D の辺数評価に帰着させ、閉路の存在がパターン数を過剰に増やすことを示してフォレスト構造と同値であることを証明 (Section 7)。",
+          "research_connection": "【論文に明記された接点】 symbolic dynamics（象徴力学系）、combinatorics on words（語の組合せ論）、formal languages / automata theory（有限オートマトン・語の複雑性理論）。 【論文内容からの推測】 arithmetic dynamics / additive combinatorics（Sidon集合や二部グラフの構造との接続から加法組合せ論や算術力学系への応用が期待される）、structure of large countable infinite groups（パターン複雑性の群作用への一般化）、validated numerics（極大パターンの特徴付けによる組合せ的構造の計算機検証）。",
+          "reading_guide": "【前提知識】 象徴力学系の基本概念（シフト作用、軌道閉包、再帰性、Parikhベクトル）、標準的なグラフ理論（二部グラフ、誘導部分グラフ、Sidon集合）。 【最初に読むべき箇所】 概要把握には Section 1（導入・主結果の一覧）、Definition 1.4 および Definition 1.5/Theorem E (p.5)。概念の定義の確認には Section 2。 【精読の方針】 全体像を掴むには Section 3.2, 4.2, 5.1, 7.1 の主定理の証明の核心を追い、アルファベット数依存の厳密な評価技法を知りたい場合に Section 6 を詳しく読むのが効率的です。",
+          "follow_up_questions": [
+            "Theorem Cにおける加法項 ℓ - 2 を除去して (m choose 2) ≤ (ℓ - 1)k ⇒ p*ab_α(k) ≥ m に強めることは可能ですか？（Question 7.17関連）",
+            "ℓ ≥ 3 において、すべての k ≥ 1 に対し同時に L_ℓ^ab(k) を達成する単一の極大語 α_ℓ は存在しますか？（Question 7.18関連）",
+            "Abelian pattern Sturmian 語を定義する二部グラフ Γ_D のフォレスト条件は、その軌道閉包 O(x) のエルゴード的性質や不変測度の構造にどのような影響を与えますか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
