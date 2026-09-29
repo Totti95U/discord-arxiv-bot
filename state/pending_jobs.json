@@ -69782,7 +69782,7 @@
     },
     {
       "pipeline_id": "20260929T083006Z-51b5baee",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/3pn39qxouf6qinbuepy19akygz4tol8lt7ua",
       "summarize_job_name": "batches/s3jogfce7pu6cjv2ad07q6d5o0xuzwvpkie8",
       "papers": [
@@ -70343,16 +70343,144 @@
         "http://arxiv.org/abs/2609.32356v1",
         "http://arxiv.org/abs/2609.32181v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2609.32912v1": {
+          "title": "有限トレース上のLTLに対する先見的モニタリングにおけるプログレッション対オートマトンに基づく手法の比較（拡張版）",
+          "summary": "安全性が重視されるシステムにおいて、仕様が未知またはアクセス不能な場合、実行時検証はシステムの正しさを確認する有効な手法である。本論文では、観測されたトレースの接頭辞と将来起こり得る有限長の継続の両方に基づいて状態を判定する高度な実行時検証である「先見的モニタリング（anticipatory monitoring）」を扱う。特に算術制約を含む可能性のある線形時相論理（LTL）特性のモニタリングに着目する。デファクトスタンダードであるオートマトンに基づく手法は計算量が大きいという問題があるため、プログレッションとLTLf充足可能性判定に基づく代替手法を提案している。実験の結果、特に算術設定においてオートマトン構築が終了しない場合でもプログレッションベースの手法が有効に判定を出せること、また命題論理の設定では両者を組み合わせた手法が優れたトレードオフを提供することが示された。",
+          "keywords": [
+            "anticipatory monitoring",
+            "runtime verification",
+            "LTL over finite traces",
+            "progression",
+            "automata-based monitoring"
+          ],
+          "appendix": "本研究は「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.32900v1": {
+          "title": "制約は連鎖ではなくグラフである：拡散言語モデルのための厳密なデコーディング",
+          "summary": "拡散言語モデル（dLLM）における従来の厳密な制約付きデコーダは制約を系列言語として符号化するため、位置間の関係制約に対してオートマトンや文脈自由文法の状態数が指数関数的に増大する課題があった。本論文では、有限領域の関係をファクターグラフとして表現し、ノイズ除去の各ステップにおいて変数消去法によりモデルの平均場予測を厳密に条件付けるトレーニングフリーなデコーダ「FactorDLM」を提案する。有限オートマトンを鎖状のファクターグラフとみなすことで、構文制約と非局所的な関係制約を統合して適用可能となり、計算コストはオートマトンのサイズではなく制約グラフの誘導幅に依存する。実験では、9つのベンチマークと3つのバックボーンにおいて、わずか0.4〜6.9%の射影オーバーヘッドで制約充足率100%を達成し、CP-SATと比較して大幅な高速化を実現した。",
+          "keywords": [
+            "Diffusion language models",
+            "Constrained decoding",
+            "Factor graphs",
+            "Variable elimination",
+            "Finite automaton"
+          ],
+          "appendix": "本論文は制約表現として有限オートマトン（finite automaton）や文脈自由文法（context-free grammar）を扱っており、興味ある分野の「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2609.32820v1": {
+          "title": "所属質問と対照的な例を用いたシャッフルイデアルの学習",
+          "summary": "本論文では、所属質問（membership queries）および対照質問（contrastive queries：選択された単語wが対象言語に含まれるか否かだけでなく、含まれない場合に最も類似した対象言語内の単語w'を提示する形式の所属質問）を用いたシャッフルイデアルの学習について研究している。両方の設定において、非常に単純なシャッフルイデアルのクラスでさえ効率的に学習できないことが示される。一方で、特定の構造的条件を満たすシャッフルイデアルのクラスに対しては肯定的な学習可能性の結果を得ている。所属質問の場合、この構造的条件は先行研究にある普遍単語（universal words）の概念に関連しており、単語の組合せ論における新たな問題を提起する。対照質問の場合、構造的条件はショートレックス順（shortlex order）で並べられた単語集合の分割に関連している。",
+          "keywords": [
+            "shuffle ideals",
+            "membership queries",
+            "contrastive queries",
+            "universal words",
+            "shortlex order"
+          ],
+          "appendix": "本論文は「combinatorics on words」および「formal languages」に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.32703v1": {
+          "title": "指数写像の hair の非解析性",
+          "summary": "0 < λ < 1/e における指数写像 f_λ(z) = λeᶻ について、Devaney と Krych (1984) はそのジュリア集合が互いに素な hair の集まりで構成されることを示し、Viana (1988) はこれらの hair が C^∞ 級であることを証明した。本論文では、自明なものを除き、これらの hair が解析的ではないことを示し、長年の未解決問題を解決する。",
+          "keywords": [
+            "exponential maps",
+            "Julia set",
+            "hairs",
+            "non-analyticity"
+          ],
+          "appendix": "本論文は複素力学系 (complex dynamics) の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2609.32356v1": {
+          "title": "2×2上三角ブール行列半環および接続半環に対する有限基底問題",
+          "summary": "本論文では、シグネチャ (+, ·) における8元からなる2×2上三角ブール行列半環に対して、明示的な有限等式基底を与える。この基底は、既知の乗法基底、加法冪等半環（ai-semiring）の法則、およびそれぞれ最大8変数を使用する30個の混合等式で構成される。証明では、乗法簡約に対する有限基底と、語のシャッフル、マークされた出現の複製、指定された証拠（witness）を追加しながらの隣接出現の交換に関する有限規則を組み合わせることで、「1文字ギャップ判定基準（one-letter gap criterion）」をあらゆる有効な半環等式の導出へと変換する。さらに、帯多様体、多様体束の特定の156元区間、合同関係、平坦な元、自由代数の有限表現についても研究を行っている。m ≥ 2 に対して、すべての m 文字の語は長さ最大 m² の等価な部分語を持ち、自由代数は二重指数関数的なランク増大度を示す。また、任意の半順序集合に対して、ブール関係半環および非自明な有界分配束上の有限台を持つ接続半環の等式論理を決定し、有限の高さ h は Tₕ の理論を導き、非有界な高さはすべての加法冪等半環の等式と正確に一致することを示している。",
+          "keywords": [
+            "finite basis problem",
+            "triangular Boolean matrix semirings",
+            "incidence semirings",
+            "ai-semiring",
+            "equational theory"
+          ],
+          "appendix": "語のシャッフルや部分語の長さの簡約など、語の組合せ論（combinatorics on words）に関連する手法が用いられています。"
+        },
+        "http://arxiv.org/abs/2609.32181v1": {
+          "title": "算術力学系における非常に疎な回帰集合",
+          "summary": "力学的Mordell-Lang予想（DML問題）をp進的手法により研究する中で、p進版のDML問題における回帰集合が非常に疎になり得ることが知られています。本論文では、複素解析版のDML問題および逆軌道に対するDML問題において、同様の現象を調査・検証します。",
+          "keywords": [
+            "arithmetic dynamics",
+            "dynamical Mordell-Lang conjecture",
+            "p-adic method",
+            "return sets",
+            "backward orbits"
+          ],
+          "appendix": "本論文は「arithmetic dynamics」および「complex dynamics」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2609.32912v1",
+        "http://arxiv.org/abs/2609.32900v1",
+        "http://arxiv.org/abs/2609.32820v1",
+        "http://arxiv.org/abs/2609.32703v1",
+        "http://arxiv.org/abs/2609.32356v1",
+        "http://arxiv.org/abs/2609.32181v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2609.32912v1": {
+          "message_id": "1554511760076050555",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.32900v1": {
+          "message_id": "1554511767873527831",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.32820v1": {
+          "message_id": "1554511776442220545",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.32703v1": {
+          "message_id": "1554511784814059624",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.32356v1": {
+          "message_id": "1554511794020548712",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2609.32181v1": {
+          "message_id": "1554511809292009523",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-09-29T08:30:06.383085+00:00",
-      "updated_at": "2026-09-29T12:10:18.617879+00:00",
-      "finalized_at": null
+      "updated_at": "2026-09-29T15:14:58.569161+00:00",
+      "finalized_at": "2026-09-29T15:14:58.569114+00:00"
     }
   ]
 }
