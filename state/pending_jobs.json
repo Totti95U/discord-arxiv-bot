@@ -73316,9 +73316,12 @@
           "message_id": "1555212190804484278",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1555850147097739295",
+          "read_requested_at": "2026-10-03T07:52:40.223353+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-10-03T07:53:01.562370+00:00"
         },
         "http://arxiv.org/abs/2609.35632v1": {
           "message_id": "1555212198870130704",
@@ -73425,7 +73428,20 @@
           "paper_thread_id": null
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2609.35638v1": {
+          "conclusion": "本論文は、車の希望駐車位置が埋まっていた場合に「最も遠い空きスペース」を選択するという「欲求不満な駐車関数（Frustrated Parking Functions, FPF）」を新しく提案し、その列挙的性質を明瞭に解明した研究です。長さnのFPFの総数が(2n-1)!!になることや、高さ付きDyckパスとの全単射対応、Lucky car/spotの分布が第2種オイラー数やFubini数で表されることを示し、さらにグラフ上の駐車ルール（Largest neighbor parking functions）への一般化を行っています。",
+          "main_claims": "1. 長さ n の FPF の総数は double factorial である (2n-1)!! に一致する (Theorem 2.18, Section 2.3, p.13)。 2. k 個の lucky car（希望位置に停められた車）または lucky spot を持つ FPF の数は第2種オイラー数 <<n, k>> である (Corollary 2.19, Section 2.3, p.14)。 3. 任意の指定集合 T ⊆ [n] に対し、lucky spot の集合が T である FPF の数と、lucky car の位置集合が T である FPF の数は等しい (|LS_T^n| = |LC_T^n|) (Theorem 2.22, Section 2.4, p.14)。 4. 最初の k 台/スポットが lucky である FPF の数は k! S(n, k) であり、一度 unlucky が発生すると以降すべて unlucky となる FPF の数は第 n Fubini 数（Ordered Bell number）である (Proposition 2.23, Corollary 2.24, Section 2.4, p.15)。 5. FPF をグラフ上の移動ルール（最もラベルが大きい空き隣接頂点へ移動）へ拡張し、完全グラフ Kn 上のルールが FPF と一致することを示した (Section 3, p.16-17)。新規性として、古典的駐車関数の変型として「最も遠い空き枠」を好む非局所的行動パターンを初めて完全解析した点が挙げられます。",
+          "method_outline": "1. 単調減少・単調増加な FPF の特性評価：単調減少な駐車関数は必ず FPF であり Catalan 数でカウントされることや、単調増加 FPF の必要十分条件を証明 (Proposition 2.3, 2.6)。 2. Dyck パスへの全射写像 φ の構成：各車両の入庫時の状態（lucky/unlucky）や駐車位置に応じて Up/Down ステップを追加する全射写像 φ: FPF_n -> Dyck_n を定義 (Definition 2.10, Lemma 2.14)。 3. 高さ付き Dyck パス (Height labeled Dyck paths) との対照：与えられた Dyck パス D の原像 φ^{-1}(D) のサイズが、D の各 Down ステップの高さの積に等しいことを示し、総数が高さ付き Dyck パスの総数 (2n-1)!! に一致することを証明 (Proposition 2.17, Theorem 2.18)。 4. Dyck パスの反転写像 (D ↦ D^rev) を利用した lucky car 位置と lucky spot 集合の等勢性証明 (Theorem 2.22)。 5. グラフ一般化の定式化：頂点ラベルの大小関係に基づく駐車アルゴリズムを導入し、パスグラフ、完全グラフ、スターグラフにおける列挙公式を導出 (Section 3)。",
+          "research_connection": "【論文に明記された接点】列挙的組合せ論 (enumerative combinatorics)、駐車関数 (parking functions)、Dyck パス、第2種スターリング数、第2種オイラー数、Fubini 数、グラフ理論。 【推測される接点】 1. Combinatorics on words / Automata theory: FPF やグラフ上の駐車関数の可否判定アルゴリズムは、文脈自由言語や有限オートマトンの状態遷移モデルと密接に関連します。 2. Symbolic dynamics / Formal languages: FPF の許容系列や Dyck パスによるエンコーディングは、シフト空間の許容語や言語理論的解析の枠組みと共通性があります。 3. Structure of large countable infinite groups: グラフ上の「最大隣接駐車関数」への一般化は、ケイリーグラフや無限グラフ上の離散力学系・粒子配置プロセスの解析へと繋がる可能性があります。 （※ Arithmetic dynamics, Validated numerics, Complex dynamics との直接の接点は見られません）",
+          "reading_guide": "【前提知識】古典的駐車関数 (Classical parking function) の定義、Dyck パスの基礎、組合せ論の基本数列（Catalan数、Stirling数、Eulerian数など）。 【最初に読むべき箇所】 1. 概要の把握: Table 1 (p.3) に主要成果の一覧がまとめられています。 2. 定義と概念: Definition 2.7 (Lucky car/spot), Definition 2.10 (Dyckパスへの写像 φ) と Example 2.11 (p.6-9)。 3. 主要定理: Theorem 2.18 ((2n-1)!! の証明) および Theorem 2.22。 【精読の要否】FPF の列挙構造の証明を追いたい場合は Section 2 (p.4-16) を精読すれば十分です。グラフへの一般化に興味がある場合のみ Section 3 を参照してください。",
+          "follow_up_questions": [
+            "k 個の lucky car/spot を持つ FPF と、k 個の descent を持つ Stirling 置換との間の具体的な全単射 (Question 4.1) はどのように構築できますか？",
+            "Frustrated parking function における ascents, descents, plateaus などの統計量の分布はどのような母関数や極限分布を持ちますか？",
+            "一般のグラフ G に対する「最大隣接駐車関数 (Largest neighbor parking function)」の個数を決定するグラフ理論的・代数的条件（スパニングツリー数や構造的性質など）は何ですか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
