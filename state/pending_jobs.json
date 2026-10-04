@@ -76665,7 +76665,7 @@
     },
     {
       "pipeline_id": "20261004T082700Z-b8a38c7d",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/5focsy0yxllnse84tfr17fcc3gfovvm8re48",
       "summarize_job_name": "batches/spz67wbzogcupg6lpbws2mtrpji5bssd8j95",
       "papers": [
@@ -77800,16 +77800,249 @@
         "http://arxiv.org/abs/2610.00880v1",
         "http://arxiv.org/abs/2610.00856v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2610.01753v1": {
+          "title": "有限順序数のフォン・ノイマン構成をシミュレートする3文字および4文字上の再帰的2次元配列",
+          "summary": "本論文では、有限順序数の構成の鏡像版を着色ダイアグラムで符号化する3つの再帰的な二重数列（2次元配列）を研究している。このうち2つは3文字を用いて初期記号が2個および3個の変種を実現し、残る4文字の配列は初期記号1個からフォン・ノイマン構成を実現する。各配列のセルを明示的に記述して矩形の順序づけられた入れ子構造を特定するとともに、4文字配列における通常ボックスと仮想ボックスを区別してその組み立て規則を証明した。証明は反対角線に沿った帰納法により行われ、初期記号1個および3個の構成については、再帰性を局所的配置の有限集合へと帰着させ計算機によって検証した。さらに、入れ子ボックスの数に対する算術項表現を含む公式を導出し、これら3つの配列がいずれも任意の整数 k ≥ 2 に対して k-オートマトン的（k-automatic）ではないことを証明した。",
+          "keywords": [
+            "recurrent double sequences",
+            "von Neumann construction",
+            "finite ordinals",
+            "k-automatic sequence",
+            "nesting rectangles"
+          ],
+          "appendix": "本研究で扱われているオートマトン的配列（k-automatic sequence）の非該当性の証明や記号列の性質は、automata theory および combinatorics on words と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.01525v1": {
+          "title": "正則拡大写像",
+          "summary": "コンパクト連結複素多様体上の任意の正則拡大写像は、複素インフラ・ニル多様体上のアフィン拡大自己準同型写像に双正則共役であることを証明する。",
+          "keywords": [
+            "holomorphic expanding map",
+            "compact connected complex manifold",
+            "biholomorphically conjugate",
+            "affine expanding endomorphism",
+            "complex infra-nilmanifold"
+          ],
+          "appendix": "本論文は複素多様体上の拡大写像（力学系）の剛性や分類を扱っており、「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.01520v1": {
+          "title": "2次元における恒等写像に接する双正則写像の局所力学系",
+          "summary": "本サーベイでは、(ℂ², 0) において恒等写像に接する双正則写像に対する安定多様体の存在、およびそれと形式的ベクトル場に対する不変曲線の存在との関連性についての概観を提供する。",
+          "keywords": [
+            "tangent to the identity biholomorphisms",
+            "stable manifolds",
+            "formal vector fields",
+            "invariant curves",
+            "local dynamics"
+          ],
+          "appendix": "本論文は「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.01460v1": {
+          "title": "自由群は単位的単純AF環上にアメナブルに作用する",
+          "summary": "自由群が単位的単純AF環上にアメナブルな作用を持つことを示す。これにより、自由群に対して、非アメナブル群の分類可能単純C\\*-環上へのアメナブル作用の存在問題における最後の未解決ケースが解決された。証明はベールの範疇定理に依拠している。なお、本結果はGPT-6 Astraの大幅な支援を得て得られたものである。",
+          "keywords": [
+            "Free groups",
+            "Amenable actions",
+            "AF-algebras",
+            "Simple C*-algebras",
+            "Baire category theorem"
+          ],
+          "appendix": "本論文は自由群などの群構造やその作用を扱っており、「strucure of large countable infinite groups」と関連しています。"
+        },
+        "http://arxiv.org/abs/2610.01440v1": {
+          "title": "転送操作を伴うVASSにおける整数到達可能性：詳細な計算量解析",
+          "summary": "状態付きベクトル加算システム（VASS）における整数到達可能性問題は通常NP完全ですが、転送操作（transfer）が存在するとPSPACE完全になります。本論文では、計算量増加の原因となる転送の構造的特徴を特定することにより、単一転送VASSに対するこの計算量のギャップを詳細に解析しています。各システムからカウンタを頂点、転送を辺とする転送グラフを定義し、到達可能サブグラフの分岐や巡回構造に基づいて頂点を良質（good）または悪質（bad）に分類します。悪質な頂点の数を b としたとき、肯定例はサイズ |I|^(O(b+1)) の多項式時間で検証可能な証明を持つことを示し、非決定性時間 |I|^(O(b+1)) で決定可能であること、特に b が有界なクラスではNPに属することを導きました。逆に、悪質なカウンタが空間限定計算を符号化する十分な能力を持つことを示し、線形個の悪質な頂点を持つグラフ族に対してPSPACE困難性を証明しました。",
+          "keywords": [
+            "Vector Addition Systems with States (VASS)",
+            "integer reachability",
+            "transfer operations",
+            "computational complexity",
+            "PSPACE-complete"
+          ],
+          "appendix": "本論文のテーマであるVASS（状態付きベクトル加算システム）の到達可能性および計算量解析は、オートマトン理論（automata theory）や形式言語理論（formal languages）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.01240v1": {
+          "title": "近傍交換グラフに対するレーマーの置換予想の証明",
+          "summary": "1965年にレーマーが提唱し、クヌースの『The Art of Computer Programming』でも未解決問題として挙げられていた多重集合の置換に関する予想（隣接交換による不完全ハミルトン巡回が存在する）を解決した。Verhoeff (2017) は、この問題を非スタッター語からなるグラフ N(S) のハミルトン性（2つの例外的な族を除く）へと再定式化したが、本論文はこの再定式化された予想を証明し、元のレーマー予想を完全に解決した。証明の鍵となるのは語の超立方体（ハイパーキューブ）への分割構造であり、すべて重複度が偶数の場合は超立方体のハミルトン閉路を全域木に沿って結合する。また、全構成はPythonで実装・検証され、証明はLean 4（Mathlib上）で形式化されている。",
+          "keywords": [
+            "Lehmer's permutation conjecture",
+            "neighbor-swap graphs",
+            "Hamiltonian cycle",
+            "stutter words",
+            "formalization in Lean 4"
+          ],
+          "appendix": "語の組合せ論（combinatorics on words）に関連する研究です。"
+        },
+        "http://arxiv.org/abs/2610.01049v1": {
+          "title": "Watkins予想はすべての無限群に対して成立する",
+          "summary": "本論文では、任意の無限濃度において、指数が2より大きいアーベル群でも一般化双巡回群でもないすべての群がグラフィカル正則表現（GRR）を許容することを証明し、無限群に対するWatkins予想を解決した。また、すべての無限群のCayley指数を決定し、代数型に応じて1、2、または8となり、いずれの場合も連結なCayleyグラフによって達成されることを示した。さらに、濃度κの任意の無限群Gに対して、不可避な逆元ペアの対称性のみを持ち、直径2かつ各非対角頂点対がκ個の共通の近傍を持つ、互いに同型でない2^κ個のCayleyグラフを構成した。主たるツールとして、有界次数誤差を持つ交互隣接ベースラインから連続順序数階層を復元する手法を開発した。",
+          "keywords": [
+            "Watkins's conjecture",
+            "graphical regular representation",
+            "Cayley index",
+            "Cayley graphs",
+            "infinite groups"
+          ],
+          "appendix": "本論文は無限群の対称性やCayleyグラフの構造を深く扱っており、提示された興味ある分野のうち「strucure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.00916v1": {
+          "title": "高次元における強非周期モノタイルに向けて",
+          "summary": "3次元アインシュタイン問題を解決したChair44の背後にあるrep-2ᴺ chairタイルのメカニズムをℝᴺへと拡張し、強非周期性をもたらす枠組みを計算機科学的に提示する。タイルの完全な向きフレームをマーキングとし、置換自体が生成する接触言語をマッチング規則とする「フレーム・マーキング形式」を導入することで、任意次元におけるマッチング規則探索を有限問題に帰着させた。粗視化閉包性や2シェル包囲解析などに基づく有限証明書（certificate）を定式化し、その成立が強非周期性を導くことを示した。N=3では証明書の検証に成功してChair44の統計量を独立して再現し、解の共役を除いた一意性を確認した。N=4においては対称性を持つ複数の候補族を検証したものの粗視化閉包性を満たさず、C₄の自己相似マーキングの発見が明示的に有限な未解決計算問題であることを定式化した。",
+          "keywords": [
+            "strongly aperiodic monotile",
+            "einstein problem",
+            "substitution tiling",
+            "contact language",
+            "matching rules"
+          ],
+          "appendix": "置換タイリングが生成する接触言語（contact language）の解析や階層構造の強制を扱っており、興味ある分野である「symbolic dynamics」や「formal languages」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.00893v1": {
+          "title": "多項式の軌道および多項式によって生成される半群における累乗数",
+          "summary": "本論文では、数体上で定義された多項式の軌道、あるいは有限個の多項式族によって生成される半群の軌道における完全累乗数（perfect powers）の存在について研究を行っている。特に、Ahmadiら（2012）の結果を修正・一般化し、軌道内における完全累乗数の乗法的なシフトが有限アルゴリズムによって検出可能であることを示す。また、特定の乗法関係を満たす軌道内の元に関する有限性結果も与えている。",
+          "keywords": [
+            "perfect powers",
+            "orbits of polynomials",
+            "semigroups generated by polynomials",
+            "multiplicative relations",
+            "number field"
+          ],
+          "appendix": "本研究は数論的力学系（arithmetic dynamics）に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.00880v1": {
+          "title": "フライング後の公平な決闘",
+          "summary": "公平な決闘ゲームでは、それまでに勝利している確率がより低いプレイヤーに次の射撃順を割り当てるという公平性基準に基づいて、2人のプレイヤーが交互に射撃を行う。CooperとDutleは、両者の命中確率pが等しいとき、p → 0の極限で射撃シーケンスがThue–Morse数列に収束することを示した。本論文では、公平性基準に従う前にシーケンスが任意の有限プレフィックス（接頭辞）から開始するようモデルを拡張する。この初期の乱れにより、シーケンスの最終的な振る舞いが根本的に変化することを証明する。具体的には、p → 0の極限において、初期プレフィックスがThue–Morse数列またはその補数列のプレフィックスでない限り、得られるシーケンスは最終的に周期的（eventually periodic）となる。さらに、その最小周期はプレフィックスの長さをnとすると最大で4ⁿ⁺¹となる2の冪乗であり、反復されるブロック自体もThue–Morse数列のプレフィックスとなる。",
+          "keywords": [
+            "fair dueling game",
+            "Thue-Morse sequence",
+            "eventually periodic",
+            "fairness criterion"
+          ],
+          "appendix": "本論文は、Thue–Morse数列の周期性やプレフィックス構造といった語の組合せ論的性質を扱っているため、combinatorics on words（語の組合せ論）およびsymbolic dynamics（記号力学系）に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.00856v1": {
+          "title": "純粋離散スペクトルを持つ樹状β展開の超越性",
+          "summary": "代数的基底βにおけるβ展開が、純粋離散スペクトルを持つ樹状シフトに属するような数の超越性を、置換の指示列に関する特定の組合わせ論的条件のもとで証明する。この結果は、任意のアルファベット上のArnoux-Rauzy列やCassaigne-Selmer列を含む。証明にはRauzyフラクタルと部分空間定理（subspace theorem）が用いられる。",
+          "keywords": [
+            "transcendence",
+            "beta-expansions",
+            "dendric shifts",
+            "pure discrete spectrum",
+            "subspace theorem"
+          ],
+          "appendix": "本論文は「symbolic dynamics」および「combinatorics on words」に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2610.01753v1",
+        "http://arxiv.org/abs/2610.01525v1",
+        "http://arxiv.org/abs/2610.01520v1",
+        "http://arxiv.org/abs/2610.01460v1",
+        "http://arxiv.org/abs/2610.01440v1",
+        "http://arxiv.org/abs/2610.01240v1",
+        "http://arxiv.org/abs/2610.01049v1",
+        "http://arxiv.org/abs/2610.00916v1",
+        "http://arxiv.org/abs/2610.00893v1",
+        "http://arxiv.org/abs/2610.00880v1",
+        "http://arxiv.org/abs/2610.00856v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2610.01753v1": {
+          "message_id": "1556285768174141544",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.01525v1": {
+          "message_id": "1556285777363861535",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.01520v1": {
+          "message_id": "1556285786192744592",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.01460v1": {
+          "message_id": "1556285794497339423",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.01440v1": {
+          "message_id": "1556285802345144433",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.01240v1": {
+          "message_id": "1556285810762977405",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.01049v1": {
+          "message_id": "1556285819424342078",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.00916v1": {
+          "message_id": "1556285827946909820",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.00893v1": {
+          "message_id": "1556285836448890971",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.00880v1": {
+          "message_id": "1556285844560547891",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.00856v1": {
+          "message_id": "1556285852760674418",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-10-04T08:27:00.538433+00:00",
-      "updated_at": "2026-10-04T09:12:57.437831+00:00",
-      "finalized_at": null
+      "updated_at": "2026-10-04T12:44:23.540239+00:00",
+      "finalized_at": "2026-10-04T12:44:23.540209+00:00"
     }
   ]
 }
