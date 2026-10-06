@@ -79024,7 +79024,7 @@
     },
     {
       "pipeline_id": "20261006T085838Z-ae2e357a",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/epv4nmcl63igpndu8q7g4qda7f5d5ef6bnkr",
       "summarize_job_name": "batches/6gbvm8ftfr7wn3p3kondnuvk334intkxgezl",
       "papers": [
@@ -79529,16 +79529,186 @@
         "http://arxiv.org/abs/2610.04274v1",
         "http://arxiv.org/abs/2610.04271v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2610.04745v1": {
+          "title": "×2 ×3 における固有関数構造からのエントロピー率",
+          "summary": "著者らは先行論文において、有限分解能で有効なルドルフ・ジョンソン（Rudolph-Johnson）の定理の一形態を証明し、×2 ×3 不変測度の低周波数フーリエ係数をその正規化エントロピーによって評価した。本論文ではその評価を逆方向に適用し、ファーステンバーグ（Furstenberg）の ×2 ×3 予想における潜在的な反例の固有関数の振る舞いに対する制約として解釈する。2 と 3 で生成される半群のもとで座標関数 x ↦ e^(2πix) が自身に近接して回帰すると分解能エントロピーが小さくなること、また座標関数が x ↦ 2x の固有関数に近接することでエントロピーが減衰することを示す。これらの率は、近接の割合および固有値の数論的性質において明示的である。",
+          "keywords": [
+            "Rudolph--Johnson theorem",
+            "Furstenberg's times 2 times 3 conjecture",
+            "eigenfunctions",
+            "entropy",
+            "Fourier coefficients"
+          ],
+          "appendix": "本論文は Furstenberg の ×2 ×3 予想に関連する力学系・測度論的エントロピーの話題を扱っており、算術的力学系（arithmetic dynamics）や広く力学系理論に関わる内容です。"
+        },
+        "http://arxiv.org/abs/2610.04593v1": {
+          "title": "平面4体凧型中心配置の退化性：制限部分空間および全空間の視点から",
+          "summary": "全配置空間における中心配置への直接的アプローチに基づき、任意の正の質量を持つ平面4体凧型中心配置の退化性を、凧型対称性をもつ制限部分空間および全配置空間の両方において研究した。ヤコビ行列の行列式の因数分解を導出することで解析を大幅に簡略化し、厳密な区間演算、Krawczyk作用素、定量的陰関数定理、精度保証付き数値計算（計算機援用証明）を用いて特異性を調べた。凸凧型の場合は、制限部分空間および全空間の双方で非退化であることを証明した。一方、凹凧型の場合、制限部分空間内には一意な滑らかな退化曲線が存在し、全空間の設定では部分空間内には隠れていた新たな退化曲線が現れることを示した。さらに、頂点に等質量を持ち中心に第4の質量を持つ正三角形の中心配置を検証し、全空間フレームワークによって捉えられる退化の特徴を明らかにした。",
+          "keywords": [
+            "planar 4-body problem",
+            "kite central configurations",
+            "degeneracy",
+            "interval arithmetic",
+            "computer-assisted proofs"
+          ],
+          "appendix": "本研究で使用されている厳密な区間演算（rigorous interval arithmetic）や計算機援用証明（computer-assisted proofs）の手法は、「validated numerics（精度保証付き数値計算）」の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.04569v1": {
+          "title": "Transformerから重み付きオートマトンへ：大規模言語モデルの検証に向けて",
+          "summary": "大規模言語モデル（LLM）は安全性に関わる重要な環境で導入が進む一方、ブラックボックス性ゆえにその振る舞いに対する形式的な保証が困難である。本研究では、Transformerと形式言語理論における古典的モデルである重み付きオートマトンの間に理論的な橋渡しを構築する。具体的には、Transformerと実数上の重み付きオートマトンとの形式的対応関係を導出し、LLMの分布的性質を表現可能であることを示すとともに、2つの確率モデルが許容誤差内で同一分布を定めるかを判定する重み付きオートマトンの同一性判定アルゴリズムを導入する。これにより、古典的なオートマトン理論の検証ツールをLLM解析に応用する道を開き、LLMの厳密な検証における可能性と計算上の課題を明らかにする。",
+          "keywords": [
+            "Large language models",
+            "Transformers",
+            "Weighted automata",
+            "Formal verification",
+            "Identity testing"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に直接関連しています。古典的なオートマトン理論および形式言語理論の手法を、現代の深層学習モデル（Transformer/LLM）の形式検証に応用する枠組みを提示しています。"
+        },
+        "http://arxiv.org/abs/2610.04491v1": {
+          "title": "狭義2-測地的なケイリーグラフを持つ非プレーンな実質自由群",
+          "summary": "有限の逆元で閉じた生成集合を持ち、そのケイリーグラフが2-測地的（2-geodetic）であるが測地的（geodetic）ではない、具体的な無限実質自由群 G = C₄*_{C₂}D₃ を構成した。測地線の全体言語を記述し、G の唯一の元を除いてすべての元が一意な測地線表現を持ち、その単一の元のみがちょうど2つの測地線表現を持つことを示す。これにより、「k-測地的なケイリーグラフを持つ無限群は、同一の生成集合に関して測地的なケイリーグラフを持たなければならない」という予想に対する反例が得られる。さらに、G が自由直既約（freely indecomposable）であり、したがって非プレーン（non-plain）であることを証明する。この結果として、「すべての測地的群はプレーンである」というShapiroの予想と、「すべての双曲的k-測地的群は測地的である」という予想が両立しないことが示される。",
+          "keywords": [
+            "virtually free group",
+            "k-geodetic Cayley graph",
+            "geodesics",
+            "language of geodesics",
+            "Shapiro's conjecture"
+          ],
+          "appendix": "本論文で扱われている測地線の言語（language of geodesics）の解析や無限群の構造は、興味ある分野のうち「formal languages」および「strucure of large countable infinite groups」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.04311v1": {
+          "title": "2次元多数決規則はP完全である",
+          "summary": "本論文では、同期型2次元多数決規則の予測問題が対数領域多対一還元の下でP完全であることを証明し、約30年間にわたり未解決だった問題を解決した。Moore (1997) は3次元以上でのP完全性を確立し、2次元では効率的な並列アルゴリズムが存在すると予想していた。本研究では、n×nトーラス上で4近傍の多数決（同数の場合は現状維持）に従うセルオートマトンを扱い、指定されたセルが時刻Tで状態+1になるかを判定する問題を考察している。同質・単調・拡散的な局所規則の下で平面内の独立した情報ストリームを交差させるという中心課題に対し、真理値を信号の到達時間によって区別する時間的符号化を導入した。これにより値を保持する交差を実現し、配線、複製、AND・ORゲートと組み合わせることで任意の単調ブール回路をシミュレート可能にした。さらに、時間制限なしでセルが状態+1に到達するかを判定する問題のP完全性や、少数派規則を含む同近傍上のあらゆる一様対称符号付き多数決規則への拡張も示している。",
+          "keywords": [
+            "majority rule",
+            "P-complete",
+            "cellular automata",
+            "Boolean circuits",
+            "prediction problem"
+          ],
+          "appendix": "本研究はセルオートマトンの計算能力やダイナミクスを扱っており、オートマトン理論 (automata theory) や記号力学系 (symbolic dynamics) と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.04298v1": {
+          "title": "純粋射的正規エピ標準語における正確なネット出現数",
+          "summary": "有限フィボナッチ語には、左右の1文字拡張が一意である重複因子の出現（ネット出現：net occurrences）が正確に3つしか含まれないことが近年示された。本研究では、この現象がフィボナッチ漸化式特有のものか、より広範な射の性質によるものかを検証するため、正の整数 e₀, …, e_{d-1} で定まるアルファベット {0, 1, …, d-1} 上の語の族を調査した。射 μ = L₀^{e₀} … L_{d-1}^{e_{d-1}} によって生成される純粋射的正規エピ標準語の周期整合有限近似 S_m = μ^m(0) について解析を行い、m ≥ 2 において e_{d-1} = 1 の場合は正確に3つ、e_{d-1} ≥ 2 の場合は正確に2つのネット出現を持つという明確な二分法を証明した。これにより、すべての指数が1となる標準的な d-bonacci の場合にも正確に3つのネット出現が存在することが示され、フィボナッチ現象がより一般的なエピ標準語の枠組みに位置付けられた。",
+          "keywords": [
+            "net occurrences",
+            "regular epistandard words",
+            "purely morphic words",
+            "d-bonacci words",
+            "return words"
+          ],
+          "appendix": "本研究は、combinatorics on words および symbolic dynamics に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.04274v1": {
+          "title": "法が指定された素因数を持つ剰余類互換群",
+          "summary": "奇素数の集合 𝒫 に対し、法が 𝒫 以外の奇素因数を持たないすべての剰余類互換（class transposition）によって生成される群を CT_𝒫(ℤ) とする。本論文では、任意の奇素数の集合 𝒫₁ および 𝒫₂ に対して ⟨CT_{𝒫₁}(ℤ), CT_{𝒫₂}(ℤ)⟩ = CT_{𝒫₁ ∪ 𝒫₂}(ℤ) が成り立つことを証明した。この結果は、Kourovka Notebook における問題 21.75 に対する否定的な解決を与えるものである。",
+          "keywords": [
+            "class transpositions",
+            "prime divisors",
+            "Kourovka Notebook",
+            "CT_P(Z)"
+          ],
+          "appendix": "本論文は無限群の生成構造や代数構造を扱っており、興味ある分野の「strucure of large countable infinite groups」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.04271v1": {
+          "title": "ほぼ指数的なソフィックプロファイルを持つアメナブル群、およびほぼ線形なメモリを必要とする量子通信路",
+          "summary": "アメナブル群の有限部分は有限集合の置換で近似可能であり、Cornulierのソフィックプロファイルは精度1/rでの近似に必要な点数を測る。本研究では、配置空間上にランプを持つランプライター型の構成（Houghton群の3本の半直線上のバイナリ配置に対する有限台アフィン変換の作用と各配置上のS₃の直和）を用いて、プロファイルがexp(r^{1+o(1)})となる有限表示初等アメナブル群を構成した。この群はBrin群3Vに埋め込まれ、3Vもほぼ指数的なプロファイルの有限部分を持つ。さらに、この群からC⁸⁷³上の明示的な量子通信路を構成した。この通信路をn回連続適用するデバイスは純度Bビットを消費する場合に約n/B量子ビットのメモリを要し、最適なトレードオフでは約√nのメモリが必要となる。この通信路は分解可能であり有限最大混合環境を持つ通信路の閉包に含まれるが、精度uで近似する環境の次元はexp(u^{-1+o(1)})を要する。中核となるのは、1回の使用後にデバイスのメモリが群の近似表現を保持することを示す定理である。",
+          "keywords": [
+            "amenable groups",
+            "sofic profile",
+            "quantum channels",
+            "lamplighter groups",
+            "Brin's group 3V"
+          ],
+          "appendix": "本研究で扱われているアメナブル群の構成、無限群の有限近似（ソフィック性）、およびBrin群への埋め込みは「strucure of large countable infinite groups」と深く関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2610.04745v1",
+        "http://arxiv.org/abs/2610.04593v1",
+        "http://arxiv.org/abs/2610.04569v1",
+        "http://arxiv.org/abs/2610.04491v1",
+        "http://arxiv.org/abs/2610.04311v1",
+        "http://arxiv.org/abs/2610.04298v1",
+        "http://arxiv.org/abs/2610.04274v1",
+        "http://arxiv.org/abs/2610.04271v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2610.04745v1": {
+          "message_id": "1557026562552102923",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.04593v1": {
+          "message_id": "1557026570219032629",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.04569v1": {
+          "message_id": "1557026578020442134",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.04491v1": {
+          "message_id": "1557026586455179266",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.04311v1": {
+          "message_id": "1557026594726613003",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.04298v1": {
+          "message_id": "1557026603136057405",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.04274v1": {
+          "message_id": "1557026611432263721",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.04271v1": {
+          "message_id": "1557026627865682001",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-10-06T08:58:38.304610+00:00",
-      "updated_at": "2026-10-06T09:13:03.627638+00:00",
-      "finalized_at": null
+      "updated_at": "2026-10-06T13:47:58.047247+00:00",
+      "finalized_at": "2026-10-06T13:47:58.047220+00:00"
     }
   ]
 }
