@@ -83851,7 +83851,7 @@
     },
     {
       "pipeline_id": "20261010T082935Z-e5c7f8f7",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/fduex48j02l5g09c2x89g1lsblbo9w6fj0s2",
       "summarize_job_name": "batches/forzc8ceucghwekoxbuhqiu9rjtdmiu0hbw3",
       "papers": [
@@ -85214,16 +85214,395 @@
         "http://arxiv.org/abs/2610.09333v1",
         "http://arxiv.org/abs/2610.09265v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2610.10950v1": {
+          "title": "Thue–Morse語の最小ストリングアトラクターと極小被覆証明書",
+          "summary": "ストリングアトラクターは語の全因子構造を簡潔に表現する概念であり、すべての異なる因子が選択された位置の少なくとも1つと交差して出現するような位置の集合として定義される。先行研究により、位数 n ≥ 4 の有限Thue–Morse語 tₙ における最小アトラクターサイズは4であることが示されていたが、最小アトラクター全体の同定は未解決であった。本研究では、n ≥ 6 に対し最小アトラクターの総数が正確に32個（鏡映関係にある2つの族）であることを証明した（例外として t₅ は40個、t₄ は87個存在する）。さらに、n ≥ 5 の tₙ における包含関係に関して極小な因子被覆の完全な反鎖を特定し、aa、bb、および各世代 tₘ (4 ≤ m ≤ n) の8つの極小ユニーク部分語の被覆からなる 8n - 22 個の正準制約が、任意のアトラクターに対する冗長性のない完全な証明書を構成することを示した。また、サイズ4の集合に制限した場合には、連続する3世代に由来する24個の極小ユニーク部分語を検査すれば十分であることも明らかにした。",
+          "keywords": [
+            "string attractors",
+            "Thue--Morse words",
+            "factor coverage",
+            "minimal unique substrings",
+            "antichain"
+          ],
+          "appendix": "本論文は語の組合せ論（combinatorics on words）および記号力学系（symbolic dynamics）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.10925v1": {
+          "title": "剰余有限群の無限内周と副有限的性質",
+          "summary": "本論文では、無限内周（infinite girth）を持ち、自明でない群の法則を満たさず、かつ非可換自由部分群を含まない、有限生成剰余有限群を構築するための2つの新しい一般的枠組みを開発した。このような群は稀（既存の例としては第1Grigorchuk群、Thompson群F、特定の反復リース積など）であるが、本アプローチでは対称群の直積の部分群としてより明示的に実現する構成法を提供する。また、群の内周とその有限商の内周との関係を調べ、剰余有限群のクラスにおいて無限内周であるための必要十分条件となる「marked」内周基準を導入・確立した。さらに、内周と副有限完備化との関連を探求し、線型群における無限内周の合同実現結果を示すとともに、本結果から自然に生じるいくつかの未解決問題を提示している。",
+          "keywords": [
+            "residually finite groups",
+            "infinite girth",
+            "profinite completions",
+            "symmetric groups",
+            "linear groups"
+          ],
+          "appendix": "本研究は無限群の構造論（structure of large countable infinite groups）に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.10417v1": {
+          "title": "輪積およびグリゴルチュク群の非可換外積の剰余有限性について",
+          "summary": "輪積 G = A ≀ B または組合せ論的輪積 G = A ≀_X B（後者の場合、B は自由群）において、非可換外積 G ∧ G が剰余有限となるための A, B, X の性質に関する十分条件を示す。また、グリゴルチュク群 G について、非可換外積 G ∧ G および非可換テンソル積 G ⊗ G が剰余有限であることを証明する。さらに、A ≀ B が 2 次元以下において（コホモロジー的に）good でないことを導く条件を示す。",
+          "keywords": [
+            "non-abelian exterior square",
+            "residual finiteness",
+            "wreath products",
+            "Grigorchuk group",
+            "non-abelian tensor product"
+          ],
+          "appendix": "本研究で扱われているグリゴルチュク群（Grigorchuk group）および輪積の代数構造は、関心のある分野である「strucure of large countable infinite groups」およびオートマトン群・自己相似群の観点から「automata theory」と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.10397v1": {
+          "title": "可換半群作用に対する局所近接関係",
+          "summary": "局所近接関係（regionally proximal relation）および同等連続構造関係（equicontinuous structure relation）は、位相力学系とその因子系における同等連続な振る舞いを捉える基本的な関係である。可換群の極小作用においては、これらの関係が同値関係となり互いに一致することが知られている。本論文では、この結果を可換半群の極小作用へと拡張し、これら2つの関係が同値関係であり一致することを示した。また、全射による可換半群作用に対する自然拡大の枠組みを構築し、極小可換半群作用の最大同等連続因子系が、それが埋め込まれる群作用の最大同等連続因子系と同一であることを導いた。さらに、本論文のすべての結果は定理証明支援系Leanによって形式検証されている。",
+          "keywords": [
+            "regionally proximal relation",
+            "equicontinuous structure relation",
+            "commutative semigroup actions",
+            "topological dynamics",
+            "Lean"
+          ],
+          "appendix": "位相力学系（topological dynamics）および半群作用に関する研究であり、提示された「興味ある分野」に直接該当するものはありませんが、力学系理論全般に関連しています。また、すべての主結果が定理証明系Leanで形式検証されている点も特徴的です。"
+        },
+        "http://arxiv.org/abs/2610.10103v1": {
+          "title": "Pⁿ の完全不変部分多様体",
+          "summary": "f: Pⁿ_ℂ → Pⁿ_ℂ を次数が2以上の自己準同型射とする。本論文では、f⁻¹(V) = V を満たす任意の既約 Zariski 閉部分集合 V が線形部分空間であることを証明する。",
+          "keywords": [
+            "totally invariant subvarieties",
+            "endomorphism",
+            "linear subspace",
+            "projective space",
+            "Zariski closed subset"
+          ],
+          "appendix": "本論文は射影空間上の自己準同型射の力学系を扱っており、複素力学系（complex dynamics）および数論力学系（arithmetic dynamics）に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.10026v1": {
+          "title": "Pisot記数法における素数の終端ブロック",
+          "summary": "Pisot整数記数法において、固定された終端ブロック語に関する素数定理を証明した。支配根φがPisot数であり、特性多項式P_hがその最小多項式である場合、全桁長mの各終端ブロック語は、素数の中で漸近頻度φ⁻ᵐで出現する。これはツェッケンドルフ（Zeckendorf）の表現系の場合における近年の予想を解決するものである。証明では、終端条件をRauzyシリンダー窓へ、さらにコンパクトトーラス上の線形軌道へと変換する。これらの同伴置換に対して、置換語を反転させることでBargeの純離散性定理が適用され、必要な重複度1のRauzy幾何が自動的に導かれる。さらにこのRauzyトーラスは置換の不動点語に対する素数定理も与え、任意の有限因子が素数開始位置において通常の因子頻度で現れることを示す（Drmota–Müllner–Spiegelhoferが示唆したTribonacci素数定理の証明）。また、このトーラスモデルにより多項式サンプリング則、固定された合同類からの漸近的独立性、固定シフト相関公式、メビウス直交性が得られるほか、チェボタレフの密度定理の精密化や、各終端素数類がポリ対数的に有界な公差を持つ任意長の等差数列を含むことも示される。",
+          "keywords": [
+            "Pisot numeration systems",
+            "prime number theorem",
+            "Zeckendorf case",
+            "Rauzy cylinder windows",
+            "Tribonacci prime-number theorem"
+          ],
+          "appendix": "本研究は、置換力学系、Rauzyフラクタル・シリンダー、記数法上の語の性質を深く扱っているため、symbolic dynamicsおよびcombinatorics on wordsと強く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.09953v1": {
+          "title": "q-変形有理数に対するスネークグラフ上の格子経路",
+          "summary": "本論文では、(右) q-変形有理数の分子および分母に関するスネークグラフ上の重み付き格子経路を用いた Ovenhouse の解釈に対して、初等的かつ直接的な証明を与える。また、Bapat、Becker、Licata によって導入された左 q-変形有理数に対しても同様の結果を示す。鍵となる要素は、z → a + 1/z という形式の2つの一次分数変換の合成行列に対する q-変形の簡潔な公式である。",
+          "keywords": [
+            "q-deformed rationals",
+            "snake graphs",
+            "lattice paths",
+            "homographies"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2610.09949v1": {
+          "title": "近似直積性質を持つアメナブル群作用の中間エントロピーエルゴード測度",
+          "summary": "無限可算アメナブル群の連続作用におけるエントロピー実現について研究した論文である。本研究では、互いに素で十分に不変な有限集合上において少数の追跡誤差を許容する「近似直積性質（approximate product property）」を導入した。この性質により、すべての不変測度がエントロピー稠密性および概エントロピー近似可能性を満たすことを証明した。この構成は、ゼロエントロピーの完全タイリングと追跡誤差の複雑度に対する有限ブロック評価を組み合わせたものである。さらに、漸近エントロピー拡大性の下では、概エントロピー近似可能性はエントロピー近似可能性へと強化される。その結果、0 ≤ α < h(X, G) を満たす任意の α に対し、エントロピー α のエルゴード測度がエントロピー α 以上の不変測度の中で残余集合を形成することが示され、特にエルゴード測度のエントロピー全体の集合が閉区間 [0, h(X, G)] に一致することが導かれる。",
+          "keywords": [
+            "amenable group actions",
+            "approximate product property",
+            "entropy realization",
+            "ergodic measures",
+            "intermediate entropies"
+          ],
+          "appendix": "無限可算アメナブル群の作用や力学系におけるエントロピーを扱っており、「strucure of large countable infinite groups」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.09879v1": {
+          "title": "単純な規則の反復配列による万能量子計算機の創出",
+          "summary": "初等セル・オートマトンにおけるチューリング完全な「ルール110」が、3つの単純な対称規則を空間的に交互に配置することでエミュレート可能であることを示した。構成要素となる規則自体は自明なものであるため、この結果は多様性そのものが創発的現象を生み出し得ることを示している。個々の規則は左右を区別できないが、それらの配置によってルール110のキラリティ（対称性の破れ）が生み出される。ランダムな初期条件からでも90%以上の確率でルール110の挙動へと収束し、これは非同期領域間のドメイン壁の運動によって説明される。また、ランダムノイズの導入によってドメイン壁の核となるエラーが発生し、その割合がノイズ強度の平方根に比例することが単純な速度方程式から説明される。この知見は、生物学でよく見られる反復的かつ微小変動を伴う単位を介した複雑性への道筋を示唆するとともに、場の量子論のセル・オートマトンモデルにおいてパリティ等の対称性の破れが局所規則自体に存在する必要がないことを示している。",
+          "keywords": [
+            "rule 110",
+            "elementary cellular automata",
+            "Turing complete",
+            "chirality",
+            "domain walls"
+          ],
+          "appendix": "セル・オートマトンによる計算可能性や動的挙動を扱っているため、「automata theory」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.09741v1": {
+          "title": "大きな重複を持つ反復関数系に対する内在的ハッチンソン測度とKMS状態",
+          "summary": "本論文では、梶原・綿谷C\\*-代数とそのKMS状態を用いて、大きな重複（overlap）を持つ反復関数系（IFS）を研究する。主な成果は3点ある。第一に、IFSに対するマルコフ分割を導入し、有限マルコフ分割が存在する場合にはそれを構成するアルゴリズムを与える。第二に、有限マルコフ分割を許容する縮小系に対して、写像のラベル付けや重み付けに依存しない内在的なハッチンソン測度のアナログを構成する。これは集合値ダイナミクスに支配される自己相似積分方程式を満たす唯一のボレル確率測度であり、系が開集合条件を満たす場合には一様重み付きハッチンソン測度を復元する。第三に、そのような系の梶原・綿谷代数上のゲージ作用に対するKMS状態の完全な分類を与える。臨界逆温度は内在的な軌道の指数的増大度であり、写像の個数の自然対数よりも真に小さくなり得る。また、この温度における一意なKMS状態は著者らの内在的ハッチンソン測度によって与えられる。これらの系には、泉・梶原・綿谷の結果では扱われなかった、大きな重複を持つ多くの系が含まれる。",
+          "keywords": [
+            "iterated function systems",
+            "Kajiwara-Watatani C*-algebra",
+            "KMS states",
+            "Markov partitions",
+            "intrinsic Hutchinson measure"
+          ],
+          "appendix": "本論文で導入されているマルコフ分割とその構成アルゴリズム、および力学系の軌道の増大度や自己相似積分方程式に関する議論は、symbolic dynamics（記号力学系）や complex dynamics（複素力学系）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.09704v1": {
+          "title": "巡回群のグラフ積およびその自己同型群のℓ²ベッチ数とΣ不変量",
+          "summary": "本論文では、巡回群のグラフ積におけるℓ²ベッチ数を研究している。これらの不変量を直角アルティン群（right-angled Artin groups）のℓ²ベッチ数と関連付け、定義グラフ内の有限位数頂点の構造によって定まるいくつかのケースについて明示的な公式を導出する。特に、これらの頂点がクリークを形成する場合やリンクが一致する場合を考察し、有限位数頂点がちょうど2つである場合の第1 ℓ²ベッチ数の公式を得ている。さらに、巡回群のグラフ積のBNSR不変量や、有限位数頂点が最大2つである場合におけるそれらの自己同型群の第1 ℓ²ベッチ数を計算している。",
+          "keywords": [
+            "ℓ²-Betti numbers",
+            "Σ-invariants",
+            "graph products of cyclic groups",
+            "right-angled Artin groups",
+            "automorphism groups"
+          ],
+          "appendix": "本論文は無限群の幾何学的・代数的性質（ℓ²ベッチ数やBNSR不変量など）を扱っており、興味ある分野のうち「structure of large countable infinite groups（可算無限群の構造）」と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.09602v1": {
+          "title": "多項式のフルシャドウ I. 極限コアと過渡集合",
+          "summary": "次数 d ≥ 2 の複素多項式 P の「フルシャドウ」とは、n ≥ 1 かつ 0 ≤ m < dn における (Pⁿ)⁽ᵐ⁾ のすべての零点の閉包である。本論文では、フルシャドウが P のすべての根と臨界点を含むコンパクトで連結な「極限コア」と、有限個の冪にしか現れない孤立した「過渡的零点」から構成されることを証明する。このコアは、n → ∞ としたときに全微分階数にわたって集約された零点集合のハウスドルフ極限であり、かつ極限正規化根計数測度の台となる。m/n → α ∈ (0, d) に対して、正規化根計数測度の弱収束および零点集合の極限台へのハウスドルフ収束を確立し、これらはいずれも係数の摂動に対して安定であることを示す。また、無限個の過渡的零点を持つ4次多項式の存在を示す。さらに、多項式微分作用素から構築された有界作用素を用いることで、フルシャドウ、コア、および過渡的零点が、それぞれその作用素のスペクトル、フレドホルム本質的スペクトル、および離散スペクトルとして実現されることを明らかにする。",
+          "keywords": [
+            "full shadow",
+            "limiting core",
+            "root-counting measure",
+            "Hausdorff convergence",
+            "Fredholm essential spectrum"
+          ],
+          "appendix": "本論文は複素多項式の冪の微分に関する零点の極限分布や力学系的な振る舞いを扱っており、興味ある分野のうち「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.09544v1": {
+          "title": "8次元合成代数上の2次力学系の対称性と不変式論",
+          "summary": "八元数上の写像 z ↦ z² + c のジュリア集合は定数の虚部を軸とする回転体であることが知られているが、実8次元合成代数は単位元を持たないパラ八元数代数や大久保代数など、より多様な構造を持つ。本研究では、これらの対称合成代数上の2次力学系を実験数学的手法と厳密な証明を組み合わせて初めて詳細に解析した。大久保代数のジュリア集合の対称性は 𝔰𝔲(3) のルート分解に支配され、定数が特定の平面上にある場合の連続対称性は極大トーラスとなり、ワイルの壁上では U(2) へ拡大することを示した。さらに、すべての対称合成代数における種 0 のマンデルブロ集合は、不変量を通じて平面集合（コンパクト型では tricorn、分裂型では tricorn および双曲 tricorn）の引き戻しとして表されることを証明した。これにより、パラ八元数と大久保代数のマンデルブロ集合が、異なる2つの群によって充填された同一の平面図形であることが判明した。最後に、対称合成代数上の両側写像は八元数2次写像の変形であり、ピーターソン角 θ = 90° において自己同型に由来しない対称性を獲得することを示した。",
+          "keywords": [
+            "composition algebras",
+            "quadratic dynamics",
+            "Julia sets",
+            "Mandelbrot set",
+            "Okubo algebra"
+          ],
+          "appendix": "本論文は高次元多元環上の力学系やそのフラクタル集合（Julia sets, Mandelbrot set）の対称性を扱っており、指定された興味ある分野のうち「complex dynamics」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.09524v1": {
+          "title": "高次元Brin--Thompson群はカジュダンである",
+          "summary": "本論文では、群の特定の列 (Gₙ)ₙ∈ℕ が十分大きな n に対してカジュダンの性質 (T) を持つための代数的判定法を提示する。その帰結として、Brin--Thompson群 nV が十分大きな n に対して性質 (T) を持つことを証明する。この代数的判定法により、nV、Aut(Fₙ)、および有限生成結合的単位的環 R 上の ELₙ(R) が十分大きな n に対して性質 (T) を持つことの統一的な証明が得られる。また、Francesco Fournier-Facio による付録では、十分大きな n に対する群 nV が超線型（特にソフィック）でも MF でもなく、さらに任意の 1 ≤ p < ∞ に対してシャッテン p-近似可能でもないことが示されている。",
+          "keywords": [
+            "Brin--Thompson groups",
+            "Kazhdan's property (T)",
+            "sofic groups",
+            "hyperlinear groups"
+          ],
+          "appendix": "本論文は無限群の構造や性質（カジュダンの性質 (T)、ソフィック性、超線型性など）を扱っており、「strucure of large countable infinite groups」の分野と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.09482v1": {
+          "title": "無限次元写像に対する典型的な拡大測度",
+          "summary": "Mañéの古典的定理によれば、拡大型同相写像を許容するコンパクト距離空間は有限次元でなければならない。MoralesとSirventによって提起された自然な疑問は、この次元制約が測度論的な拡大性（measure-theoretic expansiveness）の概念にも適用されるか否かであった。本論文ではこの疑問に否定的な回答を与える。具体的には、ヒルベルト立方体上のシフト写像が直積ルベーグ測度に関して拡大性を持つことを証明する。さらに一般的な十分条件として、台が全空間である拡大測度を許容する任意の同相写像は稠密に測度拡大（densely measure-expansive）であることを確立する。その帰結として、シフト写像における拡大測度かつ位相的に安定な測度の集合が稠密なG_δ部分集合を含むことを示し、相空間が無限次元であるにもかかわらず豊かな測度論的構造が存在することを明らかにする。",
+          "keywords": [
+            "expansive measures",
+            "infinite-dimensional maps",
+            "Hilbert cube",
+            "shift map",
+            "topologically stable measures"
+          ],
+          "appendix": "本論文で扱われているヒルベルト立方体上のシフト写像やその力学系としての性質は、記号力学系 (symbolic dynamics) に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.09362v1": {
+          "title": "高次スターリング三角形",
+          "summary": "DebとSokalは組合わせ論的三角形の全正値性の研究において、r次スターリングサイクル三角形および部分集合三角形と、それらに関連する準オイラー三角形を導入した。彼らはサイクル型に対してスターリング置換を用いた組合わせ論的解釈を与えたが、部分集合型については未解決のままであった。本論文では、r ≥ 2 に対してスターリング部分集合置換の概念と連続降下統計量を導入することでこの未解決問題を解決する。さらに、高次スターリングサイクル三角形および部分集合三角形の行対数凹性に関するDebとSokalの予想を証明する。この対数凹性の証明は、Saganの判定法、Deyの拡張、およびChatGPT 5.6の支援により発見された強化された対数凹性不等式に基づいている。",
+          "keywords": [
+            "higher-order Stirling triangles",
+            "quasi-Eulerian triangles",
+            "Stirling subset permutations",
+            "row log-concavity",
+            "consecutive-descent statistic"
+          ],
+          "appendix": "提示された「興味ある分野」に直接該当する分野は含まれていませんが、全正値性や置換統計量に関する代数的・数え上げ組合わせ論を扱っています。"
+        },
+        "http://arxiv.org/abs/2610.09333v1": {
+          "title": "組みひも群とThompson群のJones表現の統一について",
+          "summary": "本論文では、すべての組みひも群および向き付けられたThompson群を含む有限生成群である「向き付けられた二進組みひも群（oriented dyadic braid group）」を導入し、組みひも群と向き付けられたThompson群のJones表現を統一する。向き付けられたThompson群のこの群への埋め込みを構成し、その組みひもの閉包を取る操作によってJonesによる向き付けられた絡み目の構成が復元されることを示す。さらに、二進Temperley-Lieb代数を導入し、古典的な組みひも群のJones表現を拡張する向き付けられた二進組みひも群のユニタリ表現を構成する。この表現の特定の行列係数は、Thompson群の埋め込みに沿って、向き付けられたThompson群のJones表現における対応する係数と一致する。",
+          "keywords": [
+            "braid groups",
+            "Thompson's group",
+            "oriented dyadic braid group",
+            "dyadic Temperley-Lieb algebra",
+            "Jones representations"
+          ],
+          "appendix": "無限群（組みひも群やThompson群などの拡張）を扱う点から、「strucure of large countable infinite groups」に関連していると考えられます。"
+        },
+        "http://arxiv.org/abs/2610.09265v1": {
+          "title": "ハミルトン系における非脱出軌道からの脱出ダイナミクスの外挿",
+          "summary": "ハミルトン系における脱出現象の予測は系の進化を理解する上で重要である。脱出閾値以下のエネルギーではポテンシャルの井戸内の軌道は有界にとどまるが、閾値を超えると非有界な軌道となって無限遠へと向かう。本研究では、力学系の予測で広く用いられる次世代リザバーコンピューティング（NGRC）を用い、脱出閾値未満の複数のエネルギー値から得られたデータのみを訓練データとしてモデルを学習させた。2つのハミルトン系における数値実験の結果、閾値未満のわずか3本の時系列データから、脱出閾値そのものだけでなく脱出チャネルの構造までも高精度に予測可能であることが示された。これは、亜臨界データのみから脱出ダイナミクスを推論できることを実証したものであり、ハミルトン系のデータ駆動型研究における新たなパラダイムを提示している。",
+          "keywords": [
+            "Hamiltonian systems",
+            "escape dynamics",
+            "next-generation reservoir computing",
+            "escape threshold",
+            "escape channels"
+          ],
+          "appendix": null
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2610.10950v1",
+        "http://arxiv.org/abs/2610.10925v1",
+        "http://arxiv.org/abs/2610.10417v1",
+        "http://arxiv.org/abs/2610.10397v1",
+        "http://arxiv.org/abs/2610.10103v1",
+        "http://arxiv.org/abs/2610.10026v1",
+        "http://arxiv.org/abs/2610.09953v1",
+        "http://arxiv.org/abs/2610.09949v1",
+        "http://arxiv.org/abs/2610.09879v1",
+        "http://arxiv.org/abs/2610.09741v1",
+        "http://arxiv.org/abs/2610.09704v1",
+        "http://arxiv.org/abs/2610.09602v1",
+        "http://arxiv.org/abs/2610.09544v1",
+        "http://arxiv.org/abs/2610.09524v1",
+        "http://arxiv.org/abs/2610.09482v1",
+        "http://arxiv.org/abs/2610.09362v1",
+        "http://arxiv.org/abs/2610.09333v1",
+        "http://arxiv.org/abs/2610.09265v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2610.10950v1": {
+          "message_id": "1558460972442849392",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.10925v1": {
+          "message_id": "1558460981213134869",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.10417v1": {
+          "message_id": "1558460989437911175",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.10397v1": {
+          "message_id": "1558460998976020501",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.10103v1": {
+          "message_id": "1558461007645511762",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.10026v1": {
+          "message_id": "1558461016252219524",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.09953v1": {
+          "message_id": "1558461024947142729",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.09949v1": {
+          "message_id": "1558461033700655186",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.09879v1": {
+          "message_id": "1558461042160439390",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.09741v1": {
+          "message_id": "1558461050964148365",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.09704v1": {
+          "message_id": "1558461059419996171",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.09602v1": {
+          "message_id": "1558461067485519896",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.09544v1": {
+          "message_id": "1558461076235100261",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.09524v1": {
+          "message_id": "1558461084342554648",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.09482v1": {
+          "message_id": "1558461093226086430",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.09362v1": {
+          "message_id": "1558461102612942850",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.09333v1": {
+          "message_id": "1558461111106273313",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.09265v1": {
+          "message_id": "1558461120292069427",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-10-10T08:29:35.922405+00:00",
-      "updated_at": "2026-10-10T08:52:13.952050+00:00",
-      "finalized_at": null
+      "updated_at": "2026-10-10T12:48:08.023665+00:00",
+      "finalized_at": "2026-10-10T12:48:08.023638+00:00"
     }
   ]
 }
