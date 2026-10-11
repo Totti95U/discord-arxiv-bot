@@ -85455,9 +85455,12 @@
           "message_id": "1558460972442849392",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1558916076568576081",
+          "read_requested_at": "2026-10-11T18:55:32.671561+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-10-11T18:55:56.022239+00:00"
         },
         "http://arxiv.org/abs/2610.10925v1": {
           "message_id": "1558460981213134869",
@@ -85596,7 +85599,20 @@
           "paper_thread_id": null
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2610.10950v1": {
+          "conclusion": "本論文は、有限Thue–Morse語における最小文字列アトラクター（smallest string attractors）の幾何学的構造およびすべての最小解を完全分類し、さらに任意の大きさのアトラクターを特徴付ける重複のない極小因子被覆集合（8n - 22個の極小制約）を特定した研究である。n ≥ 6において最小アトラクターの個数が32個（2つの reflected 族）に完全安定化することを示しており、語の組合せ論および辞書式データ圧縮の基盤理論において極めて重要な構造的知見を提供する。",
+          "main_claims": "1. **最小アトラクターの完全分類（Theorem 5.4, Section 5.4, p.17）**: n ≥ 6 において、最小アトラクターサイズは γ(t_n) = 4 であり、解の全体集合 A(t_n) は2つの族 F_n^L と F_n^R の和集合として表され、その総数はちょうど32個である。また例外ケースとして |A(t_5)| = 40, |A(t_4)| = 87 である（Proposition 7.1, 7.2, p.26-27）。\n2. **極小因子被覆の完全決定（Theorem 6.7, Section 6.7, p.24）**: n ≥ 5 において、包含関係に関して極小な因子被覆集合 H_min(t_n) は Cov(aa), Cov(bb) および各世代 m (4 ≤ m ≤ n) の8つのMUS（最小一意部分文字列）の被覆からなり、その総数は preciesly 8n - 22 である。\n3. **定数サイズの判定アフォーダンス（Corollary 5.5, 5.6, Section 5.5, p.17）**: 4点集合に対しては、わずか3世代（24個）のMUS被覆、あるいは選ばれた16個の「証人因子（forcing witnesses）」の被覆と交差するかどうか調べるだけでアトラクター判定が可能である。\n- **著者の主張する新規性**: 先行研究（Kutsukake et al. 2020）で γ(t_n) = 4 であること自体は既知であったが、本研究は「すべての」最適位置集合の幾何的構造を初めて解明し、かつ任意アトラクターに対する 8n - 22 個の標準不可約制約系を証明した点にある。",
+          "method_outline": "1. **境界幾何と中心出現性（Section 3.4-3.6, p.8-9）**: 長さ2以上のすべての因子が4つの主要再帰境界（Kn）のいずれかを中心として出現すること（Centered-occurrence property, Theorem 3.3）を証明し、アトラクター構成の十分性を境界選択問題に帰着する。\n2. **MUSのトリム階層と出現位置の移送（Section 4, p.10-13）**: 語の射影から1文字ずつ削ったトリム画像（trimmed morphic image）の位相同期（Lemma 4.2）を証明し、前世代のMUS出現開始位置が2倍にスケール変換されるトランスポート法則（Lemma 4.3）を確立する。\n3. **16因子による幾何的強制（Section 5.1-5.2, p.14-16）**: 互いに素な被覆区間を持つ16個の証人因子（W_n）を抽出し、4点トランスバーサルが存在するための位置選択肢を F_n^L と F_n^R の2族へ排他的に追い込む。\n4. **脱代入と両側頻度批判性（Section 6.1-6.3, p.19-21）**: 任意の極小被覆因子から「両端の文字を削ると出現数が増える」批判的因子（critical factor）を定義し、モーフィズムの逆像へ降下（descent）させることで、すべての極小被覆が長さ4のMUSに由来することを証明する。",
+          "research_connection": "【論文に明記された接点】\n- **Combinatorics on words（語の組合せ論）**: Thue–Morse語の因子構造、最小一意部分文字列（MUS）の階層性、モーフィズムの同期性（recognizability/synchronization）の解明に直接寄与する。\n- **Automata theory / Formal languages（オートマトン理論・形式言語論）**: 自動的系列（automatic sequences）におけるアトラクター判定や Walnut などの自動判定論理との比較・補完関係にある。\n\n【推測される接点】\n- **Symbolic dynamics（記号力学系）**: シフト空間における軌道の被覆特性や因子頻度（frequency criticality）の構造的解析と理論的関連がある。\n- **Complex dynamics / Arithmetic dynamics / Validated numerics / Structure of large countable infinite groups**: 論文内に直接の記述や明らかな接点は確認できず。",
+          "reading_guide": "【前提知識】\nThue–Morseモーフィズム μ(a)=ab, μ(b)=ba の定義、文字列アトラクターの定義（Definition 3.1）、MUS（最小一意部分文字列）の基本概念。\n\n【最初に読むべき箇所】\n- Definition 3.1 (p.7): 文字列アトラクターの定義\n- Theorem 4.1 & Lemma 4.3 (p.10-11): MUSの構造と移送法則\n- Theorem 5.4 (p.17): 最小アトラクターの主定理\n- Theorem 6.7 (p.24): 極小因子被覆の主定理\n\n【精読のアドバイス】\n全体精読を推奨。主定理の証明はSection 5（4点アトラクターの幾何的追い込み）とSection 6（脱代入を用いた極小被覆の降下論理）に分かれているため、目的に応じて該当節を重点的に読むことが可能である。",
+          "follow_up_questions": [
+            "Fibonacci語やPeriod-doubling語など、他の均一・非均一モーフィック語においても「有限世代のMUS証人体系」による定数サイズのアトラクター判定が可能か？",
+            "5点以上のアトラクター集合に対して、8n - 22 個の極小被覆制約から計算効率のよい最適アトラクター判定・構成アルゴリズムを構築できるか？",
+            "Thue–Morse無限語におけるアトラクター密度の極限的性質や、因子複雑度（factor complexity）とアトラクター構造の定量的関係はどのように定式化されるか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
