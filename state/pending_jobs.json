@@ -85606,7 +85606,7 @@
     },
     {
       "pipeline_id": "20261011T085032Z-583b21d0",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/47zakoj4jrm6to5k4873kiszwgq4ebypitk0",
       "summarize_job_name": "batches/h3q8e1dfmgw0jg3yjx0qkxaw7a5w7zfcuc88",
       "papers": [
@@ -86887,16 +86887,414 @@
         "http://arxiv.org/abs/2610.11100v1",
         "http://arxiv.org/abs/2610.11098v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2610.12392v1": {
+          "title": "単一のポリキューブの平行移動による3次元タイリング問題の決定不能性",
+          "summary": "与えられた単一の（連結な）ポリキューブが、平行移動のみによって3次元ユークリッド空間をタイル張りできるかを判定する問題がco-RE完全であり、したがって決定不能であることを証明した。本証明では、GreenfeldとTaoによる修飾付き2素数数独構成法と、OpenAIの3次元非周期的タイルから援用した巡回符号化を用いて王タイリング（Wang tiling）からの帰着を行い、さらにKimによる帰着を適用してプロトタイルを面連結にしている。2次元（ℤ²）やℝ²における単一のポリプロミノの平行移動タイリングは決定可能であることが知られているため、次元3はこの決定不能性において最適である。",
+          "keywords": [
+            "polycube",
+            "translational monotiling",
+            "undecidable",
+            "co-RE-completeness",
+            "Wang tiling"
+          ],
+          "appendix": "王タイリング（Wang tiling）からの帰着やタイリング問題の計算複雑性・決定不能性を扱っており、多次元シフトやタイリング力学系に関連する観点から symbolic dynamics と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.12280v1": {
+          "title": "群における一般化線形セルオートマトンと差分ガロア理論 II",
+          "summary": "本シリーズの第1部では、離散群上の一般化線形セルオートマトンの周期解によって張られるσ-環がプロ代数的なガロア群を持つホップ・ガロア環であることが示された一方、有限台を持つ解によって張られるσ-環に対するガロア理論は未解決であり、パラメータ付き差分ガロア理論の利用が示唆されていた。本論文ではその手法をℤ上のオートマトンに適用する。フーリエ変換によってオートマトンはδ = z d/dzが作用する体上の階数1の方程式σ(x̂) = α̂x̂に変換され、そのパラメータ付きガロア群を計算し、アルゴリズム的に決定する。時間変数に関して記号が有理的である純粋なオートマトンに対して、そのガロア群は記号の分離可能性α̂(z, t) = γ(z)ψ(t)を境界として、Gm(ℂ)またはGmのいずれかとなる。最後に、時間方向におけるパラメータ付き群が空間方向のホロノミー性を決定することを示し、その系として第1種スターリング数が空間的にホロノミックでないことを導く。",
+          "keywords": [
+            "generalized linear cellular automata",
+            "parameterized difference Galois theory",
+            "Fourier transform",
+            "holonomy",
+            "Stirling numbers of the first kind"
+          ],
+          "appendix": "本論文はセルオートマトンを扱っているため、興味ある分野のうち「automata theory」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.12258v1": {
+          "title": "拡大マルコフ写像に対する定量的再帰集合と良近似不可能集合の共通部分",
+          "summary": "本論文では、sofic β-変換、ガウス写像、テント写像、クッキーカッター写像などを含む単位区間上の拡大マルコフ写像のクラスを研究している。与えられた点から軌道が最終的に正の距離を保ち続ける動的良近似不可能（badly approximable）な点に対する定量的再帰性を調査し、再帰集合と良近似不可能集合の共通部分のハウスドルフ次元が、対応する再帰集合と同じ圧力関数によって決定されることを示す。さらに、再帰集合と非再帰集合の共通部分、および縮小ターゲット集合（shrinking target sets）と良近似不可能集合の共通部分という、関連する2つの共通部分のハウスドルフ次元も導出している。",
+          "keywords": [
+            "expanding Markov maps",
+            "quantitative recurrence",
+            "badly approximable sets",
+            "Hausdorff dimension",
+            "shrinking target sets"
+          ],
+          "appendix": "本研究で扱われる sofic β-変換や拡大マルコフ写像などの対象および解析手法は、興味ある分野のうち「symbolic dynamics（記号力学系）」と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.12251v1": {
+          "title": "3値マカロック・ピッツネットワークにおける万能構成と厳密な自己複製",
+          "summary": "重みが{-1, 0, 1}である固定されたマカロック・ピッツ閾値素子ネットワークは、その状態内に他の閾値ネットワークを保持し実行することが可能である。本研究では、このネットワークを用いてフォン・ノイマンの万能構成および自己複製を厳密に実現した。143レコードからなる構成器はテープからネットワークの記述を読み取って次のバンクに構築し、記述をコピーして制御を引き渡すことで、自身の記述から世代ごとに自身を再構築する。この仕組みは万能計算機へとスケールし、27命令のプログラムを実行する17,598素子のSUBLEQ計算機も同様にバンクに収まる任意のネットワークの構築と自己複製を行う。また、整数値の前活性化により各軌道に1/2のマージンが与えられ、素子の複製によりノイズ耐性が強化される。これらの結果は定理証明支援系Rocqにおいて証明されている。",
+          "keywords": [
+            "McCulloch-Pitts networks",
+            "universal construction",
+            "self-reproduction",
+            "SUBLEQ",
+            "Rocq"
+          ],
+          "appendix": "本論文はオートマトン理論（automata theory）に関連しています。フォン・ノイマン型の自己複製オートマトンや万能構成機の概念を閾値素子ネットワーク上で厳密に実現・形式化（Rocqによる形式証明）した研究内容となっています。"
+        },
+        "http://arxiv.org/abs/2610.12246v1": {
+          "title": "事後臨界有限自己準同型写像 II：ファトゥ集合",
+          "summary": "複素射影空間 ℙᴺ 上の次数2以上の事後臨界有限自己準同型写像 f に対し、f のすべてのファトゥ成分が超吸引周期軌道の吸引鉢に対して前周期的であることを証明する。",
+          "keywords": [
+            "postcritically finite endomorphism",
+            "complex projective space",
+            "Fatou component",
+            "superattracting periodic orbit"
+          ],
+          "appendix": "本論文は「complex dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.11991v1": {
+          "title": "無限状態ネットワークの定量的検証",
+          "summary": "ネットワークプロトコルや分散システムにおける再帰性、非有界な局所状態、およびコストや遅延などの定量的振る舞いを扱うため、重み付きプッシュダウンシステムの非巡回ネットワークに対する定量的検証フレームワークを提案する。入れ子になったループのポンピングから生じる無限の実行族を過剰近似ではなく厳密に要約するため、重みの累積が閉形式に縮退する「ポンピング半環（pumping semirings）」という重み領域のクラスを導入する。この領域は極大半環（arctic semiring）や下方に閉じた言語など、無限上昇鎖を持つ領域を含む。本研究では、実行の合成的表現であるセグメント木代数と、さらなる加速の厳密性を保つために加速された重みを記号的に分離するthermal extensionsに基づく停止性を持つ飽和アルゴリズムを提案し、定量的到達可能性を厳密に計算する。これにより文脈自由言語の上方・下方閉包を統一的に計算し、薄い（thin）ポンピング半環上の非巡回ネットワークへ持ち上げることで、プッシュダウンシステムのネットワークに対する初の定量的安全性・到達可能性解析を実現した。",
+          "keywords": [
+            "quantitative verification",
+            "weighted pushdown systems",
+            "pumping semirings",
+            "segment tree algebras",
+            "saturation algorithm"
+          ],
+          "appendix": "automata theory, formal languages に関連しています（重み付きプッシュダウンオートマトン/システムの到達可能性検証や文脈自由言語の閉包計算などを扱っています）。"
+        },
+        "http://arxiv.org/abs/2610.11969v1": {
+          "title": "双方向マシンにおける非帰納的トレードオフ",
+          "summary": "あるマシンタイプAが、マシンタイプBでは解けない問題を解く能力を持ち、かつ線形制限付きカウンタを備えた一文字入力の双方向決定性有限オートマトンを模倣できる十分なリソースを持つ場合、タイプAのマシンを同値なタイプBのマシンへ変換する際の記述サイズの増大を上から抑える帰納的関数は一般に存在しないことを示す。",
+          "keywords": [
+            "non-recursive trade-offs",
+            "two-way machines",
+            "unary two-way deterministic finite automaton",
+            "linearly-bounded counter",
+            "description size"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.11958v1": {
+          "title": "k+1ヘッドからkヘッドへの記述量トレードオフは非再帰的である",
+          "summary": "k+1個のヘッドを持つ2方向決定性有限オートマトンを同値なk個のヘッドを持つ2方向決定性有限オートマトンに置き換える際、記述サイズの増大を上から抑える再帰的関数は存在しないことを証明する。この結果は任意のkについて成り立ち、オートマトンが一項（単項）言語を扱う場合や非決定性である場合にも同様に成立する。",
+          "keywords": [
+            "descriptive trade-off",
+            "two-way deterministic finite automaton",
+            "multi-head finite automata",
+            "non-recursive",
+            "unary automata"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.11817v1": {
+          "title": "事後臨界有限自己準同型写像 I: 小林双曲性とトート性",
+          "summary": "次数2以上の事後臨界有限（PCF）自己準同型写像 f: ℙᴺ → ℙᴺ に対し、山ノ井による双曲性に関する結果と f の力学系的性質を組み合わせることで、事後臨界因子の補集合がトート（taut）であることを証明した。例外となるのは、f が単項式冪写像であるか、偏極因子的PCF底空間写像を伴う非自明な同変有理ファイブレーションを許容する場合に限られる。同様の二者択一性を、有理連結射影多様体上の偏極PCF自己準同型写像や、正規有理連結射影多様体上の小林双曲性に対しても確立した。さらに2次元の場合には、非トートなケースは反復写像および有理半共役を除いて、単項式冪写像および単項式ファイバー写像を持つ斜積によって特徴づけられる。",
+          "keywords": [
+            "postcritically finite endomorphisms",
+            "Kobayashi hyperbolicity",
+            "tautness",
+            "postcritical divisor",
+            "rationally connected projective varieties"
+          ],
+          "appendix": "複素力学系（complex dynamics）および数論力学系（arithmetic dynamics）に関連する研究です。"
+        },
+        "http://arxiv.org/abs/2610.11811v1": {
+          "title": "Lazyセルオートマトンにおける冪等性判定基準",
+          "summary": "群 G 上のLazyセルオートマトン τ: Aᴳ → Aᴳ は、単位元を含む有限近傍 S ⊆ G、パターン p ∈ Aˢ、および書込記号 a ∈ A ∖ {p(e)} によって定まり、近傍パターンが p と一致するときに限り中心記号を a に書き換える。本論文では、p が値 a をとる位置からなる非空集合 T に対し、右並進 St (t ∈ T) に沿った p の2つの両立条件を導入する。両立集合の存在は、任意の群上で τ が非冪等であるための必要条件であり、さらに p が値 a をとる各位置と p が値 p(e) をとる各位置が可換である場合には十分条件にもなることを示す。特にアーベル群上では、この両立性が非冪等性を特徴づけ、SS = {st : s, t ∈ S} 上のパターン探索を p が値 a をとる位置集合の探索に置き換えることを可能にする。最後に、n ≥ 4 である任意の二面体群 Dₙ において、両立集合を持ちながらも冪等となるLazyセルオートマトンを構成し、可換性の仮定を単に外すことはできないことを示す。",
+          "keywords": [
+            "cellular automata",
+            "lazy cellular automata",
+            "idempotence",
+            "abelian groups",
+            "dihedral groups"
+          ],
+          "appendix": "本論文で扱われているセルオートマトンは symbolic dynamics や automata theory と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.11793v1": {
+          "title": "マンデルブロ集合上の充填ジュリア集合束の局所連結性",
+          "summary": "2次多項式族 f_c(z) = z² + c に対し、InouとKiwiの枠組みにおける3次多項式の捕獲整列化（capture straightening）のモデル空間となる非脱出軌跡 KM = {(c, z) : c ∈ M, z ∈ K_c} を研究した（ここで M はマンデルブロ集合、K_c は充填ジュリア集合）。まず、境界 ∂KM が最大ハウスドルフ次元 4 を持つことを証明した。また、c ∈ M が双曲型である任意の点 (c, z) において KM は局所連結である。さらに、∂M 上のパラメータに対しては Yoccoz パズルとパラパズルから混合パズルピースを構成し、非退化なペアにおいて両方の平面パズルが縮小することが (c, z) における KM の局所連結性を導くことを示した。しかし、パラメータ空間と充填ジュリアファイバーの両方が局所連結である場合であっても、c が実放物型で z ∈ K_c ∖ J_c である一部の点 (c, z) では KM の局所連結性が成り立たない。",
+          "keywords": [
+            "Mandelbrot set",
+            "filled Julia set",
+            "local connectivity",
+            "Yoccoz puzzle",
+            "Hausdorff dimension"
+          ],
+          "appendix": "本論文はマンデルブロ集合や充填ジュリア集合、Yoccoz パズルなどを扱っており、興味ある分野のうち「complex dynamics（複素力学系）」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.11717v1": {
+          "title": "すべての正則言語は二部サボテンオートマトンを持つ",
+          "summary": "古典的なThompsonの構成法は、任意の正規表現を遷移グラフが直並列（series-parallel）である等価なε-NFAに変換するが、通常の短絡構成法でε遷移を除去すると平面性や木幅が2以下である性質が保たれない場合がある。BookとChandraは、すべての正則言語が平面遷移グラフを持つεフリーなNFAを持つことを証明した。本研究では、この遷移グラフが実際には「二部サボテン（bipartite cactus）」（すべての閉路が偶数長であり、任意の2つの閉路が高々1つの頂点を共有するグラフ）に選べることを示す。特に、このグラフは外平面（outerplanar）であり木幅は高々2であるため、Thompsonの構成法が保証する一般的な直並列構造よりも大幅に単純である。証明はパリティ型付き正規表現に関する直接的な帰納法であり、サボテングラフの初等的な閉包性質のみを用いている。",
+          "keywords": [
+            "regular language",
+            "epsilon-free NFA",
+            "bipartite cactus",
+            "outerplanar",
+            "treewidth"
+          ],
+          "appendix": "本研究はオートマトン理論（automata theory）および形式言語理論（formal languages）に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.11711v1": {
+          "title": "並行パラメータ化ゲームのための反鎖",
+          "summary": "並行パラメータ化ゲームは、任意だが固定された数のプレイヤーが参加するゲームであり、エッジに手の組み合わせを表す言語が付与された有限アリーナで記述される。エッジのラベルが正規言語である場合、特定プレイヤーEveが任意の数の対戦相手に対して到達可能性目標を達成する戦略を持つかどうかはPSPACE完全であることが知られており、その証明では指数サイズの「知識ゲーム」への帰着が用いられる。本論文では、反鎖（antichain）に基づく記号的手法を用いて知識ゲームにおけるEveの勝敗領域（各頂点で勝つためにEveが必要とする最小限の知識）を計算する手法を提案する。具体的には、勝敗領域の極大部分を反鎖として計算する2つの不動点アルゴリズムを提案し、C++で実装してベンチマーク上でその性能を評価している。",
+          "keywords": [
+            "concurrent parameterized games",
+            "antichains",
+            "knowledge game",
+            "reachability objective",
+            "regular languages"
+          ],
+          "appendix": "本論文はアリーナのエッジラベルとして正規言語を扱い、ゲーム理論的決定問題を論じていることから、オートマトン理論 (automata theory) および形式言語理論 (formal languages) と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.11545v1": {
+          "title": "非アルキメデス的設定およびハイブリッド設定におけるジュリア集合の連続性",
+          "summary": "完備な非アルキメデス体 k 上、およびハイブリッドノルムを備えた ℂ 上の Berkovich 空間によってパラメータ付けられた1変数有理関数族の力学系を研究する。どちらの設定においても、ジュリア集合の（ハウスドルフ位相における）連続性に関する Mañé–Sad–Sullivan の定理の類似が成立することを示す。非アルキメデス的な場合の証明は最大値の原理に依拠しており、境界を持たない解析空間上の解析関数に対してこれを示す。",
+          "keywords": [
+            "Julia sets",
+            "Berkovich spaces",
+            "non-archimedean dynamics",
+            "hybrid norm",
+            "Mané-Sad-Sullivan theorem"
+          ],
+          "appendix": "本論文は複素力学系（complex dynamics）および数論的力学系（arithmetic dynamics）に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.11383v1": {
+          "title": "自由群の巡回拡大群の有限指数剛性",
+          "summary": "本論文では、無限位数のモノドロミーを持つ自由群の巡回拡大群（free-by-cyclic group）が有限指数剛性（finite index rigidity）を持つこと、すなわち、同型な任意の2つの有限指数部分群は必ず同じ指数を持つことを示す。",
+          "keywords": [
+            "free-by-cyclic groups",
+            "finite index rigidity",
+            "monodromy",
+            "finite index subgroups"
+          ],
+          "appendix": "本論文は無限群の構造や部分群の性質を扱っており、「strucure of large countable infinite groups（大きな可算無限群の構造）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.11337v1": {
+          "title": "パターンに基づく木変換の型検査",
+          "summary": "本論文では、パターンに基づく木変換を導入し研究している。例えば、ソースパターン (x · y) + (x · z) とターゲットパターン x · (y + z) のペアは、分配法則による式の変形を表現できるが、このようなソースパターンにマッチする式の集合は正規木言語にはならない。本研究では、このような（ソースパターン、ターゲットパターン）のペアの（無限になり得る）集合を有限に表現する木変換モデルを提案する。このモデルの高い表現力により等価性の判定は決定不能となるが、型検査問題については決定可能であることを示す。型検査問題とは、特定の正規な性質（型）を満たす木に変換を適用した際に、その性質が保存されるかを判定する問題である。この決定手続きは、交代性木オートマトンの空虚性判定問題への帰着によって達成される。",
+          "keywords": [
+            "pattern-based tree transformations",
+            "type-checking problem",
+            "regular tree language",
+            "alternating tree automata"
+          ],
+          "appendix": "本論文は「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」の分野に深く関連しています。特に、正規木言語や交代性木オートマトンを用いた変換の型検査の決定可能性を扱っています。"
+        },
+        "http://arxiv.org/abs/2610.11124v1": {
+          "title": "高次元Thompson群における共役問題",
+          "summary": "任意のn ≥ 2に対して、Brin–Thompson群nVの元に関する位相共役問題が決定不能であることを証明した。チューリングマシンTからの帰着によりnVの2つの元が構成され、Tが空テープ上で停止するならばそれらはnVの対合（involution）によって共役となる。一方、停止しない場合、これら2つの元の位相力学系は（germ-）非周期点の集合の極小子系への訪問挙動によって区別される。さらに、これらの群やカントール空間の同相写像群に含まれる任意の有限生成拡大群において、ホワイトヘッド問題（同一の自己同型軌道に属するかを判定する問題）および群論的共役問題も決定不能であることが導かれる。",
+          "keywords": [
+            "Brin--Thompson group",
+            "topological conjugacy",
+            "undecidability",
+            "Whitehead problem",
+            "group-theoretic conjugacy"
+          ],
+          "appendix": "本研究は力学系理論（位相力学系）の手法を用いて群論的決定問題の決定不能性を示しており、無限離散群の構造論（structure of large countable infinite groups）や計算理論（automata theoryなど）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.11100v1": {
+          "title": "捩れのない双曲群における一様小消去",
+          "summary": "本論文では、非初等的な捩れのない双曲群に対する一様小消去定理を確立する。あらかじめ与えられた任意の小消去定数に対し、非可換な任意の元のペアから小消去元を生成するには、有限個の固定された語で十分であることを示す。その応用として、すべての非初等的な捩れのない双曲群の1階の理論はモデル伴意（model companion）を持たないことを証明する。",
+          "keywords": [
+            "torsion-free hyperbolic groups",
+            "uniform small cancellation",
+            "first-order theory",
+            "model companion"
+          ],
+          "appendix": "本論文は無限群の幾何的・モデル理論的性質を扱っており、興味ある分野のうち「strucure of large countable infinite groups（可算無限群の構造）」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.11098v1": {
+          "title": "置換オートマトンによる語の分離に対する改良された下界",
+          "summary": "十分に大きい任意の長さ n をもつ2値語のペアの中に、各文字が置換として作用する決定性有限オートマトン（置換オートマトン）で分離するために Ω(log n log log n) 個の状態を必要とするものが存在することを証明した。この限界は、長さ exp(O(k/log k)) の対称群 𝔖ₖ の恒等式を形成する相異なる等長の正の2値語を構成することによって得られる。本結果は、Bulatovらによる従来の下界 (3/2 - o(1))log n を改良するものである。証明手法では、正の語の構成と置換の位数の被覆を組み合わせており、素数冪の連続区間を用いて被覆問題を和が有界な正の整数集合の数え上げへと帰着させている。また、付録では貪欲被覆や定量的素数定理を用いることで、定数や低次項の評価をさらに精密化している。",
+          "keywords": [
+            "separating words",
+            "permutation automata",
+            "identities of symmetric groups",
+            "deterministic finite automaton",
+            "prime powers"
+          ],
+          "appendix": "本論文は「combinatorics on words」「automata theory」「formal languages」と強く関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2610.12392v1",
+        "http://arxiv.org/abs/2610.12280v1",
+        "http://arxiv.org/abs/2610.12258v1",
+        "http://arxiv.org/abs/2610.12251v1",
+        "http://arxiv.org/abs/2610.12246v1",
+        "http://arxiv.org/abs/2610.11991v1",
+        "http://arxiv.org/abs/2610.11969v1",
+        "http://arxiv.org/abs/2610.11958v1",
+        "http://arxiv.org/abs/2610.11817v1",
+        "http://arxiv.org/abs/2610.11811v1",
+        "http://arxiv.org/abs/2610.11793v1",
+        "http://arxiv.org/abs/2610.11717v1",
+        "http://arxiv.org/abs/2610.11711v1",
+        "http://arxiv.org/abs/2610.11545v1",
+        "http://arxiv.org/abs/2610.11383v1",
+        "http://arxiv.org/abs/2610.11337v1",
+        "http://arxiv.org/abs/2610.11124v1",
+        "http://arxiv.org/abs/2610.11100v1",
+        "http://arxiv.org/abs/2610.11098v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2610.12392v1": {
+          "message_id": "1558882274055954534",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.12280v1": {
+          "message_id": "1558882281450635287",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.12258v1": {
+          "message_id": "1558882289507639407",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.12251v1": {
+          "message_id": "1558882297686790195",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.12246v1": {
+          "message_id": "1558882305832001547",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11991v1": {
+          "message_id": "1558882313562234881",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11969v1": {
+          "message_id": "1558882321674010706",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11958v1": {
+          "message_id": "1558882329353789561",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11817v1": {
+          "message_id": "1558882337658249317",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11811v1": {
+          "message_id": "1558882345946456125",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11793v1": {
+          "message_id": "1558882353672101912",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11717v1": {
+          "message_id": "1558882362123755581",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11711v1": {
+          "message_id": "1558882370067890227",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11545v1": {
+          "message_id": "1558882378070360176",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11383v1": {
+          "message_id": "1558882386199052371",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11337v1": {
+          "message_id": "1558882394382016583",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11124v1": {
+          "message_id": "1558882402074493049",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11100v1": {
+          "message_id": "1558882409762660488",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.11098v1": {
+          "message_id": "1558882418524684290",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-10-11T08:50:32.532145+00:00",
-      "updated_at": "2026-10-11T14:32:27.624632+00:00",
-      "finalized_at": null
+      "updated_at": "2026-10-11T16:42:13.070916+00:00",
+      "finalized_at": "2026-10-11T16:42:13.070890+00:00"
     }
   ]
 }
