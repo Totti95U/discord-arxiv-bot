@@ -87314,7 +87314,7 @@
     },
     {
       "pipeline_id": "20261012T091235Z-9208dd4b",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/zgqkxfbf47j7kizmpvhlhomdq59c0zom6haj",
       "summarize_job_name": "batches/tdm5rzntzbx470fnachlx5i2gos4hqal5xfv",
       "papers": [
@@ -88115,16 +88115,124 @@
         "http://arxiv.org/abs/2610.13274v1",
         "http://arxiv.org/abs/2610.13055v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2610.13904v1": {
+          "title": "外部自己同型が長さを保存するArtin群およびCoxeter群に対する性質R_∞",
+          "summary": "非球面的なArtin群またはCoxeter群の任意の長さ保存自己同型は、無限のReidemeister数を持つことを証明する。その帰結として、large-typeかつfree-of-infinityなArtin群、無限強剛Coxeter群、およびすべてのアフィンCoxeter群を含む無限実質可換Coxeter群に対して性質R_∞を確立する。さらに、任意の無限既約非アフィン強剛Coxeter群の自己同型群が、acylindrically hyperbolicであることを証明する。",
+          "keywords": [
+            "property R_∞",
+            "Artin groups",
+            "Coxeter groups",
+            "Reidemeister number",
+            "acylindrically hyperbolic"
+          ],
+          "appendix": "無限群の自己同型や幾何学的・代数的構造（acylindrical hyperbolicityなど）を扱っているため、興味ある分野のうち「strucure of large countable infinite groups」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.13658v1": {
+          "title": "漸近モノイドを用いた発散算術積の正則化：(-1)^{ω(n)} の場合",
+          "summary": "本論文では、語の一般化モノイドおよび対数接頭辞汎関数を用いて、異なる素因数の個数を表す ω(n) に基づく発散積 P_ω = ∏_{n=1}^∞ n^{(-1)^{ω(n)}} の正則化を行う。対応するディリクレ級数 D_ω(s) は Re(s) = 0 に自然境界を持つため、D_ω'(0) が存在せず通常のゼータ正則化をはじめとする古典的手法は適用できない。そこで符号列を符号化する正準ネットと指数 α=2 の対数接頭辞汎関数を構成し、モノイド枠組みの重み付き評価汎関数から有限値を抽出する。この評価汎関数の絶対収束は、ζ(s) の古典的零点非存在領域による有効評価 T_ω(x) = O(x e^{-c√(log x)}) から無条件に導かれる。数値計算により正則化値 P_{ω,ren} ≈ 0.7731 を得るとともに、ディリクレ級数の s=1 における2階微分がハーディ・リトルウッドの双子素数定数 C₂ を用いて D_ω''(1) = 8 C₂ ln 2 と表されることを示している。",
+          "keywords": [
+            "regularization",
+            "monoid of words",
+            "Dirichlet series",
+            "natural boundary",
+            "arithmetic product"
+          ],
+          "appendix": "本研究で用いられている語の一般化モノイド（generalized monoid of words）や記号列の符号化は、combinatorics on words（語の組合せ論）に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.13461v1": {
+          "title": "SqueezeBench: 数学的能力に対する飽和耐性を持つ評価ベンチマーク",
+          "summary": "数学分野におけるAIの急速な進歩を測定するため、評価の飽和に耐性を持つベンチマーク「SqueezeBench」を提案する。既解決問題のベンチマークは早期に飽和し、未解決問題は一度解かれると再利用できない課題に対し、本システムでは成功が基準を引き上げる仕組みを採用している。各問題は小さな n についてのみ値が判明している整数関数 f(n) を対象とし、計算可能なLean関数と機械検証された証明による上限・下限レコードを管理する。提出物は既存レコードを改善する新たな有界性とその証明を提示し、採択されると次のターゲットとなる。2つの独立したLeanカーネルが証明を検証するため人手による数学的査読は不要である。極値組合せ論の10問と20の初期レコードを公開し、フロンティア言語モデルに基づくエージェントによる検証実験では、文献の範囲内でありながら継続的なレコードの更新が確認された。",
+          "keywords": [
+            "SqueezeBench",
+            "Lean",
+            "saturation-resilient benchmark",
+            "formal verification",
+            "extremal combinatorics"
+          ],
+          "appendix": "本論文のベンチマーク課題として極値組合せ論（extremal combinatorics）の問題が採用されており、組合せ論的な構造の評価という観点で combinatorics on words などと緩やかな関連性を持ち得ます。また、機械検証された証明や計算可能な上下界の評価という性質は、validated numerics のアプローチとも概念的に親和性があります。"
+        },
+        "http://arxiv.org/abs/2610.13274v1": {
+          "title": "素な到達可能決定性オートマトン",
+          "summary": "本論文では、有限文字および任意の状態集合を持つオートマトンの両方において、素（prime）な到達可能決定性オートマトンを分類する。1状態のオートマトンはすべて素である。1文字アルファベット上では、有限の非自明なオートマトンが素であるのは、素数べき長のサイクルであるか、固定状態に終端する有限の鎖である場合に限られる。同型を除いて一意である無限到達可能単項オートマトンもまた素である。2文字以上のアルファベット上の非自明なオートマトンはすべて素ではない（有限の場合はShenによる結果であり、本稿ではより短い別証を与える）。さらに、すべての有限入力語を状態集合とするオートマトンの分解を特徴づける。空語と空でない語 p および q をそれぞれ同一視する最小右合同による商の到達可能積が、元のオートマトンと同型になるのは、任意の正の整数 r, s に対し pʳ ≠ qˢ である場合に限られることを示す。",
+          "keywords": [
+            "accessible deterministic automata",
+            "prime automata",
+            "unary automata",
+            "automaton decomposition",
+            "right congruences"
+          ],
+          "appendix": "本論文は「automata theory」および「combinatorics on words」の分野に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.13055v1": {
+          "title": "冪零群の擬等長写像におけるコホモロジーと乗法的ギャップ",
+          "summary": "漸近錐が等長であるにもかかわらず、任意の擬等長写像の乗法的定数が常にある固定された ε > 0 に対して 1 + ε 以上となる、同一の7次元ねじれのない冪零格子上の2つの語距離を構成した。固定された擬等長写像 Ψ: N → M に対する凸不変量を用いており、Ψ の変位コサイクルと N 上の右不変平均から定まるコンパクト凸集合 A(Ψ) ⊆ Hom(V_N, V_M) を定義する。基点を動かした Ψ のブローダウンとして現れる次数付き準同型の第1層写像の集合を 𝒢_pt(Ψ) とすると、A(Ψ) = conv 𝒢_pt(Ψ) かつ Ext A(Ψ) ⊆ 𝒢_pt(Ψ) が成り立つ。任意の極値点 L ∈ A(Ψ) に対してその双対写像 L\\* は実コホモロジー環全体の同型写像の次数1部分となる。このコホモロジー的整合性と、不変平均による第1層のパンス微分（Pansu differentials）の実現を組み合わせることで、乗法的定数のギャップが導かれる。",
+          "keywords": [
+            "quasi-isometry",
+            "nilpotent groups",
+            "asymptotic cones",
+            "cohomology rings",
+            "displacement cocycle"
+          ],
+          "appendix": "無限群の幾何学的群論・大規模構造を扱っており、「strucure of large countable infinite groups」と関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2610.13904v1",
+        "http://arxiv.org/abs/2610.13658v1",
+        "http://arxiv.org/abs/2610.13461v1",
+        "http://arxiv.org/abs/2610.13274v1",
+        "http://arxiv.org/abs/2610.13055v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2610.13904v1": {
+          "message_id": "1559231568625532980",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.13658v1": {
+          "message_id": "1559231577991422093",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.13461v1": {
+          "message_id": "1559231586380029953",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.13274v1": {
+          "message_id": "1559231594856972446",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.13055v1": {
+          "message_id": "1559231604503609435",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-10-12T09:12:35.826889+00:00",
-      "updated_at": "2026-10-12T10:04:23.318166+00:00",
-      "finalized_at": null
+      "updated_at": "2026-10-12T15:49:45.559465+00:00",
+      "finalized_at": "2026-10-12T15:49:45.559440+00:00"
     }
   ]
 }
