@@ -88236,7 +88236,7 @@
     },
     {
       "pipeline_id": "20261014T073743Z-00d6d6fd",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/x0q3lrux06de31466q1el44xgzhhd2vwrgoi",
       "summarize_job_name": "batches/18z7pdo56pqk9c9hozhygw7lb6bpgsnmco6p",
       "papers": [
@@ -89042,16 +89042,207 @@
         "http://arxiv.org/abs/2610.15478v1",
         "http://arxiv.org/abs/2610.15253v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2610.15875v1": {
+          "title": "制約オートマトンにおける到達可能性問題の決定不能性",
+          "summary": "本論文では、有限二値語上の制約オートマトンに対する到達可能性問題が決定不能であることを証明している。語の定数や連接を用いず、等価性、真の接頭辞、真の接尾辞、および中置非比較可能性のみを用いた連言ガードを持つ8本のレジスタで決定不能性が成り立つ。この結果の帰結として、有限実行の空性判定、ビュッヒ（Büchi）空性判定、および有界ビュッヒ空性判定も決定不能となる。一方で、等価性、接頭辞、接尾辞、接頭辞・接尾辞の非比較可能性に関するブールガードに対しては、レジスタ数や語の定数が任意であってもビュッヒ空性判定はPSPACE完全となる。この上界は肯定的な中置アトムも許容し、接頭辞・接尾辞LTLの充足可能性問題のPSPACE完全性をもたらす。",
+          "keywords": [
+            "constraint automata",
+            "reachability",
+            "Büchi nonemptiness",
+            "undecidability",
+            "PSPACE-completeness"
+          ],
+          "appendix": "本論文は「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」、さらに語上の制約を扱う点から「combinatorics on words（語の組合せ論）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.15849v1": {
+          "title": "重み付き置換列に対する普遍的シフト合同式",
+          "summary": "対合数（involution numbers）などの置換の重み付き数え上げ列 A(n) において、A(n+k) ≡ A(n)A(k) mod lcm(n,k) という規則をはじめとする周期性や合同関係を包括的に説明する枠組みを提示している。普遍的多項式の係数ごとの合同式として扱うことで任意の重みに対して成立させ、有効な最大法が nk/rad(gcd(n,k)) であることを示した。さらに、k から pk への移行が高次の p の冪を法として p 乗のように振る舞うことを示し、A(pʳ) ≡ (w₁+(p-1)wₚ)^(pʳ⁻¹) mod pʳ（奇素数 p）などの関係を導いた。これにより、ラグランジュの反転公式で定義される数列群に関するBalaの予想や、Richman、Hanna、van HoeijらのOEIS予想を含む、OEISの101個の数列に対する合同関係を証明・適用している。",
+          "keywords": [
+            "weighted permutations",
+            "congruences",
+            "universal polynomials",
+            "Lagrange inversion",
+            "OEIS"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2610.15632v1": {
+          "title": "ループ付きPDLの有限充足可能性に向けて",
+          "summary": "命題動的論理（PDL）にプログラムの周期的挙動を捉えるループ演算子を追加した論理LPDLにおいて、充足可能性問題は1980年代に解決されたものの、有限モデルに対する充足可能性問題の決定可能性は未解決のままであった。有限モデル上ではサイクルの要求と禁止を同時に扱うことが既存の有限モデル理論の手法では困難であるという課題が存在する。本研究では、否定標準形のLPDL論理式（converse演算子を含む場合も含む）において、否定された非アトミックなループが任意に複雑なプログラムπに対するloop(π⁺)の形（自己到達可能性の一般化）に制限されるという条件下で、有限充足可能性がExpTime完全であることを証明した。正の出現についての制限はない。本アプローチの要として、目的の有限モデルをサボテン状の無限展開として表現する新たな手法を提案し、これが2方向木オートマトンで認識可能であり、かつ受理された構造を有限化可能なω正則折りたたみ条件を満たすことを示している。",
+          "keywords": [
+            "Propositional Dynamic Logic",
+            "loop operator",
+            "finite satisfiability",
+            "two-way tree automata",
+            "ExpTime-complete"
+          ],
+          "appendix": "本研究は、決定可能性の証明において2方向木オートマトン（two-way tree automata）およびω正則言語の性質を利用しているため、オートマトン理論（automata theory）および形式言語理論（formal languages）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.15631v1": {
+          "title": "多項式ハッシュとエントロピーリサイクリングを用いた多重編集誤り訂正二元符号",
+          "summary": "DNAストレージやレーストラックメモリへの応用から、挿入・削除・置換を含む多重編集誤りを訂正するレーベンシュタイン計量符号が近年注目されている。本研究では、冗長度を高々 (2t + 1) log n + Oₜ(log log n) ビットに抑えつつ t 個の編集誤りを訂正する、明示的な長さ n の二元符号を設計する新しい手法を提案する。まず、多項式ハッシュを用いて冗長度 (4t + 2) log n + Oₜ(log log n) ビットで t 編集を訂正する組織符号を構築する。次に、このような多項式ハッシュが多数存在し、良質なものとそうでないものが存在することに着目し、良質なハッシュのインデックス自体に情報を持たせる「エントロピーリサイクリング」という手法を導入する。これにより、冗長度を高々 (2t + 1) log n + Oₜ(log log n) ビットに抑えた部分組織符号を実現した。さらに、提案符号に対する決定論的な多項式時間の符号化および復号アルゴリズムを提供する。",
+          "keywords": [
+            "Levenshtein metric",
+            "edit-correcting codes",
+            "polynomial hashing",
+            "entropy recycling",
+            "redundancy"
+          ],
+          "appendix": "語の編集距離や部分列に関する構造を扱う点において、combinatorics on words（語の組合せ論）や形式言語理論（formal languages）と関連性があります。"
+        },
+        "http://arxiv.org/abs/2610.15500v1": {
+          "title": "反復補題に対する証拠言語",
+          "summary": "本論文では、異なる反復補題（pumping lemmata）に対する正規言語の「証拠（witness）」について調査を行う。言語 L とその最小反復定数 K に対し、証拠とは指定された反復補題に関して定数 K で反復（ポンプ）できない単語のことである。単項証拠言語に関する組合せ論的考察に加え、最小反復定数と関連する「散在因子距離（scattered factor distance）」という尺度を導入・研究し、この距離による最小反復定数の境界を示す。さらに、2つの正規言語が与えられた際に、一方が他方の証拠言語と等しいかを判定する問題が coNP 完全であることを証明する。",
+          "keywords": [
+            "witness languages",
+            "pumping lemmata",
+            "regular languages",
+            "scattered factor distance",
+            "computational complexity"
+          ],
+          "appendix": "本研究は「automata theory」、「formal languages」、および「combinatorics on words」の分野に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.15495v1": {
+          "title": "ラビンゲームの再訪",
+          "summary": "ラビンゲームは無限語上のω正則な勝利条件を持つ古典的な無限段ゲームであり、オートマトン理論や時相合成において中心的な役割を担うが、多くの直接解法がラビン指標k（ペア数）に対して階乗的な依存関係を持つことなどから、実用的にはパリティゲームを介して間接的に解かれることが多い。本研究では、1972年のラビンの証明に内在していた再帰的アルゴリズムを再検討した。到達可能性ゲームおよびビュッヒゲームの解法を構成要素とする明示的なアリーナ型解法として定式化することでアルファベットサイズへの指数的依存性を排除し、さらにメモ化によって再帰木解析から階乗項を除去できることを示した。加えて、ラビン指標に関する再帰を行う変種を導入し、時相合成に向けた直接的なラビンゲーム解法の現代的基盤を提供している。",
+          "keywords": [
+            "Rabin games",
+            "automata theory",
+            "temporal synthesis",
+            "Büchi games",
+            "memoization"
+          ],
+          "appendix": "本論文は「automata theory」および「formal languages」の分野に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.15479v1": {
+          "title": "過去時相作用素をもつ線形時相論理からLDBAおよびDPAへの新たな変換手法",
+          "summary": "本論文では、過去時相作用素をもつ線形時相論理（LTL with past）から極限決定性Büchiオートマトン（LDBA）への、そしてさらに決定性パリティオートマトン（DPA）への漸近的最適変換手法を提案する。従来の過去時相を扱う変換手法とは異なり、本手法は逐次的（インクリメンタル）であり、時間的矛盾を修正するためのバックトラックを伴わず、状態や遷移を必要に応じてオンザフライで構築できる。過去時相は、弱形式と強形式の過去作用素を交互に用いることで自然に論理式へ符号化される。また、until作用素とその弱形式などの最小・最大不動点作用素の交替に起因する困難を解消するため、それらの作用素を根とする部分論理式に対する語の無限挙動に基づいて、与えられた論理式を書き換える手法を用いている。",
+          "keywords": [
+            "linear temporal logic with past",
+            "limit-deterministic Buchi automata",
+            "deterministic parity automata",
+            "on-the-fly construction"
+          ],
+          "appendix": "automata theory, formal languages"
+        },
+        "http://arxiv.org/abs/2610.15478v1": {
+          "title": "(制御可能な) 時間オートマトンにおける実行時間オパシティの計算困難性",
+          "summary": "実行時間オパシティ（ET-opacity）は、攻撃者が実行時間のみから秘密の状態（ロケーション）を訪問したかを推論できるか判定する問題であり、時間オートマトン（TA）におけるタイミング情報の漏洩を解析するために用いられる。制御可能なTAにおいては、情報漏洩を防ぐ制御戦略の存在判定が目的となる。これら制御の有無を問わず決定可能であることが知られていたが、従来の研究では計算量の上界のみが示されており、厳密な評価ではなかった。本論文の主な貢献は、これら両方のケースに対して厳密な計算量の下界を証明した点にある。さらに、制御可能TAにおける2つのET-opacityの変種（fullおよびweak ET-opacity）が相互還元可能であることを証明した。",
+          "keywords": [
+            "Execution-time opacity",
+            "Timed automata",
+            "Controllable timed automata",
+            "Timing information leakage",
+            "Complexity lower bounds"
+          ],
+          "appendix": "本論文は時間オートマトン（Timed Automata）における決定問題の計算量解析を扱っており、指定された興味ある分野のうち「automata theory」および「formal languages」と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.15253v1": {
+          "title": "位相的完全群の固定化群と極大部分群",
+          "summary": "カントール単位空間を持つ極小有効エタール亜群（ample groupoid）の位相的完全群における閉集合固定化群について研究する。概有限または純無限な亜群に対し、GrigorchukおよびVorobetsの極大固定化群定理を交換子群を含む任意の部分群へと拡張した。空でない閉稠密疎集合について、その固定化群の極大性は、固定化群作用の極小性、正則縮約の極小性、および正準な広開部分亜群の素性と同値である。概有限性や純無限性を仮定しない場合でも、無限閉稠密疎集合上に極小に作用する固定化群の空間的剛性を証明した。これらの同型型は環境の角谷同値類を決定し、ハウスドルフであれば有効縮約も決定する。また、コンパクト単位空間を持つ任意のAF亜群を、カントール単位空間を持つ任意の極小有効エタール亜群の閉稠密疎部分集合への全制限（相対位相を伴う）として実現できることを示した。剛性と実現を組み合わせることで、交換子群を含む任意の部分群において対ごとに非同型な連続体濃度の固定化群が得られ、これらは環境亜群が概有限または純無限である場合に極大となる。さらにこの実現により、環境の縮小亜群C\\*-代数の明示的なAF部分商（CAR代数を含む）が、正準対角部分代数との両立性を持って得られる。",
+          "keywords": [
+            "topological full groups",
+            "ample groupoids",
+            "maximal subgroups",
+            "stabilizers",
+            "AF groupoids"
+          ],
+          "appendix": "本論文は無限離散群（位相的完全群）の部分群構造や極大性、同型類を扱っており、「strucure of large countable infinite groups」と密接に関連しています。また、カントール空間上の力学系やエタール亜群の理論を通じて「symbolic dynamics」とも深く関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2610.15875v1",
+        "http://arxiv.org/abs/2610.15849v1",
+        "http://arxiv.org/abs/2610.15632v1",
+        "http://arxiv.org/abs/2610.15631v1",
+        "http://arxiv.org/abs/2610.15500v1",
+        "http://arxiv.org/abs/2610.15495v1",
+        "http://arxiv.org/abs/2610.15479v1",
+        "http://arxiv.org/abs/2610.15478v1",
+        "http://arxiv.org/abs/2610.15253v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2610.15875v1": {
+          "message_id": "1559901382058844201",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.15849v1": {
+          "message_id": "1559901390372077640",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.15632v1": {
+          "message_id": "1559901398722805773",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.15631v1": {
+          "message_id": "1559901406977204351",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.15500v1": {
+          "message_id": "1559901415919456339",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.15495v1": {
+          "message_id": "1559901424551198793",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.15479v1": {
+          "message_id": "1559901432793141281",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.15478v1": {
+          "message_id": "1559901441408114800",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.15253v1": {
+          "message_id": "1559901450170269840",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-10-14T07:37:43.131114+00:00",
-      "updated_at": "2026-10-14T10:58:29.106832+00:00",
-      "finalized_at": null
+      "updated_at": "2026-10-14T12:11:29.136468+00:00",
+      "finalized_at": "2026-10-14T12:11:29.136444+00:00"
     }
   ]
 }
