@@ -90856,7 +90856,7 @@
     },
     {
       "pipeline_id": "20261017T065708Z-7adbcebd",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/f8zt0vq11ilv6zgl2va2zkv5c8zvlraz6itl",
       "summarize_job_name": "batches/7rq328z4cbq6zw2ov99i88l62ykj4h2n2ibb",
       "papers": [
@@ -92133,16 +92133,333 @@
         "http://arxiv.org/abs/2610.19584v1",
         "http://arxiv.org/abs/2610.19562v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2610.20937v1": {
+          "title": "2変数と2次元構造",
+          "summary": "本論文では、2次元構造上における1階述語論理の2変数断片（FO²）の有限充足可能性問題を研究している。20年間にわたり未解決であった3つのケースをすべて解決した。第一に、1つの全順序と1つの後続関係を持つFO²の有限充足可能性は、任意の補助述語や定数記号を許容してもNExpTime完全であることを示し、先行研究の未解決問題を解消した。この応用としてFO²の順序不変性および順序・後続不変性がcoNExpTime完全であることが導かれる。第二に、2つの全順序を持つFO²の有限充足可能性は、補助的な非単項述語がない場合でもExpSpace困難であり、既存の上界と一致することを示した。第三に、2つの全順序と一方の後続関係を持つ場合、任意の補助述語を許容しても有限充足可能性がExpSpaceに収まることを示し、先行研究の2NExpTimeから改善して予想を肯定的に解決した。これらにより、2次元において補助述語や定数は計算量クラスに影響を与えないことが示された。",
+          "keywords": [
+            "finite satisfiability",
+            "two-variable fragment",
+            "first-order logic",
+            "linear orders",
+            "computational complexity"
+          ],
+          "appendix": "本研究は計算複雑性理論および有限モデル理論に属しており、指定された「興味ある分野」（automata theory、formal languages、記号力学系など）と直接的な言及や明確な重なりはありません。"
+        },
+        "http://arxiv.org/abs/2610.20867v1": {
+          "title": "移動物体を伴う先行的常識推論：相互作用する軌道の予測推論に向けたASPに基づくフレームワーク",
+          "summary": "複雑で動的な環境における相互作用を伴う運動の先行的推論を行うための、汎用的な宣言型フレームワークを提案する。本研究では、低レベルの運動計算をヒューリスティックに誘導するために、意味論的レベルで（説明可能な）先行的時空間メンタルモデルを形成することに焦点を当てる。提案手法はハイブリッド、モジュール式、かつ詳細化耐性（elaboration tolerance）を備えており、1) 相互作用する運動軌道のダイナミクスを特徴付けるASPモデル、2) 分岐する軌道の未来を導出するための意味論主導の予測、3) 予測の評価・順位付け・フィルタリングを行うエネルギーベースの最適化モデルを統合している。Argoverse 2ベンチマークを用いた評価により、エンドツーエンドの確率的予測とは異なり、予測された各軌道が明示的で検証可能なイベントレベルの仮説を伴うことを示す。",
+          "keywords": [
+            "anticipatory reasoning",
+            "answer set programming",
+            "interactive motion trajectories",
+            "energy-based optimization",
+            "explainable AI"
+          ],
+          "appendix": null
+        },
+        "http://arxiv.org/abs/2610.20329v1": {
+          "title": "クラインの四元群上のlazyかつ可逆なセルオートマトンによる生成",
+          "summary": "群 G = C₂ × C₂ およびアルファベット A = {0, 1} に対し、lazyなセルオートマトンと可逆なセルオートマトンによって生成される CA(G; A) の部分モノイドを特徴付ける。あるセルオートマトンがこの部分モノイドに属するための必要十分条件は、それが2つの自由 G 軌道を同一の自由軌道に写す際、両方の定数配置とある2点軌道を同一の定数配置に写すことである。この判定基準より部分モノイドの濃度は 59,712 であることが導かれ、一つの冪等元を添加することでモノイド全体が生成されること、またこの部分モノイドが濃度 65,024 の一意的な極大部分モノイドに含まれることが示される。さらに、lazyな写像のみで生成される部分モノイドの濃度は 4,007 であり、いずれの生成系でも最長最短語長は 6 である。これらの判定基準および濃度は Lean により形式的検証が行われている。",
+          "keywords": [
+            "cellular automata",
+            "Klein four-group",
+            "lazy cellular automata",
+            "monoid generation",
+            "Lean"
+          ],
+          "appendix": "本研究はセルオートマトンを扱っており、興味ある分野の「symbolic dynamics」および「automata theory」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.20317v1": {
+          "title": "plactic様モノイドの冪剰余モノイド",
+          "summary": "本論文では、各生成元 a に対する関係 a^(σ(a)) = a (σ(a) ≥ 2) を含む最小の合同関係による、複数の plactic 様モノイドの商について記述する。本研究の出発点は、各生成元 a に対する関係 a² = a による plactic モノイドの商である stylic モノイドに関する先行研究である。対象とする plactic 様モノイドは、plactic モノイド自身、Chinese モノイド、hypoplactic モノイド、sylvester モノイド、metasylvester モノイド、hyposylvester モノイドである。各ケースにおいて正規形の集合と冪等元を同定し、濃度に関する公式を導出し、同型型を明らかにする。",
+          "keywords": [
+            "plactic-like monoids",
+            "stylic monoid",
+            "power quotients",
+            "normal forms",
+            "idempotents"
+          ],
+          "appendix": "本論文はcombinatorics on words（語の組合せ論）と密接に関連しています。placticモノイドや類似のモノイド群はタブローや語の組合せ論において重要な代数構造です。"
+        },
+        "http://arxiv.org/abs/2610.20308v1": {
+          "title": "平坦半環 S(W) の等式論",
+          "summary": "空でない語の空でない（無限集合であってもよい）集合 W に対する平坦半環 S(W) の有限基底問題を研究した。語の最初と最後の文字を削除して得られる「真の内部（strict interior）」を用いたとき、S(W) が有限基底を持つことと、W に含まれるすべての語の真の内部が線形（linear）であることは同値であることを証明した。これにより、Jackson ら (J. Algebra 611: 211--245, 2022) によって提起された未解決問題が完全に解決された。",
+          "keywords": [
+            "finite basis problem",
+            "flat semirings",
+            "equational theories",
+            "strict interior",
+            "combinatorics on words"
+          ],
+          "appendix": "本研究は語（words）とその線形性に関する性質を扱っており、指定された分野のうち「combinatorics on words」および関連する代数学的・言語理論的側面に深く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.20257v1": {
+          "title": "max-plus行列半環における有限基底問題と部分多様体区間",
+          "summary": "非負整数上のmax-plus代数S=(ℕ, max, +)および零元として-∞を添加したS̄について、全行列半環Matₙ(S)および上三角行列半環UTₙ(S̄)が生成する多様体がそれぞれ狭義単調増加列をなすことを示す。各列の異なる元の間の任意の区間は濃度2^(ℵ₀)を持ち、その濃度を持つ鎖および反鎖を含む。これらの証明には、素サイクル言語に付随する有限構文半環と恒等式の独立族が用いられる。さらに、整除性に関して閉じた単項式言語から有限可換ai-半環を構成し、上三角行列に対するループ・ブロック恒等式や全行列に対する次元非依存な3次パディング恒等式などを用いることで、上記区間のすべての多様体、さらにはV(S)から全行列次元全体が生成する多様体までの間のすべての多様体が無限公理的ランクを持つ（したがって有限基底を持たない）ことを証明する。最後に、固定された各全行列次元について、正または非負の整数・有理数・実数係数領域全体にわたる等式同値性を示す。",
+          "keywords": [
+            "finite basis problem",
+            "subvariety intervals",
+            "max-plus matrix semirings",
+            "syntactic semirings",
+            "axiomatic rank"
+          ],
+          "appendix": "本研究の証明手法において有限構文半環（syntactic semirings）や言語（prime-cycle languages, languages of monomials）が本質的に用いられているため、オートマトン理論（automata theory）および形式言語（formal languages）と関連しています。"
+        },
+        "http://arxiv.org/abs/2610.20176v1": {
+          "title": "合同ジャンプにおける相反力学系：整数軌道と付値錐",
+          "summary": "固定された正の次数 n, m に対し、交代的なモニック相反変換は多項式対の係数空間上の有理離散力学系を定義する。この系は多項式の整除性問題における合同ジャンプから生じる。本論文では、非零の定数項を持つ任意の状態が4回の交代更新の後にその有理ゲージ類へと戻ることを証明し、この回帰軌道がℤ上で実現される条件を分類する。局所的な障害は端点のp進付値の欠損によって記述され、最初の整数ブロックの後、定数項の付値はトレースが s = nm のみに依存する明示的な行列 M_{n,m} ∈ SL₂(ℤ) によって発展する。これにより、s < 4 では有限位数の楕円型、s = 4 では放物型、s > 4 では双曲型の振る舞いを示す。双曲型の場合、不変閾値、無理固有錐、および離散谷公式により、前方および両方向無限の整数軌道に対する有限判定条件が得られる。さらに、2次の特殊化において階数2のp進関係格子が局所相殺深度の正確な公式を与え、周期的なVieta軌道上の有限判定条件を導出する。",
+          "keywords": [
+            "reciprocal dynamics",
+            "congruence jumping",
+            "integral orbits",
+            "p-adic valuations",
+            "Vieta orbits"
+          ],
+          "appendix": "数論的力学系（arithmetic dynamics）に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2610.20024v1": {
+          "title": "有限型シフトの位相的完全群の極大部分群",
+          "summary": "カントール単位空間を持つ亜群が対応する、既約な片側有限型シフトの位相的完全群の極大部分群について研究する。広義開部分亜群に対して部分亜群グラフを構成し、可算なグラフ亜群の完全コンパクト開縮約として同定する。素な（極大真）広義開部分亜群に対して3分法（極小、開かつ閉な2分割に由来、または非空の真の閉不変集合が一意かつ至る所疎）が成立することを証明し、その位相的完全群の正規化群が全体の位相的完全群において極大となる同値条件を導出する。また、Thompson群 V においてすべての単純型システムの安定化群が極大となることを示し、既存の結果を拡張するほか、交換子群を含む部分群は単位空間上に極小に作用する互いに同型でない極大部分群を連続体濃度個持つことを示す。",
+          "keywords": [
+            "topological full groups",
+            "shifts of finite type",
+            "maximal subgroups",
+            "subgroupoids",
+            "Thompson's group V"
+          ],
+          "appendix": "本論文は「symbolic dynamics」および「structure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.19990v1": {
+          "title": "絶対零度における平衡測度の収束に関するBrémontの定理の初等的証明",
+          "summary": "局所定数関数 f を持つ位相的混合な有限型サブシフトにおいて、t → ∞ としたときの tf に対する平衡測度が収束するというBrémontの定理に対し、初等的な証明を与える。この証明を通じて、極限測度がすべてのシリンダー集合に対して代数的数を割り当てることが示される。",
+          "keywords": [
+            "equilibrium measures",
+            "zero temperature",
+            "subshift of finite type",
+            "locally constant function",
+            "Brémont's theorem"
+          ],
+          "appendix": "本論文は有限型サブシフト（subshift of finite type）およびその上の測度論的性質を扱っているため、興味ある分野の「symbolic dynamics」に強く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.19812v1": {
+          "title": "ファイバー方向の指数が支配的な歪積写像のグリーン測度の次元",
+          "summary": "次数 d ≥ 2 の ℂ² 上の多項式歪積写像 f(z, w) = (p(z), q(z, w)) に対し、f および p に付随するグリーン測度をそれぞれ μ、μ_p とする。(f, μ) のリアプノフ指数を λ₁ > λ₂、(p, μ_p) のリアプノフ指数を λ_p としたとき、λ₂ = λ_p が成り立つならば、μ は厳密次元（exact dimensional）であり、そのハウスドルフ次元が dim_H μ = (log d)/λ₁ + (log d)/λ₂ で与えられることを示す。証明には、Jonsson によって得られた条件付き測度の連続性、μ が定数ヤコビアン d² を持つこと、および f の反復合成の逆分岐に関するファイバー版の正規形定理が用いられる。",
+          "keywords": [
+            "Green measure",
+            "polynomial skew product",
+            "Lyapunov exponents",
+            "exact dimensional",
+            "Hausdorff dimension"
+          ],
+          "appendix": "本論文は「complex dynamics」の分野と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.19787v1": {
+          "title": "双曲空間に作用する群のドリフトと同時最小変位",
+          "summary": "本論文では、双曲空間上のランダムウォークのドリフトに対し、同時最小変位（joint minimal displacement）を用いた一様な下限を導出している。主定理はグロモフ双曲空間への弱ア円筒的作用（weakly acylindrical action）に適用可能であり、関連するすべての定数に関して定量的である。特に、挟まれた負曲率を持つアダマール多様体の離散等長変換群に対しては、マルグリスの補題から必要な仮定が自動的に満たされる。これにより、挟まれた負曲率を持つアダマール多様体、双曲群、および曲線グラフに作用する写像類群のドリフトスペクトルにおいて、0における一様なギャップが存在することが示される。",
+          "keywords": [
+            "drift",
+            "joint minimal displacement",
+            "hyperbolic spaces",
+            "weakly acylindrical actions",
+            "drift spectra"
+          ],
+          "appendix": "双曲群や写像類群の幾何学的・代数的性質を扱っており、「structure of large countable infinite groups（大きな可算無限群の構造）」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.20663v1": {
+          "title": "アンダータイル（undertile）の結晶化",
+          "summary": "Taylor-Socolarのモノタイルなど、いくつかの非周期的モノタイルの基礎となっている、アンダータイル（undertile）と呼ばれるモノタイル「R1」によるすべての周期的タイリングを分類した。この分類は、収縮（deflation）が適用可能な領域間の亀裂線（fracture lines）の調査を通じ、deflationの手法を用いて行われた。また、非周期的タイリングにも適用可能な亀裂パターンの完全な分類を提供しており、これを用いてアンダータイルに基づく既存のいくつかのモノタイルの非周期性を再証明することができる。",
+          "keywords": [
+            "periodic tilings",
+            "monotile",
+            "undertile",
+            "deflation",
+            "fracture lines"
+          ],
+          "appendix": "本研究はタイリング理論および非周期的モノタイルを扱っており、非周期的タイリングの力学系（symbolic dynamics）や置換力学系と深く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.19666v1": {
+          "title": "同相写像群の不変生成",
+          "summary": "コンパクトハウスドルフ空間上の同相写像群が不変生成（invariable generation）されないための十分条件を提示し、群作用のダイナミクスを用いて証明された先行結果を一般化した。また、Scott-Röver-Nekrashevych群や、（概）局所的に規定された作用を持つ木自己同型群における新たな応用を示した。",
+          "keywords": [
+            "Invariable generation",
+            "Groups of homeomorphisms",
+            "Scott-Röver-Nekrashevych groups",
+            "Tree automorphisms"
+          ],
+          "appendix": "木自己同型群やScott-Röver-Nekrashevych群における不変生成性の研究は、指定された興味ある分野のうち「strucure of large countable infinite groups」および作用素・オートマトン群の観点から「automata theory」や「symbolic dynamics」と関連しています。"
+        },
+        "http://arxiv.org/abs/2610.19584v1": {
+          "title": "入れ子型反復k変量代入で閉じた完全AFLと深さk記憶オートマトン",
+          "summary": "本論文では、Greibachによる入れ子型反復代入（nested iterated substitution）の概念を機械に依存しない形でk変量へと一般化した「入れ子型反復k変量代入」を導入し、完全AFL（full AFL）の観点から考察を行っている。さらに、Hibbardの書換系に由来する深さk記憶オートマトン（depth-k storage automata）が、frozen blank sensitivityと呼ばれる制約下で認識する言語族の特性を、完全AFLおよび入れ子型反復k変量代入を用いて解明し、これらの言語に対する抽象的な理論付けを推進している。",
+          "keywords": [
+            "full AFL",
+            "nested iterated substitution",
+            "depth-k storage automata",
+            "super AFL",
+            "frozen blank sensitivity"
+          ],
+          "appendix": "本論文は「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」の分野に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.19562v1": {
+          "title": "文脈自由言語を超えた半線形性と一般化された階層化半線形性",
+          "summary": "パリックの定理は文脈自由言語の半線形性を示す有名な結果であるが、本研究ではこの半線形性の適用範囲を文脈自由言語を超えるクラスへと拡張することを試みる。具体的には、frozen blank sensitivity という自然な制約のもとで一方向非決定性深さkストレージオートマトンによって認識される言語（k-storable言語）に着目する。k-storable言語は正規言語や文脈自由言語のポンピング補題を一般化した性質を満たすことが知られているが、本研究ではパリックの定理を一般化し、k-storable言語の半線形性を証明した。さらに、有界言語に関して文脈自由言語を階層化半線形性（stratified semi-linearity）によって特徴付けたギンズバーグ・スパニエの定理を一般化し、k-storable言語の特徴付けを与えた。この結果により、オートマトン（機械）に依存しない抽象的な扱いが可能となり、k-storable言語が文脈自由言語の「自然な」一般化であるという見解が強固なものとなる。",
+          "keywords": [
+            "Parikh's theorem",
+            "semi-linearity",
+            "stratified semi-linearity",
+            "depth-k storage automata",
+            "k-storable languages"
+          ],
+          "appendix": "本論文は「automata theory（オートマトン理論）」および「formal languages（形式言語理論）」に直接関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2610.20937v1",
+        "http://arxiv.org/abs/2610.20867v1",
+        "http://arxiv.org/abs/2610.20329v1",
+        "http://arxiv.org/abs/2610.20317v1",
+        "http://arxiv.org/abs/2610.20308v1",
+        "http://arxiv.org/abs/2610.20257v1",
+        "http://arxiv.org/abs/2610.20176v1",
+        "http://arxiv.org/abs/2610.20024v1",
+        "http://arxiv.org/abs/2610.19990v1",
+        "http://arxiv.org/abs/2610.19812v1",
+        "http://arxiv.org/abs/2610.19787v1",
+        "http://arxiv.org/abs/2610.20663v1",
+        "http://arxiv.org/abs/2610.19666v1",
+        "http://arxiv.org/abs/2610.19584v1",
+        "http://arxiv.org/abs/2610.19562v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2610.20937v1": {
+          "message_id": "1560948420217147454",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.20867v1": {
+          "message_id": "1560948427930599495",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.20329v1": {
+          "message_id": "1560948435732004928",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.20317v1": {
+          "message_id": "1560948444183404567",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.20308v1": {
+          "message_id": "1560948452446310494",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.20257v1": {
+          "message_id": "1560948460658630688",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.20176v1": {
+          "message_id": "1560948470351921175",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.20024v1": {
+          "message_id": "1560948478887337985",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.19990v1": {
+          "message_id": "1560948487292452879",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.19812v1": {
+          "message_id": "1560948496620847327",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.19787v1": {
+          "message_id": "1560948504690434200",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.20663v1": {
+          "message_id": "1560948514035605545",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.19666v1": {
+          "message_id": "1560948522629595257",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.19584v1": {
+          "message_id": "1560948534470119516",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.19562v1": {
+          "message_id": "1560948543412510772",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-10-17T06:57:08.769786+00:00",
-      "updated_at": "2026-10-17T08:57:38.976294+00:00",
-      "finalized_at": null
+      "updated_at": "2026-10-17T09:32:15.554697+00:00",
+      "finalized_at": "2026-10-17T09:32:15.554672+00:00"
     }
   ]
 }
