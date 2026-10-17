@@ -90729,9 +90729,12 @@
           "message_id": "1560275475471802390",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1560828273116717157",
+          "read_requested_at": "2026-10-17T01:34:00.325830+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-10-17T01:34:19.258370+00:00"
         },
         "http://arxiv.org/abs/2610.17196v1": {
           "message_id": "1560275483193643089",
@@ -90830,7 +90833,20 @@
           "paper_thread_id": null
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2610.17335v1": {
+          "conclusion": "本論文は、C^2の一定ヤコビアン剪断群Sc(2)に属する自己同型写像の不変回帰Fatou成分において、誘導力学系が無限位数を持つ場合の1次元極限集合Σの等角型（conformal type）を完全に決定した研究である。先行研究で未解決だったD*（穿孔円盤）およびC*（穿孔平面）の不可能性を証明し、極限集合がC, D, または円環に限られることを示した。またHénon型写像の周期点集合が全体曲線を含まないことも証明しており、多変数複素力学系におけるFatou成分の分類問題に大きな進展を与えている。",
+          "main_claims": "1. Theorem 1.2 (p. 3): F ∈ Sc(2) の不変回帰Fatou成分 Ω の極限集合 Σ が1次元で F|Σ が無限位数のとき、Σ は C, D, または円環に双正則である。特にHénon型写像の有限合成に共役なら D* や C* は現れず、D または円環に限られる。\n2. Theorem 1.3 (p. 3): Hénon型写像の有限合成 F に対して、周期点集合 Fix(F^k) への非定数固有正則写像の定義域となる連結リーマン面 S は必ず双曲的であり、パンクチャー端を持たない。\n3. 新規性: Arosio-Benini-Fornæss-Peters (2019, [5]) の分類結果で未解決だったD*およびC*の実現可能性を排斥し、分類を完成させた点。",
+          "method_outline": "1. 多項式ケースの直感的説明 (Section 2): Hénon写像の輪鎖方程式 (2.1) に対し最大絶対値原理を用いた評価 (Lemma 2.1) を行うことで、C, C*, D* が排除されるメカニズムを解説。\n2. 1変数および円環上のNevanlinna理論の適用 (Section 3): 超越的正則関数を含む一般設定に対応するため、正則関数の Nevanlinna 特性量 T(r, f) および円環上の特性量 TA(ρ, r, f) の漸近挙動 (Lemma 3.1, 3.3) を準備。\n3. 一般のHénon型合成における不可能性の証明 (Section 4): 循環方程式 (4.2) と Nevanlinna 特性量の成長比率を比較し、超越関数の極限での急激な成長と整合しないことを示して C, C*, D* を排除 (Proposition 4.1, 4.2)。\n4. Theorem 1.3 の証明 (Section 5): 周期点集合 Fix(F^k) 上の写像に対しても同様の循環方程式 (5.1) に帰着させ、Nevanlinna 理論を用いて普遍被覆 C や D* からの非定数正則写像が存在しないことを提示。",
+          "research_connection": "【明記されている接点】\n・complex dynamics（複素力学系）: C^2 上の正則自己同型写像の Fatou 成分の分類、Hénon 型写像の周期点集合の構造解析。\n・structure of large countable infinite groups: Sc(2) が A *_A∩Ec Ec というアマルガム生成構造を持つことの利用。\n\n【推測される接点】\n・arithmetic dynamics: 周期点集合の代数的・幾何学的性質（全体曲線を含まない双曲性）からの影響。\n・symbolic dynamics / combinatorics on words: Hénon 構造の循環方程式 (cycle equations) における記号的巡回構造の解析。",
+          "reading_guide": "【前提知識】1変数 Nevanlinna 理論（特に Korhonen による円環上の Nevanlinna 特性量）、C^2 上の Hénon 写像および Fatou-Julia 理論の基礎知識。\n【最初に読むべき箇所】Theorem 1.1, 1.2, 1.3 (p. 2-3) を確認後、Section 2 (p. 3-5) を読んで多項式の場合のアイデアを把握するのが良い。\n【精読方針】概要の把握のみであれば Section 1, 2 および Section 4 の命題 (Proposition 4.1, 4.2) の主張のみで十分。Nevanlinna 理論を用いた詳細な計算を追う場合は Section 3-5 を精読する。",
+          "follow_up_questions": [
+            "1. 超越的 Hénon 写像における関数の成長度（order of growth）の違いは、Nevanlinna 特性量を用いた排斥論法にどのような影響を与えますか？",
+            "2. 本論文の手法（循環方程式と Nevanlinna 特性量の比較）は、Sc(2) 以外の Aut(C^2) の部分群やより高次元の C^n 上の自己同型写像へ応用可能ですか？",
+            "3. Theorem 1.3 で示された Fix(F^k) の双曲性とパンクチャー端の非存在から、周期点集合の孤立性や代数的分散性に関してどのような幾何学的帰結が得られますか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
