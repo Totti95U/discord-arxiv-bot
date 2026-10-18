@@ -92463,7 +92463,7 @@
     },
     {
       "pipeline_id": "20261018T071342Z-a1cca963",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/n9sk3annkvpxny7lcugsm9qgrcor07ov4fm7",
       "summarize_job_name": "batches/pj1crbpyjkg101ehsxjzuefwix6udvop6v4n",
       "papers": [
@@ -93493,16 +93493,269 @@
         "http://arxiv.org/abs/2610.21379v1",
         "http://arxiv.org/abs/2610.21237v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2610.22287v1": {
+          "title": "マルチエージェントシステムにおける時相仕様に対する合理的戦略の学習",
+          "summary": "本論文では、ダイナミクスが未知の確率的マルチエージェントシステムにおいて、各エージェントが有限トレース上の確率的線形時相論理（PLTL_f）で指定された独自の確率的時相仕様を持つ場合の「合理的合成（rational synthesis）」を研究している。時相仕様の充足確率に基づく利得を用いて、ナッシュ均衡や部分ゲーム完全均衡などの解概念を結合戦略プロファイルに対する制約として課す。具体的には、特定のエージェントの確率的時相制約を満たし、かつ選定した解概念のもとで安定な解となる戦略プロファイルを求める問題として定式化する。本研究では、表形式のNash-Q学習に対する条件付き収束保証を与え、有限サンプル信頼境界によって仕様充足を検証し、近似最良応答検査によって戦略的安定性を評価する。提案手法は、時相仕様から自動的にコンパイルされた報酬オートマトンを用いて仕様充足確率を最大化するモデルフリーのマルチエージェント強化学習環境で機能し、8つの一般化同時確率ゲームを用いて有効性が実証されている。",
+          "keywords": [
+            "rational synthesis",
+            "Probabilistic Linear Temporal Logic on Finite Traces",
+            "Multi-Agent Reinforcement Learning",
+            "reward automata",
+            "Nash equilibrium"
+          ],
+          "appendix": "時相論理仕様をオートマトン（reward automata）へとコンパイルして学習に利用する手法が含まれており、オートマトン理論（automata theory）や形式言語（formal languages）の分野に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.22218v1": {
+          "title": "小規模置換クラスおよび正規言語に対する論理同型と論理極限定理",
+          "summary": "本論文では、任意の小規模置換クラス ℱ に対し、ℱ 上の単項二階TOTO論理が正規言語 L_ℱ 上の古典的な単項二階論理と同型になるような正規言語 L_ℱ が存在することを示す。正規言語が単項二階の制限の下で閉じている性質を利用することで、ℱ の多くの部分集合が良好な構造を持つことが示される。特にこれにより、任意の小規模置換クラスから得られるランダム置換が、一階論理および単項二階論理（後者の場合はmodularな法則）の両方において収束則を満たすことが示される。本証明手法では、正規言語のオートマトン表現を用いて母関数の性質を証明する手法を導入しており、これ自体が独立した興味の対象となりうる。潜在的な応用として、一部の正規言語におけるランダムな語に対する一階極限定理などが挙げられる。",
+          "keywords": [
+            "small permutation classes",
+            "regular languages",
+            "monadic second-order logic",
+            "logical limit laws",
+            "generating functions"
+          ],
+          "appendix": "本論文は正規言語（regular languages）やオートマトン表現を用いた母関数の解析を扱っており、「automata theory」および「formal languages」に関連しています。また、正規言語上のランダムな語への応用にも言及しているため、「combinatorics on words」とも関連性があります。"
+        },
+        "http://arxiv.org/abs/2610.22123v1": {
+          "title": "力学系における決定不能問題",
+          "summary": "自己写像 φ を持つ多様体 X と、その部分多様体 Y および Z が与えられたとき、φⁿ(Y) が Z と非自明に交差するような n の集合を考察する。Lee と Nam の優れた構成法を拡張することにより、固定された周囲の多様体 X および射 φ に対しても、この問題が決定不能問題を生じることを示す。さらに、この構成を用いて、著者、Satriano、および Sierra による予想に対する反例を与える。",
+          "keywords": [
+            "undecidable problem",
+            "dynamics",
+            "variety",
+            "self-map",
+            "subvarieties"
+          ],
+          "appendix": "本研究は代数多様体上の自己写像（離散力学系）の交差問題を扱っており、算術力学系（arithmetic dynamics）や計算不可能性・決定問題の観点から計算論およびオートマトン理論に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.22121v1": {
+          "title": "Brodskiĭの準多様体の外側にある局所可示群",
+          "summary": "無ねじれ1関係子群が局所可示であることを示すBrodskiĭの証明において構築された準多様体に属することを妨げる群の性質の組を提示する。これらの性質を満たす局所可示群の例が存在することから、Brodskiĭの準多様体はすべての局所可示群がなす準多様体に真に含まれることが導かれ、Howieの予想が反証される。",
+          "keywords": [
+            "locally indicable groups",
+            "Brodskiĭ's quasivariety",
+            "torsion-free one-relator groups",
+            "Howie's conjecture"
+          ],
+          "appendix": "局所可示群や準多様体など、無限群の構造論（structure of large countable infinite groups）に関連する内容を含んでいます。"
+        },
+        "http://arxiv.org/abs/2610.21945v1": {
+          "title": "幾何学的有限な有理写像のジュリア集合の均等化",
+          "summary": "リーマン球面上の互いに素な開円板族の補集合はSchottky集合と呼ばれる。本論文では、ジュリア集合がSchottky集合と擬等角同値であるような幾何学的有限有理写像の完全な特徴付けを与える。また、幾何学的有限な単一臨界多項式において、無限遠の吸引受容領域の閉包がSchottky集合と擬等角同値になるための必要十分条件は、吸引的閉軌道が存在して全ての有界なファトゥ成分の閉包が互いに素であること、または重複度3の放物型閉軌道が存在することであることを証明する。証明の要素として、接する2円の組に擬等角同値な任意の準円の組に関する新たな力学系による特徴付けが用いられる。",
+          "keywords": [
+            "geometrically finite rational maps",
+            "Julia sets",
+            "Schottky set",
+            "quasiconformal equivalence",
+            "unicritical polynomial"
+          ],
+          "appendix": "本論文は「興味ある分野」のうち complex dynamics（複素力学系）に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.21727v1": {
+          "title": "群が弱分岐群の商群となることを妨げるのはその濃度のみである",
+          "summary": "分岐群の任意の真の商群が実質アーベル群であることはよく知られているが、本論文では濃度が高々2^ℵ₀である任意の群が弱分岐群（weakly branch group）の商群になることを示す。実際、自由な補群を持つ分裂拡大である弱分岐群が存在する。さらに、ある群がd個の元で生成される場合、その群へ全射する(d+2)個の元で生成される弱分岐群が存在する。これらの応用として、無限指数の極大部分群を持つが分岐群ではない弱分岐群の存在に関するThillaisundaramの問題を解決し、さらに、不変生成（invariably generated）されない弱分岐群の存在に関するCoxとThillaisundaramの問題を部分的に解決する。",
+          "keywords": [
+            "weakly branch groups",
+            "branch groups",
+            "quotients of groups",
+            "maximal subgroups",
+            "invariable generation"
+          ],
+          "appendix": "無限群の商群構造や生成元に関する性質を扱っており、「strucure of large countable infinite groups」と関連しています。"
+        },
+        "http://arxiv.org/abs/2610.21635v1": {
+          "title": "パントグラフ差分方程式：安定性、多重安定性、およびカオス",
+          "summary": "本論文では、比例遅延を含む関数微分方程式であるパントグラフ方程式の離散版として、形式 x_{i+1}=F(x_i)+G(x_{h(i)})（h(i) ≤ i）で表されるパントグラフ差分方程式を調査している。特に遅延関数として h(i)=⌊ai⌋ や h(i)=⌊ai^α⌋（0<a<1, 0<α<1）を扱い、F(x)=0 である斉次型と F(x)≠0 である非斉次型を区別して解析を行う。まず線形パントグラフ差分方程式において、漸近安定性および0へ非収束となる十分条件を導出し、解析的な安定領域・不安定領域とパラメータスキャンを統合して相図を構築した。さらにロジスティック写像やテント写像のパントグラフ版についても考察し、斉次型では長さが指数関数的に増大するステップ状のプラトーを経て緩やかに収束し有限時間多重安定性が生じること、非斉次型では近傍の軌道が有限時間で指数関数的に離間しカオス力学系と整合することを示している。",
+          "keywords": [
+            "pantograph difference equations",
+            "proportional delay",
+            "asymptotic stability",
+            "multistability",
+            "chaos"
+          ],
+          "appendix": "本論文で扱われている離散力学系（ロジスティック写像やテント写像の遅延拡張）におけるカオス的振る舞いや軌道の大域的挙動は、complex dynamicsやarithmetic dynamicsなどの力学系理論全般に関連する側面を持っています。"
+        },
+        "http://arxiv.org/abs/2610.21627v1": {
+          "title": "ローラン性をもつ有理写像の次数増大度",
+          "summary": "代数的エントロピーは有理自己写像の反復合成における次数の指数関数的増大度を測る指標である。本論文では、特にGale–Robinson漸化式に着目し、ローラン性をもつ漸化式から生じる有理写像の次数増大度を研究している。著者らは、漸化式そのものから次数増大度を直接決定する手法を開発し、問題を対応する最大線形（トロピカル）漸化式の解析に帰着させた。まず、広範な同次2次ローラン漸化式に対して反復次数の閉形式表示を導出した。次に、この結果を2項Gale–Robinson族に適用し、周期的補正項を伴う明示的な2次増大公式を得た。さらに3項Gale–Robinson漸化式について代数的エントロピーを関連するトロピカル増大度列を用いて表現し、一般的な3項の族が周期的補正項を伴う2次増大を示すという予想を提示した上で、パラメータが p = 1, q = 2, r ≥ 3 の無限族に対してその予想を証明した。",
+          "keywords": [
+            "algebraic entropy",
+            "degree growth",
+            "Laurent property",
+            "Gale--Robinson recurrences",
+            "tropical recurrences"
+          ],
+          "appendix": "代数的エントロピーや有理写像の反復における次数の増大度を扱っているため、興味ある分野のうち「complex dynamics」および「arithmetic dynamics」に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.21559v1": {
+          "title": "3次有理写像における反発周期点の稠密性",
+          "summary": "本論文では、Cp 上の3次有理写像に対する反発周期点の稠密性予想を証明する。すなわち、任意の素数 p に対して、古典的ジュリア集合は古典的反発周期点の閉包に一致することを示す。Bézivinの定理により、空でない古典的ジュリア集合が古典的反発周期点を含むことを示せば十分である。p ≥ 5 の場合は tame な写像に関する既知の結果から従うため、本稿では剰余標数が2および3の場合を扱う。古典的反発周期点を持たないと仮定する対偶論法を用い、潜在的良還元を持つ写像では古典的ジュリア集合が既に空であること、それ以外の場合は具体的な正規形へと共役させて係数を解析する。各ケースで係数の制限を導き、すべての反復合成に対する球面微分の非一様でない一様有界性を確立する。この有界性から古典的射影直線上の同等連続性が導かれ、古典的ジュリア集合が空であることが示される。",
+          "keywords": [
+            "repelling periodic points",
+            "cubic rational maps",
+            "Julia set",
+            "arithmetic dynamics",
+            "equicontinuity"
+          ],
+          "appendix": "本論文は数論的力学系（arithmetic dynamics）および複素力学系（complex dynamics）に関連する非アルキメデス力学系の研究です。"
+        },
+        "http://arxiv.org/abs/2610.21516v1": {
+          "title": "リアプノフ指数に基づくホップ束の有理自己写像に伴う吸引領域の計算アルゴリズム",
+          "summary": "本研究の目的は主に2つある。第1に、実装時における分母がゼロまたは極小値となることによるオーバーフローや不定性の問題を回避するため、複素有理関数の反復理論を構築することである。第2に、吸引サイクルの計算およびその吸引領域のグラフィカルな表現を可能にする、実装が容易な手法を提示することである。第1の目的のために斉次複素座標を用い、ホップ束を介した3次元球面の商として表現される複素射影直線をモデルとして採用することで、有理関数の既約表現をホップ束の自己準同型写像として提示する。第2の目的については、リアプノフ関数およびリアプノフ指数を用いて自己準同型に伴うサイクルを計算し、対応する吸引領域を描画する。提案アルゴリズムは非負実定数の有限集合の計算に基づいており、不動点や吸引サイクルの事前の特定に依存しないという特長を持つ。",
+          "keywords": [
+            "basins of attraction",
+            "Hopf fibration",
+            "Lyapunov exponents",
+            "complex rational functions",
+            "attracting cycles"
+          ],
+          "appendix": "本論文は複素力学系（complex dynamics）に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.21379v1": {
+          "title": "HyperRecHMLのモデル検査は決定可能である",
+          "summary": "時間ハイパー論理（temporal hyperlogics）は、トレースに対する明示的な量化と時相要求を組み合わせた論理体系である。HyperRecHMLはトレース量化と不動点表現を任意に組み合わせることが可能な時間ハイパー論理であり、他の1階ハイパー論理と比較して高い表現力を持つためランタイム検証などに応用されてきたが、モデル検査問題の決定可能性は未解決であった。本論文では、任意のHyperRecHML論理式をトレース量化と不動点の入れ子を制限した標準形に帰着させる正規化手続きと、その標準形に対するオートマトンに基づいたモデル検査アルゴリズムを提案し、この決定可能性の問題を肯定的に解決した。このアルゴリズムの計算量は、高い表現力を持つにもかかわらず他のハイパー論理の同種の手法と同等である。",
+          "keywords": [
+            "HyperRecHML",
+            "temporal hyperlogics",
+            "model checking",
+            "decidability",
+            "automata"
+          ],
+          "appendix": "本論文で提案されているオートマトンを用いたモデル検査手法（automata-based model checking）は、提示された興味ある分野のうち「automata theory」および「formal languages」と強く関連しています。"
+        },
+        "http://arxiv.org/abs/2610.21237v1": {
+          "title": "同期型リアルタイムシステムに対するオートマトンの合成的学習",
+          "summary": "ブラックボックスな時間制約付きシステムの形式モデルを自動構築するアクティブモデル学習において、既存手法では複数の同期コンポーネントを持つシステムに対して単一のモノリシックなオートマトンを構築するため、コンポーネント構造が隠蔽され、コンポーネント単位の解析が困難になるという課題があった。本研究では、システム全体へのアクセスのみから各コンポーネントに対応する決定性リアルタイムオートマトン（RTA）を個別に構築する合成的学習手法を提案する。学習完了時には、得られたRTA群のネットワークが対象システムと完全に等価な時間的振る舞いを実現する。ランダム生成されたベンチマークの88.8%および全6件のケーススタディにおいて正常に学習が終了し、一部の事例ではモノリシック手法よりも高速に学習できることを確認した。",
+          "keywords": [
+            "active model learning",
+            "compositional learning",
+            "real-time automaton",
+            "timed synchronous systems"
+          ],
+          "appendix": "本論文はオートマトン理論（automata theory）および形式言語（formal languages）の分野に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2610.22287v1",
+        "http://arxiv.org/abs/2610.22218v1",
+        "http://arxiv.org/abs/2610.22123v1",
+        "http://arxiv.org/abs/2610.22121v1",
+        "http://arxiv.org/abs/2610.21945v1",
+        "http://arxiv.org/abs/2610.21727v1",
+        "http://arxiv.org/abs/2610.21635v1",
+        "http://arxiv.org/abs/2610.21627v1",
+        "http://arxiv.org/abs/2610.21559v1",
+        "http://arxiv.org/abs/2610.21516v1",
+        "http://arxiv.org/abs/2610.21379v1",
+        "http://arxiv.org/abs/2610.21237v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2610.22287v1": {
+          "message_id": "1561389480978546822",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.22218v1": {
+          "message_id": "1561389490541568131",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.22123v1": {
+          "message_id": "1561389499421032600",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.22121v1": {
+          "message_id": "1561389509176725606",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.21945v1": {
+          "message_id": "1561389517930504255",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.21727v1": {
+          "message_id": "1561389526306529383",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.21635v1": {
+          "message_id": "1561389534753853471",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.21627v1": {
+          "message_id": "1561389543767150684",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.21559v1": {
+          "message_id": "1561389552302694476",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.21516v1": {
+          "message_id": "1561389561173647471",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.21379v1": {
+          "message_id": "1561389569750995086",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.21237v1": {
+          "message_id": "1561389578307375135",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-10-18T07:13:42.808719+00:00",
-      "updated_at": "2026-10-18T11:30:05.514030+00:00",
-      "finalized_at": null
+      "updated_at": "2026-10-18T14:44:46.523342+00:00",
+      "finalized_at": "2026-10-18T14:44:46.523311+00:00"
     }
   ]
 }
