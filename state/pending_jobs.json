@@ -93759,7 +93759,7 @@
     },
     {
       "pipeline_id": "20261019T074545Z-8d131432",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/x77o2xh5pdso79ikbnl450mc0cckb7frqyye",
       "summarize_job_name": "batches/9gzmbj72v81a4j5xmuihkhfw8ya0g3w7ikoy",
       "papers": [
@@ -94632,16 +94632,271 @@
         "http://arxiv.org/abs/2610.22916v1",
         "http://arxiv.org/abs/2610.22870v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2610.23725v1": {
+          "title": "データVASSにおける整数到達可能性",
+          "summary": "データペトリネットはトークンがデータ値を持ち、遷移時にデータ値の等価性判定を行えるペトリネットの拡張であり、データ付き状態付きベクトル加算システム（データVASS）と同等である。このモデルにおける到達可能性問題の決定可能性は長年の未解決問題であるが、本論文ではカウンタが負の値を取り得る「整数到達可能性問題」の決定可能性を証明することで解決に向けた大きな一歩を示した。通常のVASSにおける整数到達可能性が整数線形計画法に帰着されるのとは異なり、データVASSでは状態空間がレジスタオートマトンのように軌道有限（orbit-finite）となるため複雑性が著しく増大する。提案する決定手続きは、通常のVASSのKLM分解に似た反復的細分化と、細分化に現れるデータ値の数を制限する新たな停止性議論を組み合わせたものである。さらに系として、レジスタオートマトンやデータペトリネットに関する複数の決定問題の決定可能性も導出している。",
+          "keywords": [
+            "data VASS",
+            "Data Petri nets",
+            "integer reachability",
+            "orbit-finite",
+            "register automata"
+          ],
+          "appendix": "本論文はオートマトン理論（automata theory）および形式言語（formal languages）に関連しています。具体的には、データ付きの拡張モデル（データペトリネット、データVASS、レジスタオートマトン）における検証や決定問題を取り扱っています。"
+        },
+        "http://arxiv.org/abs/2610.23637v1": {
+          "title": "relation gapを持つ2生成群表示",
+          "summary": "巡回関係加群（cyclic relation module）を持つものの、1関係子群（one-relator group）を表示しない2生成子2関係子の群表示を提示し、これにより「relation gap問題」を解決した。また、対応する表示2次元複体（presentation 2-complex）に単一の3胞体を接着することで、WallのD2問題に対する反例が得られることを示した。",
+          "keywords": [
+            "relation gap problem",
+            "Wall's D2 problem",
+            "relation modules",
+            "group presentations",
+            "presentation 2-complexes"
+          ],
+          "appendix": "本論文で扱われている群表示や低次元トポロジー・幾何学的群論の話題は、興味ある分野の「strucure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.23584v1": {
+          "title": "強Choquet-Deny群と不変な狭義凸再ノルム化",
+          "summary": "本論文では、Choquet-Deny群の概念を強化した「強Choquet-Deny群」を導入し研究する。可算群Gが強Choquet-Deny群であることと、任意の可分バナッハ空間X上のGの一様有界表現に対して同値なG不変の狭義凸ノルムが存在することが同値であることを示す。さらに有限生成強Choquet-Deny群の完全な分類を行い、有限生成群が強Choquet-Deny群であるための必要十分条件が実質可換（virtually abelian）であることを示す。これにより、有限生成群に対するMikael de la Salleの未解決問題を完全に解決した。さらなる応用として、可換位相群のコンパクト拡大の任意の可分バナッハ空間上の一様有界表現に対して、同値な不変狭義凸ノルムが存在することも示す。",
+          "keywords": [
+            "strongly Choquet-Deny groups",
+            "Choquet-Deny groups",
+            "strictly convex renormings",
+            "uniformly bounded representation",
+            "virtually abelian groups"
+          ],
+          "appendix": "本論文は可算群の代数的構造（実質可換群など）やその表現論的性質を扱っているため、「strucure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.23495v1": {
+          "title": "対称2カウンタマシン",
+          "summary": "カウンタマシンは単純でありながらチューリング完全な計算モデルである。本研究では、カウンタの入れ替えに対して更新遷移の集合が不変であるという意味で対称的な、非決定性2カウンタマシンの表現能力を調査する。このモデルは、単一の遷移内で両方のカウンタの更新を許容することで対称2-VASSを拡張したものである。主結果として、対称性が計算能力に劇的な影響を与えることを示し、到達可能性問題の決定可能性を証明することで、対称2カウンタマシンがチューリング完全ではないことを明らかにする。さらに、任意のカウンタの置換に対して不変であるという意味で対称な3つ以上のカウンタマシンに対しても決定可能性が成り立つと予想している。3つ以上のカウンタマシンについての問題は未解決として残されているが、対称性の影響の境界を特定し、位数3の巡回置換群に対して不変な3カウンタマシンにおいては決定不能であることを証明している。",
+          "keywords": [
+            "counter machines",
+            "symmetry",
+            "reachability problem",
+            "Turing-complete",
+            "2-VASS"
+          ],
+          "appendix": "本論文は計算モデル（カウンタマシンやVASS）の表現能力や決定可能性を扱っており、興味ある分野のうち「automata theory」および「formal languages」と密接に関連している。"
+        },
+        "http://arxiv.org/abs/2610.23478v1": {
+          "title": "ミラーワード半環の零拡大における部分多様体区間と極限多様体",
+          "summary": "ミラーワード mₙ = a₁⋯aₙaₙ⋯a₁ に対し、𝒱ₙ = V(S(mₙ)) および 𝒲ₙ = V(S(mₙ)⁰) と定義する。本論文では、区間 [𝒲ₙ, 𝒲ₙ₊₁] (n ≥ 1) および [𝒱ₙ, 𝒲ₙ] (n ≥ 2) の濃度が 2^(ℵ₀) であることを示す。また、[𝒲₂, 𝒲_∞] 内のすべての多様体は無限の公理的ランクを持つこと、𝒲₁ の唯一の極限部分多様体が V(SR₆) であることを明らかにする。さらに n ≥ 2 については、𝒲ₙ に含まれるが 𝒱ₙ には含まれない相異なる有向パス極限多様体を構成する。",
+          "keywords": [
+            "mirror-word semirings",
+            "zero extensions",
+            "limit varieties",
+            "subvariety intervals",
+            "axiomatic rank"
+          ],
+          "appendix": "本論文は語の構造（ミラーワード）から構成される代数系を扱っており、combinatorics on words と関連があります。"
+        },
+        "http://arxiv.org/abs/2610.23463v1": {
+          "title": "ノイズを伴うトーリック語に対するモデル検査",
+          "summary": "本論文では、線形ループなどの力学系の挙動をモデル化するトーリック語（toric words）について、そのモデルが系のトレースがω正則言語に含まれるかを決定できるほど十分な精度を持つ条件を明らかにしています。主な成果は以下の3点です。(i) 位相幾何学的手法を用いて、ノイズ耐性力学系およびそのノイズを含むトレース（noisy traces）の集合を定義することでトーリック語のクラスを一般化し、全トレースが概周期性（almost-periodic）を持ち、同一の回帰因子（recurrent factors）の集合を持つことを証明しました。(ii) この抽象的手法を実代数的な線形漸化式列（LRS）の符号列に適用し、支配的な根が少ないLRSの符号列に対する言語所属問題が決定可能であることを示しました。(iii) ノイズ耐性力学系のノイズトレースは接頭辞に依存しないω正則言語から区別不可能であり、回帰因子の共通言語が帰納的であれば言語包含問題が決定可能であることを示しました。付随して、接頭辞独立なω正則言語の性質も得られています。",
+          "keywords": [
+            "toric words",
+            "omega-regular language",
+            "linear recurrence sequences",
+            "model checking",
+            "dynamical systems"
+          ],
+          "appendix": "本論文は、提示された興味ある分野のうち「symbolic dynamics（記号力学系）」、「formal languages（形式言語理論）」、「automata theory（オートマトン理論）」、および線形漸化式列の解析に関わる「combinatorics on words（語の組合せ論）」や「arithmetic dynamics（数論的力学系）」に密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.23424v1": {
+          "title": "ツインビルディング格子のcharmenability",
+          "summary": "コンパクト双曲型かつ極小単連結な分裂カッツ・ムーディ群 Λ = 𝒢_A(𝔽_q) に対し、Γ = Λ/Z(Λ) とする。本研究では、q ≥ 11 の場合、またはそのワイル群が 3-球状かつ q ≥ 4 の場合に、Γ が charfinite であることを証明する。この結果の帰結として、Γ の指標は自明な指標と正則指標のみであること、不変ランダム部分群（IRS）および一様再帰部分群（URS）は {e} と Γ のみであること、さらに任意の非自明なユニタリ表現が正則表現を弱含有することが示される。アプローチとしては、Γ に付随する位相的完備化 G₊ と G₋ がハウ・ムーア（Howe-Moore）性を持つという Caprace と Thom の最近の結果を利用し、真双曲空間に幾何学的に作用するハウ・ムーア群の直積における可解根基が自明な既約格子に対して、charmenability の判定基準を確立する。",
+          "keywords": [
+            "charmenability",
+            "twin building lattices",
+            "Kac-Moody group",
+            "charfinite",
+            "Howe-Moore property"
+          ],
+          "appendix": "無限群の表現、不変ランダム部分群（IRS）、一様再帰部分群（URS）などの構造を解析している点で、興味ある分野の「strucure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.23146v1": {
+          "title": "製造可能な積層シーケンスの数え上げとサンプリング",
+          "summary": "複合材料積層板の積層シーケンス設計において、製造制約と設計ガイドラインを満たす許容解集合を厳密に特徴付ける手法を提案する。有限個の連続パターンを禁止する2つの製造規則を満たすシーケンス集合は正規言語を形成し、オートマトンによって受理される。さらに、バランス条件や10%ルールなどの制約はパリク（Parikh）ベクトルを制約するため、オートマトンの状態とカウンターを用いた動的計画法によって扱われる。プライ数 N に関して多項式サイズのテーブルを用いることで、許容シーケンスの生成を伴わない厳密な数え上げや一様サンプリング、部分シーケンスの補完可能性の判定が可能となる。48プライかつ8配向の例では、局所的にルールを検査する層ごとの探索木ノードの99.8%が補完不可能であり、提案手法の完了テストによってこれらを効率的に枝刈りできる。また、同一のオートマトン状態を共有し制約を充足する位置で親を切断する1点交叉により、構造的に許容される子を生成できる。",
+          "keywords": [
+            "stacking sequence",
+            "regular language",
+            "automaton",
+            "Parikh vector",
+            "dynamic program"
+          ],
+          "appendix": "本論文は形式言語理論、オートマトン理論（automata theory, formal languages）および語の組合せ論（combinatorics on words）に関連しています。具体的には、製造制約を正規言語としてオートマトンでモデル化し、パリクベクトル（Parikh vector）の制約を動的計画法と組み合わせて数え上げやサンプリングを行う手法を扱っています。"
+        },
+        "http://arxiv.org/abs/2610.23126v1": {
+          "title": "局所巡回な辺群を持つ群の樹状積の剰余ポリ冪零性について",
+          "summary": "部分群、商群、有限直積、および特定型の無制限直積の操作で閉じている冪零群の空でないクラス𝒩に対し、𝒩^tfを捩れのない𝒩群のクラス、Poly_k 𝒩^tfを高々k個の因子が𝒩^tfに属する正規列を持つポリ冪零群のクラスとする。すべての自由群が剰余𝒩^tf群であるとき、自明でない捩れのない局所巡回な辺群を持つn個の剰余𝒩^tf群の樹状積は、剰余(Poly_{n+1} 𝒩^tf)群となることを証明した。特に、すべてのcyclically-pinched one-relator群は、剰余有限生成(Poly_3 N̄^tf)群（N̄^tfは捩れのない冪零群全体のクラス）となる。さらに、同様の樹状積から(Poly_{n-1} 𝒩^tf)群への準同型で、すべての辺群上で単射となるものが存在することも示した。",
+          "keywords": [
+            "residual polynilpotence",
+            "tree products of groups",
+            "locally cyclic edge subgroups",
+            "cyclically-pinched one-relator groups",
+            "torsion-free nilpotent groups"
+          ],
+          "appendix": "本論文は無限群の構造や自由積・樹状積の代数的な剰余性質を扱っており、指定された興味ある分野の中では「structure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.22986v1": {
+          "title": "写像における周期倍分岐の厳密な検証",
+          "summary": "ℝⁿ 上の1パラメータ写像族 x ↦ f(x, λ) における周期倍分岐を証明するための精度保証付き数値計算手法を提案する。不動点、パラメータ、固有値 -1 に付随する右固有ベクトル、固有値を持つ左固有ベクトル、および2次までの中心多様体を記述するベクトルを未知数とする「周期倍写像」と呼ばれる正方拡大系を解く。縮小写像の議論により、ヤコビ行列が可逆となる数値近似近傍に解が存在することを示す。このヤコビ行列の行列式は単純な式に因数分解され、1が固有値でなく、-1が単位円を横断的に通過する単純固有値である場合に限り非ゼロとなる。事後に計算される3次正規形係数の符号を除けば、残りはゲルシュゴリンの定理を用いて他の固有値が単位円上に存在しないことを確認するだけである。本手法をKot-Schaffer増殖・分散モデルの10モードガラーキン射影に適用し、超臨界周期倍分岐を証明した。",
+          "keywords": [
+            "period-doubling bifurcations",
+            "computer-assisted approach",
+            "augmented system",
+            "center manifold",
+            "Gershgorin disks"
+          ],
+          "appendix": "本論文の手法は計算機援用証明および精度保証付き数値計算（validated numerics）と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.22916v1": {
+          "title": "符号付き双対グラフとケイリー2次元複体の面スペクトルギャップ",
+          "summary": "本論文では、有限表示のケイリー2次元複体に対して重み付き符号付き双対マルチグラフを構成し、そのℓ²面ラプラシアンを対角ポテンシャル付きの符号付きグラフラプラシアンとして表現する。明示的な有限台をもつ面チェインを用いることで、バウムスラッグ・ソリター群 BS(1, m)（m ≥ 2）に対して核の上にある面スペクトルギャップが消失することを証明する。主結果である消失定理により、通常の第1ベッチ数が2以上である任意の有限表示従順群に対しても同様にスペクトルギャップが消失することが示される。",
+          "keywords": [
+            "signed dual multigraph",
+            "Cayley 2-complex",
+            "face Laplacian",
+            "spectral gap",
+            "amenable groups"
+          ],
+          "appendix": "本論文は無限群の幾何学的・代数的な構造（従順群、バウムスラッグ・ソリター群、ケイリー複体など）を扱っており、「strucure of large countable infinite groups」と密接に関連しています。"
+        },
+        "http://arxiv.org/abs/2610.22870v1": {
+          "title": "多項式に対する双到達可能次元の連続性",
+          "summary": "次数 d ≥ 2 の多項式 f に対し、その双到達可能集合 B(f) は、滑らかでかつ少なくとも2つの滑らかな外線が到達する点に着地する外線の角度全体からなる。本論文では、関数 f ↦ dim_H(B(f)) が次数 d の多項式空間全体で連続であることを証明する。したがって、(log d)dim_H(B(f)) は、事後臨界有限（postcritically finite）な場合における古典的なコアエントロピーを、すべての次数 d の多項式へと連続的に拡張したものとなる。",
+          "keywords": [
+            "biaccessible set",
+            "Hausdorff dimension",
+            "core entropy",
+            "polynomials",
+            "external rays"
+          ],
+          "appendix": "本論文は複素力学系（complex dynamics）および記号力学系（symbolic dynamics）に関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2610.23725v1",
+        "http://arxiv.org/abs/2610.23637v1",
+        "http://arxiv.org/abs/2610.23584v1",
+        "http://arxiv.org/abs/2610.23495v1",
+        "http://arxiv.org/abs/2610.23478v1",
+        "http://arxiv.org/abs/2610.23463v1",
+        "http://arxiv.org/abs/2610.23424v1",
+        "http://arxiv.org/abs/2610.23146v1",
+        "http://arxiv.org/abs/2610.23126v1",
+        "http://arxiv.org/abs/2610.22986v1",
+        "http://arxiv.org/abs/2610.22916v1",
+        "http://arxiv.org/abs/2610.22870v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2610.23725v1": {
+          "message_id": "1561790002780971150",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.23637v1": {
+          "message_id": "1561790010985025680",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.23584v1": {
+          "message_id": "1561790019436548138",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.23495v1": {
+          "message_id": "1561790028814745715",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.23478v1": {
+          "message_id": "1561790037249626214",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.23463v1": {
+          "message_id": "1561790045529317519",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.23424v1": {
+          "message_id": "1561790054517440605",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.23146v1": {
+          "message_id": "1561790063510298756",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.23126v1": {
+          "message_id": "1561790071923941507",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.22986v1": {
+          "message_id": "1561790080312545280",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.22916v1": {
+          "message_id": "1561790088827109499",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.22870v1": {
+          "message_id": "1561790097215459371",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-10-19T07:45:45.375200+00:00",
-      "updated_at": "2026-10-19T11:01:48.442749+00:00",
-      "finalized_at": null
+      "updated_at": "2026-10-19T17:16:17.724411+00:00",
+      "finalized_at": "2026-10-19T17:16:17.724386+00:00"
     }
   ]
 }
