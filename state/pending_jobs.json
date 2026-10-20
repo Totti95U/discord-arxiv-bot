@@ -94916,7 +94916,7 @@
     },
     {
       "pipeline_id": "20261020T073315Z-0c5e47ad",
-      "status": "summarize_submitted",
+      "status": "completed",
       "interest_job_name": "batches/d3ni8d9so4y1hwx62mrgk1jhwhhz4gkjydf3",
       "summarize_job_name": "batches/6zx4c69y8w2edar9w39zlalivyykbfvbrr67",
       "papers": [
@@ -95383,16 +95383,81 @@
         "http://arxiv.org/abs/2610.24836v1",
         "http://arxiv.org/abs/2610.24758v1"
       ],
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "summaries": {
+        "http://arxiv.org/abs/2610.24912v1": {
+          "title": "M_Γ の巨大写像類群の Laudenbach 型完全系列の明示的な切断",
+          "summary": "局所有限グラフ Γ に対し、Udall は Γ に付随する二重化ハンドル体の写像類群が、Γ の写像類群を ℤ₂ の（無限個を含む）直積で拡大した群であり、この拡大が分裂することを証明した。本論文では、純写像類群に制限した Udall の切断に対する公式を与えるとともに、Γ の端点が有限個である場合には写像類群全体における切断の公式を与える。",
+          "keywords": [
+            "big mapping class group",
+            "doubled handlebody",
+            "Laudenbach-type exact sequence",
+            "locally finite graph",
+            "section"
+          ],
+          "appendix": "巨大写像類群（big mapping class group）などの無限群を扱っている点から、興味ある分野の「strucure of large countable infinite groups」と関連しています。"
+        },
+        "http://arxiv.org/abs/2610.24836v1": {
+          "title": "非ソーフィックな双曲群の一例",
+          "summary": "本論文では、ねじれ元をもたない（torsion-free）2次元の語双曲群であって、ソーフィック（sofic）でない群を構成する。この構成は、OpenAI による剰余有限でない双曲群の構成（OpenAI 252 参照）に基づいている。",
+          "keywords": [
+            "hyperbolic group",
+            "sofic group",
+            "torsion-free",
+            "word-hyperbolic group"
+          ],
+          "appendix": "本論文は無限群の性質や分類（双曲性、ソーフィック性など）を扱っており、「strucure of large countable infinite groups」と密接に関連している。"
+        },
+        "http://arxiv.org/abs/2610.24758v1": {
+          "title": "Gray順序付けられたネックレスからの最適単一トラックGray符号",
+          "summary": "長さnの単一トラックGray符号（single-track Gray code）は、各列が第1列の巡回シフトとなっているnビット語の巡回Gray符号である。nが素数の場合、達成可能な最大周期は2ⁿ-2である。この最適周期がすべての素数で達成されるかは1996年の導入以来未解決であり、従来はn ≤ 19の素数についてのみ最適符号が知られていた。本論文では、ネックレスの反射Gray符号順序に関するDegniとDriskoの予想（2007年）が、すべての素数に対する最適単一トラックGray符号の存在を導くことを示す。素数nに対してGrayパスであると予想される彼らのネックレスのリストは、(n-3)/2回の明示的なPósa回転によってネックレスグラフのハミルトン閉路へと閉じ、この閉路が最適符号へとリフトされる。この導出関係はLean 4で形式化されている。計算と組み合わせることで、n ≤ 47のすべての奇素数に対して最適な単一トラックGray符号が得られ、n ≤ 37については生成器とは独立したプログラムにより語ごとに検証された明示的符号が、n = 41, 43, 47についてはDegni-Driskoの性質を検証した上で得られた符号が与えられている。",
+          "keywords": [
+            "single-track Gray codes",
+            "necklaces",
+            "reflected Gray code order",
+            "Hamilton cycle",
+            "Lean 4"
+          ],
+          "appendix": "本論文の内容は、combinatorics on words（語の組合せ論）と関連しています。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2610.24912v1",
+        "http://arxiv.org/abs/2610.24836v1",
+        "http://arxiv.org/abs/2610.24758v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2610.24912v1": {
+          "message_id": "1562125506000846869",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.24836v1": {
+          "message_id": "1562125514125353075",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        },
+        "http://arxiv.org/abs/2610.24758v1": {
+          "message_id": "1562125523960729683",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
       "created_at": "2026-10-20T07:33:15.376675+00:00",
-      "updated_at": "2026-10-20T10:46:12.984892+00:00",
-      "finalized_at": null
+      "updated_at": "2026-10-20T15:29:09.785592+00:00",
+      "finalized_at": "2026-10-20T15:29:09.785566+00:00"
     }
   ]
 }
