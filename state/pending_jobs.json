@@ -94885,9 +94885,12 @@
           "message_id": "1561790080312545280",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null
+          "read_requested": true,
+          "reading_memo_sent": true,
+          "paper_thread_id": "1562148527667413103",
+          "read_requested_at": "2026-10-20T17:00:10.090351+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-10-20T17:00:32.501134+00:00"
         },
         "http://arxiv.org/abs/2610.22916v1": {
           "message_id": "1561790088827109499",
@@ -94906,7 +94909,20 @@
           "paper_thread_id": null
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2610.22986v1": {
+          "conclusion": "1パラメータ写像系における周期倍加分岐（フリップ分岐）を精度保証付き数値計算（CAP）によって厳密証明する枠組みを提案した論文。4n+2次元の正方拡張系「period-doubling map」を構築し、Newton-Kantorovich定理とゲルシュゴリンの円盤定理、区間演算を組み合わせることで、分岐点・固有値の横断性・正規形係数の非ゼロ性を同時に自動検証する手法を確立した。10モードのKot-Schafferモデルに適用して超臨界周期倍加分岐の厳密証明に成功している。",
+          "main_claims": "主要な仮定は写像 f が C^3 級であること。結論として、4n+2次元拡張系 F_pd の零点におけるヤコビ行列 DF_pd の可逆性が、固有値-1の代数的単純性と横断的通過条件 (C4) に同値であることを示した（Section 4, Theorem 4.1, p.8）。これに基づくCAP手順（Section 5, Theorem 5.3, p.10）を提案し、条件(C1)-(C5)が計算機上で自動検証可能であることを示した。新規性として、正方拡張系に左固有ベクトルと2次中心多様体補正ベクトル h を組込むことで、1回の収縮評価でスペクトル情報と正規形係数計算に必要な量を厳密包含できる点を挙げている。またKot-Schafferモデルの10モードGalerkin射影における超臨界分岐の厳密証明を達成した（Section 6, Theorem 6.1, p.11）。",
+          "method_outline": "1. [提案手法] 固定点、右/左固有ベクトル、パラメータ、固有値、中心多様体補正ベクトルを未知数とする4n+2次元正方拡張系 F_pd を定義 (Definition 3.1)。 2. [既存の道具] 浮動小数点計算で近似解およびそのヤコビ行列の逆行列 Q を計算。 3. [既存の道具 + 論文の工夫] Newton-Kantorovichの定理 (Theorem 5.1) と区間演算を用い、近似解の周りの閉球内に真の零点が存在しヤコビ行列が可逆であることを証明。 4. [代数的証明/論文の貢献] ヤコビ行列の行列式公式 det DF_pd = -2 ν_c' γ^2 det(A-I)^2 (Theorem 4.1) により、可逆性から固有値-1の単純性と横断的通過条件を自動導出。 5. [既存の道具 + 論文の工夫] 包含された零点から、V^-1 A V に対するゲルシュゴリンの円盤定理 (Theorem 5.2) を用いて単位円上に他の固有値が存在しないこと (C3) を検証。 6. [論文の貢献] 包含領域上で3次正規形係数 c の区間評価を行い、符号が0を含まないことを確認して分岐のタイプ（超臨界/亜臨界）を確定。",
+          "research_connection": "【論文に明記された接点】validated numerics（精度保証付き数値計算）：本論文の中心的手法であり、区間演算（IntervalArithmetic.jl）、RadiiPolynomial.jl、Newton-Kantorovich定理、ゲルシュゴリンの円盤定理を用いて離散 dynamical systems における周期倍加分岐を厳密証明している。【推測に基づく接点】complex dynamics / arithmetic dynamics: 周期倍加分岐の連鎖（Feigenbaumカオスルート）の厳密検証や、複素力学系におけるジュリア集合・分岐集合の厳密計算手法への応用が期待される。symbolic dynamics: 周期2軌道やカオスへの分岐に伴うシンボリックダイナミクスの位相共役性の厳密検証の基礎となり得る。",
+          "reading_guide": "前提知識：非線形力学系の分岐理論（特に中心多様体理論と周期倍加分岐の正規形）、精度保証付き数値計算の基礎（区間演算、Newton-Kantorovichの定理）。最初に読むべき部分：Section 3のDefinition 3.1（拡張系 F_pd の定義、p.6）、Section 4のTheorem 4.1（ヤコビ行列可逆性と分岐条件の同値性、p.8）、Section 5のTheorem 5.3（CAPの手順、p.10）。精読範囲：理論と手法を理解したい場合はSection 3〜5を中心に精読すれば十分であり、応用例に興味がある場合はSection 6（Kot-Schafferモデル）も参照するとよい。",
+          "follow_up_questions": [
+            "拡張系 F_pd において2次中心多様体補正ベクトル h を未知数に含めることが、正規形係数 c の厳密包囲に具体的にどのように貢献していますか？",
+            "無限次元の積分差分方程式（Kot-Schafferモデル全体）への拡張にはどのような級数打ち切り誤差評価（tail estimates）が必要になりますか？",
+            "2パラメータ族におけるフォールド・フリップ（fold-flip）などの余次元2の分岐点追跡への本手法の拡張における課題は何ですか？"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 0,
       "last_error": null,
