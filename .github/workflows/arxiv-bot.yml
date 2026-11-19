@@ -1,33 +1,35 @@
-name: arXiv Summarizer - Poll Reading Requests
+name: arXiv Bot Poll
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # 10分ごとに 📖 リアクションを確認
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: arxiv-summarizer-state
+  group: arxiv-bot-state
   cancel-in-progress: false
 
 jobs:
-  poll_reading_requests:
+  poll:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.10.5'
+          python-version: '3.15'
+          cache: 'pip'
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
+        run: python -m pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m unittest discover -s test -v
 
       - name: Restore state file from state branch
         env:
@@ -45,17 +47,33 @@ jobs:
             fi
           fi
           if [ ! -f state/pending_jobs.json ]; then
-            echo '{"schema_version": 1, "jobs": []}' > state/pending_jobs.json
+            echo '{"schema_version": 2, "jobs": []}' > state/pending_jobs.json
           fi
 
-      - name: Poll reactions and create reading memos
+      - name: Run poll stage
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LLM_API_BASE: ${{ vars.LLM_API_BASE }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          INTEREST_MODEL: ${{ vars.INTEREST_MODEL }}
+          SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL }}
+          READING_MODEL: ${{ vars.READING_MODEL }}
+          QA_MODEL: ${{ vars.QA_MODEL }}
+          INTEREST_API_BASE: ${{ vars.INTEREST_API_BASE }}
+          INTEREST_API_KEY: ${{ secrets.INTEREST_API_KEY }}
+          SUMMARY_API_BASE: ${{ vars.SUMMARY_API_BASE }}
+          SUMMARY_API_KEY: ${{ secrets.SUMMARY_API_KEY }}
+          READING_API_BASE: ${{ vars.READING_API_BASE }}
+          READING_API_KEY: ${{ secrets.READING_API_KEY }}
+          QA_API_BASE: ${{ vars.QA_API_BASE }}
+          QA_API_KEY: ${{ secrets.QA_API_KEY }}
+          ARXIV_RECOMMENDER_WEBHOOK_URL: ${{ secrets.ARXIV_RECOMMENDER_WEBHOOK_URL }}
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_API_BASE_URL: ${{ vars.DISCORD_API_BASE_URL }}
           DISCORD_FORUM_CHANNEL_ID: ${{ vars.DISCORD_FORUM_CHANNEL_ID }}
           DISCORD_USER_ID: ${{ vars.DISCORD_USER_ID }}
-          TZ: America/New_York
-        run: python src/main.py --stage poll_reading_requests
+          LLM_CALL_INTERVAL_SECONDS: '0.5'
+          PENDING_JOBS_FILE: state/pending_jobs.json
+        run: python src/main.py --stage poll
 
       - name: Save state file to state branch
         if: always()
