@@ -83,6 +83,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
+          if [ ! -f state/pending_jobs.json ]; then
+            echo "state file is missing (restore or poll stage did not run); skip push to avoid wiping the state branch"
+            exit 0
+          fi
           REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
