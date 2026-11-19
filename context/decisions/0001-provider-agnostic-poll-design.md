@@ -29,9 +29,12 @@ Status: Accepted (2026-11-19)
 
 ## 既知の天井 (ponytail 債務)
 
-- active スレッド列挙 API は guild 全体で最大 100 件を返しさらにページングがない
-  (`src/main.py` の `list_active_forum_threads` に注記)。フォーラムの未アーカイブ投稿が
-  100 を超える運用では取りこぼしうる。
+- active スレッド列挙 API は guild 全体を 1 回の応答で (ページングなしで) 返す
+  (`src/main.py` の `list_active_forum_threads` に注記)。
+- 分割返信の後半だけが失敗した場合、再試行で前半が重複送信されうる
+  (`post_thread_reply` に注記)。問題になったら質問単位の進捗記録を足す。
+- 完了済み job の state は残り続ける (旧設計と同じ)。読み取り負荷は無視できるが
+  state ブランチの JSON は成長し続ける。
 - 論文テキストは質問ごとに arXiv から再ダウンロードする。arXiv 側の負荷が問題になったら
   state へのキャッシュを足す。
 - `/5` cron は GitHub Actions のスケジュール遅延 (数分) の影響を受ける。

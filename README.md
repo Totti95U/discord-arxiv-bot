@@ -47,8 +47,9 @@ OpenAI 互換 API を 1 つ用意し、以下を登録します.
 1. arXiv の情報を流す Discord の inbox チャンネルを作り、サーバー設定の連携アプリから webhook URL を取得してください
 2. リーディングメモ用の Forum チャンネルも作ってください
 3. Discord Developer Portal で Bot を作成します
+   - **Bot 設定ページの Privileged Gateway Intents で `MESSAGE CONTENT INTENT` を有効にしてください** (Forum Q&A で投稿本文を読むのに必須です。未設定だと質問を読めず Q&A が黙って動かなくなります)
    - token を `DISCORD_BOT_TOKEN` (secret) として登録
-   - 招待時の permission integer には `34359831616` を使えます (View Channel, Send Messages, Embed Links, Add Reactions, Read Message History が必要)
+   - 招待時の permission integer には `34359831616` を使えます (View Channel, Send Messages, Embed Links, Add Reactions, Read Message History, Create Public Threads が必要)
 4. 以下を登録します
 
 | 種類 | 名前 | 説明 |
@@ -68,11 +69,11 @@ OpenAI 互換 API を 1 つ用意し、以下を登録します.
 
 `.github/workflows/arxiv-bot.yml` が 5 分ごとに 1 回 `--stage poll` を実行します.
 
-1. **検索**: 当日の検索窓 (NY 時刻で 3 日前) に対応する job が state に無ければ arXiv 検索して新規 job を作成
+1. **検索** (毎日 1 回): 当日の検索窓 (NY 時刻で 3 日前, `ARXIV_LOOKBACK_DAYS` で変更可) に対応する job が state に無ければ arXiv 検索して新規 job を作成
 2. **興味判定**: 未判定の論文に興味判定モデルを呼び出し
 3. **要約・投稿**: 興味あり論文を要約して Discord に投稿、📖 リアクション付与
 4. **📖 確認**: 📖 が付けられた論文の全文テキスト抽出とリーディングメモ生成、Forum post 作成
-5. **Q&A**: Forum の active なスレッドに新着の人間の発言があれば、論文テキストを踏まえて回答
+5. **Q&A**: Forum の active なスレッドに新着の人間の発言があれば、論文テキストと直近の対話を踏まえて回答
 
 すべての段階で state を都度保存するため、何度実行しても同じ論文を二重に送信しません (べき等). 失敗した部分だけ次回の poll で再試行されます.
 
@@ -81,7 +82,7 @@ OpenAI 互換 API を 1 つ用意し、以下を登録します.
 `pending_jobs.json` は `bot/manage-pending-jobs` ブランチ上で管理します.
 
 - 形式: `{ "schema_version": 2, "jobs": [...] }`
-- 各 workflow は実行前に state を読み込み, 実行後に更新内容を同ブランチへ push します
+- workflow は実行前に state を読み込み, 実行後に更新内容を同ブランチへ push します
 - job の status は `processing` (処理中), `completed` (全送信完了), `completed_no_interests` (興味あり 0 件) の 3 つです
 - 状態確認時は `status` に加えて `last_error`, `retry_count`, `updated_at` を見ると原因追跡しやすいです
 - 質問への回答状況は各 message の `qa_last_read_message_id` (どこまで読んだか) と `qa_last_error` で確認できます

@@ -2,10 +2,12 @@ import io
 import json
 import os
 import sys
+import tempfile
 import unittest
 from unittest import mock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))  # noqa: E402
 
 import main  # noqa: E402
 
@@ -45,6 +47,19 @@ class RoleConfigTest(unittest.TestCase):
             self.assertEqual(cfg["model"], "decider-1")
             cfg = main.role_config("qa")
             self.assertEqual(cfg["model"], "decider-1")
+
+    def test_summary_falls_back_to_interest_not_reading(self):
+        env = self.env(READING_MODEL="reader-9")
+        with mock.patch.dict(os.environ, env, clear=False):
+            self.assertEqual(main.role_config("summary")["model"], "decider-1")
+            self.assertEqual(main.role_config("reading")["model"], "reader-9")
+            self.assertEqual(main.role_config("qa")["model"], "reader-9")
+
+    def test_reading_falls_back_to_summary(self):
+        env = self.env(SUMMARY_MODEL="writer-2")
+        with mock.patch.dict(os.environ, env, clear=False):
+            self.assertEqual(main.role_config("reading")["model"], "writer-2")
+            self.assertEqual(main.role_config("interest")["model"], "decider-1")
 
     def test_per_role_override(self):
         env = self.env(
@@ -155,7 +170,7 @@ class ThreadUpdateTest(unittest.TestCase):
         self.assertEqual(sent, 2)
         self.assertIsNone(error)
         self.assertTrue(done)
-        self.assertEqual(last_read, msgs[0]["id"])  # newest message id
+        self.assertEqual(last_read, msgs[0]["id"])
         self.assertEqual(answers, ["Q1", "Q2"])
         self.assertEqual(replies, ["回答:Q1", "回答:Q2"])
 
@@ -176,7 +191,7 @@ class ThreadUpdateTest(unittest.TestCase):
         self.assertEqual(sent, 1)
         self.assertFalse(done)
         self.assertIn("boom", error)
-        # Q1 (id 1001) processed; Q2 (id 1002) not yet
+        # Q1 = id 1001 は処理済み、Q2 = id 1002 は未処理のまま返る
         self.assertEqual(last_read, "1001")
 
     def test_retry_after_failure_reprocesses_failed_question(self):
@@ -199,19 +214,46 @@ class ThreadUpdateTest(unittest.TestCase):
         self.assertTrue(second[3])
         self.assertEqual(calls, ["Q1", "Q1"])
 
-    def test_transcript_includes_bot_replies_and_human_questions(self):
-        msgs = self.messages([("human", "Q1"), ("bot", "A1"), ("human", "Q2")])
+    def test_transcript_includes_own_answer_within_batch(self):
+        msgs = self.messages([("human", "Q1"), ("human", "Q2")])
         seen = []
 
         def answer_fn(transcript, question):
-            seen.append(transcript)
-            return "ok"
+            seen.append([m["content"] for m in transcript])
+            return "A:" + question["content"]
 
-        main.process_thread_update(msgs, "0", answer_fn, lambda r, q: True)
-        # second answer (Q2) sees Q1 and A1 in transcript
-        self.assertEqual(len(seen[1]), 2)
-        self.assertEqual(seen[1][0]["role"], "user")
-        self.assertEqual(seen[1][1]["role"], "assistant")
+        sent, error, last_read, done = main.process_thread_update(
+            msgs, "0", answer_fn, lambda r, q: True
+        )
+        self.assertEqual(sent, 2)
+        # Q2 を答える時点で、直前の質問と Bot の回答が文脈に乗っている
+        self.assertEqual(seen[1], ["Q1", "A:Q1"])
+        self.assertTrue(main.qa_transcript([{"author": {"bot": True}, "type": 0, "content": "A:Q1"}])[0]["role"] == "assistant")
+
+    def test_history_provides_cross_poll_context(self):
+        msgs = self.messages([("human", "Q2")])
+        history = list(
+            reversed(
+                self.messages([("human", "Q1"), ("bot", "A1")])
+            )
+        )
+        transcripts = []
+        main.process_thread_update(
+            msgs, "1002", lambda t, q: (transcripts.append(t), "ok")[1], lambda r, q: True,
+            history=history,
+        )
+        # 別 poll で発生した Q1 と回答が履歴として渡る
+        self.assertEqual([m["role"] for m in transcripts[0]], ["user", "assistant"])
+        self.assertEqual([m["content"] for m in transcripts[0]], ["Q1", "A1"])
+
+    def test_empty_answer_marks_failure(self):
+        msgs = self.messages([("human", "Q1")])
+        sent, error, last_read, done = main.process_thread_update(
+            msgs, "0", lambda t, q: "  ", lambda r, q: True
+        )
+        self.assertEqual((sent, done), (0, False))
+        self.assertIn("empty", error)
+        self.assertEqual(last_read, "0")
 
     def test_max_answers_stops_without_error(self):
         msgs = self.messages([("human", "Q1"), ("human", "Q2"), ("human", "Q3")])
@@ -262,6 +304,104 @@ class StateFileTest(unittest.TestCase):
             with mock.patch.object(main, "STATE_FILE_PATH", path):
                 with self.assertRaises(json.JSONDecodeError):
                     main.load_state()
+
+
+class QaSeedTest(unittest.TestCase):
+    def test_seed_with_single_message_resumes_from_start(self):
+        latest = [{"id": "500", "content": "Q", "author": {"id": "1", "bot": False}, "type": 0}]
+        with mock.patch.object(main, "fetch_thread_messages", return_value=latest):
+            self.assertEqual(main.qa_seed_last_read("t"), "0")
+
+    def test_seed_keeps_newest_message_pending(self):
+        latest = [
+            {"id": "600", "content": "Q new", "author": {"id": "1", "bot": False}, "type": 0},
+            {"id": "599", "content": "memo", "author": {"id": "9", "bot": True}, "type": 0},
+        ]
+        with mock.patch.object(main, "fetch_thread_messages", return_value=latest):
+            # 最新 1 件だけ処理対象に残し、それより前は読み飛ばす
+            self.assertEqual(main.qa_seed_last_read("t"), "599")
+
+    def test_seed_returns_none_for_empty_thread(self):
+        with mock.patch.object(main, "fetch_thread_messages", return_value=[]):
+            self.assertIsNone(main.qa_seed_last_read("t"))
+
+
+class SendPhaseTest(unittest.TestCase):
+    def job(self, interest_results, sent):
+        return {
+            "pipeline_id": "p",
+            "window": "20261116",
+            "status": "processing",
+            "papers": [
+                {"paper_id": "p1", "entry_id": "https://arxiv.org/abs/1", "title": "T1", "summary": "S", "authors": []},
+                {"paper_id": "p2", "entry_id": "https://arxiv.org/abs/2", "title": "T2", "summary": "S", "authors": []},
+            ],
+            "interest_results": interest_results,
+            "interest_reasons": {},
+            "summaries": {"p1": {"title": "T1", "summary": "s", "keywords": [], "appendix": None}},
+            "sent_paper_ids": sent,
+            "discord_messages": {
+                "p1": {
+                    "message_id": "m1",
+                    "channel_id": "c1",
+                    "reaction_added": False,
+                    "read_requested": False,
+                    "read_window_expired": False,
+                    "reading_memo_sent": False,
+                    "paper_thread_id": None,
+                    "qa_last_read_message_id": None,
+                }
+            },
+            "reading_memos": {},
+            "notification_sent": True,
+            "retry_count": 0,
+            "last_error": None,
+            "created_at": "2026-11-19T00:00:00+00:00",
+            "updated_at": "2026-11-19T00:00:00+00:00",
+            "finalized_at": None,
+        }
+
+    def run_phase(self, job):
+        with tempfile.TemporaryDirectory() as tmp:
+            with mock.patch.object(main, "STATE_FILE_PATH", os.path.join(tmp, "state.json")):
+                with mock.patch.object(main, "post_summary_to_discord") as post_summary:
+                    with mock.patch.object(main, "add_read_reaction", return_value=True):
+                        with mock.patch.object(main, "post_discord_payload", return_value=True):
+                            result = main.run_send_phase(job, {"jobs": [job]})
+        return result, post_summary
+
+    def test_existing_message_state_prevents_double_posting(self):
+        job = self.job({"p1": True, "p2": False}, [])
+        result, post_summary = self.run_phase(job)
+        self.assertTrue(result)
+        post_summary.assert_not_called()
+        self.assertEqual(job["sent_paper_ids"], ["p1"])
+
+    def test_job_stays_processing_until_interest_complete(self):
+        # p2 が未判定のまま全部投稿しても、完了扱いにしない
+        job = self.job({"p1": True}, [])
+        result, _ = self.run_phase(job)
+        self.assertFalse(result)
+        self.assertEqual(job["status"], "processing")
+        self.assertEqual(job["sent_paper_ids"], ["p1"])
+
+    def test_completes_when_interest_complete(self):
+        job = self.job({"p1": True, "p2": False}, [])
+        result, _ = self.run_phase(job)
+        self.assertTrue(result)
+        self.assertEqual(job["status"], "completed")
+
+
+class PollCompositionTest(unittest.TestCase):
+    def test_one_memo_does_not_fail_the_poll(self):
+        with mock.patch.object(main, "DISCORD_WEBHOOK_URL", "https://example.com/hook"):
+            with mock.patch.object(main, "DISCORD_BOT_TOKEN", "tok"):
+                with mock.patch.object(main, "load_state", return_value={"jobs": []}):
+                    with mock.patch.object(main, "process_daily_jobs", return_value=0) as pdj:
+                        with mock.patch.object(main, "run_stage_poll_reading_requests", return_value=0):
+                            with mock.patch.object(main, "run_stage_poll_paper_qa", return_value=0):
+                                self.assertEqual(main.run_stage_poll(), 0)
+                                pdj.assert_called_once()
 
 
 class HelperTest(unittest.TestCase):

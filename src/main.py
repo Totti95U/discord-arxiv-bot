@@ -11,7 +11,7 @@ import json
 import os
 import time
 import uuid
-from typing import Callable, Dict, List, Optional, Tuple
+from typing import Callable, Dict, List, NamedTuple, Optional, Tuple
 from urllib.parse import quote
 from zoneinfo import ZoneInfo
 
@@ -20,10 +20,10 @@ import requests
 from openai import OpenAI
 from pydantic import BaseModel, Field, ValidationError
 
-STATE_FILE_PATH = os.getenv("PENDING_JOBS_FILE", "state/pending_jobs.json")
+STATE_FILE_PATH = os.getenv("PENDING_JOBS_FILE", "").strip() or "state/pending_jobs.json"
 STATE_SCHEMA_VERSION = 2
 PROMPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DISCORD_API_BASE_URL = os.getenv("DISCORD_API_BASE_URL", "https://discord.com/api/v10")
+DISCORD_API_BASE_URL = (os.getenv("DISCORD_API_BASE_URL") or "").strip() or "https://discord.com/api/v10"
 DISCORD_WEBHOOK_URL = os.getenv("ARXIV_RECOMMENDER_WEBHOOK_URL", "")
 DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN", "")
 DISCORD_FORUM_CHANNEL_ID = os.getenv("DISCORD_FORUM_CHANNEL_ID", "")
@@ -32,6 +32,7 @@ READ_EMOJI = "📖"
 MAX_PDF_BYTES = 50 * 1024 * 1024
 READING_REQUEST_WINDOW_DAYS = int(os.getenv("READING_REQUEST_WINDOW_DAYS", "30"))
 QA_MAX_REPLIES_PER_POLL = max(1, int(os.getenv("QA_MAX_REPLIES_PER_POLL", "3")))
+QA_HISTORY_MESSAGES = max(1, int(os.getenv("QA_HISTORY_MESSAGES", "15")))
 LLM_CALL_INTERVAL_SECONDS = float(os.getenv("LLM_CALL_INTERVAL_SECONDS", "0.5"))
 SEARCH_CATEGORIES = os.getenv(
     "ARXIV_QUERY_CATEGORIES",
@@ -112,10 +113,6 @@ PROMPT_PAPER_QA = read_prompt("prompt_paper_qa.txt")
 client_arxiv = arxiv.Client()
 
 
-# ---------------------------------------------------------------------------
-# LLM (OpenAI 互換 API)
-
-
 class LLMError(Exception):
     pass
 
@@ -126,8 +123,9 @@ def env_value(name: str) -> Optional[str]:
 
 
 def role_config(role: str) -> Dict[str, str]:
-    """役割ごとの LLM 接続先。未設定の部分は LLM_API_BASE / LLM_API_KEY、
-    モデルは後続の役割 (qa -> reading -> summary -> interest) の値を使う。"""
+    """役割ごとの LLM 接続先。未設定の部分は LLM_API_BASE / LLM_API_KEY を使う。
+    モデルのフォールバックは summary -> interest、reading -> summary、qa -> reading の順
+    (interest は INTEREST_MODEL が必須)。"""
     base_url = env_value(f"{role.upper()}_API_BASE") or env_value("LLM_API_BASE")
     api_key = env_value(f"{role.upper()}_API_KEY") or env_value("LLM_API_KEY")
     fallback = {
@@ -136,15 +134,12 @@ def role_config(role: str) -> Dict[str, str]:
         "reading": "READING_MODEL",
         "qa": "QA_MODEL",
     }
+    model_source = {"interest": None, "summary": "interest", "reading": "summary", "qa": "reading"}
     model = env_value(fallback[role])
-    if not model:
-        for other in ("reading", "summary", "interest"):
-            if role in ("interest", "summary") and other == role:
-                continue
-            if role != "interest":
-                model = env_value(fallback[other])
-                if model:
-                    break
+    source = model_source[role]
+    while not model and source:
+        model = env_value(fallback[source])
+        source = model_source[source]
     if not model:
         raise RuntimeError(f"{fallback[role]} is not set")
     if not base_url or not api_key:
@@ -202,9 +197,11 @@ def llm_structured(role: str, system: str, user: str, model_cls: type) -> BaseMo
                 {"role": "user", "content": attempt_user},
             ],
         )
-        content = response.choices[0].message.content or ""
-        data = extract_json_object(content)
         try:
+            if not response.choices:
+                raise ValueError("response contains no choices")
+            content = response.choices[0].message.content or ""
+            data = extract_json_object(content)
             if data is None:
                 raise ValueError("response contains no JSON object")
             return model_cls.model_validate(data)
@@ -227,6 +224,8 @@ def llm_text(role: str, system: str, user: str) -> str:
             {"role": "user", "content": user},
         ],
     )
+    if not response.choices:
+        raise LLMError(f"model {model} returned no choices for role {role}")
     return (response.choices[0].message.content or "").strip()
 
 
@@ -284,8 +283,10 @@ def load_state() -> dict:
 
 
 def save_state(state: dict) -> None:
-    with io.open(STATE_FILE_PATH, "w", encoding="utf-8") as f:
+    tmp_path = f"{STATE_FILE_PATH}.tmp"
+    with io.open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False, indent=2)
+    os.replace(tmp_path, STATE_FILE_PATH)
 
 
 def search_window() -> str:
@@ -356,10 +357,6 @@ def interested_papers(job: dict) -> List[dict]:
     ]
 
 
-# ---------------------------------------------------------------------------
-# PDF 取得とテキスト抽出
-
-
 def pdf_url_for_paper(paper: dict) -> str:
     pdf_url = paper.get("pdf_url") or paper.get("entry_id", "").replace("/abs/", "/pdf/")
     return pdf_url.replace("http://arxiv.org/", "https://arxiv.org/", 1)
@@ -369,25 +366,25 @@ def download_pdf(paper: dict) -> bytes:
     pdf_url = pdf_url_for_paper(paper)
     if not pdf_url:
         raise ValueError("paper PDF URL is missing")
-    response = requests.get(
+    with requests.get(
         pdf_url,
         headers={"User-Agent": "discord-arxiv-bot/reading-memo"},
         stream=True,
         timeout=(DISCORD_CONNECT_TIMEOUT_SECONDS, 60),
-    )
-    response.raise_for_status()
-    content_length_header = response.headers.get("content-length", "")
-    content_length = int(content_length_header) if content_length_header.isdigit() else 0
-    if content_length > MAX_PDF_BYTES:
-        raise ValueError(f"PDF is larger than {MAX_PDF_BYTES // (1024 * 1024)} MiB")
-    chunks = []
-    size = 0
-    for chunk in response.iter_content(chunk_size=64 * 1024):
-        size += len(chunk)
-        if size > MAX_PDF_BYTES:
+    ) as response:
+        response.raise_for_status()
+        content_length_header = response.headers.get("content-length", "")
+        content_length = int(content_length_header) if content_length_header.isdigit() else 0
+        if content_length > MAX_PDF_BYTES:
             raise ValueError(f"PDF is larger than {MAX_PDF_BYTES // (1024 * 1024)} MiB")
-        chunks.append(chunk)
-    pdf_data = b"".join(chunks)
+        chunks = []
+        size = 0
+        for chunk in response.iter_content(chunk_size=64 * 1024):
+            size += len(chunk)
+            if size > MAX_PDF_BYTES:
+                raise ValueError(f"PDF is larger than {MAX_PDF_BYTES // (1024 * 1024)} MiB")
+            chunks.append(chunk)
+        pdf_data = b"".join(chunks)
     if not pdf_data.lstrip().startswith(b"%PDF"):
         raise ValueError("arXiv response is not a PDF")
     return pdf_data
@@ -403,16 +400,20 @@ def paper_text_from_pdf_bytes(pdf_data: bytes, max_chars: int) -> str:
     from pypdf import PdfReader
 
     reader = PdfReader(io.BytesIO(pdf_data))
-    parts = [(page.extract_text() or "") for page in reader.pages]
+    parts: List[str] = []
+    size = 0
+    for page in reader.pages:
+        text = page.extract_text() or ""
+        parts.append(text)
+        size += len(text) + 1
+        # 上限に達したら以降のページ抽出を打ち切る
+        if size > max_chars:
+            break
     return cap_text("\n".join(parts), max_chars)
 
 
 def extract_paper_text(paper: dict, max_chars: int) -> str:
     return paper_text_from_pdf_bytes(download_pdf(paper), max_chars)
-
-
-# ---------------------------------------------------------------------------
-# Discord webhooks and bot API
 
 
 def truncate_discord_text(value: object, limit: int, fallback: str = "（なし）") -> str:
@@ -678,26 +679,36 @@ def list_active_forum_threads(forum_channel_id: str) -> List[dict]:
     )
     if not isinstance(result, dict):
         return []
-    # ponytail: API は active スレッドを最大 100 件しか返さない。
-    # フォーラム内のスレッドが 100 を超える場合は取りこぼしうる。
+    # ponytail: この API は guild 全体の active スレッドをページングなしで一括返す
+    # (公式 docs に pagination の定義なし)。guild 内の active スレッドが極端に多い
+    # 場合はフォーラム分の取りこぼし・遅延がありうる。問題になったら
+    # channel ごとの列挙に切り替える。
     return [
         thread
-        for thread in result.get("threads", [])
+        for thread in result.get("threads") or []
         if str(thread.get("parent_id")) == str(forum_channel_id)
     ]
 
 
-def fetch_thread_messages(thread_id: str, after_message_id: str = "0", limit: int = 50) -> List[dict]:
+def fetch_thread_messages(
+    thread_id: str, after_message_id: Optional[str] = "0", limit: int = 50
+) -> List[dict]:
+    # after_message_id=None は引数なしの最新ページ取得 (履歴文脈や seed 用)
+    params = {"after": after_message_id, "limit": limit}
+    if after_message_id is None:
+        params = {"limit": limit}
     result = discord_bot_request(
         "GET",
         f"/channels/{thread_id}/messages",
         f"fetch messages of thread {thread_id}",
-        params={"after": after_message_id, "limit": limit},
+        params=params,
     )
     return result if isinstance(result, list) else []
 
 
 def post_thread_reply(thread_id: str, reply_text: str, description: str) -> bool:
+    # ponytail: 分割投稿の後半だけが失敗した場合、再試行で前半が重複送信されうる。
+    # 問題になったら質問単位の進捗記録を足す。
     ok = True
     for chunk in split_discord_message(reply_text, DISCORD_REPLY_LIMIT):
         result = discord_bot_request(
@@ -726,10 +737,6 @@ def split_discord_message(text: str, limit: int) -> List[str]:
     if remaining:
         chunks.append(remaining)
     return chunks
-
-
-# ---------------------------------------------------------------------------
-# Forum Q&A
 
 
 def is_human_message(message: dict, allowed_user_id: str = "") -> bool:
@@ -761,6 +768,13 @@ def qa_transcript(messages: List[dict], allowed_user_id: str = "") -> List[dict]
     return transcript
 
 
+class ProcessResult(NamedTuple):
+    replies_sent: int
+    error: Optional[str]
+    new_last_read: str
+    done: bool
+
+
 def process_thread_update(
     messages: List[dict],
     last_read_message_id: str,
@@ -768,37 +782,47 @@ def process_thread_update(
     post_fn: Callable[[str, dict], bool],
     allowed_user_id: str = "",
     max_answers: Optional[int] = None,
-) -> Tuple[int, Optional[str], str, bool]:
+    history: Optional[List[dict]] = None,
+) -> ProcessResult:
     """取得済みメッセージ列 (Discord 標準の新しい順) を古い順に処理し、
     人間の質問ごとに answer_fn で生成した返信を post_fn で送信する。
 
-    返り値: (送信した返信数, エラー文言, 更新後の last_read メッセージ ID, 処理完了 flag)。
-    失敗や上限到達で止まった場合は、まだ処理していない質問の直前の ID を返すため、
-    次回の poll で after=<その ID> を指定すると同一の質問を再処理できる。
-    last_read は「処理を完了した最後のメッセージ」を指す。
+    history は今回の差分より前の発言 (古い順) で、対話の文脈にのみ使う。
+    new_last_read は「処理を完了した最後のメッセージ」の ID。処理が途中で止まった
+    場合は未処理質問の直前の ID を返すため、次回 poll で after=<その ID> を
+    指定すると同一の質問を再処理できる。
     """
-    ordered = list(reversed([m for m in messages if m.get("id")]))
+    context = list(history or [])
+    ordered = list(reversed([m for m in messages if m and m.get("id")]))
     if not ordered:
-        return (0, None, str(last_read_message_id), True)
-    last_read = str(last_read_message_id)
-    safe_read = last_read
+        return ProcessResult(0, None, str(last_read_message_id), True)
+    safe_read = str(last_read_message_id)
     seen: List[dict] = []
     replies_sent = 0
     for message in ordered:
         mid = str(message["id"])
         if is_human_message(message, allowed_user_id):
             if max_answers is not None and replies_sent >= max_answers:
-                return replies_sent, None, safe_read, False
+                return ProcessResult(replies_sent, None, safe_read, False)
             try:
-                answer = answer_fn(qa_transcript(seen, allowed_user_id), message)
+                answer = (answer_fn(qa_transcript(context + seen, allowed_user_id), message) or "").strip()
             except Exception as exc:
-                return replies_sent, short_error(exc), safe_read, False
+                return ProcessResult(replies_sent, short_error(exc), safe_read, False)
+            if not answer:
+                return ProcessResult(replies_sent, "model returned an empty reply", safe_read, False)
             if not post_fn(answer, message):
-                return replies_sent, "failed to post the reply to Discord", safe_read, False
+                return ProcessResult(replies_sent, "failed to post the reply to Discord", safe_read, False)
+            seen.append(message)
+            # 実投稿は次回 fetch でしか現れないため、バッチ内の後続質問へは
+            # 自分の回答を合成メッセージとして文脈に渡す
+            seen.append(
+                {"author": {"id": "bot", "bot": True, "system": False}, "type": 0, "content": answer}
+            )
             replies_sent += 1
+        else:
+            seen.append(message)
         safe_read = mid
-        seen.append(message)
-    return replies_sent, None, safe_read, True
+    return ProcessResult(replies_sent, None, safe_read, True)
 
 
 def qa_user_message(paper: dict, memo: Optional[dict], paper_text: str, transcript: List[dict], question: dict) -> str:
@@ -833,8 +857,15 @@ def yaml_free_memo(memo: dict) -> str:
     return "\n".join(lines)
 
 
-# ---------------------------------------------------------------------------
-# pipeline stages
+def qa_seed_last_read(thread_id: str) -> Optional[str]:
+    """この機能の導入前に作られたスレッドの初回 poll 用の既読位置。
+    履歴は読み飛ばしつつ、復帰直後の最新の 1 件だけ処理対象に残す。"""
+    latest = fetch_thread_messages(thread_id, after_message_id=None, limit=2)
+    if not latest:
+        return None
+    if len(latest) >= 2 and latest[1].get("id"):
+        return str(latest[1]["id"])
+    return "0"
 
 
 def ensure_daily_job(state: dict) -> Optional[dict]:
@@ -854,7 +885,8 @@ def ensure_daily_job(state: dict) -> Optional[dict]:
 
 
 def run_interest_phase(job: dict, state: dict) -> bool:
-    """未判定の論文に興味判定を実行する。系統不良 (過半数失敗) のみ False。"""
+    """未判定の論文に興味判定を実行する。個別の失敗は state に記録して
+    次回 poll で再試行し、失敗が max(3, 論文数の半分) を超えたら系統不良として False。"""
     failures = 0
     checked = 0
     for paper in job["papers"]:
@@ -887,7 +919,8 @@ def run_interest_phase(job: dict, state: dict) -> bool:
 
 
 def run_send_phase(job: dict, state: dict) -> bool:
-    """興味あり論文の要約生成・Discord 投稿・リリリアクション付与を完了させる。"""
+    """興味あり論文のうち未投稿のものだけを要約して Discord へ送る。
+    投稿 ID は 📖 付与より先に state へ保存し、中断しても二重投稿しない。"""
     interested = interested_papers(job)
     sent = set(job["sent_paper_ids"])
     pending = [paper for paper in interested if paper["paper_id"] not in sent]
@@ -924,11 +957,13 @@ def run_send_phase(job: dict, state: dict) -> bool:
             time.sleep(LLM_CALL_INTERVAL_SECONDS)
         if pid in sent:
             continue
-        message = post_summary_to_discord(DISCORD_WEBHOOK_URL, paper, job["summaries"][pid])
-        message_state = job["discord_messages"].get(pid)
-        if not message_state:
+        message_state = (job.get("discord_messages") or {}).get(pid)
+        if message_state is None:
+            message = post_summary_to_discord(DISCORD_WEBHOOK_URL, paper, job["summaries"][pid])
             if not message:
                 job["last_error"] = f"failed to post summary for {pid}"
+                mark_job_updated(job)
+                save_state(state)
                 continue
             message_state = {
                 "message_id": message["id"],
@@ -941,6 +976,8 @@ def run_send_phase(job: dict, state: dict) -> bool:
                 "qa_last_read_message_id": None,
             }
             job["discord_messages"][pid] = message_state
+            mark_job_updated(job)
+            save_state(state)
         if not message_state.get("reaction_added") and add_read_reaction(
             message_state["channel_id"], message_state["message_id"]
         ):
@@ -952,7 +989,13 @@ def run_send_phase(job: dict, state: dict) -> bool:
         save_state(state)
         time.sleep(1.5)
 
+    interest_complete = len(job.get("interest_results", {})) == len(job.get("papers", []))
     if len(job["sent_paper_ids"]) == len(interested):
+        if not interest_complete:
+            # 興味判定に未完了がある間は確定しない (失敗分は次回 poll で再試行)
+            mark_job_updated(job)
+            save_state(state)
+            return False
         job["status"] = "completed"
         job["finalized_at"] = now_iso_utc()
         job["last_error"] = None
@@ -967,25 +1010,25 @@ def run_send_phase(job: dict, state: dict) -> bool:
 
 
 def process_daily_jobs(state: dict) -> int:
-    job = ensure_daily_job(state)
-    if job is None:
-        return 0
-    if job.get("status") == "completed":
-        return 0
-    if not run_interest_phase(job, state):
-        return 1
-    if not job.get("interest_results"):
-        return 1
-    if not interested_papers(job):
-        job["status"] = "completed_no_interests"
-        job["finalized_at"] = now_iso_utc()
-        job["last_error"] = None
-        mark_job_updated(job)
-        save_state(state)
-        return 0
-    if not run_send_phase(job, state):
-        return 1
-    return 0
+    ensure_daily_job(state)
+    status = 0
+    for job in [j for j in state["jobs"] if j.get("status") == "processing"]:
+        if not run_interest_phase(job, state):
+            status = 1
+            continue
+        if not job.get("interest_results"):
+            status = 1
+            continue
+        if not interested_papers(job):
+            job["status"] = "completed_no_interests"
+            job["finalized_at"] = now_iso_utc()
+            job["last_error"] = None
+            mark_job_updated(job)
+            save_state(state)
+            continue
+        if not run_send_phase(job, state):
+            status = 1
+    return status
 
 
 def run_stage_poll_reading_requests() -> int:
@@ -1055,7 +1098,8 @@ def run_stage_poll_reading_requests() -> int:
             updated = True
     if updated:
         save_state(state)
-    return memos_generated
+    print(f"Reading requests: {memos_generated} memo(s) generated")
+    return 0
 
 
 def reading_user_message(paper: dict, paper_text: str) -> str:
@@ -1073,7 +1117,6 @@ def run_stage_poll_paper_qa() -> int:
     if not active_threads:
         return 0
     state = load_state()
-    updated = False
     answers_posted = 0
     for job in state["jobs"]:
         papers_by_id = {paper["paper_id"]: paper for paper in job.get("papers", [])}
@@ -1081,28 +1124,32 @@ def run_stage_poll_paper_qa() -> int:
             thread_id = str(message_state.get("paper_thread_id") or "")
             if not thread_id or thread_id not in active_threads:
                 continue
-            last_read = str(message_state.get("qa_last_read_message_id") or "0")
+            if message_state.get("qa_last_read_message_id") is None:
+                seeded = qa_seed_last_read(thread_id)
+                if seeded is None:
+                    continue
+                message_state["qa_last_read_message_id"] = seeded
+                save_state(state)
+            last_read = str(message_state["qa_last_read_message_id"])
             messages = fetch_thread_messages(thread_id, last_read)
             if not messages:
                 continue
-            if message_state.get("qa_last_read_message_id") is None:
-                # 既存スレップレッドの初回 poll は履歴を読み飛ばし、以後の新規発言のみ対応する
-                message_state["qa_last_read_message_id"] = str(messages[0].get("id") or "0")
-                updated = True
-                continue
-            questions = [m for m in messages if is_human_message(m, DISCORD_USER_ID)]
-            if not questions:
-                newest = str(messages[0].get("id"))
-                message_state["qa_last_read_message_id"] = newest
-                updated = True
+            if not [m for m in messages if is_human_message(m, DISCORD_USER_ID)]:
+                message_state["qa_last_read_message_id"] = str(messages[0].get("id"))
+                save_state(state)
                 continue
             paper = papers_by_id.get(paper_id)
             if paper is None:
                 message_state["qa_last_error"] = "paper metadata is missing"
-                updated = True
+                save_state(state)
                 continue
             memo = (job.get("reading_memos") or {}).get(paper_id)
             text_cache: Dict[str, str] = {}
+            history_window = fetch_thread_messages(
+                thread_id, after_message_id=None, limit=QA_HISTORY_MESSAGES
+            )
+            batch_ids = {str(m.get("id")) for m in messages}
+            history = [m for m in reversed(history_window) if str(m.get("id")) not in batch_ids]
 
             def answer_fn(transcript, question):
                 if "text" not in text_cache:
@@ -1116,24 +1163,24 @@ def run_stage_poll_paper_qa() -> int:
             def post_fn(reply, question):
                 return post_thread_reply(thread_id, reply, "send paper QA reply")
 
-            replies, error, new_last_read, done = process_thread_update(
+            result = process_thread_update(
                 messages,
-                str(message_state.get("qa_last_read_message_id") or "0"),
+                last_read,
                 answer_fn,
                 post_fn,
                 allowed_user_id=DISCORD_USER_ID,
                 max_answers=QA_MAX_REPLIES_PER_POLL,
+                history=history,
             )
-            answers_posted += replies
-            if error:
+            answers_posted += result.replies_sent
+            if result.error:
                 message_state["qa_retry_count"] = int(message_state.get("qa_retry_count", 0)) + 1
-                message_state["qa_last_error"] = error
+                message_state["qa_last_error"] = result.error
             else:
                 message_state["qa_last_error"] = None
-            message_state["qa_last_read_message_id"] = new_last_read
-            updated = True
-    if updated:
-        save_state(state)
+            message_state["qa_last_read_message_id"] = result.new_last_read
+            # スレッドごとに保存し、中断時に未反映の回答が再送される窓を最小化する
+            save_state(state)
     print(f"Paper QA: {answers_posted} replies posted")
     return 0
 
@@ -1163,13 +1210,12 @@ def main() -> int:
     args = parser.parse_args()
 
     if args.stage == "daily":
-        state = load_state()
         if not DISCORD_WEBHOOK_URL:
             print("ARXIV_RECOMMENDER_WEBHOOK_URL is not set.")
             return 1
-        return process_daily_jobs(state)
+        return process_daily_jobs(load_state())
     if args.stage == "reading_requests":
-        return 0 if run_stage_poll_reading_requests() >= 0 else 1
+        return run_stage_poll_reading_requests()
     if args.stage == "paper_qa":
         return run_stage_poll_paper_qa()
     return run_stage_poll()
