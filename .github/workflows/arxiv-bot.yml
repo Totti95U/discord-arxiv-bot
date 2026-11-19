@@ -1,0 +1,133 @@
+name: arXiv Bot Poll
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: arxiv-bot-state
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.15'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m unittest discover -s test -v
+
+      - name: Restore state file from state branch
+        env:
+          STATE_BRANCH: bot/manage-pending-jobs
+          REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git"
+          mkdir -p state
+          # ls-remote: 0 はブランチ存在、2 は不在、それ以外 (主に通信不良) は中断して
+          # 次回 poll に任せる。誤って続けても後段の clone が失敗するため安全。
+          set +e
+          git ls-remote --exit-code --heads "${REPO_URL}" "${STATE_BRANCH}" > /dev/null 2>&1
+          LS_STATUS=$?
+          set -e
+          if [ "${LS_STATUS}" -eq 0 ]; then
+            git clone --depth 1 --branch "${STATE_BRANCH}" "${REPO_URL}" state-branch
+            if [ -f state-branch/state/pending_jobs.json ]; then
+              cp state-branch/state/pending_jobs.json state/pending_jobs.json
+            fi
+          elif [ "${LS_STATUS}" -eq 2 ]; then
+            echo "State branch does not exist yet; starting fresh."
+          else
+            echo "Could not inspect the state branch (ls-remote exit ${LS_STATUS}); aborting to protect state."
+            exit 1
+          fi
+          if [ ! -f state/pending_jobs.json ]; then
+            echo '{"schema_version": 2, "jobs": []}' > state/pending_jobs.json
+          fi
+
+      - name: Run poll stage
+        env:
+          LLM_API_BASE: ${{ vars.LLM_API_BASE }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          INTEREST_MODEL: ${{ vars.INTEREST_MODEL }}
+          SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL }}
+          READING_MODEL: ${{ vars.READING_MODEL }}
+          QA_MODEL: ${{ vars.QA_MODEL }}
+          INTEREST_API_BASE: ${{ vars.INTEREST_API_BASE }}
+          INTEREST_API_KEY: ${{ secrets.INTEREST_API_KEY }}
+          SUMMARY_API_BASE: ${{ vars.SUMMARY_API_BASE }}
+          SUMMARY_API_KEY: ${{ secrets.SUMMARY_API_KEY }}
+          READING_API_BASE: ${{ vars.READING_API_BASE }}
+          READING_API_KEY: ${{ secrets.READING_API_KEY }}
+          QA_API_BASE: ${{ vars.QA_API_BASE }}
+          QA_API_KEY: ${{ secrets.QA_API_KEY }}
+          ARXIV_RECOMMENDER_WEBHOOK_URL: ${{ secrets.ARXIV_RECOMMENDER_WEBHOOK_URL }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_API_BASE_URL: ${{ vars.DISCORD_API_BASE_URL }}
+          DISCORD_FORUM_CHANNEL_ID: ${{ vars.DISCORD_FORUM_CHANNEL_ID }}
+          DISCORD_USER_ID: ${{ vars.DISCORD_USER_ID }}
+          ARXIV_QUERY_CATEGORIES: ${{ vars.ARXIV_QUERY_CATEGORIES }}
+          ARXIV_LOOKBACK_DAYS: ${{ vars.ARXIV_LOOKBACK_DAYS }}
+          ARXIV_MAX_RESULTS: ${{ vars.ARXIV_MAX_RESULTS }}
+          LLM_CALL_INTERVAL_SECONDS: '0.5'
+          PENDING_JOBS_FILE: state/pending_jobs.json
+        run: python src/main.py --stage poll
+
+      - name: Save state file to state branch
+        if: always()
+        env:
+          STATE_BRANCH: bot/manage-pending-jobs
+          REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ ! -f state/pending_jobs.json ]; then
+            echo "state file is missing (restore or poll stage did not run); skip push to avoid wiping the state branch"
+            exit 0
+          fi
+          if ! python -m json.tool state/pending_jobs.json > /dev/null; then
+            echo "state file is not valid JSON; refusing to push"
+            exit 1
+          fi
+          REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          rm -rf state-branch
+          if git ls-remote --exit-code --heads "${REPO_URL}" "${STATE_BRANCH}" >/dev/null 2>&1; then
+            git clone --depth 1 --branch "${STATE_BRANCH}" "${REPO_URL}" state-branch
+          else
+            git clone --depth 1 "${REPO_URL}" state-branch
+            cd state-branch
+            git switch --create "${STATE_BRANCH}"
+            cd ..
+          fi
+
+          mkdir -p state-branch/state
+          cp state/pending_jobs.json state-branch/state/pending_jobs.json
+
+          cd state-branch
+          git add state/pending_jobs.json
+          if git diff --cached --quiet; then
+            echo "No state changes"
+            exit 0
+          fi
+
+          git commit -m "Update pending jobs state from ${GITHUB_WORKFLOW} (${GITHUB_RUN_ID})"
+          git push origin "${STATE_BRANCH}"

@@ -5,6 +5,7 @@
 - All disposable scripts, logs, debug outputs, and intermediate artifacts must go under `.scratch/<task-slug>/`.
 - Do not create ad-hoc temporary directories elsewhere in the repository.
 - Promote reusable experiments to `experiments/`, regression tests to `test/`, application documentation to `docs/`, and development findings to `context/`.
+- `requirements.txt` 必ず UTF-8 (BOM なし) で書き出すこと。PowerShell のリダイレクト (`>`) や `Add-Content` は UTF-16 を生成するため、このリポジトリでは過去に pip 以外のツールが読めなくなった。
 - Clean up temporary files created by the current task when they are no longer needed. Never delete unrelated or pre-existing files.
 
 ## Git Workflow

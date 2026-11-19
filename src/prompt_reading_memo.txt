@@ -1,11 +1,19 @@
 ## 指示
-添付された論文全文を読み、日本語の「3分リーディングメモ」を作成してください。
+以下に与えた論文全文テキストを読み、日本語の「3分リーディングメモ」を作成してください。
 
 - `conclusion`: 何を調べた論文か、主結果、読む価値を短く示す
 - `main_claims`: 主要な仮定と結論、定理番号・節・ページ、著者が主張する新規性を示す
 - `method_outline`: 証明や手法の主要な流れを3〜6段階で示し、既存の道具と新しい部分を区別する
-- `research_connection`: symbolic dynamics, combinatorics on words, automata theory, formal languages, complex dynamics, arithmetic dynamics, validated numerics, structure of large countable infinite groups との接点を示す。論文に明記された内容と推測を必ず区別する
+- `research_connection`: 下記の興味ある分野との接点を示す。論文に明記された内容と推測を必ず区別する
 - `reading_guide`: 必要な前提知識、最初に読むべき definition/theorem/example、全文精読か該当節のみでよいかを示す
 - `follow_up_questions`: 論文固有の追加質問を3件示す
 
-根拠のない定理番号、ページ、新規性は作らないでください。論文で確認できない場合は「確認できず」と書いてください。LaTeX 数式は Discord で読める Unicode 表記または平文にしてください。
+根拠のない定理番号、ページ、新規性は作らないでください。論文で確認できない場合は「確認できず」と書いてください。
+数式は Discord で読める Unicode 表記または平文にしてください。
+
+## 補足
+論文テキストは PDF から自動抽出したもので、数式・図表は崩れている可能性があります。
+崩れた記号は文脈から復元を試みてください。復元できないまま引用しないでください。
+
+## 興味ある分野
+combinatorics on words (repetition avoidance, word complexity, string attractors, algorithms on words), symbolic dynamics (subshifts of finite type, shift equivalence, zeta functions, automorphisms of shift spaces), complex and one-dimensional real dynamics (Julia/Fatou sets, Hénon maps, unimodal maps, kneading theory, period-doubling, bifurcations), arithmetic dynamics (arboreal Galois representations, preperiodic points, p-adic methods), aperiodic order and discrete patterns (monotiles, cellular automata), computer-assisted proofs and validated numerics (interval arithmetic, Walnut, exhaustive search, Lean), equational theories of words and monoids, enumerative combinatorics

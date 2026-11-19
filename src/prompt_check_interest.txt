@@ -1,6 +1,70 @@
-
 ## 指示
-上で提示した論文情報をもとに、以下の [興味ある分野] に合致するかどうかを判断してください。
+上で提示した論文 (Title / Abstract) が、下記の「興味ある分野」に関係する本質的な研究かどうかを判断してください。
+判断はアブストラクトの情報のみで行い、断定できない場合は interested_in = false にしてください。
 
-## 興味ある分野
-symbolic dynamics, combinatorics on words, automata theory, formal languages, complex dynamics, arithmetic dynamics, validated numerics, strucure of large countable infinite group
+## 興味ある分野の核
+読者は「離散的・組合せ的な構造と力学系の背後にある普遍的な原理・精密な構造」に関心があり、
+きれいに決着した結果 (予想の解決・完全な分類・必要十分条件・sharp な値) を特に好みます。
+
+1. 語の組合せ論 (最も関心が強い): 反復回避 (Thue-Morse, overlap-free, abelian power)、
+   無限語の複雑度 (subword/pattern complexity, Sturmian)、string attractor、Lyndon 項、
+   語上の線形時間アルゴリズム (suffix array 系)
+2. 記号力学系: subshift / 有限型シフト (SFT)、位相共役と強シフト同値 (Williams の問題)、
+   動的ゼータ関数、シフト空間の自己同型 (marker endomorphism など)、巡回行列による実現、
+   記号化 (coding of rotations, kneading sequence)
+3. 複素力学系と 1 次元実力学系 (要注目): Julia/Fatou 集合、多変数や Hénon 型写像、
+   単峰写像、kneading 理論、周期倍加分岐と Feigenbaum、ホモクリニック接触、
+   可積分系との境界 (特異点閉じ込めなど)、emergence・重み付きエントロピーのような
+   力学系の統計的・位相的不変量
+4. 算術力学系・数論と力学系の交差: arboreal Galois 表現、preperiodic 点、逆軌道の体拡大、
+   p 進解析による複素力学系の命題の証明、素数や p 進評価の離散力学的表現
+5. aperiodic order と discrete patterns: 非周期タイリング・monotile、セルオートマトン、
+   mod 離散ラプラシアンのような離散パターン形成
+6. 計算機援用証明・validated numerics: 区間演算と Newton–Kantorovich による分岐・不動点の厳密証明、
+   Walnut / 自動的系列による決定、厳密全数探索と独立実装での検証、Lean などによる
+   数学定理の kernel-checked 形式化
+7. 語・言語の代数 (やや幅広く): 文字列書き換え系、モノイド・半環の有限基底問題と等式論、
+   語の問題の決定可能性
+8. 列挙組合せ・組合せゲーム (低め): 駐車関数・Dyck path といった厳密な数え上げ、
+   Eulerian/Stirling/Fubini 数との一致、Wordle 型ゲームの最適戦略の証明
+
+補足: 無限群そのもの (Thompson 群や braid 群などの具体族) への関心は控えめ。
+語の距離・歪み・書き換えとの接点や、著名な予想の決着が主結果である場合のみ興味候補。
+
+## 正のシグナル (核の語彙がなくても興味になりうる形)
+- 具名予想・オープン問題の解決・反証 (conjecture / posed by / asked whether への settle)
+- 完全な分類・特徴づけ、必要十分条件、sharp/optimal な値、exact な数え上げ
+- 数学の証明に組み込まれた計算・検証 (上 6 の手法が使われた論文は要注目)
+- 分野の状況を一望できるサーベイ・講義ノート・オープン問題集
+
+## 除外すべきパターン (キーワードが部分的に一致しても興味なし)
+1. 測度論的エルゴード理論 (エルゴード平均の収束・再帰集合・加法的組合せ論の密度) で、
+   subshift・語・オートマトン・形式言語が要約に一切現れないもの
+2. 高次元の滑らかな力学系・斉次力学系 (部分双曲性、SRB、Lyapunov コクサイド、horocycle、
+   translation surface、Patterson–Sullivan など)。"dynamics" や "bifurcation" という一般語
+   だけでは興味にならない
+3. 作用素環が主題 (C*-単純性、crossed product、groupoid C*-代数、hypercyclicity)
+4. "self-similar" がフラクタル次元・Delone 集合を指すもので、語の代数的構造 (Pisot 置換など)
+   と繋がらないもの
+5. 様相論理・直観主義論理・CSP・項書き換えの計算論的面 (停止性・合流性)、モデル理論
+   (model companion/amalgamation)、プログラム検証 (SMT, BMC)
+6. 有限群の計算・分類・数え上げ、ランダム群・確率論的群論
+7. グラフ理論・代数的組合せの本体 (tournament, Ramsey–Turán, 量子 coloring など)
+8. PDE・確率・数理物理文脈の "self-similar solution"、mixing/enhanced dissipation、SPDE
+9. 機械学習・LLM の性質や応用 (transformer の表現力解析、grammar-constrained decoding、
+   LLM エージェント、neural ODE、工学応用)。形式的語彙と共存していても、数学的な
+   主定理がないものは対象外
+10. 語や数列への明示的な構成・決着なしに、漸近評価や統計実験だけを積み上げるもの
+
+## 例外条項
+次の対象は、上の除外語彙 (×p 写像、トーラス自己同型、LRS/Skolem 型、エルゴード最適化、
+周期タイリング) を含んでいても、主結果が数論・代数の性質 (preperiodic 点、局所-大域原理、
+代数的単元、周期補題、ガロア理論) に向かえば興味候補とすること。
+
+## 判定手順
+1. 核となる分野の語彙・対象そのものがアブストラクトの主題か確認する
+2. 核がなくても「正のシグナル」の形と対象が重なるか確認する
+3. 該当しても除外パターンに当たらないか確認する
+4. 判断がつかない時は interested_in = false にする
+
+出力する JSON の reason には、判断の根拠となった語彙・パターンを 1 文で短く記録すること。

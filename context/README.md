@@ -22,13 +22,10 @@
 
 プロジェクト固有の資料を追加したら、**ここに短い説明と相対リンク**を追記してください。エージェントが必要な資料を選んで読むための入口として使います。資料の全文をこの README に転記する必要はありません。
 
-現在、登録済みの資料はありません。
-
-<!-- 資料を追加したら上の一文を削除し、例えば次の形式で一覧化してください。
 | Topic | Document | Summary | Status |
 | --- | --- | --- | --- |
-| Algorithm selection | [Decision 0001](decisions/0001-algorithm-selection.md) | 採用手法と比較根拠 | Accepted |
--->
+| Architecture | [Decision 0001](decisions/0001-provider-agnostic-poll-design.md) | OpenAI 互換 API 前提の単一 poll 設計とその理由・天井 | Accepted |
+| Interest prompt | [Interest prompt mining](references/interest-prompt-mining.md) | 使用履歴 4403 件の分析に基づく興味判定プロンプト再構成の経緯 | Completed |
 
 ## Conventions
 
