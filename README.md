@@ -32,7 +32,7 @@ OpenAI 互換 API を 1 つ用意し、以下を登録します.
 | 種類 | 名前 | 説明 |
 | --- | --- | --- |
 | variable | `LLM_API_BASE` | 例: `https://openrouter.ai/api/v1` |
-| secret | `LLM_API_KEY` | API キー |
+| secret | `LLM_API_KEY` | API キー (認証不要な OpenAI 互換 endpoint では省略可) |
 | variable | `INTEREST_MODEL` | 興味判定用モデル (decision 系モデルを推奨) |
 | variable | `SUMMARY_MODEL` | 要約生成用モデル (未設定なら `INTEREST_MODEL`) |
 | variable | `READING_MODEL` | リーディングメモ用モデル (未設定なら `SUMMARY_MODEL`) |

@@ -81,6 +81,22 @@ class RoleConfigTest(unittest.TestCase):
             with self.assertRaises(RuntimeError):
                 main.role_config("interest")
 
+    def test_missing_base_url_raises(self):
+        env = {"LLM_API_KEY": "k", "INTEREST_MODEL": "m"}
+        with mock.patch.dict(os.environ, env, clear=True):
+            with self.assertRaises(RuntimeError):
+                main.role_config("interest")
+
+    def test_keyless_endpoint_gets_placeholder_key(self):
+        env = {
+            "LLM_API_BASE": "https://free.example.com/v1",
+            "INTEREST_MODEL": "jev-1.13-free",
+        }
+        with mock.patch.dict(os.environ, env, clear=True):
+            cfg = main.role_config("interest")
+            self.assertEqual(cfg["model"], "jev-1.13-free")
+            self.assertEqual(cfg["api_key"], "no-key-required")
+
 
 class MessageSplitTest(unittest.TestCase):
     def test_short_text_single_chunk(self):

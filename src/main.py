@@ -142,8 +142,12 @@ def role_config(role: str) -> Dict[str, str]:
         source = model_source[source]
     if not model:
         raise RuntimeError(f"{fallback[role]} is not set")
-    if not base_url or not api_key:
-        raise RuntimeError(f"LLM_API_BASE and LLM_API_KEY (or {role.upper()}_*) must be set for role {role}")
+    if not base_url:
+        raise RuntimeError(f"LLM_API_BASE (or {role.upper()}_API_BASE) must be set for role {role}")
+    if not api_key:
+        # 認証不要な OpenAI 互換 endpoint 向けのプレースホルダ。openai SDK は
+        # 空の api_key を例外にするため、dummy を送る以外に手がない
+        api_key = "no-key-required"
     return {"model": model, "base_url": base_url, "api_key": api_key}
 
 
