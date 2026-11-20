@@ -127,6 +127,18 @@ def env_value(name: str) -> Optional[str]:
     return value or None
 
 
+def interest_api_style() -> str:
+    # interest 役割の API 形式。systemone は TypeSafe AI (Jev 等) の decision API
+    return (env_value("INTEREST_API_STYLE") or "openai").lower()
+
+
+def interest_noul_threshold() -> float:
+    try:
+        return max(0.0, min(1.0, float(os.getenv("INTEREST_NOUL_THRESHOLD", "0.5"))))
+    except ValueError:
+        return 0.5
+
+
 def role_config(role: str) -> Dict[str, str]:
     """役割ごとの LLM 接続先。未設定の部分は LLM_API_BASE / LLM_API_KEY を使う。
     モデルのフォールバックは summary -> interest、reading -> summary、qa -> reading の順
@@ -143,6 +155,10 @@ def role_config(role: str) -> Dict[str, str]:
     model = env_value(fallback[role])
     source = model_source[role]
     while not model and source:
+        # systemone の decision モデルは chat 形式の役割に流用できないため
+        # フォールバック元から除外する (何も設定しなければ設定漏れとして例外になる)
+        if source == "interest" and interest_api_style() == "systemone":
+            break
         model = env_value(fallback[source])
         source = model_source[source]
     if not model:
@@ -236,6 +252,52 @@ def llm_text(role: str, system: str, user: str) -> str:
     if not response.choices:
         raise LLMError(f"model {model} returned no choices for role {role}")
     return (response.choices[0].message.content or "").strip()
+
+
+def interest_decision_check(paper: dict) -> InterestCheck:
+    """System One 形式 (TypeSafe AI, Jev 等) による興味判定。
+    base_url には endpoint 全体 (例: https://opencode.ai/inference/systemone/v1/systemone) を指定する。
+    noul は「yes である確率」(0..1) なので、閾値で真偽に変換する。"""
+    cfg = role_config("interest")
+    payload = {
+        "model": cfg["model"],
+        "state": paper_prompt(paper),
+        "questions": {
+            "interested_in": {
+                "type": "noul",
+                "instructions": f"{PROMPT_CHECK_INTEREST}\n\n質問: この論文は上記の興味ある分野にとって本質的な研究か?",
+                "criteria": {
+                    "true": "論文の主題が核となる分野の対象そのもの、または正のシグナル (予想の決着・完全分類・計算機援用証明など) に該当する",
+                    "false": "核の語彙が主題にならない、除外パターンに該当する、または判断材料が不足する",
+                },
+            }
+        },
+    }
+    response = requests.post(
+        cfg["base_url"],
+        json=payload,
+        headers={"Authorization": f"Bearer {cfg['api_key']}"},
+        timeout=(DISCORD_CONNECT_TIMEOUT_SECONDS, 120),
+    )
+    response.raise_for_status()
+    data = response.json()
+    try:
+        noul = float(data["answers"]["interested_in"]["noul"])
+    except (KeyError, TypeError, ValueError) as exc:
+        raise LLMError(f"unexpected systemone response: {short_error(exc, 300)}") from exc
+    threshold = interest_noul_threshold()
+    return InterestCheck(
+        interested_in=noul >= threshold,
+        reason=f"noul={noul:.3f} (threshold {threshold})",
+    )
+
+
+def check_interest(paper: dict) -> InterestCheck:
+    if interest_api_style() == "systemone":
+        return interest_decision_check(paper)
+    return llm_structured(
+        "interest", PROMPT_CHECK_INTEREST, paper_prompt(paper), InterestCheck
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -903,9 +965,7 @@ def run_interest_phase(job: dict, state: dict) -> bool:
         if pid in job["interest_results"]:
             continue
         try:
-            result = llm_structured(
-                "interest", PROMPT_CHECK_INTEREST, paper_prompt(paper), InterestCheck
-            )
+            result = check_interest(paper)
             job["interest_results"][pid] = result.interested_in
             job["interest_reasons"][pid] = result.reason
             checked += 1

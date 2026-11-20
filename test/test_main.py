@@ -97,6 +97,87 @@ class RoleConfigTest(unittest.TestCase):
             self.assertEqual(cfg["model"], "jev-1.13-free")
             self.assertEqual(cfg["api_key"], "no-key-required")
 
+    def test_systemone_interest_model_does_not_leak_to_chat_roles(self):
+        env = {
+            "LLM_API_BASE": "https://api.example.com/v1",
+            "LLM_API_KEY": "k",
+            "INTEREST_API_STYLE": "systemone",
+            "INTEREST_MODEL": "jev-1.13-free",
+        }
+        with mock.patch.dict(os.environ, env, clear=True):
+            # decision モデルを chat 役割に使えないため、設定漏れとして例外になる
+            with self.assertRaises(RuntimeError):
+                main.role_config("summary")
+            cfg = main.role_config("interest")
+            self.assertEqual(cfg["model"], "jev-1.13-free")
+
+
+class CheckInterestTest(unittest.TestCase):
+    def paper(self):
+        return {
+            "paper_id": "p1",
+            "entry_id": "https://arxiv.org/abs/2608.1",
+            "title": "A symbolic dynamics paper",
+            "summary": "We study subshifts of finite type.",
+            "authors": [],
+            "pdf_url": "https://arxiv.org/pdf/2608.1",
+            "published": None,
+        }
+
+    def response(self, noul):
+        return mock.Mock(
+            status_code=200,
+            json=lambda: {
+                "model": "jev-1.13.0",
+                "answers": {"interested_in": {"type": "noul", "noul": noul}},
+            },
+        )
+
+    def env(self, **extra):
+        base = {
+            "INTEREST_API_STYLE": "systemone",
+            "INTEREST_API_BASE": "https://opencode.ai/inference/systemone/v1/systemone",
+            "INTEREST_API_KEY": "opencode-key",
+            "INTEREST_MODEL": "jev-1.13-free",
+        }
+        base.update(extra)
+        return base
+
+    def test_noul_above_threshold_is_interested(self):
+        with mock.patch.dict(os.environ, self.env(), clear=True):
+            with mock.patch.object(main.requests, "post", return_value=self.response(0.92)) as post:
+                result = main.check_interest(self.paper())
+        self.assertTrue(result.interested_in)
+        self.assertIn("noul=0.920", result.reason)
+        payload = post.call_args.kwargs["json"]
+        self.assertEqual(payload["model"], "jev-1.13-free")
+        self.assertEqual(payload["questions"]["interested_in"]["type"], "noul")
+
+    def test_noul_below_threshold_not_interested(self):
+        env = self.env(INTEREST_NOUL_THRESHOLD="0.95")
+        with mock.patch.dict(os.environ, env, clear=True):
+            with mock.patch.object(main.requests, "post", return_value=self.response(0.92)):
+                result = main.check_interest(self.paper())
+        self.assertFalse(result.interested_in)
+
+    def test_malformed_answer_raises(self):
+        bad = mock.Mock(status_code=200, json=lambda: {"answers": {}})
+        with mock.patch.dict(os.environ, self.env(), clear=True):
+            with mock.patch.object(main.requests, "post", return_value=bad):
+                with self.assertRaises(main.LLMError):
+                    main.check_interest(self.paper())
+
+    def test_default_style_uses_chat_completions(self):
+        env = {
+            "LLM_API_BASE": "https://api.example.com/v1",
+            "LLM_API_KEY": "k",
+            "INTEREST_MODEL": "chat-model",
+        }
+        with mock.patch.dict(os.environ, env, clear=True):
+            with mock.patch.object(main, "llm_structured") as llm:
+                main.check_interest(self.paper())
+                llm.assert_called_once()
+
 
 class MessageSplitTest(unittest.TestCase):
     def test_short_text_single_chunk(self):

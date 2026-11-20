@@ -40,6 +40,22 @@ OpenAI 互換 API を 1 つ用意し、以下を登録します.
 
 役割ごとに別プロバイダーを使う場合は `<役割>_API_BASE` (variable) と `<役割>_API_KEY` (secret) を登録します (役割: `INTEREST`, `SUMMARY`, `READING`, `QA`).
 
+### decision 系モデルを興味判定に使う (TypeSafe AI Jev / System One)
+
+`jev-1.13-free` (OpenCode Console) のような System One 形式の decision モデルはチャット API ではないため、`INTEREST_API_STYLE` で切り替えます。
+
+| 種類 | 名前 | 値 |
+| --- | --- | --- |
+| variable | `INTEREST_API_STYLE` | `systemone` |
+| variable | `INTEREST_API_BASE` | endpoint 全体: `https://opencode.ai/inference/systemone/v1/systemone` |
+| secret | `INTEREST_API_KEY` | OpenCode Console API キー (無料枠のモデルでも key は必要です) |
+| variable | `INTEREST_MODEL` | `jev-1.13-free` など |
+| variable | `INTEREST_NOUL_THRESHOLD` (任意) | yes とみなす確率の閾値 (既定 `0.5`) |
+
+判定は noul (yes/no) の 1 問で行われ、確率 `noul` が閾値以上なら興味ありとします。判定理由は state に `noul=<確率>` として記録されます。
+
+このスタイルでは `INTEREST_MODEL` を要約等の chat 役割に流用できないため、`SUMMARY_MODEL` (と必要なら `READING_MODEL` / `QA_MODEL`) を明示的に設定してください。
+
 既存の Gemini API キーを使い続ける場合は `LLM_API_BASE` を `https://generativelanguage.googleapis.com/v1beta/openai/` にし、`LLM_API_KEY` に Gemini API キーを登録してください.
 
 ### 2. Discord の用意

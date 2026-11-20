@@ -71,6 +71,8 @@ jobs:
           QA_MODEL: ${{ vars.QA_MODEL }}
           INTEREST_API_BASE: ${{ vars.INTEREST_API_BASE }}
           INTEREST_API_KEY: ${{ secrets.INTEREST_API_KEY }}
+          INTEREST_API_STYLE: ${{ vars.INTEREST_API_STYLE }}
+          INTEREST_NOUL_THRESHOLD: ${{ vars.INTEREST_NOUL_THRESHOLD }}
           SUMMARY_API_BASE: ${{ vars.SUMMARY_API_BASE }}
           SUMMARY_API_KEY: ${{ secrets.SUMMARY_API_KEY }}
           READING_API_BASE: ${{ vars.READING_API_BASE }}
