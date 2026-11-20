@@ -420,6 +420,22 @@ class PollCompositionTest(unittest.TestCase):
                                 pdj.assert_called_once()
 
 
+class SearchQueryTest(unittest.TestCase):
+    def test_empty_categories_fall_back_to_default(self):
+        for value in ("", "   "):
+            with mock.patch.dict(os.environ, {"ARXIV_QUERY_CATEGORIES": value}):
+                self.assertEqual(main.read_search_categories(), main.DEFAULT_SEARCH_CATEGORIES)
+
+    def test_unset_categories_fall_back_to_default(self):
+        with mock.patch.dict(os.environ, {}, clear=False):
+            os.environ.pop("ARXIV_QUERY_CATEGORIES", None)
+            self.assertEqual(main.read_search_categories(), main.DEFAULT_SEARCH_CATEGORIES)
+
+    def test_custom_categories_are_used(self):
+        with mock.patch.dict(os.environ, {"ARXIV_QUERY_CATEGORIES": " cat:math.NT "}):
+            self.assertEqual(main.read_search_categories(), "cat:math.NT")
+
+
 class HelperTest(unittest.TestCase):
     def test_pdf_url_for_paper(self):
         self.assertEqual(

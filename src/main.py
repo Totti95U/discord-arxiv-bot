@@ -34,10 +34,15 @@ READING_REQUEST_WINDOW_DAYS = int(os.getenv("READING_REQUEST_WINDOW_DAYS", "30")
 QA_MAX_REPLIES_PER_POLL = max(1, int(os.getenv("QA_MAX_REPLIES_PER_POLL", "3")))
 QA_HISTORY_MESSAGES = max(1, int(os.getenv("QA_HISTORY_MESSAGES", "15")))
 LLM_CALL_INTERVAL_SECONDS = float(os.getenv("LLM_CALL_INTERVAL_SECONDS", "0.5"))
-SEARCH_CATEGORIES = os.getenv(
-    "ARXIV_QUERY_CATEGORIES",
-    "cat:math.DS OR cat:math.CO OR cat:math.GR OR cat:cs.LO OR cat:cs.FL OR cat:cs.DM",
-)
+DEFAULT_SEARCH_CATEGORIES = "cat:math.DS OR cat:math.CO OR cat:math.GR OR cat:cs.LO OR cat:cs.FL OR cat:cs.DM"
+
+
+def read_search_categories() -> str:
+    # Actions の未設定 variable は空文字で届く。空クエリは arXiv に HTTP 400 で拒否される
+    return os.getenv("ARXIV_QUERY_CATEGORIES", "").strip() or DEFAULT_SEARCH_CATEGORIES
+
+
+SEARCH_CATEGORIES = read_search_categories()
 try:
     SEARCH_LOOKBACK_DAYS = max(0, int(os.getenv("ARXIV_LOOKBACK_DAYS", "3")))
 except ValueError:
