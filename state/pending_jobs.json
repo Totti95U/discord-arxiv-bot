@@ -1552,11 +1552,14 @@
           "message_id": "1573369849403674767",
           "channel_id": "1451388059039039559",
           "reaction_added": true,
-          "read_requested": false,
+          "read_requested": true,
           "read_window_expired": false,
-          "reading_memo_sent": false,
-          "paper_thread_id": null,
-          "qa_last_read_message_id": null
+          "reading_memo_sent": true,
+          "paper_thread_id": "1573539110352723972",
+          "qa_last_read_message_id": "1573539110352723972",
+          "read_requested_at": "2026-11-21T03:22:31.680357+00:00",
+          "reading_last_error": null,
+          "reading_memo_sent_at": "2026-11-21T03:22:39.095049+00:00"
         },
         "http://arxiv.org/abs/2611.22364v1": {
           "message_id": "1573369865870381107",
@@ -1569,7 +1572,20 @@
           "qa_last_read_message_id": null
         }
       },
-      "reading_memos": {},
+      "reading_memos": {
+        "http://arxiv.org/abs/2611.22365v1": {
+          "conclusion": "任意次元の群セルオートマトン（GCA）の強推移性を完全に特徴づけ、判定可能にした論文。非可換群では強推移的にならず、可換群は冪部分群による分解で (Z/pZ)^n 上の線形CAに帰着し、特性多項式の既約因子の定数項が単元でないことで特徴づける。",
+          "main_claims": "・定理2（3節）: 非可換有限群上の任意次元GCAは強推移的でも正拡大的でもない。よって強推移的GCAのアルファベットは可換。\n・定理3と系1（4節）: 可換群G上のGCAは、冪部分群 G^m への制限と商 G/G^m 上のGCAがともに強推移的であることと同値。アルゴリズム1（PowerDecomp）で (Z/pZ)^n 上の成分に分解でき、全体の強推移性は全成分のそれと同値。\n・定理6（5.4節）: F_p 上 n 次元、ローラン多項式行列 A を持つ線形CA FA が強推移的 ⇔ det(A) ≠ 0 かつ χA の任意のモニック既約因子 g について g(0) が L_p の単元でない（すなわち単項式でない）。\n・系4・系5・定理7（6節）: 強推移性は全次元で判定可能。固定次元 d に対し群位数 N、近傍数 k、半径 ϱ の多項式時間（最大 log2 N 個の多変数多項式の因数分解コストを含む）。\n・新規性: 非可換群での不可能性の全次元への拡張、冪部分群分解が強推移性を保つことの証明、Pontryagin双対と整閉整域上の行列の最終像の代数特徴づけを組み合わせた線形CAの判定条件、および明示的な多項式時間アルゴリズム。",
+          "method_outline": "1. 強推移性を「全射性＋任意のシリンダーから単位元 e に到達可能」に言い換える（補題1、[13, Lemma 15]の一般化）。\n2. 非可換群では、全射GCAの核が中心に含まれること（補題2、Garden of Eden定理を使用）から、中心外の値を持つ開集合が e に到達できず強推移性が破れる（定理2）。\n3. 可換群では部分群 H による商と制限への分解（命題1）を示し、冪部分群 G^m に適用して定理3を得る。\n4. 再帰分解アルゴリズム PowerDecomp により (Z/pZ)^n 成分に還元（系1）。\n5. Pontryagin双対で、強推移性を双対準同型の単射性と無限可除元の自明性に翻訳（補題3〜6、定理4、系2）。\n6. 整閉ネーター整域上の行列 M について、最終像 ∩ Im(M^k) が非自明 ⇔ χM が単元定数項を持つモニック既約因子を持つ（定理5）。これを A* に適用し定理6を得る。\n7. 分解・行列計算・Berkowitz法・有限体上の多変数因数分解を組み合わせ、計算量を評価（定理7）。\n既存の道具: Curtis–Hedlund–Lyndon定理、Garden of Eden定理、Pontryagin双対、Berkowitzの行列式アルゴリズム、Lenstraの因数分解。新しい部分: 冪部分群分解の強推移性保存、定理5の整閉整域版最終像特徴づけ、定理6の線形CA判定条件。",
+          "research_connection": "・cellular automata / symbolic dynamics: GCAは G^{Z^d} 上のシフト commuting な群準同型であり、強推移性は位相力学系的性質。論文は群シフトやより一般のamenable群への拡張を open problem として明記（7節）。\n・combinatorics on words / algorithms on words: 線形CAの局所規則はローラン多項式行列で表され、特性多項式の因数分解が判定の中心。多項式時間判定はアルゴリズム的側面。\n・computer-assisted proofs and validated numerics: 判定アルゴリズムは明示的だが、因数分解の実装コスト評価が主で、区間演算やLean形式化には言及なし（推測）。\n・arithmetic dynamics: 冪写像 g↦g^m による部分群分解は群的類似だが、p進的手法や arboreal Galois 表現への直接の言及は確認できず。\n・aperiodic order: 群シフト・置換との関連は論文に明記なし（推測）。",
+          "reading_guide": "前提知識: セルオートマトンの基礎（Curtis–Hedlund–Lyndon、シリンダー位相、Garden of Eden定理）、有限群論、可換環論（ネーター整閉整域、単元、モニック因子）、Pontryagin双対。\n最初に読む: 定義1と補題1（強推移性のGCA的特徴づけ）、定理2（非可換の場合）、定理3と系1（分解）、定理6（線形CAの判定条件）。証明の核は5.3節の定理5。\n精読範囲: 判定条件とその証明（2〜5節）は精読推奨。6節の計算量評価はアルゴリズム実装に関心がある場合のみ。7節のopen problemsは研究接続の確認に有用。",
+          "follow_up_questions": [
+            "定理6の条件「χA のモニック既約因子の定数項が単元でない」は、完全因数分解せずに判定できるか（7節のopen problem）。例えば終結式やグレブナー基底で単元定数項因子の存在を検出できるか。",
+            "冪部分群分解 PowerDecomp は非可換群には適用できないが、可換部分群や中心による分解で非可換の場合の別の特徴づけが得られるか。定理2は強推移性を完全に否定するが、部分群シフト上ではどうか。",
+            "定理5の整閉整域版最終像特徴づけは、L_p 以外の環（例えば Z 上の行列や p進環）にも適用でき、arithmetic dynamics の preperiodic 判定に使えるか。"
+          ]
+        }
+      },
       "notification_sent": true,
       "retry_count": 2,
       "last_error": null,
