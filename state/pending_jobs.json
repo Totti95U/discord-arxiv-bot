@@ -5585,7 +5585,7 @@
     {
       "pipeline_id": "20261124T151257Z-22bf1db6",
       "window": "20261121",
-      "status": "processing",
+      "status": "completed",
       "papers": [
         {
           "paper_id": "http://arxiv.org/abs/2611.29088v1",
@@ -6059,18 +6059,241 @@
           "published": "2026-11-21T00:02:25+00:00"
         }
       ],
-      "interest_results": {},
-      "interest_reasons": {},
-      "summaries": {},
-      "sent_paper_ids": [],
-      "discord_messages": {},
+      "interest_results": {
+        "http://arxiv.org/abs/2611.29088v1": false,
+        "http://arxiv.org/abs/2611.29073v1": false,
+        "http://arxiv.org/abs/2611.28984v1": false,
+        "http://arxiv.org/abs/2611.28955v1": true,
+        "http://arxiv.org/abs/2611.28954v1": false,
+        "http://arxiv.org/abs/2611.28952v1": true,
+        "http://arxiv.org/abs/2611.28948v1": false,
+        "http://arxiv.org/abs/2611.28938v1": false,
+        "http://arxiv.org/abs/2611.28888v1": true,
+        "http://arxiv.org/abs/2611.28843v1": true,
+        "http://arxiv.org/abs/2611.28840v1": false,
+        "http://arxiv.org/abs/2611.28807v1": false,
+        "http://arxiv.org/abs/2611.28776v1": true,
+        "http://arxiv.org/abs/2611.28761v1": false,
+        "http://arxiv.org/abs/2611.28733v1": false,
+        "http://arxiv.org/abs/2611.28727v1": false,
+        "http://arxiv.org/abs/2611.28724v1": false,
+        "http://arxiv.org/abs/2611.28714v1": false,
+        "http://arxiv.org/abs/2611.28704v1": false,
+        "http://arxiv.org/abs/2611.28703v1": false,
+        "http://arxiv.org/abs/2611.28672v1": false,
+        "http://arxiv.org/abs/2611.28664v1": false,
+        "http://arxiv.org/abs/2611.28659v1": false,
+        "http://arxiv.org/abs/2611.28619v1": false,
+        "http://arxiv.org/abs/2611.28606v1": true,
+        "http://arxiv.org/abs/2611.28588v1": false,
+        "http://arxiv.org/abs/2611.28587v1": false,
+        "http://arxiv.org/abs/2611.28580v1": false,
+        "http://arxiv.org/abs/2611.28562v1": false,
+        "http://arxiv.org/abs/2611.28541v1": false,
+        "http://arxiv.org/abs/2611.28533v1": false,
+        "http://arxiv.org/abs/2611.28528v1": false,
+        "http://arxiv.org/abs/2611.28518v1": false,
+        "http://arxiv.org/abs/2611.28516v1": false,
+        "http://arxiv.org/abs/2611.28496v1": false,
+        "http://arxiv.org/abs/2611.28494v1": false,
+        "http://arxiv.org/abs/2611.28470v1": false,
+        "http://arxiv.org/abs/2611.28453v1": false,
+        "http://arxiv.org/abs/2611.28430v1": false
+      },
+      "interest_reasons": {
+        "http://arxiv.org/abs/2611.29088v1": "noul=0.050 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.29073v1": "noul=0.080 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28984v1": "noul=0.130 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28955v1": "noul=0.720 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28954v1": "noul=0.070 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28952v1": "noul=0.640 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28948v1": "noul=0.030 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28938v1": "noul=0.050 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28888v1": "noul=0.810 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28843v1": "noul=0.810 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28840v1": "noul=0.220 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28807v1": "noul=0.050 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28776v1": "noul=0.870 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28761v1": "noul=0.060 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28733v1": "noul=0.080 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28727v1": "noul=0.370 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28724v1": "noul=0.070 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28714v1": "noul=0.030 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28704v1": "noul=0.050 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28703v1": "noul=0.120 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28672v1": "noul=0.050 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28664v1": "noul=0.050 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28659v1": "noul=0.090 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28619v1": "noul=0.440 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28606v1": "noul=0.600 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28588v1": "noul=0.070 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28587v1": "noul=0.040 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28580v1": "noul=0.120 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28562v1": "noul=0.170 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28541v1": "noul=0.040 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28533v1": "noul=0.090 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28528v1": "noul=0.050 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28518v1": "noul=0.070 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28516v1": "noul=0.030 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28496v1": "noul=0.090 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28494v1": "noul=0.130 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28470v1": "noul=0.040 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28453v1": "noul=0.110 (threshold 0.5)",
+        "http://arxiv.org/abs/2611.28430v1": "noul=0.080 (threshold 0.5)"
+      },
+      "summaries": {
+        "http://arxiv.org/abs/2611.28955v1": {
+          "title": "Z[tau]-フォーム：Goodman-Strauss の Dodecafoam の正二十面体加群における算術としての定式化",
+          "summary": "Goodman-Strauss の Dodecafoam は、正十二面体を大きさ tau^{-k}（tau=(1+√5)/2）の十二面体の泡で埋める置換規則であり、星形化の12平面が切り分ける7種類のセルを用いる。本論文ではこれを階数3の Z[tau]-加群の厳密な算術として書き換える。この加群は6本の五回軸が張る M であり、正二十面体群が GL(3,Z[tau]) の120個の行列として作用する。膨張したセルの配置がセルの和集合になるための必要十分条件は、そのファセット水準が {±1, ±tau³} に属し、かつ十二面体内に収まることである。この有限線形系を全スケールについて同時に解くことで、幾何学的探索で知られていた22個の規則が正確に得られ、スケール 1, tau, tau², tau³ 以外には規則が存在しないことが示される。置換は6つ組上の整数演算となり、幾何学的フォームの泡を正確に再現する。M の点が大きさ tau^{-k} の泡の中心かどうかは、フォームを構築せずに高々 k+3 個の厳密な符号ベクトル（アドレス）で判定でき、同一サイズの全泡は、ガロア共役が |x*| ≤ 2 tau^k を満たす M の点をふるい分けることで得られる（この上界は計算機支援で証明される）。大きさ tau^{-k} の泡の個数は A beta^k + O(|beta'|^k)（beta=(1+√29)/2）で漸近し、泡中心の再スケールされた共役の閉包はボックス次元が高々 log_tau(beta)=2.4123<3 であるため、泡は内部を持ついかなる cut-and-project 窓でも選別されない。1999年の論文の他のフォームは本フォームの部分フォームである。規則リストが許す50400個の置換は18899個の泡集合を与え、Dodecafoam は試験した深さまででそのうち13440個の積集合である。4次元では、120-cell の星形カットに対する同じ線形系が幾何学的探索の718個のクラスタを再現し、スケール sqrt(5) tau² を追加する。",
+          "keywords": [
+            "substitution tiling",
+            "Z[tau]-module",
+            "icosahedral group",
+            "Dodecafoam",
+            "cut-and-project",
+            "box dimension"
+          ],
+          "appendix": "関連分野：aperiodic order and discrete patterns（置換タイリング、準結晶、cut-and-project）、combinatorics on words（置換規則・語の複雑性）、computer-assisted proofs（上界の計算機支援証明）。"
+        },
+        "http://arxiv.org/abs/2611.28952v1": {
+          "title": "{-1,0,1} を成分とする冪零三重対角行列",
+          "summary": "成分が {-1,0,1} である冪零三重対角行列をすべて決定する。対角成分 d と相対する非対角成分の積 b_k の組 (d,b) の集合 𝒩ₙ を、特性多項式が λⁿ となる条件で特徴づける。𝒩ₙ は n の偶奇に応じた2種類の明示的な「折り畳み」操作により 𝒩⌊n/2⌋ から得られることを示す。その結果、𝒩ₙ が空でないのは n=1 または 3·2ʲ-1 ≤ n ≤ 2ʲ⁺²-1（ある j≥0）のときに限られ、その場合の要素数は 2^⌊log₂n⌋ である。これにより {-1,0,1} 成分の冪零 n×n 三重対角行列の個数の公式が得られ、その値は 1,9,73,585,4809,39113 で始まる。d=0 の場合は先行論文で証明された Corless の予想である。主要な新要素は剛性現象で、n≥2 の組の特性多項式が mod 4 で λⁿ に合同ならば、それはより小さい組の折り畳みでなければならない。したがって特性多項式が mod 2^{1+⌊log₂n⌋} で λⁿ に合同ならば冪零となる。最後に、Corless の歪対称族に属する m×m 行列の固有値 0 の重複度は高々 2^{v₂(m+1)}-1 で、等号が達成されることを示す。分類、剛性命題、集合 𝒩ₙ の濃度、および mod 2^{1+⌊log₂n⌋} の判定法は Lean 4 で形式化されている。",
+          "keywords": [
+            "nilpotent tridiagonal matrices",
+            "characteristic polynomial",
+            "folding operations",
+            "rigidity",
+            "Lean 4"
+          ],
+          "appendix": "関連分野: 列挙型組合せ論（冪零三重対角行列の計数）、計算機支援証明（Lean 4 による形式化）。"
+        },
+        "http://arxiv.org/abs/2611.28888v1": {
+          "title": "3つのほぼ対称なメタタイルがSpectreタイリングを生成する",
+          "summary": "Spectre非周期モノタイルに対する3つのメタタイルからなる系「D23」を提案する。これはhatタイリングに対するHTPF系と同様の概念であり、メタタイル自身が置換系を持ち、任意回数反復した後、最下位のメタタイルをSpectreタイルに変換できる。3つのメタタイルのうち1つは2回回転対称性を持ち、残り2つはそれぞれ2次と3次の「ほぼ対称」である。すなわち、タイルのn回デフレーションが覆う領域はその回転と完全には一致しないが、それらの共通部分内で不一致タイルの割合はn→∞で0に収束する。この近似的対称性はSpectreタイリング自体の近似的対称性に対応する。この系の興味深い性質として、3つのメタタイルのうち1つはSpectreへの変換で完全に消滅する。",
+          "keywords": [
+            "Spectre",
+            "aperiodic monotiling",
+            "metatiles",
+            "substitution system",
+            "near-symmetry"
+          ],
+          "appendix": "関連分野: aperiodic order and discrete patterns（非周期モノタイル・置換タイリング）。補足: 本論文は非周期モノタイルの置換構造と対称性の近似に関する研究であり、該当分野に直接関連する。"
+        },
+        "http://arxiv.org/abs/2611.28843v1": {
+          "title": "エノン型自己同型写像に対する力学系マニン＝マンフォード予想",
+          "summary": "複素アフィン平面上の多項式自己同型写像で力学次数が1より大きいものに対し、DujardinとFavreが提唱した力学系マニン＝マンフォード予想を証明した。すなわち、既約代数曲線がそのような自己同型写像の周期点を無限個含むのは、その曲線が、自己同型写像のある反復をその逆写像に共役させる多項式インボリューションの固定軌跡である場合に限ることを示した。",
+          "keywords": [
+            "dynamical Manin-Mumford conjecture",
+            "Hénon type",
+            "polynomial automorphisms",
+            "periodic points",
+            "dynamical degree"
+          ],
+          "appendix": "関連分野: arithmetic dynamics（力学系マニン＝マンフォード予想は周期点の分布に関する予想であり、本論文は複素力学系の枠組みでこれを扱っている）。"
+        },
+        "http://arxiv.org/abs/2611.28776v1": {
+          "title": "非重複符号に関するBlackburn予想の証明",
+          "summary": "符号語の空でない真の接頭辞が他の符号語の接尾辞とならないような符号を非重複符号と呼ぶ。長さn、アルファベットサイズqの非重複符号の最大サイズSₙ(q)について、LevenshteinはSₙ(q) ≤ cₙqⁿ（ただしcₙ = (1/n)((n-1)/n)^(n-1)）を示した。アルファベットを分割するI, Jに対し符号I^(n-1)Jはnがqを割り切るときこの上界を達成し、Blackburnは任意のnと十分大きいqに対し最良のそのような符号が最大非重複符号であると予想した。本論文はこの予想を証明する。証明では極大非重複符号を記述する入れ子分割の生成関数を用いる。さらに、|I| = (n-1)q/nを満たす符号I^(n-1)Jとその反転のみがLevenshteinの上界を達成することを示す。",
+          "keywords": [
+            "non-overlapping codes",
+            "Levenshtein bound",
+            "Blackburn's conjecture",
+            "generating functions",
+            "nested partitions"
+          ],
+          "appendix": "関連分野: combinatorics on words（符号理論・語の組合せ論）"
+        },
+        "http://arxiv.org/abs/2611.28606v1": {
+          "title": "レート・バースト安全言語：バースト境界のFarey構造と消失下での識別",
+          "summary": "レートρとバーストBによるリーキーバケット制約は、任意の連続するnステップの窓において高コストのステップを高々ρn+B回まで許容する。この制約を満たす無限0/1語は安全言語を形成する。辺コストが0と1の有限グラフに対し、ある無限パスのコスト語がこの言語に属するような最小バーストを実レートの関数として研究する。この関数は、消失チャネルとリーキーバケット束縛を通して観測される2つの有限状態系を識別するモニタの正確な許容度を与える。言語はすべての有理レートでω正則であるが、バーストが1に達すると無理レートではω正則でなくなるため、最終周期的な証人はオートマトン理論からは得られない。すべての実レートで単純なlassoで十分であること、およびN頂点グラフに対して境界のすべてのブレークポイントが位数NのFarey列に属することを直接証明する。1つのlassoはそのアフィン片上でNの2/3乗オーダーのタイトな束縛を持つのに対し、パスの選択は下向きのジャンプと凸でも凹でもない境界を生み出す。各Farey区間の中間点での1回の評価でアフィン片と最適なlassoが回復され、減少する整数バースト上の最大不動点計算により多項式時間・線形作業空間で関数全体が得られる。さらに識別ホライズンを計算し、Farey構造を交代制安全ゲームへ拡張する。",
+          "keywords": [
+            "leaky-bucket constraint",
+            "safety language",
+            "Farey sequence",
+            "lassos",
+            "erasure channel",
+            "turn-based safety games"
+          ],
+          "appendix": "関連分野：combinatorics on words（語上の制約・言語）、symbolic dynamics（有限型シフトに関連する有限グラフ上の経路とω正則言語）、computer-assisted proofs and validated numerics（多項式時間アルゴリズムと不動点計算）、equational theories of words and monoids（安全言語の構造）。"
+        }
+      },
+      "sent_paper_ids": [
+        "http://arxiv.org/abs/2611.28955v1",
+        "http://arxiv.org/abs/2611.28952v1",
+        "http://arxiv.org/abs/2611.28888v1",
+        "http://arxiv.org/abs/2611.28843v1",
+        "http://arxiv.org/abs/2611.28776v1",
+        "http://arxiv.org/abs/2611.28606v1"
+      ],
+      "discord_messages": {
+        "http://arxiv.org/abs/2611.28955v1": {
+          "message_id": "1574936948366381200",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "read_window_expired": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null,
+          "qa_last_read_message_id": null
+        },
+        "http://arxiv.org/abs/2611.28952v1": {
+          "message_id": "1574936971749367899",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "read_window_expired": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null,
+          "qa_last_read_message_id": null
+        },
+        "http://arxiv.org/abs/2611.28888v1": {
+          "message_id": "1574936990036787322",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "read_window_expired": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null,
+          "qa_last_read_message_id": null
+        },
+        "http://arxiv.org/abs/2611.28843v1": {
+          "message_id": "1574937006784381079",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "read_window_expired": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null,
+          "qa_last_read_message_id": null
+        },
+        "http://arxiv.org/abs/2611.28776v1": {
+          "message_id": "1574937025520341077",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "read_window_expired": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null,
+          "qa_last_read_message_id": null
+        },
+        "http://arxiv.org/abs/2611.28606v1": {
+          "message_id": "1574937053521510553",
+          "channel_id": "1451388059039039559",
+          "reaction_added": true,
+          "read_requested": false,
+          "read_window_expired": false,
+          "reading_memo_sent": false,
+          "paper_thread_id": null,
+          "qa_last_read_message_id": null
+        }
+      },
       "reading_memos": {},
-      "notification_sent": false,
+      "notification_sent": true,
       "retry_count": 1,
-      "last_error": "interest check failed for http://arxiv.org/abs/2611.28703v1: 402 Client Error: Payment Required for url: https://opencode.ai/inference/systemone/v1/systemone",
+      "last_error": null,
       "created_at": "2026-11-24T15:12:57.625011+00:00",
-      "updated_at": "2026-11-24T15:13:28.759380+00:00",
-      "finalized_at": null
+      "updated_at": "2026-11-24T23:57:38.097620+00:00",
+      "finalized_at": "2026-11-24T23:57:38.097595+00:00"
     }
   ]
 }
