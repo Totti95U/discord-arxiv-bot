@@ -5581,6 +5581,496 @@
       "created_at": "2026-11-23T07:52:12.812288+00:00",
       "updated_at": "2026-11-23T07:53:26.711846+00:00",
       "finalized_at": "2026-11-23T07:53:26.711811+00:00"
+    },
+    {
+      "pipeline_id": "20261124T151257Z-22bf1db6",
+      "window": "20261121",
+      "status": "processing",
+      "papers": [
+        {
+          "paper_id": "http://arxiv.org/abs/2611.29088v1",
+          "entry_id": "http://arxiv.org/abs/2611.29088v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.29088v1",
+          "title": "On rescuing diverging algorithms: crossing infinity in continuous Newton methods via a self-similarity detection framework",
+          "summary": "We address the solution of systems of nonlinear algebraic equations via continuous Newton methods; these methods reformulate the discrete Newton update as an initial value problem for a system of ordinary differential equations (ODEs) whose stationary points correspond to the desired roots. A fundamental challenge arises when the Jacobian of these ODEs becomes singular along the solution trajectory, inducing blow-up in the vector field --or in the state itself-- and causing the numerical integration to break down before reaching the desired root. To overcome this difficulty, we propose a directional self-similar blow-up detection and crossing procedure, wrapped around an adaptive step-size ODE solver with event detection. The method assumes local self-similar behavior near the blow-up; the self-similarity exponent, blow-up time, and amplitude are estimated on the fly from a short sequence of threshold crossings via linear regression, requiring no prior knowledge of the singularity location, its order, or the blow-up regime---in contrast to approaches that rely on explicit analytical continuation or problem-specific coordinate transformations. The estimated exponent distinguishes two qualitatively different scenarios at finite time: one in which only the vector field diverges while the state remains finite, admitting an explicit integral correction, and one in which the state itself blows-up. In addition, infinite-time divergence of the state (the so-called \"grow-up\" regime) is handled through a suitable time reparameterization. In higher dimensions, we track the norm of the vector field along its instantaneous direction; near a simple singularity, the flow asymptotically aligns with a single dominant direction (see text), reducing detection and estimation to a scalar problem regardless of ambient space dimension.",
+          "authors": [
+            "Gianluca Fabiani",
+            "Ralf Hannemann-Tamás",
+            "Alexander Mitsos",
+            "Jonathan D. Hauenstein",
+            "Constantinos Siettos",
+            "Panayotis G. Kevrekidis",
+            "Ioannis G. Kevrekidis"
+          ],
+          "published": "2026-11-21T23:23:20+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.29073v1",
+          "entry_id": "http://arxiv.org/abs/2611.29073v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.29073v1",
+          "title": "Moore spaces, polyhedral products, and positive scalar curvature",
+          "summary": "Gromov conjectured that the macroscopic dimension of the universal cover of a closed $n$-manifold of positive scalar curvature is at most $n-2$. Gromov's conjecture holds for a closed spin manifold of dimension $n\\geq 5$, provided that its fundamental group has property $(*)_m$, i.e., its classifying space is stably homotopy equivalent to a wedge of Moore spaces. We prove property $(*)_m$ for a large class of groups, including for instance the fundamental groups of closed hyperbolic $3$-manifolds, the commutator subgroups of right-angled Coxeter groups with low-dimensional nerves, pure braid groups, and many graph products thereof. As an additional application of independent interest, we show that there are finite-index subgroups of right-angled Artin groups that do not have property $(*)_m$ and can have arbitrary torsion in their (co)homology in any degree.",
+          "authors": [
+            "Satyanath Howladar",
+            "Lorenzo Ruffoni"
+          ],
+          "published": "2026-11-21T22:26:44+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28984v1",
+          "entry_id": "http://arxiv.org/abs/2611.28984v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28984v1",
+          "title": "Perfect state transfer on trees in the normalized Laplacian quantum walk",
+          "summary": "We prove that, in the normalized-Laplacian model, perfect state transfer between two vertices of a tree can only happen if they are at distance at most $2$. We show that a conjecture of Coutinho and Baptista, stating that the only trees admitting perfect state transfer are $K_2$ and $P_3$, is true when the two vertices are at odd distance. We then construct infinite families of trees admitting perfect state transfer, disproving their conjecture in the general case.",
+          "authors": [
+            "Laureline Polli"
+          ],
+          "published": "2026-11-21T18:49:05+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28955v1",
+          "entry_id": "http://arxiv.org/abs/2611.28955v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28955v1",
+          "title": "The Z[tau]-foam: Goodman-Strauss's Dodecafoam as arithmetic in the icosahedral module",
+          "summary": "Goodman-Strauss's Dodecafoam is a substitution that fills the regular dodecahedron with dodecahedral bubbles of sizes tau^{-k}, tau=(1+sqrt(5))/2, using the seven kinds of cells into which the twelve planes of its stellation cut it. We rewrite it as exact arithmetic in one Z[tau]-module of rank three, the span M of the six five-fold axes, on which the icosahedral group acts by 120 matrices in GL(3,Z[tau]). A placed inflated copy of a cell is a union of cells iff its facet levels lie in {+-1,+-tau^3} and it lies in the dodecahedron. Solving this finite linear system for all scales at once gives exactly the 22 rules known from a geometric search; no rule exists at any scale other than 1,tau,tau^2,tau^3. The substitution becomes integer arithmetic on six-tuples and reproduces the bubbles of the geometric foam exactly. Whether a point of M is the centre of a bubble of size tau^{-k} is decided by at most k+3 exact sign vectors (its address), without building the foam, and all bubbles of one size are obtained by sieving the points of M whose Galois conjugate satisfies |x^*|<=2 tau^k, a bound we prove with computer assistance. The number of bubbles of size tau^{-k} is A beta^k+O(|beta'|^k) with beta=(1+sqrt(29))/2. Hence the closure of the rescaled conjugates of the bubble centres has box dimension at most log_tau(beta)=2.4123<3, and the bubbles are not selected by any cut-and-project window with interior. The other foams of the 1999 article are sub-foams of this one. The 50400 substitutions allowed by the rule list give 18899 bubble sets, and the Dodecafoam is a product set of 13440 of them, to the depth tested. In four dimensions the same linear system, for the star cut of the 120-cell, reproduces the 718 clusters of a geometric search and adds the scale sqrt(5) tau^2.",
+          "authors": [
+            "Miguel E. Pérez Ibarra",
+            "Jaziel Flores Rodríguez"
+          ],
+          "published": "2026-11-21T17:45:02+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28954v1",
+          "entry_id": "http://arxiv.org/abs/2611.28954v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28954v1",
+          "title": "Exact edge cover by strict and non-strict temporal walks",
+          "summary": "Exact edge cover asks whether the edges of a temporal graph with $n$ vertices and $m$ edges can be partitioned into time-respecting walks with a prescribed number of walks starting at each vertex and, in the fixed-end variant, ending at each vertex. For non-strict walks, we prove that the problem is polynomially solvable by a new approach based on M-convexity, which also closes a gap in the proof sketch of an earlier static reduction. An orientation of the edges is realizable by walks exactly when walk counters stay non-negative and every snapshot component contains a walk, and only components with all degrees and counters even can violate the latter condition. Once a dead state is removed, the states of each such component form an M-convex set. This yields an augmenting path algorithm that returns walks or an infeasibility certificate, using at most $m/2$ augmentations and $O(n+nm^2)$ arithmetic operations with path-reversing re-orientation. The implementation was validated on small instances. For strict walks, we prove that the problem is NP-complete, already with six time labels for prescribed ends and two for free ends.",
+          "authors": [
+            "Duc Thien Quach",
+            "Manh Cuong Tran"
+          ],
+          "published": "2026-11-21T17:41:24+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28952v1",
+          "entry_id": "http://arxiv.org/abs/2611.28952v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28952v1",
+          "title": "Nilpotent tridiagonal matrices with entries in {-1,0,1}",
+          "summary": "We determine all nilpotent tridiagonal matrices with entries in $\\{-1,0,1\\}$. The problem reduces to describing the set $\\cN_n$ of pairs $(d,b)\\in\\{-1,0,1\\}^n\\times\\{-1,1\\}^{n-1}$ for which the tridiagonal matrices with diagonal $d$ and with products $b_k$ of opposite off-diagonal entries have characteristic polynomial $λ^n$. We show that $\\cN_n$ is obtained from $\\cN_{\\lfloor n/2\\rfloor}$ by one of two explicit ``folding'' operations, according to the parity of $n$. As a consequence, $\\cN_n$ is non-empty precisely when $n=1$ or $3\\cdot2^j-1\\le n\\le2^{j+2}-1$ for some $j\\ge0$, in which case it has $2^{\\lfloor\\log_2n\\rfloor}$ elements. This yields a formula for the number of nilpotent $n\\times n$ tridiagonal matrices with entries in $\\{-1,0,1\\}$, which begins $1,9,73,585,4809,39113$. The case $d=0$ is a conjecture of Corless, established in an earlier paper. The main new ingredient is a rigidity phenomenon: a pair as above, of size $n\\ge2$, whose characteristic polynomial is congruent to $λ^n$ modulo $4$ is necessarily a fold of a smaller pair. It follows that such a pair is nilpotent as soon as its characteristic polynomial is congruent to $λ^n$ modulo $2^{1+\\lfloor\\log_2n\\rfloor}$. Finally we show that the eigenvalue zero of an $m\\times m$ matrix in Corless's skew-symmetric family has multiplicity at most $2^{v_2(m+1)}-1$, with equality attained. The classification, the rigidity statement, the cardinality of the sets $\\cN_n$ and the criterion modulo $2^{1+\\lfloor\\log_2n\\rfloor}$ have been formalised in Lean~4.",
+          "authors": [
+            "Marcel Blattner"
+          ],
+          "published": "2026-11-21T17:39:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28948v1",
+          "entry_id": "http://arxiv.org/abs/2611.28948v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28948v1",
+          "title": "Towards a faster parameterized algorithm for Chordal Vertex Deletion",
+          "summary": "The \\textsc{Chordal Vertex Deletion} (\\chvd{}) problem asks whether an input graph $G$ can be made chordal by removing at most $k$ vertices. When $k$ is taken as parameter, this problem is known to be fixed-parameter tractable \\cite{M10,CM16}. However, it is still open whether \\chvd{} admits a single-exponential FPT algorithm, i.e. an algorithm with running time $O(α^k |V(G)|^c)$ for some constant $α$ independent of $k$. Towards this goal, we describe an FPT algorithm for the compression version of \\chvd{} with the following specification. Given an instance $I = (G,k,X)$ of the disjoint \\chvd{} compression problem such that $|X| = k+1$, $G - X$ is chordal and its longest chordless path has length $L$, we solve $I$ in time $O((L+1)^{3k} k^2 |V(G)|^4)$.",
+          "authors": [
+            "Sylvain Guillemot"
+          ],
+          "published": "2026-11-21T17:32:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28938v1",
+          "entry_id": "http://arxiv.org/abs/2611.28938v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28938v1",
+          "title": "Independent and end-faithful spanning trees in infinite graphs",
+          "summary": "Spanning trees rooted at the same vertex are independent if, for each vertex other than the root, the paths from the root to that vertex are pairwise distinct and internally vertex-disjoint. Zehavi and Itai conjectured that, for every positive integer $k$, every finite $k$-connected graph has $k$ independent spanning trees rooted at any prescribed vertex. We show that every $2$-connected graph, finite or infinite, has two independent spanning trees rooted at any prescribed vertex. For locally finite $2$-connected graphs, both trees can be chosen end-faithful. We also prove that every locally finite $3$-connected chordal graph has three independent end-faithful spanning trees. Counterexamples show that local finiteness is essential for the version with independent end-faithful spanning trees. We further show that every $3$-connected graph with a universal vertex or a finite vertex cover has three independent spanning trees rooted at any prescribed vertex.",
+          "authors": [
+            "Rodrigo Santos Monteiro"
+          ],
+          "published": "2026-11-21T17:13:28+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28888v1",
+          "entry_id": "http://arxiv.org/abs/2611.28888v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28888v1",
+          "title": "Three almost symmetric metatiles generate the Spectre tiling",
+          "summary": "We present a system of three `metatiles' for the Spectre aperiodic monotiling, named `D23'. These are similar in concept to the {\\HTPF} system for the hat tiling: the metatiles have their own substitution system which can be iterated as many times as desired, and then the lowest-order metatiles can be converted into Spectre tiles. One of the three metatiles has order-2 rotational symmetry, and the other two are `almost symmetric' with orders 2 and 3 respectively, in the sense that although the region covered by the tile's $n$-times deflation is not exactly identical to its rotation, within their intersection, the proportion of non-matching tiles tends to 0 as $n\\to\\infty$. This near-symmetry corresponds to cases of near-symmetry in the Spectre tiling itself. A curious property of this system is that one of the three metatiles disappears completely in the conversion to Spectres!",
+          "authors": [
+            "Simon Tatham"
+          ],
+          "published": "2026-11-21T16:09:22+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28843v1",
+          "entry_id": "http://arxiv.org/abs/2611.28843v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28843v1",
+          "title": "The Dynamical Manin-Mumford Conjecture for automorphisms of Hénon type",
+          "summary": "We prove the dynamical Manin--Mumford conjecture for polynomial automorphisms of the complex affine plane of dynamical degree $>1$ proposed by Dujardin and Favre. More precisely, we prove that an irreducible algebraic curve contains infinitely many periodic points of such an automorphism if and only if it is the fixed locus of a polynomial involution conjugating some iterate of the automorphism to its inverse.",
+          "authors": [
+            "Thomas Gauthier",
+            "Yugang Zhang"
+          ],
+          "published": "2026-11-21T14:46:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28840v1",
+          "entry_id": "http://arxiv.org/abs/2611.28840v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28840v1",
+          "title": "Congruences modulo powers of $2$ and $3$ for Lin's function $\\text{PDO}_t(n)$",
+          "summary": "Let $\\text{PDO}_t(n)$ denote the total number of tagged parts over all partitions of $n$ into odd parts with designated summands. Confirming a conjecture of Singh and Barman (2025), Tang (2026) recently proved that $\\text{PDO}_t(3\\times2^{2m-1}n)\\equiv0\\pmod{2^{3m+1}}$ for all $m\\geq1$ and $n\\geq0$. Using elementary techniques, we obtain explicit polynomial expansions for the generating functions of $\\text{PDO}_t(3\\times2^{m+2}n)$, and we use them to determine $\\text{PDO}_t(3\\times2^{k}n)$ modulo one further power of $2$.\n  More precisely, we show that the quotient of $\\text{PDO}_t(3\\times2^{k}n)$ by the relevant power of $2$ is odd exactly when $n$ is an odd square, or $2$, $3$ or $6$ times an odd square, depending on $k$. As a consequence, we obtain several new infinite families of congruences modulo arbitrary powers of $2$, such as \\[ \\text{PDO}_t\\bigl(3\\times4^{m}(3n+2)\\bigr)\\equiv0\\pmod{2^{3m+4}}, \\] and \\[\\text{PDO}_t\\bigl(3\\times4^{m}(6n+5)\\bigr)\\equiv0\\pmod{2^{3m+5}}. \\] We also obtain an analogous improvement of a result of Li and Tang (2026) modulo powers of $3$, and an infinite family of internal congruences modulo powers of $2$.",
+          "authors": [
+            "Manjil P. Saikia"
+          ],
+          "published": "2026-11-21T14:45:07+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28807v1",
+          "entry_id": "http://arxiv.org/abs/2611.28807v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28807v1",
+          "title": "Profinite groups with coprime automorphisms whose orbits generate nilpotent subgroups",
+          "summary": "Suppose that a profinite group $G$ admits a finite group of coprime automorphisms $A$ such that for any $\\varphi\\in A$ every subgroup $\\langle x^{\\langle\\varphi\\rangle}\\rangle$ generated by the $\\langle\\varphi\\rangle$-orbit of an element $x\\in G$ is nilpotent. It is proved that $[G,A]$ is pronilpotent, and if $A$ is soluble and the fixed-point subgroup $C_G(A)$ is locally nilpotent, then $G$ is locally nilpotent.",
+          "authors": [
+            "Evgeny Khukhro",
+            "Pavel Shumyatsky"
+          ],
+          "published": "2026-11-21T13:50:04+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28776v1",
+          "entry_id": "http://arxiv.org/abs/2611.28776v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28776v1",
+          "title": "A Proof of Blackburn's Conjecture on Non-Overlapping Codes",
+          "summary": "A code is non-overlapping if no nonempty proper prefix of a codeword is a suffix of a codeword. Let $S_n(q)$ be the largest size of a non-overlapping code of length $n$ over an alphabet of size $q$. Levenshtein proved that $S_n(q)\\le c_nq^n$, where $c_n=(1/n)\\bigl((n-1)/n\\bigr)^{n-1}$. The codes $I^{n-1}J$, where $I$ and $J$ partition the alphabet, attain this bound when $n$ divides $q$, and Blackburn conjectured that for every $n$ and all sufficiently large $q$, the best such code is a maximum non-overlapping code. We prove this conjecture. The proof uses generating functions for the nested partitions that describe maximal non-overlapping codes. We also show that only the codes $I^{n-1}J$ with $|I|=(n-1)q/n$ and their reversals meet Levenshtein's bound.",
+          "authors": [
+            "Yeow Meng Chee"
+          ],
+          "published": "2026-11-21T12:39:26+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28761v1",
+          "entry_id": "http://arxiv.org/abs/2611.28761v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28761v1",
+          "title": "An Algebra with straightening laws which is an integral domain and which is not Cohen--Macaulay",
+          "summary": "A 4-dimensional algebra with straightening laws which is an integral domain and which is not Cohen--Macaulay over an arbitrary field is constructed. Furthermore, it is shown that every three-dimensional graded ASL domain is Cohen--Macaulay.",
+          "authors": [
+            "Takayuki Hibi",
+            "Ayesha Asloob Qureshi"
+          ],
+          "published": "2026-11-21T12:10:53+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28733v1",
+          "entry_id": "http://arxiv.org/abs/2611.28733v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28733v1",
+          "title": "The inverse Erdős--Fuchs problem for $k$-fold sums",
+          "summary": "For every fixed integer $k\\ge 3$, we construct an infinite set $A\\subseteq\\mathbb{N}$ such that $\\sum_{h\\le n}r_{kA}(h)=Γ(1+1/k)^k n+O_k(n^{(1-1/k)^2})$, where $r_{kA}(h)$ counts ordered representations of $h$ as a sum of $k$ elements of $A$, with repetitions allowed. This improves Dai and Pan's bound for a linear main term. In the paired random model used here, fluctuations of the stated order occur infinitely often almost surely.",
+          "authors": [
+            "Aimin Guo",
+            "Xiaohui Yan"
+          ],
+          "published": "2026-11-21T11:03:09+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28727v1",
+          "entry_id": "http://arxiv.org/abs/2611.28727v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28727v1",
+          "title": "How many mistakes does it take to learn an interval? Exact Littlestone dimensions of intervals and their unions",
+          "summary": "The Littlestone dimension of a hypothesis class equals the smallest number of mistakes an online learner can guarantee against an adaptive adversary. For discrete intervals and unions of $j$ intervals on $m$ points, only its order of growth was known. We determine it exactly. For every switch budget $k$ (with both end labels fixed when $k$ is odd), the smallest size on which $d$ mistakes can be forced follows a three-regime law: $d+1$ while $d\\le k$, then $2d-k+1$, and beyond $d=\\lceil 3k/2\\rceil+k-1$ doubling the size adds exactly $k$ mistakes. Unions of $j$ intervals on $m$ points correspond to $k=2j$ and size $m+1$, and a single interval gives the thresholds $1,2,3,5,7,10,14,20,\\dots$. The natural learner that waits for a positive example and binary-searches both endpoints is not optimal: it can be forced into one extra mistake for 50,847 of the domain sizes below $10^5$. Upper bounds come from a gap potential and a block-pairing learner, and lower bounds from adversary strategies and a refinement step. These tools give an explicit optimal learner with $O(\\log m)$ time per round, which on random streams makes more mistakes on average than the natural learner. For randomised learners, we compute the randomised Littlestone dimension of thresholds exactly and prove that a greedy adversary forces an explicit closed-form number of expected mistakes on intervals; this bound is within $0.64$ of optimal and, we conjecture, exact (confirmed for $m\\le70$). Exact computation tests every result, and the formulas for every switch budget are machine-checked in Lean 4.",
+          "authors": [
+            "Miit Daga",
+            "Swarna Priya Ramu"
+          ],
+          "published": "2026-11-21T10:48:49+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28724v1",
+          "entry_id": "http://arxiv.org/abs/2611.28724v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28724v1",
+          "title": "Coordinate Ordering and Non-collinear Central Configurations",
+          "summary": "We establish a mass-independent criterion for N-body central configurations based on a special coordinate ordering of the bodies. Moreover, we identify a region in the plane that contains no non-collinear central configurations. This provides a way to exclude non-collinear central configurations that are nearly collinear.",
+          "authors": [
+            "Jiexin Sun",
+            "Lei Zhao"
+          ],
+          "published": "2026-11-21T10:37:27+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28714v1",
+          "entry_id": "http://arxiv.org/abs/2611.28714v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28714v1",
+          "title": "Vector Lyapunov-Krasovsky functionals, higher derivatives of Lyapunov-Krasovsky functionals and boundedness of solutions of functional-differential equations of retarded type",
+          "summary": "In present paper, for functional-differential equations of retarded type, the method of vector Lyapunov-Krasovsky functionals and the method of higher derivatives of Lyapunov-Krasovsky functionals are developed. On the basis of this methods, sufficient conditions for various types of uniform boundedness of solutions and sufficient conditions for various types of ultimate-uniform boundedness of solutions are obtained.",
+          "authors": [
+            "K. S. Lapin",
+            "S. V. Lapin"
+          ],
+          "published": "2026-11-21T10:17:16+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28704v1",
+          "entry_id": "http://arxiv.org/abs/2611.28704v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28704v1",
+          "title": "Zero-Trust Formal Methods: AI Agents Build Verified Checkers for Untrusted Solvers",
+          "summary": "AI coding agents now generate code faster than humans can review it. Security analyses rely on solver answers such as \"unsatisfiable\" (for example, no attack path exists) or \"optimal.\" Unlike satisfying models, they cannot be checked by looking at them. Formal verification moves trust from code to specifications, but verifiers still place large SAT, SMT, and answer-set solvers, and the translation into solver queries, in their trusted computing base, and these have had soundness bugs. Unlike agent-based pipelines that trust their verifier and solver, our farm trusts no component by default: neither the AI agents, which might make mistakes or game their objectives, nor the solvers. A solver answer counts only if a verified checker accepts its certificate. Every theory, proof, and line of code is generated by AI. For each component, agents first create an Isabelle/HOL theory with a specification, a soundness proof, and a reference checker made by code generation, then a fast Rust implementation, verified with Verus against a specification that mirrors the Isabelle definitions line by line. Specifications are frozen after independent review and cannot be changed by the implementing agents. A trust manifest lists what is still trusted. We built trust chains for SAT (verified LRAT checking); SMT, with certificates from an extended z3 and verified bit-blasting for bit-vectors and floating point; answer-set programming, with native certificates from clingo, including weight rules and optimality; and, closing the loop, Verus's final verification-condition step, by translation validation. All 3,726 SMT queries from 20 crates are certified and validated, and 15,662 answer-set proofs are accepted by both the Isabelle and the Verus checker. We found soundness defects in three proof checkers, including drat-trim, and in five solvers, including clasp and z3, which report wrong unsatisfiability.",
+          "authors": [
+            "Tobias Philipp"
+          ],
+          "published": "2026-11-21T09:58:05+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28703v1",
+          "entry_id": "http://arxiv.org/abs/2611.28703v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28703v1",
+          "title": "On non-canonical maximum cliques in the block graphs of orthogonal arrays",
+          "summary": "In this note, we prove an Erdős-Ko-Rado characterisation of maximum intersecting families of columns of certain orthogonal arrays. This solves a problem of Chris Godsil and Karen Meagher and implies that, in all orthogonal arrays OA$(m,(m-1)^2)$, every non-canonical maximum intersecting family of columns necessarily has the structure of an affine plane.",
+          "authors": [
+            "Tao Feng",
+            "Sergey Goryainov",
+            "Elena V. Konstantinova",
+            "Letian Zhang"
+          ],
+          "published": "2026-11-21T09:55:25+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28672v1",
+          "entry_id": "http://arxiv.org/abs/2611.28672v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28672v1",
+          "title": "Quadratic unitary Cayley graphs over finite commutative rings",
+          "summary": "Let $R$ be a finite commutative ring with identity, and let $T_R=Q_R\\cup(-Q_R)$, where $Q_R=\\{u^2:u\\in R^\\times\\}$. In this paper, we investigate the spectral properties of quadratic unitary Cayley graphs $\\operatorname{Cay}(R,T_R)$, over finite commutative rings with identity. We determine all the eigenvalues of $\\operatorname{Cay}(R,T_R)$ when $R$ has odd characteristic. Our results extend the previously known spectral formulas for this family of graphs. We also obtain all the eigenvalues when the characteristic of $R$ is $2$. Furthermore, for rings of odd characteristic, we give a complete characterization of when $\\operatorname{Cay}(R,T_R)$ is a strongly regular Cayley graph.",
+          "authors": [
+            "Priya Dhankhar",
+            "Sanjay Kumar Singh"
+          ],
+          "published": "2026-11-21T08:50:35+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28664v1",
+          "entry_id": "http://arxiv.org/abs/2611.28664v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28664v1",
+          "title": "Note on polychromatic coloring of hereditary hypergraph families III",
+          "summary": "For every integer $h\\ge4$ we construct a hereditary family of hypergraphs with $m_2=h$ and \\[ m_3\\ge 2(h-1)+2\\left\\lfloor\\frac{h-1}{3}\\right\\rfloor+1 \\approx \\frac{8}{3}m_2. \\] This improves the lower bound $m_3\\ge 2m_2$ from the preceding notes for every $m_2\\ge4$. We also show that the worst-case integrality gap of the weighted transversal problem over hereditary families with $m_2\\le h$ is between $h-1$ and $5000h$. As a consequence, every such family admits strong $\\varepsilon$-nets of size at most $5000h/\\varepsilon$.",
+          "authors": [
+            "Dömötör Pálvölgyi"
+          ],
+          "published": "2026-11-21T08:44:53+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28659v1",
+          "entry_id": "http://arxiv.org/abs/2611.28659v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28659v1",
+          "title": "Cayley Regression for Finite Groups with a Cyclic Subgroup of Index Two",
+          "summary": "A finite group $G$ is a Cayley regression if every generalized Cayley graph of $G$ is isomorphic to a Cayley graph of $G$, and a $k$-Cayley regression if this holds for all such graphs of valency at most $k$. We show that the dihedral group $D_{2n}$, $n\\geq2$, is a $2$-Cayley regression if and only if it is a $3$-Cayley regression, which holds exactly when $n$ is a prime power, and that for $k\\geq4$ it is a $k$-Cayley regression if and only if $n$ is an odd prime power or $n\\in\\{2,4\\}$. Groups with a cyclic subgroup of index two that are neither cyclic nor dihedral are not even $2$-Cayley regressions; consequently, a group with a cyclic subgroup of index two is a Cayley regression if and only if it is isomorphic to $C_2$, $C_4$, $C_6$, $C_{10}$, or $D_{2n}$ with $n$ as above. Finally, every split metacyclic group $C_m\\rtimes C_q$ with $m>2$ and odd $q\\geq3$ is not a $2$-Cayley regression.",
+          "authors": [
+            "Yingbi Jiang",
+            "Pengfei Guo",
+            "Jin-Hua Xie"
+          ],
+          "published": "2026-11-21T08:40:52+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28619v1",
+          "entry_id": "http://arxiv.org/abs/2611.28619v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28619v1",
+          "title": "Rank-unimodality of one-descent composition ideals",
+          "summary": "The principal ideal of a composition consists of its distinct generalized subwords, ranked by the sum of their parts. We prove rank-unimodality for every composition with at most one descent and for every bitonic composition. Both the part sizes and the number of parts are unrestricted. The main ingredient is a coupling for a monotone host. If a subword is chosen uniformly among those of weight at most n, its length and its unused weight can be made to increase weakly when n increases by one. A decreasing threshold on the next available part then compares the positive difference of two ordinary rank coefficients with an earlier cumulative ratio. This supplies the coefficient inequality in the hereditary reduction at a strict peak.",
+          "authors": [
+            "Yibo Zhang",
+            "Zhanhe Zhang"
+          ],
+          "published": "2026-11-21T07:10:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28606v1",
+          "entry_id": "http://arxiv.org/abs/2611.28606v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28606v1",
+          "title": "Rate--burst safety languages: the Farey structure of the burst boundary and discrimination under erasures",
+          "summary": "A leaky-bucket constraint with rate \\(ρ\\) and burst \\(B\\) allows at most \\(ρn+B\\) costly steps in every window of \\(n\\) consecutive steps. The infinite 0/1 words that satisfy it form a safety language. For a finite graph with edge costs 0 and 1, we study the least burst at which the cost word of some infinite path lies in this language, as a function of the real rate. This function is the exact tolerance of a monitor that distinguishes two finite-state systems observed through an erasure channel with a leaky-bucket bound. The language is \\(ω\\)-regular at every rational rate but not at irrational rates once the burst reaches 1, so ultimately periodic witnesses do not come from automata theory. We prove directly that simple lassos suffice at all real rates and that all breakpoints of the boundary lie in the Farey sequence of order N for a graph with N vertices. One lasso has a tight bound of order N to the power 2/3 on its affine pieces, whereas the choice among paths creates downward jumps and boundaries that are neither convex nor concave. One evaluation at the mediant of each Farey interval recovers the affine piece and an optimal lasso, and a greatest-fixed-point computation over decreasing integer bursts yields the whole function in polynomial time and linear working space. We also compute discrimination horizons and extend the Farey structure to turn-based safety games.",
+          "authors": [
+            "Lihui Dong",
+            "Zhuo Li"
+          ],
+          "published": "2026-11-21T06:36:31+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28588v1",
+          "entry_id": "http://arxiv.org/abs/2611.28588v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28588v1",
+          "title": "Spectral radii of connected graphs with prescribed maximum degree",
+          "summary": "For a real number $α>0$ and a positive integer $r$, we give recursive characterizations of the existence of finite simple connected graphs $G$ with adjacency spectral radius $ρ(G)=α$ and maximum degree $Δ(G)\\le r$ (or $=r$). Adding one vertex to a graph $F$ at a time to update the Schur-complement $q=α-{\\mathbf b}^{\\mathsf T}B^{-1}{\\mathbf b}$, where $B=αI-A(F)$ is positive definite and ${\\mathbf b}$ is a nonzero $0$--$1$ that specifies the neighbours of $z$ in $F$. Realizability is characterized by admissible constructions with positive intermediate outputs $q$ and a final zero output. We also establish a reduction for a graph $G$ obtained by attaching pairwise disjoint rooted trees, each by a single edge, to a nonempty connected graph $H$. Assume that $αI-A(T)\\succ0$ for every attached tree $T$. For each $z\\in V(H)$, let $q_{z,1},\\ldots,q_{z,s_z}$ be the positive root pivots obtained by the scalar tree recursion for the trees attached to $z$, and set\n  \\[\n  a_z=α-\\sum_{j=1}^{s_z}q_{z,j}^{-1},\n  \\qquad\n  M_H(\\mathbf a)=\\operatorname{diag}(a_z:z\\in V(H))-A(H),\n  \\] where an empty sum is zero. Then $ρ(G)=α$ if and only if $M_H(\\mathbf a)\\succeq0$ and $\\det M_H(\\mathbf a)=0$. Taking $H=K_1$ recovers the tree criteria, while $δ(H)\\geq2$ gives criteria for graphs with prescribed 2-core $H$. In particular, for unicyclic graphs of prescribed cycle length, path continuants reduce the spectral condition to positivity inequalities and one scalar equation.",
+          "authors": [
+            "Fengming Dong"
+          ],
+          "published": "2026-11-21T05:41:14+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28587v1",
+          "entry_id": "http://arxiv.org/abs/2611.28587v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28587v1",
+          "title": "KAM theory for contact Hamiltonian systems",
+          "summary": "In both finite and infinite dimensions, we establish the first frequency-preserving KAM theorems for full-dimensional Legendrian tori in contact Hamiltonian families with general analytic coupling between the momenta and the contact variable. After adjustment of external parameters, the flow on each torus is analytically conjugate in the original time to the prescribed translation, with estimates uniform as the damping parameter crosses zero. This coupling can generate nonzero mean damping at first order even when the damping parameter vanishes. In finite dimensions, nonzero mean damping yields a time-preserving analytic contact linearization near the torus. In both settings the invariant graphs give global analytic solutions of stationary Hamilton--Jacobi equations whose characteristic flows are conjugate to the prescribed translation. A novel consequence in finite dimensions is that, under global Tonelli assumptions and strict increase in the contact variable, this analytic solution is both the unique forward and the unique backward weak KAM solution, and its associated Legendrian graph is an invariant torus carrying quasi-periodic dynamics.",
+          "authors": [
+            "Zhicheng Tong",
+            "Yong Li",
+            "Xuefeng Zhao"
+          ],
+          "published": "2026-11-21T05:40:20+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28580v1",
+          "entry_id": "http://arxiv.org/abs/2611.28580v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28580v1",
+          "title": "The Gerards-Schrijver conjecture on the Edmonds-Johnson property is false",
+          "summary": "An integral matrix $A$ has the Edmonds-Johnson property if, for all integral vectors $b,c,l,u$, the first Chvátal closure of $\\{x: b\\le Ax\\le c,\\ l\\le x\\le u\\}$ equals its integer hull. Gerards and Schrijver conjectured that a totally half-modular matrix has the Edmonds-Johnson property if and only if it has no minor equal to one of two specific matrices, of size $3\\times3$ and $3\\times4$. We disprove this conjecture. We give a totally half-modular $5\\times6$ matrix that does not have the Edmonds-Johnson property and has no minor equal to either matrix. It is a minimal obstruction: every proper minor has the Edmonds-Johnson property. The proofs work on a graph whose edges are the rows and bounds of the matrix, and on which the minor operations act by deleting, contracting and halving edges. For minimality, we reduce every proper minor to two classes of matrices known to have the Edmonds-Johnson property.",
+          "authors": [
+            "Alberto Del Pia"
+          ],
+          "published": "2026-11-21T05:23:50+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28562v1",
+          "entry_id": "http://arxiv.org/abs/2611.28562v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28562v1",
+          "title": "The Schürmann-Vallentin lattice $\\mathsf{L}_6^{c}$ gives the thinnest lattice sphere covering in dimension six",
+          "summary": "We prove that the lattice $\\mathsf{L}_6^{c}$ discovered by Schürmann and Vallentin in 2006 is the unique (up to similarity) six-dimensional lattice that gives the thinnest lattice sphere covering.",
+          "authors": [
+            "Alexey Garber"
+          ],
+          "published": "2026-11-21T04:32:55+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28541v1",
+          "entry_id": "http://arxiv.org/abs/2611.28541v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28541v1",
+          "title": "A $(3/2+\\varepsilon)$-Approximation for Weighted 3-Set Packing",
+          "summary": "We give a deterministic $(3/2+\\varepsilon)$-approximation for weighted $3$-set packing, for every fixed rational $\\varepsilon>0$, improving on the 1.6908-approximation reported by Tong and Xu (2026). The algorithm has two phases. It first performs bounded local search using a rounded $12/7$-power potential. It then combines compatible exchanges that insert at most three sets and increase the original weight. The analysis relates the gap left by the first phase to the gain available to the second phase. We prove a structural inequality that bounds the weight of a comparison packing by $3/2$ times the current weight plus one sixth of a sum of small-exchange gains. Each gain accounts for all sets that the exchange must delete. A greedy rule recovers enough of these gains to obtain the approximation guarantee. We derive the structural bound from local optimality by analyzing finite computation trees and averaging the error caused by their limited depth. The running time is $n^{4^{O(1/\\varepsilon)}}\\operatorname{poly}(L)$, where $n$ is the number of input sets and $L$ is the input encoding length. The same guarantee holds for maximum-weight independent set in induced $K_{1,4}$-free graphs.",
+          "authors": [
+            "Changjun Wang",
+            "Daorong Yu",
+            "Wei Yu"
+          ],
+          "published": "2026-11-21T03:56:38+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28533v1",
+          "entry_id": "http://arxiv.org/abs/2611.28533v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28533v1",
+          "title": "Stepanov's method and uniform sumset estimates in arbitrary finite fields",
+          "summary": "Let $A<\\mathbb F_q^\\times$ be a proper multiplicative subgroup that generates $\\mathbb F_q$ over its prime field. We prove that \\[\n  |A+A|\\ge \\tfrac18|A|^{3/2} \\] whenever $|A|<q^{2/3}$, uniformly in the characteristic and extension degree, without quantitative restrictions on intersections with proper subfields. Moreover, in contrast with what is expected in prime fields, we show that no uniform bound with exponent larger than $5/3$ holds in $\\mathbb F_q$ even for $|A| \\approx q^{1/2}$. The proof's key idea is to run the prime-field Stepanov method in reverse, constructing an auxiliary polynomial whose specialization vanishes identically instead of requiring it to be nonzero.",
+          "authors": [
+            "Albert Cochrane",
+            "Todd Cochrane",
+            "Craig Spencer"
+          ],
+          "published": "2026-11-21T03:45:40+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28528v1",
+          "entry_id": "http://arxiv.org/abs/2611.28528v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28528v1",
+          "title": "Nonlinear Moments as Equivalence Classes: A Lyapunov-Perron Approach to the Invariance Equation",
+          "summary": "The linear moment is well defined whenever the system and the exosystem have disjoint spectra. Its nonlinear counterpart is not: the existence and uniqueness of solutions to the invariance equation that defines it are in general not guaranteed, so additional assumptions such as Poisson stability of the exosystem and the exponential stability of the system are required to define the nonlinear moment. This paper reduces this asymmetry. By using the Lyapunov--Perron fixed-point argument, we show that under a condition called the strip condition, there exist local $\\mathcal C^N$ solutions, with $N$ determined by the system and the exosystem, and every pair of $\\mathcal C^1$ solutions has contact of order $k^-$, where $k$ is a spectral ratio determined by the system and the exosystem; the solutions are flat-equivalent when $k=\\infty$. Based on this observation, we extend the concept of nonlinear moment as an equivalence class of functions rather than a function. The polynomial of degree $N$ or formal power series ansatz of the invariance equation are the distinguished representatives of the equivalence class. We also show that, when the system is exponentially stable, the moment describes the output shared by all trajectories up to the order $k^-$, which gives the moment a time-domain interpretation when the steady-state interpretation is not available. Finally, we show that the concept of moment matching also naturally extends as the definition of nonlinear moment is extended to an equivalence class. The ansatz also plays a crucial role in the extended notion of moment matching. The results are illustrated by a numerical example.",
+          "authors": [
+            "Heein Park",
+            "Hyeonyeong Jang",
+            "Alessandro Astolfi",
+            "Hyungbo Shim",
+            "Jin Gyu Lee"
+          ],
+          "published": "2026-11-21T03:31:19+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28518v1",
+          "entry_id": "http://arxiv.org/abs/2611.28518v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28518v1",
+          "title": "From two heptagrams to a 449-vertex 5-chromatic unit-distance graph",
+          "summary": "We construct a 5-chromatic unit-distance graph on 449 vertices. Previously, the smallest known 5-chromatic unit-distance graph had 509 vertices. Our graph is a subgraph of a graph obtained by a simple greedy construction applied to a 14-vertex seed graph consisting of two heptagrams.",
+          "authors": [
+            "Marijn J. H. Heule",
+            "Benjamin Przybocki"
+          ],
+          "published": "2026-11-21T03:09:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28516v1",
+          "entry_id": "http://arxiv.org/abs/2611.28516v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28516v1",
+          "title": "Bound to be Complete: Efficient Verification for SQL Equivalence via U-Expressions",
+          "summary": "Automated verification of SQL query equivalence is a fundamental problem in database area. Recent works developed verifiers with guaranteed completeness, which can generate counterexamples to disprove non-equivalent queries and are useful in various scenarios. However, they have to solve complex formulas and can fail to produce counterexamples within a reasonable time budget.\n  This paper presents a new complete verifier called SQLution, which not only greatly reduces the verification time, but also supports more SQL features. The key insight is to represent SQL semantics using U-expression, a functional algebra that can model SQL with significantly simpler formulas than prior works, thereby leading to more efficient SMT solving. To turn this insight into a practical verifier, SQLution further tackles two technical challenges associated with modeling SQL using U-expression, namely, the lack of tuple ordering and the presence of unbounded summations. In particular, to support tuple ordering, SQLution proposes order semantics encoding which combines U-expressions with first-order logic. To handle unbounded summation, SQLution introduces unbounded summation expansion to transform them into bounded summations, which can be directly encoded into FOL formulas. Evaluation shows that compared with state-of-the-art verifiers, SQLution can support all 271 non-equivalent query pairs derived from the Spider dataset and reduces verification time by up to 98.6%.",
+          "authors": [
+            "Haoran Ding",
+            "Zhaoguo Wang",
+            "Zuming Jiang",
+            "Haibo Chen",
+            "Jinyang Li",
+            "Ruzica Piskac"
+          ],
+          "published": "2026-11-21T03:09:30+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28496v1",
+          "entry_id": "http://arxiv.org/abs/2611.28496v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28496v1",
+          "title": "Sharp $s$-nice recurrence without the van der Corput property",
+          "summary": "For every real $s>2$, we construct a set $R_s\\subseteq\\mathbb{N}$ which is a set of $t$-nice measurable recurrence exactly for $t\\ge s$ and is not a van der Corput set. The new ingredient of this construction is the Density Frankl--Rödl theorem. Furthermore, the probability measure $σ_s$ which witnesses failure of the van der Corput property has an atom at zero with mass $(s-2)/(2s-2)$. A Gaussian tail argument proves both sharpness of the recurrence exponent and the fact that this atom is the largest possible for any $s$-nice recurrent set. The result sharpens the recurrence separations of Bourgain and Mountakis, answers a question of Mountakis about the maximal mass of an atom at zero, and answers a question of Forrest about separating the various degrees of nice recurrence.\n  In the appendix we give a self-contained proof of the Density Frankl-Rödl theorem.",
+          "authors": [
+            "Sohail Farhangi"
+          ],
+          "published": "2026-11-21T02:29:08+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28494v1",
+          "entry_id": "http://arxiv.org/abs/2611.28494v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28494v1",
+          "title": "Kleinian groups generated by two elliptics of even order",
+          "summary": "Let $Γ<\\mathrm{PSL}(2,\\mathbb{C})$ be a non-elementary discrete group generated by two elliptics of even order, with a nontrivial relation in the corresponding free product of cyclic groups. We classify the possible compact orbifold cores of $\\mathbb H^3/Γ$, together with their cusp data and marked meridians. They are finite meridional fillings of the two-bridge link and Heckoid models of Akiyoshi--Ohshika--Parker--Sakuma--Yoshida. Their weighted graphs have at most two standard tunnels, whose weights in the two-tunnel case are $2$ and an odd integer. The original generators are powers of primitive meridians which generate $Γ$, and we determine the possible meridian placements for all even orders. The groups are geometrically finite, their conformal boundary components are turnovers, and each oriented core with its cusp data determines its complete hyperbolic holonomy up to Möbius conjugacy. The proof uses trace rigidity, dihedral surgery, half-turn symmetries, and an index-two cover.",
+          "authors": [
+            "Gaven Martin",
+            "Jeroen Schillewaert"
+          ],
+          "published": "2026-11-21T02:25:47+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28470v1",
+          "entry_id": "http://arxiv.org/abs/2611.28470v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28470v1",
+          "title": "Totally odd clique immersions in graphs with bounded independence number",
+          "summary": "We prove that every $n$-vertex graph with at least one edge and independence number at most an integer $a\\ge2$, where $n\\ge a$, contains a totally odd strong immersion of \\[\n  K_{\\left\\lceil (n+a-1)/(2a-3/2) \\right\\rceil}, \\] with every branch path of length at most $2a-1$. We also prove that every graph $G$ with independence number at most $a$ and no totally odd strong $K_t$-immersion with branch paths of length at most $2a-1$ satisfies \\[\n  χ(G)\\le\\left\\lfloor \\frac{(2a-3/2)(t-1)-a+2}{2} \\right\\rfloor \\] where $t\\ge2$. These bounds reduce the leading denominator coefficient in the general order bound from $9/4$ to $2$ and the colouring coefficient for independence number two from $3/2$ to $5/4$.",
+          "authors": [
+            "Sebastián Bustamante"
+          ],
+          "published": "2026-11-21T01:42:11+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28453v1",
+          "entry_id": "http://arxiv.org/abs/2611.28453v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28453v1",
+          "title": "Lattices of Minimal Covolume in $\\mathrm{SL}_2$ over Dyadic Local Fields",
+          "summary": "In this paper, we determine the minimal covolume among lattices in $\\mathrm{SL}_2(K)$ for each finite extension $K/\\mathbb{Q}_2$. Using the action of $\\mathrm{SL}_2(K)$ on its Bruhat--Tits tree, we investigate the shape of the fixed subtrees of finite subgroups, particularly cyclic and dicyclic subgroups of $2$-power order. We determine which larger vertex stabilizers can occur at boundary vertices of the fixed subtrees of dicyclic subgroups and subgroups isomorphic to $2.A_4$. We use these results to construct graphs of groups defining lattices in $\\mathrm{SL}_2(K)$ and prove that these lattices attain the minimal covolume. This extends a result of Lubotzky and Weigel, which treats finite extensions of $\\mathbb{Q}_p$ for odd primes $p$.",
+          "authors": [
+            "Yukun Du"
+          ],
+          "published": "2026-11-21T01:14:57+00:00"
+        },
+        {
+          "paper_id": "http://arxiv.org/abs/2611.28430v1",
+          "entry_id": "http://arxiv.org/abs/2611.28430v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.28430v1",
+          "title": "Lean Census: A Distributional Analysis of AI-Generated Lean Code",
+          "summary": "We compare two human-written and four AI-generated Lean libraries with Mathlib through the distributions of simple statistics of their code. For each library we measure inline claims in proofs, proof length, how often each declaration is used, and design choices such as instances and private declarations, and we read each against the variation among Mathlib's own areas. The AI-generated libraries have more inline claims per theorem, longer proofs, fewer instances, and more private declarations than the human-written ones. We release the code for the analysis as a package, lean-census, at https://github.com/project-numina/lean-census.",
+          "authors": [
+            "Justin Asher",
+            "Pietro Pellegrino"
+          ],
+          "published": "2026-11-21T00:02:25+00:00"
+        }
+      ],
+      "interest_results": {},
+      "interest_reasons": {},
+      "summaries": {},
+      "sent_paper_ids": [],
+      "discord_messages": {},
+      "reading_memos": {},
+      "notification_sent": false,
+      "retry_count": 1,
+      "last_error": "interest check failed for http://arxiv.org/abs/2611.28703v1: 402 Client Error: Payment Required for url: https://opencode.ai/inference/systemone/v1/systemone",
+      "created_at": "2026-11-24T15:12:57.625011+00:00",
+      "updated_at": "2026-11-24T15:13:28.759380+00:00",
+      "finalized_at": null
     }
   ]
 }
